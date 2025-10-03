@@ -1,424 +1,356 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-  <head>
-    <!-- Metaetiquetas -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Curso básico de Python 3 para principiantes. Aprende desde cero a programar con Python, uno de los lenguajes más populares. Ideal para quienes desean iniciarse en la programación."
-    />
-    <meta
-      name="title"
-      content="Introducción Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta name="author" content="Ing. Eduardo Herrera Forero" />
-    <meta name="application-name" content="EHF" />
-    <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://eduardoherreraf.github.io/cursoPython3-0101_introduccion.html"
-    />
-    <!-- Fin Metaetiquetas -->
 
-    <!-- Open Graph data -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Introducción Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      property="og:description"
-      content="Curso básico de Python 3 para principiantes. Aprende desde cero a programar con Python, uno de los lenguajes más populares. Ideal para quienes desean iniciarse en la programación."
-    />
-    <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      property="og:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      property="og:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0101_introduccion.html"
-    />
-    <meta property="og:locale" content="es_CO" />
-    <!-- fin Open Graph data -->
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Curso básico de Python 3 para principiantes. Aprende desde cero a programar con Python, uno de los lenguajes más populares. Ideal para quienes desean iniciarse en la programación." />
+  <meta name="title" content="Introducción Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eduardoherreraf.github.io/cursoPython3-0101_introduccion.html" />
+  <!-- Fin Metaetiquetas -->
 
-    <!-- Twitter cards -->
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="Introducción Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      name="twitter:description"
-      content="Curso básico de Python 3 para principiantes. Aprende desde cero a programar con Python, uno de los lenguajes más populares. Ideal para quienes desean iniciarse en la programación."
-    />
-    <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      name="twitter:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      name="twitter:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0101_introduccion.html"
-    />
-    <meta name="twitter:site" content="@ehfeduardo" />
-    <!-- Fin Twitter cards -->
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Introducción Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta property="og:description"
+    content="Curso básico de Python 3 para principiantes. Aprende desde cero a programar con Python, uno de los lenguajes más populares. Ideal para quienes desean iniciarse en la programación." />
+  <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta property="og:url" content="https://eduardoherreraf.github.io/cursoPython3-0101_introduccion.html" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
 
-    <!-- iconos -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="android-chrome-192x192.png"
-    />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- fin iconos -->
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Introducción Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description"
+    content="Curso básico de Python 3 para principiantes. Aprende desde cero a programar con Python, uno de los lenguajes más populares. Ideal para quienes desean iniciarse en la programación." />
+  <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta name="twitter:url" content="https://eduardoherreraf.github.io/cursoPython3-0101_introduccion.html" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
 
-    <title>Introducción Python 3 - Ing. Eduardo Herrera Forero.</title>
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
 
-    <script type="module" src="./js/main.js"></script>
+  <title>Introducción Python 3 - Ing. Eduardo Herrera Forero.</title>
 
-    <meta
-      name="google-site-verification"
-      content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"
-    />
-  </head>
+  <script type="module" src="./js/main.js"></script>
 
-  <body>
-    <!-- Barra deNavegación -->
-    <nav
-      class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
-    >
-      <div class="container-fluid">
-        <!-- Enlace a la página principal con el logo y nombre -->
-        <a
-          class="navbar-brand d-flex align-items-center ms-2"
-          href="index.html"
-        >
-          <img
-            src="./images/logo.png"
-            alt="Logo de Ing. Eduardo Herrera Forero"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top me-1"
-          />
-          <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
-        </a>
-        <!-- Botón para activar el menú en dispositivos pequeños -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Menú de navegación -->
-        <div
-          class="collapse navbar-collapse ms-auto text-center"
-          id="navbarSupportedContent"
-        >
-          <ul
-            class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100"
-          >
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#portfolio"
-                >PORTAFOLIO</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 publicaciones-activo"
-                href="index.html#blog"
-                >PUBLICACIONES</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
-            </li>
-          </ul>
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
+
+  <!--  principal  -->
+  <div class="container-fluid" id="introduccion">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!--  Introducción al Curso de Python 3 para Principiantes  -->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <div>
+            <header>
+              <h1>Introducción al Curso de Python 3 para Principiantes</h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-5">
+              <h2>Introducción</h2>
+              <div class="centrar-imagen imagen50">
+                <figure>
+                  <img src="https://i.postimg.cc/wT7tmdDd/intro.jpg" class="img-fluid" alt="Dominando Python"
+                    title="Introducción a Python 3" />
+                  <figcaption>Dominando Python</figcaption>
+                </figure>
+              </div>
+              <p>
+                Python se ha convertido en uno de los lenguajes de
+                programación más populares y versátiles en el mundo del
+                desarrollo de software. Su sintaxis clara, sencilla y fácil de
+                aprender lo convierte en una excelente opción para aquellos
+                que están dando sus primeros pasos en el mundo de la
+                programación. Además, Python es utilizado en una amplia
+                variedad de aplicaciones, desde desarrollo web y análisis de
+                datos, hasta inteligencia artificial y automatización.
+              </p>
+              <p>
+                Este curso de Python 3 para principiantes está diseñado para
+                personas sin experiencia previa en programación. A lo largo de
+                este curso, los estudiantes aprenderán desde los conceptos
+                básicos, como variables, operadores y estructuras de control,
+                hasta funciones y manejo de errores, proporcionando una base
+                sólida para avanzar hacia proyectos más complejos. La
+                metodología es práctica, con ejemplos y ejercicios que
+                ayudarán a reforzar cada concepto aprendido.
+              </p>
+              <p>
+                Si se ha preguntado cómo funcionan los programas que utiliza a
+                diario o quiere dar el primer paso hacia una carrera en
+                desarrollo de software, este curso de Python es la puerta de
+                entrada ideal. ¡Comencemos el viaje hacia la programación!
+              </p>
+            </div>
+
+            <!-- Instalación -->
+            <div id="instalacion" class="mt-5">
+              <h2>Instalación</h2>
+              <p>
+                Para usuarios windows descargar el instalador desde
+                <a href="https://www.python.org/downloads/" target="_blank"
+                  rel="noopener noreferrer">https://www.python.org/downloads/</a>.
+              </p>
+              <p>
+                Dado que el navegador le informa al sitio web el sistema
+                operativo que se está utilizando, el único paso necesario es
+                hacer clic en la versión de Python que se desea descargar.
+              </p>
+              <p>
+                En este caso, seleccione Python 3. El sitio siempre le
+                ofrecerá la versión más reciente.
+              </p>
+              <p>
+                Utilice el archivo .exe descargado y siga las instrucciones de
+                instalación.
+              </p>
+              <p>
+                Mantenga las configuraciones predeterminadas que el instalador
+                sugiere, con una excepción: asegúrese de marcar la casilla
+                <span class="fw-bold">Agregar Python 3.x al PATH</span>.
+              </p>
+            </div>
+            <!-- Instalación -->
+
+            <div id="como-usar-el-idle-de-python" class="mt-5">
+              <h2>Como Usar el IDLE de Python</h2>
+              <p>
+                Navegar por los menús del sistema operativo del PC, encontrar
+                IDLE en la carpeta de Python 3.x y ejecutarlo:
+              </p>
+              <div class="centrar-imagen imagen50">
+                <img src="https://images2.imgbox.com/95/7d/u3eh3pmw_o.png" class="img-fluid"
+                  alt="Carpeta IDLE Python 3" />
+              </div>
+              <p>Esto es lo que debe observar:</p>
+              <div class="centrar-imagen imagen50">
+                <img src="https://images2.imgbox.com/e6/e6/ot2WP3Ej_o.png" class="img-fluid"
+                  alt="Ventana Principal IDLE Python 3" />
+              </div>
+              <p>
+                Para iniciar un programa nuevo, del menú horizontal principal
+                escoger
+                <span class="text-success fw-bold">File > New File ></span> y
+                se obtiene esta ventana nueva:
+              </p>
+              <div class="centrar-imagen imagen50">
+                <img src="https://images2.imgbox.com/f0/53/tQEJsWMf_o.png" class="img-fluid"
+                  alt="Ventana Código Fuente" />
+              </div>
+              <p>
+                Para ejecutar un programa, del menú horizontal principal de la
+                ventana del editor pulsar <code>F5</code> o escoger
+                <span class="text-success fw-bold">Run > Run Module ></span> y
+                se obtiene la ventana de ejecución, mostrando el mensaje
+                <span class="text-primary">Hola Mundo..</span>:
+              </p>
+              <div class="centrar-imagen imagen50">
+                <img src="https://images2.imgbox.com/80/a8/x4qxL6eY_o.png" class="img-fluid"
+                  alt="Ventana Ejecución Código Fuente" />
+              </div>
+            </div>
+          </div>
+        </article>
+        <!--  Introducción al Curso de Python 3 para Principiantes  -->
+
+        <!--  comentarios  -->
+        <article class="row pt-5" id="comments">
+          <h2>COMENTARIOS</h2>
+          <p>
+            Si tiene alguna inquietud, duda o ha encontrado algún error, por
+            favor infórmelo a través del formulario disponible para este
+            propósito.
+          </p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
+
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
+                </div>
+
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
+
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                  Enviar
+                </button>
+              </fieldset>
+
+              <p class="small text-center">
+                La política de privacidad, y los términos y condiciones están
+                disponibles en el formulario de contacto.
+              </p>
+            </form>
+          </div>
+        </article>
+        <!--  fin comentarios  -->
+      </section>
+
+      <!--  barra lateral  -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        <h1>En Este Artículo</h1>
+        <div class="menu-scroll">
+          <div class="menu-container">
+            <div class="border border-1">
+              <div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
+              <div class="menu-item"><a href="#instalacion" class="simple-link">Instalación</a></div>
+              <div class="menu-item"><a href="#como-usar-el-idle-de-python" class="simple-link">Como Usar el IDLE de
+                  Python</a></div>
+              <!-- Comentarios  -->
+              <div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!--  fin barra lateral  -->
+  </div>
+  </aside>
+  <!--  fin barra lateral  -->
+  </main>
+  <!--  fin principal  -->
+  </div>
+  <!--  Principal Fin  -->
+
+  <!--  pie de pagina  -->
+  <footer class="row border-top border-1 m-1 mt-auto">
+    <div class="row">
+      <!-- contacto -->
+      <address class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Contacto</div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class="ms-3">
+            <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class="ms-3">Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      <!-- Derechos de autor -->
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
+      </div>
+      <!-- redes sociales -->
+      <div class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Redes Sociales</div>
+        <div class="d-flex justify-content-evenly align-items-center gap-5">
+          <div>
+            <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
         </div>
       </div>
-    </nav>
-    <!-- Barra deNavegación -->
-
-    <!--  principal  -->
-    <div class="container-fluid" id="introduccion">
-      <main class="row">
-        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
-          <!--  Introducción al Curso de Python 3 para Principiantes  -->
-          <article
-            class="row border-1 border-bottom pb-3"
-            data-bs-spy="scroll"
-            data-bs-target="#list-example"
-            data-bs-smooth-scroll="true"
-          >
-            <div>
-              <header>
-                <h1>Introducción al Curso de Python 3 para Principiantes</h1>
-              </header>
-              <!-- Introducción -->
-              <div class="mt-5">
-                <h2>Introducción</h2>
-                <div class="centrar-imagen imagen50">
-                  <figure>
-                    <img
-                      src="https://i.postimg.cc/wT7tmdDd/intro.jpg"
-                      class="img-fluid"
-                      alt="Dominando Python"
-                      title="Introducción a Python 3"
-                    />
-                    <figcaption>Dominando Python</figcaption>
-                  </figure>
-                </div>
-                <p>
-                  Python se ha convertido en uno de los lenguajes de
-                  programación más populares y versátiles en el mundo del
-                  desarrollo de software. Su sintaxis clara, sencilla y fácil de
-                  aprender lo convierte en una excelente opción para aquellos
-                  que están dando sus primeros pasos en el mundo de la
-                  programación. Además, Python es utilizado en una amplia
-                  variedad de aplicaciones, desde desarrollo web y análisis de
-                  datos, hasta inteligencia artificial y automatización.
-                </p>
-                <p>
-                  Este curso de Python 3 para principiantes está diseñado para
-                  personas sin experiencia previa en programación. A lo largo de
-                  este curso, los estudiantes aprenderán desde los conceptos
-                  básicos, como variables, operadores y estructuras de control,
-                  hasta funciones y manejo de errores, proporcionando una base
-                  sólida para avanzar hacia proyectos más complejos. La
-                  metodología es práctica, con ejemplos y ejercicios que
-                  ayudarán a reforzar cada concepto aprendido.
-                </p>
-                <p>
-                  Si se ha preguntado cómo funcionan los programas que utiliza a
-                  diario o quiere dar el primer paso hacia una carrera en
-                  desarrollo de software, este curso de Python es la puerta de
-                  entrada ideal. ¡Comencemos el viaje hacia la programación!
-                </p>
-              </div>
-
-              <!-- Instalación -->
-              <div id="instalacion" class="mt-5">
-                <h2 class="mt-1">Instalación</h2>
-                <p>
-                  Para usuarios windows descargar el instalador desde
-                  <a
-                    href="https://www.python.org/downloads/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >https://www.python.org/downloads/</a
-                  >.
-                </p>
-                <p>
-                  Dado que el navegador le informa al sitio web el sistema
-                  operativo que se está utilizando, el único paso necesario es
-                  hacer clic en la versión de Python que se desea descargar.
-                </p>
-                <p>
-                  En este caso, seleccione Python 3. El sitio siempre le
-                  ofrecerá la versión más reciente.
-                </p>
-                <p>
-                  Utilice el archivo .exe descargado y siga las instrucciones de
-                  instalación.
-                </p>
-                <p>
-                  Mantenga las configuraciones predeterminadas que el instalador
-                  sugiere, con una excepción: asegúrese de marcar la casilla
-                  <span class="fw-bold">Agregar Python 3.x al PATH</span>.
-                </p>
-              </div>
-              <!-- Instalación -->
-
-              <div id="uso" class="mt-5">
-                <h2 class="mt-1">Como Usar el IDLE de Python</h2>
-                <p>
-                  Navegar por los menús del sistema operativo del PC, encontrar
-                  IDLE en la carpeta de Python 3.x y ejecutarlo:
-                </p>
-                <div class="centrar-imagen imagen50">
-                  <img
-                    src="https://images2.imgbox.com/95/7d/u3eh3pmw_o.png"
-                    class="img-fluid"
-                    alt="Carpeta IDLE Python 3"
-                  />
-                </div>
-                <p>Esto es lo que debe observar:</p>
-                <div class="centrar-imagen imagen50">
-                  <img
-                    src="https://images2.imgbox.com/e6/e6/ot2WP3Ej_o.png"
-                    class="img-fluid"
-                    alt="Ventana Principal IDLE Python 3"
-                  />
-                </div>
-                <p>
-                  Para iniciar un programa nuevo, del menú horizontal principal
-                  escoger
-                  <span class="text-success fw-bold">File > New File ></span> y
-                  se obtiene esta ventana nueva:
-                </p>
-                <div class="centrar-imagen imagen50">
-                  <img
-                    src="https://images2.imgbox.com/f0/53/tQEJsWMf_o.png"
-                    class="img-fluid"
-                    alt="Ventana Código Fuente"
-                  />
-                </div>
-                <p>
-                  Para ejecutar un programa, del menú horizontal principal de la
-                  ventana del editor pulsar <code>F5</code> o escoger
-                  <span class="text-success fw-bold">Run > Run Module ></span> y
-                  se obtiene la ventana de ejecución, mostrando el mensaje
-                  <span class="text-primary">Hola Mundo..</span>:
-                </p>
-                <div class="centrar-imagen imagen50">
-                  <img
-                    src="https://images2.imgbox.com/80/a8/x4qxL6eY_o.png"
-                    class="img-fluid"
-                    alt="Ventana Ejecución Código Fuente"
-                  />
-                </div>
-              </div>
-            </div>
-          </article>
-          <!--  Introducción al Curso de Python 3 para Principiantes  -->
-
-          <!--  comentarios  -->
-          <article class="row pt-5" id="comments">
-            <h2>COMENTARIOS</h2>
-            <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por
-              favor infórmelo a través del formulario disponible para este
-              propósito.
-            </p>
-            <div class="d-flex justify-content-center">
-              <form
-                action="https://formspree.io/f/mdkdawkg"
-                method="POST"
-                id="myForm"
-              >
-                <fieldset class="d-flex flex-column gap-3">
-                  <legend class="text-center fs-4">Deje su comentario</legend>
-
-                  <div class="d-flex flex-column">
-                    <label for="name">Nombre:</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="User"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
-
-                  <div class="d-flex flex-column">
-                    <label for="email">Email:</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="user@mail.com"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
-
-                  <div class="d-flex flex-column">
-                    <label for="message">Mensaje:</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      cols="30"
-                      rows="5"
-                      placeholder="Su comentario..."
-                      class="form-control rounded-3"
-                      required
-                    ></textarea>
-                  </div>
-
-                  <button
-                    type="submit"
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
-                  >
-                    Enviar
-                  </button>
-                </fieldset>
-
-                <p class="small text-center">
-                  La política de privacidad, y los términos y condiciones están
-                  disponibles en el formulario de contacto.
-                </p>
-              </form>
-            </div>
-          </article>
-          <!--  fin comentarios  -->
-        </section>
-        <!--  barra lateral  -->
-        <aside class="col-lg-3 d-none d-lg-block pt-5">
-          <div>
-            <h1>En Este Artículo</h1>
-            <ul class="list-group">
-              <li class="list-group-item">
-                <a href="#introduccion">Introducción</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#instalacion">Instalación</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#uso">Como Usar el IDLE de Python</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#comments">Comentarios</a>
-              </li>
-            </ul>
-          </div>
-        </aside>
-        <!--  fin barra lateral  -->
-      </main>
-      <!--  fin principal  -->
     </div>
-    <!--  Principal Fin  -->
+    <div class="d-flex align-items-center justify-content-center gap-2"></div>
+  </footer>
+  <!--  pie de pagina fin  -->
 
-    <!-- button to top -->
-    <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        fill="currentColor"
-        class="bi bi-arrow-bar-up"
-        viewBox="0 0 16 16"
-        style="margin-left: -2px"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"
-        ></path>
-      </svg>
-    </button>
-    <!-- Fin button to top -->
-  </body>
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
 </html>

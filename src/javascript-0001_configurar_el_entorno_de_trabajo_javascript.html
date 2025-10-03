@@ -1,640 +1,568 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-  <head>
-    <!-- Metaetiquetas -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="El objetivo central de este texto es presentar las distintas herramientas que se utilizan para desarrollar y luego mantener el código JavaScript"
-    />
-    <meta
-      name="title"
-      content="Configurar el Entorno de trabajo para Javascript - Ing. Eduardo Herrera Forero."
-    />
-    <meta name="author" content="Ing. Eduardo Herrera Forero" />
-    <meta name="application-name" content="EHF" />
-    <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://eduardoherreraf.github.io/javascript-0001_configurar_el_entorno_de_trabajo_javascript.html"
-    />
-    <!-- Fin Metaetiquetas -->
 
-    <!-- Open Graph data -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Configurar el Entorno de trabajo para Javascript - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      property="og:description"
-      content="El objetivo central de este texto es presentar las distintas herramientas que se utilizan para desarrollar y luego mantener el código JavaScript"
-    />
-    <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      property="og:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      property="og:url"
-      content="https://eduardoherreraf.github.io/javascript-0001_configurar_el_entorno_de_trabajo_javascript.html"
-    />
-    <meta property="og:locale" content="es_CO" />
-    <!-- fin Open Graph data -->
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="El objetivo central de este texto es presentar las distintas herramientas que se utilizan para desarrollar y luego mantener el código JavaScript" />
+  <meta name="title" content="Configurar el Entorno de trabajo para Javascript - Ing. Eduardo Herrera Forero." />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical"
+    href="https://eduardoherreraf.github.io/javascript-0001_configurar_el_entorno_de_trabajo_javascript.html" />
+  <!-- Fin Metaetiquetas -->
 
-    <!-- Twitter cards -->
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="Configurar el Entorno de trabajo para Javascript - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      name="twitter:description"
-      content="El objetivo central de este texto es presentar las distintas herramientas que se utilizan para desarrollar y luego mantener el código JavaScript"
-    />
-    <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      name="twitter:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      name="twitter:url"
-      content="https://eduardoherreraf.github.io/javascript-0001_configurar_el_entorno_de_trabajo_javascript.html"
-    />
-    <meta name="twitter:site" content="@ehfeduardo" />
-    <!-- Fin Twitter cards -->
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Configurar el Entorno de trabajo para Javascript - Ing. Eduardo Herrera Forero." />
+  <meta property="og:description"
+    content="El objetivo central de este texto es presentar las distintas herramientas que se utilizan para desarrollar y luego mantener el código JavaScript" />
+  <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta property="og:url"
+    content="https://eduardoherreraf.github.io/javascript-0001_configurar_el_entorno_de_trabajo_javascript.html" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
 
-    <!-- iconos -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="android-chrome-192x192.png"
-    />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- fin iconos -->
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title"
+    content="Configurar el Entorno de trabajo para Javascript - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description"
+    content="El objetivo central de este texto es presentar las distintas herramientas que se utilizan para desarrollar y luego mantener el código JavaScript" />
+  <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta name="twitter:url"
+    content="https://eduardoherreraf.github.io/javascript-0001_configurar_el_entorno_de_trabajo_javascript.html" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
 
-    <title>
-      Configurar el Entorno de trabajo para Javascript - Ing. Eduardo Herrera
-      Forero.
-    </title>
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
 
-    <script type="module" src="./js/main.js"></script>
+  <title>
+    Configurar el Entorno de trabajo para Javascript - Ing. Eduardo Herrera
+    Forero.
+  </title>
 
-    <meta
-      name="google-site-verification"
-      content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"
-    />
-  </head>
+  <script type="module" src="./js/main.js"></script>
 
-  <body>
-    <!-- Barra deNavegación -->
-    <nav
-      class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
-    >
-      <div class="container-fluid">
-        <!-- Enlace a la página principal con el logo y nombre -->
-        <a
-          class="navbar-brand d-flex align-items-center ms-2"
-          href="index.html"
-        >
-          <img
-            src="./images/logo.png"
-            alt="Logo de Ing. Eduardo Herrera Forero"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top me-1"
-          />
-          <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
-        </a>
-        <!-- Botón para activar el menú en dispositivos pequeños -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Menú de navegación -->
-        <div
-          class="collapse navbar-collapse ms-auto text-center"
-          id="navbarSupportedContent"
-        >
-          <ul
-            class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100"
-          >
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#portfolio"
-                >PORTAFOLIO</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 publicaciones-activo"
-                href="index.html#blog"
-                >PUBLICACIONES</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
-            </li>
-          </ul>
-        </div>
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Barra deNavegación -->
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
 
-    <!--  principal  -->
-    <div class="container-fluid" id="introduccion">
-      <main class="row">
-        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
-          <!-- Configurar el Entorno de trabajo para Javascript -->
-          <article
-            class="row border-1 border-bottom"
-            data-bs-spy="scroll"
-            data-bs-target="#list-example"
-            data-bs-smooth-scroll="true"
-          >
-            <header>
-              <h1>Configurar el Entorno de trabajo para Javascript</h1>
-            </header>
-            <div>
-              <!-- Introducción -->
-              <div class="mt-5">
-                <h2 class="mt-1">Introducción</h2>
+  <!--  principal  -->
+  <div class="container-fluid" id="introduccion">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!-- Configurar el Entorno de trabajo para Javascript -->
+        <article class="row border-1 border-bottom" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <header>
+            <h1>Configurar el Entorno de trabajo para Javascript</h1>
+          </header>
+          <div>
+            <!-- Introducción -->
+            <div class="mt-5">
+              <h2>Introducción</h2>
+              <p>
+                El propósito principal de este documento es proporcionar una
+                visión clara y detallada sobre las herramientas necesarias
+                para desarrollar, depurar y mantener código en JavaScript.
+                Para ello, se explorarán los editores de código más
+                utilizados, entornos de ejecución, gestores de paquetes,
+                depuradores y otras herramientas que facilitan el desarrollo
+                eficiente y estructurado de aplicaciones en este lenguaje.
+              </p>
+              <p>
+                Se abordarán aspectos clave como la instalación y
+                configuración de un entorno de desarrollo adecuado, la
+                elección de un editor de código óptimo, la integración con
+                control de versiones y la automatización de tareas para
+                mejorar la productividad en proyectos JavaScript.
+              </p>
+            </div>
+
+            <!-- Navegadores (Browsers) -->
+            <div id="navegadores" class="mt-5">
+              <h2>Navegadores (Browsers)</h2>
+              <p>
+                Primero se necesita de un
+                <span class="fw-bold text-warning">navegador moderno</span>, a
+                continuación se muestra un listado de los navegadores modernos
+                más utilizados en la actualidad:
+              </p>
+              <ul>
+                <li>Mozilla Firefox</li>
+                <li>Brave</li>
+                <li>Opera</li>
+                <li>Apple Safari</li>
+                <li>Google Chrome</li>
+                <li>Microsoft Edge</li>
+              </ul>
+              <!-- Instalación de un Navegador -->
+              <div>
+                <h3>Instalación de un Navegador</h3>
                 <p>
-                  El propósito principal de este documento es proporcionar una
-                  visión clara y detallada sobre las herramientas necesarias
-                  para desarrollar, depurar y mantener código en JavaScript.
-                  Para ello, se explorarán los editores de código más
-                  utilizados, entornos de ejecución, gestores de paquetes,
-                  depuradores y otras herramientas que facilitan el desarrollo
-                  eficiente y estructurado de aplicaciones en este lenguaje.
+                  Para instalar cualquiera de estos navegadores, primero es
+                  necesario descargar el archivo instalador desde el sitio web
+                  oficial del navegador elegido. Este archivo suele tener una
+                  extensión .exe en Windows y .dmg en macOS.
                 </p>
                 <p>
-                  Se abordarán aspectos clave como la instalación y
-                  configuración de un entorno de desarrollo adecuado, la
-                  elección de un editor de código óptimo, la integración con
-                  control de versiones y la automatización de tareas para
-                  mejorar la productividad en proyectos JavaScript.
-                </p>
-              </div>
-
-              <!-- Navegadores (Browsers) -->
-              <div id="navegadores" class="mt-5">
-                <h2 class="mt-1">Navegadores (Browsers)</h2>
-                <p>
-                  Primero se necesita de un
-                  <span class="fw-bold text-warning">navegador moderno</span>, a
-                  continuación se muestra un listado de los navegadores modernos
-                  más utilizados en la actualidad:
+                  Una vez descargado el archivo, el proceso de instalación es
+                  sencillo:
                 </p>
                 <ul>
-                  <li>Mozilla Firefox</li>
-                  <li>Brave</li>
-                  <li>Opera</li>
-                  <li>Apple Safari</li>
-                  <li>Google Chrome</li>
-                  <li>Microsoft Edge</li>
+                  <li>Hacer doble clic sobre el archivo instalador.</li>
+                  <li>
+                    Seguir las instrucciones del asistente de instalación, que
+                    generalmente consiste en hacer clic en "Siguiente" varias
+                    veces.
+                  </li>
+                  <li>
+                    Finalmente, hacer clic en "Instalar" y esperar a que el
+                    proceso finalice.
+                  </li>
                 </ul>
-                <!-- Instalación de un Navegador -->
-                <div>
-                  <h3>Instalación de un Navegador</h3>
-                  <p>
-                    Para instalar cualquiera de estos navegadores, primero es
-                    necesario descargar el archivo instalador desde el sitio web
-                    oficial del navegador elegido. Este archivo suele tener una
-                    extensión .exe en Windows y .dmg en macOS.
-                  </p>
-                  <p>
-                    Una vez descargado el archivo, el proceso de instalación es
-                    sencillo:
-                  </p>
-                  <ul>
-                    <li>Hacer doble clic sobre el archivo instalador.</li>
-                    <li>
-                      Seguir las instrucciones del asistente de instalación, que
-                      generalmente consiste en hacer clic en "Siguiente" varias
-                      veces.
-                    </li>
-                    <li>
-                      Finalmente, hacer clic en "Instalar" y esperar a que el
-                      proceso finalice.
-                    </li>
-                  </ul>
-                  <p>
-                    En algunos casos, como en Linux, los navegadores pueden
-                    instalarse a través del gestor de paquetes del sistema,
-                    utilizando comandos en la terminal. Por ejemplo, en Ubuntu
-                    se puede instalar Firefox con el siguiente comando:
-                  </p>
+                <p>
+                  En algunos casos, como en Linux, los navegadores pueden
+                  instalarse a través del gestor de paquetes del sistema,
+                  utilizando comandos en la terminal. Por ejemplo, en Ubuntu
+                  se puede instalar Firefox con el siguiente comando:
+                </p>
+                <div class="ej-sintaxis">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       sudo apt install firefox
                     </code>
                   </pre>
-                  <p>
-                    Una vez instalado, el navegador estará listo para su uso.
-                  </p>
                 </div>
-                <!-- Instalación de un Navegador fin -->
+                <p>
+                  Una vez instalado, el navegador estará listo para su uso.
+                </p>
               </div>
+              <!-- Instalación de un Navegador fin -->
+            </div>
 
-              <!-- Editores de Código -->
-              <div id="editorCodigo" class="mt-5">
-                <h2 class="mt-1">Editores de Código</h2>
-                <p>
-                  Un editor de código es una herramienta de software diseñada
-                  específicamente para escribir y editar código fuente de
-                  programas informáticos. Los editores de código proporcionan un
-                  entorno optimizado para los desarrolladores, ofreciendo
-                  características que facilitan la escritura, lectura y
-                  organización del código. Se utilizan principalmente para el
-                  desarrollo de software, desde aplicaciones web y móviles hasta
-                  sistemas complejos.
-                </p>
-                <h3>Características Principales de un Editor de Código</h3>
-                <ul>
-                  <li>
-                    <b>Resaltado de Sintaxis</b>: Muestra el código en
-                    diferentes colores y estilos según la sintaxis del lenguaje,
-                    lo que facilita la lectura y comprensión.
-                  </li>
-                  <li>
-                    <b>Autocompletado</b>: Sugerencias automáticas mientras se
-                    escribe, que ahorran tiempo y reducen errores tipográficos.
-                  </li>
-                  <li>
-                    <b>IntelliSense</b>: Proporciona sugerencias inteligentes
-                    basadas en el contexto del código, incluyendo nombres de
-                    variables, funciones y parámetros.
-                  </li>
-                  <li>
-                    <b>Depuración</b>: Herramientas integradas para ejecutar y
-                    probar el código, permitiendo establecer puntos de
-                    interrupción, inspeccionar variables y seguir el flujo del
-                    programa.
-                  </li>
-                  <li>
-                    <b>Integración con Control de Versiones</b>: Soporte para
-                    sistemas de control de versiones como Git, que permite
-                    realizar commits, ver diferencias y gestionar ramas
-                    directamente desde el editor.
-                  </li>
-                  <li>
-                    <b>Terminal Integrado</b>: Un terminal insertado que permite
-                    ejecutar comandos sin salir del editor.
-                  </li>
-                  <li>
-                    <b>Extensiones y Plugins</b>: Posibilidad de añadir
-                    funcionalidades adicionales mediante extensiones o plugins
-                    desarrollados por la comunidad o terceros.
-                  </li>
-                  <li>
-                    <b>Multilenguaje</b>: Soporte para múltiples lenguajes de
-                    programación, facilitando el trabajo en proyectos que usan
-                    más de un lenguaje.
-                  </li>
-                </ul>
-                <h3>Ejemplos de Editores de Código Populares</h3>
-                <ul>
-                  <li>
-                    <b>Visual Studio Code (VS Code)</b>: Este es editor de
-                    código más popular, para windows es recomendable descargar
-                    el
-                    <span class="fw-bold text-warning">System Installer</span>
-                    por ser la mejor opción.
-                  </li>
-                  <li>
-                    <b>Sublime Text 4</b>: Sigue siendo un editor de código
-                    relevante y eficaz en el panorama actual del desarrollo de
-                    software, también dispone de una
-                    <span class="fw-bold text-warning">versión portable</span>.
-                  </li>
-                  <li>
-                    <b>WebStorm</b>: Este editor sigue siendo uno de los
-                    entornos de desarrollo integrados (IDE) más avanzados y
-                    populares para el desarrollo en JavaScript, TypeScript y
-                    tecnologías relacionadas. Desarrollado por JetBrains,
-                    WebStorm es altamente valorado por su conjunto de
-                    características avanzadas, rendimiento robusto y capacidad
-                    para mejorar la productividad del desarrollador. Ese IDE
-                    tiene un costo de US $69.00 el primer año, sin embargo tiene
-                    una
-                    <span class="fw-bold text-warning">licencia gratuita</span>
-                    para estudiantes.
-                  </li>
-                  <li>
-                    <b>Brackets</b>: Este editor fue desarrollado por Adobe,
-                    pero en el 2021 lo abandona y se convierte en un proyecto de
-                    código abierto bajo la licencia MIT.
-                  </li>
-                  <li><b>Notepad++</b></li>
-                  <li><b>Github Atom</b></li>
-                  <li><b>Vim</b></li>
-                </ul>
-                <h3>Visual Studio Code (VSC)</h3>
-                <p>
-                  Este es el editor de código más utilizado por la comunidad, de
-                  este se mostrará los temas y extensiones que más se usan en el
-                  desarrollo web.
-                </p>
-                <h4>Temas</h4>
-                <p>
-                  Se recomienda elegir un tema de tono oscuro para cuidar la
-                  salud visual del programador.
-                </p>
-                <ul>
-                  <li>
-                    <b>Material Icon Theme</b>: Esta extensión reemplaza los
-                    iconos predeterminados de VSC con iconos que son más
-                    distintivos y visualmente atractivos, lo que facilita la
-                    identificación rápida de los tipos de archivos y carpetas en
-                    tu proyecto.
-                  </li>
-                  <li>
-                    <b>Drácula Official</b>: Un tema oscuro con colores
-                    vibrantes y alto contraste que es fácil para los ojos
-                    durante largas sesiones de codificación. Material Theme:
-                    Inspirado en Material Design de Google, este tema ofrece una
-                    apariencia limpia y moderna con colores atractivos y una
-                    paleta bien equilibrada.
-                  </li>
-                  <li>
-                    <b>One Dark Pro</b>: Basado en el tema por defecto de Atom,
-                    este tema oscuro es popular por su estilo elegante y su
-                    legibilidad.
-                  </li>
-                  <li>
-                    <b>Monokai</b>: Un tema clásico que ha sido popular durante
-                    mucho tiempo, conocido por su combinación distintiva de
-                    colores brillantes y oscuros.
-                  </li>
-                  <li>
-                    <b>Night Owl</b>: Diseñado para minimizar la fatiga visual,
-                    este tema oscuro ofrece colores suaves y contrastes
-                    cuidadosamente ajustados.
-                  </li>
-                  <li>
-                    <b>Cobalt2 Theme Official</b>: Desarrollado por el diseñador
-                    Wes Bos, este tema tiene colores llamativos y un estilo
-                    moderno y limpio.
-                  </li>
-                  <li>
-                    <b>City Lights Theme</b>: Con un diseño minimalista y una
-                    paleta de colores suaves, este tema es popular entre
-                    aquellos que prefieren un aspecto discreto pero elegante.
-                  </li>
-                  <li>
-                    <b>Tokyo Night Theme</b>: Inspirado en la vida nocturna de
-                    Tokio, este tema oscuro presenta colores atrevidos y
-                    vibrantes que se destacan en la oscuridad. GitHub Theme:
-                    Basado en los colores utilizados en GitHub, este tema es
-                    simple y limpio, ideal para aquellos que desean una
-                    experiencia de codificación familiar.
-                  </li>
-                  <li>
-                    <b>Nord Theme</b>: Con una combinación de tonos fríos y
-                    cálidos, este tema ofrece un aspecto único y atractivo que
-                    es popular entre muchos usuarios de VSC.
-                  </li>
-                </ul>
-                <h4>Extensiones</h4>
-                <p>Las más utilizadas son:</p>
-                <ul>
-                  <li>
-                    <b>ESLint</b>: Ayuda a identificar y corregir errores de
-                    estilo y sintaxis en tu código JavaScript, siguiendo las
-                    reglas definidas en el archivo de configuración ESLint.
-                  </li>
-                  <li>
-                    <b>Prettier</b>: Formatea automáticamente el código
-                    JavaScript según las reglas predefinidas, lo que ayuda a
-                    mantener un estilo de código consistente en todo el
-                    proyecto.
-                  </li>
-                  <li>
-                    <b>npm</b>: Proporciona soporte para trabajar con el gestor
-                    de paquetes npm dentro de VSC, lo que facilita la
-                    instalación, actualización y eliminación de dependencias en
-                    el proyecto.
-                  </li>
-                  <li>
-                    <b>Path Intellisense</b>: Proporciona autocompletado de
-                    rutas de archivos y directorios en tu código JavaScript, lo
-                    que facilita la navegación dentro del proyecto.
-                  </li>
-                  <li>
-                    <b>Code Runner</b>: Permite ejecutar rápidamente porciones
-                    de código JavaScript seleccionadas o el archivo completo
-                    desde Visual Studio Code, sin necesidad de salir del editor.
-                  </li>
-                  <li>
-                    <b>JavaScript (ES6) code snippets</b>: Ofrece una colección
-                    de snippets (fragmentos de código) para JavaScript ES6, lo
-                    que acelera la escritura de código al proporcionar atajos
-                    para estructuras de código comunes.
-                  </li>
-                  <li>
-                    <b>Live Server</b>: Permite iniciar un servidor web local
-                    para proyectos de desarrollo en JavaScript y proporciona
-                    actualizaciones en tiempo real del navegador mientras se
-                    realizan cambios en el código.
-                  </li>
-                  <li>
-                    <b>Bracket Pair Colorizer</b>: Colorea los pares de
-                    corchetes y paréntesis en tu código JavaScript para
-                    facilitar la identificación de bloques de código anidados.
-                  </li>
-                  <li>
-                    <b>GitLens</b>: Ofrece una integración avanzada con Git
-                    dentro de Visual Studio Code, lo que permite ver información
-                    detallada sobre los cambios, autores y líneas de código
-                    modificadas en el repositorio Git.
-                  </li>
-                </ul>
-              </div>
+            <!-- Editores de Código -->
+            <div id="editor-de-codigo" class="mt-5">
+              <h2>Editores de Código</h2>
+              <p>
+                Un editor de código es una herramienta de software diseñada
+                específicamente para escribir y editar código fuente de
+                programas informáticos. Los editores de código proporcionan un
+                entorno optimizado para los desarrolladores, ofreciendo
+                características que facilitan la escritura, lectura y
+                organización del código. Se utilizan principalmente para el
+                desarrollo de software, desde aplicaciones web y móviles hasta
+                sistemas complejos.
+              </p>
+              <h3>Características Principales de un Editor de Código</h3>
+              <ul>
+                <li>
+                  <b>Resaltado de Sintaxis</b>: Muestra el código en
+                  diferentes colores y estilos según la sintaxis del lenguaje,
+                  lo que facilita la lectura y comprensión.
+                </li>
+                <li>
+                  <b>Autocompletado</b>: Sugerencias automáticas mientras se
+                  escribe, que ahorran tiempo y reducen errores tipográficos.
+                </li>
+                <li>
+                  <b>IntelliSense</b>: Proporciona sugerencias inteligentes
+                  basadas en el contexto del código, incluyendo nombres de
+                  variables, funciones y parámetros.
+                </li>
+                <li>
+                  <b>Depuración</b>: Herramientas integradas para ejecutar y
+                  probar el código, permitiendo establecer puntos de
+                  interrupción, inspeccionar variables y seguir el flujo del
+                  programa.
+                </li>
+                <li>
+                  <b>Integración con Control de Versiones</b>: Soporte para
+                  sistemas de control de versiones como Git, que permite
+                  realizar commits, ver diferencias y gestionar ramas
+                  directamente desde el editor.
+                </li>
+                <li>
+                  <b>Terminal Integrado</b>: Un terminal insertado que permite
+                  ejecutar comandos sin salir del editor.
+                </li>
+                <li>
+                  <b>Extensiones y Plugins</b>: Posibilidad de añadir
+                  funcionalidades adicionales mediante extensiones o plugins
+                  desarrollados por la comunidad o terceros.
+                </li>
+                <li>
+                  <b>Multilenguaje</b>: Soporte para múltiples lenguajes de
+                  programación, facilitando el trabajo en proyectos que usan
+                  más de un lenguaje.
+                </li>
+              </ul>
+              <h3>Ejemplos de Editores de Código Populares</h3>
+              <ul>
+                <li>
+                  <b>Visual Studio Code (VS Code)</b>: Este es editor de
+                  código más popular, para windows es recomendable descargar
+                  el
+                  <span class="fw-bold text-warning">System Installer</span>
+                  por ser la mejor opción.
+                </li>
+                <li>
+                  <b>Sublime Text 4</b>: Sigue siendo un editor de código
+                  relevante y eficaz en el panorama actual del desarrollo de
+                  software, también dispone de una
+                  <span class="fw-bold text-warning">versión portable</span>.
+                </li>
+                <li>
+                  <b>WebStorm</b>: Este editor sigue siendo uno de los
+                  entornos de desarrollo integrados (IDE) más avanzados y
+                  populares para el desarrollo en JavaScript, TypeScript y
+                  tecnologías relacionadas. Desarrollado por JetBrains,
+                  WebStorm es altamente valorado por su conjunto de
+                  características avanzadas, rendimiento robusto y capacidad
+                  para mejorar la productividad del desarrollador. Ese IDE
+                  tiene un costo de US $69.00 el primer año, sin embargo tiene
+                  una
+                  <span class="fw-bold text-warning">licencia gratuita</span>
+                  para estudiantes.
+                </li>
+                <li>
+                  <b>Brackets</b>: Este editor fue desarrollado por Adobe,
+                  pero en el 2021 lo abandona y se convierte en un proyecto de
+                  código abierto bajo la licencia MIT.
+                </li>
+                <li><b>Notepad++</b></li>
+                <li><b>Github Atom</b></li>
+                <li><b>Vim</b></li>
+              </ul>
+              <h3>Visual Studio Code (VSC)</h3>
+              <p>
+                Este es el editor de código más utilizado por la comunidad, de
+                este se mostrará los temas y extensiones que más se usan en el
+                desarrollo web.
+              </p>
+              <h4>Temas</h4>
+              <p>
+                Se recomienda elegir un tema de tono oscuro para cuidar la
+                salud visual del programador.
+              </p>
+              <ul>
+                <li>
+                  <b>Material Icon Theme</b>: Esta extensión reemplaza los
+                  iconos predeterminados de VSC con iconos que son más
+                  distintivos y visualmente atractivos, lo que facilita la
+                  identificación rápida de los tipos de archivos y carpetas en
+                  tu proyecto.
+                </li>
+                <li>
+                  <b>Drácula Official</b>: Un tema oscuro con colores
+                  vibrantes y alto contraste que es fácil para los ojos
+                  durante largas sesiones de codificación. Material Theme:
+                  Inspirado en Material Design de Google, este tema ofrece una
+                  apariencia limpia y moderna con colores atractivos y una
+                  paleta bien equilibrada.
+                </li>
+                <li>
+                  <b>One Dark Pro</b>: Basado en el tema por defecto de Atom,
+                  este tema oscuro es popular por su estilo elegante y su
+                  legibilidad.
+                </li>
+                <li>
+                  <b>Monokai</b>: Un tema clásico que ha sido popular durante
+                  mucho tiempo, conocido por su combinación distintiva de
+                  colores brillantes y oscuros.
+                </li>
+                <li>
+                  <b>Night Owl</b>: Diseñado para minimizar la fatiga visual,
+                  este tema oscuro ofrece colores suaves y contrastes
+                  cuidadosamente ajustados.
+                </li>
+                <li>
+                  <b>Cobalt2 Theme Official</b>: Desarrollado por el diseñador
+                  Wes Bos, este tema tiene colores llamativos y un estilo
+                  moderno y limpio.
+                </li>
+                <li>
+                  <b>City Lights Theme</b>: Con un diseño minimalista y una
+                  paleta de colores suaves, este tema es popular entre
+                  aquellos que prefieren un aspecto discreto pero elegante.
+                </li>
+                <li>
+                  <b>Tokyo Night Theme</b>: Inspirado en la vida nocturna de
+                  Tokio, este tema oscuro presenta colores atrevidos y
+                  vibrantes que se destacan en la oscuridad. GitHub Theme:
+                  Basado en los colores utilizados en GitHub, este tema es
+                  simple y limpio, ideal para aquellos que desean una
+                  experiencia de codificación familiar.
+                </li>
+                <li>
+                  <b>Nord Theme</b>: Con una combinación de tonos fríos y
+                  cálidos, este tema ofrece un aspecto único y atractivo que
+                  es popular entre muchos usuarios de VSC.
+                </li>
+              </ul>
+              <h4>Extensiones</h4>
+              <p>Las más utilizadas son:</p>
+              <ul>
+                <li>
+                  <b>ESLint</b>: Ayuda a identificar y corregir errores de
+                  estilo y sintaxis en tu código JavaScript, siguiendo las
+                  reglas definidas en el archivo de configuración ESLint.
+                </li>
+                <li>
+                  <b>Prettier</b>: Formatea automáticamente el código
+                  JavaScript según las reglas predefinidas, lo que ayuda a
+                  mantener un estilo de código consistente en todo el
+                  proyecto.
+                </li>
+                <li>
+                  <b>npm</b>: Proporciona soporte para trabajar con el gestor
+                  de paquetes npm dentro de VSC, lo que facilita la
+                  instalación, actualización y eliminación de dependencias en
+                  el proyecto.
+                </li>
+                <li>
+                  <b>Path Intellisense</b>: Proporciona autocompletado de
+                  rutas de archivos y directorios en tu código JavaScript, lo
+                  que facilita la navegación dentro del proyecto.
+                </li>
+                <li>
+                  <b>Code Runner</b>: Permite ejecutar rápidamente porciones
+                  de código JavaScript seleccionadas o el archivo completo
+                  desde Visual Studio Code, sin necesidad de salir del editor.
+                </li>
+                <li>
+                  <b>JavaScript (ES6) code snippets</b>: Ofrece una colección
+                  de snippets (fragmentos de código) para JavaScript ES6, lo
+                  que acelera la escritura de código al proporcionar atajos
+                  para estructuras de código comunes.
+                </li>
+                <li>
+                  <b>Live Server</b>: Permite iniciar un servidor web local
+                  para proyectos de desarrollo en JavaScript y proporciona
+                  actualizaciones en tiempo real del navegador mientras se
+                  realizan cambios en el código.
+                </li>
+                <li>
+                  <b>Bracket Pair Colorizer</b>: Colorea los pares de
+                  corchetes y paréntesis en tu código JavaScript para
+                  facilitar la identificación de bloques de código anidados.
+                </li>
+                <li>
+                  <b>GitLens</b>: Ofrece una integración avanzada con Git
+                  dentro de Visual Studio Code, lo que permite ver información
+                  detallada sobre los cambios, autores y líneas de código
+                  modificadas en el repositorio Git.
+                </li>
+              </ul>
+            </div>
 
-              <!-- Node.js -->
-              <div id="nodejs" class="mt-5">
-                <h2 class="mt-1">Node.js</h2>
-                <p>
-                  Node.js es un
-                  <span class="fw-bold text-warning">entorno de ejecución</span>
-                  basado en JavaScript que permite ejecutar código en el lado
-                  del servidor. Utiliza el motor V8 de Google Chrome para
-                  interpretar y ejecutar JavaScript de manera eficiente. Su
-                  arquitectura orientada a eventos y su modelo de entrada/salida
-                  asíncrono lo hacen ideal para desarrollar aplicaciones
-                  escalables y de alto rendimiento, como servidores web, APIs y
-                  aplicaciones en tiempo real. Node.js es un para JavaScript en
-                  el lado del servidor.
-                </p>
-                <p>
-                  A continuación, se presentan los pasos para instalar y
-                  configurar Node.js correctamente:
-                </p>
+            <!-- Node.js -->
+            <div id="nodejs" class="mt-5">
+              <h2>Node.js</h2>
+              <p>
+                Node.js es un
+                <span class="fw-bold text-warning">entorno de ejecución</span>
+                basado en JavaScript que permite ejecutar código en el lado
+                del servidor. Utiliza el motor V8 de Google Chrome para
+                interpretar y ejecutar JavaScript de manera eficiente. Su
+                arquitectura orientada a eventos y su modelo de entrada/salida
+                asíncrono lo hacen ideal para desarrollar aplicaciones
+                escalables y de alto rendimiento, como servidores web, APIs y
+                aplicaciones en tiempo real. Node.js es un para JavaScript en
+                el lado del servidor.
+              </p>
+              <p>
+                A continuación, se presentan los pasos para instalar y
+                configurar Node.js correctamente:
+              </p>
 
-                <!-- Instalación y Configuración de Node.js -->
+              <!-- Instalación y Configuración de Node.js -->
+              <div>
+                <h3>Instalación y Configuración de Node.js</h3>
+                <!-- Instalar Node.js -->
                 <div>
-                  <h3>Instalación y Configuración de Node.js</h3>
-                  <!-- Instalar Node.js -->
-                  <div>
-                    <h4>Instalar Node.js</h4>
-                    <ul>
-                      <li>
-                        Descargar el instalador desde la
-                        <a
-                          href="https://nodejs.org/es"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >página oficial de Node.js</a
-                        >. Se recomienda instalar la versión LTS (Long-Term
-                        Support), ya que es más estable y adecuada para la
-                        mayoría de proyectos.
-                      </li>
-                      <li>
-                        Seguir las instrucciones del instalador según el sistema
-                        operativo (Windows, macOS o Linux).
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Instalar Node.js fin -->
+                  <h4>Instalar Node.js</h4>
+                  <ul>
+                    <li>
+                      Descargar el instalador desde la
+                      <a href="https://nodejs.org/es" target="_blank" rel="noopener noreferrer">página oficial de
+                        Node.js</a>. Se recomienda instalar la versión LTS (Long-Term
+                      Support), ya que es más estable y adecuada para la
+                      mayoría de proyectos.
+                    </li>
+                    <li>
+                      Seguir las instrucciones del instalador según el sistema
+                      operativo (Windows, macOS o Linux).
+                    </li>
+                  </ul>
+                </div>
+                <!-- Instalar Node.js fin -->
 
-                  <!-- Verificar la Instalación -->
-                  <div>
-                    <h4>Verificar la Instalación</h4>
-                    <ul>
-                      <li>
-                        <strong
-                          >Abrir una terminal o línea de comandos y
-                          ejecutar</strong
-                        >: Esto mostrará la versión instalada de Node.js.
+                <!-- Verificar la Instalación -->
+                <div>
+                  <h4>Verificar la Instalación</h4>
+                  <ul>
+                    <li>
+                      <strong>Abrir una terminal o línea de comandos y
+                        ejecutar</strong>: Esto mostrará la versión instalada de Node.js.
+                      <div class="ej-sintaxis">
                         <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             node -v
                           </code>
                         </pre>
-                      </li>
-                      <li>
-                        <strong
-                          >Verificar también la versión de npm (Node Package
-                          Manager), que se instala junto con Node.js</strong
-                        >:
+                      </div>
+                    </li>
+                    <li>
+                      <strong>Verificar también la versión de npm (Node Package
+                        Manager), que se instala junto con Node.js</strong>:
+                      <div class="ej-sintaxis">
                         <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             npm -v
                           </code>
                         </pre>
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Verificar la Instalación fin -->
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Verificar la Instalación fin -->
 
-                  <!-- Crear un Nuevo Proyecto en Node.js -->
-                  <div>
-                    <h4>Crear un Nuevo Proyecto en Node.js</h4>
-                    <ul>
-                      <li>
-                        Abrir una terminal y navegar hasta la ubicación donde se
-                        creará el proyecto.
-                      </li>
-                      <li>
-                        <strong
-                          >Crear una carpeta para el proyecto y acceder a
-                          ella</strong
-                        >:
+                <!-- Crear un Nuevo Proyecto en Node.js -->
+                <div>
+                  <h4>Crear un Nuevo Proyecto en Node.js</h4>
+                  <ul>
+                    <li>
+                      Abrir una terminal y navegar hasta la ubicación donde se
+                      creará el proyecto.
+                    </li>
+                    <li>
+                      <strong>Crear una carpeta para el proyecto y acceder a
+                        ella</strong>:
+                      <div class="ej-sintaxis">
                         <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             mkdir mi_proyecto
                             cd mi_proyecto
                           </code>
                         </pre>
-                      </li>
-                      <li>
-                        <strong
-                          >Inicializar el proyecto con el siguiente
-                          comando</strong
-                        >:
+                      </div>
+                    </li>
+                    <li>
+                      <strong>Inicializar el proyecto con el siguiente
+                        comando</strong>:
+                      <div class="ej-sintaxis">
                         <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             npm init -y
                           </code>
                         </pre>
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Crear un Nuevo Proyecto en Node.js fin -->
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Crear un Nuevo Proyecto en Node.js fin -->
 
-                  <!-- Instalar Dependencias y Paquetes -->
-                  <div>
-                    <h4>Instalar Dependencias y Paquetes</h4>
-                    <ul>
-                      <li>
-                        <strong
-                          >Si se va a utilizar un framework como Express para
-                          crear un servidor, se instala con</strong
-                        >:
+                <!-- Instalar Dependencias y Paquetes -->
+                <div>
+                  <h4>Instalar Dependencias y Paquetes</h4>
+                  <ul>
+                    <li>
+                      <strong>Si se va a utilizar un framework como Express para
+                        crear un servidor, se instala con</strong>:
+                      <div class="ej-sintaxis">
                         <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             npm install express
                           </code>
                         </pre>
-                      </li>
-                      <li>
-                        <strong>Otras dependencias comunes incluyen</strong>:
-                        <ul>
-                          <li>
-                            <strong>dotenv</strong>: para gestionar variables de
-                            entorno (<code class="language-bash"
-                              >npm install dotenv</code
-                            >)
-                          </li>
-                          <li>
-                            <strong>nodemon</strong>: para recargar
-                            automáticamente el servidor en desarrollo (<code
-                              class="language-bash"
-                              >npm install --save-dev nodemon</code
-                            >
-                            )
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Instalar Dependencias y Paquetes fin -->
+                      </div>
+                    </li>
+                    <li>
+                      <strong>Otras dependencias comunes incluyen</strong>:
+                      <ul>
+                        <li>
+                          <strong>dotenv</strong>: para gestionar variables de
+                          entorno (<code class="language-bash">npm install dotenv</code>)
+                        </li>
+                        <li>
+                          <strong>nodemon</strong>: para recargar
+                          automáticamente el servidor en desarrollo (<code
+                            class="language-bash">npm install --save-dev nodemon</code>
+                          )
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Instalar Dependencias y Paquetes fin -->
 
-                  <!-- Crear y Ejecutar un Servidor con Express -->
-                  <div>
-                    <h4>Crear y Ejecutar un Servidor con Express</h4>
-                    <ul>
-                      <li>
-                        <strong
-                          >Crear un archivo <code>server.js</code> en la carpeta
-                          del proyecto y agregar el siguiente código
-                          básico</strong
-                        >:
+                <!-- Crear y Ejecutar un Servidor con Express -->
+                <div>
+                  <h4>Crear y Ejecutar un Servidor con Express</h4>
+                  <ul>
+                    <li>
+                      <strong>Crear un archivo <code>server.js</code> en la carpeta
+                        del proyecto y agregar el siguiente código
+                        básico</strong>:
+                      <div class="ej-sintaxis">
                         <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             const express = require('express');
@@ -650,191 +578,227 @@
                             });
                             </code>
                         </pre>
-                      </li>
-                      <li>
-                        <strong>Ejecutar el servidor con</strong>:
+                      </div>
+                    </li>
+                    <li>
+                      <strong>Ejecutar el servidor con</strong>:
+                      <div class="ej-sintaxis">
                         <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             node server.js
                           </code>
                         </pre>
-                        O, si se usa nodemon para desarrollo:
+                      </div>
+                      O, si se usa nodemon para desarrollo:
+                      <div class="ej-sintaxis">
                         <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             npx nodemon server.js
                           </code>
                         </pre>
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Crear y Ejecutar un Servidor con Express fin -->
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-                <!-- Instalación y Configuración de Node.js fin -->
+                <!-- Crear y Ejecutar un Servidor con Express fin -->
               </div>
+              <!-- Instalación y Configuración de Node.js fin -->
+            </div>
 
-              <!-- Configuración de Git (Opcional) -->
-              <div id="configuraciondeGit" class="mt-5">
-                <h2 class="mt-1">Configuración de Git (Opcional)</h2>
-                <p>
-                  Si se planea trabajar con control de versiones, configurar Git
-                  en el entorno:
-                </p>
-                <ul>
-                  <li>
-                    Instala Git desde
-                    <a
-                      href="https://git-scm.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >git-scm.com</a
-                    >
-                  </li>
-                  <li>
-                    Configurar Git con la información del programador, en la
-                    terminal ejecutar el siguiente código: <br />
+            <!-- Configuración de Git (Opcional) -->
+            <div id="configuracion-de-git" class="mt-5">
+              <h2>Configuración de Git (Opcional)</h2>
+              <p>
+                Si se planea trabajar con control de versiones, configurar Git
+                en el entorno:
+              </p>
+              <ul>
+                <li>
+                  Instala Git desde
+                  <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">git-scm.com</a>
+                </li>
+                <li>
+                  Configurar Git con la información del programador, en la
+                  terminal ejecutar el siguiente código: <br />
+                  <div class="ej-sintaxis">
                     <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-sh" data-prismjs-copy="Copy">
+                      <code class="language-bash" data-prismjs-copy="Copy">
                         git config --global user.name "Nombre"
                         git config --global user.email "email@example.com"
                       </code>
-                  </pre>
-                    <p>
-                      Para crear un nuevo repositorio de Git, navega a la
-                      carpeta de del proyecto y ejecute el siguiente comando:
-                    </p>
+                    </pre>
+                  </div>
+                  <p>
+                    Para crear un nuevo repositorio de Git, navega a la
+                    carpeta de del proyecto y ejecute el siguiente comando:
+                  </p>
+                  <div class="ej-sintaxis">
                     <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-sh" data-prismjs-copy="Copy">
+                      <code class="language-bash" data-prismjs-copy="Copy">
                         git init
                       </code>
-                  </pre>
-                    <p>
-                      Un <span class="fw-bold text-warning">repo</span> es la
-                      base de datos donde Git almacena todos los commits y la
-                      historia del proyecto.
-                    </p>
-                  </li>
-                </ul>
+                    </pre>
+                  </div>
+                  <p>
+                    Un <span class="fw-bold text-warning">repo</span> es la
+                    base de datos donde Git almacena todos los commits y la
+                    historia del proyecto.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <!-- Configurar el Entorno de trabajo para Javascript Fin -->
+        <!--  comentarios  -->
+        <article class="row pt-5" id="comments">
+          <h2>COMENTARIOS</h2>
+          <p>
+            Si tiene alguna inquietud, duda o ha encontrado algún error, por
+            favor infórmelo a través del formulario disponible para este
+            propósito.
+          </p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
+
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
+                </div>
+
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
+
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                  Enviar
+                </button>
+              </fieldset>
+
+              <p class="small text-center">
+                La política de privacidad, y los términos y condiciones están
+                disponibles en el formulario de contacto.
+              </p>
+            </form>
+          </div>
+        </article>
+        <!--  fin comentarios  -->
+      </section>
+
+      <!--  barra lateral  -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        <h1>En Este Artículo</h1>
+        <div class="menu-scroll">
+          <div class="menu-container">
+            <div class="border border-1">
+              <div class="menu-item">
+                <a href="#introduccion" class="simple-link">Introducción</a>
+              </div>
+              <div class="menu-item">
+                <a href="#navegadores" class="simple-link">Navegadores</a>
+              </div>
+              <div class="menu-item">
+                <a href="#editor-de-codigo" class="simple-link">Editor de Código</a>
+              </div>
+              <div class="menu-item">
+                <a href="#nodejs" class="simple-link">Node.js</a>
+              </div>
+              <div class="menu-item">
+                <a href="#configuracion-de-git" class="simple-link">Configuración de Git</a>
+              </div>
+
+
+              <li class="list-group-item">
+                <a href="#"> </a>
+              </li>
+              <!-- Comentarios  -->
+              <div class="menu-item">
+                <a href="#comments" class="simple-link">Comentarios</a>
               </div>
             </div>
-          </article>
-          <!-- Configurar el Entorno de trabajo para Javascript Fin -->
-          <!--  comentarios  -->
-          <article class="row pt-5" id="comments">
-            <h2>COMENTARIOS</h2>
-            <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por
-              favor infórmelo a través del formulario disponible para este
-              propósito.
-            </p>
-            <div class="d-flex justify-content-center">
-              <form
-                action="https://formspree.io/f/mdkdawkg"
-                method="POST"
-                id="myForm"
-              >
-                <fieldset class="d-flex flex-column gap-3">
-                  <legend class="text-center fs-4">Deje su comentario</legend>
+          </div>
+        </div>
+      </aside>
+      <!--  fin barra lateral  -->
+    </main>
+    <!--  fin principal  -->
+  </div>
 
-                  <div class="d-flex flex-column">
-                    <label for="name">Nombre:</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="User"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
-
-                  <div class="d-flex flex-column">
-                    <label for="email">Email:</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="user@mail.com"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
-
-                  <div class="d-flex flex-column">
-                    <label for="message">Mensaje:</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      cols="30"
-                      rows="5"
-                      placeholder="Su comentario..."
-                      class="form-control rounded-3"
-                      required
-                    ></textarea>
-                  </div>
-
-                  <button
-                    type="submit"
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
-                  >
-                    Enviar
-                  </button>
-                </fieldset>
-
-                <p class="small text-center">
-                  La política de privacidad, y los términos y condiciones están
-                  disponibles en el formulario de contacto.
-                </p>
-              </form>
-            </div>
-          </article>
-          <!--  fin comentarios  -->
-        </section>
-        <!--  barra lateral  -->
-        <aside class="col-lg-3 d-none d-lg-block pt-5">
-          <h1>En Este Artículo</h1>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a href="#introduccion">Introducción</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#navegadores">Navegadores</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#editorCodigo">Editor de Código</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#nodejs">Node.js</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#configuraciondeGit">Configuración de Git </a>
-            </li>
-            <li class="list-group-item">
-              <a href="#comments">Comentarios</a>
-            </li>
-          </ul>
-        </aside>
-        <!--  fin barra lateral  -->
-      </main>
-      <!--  fin principal  -->
+  <!--  pie de pagina  -->
+  <footer class="row border-top border-1 m-1 mt-auto">
+    <div class="row">
+      <!-- contacto -->
+      <address class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Contacto</div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class="ms-3">
+            <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class="ms-3">Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      <!-- Derechos de autor -->
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
+      </div>
+      <!-- redes sociales -->
+      <div class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Redes Sociales</div>
+        <div class="d-flex justify-content-evenly align-items-center gap-5">
+          <div>
+            <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="d-flex align-items-center justify-content-center gap-2"></div>
+  </footer>
+  <!--  pie de pagina fin  -->
 
-    <!-- button to top -->
-    <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        fill="currentColor"
-        class="bi bi-arrow-bar-up"
-        viewBox="0 0 16 16"
-        style="margin-left: -2px"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"
-        ></path>
-      </svg>
-    </button>
-    <!-- Fin button to top -->
-  </body>
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
 </html>

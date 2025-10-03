@@ -1,305 +1,230 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-  <head>
-    <!-- Metaetiquetas -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="La guía oficial sobre cómo incluir y empaquetar el CSS y JavaScript de Bootstrap en un proyecto utilizando Vite"
-    />
-    <meta
-      name="title"
-      content="Instalación de Bootstrap V5, NPM y VITE - Ing. Eduardo Herrera Forero."
-    />
-    <meta name="author" content="Ing. Eduardo Herrera Forero" />
-    <meta name="application-name" content="EHF" />
-    <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://eduardoherreraf.github.io/bootstrap-0001-instalacion_de_bootstrap_v5_con_npm_y_vite.html"
-    />
-    <!-- Fin Metaetiquetas -->
 
-    <!-- Open Graph data -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Instalación de Bootstrap V5, NPM y VITE - Ing. Eduardo Herrera Forero"
-    />
-    <meta
-      property="og:description"
-      content="La guía oficial sobre cómo incluir y empaquetar el CSS y JavaScript de Bootstrap en un proyecto utilizando Vite"
-    />
-    <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      property="og:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      property="og:url"
-      content="https://eduardoherreraf.github.io/bootstrap-0001-instalacion_de_bootstrap_v5_con_npm_y_vite.html"
-    />
-    <meta property="og:locale" content="es_CO" />
-    <!-- fin Open Graph data -->
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="La guía oficial sobre cómo incluir y empaquetar el CSS y JavaScript de Bootstrap en un proyecto utilizando Vite" />
+  <meta name="title" content="Instalación de Bootstrap V5, NPM y VITE - Ing. Eduardo Herrera Forero." />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical"
+    href="https://eduardoherreraf.github.io/bootstrap-0001-instalacion_de_bootstrap_v5_con_npm_y_vite.html" />
+  <!-- Fin Metaetiquetas -->
 
-    <!-- Twitter cards -->
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="Instalación de Bootstrap V5, NPM y VITE - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      name="twitter:description"
-      content="La guía oficial sobre cómo incluir y empaquetar el CSS y JavaScript de Bootstrap en un proyecto utilizando Vite"
-    />
-    <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      name="twitter:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      name="twitter:url"
-      content="https://eduardoherreraf.github.io/bootstrap-0001-instalacion_de_bootstrap_v5_con_npm_y_vite.html"
-    />
-    <meta name="twitter:site" content="@ehfeduardo" />
-    <!-- Fin Twitter cards -->
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Instalación de Bootstrap V5, NPM y VITE - Ing. Eduardo Herrera Forero" />
+  <meta property="og:description"
+    content="La guía oficial sobre cómo incluir y empaquetar el CSS y JavaScript de Bootstrap en un proyecto utilizando Vite" />
+  <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta property="og:url"
+    content="https://eduardoherreraf.github.io/bootstrap-0001-instalacion_de_bootstrap_v5_con_npm_y_vite.html" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
 
-    <!-- iconos -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="android-chrome-192x192.png"
-    />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- fin iconos -->
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Instalación de Bootstrap V5, NPM y VITE - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description"
+    content="La guía oficial sobre cómo incluir y empaquetar el CSS y JavaScript de Bootstrap en un proyecto utilizando Vite" />
+  <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta name="twitter:url"
+    content="https://eduardoherreraf.github.io/bootstrap-0001-instalacion_de_bootstrap_v5_con_npm_y_vite.html" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
 
-    <title>
-      Instalación de Bootstrap V5, NPM y VITE - Ing. Eduardo Herrera Forero
-    </title>
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
 
-    <script type="module" src="./js/main.js"></script>
+  <title>
+    Instalación de Bootstrap V5, NPM y VITE - Ing. Eduardo Herrera Forero
+  </title>
 
-    <meta
-      name="google-site-verification"
-      content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"
-    />
-  </head>
+  <script type="module" src="./js/main.js"></script>
 
-  <body>
-    <!-- Barra deNavegación -->
-    <nav
-      class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
-    >
-      <div class="container-fluid">
-        <!-- Enlace a la página principal con el logo y nombre -->
-        <a
-          class="navbar-brand d-flex align-items-center ms-2"
-          href="index.html"
-        >
-          <img
-            src="./images/logo.png"
-            alt="Logo de Ing. Eduardo Herrera Forero"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top me-1"
-          />
-          <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
-        </a>
-        <!-- Botón para activar el menú en dispositivos pequeños -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Menú de navegación -->
-        <div
-          class="collapse navbar-collapse ms-auto text-center"
-          id="navbarSupportedContent"
-        >
-          <ul
-            class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100"
-          >
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#portfolio"
-                >PORTAFOLIO</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 publicaciones-activo"
-                href="index.html#blog"
-                >PUBLICACIONES</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
-            </li>
-          </ul>
-        </div>
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Barra deNavegación -->
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
 
-    <!--  principal  -->
-    <div class="container-fluid" id="introduccion">
-      <main class="row">
-        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
-          <!-- vite NPM -->
-          <article
-            class="row border-1 border-bottom pb-3"
-            data-bs-spy="scroll"
-            data-bs-target="#list-example"
-            data-bs-smooth-scroll="true"
-          >
-            <h1>Instalación de Bootstrap V5, NPM y VITE</h1>
-            <div class="mt-5">
-              <h2>Introducción</h2>
-              <p>
-                Esta documentación se realizó con base a la oficial entregada
-                por Bootstrap en su página web
-                <a
-                  href="https://getbootstrap.com/docs/5.3/getting-started/vite/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Bootstrap and Vite</a
-                >, todos los comando que se usaran en este tutorial son
-                ejecutados en la terminal BASH de GIT.
-              </p>
-              <p>
-                Se va a crear un proyecto Bootstrap con Vite desde cero, por lo
-                que es necesario cumplir con algunos requisitos previos y seguir
-                ciertos pasos antes de comenzar. Esta guía asume que se tiene
-                instalado Node.js y que se tiene cierta experiencia con el uso
-                del terminal.
-              </p>
+  <!--  principal  -->
+  <div class="container-fluid" id="introduccion">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!-- vite NPM -->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <h1>Instalación de Bootstrap V5, NPM y VITE</h1>
+          <div class="mt-5">
+            <h2>Introducción</h2>
+            <p>
+              Esta documentación se realizó con base a la oficial entregada
+              por Bootstrap en su página web
+              <a href="https://getbootstrap.com/docs/5.3/getting-started/vite/" target="_blank"
+                rel="noopener noreferrer">Bootstrap and Vite</a>, todos los comando que se usaran en este tutorial son
+              ejecutados en la terminal BASH de GIT.
+            </p>
+            <p>
+              Se va a crear un proyecto Bootstrap con Vite desde cero, por lo
+              que es necesario cumplir con algunos requisitos previos y seguir
+              ciertos pasos antes de comenzar. Esta guía asume que se tiene
+              instalado Node.js y que se tiene cierta experiencia con el uso
+              del terminal.
+            </p>
 
-              <div class="centrar-imagen imagen50">
-                <figure>
-                  <img
-                    src="https://i.ibb.co/SDgmGxnB/bootstrap-vite-2x.png"
-                    class="img-fluid"
-                    alt="Instalación de Bootstrap V5, NPM y VITE"
-                  />
-                  <figcaption>
-                    Instalación de Bootstrap V5, NPM y VITE
-                  </figcaption>
-                </figure>
-              </div>
+            <div class="centrar-imagen imagen50">
+              <figure>
+                <img src="https://i.ibb.co/SDgmGxnB/bootstrap-vite-2x.png" class="img-fluid"
+                  alt="Instalación de Bootstrap V5, NPM y VITE" />
+                <figcaption>
+                  Instalación de Bootstrap V5, NPM y VITE
+                </figcaption>
+              </figure>
             </div>
+          </div>
 
-            <div id="configuracionInicial" class="mt-5">
-              <h2 class="mt-1">Configuración Inicial</h2>
-              <p>
-                <b
-                  >Crear una carpeta de proyecto e inicializar
-                  <code>npm</code></b
-                >: Se creará la carpeta "mi-proyecto" y se inicializará
-                <code>npm</code> con el argumento <code>-y</code>
-                para evitar que haga las preguntas interactivas. Es importante
-                señalar que el nombre de la carpeta puede ser cualquier otro
-                según las necesidades del proyecto.
-              </p>
-              <div class="ej-sintaxis">
-                <pre data-src-status="loaded" tabindex="0">
+          <div id="configuracion-inicial" class="mt-5">
+            <h2>Configuración Inicial</h2>
+            <p>
+              <b>Crear una carpeta de proyecto e inicializar
+                <code>npm</code></b>: Se creará la carpeta "mi-proyecto" y se inicializará
+              <code>npm</code> con el argumento <code>-y</code>
+              para evitar que haga las preguntas interactivas. Es importante
+              señalar que el nombre de la carpeta puede ser cualquier otro
+              según las necesidades del proyecto.
+            </p>
+            <div class="ej-sintaxis">
+              <pre data-src-status="loaded" tabindex="0">
                 <code class="language-bash" data-prismjs-copy="Copy">
                   mkdir mi-proyecto && cd mi-proyecto
                   npm init -y
                 </code>
               </pre>
-              </div>
-              <p>
-                <b>Instalación Vite</b>: Aquí sólo hay una dependencia de la
-                herramienta de compilación. Se Usará
-                <code>--save-dev</code> para indicar que esta dependencia es
-                sólo para uso de desarrollo y no para producción.
-              </p>
-              <div class="ej-sintaxis">
-                <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <p>
+              <b>Instalación Vite</b>: Aquí sólo hay una dependencia de la
+              herramienta de compilación. Se Usará
+              <code>--save-dev</code> para indicar que esta dependencia es
+              sólo para uso de desarrollo y no para producción.
+            </p>
+            <div class="ej-sintaxis">
+              <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     npm i --save-dev vite
                   </code>
                 </pre>
-              </div>
-              <p>
-                <b>Instalar Bootstrap</b>: Se puede instalar Bootstrap. Además,
-                se instalará Popper, ya que es necesario para el posicionamiento
-                de los desplegables, popovers y tooltips. Si no se tiene
-                previsto usar esos componentes, se puede omitir la instalación
-                de este último.
-              </p>
-              <div class="ej-sintaxis">
-                <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <p>
+              <b>Instalar Bootstrap</b>: Se puede instalar Bootstrap. Además,
+              se instalará Popper, ya que es necesario para el posicionamiento
+              de los desplegables, popovers y tooltips. Si no se tiene
+              previsto usar esos componentes, se puede omitir la instalación
+              de este último.
+            </p>
+            <div class="ej-sintaxis">
+              <pre data-src-status="loaded" tabindex="0">
                 <code class="language-bash" data-prismjs-copy="Copy">
                   npm i --save bootstrap @popperjs/core
                 </code>
               </pre>
-              </div>
-              <p>
-                <b>Instalación dependencias adicionales</b>: Además de Vite y
-                Bootstrap, es necesario contar con otra dependencia (Sass) para
-                importar y empaquetar correctamente el CSS de Bootstrap.
-              </p>
-              <div class="ej-sintaxis">
-                <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <p>
+              <b>Instalación dependencias adicionales</b>: Además de Vite y
+              Bootstrap, es necesario contar con otra dependencia (Sass) para
+              importar y empaquetar correctamente el CSS de Bootstrap.
+            </p>
+            <div class="ej-sintaxis">
+              <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     npm i --save-dev sass
                   </code>
                 </pre>
-              </div>
-              <p>
-                Ahora se tiene todas las dependencias necesarias instaladas y
-                configuradas, ya se puede trabajar creando los archivos del
-                proyecto e importando Bootstrap.
-              </p>
+            </div>
+            <p>
+              Ahora se tiene todas las dependencias necesarias instaladas y
+              configuradas, ya se puede trabajar creando los archivos del
+              proyecto e importando Bootstrap.
+            </p>
 
-              <div id="configuracionEspacioTrabajo">
-                <h3 class="mt-1">Configuración del Espacio de Trabajo</h3>
-                <p>
-                  La carpeta "mi-proyecto" ya ha sido creada y se ha
-                  inicializado
-                  <code>npm</code>. Ahora, se procederá a crear la carpeta
-                  "src", el archivo de hojas de estilo y el archivo JavaScript
-                  para completar la estructura del proyecto. Para llevar a cabo
-                  esto, ejecuta el siguiente código dentro de "mi-proyecto".
-                </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+            <div id="configuracionEspacioTrabajo">
+              <h3 class="mt-1">Configuración del Espacio de Trabajo</h3>
+              <p>
+                La carpeta "mi-proyecto" ya ha sido creada y se ha
+                inicializado
+                <code>npm</code>. Ahora, se procederá a crear la carpeta
+                "src", el archivo de hojas de estilo y el archivo JavaScript
+                para completar la estructura del proyecto. Para llevar a cabo
+                esto, ejecuta el siguiente código dentro de "mi-proyecto".
+              </p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       mkdir {src,src/js,src/scss}
                       touch src/index.html src/js/main.js src/scss/styles.scss vite.config.js
                     </code>
                   </pre>
-                </div>
-                <p>
-                  Cuando se haya terminado, el proyecto completo debería tener
-                  este aspecto:
-                </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <p>
+                Cuando se haya terminado, el proyecto completo debería tener
+                este aspecto:
+              </p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       mi-proyecto/
                       ├── src/
@@ -313,22 +238,22 @@
                       └── vite.config.js
                     </code>
                   </pre>
-                </div>
-                <p>
-                  En este punto, todo está en el lugar correcto, pero Vite no
-                  funcionará porque aún no se ha rellenado el archivo
-                  vite.config.js.
-                </p>
               </div>
-              <div id="configuracionVite">
-                <h3 class="mt-1">Configuración de Vite</h3>
-                <p>
-                  En el archivo
-                  <span class="fw-bold text-warning">vite.config.js</span>, se
-                  llena con:
-                </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+              <p>
+                En este punto, todo está en el lugar correcto, pero Vite no
+                funcionará porque aún no se ha rellenado el archivo
+                vite.config.js.
+              </p>
+            </div>
+            <div id="configuracionVite">
+              <h3 class="mt-1">Configuración de Vite</h3>
+              <p>
+                En el archivo
+                <span class="fw-bold text-warning">vite.config.js</span>, se
+                llena con:
+              </p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-javascript" data-prismjs-copy="Copy">
                       const path = require('path')
                       export default {
@@ -342,14 +267,14 @@
                       }
                     </code>
                   </pre>
-                </div>
-                <p>
-                  El archivo
-                  <span class="fw-bold text-warning">src/index.html</span>, se
-                  llena con la siguiente plantilla:
-                </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <p>
+                El archivo
+                <span class="fw-bold text-warning">src/index.html</span>, se
+                llena con la siguiente plantilla:
+              </p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-html" data-prismjs-copy="Copy">
                       &lt;!doctype html&gt;
                       &lt;html lang="en"&gt;
@@ -368,14 +293,14 @@
                       &lt;/html&gt;
                     </code>
                   </pre>
-                </div>
-                <p>
-                  Mientras que el archivo
-                  <span class="fw-bold text-warning">package.json</span> debe
-                  quedar configurado así:
-                </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <p>
+                Mientras que el archivo
+                <span class="fw-bold text-warning">package.json</span> debe
+                quedar configurado así:
+              </p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-json" data-prismjs-copy="Copy">
                       {
                         "scripts": {
@@ -386,38 +311,38 @@
                       }
                     </code>
                   </pre>
-                </div>
-                <p>
-                  Iniciar el proyecto con vite:
-                  <span class="fw-bold text-warning">npm start</span>, en el
-                  navegador
-                </p>
               </div>
-            </div>
-
-            <div id="importacionBootstrapv5" class="mt-5">
-              <h2 class="mt-1">Importación Bootstrap v5</h2>
               <p>
-                <b>Importación de archivos CSS de Bootstrap:</b> En el archivo
-                <span class="fw-bold text-warning">src/scss/styles.scss</span>
-                se importa los estilos CSS:
+                Iniciar el proyecto con vite:
+                <span class="fw-bold text-warning">npm start</span>, en el
+                navegador
               </p>
-              <div class="ej-sintaxis">
-                <pre data-src-status="loaded" tabindex="0">
+            </div>
+          </div>
+
+          <div id="importacion-bootstrap-v5" class="mt-5">
+            <h2>Importación Bootstrap v5</h2>
+            <p>
+              <b>Importación de archivos CSS de Bootstrap:</b> En el archivo
+              <span class="fw-bold text-warning">src/scss/styles.scss</span>
+              se importa los estilos CSS:
+            </p>
+            <div class="ej-sintaxis">
+              <pre data-src-status="loaded" tabindex="0">
                   <code class="language-css" data-prismjs-copy="Copy">
                     // Import all of Bootstrap's CSS
                     @import "bootstrap/scss/bootstrap";
                   </code>
                 </pre>
-              </div>
-              <p>
-                <b>Importación del archivo JavaScript de Bootstrap:</b>
-                El archivo
-                <span class="fw-bold text-warning">src/js/main.js</span> se
-                carga e importa los CSS y JS de Bootstrap agregando.
-              </p>
-              <div class="ej-sintaxis">
-                <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <p>
+              <b>Importación del archivo JavaScript de Bootstrap:</b>
+              El archivo
+              <span class="fw-bold text-warning">src/js/main.js</span> se
+              carga e importa los CSS y JS de Bootstrap agregando.
+            </p>
+            <div class="ej-sintaxis">
+              <pre data-src-status="loaded" tabindex="0">
                   <code class="language-js" data-prismjs-copy="Copy">
                     // Import our custom CSS
                     import '../scss/styles.scss'
@@ -425,13 +350,13 @@
                     import * as bootstrap from 'bootstrap'
                   </code>
                 </pre>
-              </div>
-              <p>
-                También puede importar plugins JavaScript individualmente según
-                sea necesario para mantener el tamaño de los paquetes bajo:
-              </p>
-              <div class="ej-sintaxis">
-                <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <p>
+              También puede importar plugins JavaScript individualmente según
+              sea necesario para mantener el tamaño de los paquetes bajo:
+            </p>
+            <div class="ej-sintaxis">
+              <pre data-src-status="loaded" tabindex="0">
                   <code class="language-js" data-prismjs-copy="Copy">
                     import Alert from 'bootstrap/js/dist/alert';
                     
@@ -439,45 +364,42 @@
                     import { Tooltip, Toast, Popover } from 'bootstrap';
                   </code>
                 </pre>
-              </div>
-              <p>
-                Con las fuentes Sass y JS de Bootstrap completamente cargadas,
-                el servidor de desarrollo local debería tener ahora este
-                aspecto:
-              </p>
-              <div class="centrar-imagen imagen50">
-                <figure>
-                  <img
-                    src="https://i.ibb.co/398cGstB/vite-dev-server-bootstrap.png"
-                    class="img-fluid"
-                    alt="Vite dev server funcionando con Bootstrap"
-                  />
-                  <figcaption>
-                    Vite dev server funcionando con Bootstrap.
-                  </figcaption>
-                </figure>
-              </div>
             </div>
+            <p>
+              Con las fuentes Sass y JS de Bootstrap completamente cargadas,
+              el servidor de desarrollo local debería tener ahora este
+              aspecto:
+            </p>
+            <div class="centrar-imagen imagen50">
+              <figure>
+                <img src="https://i.ibb.co/398cGstB/vite-dev-server-bootstrap.png" class="img-fluid"
+                  alt="Vite dev server funcionando con Bootstrap" />
+                <figcaption>
+                  Vite dev server funcionando con Bootstrap.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
 
-            <div id="instalacionpluginPurgeCSSHTML" class="mt-5">
-              <h2 class="mt-1">Instalación Plugin PurgeCSS y Plugin HTML</h2>
-              <div class="ej-sintaxis">
-                <pre data-src-status="loaded" tabindex="0">
+          <div id="instalacion-plugin-Purgecss-y-plugin-html" class="mt-5">
+            <h2>Instalación Plugin PurgeCSS y Plugin HTML</h2>
+            <div class="ej-sintaxis">
+              <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     npm i vite-plugin-purgecss
                     npm i vite-plugin-html
                   </code>
                 </pre>
-              </div>
-              <p>
-                El plugin <b>purgecss</b> elimina toda clase de CSS que no sea
-                utilizada y el plugin <b>HTML</b> elimina todo espacio extra o
-                cambio de línea del documento HTML y deja todo el código en una
-                sola línea.
-              </p>
-              <p>El archivo vite.cfg.js se debe configurar asi:</p>
-              <div class="ej-sintaxis">
-                <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <p>
+              El plugin <b>purgecss</b> elimina toda clase de CSS que no sea
+              utilizada y el plugin <b>HTML</b> elimina todo espacio extra o
+              cambio de línea del documento HTML y deja todo el código en una
+              sola línea.
+            </p>
+            <p>El archivo vite.cfg.js se debe configurar asi:</p>
+            <div class="ej-sintaxis">
+              <pre data-src-status="loaded" tabindex="0">
                   <code class="language-javascript" data-prismjs-copy="Copy">
                     import htmlPurge from 'vite-plugin-purgecss'
                     import { createHtmlPlugin } from 'vite-plugin-html'
@@ -502,18 +424,18 @@
                     }
                   </code>
                 </pre>
-              </div>
             </div>
+          </div>
 
-            <div id="configuracionesFinales" class="mt-5">
-              <h2 class="mt-1">Configuraciones Finales</h2>
-              <p>
-                El archivo
-                <span class="fw-bold text-warning">package.json</span>,
-                finalmente se debe tener asi:
-              </p>
-              <div class="ej-sintaxis">
-                <pre data-src-status="loaded" tabindex="0">
+          <div id="configuraciones-finales" class="mt-5">
+            <h2>Configuraciones Finales</h2>
+            <p>
+              El archivo
+              <span class="fw-bold text-warning">package.json</span>,
+              finalmente se debe tener asi:
+            </p>
+            <div class="ej-sintaxis">
+              <pre data-src-status="loaded" tabindex="0">
                   <code class="language-javascript" data-prismjs-copy="Copy">
                     {
                       "name": "mi-proyecto",
@@ -541,30 +463,30 @@
                     }
                   </code>
                 </pre>
-              </div>
             </div>
+          </div>
 
-            <div id="compilacionProyectoProduccion" class="mt-5">
-              <h2 class="mt-1">Compilación del proyecto para Producción</h2>
+          <div id="compilacion-del-proyecto-para-produccion" class="mt-5">
+            <h2>Compilación del proyecto para Producción</h2>
+            <p>
+              Una vez finalizado el desarrollo, para generar la versión
+              optimizada para producción, se debe ejecutar el comando
+              <span class="fw-bold text-warning">npm run build</span>. Esto
+              procesará los archivos y guardará el resultado en la carpeta
+              <b>dist</b>, listo para su despliegue.
+            </p>
+
+            <div id="correccionArchivoIndex.html">
+              <h3 class="mt-1">Corrección del Archivo <b>index.html</b></h3>
               <p>
-                Una vez finalizado el desarrollo, para generar la versión
-                optimizada para producción, se debe ejecutar el comando
-                <span class="fw-bold text-warning">npm run build</span>. Esto
-                procesará los archivos y guardará el resultado en la carpeta
-                <b>dist</b>, listo para su despliegue.
+                Se debe corregir las rutas de los archivos CSS y JS agregando
+                un punto (.) antes del slash (&#47;). La estructura en la
+                sección
+                <span class="fw-bold text-warning">&lt;head&gt;</span> del
+                archivo debe quedar de la siguiente manera:
               </p>
-
-              <div id="correccionArchivoIndex.html">
-                <h3 class="mt-1">Corrección del Archivo <b>index.html</b></h3>
-                <p>
-                  Se debe corregir las rutas de los archivos CSS y JS agregando
-                  un punto (.) antes del slash (&#47;). La estructura en la
-                  sección
-                  <span class="fw-bold text-warning">&lt;head&gt;</span> del
-                  archivo debe quedar de la siguiente manera:
-                </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-html" data-prismjs-copy="Copy">
                       &lt;head&gt;
                       ...
@@ -573,154 +495,176 @@
                       &lt;/head&gt;
                     </code>
                   </pre>
+              </div>
+              <p>
+                Si se tienen imágenes que están guardadas en la carpeta
+                <span class="fw-bold text-warning">assets/</span>, también se
+                debe corregir la dirección colocándole el punto antes del
+                slash (/) a su dirección, p. ej.
+                <span class="fw-bold text-warning">./assets/sun-86eb3c88.svg</span>.
+              </p>
+              <p>
+                Si la imagen se encuentra en la etiqueta
+                <span class="fw-bold text-warning">&lt;script&gt;</span>, esta
+                no aparecerá en la carpeta
+                <span class="fw-bold text-warning">assets/</span>, se debe
+                copiar en esta carpeta y su dirección se debe cambiar p. ej de
+                <span class="fw-bold text-warning">./images/moon.svg</span> a
+                <span class="fw-bold text-warning">./assets/moon.svg</span>
+              </p>
+            </div>
+          </div>
+        </article>
+        <!-- fin vite NPM -->
+
+        <!--  comentarios  -->
+        <article class="row pt-5" id="comments">
+          <h2>COMENTARIOS</h2>
+          <p>
+            Si tiene alguna inquietud, duda o ha encontrado algún error, por
+            favor infórmelo a través del formulario disponible para este
+            propósito.
+          </p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
+
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
                 </div>
-                <p>
-                  Si se tienen imágenes que están guardadas en la carpeta
-                  <span class="fw-bold text-warning">assets/</span>, también se
-                  debe corregir la dirección colocándole el punto antes del
-                  slash (/) a su dirección, p. ej.
-                  <span class="fw-bold text-warning"
-                    >./assets/sun-86eb3c88.svg</span
-                  >.
-                </p>
-                <p>
-                  Si la imagen se encuentra en la etiqueta
-                  <span class="fw-bold text-warning">&lt;script&gt;</span>, esta
-                  no aparecerá en la carpeta
-                  <span class="fw-bold text-warning">assets/</span>, se debe
-                  copiar en esta carpeta y su dirección se debe cambiar p. ej de
-                  <span class="fw-bold text-warning">./images/moon.svg</span> a
-                  <span class="fw-bold text-warning">./assets/moon.svg</span>
-                </p>
+
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
+
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                  Enviar
+                </button>
+              </fieldset>
+
+              <p class="small text-center">
+                La política de privacidad, y los términos y condiciones están
+                disponibles en el formulario de contacto.
+              </p>
+            </form>
+          </div>
+        </article>
+        <!--  fin comentarios  -->
+      </section>
+      <!--  barra lateral  -->
+      <!--  barra lateral  -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        <h1>En Este Artículo</h1>
+        <div class="menu-scroll">
+          <div class="menu-container">
+            <div class="border border-1">
+              <div class="menu-item">
+                <a href="#introduccion" class="simple-link">Introducción</a>
+              </div>
+              <div class="menu-item">
+                <a href="#configuracion-inicial" class="simple-link">Configuración Inicial</a>
+              </div>
+              <div class="menu-item">
+                <a href="#importacion-bootstrap-v5" class="simple-link">Importación Bootstrap v5</a>
+              </div>
+              <div class="menu-item">
+                <a href="#instalacion-plugin-Purgecss-y-plugin-html" class="simple-link">Instalación Plugin PurgeCSS y
+                  Plugin HTML</a>
+              </div>
+              <li class="menu-item">
+                <a href="#configuraciones-finales" class="simple-link">Configuraciones Finales</a>
+              </li>
+              <div class="menu-item">
+                <a href="#compilacion-del-proyecto-para-produccion" class="simple-link">Compilación del proyecto para
+                  Producción</a>
+              </div>
+              <!-- Comentarios  -->
+              <div class="menu-item">
+                <a href="#comments" class="simple-link">Comentarios</a>
               </div>
             </div>
-          </article>
-          <!-- fin vite NPM -->
-
-          <!--  comentarios  -->
-          <article class="row pt-5" id="comments">
-            <h2>COMENTARIOS</h2>
-            <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por
-              favor infórmelo a través del formulario disponible para este
-              propósito.
-            </p>
-            <div class="d-flex justify-content-center">
-              <form
-                action="https://formspree.io/f/mdkdawkg"
-                method="POST"
-                id="myForm"
-              >
-                <fieldset class="d-flex flex-column gap-3">
-                  <legend class="text-center fs-4">Deje su comentario</legend>
-
-                  <div class="d-flex flex-column">
-                    <label for="name">Nombre:</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="User"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
-
-                  <div class="d-flex flex-column">
-                    <label for="email">Email:</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="user@mail.com"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
-
-                  <div class="d-flex flex-column">
-                    <label for="message">Mensaje:</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      cols="30"
-                      rows="5"
-                      placeholder="Su comentario..."
-                      class="form-control rounded-3"
-                      required
-                    ></textarea>
-                  </div>
-
-                  <button
-                    type="submit"
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
-                  >
-                    Enviar
-                  </button>
-                </fieldset>
-
-                <p class="small text-center">
-                  La política de privacidad, y los términos y condiciones están
-                  disponibles en el formulario de contacto.
-                </p>
-              </form>
+          </div>
+        </div>
+      </aside>
+      <!--  fin barra lateral  -->
+    </main>
+  </div>
+  <!--  fin principal  -->
+        <!--  pie de pagina  -->
+    <footer class="row border-top border-1 m-1 mt-auto">
+      <div class="row">
+        <!-- contacto -->
+        <address class="col-lg-4 d-flex flex-column align-items-center">
+          <div class="text-center fs-2">Contacto</div>
+          <div class="d-flex flex-row align-items-center">
+            <i class="bi bi-envelope-at fs-3"></i>
+            <span class="ms-3">
+              <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+            </span>
+          </div>
+          <div class="d-flex flex-row align-items-center">
+            <i class="bi bi-geo-alt fs-3"></i>
+            <span class="ms-3">Bogotá D. C. - Colombia</span>
+          </div>
+        </address>
+        <!-- Derechos de autor -->
+        <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+          <div>
+            <i class="bi bi-c-circle fs-5"></i>
+          </div>
+          <div class="ms-2">All Rights Reserved 2025</div>
+        </div>
+        <!-- redes sociales -->
+        <div class="col-lg-4 d-flex flex-column align-items-center">
+          <div class="text-center fs-2">Redes Sociales</div>
+          <div class="d-flex justify-content-evenly align-items-center gap-5">
+            <div>
+              <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-linkedin fs-1"></i>
+              </a>
             </div>
-          </article>
-          <!--  fin comentarios  -->
-        </section>
-        <!--  barra lateral  -->
-        <aside class="col-lg-3 d-none d-lg-block pt-5">
-          <h1>En Este Artículo</h1>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a href="#introduccion">Introducción</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#configuracionInicial">Configuración Inicial</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#importacionBootstrapv5">Importación Bootstrap v5</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#instalacionpluginPurgeCSSHTML"
-                >Instalación Plugin PurgeCSS y Plugin HTML</a
-              >
-            </li>
-            <li class="list-group-item">
-              <a href="#configuracionesFinales">Configuraciones Finales</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#compilacionProyectoProduccion"
-                >Compilación del proyecto para Producción</a
-              >
-            </li>
-            <li class="list-group-item">
-              <a href="#comments">Comentarios</a>
-            </li>
-          </ul>
-        </aside>
-        <!--  fin barra lateral  -->
-      </main>
-    </div>
-    <!--  fin principal  -->
+            <div>
+              <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github fs-1"></i>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-facebook fs-1"></i>
+              </a>
+            </div>
+            <div>
+              <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-twitter-x fs-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex align-items-center justify-content-center gap-2"></div>
+    </footer>
+    <!--  pie de pagina fin  -->
 
-    <!-- button to top -->
-    <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        fill="currentColor"
-        class="bi bi-arrow-bar-up"
-        viewBox="0 0 16 16"
-        style="margin-left: -2px"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"
-        ></path>
-      </svg>
-    </button>
-    <!-- Fin button to top -->
-  </body>
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
 </html>

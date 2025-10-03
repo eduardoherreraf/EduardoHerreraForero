@@ -1,254 +1,182 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-  <head>
-    <!-- Metaetiquetas -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Aprende a utilizar tuplas y diccionarios en Python: estructuras de datos inmutables y colecciones clave-valor. Ejemplos prácticos, diferencias y casos de uso para programación eficiente."
-    />
-    <meta
-      name="title"
-      content="Tuplas y Diccionarios Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta name="author" content="Ing. Eduardo Herrera Forero" />
-    <meta name="application-name" content="EHF" />
-    <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://eduardoherreraf.github.io/cursoPython3-0405_tuplas_y_diccionarios.html"
-    />
-    <!-- Fin Metaetiquetas -->
 
-    <!-- Open Graph data -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Tuplas y Diccionarios Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      property="og:description"
-      content="Aprende a utilizar tuplas y diccionarios en Python: estructuras de datos inmutables y colecciones clave-valor. Ejemplos prácticos, diferencias y casos de uso para programación eficiente."
-    />
-    <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      property="og:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      property="og:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0405_tuplas_y_diccionarios.html"
-    />
-    <meta property="og:locale" content="es_CO" />
-    <!-- fin Open Graph data -->
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Aprende a utilizar tuplas y diccionarios en Python: estructuras de datos inmutables y colecciones clave-valor. Ejemplos prácticos, diferencias y casos de uso para programación eficiente." />
+  <meta name="title" content="Tuplas y Diccionarios Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eduardoherreraf.github.io/cursoPython3-0405_tuplas_y_diccionarios.html" />
+  <!-- Fin Metaetiquetas -->
 
-    <!-- Twitter cards -->
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="Tuplas y Diccionarios Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      name="twitter:description"
-      content="Aprende a utilizar tuplas y diccionarios en Python: estructuras de datos inmutables y colecciones clave-valor. Ejemplos prácticos, diferencias y casos de uso para programación eficiente."
-    />
-    <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      name="twitter:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      name="twitter:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0405_tuplas_y_diccionarios.html"
-    />
-    <meta name="twitter:site" content="@ehfeduardo" />
-    <!-- Fin Twitter cards -->
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tuplas y Diccionarios Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta property="og:description"
+    content="Aprende a utilizar tuplas y diccionarios en Python: estructuras de datos inmutables y colecciones clave-valor. Ejemplos prácticos, diferencias y casos de uso para programación eficiente." />
+  <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta property="og:url" content="https://eduardoherreraf.github.io/cursoPython3-0405_tuplas_y_diccionarios.html" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
 
-    <!-- iconos -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="android-chrome-192x192.png"
-    />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- fin iconos -->
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Tuplas y Diccionarios Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description"
+    content="Aprende a utilizar tuplas y diccionarios en Python: estructuras de datos inmutables y colecciones clave-valor. Ejemplos prácticos, diferencias y casos de uso para programación eficiente." />
+  <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta name="twitter:url" content="https://eduardoherreraf.github.io/cursoPython3-0405_tuplas_y_diccionarios.html" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
 
-    <title>Tuplas y Diccionarios Python 3 - Ing. Eduardo Herrera Forero.</title>
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
 
-    <script type="module" src="./js/main.js"></script>
+  <title>Tuplas y Diccionarios Python 3 - Ing. Eduardo Herrera Forero.</title>
 
-    <meta
-      name="google-site-verification"
-      content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"
-    />
-  </head>
+  <script type="module" src="./js/main.js"></script>
 
-  <body>
-    <!-- Barra deNavegación -->
-    <nav
-      class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
-    >
-      <div class="container-fluid">
-        <!-- Enlace a la página principal con el logo y nombre -->
-        <a
-          class="navbar-brand d-flex align-items-center ms-2"
-          href="index.html"
-        >
-          <img
-            src="./images/logo.png"
-            alt="Logo de Ing. Eduardo Herrera Forero"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top me-1"
-          />
-          <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
-        </a>
-        <!-- Botón para activar el menú en dispositivos pequeños -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Menú de navegación -->
-        <div
-          class="collapse navbar-collapse ms-auto text-center"
-          id="navbarSupportedContent"
-        >
-          <ul
-            class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100"
-          >
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#portfolio"
-                >PORTAFOLIO</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 publicaciones-activo"
-                href="index.html#blog"
-                >PUBLICACIONES</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
-            </li>
-          </ul>
-        </div>
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Barra deNavegación -->
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
 
-    <!--  principal  -->
-    <div class="container-fluid" id="introduccion">
-      <main class="row">
-        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
-          <!--  Tuplas y Diccionarios en Python  -->
-          <article
-            class="row border-1 border-bottom pb-3"
-            data-bs-spy="scroll"
-            data-bs-target="#list-example"
-            data-bs-smooth-scroll="true"
-          >
-            <div>
-              <header>
-                <h1>Tuplas y Diccionarios en Python</h1>
-              </header>
-              <!-- Introducción -->
-              <div class="mt-5">
-                <h2>Introducción</h2>
-                <p>
-                  Python es un lenguaje de programación ampliamente utilizado
-                  debido a su simplicidad y versatilidad. Dos de las estructuras
-                  de datos más comunes y útiles en Python son las tuplas y los
-                  diccionarios. Ambas estructuras permiten almacenar y manipular
-                  datos de manera eficiente, pero tienen características y usos
-                  distintos.
-                </p>
-                <div class="centrar-imagen imagen50">
-                  <figure>
-                    <img
-                      src="https://i.ibb.co/pxNBfKh/tuplasdiccionarios.jpg"
-                      class="img-fluid"
-                      alt="Tuplas y Diccionarios en Python "
-                      title="Tuplas en Python: colecciones ordenadas e inmutables para almacenar datos."
-                    />
-                    <figcaption>Tuplas y Diccionarios en Python</figcaption>
-                  </figure>
-                </div>
+  <!--  principal  -->
+  <div class="container-fluid" id="introduccion">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!--  Tuplas y Diccionarios en Python  -->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <div>
+            <header>
+              <h1>Tuplas y Diccionarios en Python</h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-5">
+              <h2>Introducción</h2>
+              <p>
+                Python es un lenguaje de programación ampliamente utilizado
+                debido a su simplicidad y versatilidad. Dos de las estructuras
+                de datos más comunes y útiles en Python son las tuplas y los
+                diccionarios. Ambas estructuras permiten almacenar y manipular
+                datos de manera eficiente, pero tienen características y usos
+                distintos.
+              </p>
+              <div class="centrar-imagen imagen50">
+                <figure>
+                  <img src="https://i.ibb.co/pxNBfKh/tuplasdiccionarios.jpg" class="img-fluid"
+                    alt="Tuplas y Diccionarios en Python "
+                    title="Tuplas en Python: colecciones ordenadas e inmutables para almacenar datos." />
+                  <figcaption>Tuplas y Diccionarios en Python</figcaption>
+                </figure>
               </div>
+            </div>
 
-              <!-- Tuplas en Python -->
-              <div id="tuplasEnPython" class="mt-5">
-                <h2 class="mt-1">Tuplas en Python</h2>
-                <!-- Características de las Tuplas -->
-                <div>
-                  <h3>Características de las Tuplas</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Inmutables</span>: No se pueden
-                      modificar después de ser creadas.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Ordenadas</span>: Los elementos
-                      tienen un orden definido y se pueden acceder mediante
-                      índices.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Heterogéneas</span>: Pueden
-                      almacenar elementos de diferentes tipos (números, cadenas,
-                      listas, etc.).
-                    </li>
-                    <li>
-                      <span class="fw-bold">Rapidez</span>: Más rápidas que las
-                      listas, debido a su inmutabilidad.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Hashable</span>: Pueden usarse como
-                      claves en un diccionario si todos sus elementos también
-                      son hashables.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Características de las Tuplas fin -->
-                <!-- Sintaxis para crear tuplas: -->
-                <div>
-                  <h3>Sintaxis para Crear Tuplas</h3>
-                  <p>
-                    Las tuplas son colecciones ordenadas e inmutables de
-                    elementos. Esto significa que, una vez creadas, sus valores
-                    no pueden modificarse. Se definen principalmente usando
-                    paréntesis <code class="language-python">()</code> y pueden
-                    contener elementos de diferentes tipos, incluyendo objetos
-                    como listas o diccionarios. Aunque es posible declararlas
-                    sin paréntesis, esto no se recomienda ya que reduce la
-                    legibilidad del código.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+            <!-- Tuplas en Python -->
+            <div id="tuplas-en-python" class="mt-5">
+              <h2>Tuplas en Python</h2>
+              <!-- Características de las Tuplas -->
+              <div>
+                <h3>Características de las Tuplas</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Inmutables</span>: No se pueden
+                    modificar después de ser creadas.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Ordenadas</span>: Los elementos
+                    tienen un orden definido y se pueden acceder mediante
+                    índices.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Heterogéneas</span>: Pueden
+                    almacenar elementos de diferentes tipos (números, cadenas,
+                    listas, etc.).
+                  </li>
+                  <li>
+                    <span class="fw-bold">Rapidez</span>: Más rápidas que las
+                    listas, debido a su inmutabilidad.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Hashable</span>: Pueden usarse como
+                    claves en un diccionario si todos sus elementos también
+                    son hashables.
+                  </li>
+                </ul>
+              </div>
+              <!-- Características de las Tuplas fin -->
+              <!-- Sintaxis para crear tuplas: -->
+              <div>
+                <h3>Sintaxis para Crear Tuplas</h3>
+                <p>
+                  Las tuplas son colecciones ordenadas e inmutables de
+                  elementos. Esto significa que, una vez creadas, sus valores
+                  no pueden modificarse. Se definen principalmente usando
+                  paréntesis <code class="language-python">()</code> y pueden
+                  contener elementos de diferentes tipos, incluyendo objetos
+                  como listas o diccionarios. Aunque es posible declararlas
+                  sin paréntesis, esto no se recomienda ya que reduce la
+                  legibilidad del código.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Tupla vacía
                         tupla_vacia = ()
@@ -260,15 +188,15 @@
                         tupla_implicita = 1, "Python", True
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Sintaxis para crear tuplas: fin -->
-                <!-- Acceso a Elementos -->
-                <div>
-                  <h3>Acceso a Elementos</h3>
-                  <p>Se realiza mediante índices (empezando en 0).</p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Sintaxis para crear tuplas: fin -->
+              <!-- Acceso a Elementos -->
+              <div>
+                <h3>Acceso a Elementos</h3>
+                <p>Se realiza mediante índices (empezando en 0).</p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         tupla = (10, 20, 30, 40)
                         # Acceder al primer elemento
@@ -280,118 +208,118 @@
                         print(tupla[:-2]) # Salida: 10, 20
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Acceso a Elementos fin -->
-                <!-- Operaciones Comunes -->
-                <div>
-                  <h3>Operaciones Comunes</h3>
-                  <p>
-                    Aunque las tuplas son inmutables, se pueden realizar varias
-                    operaciones con ellas.
-                  </p>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Longitud</span>:
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Acceso a Elementos fin -->
+              <!-- Operaciones Comunes -->
+              <div>
+                <h3>Operaciones Comunes</h3>
+                <p>
+                  Aunque las tuplas son inmutables, se pueden realizar varias
+                  operaciones con ellas.
+                </p>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Longitud</span>:
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             print(len(tupla))  # Salida: 4
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Concatenación</span>:
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Concatenación</span>:
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             tupla1 = (1, 2)
                             tupla2 = (3, 4)
                             print(tupla1 + tupla2)  # Salida: (1, 2, 3, 4)
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Repetición</span>:
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Repetición</span>:
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             tupla = (1, 2)
                             print(tupla * 3)  # Salida: (1, 2, 1, 2, 1, 2)
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Pertenencia</span>:
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Pertenencia</span>:
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             print(3 in tupla)  # Salida: False
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Desempaquetado</span>:
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Desempaquetado</span>:
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             tupla = (1, 2, 3)
                             a, b, c = tupla
                             print(a, b, c)  # Salida: 1 2 3
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <!-- Operaciones Comunes fin -->
-                <!-- Métodos de las Tuplas -->
-                <div>
-                  <h3>Métodos de las Tuplas</h3>
-                  <p>
-                    Las tuplas tienen pocos métodos debido a su naturaleza
-                    inmutable.
-                  </p>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">count()</span>: Devuelve cuántas
-                      veces aparece un elemento.
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- Operaciones Comunes fin -->
+              <!-- Métodos de las Tuplas -->
+              <div>
+                <h3>Métodos de las Tuplas</h3>
+                <p>
+                  Las tuplas tienen pocos métodos debido a su naturaleza
+                  inmutable.
+                </p>
+                <ul>
+                  <li>
+                    <span class="fw-bold">count()</span>: Devuelve cuántas
+                    veces aparece un elemento.
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             tupla = (1, 2, 2, 3)
                             print(tupla.count(2))  # Salida: 2
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold">index()</span>: Devuelve el índice
-                      de la primera aparición de un elemento.
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">index()</span>: Devuelve el índice
+                    de la primera aparición de un elemento.
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             print(tupla.index(2))  # Salida: 1
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <!-- Métodos de las Tuplas fin -->
-                <!-- Ejemplo Práctico -->
-                <div>
-                  <h3>Ejemplo Práctico</h3>
-                  <p>
-                    Un ejemplo típico del uso de tuplas es para representar
-                    coordenadas o datos constantes.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- Métodos de las Tuplas fin -->
+              <!-- Ejemplo Práctico -->
+              <div>
+                <h3>Ejemplo Práctico</h3>
+                <p>
+                  Un ejemplo típico del uso de tuplas es para representar
+                  coordenadas o datos constantes.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Coordenadas de un punto
                         coordenadas = (10.5, 20.3)
@@ -400,232 +328,226 @@
                         print(f"X: {x}, Y: {y}")  # Salida: X: 10.5, Y: 20.3
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Ejemplo Práctico fin -->
-                <!-- Ventajas de las Tuplas -->
-                <div>
-                  <h3>Ventajas de las Tuplas</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Seguridad</span>: Al ser inmutables,
-                      garantizan que los datos no cambien accidentalmente.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Eficiencia</span>: Son más rápidas
-                      que las listas.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Usabilidad en estructuras complejas</span
-                      >: Por ejemplo, como claves en un diccionario.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Ventajas de las Tuplas fin -->
               </div>
-              <!-- Tuplas en Python Fin -->
-              <!-- Diccionarios en Python -->
-              <div id="diccionariosEnPython" class="mt-5">
-                <h2 class="mt-1">Diccionarios en Python</h2>
-                <p>
-                  En Python, los diccionarios son estructuras de datos que
-                  permiten almacenar pares de clave-valor. Se utilizan cuando es
-                  necesario relacionar datos, donde cada clave actúa como un
-                  identificador único para un valor asociado. Los diccionarios
-                  son mutables, lo que significa que pueden modificarse después
-                  de su creación, y son muy eficientes para búsquedas y
-                  manipulaciones basadas en claves.
-                </p>
-                <!-- Características Principales de los Diccionarios -->
-                <div>
-                  <h3>Características Principales de los Diccionarios</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Claves únicas</span>: Cada clave en
-                      el diccionario debe ser única.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Claves inmutables</span>: Solo tipos
-                      inmutables como cadenas, números y tuplas (si no contienen
-                      elementos mutables) pueden ser claves.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Acceso rápido</span>: Acceder a un
-                      valor por su clave es muy eficiente.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Características Principales de los Diccionarios fin -->
-                <!-- Cómo Crear un Diccionario -->
-                <div>
-                  <h3>Cómo Crear un Diccionario</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Usando llaves {}</span>:
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+              <!-- Ejemplo Práctico fin -->
+              <!-- Ventajas de las Tuplas -->
+              <div>
+                <h3>Ventajas de las Tuplas</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Seguridad</span>: Al ser inmutables,
+                    garantizan que los datos no cambien accidentalmente.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Eficiencia</span>: Son más rápidas
+                    que las listas.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Usabilidad en estructuras complejas</span>: Por ejemplo, como claves en un
+                    diccionario.
+                  </li>
+                </ul>
+              </div>
+              <!-- Ventajas de las Tuplas fin -->
+            </div>
+            <!-- Tuplas en Python Fin -->
+            <!-- Diccionarios en Python -->
+            <div id="diccionarios-en-python" class="mt-5">
+              <h2>Diccionarios en Python</h2>
+              <p>
+                En Python, los diccionarios son estructuras de datos que
+                permiten almacenar pares de clave-valor. Se utilizan cuando es
+                necesario relacionar datos, donde cada clave actúa como un
+                identificador único para un valor asociado. Los diccionarios
+                son mutables, lo que significa que pueden modificarse después
+                de su creación, y son muy eficientes para búsquedas y
+                manipulaciones basadas en claves.
+              </p>
+              <!-- Características Principales de los Diccionarios -->
+              <div>
+                <h3>Características Principales de los Diccionarios</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Claves únicas</span>: Cada clave en
+                    el diccionario debe ser única.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Claves inmutables</span>: Solo tipos
+                    inmutables como cadenas, números y tuplas (si no contienen
+                    elementos mutables) pueden ser claves.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Acceso rápido</span>: Acceder a un
+                    valor por su clave es muy eficiente.
+                  </li>
+                </ul>
+              </div>
+              <!-- Características Principales de los Diccionarios fin -->
+              <!-- Cómo Crear un Diccionario -->
+              <div>
+                <h3>Cómo Crear un Diccionario</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Usando llaves {}</span>:
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             mi_diccionario = {"nombre": "Carlos", "edad": 30, "ciudad": "Bogotá"}
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Usando la función dict()</span>:
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Usando la función dict()</span>:
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             mi_diccionario = dict(nombre="Carlos", edad=30, ciudad="Bogotá")
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <!-- Cómo Crear un Diccionario fin -->
-                <!-- Operaciones Comunes -->
-                <div>
-                  <h3>Operaciones Comunes</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Acceder a elementos</span>:
-                      <ul>
-                        <li>
-                          <span class="fw-bold">Se utiliza la clave</span>:
-                          <div class="ej-sintaxis">
-                            <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- Cómo Crear un Diccionario fin -->
+              <!-- Operaciones Comunes -->
+              <div>
+                <h3>Operaciones Comunes</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Acceder a elementos</span>:
+                    <ul>
+                      <li>
+                        <span class="fw-bold">Se utiliza la clave</span>:
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 print(mi_diccionario["nombre"])  # Output: Carlos
                               </code>
                             </pre>
-                          </div>
-                        </li>
-                        <li>
-                          <span class="fw-bold">Usando la función dict()</span>:
-                          Si una clave no existe, el método
-                          <code class="language-python">get()</code> devuelve
-                          <code class="language-python">None</code> (o un valor
-                          por defecto especificado):
-                          <div class="ej-sintaxis">
-                            <pre data-src-status="loaded" tabindex="0">
+                        </div>
+                      </li>
+                      <li>
+                        <span class="fw-bold">Usando la función dict()</span>:
+                        Si una clave no existe, el método
+                        <code class="language-python">get()</code> devuelve
+                        <code class="language-python">None</code> (o un valor
+                        por defecto especificado):
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 print(mi_diccionario.get("profesión", "No especificada"))  # Output: No especificada
                               </code>
                             </pre>
-                          </div>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Agregar o actualizar elementos</span
-                      >:
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Agregar o actualizar elementos</span>:
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             mi_diccionario["profesión"] = "Ingeniero"  # Agrega una nueva clave-valor
                             mi_diccionario["edad"] = 31  # Actualiza el valor de una clave existente
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Eliminar elementos</span>:
-                      <ul>
-                        <li>
-                          <span class="fw-bold">Con <del>del</del></span
-                          >:
-                          <div class="ej-sintaxis">
-                            <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Eliminar elementos</span>:
+                    <ul>
+                      <li>
+                        <span class="fw-bold">Con <del>del</del></span>:
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 del mi_diccionario["ciudad"]
                               </code>
                             </pre>
-                          </div>
-                        </li>
-                        <li>
-                          <span class="fw-bold"
-                            >Con <del>.pop()</del> (devuelve el valor
-                            eliminado)</span
-                          >:
-                          <div class="ej-sintaxis">
-                            <pre data-src-status="loaded" tabindex="0">
+                        </div>
+                      </li>
+                      <li>
+                        <span class="fw-bold">Con <del>.pop()</del> (devuelve el valor
+                          eliminado)</span>:
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 edad = mi_diccionario.pop("edad")
                               </code>
                             </pre>
-                          </div>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Iterar sobre un diccionario</span>:
-                      <ul>
-                        <li>
-                          <span class="fw-bold">Claves</span>:
-                          <div class="ej-sintaxis">
-                            <pre data-src-status="loaded" tabindex="0">
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Iterar sobre un diccionario</span>:
+                    <ul>
+                      <li>
+                        <span class="fw-bold">Claves</span>:
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 for clave in mi_diccionario:
                                     print(clave)
                               </code>
                             </pre>
-                          </div>
-                        </li>
-                        <li>
-                          <span class="fw-bold">Valores</span>:
-                          <div class="ej-sintaxis">
-                            <pre data-src-status="loaded" tabindex="0">
+                        </div>
+                      </li>
+                      <li>
+                        <span class="fw-bold">Valores</span>:
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 for valor in mi_diccionario.values():
                                     print(valor)
                               </code>
                             </pre>
-                          </div>
-                        </li>
-                        <li>
-                          <span class="fw-bold">Pares clave-valor</span>:
-                          <div class="ej-sintaxis">
-                            <pre data-src-status="loaded" tabindex="0">
+                        </div>
+                      </li>
+                      <li>
+                        <span class="fw-bold">Pares clave-valor</span>:
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 for valor in mi_diccionario.values():
                                     print(valor)
                               </code>
                             </pre>
-                          </div>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Comprobar si una clave existe</span
-                      >:
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Comprobar si una clave existe</span>:
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             if "nombre" in mi_diccionario:
                                 print("La clave 'nombre' está en el diccionario.")
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Copiar un diccionario</span>:
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Copiar un diccionario</span>:
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             nuevo_diccionario = mi_diccionario.copy()
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <!-- Operaciones Comunes fin -->
-                <!-- Ejemplo Completo -->
-                <div>
-                  <h3>Ejemplo Completo</h3>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- Operaciones Comunes fin -->
+              <!-- Ejemplo Completo -->
+              <div>
+                <h3>Ejemplo Completo</h3>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         persona = {
                           "nombre": "Ana",
@@ -644,19 +566,17 @@
                         persona.pop("ocupación")
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Ejemplo Completo fin -->
-                <!-- Métodos Útiles -->
-                <div>
-                  <h3>Métodos Útiles</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python">keys()</code></span
-                      >: Devuelve todas las claves.
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Ejemplo Completo fin -->
+              <!-- Métodos Útiles -->
+              <div>
+                <h3>Métodos Útiles</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">keys()</code></span>: Devuelve todas las claves.
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             mi_diccionario = {"gato": "chat", "perro": "chien", "caballo": "cheval"}
                             for key in mi_diccionario.keys():
@@ -666,14 +586,13 @@
                             # Salida: caballo -> cheval
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python">items()</code></span
-                      >: Devuelve pares clave-valor.
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">items()</code></span>: Devuelve pares
+                    clave-valor.
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             mi_diccionario = {"gato": "chat", "perro": "chien", "caballo": "cheva")
                             for spanish, french in mi_diccionario.items():
@@ -683,144 +602,152 @@
                             # Salida: caballo -> cheval
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python">values()</code></span
-                      >: Devuelve todos los valores.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python">clear()</code></span
-                      >: Elimina todos los elementos.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python">update()</code></span
-                      >: Combina otro diccionario o pares clave-valor.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Métodos Útiles fin -->
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">values()</code></span>: Devuelve todos los
+                    valores.
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">clear()</code></span>: Elimina todos los
+                    elementos.
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">update()</code></span>: Combina otro diccionario
+                    o pares clave-valor.
+                  </li>
+                </ul>
               </div>
-              <!-- Diccionarios en Python Fin -->
+              <!-- Métodos Útiles fin -->
             </div>
-          </article>
-          <!--  Tuplas y Diccionarios en Python  -->
+            <!-- Diccionarios en Python Fin -->
+          </div>
+        </article>
+        <!--  Tuplas y Diccionarios en Python  -->
 
-          <!--  comentarios  -->
-          <article class="row pt-5" id="comments">
-            <h2>COMENTARIOS</h2>
-            <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por
-              favor infórmelo a través del formulario disponible para este
-              propósito.
-            </p>
-            <div class="d-flex justify-content-center">
-              <form
-                action="https://formspree.io/f/mdkdawkg"
-                method="POST"
-                id="myForm"
-              >
-                <fieldset class="d-flex flex-column gap-3">
-                  <legend class="text-center fs-4">Deje su comentario</legend>
+        <!--  comentarios  -->
+        <article class="row pt-5" id="comments">
+          <h2>COMENTARIOS</h2>
+          <p>
+            Si tiene alguna inquietud, duda o ha encontrado algún error, por
+            favor infórmelo a través del formulario disponible para este
+            propósito.
+          </p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
 
-                  <div class="d-flex flex-column">
-                    <label for="name">Nombre:</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="User"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
+                </div>
 
-                  <div class="d-flex flex-column">
-                    <label for="email">Email:</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="user@mail.com"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
 
-                  <div class="d-flex flex-column">
-                    <label for="message">Mensaje:</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      cols="30"
-                      rows="5"
-                      placeholder="Su comentario..."
-                      class="form-control rounded-3"
-                      required
-                    ></textarea>
-                  </div>
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
 
-                  <button
-                    type="submit"
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
-                  >
-                    Enviar
-                  </button>
-                </fieldset>
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                  Enviar
+                </button>
+              </fieldset>
 
-                <p class="small text-center">
-                  La política de privacidad, y los términos y condiciones están
-                  disponibles en el formulario de contacto.
-                </p>
-              </form>
-            </div>
-          </article>
-          <!--  fin comentarios  -->
-        </section>
-        <!--  barra lateral  -->
-        <aside class="col-lg-3 d-none d-lg-block pt-5">
-          <h1>En Este Artículo</h1>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a href="#introduccion">Introducción</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#tuplasEnPython">Tuplas en Python</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#diccionariosEnPython">Diccionarios en Python</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#comments">Comentarios</a>
-            </li>
-          </ul>
-        </aside>
-        <!--  fin barra lateral  -->
-      </main>
-      <!--  fin principal  -->
+              <p class="small text-center">
+                La política de privacidad, y los términos y condiciones están
+                disponibles en el formulario de contacto.
+              </p>
+            </form>
+          </div>
+        </article>
+        <!--  fin comentarios  -->
+      </section>
+
+<!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h1>En Este Artículo</h1><div class="menu-scroll"><div class="menu-container"><div class="border border-1">
+<div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
+<div class="menu-item"><a href="#tuplas-en-python" class="simple-link">Tuplas en Python</a></div>
+<div class="menu-item"><a href="#diccionarios-en-python" class="simple-link">Diccionarios en Python</a></div>
+<!-- Comentarios  -->
+<div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div></div></div></div></aside>
+<!--  fin barra lateral  -->    
+
+</main>
+    <!--  fin principal  -->
+  </div>
+  <!--  Principal Fin  -->
+
+  <!--  pie de pagina  -->
+  <footer class="row border-top border-1 m-1 mt-auto">
+    <div class="row">
+      <!-- contacto -->
+      <address class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Contacto</div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class="ms-3">
+            <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class="ms-3">Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      <!-- Derechos de autor -->
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
+      </div>
+      <!-- redes sociales -->
+      <div class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Redes Sociales</div>
+        <div class="d-flex justify-content-evenly align-items-center gap-5">
+          <div>
+            <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <!--  Principal Fin  -->
+    <div class="d-flex align-items-center justify-content-center gap-2"></div>
+  </footer>
+  <!--  pie de pagina fin  -->
 
-    <!-- button to top -->
-    <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        fill="currentColor"
-        class="bi bi-arrow-bar-up"
-        viewBox="0 0 16 16"
-        style="margin-left: -2px"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"
-        ></path>
-      </svg>
-    </button>
-    <!-- Fin button to top -->
-  </body>
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
 </html>

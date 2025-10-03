@@ -1,243 +1,168 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-  <head>
-    <!-- Metaetiquetas -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Se explorarán los métodos de las clases, la estructura interna de los objetos y su funcionamiento. Además, se profundizará en los conceptos de reflexión e introspección dentro del contexto de la programación orientada a objetos."
-    />
-    <meta
-      name="title"
-      content="POO: Métodos Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta name="author" content="Ing. Eduardo Herrera Forero" />
-    <meta name="application-name" content="EHF" />
-    <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://eduardoherreraf.github.io/cursoPython3-0704_poo_metodos.html"
-    />
-    <!-- Fin Metaetiquetas -->
 
-    <!-- Open Graph data -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="POO: Métodos Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      property="og:description"
-      content="Se explorarán los métodos de las clases, la estructura interna de los objetos y su funcionamiento. Además, se profundizará en los conceptos de reflexión e introspección dentro del contexto de la programación orientada a objetos."
-    />
-    <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      property="og:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      property="og:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0704_poo_metodos.html"
-    />
-    <meta property="og:locale" content="es_CO" />
-    <!-- fin Open Graph data -->
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Se explorarán los métodos de las clases, la estructura interna de los objetos y su funcionamiento. Además, se profundizará en los conceptos de reflexión e introspección dentro del contexto de la programación orientada a objetos." />
+  <meta name="title" content="POO: Métodos Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eduardoherreraf.github.io/cursoPython3-0704_poo_metodos.html" />
+  <!-- Fin Metaetiquetas -->
 
-    <!-- Twitter cards -->
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="POO: Métodos Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      name="twitter:description"
-      content="Se explorarán los métodos de las clases, la estructura interna de los objetos y su funcionamiento. Además, se profundizará en los conceptos de reflexión e introspección dentro del contexto de la programación orientada a objetos."
-    />
-    <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      name="twitter:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      name="twitter:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0704_poo_metodos.html"
-    />
-    <meta name="twitter:site" content="@ehfeduardo" />
-    <!-- Fin Twitter cards -->
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="POO: Métodos Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta property="og:description"
+    content="Se explorarán los métodos de las clases, la estructura interna de los objetos y su funcionamiento. Además, se profundizará en los conceptos de reflexión e introspección dentro del contexto de la programación orientada a objetos." />
+  <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta property="og:url" content="https://eduardoherreraf.github.io/cursoPython3-0704_poo_metodos.html" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
 
-    <!-- iconos -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="android-chrome-192x192.png"
-    />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- fin iconos -->
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="POO: Métodos Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description"
+    content="Se explorarán los métodos de las clases, la estructura interna de los objetos y su funcionamiento. Además, se profundizará en los conceptos de reflexión e introspección dentro del contexto de la programación orientada a objetos." />
+  <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta name="twitter:url" content="https://eduardoherreraf.github.io/cursoPython3-0704_poo_metodos.html" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
 
-    <title>POO: Métodos Python 3 - Ing. Eduardo Herrera Forero.</title>
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
 
-    <script type="module" src="./js/main.js"></script>
+  <title>POO: Métodos Python 3 - Ing. Eduardo Herrera Forero.</title>
 
-    <meta
-      name="google-site-verification"
-      content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"
-    />
-  </head>
+  <script type="module" src="./js/main.js"></script>
 
-  <body>
-    <!-- Barra deNavegación -->
-    <nav
-      class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
-    >
-      <div class="container-fluid">
-        <!-- Enlace a la página principal con el logo y nombre -->
-        <a
-          class="navbar-brand d-flex align-items-center ms-2"
-          href="index.html"
-        >
-          <img
-            src="./images/logo.png"
-            alt="Logo de Ing. Eduardo Herrera Forero"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top me-1"
-          />
-          <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
-        </a>
-        <!-- Botón para activar el menú en dispositivos pequeños -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Menú de navegación -->
-        <div
-          class="collapse navbar-collapse ms-auto text-center"
-          id="navbarSupportedContent"
-        >
-          <ul
-            class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100"
-          >
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#portfolio"
-                >PORTAFOLIO</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 publicaciones-activo"
-                href="index.html#blog"
-                >PUBLICACIONES</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
-            </li>
-          </ul>
-        </div>
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Barra deNavegación -->
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
 
-    <!--  principal  -->
-    <div class="container-fluid" id="introduccion">
-      <main class="row">
-        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
-          <!--  POO: Métodos en Python  -->
-          <article
-            class="row border-1 border-bottom pb-3"
-            data-bs-spy="scroll"
-            data-bs-target="#list-example"
-            data-bs-smooth-scroll="true"
-          >
-            <div>
-              <header>
-                <h1>POO: Métodos en Python</h1>
-              </header>
-              <!-- Introducción -->
-              <div class="mt-5">
-                <h2>Introducción</h2>
-                <p>
-                  Este documento se analiza en detalle los mecanismos de
-                  interacción entre clases, los principios de encapsulamiento y
-                  los diferentes tipos de herencia. El objetivo es comprender
-                  cómo los objetos se comunican, se transforman y gestionan su
-                  estado interno, revelando la complejidad y elegancia de la
-                  programación orientada a objetos.
-                </p>
-                <div class="centrar-imagen imagen50">
-                  <figure>
-                    <img
-                      src="https://i.ibb.co/bLSTRV0/poometodos.jpg"
-                      class="img-fluid"
-                      alt="POO: Métodos en Python  "
-                      title="Comprendiendo los Métodos en Python"
-                    />
-                    <figcaption>POO: Métodos en Python</figcaption>
-                  </figure>
-                </div>
+  <!--  principal  -->
+  <div class="container-fluid" id="introduccion">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!--  POO: Métodos en Python  -->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <div>
+            <header>
+              <h1>POO: Métodos en Python</h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-5">
+              <h2>Introducción</h2>
+              <p>
+                Este documento se analiza en detalle los mecanismos de
+                interacción entre clases, los principios de encapsulamiento y
+                los diferentes tipos de herencia. El objetivo es comprender
+                cómo los objetos se comunican, se transforman y gestionan su
+                estado interno, revelando la complejidad y elegancia de la
+                programación orientada a objetos.
+              </p>
+              <div class="centrar-imagen imagen50">
+                <figure>
+                  <img src="https://i.ibb.co/bLSTRV0/poometodos.jpg" class="img-fluid" alt="POO: Métodos en Python  "
+                    title="Comprendiendo los Métodos en Python" />
+                  <figcaption>POO: Métodos en Python</figcaption>
+                </figure>
               </div>
-              <!-- Métodos al Detalle -->
-              <div id="metodosAlDetalle" class="mt-5">
-                <h2 class="mt-1">Métodos al Detalle</h2>
+            </div>
+            <!-- Métodos al Detalle -->
+            <div id="metodos-al-detalle" class="mt-5">
+              <h2>Métodos al Detalle</h2>
+              <p>
+                Un método en Python es una función que está asociada a un
+                objeto, normalmente a una clase. Los métodos son usados para
+                definir el comportamiento de los objetos creados a partir de
+                esa clase. Estos son llamados utilizando la notación de punto
+                (<code class="language-python">.</code>) y suelen operar en
+                los datos del objeto, accediendo o modificando sus atributos.
+              </p>
+              <!-- El Parámetro self -->
+              <div>
+                <h3>El Parámetro self</h3>
                 <p>
-                  Un método en Python es una función que está asociada a un
-                  objeto, normalmente a una clase. Los métodos son usados para
-                  definir el comportamiento de los objetos creados a partir de
-                  esa clase. Estos son llamados utilizando la notación de punto
-                  (<code class="language-python">.</code>) y suelen operar en
-                  los datos del objeto, accediendo o modificando sus atributos.
+                  El parámetro <code class="language-python">self</code> en
+                  Python se utiliza para hacer referencia a la instancia
+                  actual de la clase dentro de sus métodos. Es un mecanismo
+                  que permite acceder a los atributos y otros métodos del
+                  objeto específico sobre el cual se invoca el método. Aunque
+                  se llama <code class="language-python">self</code> por
+                  convención, puede tener cualquier nombre válido, pero es
+                  altamente recomendable usar
+                  <code class="language-python">self</code> para mantener la
+                  legibilidad y consistencia del código.
                 </p>
-                <!-- El Parámetro self -->
+                <!-- Principales Usos de self -->
                 <div>
-                  <h3>El Parámetro self</h3>
-                  <p>
-                    El parámetro <code class="language-python">self</code> en
-                    Python se utiliza para hacer referencia a la instancia
-                    actual de la clase dentro de sus métodos. Es un mecanismo
-                    que permite acceder a los atributos y otros métodos del
-                    objeto específico sobre el cual se invoca el método. Aunque
-                    se llama <code class="language-python">self</code> por
-                    convención, puede tener cualquier nombre válido, pero es
-                    altamente recomendable usar
-                    <code class="language-python">self</code> para mantener la
-                    legibilidad y consistencia del código.
-                  </p>
-                  <!-- Principales Usos de self -->
-                  <div>
-                    <h4>Principales Usos de self</h4>
-                    <ul>
-                      <li>
-                        <span class="fw-bold"
-                          >Acceder a los atributos del objeto</span
-                        >: Se utiliza
-                        <code class="language-python">self</code> para leer o
-                        modificar los atributos que pertenecen a la instancia.
-                        <div class="ej-sintaxis">
-                          <pre data-src-status="loaded" tabindex="0">
+                  <h4>Principales Usos de self</h4>
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Acceder a los atributos del objeto</span>: Se utiliza
+                      <code class="language-python">self</code> para leer o
+                      modificar los atributos que pertenecen a la instancia.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             class Persona:
                                 def __init__(self, nombre, edad):
@@ -247,16 +172,15 @@
                                     print(f"Mi nombre es {self.nombre}")  # Usando self para acceder a nombre
                           </code>
                         </pre>
-                        </div>
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          >Llamar a otros métodos de la misma instancia</span
-                        >: <code class="language-python">self</code>
-                        permite invocar otros métodos de la clase dentro de un
-                        método.
-                        <div class="ej-sintaxis">
-                          <pre data-src-status="loaded" tabindex="0">
+                      </div>
+                    </li>
+                    <li>
+                      <span class="fw-bold">Llamar a otros métodos de la misma instancia</span>: <code
+                        class="language-python">self</code>
+                      permite invocar otros métodos de la clase dentro de un
+                      método.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               class Calculadora:
                                   def suma(self, a, b):
@@ -265,16 +189,15 @@
                                       return self.suma(a, b) ** 2  # Llama al método suma
                             </code>
                           </pre>
-                        </div>
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          >Diferenciar atributos de variables locales</span
-                        >: Usar <code class="language-python">self</code>
-                        permite distinguir entre las variables locales dentro de
-                        un método y los atributos de la instancia.
-                        <div class="ej-sintaxis">
-                          <pre data-src-status="loaded" tabindex="0">
+                      </div>
+                    </li>
+                    <li>
+                      <span class="fw-bold">Diferenciar atributos de variables locales</span>: Usar <code
+                        class="language-python">self</code>
+                      permite distinguir entre las variables locales dentro de
+                      un método y los atributos de la instancia.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               class Producto:
                                   def __init__(self, precio):
@@ -283,15 +206,14 @@
                                       self.precio = precio  # Se actualiza el atributo, no una variable local
                             </code>
                           </pre>
-                        </div>
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          >Asociar datos a la instancia actual</span
-                        >: Se utiliza para asignar valores únicos a cada
-                        instancia de la clase.
-                        <div class="ej-sintaxis">
-                          <pre data-src-status="loaded" tabindex="0">
+                      </div>
+                    </li>
+                    <li>
+                      <span class="fw-bold">Asociar datos a la instancia actual</span>: Se utiliza para asignar valores
+                      únicos a cada
+                      instancia de la clase.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               class Vehiculo:
                                   def __init__(self, marca, modelo):
@@ -299,74 +221,72 @@
                                       self.modelo = modelo
                             </code>
                           </pre>
-                        </div>
-                      </li>
-                    </ul>
-                    <p><strong>Resumen</strong>:</p>
-                    <ul>
-                      <li>
-                        <code class="language-python">self</code> siempre debe
-                        ser el primer parámetro en los métodos de instancia de
-                        una clase.
-                      </li>
-                      <li>
-                        Permite acceder y manipular los atributos y métodos
-                        relacionados con la instancia específica.
-                      </li>
-                      <li>
-                        Aunque no se pasa explícitamente al invocar el método,
-                        Python lo maneja automáticamente.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Principales Usos de self fin -->
+                      </div>
+                    </li>
+                  </ul>
+                  <p><strong>Resumen</strong>:</p>
+                  <ul>
+                    <li>
+                      <code class="language-python">self</code> siempre debe
+                      ser el primer parámetro en los métodos de instancia de
+                      una clase.
+                    </li>
+                    <li>
+                      Permite acceder y manipular los atributos y métodos
+                      relacionados con la instancia específica.
+                    </li>
+                    <li>
+                      Aunque no se pasa explícitamente al invocar el método,
+                      Python lo maneja automáticamente.
+                    </li>
+                  </ul>
                 </div>
-                <!-- El Parámetro self fin -->
-                <!-- El Constructor -->
+                <!-- Principales Usos de self fin -->
+              </div>
+              <!-- El Parámetro self fin -->
+              <!-- El Constructor -->
+              <div>
+                <h3>El Constructor</h3>
+                <p>
+                  En Python, un constructor es un método especial de una clase
+                  que se utiliza para inicializar los atributos de una nueva
+                  instancia cuando se crea. Este método se llama
+                  automáticamente al instanciar un objeto de la clase y está
+                  definido con el nombre especial
+                  <code class="language-python">__init__</code>.
+                </p>
+                <!-- Características del Constructor -->
                 <div>
-                  <h3>El Constructor</h3>
-                  <p>
-                    En Python, un constructor es un método especial de una clase
-                    que se utiliza para inicializar los atributos de una nueva
-                    instancia cuando se crea. Este método se llama
-                    automáticamente al instanciar un objeto de la clase y está
-                    definido con el nombre especial
-                    <code class="language-python">__init__</code>.
-                  </p>
-                  <!-- Características del Constructor -->
-                  <div>
-                    <h4>Características del Constructor</h4>
-                    <ul>
-                      <li>
-                        <span class="fw-bold">Nombre especial</span>: El
-                        constructor siempre se define como
-                        <code class="language-python">__init__</code>.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          >Parámetro
-                          <code class="language-python">self</code></span
-                        >: El primer parámetro debe ser
-                        <code class="language-python">self</code>, que hace
-                        referencia a la instancia actual.
-                      </li>
-                      <li>
-                        <span class="fw-bold">Inicialización de atributos</span
-                        >: Se utiliza para asignar valores iniciales a los
-                        atributos de la instancia.
-                      </li>
-                      <li>
-                        <span class="fw-bold">Llamada automática</span>: Se
-                        ejecuta automáticamente al crear un objeto.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Características del Constructor fin -->
-                  <!-- Sintaxis de un Constructor -->
-                  <div>
-                    <h4>Sintaxis de un Constructor</h4>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  <h4>Características del Constructor</h4>
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Nombre especial</span>: El
+                      constructor siempre se define como
+                      <code class="language-python">__init__</code>.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Parámetro
+                        <code class="language-python">self</code></span>: El primer parámetro debe ser
+                      <code class="language-python">self</code>, que hace
+                      referencia a la instancia actual.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Inicialización de atributos</span>: Se utiliza para asignar valores
+                      iniciales a los
+                      atributos de la instancia.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Llamada automática</span>: Se
+                      ejecuta automáticamente al crear un objeto.
+                    </li>
+                  </ul>
+                </div>
+                <!-- Características del Constructor fin -->
+                <!-- Sintaxis de un Constructor -->
+                <div>
+                  <h4>Sintaxis de un Constructor</h4>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class ClaseEjemplo:
                           def __init__(self, parametro1, parametro2):
@@ -374,30 +294,27 @@
                               self.atributo2 = parametro2
                     </code>
                   </pre>
-                    </div>
-                    <p>En este ejemplo:</p>
-                    <ul>
-                      <li>
-                        <code class="language-python">parametro1</code> y<code
-                          class="language-python"
-                        >
-                          parametro2</code
-                        >
-                        son los valores que se pasan al constructor.
-                      </li>
-                      <li>
-                        <code class="language-python">self.atributo1</code> y
-                        <code class="language-python">self.atributo2</code> son
-                        los atributos de la instancia.
-                      </li>
-                    </ul>
                   </div>
-                  <!-- Sintaxis de un Constructor fin -->
-                  <!-- Ejemplo Práctico -->
-                  <div>
-                    <h4>Ejemplo Práctico</h4>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  <p>En este ejemplo:</p>
+                  <ul>
+                    <li>
+                      <code class="language-python">parametro1</code> y<code class="language-python">
+                          parametro2</code>
+                      son los valores que se pasan al constructor.
+                    </li>
+                    <li>
+                      <code class="language-python">self.atributo1</code> y
+                      <code class="language-python">self.atributo2</code> son
+                      los atributos de la instancia.
+                    </li>
+                  </ul>
+                </div>
+                <!-- Sintaxis de un Constructor fin -->
+                <!-- Ejemplo Práctico -->
+                <div>
+                  <h4>Ejemplo Práctico</h4>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class Persona:
                       def __init__(self, nombre, edad):
@@ -413,19 +330,19 @@
                       persona1.saludar()      # Salida: Hola, mi nombre es Juan y tengo 30 años.
                     </code>
                   </pre>
-                    </div>
                   </div>
-                  <!-- Ejemplo Práctico fin -->
-                  <!-- Constructor sin Parámetros -->
-                  <div>
-                    <h4>Constructor sin Parámetros</h4>
-                    <p>
-                      Si no se necesitan valores iniciales, el constructor puede
-                      definirse sin parámetros adicionales, aparte de
-                      <code class="language-python">self</code>:
-                    </p>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <!-- Ejemplo Práctico fin -->
+                <!-- Constructor sin Parámetros -->
+                <div>
+                  <h4>Constructor sin Parámetros</h4>
+                  <p>
+                    Si no se necesitan valores iniciales, el constructor puede
+                    definirse sin parámetros adicionales, aparte de
+                    <code class="language-python">self</code>:
+                  </p>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class Ejemplo:
                       def __init__(self):
@@ -434,20 +351,19 @@
                       print(objeto.valor)  # Salida: 0
                     </code>
                   </pre>
-                    </div>
                   </div>
-                  <!-- Constructor sin Parámetros fin -->
-                  <!-- Notas Importantes -->
-                  <div>
-                    <h4>Notas Importantes</h4>
-                    <ul>
-                      <li>
-                        <span class="fw-bold"
-                          >Constructores con valores predeterminados</span
-                        >: Los parámetros pueden tener valores por defecto, lo
-                        que permite crear objetos con parámetros opcionales.
-                        <div class="ej-sintaxis">
-                          <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <!-- Constructor sin Parámetros fin -->
+                <!-- Notas Importantes -->
+                <div>
+                  <h4>Notas Importantes</h4>
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Constructores con valores predeterminados</span>: Los parámetros pueden
+                      tener valores por defecto, lo
+                      que permite crear objetos con parámetros opcionales.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               class Persona:
                               def __init__(self, nombre="Anónimo", edad=0):
@@ -458,17 +374,17 @@
                               print(persona2.edad)    # Salida: 0
                             </code>
                           </pre>
-                        </div>
-                      </li>
-                      <li>
-                        <span class="fw-bold">Sobrecarga de Constructores</span
-                        >: Python no soporta directamente la sobrecarga de
-                        constructores, pero puede lograrse utilizando parámetros
-                        con valores predeterminados o manejando la lógica dentro
-                        del método
-                        <code class="language-python">__init__</code>.
-                        <div class="ej-sintaxis">
-                          <pre data-src-status="loaded" tabindex="0">
+                      </div>
+                    </li>
+                    <li>
+                      <span class="fw-bold">Sobrecarga de Constructores</span>: Python no soporta directamente la
+                      sobrecarga de
+                      constructores, pero puede lograrse utilizando parámetros
+                      con valores predeterminados o manejando la lógica dentro
+                      del método
+                      <code class="language-python">__init__</code>.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               class Persona:
                                   def __init__(self, nombre=None):
@@ -478,35 +394,35 @@
                                           self.nombre = "Desconocido"
                             </code>
                           </pre>
-                        </div>
-                      </li>
-                    </ul>
-                    <p>
-                      El constructor es fundamental para personalizar la
-                      creación de objetos y garantizar que tengan un estado
-                      inicial válido al ser instanciados.
-                    </p>
-                  </div>
-                  <!-- Notas Importantes fin -->
-                </div>
-                <!-- El Constructor fin -->
-                <!-- Método sin Parámetros -->
-                <div>
-                  <h3>Método sin Parámetros</h3>
+                      </div>
+                    </li>
+                  </ul>
                   <p>
-                    Un método en Python siempre debe incluir al menos un
-                    parámetro en su declaración, aunque pueda invocarse sin
-                    argumentos. El primer parámetro, generalmente llamado
-                    <code class="language-python">self</code>, es esencial y se
-                    recomienda mantener este nombre para evitar problemas
-                    inesperados. Este parámetro sirve para identificar al objeto
-                    al que pertenece el método. Al llamar un método, no es
-                    necesario proporcionar un argumento para
-                    <code class="language-python">self</code>, ya que Python lo
-                    asigna automáticamente.
+                    El constructor es fundamental para personalizar la
+                    creación de objetos y garantizar que tengan un estado
+                    inicial válido al ser instanciados.
                   </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <!-- Notas Importantes fin -->
+              </div>
+              <!-- El Constructor fin -->
+              <!-- Método sin Parámetros -->
+              <div>
+                <h3>Método sin Parámetros</h3>
+                <p>
+                  Un método en Python siempre debe incluir al menos un
+                  parámetro en su declaración, aunque pueda invocarse sin
+                  argumentos. El primer parámetro, generalmente llamado
+                  <code class="language-python">self</code>, es esencial y se
+                  recomienda mantener este nombre para evitar problemas
+                  inesperados. Este parámetro sirve para identificar al objeto
+                  al que pertenece el método. Al llamar un método, no es
+                  necesario proporcionar un argumento para
+                  <code class="language-python">self</code>, ya que Python lo
+                  asigna automáticamente.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         class Classy:
                         def method(self):
@@ -517,77 +433,75 @@
                         obj.method()     # Salida: método
                       </code>
                     </pre>
-                  </div>
-                  <div>Explicación:</div>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Definición de la clase</span>: Se
-                      define una clase llamada
-                      <code class="language-python">Classy</code> que contiene
-                      un método llamado
-                      <code class="language-python">method</code>.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Método
-                        <code class="language-python">method</code></span
-                      >:
-                      <ul>
-                        <li>
-                          Es un método de instancia porque tiene el parámetro
-                          <code class="language-python">self</code>.
-                        </li>
-                        <li>
-                          Al ejecutarse, imprime la cadena
-                          <code class="language-python">"método"</code>.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Creación del objeto</span>: La línea
-                      <code class="language-python">obj = Classy()</code> crea
-                      una instancia de la clase
-                      <code class="language-python">Classy</code>.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Invocación del método</span>:
-                      <ul>
-                        <li>
-                          La línea
-                          <code class="language-python">obj.method()</code>
-                          llama al método
-                          <code class="language-python">method</code> de la
-                          instancia <code class="language-python">obj</code>.
-                        </li>
-                        <li>
-                          Python pasa automáticamente el objeto
-                          <code class="language-python">obj</code> como
-                          argumento para el parámetro
-                          <code class="language-python">self</code> del método.
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <p>
-                    Por lo tanto, al ejecutarse el código, se imprime el texto
-                    <code class="language-python">"método"</code>.
-                  </p>
                 </div>
-                <!-- Método sin Parámetros fin -->
-                <!-- Métodos con Varios Parámetros -->
-                <div>
-                  <h3>Métodos con Varios Parámetros</h3>
-                  <p>
-                    Si se desea que un método en Python acepte más parámetros
-                    además de <code class="language-python">self</code>,
-                    simplemente se deben declarar estos parámetros adicionales
-                    en la definición del método, después de
-                    <code class="language-python">self</code>. Luego, al llamar
-                    al método, se deben proporcionar los argumentos
-                    correspondientes para esos parámetros. Ejemplo:
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                <div>Explicación:</div>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Definición de la clase</span>: Se
+                    define una clase llamada
+                    <code class="language-python">Classy</code> que contiene
+                    un método llamado
+                    <code class="language-python">method</code>.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Método
+                      <code class="language-python">method</code></span>:
+                    <ul>
+                      <li>
+                        Es un método de instancia porque tiene el parámetro
+                        <code class="language-python">self</code>.
+                      </li>
+                      <li>
+                        Al ejecutarse, imprime la cadena
+                        <code class="language-python">"método"</code>.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Creación del objeto</span>: La línea
+                    <code class="language-python">obj = Classy()</code> crea
+                    una instancia de la clase
+                    <code class="language-python">Classy</code>.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Invocación del método</span>:
+                    <ul>
+                      <li>
+                        La línea
+                        <code class="language-python">obj.method()</code>
+                        llama al método
+                        <code class="language-python">method</code> de la
+                        instancia <code class="language-python">obj</code>.
+                      </li>
+                      <li>
+                        Python pasa automáticamente el objeto
+                        <code class="language-python">obj</code> como
+                        argumento para el parámetro
+                        <code class="language-python">self</code> del método.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <p>
+                  Por lo tanto, al ejecutarse el código, se imprime el texto
+                  <code class="language-python">"método"</code>.
+                </p>
+              </div>
+              <!-- Método sin Parámetros fin -->
+              <!-- Métodos con Varios Parámetros -->
+              <div>
+                <h3>Métodos con Varios Parámetros</h3>
+                <p>
+                  Si se desea que un método en Python acepte más parámetros
+                  además de <code class="language-python">self</code>,
+                  simplemente se deben declarar estos parámetros adicionales
+                  en la definición del método, después de
+                  <code class="language-python">self</code>. Luego, al llamar
+                  al método, se deben proporcionar los argumentos
+                  correspondientes para esos parámetros. Ejemplo:
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         class Ejemplo:
                         def saludo(self, nombre):
@@ -598,46 +512,45 @@
                         obj.saludo("Juan")     # Salida: Hola, Juan.
                       </code>
                     </pre>
-                  </div>
-                  <p>Reglas Clave:</p>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Declaración del método</span>:
-                      <ul>
-                        <li>
-                          Incluir <code class="language-python">self</code> como
-                          primer parámetro.
-                        </li>
-                        <li>Agregar otros parámetros según sea necesario.</li>
-                      </ul>
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <p>Reglas Clave:</p>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Declaración del método</span>:
+                    <ul>
+                      <li>
+                        Incluir <code class="language-python">self</code> como
+                        primer parámetro.
+                      </li>
+                      <li>Agregar otros parámetros según sea necesario.</li>
+                    </ul>
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             def metodo(self, param1, param2):
                                 # Código del método
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Invocación del método</span>:
-                      Proporcionar los valores correspondientes a los parámetros
-                      adicionales al llamar al método.
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Invocación del método</span>:
+                    Proporcionar los valores correspondientes a los parámetros
+                    adicionales al llamar al método.
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             obj.metodo(valor1, valor2)
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Manejo de parámetros opcionales</span
-                      >: Se pueden usar valores predeterminados en los
-                      parámetros para hacerlos opcionales.
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Manejo de parámetros opcionales</span>: Se pueden usar valores predeterminados
+                    en los
+                    parámetros para hacerlos opcionales.
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             def metodo(self, param1="valor_por_defecto"):
                                 print(param1)
@@ -645,93 +558,91 @@
                             obj.metodo("Otro valor")   # Salida: Otro valor
                           </code>
                         </pre>
-                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- Métodos con Varios Parámetros fin -->
+            </div>
+            <!-- Métodos al Detalle Fin -->
+            <!-- La Vida al Interior de las Clases y Objetos -->
+            <div id="la-vida-al-interior-de-las-clases-y-objetos" class="mt-5">
+              <h2>
+                La Vida al Interior de las Clases y Objetos
+              </h2>
+              <!-- __dict__ -->
+              <div>
+                <h3>__dict__</h3>
+                <p>
+                  En Python, el atributo especial
+                  <code class="language-python">__dict__</code> es un
+                  diccionario interno que almacena todos los atributos
+                  (variables y métodos) de un objeto que no son métodos de
+                  clase. Este atributo se utiliza principalmente para acceder,
+                  inspeccionar o modificar los atributos de un objeto de
+                  manera dinámica.
+                </p>
+                <!-- ¿Qué Es __dict__? -->
+                <div>
+                  <h4>¿Qué Es __dict__?</h4>
+                  <ul>
+                    <li>
+                      Es un diccionario que mapea nombres de atributos a sus
+                      valores correspondientes.
+                    </li>
+                    <li>
+                      Está disponible en las instancias de objetos y clases
+                      (dependiendo del contexto).
+                    </li>
+                    <li>
+                      Solo contiene los atributos definidos dinámicamente; no
+                      incluye los métodos u otros atributos definidos en la
+                      clase.
                     </li>
                   </ul>
                 </div>
-                <!-- Métodos con Varios Parámetros fin -->
-              </div>
-              <!-- Métodos al Detalle Fin -->
-              <!-- La Vida al Interior de las Clases y Objetos -->
-              <div id="laVidaAlInteriorDeLasClasesYObjetos" class="mt-5">
-                <h2 class="mt-1">
-                  La Vida al Interior de las Clases y Objetos
-                </h2>
-                <!-- __dict__ -->
+                <!-- ¿Qué Es __dict__? fin -->
+                <!-- ¿Para qué se Usa? -->
                 <div>
-                  <h3>__dict__</h3>
-                  <p>
-                    En Python, el atributo especial
-                    <code class="language-python">__dict__</code> es un
-                    diccionario interno que almacena todos los atributos
-                    (variables y métodos) de un objeto que no son métodos de
-                    clase. Este atributo se utiliza principalmente para acceder,
-                    inspeccionar o modificar los atributos de un objeto de
-                    manera dinámica.
-                  </p>
-                  <!-- ¿Qué Es __dict__? -->
-                  <div>
-                    <h4>¿Qué Es __dict__?</h4>
-                    <ul>
-                      <li>
-                        Es un diccionario que mapea nombres de atributos a sus
-                        valores correspondientes.
-                      </li>
-                      <li>
-                        Está disponible en las instancias de objetos y clases
-                        (dependiendo del contexto).
-                      </li>
-                      <li>
-                        Solo contiene los atributos definidos dinámicamente; no
-                        incluye los métodos u otros atributos definidos en la
-                        clase.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- ¿Qué Es __dict__? fin -->
-                  <!-- ¿Para qué se Usa? -->
-                  <div>
-                    <h4>¿Para qué se Usa?</h4>
-                    <ul>
-                      <li>
-                        <span class="fw-bold">Inspección de objetos</span>:
-                        Permite ver todos los atributos actuales de una
-                        instancia de objeto en forma de diccionario.
-                      </li>
-                      <li>
-                        <span class="fw-bold">Modificación dinámica</span>:
-                        Puede usarse para agregar, modificar o eliminar
-                        atributos de un objeto en tiempo de ejecución.
-                      </li>
-                      <li>
-                        <span class="fw-bold">Serialización</span>: Es útil para
-                        serializar objetos personalizados, ya que los datos de
-                        un objeto pueden ser fácilmente convertidos a JSON o
-                        cualquier otro formato.
-                      </li>
-                      <li>
-                        <span class="fw-bold">Depuración y exploración</span>:
-                        Durante el desarrollo o depuración, permite examinar qué
-                        atributos tiene un objeto en un momento dado.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- ¿Para qué se Usa? fin -->
-                  <!-- Limitaciones -->
-                  <div>
-                    <h4>Limitaciones</h4>
-                    <ul>
-                      <li>
-                        <span class="fw-bold"
-                          >Objetos con
-                          <code class="language-python">__slots__</code></span
-                        >: Si una clase utiliza
-                        <code class="language-python">__slots__</code>, no se
-                        crea un atributo
-                        <code class="language-python">__dict__</code> por
-                        defecto, a menos que se declare explícitamente.
-                        <div class="ej-sintaxis">
-                          <pre data-src-status="loaded" tabindex="0">
+                  <h4>¿Para qué se Usa?</h4>
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Inspección de objetos</span>:
+                      Permite ver todos los atributos actuales de una
+                      instancia de objeto en forma de diccionario.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Modificación dinámica</span>:
+                      Puede usarse para agregar, modificar o eliminar
+                      atributos de un objeto en tiempo de ejecución.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Serialización</span>: Es útil para
+                      serializar objetos personalizados, ya que los datos de
+                      un objeto pueden ser fácilmente convertidos a JSON o
+                      cualquier otro formato.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Depuración y exploración</span>:
+                      Durante el desarrollo o depuración, permite examinar qué
+                      atributos tiene un objeto en un momento dado.
+                    </li>
+                  </ul>
+                </div>
+                <!-- ¿Para qué se Usa? fin -->
+                <!-- Limitaciones -->
+                <div>
+                  <h4>Limitaciones</h4>
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Objetos con
+                        <code class="language-python">__slots__</code></span>: Si una clase utiliza
+                      <code class="language-python">__slots__</code>, no se
+                      crea un atributo
+                      <code class="language-python">__dict__</code> por
+                      defecto, a menos que se declare explícitamente.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               class Persona:
                                   __slots__ = ['nombre', 'edad']
@@ -742,31 +653,29 @@
                               print(p.__dict__)  # AttributeError: 'Persona' object has no attribute '__dict__'
                             </code>
                           </pre>
-                        </div>
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          >No incluye atributos de clase</span
-                        >: El atributo
-                        <code class="language-python">__dict__</code> de una
-                        instancia solo incluye los atributos específicos de esa
-                        instancia, no los atributos compartidos o métodos
-                        definidos en la clase.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Limitaciones fin -->
-                  <!-- Contexto del Uso de __dict__ en Clases -->
-                  <div>
-                    <h4>Contexto del Uso de __dict__ en Clases</h4>
-                    <p>
-                      En las clases,
-                      <code class="language-python">__dict__</code> también está
-                      disponible, pero representa los atributos de la clase, no
-                      de las instancias.
-                    </p>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                      </div>
+                    </li>
+                    <li>
+                      <span class="fw-bold">No incluye atributos de clase</span>: El atributo
+                      <code class="language-python">__dict__</code> de una
+                      instancia solo incluye los atributos específicos de esa
+                      instancia, no los atributos compartidos o métodos
+                      definidos en la clase.
+                    </li>
+                  </ul>
+                </div>
+                <!-- Limitaciones fin -->
+                <!-- Contexto del Uso de __dict__ en Clases -->
+                <div>
+                  <h4>Contexto del Uso de __dict__ en Clases</h4>
+                  <p>
+                    En las clases,
+                    <code class="language-python">__dict__</code> también está
+                    disponible, pero representa los atributos de la clase, no
+                    de las instancias.
+                  </p>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           class Animal:
                               especie = "Mamífero"
@@ -774,62 +683,60 @@
                           # Muestra un diccionario con los atributos y métodos de la clase, incluidos los métodos especiales como `__init__`.
                         </code>
                       </pre>
-                    </div>
-                    <p>
-                      En resumen,
-                      <code class="language-python">__dict__</code> es una
-                      herramienta poderosa y flexible para trabajar con los
-                      atributos de objetos y clases en Python, especialmente en
-                      contextos de inspección, modificación dinámica y
-                      serialización.
-                    </p>
                   </div>
-                  <!-- Contexto del Uso de __dict__ en Clases fin -->
-                </div>
-                <!-- __dict__ fin -->
-                <!-- __name__ -->
-                <div>
-                  <h3>__name__</h3>
                   <p>
-                    En Python, <code class="language-python">__name__</code> es
-                    una variable especial que contiene una cadena que indica el
-                    nombre del módulo que se está ejecutando. Es una parte
-                    importante de cómo se estructuran y ejecutan los programas
-                    de Python. Se utiliza principalmente para distinguir si un
-                    archivo Python está siendo ejecutado directamente o si está
-                    siendo importado como un módulo en otro archivo.
+                    En resumen,
+                    <code class="language-python">__dict__</code> es una
+                    herramienta poderosa y flexible para trabajar con los
+                    atributos de objetos y clases en Python, especialmente en
+                    contextos de inspección, modificación dinámica y
+                    serialización.
                   </p>
-                  <!-- Comportamiento de __name__ -->
-                  <div>
-                    <h4>Comportamiento de __name__</h4>
-                    <ul>
-                      <li>
-                        <span class="fw-bold"
-                          >Cuando se ejecuta directamente el archivo</span
-                        >: Si un archivo Python se ejecuta directamente (por
-                        ejemplo, usando python archivo.py), el valor de
-                        <code class="language-python">__name__</code>
-                        será <code class="language-python">__main__</code>.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          >Cuando se importa como un módulo</span
-                        >: Si el archivo se importa en otro archivo, el valor de
-                        <code class="language-python">__name__</code> será el
-                        nombre del archivo (sin la extensión .py).
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Comportamiento de __name__ fin -->
-                  <!-- Uso típico de __name__ -->
-                  <div>
-                    <h4>Uso típico de __name__</h4>
-                    <p>
-                      Se usa comúnmente en combinación con la siguiente
-                      estructura:
-                    </p>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <!-- Contexto del Uso de __dict__ en Clases fin -->
+              </div>
+              <!-- __dict__ fin -->
+              <!-- __name__ -->
+              <div>
+                <h3>__name__</h3>
+                <p>
+                  En Python, <code class="language-python">__name__</code> es
+                  una variable especial que contiene una cadena que indica el
+                  nombre del módulo que se está ejecutando. Es una parte
+                  importante de cómo se estructuran y ejecutan los programas
+                  de Python. Se utiliza principalmente para distinguir si un
+                  archivo Python está siendo ejecutado directamente o si está
+                  siendo importado como un módulo en otro archivo.
+                </p>
+                <!-- Comportamiento de __name__ -->
+                <div>
+                  <h4>Comportamiento de __name__</h4>
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Cuando se ejecuta directamente el archivo</span>: Si un archivo Python se
+                      ejecuta directamente (por
+                      ejemplo, usando python archivo.py), el valor de
+                      <code class="language-python">__name__</code>
+                      será <code class="language-python">__main__</code>.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Cuando se importa como un módulo</span>: Si el archivo se importa en otro
+                      archivo, el valor de
+                      <code class="language-python">__name__</code> será el
+                      nombre del archivo (sin la extensión .py).
+                    </li>
+                  </ul>
+                </div>
+                <!-- Comportamiento de __name__ fin -->
+                <!-- Uso típico de __name__ -->
+                <div>
+                  <h4>Uso típico de __name__</h4>
+                  <p>
+                    Se usa comúnmente en combinación con la siguiente
+                    estructura:
+                  </p>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                               if __name__ == "__main__":
                               # Código que solo se ejecutará si este archivo se ejecuta directamente
@@ -839,40 +746,40 @@
                               print("Este archivo ha sido importado.")
                         </code>
                       </pre>
-                    </div>
                   </div>
-                  <!-- Uso típico de __name__ fin -->
-                  <!-- ¿Por qué se usa? -->
-                  <div>
-                    <h4>¿Por qué se usa?</h4>
-                    <p>
-                      El uso principal de esta estructura es permitir que un
-                      archivo Python sirva dos propósitos:
-                    </p>
-                    <ul>
-                      <li>
-                        <span class="fw-bold">Como script independiente</span>:
-                        Puede ejecutar funciones específicas o ejecutar pruebas
-                        cuando se ejecuta directamente.
-                      </li>
-                      <li>
-                        <span class="fw-bold">Como módulo reutilizable</span>:
-                        Puede definir funciones, clases o variables que otros
-                        programas pueden importar y utilizar.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- ¿Por qué se usa? fin -->
-                  <!-- Ejemplo Práctico __name__ -->
-                  <div>
-                    <h4>Ejemplo Práctico __name__</h4>
-                    <p>
-                      Supongamos que tienes un archivo llamado
-                      <code class="language-python">utilidades.py</code> con el
-                      siguiente contenido:
-                    </p>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <!-- Uso típico de __name__ fin -->
+                <!-- ¿Por qué se usa? -->
+                <div>
+                  <h4>¿Por qué se usa?</h4>
+                  <p>
+                    El uso principal de esta estructura es permitir que un
+                    archivo Python sirva dos propósitos:
+                  </p>
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Como script independiente</span>:
+                      Puede ejecutar funciones específicas o ejecutar pruebas
+                      cuando se ejecuta directamente.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Como módulo reutilizable</span>:
+                      Puede definir funciones, clases o variables que otros
+                      programas pueden importar y utilizar.
+                    </li>
+                  </ul>
+                </div>
+                <!-- ¿Por qué se usa? fin -->
+                <!-- Ejemplo Práctico __name__ -->
+                <div>
+                  <h4>Ejemplo Práctico __name__</h4>
+                  <p>
+                    Supongamos que tienes un archivo llamado
+                    <code class="language-python">utilidades.py</code> con el
+                    siguiente contenido:
+                  </p>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           def saludar():
                               print("Hola desde utilidades!")
@@ -881,84 +788,83 @@
                               saludar()
                         </code>
                       </pre>
-                    </div>
-                    <p>
-                      Si se ejecuta
-                      <code class="language-python">utilidades.py</code>
-                      directamente, se verá:
-                    </p>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                  <p>
+                    Si se ejecuta
+                    <code class="language-python">utilidades.py</code>
+                    directamente, se verá:
+                  </p>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           Ejecutando utilidades.py directamente
                           Hola desde utilidades!
                         </code>
                       </pre>
-                    </div>
-                    <p>
-                      Pero si se importa este archivo en otro archivo, por
-                      ejemplo, con:
-                    </p>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                  <p>
+                    Pero si se importa este archivo en otro archivo, por
+                    ejemplo, con:
+                  </p>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           import utilidades
                           utilidades.saludar()
                         </code>
                       </pre>
-                    </div>
-                    <p>El resultado será únicamente:</p>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                  <p>El resultado será únicamente:</p>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           Hola desde utilidades!
                         </code>
                       </pre>
-                    </div>
-                    <p>
-                      En este caso, el bloque bajo
-                      <code class="language-python"
-                        >if __name__ == "__main__"</code
-                      >: no se ejecutará, ya que el archivo fue importado, no
-                      ejecutado directamente. Esto permite separar el código que
-                      debería ejecutarse como parte de una funcionalidad
-                      principal del módulo de lo que es reutilizable.
-                    </p>
                   </div>
-                  <!-- Ejemplo Práctico __name__ fin -->
-                </div>
-                <!-- __name__ fin -->
-                <!-- type() -->
-                <div>
-                  <h3>type()</h3>
                   <p>
-                    En Python, la función
-                    <code class="language-python">type()</code> es una
-                    herramienta incorporada que se utiliza para obtener el tipo
-                    de un objeto o para definir nuevos tipos de objetos
-                    (clases). Su propósito depende del contexto en el que se
-                    emplee. A continuación, se explica su uso en dos escenarios
-                    principales:
+                    En este caso, el bloque bajo
+                    <code class="language-python">if __name__ == "__main__"</code>: no se ejecutará, ya que el archivo
+                    fue importado, no
+                    ejecutado directamente. Esto permite separar el código que
+                    debería ejecutarse como parte de una funcionalidad
+                    principal del módulo de lo que es reutilizable.
                   </p>
-                  <!-- Obtener el Tipo de un Objeto -->
-                  <div>
-                    <h4>Obtener el Tipo de un Objeto</h4>
-                    <p>
-                      Cuando se llama a
-                      <code class="language-python">type(objeto)</code>, la
-                      función devuelve el tipo o la clase del objeto pasado como
-                      argumento. Esto es útil para:
-                    </p>
-                    <ul>
-                      <li>Verificar el tipo de una variable o dato.</li>
-                      <li>
-                        Depuración en el código para asegurarse de que los
-                        valores tienen el tipo esperado.
-                      </li>
-                    </ul>
-                    <p>Ejemplo:</p>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <!-- Ejemplo Práctico __name__ fin -->
+              </div>
+              <!-- __name__ fin -->
+              <!-- type() -->
+              <div>
+                <h3>type()</h3>
+                <p>
+                  En Python, la función
+                  <code class="language-python">type()</code> es una
+                  herramienta incorporada que se utiliza para obtener el tipo
+                  de un objeto o para definir nuevos tipos de objetos
+                  (clases). Su propósito depende del contexto en el que se
+                  emplee. A continuación, se explica su uso en dos escenarios
+                  principales:
+                </p>
+                <!-- Obtener el Tipo de un Objeto -->
+                <div>
+                  <h4>Obtener el Tipo de un Objeto</h4>
+                  <p>
+                    Cuando se llama a
+                    <code class="language-python">type(objeto)</code>, la
+                    función devuelve el tipo o la clase del objeto pasado como
+                    argumento. Esto es útil para:
+                  </p>
+                  <ul>
+                    <li>Verificar el tipo de una variable o dato.</li>
+                    <li>
+                      Depuración en el código para asegurarse de que los
+                      valores tienen el tipo esperado.
+                    </li>
+                  </ul>
+                  <p>Ejemplo:</p>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           x = 10
                           y = "Hola"
@@ -968,40 +874,36 @@
                           print(type(z))  # Salida: &lt;class 'list'>
                         </code>
                       </pre>
-                    </div>
                   </div>
-                  <!-- Obtener el Tipo de un Objeto fin -->
-                  <!-- Crear Nuevas Clases Dinámicamente -->
-                  <div>
-                    <h4>Crear Nuevas Clases Dinámicamente</h4>
-                    <p>
-                      En un contexto más avanzado, type() puede usarse para
-                      crear nuevas clases de manera dinámica. Cuando se llama
-                      con tres argumentos (<code class="language-python"
-                        >nombre</code
-                      >, <code class="language-python">bases</code>,
-                      <code class="language-python">dict</code>):
-                    </p>
-                    <ul>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python">nombre</code></span
-                        >: Nombre de la nueva clase.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python">bases</code></span
-                        >: Una tupla con las clases base (herencia).
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python">dict</code></span
-                        >: Un diccionario que define los atributos y métodos de
-                        la clase.
-                      </li>
-                    </ul>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <!-- Obtener el Tipo de un Objeto fin -->
+                <!-- Crear Nuevas Clases Dinámicamente -->
+                <div>
+                  <h4>Crear Nuevas Clases Dinámicamente</h4>
+                  <p>
+                    En un contexto más avanzado, type() puede usarse para
+                    crear nuevas clases de manera dinámica. Cuando se llama
+                    con tres argumentos (<code class="language-python">nombre</code>, <code
+                      class="language-python">bases</code>,
+                    <code class="language-python">dict</code>):
+                  </p>
+                  <ul>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">nombre</code></span>: Nombre de la nueva
+                      clase.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">bases</code></span>: Una tupla con las clases
+                      base (herencia).
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">dict</code></span>: Un diccionario que define
+                      los atributos y métodos de
+                      la clase.
+                    </li>
+                  </ul>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Crear una clase llamada MiClase con un método saludar
                           MiClase = type('MiClase', (object,), {'saludar': lambda self: "Hola, soy una clase dinámica"})
@@ -1010,104 +912,103 @@
                           print(obj.saludar())  # Salida: Hola, soy una clase dinámica
                         </code>
                       </pre>
-                    </div>
                   </div>
-                  <!-- Crear Nuevas Clases Dinámicamente fin -->
-                  <!-- Usos Comunes de type() en Programación Diaria -->
-                  <div>
-                    <h4>Usos Comunes de type() en Programación Diaria</h4>
-                    <ul>
-                      <li>
-                        Depuración: Identificar tipos en tiempo de ejecución.
-                      </li>
-                      <li>
-                        Validación de datos: Asegurarse de que las entradas
-                        cumplen con el tipo esperado.
-                      </li>
-                      <li>
-                        Metaprogramación: Crear o modificar clases en tiempo de
-                        ejecución para aplicaciones avanzadas.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Usos Comunes de type() en Programación Diaria fin -->
-                  <!-- Nota Importante -->
-                  <div>
-                    <h4>Nota Importante</h4>
-                    <p>
-                      En lugar de usar type() para verificar el tipo de un
-                      objeto, se recomienda en algunos casos usar
-                      <code class="language-python">isinstance()</code> porque
-                      este permite verificar si un objeto es de un tipo
-                      específico o de una subclase de dicho tipo:
-                    </p>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <!-- Crear Nuevas Clases Dinámicamente fin -->
+                <!-- Usos Comunes de type() en Programación Diaria -->
+                <div>
+                  <h4>Usos Comunes de type() en Programación Diaria</h4>
+                  <ul>
+                    <li>
+                      Depuración: Identificar tipos en tiempo de ejecución.
+                    </li>
+                    <li>
+                      Validación de datos: Asegurarse de que las entradas
+                      cumplen con el tipo esperado.
+                    </li>
+                    <li>
+                      Metaprogramación: Crear o modificar clases en tiempo de
+                      ejecución para aplicaciones avanzadas.
+                    </li>
+                  </ul>
+                </div>
+                <!-- Usos Comunes de type() en Programación Diaria fin -->
+                <!-- Nota Importante -->
+                <div>
+                  <h4>Nota Importante</h4>
+                  <p>
+                    En lugar de usar type() para verificar el tipo de un
+                    objeto, se recomienda en algunos casos usar
+                    <code class="language-python">isinstance()</code> porque
+                    este permite verificar si un objeto es de un tipo
+                    específico o de una subclase de dicho tipo:
+                  </p>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           print(isinstance(10, int))  # Salida: True
                         </code>
                       </pre>
-                    </div>
                   </div>
-                  <!-- Nota Importante fin -->
                 </div>
-                <!-- type() fin -->
-                <!-- __module__ -->
+                <!-- Nota Importante fin -->
+              </div>
+              <!-- type() fin -->
+              <!-- __module__ -->
+              <div>
+                <h3>__module__</h3>
+                <p>
+                  En Python,
+                  <code class="language-python">__module__</code> es un
+                  atributo especial que se encuentra asociado con objetos,
+                  como clases o funciones. Indica el nombre del módulo en el
+                  que el objeto fue definido. Este atributo es útil en varios
+                  contextos, especialmente cuando se trabaja con
+                  introspección, depuración o para entender la organización
+                  del código en un proyecto grande.
+                </p>
+                <!-- ¿Qué Es __module__? -->
                 <div>
-                  <h3>__module__</h3>
-                  <p>
-                    En Python,
-                    <code class="language-python">__module__</code> es un
-                    atributo especial que se encuentra asociado con objetos,
-                    como clases o funciones. Indica el nombre del módulo en el
-                    que el objeto fue definido. Este atributo es útil en varios
-                    contextos, especialmente cuando se trabaja con
-                    introspección, depuración o para entender la organización
-                    del código en un proyecto grande.
-                  </p>
-                  <!-- ¿Qué Es __module__? -->
-                  <div>
-                    <h4>¿Qué Es __module__?</h4>
-                    <ul>
-                      <li>
-                        Es un atributo especial de una clase o de una instancia
-                        de clase.
-                      </li>
-                      <li>
-                        Su valor es una cadena que contiene el nombre del módulo
-                        donde se definió la clase.
-                      </li>
-                    </ul>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  <h4>¿Qué Es __module__?</h4>
+                  <ul>
+                    <li>
+                      Es un atributo especial de una clase o de una instancia
+                      de clase.
+                    </li>
+                    <li>
+                      Su valor es una cadena que contiene el nombre del módulo
+                      donde se definió la clase.
+                    </li>
+                  </ul>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           class MiClase:
                               pass
                           print(MiClase.__module__)  # Salida: __main__
                         </code>
                       </pre>
-                    </div>
-                    <p>
-                      En este caso:
-                      <code class="language-python">__module__</code> de
-                      <code class="language-python">MiClase</code> tiene el
-                      valor <code class="language-python">__main__</code> porque
-                      la clase fue definida en el módulo principal.
-                    </p>
                   </div>
-                  <!-- ¿Qué Es __module__? fin -->
-                  <!-- ¿Para qué se Usa __module__? -->
-                  <div>
-                    <h4>¿Para qué se Usa __module__?</h4>
-                    <ul>
-                      <li>
-                        <span class="fw-bold"
-                          >Identificación del origen de clases u objetos</span
-                        >: Es útil para saber en qué módulo está definida una
-                        clase, especialmente en proyectos grandes o cuando se
-                        importan clases desde otros módulos.
-                        <div class="ej-sintaxis">
-                          <pre data-src-status="loaded" tabindex="0">
+                  <p>
+                    En este caso:
+                    <code class="language-python">__module__</code> de
+                    <code class="language-python">MiClase</code> tiene el
+                    valor <code class="language-python">__main__</code> porque
+                    la clase fue definida en el módulo principal.
+                  </p>
+                </div>
+                <!-- ¿Qué Es __module__? fin -->
+                <!-- ¿Para qué se Usa __module__? -->
+                <div>
+                  <h4>¿Para qué se Usa __module__?</h4>
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Identificación del origen de clases u objetos</span>: Es útil para saber en
+                      qué módulo está definida una
+                      clase, especialmente en proyectos grandes o cuando se
+                      importan clases desde otros módulos.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               # archivo_modulo.py
                               class ClaseExterna:
@@ -1117,27 +1018,26 @@
                               print(ClaseExterna.__module__)  # Salida: archivo_modulo
                             </code>
                           </pre>
-                        </div>
-                      </li>
-                      <li>
-                        <span class="fw-bold">Depuración y registro</span>:
-                        Ayuda a rastrear dónde se definió una clase en caso de
-                        errores o durante el registro de clases.
-                      </li>
-                      <li>
-                        <span class="fw-bold">Uso en metaprogramación</span>:
-                        Cuando se usan técnicas avanzadas como la introspección,
-                        <code class="language-python">__module__</code> permite
-                        identificar dinámicamente la procedencia de una clase o
-                        función.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          >Comprobaciones de pertenencia</span
-                        >: Se puede usar para verificar si un objeto pertenece a
-                        un módulo específico.
-                        <div class="ej-sintaxis">
-                          <pre data-src-status="loaded" tabindex="0">
+                      </div>
+                    </li>
+                    <li>
+                      <span class="fw-bold">Depuración y registro</span>:
+                      Ayuda a rastrear dónde se definió una clase en caso de
+                      errores o durante el registro de clases.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Uso en metaprogramación</span>:
+                      Cuando se usan técnicas avanzadas como la introspección,
+                      <code class="language-python">__module__</code> permite
+                      identificar dinámicamente la procedencia de una clase o
+                      función.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Comprobaciones de pertenencia</span>: Se puede usar para verificar si un
+                      objeto pertenece a
+                      un módulo específico.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               def pertenece_a_modulo(objeto, modulo):
                               return objeto.__class__.__module__ == modulo
@@ -1146,102 +1046,94 @@
                               print(pertenece_a_modulo(Prueba(), "__main__"))  # Salida: True
                             </code>
                           </pre>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- ¿Para qué se Usa __module__? fin -->
-                  <!-- Consideraciones Importantes -->
-                  <div>
-                    <h4>Consideraciones Importantes</h4>
-                    <ul>
-                      <li>
-                        <code class="language-python">__module__</code> es solo
-                        un nombre de cadena; cambiar el nombre del módulo o
-                        moverlo puede invalidar la información que contiene.
-                      </li>
-                      <li>
-                        Si el objeto se encuentra en el módulo principal
-                        ejecutado directamente, el valor será
-                        <code class="language-python">__main__</code>.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Consideraciones Importantes fin -->
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-                <!-- __module__ fin -->
-                <!-- __main__ -->
+                <!-- ¿Para qué se Usa __module__? fin -->
+                <!-- Consideraciones Importantes -->
                 <div>
-                  <h3>__main__</h3>
+                  <h4>Consideraciones Importantes</h4>
+                  <ul>
+                    <li>
+                      <code class="language-python">__module__</code> es solo
+                      un nombre de cadena; cambiar el nombre del módulo o
+                      moverlo puede invalidar la información que contiene.
+                    </li>
+                    <li>
+                      Si el objeto se encuentra en el módulo principal
+                      ejecutado directamente, el valor será
+                      <code class="language-python">__main__</code>.
+                    </li>
+                  </ul>
+                </div>
+                <!-- Consideraciones Importantes fin -->
+              </div>
+              <!-- __module__ fin -->
+              <!-- __main__ -->
+              <div>
+                <h3>__main__</h3>
+                <p>
+                  En Python, __main__ es un concepto importante relacionado
+                  con la estructura y ejecución de programas.
+                </p>
+                <!-- ¿Qué es __main__? -->
+                <div>
+                  <h4>¿Qué es __main__?</h4>
+                  <ul>
+                    <li>
+                      <code class="language-python">__main__</code> es el
+                      nombre especial que Python asigna al entorno principal
+                      donde se ejecuta un script.
+                    </li>
+                    <li>
+                      Cuando se ejecuta un archivo Python directamente (por
+                      ejemplo, python
+                      <code class="language-python">mi_script.py</code>), el
+                      intérprete define una variable especial llamada
+                      <code class="language-python">__name__</code> y le
+                      asigna el valor "<code class="language-python">__main__</code>".
+                    </li>
+                    <li>
+                      Sin embargo, si el archivo se importa como un módulo en
+                      otro script, la variable
+                      <code class="language-python">__name__</code> se define
+                      con el nombre del módulo (el nombre del archivo sin la
+                      extensión <code class="language-python">.py</code>).
+                    </li>
+                  </ul>
+                </div>
+                <!-- ¿Qué es __main__? fin -->
+                <!-- ¿Para qué se usa __main__? -->
+                <div>
+                  <h4>¿Para qué se usa __main__?</h4>
                   <p>
-                    En Python, __main__ es un concepto importante relacionado
-                    con la estructura y ejecución de programas.
+                    La principal utilidad de
+                    <code class="language-python">if __name__ == "__main__"</code>: es controlar qué partes del código
+                    se ejecutan cuando
+                    un archivo es ejecutado directamente o importado como un
+                    módulo. Esto permite:
                   </p>
-                  <!-- ¿Qué es __main__? -->
-                  <div>
-                    <h4>¿Qué es __main__?</h4>
-                    <ul>
-                      <li>
-                        <code class="language-python">__main__</code> es el
-                        nombre especial que Python asigna al entorno principal
-                        donde se ejecuta un script.
-                      </li>
-                      <li>
-                        Cuando se ejecuta un archivo Python directamente (por
-                        ejemplo, python
-                        <code class="language-python">mi_script.py</code>), el
-                        intérprete define una variable especial llamada
-                        <code class="language-python">__name__</code> y le
-                        asigna el valor "<code class="language-python"
-                          >__main__</code
-                        >".
-                      </li>
-                      <li>
-                        Sin embargo, si el archivo se importa como un módulo en
-                        otro script, la variable
-                        <code class="language-python">__name__</code> se define
-                        con el nombre del módulo (el nombre del archivo sin la
-                        extensión <code class="language-python">.py</code>).
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- ¿Qué es __main__? fin -->
-                  <!-- ¿Para qué se usa __main__? -->
-                  <div>
-                    <h4>¿Para qué se usa __main__?</h4>
-                    <p>
-                      La principal utilidad de
-                      <code class="language-python"
-                        >if __name__ == "__main__"</code
-                      >: es controlar qué partes del código se ejecutan cuando
-                      un archivo es ejecutado directamente o importado como un
-                      módulo. Esto permite:
-                    </p>
-                    <ul>
-                      <li>
-                        <span class="fw-bold"
-                          >Evitar la ejecución de código no deseado al importar
-                          módulos</span
-                        >: Cuando un archivo contiene funciones o clases
-                        reutilizables, se puede evitar que las secciones de
-                        prueba o ejecución se ejecuten al importarlo.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          >Definir un punto de entrada para el programa</span
-                        >: Es común que el bloque
-                        <code class="language-python"
-                          >if __name__ == "__main__"</code
-                        >: contenga la lógica principal del script.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- ¿Para qué se usa __main__? fin -->
-                  <!-- Ejemplo Práctico de Uso de __main__ -->
-                  <div>
-                    <h4>Ejemplo Práctico de Uso de __main__</h4>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Evitar la ejecución de código no deseado al importar
+                        módulos</span>: Cuando un archivo contiene funciones o clases
+                      reutilizables, se puede evitar que las secciones de
+                      prueba o ejecución se ejecuten al importarlo.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Definir un punto de entrada para el programa</span>: Es común que el bloque
+                      <code class="language-python">if __name__ == "__main__"</code>: contenga la lógica principal del
+                      script.
+                    </li>
+                  </ul>
+                </div>
+                <!-- ¿Para qué se usa __main__? fin -->
+                <!-- Ejemplo Práctico de Uso de __main__ -->
+                <div>
+                  <h4>Ejemplo Práctico de Uso de __main__</h4>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Archivo modulo.py
                           def funcion_util():
@@ -1251,16 +1143,15 @@
                               funcion_util()
                         </code>
                       </pre>
-                    </div>
-                    <!-- Comportamiento -->
-                    <div>
-                      <h5>Comportamiento</h5>
-                      <ul>
-                        <li>
-                          <span class="fw-bold">Si se ejecuta directamente</span
-                          >:
-                          <div class="ej-sintaxis">
-                            <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                  <!-- Comportamiento -->
+                  <div>
+                    <h5>Comportamiento</h5>
+                    <ul>
+                      <li>
+                        <span class="fw-bold">Si se ejecuta directamente</span>:
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 python modulo.py
                                 """
@@ -1269,118 +1160,113 @@
                                 """
                               </code>
                             </pre>
-                          </div>
-                        </li>
-                        <li>
-                          <span class="fw-bold"
-                            >Si se importa en otro script</span
-                          >:
-                          <div class="ej-sintaxis">
-                            <pre data-src-status="loaded" tabindex="0">
+                        </div>
+                      </li>
+                      <li>
+                        <span class="fw-bold">Si se importa en otro script</span>:
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 import modulo
                                 modulo.funcion_util()
                                 # Salida: Esta función puede ser utilizada desde otros módulos.
                               </code>
                             </pre>
-                          </div>
-                          El bloque
-                          <code class="language-python"
-                            >if __name__ == "__main__"</code
-                          >: no se ejecuta porque el valor de
-                          <code class="language-python">__name__</code> es
-                          <code class="language-python">"modulo"</code> al
-                          importar el archivo.
-                        </li>
-                      </ul>
-                    </div>
-                    <!-- Comportamiento fin -->
-                  </div>
-                  <!-- Ejemplo Práctico de Uso de __main__ fin -->
-                  <!-- Ventajas del uso de __main__ -->
-                  <div>
-                    <h4>Ventajas del uso de __main__</h4>
-                    <ul>
-                      <li>
-                        <span class="fw-bold">Modularidad</span>: Facilita la
-                        reutilización de código en diferentes scripts sin
-                        preocuparse por la ejecución no intencionada de
-                        secciones específicas.
-                      </li>
-                      <li>
-                        <span class="fw-bold">Claridad</span>: Define un punto
-                        de entrada claro y organizado para el programa.
-                      </li>
-                      <li>
-                        <span class="fw-bold">Pruebas y desarrollo</span>:
-                        Permite incluir pruebas rápidas o temporales que no
-                        afecten a otros scripts que utilicen el módulo.
+                        </div>
+                        El bloque
+                        <code class="language-python">if __name__ == "__main__"</code>: no se ejecuta porque el valor de
+                        <code class="language-python">__name__</code> es
+                        <code class="language-python">"modulo"</code> al
+                        importar el archivo.
                       </li>
                     </ul>
                   </div>
-                  <!-- Ventajas del uso de __main__ fin -->
+                  <!-- Comportamiento fin -->
                 </div>
-                <!-- __main__ fin -->
-                <!-- ___bases__ -->
+                <!-- Ejemplo Práctico de Uso de __main__ fin -->
+                <!-- Ventajas del uso de __main__ -->
                 <div>
-                  <h3>___bases__</h3>
-                  <p>
-                    El atributo especial
-                    <code class="language-python">__bases__</code> representa
-                    una propiedad exclusiva de las clases que devuelve una tupla
-                    con las clases padre o superclases de una clase específica.
-                    Esta característica resulta fundamental en el paradigma de
-                    programación orientada a objetos, permitiendo a los
-                    desarrolladores examinar y comprender la estructura de
-                    herencia de las clases dentro de un sistema de software.
-                  </p>
-                  <!-- ¿Qué es __bases__? -->
-                  <div>
-                    <h4>¿Qué es __bases__?</h4>
-                    <ul>
-                      <li>
-                        <span class="fw-bold">
-                          Es un atributo de las clases</span
-                        >: Está disponible únicamente en las clases, no en las
-                        instancias.
-                      </li>
-                      <li>
-                        <span class="fw-bold"> Contiene las superclases</span>:
-                        <code class="language-python">__bases__</code> almacena
-                        una tupla con las clases de las cuales una clase
-                        específica hereda directamente.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- ¿Qué es __bases__? fin -->
-                  <!-- ¿Para qué Se usa __bases__? -->
-                  <div>
-                    <h4>¿Para qué Se usa __bases__?</h4>
-                    <ul>
-                      <li>
-                        <span class="fw-bold">Inspección de herencia</span>:
-                        Permite conocer las relaciones de herencia en un
-                        programa, lo cual es útil en depuración o en
-                        meta-programación.
-                      </li>
-                      <li>
-                        <span class="fw-bold">Analizar jerarquías</span>:
-                        Facilita la comprensión de la estructura de clases y su
-                        relación en jerarquías complejas.
-                      </li>
-                      <li>
-                        <span class="fw-bold">Meta-programación</span>: Puede
-                        ser utilizado en programas que manipulan dinámicamente
-                        la estructura de clases.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- ¿Para qué Se usa __bases__? fin -->
-                  <!-- Ejemplo de Uso -->
-                  <div>
-                    <h4>Ejemplo de Uso</h4>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  <h4>Ventajas del uso de __main__</h4>
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Modularidad</span>: Facilita la
+                      reutilización de código en diferentes scripts sin
+                      preocuparse por la ejecución no intencionada de
+                      secciones específicas.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Claridad</span>: Define un punto
+                      de entrada claro y organizado para el programa.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Pruebas y desarrollo</span>:
+                      Permite incluir pruebas rápidas o temporales que no
+                      afecten a otros scripts que utilicen el módulo.
+                    </li>
+                  </ul>
+                </div>
+                <!-- Ventajas del uso de __main__ fin -->
+              </div>
+              <!-- __main__ fin -->
+              <!-- ___bases__ -->
+              <div>
+                <h3>___bases__</h3>
+                <p>
+                  El atributo especial
+                  <code class="language-python">__bases__</code> representa
+                  una propiedad exclusiva de las clases que devuelve una tupla
+                  con las clases padre o superclases de una clase específica.
+                  Esta característica resulta fundamental en el paradigma de
+                  programación orientada a objetos, permitiendo a los
+                  desarrolladores examinar y comprender la estructura de
+                  herencia de las clases dentro de un sistema de software.
+                </p>
+                <!-- ¿Qué es __bases__? -->
+                <div>
+                  <h4>¿Qué es __bases__?</h4>
+                  <ul>
+                    <li>
+                      <span class="fw-bold">
+                        Es un atributo de las clases</span>: Está disponible únicamente en las clases, no en las
+                      instancias.
+                    </li>
+                    <li>
+                      <span class="fw-bold"> Contiene las superclases</span>:
+                      <code class="language-python">__bases__</code> almacena
+                      una tupla con las clases de las cuales una clase
+                      específica hereda directamente.
+                    </li>
+                  </ul>
+                </div>
+                <!-- ¿Qué es __bases__? fin -->
+                <!-- ¿Para qué Se usa __bases__? -->
+                <div>
+                  <h4>¿Para qué Se usa __bases__?</h4>
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Inspección de herencia</span>:
+                      Permite conocer las relaciones de herencia en un
+                      programa, lo cual es útil en depuración o en
+                      meta-programación.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Analizar jerarquías</span>:
+                      Facilita la comprensión de la estructura de clases y su
+                      relación en jerarquías complejas.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Meta-programación</span>: Puede
+                      ser utilizado en programas que manipulan dinámicamente
+                      la estructura de clases.
+                    </li>
+                  </ul>
+                </div>
+                <!-- ¿Para qué Se usa __bases__? fin -->
+                <!-- Ejemplo de Uso -->
+                <div>
+                  <h4>Ejemplo de Uso</h4>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Definición de algunas clases
                           class A:
@@ -1397,39 +1283,37 @@
                           # A hereda implícitamente de "object", la raíz de todas las clases
                         </code>
                       </pre>
-                    </div>
                   </div>
-                  <!-- Ejemplo de Uso fin -->
-                  <!-- Detalles Importantes -->
-                  <div>
-                    <h4>Detalles Importantes</h4>
-                    <ul>
-                      <li>
-                        <span class="fw-bold">Clases "object"</span>: En Python,
-                        todas las clases nuevas (herencia clásica y nueva)
-                        derivan de la clase raíz
-                        <code class="language-python">object</code>, a menos que
-                        se especifique explícitamente otra jerarquía.
-                      </li>
-                      <li>
-                        <span class="fw-bold">Uso limitado</span>: Aunque es
-                        útil para inspeccionar la jerarquía, modificar
-                        dinámicamente herencias usando este atributo no es una
-                        práctica común ni recomendada.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Detalles Importantes fin -->
-                  <!-- Casos Prácticos -->
-                  <div>
-                    <h3>Casos Prácticos</h3>
-                    <ul>
-                      <li>
-                        <span class="fw-bold"
-                          >Verificar la herencia en un programa</span
-                        >:
-                        <div class="ej-sintaxis">
-                          <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <!-- Ejemplo de Uso fin -->
+                <!-- Detalles Importantes -->
+                <div>
+                  <h4>Detalles Importantes</h4>
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Clases "object"</span>: En Python,
+                      todas las clases nuevas (herencia clásica y nueva)
+                      derivan de la clase raíz
+                      <code class="language-python">object</code>, a menos que
+                      se especifique explícitamente otra jerarquía.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Uso limitado</span>: Aunque es
+                      útil para inspeccionar la jerarquía, modificar
+                      dinámicamente herencias usando este atributo no es una
+                      práctica común ni recomendada.
+                    </li>
+                  </ul>
+                </div>
+                <!-- Detalles Importantes fin -->
+                <!-- Casos Prácticos -->
+                <div>
+                  <h3>Casos Prácticos</h3>
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Verificar la herencia en un programa</span>:
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               # Crear un código que verifique si una clase tiene una clase base específica
                               class Animal:
@@ -1439,79 +1323,74 @@
                               print(Animal in Perro.__bases__)  # Salida: True
                             </code>
                           </pre>
-                        </div>
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          >Usar en metaprogramación o frameworks avanzados</span
-                        >: En ciertos casos, se usa para construir clases
-                        dinámicamente o analizar estructuras en frameworks como
-                        Django o Flask.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Casos Prácticos fin -->
+                      </div>
+                    </li>
+                    <li>
+                      <span class="fw-bold">Usar en metaprogramación o frameworks avanzados</span>: En ciertos casos, se
+                      usa para construir clases
+                      dinámicamente o analizar estructuras en frameworks como
+                      Django o Flask.
+                    </li>
+                  </ul>
                 </div>
-                <!-- ___bases__ fin -->
+                <!-- Casos Prácticos fin -->
               </div>
-              <!-- La Vida al Interior de las Clases y Objetos Fin -->
-              <!-- Reflexión e introspección -->
-              <div id="reflexionEIntrospeccion" class="mt-5">
-                <h2 class="mt-1">Reflexión e introspección</h2>
+              <!-- ___bases__ fin -->
+            </div>
+            <!-- La Vida al Interior de las Clases y Objetos Fin -->
+            <!-- Reflexión e introspección -->
+            <div id="reflexion-e-introspeccion" class="mt-5">
+              <h2>Reflexión e introspección</h2>
+              <p>
+                En Python, reflexión e introspección son conceptos
+                relacionados con la capacidad de un programa para examinar y
+                manipular su estructura y comportamiento en tiempo de
+                ejecución. A continuación, se explican ambos conceptos:
+              </p>
+              <!-- Reflexión -->
+              <div>
+                <h3>Reflexión</h3>
                 <p>
-                  En Python, reflexión e introspección son conceptos
-                  relacionados con la capacidad de un programa para examinar y
-                  manipular su estructura y comportamiento en tiempo de
-                  ejecución. A continuación, se explican ambos conceptos:
+                  La reflexión en programación es la capacidad de un programa
+                  para examinar y modificar su propia estructura,
+                  comportamiento o datos durante la ejecución. En Python, esto
+                  incluye la posibilidad de:
                 </p>
-                <!-- Reflexión -->
-                <div>
-                  <h3>Reflexión</h3>
-                  <p>
-                    La reflexión en programación es la capacidad de un programa
-                    para examinar y modificar su propia estructura,
-                    comportamiento o datos durante la ejecución. En Python, esto
-                    incluye la posibilidad de:
-                  </p>
-                  <ul>
-                    <li>
-                      Inspeccionar clases, funciones, métodos, atributos,
-                      módulos y objetos.
-                    </li>
-                    <li>
-                      Modificar atributos o incluso agregar nuevos elementos
-                      dinámicamente.
-                    </li>
-                  </ul>
-                  <p>
-                    Python ofrece herramientas y funciones integradas para
-                    realizar reflexión, como:
-                  </p>
-                  <ul>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python">getattr()</code></span
-                      >: Obtiene el valor de un atributo de un objeto.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python">setattr()</code></span
-                      >: Asigna un valor a un atributo de un objeto.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python">hasattr()</code></span
-                      >: Verifica si un objeto tiene un atributo específico.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python">delattr()</code></span
-                      >: Elimina un atributo de un objeto.
-                    </li>
-                  </ul>
-                  <p>Ejemplo:</p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                <ul>
+                  <li>
+                    Inspeccionar clases, funciones, métodos, atributos,
+                    módulos y objetos.
+                  </li>
+                  <li>
+                    Modificar atributos o incluso agregar nuevos elementos
+                    dinámicamente.
+                  </li>
+                </ul>
+                <p>
+                  Python ofrece herramientas y funciones integradas para
+                  realizar reflexión, como:
+                </p>
+                <ul>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">getattr()</code></span>: Obtiene el valor de un
+                    atributo de un objeto.
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">setattr()</code></span>: Asigna un valor a un
+                    atributo de un objeto.
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">hasattr()</code></span>: Verifica si un objeto
+                    tiene un atributo específico.
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">delattr()</code></span>: Elimina un atributo de
+                    un objeto.
+                  </li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         class Persona:
                             nombre = "Juan"
@@ -1523,81 +1402,74 @@
                         print(persona.nombre)  # Salida: María
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Reflexión fin -->
-                <!-- Introspección -->
-                <div>
-                  <h3>Introspección</h3>
-                  <p>
-                    La introspección es un subconjunto de la reflexión que se
-                    enfoca exclusivamente en examinar (pero no modificar) los
-                    elementos de un programa en tiempo de ejecución. Python
-                    permite la introspección mediante funciones integradas y
-                    módulos como <code class="language-python">inspect</code>.
-                  </p>
-                  <p>Herramientas comunes para introspección:</p>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">type()</span>: Determina el tipo de
-                      un objeto.
-                    </li>
-                    <li>
-                      <span class="fw-bold">dir()</span>: Muestra los atributos
-                      y métodos disponibles para un objeto.
-                    </li>
-                    <li>
-                      <span class="fw-bold">isinstance()</span>: Verifica si un
-                      objeto pertenece a una clase o a una subclase.
-                    </li>
-                    <li>
-                      <span class="fw-bold">callable()</span>: Determina si un
-                      objeto es invocable.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Módulo inspect</span>: Proporciona
-                      funciones avanzadas para examinar objetos (como
-                      inspect.getmembers() y inspect.signature()).
-                    </li>
-                  </ul>
-                  <ul>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python">type()</code></span
-                      >: Determina el tipo de un objeto.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python">dir()</code></span
-                      >: Muestra los atributos y métodos disponibles para un
-                      objeto.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python">isinstance()</code></span
-                      >: Verifica si un objeto pertenece a una clase o a una
-                      subclase.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python">callable()</code></span
-                      >: Determina si un objeto es invocable.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python"
-                          >Módulo inspect</code
-                        ></span
-                      >: Proporciona funciones avanzadas para examinar objetos
-                      (como
-                      <code class="language-python">inspect.getmembers()</code>
-                      y
-                      <code class="language-python">inspect.signature()</code>).
-                    </li>
-                  </ul>
-                  <p>Ejemplo:</p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Reflexión fin -->
+              <!-- Introspección -->
+              <div>
+                <h3>Introspección</h3>
+                <p>
+                  La introspección es un subconjunto de la reflexión que se
+                  enfoca exclusivamente en examinar (pero no modificar) los
+                  elementos de un programa en tiempo de ejecución. Python
+                  permite la introspección mediante funciones integradas y
+                  módulos como <code class="language-python">inspect</code>.
+                </p>
+                <p>Herramientas comunes para introspección:</p>
+                <ul>
+                  <li>
+                    <span class="fw-bold">type()</span>: Determina el tipo de
+                    un objeto.
+                  </li>
+                  <li>
+                    <span class="fw-bold">dir()</span>: Muestra los atributos
+                    y métodos disponibles para un objeto.
+                  </li>
+                  <li>
+                    <span class="fw-bold">isinstance()</span>: Verifica si un
+                    objeto pertenece a una clase o a una subclase.
+                  </li>
+                  <li>
+                    <span class="fw-bold">callable()</span>: Determina si un
+                    objeto es invocable.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Módulo inspect</span>: Proporciona
+                    funciones avanzadas para examinar objetos (como
+                    inspect.getmembers() y inspect.signature()).
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">type()</code></span>: Determina el tipo de un
+                    objeto.
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">dir()</code></span>: Muestra los atributos y
+                    métodos disponibles para un
+                    objeto.
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">isinstance()</code></span>: Verifica si un
+                    objeto pertenece a una clase o a una
+                    subclase.
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">callable()</code></span>: Determina si un objeto
+                    es invocable.
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">Módulo inspect</code></span>: Proporciona
+                    funciones avanzadas para examinar objetos
+                    (como
+                    <code class="language-python">inspect.getmembers()</code>
+                    y
+                    <code class="language-python">inspect.signature()</code>).
+                  </li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         import inspect
                         def ejemplo_funcion(param):
@@ -1609,186 +1481,206 @@
                         print(inspect.signature(ejemplo_funcion))  # Salida: (param)
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Introspección fin -->
-                <!-- Diferencias entre Reflexión e Introspección -->
-                <div>
-                  <h3>Diferencias entre Reflexión e Introspección</h3>
-                  <table class="table table-bordered">
-                    <thead class="table-dark">
-                      <tr class="text-center">
-                        <th>Característica</th>
-                        <th>Reflexión</th>
-                        <th>Introspección</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Propósito</td>
-                        <td>Examinar y modificar elementos</td>
-                        <td>Examinar únicamente</td>
-                      </tr>
-                      <tr>
-                        <td>Capacidades</td>
-                        <td>Inspección y cambios dinámicos</td>
-                        <td>Inspección estática y detallada</td>
-                      </tr>
-                      <tr>
-                        <td>Ejemplo de uso</td>
-                        <td>
-                          <code class="language-python">setattr()</code>,
-                          <code class="language-python">getattr()</code>
-                        </td>
-                        <td>
-                          <code class="language-python">type()</code>,
-                          <code class="language-python">dir()</code>,
-                          <code class="language-python">inspect</code>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <!-- Diferencias entre Reflexión e Introspección fin -->
-                <!-- Casos de Uso -->
-                <div>
-                  <h3>Casos de Uso</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Reflexión</span>: Cuando se necesita
-                      agregar dinámicamente métodos o atributos a objetos
-                      durante la ejecución de un programa.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Introspección</span>: Cuando se
-                      desea depurar o entender el comportamiento de un objeto
-                      sin alterarlo.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Casos de Uso fin -->
               </div>
-              <!-- Reflexión e introspección Fin -->
+              <!-- Introspección fin -->
+              <!-- Diferencias entre Reflexión e Introspección -->
+              <div>
+                <h3>Diferencias entre Reflexión e Introspección</h3>
+                <table class="table table-bordered">
+                  <thead class="table-dark">
+                    <tr class="text-center">
+                      <th>Característica</th>
+                      <th>Reflexión</th>
+                      <th>Introspección</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Propósito</td>
+                      <td>Examinar y modificar elementos</td>
+                      <td>Examinar únicamente</td>
+                    </tr>
+                    <tr>
+                      <td>Capacidades</td>
+                      <td>Inspección y cambios dinámicos</td>
+                      <td>Inspección estática y detallada</td>
+                    </tr>
+                    <tr>
+                      <td>Ejemplo de uso</td>
+                      <td>
+                        <code class="language-python">setattr()</code>,
+                        <code class="language-python">getattr()</code>
+                      </td>
+                      <td>
+                        <code class="language-python">type()</code>,
+                        <code class="language-python">dir()</code>,
+                        <code class="language-python">inspect</code>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- Diferencias entre Reflexión e Introspección fin -->
+              <!-- Casos de Uso -->
+              <div>
+                <h3>Casos de Uso</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Reflexión</span>: Cuando se necesita
+                    agregar dinámicamente métodos o atributos a objetos
+                    durante la ejecución de un programa.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Introspección</span>: Cuando se
+                    desea depurar o entender el comportamiento de un objeto
+                    sin alterarlo.
+                  </li>
+                </ul>
+              </div>
+              <!-- Casos de Uso fin -->
             </div>
-          </article>
-          <!--  POO: Métodos en Python  -->
-          <!--  comentarios  -->
-          <article class="row pt-5" id="comments">
-            <h2>COMENTARIOS</h2>
-            <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por
-              favor infórmelo a través del formulario disponible para este
-              propósito.
-            </p>
-            <div class="d-flex justify-content-center">
-              <form
-                action="https://formspree.io/f/mdkdawkg"
-                method="POST"
-                id="myForm"
-              >
-                <fieldset class="d-flex flex-column gap-3">
-                  <legend class="text-center fs-4">Deje su comentario</legend>
+            <!-- Reflexión e introspección Fin -->
+          </div>
+        </article>
+        <!--  POO: Métodos en Python  -->
+        <!--  comentarios  -->
+        <article class="row pt-5" id="comments">
+          <h2>COMENTARIOS</h2>
+          <p>
+            Si tiene alguna inquietud, duda o ha encontrado algún error, por
+            favor infórmelo a través del formulario disponible para este
+            propósito.
+          </p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
 
-                  <div class="d-flex flex-column">
-                    <label for="name">Nombre:</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="User"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
+                </div>
 
-                  <div class="d-flex flex-column">
-                    <label for="email">Email:</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="user@mail.com"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
 
-                  <div class="d-flex flex-column">
-                    <label for="message">Mensaje:</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      cols="30"
-                      rows="5"
-                      placeholder="Su comentario..."
-                      class="form-control rounded-3"
-                      required
-                    ></textarea>
-                  </div>
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
 
-                  <button
-                    type="submit"
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
-                  >
-                    Enviar
-                  </button>
-                </fieldset>
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                  Enviar
+                </button>
+              </fieldset>
 
-                <p class="small text-center">
-                  La política de privacidad, y los términos y condiciones están
-                  disponibles en el formulario de contacto.
-                </p>
-              </form>
+              <p class="small text-center">
+                La política de privacidad, y los términos y condiciones están
+                disponibles en el formulario de contacto.
+              </p>
+            </form>
+          </div>
+        </article>
+        <!--  fin comentarios  -->
+      </section>
+
+      <!--  barra lateral  -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        <h1>En Este Artículo</h1>
+        <div class="menu-scroll">
+          <div class="menu-container">
+            <div class="border border-1">
+              <div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
+              <div class="menu-item"><a href="#metodos-al-detalle" class="simple-link">Métodos al Detalle</a></div>
+              <div class="menu-item"><a href="#la-vida-al-interior-de-las-clases-y-objetos" class="simple-link">La Vida
+                  al Interior de las Clases y Objetos</a></div>
+              <div class="menu-item"><a href="#reflexion-e-introspeccion" class="simple-link">Reflexión e
+                  introspección</a></div>
+              <!-- Comentarios  -->
+              <div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div>
             </div>
-          </article>
-          <!--  fin comentarios  -->
-        </section>
-        <!--  barra lateral  -->
-        <aside class="col-lg-3 d-none d-lg-block pt-5">
-          <h1>En Este Artículo</h1>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a href="#introduccion">Introducción</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#metodosAlDetalle">Métodos al Detalle</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#laVidaAlInteriorDeLasClasesYObjetos"
-                >La Vida al Interior de las Clases y Objetos</a
-              >
-            </li>
-            <li class="list-group-item">
-              <a href="#reflexionEIntrospeccion">Reflexión e introspección</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#comments">Comentarios</a>
-            </li>
-          </ul>
-        </aside>
-        <!--  fin barra lateral  -->
-      </main>
-      <!--  fin principal  -->
+          </div>
+        </div>
+      </aside>
+      <!--  fin barra lateral  -->
+    </main>
+    <!--  fin principal  -->
+  </div>
+  <!--  Principal Fin  -->
+
+  <!--  pie de pagina  -->
+  <footer class="row border-top border-1 m-1 mt-auto">
+    <div class="row">
+      <!-- contacto -->
+      <address class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Contacto</div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class="ms-3">
+            <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class="ms-3">Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      <!-- Derechos de autor -->
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
+      </div>
+      <!-- redes sociales -->
+      <div class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Redes Sociales</div>
+        <div class="d-flex justify-content-evenly align-items-center gap-5">
+          <div>
+            <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <!--  Principal Fin  -->
+    <div class="d-flex align-items-center justify-content-center gap-2"></div>
+  </footer>
+  <!--  pie de pagina fin  -->
 
-    <!-- button to top -->
-    <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        fill="currentColor"
-        class="bi bi-arrow-bar-up"
-        viewBox="0 0 16 16"
-        style="margin-left: -2px"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"
-        ></path>
-      </svg>
-    </button>
-    <!-- Fin button to top -->
-  </body>
+
+
+
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
 </html>

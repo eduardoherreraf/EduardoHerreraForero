@@ -1,230 +1,158 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-  <head>
-    <!-- Metaetiquetas -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="En esta sección se profundizará en el conocimiento de las variables de instancia y de clase, explorando además las características fundamentales de las propiedades que definen objetos y clases."
-    />
-    <meta
-      name="title"
-      content="POO: Propiedades Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta name="author" content="Ing. Eduardo Herrera Forero" />
-    <meta name="application-name" content="EHF" />
-    <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://eduardoherreraf.github.io/cursoPython3-0703_poo_propiedades.html"
-    />
-    <!-- Fin Metaetiquetas -->
 
-    <!-- Open Graph data -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="POO: Propiedades Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      property="og:description"
-      content="En esta sección se profundizará en el conocimiento de las variables de instancia y de clase, explorando además las características fundamentales de las propiedades que definen objetos y clases."
-    />
-    <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      property="og:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      property="og:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0703_poo_propiedades.html"
-    />
-    <meta property="og:locale" content="es_CO" />
-    <!-- fin Open Graph data -->
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="En esta sección se profundizará en el conocimiento de las variables de instancia y de clase, explorando además las características fundamentales de las propiedades que definen objetos y clases." />
+  <meta name="title" content="POO: Propiedades Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eduardoherreraf.github.io/cursoPython3-0703_poo_propiedades.html" />
+  <!-- Fin Metaetiquetas -->
 
-    <!-- Twitter cards -->
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="POO: Propiedades Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      name="twitter:description"
-      content="En esta sección se profundizará en el conocimiento de las variables de instancia y de clase, explorando además las características fundamentales de las propiedades que definen objetos y clases."
-    />
-    <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      name="twitter:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      name="twitter:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0703_poo_propiedades.html"
-    />
-    <meta name="twitter:site" content="@ehfeduardo" />
-    <!-- Fin Twitter cards -->
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="POO: Propiedades Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta property="og:description"
+    content="En esta sección se profundizará en el conocimiento de las variables de instancia y de clase, explorando además las características fundamentales de las propiedades que definen objetos y clases." />
+  <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta property="og:url" content="https://eduardoherreraf.github.io/cursoPython3-0703_poo_propiedades.html" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
 
-    <!-- iconos -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="android-chrome-192x192.png"
-    />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- fin iconos -->
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="POO: Propiedades Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description"
+    content="En esta sección se profundizará en el conocimiento de las variables de instancia y de clase, explorando además las características fundamentales de las propiedades que definen objetos y clases." />
+  <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta name="twitter:url" content="https://eduardoherreraf.github.io/cursoPython3-0703_poo_propiedades.html" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
 
-    <title>POO: Propiedades Python 3 - Ing. Eduardo Herrera Forero.</title>
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
 
-    <script type="module" src="./js/main.js"></script>
+  <title>POO: Propiedades Python 3 - Ing. Eduardo Herrera Forero.</title>
 
-    <meta
-      name="google-site-verification"
-      content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"
-    />
-  </head>
+  <script type="module" src="./js/main.js"></script>
 
-  <body>
-    <!-- Barra deNavegación -->
-    <nav
-      class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
-    >
-      <div class="container-fluid">
-        <!-- Enlace a la página principal con el logo y nombre -->
-        <a
-          class="navbar-brand d-flex align-items-center ms-2"
-          href="index.html"
-        >
-          <img
-            src="./images/logo.png"
-            alt="Logo de Ing. Eduardo Herrera Forero"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top me-1"
-          />
-          <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
-        </a>
-        <!-- Botón para activar el menú en dispositivos pequeños -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Menú de navegación -->
-        <div
-          class="collapse navbar-collapse ms-auto text-center"
-          id="navbarSupportedContent"
-        >
-          <ul
-            class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100"
-          >
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#portfolio"
-                >PORTAFOLIO</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 publicaciones-activo"
-                href="index.html#blog"
-                >PUBLICACIONES</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
-            </li>
-          </ul>
-        </div>
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Barra deNavegación -->
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
 
-    <!--  principal  -->
-    <div class="container-fluid" id="introduccion">
-      <main class="row">
-        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
-          <!--  POO: Propiedades en Python  -->
-          <article
-            class="row border-1 border-bottom pb-3"
-            data-bs-spy="scroll"
-            data-bs-target="#list-example"
-            data-bs-smooth-scroll="true"
-          >
-            <div>
-              <header>
-                <h1>POO: Propiedades en Python</h1>
-              </header>
-              <!-- Introducción -->
-              <div class="mt-5">
-                <h2>Introducción</h2>
-                <p>
-                  Este documento explora las variables de instancia y de clase
-                  en Python. Se abordarán las diferencias entre estos tipos de
-                  variables, su uso adecuado y cómo afectan el comportamiento de
-                  las instancias de una clase.
-                </p>
-                <div class="centrar-imagen imagen50">
-                  <figure>
-                    <img
-                      src="https://i.ibb.co/YdKHfNW/poopropiedades.jpg"
-                      class="img-fluid"
-                      alt="POO: Propiedades en Python  "
-                      title="Comprendiendo las Variables de Instancia vs. Variables de Clase en Python"
-                    />
-                    <figcaption>poo: Propiedades en Python</figcaption>
-                  </figure>
-                </div>
+  <!--  principal  -->
+  <div class="container-fluid" id="introduccion">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!--  POO: Propiedades en Python  -->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <div>
+            <header>
+              <h1>POO: Propiedades en Python</h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-5">
+              <h2>Introducción</h2>
+              <p>
+                Este documento explora las variables de instancia y de clase
+                en Python. Se abordarán las diferencias entre estos tipos de
+                variables, su uso adecuado y cómo afectan el comportamiento de
+                las instancias de una clase.
+              </p>
+              <div class="centrar-imagen imagen50">
+                <figure>
+                  <img src="https://i.ibb.co/YdKHfNW/poopropiedades.jpg" class="img-fluid"
+                    alt="POO: Propiedades en Python  "
+                    title="Comprendiendo las Variables de Instancia vs. Variables de Clase en Python" />
+                  <figcaption>poo: Propiedades en Python</figcaption>
+                </figure>
               </div>
+            </div>
 
-              <!-- Variables de Instancia -->
-              <div id="variablesDeInstancia" class="mt-5">
-                <h2 class="mt-1">Variables de Instancia</h2>
-                <p>
-                  En la Programación Orientada a Objetos (POO), una variable de
-                  instancia representa un atributo propio de cada objeto,
-                  definido típicamente dentro del método constructor
-                  <code class="language-python">__init__</code> de la clase.
-                  Dicha variable se caracteriza por pertenecer exclusivamente a
-                  una instancia específica, lo que significa que cada objeto
-                  creado a partir de una clase posee una copia única de esta
-                  variable. Esta característica permite almacenar información
-                  particular y diferenciada para cada instancia, reflejando las
-                  características individuales de cada objeto en el contexto de
-                  la programación.
-                </p>
-                <p>
-                  Se definen generalmente dentro del constructor de la clase, y
-                  su valor puede variar dependiendo del objeto en el que se
-                  encuentren.
-                </p>
-                <!-- Ejemplo de Uso de Variables de Instancia-->
-                <div>
-                  <h3>Ejemplo de Uso de Variables de Instancia</h3>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+            <!-- Variables de Instancia -->
+            <div id="variables-de-instancia" class="mt-5">
+              <h2>Variables de Instancia</h2>
+              <p>
+                En la Programación Orientada a Objetos (POO), una variable de
+                instancia representa un atributo propio de cada objeto,
+                definido típicamente dentro del método constructor
+                <code class="language-python">__init__</code> de la clase.
+                Dicha variable se caracteriza por pertenecer exclusivamente a
+                una instancia específica, lo que significa que cada objeto
+                creado a partir de una clase posee una copia única de esta
+                variable. Esta característica permite almacenar información
+                particular y diferenciada para cada instancia, reflejando las
+                características individuales de cada objeto en el contexto de
+                la programación.
+              </p>
+              <p>
+                Se definen generalmente dentro del constructor de la clase, y
+                su valor puede variar dependiendo del objeto en el que se
+                encuentren.
+              </p>
+              <!-- Ejemplo de Uso de Variables de Instancia-->
+              <div>
+                <h3>Ejemplo de Uso de Variables de Instancia</h3>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         class Carro:
                             def __init__(self, marca, modelo):
@@ -241,49 +169,47 @@
                         carro2.mostrar_info()  # Imprime: Marca: Honda, Modelo: Civic
                       </code>
                     </pre>
-                  </div>
-                  <p>En este ejemplo:</p>
-                  <ul>
-                    <li>
-                      <code class="language-python">marca</code> y
-                      <code class="language-python">modelo</code> son variables
-                      de instancia, ya que se asignan a cada objeto creado de la
-                      clase Carro.
-                    </li>
-                    <li>
-                      <code class="language-python">carro1</code> y
-                      <code class="language-python">carro2</code> son instancias
-                      de la clase, y cada una tiene sus propias versiones de
-                      <code class="language-python">marca</code> y
-                      <code class="language-python">modelo</code>, con valores
-                      diferentes.
-                    </li>
-                  </ul>
                 </div>
-                <!--  Ejemplo de Uso de Variables de Instancia fin -->
-                <!-- Uso de Variables Privadas -->
+                <p>En este ejemplo:</p>
+                <ul>
+                  <li>
+                    <code class="language-python">marca</code> y
+                    <code class="language-python">modelo</code> son variables
+                    de instancia, ya que se asignan a cada objeto creado de la
+                    clase Carro.
+                  </li>
+                  <li>
+                    <code class="language-python">carro1</code> y
+                    <code class="language-python">carro2</code> son instancias
+                    de la clase, y cada una tiene sus propias versiones de
+                    <code class="language-python">marca</code> y
+                    <code class="language-python">modelo</code>, con valores
+                    diferentes.
+                  </li>
+                </ul>
+              </div>
+              <!--  Ejemplo de Uso de Variables de Instancia fin -->
+              <!-- Uso de Variables Privadas -->
+              <div>
+                <h3>Uso de Variables Privadas</h3>
+                <p>
+                  En Python, cuando se utilizan dos guiones bajos (<code class="language-python">__</code>) al inicio de
+                  una variable de instancia, se está aplicando
+                  un mecanismo llamado <em>mangling</em> de nombres. Este
+                  mecanismo cambia el nombre interno de la variable para
+                  evitar que sea sobrescrita o modificada accidentalmente
+                  desde fuera de la clase. Es una forma de hacer que la
+                  variable sea "privada" para la clase, aunque sigue siendo
+                  accesible internamente.
+                </p>
+                <!-- Ejemplo de Uso de Variables de Instancia con Dos Guiones Bajos -->
                 <div>
-                  <h3>Uso de Variables Privadas</h3>
-                  <p>
-                    En Python, cuando se utilizan dos guiones bajos (<code
-                      class="language-python"
-                      >__</code
-                    >) al inicio de una variable de instancia, se está aplicando
-                    un mecanismo llamado <em>mangling</em> de nombres. Este
-                    mecanismo cambia el nombre interno de la variable para
-                    evitar que sea sobrescrita o modificada accidentalmente
-                    desde fuera de la clase. Es una forma de hacer que la
-                    variable sea "privada" para la clase, aunque sigue siendo
-                    accesible internamente.
-                  </p>
-                  <!-- Ejemplo de Uso de Variables de Instancia con Dos Guiones Bajos -->
-                  <div>
-                    <h4>
-                      Ejemplo de Uso de Variables de Instancia con Dos Guiones
-                      Bajos
-                    </h4>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  <h4>
+                    Ejemplo de Uso de Variables de Instancia con Dos Guiones
+                    Bajos
+                  </h4>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           class Carro:
                               def __init__(self, marca, modelo):
@@ -304,76 +230,76 @@
                           carro1.mostrar_info()  # Imprime: Marca: Honda, Modelo: Corolla
                         </code>
                       </pre>
-                    </div>
                   </div>
-                  <!-- Ejemplo de Uso de Variables de Instancia con Dos Guiones Bajos fin -->
-                  <!-- Acceso Interno -->
-                  <div>
-                    <h4>Acceso Interno</h4>
-                    <p>
-                      A pesar de que las variables son "privadas", Python no
-                      impide su acceso, sino que lo hace menos accesible al
-                      cambiar su nombre internamente. A través de la técnica de
-                      "name mangling", se pueden acceder de la siguiente manera:
-                    </p>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <!-- Ejemplo de Uso de Variables de Instancia con Dos Guiones Bajos fin -->
+                <!-- Acceso Interno -->
+                <div>
+                  <h4>Acceso Interno</h4>
+                  <p>
+                    A pesar de que las variables son "privadas", Python no
+                    impide su acceso, sino que lo hace menos accesible al
+                    cambiar su nombre internamente. A través de la técnica de
+                    "name mangling", se pueden acceder de la siguiente manera:
+                  </p>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           print(carro1._Carro__marca)  # Imprime: Honda
                         </code>
                       </pre>
-                    </div>
-                    <p>
-                      Sin embargo, no se recomienda acceder directamente a las
-                      variables privadas fuera de la clase. En lugar de eso, es
-                      preferible utilizar métodos para modificar o acceder a
-                      estos atributos.
-                    </p>
                   </div>
-                  <!-- Acceso Interno fin -->
+                  <p>
+                    Sin embargo, no se recomienda acceder directamente a las
+                    variables privadas fuera de la clase. En lugar de eso, es
+                    preferible utilizar métodos para modificar o acceder a
+                    estos atributos.
+                  </p>
                 </div>
-                <!-- Uso de Variables Privadas fin -->
+                <!-- Acceso Interno fin -->
               </div>
-              <!-- Variables de Instancia Fin -->
-              <!-- Variables de Clase -->
-              <div id="variablesDeClase" class="mt-5">
-                <h2 class="mt-1">Variables de Clase</h2>
-                <p>
-                  Las variables de clase son aquellas que se definen dentro de
-                  la clase pero fuera de cualquier método. Estas variables son
-                  compartidas entre todas las instancias de la clase. Si se
-                  modifica una variable de clase, el cambio se reflejará en
-                  todas las instancias que no tengan su propia variable de
-                  instancia con el mismo nombre.
-                </p>
-                <!-- Características de las Variables de Clase -->
-                <div>
-                  <h3>Características de las Variables de Clase</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Valor compartido</span>: Todas las
-                      instancias de la clase tienen acceso al mismo valor para
-                      una variable de clase.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Definición</span>: Se define dentro
-                      de la clase, fuera de los métodos, con una sintaxis
-                      similar a la de cualquier otro atributo de clase.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Acceso</span>: Se puede acceder a
-                      ella mediante la clase o mediante una instancia de la
-                      clase, pero si se modifica desde una instancia, esa
-                      modificación no afectará a otras instancias.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Características de las Variables de Clase fin -->
-                <!-- Ejemplo en Python de Variables de Clase -->
-                <div>
-                  <h3>Ejemplo en Python de Variables de Clase</h3>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              <!-- Uso de Variables Privadas fin -->
+            </div>
+            <!-- Variables de Instancia Fin -->
+            <!-- Variables de Clase -->
+            <div id="variables-de-clase" class="mt-5">
+              <h2>Variables de Clase</h2>
+              <p>
+                Las variables de clase son aquellas que se definen dentro de
+                la clase pero fuera de cualquier método. Estas variables son
+                compartidas entre todas las instancias de la clase. Si se
+                modifica una variable de clase, el cambio se reflejará en
+                todas las instancias que no tengan su propia variable de
+                instancia con el mismo nombre.
+              </p>
+              <!-- Características de las Variables de Clase -->
+              <div>
+                <h3>Características de las Variables de Clase</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Valor compartido</span>: Todas las
+                    instancias de la clase tienen acceso al mismo valor para
+                    una variable de clase.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Definición</span>: Se define dentro
+                    de la clase, fuera de los métodos, con una sintaxis
+                    similar a la de cualquier otro atributo de clase.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Acceso</span>: Se puede acceder a
+                    ella mediante la clase o mediante una instancia de la
+                    clase, pero si se modifica desde una instancia, esa
+                    modificación no afectará a otras instancias.
+                  </li>
+                </ul>
+              </div>
+              <!-- Características de las Variables de Clase fin -->
+              <!-- Ejemplo en Python de Variables de Clase -->
+              <div>
+                <h3>Ejemplo en Python de Variables de Clase</h3>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         class Carro:
                             # Variable de clase
@@ -391,39 +317,36 @@
                         carro2.mostrar_info()  # Honda Civic tiene 4 ruedas.
                       </code>
                     </pre>
-                  </div>
-                  <p>
-                    En este ejemplo, la variable
-                    <code class="language-python">ruedas</code> es una variable
-                    de clase, lo que significa que ambas instancias (<code
-                      class="language-python"
-                      >carro1</code
-                    >
-                    y <code class="language-python">carro2</code>) comparten el
-                    valor de <code class="language-python">4</code> para el
-                    número de ruedas. Si se cambiara el valor de ruedas a través
-                    de la clase, todas las instancias reflejarían ese cambio.
-                  </p>
                 </div>
-                <!-- Ejemplo en Python de Variables de Clase fin -->
-                <!-- Cambio de Valor a Variable de Clase -->
+                <p>
+                  En este ejemplo, la variable
+                  <code class="language-python">ruedas</code> es una variable
+                  de clase, lo que significa que ambas instancias (<code class="language-python">carro1</code>
+                  y <code class="language-python">carro2</code>) comparten el
+                  valor de <code class="language-python">4</code> para el
+                  número de ruedas. Si se cambiara el valor de ruedas a través
+                  de la clase, todas las instancias reflejarían ese cambio.
+                </p>
+              </div>
+              <!-- Ejemplo en Python de Variables de Clase fin -->
+              <!-- Cambio de Valor a Variable de Clase -->
+              <div>
+                <h3>Cambio de Valor a Variable de Clase</h3>
+                <p>
+                  Para cambiar el valor de una variable de clase en Python, se
+                  puede hacer de dos maneras:
+                </p>
+                <!-- Accediendo a través de la Clase -->
                 <div>
-                  <h3>Cambio de Valor a Variable de Clase</h3>
+                  <h4>Accediendo a través de la Clase</h4>
                   <p>
-                    Para cambiar el valor de una variable de clase en Python, se
-                    puede hacer de dos maneras:
+                    El valor de una variable de clase se puede modificar
+                    directamente utilizando el nombre de la clase. Esta
+                    modificación afectará a todas las instancias de la clase
+                    que no hayan sobrescrito esa variable.
                   </p>
-                  <!-- Accediendo a través de la Clase -->
-                  <div>
-                    <h4>Accediendo a través de la Clase</h4>
-                    <p>
-                      El valor de una variable de clase se puede modificar
-                      directamente utilizando el nombre de la clase. Esta
-                      modificación afectará a todas las instancias de la clase
-                      que no hayan sobrescrito esa variable.
-                    </p>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           class Carro:
                             # Variable de clase
@@ -438,33 +361,31 @@
                         print(carro2.ruedas)  # 6
                         </code>
                       </pre>
-                    </div>
-                    <p>
-                      En este caso, la variable de clase ruedas se cambia a
-                      <code class="language-python">6</code> a través de la
-                      clase <code class="language-python">Carro</code>. Ahora,
-                      ambas instancias (<code class="language-python"
-                        >carro1</code
-                      >
-                      y <code class="language-python">carro2</code>) reflejan el
-                      nuevo valor de <code class="language-python">6</code>.
-                    </p>
                   </div>
-                  <!-- Accediendo a través de la Clase fin -->
-                  <!-- Accediendo a través de una Instancia (No Recomendado) -->
-                  <div>
-                    <h4>
-                      Accediendo a través de una Instancia (No Recomendado)
-                    </h4>
-                    <p>
-                      También es posible cambiar una variable de clase a través
-                      de una instancia de la clase. Sin embargo, este cambio no
-                      afectará a las demás instancias, ya que en realidad se
-                      creará una nueva variable de instancia para esa instancia
-                      específica.
-                    </p>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  <p>
+                    En este caso, la variable de clase ruedas se cambia a
+                    <code class="language-python">6</code> a través de la
+                    clase <code class="language-python">Carro</code>. Ahora,
+                    ambas instancias (<code class="language-python">carro1</code>
+                    y <code class="language-python">carro2</code>) reflejan el
+                    nuevo valor de <code class="language-python">6</code>.
+                  </p>
+                </div>
+                <!-- Accediendo a través de la Clase fin -->
+                <!-- Accediendo a través de una Instancia (No Recomendado) -->
+                <div>
+                  <h4>
+                    Accediendo a través de una Instancia (No Recomendado)
+                  </h4>
+                  <p>
+                    También es posible cambiar una variable de clase a través
+                    de una instancia de la clase. Sin embargo, este cambio no
+                    afectará a las demás instancias, ya que en realidad se
+                    creará una nueva variable de instancia para esa instancia
+                    específica.
+                  </p>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           class Carro:
                               # Variable de clase
@@ -480,68 +401,68 @@
                           print(carro2.ruedas)  # 4 (variable de clase sin cambios)
                         </code>
                       </pre>
-                    </div>
-                    <p>
-                      En este caso, el valor de ruedas cambia a
-                      <code class="language-python">6</code> para
-                      <code class="language-python">carro1</code>, pero la
-                      variable de clase
-                      <code class="language-python">ruedas</code> sigue siendo
-                      <code class="language-python">4</code> para carro2. Esto
-                      sucede porque al acceder a la variable de clase a través
-                      de la instancia, Python crea una nueva variable de
-                      instancia local a esa instancia.
-                    </p>
                   </div>
-                  <!-- Accediendo a través de una Instancia (No Recomendado) fin -->
-                </div>
-                <!-- Cambio de Valor a Variable de Clase fin -->
-                <!-- Diferencia con las Variables de Instancia -->
-                <div>
-                  <h3>Diferencia con las Variables de Instancia</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Variables de instancia</span>: Son
-                      atributos que pertenecen a un objeto específico. Cada
-                      instancia tiene su propio valor para esas variables.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Variables de clase</span>: Son
-                      compartidas por todas las instancias de una clase.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Diferencia con las Variables de Instancia fin -->
-              </div>
-              <!-- Variables de Clase Fin -->
-              <!-- Comprobando la Existencia de un Atributo -->
-              <div id="comprobandoLaExistenciaDeUnAtributo" class="mt-5">
-                <h2 class="mt-1">Comprobando la Existencia de un Atributo</h2>
-                <p>
-                  En Python, se pueden usar varias técnicas para comprobar si un
-                  objeto o una clase tiene un atributo específico. Algunas de
-                  las formas más comunes de hacer esto son:
-                </p>
-                <!-- Usando hasattr() -->
-                <div>
-                  <h3>Usando hasattr()</h3>
                   <p>
-                    La función
-                    <code class="language-python">hasattr()</code> permite
-                    verificar si un objeto o clase tiene un atributo
-                    determinado. Devuelve True si el atributo existe y False si
-                    no.
+                    En este caso, el valor de ruedas cambia a
+                    <code class="language-python">6</code> para
+                    <code class="language-python">carro1</code>, pero la
+                    variable de clase
+                    <code class="language-python">ruedas</code> sigue siendo
+                    <code class="language-python">4</code> para carro2. Esto
+                    sucede porque al acceder a la variable de clase a través
+                    de la instancia, Python crea una nueva variable de
+                    instancia local a esa instancia.
                   </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <!-- Accediendo a través de una Instancia (No Recomendado) fin -->
+              </div>
+              <!-- Cambio de Valor a Variable de Clase fin -->
+              <!-- Diferencia con las Variables de Instancia -->
+              <div>
+                <h3>Diferencia con las Variables de Instancia</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Variables de instancia</span>: Son
+                    atributos que pertenecen a un objeto específico. Cada
+                    instancia tiene su propio valor para esas variables.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Variables de clase</span>: Son
+                    compartidas por todas las instancias de una clase.
+                  </li>
+                </ul>
+              </div>
+              <!-- Diferencia con las Variables de Instancia fin -->
+            </div>
+            <!-- Variables de Clase Fin -->
+            <!-- Comprobando la Existencia de un Atributo -->
+            <div id="comprobando-la-existencia-de-un-atributo" class="mt-5">
+              <h2>Comprobando la Existencia de un Atributo</h2>
+              <p>
+                En Python, se pueden usar varias técnicas para comprobar si un
+                objeto o una clase tiene un atributo específico. Algunas de
+                las formas más comunes de hacer esto son:
+              </p>
+              <!-- Usando hasattr() -->
+              <div>
+                <h3>Usando hasattr()</h3>
+                <p>
+                  La función
+                  <code class="language-python">hasattr()</code> permite
+                  verificar si un objeto o clase tiene un atributo
+                  determinado. Devuelve True si el atributo existe y False si
+                  no.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         hasattr(objeto, "atributo")
                       </code>
                     </pre>
-                  </div>
-                  <p>Ejemplo:</p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <p>Ejemplo:</p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         class Carro:
                             def __init__(self, marca):
@@ -553,44 +474,40 @@
                         print(hasattr(carro1, "modelo"))  # False
                       </code>
                     </pre>
-                  </div>
-                  <p>
-                    En este caso,
-                    <code class="language-python"
-                      >hasattr(carro1, "marca")</code
-                    >
-                    devuelve <code class="language-python">True</code> porque el
-                    objeto <code class="language-python">carro1</code> tiene el
-                    atributo <code class="language-python">marca</code>,
-                    mientras que
-                    <code class="language-python"
-                      >hasattr(carro1, "modelo")</code
-                    >
-                    devuelve <code class="language-python">False</code> porque
-                    no tiene un atributo llamado modelo.
-                  </p>
                 </div>
-                <!-- Usando hasattr() fin -->
-                <!-- Usando getattr() con un valor por defecto -->
-                <div>
-                  <h3>Usando getattr() con un valor por defecto</h3>
-                  <p>
-                    La función <code class="language-python">getattr()</code> se
-                    utiliza para obtener el valor de un atributo, y si el
-                    atributo no existe, puede devolver un valor por defecto en
-                    lugar de lanzar una excepción. Esto también permite
-                    comprobar si el atributo existe.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                <p>
+                  En este caso,
+                  <code class="language-python">hasattr(carro1, "marca")</code>
+                  devuelve <code class="language-python">True</code> porque el
+                  objeto <code class="language-python">carro1</code> tiene el
+                  atributo <code class="language-python">marca</code>,
+                  mientras que
+                  <code class="language-python">hasattr(carro1, "modelo")</code>
+                  devuelve <code class="language-python">False</code> porque
+                  no tiene un atributo llamado modelo.
+                </p>
+              </div>
+              <!-- Usando hasattr() fin -->
+              <!-- Usando getattr() con un valor por defecto -->
+              <div>
+                <h3>Usando getattr() con un valor por defecto</h3>
+                <p>
+                  La función <code class="language-python">getattr()</code> se
+                  utiliza para obtener el valor de un atributo, y si el
+                  atributo no existe, puede devolver un valor por defecto en
+                  lugar de lanzar una excepción. Esto también permite
+                  comprobar si el atributo existe.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         getattr(objeto, "atributo", valor_por_defecto)
                       </code>
                     </pre>
-                  </div>
-                  <p>Ejemplo:</p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <p>Ejemplo:</p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         class Carro:
                             def __init__(self, marca):
@@ -602,31 +519,29 @@
                         print(modelo)  # None
                       </code>
                     </pre>
-                  </div>
-                  <p>
-                    En este caso,
-                    <code class="language-python"
-                      >getattr(carro1, "modelo", None)</code
-                    >
-                    devuelve <code class="language-python">None</code> porque el
-                    atributo <code class="language-python">modelo</code> no
-                    existe en <code class="language-python">carro1</code>.
-                  </p>
                 </div>
-                <!-- Usando getattr() con un valor por defecto fin -->
-                <!--  Usando __dict__ -->
-                <div>
-                  <h3>Usando __dict__</h3>
-                  <p>
-                    El atributo especial
-                    <code class="language-python">__dict__</code> de un objeto
-                    contiene todos los atributos de instancia del objeto. Puedes
-                    verificar si un atributo específico está presente en
-                    <code class="language-python">__dict__</code>.
-                  </p>
-                  <p>Ejemplo:</p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                <p>
+                  En este caso,
+                  <code class="language-python">getattr(carro1, "modelo", None)</code>
+                  devuelve <code class="language-python">None</code> porque el
+                  atributo <code class="language-python">modelo</code> no
+                  existe en <code class="language-python">carro1</code>.
+                </p>
+              </div>
+              <!-- Usando getattr() con un valor por defecto fin -->
+              <!--  Usando __dict__ -->
+              <div>
+                <h3>Usando __dict__</h3>
+                <p>
+                  El atributo especial
+                  <code class="language-python">__dict__</code> de un objeto
+                  contiene todos los atributos de instancia del objeto. Puedes
+                  verificar si un atributo específico está presente en
+                  <code class="language-python">__dict__</code>.
+                </p>
+                <p>Ejemplo:</p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         class Carro:
                             def __init__(self, marca):
@@ -638,166 +553,179 @@
                         print("modelo" in carro1.__dict__)  # False
                       </code>
                     </pre>
-                  </div>
-                  <p>
-                    En este ejemplo, se utiliza
-                    <code class="language-python">carro1.__dict__</code> para
-                    comprobar si los atributos
-                    <code class="language-python">marca</code> y
-                    <code class="language-python">modelo</code> están en el
-                    diccionario de atributos de la instancia.
-                  </p>
                 </div>
-                <!--  Usando __dict__ fin -->
-                <!-- Resumen -->
-                <div>
-                  <h3>Resumen</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python"
-                          >codehasattr()</code
-                        ></span
-                      >: Comprueba si un objeto tiene un atributo determinado.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python">getattr()</code></span
-                      >: Permite obtener un atributo y proporciona un valor por
-                      defecto si no existe.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python">__dict__</code></span
-                      >: Proporciona un diccionario con los atributos de la
-                      instancia, que se puede usar para verificar si un atributo
-                      existe.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Resumen fin -->
-              </div>
-              <!-- Comprobando la Existencia de un Atributo Fin -->
-            </div>
-          </article>
-          <!--  POO: Propiedades en Python  -->
-          <!--  comentarios  -->
-          <article class="row pt-5" id="comments">
-            <h2>COMENTARIOS</h2>
-            <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por
-              favor infórmelo a través del formulario disponible para este
-              propósito.
-            </p>
-            <div class="d-flex justify-content-center">
-              <form
-                action="https://formspree.io/f/mdkdawkg"
-                method="POST"
-                id="myForm"
-              >
-                <fieldset class="d-flex flex-column gap-3">
-                  <legend class="text-center fs-4">Deje su comentario</legend>
-
-                  <div class="d-flex flex-column">
-                    <label for="name">Nombre:</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="User"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
-
-                  <div class="d-flex flex-column">
-                    <label for="email">Email:</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="user@mail.com"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
-
-                  <div class="d-flex flex-column">
-                    <label for="message">Mensaje:</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      cols="30"
-                      rows="5"
-                      placeholder="Su comentario..."
-                      class="form-control rounded-3"
-                      required
-                    ></textarea>
-                  </div>
-
-                  <button
-                    type="submit"
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
-                  >
-                    Enviar
-                  </button>
-                </fieldset>
-
-                <p class="small text-center">
-                  La política de privacidad, y los términos y condiciones están
-                  disponibles en el formulario de contacto.
+                <p>
+                  En este ejemplo, se utiliza
+                  <code class="language-python">carro1.__dict__</code> para
+                  comprobar si los atributos
+                  <code class="language-python">marca</code> y
+                  <code class="language-python">modelo</code> están en el
+                  diccionario de atributos de la instancia.
                 </p>
-              </form>
+              </div>
+              <!--  Usando __dict__ fin -->
+              <!-- Resumen -->
+              <div>
+                <h3>Resumen</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">codehasattr()</code></span>: Comprueba si un
+                    objeto tiene un atributo determinado.
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">getattr()</code></span>: Permite obtener un
+                    atributo y proporciona un valor por
+                    defecto si no existe.
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">__dict__</code></span>: Proporciona un
+                    diccionario con los atributos de la
+                    instancia, que se puede usar para verificar si un atributo
+                    existe.
+                  </li>
+                </ul>
+              </div>
+              <!-- Resumen fin -->
             </div>
-          </article>
-          <!--  fin comentarios  -->
-        </section>
-        <!--  barra lateral  -->
-        <aside class="col-lg-3 d-none d-lg-block pt-5">
-          <h1>En Este Artículo</h1>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a href="#introduccion">Introducción</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#variablesDeInstancia">Variables de Instancia</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#variablesDeClase">Variables de Clase</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#comprobandoLaExistenciaDeUnAtributo"
-                >Comprobando la Existencia de un Atributo</a
-              >
-            </li>
-            <li class="list-group-item">
-              <a href="#comments">Comentarios</a>
-            </li>
-          </ul>
-        </aside>
-        <!--  fin barra lateral  -->
-      </main>
-      <!--  fin principal  -->
-    </div>
-    <!--  Principal Fin  -->
+            <!-- Comprobando la Existencia de un Atributo Fin -->
+          </div>
+        </article>
+        <!--  POO: Propiedades en Python  -->
+        <!--  comentarios  -->
+        <article class="row pt-5" id="comments">
+          <h2>COMENTARIOS</h2>
+          <p>
+            Si tiene alguna inquietud, duda o ha encontrado algún error, por
+            favor infórmelo a través del formulario disponible para este
+            propósito.
+          </p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
 
-    <!-- button to top -->
-    <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        fill="currentColor"
-        class="bi bi-arrow-bar-up"
-        viewBox="0 0 16 16"
-        style="margin-left: -2px"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"
-        ></path>
-      </svg>
-    </button>
-    <!-- Fin button to top -->
-  </body>
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
+                </div>
+
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
+
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                  Enviar
+                </button>
+              </fieldset>
+
+              <p class="small text-center">
+                La política de privacidad, y los términos y condiciones están
+                disponibles en el formulario de contacto.
+              </p>
+            </form>
+          </div>
+        </article>
+        <!--  fin comentarios  -->
+      </section>
+
+      <!--  barra lateral  -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        <h1>En Este Artículo</h1>
+        <div class="menu-scroll">
+          <div class="menu-container">
+            <div class="border border-1">
+              <div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
+              <div class="menu-item"><a href="#variables-de-instancia" class="simple-link">Variables de Instancia</a>
+              </div>
+              <div class="menu-item"><a href="#variables-de-clase" class="simple-link">Variables de Clase</a></div>
+              <div class="menu-item"><a href="#comprobando-la-existencia-de-un-atributo" class="simple-link">Comprobando
+                  la Existencia de un Atributo</a></div>
+              <!-- Comentarios  -->
+              <div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!--  fin barra lateral  -->
+    </main>
+    <!--  fin principal  -->
+  </div>
+  <!--  Principal Fin  -->
+
+  <!--  pie de pagina  -->
+  <footer class="row border-top border-1 m-1 mt-auto">
+    <div class="row">
+      <!-- contacto -->
+      <address class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Contacto</div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class="ms-3">
+            <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class="ms-3">Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      <!-- Derechos de autor -->
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
+      </div>
+      <!-- redes sociales -->
+      <div class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Redes Sociales</div>
+        <div class="d-flex justify-content-evenly align-items-center gap-5">
+          <div>
+            <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center gap-2"></div>
+  </footer>
+  <!--  pie de pagina fin  -->
+
+
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
 </html>

@@ -1,258 +1,188 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-  <head>
-    <!-- Metaetiquetas -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Descubre todo sobre las cadenas en Python: manipulación, métodos, inmutabilidad y técnicas de manejo de texto. Aprende a crear, modificar y trabajar eficientemente con strings en programación."
-    />
-    <meta
-      name="title"
-      content="La naturaleza de las cadenas Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta name="author" content="Ing. Eduardo Herrera Forero" />
-    <meta name="application-name" content="EHF" />
-    <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://eduardoherreraf.github.io/cursoPython3-0601_la_naturaleza_de_las_cadenas.html"
-    />
-    <!-- Fin Metaetiquetas -->
 
-    <!-- Open Graph data -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="La naturaleza de las cadenas Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      property="og:description"
-      content="Descubre todo sobre las cadenas en Python: manipulación, métodos, inmutabilidad y técnicas de manejo de texto. Aprende a crear, modificar y trabajar eficientemente con strings en programación."
-    />
-    <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      property="og:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      property="og:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0601_la_naturaleza_de_las_cadenas.html"
-    />
-    <meta property="og:locale" content="es_CO" />
-    <!-- fin Open Graph data -->
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Descubre todo sobre las cadenas en Python: manipulación, métodos, inmutabilidad y técnicas de manejo de texto. Aprende a crear, modificar y trabajar eficientemente con strings en programación." />
+  <meta name="title" content="La naturaleza de las cadenas Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eduardoherreraf.github.io/cursoPython3-0601_la_naturaleza_de_las_cadenas.html" />
+  <!-- Fin Metaetiquetas -->
 
-    <!-- Twitter cards -->
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="La naturaleza de las cadenas Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      name="twitter:description"
-      content="Descubre todo sobre las cadenas en Python: manipulación, métodos, inmutabilidad y técnicas de manejo de texto. Aprende a crear, modificar y trabajar eficientemente con strings en programación."
-    />
-    <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      name="twitter:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      name="twitter:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0601_la_naturaleza_de_las_cadenas.html"
-    />
-    <meta name="twitter:site" content="@ehfeduardo" />
-    <!-- Fin Twitter cards -->
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="La naturaleza de las cadenas Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta property="og:description"
+    content="Descubre todo sobre las cadenas en Python: manipulación, métodos, inmutabilidad y técnicas de manejo de texto. Aprende a crear, modificar y trabajar eficientemente con strings en programación." />
+  <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta property="og:url"
+    content="https://eduardoherreraf.github.io/cursoPython3-0601_la_naturaleza_de_las_cadenas.html" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
 
-    <!-- iconos -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="android-chrome-192x192.png"
-    />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- fin iconos -->
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="La naturaleza de las cadenas Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description"
+    content="Descubre todo sobre las cadenas en Python: manipulación, métodos, inmutabilidad y técnicas de manejo de texto. Aprende a crear, modificar y trabajar eficientemente con strings en programación." />
+  <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta name="twitter:url"
+    content="https://eduardoherreraf.github.io/cursoPython3-0601_la_naturaleza_de_las_cadenas.html" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
 
-    <title>
-      La naturaleza de las cadenas Python 3 - Ing. Eduardo Herrera Forero.
-    </title>
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
 
-    <script type="module" src="./js/main.js"></script>
+  <title>
+    La naturaleza de las cadenas Python 3 - Ing. Eduardo Herrera Forero.
+  </title>
 
-    <meta
-      name="google-site-verification"
-      content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"
-    />
-  </head>
+  <script type="module" src="./js/main.js"></script>
 
-  <body>
-    <!-- Barra deNavegación -->
-    <nav
-      class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
-    >
-      <div class="container-fluid">
-        <!-- Enlace a la página principal con el logo y nombre -->
-        <a
-          class="navbar-brand d-flex align-items-center ms-2"
-          href="index.html"
-        >
-          <img
-            src="./images/logo.png"
-            alt="Logo de Ing. Eduardo Herrera Forero"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top me-1"
-          />
-          <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
-        </a>
-        <!-- Botón para activar el menú en dispositivos pequeños -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Menú de navegación -->
-        <div
-          class="collapse navbar-collapse ms-auto text-center"
-          id="navbarSupportedContent"
-        >
-          <ul
-            class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100"
-          >
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#portfolio"
-                >PORTAFOLIO</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 publicaciones-activo"
-                href="index.html#blog"
-                >PUBLICACIONES</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
-            </li>
-          </ul>
-        </div>
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Barra deNavegación -->
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
 
-    <!--  principal  -->
-    <div class="container-fluid" id="introduccion">
-      <main class="row">
-        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
-          <!--  La naturaleza de las cadenas en Python  -->
-          <article
-            class="row border-1 border-bottom pb-3"
-            data-bs-spy="scroll"
-            data-bs-target="#list-example"
-            data-bs-smooth-scroll="true"
-          >
-            <div>
-              <header>
-                <h1>La naturaleza de las cadenas en Python</h1>
-              </header>
-              <!-- Introducción -->
-              <div class="mt-5">
-                <h2>Introducción</h2>
-                <p>
-                  En este artículo se explora la naturaleza de las cadenas en
-                  Python, un tipo de dato fundamental en este lenguaje de
-                  programación. Las cadenas son secuencias de caracteres que
-                  permiten almacenar y manipular texto de manera eficiente. A lo
-                  largo de este documento, se abordarán las características,
-                  métodos y usos de las cadenas, así como su importancia en el
-                  desarrollo de aplicaciones.
-                </p>
-                <div class="centrar-imagen imagen50">
-                  <figure>
-                    <img
-                      src="https://i.ibb.co/VHpnX1w/cadenas.jpg"
-                      class="img-fluid"
-                      alt="La naturaleza de las cadenas en Python"
-                      title="Guía visual de cadenas en Python: tipos, métodos y manipulación de strings"
-                    />
-                    <figcaption>
-                      La naturaleza de las cadenas en Python
-                    </figcaption>
-                  </figure>
-                </div>
+  <!--  principal  -->
+  <div class="container-fluid" id="introduccion">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!--  La naturaleza de las cadenas en Python  -->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <div>
+            <header>
+              <h1>La naturaleza de las cadenas en Python</h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-5">
+              <h2>Introducción</h2>
+              <p>
+                En este artículo se explora la naturaleza de las cadenas en
+                Python, un tipo de dato fundamental en este lenguaje de
+                programación. Las cadenas son secuencias de caracteres que
+                permiten almacenar y manipular texto de manera eficiente. A lo
+                largo de este documento, se abordarán las características,
+                métodos y usos de las cadenas, así como su importancia en el
+                desarrollo de aplicaciones.
+              </p>
+              <div class="centrar-imagen imagen50">
+                <figure>
+                  <img src="https://i.ibb.co/VHpnX1w/cadenas.jpg" class="img-fluid"
+                    alt="La naturaleza de las cadenas en Python"
+                    title="Guía visual de cadenas en Python: tipos, métodos y manipulación de strings" />
+                  <figcaption>
+                    La naturaleza de las cadenas en Python
+                  </figcaption>
+                </figure>
               </div>
+            </div>
 
-              <!-- Características de las Cadenas -->
-              <div id="CaracterIsticasDeLasCadenas" class="mt-5">
-                <h2 class="mt-1">Características de las Cadenas</h2>
-                <!-- Inmutabilidad -->
-                <div>
-                  <h3>Inmutabilidad</h3>
-                  <p>
-                    Una vez creada, una cadena no puede ser modificada.
-                    Cualquier operación que parezca cambiar una cadena en
-                    realidad crea una nueva. Si se intenta cambiar un carácter
-                    de una cadena, se generará un error. Sin embargo, se puede
-                    crear una nueva cadena a partir de las operaciones
-                    realizadas sobre la original.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+            <!-- Características de las Cadenas -->
+            <div id="caracteristicas-de-las-cadenas" class="mt-5">
+              <h2>Características de las Cadenas</h2>
+              <!-- Inmutabilidad -->
+              <div>
+                <h3>Inmutabilidad</h3>
+                <p>
+                  Una vez creada, una cadena no puede ser modificada.
+                  Cualquier operación que parezca cambiar una cadena en
+                  realidad crea una nueva. Si se intenta cambiar un carácter
+                  de una cadena, se generará un error. Sin embargo, se puede
+                  crear una nueva cadena a partir de las operaciones
+                  realizadas sobre la original.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         cadena = "Hola"
                         cadena[0] = "h"  # Error: las cadenas son inmutables
                       </code>
                     </pre>
-                  </div>
-                  <p>Para "modificar" una cadena, se debe crear una nueva.</p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <p>Para "modificar" una cadena, se debe crear una nueva.</p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         texto = "Hola"
                         nuevo_texto = "h" + texto[1:]
                         print(nuevo_texto)  # "hola"
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Inmutabilidad fin -->
-                <!-- Índices y Rebanado -->
-                <div>
-                  <h3>Índices y Rebanado</h3>
-                  <p>
-                    Las cadenas (strings) son secuencias de caracteres que
-                    mantienen un orden específico, lo que permite acceder a
-                    elementos individuales mediante indexación. Cada carácter
-                    tiene una posición numerada comenzando desde 0, lo que
-                    facilita la manipulación de subcadenas a través de técnicas
-                    como slicing.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Inmutabilidad fin -->
+              <!-- Índices y Rebanado -->
+              <div>
+                <h3>Índices y Rebanado</h3>
+                <p>
+                  Las cadenas (strings) son secuencias de caracteres que
+                  mantienen un orden específico, lo que permite acceder a
+                  elementos individuales mediante indexación. Cada carácter
+                  tiene una posición numerada comenzando desde 0, lo que
+                  facilita la manipulación de subcadenas a través de técnicas
+                  como slicing.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         texto = "Python"
                         print(texto[0])  # P
@@ -260,56 +190,56 @@
                         print(texto[1:4])  # yth
                       </code>
                     </pre>
-                  </div>
-                  <p>
-                    En Python, cuando se utiliza un índice negativo, la
-                    indexación se realiza desde el último carácter hacia el
-                    primero, comenzando por -1.
-                  </p>
-                  <p>
-                    El rebanado (o slicing) de cadenas en Python es una técnica
-                    que permite extraer partes específicas de una cadena de
-                    texto. Este método utiliza índices para determinar qué
-                    caracteres incluir en el resultado.
-                  </p>
-                  <!-- Parámetros del Rebanado -->
-                  <h4>Parámetros del Rebanado</h4>
-                  <p>La sintaxis general es.</p>
-                  <div>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <p>
+                  En Python, cuando se utiliza un índice negativo, la
+                  indexación se realiza desde el último carácter hacia el
+                  primero, comenzando por -1.
+                </p>
+                <p>
+                  El rebanado (o slicing) de cadenas en Python es una técnica
+                  que permite extraer partes específicas de una cadena de
+                  texto. Este método utiliza índices para determinar qué
+                  caracteres incluir en el resultado.
+                </p>
+                <!-- Parámetros del Rebanado -->
+                <h4>Parámetros del Rebanado</h4>
+                <p>La sintaxis general es.</p>
+                <div>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           cadena[inicio:fin:paso]
                         </code>
                       </pre>
-                    </div>
-                    <ul>
-                      <li>
-                        <code class="language-python">inicio</code>: Es el
-                        índice donde comienza el rebanado (inclusivo). Si no se
-                        especifica, se asume 0.
-                      </li>
-                      <li>
-                        <code class="language-python">fin</code>: Es el índice
-                        donde termina el rebanado (exclusivo). Si no se
-                        especifica, se asume el final de la cadena.
-                      </li>
-                      <li>
-                        <code class="language-python">paso</code>: Es el número
-                        de pasos a saltar entre caracteres. Si no se especifica,
-                        se asume 1.
-                      </li>
-                    </ul>
                   </div>
-                  <!-- Parámetros del Rebanado fin -->
-                  <!-- Ejemplos de Rebanado -->
-                  <div>
-                    <h4>Ejemplos de Rebanado</h4>
-                    <ul>
-                      <li>
-                        <span class="fw-bold">Rebanado Básico:</span>
-                        <div class="ej-sintaxis">
-                          <pre data-src-status="loaded" tabindex="0">
+                  <ul>
+                    <li>
+                      <code class="language-python">inicio</code>: Es el
+                      índice donde comienza el rebanado (inclusivo). Si no se
+                      especifica, se asume 0.
+                    </li>
+                    <li>
+                      <code class="language-python">fin</code>: Es el índice
+                      donde termina el rebanado (exclusivo). Si no se
+                      especifica, se asume el final de la cadena.
+                    </li>
+                    <li>
+                      <code class="language-python">paso</code>: Es el número
+                      de pasos a saltar entre caracteres. Si no se especifica,
+                      se asume 1.
+                    </li>
+                  </ul>
+                </div>
+                <!-- Parámetros del Rebanado fin -->
+                <!-- Ejemplos de Rebanado -->
+                <div>
+                  <h4>Ejemplos de Rebanado</h4>
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Rebanado Básico:</span>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               cadena = "Python"
                               # Extraer los primeros 3 caracteres
@@ -320,12 +250,12 @@
                               print(cadena[:4])   # Salida: "Pyth"
                             </code>
                           </pre>
-                        </div>
-                      </li>
-                      <li>
-                        <span class="fw-bold">Uso de Índices Negativos:</span>
-                        <div class="ej-sintaxis">
-                          <pre data-src-status="loaded" tabindex="0">
+                      </div>
+                    </li>
+                    <li>
+                      <span class="fw-bold">Uso de Índices Negativos:</span>
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               # Últimos 2 caracteres
                               print(cadena[-2:])  # Salida: "on"
@@ -333,13 +263,13 @@
                               print(cadena[:-2])  # Salida: "Pyth"
                             </code>
                           </pre>
-                        </div>
-                      </li>
-                      <li>
-                        <span class="fw-bold">Especificar un paso:</span> El
-                        paso indica cuántos caracteres omitir:
-                        <div class="ej-sintaxis">
-                          <pre data-src-status="loaded" tabindex="0">
+                      </div>
+                    </li>
+                    <li>
+                      <span class="fw-bold">Especificar un paso:</span> El
+                      paso indica cuántos caracteres omitir:
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               # Caracteres en posiciones pares
                               print(cadena[::2])  # Salida: "Pto"
@@ -349,98 +279,98 @@
                               print(cadena[::-1]) # Salida: "nohtyP"
                             </code>
                           </pre>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Ejemplos de Rebanado fin -->
-                  <!-- Consideraciones en el Rebanado -->
-                  <div>
-                    <h4>Consideraciones en el Rebanado</h4>
-                    <ul>
-                      <li>
-                        Si los índices especificados están fuera del rango de la
-                        cadena, Python no genera errores, simplemente devuelve
-                        la parte válida de la cadena.
-                      </li>
-                      <li>
-                        Si el paso es 0, se produce un error, ya que no es
-                        válido dividir por cero.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Consideraciones en el Rebanado fin -->
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-                <!-- Índices y Rebanado fin -->
+                <!-- Ejemplos de Rebanado fin -->
+                <!-- Consideraciones en el Rebanado -->
+                <div>
+                  <h4>Consideraciones en el Rebanado</h4>
+                  <ul>
+                    <li>
+                      Si los índices especificados están fuera del rango de la
+                      cadena, Python no genera errores, simplemente devuelve
+                      la parte válida de la cadena.
+                    </li>
+                    <li>
+                      Si el paso es 0, se produce un error, ya que no es
+                      válido dividir por cero.
+                    </li>
+                  </ul>
+                </div>
+                <!-- Consideraciones en el Rebanado fin -->
               </div>
-              <!-- Características de las Cadenas Fin -->
+              <!-- Índices y Rebanado fin -->
+            </div>
+            <!-- Características de las Cadenas Fin -->
 
-              <!-- Creación de Cadenas -->
-              <div id="creacionDeCadenas" class="mt-5">
-                <h2 class="mt-1">Creación de Cadenas</h2>
-                <p>
-                  La creación de cadenas en Python es uno de los aspectos más
-                  básicos pero esenciales del lenguaje. Una cadena (o string) es
-                  una secuencia de caracteres que se puede definir y manipular
-                  fácilmente. A continuación, se explican las principales formas
-                  de crear y trabajar con cadenas:
-                </p>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Con comillas simples</span>:
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+            <!-- Creación de Cadenas -->
+            <div id="creacion-de-cadenas" class="mt-5">
+              <h2>Creación de Cadenas</h2>
+              <p>
+                La creación de cadenas en Python es uno de los aspectos más
+                básicos pero esenciales del lenguaje. Una cadena (o string) es
+                una secuencia de caracteres que se puede definir y manipular
+                fácilmente. A continuación, se explican las principales formas
+                de crear y trabajar con cadenas:
+              </p>
+              <ul>
+                <li>
+                  <span class="fw-bold">Con comillas simples</span>:
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       cadena1 = 'Hola, mundo'
                     </code>
                   </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Con comillas dobles</span>:
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Con comillas dobles</span>:
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       cadena2 = "Hola, mundo"
                     </code>
                   </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Con comillas triples</span>: Útil para
-                    cadenas multilínea
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Con comillas triples</span>: Útil para
+                  cadenas multilínea
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           cadena3 = '''Esta es una cadena
                           que abarca varias líneas'''
                         </code>
                       </pre>
-                    </div>
-                    <p>o</p>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                  <p>o</p>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           cadena4 = """Otra forma de hacer
                           cadenas multilínea"""
                         </code>
                       </pre>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- Creación de Cadenas Fin -->
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Creación de Cadenas Fin -->
 
-              <!-- Operaciones con Cadenas -->
-              <div id="operacionesConCadenas" class="mt-5">
-                <h2 class="mt-1">Operaciones con Cadenas</h2>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Concatenación</span>: Unir cadenas
-                    usando el operador <code class="language-python">+</code> o
-                    <code class="language-python">join()</code>.
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+            <!-- Operaciones con Cadenas -->
+            <div id="operaciones-con-cadenas" class="mt-5">
+              <h2>Operaciones con Cadenas</h2>
+              <ul>
+                <li>
+                  <span class="fw-bold">Concatenación</span>: Unir cadenas
+                  usando el operador <code class="language-python">+</code> o
+                  <code class="language-python">join()</code>.
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           cadena1 = "Hola"
                           cadena2 = "Mundo"
@@ -448,129 +378,103 @@
                           resultado_join = " ".join([cadena1, cadena2])  # "Hola Mundo"
                         </code>
                       </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Repetición</span>: Repetir una cadena
-                    usando el operador <code class="language-python">*</code>.
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Repetición</span>: Repetir una cadena
+                  usando el operador <code class="language-python">*</code>.
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           cadena = "Python"
                           resultado = cadena * 3  # "PythonPythonPython"
                         </code>
                       </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Subcadenas</span>: Extraer partes de
-                    una cadena.
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Subcadenas</span>: Extraer partes de
+                  una cadena.
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           cadena = "Python es divertido"
                           subcadena = cadena[0:6]  # "Python"
                           subcadena_final = cadena[-9:]  # "divertido"
                         </code>
                       </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Longitud</span>: Obtener la cantidad
-                    de caracteres con
-                    <code class="language-python">len()</code>.
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Longitud</span>: Obtener la cantidad
+                  de caracteres con
+                  <code class="language-python">len()</code>.
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           cadena = "Python"
                           longitud = len(cadena)  # 6
                         </code>
                       </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      >Métodos para búsqueda e información</span
-                    >:
-                    <ul>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python"
-                            >find(sub[, start[, end]])</code
-                          ></span
-                        >: Devuelve el índice de la primera aparición de
-                        <code class="language-python">sub</code>. Si no lo
-                        encuentra, devuelve
-                        <code class="language-python">-1</code>.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python"
-                            >index(sub[, start[, end]])</code
-                          ></span
-                        >: Similar a
-                        <code class="language-python">find()</code>, pero genera
-                        una excepción
-                        <code class="language-python">ValueError</code>
-                        si no encuentra la subcadena.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python"
-                            >count(sub[, start[, end]])</code
-                          ></span
-                        >: Devuelve el número de veces que
-                        <code class="language-python">sub</code> aparece en la
-                        cadena.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python"
-                            >startswith(prefix[, start[, end]])</code
-                          ></span
-                        >: Verifica si la cadena comienza con
-                        <code class="language-python">prefix</code>.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python"
-                            >endswith(suffix[, start[, end]])</code
-                          ></span
-                        >: Verifica si la cadena termina con
-                        <code class="language-python">suffix</code>.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python"
-                            >sub in cadena</code
-                          ></span
-                        >: Verifica si sub esta en cadena.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python"
-                            >min(sub,[key=len])</code
-                          ></span
-                        >: Retorna el carácter "menor" (según el valor ASCII) o
-                        la cadena "menor" según el orden lexicográfico (orden
-                        alfabético), opcionalmente permite definir un criterio
-                        de comparación, p. e. la longitud del texto, Si se
-                        aplica a una cadena vacía o una colección vacía, se
-                        generará un error (<code class="language-python"
-                          >ValueError</code
-                        >
-                        ).
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python"
-                            >sub in cadena</code
-                          ></span
-                        >: Verifica si sub esta en cadena.
-                      </li>
-                    </ul>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Métodos para búsqueda e información</span>:
+                  <ul>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">find(sub[, start[, end]])</code></span>:
+                      Devuelve el índice de la primera aparición de
+                      <code class="language-python">sub</code>. Si no lo
+                      encuentra, devuelve
+                      <code class="language-python">-1</code>.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">index(sub[, start[, end]])</code></span>:
+                      Similar a
+                      <code class="language-python">find()</code>, pero genera
+                      una excepción
+                      <code class="language-python">ValueError</code>
+                      si no encuentra la subcadena.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">count(sub[, start[, end]])</code></span>:
+                      Devuelve el número de veces que
+                      <code class="language-python">sub</code> aparece en la
+                      cadena.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code
+                          class="language-python">startswith(prefix[, start[, end]])</code></span>: Verifica si la
+                      cadena comienza con
+                      <code class="language-python">prefix</code>.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code
+                          class="language-python">endswith(suffix[, start[, end]])</code></span>: Verifica si la cadena
+                      termina con
+                      <code class="language-python">suffix</code>.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">sub in cadena</code></span>: Verifica si sub
+                      esta en cadena.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">min(sub,[key=len])</code></span>: Retorna el
+                      carácter "menor" (según el valor ASCII) o
+                      la cadena "menor" según el orden lexicográfico (orden
+                      alfabético), opcionalmente permite definir un criterio
+                      de comparación, p. e. la longitud del texto, Si se
+                      aplica a una cadena vacía o una colección vacía, se
+                      generará un error (<code class="language-python">ValueError</code>
+                      ).
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">sub in cadena</code></span>: Verifica si sub
+                      esta en cadena.
+                    </li>
+                  </ul>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           cadena = "aprende Python con Python"
                           palabras = ["manzana", "banana", "cereza"]
@@ -588,48 +492,39 @@
                           print(max(palabras, key=len))       # 'manzana'
                         </code>
                       </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      >Métodos de modificación de cadenas</span
-                    >:
-                    <ul>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python"
-                            >capitalize()</code
-                          ></span
-                        >: Convierte el primer carácter de la cadena a
-                        mayúscula.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python">lower()</code></span
-                        >: Convierte todos los caracteres de la cadena a
-                        minúscula.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python">upper()</code></span
-                        >: Convierte todos los caracteres de la cadena a
-                        mayúscula.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python">title()</code></span
-                        >: Convierte el primer carácter de cada palabra a
-                        mayúscula.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python">swapcase()</code></span
-                        >: Invierte las mayúsculas y minúsculas de todos los
-                        caracteres.
-                      </li>
-                    </ul>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Métodos de modificación de cadenas</span>:
+                  <ul>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">capitalize()</code></span>: Convierte el
+                      primer carácter de la cadena a
+                      mayúscula.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">lower()</code></span>: Convierte todos los
+                      caracteres de la cadena a
+                      minúscula.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">upper()</code></span>: Convierte todos los
+                      caracteres de la cadena a
+                      mayúscula.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">title()</code></span>: Convierte el primer
+                      carácter de cada palabra a
+                      mayúscula.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">swapcase()</code></span>: Invierte las
+                      mayúsculas y minúsculas de todos los
+                      caracteres.
+                    </li>
+                  </ul>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           cadena = "hola MUNDO"
                           print(cadena.capitalize())  # Hola mundo
@@ -639,56 +534,41 @@
                           print(cadena.swapcase())    # HOLA mundo
                         </code>
                       </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Métodos de transformación</span>:
-                    <ul>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python"
-                            >replace(old, new[, count])</code
-                          ></span
-                        >: Reemplaza todas las apariciones de
-                        <code class="language-python">old</code> por
-                        <code class="language-python">new</code>. Opcionalmente,
-                        se puede limitar el número de reemplazos con
-                        <code class="language-python">count</code>.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python"
-                            >strip([chars])</code
-                          ></span
-                        >: Elimina caracteres de espacio en blanco al principio
-                        y al final de la cadena (o los caracteres especificados
-                        en <code class="language-python">chars</code>).
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python"
-                            >lstrip([chars])</code
-                          ></span
-                        >: Elimina los caracteres al inicio de la cadena.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python"
-                            >rstrip([chars])</code
-                          ></span
-                        >: Elimina los caracteres al final de la cadena.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python"
-                            >zfill(width)</code
-                          ></span
-                        >: Rellena la cadena con ceros a la izquierda hasta
-                        alcanzar el ancho especificado.
-                      </li>
-                    </ul>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Métodos de transformación</span>:
+                  <ul>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">replace(old, new[, count])</code></span>:
+                      Reemplaza todas las apariciones de
+                      <code class="language-python">old</code> por
+                      <code class="language-python">new</code>. Opcionalmente,
+                      se puede limitar el número de reemplazos con
+                      <code class="language-python">count</code>.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">strip([chars])</code></span>: Elimina
+                      caracteres de espacio en blanco al principio
+                      y al final de la cadena (o los caracteres especificados
+                      en <code class="language-python">chars</code>).
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">lstrip([chars])</code></span>: Elimina los
+                      caracteres al inicio de la cadena.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">rstrip([chars])</code></span>: Elimina los
+                      caracteres al final de la cadena.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">zfill(width)</code></span>: Rellena la cadena
+                      con ceros a la izquierda hasta
+                      alcanzar el ancho especificado.
+                    </li>
+                  </ul>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           cadena = "   Python   "
                           print(cadena.replace("Python", "Java")) # "Java"
@@ -698,64 +578,43 @@
                           print("42".zfill(5))                    # 00042
                         </code>
                       </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      >Métodos para dividir y unir cadenas</span
-                    >:
-                    <ul>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python"
-                            >split(sep=None, maxsplit=-1)</code
-                          ></span
-                        >: Divide la cadena en una lista según un separador.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python"
-                            >rsplit(sep=None, maxsplit=-1)</code
-                          ></span
-                        >: Similar a
-                        <code class="language-python">split()</code>, pero
-                        divide desde el final.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python"
-                            >splitlines([keepends])</code
-                          ></span
-                        >: Divide la cadena en líneas.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python"
-                            >join(iterable)</code
-                          ></span
-                        >: Une una lista de cadenas usando el carácter de la
-                        cadena original como separador.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python"
-                            >partition(sep)</code
-                          ></span
-                        >: Divide la cadena en tres partes: antes, el separador,
-                        y después.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python"
-                            >rpartition(sep)</code
-                          ></span
-                        >: Similar a
-                        <code class="language-python">partition()</code>, pero
-                        busca desde el final.
-                      </li>
-                    </ul>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Métodos para dividir y unir cadenas</span>:
+                  <ul>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">split(sep=None, maxsplit=-1)</code></span>:
+                      Divide la cadena en una lista según un separador.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">rsplit(sep=None, maxsplit=-1)</code></span>:
+                      Similar a
+                      <code class="language-python">split()</code>, pero
+                      divide desde el final.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">splitlines([keepends])</code></span>: Divide
+                      la cadena en líneas.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">join(iterable)</code></span>: Une una lista de
+                      cadenas usando el carácter de la
+                      cadena original como separador.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">partition(sep)</code></span>: Divide la cadena
+                      en tres partes: antes, el separador,
+                      y después.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">rpartition(sep)</code></span>: Similar a
+                      <code class="language-python">partition()</code>, pero
+                      busca desde el final.
+                    </li>
+                  </ul>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           cadena = "uno,dos,tres"
                           print(cadena.split(","))         # ['uno', 'dos', 'tres']
@@ -765,66 +624,59 @@
                           print(cadena.partition(","))     # ('uno', ',', 'dos,tres')
                         </code>
                       </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Unir listas en una cadena</span>:
-                    Combinar elementos de una lista en una sola cadena con
-                    <code class="language-python">join()</code>.
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Unir listas en una cadena</span>:
+                  Combinar elementos de una lista en una sola cadena con
+                  <code class="language-python">join()</code>.
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           palabras = ["Python", "es", "genial"]
                           cadena = " ".join(palabras)  # "Python es genial"
                           cadena = "-".join(palabras)  # "Python-es-genial"
                         </code>
                       </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Métodos de verificación</span>:
-                    Devuelven <code class="language-python">True</code> o
-                    <code class="language-python">False</code> según la
-                    naturaleza de la cadena:
-                    <ul>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python">isalpha()</code></span
-                        >: Verifica si todos los caracteres son alfabéticos.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python">isdigit()</code></span
-                        >: Verifica si todos los caracteres son dígitos.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python">isalnum()</code></span
-                        >: Verifica si todos los caracteres son alfanuméricos.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python">isspace()</code></span
-                        >: Verifica si la cadena contiene solo espacios.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python">islower()</code></span
-                        >: Verifica si todos los caracteres están en minúscula.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python">isupper()</code></span
-                        >: Verifica si todos los caracteres están en mayúscula.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python">istitle()</code></span
-                        >: Verifica si la cadena tiene formato de título.
-                      </li>
-                    </ul>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Métodos de verificación</span>:
+                  Devuelven <code class="language-python">True</code> o
+                  <code class="language-python">False</code> según la
+                  naturaleza de la cadena:
+                  <ul>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">isalpha()</code></span>: Verifica si todos los
+                      caracteres son alfabéticos.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">isdigit()</code></span>: Verifica si todos los
+                      caracteres son dígitos.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">isalnum()</code></span>: Verifica si todos los
+                      caracteres son alfanuméricos.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">isspace()</code></span>: Verifica si la cadena
+                      contiene solo espacios.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">islower()</code></span>: Verifica si todos los
+                      caracteres están en minúscula.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">isupper()</code></span>: Verifica si todos los
+                      caracteres están en mayúscula.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">istitle()</code></span>: Verifica si la cadena
+                      tiene formato de título.
+                    </li>
+                  </ul>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           cadena = "Python3"
                           print(cadena.isalpha())  # False
@@ -833,34 +685,25 @@
                           print("   ".isspace())   # True
                         </code>
                       </pre>
-                    </div>
+                  </div>
+                </li>
+                <span class="fw-bold"> Métodos de alineación</span>
+                <ul>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">center(width[, fillchar])</code></span>: Centra
+                    la cadena en un espacio de width.
                   </li>
-                  <span class="fw-bold"> Métodos de alineación</span>
-                  <ul>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python"
-                          >center(width[, fillchar])</code
-                        ></span
-                      >: Centra la cadena en un espacio de width.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python"
-                          >ljust(width[, fillchar])</code
-                        ></span
-                      >: Alinea la cadena a la izquierda.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python"
-                          >rjust(width[, fillchar])</code
-                        ></span
-                      >: Alinea la cadena a la derecha.
-                    </li>
-                  </ul>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                  <li>
+                    <span class="fw-bold"><code class="language-python">ljust(width[, fillchar])</code></span>: Alinea
+                    la cadena a la izquierda.
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">rjust(width[, fillchar])</code></span>: Alinea
+                    la cadena a la derecha.
+                  </li>
+                </ul>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         cadena = "Python"
                         print(cadena.center(10, "-"))  # --Python--
@@ -868,23 +711,20 @@
                         print(cadena.rjust(10, "-"))   # ----Python
                       </code>
                     </pre>
-                  </div>
-                </ul>
-              </div>
-              <!-- Operaciones con Cadenas Fin -->
+                </div>
+              </ul>
+            </div>
+            <!-- Operaciones con Cadenas Fin -->
 
-              <!-- Uso de Caracteres Especiales -->
-              <div id="usoDeCaracteresEspeciales" class="mt-5">
-                <h2 class="mt-1">Uso de Caracteres Especiales</h2>
-                <p>
-                  Cuando se necesitan incluir caracteres como comillas o saltos
-                  de línea, se usa la barra invertida (<code
-                    class="language-python"
-                    >\</code
-                  >):
-                </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+            <!-- Uso de Caracteres Especiales -->
+            <div id="uso-de-caracteres-especiales" class="mt-5">
+              <h2>Uso de Caracteres Especiales</h2>
+              <p>
+                Cuando se necesitan incluir caracteres como comillas o saltos
+                de línea, se usa la barra invertida (<code class="language-python">\</code>):
+              </p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       cadena = "Esto es un \"ejemplo\" de cadena."
                       print(cadena)  # Resultado: Esto es un "ejemplo" de cadena.
@@ -896,109 +736,109 @@
                       # Línea 3
                     </code>
                   </pre>
-                </div>
               </div>
-              <!-- Uso de Caracteres Especiales Fin -->
+            </div>
+            <!-- Uso de Caracteres Especiales Fin -->
 
-              <!-- Representación de Cadenas Crudas -->
-              <div id="representacionDeCadenasCrudas" class="mt-5">
-                <h2 class="mt-1">Representación de Cadenas Crudas</h2>
-                <p>
-                  Para evitar que los caracteres de escape sean interpretados,
-                  se usa el prefijo <code class="language-python">r</code>:
-                </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+            <!-- Representación de Cadenas Crudas -->
+            <div id="representacion-de-cadenas-crudas" class="mt-5">
+              <h2>Representación de Cadenas Crudas</h2>
+              <p>
+                Para evitar que los caracteres de escape sean interpretados,
+                se usa el prefijo <code class="language-python">r</code>:
+              </p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       ruta = r"C:\nueva\carpeta"
                       print(ruta)  # Resultado: C:\nueva\carpeta
                     </code>
                   </pre>
-                </div>
               </div>
-              <!-- Representación de Cadenas Crudas Fin -->
+            </div>
+            <!-- Representación de Cadenas Crudas Fin -->
 
-              <!-- Soporte para Iteración -->
-              <div id="soporteParaIteracion" class="mt-5">
-                <h2 class="mt-1">Soporte para Iteración</h2>
-                <p>
-                  En Python, se puede iterar sobre strings de diversas maneras.
-                  Dado que un string en Python es una secuencia de caracteres,
-                  se pueden utilizar las estructuras de control de flujo comunes
-                  como for para iterar sobre cada carácter.
-                </p>
-                <!-- Iterar sobre los Caracteres de un String con un Bucle for -->
-                <div>
-                  <h3>
-                    Iterar sobre los Caracteres de un String con un Bucle for
-                  </h3>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+            <!-- Soporte para Iteración -->
+            <div id="soporte-para-iteracion" class="mt-5">
+              <h2>Soporte para Iteración</h2>
+              <p>
+                En Python, se puede iterar sobre strings de diversas maneras.
+                Dado que un string en Python es una secuencia de caracteres,
+                se pueden utilizar las estructuras de control de flujo comunes
+                como for para iterar sobre cada carácter.
+              </p>
+              <!-- Iterar sobre los Caracteres de un String con un Bucle for -->
+              <div>
+                <h3>
+                  Iterar sobre los Caracteres de un String con un Bucle for
+                </h3>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         mi_string = "Hola Mundo"
                         for caracter in mi_string:
                         print(caracter)
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Iterar sobre los Caracteres de un String con un Bucle for fin -->
-                <!-- Usar enumerate() para Obtener el Índice y el Valor del Carácter: -->
-                <div>
-                  <h3>
-                    Usar enumerate() para Obtener el Índice y el Valor del
-                    Carácter
-                  </h3>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Iterar sobre los Caracteres de un String con un Bucle for fin -->
+              <!-- Usar enumerate() para Obtener el Índice y el Valor del Carácter: -->
+              <div>
+                <h3>
+                  Usar enumerate() para Obtener el Índice y el Valor del
+                  Carácter
+                </h3>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         mi_string = "Hola Mundo"
                         for indice, caracter in enumerate(mi_string):
                         print(f"Índice {indice}: {caracter}")
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Usar enumerate() para Obtener el Índice y el Valor del Carácter: fin -->
-                <!-- Iterar sobre un Rango de Índices para Acceder a los Caracteres Usando un Bucle for: -->
-                <div>
-                  <h3>
-                    Iterar sobre un Rango de Índices para Acceder a los
-                    Caracteres Usando un Bucle for
-                  </h3>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Usar enumerate() para Obtener el Índice y el Valor del Carácter: fin -->
+              <!-- Iterar sobre un Rango de Índices para Acceder a los Caracteres Usando un Bucle for: -->
+              <div>
+                <h3>
+                  Iterar sobre un Rango de Índices para Acceder a los
+                  Caracteres Usando un Bucle for
+                </h3>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         mi_string = "Hola Mundo"
                         for i in range(len(mi_string)):
                         print(f"Carácter en índice {i}: {mi_string[i]}")
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Iterar sobre un Rango de Índices para Acceder a los Caracteres Usando un Bucle for: fin -->
-                <!-- Usar Comprensión de Listas para Crear una Lista con los Caracteres: -->
-                <div>
-                  <h3>
-                    Usar Comprensión de Listas para Crear una Lista con los
-                    Caracteres
-                  </h3>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Iterar sobre un Rango de Índices para Acceder a los Caracteres Usando un Bucle for: fin -->
+              <!-- Usar Comprensión de Listas para Crear una Lista con los Caracteres: -->
+              <div>
+                <h3>
+                  Usar Comprensión de Listas para Crear una Lista con los
+                  Caracteres
+                </h3>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         mi_string = "Hola Mundo"
                         caracteres = [caracter for caracter in mi_string]
                         print(caracteres)
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Usar Comprensión de Listas para Crear una Lista con los Caracteres: fin -->
-                <!-- Iterar Usando while -->
-                <div>
-                  <h3>Iterar Usando while</h3>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Usar Comprensión de Listas para Crear una Lista con los Caracteres: fin -->
+              <!-- Iterar Usando while -->
+              <div>
+                <h3>Iterar Usando while</h3>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         mi_string = "Hola Mundo"
                         i = 0
@@ -1007,114 +847,114 @@
                         i += 1
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Iterar Usando while fin -->
               </div>
-              <!-- Soporte para Iteración Fin -->
+              <!-- Iterar Usando while fin -->
+            </div>
+            <!-- Soporte para Iteración Fin -->
 
-              <!-- Dar Formato a las Cadenas  -->
-              <div id="darFormatoALasCadenas" class="mt-5">
-                <h2 class="mt-1">Dar Formato a las Cadenas</h2>
-                <!-- Interpolación con el Operador % -->
-                <div>
-                  <h3>Interpolación con el Operador %</h3>
-                  <p>
-                    Permite insertar valores en una cadena utilizando marcadores
-                    de posición.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+            <!-- Dar Formato a las Cadenas  -->
+            <div id="dar-formato-a-las-cadenas" class="mt-5">
+              <h2>Dar Formato a las Cadenas</h2>
+              <!-- Interpolación con el Operador % -->
+              <div>
+                <h3>Interpolación con el Operador %</h3>
+                <p>
+                  Permite insertar valores en una cadena utilizando marcadores
+                  de posición.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         nombre = "Juan"
                         edad = 25
                         print("Hola, %s. Tienes %d años." % (nombre, edad))
                       </code>
                     </pre>
-                  </div>
-                  <ul>
-                    <li>
-                      <code class="language-python">%s</code> para cadenas
-                    </li>
-                    <li>
-                      <code class="language-python">%d</code> para enteros
-                    </li>
-                    <li>
-                      <code class="language-python">%f</code> para números de
-                      punto flotante (se puede especificar la precisión, por
-                      ejemplo, <code class="language-python">%.2f</code>).
-                    </li>
-                  </ul>
                 </div>
-                <!-- Interpolación con el Operador % fin -->
-                <!-- Método str.format -->
-                <div>
-                  <h3>Método str.format</h3>
-                  <p>
-                    Una alternativa más flexible que el operador %. Utiliza
-                    llaves
-                    <code class="language-python">{}</code> como marcadores de
-                    posición.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                <ul>
+                  <li>
+                    <code class="language-python">%s</code> para cadenas
+                  </li>
+                  <li>
+                    <code class="language-python">%d</code> para enteros
+                  </li>
+                  <li>
+                    <code class="language-python">%f</code> para números de
+                    punto flotante (se puede especificar la precisión, por
+                    ejemplo, <code class="language-python">%.2f</code>).
+                  </li>
+                </ul>
+              </div>
+              <!-- Interpolación con el Operador % fin -->
+              <!-- Método str.format -->
+              <div>
+                <h3>Método str.format</h3>
+                <p>
+                  Una alternativa más flexible que el operador %. Utiliza
+                  llaves
+                  <code class="language-python">{}</code> como marcadores de
+                  posición.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         nombre = "Juan"
                         edad = 25
                         print("Hola, {}. Tienes {} años.".format(nombre, edad))
                       </code>
                     </pre>
-                  </div>
-                  <p>También permite nombrar variables dentro de las llaves:</p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <p>También permite nombrar variables dentro de las llaves:</p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         print("Hola, {nombre}. Tienes {edad} años.".format(nombre="Juan", edad=25))
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Método str.format fin -->
-                <!-- F-strings (Format Strings) -->
-                <div>
-                  <h3>F-strings (Format Strings)</h3>
-                  <p>
-                    Introducido en Python 3.6, es el método más moderno y
-                    eficiente. Utiliza una f antes de la cadena e incrusta
-                    expresiones dentro de las llaves
-                    <code class="language-python">{}</code>.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Método str.format fin -->
+              <!-- F-strings (Format Strings) -->
+              <div>
+                <h3>F-strings (Format Strings)</h3>
+                <p>
+                  Introducido en Python 3.6, es el método más moderno y
+                  eficiente. Utiliza una f antes de la cadena e incrusta
+                  expresiones dentro de las llaves
+                  <code class="language-python">{}</code>.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         nombre = "Juan"
                         edad = 25
                         print(f"Hola, {nombre}. Tienes {edad} años.")
                       </code>
                     </pre>
-                  </div>
-                  <p>
-                    Incluso permite incluir operaciones dentro de las llaves:
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <p>
+                  Incluso permite incluir operaciones dentro de las llaves:
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         print(f"El año que viene tendrás {edad + 1} años.")
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- F-strings (Format Strings) fin -->
-                <!-- Método Template de la Librería string -->
-                <div>
-                  <h3>Método Template de la Librería string</h3>
-                  <p>
-                    Es útil cuando se requiere personalizar los marcadores,
-                    especialmente en entornos donde se manejan plantillas de
-                    texto.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- F-strings (Format Strings) fin -->
+              <!-- Método Template de la Librería string -->
+              <div>
+                <h3>Método Template de la Librería string</h3>
+                <p>
+                  Es útil cuando se requiere personalizar los marcadores,
+                  especialmente en entornos donde se manejan plantillas de
+                  texto.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         from string import Template
                         template = Template("Hola, $nombre. Tienes $edad años.")
@@ -1122,168 +962,162 @@
                         print(mensaje)
                       </code>
                     </pre>
-                  </div>
-                  <p>Ventaja: Facilita separar datos y plantillas de texto.</p>
                 </div>
-                <!-- Método Template de la Librería string fin -->
-                <!-- Controlar la Precisión en Números -->
-                <div>
-                  <h3>Controlar la Precisión en Números</h3>
-                  <p>
-                    Con los métodos
-                    <code class="language-python">str.format</code> o
-                    <code class="language-python">f-strings</code>, se puede
-                    especificar el formato de los números.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                <p>Ventaja: Facilita separar datos y plantillas de texto.</p>
+              </div>
+              <!-- Método Template de la Librería string fin -->
+              <!-- Controlar la Precisión en Números -->
+              <div>
+                <h3>Controlar la Precisión en Números</h3>
+                <p>
+                  Con los métodos
+                  <code class="language-python">str.format</code> o
+                  <code class="language-python">f-strings</code>, se puede
+                  especificar el formato de los números.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         pi = 3.14159
                         print("El valor de pi es {:.2f}".format(pi))  # Con 2 decimales
                         print(f"El valor de pi es {pi:.2f}")         # Usando f-strings
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Controlar la Precisión en Números fin -->
               </div>
-              <!-- Dar Formato a las Cadenas  Fin -->
+              <!-- Controlar la Precisión en Números fin -->
             </div>
-          </article>
-          <!--  La naturaleza de las cadenas en Python  -->
-          <!--  comentarios  -->
-          <article class="row pt-5" id="comments">
-            <h2>COMENTARIOS</h2>
-            <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por
-              favor infórmelo a través del formulario disponible para este
-              propósito.
-            </p>
-            <div class="d-flex justify-content-center">
-              <form
-                action="https://formspree.io/f/mdkdawkg"
-                method="POST"
-                id="myForm"
-              >
-                <fieldset class="d-flex flex-column gap-3">
-                  <legend class="text-center fs-4">Deje su comentario</legend>
+            <!-- Dar Formato a las Cadenas  Fin -->
+          </div>
+        </article>
+        <!--  La naturaleza de las cadenas en Python  -->
+        <!--  comentarios  -->
+        <article class="row pt-5" id="comments">
+          <h2>COMENTARIOS</h2>
+          <p>
+            Si tiene alguna inquietud, duda o ha encontrado algún error, por
+            favor infórmelo a través del formulario disponible para este
+            propósito.
+          </p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
 
-                  <div class="d-flex flex-column">
-                    <label for="name">Nombre:</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="User"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
+                </div>
 
-                  <div class="d-flex flex-column">
-                    <label for="email">Email:</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="user@mail.com"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
 
-                  <div class="d-flex flex-column">
-                    <label for="message">Mensaje:</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      cols="30"
-                      rows="5"
-                      placeholder="Su comentario..."
-                      class="form-control rounded-3"
-                      required
-                    ></textarea>
-                  </div>
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
 
-                  <button
-                    type="submit"
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
-                  >
-                    Enviar
-                  </button>
-                </fieldset>
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                  Enviar
+                </button>
+              </fieldset>
 
-                <p class="small text-center">
-                  La política de privacidad, y los términos y condiciones están
-                  disponibles en el formulario de contacto.
-                </p>
-              </form>
-            </div>
-          </article>
-          <!--  fin comentarios  -->
-        </section>
-        <!--  barra lateral  -->
-        <aside class="col-lg-3 d-none d-lg-block pt-5">
-          <h1>En Este Artículo</h1>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a href="#introduccion">Introducción</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#CaracterIsticasDeLasCadenas"
-                >Características de las Cadenas</a
-              >
-            </li>
-            <li class="list-group-item">
-              <a href="#creacionDeCadenas">Creación de Cadenas</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#operacionesConCadenas">Operaciones con Cadenas</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#usoDeCaracteresEspeciales"
-                >Uso de Caracteres Especiales</a
-              >
-            </li>
-            <li class="list-group-item">
-              <a href="#representacionDeCadenasCrudas"
-                >Representación de Cadenas Crudas</a
-              >
-            </li>
-            <li class="list-group-item">
-              <a href="#soporteParaIteracion">Soporte para Iteración</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#darFormatoALasCadenas ">Dar Formato a las Cadenas </a>
-            </li>
-            <li class="list-group-item">
-              <a href="#comments">Comentarios</a>
-            </li>
-          </ul>
-        </aside>
-        <!--  fin barra lateral  -->
-      </main>
-      <!--  fin principal  -->
+              <p class="small text-center">
+                La política de privacidad, y los términos y condiciones están
+                disponibles en el formulario de contacto.
+              </p>
+            </form>
+          </div>
+        </article>
+        <!--  fin comentarios  -->
+      </section>
+
+<!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h1>En Este Artículo</h1><div class="menu-scroll"><div class="menu-container"><div class="border border-1">
+<div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
+<div class="menu-item"><a href="#caracteristicas-de-las-cadenas" class="simple-link">Características de las Cadenas</a></div>
+<div class="menu-item"><a href="#creacion-de-cadenas" class="simple-link">Creación de Cadenas</a></div>
+<div class="menu-item"><a href="#operaciones-con-cadenas" class="simple-link">Operaciones con Cadenas</a></div>
+<div class="menu-item"><a href="#uso-de-caracteres-especiales" class="simple-link">Uso de Caracteres Especiales</a></div>
+<div class="menu-item"><a href="#representacion-de-cadenas-crudas" class="simple-link">Representación de Cadenas Crudas</a></div>
+<div class="menu-item"><a href="#soporte-para-iteracion" class="simple-link">Soporte para Iteración</a></div>
+<div class="menu-item"><a href="#dar-formato-a-las-cadenas " class="simple-link">Dar Formato a las Cadenas</a></div>
+<!-- Comentarios  -->
+<div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div></div></div></div></aside>
+<!--  fin barra lateral  -->
+    </main>
+    <!--  fin principal  -->
+  </div>
+  <!--  Principal Fin  -->
+
+  <!--  pie de pagina  -->
+  <footer class="row border-top border-1 m-1 mt-auto">
+    <div class="row">
+      <!-- contacto -->
+      <address class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Contacto</div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class="ms-3">
+            <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class="ms-3">Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      <!-- Derechos de autor -->
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
+      </div>
+      <!-- redes sociales -->
+      <div class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Redes Sociales</div>
+        <div class="d-flex justify-content-evenly align-items-center gap-5">
+          <div>
+            <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <!--  Principal Fin  -->
+    <div class="d-flex align-items-center justify-content-center gap-2"></div>
+  </footer>
+  <!--  pie de pagina fin  -->
 
-    <!-- button to top -->
-    <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        fill="currentColor"
-        class="bi bi-arrow-bar-up"
-        viewBox="0 0 16 16"
-        style="margin-left: -2px"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"
-        ></path>
-      </svg>
-    </button>
-    <!-- Fin button to top -->
-  </body>
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
 </html>

@@ -1,339 +1,261 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-  <head>
-    <!-- Metaetiquetas -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Aprende que son, por qué, cuándo y en dónde utilizar comentarios Python"
-    />
-    <meta
-      name="title"
-      content="Comentarios Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta name="author" content="Ing. Eduardo Herrera Forero" />
-    <meta name="application-name" content="EHF" />
-    <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://eduardoherreraf.github.io/cursoPython3-0205_comentarios.html"
-    />
-    <!-- Fin Metaetiquetas -->
 
-    <!-- Open Graph data -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Comentarios Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      property="og:description"
-      content="Aprende que son, por qué, cuándo y en dónde utilizar comentarios Python"
-    />
-    <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      property="og:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      property="og:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0205_comentarios.html"
-    />
-    <meta property="og:locale" content="es_CO" />
-    <!-- fin Open Graph data -->
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Aprende que son, por qué, cuándo y en dónde utilizar comentarios Python" />
+  <meta name="title" content="Comentarios Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eduardoherreraf.github.io/cursoPython3-0205_comentarios.html" />
+  <!-- Fin Metaetiquetas -->
 
-    <!-- Twitter cards -->
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="Comentarios Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      name="twitter:description"
-      content="Aprende que son, por qué, cuándo y en dónde utilizar comentarios Python"
-    />
-    <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      name="twitter:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      name="twitter:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0205_comentarios.html"
-    />
-    <meta name="twitter:site" content="@ehfeduardo" />
-    <!-- Fin Twitter cards -->
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Comentarios Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta property="og:description" content="Aprende que son, por qué, cuándo y en dónde utilizar comentarios Python" />
+  <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta property="og:url" content="https://eduardoherreraf.github.io/cursoPython3-0205_comentarios.html" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
 
-    <!-- iconos -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="android-chrome-192x192.png"
-    />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- fin iconos -->
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Comentarios Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description" content="Aprende que son, por qué, cuándo y en dónde utilizar comentarios Python" />
+  <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta name="twitter:url" content="https://eduardoherreraf.github.io/cursoPython3-0205_comentarios.html" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
 
-    <title>Comentarios Python 3 - Ing. Eduardo Herrera Forero.</title>
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
 
-    <script type="module" src="./js/main.js"></script>
+  <title>Comentarios Python 3 - Ing. Eduardo Herrera Forero.</title>
 
-    <meta
-      name="google-site-verification"
-      content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"
-    />
-  </head>
+  <script type="module" src="./js/main.js"></script>
 
-  <body>
-    <!-- Barra deNavegación -->
-    <nav
-      class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
-    >
-      <div class="container-fluid">
-        <!-- Enlace a la página principal con el logo y nombre -->
-        <a
-          class="navbar-brand d-flex align-items-center ms-2"
-          href="index.html"
-        >
-          <img
-            src="./images/logo.png"
-            alt="Logo de Ing. Eduardo Herrera Forero"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top me-1"
-          />
-          <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
-        </a>
-        <!-- Botón para activar el menú en dispositivos pequeños -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Menú de navegación -->
-        <div
-          class="collapse navbar-collapse ms-auto text-center"
-          id="navbarSupportedContent"
-        >
-          <ul
-            class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100"
-          >
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#portfolio"
-                >PORTAFOLIO</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 publicaciones-activo"
-                href="index.html#blog"
-                >PUBLICACIONES</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
-            </li>
-          </ul>
-        </div>
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Barra deNavegación -->
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
 
-    <!--  principal  -->
-    <div class="container-fluid" id="introduccion">
-      <main class="row">
-        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
-          <!--  Comentarios en Python  -->
-          <article
-            class="row border-1 border-bottom pb-3"
-            data-bs-spy="scroll"
-            data-bs-target="#list-example"
-            data-bs-smooth-scroll="true"
-          >
-            <div>
-              <header>
-                <h1>Comentarios en Python</h1>
-              </header>
-              <!-- Introducción -->
-              <div class="mt-5">
-                <h2>Introducción</h2>
+  <!--  principal  -->
+  <div class="container-fluid" id="introduccion">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!--  Comentarios en Python  -->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <div>
+            <header>
+              <h1>Comentarios en Python</h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-5">
+              <h2>Introducción</h2>
+              <p>
+                Se explicará en este artículo porque es importante documentar
+                el código y porque se debe dejar comentarios. También se
+                explicará cómo hacerlo y cuándo los comentarios se consideran
+                una buena práctica.
+              </p>
+              <div class="centrar-imagen imagen50">
+                <figure>
+                  <img src="https://i.ibb.co/qFp1KxB/comentarios.jpg" class="img-fluid" alt="Comentarios en Python"
+                    title="El Papel de los Comentarios en Python" />
+                  <figcaption>Comentarios en Python</figcaption>
+                </figure>
+              </div>
+            </div>
+            <!-- ¿Qué Son los Comentarios en Python? -->
+            <div id="que-son-los-comentarios-en-python" class="mt-5">
+              <h2>¿Qué Son los Comentarios en Python?</h2>
+              <p>
+                Los comentarios en Python son líneas de código que el
+                intérprete ignora. Se utilizan para añadir notas explicativas
+                al código, haciendo que sea más fácil de entender tanto para
+                el programador que lo escribió como para otros que lo lean en
+                el futuro. Estos comentarios sirven como una especie de
+                documentación interna, ayudando a explicar el propósito de
+                diferentes secciones de código, algoritmos utilizados o
+                decisiones de diseño.
+              </p>
+            </div>
+            <!-- ¿Qué Son los Comentarios en Python? Fin -->
+            <!-- ¿Por qué Utilizar Comentarios? -->
+            <div id="por-que-utilizar-comentarios" class="mt-5">
+              <h2>¿Por qué Utilizar Comentarios?</h2>
+              <ul>
+                <li>
+                  <span class="fw-bold">Claridad</span>: Hacen el código más
+                  legible, especialmente para proyectos grandes o complejos.
+                </li>
+                <li>
+                  <span class="fw-bold">Documentación</span>: Sirven como una
+                  especie de manual de usuario para el código.
+                </li>
+                <li>
+                  <span class="fw-bold">Recordatorio</span>: Ayudan al
+                  programador a recordar la lógica detrás de ciertas partes
+                  del código, especialmente después de un tiempo sin trabajar
+                  en él.
+                </li>
+                <li>
+                  <span class="fw-bold">Colaboración</span>: Facilitan el
+                  trabajo en equipo, ya que otros programadores pueden
+                  entender rápidamente el código y hacer modificaciones sin
+                  perderse.
+                </li>
+                <li>
+                  <span class="fw-bold">Depuración</span>: Ayudan a
+                  identificar errores en el código al explicar el flujo de
+                  ejecución esperado.
+                </li>
+              </ul>
+            </div>
+            <!-- ¿Por qué Utilizar Comentarios? Fin -->
+            <!-- ¿Cuándo Utilizar Comentarios en Python? -->
+            <div id="cuando-utilizar-comentarios-en-python" class="mt-5">
+              <h2>¿Cuándo Utilizar Comentarios en Python?</h2>
+              <ul>
+                <li>
+                  <span class="fw-bold">Explicar algoritmos complejos</span>:
+                  Cuando se utiliza un algoritmo no obvio, un comentario puede
+                  explicar su funcionamiento.
+                </li>
+                <li>
+                  <span class="fw-bold">Justificar decisiones de diseño</span>: Si hay varias opciones posibles, un
+                  comentario puede
+                  explicar por qué se eligió una en particular.
+                </li>
+                <li>
+                  <span class="fw-bold">Señalar secciones de código problemáticas</span>: Si una parte del código es
+                  propensa a errores o difícil
+                  de entender, un comentario puede advertir al lector.
+                </li>
+                <li>
+                  <span class="fw-bold">Documentar funciones y clases</span>:
+                  Es una buena práctica añadir comentarios al principio de
+                  cada función o clase para describir su propósito y
+                  parámetros.
+                </li>
+              </ul>
+            </div>
+            <!-- ¿Cuándo Utilizar Comentarios en Python? Fin -->
+            <!-- ¿Dónde Colocar los Comentarios en Python? -->
+            <div id="donde-colocar-los-comentarios-en-python" class="mt-5">
+              <h2>¿Dónde Colocar los Comentarios en Python?</h2>
+              <ul>
+                <li>
+                  <span class="fw-bold">Al inicio de un archivo</span>: Para
+                  describir el propósito general del archivo.
+                </li>
+                <li>
+                  <span class="fw-bold">Antes de una función o clase</span>:
+                  Para explicar su funcionalidad y parámetros.
+                </li>
+                <li>
+                  <span class="fw-bold">Dentro de una función</span>: Para
+                  explicar secciones de código complejas o no obvias.
+                </li>
+                <li>
+                  <span class="fw-bold">Al final de un bloque de código</span>: Para resumir el propósito del bloque.
+                </li>
+              </ul>
+            </div>
+            <!-- ¿Dónde Colocar los Comentarios en Python? Fin -->
+            <!-- Cómo Escribir Comentarios en Python -->
+            <div id="como-escribir-comentarios-en-python" class="mt-5">
+              <h2>Cómo Escribir Comentarios en Python</h2>
+              <p>
+                En Python, hay dos formas principales de escribir comentarios:
+              </p>
+              <!-- Comentarios de una Sola Línea -->
+              <div id="comentariosdeunaSolaLineas">
+                <h3>Comentarios de una Sola Línea</h3>
                 <p>
-                  Se explicará en este artículo porque es importante documentar
-                  el código y porque se debe dejar comentarios. También se
-                  explicará cómo hacerlo y cuándo los comentarios se consideran
-                  una buena práctica.
+                  Se inician con el símbolo <kbd>#</kbd>. Todo el texto
+                  después del # hasta el final de la línea se ignora.
                 </p>
-                <div class="centrar-imagen imagen50">
-                  <figure>
-                    <img
-                      src="https://i.ibb.co/qFp1KxB/comentarios.jpg"
-                      class="img-fluid"
-                      alt="Comentarios en Python"
-                      title="El Papel de los Comentarios en Python"
-                    />
-                    <figcaption>Comentarios en Python</figcaption>
-                  </figure>
-                </div>
-              </div>
-              <!-- ¿Qué Son los Comentarios en Python? -->
-              <div id="quesonloscomentariosenPython" class="mt-5">
-                <h2 class="mt-1">¿Qué Son los Comentarios en Python?</h2>
-                <p>
-                  Los comentarios en Python son líneas de código que el
-                  intérprete ignora. Se utilizan para añadir notas explicativas
-                  al código, haciendo que sea más fácil de entender tanto para
-                  el programador que lo escribió como para otros que lo lean en
-                  el futuro. Estos comentarios sirven como una especie de
-                  documentación interna, ayudando a explicar el propósito de
-                  diferentes secciones de código, algoritmos utilizados o
-                  decisiones de diseño.
-                </p>
-              </div>
-              <!-- ¿Qué Son los Comentarios en Python? Fin -->
-              <!-- ¿Por qué Utilizar Comentarios? -->
-              <div id="porQueUtilizarComentariosPython" class="mt-5">
-                <h2 class="mt-1">¿Por qué Utilizar Comentarios?</h2>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Claridad</span>: Hacen el código más
-                    legible, especialmente para proyectos grandes o complejos.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Documentación</span>: Sirven como una
-                    especie de manual de usuario para el código.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Recordatorio</span>: Ayudan al
-                    programador a recordar la lógica detrás de ciertas partes
-                    del código, especialmente después de un tiempo sin trabajar
-                    en él.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Colaboración</span>: Facilitan el
-                    trabajo en equipo, ya que otros programadores pueden
-                    entender rápidamente el código y hacer modificaciones sin
-                    perderse.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Depuración</span>: Ayudan a
-                    identificar errores en el código al explicar el flujo de
-                    ejecución esperado.
-                  </li>
-                </ul>
-              </div>
-              <!-- ¿Por qué Utilizar Comentarios? Fin -->
-              <!-- ¿Cuándo Utilizar Comentarios en Python? -->
-              <div id="cuandoUtilizarComentariosPython" class="mt-5">
-                <h2 class="mt-1">¿Cuándo Utilizar Comentarios en Python?</h2>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Explicar algoritmos complejos</span>:
-                    Cuando se utiliza un algoritmo no obvio, un comentario puede
-                    explicar su funcionamiento.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Justificar decisiones de diseño</span
-                    >: Si hay varias opciones posibles, un comentario puede
-                    explicar por qué se eligió una en particular.
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      >Señalar secciones de código problemáticas</span
-                    >: Si una parte del código es propensa a errores o difícil
-                    de entender, un comentario puede advertir al lector.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Documentar funciones y clases</span>:
-                    Es una buena práctica añadir comentarios al principio de
-                    cada función o clase para describir su propósito y
-                    parámetros.
-                  </li>
-                </ul>
-              </div>
-              <!-- ¿Cuándo Utilizar Comentarios en Python? Fin -->
-              <!-- ¿Dónde Colocar los Comentarios en Python? -->
-              <div id="dondeColocarlosComentariosPython" class="mt-5">
-                <h2 class="mt-1">¿Dónde Colocar los Comentarios en Python?</h2>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Al inicio de un archivo</span>: Para
-                    describir el propósito general del archivo.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Antes de una función o clase</span>:
-                    Para explicar su funcionalidad y parámetros.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Dentro de una función</span>: Para
-                    explicar secciones de código complejas o no obvias.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Al final de un bloque de código</span
-                    >: Para resumir el propósito del bloque.
-                  </li>
-                </ul>
-              </div>
-              <!-- ¿Dónde Colocar los Comentarios en Python? Fin -->
-              <!-- Cómo Escribir Comentarios en Python -->
-              <div id="comoEscribirComentariosenPython" class="mt-5">
-                <h2 class="mt-1">Cómo Escribir Comentarios en Python</h2>
-                <p>
-                  En Python, hay dos formas principales de escribir comentarios:
-                </p>
-                <!-- Comentarios de una Sola Línea -->
-                <div id="comentariosdeunaSolaLineas">
-                  <h3>Comentarios de una Sola Línea</h3>
-                  <p>
-                    Se inician con el símbolo <kbd>#</kbd>. Todo el texto
-                    después del # hasta el final de la línea se ignora.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Esto es un comentario de una línea
                         x = 5  # Aquí asignamos el valor 5 a la variable x
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Comentarios de una Sola Línea fin -->
-                <!-- Comentarios de Múltiples Líneas -->
-                <div id="comentariosdeMultiplesLineas">
-                  <h3>Comentarios de Múltiples Líneas</h3>
-                  <p>
-                    Los comentarios de varias líneas en Python se suelen hacer
-                    usando comillas triples (<kbd>""" ... """</kbd>). Este tipo
-                    de comentario es comúnmente utilizado para documentar
-                    funciones, clases o módulos y se le conoce como docstring o
-                    cadena de documentación. Aunque no son técnicamente
-                    comentarios (ya que Python los interpreta como una cadena de
-                    texto), permiten describir bloques de código más extensos.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Comentarios de una Sola Línea fin -->
+              <!-- Comentarios de Múltiples Líneas -->
+              <div id="comentariosdeMultiplesLineas">
+                <h3>Comentarios de Múltiples Líneas</h3>
+                <p>
+                  Los comentarios de varias líneas en Python se suelen hacer
+                  usando comillas triples (<kbd>""" ... """</kbd>). Este tipo
+                  de comentario es comúnmente utilizado para documentar
+                  funciones, clases o módulos y se le conoce como docstring o
+                  cadena de documentación. Aunque no son técnicamente
+                  comentarios (ya que Python los interpreta como una cadena de
+                  texto), permiten describir bloques de código más extensos.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         """
                         Este es un comentario
@@ -341,16 +263,16 @@
                         """
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Comentarios de Múltiples Líneas fin -->
               </div>
-              <!-- Cómo Escribir Comentarios en Python fin -->
-              <!-- Ejemplo Completo -->
-              <div id="ejemploCompleto" class="mt-5">
-                <h2 class="mt-1">Ejemplo Completo</h2>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+              <!-- Comentarios de Múltiples Líneas fin -->
+            </div>
+            <!-- Cómo Escribir Comentarios en Python fin -->
+            <!-- Ejemplo Completo -->
+            <div id="ejemplo-completo" class="mt-5">
+              <h2>Ejemplo Completo</h2>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       def factorial(n):
                           """
@@ -370,36 +292,35 @@
                           print(resultado)  # Imprime 120
                     </code>
                   </pre>
-                </div>
               </div>
-              <!-- Ejemplo Completo Fin -->
-              <!-- Variables Autodocumentadas -->
-              <div id="variablesAutodocumentadasenPython" class="mt-5">
-                <h2 class="mt-1">Variables Autodocumentadas</h2>
-                <p>
-                  En Python, aunque no existe un mecanismo directo para declarar
-                  variables "autodocumentadas" como en otros lenguajes, se puede
-                  emplear técnicas para mejorar la claridad y comprensibilidad
-                  de las variables utilizadas.
-                </p>
-                <!-- Nombres Descriptivos -->
-                <div id="nombresDescriptivoss">
-                  <h3>Nombres Descriptivos</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Evitar nombres crípticos</span>:
-                      Utilizar nombres que reflejen claramente el propósito de
-                      la variable.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Use convenciones de nomenclatura</span
-                      >: Seguir a las convenciones de nomenclatura de Python
-                      (por ejemplo, snake_case para variables).
-                    </li>
-                  </ul>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <!-- Ejemplo Completo Fin -->
+            <!-- Variables Autodocumentadas -->
+            <div id="variables-autodocumentadas-en-python" class="mt-5">
+              <h2>Variables Autodocumentadas</h2>
+              <p>
+                En Python, aunque no existe un mecanismo directo para declarar
+                variables "autodocumentadas" como en otros lenguajes, se puede
+                emplear técnicas para mejorar la claridad y comprensibilidad
+                de las variables utilizadas.
+              </p>
+              <!-- Nombres Descriptivos -->
+              <div id="nombresDescriptivoss">
+                <h3>Nombres Descriptivos</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Evitar nombres crípticos</span>:
+                    Utilizar nombres que reflejen claramente el propósito de
+                    la variable.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Use convenciones de nomenclatura</span>: Seguir a las convenciones de
+                    nomenclatura de Python
+                    (por ejemplo, snake_case para variables).
+                  </li>
+                </ul>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Buen ejemplo:
                         nombre_completo = "John Doe"
@@ -409,46 +330,45 @@
                         y = 30
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Nombres Descriptivos fin -->
-                <!-- Comentarios Explicativos -->
-                <div id="comentariosExplicativoss">
-                  <h3>Comentarios Explicativos</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Usar comentarios de una línea</span
-                      >: Añadir comentarios concisos para explicar el propósito
-                      de la variable, especialmente si su nombre no es lo
-                      suficientemente claro.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Emplear comentarios de varias líneas</span
-                      >: Para explicaciones más detalladas, utilice comentarios
-                      de varias líneas.
-                    </li>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Nombres Descriptivos fin -->
+              <!-- Comentarios Explicativos -->
+              <div id="comentariosExplicativoss">
+                <h3>Comentarios Explicativos</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Usar comentarios de una línea</span>: Añadir comentarios concisos para
+                    explicar el propósito
+                    de la variable, especialmente si su nombre no es lo
+                    suficientemente claro.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Emplear comentarios de varias líneas</span>: Para explicaciones más
+                    detalladas, utilice comentarios
+                    de varias líneas.
+                  </li>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           nombre_completo = "John Doe"  # Nombre completo de la persona
                           edad = 30  # Edad de la persona en años
                         </code>
                       </pre>
-                    </div>
-                  </ul>
-                </div>
-                <!-- Comentarios Explicativos fin -->
-                <!-- Docstrings para Módulos, Funciones y Clases -->
-                <div id="docstringsparaMódulosFuncionesyClasess">
-                  <h3>Docstrings para Módulos, Funciones y Clases</h3>
-                  <p>
-                    Aunque principalmente se usa para funciones y clases, los
-                    docstrings también pueden ser útiles para documentar
-                    variables globales o constantes.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </ul>
+              </div>
+              <!-- Comentarios Explicativos fin -->
+              <!-- Docstrings para Módulos, Funciones y Clases -->
+              <div id="docstringsparaMódulosFuncionesyClasess">
+                <h3>Docstrings para Módulos, Funciones y Clases</h3>
+                <p>
+                  Aunque principalmente se usa para funciones y clases, los
+                  docstrings también pueden ser útiles para documentar
+                  variables globales o constantes.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         """
                         Este módulo contiene constantes relacionadas con la configuración de la aplicación.
@@ -457,235 +377,232 @@
                         VERSION_MENOR = 0
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Docstrings para Módulos, Funciones y Clases fin -->
-                <!-- Tipo Sugerido (Type Hints) -->
-                <div id="tipoSugeridoTypeHintss">
-                  <h3>Tipo Sugerido (Type Hints)</h3>
-                  <p>
-                    Aunque no es estrictamente una autodocumentación, los type
-                    hints pueden ayudar a entender el tipo de datos esperado
-                    para una variable.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Docstrings para Módulos, Funciones y Clases fin -->
+              <!-- Tipo Sugerido (Type Hints) -->
+              <div id="tipoSugeridoTypeHintss">
+                <h3>Tipo Sugerido (Type Hints)</h3>
+                <p>
+                  Aunque no es estrictamente una autodocumentación, los type
+                  hints pueden ayudar a entender el tipo de datos esperado
+                  para una variable.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         nombre_completo: str = "John Doe"
                         edad: int = 30
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Tipo Sugerido (Type Hints) fin -->
-                <!-- Considerar el Uso de Bibliotecas de Documentación -->
-                <div id="considerarelUsodeBibliotecasdeDocumentacions">
-                  <h3>Considerar el Uso de Bibliotecas de Documentación</h3>
-                  <p>
-                    Python, tiene una amplia variedad de bibliotecas de
-                    documentación que permiten crear y gestionar documentación
-                    de manera eficiente. A continuación, se presenta algunas de
-                    las más populares y sus principales características:
-                  </p>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Sphinx</span>: Esta herramientas
-                      puede generar documentación automáticamente a partir de
-                      docstrings y comentarios en su código.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Docutils</span>: Es la biblioteca
-                      estándar de Python para la creación de documentos
-                      estructurados. Permite generar HTML, LaTeX, y otros
-                      formatos a partir de un lenguaje de marcado sencillo.
-                    </li>
-                    <li>
-                      <span class="fw-bold">pdoc</span>: Genera automáticamente
-                      documentación a partir del código fuente de Python,
-                      creando una interfaz web interactiva para explorar las
-                      funciones, clases y módulos.
-                    </li>
-                    <li>
-                      <span class="fw-bold">pydoctor</span>: Similar a pdoc,
-                      pero con un enfoque en la generación de documentación en
-                      formato HTML.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Considerar el Uso de Bibliotecas de Documentación fin -->
               </div>
-              <!-- Variables Autodocumentadas Fin -->
-              <!-- Recomendaciones -->
-              <div id="recomendaciones" class="mt-5">
-                <h2 class="mt-1">Recomendaciones</h2>
+              <!-- Tipo Sugerido (Type Hints) fin -->
+              <!-- Considerar el Uso de Bibliotecas de Documentación -->
+              <div id="considerarelUsodeBibliotecasdeDocumentacions">
+                <h3>Considerar el Uso de Bibliotecas de Documentación</h3>
+                <p>
+                  Python, tiene una amplia variedad de bibliotecas de
+                  documentación que permiten crear y gestionar documentación
+                  de manera eficiente. A continuación, se presenta algunas de
+                  las más populares y sus principales características:
+                </p>
                 <ul>
                   <li>
-                    <span class="fw-bold">Ser conciso y claro</span>: Los
-                    comentarios deben ser lo suficientemente detallados para
-                    explicar el código, pero sin ser excesivamente largos.
+                    <span class="fw-bold">Sphinx</span>: Esta herramientas
+                    puede generar documentación automáticamente a partir de
+                    docstrings y comentarios en su código.
                   </li>
                   <li>
-                    <span class="fw-bold">Evitar comentarios obvios</span>: No
-                    es necesario comentar cada línea de código. Solo comentar
-                    las partes que no son autoexplicativas.
+                    <span class="fw-bold">Docutils</span>: Es la biblioteca
+                    estándar de Python para la creación de documentos
+                    estructurados. Permite generar HTML, LaTeX, y otros
+                    formatos a partir de un lenguaje de marcado sencillo.
                   </li>
                   <li>
-                    <span class="fw-bold"
-                      >Mantener los comentarios actualizados</span
-                    >: Si se modifica el código, estar seguro de actualizar los
-                    comentarios correspondientes.
+                    <span class="fw-bold">pdoc</span>: Genera automáticamente
+                    documentación a partir del código fuente de Python,
+                    creando una interfaz web interactiva para explorar las
+                    funciones, clases y módulos.
+                  </li>
+                  <li>
+                    <span class="fw-bold">pydoctor</span>: Similar a pdoc,
+                    pero con un enfoque en la generación de documentación en
+                    formato HTML.
                   </li>
                 </ul>
               </div>
-              <!-- Recomendaciones Fin -->
+              <!-- Considerar el Uso de Bibliotecas de Documentación fin -->
             </div>
-          </article>
-          <!--  Comentarios en Python  -->
-
-          <!--  comentarios  -->
-          <article class="row pt-5" id="comments">
-            <h2>COMENTARIOS</h2>
-            <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por
-              favor infórmelo a través del formulario disponible para este
-              propósito.
-            </p>
-            <div class="d-flex justify-content-center">
-              <form
-                action="https://formspree.io/f/mdkdawkg"
-                method="POST"
-                id="myForm"
-              >
-                <fieldset class="d-flex flex-column gap-3">
-                  <legend class="text-center fs-4">Deje su comentario</legend>
-
-                  <div class="d-flex flex-column">
-                    <label for="name">Nombre:</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="User"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
-
-                  <div class="d-flex flex-column">
-                    <label for="email">Email:</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="user@mail.com"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
-
-                  <div class="d-flex flex-column">
-                    <label for="message">Mensaje:</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      cols="30"
-                      rows="5"
-                      placeholder="Su comentario..."
-                      class="form-control rounded-3"
-                      required
-                    ></textarea>
-                  </div>
-
-                  <button
-                    type="submit"
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
-                  >
-                    Enviar
-                  </button>
-                </fieldset>
-
-                <p class="small text-center">
-                  La política de privacidad, y los términos y condiciones están
-                  disponibles en el formulario de contacto.
-                </p>
-              </form>
+            <!-- Variables Autodocumentadas Fin -->
+            <!-- Recomendaciones -->
+            <div id="recomendaciones" class="mt-5">
+              <h2>Recomendaciones</h2>
+              <ul>
+                <li>
+                  <span class="fw-bold">Ser conciso y claro</span>: Los
+                  comentarios deben ser lo suficientemente detallados para
+                  explicar el código, pero sin ser excesivamente largos.
+                </li>
+                <li>
+                  <span class="fw-bold">Evitar comentarios obvios</span>: No
+                  es necesario comentar cada línea de código. Solo comentar
+                  las partes que no son autoexplicativas.
+                </li>
+                <li>
+                  <span class="fw-bold">Mantener los comentarios actualizados</span>: Si se modifica el código, estar
+                  seguro de actualizar los
+                  comentarios correspondientes.
+                </li>
+              </ul>
             </div>
-          </article>
-          <!--  fin comentarios  -->
-        </section>
-        <!--  barra lateral  -->
-        <aside class="col-lg-3 d-none d-lg-block pt-5">
-          <div>
-            <h1>En Este Artículo</h1>
-            <ul class="list-group">
-              <li class="list-group-item">
-                <a href="#introduccion">Introducción</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#quesonloscomentariosenPython"
-                  >¿Qué Son los Comentarios en Python?</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a href="#porQueUtilizarComentariosPython"
-                  >¿Por qué Utilizar Comentarios?</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a href="#cuandoUtilizarComentariosPython"
-                  >¿Cuándo Utilizar Comentarios en Python?</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a href="#dondeColocarlosComentariosPython"
-                  >¿Dónde Colocar los Comentarios en Python?</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a href="#comoEscribirComentariosenPython"
-                  >Cómo Escribir Comentarios en Python</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a href="#ejemploCompleto">Ejemplo Completo</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#variablesAutodocumentadasenPython"
-                  >Variables Autodocumentadas en Python
-                </a>
-              </li>
-              <li class="list-group-item">
-                <a href="#recomendaciones">Recomendaciones</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#comments">Comentarios</a>
-              </li>
-            </ul>
+            <!-- Recomendaciones Fin -->
           </div>
-        </aside>
-        <!--  fin barra lateral  -->
-      </main>
-      <!--  fin principal  -->
-    </div>
-    <!--  Principal Fin  -->
+        </article>
+        <!--  Comentarios en Python  -->
 
-    <!-- button to top -->
-    <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        fill="currentColor"
-        class="bi bi-arrow-bar-up"
-        viewBox="0 0 16 16"
-        style="margin-left: -2px"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"
-        ></path>
-      </svg>
-    </button>
-    <!-- Fin button to top -->
-  </body>
+        <!--  comentarios  -->
+        <article class="row pt-5" id="comments">
+          <h2>COMENTARIOS</h2>
+          <p>
+            Si tiene alguna inquietud, duda o ha encontrado algún error, por
+            favor infórmelo a través del formulario disponible para este
+            propósito.
+          </p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
+
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
+                </div>
+
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
+
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                  Enviar
+                </button>
+              </fieldset>
+
+              <p class="small text-center">
+                La política de privacidad, y los términos y condiciones están
+                disponibles en el formulario de contacto.
+              </p>
+            </form>
+          </div>
+        </article>
+        <!--  fin comentarios  -->
+      </section>
+
+      <!--  barra lateral  -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        <h1>En Este Artículo</h1>
+        <div class="menu-scroll">
+          <div class="menu-container">
+            <div class="border border-1">
+              <div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
+              <div class="menu-item"><a href="#que-son-los-comentarios-en-python" class="simple-link">¿Qué Son los
+                  Comentarios en Python?</a></div>
+              <div class="menu-item"><a href="#por-que-utilizar-comentarios" class="simple-link">¿Por qué Utilizar
+                  Comentarios?</a></div>
+              <div class="menu-item"><a href="#cuando-utilizar-comentarios-en-python" class="simple-link">¿Cuándo
+                  Utilizar Comentarios en Python?</a></div>
+              <div class="menu-item"><a href="#donde-colocar-los-comentarios-en-python" class="simple-link">¿Dónde
+                  Colocar los Comentarios en Python?</a></div>
+              <div class="menu-item"><a href="#como-escribir-comentarios-en-python" class="simple-link">Cómo Escribir
+                  Comentarios en Python</a></div>
+              <div class="menu-item"><a href="#ejemplo-completo" class="simple-link">Ejemplo Completo</a></div>
+              <div class="menu-item"><a href="#variables-autodocumentadas-en-python" class="simple-link">Variables
+                  Autodocumentadas en Python</a></div>
+              <div class="menu-item"><a href="#recomendaciones" class="simple-link">Recomendaciones</a></div>
+              <!-- Comentarios  -->
+              <div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!--  fin barra lateral  -->
+    </main>
+    <!--  fin principal  -->
+  </div>
+  <!--  Principal Fin  -->
+
+  <!--  pie de pagina  -->
+  <footer class="row border-top border-1 m-1 mt-auto">
+    <div class="row">
+      <!-- contacto -->
+      <address class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Contacto</div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class="ms-3">
+            <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class="ms-3">Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      <!-- Derechos de autor -->
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
+      </div>
+      <!-- redes sociales -->
+      <div class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Redes Sociales</div>
+        <div class="d-flex justify-content-evenly align-items-center gap-5">
+          <div>
+            <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center gap-2"></div>
+  </footer>
+  <!--  pie de pagina fin  -->
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
 </html>

@@ -1,377 +1,302 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-  <head>
-    <!-- Metaetiquetas -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Domina iteradores, generadores y cierres en Python: técnicas avanzadas para código eficiente, optimizado y con manejo inteligente de recursos."
-    />
-    <meta
-      name="title"
-      content="Iteradores, Generadores y Cierres Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta name="author" content="Ing. Eduardo Herrera Forero" />
-    <meta name="application-name" content="EHF" />
-    <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://eduardoherreraf.github.io/cursoPython3-0801_iteradores,_generadores_y_cierres.html"
-    />
-    <!-- Fin Metaetiquetas -->
 
-    <!-- Open Graph data -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Iteradores, Generadores y Cierres Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      property="og:description"
-      content="Domina iteradores, generadores y cierres en Python: técnicas avanzadas para código eficiente, optimizado y con manejo inteligente de recursos."
-    />
-    <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      property="og:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      property="og:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0801_iteradores,_generadores_y_cierres.html"
-    />
-    <meta property="og:locale" content="es_CO" />
-    <!-- fin Open Graph data -->
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Domina iteradores, generadores y cierres en Python: técnicas avanzadas para código eficiente, optimizado y con manejo inteligente de recursos." />
+  <meta name="title" content="Iteradores, Generadores y Cierres Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical"
+    href="https://eduardoherreraf.github.io/cursoPython3-0801_iteradores,_generadores_y_cierres.html" />
+  <!-- Fin Metaetiquetas -->
 
-    <!-- Twitter cards -->
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="Iteradores, Generadores y Cierres Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      name="twitter:description"
-      content="Domina iteradores, generadores y cierres en Python: técnicas avanzadas para código eficiente, optimizado y con manejo inteligente de recursos."
-    />
-    <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      name="twitter:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      name="twitter:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0801_iteradores,_generadores_y_cierres.html"
-    />
-    <meta name="twitter:site" content="@ehfeduardo" />
-    <!-- Fin Twitter cards -->
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Iteradores, Generadores y Cierres Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta property="og:description"
+    content="Domina iteradores, generadores y cierres en Python: técnicas avanzadas para código eficiente, optimizado y con manejo inteligente de recursos." />
+  <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta property="og:url"
+    content="https://eduardoherreraf.github.io/cursoPython3-0801_iteradores,_generadores_y_cierres.html" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
 
-    <!-- iconos -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="android-chrome-192x192.png"
-    />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- fin iconos -->
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Iteradores, Generadores y Cierres Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description"
+    content="Domina iteradores, generadores y cierres en Python: técnicas avanzadas para código eficiente, optimizado y con manejo inteligente de recursos." />
+  <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta name="twitter:url"
+    content="https://eduardoherreraf.github.io/cursoPython3-0801_iteradores,_generadores_y_cierres.html" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
 
-    <title>
-      Iteradores, Generadores y Cierres Python 3 - Ing. Eduardo Herrera Forero.
-    </title>
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
 
-    <script type="module" src="./js/main.js"></script>
+  <title>
+    Iteradores, Generadores y Cierres Python 3 - Ing. Eduardo Herrera Forero.
+  </title>
 
-    <meta
-      name="google-site-verification"
-      content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"
-    />
-  </head>
+  <script type="module" src="./js/main.js"></script>
 
-  <body>
-    <!-- Barra deNavegación -->
-    <nav
-      class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
-    >
-      <div class="container-fluid">
-        <!-- Enlace a la página principal con el logo y nombre -->
-        <a
-          class="navbar-brand d-flex align-items-center ms-2"
-          href="index.html"
-        >
-          <img
-            src="./images/logo.png"
-            alt="Logo de Ing. Eduardo Herrera Forero"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top me-1"
-          />
-          <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
-        </a>
-        <!-- Botón para activar el menú en dispositivos pequeños -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Menú de navegación -->
-        <div
-          class="collapse navbar-collapse ms-auto text-center"
-          id="navbarSupportedContent"
-        >
-          <ul
-            class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100"
-          >
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#portfolio"
-                >PORTAFOLIO</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 publicaciones-activo"
-                href="index.html#blog"
-                >PUBLICACIONES</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
-            </li>
-          </ul>
-        </div>
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Barra deNavegación -->
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
 
-    <!--  principal  -->
-    <div class="container-fluid" id="introduccion">
-      <main class="row">
-        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
-          <!--  Iteradores, Generadores y Cierres en Python  -->
-          <article
-            class="row border-1 border-bottom pb-3"
-            data-bs-spy="scroll"
-            data-bs-target="#list-example"
-            data-bs-smooth-scroll="true"
-          >
-            <div>
-              <header>
-                <h1>Iteradores, Generadores y Cierres en Python</h1>
-              </header>
-              <!-- Introducción -->
-              <div class="mt-5">
-                <h2>Introducción</h2>
-                <p>
-                  En este documento se explorarán los conceptos de iteradores,
-                  generadores y cierres en Python, tres características
-                  fundamentales que permiten manejar la iteración y el manejo de
-                  funciones de manera eficiente. A través de ejemplos y
-                  explicaciones claras, se busca proporcionar una comprensión
-                  profunda de cómo funcionan estos elementos y cómo pueden ser
-                  utilizados para mejorar la calidad y la eficiencia del código
-                  en Python.
-                </p>
-                <div class="centrar-imagen imagen50">
-                  <figure>
-                    <img
-                      src="https://i.ibb.co/h2ddmyG/iteradoresgeneradorescierres.jpg"
-                      class="img-fluid"
-                      alt="Iteradores, Generadores y Cierres en Python  "
-                      title="Dominando los conceptos clave de Python"
-                    />
-                    <figcaption>
-                      Iteradores, Generadores y Cierres en Python
-                    </figcaption>
-                  </figure>
-                </div>
+  <!--  principal  -->
+  <div class="container-fluid" id="introduccion">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!--  Iteradores, Generadores y Cierres en Python  -->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <div>
+            <header>
+              <h1>Iteradores, Generadores y Cierres en Python</h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-5">
+              <h2>Introducción</h2>
+              <p>
+                En este documento se explorarán los conceptos de iteradores,
+                generadores y cierres en Python, tres características
+                fundamentales que permiten manejar la iteración y el manejo de
+                funciones de manera eficiente. A través de ejemplos y
+                explicaciones claras, se busca proporcionar una comprensión
+                profunda de cómo funcionan estos elementos y cómo pueden ser
+                utilizados para mejorar la calidad y la eficiencia del código
+                en Python.
+              </p>
+              <div class="centrar-imagen imagen50">
+                <figure>
+                  <img src="https://i.ibb.co/h2ddmyG/iteradoresgeneradorescierres.jpg" class="img-fluid"
+                    alt="Iteradores, Generadores y Cierres en Python  "
+                    title="Dominando los conceptos clave de Python" />
+                  <figcaption>
+                    Iteradores, Generadores y Cierres en Python
+                  </figcaption>
+                </figure>
               </div>
+            </div>
 
-              <!-- Iteradores -->
-              <div id="iteradores" class="mt-5">
-                <h2 class="mt-1">Iteradores</h2>
-                <p>
-                  Un iterador en Python es un objeto que permite recorrer una
-                  colección de elementos uno por uno sin necesidad de cargar
-                  todos los elementos a la vez. Para entenderlo, se puede
-                  comparar con un reproductor de música que tiene una lista de
-                  canciones. El reproductor sabe cuál es la canción actual y
-                  tiene un botón de "siguiente" para pasar a la siguiente
-                  canción. Cuando no hay más canciones, el reproductor informa
-                  que se llegó al final de la lista.
-                </p>
-                <p>
-                  En programación, un iterador hace algo similar. Tiene una
-                  "lista" de cosas (que puede ser números, palabras, etc.) y las
-                  entrega una por una cuando se le pide.
-                </p>
-                <p><strong>Características principales</strong>:</p>
-                <ul>
-                  <li>
-                    Es un objeto que implementa los métodos
+            <!-- Iteradores -->
+            <div id="iteradores" class="mt-5">
+              <h2>Iteradores</h2>
+              <p>
+                Un iterador en Python es un objeto que permite recorrer una
+                colección de elementos uno por uno sin necesidad de cargar
+                todos los elementos a la vez. Para entenderlo, se puede
+                comparar con un reproductor de música que tiene una lista de
+                canciones. El reproductor sabe cuál es la canción actual y
+                tiene un botón de "siguiente" para pasar a la siguiente
+                canción. Cuando no hay más canciones, el reproductor informa
+                que se llegó al final de la lista.
+              </p>
+              <p>
+                En programación, un iterador hace algo similar. Tiene una
+                "lista" de cosas (que puede ser números, palabras, etc.) y las
+                entrega una por una cuando se le pide.
+              </p>
+              <p><strong>Características principales</strong>:</p>
+              <ul>
+                <li>
+                  Es un objeto que implementa los métodos
+                  <code class="language-python">__iter__()</code> y
+                  <code class="language-python">__next__()</code>.
+                </li>
+                <li>
+                  Permite procesar elementos uno a uno, lo que es útil para
+                  trabajar con grandes conjuntos de datos.
+                </li>
+                <li>
+                  Cuando no hay más elementos, lanza una excepción
+                  <code class="language-python">StopIteration</code>.
+                </li>
+              </ul>
+              <!-- __iter__() -->
+              <div>
+                <h3>__iter__()</h3>
+                <!-- ¿Qué Es __iter__()? -->
+                <div>
+                  <h4>¿Qué Es __iter__()?</h4>
+                  <ul>
+                    <li>
+                      <code class="language-python">__iter__()</code> es un
+                      método especial en Python que convierte un objeto en
+                      iterable.
+                    </li>
+                    <li>
+                      Un objeto iterable es aquel que puede ser recorrido
+                      (iterado) elemento por elemento, como en un bucle
+                      <code class="language-python">for</code>.
+                    </li>
+                    <li>
+                      Este método es una de las piezas fundamentales del
+                      protocolo de iteración en Python.
+                    </li>
+                  </ul>
+                </div>
+                <!-- ¿Qué Es __iter__()? fin -->
+                <!-- ¿Qué Hace __iter__()? -->
+                <div>
+                  <h4>¿Qué Hace __iter__()?</h4>
+                  <ul>
+                    <li>
+                      Devuelve un iterador (es decir, un objeto que implementa
+                      el método
+                      <code class="language-python">__next__()</code>).
+                    </li>
+                    <li>
+                      Cuando llamamos a iter(objeto), en realidad se ejecuta
+                      el método objeto.<code class="language-python">__iter__()</code>.
+                    </li>
+                    <li>
+                      Si el objeto es ya un iterador,
+                      <code class="language-python">__iter__()</code> debe
+                      devolver el mismo objeto.
+                    </li>
+                  </ul>
+                </div>
+                <!-- ¿Qué Hace __iter__()? fin -->
+                <!-- Relación Entre __iter__() y __next__() -->
+                <div>
+                  <h4>
+                    Relación Entre
                     <code class="language-python">__iter__()</code> y
-                    <code class="language-python">__next__()</code>.
-                  </li>
-                  <li>
-                    Permite procesar elementos uno a uno, lo que es útil para
-                    trabajar con grandes conjuntos de datos.
-                  </li>
-                  <li>
-                    Cuando no hay más elementos, lanza una excepción
-                    <code class="language-python">StopIteration</code>.
-                  </li>
-                </ul>
-                <!-- __iter__() -->
-                <div>
-                  <h3>__iter__()</h3>
-                  <!-- ¿Qué Es __iter__()? -->
-                  <div>
-                    <h4>¿Qué Es __iter__()?</h4>
-                    <ul>
-                      <li>
-                        <code class="language-python">__iter__()</code> es un
-                        método especial en Python que convierte un objeto en
-                        iterable.
-                      </li>
-                      <li>
-                        Un objeto iterable es aquel que puede ser recorrido
-                        (iterado) elemento por elemento, como en un bucle
-                        <code class="language-python">for</code>.
-                      </li>
-                      <li>
-                        Este método es una de las piezas fundamentales del
-                        protocolo de iteración en Python.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- ¿Qué Es __iter__()? fin -->
-                  <!-- ¿Qué Hace __iter__()? -->
-                  <div>
-                    <h4>¿Qué Hace __iter__()?</h4>
-                    <ul>
-                      <li>
-                        Devuelve un iterador (es decir, un objeto que implementa
-                        el método
-                        <code class="language-python">__next__()</code>).
-                      </li>
-                      <li>
-                        Cuando llamamos a iter(objeto), en realidad se ejecuta
-                        el método objeto.<code class="language-python"
-                          >__iter__()</code
-                        >.
-                      </li>
-                      <li>
-                        Si el objeto es ya un iterador,
-                        <code class="language-python">__iter__()</code> debe
-                        devolver el mismo objeto.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- ¿Qué Hace __iter__()? fin -->
-                  <!-- Relación Entre __iter__() y __next__() -->
-                  <div>
-                    <h4>
-                      Relación Entre
-                      <code class="language-python">__iter__()</code> y
-                      __next__()
-                    </h4>
-                    <ul>
-                      <li>
-                        <code class="language-python">__iter__()</code> crea un
-                        iterador o devuelve uno existente.
-                      </li>
-                      <li>
-                        El método
-                        <code class="language-python">__next__()</code> del
-                        iterador devuelve los elementos uno por uno y lanza una
-                        excepción
-                        <code class="language-python">StopIteration</code>
-                        cuando no hay más elementos para iterar.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Relación Entre __iter__() y __next__() fin -->
-                </div>
-                <!-- __iter__() fin -->
-                <!-- __next__() -->
-                <div>
-                  <h3>__next__()</h3>
-                  <!-- ¿Qué Es __next__() en Python? -->
-                  <div>
-                    <h4>¿Qué Es __next__() en Python?</h4>
-                    <p>
+                    __next__()
+                  </h4>
+                  <ul>
+                    <li>
+                      <code class="language-python">__iter__()</code> crea un
+                      iterador o devuelve uno existente.
+                    </li>
+                    <li>
                       El método
-                      <code class="language-python"> __next__()</code> es una
-                      función especial en Python que se utiliza para obtener el
-                      siguiente elemento de un iterador. Forma parte del
-                      protocolo de iteradores en Python, junto con el método
-                      <code class="language-python">__iter__()</code>.
-                    </p>
-                    <p>
-                      Cuando se llama a
-                      <code class="language-python">__next__()</code>, el
-                      iterador avanza al siguiente elemento. Si ya no hay más
-                      elementos, lanza una excepción
-                      <code class="language-python">StopIteration</code> para
-                      indicar que la iteración ha terminado.
-                    </p>
-                  </div>
-                  <!-- ¿Qué Es __next__() en Python? fin -->
-                  <!-- ¿Qué Hace __next__()? -->
-                  <div>
-                    <h4>¿Qué Hace __next__()?</h4>
-                    <ul>
-                      <li>
-                        <strong
-                          >Obtiene el siguiente elemento del iterador</strong
-                        >: Cada vez que se llama a
-                        <code class="language-python">__next__()</code>, el
-                        iterador entrega el siguiente valor disponible.
-                      </li>
-                      <li>
-                        <strong>Mantiene el estado interno del iterador</strong
-                        >: El iterador "recuerda" dónde se quedó para que pueda
-                        continuar desde el punto donde fue pausado.
-                      </li>
-                      <li>
-                        <strong
-                          >Lanza una excepción cuando no hay más
-                          elementos</strong
-                        >: Si el iterador no tiene más elementos, se lanza una
-                        excepción
-                        <code class="language-python">StopIteration</code>, que
-                        se utiliza para detener bucles como for.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- ¿Qué Hace __next__()? fin -->
+                      <code class="language-python">__next__()</code> del
+                      iterador devuelve los elementos uno por uno y lanza una
+                      excepción
+                      <code class="language-python">StopIteration</code>
+                      cuando no hay más elementos para iterar.
+                    </li>
+                  </ul>
                 </div>
-                <!-- __next__() fin -->
-                <!-- Ejemplo de Uso Iteradores -->
+                <!-- Relación Entre __iter__() y __next__() fin -->
+              </div>
+              <!-- __iter__() fin -->
+              <!-- __next__() -->
+              <div>
+                <h3>__next__()</h3>
+                <!-- ¿Qué Es __next__() en Python? -->
                 <div>
-                  <h3>Ejemplo de Uso Iteradores</h3>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                  <h4>¿Qué Es __next__() en Python?</h4>
+                  <p>
+                    El método
+                    <code class="language-python"> __next__()</code> es una
+                    función especial en Python que se utiliza para obtener el
+                    siguiente elemento de un iterador. Forma parte del
+                    protocolo de iteradores en Python, junto con el método
+                    <code class="language-python">__iter__()</code>.
+                  </p>
+                  <p>
+                    Cuando se llama a
+                    <code class="language-python">__next__()</code>, el
+                    iterador avanza al siguiente elemento. Si ya no hay más
+                    elementos, lanza una excepción
+                    <code class="language-python">StopIteration</code> para
+                    indicar que la iteración ha terminado.
+                  </p>
+                </div>
+                <!-- ¿Qué Es __next__() en Python? fin -->
+                <!-- ¿Qué Hace __next__()? -->
+                <div>
+                  <h4>¿Qué Hace __next__()?</h4>
+                  <ul>
+                    <li>
+                      <strong>Obtiene el siguiente elemento del iterador</strong>: Cada vez que se llama a
+                      <code class="language-python">__next__()</code>, el
+                      iterador entrega el siguiente valor disponible.
+                    </li>
+                    <li>
+                      <strong>Mantiene el estado interno del iterador</strong>: El iterador "recuerda" dónde se quedó
+                      para que pueda
+                      continuar desde el punto donde fue pausado.
+                    </li>
+                    <li>
+                      <strong>Lanza una excepción cuando no hay más
+                        elementos</strong>: Si el iterador no tiene más elementos, se lanza una
+                      excepción
+                      <code class="language-python">StopIteration</code>, que
+                      se utiliza para detener bucles como for.
+                    </li>
+                  </ul>
+                </div>
+                <!-- ¿Qué Hace __next__()? fin -->
+              </div>
+              <!-- __next__() fin -->
+              <!-- Ejemplo de Uso Iteradores -->
+              <div>
+                <h3>Ejemplo de Uso Iteradores</h3>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         mi_lista = [1, 2, 3]
                         mi_iterador = iter(mi_lista)  # Convierte la lista en un iterador
@@ -388,160 +313,160 @@
                         """
                       </code>
                     </pre>
-                  </div>
-                  <p><strong>Explicación del código</strong>:</p>
+                </div>
+                <p><strong>Explicación del código</strong>:</p>
+                <ul>
+                  <li>
+                    Se crea una lista
+                    <code class="language-python">mi_lista</code>:
+                    <code class="language-python">[1, 2, 3]</code>.
+                  </li>
+                  <li>
+                    <code class="language-python">iter(mi_lista)</code>
+                    convierte la lista en un iterador.
+                  </li>
+                  <li>
+                    Se usa
+                    <code class="language-python">next(mi_iterador)</code>
+                    para pedir el siguiente elemento: La primera vez devuelve
+                    <code class="language-python">1</code>, luego
+                    <code class="language-python">2</code> y finalmente
+                    <code class="language-python">3</code>.
+                  </li>
+                  <li>
+                    Cuando no hay más elementos, se lanza un error
+                    <code class="language-python">StopIteration</code>.
+                  </li>
+                </ul>
+              </div>
+              <!-- Ejemplo de Uso Iteradores fin -->
+            </div>
+            <!-- Iteradores Fin -->
+            <!-- Generadores -->
+            <div id="generadores" class="mt-5">
+              <h2>Generadores</h2>
+              <p>
+                Un generador es como una máquina de café que hace un café solo
+                cuando se le pide, en lugar de preparar todos los cafés de
+                antemano.
+              </p>
+              <p>
+                Imaginar que se tiene una cafetería y no se sabe cuántos
+                clientes van a llegar. En lugar de hacer 100 cafés por
+                adelantado, se prepara un café solo cuando alguien lo pide.
+                Así, se ahorra recursos (café, leche, etc.) y tiempo.
+              </p>
+              <p>
+                En programación, un generador funciona así: se crea los
+                valores uno por uno cuando se necesite, en lugar de generar
+                todos de una vez.
+              </p>
+              <!-- yield -->
+              <div>
+                <h3>yield</h3>
+                <p>
+                  En Python, <code class="language-python">yield</code> es una
+                  palabra clave que se utiliza dentro de funciones para crear
+                  generadores. Un generador es una función que permite
+                  devolver un valor, pausando su estado actual, y retomarlo
+                  desde el mismo punto en una próxima iteración. Esto hace que
+                  las funciones con
+                  <code class="language-python">yield</code> se comporten de
+                  manera diferente a las funciones tradicionales que usan
+                  <code class="language-python">return</code>.
+                </p>
+                <!-- ¿Cómo Funciona yield? -->
+                <div>
+                  <h4>¿Cómo Funciona yield?</h4>
                   <ul>
                     <li>
-                      Se crea una lista
-                      <code class="language-python">mi_lista</code>:
-                      <code class="language-python">[1, 2, 3]</code>.
+                      Cuando una función contiene al menos una instrucción
+                      <code class="language-python">yield</code>, se convierte
+                      en un generador.
                     </li>
                     <li>
-                      <code class="language-python">iter(mi_lista)</code>
-                      convierte la lista en un iterador.
+                      En lugar de ejecutar completamente la función y devolver
+                      un valor,
+                      <code class="language-python">yield</code> devuelve un
+                      valor parcial y "pausa" la ejecución.
                     </li>
                     <li>
-                      Se usa
-                      <code class="language-python">next(mi_iterador)</code>
-                      para pedir el siguiente elemento: La primera vez devuelve
-                      <code class="language-python">1</code>, luego
-                      <code class="language-python">2</code> y finalmente
-                      <code class="language-python">3</code>.
-                    </li>
-                    <li>
-                      Cuando no hay más elementos, se lanza un error
-                      <code class="language-python">StopIteration</code>.
+                      Cuando se vuelve a llamar al generador (por ejemplo, con
+                      un bucle o el método
+                      <code class="language-python">next()</code>), la
+                      ejecución se reanuda justo después de la instrucción
+                      <code class="language-python">yield</code> previa.
                     </li>
                   </ul>
                 </div>
-                <!-- Ejemplo de Uso Iteradores fin -->
-              </div>
-              <!-- Iteradores Fin -->
-              <!-- Generadores -->
-              <div id="generadores" class="mt-5">
-                <h2 class="mt-1">Generadores</h2>
-                <p>
-                  Un generador es como una máquina de café que hace un café solo
-                  cuando se le pide, en lugar de preparar todos los cafés de
-                  antemano.
-                </p>
-                <p>
-                  Imaginar que se tiene una cafetería y no se sabe cuántos
-                  clientes van a llegar. En lugar de hacer 100 cafés por
-                  adelantado, se prepara un café solo cuando alguien lo pide.
-                  Así, se ahorra recursos (café, leche, etc.) y tiempo.
-                </p>
-                <p>
-                  En programación, un generador funciona así: se crea los
-                  valores uno por uno cuando se necesite, en lugar de generar
-                  todos de una vez.
-                </p>
-                <!-- yield -->
+                <!-- ¿Cómo Funciona yield? fin -->
+                <!-- ¿Qué Hace yield? -->
                 <div>
-                  <h3>yield</h3>
+                  <h4>¿Qué Hace yield?</h4>
                   <p>
-                    En Python, <code class="language-python">yield</code> es una
-                    palabra clave que se utiliza dentro de funciones para crear
-                    generadores. Un generador es una función que permite
-                    devolver un valor, pausando su estado actual, y retomarlo
-                    desde el mismo punto en una próxima iteración. Esto hace que
-                    las funciones con
-                    <code class="language-python">yield</code> se comporten de
-                    manera diferente a las funciones tradicionales que usan
-                    <code class="language-python">return</code>.
+                    <code class="language-python">yield</code> permite generar
+                    elementos uno a uno según se necesiten, en lugar de
+                    calcularlos todos de una vez. Esto lo hace ideal para:
                   </p>
-                  <!-- ¿Cómo Funciona yield? -->
-                  <div>
-                    <h4>¿Cómo Funciona yield?</h4>
-                    <ul>
-                      <li>
-                        Cuando una función contiene al menos una instrucción
-                        <code class="language-python">yield</code>, se convierte
-                        en un generador.
-                      </li>
-                      <li>
-                        En lugar de ejecutar completamente la función y devolver
-                        un valor,
-                        <code class="language-python">yield</code> devuelve un
-                        valor parcial y "pausa" la ejecución.
-                      </li>
-                      <li>
-                        Cuando se vuelve a llamar al generador (por ejemplo, con
-                        un bucle o el método
-                        <code class="language-python">next()</code>), la
-                        ejecución se reanuda justo después de la instrucción
-                        <code class="language-python">yield</code> previa.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- ¿Cómo Funciona yield? fin -->
-                  <!-- ¿Qué Hace yield? -->
-                  <div>
-                    <h4>¿Qué Hace yield?</h4>
-                    <p>
-                      <code class="language-python">yield</code> permite generar
-                      elementos uno a uno según se necesiten, en lugar de
-                      calcularlos todos de una vez. Esto lo hace ideal para:
-                    </p>
-                    <ul>
-                      <li>
-                        <span class="fw-bold">Ahorrar memoria</span>: Los
-                        generadores no almacenan todos los valores en memoria
-                        como lo haría una lista.
-                      </li>
-                      <li>
-                        <span class="fw-bold">Procesar datos en secuencia</span
-                        >: Útil para manejar flujos de datos grandes o
-                        infinitos.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- ¿Qué Hace yield? fin -->
-                  <!-- Diferencias Clave entre yield y return -->
-                  <div>
-                    <h4>Diferencias Clave entre yield y return</h4>
-                    <table class="table table-dark table-bordered text-center">
-                      <thead>
-                        <tr>
-                          <th scope="col">Característica</th>
-                          <th scope="col">
-                            <code class="language-python">yield</code>
-                          </th>
-                          <th scope="col">
-                            <code class="language-python">return</code>
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Pausa la ejecución</td>
-                          <td>Sí</td>
-                          <td>No</td>
-                        </tr>
-                        <tr>
-                          <td>Permite múltiples valores</td>
-                          <td>Sí (a través de iteraciones)</td>
-                          <td>No</td>
-                        </tr>
-                        <tr>
-                          <td>Convierte la función en</td>
-                          <td>Generador</td>
-                          <td>Función normal</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <!-- Diferencias Clave entre yield y return fin -->
-                  <!-- Ejemplo de Código Generador Usando yield -->
-                  <div>
-                    <h4>Ejemplo de Código Generador Usando yield</h4>
-                    <p>
-                      A continuación se presenta un ejemplo sencillo de un
-                      generador en Python. El código genera números del 1 al 5,
-                      uno a la vez, en lugar de crear toda la lista en memoria.
-                    </p>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Ahorrar memoria</span>: Los
+                      generadores no almacenan todos los valores en memoria
+                      como lo haría una lista.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Procesar datos en secuencia</span>: Útil para manejar flujos de datos
+                      grandes o
+                      infinitos.
+                    </li>
+                  </ul>
+                </div>
+                <!-- ¿Qué Hace yield? fin -->
+                <!-- Diferencias Clave entre yield y return -->
+                <div>
+                  <h4>Diferencias Clave entre yield y return</h4>
+                  <table class="table table-dark table-bordered text-center">
+                    <thead>
+                      <tr>
+                        <th scope="col">Característica</th>
+                        <th scope="col">
+                          <code class="language-python">yield</code>
+                        </th>
+                        <th scope="col">
+                          <code class="language-python">return</code>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Pausa la ejecución</td>
+                        <td>Sí</td>
+                        <td>No</td>
+                      </tr>
+                      <tr>
+                        <td>Permite múltiples valores</td>
+                        <td>Sí (a través de iteraciones)</td>
+                        <td>No</td>
+                      </tr>
+                      <tr>
+                        <td>Convierte la función en</td>
+                        <td>Generador</td>
+                        <td>Función normal</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- Diferencias Clave entre yield y return fin -->
+                <!-- Ejemplo de Código Generador Usando yield -->
+                <div>
+                  <h4>Ejemplo de Código Generador Usando yield</h4>
+                  <p>
+                    A continuación se presenta un ejemplo sencillo de un
+                    generador en Python. El código genera números del 1 al 5,
+                    uno a la vez, en lugar de crear toda la lista en memoria.
+                  </p>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           def generador_numeros():
                               for numero in range(1, 6):
@@ -556,93 +481,89 @@
                           # Salida:: 5
                         </code>
                       </pre>
-                    </div>
-                    <p><strong>Explicación</strong>:</p>
-                    <ul>
-                      <li>
-                        Cuando se llama a
-                        <code class="language-python">generador_numeros()</code
-                        >, no ejecuta el código de inmediato. En cambio,
-                        devuelve un objeto generador.
-                      </li>
-                      <li>
-                        Al iterar sobre ese objeto (por ejemplo, con un bucle
-                        <code class="language-python">for</code>), la función
-                        empieza a ejecutarse hasta encontrar un
-                        <code class="language-python">yield</code>.
-                      </li>
-                      <li>
-                        Cada vez que se llega a
-                        <code class="language-python">yield</code>, se devuelve
-                        el valor y la ejecución de la función se pausa hasta la
-                        próxima iteración.
-                      </li>
-                    </ul>
                   </div>
-                  <!-- Ejemplo de Código Generador Usando yield fin -->
+                  <p><strong>Explicación</strong>:</p>
+                  <ul>
+                    <li>
+                      Cuando se llama a
+                      <code class="language-python">generador_numeros()</code>, no ejecuta el código de inmediato. En
+                      cambio,
+                      devuelve un objeto generador.
+                    </li>
+                    <li>
+                      Al iterar sobre ese objeto (por ejemplo, con un bucle
+                      <code class="language-python">for</code>), la función
+                      empieza a ejecutarse hasta encontrar un
+                      <code class="language-python">yield</code>.
+                    </li>
+                    <li>
+                      Cada vez que se llega a
+                      <code class="language-python">yield</code>, se devuelve
+                      el valor y la ejecución de la función se pausa hasta la
+                      próxima iteración.
+                    </li>
+                  </ul>
                 </div>
-                <!-- yield fin -->
-                <!-- Listas de Compresión -->
+                <!-- Ejemplo de Código Generador Usando yield fin -->
+              </div>
+              <!-- yield fin -->
+              <!-- Listas de Compresión -->
+              <div>
+                <h3>Listas de Compresión</h3>
+                <p>
+                  Los generadores por comprensión (también conocidos como
+                  generator expressions en Python) son una forma eficiente de
+                  crear iteradores utilizando una sintaxis similar a las
+                  listas por comprensión, pero en lugar de generar una lista
+                  completa en memoria, producen los elementos uno a uno según
+                  se necesiten. Esto ahorra memoria y es especialmente útil
+                  para manejar grandes conjuntos de datos.
+                </p>
+                <!-- Sintaxis Básica de Listas por Comprensión -->
                 <div>
-                  <h3>Listas de Compresión</h3>
+                  <h4>Sintaxis Básica de Listas por Comprensión</h4>
                   <p>
-                    Los generadores por comprensión (también conocidos como
-                    generator expressions en Python) son una forma eficiente de
-                    crear iteradores utilizando una sintaxis similar a las
-                    listas por comprensión, pero en lugar de generar una lista
-                    completa en memoria, producen los elementos uno a uno según
-                    se necesiten. Esto ahorra memoria y es especialmente útil
-                    para manejar grandes conjuntos de datos.
+                    La sintaxis de un generador por comprensión es similar a
+                    una lista por comprensión, pero utiliza paréntesis
+                    <code class="language-python">()</code> en lugar de
+                    corchetes <code class="language-python">[]</code>.
                   </p>
-                  <!-- Sintaxis Básica de Listas por Comprensión -->
-                  <div>
-                    <h4>Sintaxis Básica de Listas por Comprensión</h4>
-                    <p>
-                      La sintaxis de un generador por comprensión es similar a
-                      una lista por comprensión, pero utiliza paréntesis
-                      <code class="language-python">()</code> en lugar de
-                      corchetes <code class="language-python">[]</code>.
-                    </p>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           generador = (expresión for elemento in iterable if condición)
                         </code>
                       </pre>
-                    </div>
-                    <ul>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python">expresión</code></span
-                        >: el valor que será generado por el generador.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python">elemento</code></span
-                        >: la variable que toma cada valor del iterable.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python">iterable</code></span
-                        >: la fuente de datos que se recorre.
-                      </li>
-                      <li>
-                        <span class="fw-bold"
-                          ><code class="language-python">condición</code></span
-                        >: (opcional) filtra los valores del iterable que
-                        cumplen con esta condición.
-                      </li>
-                    </ul>
                   </div>
-                  <!-- Sintaxis Básica de Listas por Comprensión fin -->
-                  <!-- Ejemplo de Código Generador Usando Listas por Comprensión -->
-                  <div>
-                    <h4>
-                      Ejemplo de Código Generador Usando Listas por Comprensión
-                    </h4>
-                    <p>Generar cuadrados de los números del 1 al 5:</p>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  <ul>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">expresión</code></span>: el valor que será
+                      generado por el generador.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">elemento</code></span>: la variable que toma
+                      cada valor del iterable.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">iterable</code></span>: la fuente de datos que
+                      se recorre.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">condición</code></span>: (opcional) filtra los
+                      valores del iterable que
+                      cumplen con esta condición.
+                    </li>
+                  </ul>
+                </div>
+                <!-- Sintaxis Básica de Listas por Comprensión fin -->
+                <!-- Ejemplo de Código Generador Usando Listas por Comprensión -->
+                <div>
+                  <h4>
+                    Ejemplo de Código Generador Usando Listas por Comprensión
+                  </h4>
+                  <p>Generar cuadrados de los números del 1 al 5:</p>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           generador = (x**2 for x in range(1, 6))
                           print(generador)  # Salida: que es un objeto generador
@@ -650,34 +571,32 @@
                               print(valor)  # Imprime los cuadrados: 1, 4, 9, 16, 25
                         </code>
                       </pre>
-                    </div>
                   </div>
-                  <!-- Ejemplo de Código Generador Usando Listas por Comprensión fin -->
-                  <!-- Usando Operador in en Generadores -->
-                  <div>
-                    <h4>Usando Operador in en Generadores</h4>
-                    <p>
-                      En Python, el operador
-                      <code class="language-python">in</code> se utiliza para
-                      verificar si un elemento está presente en una secuencia,
-                      como una lista, tupla, cadena o conjunto. Aunque no es un
-                      "generador" en sí mismo, puede ser empleado dentro de
-                      comprensiones o expresiones generadoras para filtrar
-                      elementos que cumplen con ciertas condiciones.
-                    </p>
-                    <p>
-                      A continuación se presenta un ejemplo de cómo usar
-                      <code class="language-python">in</code> en el contexto de
-                      una expresión generadora:
-                    </p>
-                    <p>
-                      <strong
-                        >Ejemplo de <code class="language-python">in</code> con
-                        una expresión generadora</strong
-                      >:
-                    </p>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <!-- Ejemplo de Código Generador Usando Listas por Comprensión fin -->
+                <!-- Usando Operador in en Generadores -->
+                <div>
+                  <h4>Usando Operador in en Generadores</h4>
+                  <p>
+                    En Python, el operador
+                    <code class="language-python">in</code> se utiliza para
+                    verificar si un elemento está presente en una secuencia,
+                    como una lista, tupla, cadena o conjunto. Aunque no es un
+                    "generador" en sí mismo, puede ser empleado dentro de
+                    comprensiones o expresiones generadoras para filtrar
+                    elementos que cumplen con ciertas condiciones.
+                  </p>
+                  <p>
+                    A continuación se presenta un ejemplo de cómo usar
+                    <code class="language-python">in</code> en el contexto de
+                    una expresión generadora:
+                  </p>
+                  <p>
+                    <strong>Ejemplo de <code class="language-python">in</code> con
+                      una expresión generadora</strong>:
+                  </p>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Lista de palabras
                           palabras = ["manzana", "banana", "naranja", "uva"]
@@ -692,164 +611,155 @@
                           # Salida:: uva
                         </code>
                       </pre>
-                    </div>
-                    <p><strong>Explicación</strong>:</p>
-                    <ul>
-                      <li>
-                        <code
-                          >palabra for palabra in palabras if 'a' in
-                          palabra</code
-                        >:
-                        <ul>
-                          <li>Esto es una expresión generadora.</li>
-                          <li>
-                            Itera sobre cada palabra en la lista
-                            <code class="language-python">palabras</code>.
-                          </li>
-                          <li>
-                            Filtra solo aquellas palabras que contienen la letra
-                            <code class="language-python">'a'</code> usando el
-                            operador <code class="language-python">in</code>.
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        El generador devuelve los elementos uno a uno bajo
-                        demanda, lo que ahorra memoria en comparación con una
-                        lista.
-                      </li>
-                    </ul>
                   </div>
-                  <!-- Usando Operador in en Generadores fin -->
-                  <!-- Diferencias clave con Listas por Comprensión -->
-                  <div>
-                    <h4>Diferencias clave con Listas por Comprensión</h4>
-                    <table
-                      class="table table-dark table-bordered text-center align-middle"
-                    >
-                      <thead>
-                        <tr>
-                          <th>Característica</th>
-                          <th>Lista por comprensión</th>
-                          <th>Generador por comprensión</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row" class="text-start">Sintaxis</th>
-                          <td>
-                            <code class="language-python"
-                              >[expresión for ... in ...]</code
-                            >
-                          </td>
-                          <td>
-                            <code class="language-python"
-                              >(expresión for ... in ...)</code
-                            >
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row" class="text-start">Memoria</th>
-                          <td>Carga todos los elementos en memoria</td>
-                          <td>Genera elementos bajo demanda</td>
-                        </tr>
-                        <tr>
-                          <th scope="row" class="text-start">Iterabilidad</th>
-                          <td>Es una lista (puede ser iterada varias veces)</td>
-                          <td>Es un iterador (se consume al iterar)</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <!-- Diferencias clave con Listas por Comprensión fin -->
-                </div>
-                <!-- Listas de Compresión fin -->
-                <!-- Ventajas de los Generadores -->
-                <div>
-                  <h3>Ventajas de los Generadores</h3>
-                  <p>
-                    Los generadores ofrecen varias ventajas, especialmente en
-                    contextos donde se necesita generar elementos de manera
-                    eficiente y flexible. A continuación, se mencionan algunas
-                    de las principales ventajas de utilizar generadores:
-                  </p>
+                  <p><strong>Explicación</strong>:</p>
                   <ul>
                     <li>
-                      <span class="fw-bold">Uso eficiente de memoria</span>: Los
-                      generadores son iteradores que producen elementos bajo
-                      demanda, lo que significa que no almacenan todos los
-                      elementos en memoria al mismo tiempo. Esto permite
-                      trabajar con grandes volúmenes de datos sin consumir
-                      demasiada memoria, lo que es especialmente útil cuando se
-                      manejan archivos grandes o secuencias de datos
-                      interminables.
+                      <code>palabra for palabra in palabras if 'a' in
+                          palabra</code>:
+                      <ul>
+                        <li>Esto es una expresión generadora.</li>
+                        <li>
+                          Itera sobre cada palabra en la lista
+                          <code class="language-python">palabras</code>.
+                        </li>
+                        <li>
+                          Filtra solo aquellas palabras que contienen la letra
+                          <code class="language-python">'a'</code> usando el
+                          operador <code class="language-python">in</code>.
+                        </li>
+                      </ul>
                     </li>
                     <li>
-                      <span class="fw-bold">Mayor rendimiento</span>: Al generar
-                      los elementos de forma perezosa (es decir, solo cuando son
-                      necesarios), los generadores pueden ser más rápidos en
-                      comparación con las listas u otras estructuras que deben
-                      generar todos los elementos de antemano.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Simplicidad en el código</span>: Los
-                      generadores permiten escribir código más limpio y conciso,
-                      especialmente en situaciones donde se necesita trabajar
-                      con secuencias de datos que deben ser procesadas de manera
-                      incremental. Su sintaxis es simple, utilizando la palabra
-                      clave yield en lugar de tener que gestionar explícitamente
-                      la creación y el mantenimiento de una lista.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Facilitan la composición de funciones</span
-                      >: Los generadores permiten encadenar varias operaciones
-                      de manera sencilla. Esto es útil cuando se necesita
-                      realizar una secuencia de transformaciones sobre los
-                      datos, sin necesidad de almacenar intermedios
-                      innecesarios.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Control de flujo más flexible</span
-                      >: El uso de yield permite pausar y reanudar la ejecución
-                      de una función, lo que es útil en escenarios como la
-                      implementación de algoritmos de búsqueda, recorridos, o
-                      cuando se necesita manejar flujos de trabajo asíncronos.
+                      El generador devuelve los elementos uno a uno bajo
+                      demanda, lo que ahorra memoria en comparación con una
+                      lista.
                     </li>
                   </ul>
                 </div>
-                <!-- Ventajas de los Generadores fin -->
+                <!-- Usando Operador in en Generadores fin -->
+                <!-- Diferencias clave con Listas por Comprensión -->
+                <div>
+                  <h4>Diferencias clave con Listas por Comprensión</h4>
+                  <table class="table table-dark table-bordered text-center align-middle">
+                    <thead>
+                      <tr>
+                        <th>Característica</th>
+                        <th>Lista por comprensión</th>
+                        <th>Generador por comprensión</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row" class="text-start">Sintaxis</th>
+                        <td>
+                          <code class="language-python">[expresión for ... in ...]</code>
+                        </td>
+                        <td>
+                          <code class="language-python">(expresión for ... in ...)</code>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" class="text-start">Memoria</th>
+                        <td>Carga todos los elementos en memoria</td>
+                        <td>Genera elementos bajo demanda</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" class="text-start">Iterabilidad</th>
+                        <td>Es una lista (puede ser iterada varias veces)</td>
+                        <td>Es un iterador (se consume al iterar)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- Diferencias clave con Listas por Comprensión fin -->
               </div>
-              <!-- Generadores Fin -->
-              <!-- Cierres -->
-              <div id="cierres" class="mt-5">
-                <h2 class="mt-1">Cierres</h2>
+              <!-- Listas de Compresión fin -->
+              <!-- Ventajas de los Generadores -->
+              <div>
+                <h3>Ventajas de los Generadores</h3>
                 <p>
-                  En Python, el término "cierres" o "closures" se refiere a una
-                  función interna que tiene acceso a las variables de su función
-                  externa, incluso después de que la función externa haya
-                  finalizado su ejecución. Es una forma de encapsular el estado
-                  y la funcionalidad, y se utiliza principalmente para crear
-                  funciones que recuerdan el entorno en el que fueron creadas.
+                  Los generadores ofrecen varias ventajas, especialmente en
+                  contextos donde se necesita generar elementos de manera
+                  eficiente y flexible. A continuación, se mencionan algunas
+                  de las principales ventajas de utilizar generadores:
                 </p>
-                <!-- ¿Cómo Funcionan los Cierres? -->
-                <div>
-                  <h3>¿Cómo Funcionan los Cierres?</h3>
-                  <p>Un cierre ocurre cuando:</p>
-                  <ul>
-                    <li>
-                      Una función interna accede a las variables de su función
-                      externa.
-                    </li>
-                    <li>
-                      La función interna se devuelve o se utiliza fuera de su
-                      contexto original, pero mantiene acceso a esas variables
-                      externas.
-                    </li>
-                  </ul>
-                  <p><strong>Ejemplo básico de cierre</strong>:</p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                <ul>
+                  <li>
+                    <span class="fw-bold">Uso eficiente de memoria</span>: Los
+                    generadores son iteradores que producen elementos bajo
+                    demanda, lo que significa que no almacenan todos los
+                    elementos en memoria al mismo tiempo. Esto permite
+                    trabajar con grandes volúmenes de datos sin consumir
+                    demasiada memoria, lo que es especialmente útil cuando se
+                    manejan archivos grandes o secuencias de datos
+                    interminables.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Mayor rendimiento</span>: Al generar
+                    los elementos de forma perezosa (es decir, solo cuando son
+                    necesarios), los generadores pueden ser más rápidos en
+                    comparación con las listas u otras estructuras que deben
+                    generar todos los elementos de antemano.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Simplicidad en el código</span>: Los
+                    generadores permiten escribir código más limpio y conciso,
+                    especialmente en situaciones donde se necesita trabajar
+                    con secuencias de datos que deben ser procesadas de manera
+                    incremental. Su sintaxis es simple, utilizando la palabra
+                    clave yield en lugar de tener que gestionar explícitamente
+                    la creación y el mantenimiento de una lista.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Facilitan la composición de funciones</span>: Los generadores permiten
+                    encadenar varias operaciones
+                    de manera sencilla. Esto es útil cuando se necesita
+                    realizar una secuencia de transformaciones sobre los
+                    datos, sin necesidad de almacenar intermedios
+                    innecesarios.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Control de flujo más flexible</span>: El uso de yield permite pausar y
+                    reanudar la ejecución
+                    de una función, lo que es útil en escenarios como la
+                    implementación de algoritmos de búsqueda, recorridos, o
+                    cuando se necesita manejar flujos de trabajo asíncronos.
+                  </li>
+                </ul>
+              </div>
+              <!-- Ventajas de los Generadores fin -->
+            </div>
+            <!-- Generadores Fin -->
+            <!-- Cierres -->
+            <div id="cierres" class="mt-5">
+              <h2>Cierres</h2>
+              <p>
+                En Python, el término "cierres" o "closures" se refiere a una
+                función interna que tiene acceso a las variables de su función
+                externa, incluso después de que la función externa haya
+                finalizado su ejecución. Es una forma de encapsular el estado
+                y la funcionalidad, y se utiliza principalmente para crear
+                funciones que recuerdan el entorno en el que fueron creadas.
+              </p>
+              <!-- ¿Cómo Funcionan los Cierres? -->
+              <div>
+                <h3>¿Cómo Funcionan los Cierres?</h3>
+                <p>Un cierre ocurre cuando:</p>
+                <ul>
+                  <li>
+                    Una función interna accede a las variables de su función
+                    externa.
+                  </li>
+                  <li>
+                    La función interna se devuelve o se utiliza fuera de su
+                    contexto original, pero mantiene acceso a esas variables
+                    externas.
+                  </li>
+                </ul>
+                <p><strong>Ejemplo básico de cierre</strong>:</p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def <code class="language-python">funcion_externa</code>(x):
                             def <code class="language-python">funcion_interna</code>(y):
@@ -862,50 +772,47 @@
                         print(resultado)
                       </code>
                     </pre>
-                  </div>
-                  <p>En este ejemplo:</p>
-                  <ul>
-                    <li>
-                      <code class="language-python"
-                        ><code class="language-python"
-                          >funcion_externa</code
-                        ></code
-                      >
-                      toma un argumento <code class="language-python">x</code> y
-                      define una función interna
-                      <code class="language-python">funcion_interna</code>.
-                    </li>
-                    <li>
-                      <code class="language-python">funcion_interna</code> tiene
-                      acceso a <code class="language-python">x</code> de
-                      <code class="language-python">funcion_externa</code> a
-                      través de un cierre.
-                    </li>
-                    <li>
-                      Aunque la ejecución de
-                      <code class="language-python">funcion_externa</code> ya ha
-                      terminado,
-                      <code class="language-python">funcion_interna</code> aún
-                      puede acceder a la variable
-                      <code class="language-python">x</code>.
-                    </li>
-                  </ul>
                 </div>
-                <!-- ¿Cómo Funcionan los Cierres? fin -->
-                <!-- Uso Típico de Cierres -->
-                <div>
-                  <h3>Uso Típico de Cierres</h3>
-                  <p>
-                    Los cierres son útiles cuando se necesita preservar un
-                    estado dentro de una función, y se suelen utilizar en
-                    escenarios como la creación de contadores, funciones de
-                    configuración, o funciones que manejan callbacks.
-                  </p>
-                  <p>
-                    <strong>Ejemplo práctico de cierre para un contador</strong>
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                <p>En este ejemplo:</p>
+                <ul>
+                  <li>
+                    <code class="language-python"><code class="language-python"
+                          >funcion_externa</code></code>
+                    toma un argumento <code class="language-python">x</code> y
+                    define una función interna
+                    <code class="language-python">funcion_interna</code>.
+                  </li>
+                  <li>
+                    <code class="language-python">funcion_interna</code> tiene
+                    acceso a <code class="language-python">x</code> de
+                    <code class="language-python">funcion_externa</code> a
+                    través de un cierre.
+                  </li>
+                  <li>
+                    Aunque la ejecución de
+                    <code class="language-python">funcion_externa</code> ya ha
+                    terminado,
+                    <code class="language-python">funcion_interna</code> aún
+                    puede acceder a la variable
+                    <code class="language-python">x</code>.
+                  </li>
+                </ul>
+              </div>
+              <!-- ¿Cómo Funcionan los Cierres? fin -->
+              <!-- Uso Típico de Cierres -->
+              <div>
+                <h3>Uso Típico de Cierres</h3>
+                <p>
+                  Los cierres son útiles cuando se necesita preservar un
+                  estado dentro de una función, y se suelen utilizar en
+                  escenarios como la creación de contadores, funciones de
+                  configuración, o funciones que manejan callbacks.
+                </p>
+                <p>
+                  <strong>Ejemplo práctico de cierre para un contador</strong>
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def contador():
                         contador = 0
@@ -922,308 +829,302 @@
                         print(mi_contador())  # Devuelve 3
                       </code>
                     </pre>
-                  </div>
-                  <p>
-                    En este ejemplo,
-                    <code class="language-python">mi_contador</code> es una
-                    función que recuerda y actualiza el valor de contador cada
-                    vez que se llama. El uso de
-                    <code class="language-python">nonlocal</code> permite que la
-                    variable contador se modifique en el ámbito de la función
-                    externa.
-                  </p>
                 </div>
-                <!-- Uso Típico de Cierres fin -->
-                <!-- Ventajas de los Cierres -->
-                <div>
-                  <h3>Ventajas de los Cierres</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Encapsulamiento</span>: Permiten
-                      ocultar detalles internos, ya que el estado se mantiene
-                      dentro de la función interna.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Funcionalidad avanzada</span>:
-                      Facilitan patrones como la creación de funciones
-                      personalizadas o la configuración de comportamientos en
-                      funciones de alto orden.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Ventajas de los Cierres fin -->
-              </div>
-              <!-- Cierres Fin -->
-              <!-- La Función lambda -->
-              <div id="laFuncionLambda" class="mt-5">
-                <h2 class="mt-1">La Función lambda</h2>
                 <p>
-                  Una función <code class="language-python">lambda</code> en
-                  Python es una forma de definir funciones anónimas o funciones
-                  pequeñas y de una sola línea sin necesidad de usar la palabra
-                  clave def ni asignarles un nombre explícito. Estas funciones
-                  son útiles para operaciones rápidas y simples, especialmente
-                  cuando no es necesario reutilizarlas.
+                  En este ejemplo,
+                  <code class="language-python">mi_contador</code> es una
+                  función que recuerda y actualiza el valor de contador cada
+                  vez que se llama. El uso de
+                  <code class="language-python">nonlocal</code> permite que la
+                  variable contador se modifique en el ámbito de la función
+                  externa.
                 </p>
-                <!-- Qué Es una Función lambda -->
-                <div>
-                  <h3>Qué Es una Función lambda</h3>
-                  <p>
-                    Una función <code class="language-python">lambda</code> es
-                    una expresión que:
-                  </p>
-                  <ul>
-                    <li>
-                      Se define con la palabra clave
-                      <code class="language-python">lambda</code>.
-                    </li>
-                    <li>No necesita un nombre explícito.</li>
-                    <li>
-                      Puede tener múltiples argumentos, pero solo una expresión
-                      (una línea de código).
-                    </li>
-                    <li>
-                      Devuelve el resultado de la expresión automáticamente, sin
-                      necesidad de usar
-                      <code class="language-python">return</code>.
-                    </li>
-                  </ul>
-                  <p><strong>Sintaxis básica</strong>:</p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Uso Típico de Cierres fin -->
+              <!-- Ventajas de los Cierres -->
+              <div>
+                <h3>Ventajas de los Cierres</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Encapsulamiento</span>: Permiten
+                    ocultar detalles internos, ya que el estado se mantiene
+                    dentro de la función interna.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Funcionalidad avanzada</span>:
+                    Facilitan patrones como la creación de funciones
+                    personalizadas o la configuración de comportamientos en
+                    funciones de alto orden.
+                  </li>
+                </ul>
+              </div>
+              <!-- Ventajas de los Cierres fin -->
+            </div>
+            <!-- Cierres Fin -->
+            <!-- La Función lambda -->
+            <div id="la-funcion-lambda" class="mt-5">
+              <h2>La Función lambda</h2>
+              <p>
+                Una función <code class="language-python">lambda</code> en
+                Python es una forma de definir funciones anónimas o funciones
+                pequeñas y de una sola línea sin necesidad de usar la palabra
+                clave def ni asignarles un nombre explícito. Estas funciones
+                son útiles para operaciones rápidas y simples, especialmente
+                cuando no es necesario reutilizarlas.
+              </p>
+              <!-- Qué Es una Función lambda -->
+              <div>
+                <h3>Qué Es una Función lambda</h3>
+                <p>
+                  Una función <code class="language-python">lambda</code> es
+                  una expresión que:
+                </p>
+                <ul>
+                  <li>
+                    Se define con la palabra clave
+                    <code class="language-python">lambda</code>.
+                  </li>
+                  <li>No necesita un nombre explícito.</li>
+                  <li>
+                    Puede tener múltiples argumentos, pero solo una expresión
+                    (una línea de código).
+                  </li>
+                  <li>
+                    Devuelve el resultado de la expresión automáticamente, sin
+                    necesidad de usar
+                    <code class="language-python">return</code>.
+                  </li>
+                </ul>
+                <p><strong>Sintaxis básica</strong>:</p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         lambda argumentos: expresión
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Qué Es una Función lambda fin -->
-                <!-- Cómo se Usa una Función lambda -->
-                <div>
-                  <h3>Cómo se Usa una Función lambda</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Como funciones anónimas</span>: Se
-                      usan directamente sin necesidad de asignarlas a un nombre.
-                      Por ejemplo:
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Qué Es una Función lambda fin -->
+              <!-- Cómo se Usa una Función lambda -->
+              <div>
+                <h3>Cómo se Usa una Función lambda</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Como funciones anónimas</span>: Se
+                    usan directamente sin necesidad de asignarlas a un nombre.
+                    Por ejemplo:
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             resultado = (lambda x, y: x + y)(5, 3)
                             print(resultado)  # Salida: 8
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Asignadas a variables</span>: Se
-                      puede asignar a una variable para usarlas como funciones
-                      normales.
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Asignadas a variables</span>: Se
+                    puede asignar a una variable para usarlas como funciones
+                    normales.
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             sumar = lambda x, y: x + y
                             print(sumar(10, 20))  # Salida: 30
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold">En funciones como argumento</span>:
-                      Son útiles en funciones como
-                      <code class="language-python">map</code>,
-                      <code class="language-python">filter</code> y
-                      <code class="language-python">sorted</code> que aceptan
-                      otras funciones como parámetros.
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">En funciones como argumento</span>:
+                    Son útiles en funciones como
+                    <code class="language-python">map</code>,
+                    <code class="language-python">filter</code> y
+                    <code class="language-python">sorted</code> que aceptan
+                    otras funciones como parámetros.
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             numeros = [1, 2, 3, 4]
                             cuadrados = list(map(lambda x: x ** 2, numeros))
                             print(cuadrados)  # Salida: [1, 4, 9, 16]
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold">En listas o diccionarios</span>:
-                      Pueden ser usadas para transformar o filtrar elementos
-                      dinámicamente.
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">En listas o diccionarios</span>:
+                    Pueden ser usadas para transformar o filtrar elementos
+                    dinámicamente.
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             palabras = ["python", "lambda", "función"]
                             longitudes = list(map(lambda palabra: len(palabra), palabras))
                             print(longitudes)  # Salida: [6, 6, 7]
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <!-- Cómo se Usa una Función lambda fin -->
-                <!-- Para qué Sirve una Función lambda -->
-                <div>
-                  <h3>Para qué Sirve una Función lambda</h3>
-                  <ul>
-                    <li>
-                      Optimizar código corto: Se usan para operaciones rápidas
-                      donde definir una función tradicional puede ser
-                      innecesario.
-                    </li>
-                    <li>
-                      Trabajar con funciones de orden superior: Ideal para map,
-                      filter, reduce y otras funciones que necesitan funciones
-                      como argumentos.
-                    </li>
-                    <li>
-                      Definir funciones temporales: Permite realizar
-                      transformaciones, filtros o cálculos simples sin
-                      sobrecargar el código con funciones extra.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Para qué Sirve una Función lambda fin -->
-                <!-- Ejemplo Práctico de Funciones lambda -->
-                <div>
-                  <h3>Ejemplo Práctico de Funciones lambda</h3>
-                  <p>Ordenar una lista de tuplas por el segundo elemento:</p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- Cómo se Usa una Función lambda fin -->
+              <!-- Para qué Sirve una Función lambda -->
+              <div>
+                <h3>Para qué Sirve una Función lambda</h3>
+                <ul>
+                  <li>
+                    Optimizar código corto: Se usan para operaciones rápidas
+                    donde definir una función tradicional puede ser
+                    innecesario.
+                  </li>
+                  <li>
+                    Trabajar con funciones de orden superior: Ideal para map,
+                    filter, reduce y otras funciones que necesitan funciones
+                    como argumentos.
+                  </li>
+                  <li>
+                    Definir funciones temporales: Permite realizar
+                    transformaciones, filtros o cálculos simples sin
+                    sobrecargar el código con funciones extra.
+                  </li>
+                </ul>
+              </div>
+              <!-- Para qué Sirve una Función lambda fin -->
+              <!-- Ejemplo Práctico de Funciones lambda -->
+              <div>
+                <h3>Ejemplo Práctico de Funciones lambda</h3>
+                <p>Ordenar una lista de tuplas por el segundo elemento:</p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         datos = [(1, 'b'), (3, 'a'), (2, 'c')]
                         datos_ordenados = sorted(datos, key=lambda x: x[1])
                         print(datos_ordenados)  # Salida: [(3, 'a'), (1, 'b'), (2, 'c')]
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Ejemplo Práctico de Funciones lambda fin -->
-                <!-- Ventajas de Funciones lambdas -->
-                <div>
-                  <h3>Ventajas de Funciones lambdas</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Sintaxis concisa</span>: Las
-                      funciones lambda permiten definir funciones de una sola
-                      línea sin necesidad de un bloque
-                      <code class="language-python">def</code>. Esto reduce la
-                      cantidad de código, haciéndolo más legible en tareas
-                      simples.
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Ejemplo Práctico de Funciones lambda fin -->
+              <!-- Ventajas de Funciones lambdas -->
+              <div>
+                <h3>Ventajas de Funciones lambdas</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Sintaxis concisa</span>: Las
+                    funciones lambda permiten definir funciones de una sola
+                    línea sin necesidad de un bloque
+                    <code class="language-python">def</code>. Esto reduce la
+                    cantidad de código, haciéndolo más legible en tareas
+                    simples.
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             suma = lambda x, y: x + y
                             print(suma(3, 4))  # Salida: 7
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Uso inmediato (funciones anónimas)</span
-                      >:
-                      <ul>
-                        <li>
-                          Las funciones lambda no requieren un nombre explícito,
-                          lo que las hace ideales para usos temporales.
-                        </li>
-                        <li>
-                          Ejemplo: En un
-                          <code class="language-python">map</code>,
-                          <code class="language-python">filter</code> o
-                          <code class="language-python">reduce</code>:
-                          <div class="ej-sintaxis">
-                            <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Uso inmediato (funciones anónimas)</span>:
+                    <ul>
+                      <li>
+                        Las funciones lambda no requieren un nombre explícito,
+                        lo que las hace ideales para usos temporales.
+                      </li>
+                      <li>
+                        Ejemplo: En un
+                        <code class="language-python">map</code>,
+                        <code class="language-python">filter</code> o
+                        <code class="language-python">reduce</code>:
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 lista = [1, 2, 3, 4]
                                 cuadrados = map(lambda x: x**2, lista)
                                 print(list(cuadrados))  # Salida: [1, 4, 9, 16]
                               </code>
                             </pre>
-                          </div>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Mejor integración con otras funciones</span
-                      >: Son prácticas para usar en expresiones de orden
-                      superior como <code class="language-python">map()</code>,
-                      <code class="language-python">filter()</code>,
-                      <code class="language-python">reduce()</code>, o incluso
-                      en funciones personalizadas que aceptan otras funciones
-                      como argumentos.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Código más legible en casos simples</span
-                      >:
-                      <ul>
-                        <li>
-                          Cuando las operaciones son breves, las funciones
-                          lambda evitan la necesidad de declarar una función
-                          completa, simplificando el código.
-                        </li>
-                        <li>
-                          Ejemplo: Ordenar una lista de tuplas por el segundo
-                          valor.
-                          <div class="ej-sintaxis">
-                            <pre data-src-status="loaded" tabindex="0">
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Mejor integración con otras funciones</span>: Son prácticas para usar en
+                    expresiones de orden
+                    superior como <code class="language-python">map()</code>,
+                    <code class="language-python">filter()</code>,
+                    <code class="language-python">reduce()</code>, o incluso
+                    en funciones personalizadas que aceptan otras funciones
+                    como argumentos.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Código más legible en casos simples</span>:
+                    <ul>
+                      <li>
+                        Cuando las operaciones son breves, las funciones
+                        lambda evitan la necesidad de declarar una función
+                        completa, simplificando el código.
+                      </li>
+                      <li>
+                        Ejemplo: Ordenar una lista de tuplas por el segundo
+                        valor.
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 datos = [(1, 'a'), (3, 'c'), (2, 'b')]
                                 datos_ordenados = sorted(datos, key=lambda x: x[1])
                                 print(datos_ordenados)  # Salida: [(1, 'a'), (2, 'b'), (3, 'c')]
                               </code>
                             </pre>
-                          </div>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Flexibilidad en programación funcional</span
-                      >: Facilitan la programación funcional al permitir crear
-                      funciones inline que pueden pasar como argumentos a otras
-                      funciones.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Eficiencia en uso temporal</span>:
-                      Cuando se necesita una función pequeña que se usará una
-                      sola vez, las funciones lambda evitan la sobrecarga de
-                      crear funciones con nombre.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Ventajas de Funciones lambdas fin -->
-                <!-- Limitaciones de Funciones lambdas -->
-                <div>
-                  <h3>Limitaciones de Funciones lambdas</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Una sola expresión</span>:
-                      <ul>
-                        <li>
-                          Las funciones lambda solo pueden contener una única
-                          expresión, la cual se evalúa y devuelve
-                          automáticamente. No pueden incluir múltiples líneas,
-                          declaraciones o bloques complejos.
-                        </li>
-                        <li>
-                          Ejemplo válido:
-                          <div class="ej-sintaxis">
-                            <pre data-src-status="loaded" tabindex="0">
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Flexibilidad en programación funcional</span>: Facilitan la programación
+                    funcional al permitir crear
+                    funciones inline que pueden pasar como argumentos a otras
+                    funciones.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Eficiencia en uso temporal</span>:
+                    Cuando se necesita una función pequeña que se usará una
+                    sola vez, las funciones lambda evitan la sobrecarga de
+                    crear funciones con nombre.
+                  </li>
+                </ul>
+              </div>
+              <!-- Ventajas de Funciones lambdas fin -->
+              <!-- Limitaciones de Funciones lambdas -->
+              <div>
+                <h3>Limitaciones de Funciones lambdas</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Una sola expresión</span>:
+                    <ul>
+                      <li>
+                        Las funciones lambda solo pueden contener una única
+                        expresión, la cual se evalúa y devuelve
+                        automáticamente. No pueden incluir múltiples líneas,
+                        declaraciones o bloques complejos.
+                      </li>
+                      <li>
+                        Ejemplo válido:
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 suma = lambda x, y: x + y
                                 print(suma(2, 3))  # Salida: 5
                               </code>
                             </pre>
-                          </div>
-                        </li>
-                        <li>
-                          Ejemplo inválido:
-                          <div class="ej-sintaxis">
-                            <pre data-src-status="loaded" tabindex="0">
+                        </div>
+                      </li>
+                      <li>
+                        Ejemplo inválido:
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 # Esto generará un error porque lambda no permite múltiples líneas
                                 operacion = lambda x: (
@@ -1232,167 +1133,164 @@
                                 )
                               </code>
                             </pre>
-                          </div>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Sin declaraciones</span>:
-                      <ul>
-                        <li>
-                          No pueden contener declaraciones como if, for, while,
-                          try, etc. Solo aceptan una expresión, aunque puedes
-                          usar operadores ternarios o comprensiones.
-                        </li>
-                        <li>
-                          Ejemplo válido con operador ternario:
-                          <div class="ej-sintaxis">
-                            <pre data-src-status="loaded" tabindex="0">
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Sin declaraciones</span>:
+                    <ul>
+                      <li>
+                        No pueden contener declaraciones como if, for, while,
+                        try, etc. Solo aceptan una expresión, aunque puedes
+                        usar operadores ternarios o comprensiones.
+                      </li>
+                      <li>
+                        Ejemplo válido con operador ternario:
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 par_o_impar = lambda x: "par" if x % 2 == 0 else "impar"
                                 print(par_o_impar(4))  # Salida: "par"
                               </code>
                             </pre>
-                          </div>
-                        </li>
-                        <li>
-                          Ejemplo inválido:
-                          <div class="ej-sintaxis">
-                            <pre data-src-status="loaded" tabindex="0">
+                        </div>
+                      </li>
+                      <li>
+                        Ejemplo inválido:
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 # Esto generará un error porque "for" no es permitido en una lambda
                                 sumar_lista = lambda lista: for x in lista: x + 1
                               </code>
                             </pre>
-                          </div>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Sin nombre explícito</span>:Aunque
-                      puedes asignar una función lambda a una variable, no tiene
-                      un nombre interno como las funciones definidas con
-                      <code class="language-python">def</code>. Esto significa
-                      que puede ser menos útil para depuración o documentación.
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Sin nombre explícito</span>:Aunque
+                    puedes asignar una función lambda a una variable, no tiene
+                    un nombre interno como las funciones definidas con
+                    <code class="language-python">def</code>. Esto significa
+                    que puede ser menos útil para depuración o documentación.
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             multiplicar = lambda x, y: x * y
                             print(multiplicar(2, 3))  # Salida: 6
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Sin anotaciones de tipo</span>:
-                      <ul>
-                        <li>
-                          No puedes agregar anotaciones de tipo a una función
-                          lambda, a diferencia de las funciones definidas con
-                          <code class="language-python">def</code>.
-                        </li>
-                        <li>
-                          Ejemplo válido con
-                          <code class="language-python">def</code>:
-                          <div class="ej-sintaxis">
-                            <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Sin anotaciones de tipo</span>:
+                    <ul>
+                      <li>
+                        No puedes agregar anotaciones de tipo a una función
+                        lambda, a diferencia de las funciones definidas con
+                        <code class="language-python">def</code>.
+                      </li>
+                      <li>
+                        Ejemplo válido con
+                        <code class="language-python">def</code>:
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 def sumar(x: int, y: int) -> int:
                                 return x + y
                               </code>
                             </pre>
-                          </div>
-                        </li>
-                        <li>Esto no es posible con una función lambda.</li>
-                      </ul>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Complejidad limitada</span>:
-                      <ul>
-                        <li>
-                          No están diseñadas para lógica compleja o
-                          reutilización extensiva. Son más útiles para funciones
-                          pequeñas que serán utilizadas de manera inmediata,
-                          como en expresiones de orden superior (por ejemplo,
-                          <code class="language-python">map</code>,
-                          <code class="language-python">filter</code>,
-                          <code class="language-python">reduce</code>).
-                        </li>
-                        <li>
-                          Ejemplo con map:
-                          <div class="ej-sintaxis">
-                            <pre data-src-status="loaded" tabindex="0">
+                        </div>
+                      </li>
+                      <li>Esto no es posible con una función lambda.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Complejidad limitada</span>:
+                    <ul>
+                      <li>
+                        No están diseñadas para lógica compleja o
+                        reutilización extensiva. Son más útiles para funciones
+                        pequeñas que serán utilizadas de manera inmediata,
+                        como en expresiones de orden superior (por ejemplo,
+                        <code class="language-python">map</code>,
+                        <code class="language-python">filter</code>,
+                        <code class="language-python">reduce</code>).
+                      </li>
+                      <li>
+                        Ejemplo con map:
+                        <div class="ej-sintaxis">
+                          <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 numeros = [1, 2, 3, 4]
                                 cuadrados = map(lambda x: x**2, numeros)
                                 print(list(cuadrados))  # Salida: [1, 4, 9, 16]
                               </code>
                             </pre>
-                          </div>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Sin soporte para return explícito</span
-                      >: No puedes usar la palabra clave return dentro de una
-                      lambda, ya que siempre devuelve implícitamente el
-                      resultado de la expresión.
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Sin soporte para return explícito</span>: No puedes usar la palabra clave
+                    return dentro de una
+                    lambda, ya que siempre devuelve implícitamente el
+                    resultado de la expresión.
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             # Correcto
                             suma = lambda x, y: x + y
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <!-- Limitaciones de Funciones lambdas fin -->
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <!-- Funciones lambda con map() y filter() -->
-              <div class="mt-5">
-                <h3 class="mt-1">Funciones lambda con map()</h3>
-                <p>
-                  En Python, <code class="language-python">lambda</code> y
-                  <code class="language-python">map()</code> son herramientas
-                  poderosas que se utilizan para trabajar con funciones de
-                  manera más concisa y eficiente.
-                </p>
-                <p>
-                  La función <code class="language-python">map()</code> aplica
-                  una función a cada elemento de un iterable (como una lista) y
-                  devuelve un iterable de los resultados.
-                </p>
-                <p><strong>Sintaxis</strong>:</p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+              <!-- Limitaciones de Funciones lambdas fin -->
+            </div>
+            <!-- Funciones lambda con map() y filter() -->
+            <div class="mt-5">
+              <h3 class="mt-1">Funciones lambda con map()</h3>
+              <p>
+                En Python, <code class="language-python">lambda</code> y
+                <code class="language-python">map()</code> son herramientas
+                poderosas que se utilizan para trabajar con funciones de
+                manera más concisa y eficiente.
+              </p>
+              <p>
+                La función <code class="language-python">map()</code> aplica
+                una función a cada elemento de un iterable (como una lista) y
+                devuelve un iterable de los resultados.
+              </p>
+              <p><strong>Sintaxis</strong>:</p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       map(func, iterable)
                     </code>
                   </pre>
-                </div>
-                <ul>
-                  <li>
-                    <span class="fw-bold"
-                      ><code class="language-python">func</code></span
-                    >: una función que se aplica a cada elemento del iterable.
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      ><code class="language-python">iterable</code></span
-                    >: una lista, tupla u otro iterable.
-                  </li>
-                </ul>
-                <p>
-                  Cuando se usa <code class="language-python">lambda</code> con
-                  <code class="language-python">map()</code>, se puede pasar una
-                  función anónima para realizar la operación.
-                </p>
-                <p><strong>Ejemplo</strong>:</p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <ul>
+                <li>
+                  <span class="fw-bold"><code class="language-python">func</code></span>: una función que se aplica a
+                  cada elemento del iterable.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">iterable</code></span>: una lista, tupla u otro
+                  iterable.
+                </li>
+              </ul>
+              <p>
+                Cuando se usa <code class="language-python">lambda</code> con
+                <code class="language-python">map()</code>, se puede pasar una
+                función anónima para realizar la operación.
+              </p>
+              <p><strong>Ejemplo</strong>:</p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Multiplicar cada número de la lista por 2 usando lambda y map
                       numbers = [1, 2, 3, 4, 5]
@@ -1400,55 +1298,52 @@
                       print(list(result))  # [2, 4, 6, 8, 10]
                     </code>
                   </pre>
-                </div>
-                <p>
-                  En este ejemplo,
-                  <code class="language-python">lambda x: x * 2</code> es la
-                  función que multiplica cada número por
-                  <code class="language-python">2</code>.
-                </p>
               </div>
-              <!-- Funciones lambda con map() y filter() Fin -->
-              <!-- Funciones lambda con filter() -->
-              <div class="mt-5">
-                <h3 class="mt-1">Funciones lambda con filter()</h3>
-                <p>
-                  La función <code class="language-python">filter()</code> se
-                  utiliza para filtrar los elementos de un iterable basándose en
-                  una condición. Devuelve un iterable con solo los elementos que
-                  cumplen con la condición.
-                </p>
-                <p><strong>Sintaxis</strong>:</p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+              <p>
+                En este ejemplo,
+                <code class="language-python">lambda x: x * 2</code> es la
+                función que multiplica cada número por
+                <code class="language-python">2</code>.
+              </p>
+            </div>
+            <!-- Funciones lambda con map() y filter() Fin -->
+            <!-- Funciones lambda con filter() -->
+            <div class="mt-5">
+              <h3 class="mt-1">Funciones lambda con filter()</h3>
+              <p>
+                La función <code class="language-python">filter()</code> se
+                utiliza para filtrar los elementos de un iterable basándose en
+                una condición. Devuelve un iterable con solo los elementos que
+                cumplen con la condición.
+              </p>
+              <p><strong>Sintaxis</strong>:</p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       filter(func, iterable)
                     </code>
                   </pre>
-                </div>
-                <ul>
-                  <li>
-                    <code class="language-python">func</code>: una función que
-                    devuelve <code class="language-python">True</code> o<code
-                      class="language-python"
-                    >
-                      False</code
-                    >
-                    para cada elemento.
-                  </li>
-                  <li>
-                    <code class="language-python">iterable</code>: una lista,
-                    tupla u otro iterable.
-                  </li>
-                </ul>
-                <p>
-                  Cuando se usa <code class="language-python">lambda</code> con
-                  <code class="language-python">filter()</code>, se define una
-                  condición anónima para filtrar los elementos.
-                </p>
-                <p><strong>Ejemplo</strong>:</p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <ul>
+                <li>
+                  <code class="language-python">func</code>: una función que
+                  devuelve <code class="language-python">True</code> o<code class="language-python">
+                      False</code>
+                  para cada elemento.
+                </li>
+                <li>
+                  <code class="language-python">iterable</code>: una lista,
+                  tupla u otro iterable.
+                </li>
+              </ul>
+              <p>
+                Cuando se usa <code class="language-python">lambda</code> con
+                <code class="language-python">filter()</code>, se define una
+                condición anónima para filtrar los elementos.
+              </p>
+              <p><strong>Ejemplo</strong>:</p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Filtrar los números impares de la lista usando lambda y filter
                       numbers = [1, 2, 3, 4, 5, 6, 7]
@@ -1456,138 +1351,153 @@
                       print(list(result))  # [1, 3, 5, 7]
                     </code>
                   </pre>
-                </div>
-                <p>
-                  En este caso,
-                  <code class="language-python">lambda x: x % 2 != 0</code> es
-                  la función que devuelve
-                  <code class="language-python">True</code> solo para los
-                  números impares, filtrando así esos números de la lista.
-                </p>
               </div>
-              <!-- Funciones lambda con filter() Fin -->
-              <!-- La Función lambda Fin -->
+              <p>
+                En este caso,
+                <code class="language-python">lambda x: x % 2 != 0</code> es
+                la función que devuelve
+                <code class="language-python">True</code> solo para los
+                números impares, filtrando así esos números de la lista.
+              </p>
             </div>
-          </article>
-          <!--  Iteradores, Generadores y Cierres en Python  -->
-          <!--  comentarios  -->
-          <article class="row pt-5" id="comments">
-            <h2>COMENTARIOS</h2>
-            <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por
-              favor infórmelo a través del formulario disponible para este
-              propósito.
-            </p>
-            <div class="d-flex justify-content-center">
-              <form
-                action="https://formspree.io/f/mdkdawkg"
-                method="POST"
-                id="myForm"
-              >
-                <fieldset class="d-flex flex-column gap-3">
-                  <legend class="text-center fs-4">Deje su comentario</legend>
+            <!-- Funciones lambda con filter() Fin -->
+            <!-- La Función lambda Fin -->
+          </div>
+        </article>
+        <!--  Iteradores, Generadores y Cierres en Python  -->
+        <!--  comentarios  -->
+        <article class="row pt-5" id="comments">
+          <h2>COMENTARIOS</h2>
+          <p>
+            Si tiene alguna inquietud, duda o ha encontrado algún error, por
+            favor infórmelo a través del formulario disponible para este
+            propósito.
+          </p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
 
-                  <div class="d-flex flex-column">
-                    <label for="name">Nombre:</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="User"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
+                </div>
 
-                  <div class="d-flex flex-column">
-                    <label for="email">Email:</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="user@mail.com"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
 
-                  <div class="d-flex flex-column">
-                    <label for="message">Mensaje:</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      cols="30"
-                      rows="5"
-                      placeholder="Su comentario..."
-                      class="form-control rounded-3"
-                      required
-                    ></textarea>
-                  </div>
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
 
-                  <button
-                    type="submit"
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
-                  >
-                    Enviar
-                  </button>
-                </fieldset>
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                  Enviar
+                </button>
+              </fieldset>
 
-                <p class="small text-center">
-                  La política de privacidad, y los términos y condiciones están
-                  disponibles en el formulario de contacto.
-                </p>
-              </form>
+              <p class="small text-center">
+                La política de privacidad, y los términos y condiciones están
+                disponibles en el formulario de contacto.
+              </p>
+            </form>
+          </div>
+        </article>
+        <!--  fin comentarios  -->
+      </section>
+
+      <!--  barra lateral  -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        <h1>En Este Artículo</h1>
+        <div class="menu-scroll">
+          <div class="menu-container">
+            <div class="border border-1">
+              <div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
+              <div class="menu-item"><a href="#iteradores" class="simple-link">Iteradores</a></div>
+              <div class="menu-item"><a href="#generadores" class="simple-link">Generadores</a></div>
+              <div class="menu-item"><a href="#cierres" class="simple-link">Cierres</a></div>
+              <div class="menu-item"><a href="#la-funcion-lambda" class="simple-link">La Función lambda</a></div>
+              <!-- Comentarios  -->
+              <div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div>
             </div>
-          </article>
-          <!--  fin comentarios  -->
-        </section>
-        <!--  barra lateral  -->
-        <aside class="col-lg-3 d-none d-lg-block pt-5">
-          <h1>En Este Artículo</h1>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a href="#introduccion">Introducción</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#iteradores">Iteradores</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#generadores">Generadores</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#cierres">Cierres</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#laFuncionLambda">La Función lambda</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#comments">Comentarios</a>
-            </li>
-          </ul>
-        </aside>
-        <!--  fin barra lateral  -->
-      </main>
-      <!--  fin principal  -->
+          </div>
+        </div>
+      </aside>
+      <!--  fin barra lateral  -->
+    </main>
+  </div>
+  <!--  Principal Fin  -->
+
+  <!--  pie de pagina  -->
+  <footer class="row border-top border-1 m-1 mt-auto">
+    <div class="row">
+      <!-- contacto -->
+      <address class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Contacto</div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class="ms-3">
+            <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class="ms-3">Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      <!-- Derechos de autor -->
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
+      </div>
+      <!-- redes sociales -->
+      <div class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Redes Sociales</div>
+        <div class="d-flex justify-content-evenly align-items-center gap-5">
+          <div>
+            <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <!--  Principal Fin  -->
+    <div class="d-flex align-items-center justify-content-center gap-2"></div>
+  </footer>
+  <!--  pie de pagina fin  -->
 
-    <!-- button to top -->
-    <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        fill="currentColor"
-        class="bi bi-arrow-bar-up"
-        viewBox="0 0 16 16"
-        style="margin-left: -2px"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"
-        ></path>
-      </svg>
-    </button>
-    <!-- Fin button to top -->
-  </body>
+
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
 </html>

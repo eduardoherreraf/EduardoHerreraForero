@@ -1,331 +1,249 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-  <head>
-    <!-- Metaetiquetas -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Aprende a manipular archivos, directorios y procesos del sistema operativo con el módulo OS de Python. Guía práctica con ejemplos para automatizar tareas del sistema."
-    />
-    <meta
-      name="title"
-      content="El módulo OS, Interactuando con el sistema operativo Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta name="author" content="Ing. Eduardo Herrera Forero" />
-    <meta name="application-name" content="EHF" />
-    <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://eduardoherreraf.github.io/cursoPython3-0803_el_modulo_os_interactuando_con_el_sistema_operativo.html"
-    />
-    <!-- Fin Metaetiquetas -->
 
-    <!-- Open Graph data -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="El módulo OS, Interactuando con el sistema operativo Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      property="og:description"
-      content="Aprende a manipular archivos, directorios y procesos del sistema operativo con el módulo OS de Python. Guía práctica con ejemplos para automatizar tareas del sistema."
-    />
-    <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      property="og:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      property="og:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0803_el_modulo_os_interactuando_con_el_sistema_operativo.html"
-    />
-    <meta property="og:locale" content="es_CO" />
-    <!-- fin Open Graph data -->
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Aprende a manipular archivos, directorios y procesos del sistema operativo con el módulo OS de Python. Guía práctica con ejemplos para automatizar tareas del sistema." />
+  <meta name="title"
+    content="El módulo OS, Interactuando con el sistema operativo Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical"
+    href="https://eduardoherreraf.github.io/cursoPython3-0803_el_modulo_os_interactuando_con_el_sistema_operativo.html" />
+  <!-- Fin Metaetiquetas -->
 
-    <!-- Twitter cards -->
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="El módulo OS, Interactuando con el sistema operativo Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      name="twitter:description"
-      content="Aprende a manipular archivos, directorios y procesos del sistema operativo con el módulo OS de Python. Guía práctica con ejemplos para automatizar tareas del sistema."
-    />
-    <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      name="twitter:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      name="twitter:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0803_el_modulo_os_interactuando_con_el_sistema_operativo.html"
-    />
-    <meta name="twitter:site" content="@ehfeduardo" />
-    <!-- Fin Twitter cards -->
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title"
+    content="El módulo OS, Interactuando con el sistema operativo Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta property="og:description"
+    content="Aprende a manipular archivos, directorios y procesos del sistema operativo con el módulo OS de Python. Guía práctica con ejemplos para automatizar tareas del sistema." />
+  <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta property="og:url"
+    content="https://eduardoherreraf.github.io/cursoPython3-0803_el_modulo_os_interactuando_con_el_sistema_operativo.html" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
 
-    <!-- iconos -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="android-chrome-192x192.png"
-    />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- fin iconos -->
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title"
+    content="El módulo OS, Interactuando con el sistema operativo Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description"
+    content="Aprende a manipular archivos, directorios y procesos del sistema operativo con el módulo OS de Python. Guía práctica con ejemplos para automatizar tareas del sistema." />
+  <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta name="twitter:url"
+    content="https://eduardoherreraf.github.io/cursoPython3-0803_el_modulo_os_interactuando_con_el_sistema_operativo.html" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
 
-    <title>
-      El módulo OS, Interactuando con el sistema operativo Python 3 - Ing.
-      Eduardo Herrera Forero.
-    </title>
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
 
-    <script type="module" src="./js/main.js"></script>
+  <title>
+    El módulo OS, Interactuando con el sistema operativo Python 3 - Ing.
+    Eduardo Herrera Forero.
+  </title>
 
-    <meta
-      name="google-site-verification"
-      content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"
-    />
-  </head>
+  <script type="module" src="./js/main.js"></script>
 
-  <body>
-    <!-- Barra deNavegación -->
-    <nav
-      class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
-    >
-      <div class="container-fluid">
-        <!-- Enlace a la página principal con el logo y nombre -->
-        <a
-          class="navbar-brand d-flex align-items-center ms-2"
-          href="index.html"
-        >
-          <img
-            src="./images/logo.png"
-            alt="Logo de Ing. Eduardo Herrera Forero"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top me-1"
-          />
-          <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
-        </a>
-        <!-- Botón para activar el menú en dispositivos pequeños -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Menú de navegación -->
-        <div
-          class="collapse navbar-collapse ms-auto text-center"
-          id="navbarSupportedContent"
-        >
-          <ul
-            class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100"
-          >
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#portfolio"
-                >PORTAFOLIO</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 publicaciones-activo"
-                href="index.html#blog"
-                >PUBLICACIONES</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
-            </li>
-          </ul>
-        </div>
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Barra deNavegación -->
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
 
-    <!--  principal  -->
-    <div class="container-fluid" id="introduccion">
-      <main class="row">
-        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
-          <!--  El módulo os, Interactuando con el sistema operativo en Python  -->
-          <article
-            class="row border-1 border-bottom pb-3"
-            data-bs-spy="scroll"
-            data-bs-target="#list-example"
-            data-bs-smooth-scroll="true"
-          >
-            <div>
-              <header>
-                <h1>
-                  El módulo os, Interactuando con el sistema operativo en Python
-                </h1>
-              </header>
-              <!-- Introducción -->
-              <div class="mt-5">
-                <h2>Introducción</h2>
-                <p>
-                  El módulo <code class="language-python">OS</code> en Python es
-                  una herramienta poderosa que permite a los desarrolladores
-                  interactuar con el sistema operativo de manera eficiente. Este
-                  documento explora las funcionalidades más comunes del módulo
-                  os, incluyendo la manipulación de archivos y directorios, la
-                  obtención de información del sistema y la ejecución de
-                  comandos del sistema operativo. A través de ejemplos
-                  prácticos, se demostrará cómo utilizar este módulo para
-                  facilitar tareas cotidianas en la programación.
-                </p>
-                <div class="centrar-imagen imagen50">
-                  <figure>
-                    <img src="https://i.ibb.co/GkPHLKv/moduloos.jpg"
-                    class="img-fluid" alt="El módulo os, Interactuando con el
+  <!--  principal  -->
+  <div class="container-fluid" id="introduccion">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!--  Introducción al Curso de Python 3 para Principiantes  -->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <div>
+            <header>
+              <h1>
+                El módulo os, Interactuando con el sistema operativo en Python
+              </h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-5">
+              <h2>Introducción</h2>
+              <p>
+                El módulo <code class="language-python">OS</code> en Python es
+                una herramienta poderosa que permite a los desarrolladores
+                interactuar con el sistema operativo de manera eficiente. Este
+                documento explora las funcionalidades más comunes del módulo
+                os, incluyendo la manipulación de archivos y directorios, la
+                obtención de información del sistema y la ejecución de
+                comandos del sistema operativo. A través de ejemplos
+                prácticos, se demostrará cómo utilizar este módulo para
+                facilitar tareas cotidianas en la programación.
+              </p>
+              <div class="centrar-imagen imagen50">
+                <figure>
+                  <img src="https://i.ibb.co/GkPHLKv/moduloos.jpg" class="img-fluid" alt="El módulo os, Interactuando con el
                     sistema operativo en Python " title="Explorando las
                     Funcionalidades del Módulo
-                    <code class="language-python">OS</code> de Python" />
-                    <figcaption>
-                      El módulo os, Interactuando con el sistema operativo en
-                      Python
-                    </figcaption>
-                  </figure>
-                </div>
+                    <code class=" language-python">OS</code> de Python" />
+                  <figcaption>
+                    El módulo os, Interactuando con el sistema operativo en
+                    Python
+                  </figcaption>
+                </figure>
               </div>
-              <!-- Introducción al Módulo OS -->
-              <div id="introduccionAlModuloOS" class="mt-5 pt-5">
-                <h2 class="mt-1">Introducción al Módulo OS</h2>
-                <p>
-                  El módulo<code class="language-python">os</code>de Python es
-                  una herramienta que permite la interacción directa con el
-                  sistema operativo, ofreciendo funcionalidades similares a los
-                  comandos nativos disponibles tanto en sistemas Unix como
-                  Windows. Por ejemplo, incluye funciones como
-                  <code class="language-python">mkdir </code>para crear
-                  directorios, replicando la funcionalidad del comando del mismo
-                  nombre en la línea de comandos.
-                </p>
-                <p>
-                  Las operaciones principales del módulo
-                  <code class="language-python">os</code> se centran en el
-                  manejo de archivos y directorios, permitiendo realizar
-                  diversas tareas de gestión y manipulación de estos elementos
-                  del sistema de archivos, lo que facilita la automatización de
-                  tareas relacionadas con la organización de datos y estructura
-                  de carpetas.
-                </p>
-                <p>
-                  Además de las funciones básicas de gestión de archivos, el
-                  módulo<code class="language-python">os</code>proporciona
-                  capacidades adicionales importantes como la obtención de
-                  información del sistema operativo, la gestión de procesos en
-                  ejecución y el manejo de operaciones de entrada/salida
-                  mediante descriptores de archivos, lo que lo convierte en una
-                  herramienta versátil para la administración del sistema.
-                </p>
-              </div>
-              <!-- Introducción al Módulo OS Fin -->
-              <!-- ¿Por Qué Usar el Módulo OS? -->
-              <div id="PorQueUsarElMOduloOS?" class="mt-5 pt-5">
-                <h2 class="mt-1">¿Por Qué Usar el Módulo OS?</h2>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Portabilidad</span>: El código que
-                    utiliza el módulo os a menudo puede ejecutarse en diferentes
-                    sistemas operativos (como Windows, macOS y Linux) sin
-                    necesidad de modificaciones importantes. Esto se debe a que
-                    el módulo proporciona una interfaz abstracta que se encarga
-                    de las diferencias específicas del sistema.
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      >Acceso a funcionalidades del sistema</span
-                    >: Te permite aprovechar las capacidades del sistema
-                    operativo directamente desde tu código Python.
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      >Manipulación del sistema de archivos</span
-                    >: Facilita la creación, eliminación, renombrado y
-                    manipulación de archivos y directorios.
-                  </li>
-                </ul>
-              </div>
-              <!-- ¿Por Qué Usar el Módulo OS? Fin -->
-              <!-- Trabajar con Rutas y Directorios -->
-              <div id="trabajarConRutasYDirectorios" class="mt-5 pt-5">
-                <h2 class="mt-1">Trabajar con Rutas y Directorios</h2>
-                <ul>
-                  <li>
-                    <span class="fw-bold"
-                      ><code class="language-python">os.getcwd()</code></span
-                    >: Devuelve el directorio de trabajo actual.
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      ><code class="language-python">os.chdir(path)</code></span
-                    >: Cambia el directorio de trabajo a la ruta especificada.
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      ><code class="language-python"
-                        >os.listdir(path)</code
-                      ></span
-                    >: Lista los archivos y directorios en una ruta.
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      ><code class="language-python">os.mkdir(path)</code></span
-                    >: Crea un nuevo directorio.
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      ><code class="language-python"
-                        >os.makedirs(path)</code
-                      ></span
-                    >: Crea directorios de forma recursiva.
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      ><code class="language-python">os.rmdir(path)</code></span
-                    >: Elimina un directorio vacío.
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      ><code class="language-python"
-                        >os.removedirs(path)</code
-                      ></span
-                    >: Elimina directorios recursivamente.
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      ><code class="language-python"
-                        >os.path.join(path1, path2, ...)</code
-                      ></span
-                    >: Une rutas de forma independiente al sistema operativo.
-                  </li>
-                </ul>
-                <p><strong>Ejemplo</strong>:</p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <!-- Introducción al Módulo OS -->
+            <div id="introduccion-al-modulo-os" class="mt-5">
+              <h2>Introducción al Módulo OS</h2>
+              <p>
+                El módulo<code class="language-python">os</code>de Python es
+                una herramienta que permite la interacción directa con el
+                sistema operativo, ofreciendo funcionalidades similares a los
+                comandos nativos disponibles tanto en sistemas Unix como
+                Windows. Por ejemplo, incluye funciones como
+                <code class="language-python">mkdir </code>para crear
+                directorios, replicando la funcionalidad del comando del mismo
+                nombre en la línea de comandos.
+              </p>
+              <p>
+                Las operaciones principales del módulo
+                <code class="language-python">os</code> se centran en el
+                manejo de archivos y directorios, permitiendo realizar
+                diversas tareas de gestión y manipulación de estos elementos
+                del sistema de archivos, lo que facilita la automatización de
+                tareas relacionadas con la organización de datos y estructura
+                de carpetas.
+              </p>
+              <p>
+                Además de las funciones básicas de gestión de archivos, el
+                módulo<code class="language-python">os</code>proporciona
+                capacidades adicionales importantes como la obtención de
+                información del sistema operativo, la gestión de procesos en
+                ejecución y el manejo de operaciones de entrada/salida
+                mediante descriptores de archivos, lo que lo convierte en una
+                herramienta versátil para la administración del sistema.
+              </p>
+            </div>
+            <!-- Introducción al Módulo OS Fin -->
+            <!-- ¿Por Qué Usar el Módulo OS? -->
+            <div id="por-que-usar-el-modulo-os" class="mt-5">
+              <h2>¿Por Qué Usar el Módulo OS?</h2>
+              <ul>
+                <li>
+                  <span class="fw-bold">Portabilidad</span>: El código que
+                  utiliza el módulo os a menudo puede ejecutarse en diferentes
+                  sistemas operativos (como Windows, macOS y Linux) sin
+                  necesidad de modificaciones importantes. Esto se debe a que
+                  el módulo proporciona una interfaz abstracta que se encarga
+                  de las diferencias específicas del sistema.
+                </li>
+                <li>
+                  <span class="fw-bold">Acceso a funcionalidades del sistema</span>: Te permite aprovechar las
+                  capacidades del sistema
+                  operativo directamente desde tu código Python.
+                </li>
+                <li>
+                  <span class="fw-bold">Manipulación del sistema de archivos</span>: Facilita la creación, eliminación,
+                  renombrado y
+                  manipulación de archivos y directorios.
+                </li>
+              </ul>
+            </div>
+            <!-- ¿Por Qué Usar el Módulo OS? Fin -->
+            <!-- Trabajar con Rutas y Directorios -->
+            <div id="trabajarConRutasYDirectorios" class="mt-5">
+              <h2>Trabajar con Rutas y Directorios</h2>
+              <ul>
+                <li>
+                  <span class="fw-bold"><code class="language-python">os.getcwd()</code></span>: Devuelve el directorio
+                  de trabajo actual.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">os.chdir(path)</code></span>: Cambia el directorio
+                  de trabajo a la ruta especificada.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">os.listdir(path)</code></span>: Lista los archivos
+                  y directorios en una ruta.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">os.mkdir(path)</code></span>: Crea un nuevo
+                  directorio.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">os.makedirs(path)</code></span>: Crea directorios
+                  de forma recursiva.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">os.rmdir(path)</code></span>: Elimina un
+                  directorio vacío.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">os.removedirs(path)</code></span>: Elimina
+                  directorios recursivamente.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">os.path.join(path1, path2, ...)</code></span>: Une
+                  rutas de forma independiente al sistema operativo.
+                </li>
+              </ul>
+              <p><strong>Ejemplo</strong>:</p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   import os
                   # Directorio actual
@@ -340,44 +258,33 @@
                   print("Contenido del directorio:", os.listdir('.'))
                 </code>
               </pre>
-                </div>
               </div>
-              <!-- Trabajar con Rutas y Directorios Fin -->
-              <!-- Información sobre Archivos y Directorios -->
-              <div id="informacionSobreArchivosYDirectorios" class="mt-5 pt-5">
-                <h2 class="mt-1">Información sobre Archivos y Directorios</h2>
-                <ul>
-                  <li>
-                    <span class="fw-bold"
-                      ><code class="language-python"
-                        >os.path.exists(path)</code
-                      ></span
-                    >: Comprueba si un archivo o directorio existe.
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      ><code class="language-python">os.path.isfile(path</code
-                      >)</span
-                    >: Verifica si es un archivo.
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      ><code class="language-python"
-                        >os.path.isdir(path)</code
-                      ></span
-                    >: Verifica si es un directorio.
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      ><code class="language-python"
-                        >os.path.getsize(path)</code
-                      ></span
-                    >: Obtiene el tamaño del archivo en bytes.
-                  </li>
-                </ul>
-                <p><strong>Ejemplo</strong>:</p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <!-- Trabajar con Rutas y Directorios Fin -->
+            <!-- Información sobre Archivos y Directorios -->
+            <div id="informacion-sobre-archivos-y-directorios" class="mt-5">
+              <h2>Información sobre Archivos y Directorios</h2>
+              <ul>
+                <li>
+                  <span class="fw-bold"><code class="language-python">os.path.exists(path)</code></span>: Comprueba si
+                  un archivo o directorio existe.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">os.path.isfile(path</code>)</span>: Verifica si es
+                  un archivo.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">os.path.isdir(path)</code></span>: Verifica si es
+                  un directorio.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">os.path.getsize(path)</code></span>: Obtiene el
+                  tamaño del archivo en bytes.
+                </li>
+              </ul>
+              <p><strong>Ejemplo</strong>:</p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import os
                       archivo = 'archivo.txt'
@@ -392,38 +299,28 @@
                           print("El archivo o directorio no existe.")
                     </code>
                   </pre>
-                </div>
               </div>
-              <!-- Información sobre Archivos y Directorios Fin -->
-              <!-- Manipulación de Archivos -->
-              <div id="manipulacionDeArchivos" class="mt-5 pt-5">
-                <h2 class="mt-1">Manipulación de Archivos</h2>
-                <ul>
-                  <li>
-                    <span class="fw-bold"
-                      ><code class="language-python"
-                        >os.rename(src, dst)</code
-                      ></span
-                    >: Renombra un archivo o directorio.
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      ><code class="language-python"
-                        >os.remove(path)</code
-                      ></span
-                    >: Elimina un archivo.
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      ><code class="language-python"
-                        >os.unlink(path)</code
-                      ></span
-                    >: Similar a os.remove, elimina un archivo.
-                  </li>
-                </ul>
-                <p><strong>Ejemplo</strong>:</p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <!-- Información sobre Archivos y Directorios Fin -->
+            <!-- Manipulación de Archivos -->
+            <div id="manipulacion-de-archivos" class="mt-5">
+              <h2>Manipulación de Archivos</h2>
+              <ul>
+                <li>
+                  <span class="fw-bold"><code class="language-python">os.rename(src, dst)</code></span>: Renombra un
+                  archivo o directorio.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">os.remove(path)</code></span>: Elimina un archivo.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">os.unlink(path)</code></span>: Similar a
+                  os.remove, elimina un archivo.
+                </li>
+              </ul>
+              <p><strong>Ejemplo</strong>:</p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import os
                       # Renombrar archivo
@@ -432,30 +329,26 @@
                       os.remove('archivo_a_eliminar.txt')
                     </code>
                   </pre>
-                </div>
               </div>
-              <!-- Manipulación de Archivos Fin -->
-              <!-- Interacción con Procesos -->
-              <div id="interaccionConProcesos" class="mt-5 pt-5">
-                <h2 class="mt-1">Interacción con Procesos</h2>
-                <ul>
-                  <li>
-                    <span class="fw-bold"
-                      ><code class="language-python"
-                        >os.system(command)</code
-                      ></span
-                    >: Ejecuta un comando en la línea de comandos del sistema
-                    operativo.
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      ><code class="language-python">os.environ</code></span
-                    >: Accede a las variables de entorno del sistema operativo.
-                  </li>
-                </ul>
-                <p><strong>Ejemplo</strong>:</p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <!-- Manipulación de Archivos Fin -->
+            <!-- Interacción con Procesos -->
+            <div id="interaccion-con-procesos" class="mt-5">
+              <h2>Interacción con Procesos</h2>
+              <ul>
+                <li>
+                  <span class="fw-bold"><code class="language-python">os.system(command)</code></span>: Ejecuta un
+                  comando en la línea de comandos del sistema
+                  operativo.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">os.environ</code></span>: Accede a las variables
+                  de entorno del sistema operativo.
+                </li>
+              </ul>
+              <p><strong>Ejemplo</strong>:</p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import os
                       # Ejecutar comando del sistema
@@ -464,67 +357,56 @@
                       print("PATH del sistema:", os.environ['PATH'])
                     </code>
                   </pre>
-                </div>
               </div>
-              <!-- Interacción con Procesos Fin -->
-              <!-- Permisos y Propietarios -->
-              <div id="permisosYPropietarios" class="mt-5 pt-5">
-                <h2 class="mt-1">Permisos y Propietarios</h2>
-                <ul>
-                  <li>
-                    <span class="fw-bold"
-                      ><code class="language-python"
-                        >os.chmod(path, mode)</code
-                      ></span
-                    >: Cambia los permisos de un archivo o directorio.
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      ><code class="language-python"
-                        >os.chown(path, uid, gid)</code
-                      ></span
-                    >: Cambia el propietario de un archivo o directorio (en
-                    sistemas Unix).
-                  </li>
-                </ul>
-                <p><strong>Ejemplo</strong>:</p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <!-- Interacción con Procesos Fin -->
+            <!-- Permisos y Propietarios -->
+            <div id="permisos-y-propietarios" class="mt-5">
+              <h2>Permisos y Propietarios</h2>
+              <ul>
+                <li>
+                  <span class="fw-bold"><code class="language-python">os.chmod(path, mode)</code></span>: Cambia los
+                  permisos de un archivo o directorio.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">os.chown(path, uid, gid)</code></span>: Cambia el
+                  propietario de un archivo o directorio (en
+                  sistemas Unix).
+                </li>
+              </ul>
+              <p><strong>Ejemplo</strong>:</p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import stat
                       # Cambiar permisos
                       os.chmod('archivo.txt', stat.S_IREAD)  # Solo lectura
                     </code>
                   </pre>
-                </div>
               </div>
-              <!-- Permisos y Propietarios Fin -->
-              <!-- Operaciones Relacionadas con el Sistema -->
-              <div id="operacionesRelacionadasConElSistema" class="mt-5 pt-5">
-                <h2 class="mt-1">Operaciones Relacionadas con el Sistema</h2>
-                <ul>
-                  <li>
-                    <span class="fw-bold"
-                      ><code class="language-python">os.name</code></span
-                    >: Devuelve el nombre del sistema operativo (<code
-                      class="language-python"
-                      >'posix'</code
-                    >, <code class="language-python">'nt'</code>, etc.).
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      ><code class="language-python">os.uname()</code></span
-                    >: Información sobre el sistema (solo en Unix).
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      ><code class="language-python">os.cpu_count()</code></span
-                    >: Número de CPUs disponibles.
-                  </li>
-                </ul>
-                <p><strong>Ejemplo</strong>:</p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <!-- Permisos y Propietarios Fin -->
+            <!-- Operaciones Relacionadas con el Sistema -->
+            <div id="operaciones-relacionadas-con-el-sistema" class="mt-5">
+              <h2>Operaciones Relacionadas con el Sistema</h2>
+              <ul>
+                <li>
+                  <span class="fw-bold"><code class="language-python">os.name</code></span>: Devuelve el nombre del
+                  sistema operativo (<code class="language-python">'posix'</code>, <code
+                    class="language-python">'nt'</code>, etc.).
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">os.uname()</code></span>: Información sobre el
+                  sistema (solo en Unix).
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">os.cpu_count()</code></span>: Número de CPUs
+                  disponibles.
+                </li>
+              </ul>
+              <p><strong>Ejemplo</strong>:</p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import os
                       print("Sistema operativo:", os.name)
@@ -533,52 +415,47 @@
                       print("Número de CPUs disponibles:", os.cpu_count())
                     </code>
                   </pre>
-                </div>
               </div>
-              <!-- Operaciones Relacionadas con el Sistema Fin -->
-              <!-- Compatibilidad con Sistemas Operativos -->
-              <div id="compatibilidadConSistemasOperativos" class="mt-5 pt-5">
-                <h2 class="mt-1">Compatibilidad con Sistemas Operativos</h2>
-                <p>
-                  El módulo <code class="language-python">OS</code> es
-                  multiplataforma, pero algunas funciones pueden no estar
-                  disponibles en todos los sistemas. Por ejemplo:
-                </p>
-                <ul>
-                  <li>
-                    <span class="fw-bold"
-                      ><code class="language-python">os.uname()</code></span
-                    >: Solo está disponible en sistemas tipo Unix.
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      ><code class="language-python"
-                        >os.startfile(path)</code
-                      ></span
-                    >: Solo está disponible en Windows.
-                  </li>
-                </ul>
-              </div>
-              <!-- Compatibilidad con Sistemas Operativos Fin -->
-              <!-- Buenas Prácticas para Usar OS -->
-              <div id="buenasPracticasParaUsarOS" class="mt-5 pt-5">
-                <h2 class="mt-1">Buenas Practicas para Usar OS</h2>
-                <ul>
-                  <li>
-                    <span class="fw-bold"
-                      >Usar <code class="language-python">os.path</code></span
-                    >: Siempre que sea posible, utilice las funciones de os.path
-                    para garantizar la compatibilidad multiplataforma.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Capturar excepciones</span>: Algunas
-                    operaciones, como cambiar de directorio o eliminar archivos,
-                    pueden generar errores si la ruta no existe o no se tienen
-                    permisos.
-                  </li>
-                </ul>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <!-- Operaciones Relacionadas con el Sistema Fin -->
+            <!-- Compatibilidad con Sistemas Operativos -->
+            <div id="compatibilidad-con-sistemas-operativos" class="mt-5">
+              <h2>Compatibilidad con Sistemas Operativos</h2>
+              <p>
+                El módulo <code class="language-python">OS</code> es
+                multiplataforma, pero algunas funciones pueden no estar
+                disponibles en todos los sistemas. Por ejemplo:
+              </p>
+              <ul>
+                <li>
+                  <span class="fw-bold"><code class="language-python">os.uname()</code></span>: Solo está disponible en
+                  sistemas tipo Unix.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">os.startfile(path)</code></span>: Solo está
+                  disponible en Windows.
+                </li>
+              </ul>
+            </div>
+            <!-- Compatibilidad con Sistemas Operativos Fin -->
+            <!-- Buenas Prácticas para Usar OS -->
+            <div id="buenas-practicas-para-usar-os" class="mt-5">
+              <h2>Buenas Practicas para Usar OS</h2>
+              <ul>
+                <li>
+                  <span class="fw-bold">Usar <code class="language-python">os.path</code></span>: Siempre que sea
+                  posible, utilice las funciones de os.path
+                  para garantizar la compatibilidad multiplataforma.
+                </li>
+                <li>
+                  <span class="fw-bold">Capturar excepciones</span>: Algunas
+                  operaciones, como cambiar de directorio o eliminar archivos,
+                  pueden generar errores si la ruta no existe o no se tienen
+                  permisos.
+                </li>
+              </ul>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import os
                       try:
@@ -587,159 +464,164 @@
                           print("El archivo no existe.")
                     </code>
                   </pre>
-                </div>
               </div>
-              <!-- Buenas Practicas para Usar OS -->
             </div>
-          </article>
-          <!--  El módulo os, Interactuando con el sistema operativo en Python  -->
+            <!-- Buenas Practicas para Usar OS -->
+          </div>
+        </article>
+        <!--  El módulo os, Interactuando con el sistema operativo en Python  -->
 
-          <!--  comentarios  -->
-          <article class="row pt-5" id="comments">
-            <h2>COMENTARIOS</h2>
-            <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por
-              favor infórmelo a través del formulario disponible para este
-              propósito.
-            </p>
-            <div class="d-flex justify-content-center">
-              <form
-                action="https://formspree.io/f/mdkdawkg"
-                method="POST"
-                id="myForm"
-              >
-                <fieldset class="d-flex flex-column gap-3">
-                  <legend class="text-center fs-4">Deje su comentario</legend>
+        <!--  comentarios  -->
+        <article class="row pt-5" id="comments">
+          <h2>COMENTARIOS</h2>
+          <p>
+            Si tiene alguna inquietud, duda o ha encontrado algún error, por
+            favor infórmelo a través del formulario disponible para este
+            propósito.
+          </p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
 
-                  <div class="d-flex flex-column">
-                    <label for="name">Nombre:</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="User"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
+                </div>
 
-                  <div class="d-flex flex-column">
-                    <label for="email">Email:</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="user@mail.com"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
 
-                  <div class="d-flex flex-column">
-                    <label for="message">Mensaje:</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      cols="30"
-                      rows="5"
-                      placeholder="Su comentario..."
-                      class="form-control rounded-3"
-                      required
-                    ></textarea>
-                  </div>
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
 
-                  <button
-                    type="submit"
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
-                  >
-                    Enviar
-                  </button>
-                </fieldset>
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                  Enviar
+                </button>
+              </fieldset>
 
-                <p class="small text-center">
-                  La política de privacidad, y los términos y condiciones están
-                  disponibles en el formulario de contacto.
-                </p>
-              </form>
+              <p class="small text-center">
+                La política de privacidad, y los términos y condiciones están
+                disponibles en el formulario de contacto.
+              </p>
+            </form>
+          </div>
+        </article>
+        <!--  fin comentarios  -->
+      </section>
+
+      <!--  barra lateral  -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        <h1>En Este Artículo</h1>
+        <div class="menu-scroll">
+          <div class="menu-container">
+            <div class="border border-1">
+              <div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
+              <div class="menu-item"><a href="#introduccion-al-modulo-os" class="simple-link">Introducción al Módulo
+                  OS</a></div>
+              <div class="menu-item"><a href="#por-que-usar-el-modulo-os" class="simple-link">¿Por Qué Usar el Módulo
+                  OS?</a></div>
+              <div class="menu-item"><a href="#trabajarConRutasYDirectorios" class="simple-link">Trabajar con Rutas y
+                  Directorios</a></div>
+              <div class="menu-item"><a href="#informacion-sobre-archivos-y-directorios" class="simple-link">Información
+                  sobre Archivos y Directorios</a></div>
+              <div class="menu-item"><a href="#manipulacion-de-archivos" class="simple-link">Manipulación de
+                  Archivos</a></div>
+              <div class="menu-item"><a href="#interaccion-con-procesos" class="simple-link">Interacción con
+                  Procesos</a></div>
+              <div class="menu-item"><a href="#permisos-y-propietarios" class="simple-link">Permisos y Propietarios</a>
+              </div>
+              <div class="menu-item"><a href="#operaciones-relacionadas-con-el-sistema" class="simple-link">Operaciones
+                  Relacionadas con el Sistema</a></div>
+              <div class="menu-item"><a href="#compatibilidad-con-sistemas-operativos"
+                  class="simple-link">Compatibilidad
+                  con Sistemas Operativos</a></div>
+              <div class="menu-item"><a href="#buenas-practicas-para-usar-os" class="simple-link">Buenas Practicas para
+                  Usar OS</a></div>
+              <!-- Comentarios  -->
+              <div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div>
             </div>
-          </article>
-          <!--  fin comentarios  -->
-        </section>
-        <!--  barra lateral  -->
-        <aside class="col-lg-3 d-none d-lg-block pt-5">
-          <h1>En Este Artículo</h1>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a href="#introduccion">Introducción</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#introduccionAlModuloOS">Introducción al Módulo OS</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#PorQueUsarElMOduloOS?">¿Por Qué Usar el Módulo OS?</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#trabajarConRutasYDirectorios"
-                >Trabajar con Rutas y Directorios</a
-              >
-            </li>
-            <li class="list-group-item">
-              <a href="#informacionSobreArchivosYDirectorios"
-                >Información sobre Archivos y Directorios</a
-              >
-            </li>
-            <li class="list-group-item">
-              <a href="#manipulacionDeArchivos">Manipulación de Archivos</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#interaccionConProcesos">Interacción con Procesos</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#permisosYPropietarios">Permisos y Propietarios</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#operacionesRelacionadasConElSistema"
-                >Operaciones Relacionadas con el Sistema</a
-              >
-            </li>
-            <li class="list-group-item">
-              <a href="#compatibilidadConSistemasOperativos"
-                >Compatibilidad con Sistemas Operativos</a
-              >
-            </li>
-            <li class="list-group-item">
-              <a href="#buenasPracticasParaUsarOS"
-                >Buenas Practicas para Usar OS</a
-              >
-            </li>
-            <li class="list-group-item">
-              <a href="#comments">Comentarios</a>
-            </li>
-          </ul>
-        </aside>
-        <!--  fin barra lateral  -->
-      </main>
-      <!--  fin principal  -->
+          </div>
+        </div>
+      </aside>
+      <!--  fin barra lateral  -->
+    </main>
+    <!--  fin principal  -->
+  </div>
+  <!--  Principal Fin  -->
+
+  <!--  pie de pagina  -->
+  <footer class="row border-top border-1 m-1 mt-auto">
+    <div class="row">
+      <!-- contacto -->
+      <address class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Contacto</div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class="ms-3">
+            <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class="ms-3">Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      <!-- Derechos de autor -->
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
+      </div>
+      <!-- redes sociales -->
+      <div class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Redes Sociales</div>
+        <div class="d-flex justify-content-evenly align-items-center gap-5">
+          <div>
+            <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <!--  Principal Fin  -->
+    <div class="d-flex align-items-center justify-content-center gap-2"></div>
+  </footer>
+  <!--  pie de pagina fin  -->
 
-    <!-- button to top -->
-    <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        fill="currentColor"
-        class="bi bi-arrow-bar-up"
-        viewBox="0 0 16 16"
-        style="margin-left: -2px"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"
-        ></path>
-      </svg>
-    </button>
-    <!-- Fin button to top -->
-  </body>
+
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
 </html>

@@ -1,409 +1,339 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-  <head>
-    <!-- Metaetiquetas -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Guía práctica para dominar el intercambio de información entre funciones y su entorno en Python."
-    />
-    <meta
-      name="title"
-      content="Cómo las funciones se comunican con su entorno Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta name="author" content="Ing. Eduardo Herrera Forero" />
-    <meta name="application-name" content="EHF" />
-    <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://eduardoherreraf.github.io/cursoPython3-0402_como_las_funciones_se_comunican_con_su_entorno.html"
-    />
-    <!-- Fin Metaetiquetas -->
 
-    <!-- Open Graph data -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Cómo las funciones se comunican con su entorno Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      property="og:description"
-      content="Guía práctica para dominar el intercambio de información entre funciones y su entorno en Python."
-    />
-    <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      property="og:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      property="og:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0402_como_las_funciones_se_comunican_con_su_entorno.html"
-    />
-    <meta property="og:locale" content="es_CO" />
-    <!-- fin Open Graph data -->
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Guía práctica para dominar el intercambio de información entre funciones y su entorno en Python." />
+  <meta name="title" content="Cómo las funciones se comunican con su entorno Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical"
+    href="https://eduardoherreraf.github.io/cursoPython3-0402_como_las_funciones_se_comunican_con_su_entorno.html" />
+  <!-- Fin Metaetiquetas -->
 
-    <!-- Twitter cards -->
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="Cómo las funciones se comunican con su entorno Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      name="twitter:description"
-      content="Guía práctica para dominar el intercambio de información entre funciones y su entorno en Python."
-    />
-    <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      name="twitter:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      name="twitter:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0402_como_las_funciones_se_comunican_con_su_entorno.html"
-    />
-    <meta name="twitter:site" content="@ehfeduardo" />
-    <!-- Fin Twitter cards -->
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title"
+    content="Cómo las funciones se comunican con su entorno Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta property="og:description"
+    content="Guía práctica para dominar el intercambio de información entre funciones y su entorno en Python." />
+  <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta property="og:url"
+    content="https://eduardoherreraf.github.io/cursoPython3-0402_como_las_funciones_se_comunican_con_su_entorno.html" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
 
-    <!-- iconos -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="android-chrome-192x192.png"
-    />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- fin iconos -->
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title"
+    content="Cómo las funciones se comunican con su entorno Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description"
+    content="Guía práctica para dominar el intercambio de información entre funciones y su entorno en Python." />
+  <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta name="twitter:url"
+    content="https://eduardoherreraf.github.io/cursoPython3-0402_como_las_funciones_se_comunican_con_su_entorno.html" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
 
-    <title>
-      Cómo las funciones se comunican con su entorno Python 3 - Ing. Eduardo
-      Herrera Forero.
-    </title>
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
 
-    <script type="module" src="./js/main.js"></script>
+  <title>
+    Cómo las funciones se comunican con su entorno Python 3 - Ing. Eduardo
+    Herrera Forero.
+  </title>
 
-    <meta
-      name="google-site-verification"
-      content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"
-    />
-  </head>
+  <script type="module" src="./js/main.js"></script>
 
-  <body>
-    <!-- Barra deNavegación -->
-    <nav
-      class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
-    >
-      <div class="container-fluid">
-        <!-- Enlace a la página principal con el logo y nombre -->
-        <a
-          class="navbar-brand d-flex align-items-center ms-2"
-          href="index.html"
-        >
-          <img
-            src="./images/logo.png"
-            alt="Logo de Ing. Eduardo Herrera Forero"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top me-1"
-          />
-          <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
-        </a>
-        <!-- Botón para activar el menú en dispositivos pequeños -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Menú de navegación -->
-        <div
-          class="collapse navbar-collapse ms-auto text-center"
-          id="navbarSupportedContent"
-        >
-          <ul
-            class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100"
-          >
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#portfolio"
-                >PORTAFOLIO</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 publicaciones-activo"
-                href="index.html#blog"
-                >PUBLICACIONES</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
-            </li>
-          </ul>
-        </div>
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Barra deNavegación -->
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
 
-    <!--  principal  -->
-    <div class="container-fluid" id="introduccion">
-      <main class="row">
-        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
-          <!--  Cómo las funciones se comunican con su entorno en Python  -->
-          <article
-            class="row border-1 border-bottom pb-3"
-            data-bs-spy="scroll"
-            data-bs-target="#list-example"
-            data-bs-smooth-scroll="true"
-          >
-            <div>
-              <header>
-                <h1>
-                  Cómo las funciones se comunican con su entorno en Python
-                </h1>
-              </header>
-              <!-- Introducción -->
-              <div class="mt-5">
-                <h2>Introducción</h2>
-                <p>
-                  En este apartado se explorarán las funciones en Python,
-                  profundizando en la creación de funciones con y sin
-                  parámetros. Se proporcionarán ejemplos prácticos de funciones
-                  que reciben uno, dos o tres argumentos, y se explicará el
-                  proceso de pasar valores a estas funciones.
-                </p>
-                <div class="centrar-imagen imagen50">
-                  <figure>
-                    <img
-                      src="https://i.ibb.co/PhTWcSp/funcionesentorno.jpg"
-                      class="img-fluid"
-                      alt="Cómo las funciones se comunican con su entorno en Python  "
-                      title="Tutorial de Funciones en Python: Sintaxis, Parámetros y Argumentos"
-                    />
-                    <figcaption>
-                      Cómo las funciones se comunican con su entorno en Python
-                    </figcaption>
-                  </figure>
-                </div>
+  <!--  principal  -->
+  <div class="container-fluid" id="introduccion">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!--  Cómo las funciones se comunican con su entorno en Python  -->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <div>
+            <header>
+              <h1>
+                Cómo las funciones se comunican con su entorno en Python
+              </h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-5">
+              <h2>Introducción</h2>
+              <p>
+                En este apartado se explorarán las funciones en Python,
+                profundizando en la creación de funciones con y sin
+                parámetros. Se proporcionarán ejemplos prácticos de funciones
+                que reciben uno, dos o tres argumentos, y se explicará el
+                proceso de pasar valores a estas funciones.
+              </p>
+              <div class="centrar-imagen imagen50">
+                <figure>
+                  <img src="https://i.ibb.co/PhTWcSp/funcionesentorno.jpg" class="img-fluid"
+                    alt="Cómo las funciones se comunican con su entorno en Python  "
+                    title="Tutorial de Funciones en Python: Sintaxis, Parámetros y Argumentos" />
+                  <figcaption>
+                    Cómo las funciones se comunican con su entorno en Python
+                  </figcaption>
+                </figure>
               </div>
+            </div>
 
-              <!-- Parámetros y Argumentos -->
-              <div id="parametrosyArgumentos" class="mt-5">
-                <h2 class="mt-1">Parámetros y Argumentos</h2>
+            <!-- Parámetros y Argumentos -->
+            <div id="parametrosyArgumentos" class="mt-5">
+              <h2>Parámetros y Argumentos</h2>
+              <p>
+                En Python, los parámetros y argumentos son conceptos
+                fundamentales al trabajar con funciones. A continuación, se
+                explica cada uno de ellos:
+              </p>
+              <!-- Parámetros -->
+              <div>
+                <h3>Parámetros</h3>
                 <p>
-                  En Python, los parámetros y argumentos son conceptos
-                  fundamentales al trabajar con funciones. A continuación, se
-                  explica cada uno de ellos:
+                  Los parámetros son las variables que se definen en la
+                  declaración de una función. Actúan como marcadores de
+                  posición para los valores que se pasarán a la función cuando
+                  se llame. Los parámetros se especifican dentro de los
+                  paréntesis en la definición de la función.
                 </p>
-                <!-- Parámetros -->
-                <div>
-                  <h3>Parámetros</h3>
-                  <p>
-                    Los parámetros son las variables que se definen en la
-                    declaración de una función. Actúan como marcadores de
-                    posición para los valores que se pasarán a la función cuando
-                    se llame. Los parámetros se especifican dentro de los
-                    paréntesis en la definición de la función.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def saludar(nombre, edad):
                             print(f"Hola, {nombre}. Tienes {edad} años.")
                       </code>
                     </pre>
-                  </div>
-                  <p>
-                    En este ejemplo,
-                    <code class="language-python">nombre</code> y
-                    <code class="language-python">edad</code> son los parámetros
-                    de la función saludar.
-                  </p>
                 </div>
-                <!-- Parámetros fin -->
-                <!-- Argumentos -->
-                <div>
-                  <h3>Argumentos</h3>
-                  <p>
-                    Los argumentos son los valores reales que se pasan a la
-                    función cuando se llama. Estos valores se asignan a los
-                    parámetros de la función en el orden en que se proporcionan.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                <p>
+                  En este ejemplo,
+                  <code class="language-python">nombre</code> y
+                  <code class="language-python">edad</code> son los parámetros
+                  de la función saludar.
+                </p>
+              </div>
+              <!-- Parámetros fin -->
+              <!-- Argumentos -->
+              <div>
+                <h3>Argumentos</h3>
+                <p>
+                  Los argumentos son los valores reales que se pasan a la
+                  función cuando se llama. Estos valores se asignan a los
+                  parámetros de la función en el orden en que se proporcionan.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         saludar("Juan", 30)
                       </code>
                     </pre>
-                  </div>
-                  <p>
-                    En este ejemplo, <code class="language-python">Juan</code> y
-                    <code class="language-python">30</code> son los argumentos
-                    que se pasan a la función saludar. El argumento
-                    <code class="language-python">Juan</code> se asigna al
-                    parámetro nombre, y el argumento
-                    <code class="language-python">30</code> se asigna al
-                    parámetro edad.
-                  </p>
                 </div>
-                <!-- Argumentos fin -->
-              </div>
-              <!-- Parámetros y Argumentos Fin -->
-              <!-- Paso de Argumentos Posicionales -->
-              <div id="pasoDeArgumentosPosicionales" class="mt-5">
-                <h2 class="mt-1">Paso de Argumentos Posicionales</h2>
                 <p>
-                  Cuando los valores se transmiten a una función siguiendo un
-                  orden específico, donde cada valor se vincula con su
-                  respectivo parámetro según su posición, nos referimos a este
-                  método como argumentos posicionales.
+                  En este ejemplo, <code class="language-python">Juan</code> y
+                  <code class="language-python">30</code> son los argumentos
+                  que se pasan a la función saludar. El argumento
+                  <code class="language-python">Juan</code> se asigna al
+                  parámetro nombre, y el argumento
+                  <code class="language-python">30</code> se asigna al
+                  parámetro edad.
                 </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Argumentos fin -->
+            </div>
+            <!-- Parámetros y Argumentos Fin -->
+            <!-- Paso de Argumentos Posicionales -->
+            <div id="pasoDeArgumentosPosicionales" class="mt-5">
+              <h2>Paso de Argumentos Posicionales</h2>
+              <p>
+                Cuando los valores se transmiten a una función siguiendo un
+                orden específico, donde cada valor se vincula con su
+                respectivo parámetro según su posición, nos referimos a este
+                método como argumentos posicionales.
+              </p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       def suma(a, b):
                         return a + b
                       resultado = suma(3, 5)  # a = 3, b = 5
                     </code>
                   </pre>
-                </div>
               </div>
-              <!-- Paso de ParámetrosPosicionales Fin -->
-              <!-- Paso de Argumentos de Palabra Clave -->
-              <div id="pasoDeArgumentosDePalabraClave" class="mt-5">
-                <h2 class="mt-1">Paso de Argumentos de Palabra Clave</h2>
-                <p>
-                  En Python existe un método alternativo para proporcionar
-                  argumentos a una función, que no depende del orden en que se
-                  escriben. Este sistema permite identificar cada argumento
-                  mediante un nombre específico en lugar de su ubicación en la
-                  función.
-                </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <!-- Paso de ParámetrosPosicionales Fin -->
+            <!-- Paso de Argumentos de Palabra Clave -->
+            <div id="pasoDeArgumentosDePalabraClave" class="mt-5">
+              <h2>Paso de Argumentos de Palabra Clave</h2>
+              <p>
+                En Python existe un método alternativo para proporcionar
+                argumentos a una función, que no depende del orden en que se
+                escriben. Este sistema permite identificar cada argumento
+                mediante un nombre específico en lugar de su ubicación en la
+                función.
+              </p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       def saludar(nombre, edad):
                           print(f"Hola, {nombre}. Tienes {edad} años.")
                           saludar(edad=30, nombre="Juan")
                     </code>
                   </pre>
-                </div>
               </div>
-              <!-- Paso de Argumentos de Palabra Clave Fin -->
-              <!-- Mezcla de Argumentos Posicionales y de Palabras Clave -->
-              <div
-                id="MezclaDeArgumentosPosicionalesyDePalabrasClave"
-                class="mt-5"
-              >
-                <h2 class="mt-1">
-                  Mezcla de Argumentos Posicionales y de Palabras Clave
-                </h2>
-                <p>
-                  Existe la flexibilidad de utilizar los dos tipos de argumentos
-                  en conjunto - únicamente se debe respetar un principio
-                  fundamental: los argumentos posicionales tienen que ir
-                  ubicados antes que los argumentos nombrados (o de palabra
-                  clave).
-                </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <!-- Paso de Argumentos de Palabra Clave Fin -->
+            <!-- Mezcla de Argumentos Posicionales y de Palabras Clave -->
+            <div id="MezclaDeArgumentosPosicionalesyDePalabrasClave" class="mt-5">
+              <h2>
+                Mezcla de Argumentos Posicionales y de Palabras Clave
+              </h2>
+              <p>
+                Existe la flexibilidad de utilizar los dos tipos de argumentos
+                en conjunto - únicamente se debe respetar un principio
+                fundamental: los argumentos posicionales tienen que ir
+                ubicados antes que los argumentos nombrados (o de palabra
+                clave).
+              </p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       def adding(a, b, c):
                           print(a, "+", b, "+", c, "=", a + b + c)
                     </code>
                   </pre>
-                </div>
-                <p>
-                  La función puede ser invocada de la siguiente manera con
-                  argumentos posicionales:
-                </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <p>
+                La función puede ser invocada de la siguiente manera con
+                argumentos posicionales:
+              </p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       adding(1, 2, 3)  # Salida: 1 + 2 + 3 = 6
                     </code>
                   </pre>
-                </div>
-                <p>
-                  Adicionalmente, existe la posibilidad de emplear la
-                  convocatoria mediante argumentos nombrados, tal como se
-                  ilustra en el ejemplo siguiente:
-                </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <p>
+                Adicionalmente, existe la posibilidad de emplear la
+                convocatoria mediante argumentos nombrados, tal como se
+                ilustra en el ejemplo siguiente:
+              </p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       adding(c = 1, a = 2, b = 3) # Salida: 1 + 2 + 3 = 6
                     </code>
                   </pre>
-                </div>
-                <p>
-                  Para finalizar, es posible combinar ambas formas de llamada a
-                  la función, tal como se muestra a continuación:
-                </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <p>
+                Para finalizar, es posible combinar ambas formas de llamada a
+                la función, tal como se muestra a continuación:
+              </p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       adding(3, c = 1, b = 2)  # Salida: 3 + 2 + 1 = 6
                     </code>
                   </pre>
-                </div>
-                <p>
-                  Los argumentos posicionales siempre deben preceder a otros
-                  tipos de argumentos en la definición de una función. Por
-                  ejemplo, el parámetro
-                  <code class="language-python">a</code> debe colocarse en
-                  primer lugar.
-                </p>
-                <p>
-                  En la siguiente invocación de la función, se produce una
-                  asignación repetida del parámetro
-                  <code class="language-python">a</code>, lo que provoca un
-                  error de sintaxis.
-                </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <p>
+                Los argumentos posicionales siempre deben preceder a otros
+                tipos de argumentos en la definición de una función. Por
+                ejemplo, el parámetro
+                <code class="language-python">a</code> debe colocarse en
+                primer lugar.
+              </p>
+              <p>
+                En la siguiente invocación de la función, se produce una
+                asignación repetida del parámetro
+                <code class="language-python">a</code>, lo que provoca un
+                error de sintaxis.
+              </p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       adding(3, a = 1, b = 2)   # Error
                     </code>
                   </pre>
-                </div>
-                <p>
-                  La respuesta de ejecución es: TypeError: adding() got multiple
-                  values for argument 'a'
-                </p>
               </div>
-              <!-- Mezcla de Argumentos Posicionales y de Palabras Clave Fin -->
-              <!-- Parámetros por Defecto -->
-              <div id="parametrosPorDefecto" class="mt-5">
-                <h2 class="mt-1">Parámetros por Defecto</h2>
-                <p>
-                  Los parámetros por defecto son una característica muy útil que
-                  te permite asignar valores predeterminados a los argumentos de
-                  una función.
-                </p>
-                <p>Ejemplos para entender cómo funciona:</p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+              <p>
+                La respuesta de ejecución es: TypeError: adding() got multiple
+                values for argument 'a'
+              </p>
+            </div>
+            <!-- Mezcla de Argumentos Posicionales y de Palabras Clave Fin -->
+            <!-- Parámetros por Defecto -->
+            <div id="parametrosPorDefecto" class="mt-5">
+              <h2>Parámetros por Defecto</h2>
+              <p>
+                Los parámetros por defecto son una característica muy útil que
+                te permite asignar valores predeterminados a los argumentos de
+                una función.
+              </p>
+              <p>Ejemplos para entender cómo funciona:</p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Ejemplo básico de parámetro por defecto
                       def saludar(nombre="Mundo"):
@@ -419,48 +349,48 @@
                       print(crear_perfil("Juan", 30, "Madrid"))  # Todos los parámetros
                     </code>
                   </pre>
-                </div>
               </div>
-              <!-- Parámetros por Defecto Fin -->
-              <!-- Parámetros Variables -->
-              <div id="parametrosVariables" class="mt-5">
-                <h2 class="mt-1">Parámetros Variables</h2>
+            </div>
+            <!-- Parámetros por Defecto Fin -->
+            <!-- Parámetros Variables -->
+            <div id="parametrosVariables" class="mt-5">
+              <h2>Parámetros Variables</h2>
+              <p>
+                En ocasiones, es posible que no se conozca de antemano cuántos
+                argumentos se pasarán a la función. Para manejar esto, Python
+                ofrece la posibilidad de utilizar
+                <code class="language-python">*args</code> y
+                <code class="language-python">**kwargs</code>.
+              </p>
+              <!-- Uso de *args -->
+              <div>
+                <h3>Uso de <code class="language-python">*args</code></h3>
                 <p>
-                  En ocasiones, es posible que no se conozca de antemano cuántos
-                  argumentos se pasarán a la función. Para manejar esto, Python
-                  ofrece la posibilidad de utilizar
-                  <code class="language-python">*args</code> y
-                  <code class="language-python">**kwargs</code>.
+                  El uso de <code class="language-python">*args</code> en
+                  Python permite que una función reciba un número variable de
+                  argumentos posicionales. Esto es especialmente útil cuando
+                  no se conoce de antemano cuántos argumentos necesitará
+                  manejar la función. Aquí se presenta una explicación
+                  detallada sobre su uso:
                 </p>
-                <!-- Uso de *args -->
+                <!-- Sintaxis Básica de *args -->
                 <div>
-                  <h3>Uso de *args</h3>
-                  <p>
-                    El uso de <code class="language-python">*args</code> en
-                    Python permite que una función reciba un número variable de
-                    argumentos posicionales. Esto es especialmente útil cuando
-                    no se conoce de antemano cuántos argumentos necesitará
-                    manejar la función. Aquí se presenta una explicación
-                    detallada sobre su uso:
-                  </p>
-                  <!-- Sintaxis Básica -->
-                  <div>
-                    <h4>Sintaxis Básica</h4>
-                    <ul>
-                      <li>
-                        La notación
-                        <code class="language-python">*args</code> es una
-                        convención; el nombre
-                        <code class="language-python">args</code> no es
-                        obligatorio, pero es ampliamente utilizado por claridad.
-                      </li>
-                      <li>
-                        Los argumentos pasados de esta forma se agrupan en una
-                        tupla.
-                      </li>
-                    </ul>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  <h4>Sintaxis Básica de <code class="language-python">*args</code></h4>
+                  <ul>
+                    <li>
+                      La notación
+                      <code class="language-python">*args</code> es una
+                      convención; el nombre
+                      <code class="language-python">args</code> no es
+                      obligatorio, pero es ampliamente utilizado por claridad.
+                    </li>
+                    <li>
+                      Los argumentos pasados de esta forma se agrupan en una
+                      tupla.
+                    </li>
+                  </ul>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           def ejemplo(*args):
                               for arg in args:
@@ -468,26 +398,26 @@
                           ejemplo(1, 2, 3, "Python")  # Imprime: 1, 2, 3, Python
                         </code>
                       </pre>
-                    </div>
                   </div>
-                  <!-- Sintaxis Básica fin -->
-                  <!-- Características -->
-                  <div>
-                    <h4>Características</h4>
-                    <ul>
-                      <li>
-                        Los argumentos se tratan como una tupla, lo que
-                        significa que son inmutables.
-                      </li>
-                      <li>
-                        Se puede usar en combinación con otros tipos de
-                        argumentos, como argumentos normales o
-                        <code class="language-python">**kwargs</code> (para
-                        argumentos con nombre).
-                      </li>
-                    </ul>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <!-- Sintaxis Básica de *args fin -->
+                <!-- Características -->
+                <div>
+                  <h4>Características de <code class="language-python">*args</code></h4>
+                  <ul>
+                    <li>
+                      Los argumentos se tratan como una tupla, lo que
+                      significa que son inmutables.
+                    </li>
+                    <li>
+                      Se puede usar en combinación con otros tipos de
+                      argumentos, como argumentos normales o
+                      <code class="language-python">**kwargs</code> (para
+                      argumentos con nombre).
+                    </li>
+                  </ul>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           def combinar_args(nombre, *args):
                               print(f"Nombre: {nombre}")
@@ -498,15 +428,15 @@
                           # Otros argumentos: (10, 20, 'Hola')
                         </code>
                       </pre>
-                    </div>
                   </div>
-                  <!-- Características fin -->
-                  <!-- Ejemplo Práctico -->
-                  <div>
-                    <h4>Ejemplos Prácticos</h4>
-                    <p class="fw-bold">Suma de Números</p>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <!-- Características de *args fin -->
+                <!-- Ejemplo Práctico -->
+                <div>
+                  <h4>Ejemplos Prácticos de <code class="language-python">*args</code></h4>
+                  <p class="fw-bold">Suma de Números</p>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           def suma(*numeros):
                               return sum(numeros)
@@ -514,12 +444,12 @@
                           print(resultado)  # Salida: 10
                         </code>
                       </pre>
-                    </div>
-                    <p class="fw-bold">
-                      Uso en Funciones que Aceptan Operaciones Variadas
-                    </p>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                  <p class="fw-bold">
+                    Uso en Funciones que Aceptan Operaciones Variadas
+                  </p>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           def imprimir_informacion(*datos):
                           for i, dato in enumerate(datos, 1):
@@ -531,34 +461,34 @@
                           # Dato 3: es poderoso
                         </code>
                       </pre>
-                    </div>
                   </div>
-                  <!-- Ejemplo Práctico fin -->
-                  <!-- Consideraciones -->
-                  <div>
-                    <h4>Consideraciones</h4>
-                    <ul>
-                      <li>
-                        Aunque <code class="language-python">*args</code> es
-                        útil, no debe usarse si los argumentos de la función
-                        tienen una cantidad fija y conocida.
-                      </li>
-                      <li>
-                        No puede usarse como el primer argumento en una función;
-                        si se necesita un argumento posicional, este debe
-                        definirse antes de
-                        <code class="language-python">*args</code>.
-                      </li>
-                    </ul>
-                    <p class="fw-bold">Combinación con **kwargs:</p>
-                    <p>
-                      Se puede usar
-                      <code class="language-python">*args</code> junto con
-                      <code class="language-python">**kwargs</code> para manejar
-                      tanto argumentos posicionales como argumentos con nombre:
-                    </p>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <!-- Ejemplo Práctico fin -->
+                <!-- Consideraciones de *args -->
+                <div>
+                  <h4>Consideraciones de <code class="language-python">**kwargs</code></h4>
+                  <ul>
+                    <li>
+                      Aunque <code class="language-python">*args</code> es
+                      útil, no debe usarse si los argumentos de la función
+                      tienen una cantidad fija y conocida.
+                    </li>
+                    <li>
+                      No puede usarse como el primer argumento en una función;
+                      si se necesita un argumento posicional, este debe
+                      definirse antes de
+                      <code class="language-python">*args</code>.
+                    </li>
+                  </ul>
+                  <p class="fw-bold">Combinación con **kwargs:</p>
+                  <p>
+                    Se puede usar
+                    <code class="language-python">*args</code> junto con
+                    <code class="language-python">**kwargs</code> para manejar
+                    tanto argumentos posicionales como argumentos con nombre:
+                  </p>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           def ejemplo_mixto(*args, **kwargs):
                               print("Posicionales:", args)
@@ -569,19 +499,19 @@
                           # Con nombre: {'clave1': 'valor1', 'clave2': 'valor2'}
                         </code>
                       </pre>
-                    </div>
                   </div>
-                  <!-- Consideraciones fin -->
-                  <!-- Uso Avanzado -->
-                  <div>
-                    <h4>Uso Avanzado</h4>
-                    <p>
-                      <code class="language-python">*args</code> también se
-                      puede utilizar para desempaquetar listas o tuplas como
-                      argumentos de una función:
-                    </p>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <!-- Consideraciones fin -->
+                <!-- Uso Avanzado de *args -->
+                <div>
+                  <h4>Uso Avanzado de <code class="language-python">*args</code></h4>
+                  <p>
+                    <code class="language-python">*args</code> también se
+                    puede utilizar para desempaquetar listas o tuplas como
+                    argumentos de una función:
+                  </p>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           def suma(a, b, c):
                               return a + b + c
@@ -589,45 +519,45 @@
                           print(suma(*valores))  # Salida: 6
                         </code>
                       </pre>
-                    </div>
                   </div>
-                  <!-- Uso Avanzado fin -->
                 </div>
-                <!-- Uso de *args fin -->
-                <!-- Uso de **kwargs -->
+                <!-- Uso Avanzado fin -->
+              </div>
+              <!-- Uso de *args fin -->
+              <!-- Uso de **kwargs -->
+              <div>
+                <h3>Uso de <code class="language-python">**kwargs</code></h3>
+                <p>
+                  El uso de <code class="language-python">**kwargs</code> en
+                  Python permite que una función acepte un número variable de
+                  argumentos con nombre. La palabra clave
+                  <code class="language-python">**kwargs</code> representa un
+                  diccionario que contiene los pares clave-valor pasados a la
+                  función. Esto es útil cuando no se conoce de antemano
+                  cuántos argumentos con nombre se van a necesitar.
+                </p>
+                <!-- Sintaxis básica de **kwargs -->
                 <div>
-                  <h3>Uso de **kwargs</h3>
-                  <p>
-                    El uso de <code class="language-python">**kwargs</code> en
-                    Python permite que una función acepte un número variable de
-                    argumentos con nombre. La palabra clave
-                    <code class="language-python">**kwargs</code> representa un
-                    diccionario que contiene los pares clave-valor pasados a la
-                    función. Esto es útil cuando no se conoce de antemano
-                    cuántos argumentos con nombre se van a necesitar.
-                  </p>
-                  <!-- Sintaxis básica -->
-                  <div>
-                    <h4>Sintaxis básica</h4>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  <h4>Sintaxis básica de <code class="language-python">**kwargs</code></h4>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           def funcion_ejemplo(**kwargs):
                               for clave, valor in kwargs.items():
                               print(f"{clave}: {valor}")
                         </code>
                       </pre>
-                    </div>
                   </div>
-                  <!-- Sintaxis básica fin -->
-                  <!-- Ejemplo de Uso -->
-                  <div>
-                    <h4>Ejemplo de Uso</h4>
-                    <ul>
-                      <li>
-                        Llamada a la función con argumentos variables:
-                        <div class="ej-sintaxis">
-                          <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <!-- Sintaxis básica fin -->
+                <!-- Ejemplo de Uso  de **kwargs-->
+                <div>
+                  <h4>Ejemplo de Uso de <code class="language-python">**kwargs</code></h4>
+                  <ul>
+                    <li>
+                      Llamada a la función con argumentos variables:
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               funcion_ejemplo(nombre="Juan", edad=25, ciudad="Bogotá")
                               # salida: nombre: Juan
@@ -635,14 +565,14 @@
                               # salida: ciudad: Bogotá
                             </code>
                           </pre>
-                        </div>
-                      </li>
-                      <li>
-                        Uso combinado con
-                        <code class="language-python">*args</code> y parámetros
-                        normales:
-                        <div class="ej-sintaxis">
-                          <pre data-src-status="loaded" tabindex="0">
+                      </div>
+                    </li>
+                    <li>
+                      Uso combinado con
+                      <code class="language-python">*args</code> y parámetros
+                      normales:
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               def ejemplo_combinado(parametro_fijo, *args, **kwargs):
                                   print(f"Fijo: {parametro_fijo}")
@@ -654,20 +584,20 @@
                               # Salida: Kwargs: {'nombre': 'Ana', 'edad': 30}
                             </code>
                           </pre>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Ejemplo de Uso fin -->
-                  <!-- Aplicaciones comunes -->
-                  <div>
-                    <h4>Aplicaciones comunes</h4>
-                    <ul>
-                      <li>
-                        Personalización de funciones: Permite escribir funciones
-                        genéricas que pueden aceptar diferentes configuraciones.
-                        <div class="ej-sintaxis">
-                          <pre data-src-status="loaded" tabindex="0">
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Ejemplo de Uso fin -->
+                <!-- Aplicaciones comunes  de **kwargs-->
+                <div>
+                  <h4>Aplicaciones comunes de <code class="language-python">**kwargs</code></h4>
+                  <ul>
+                    <li>
+                      Personalización de funciones: Permite escribir funciones
+                      genéricas que pueden aceptar diferentes configuraciones.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                                 def saludar(**kwargs):
                                   if 'nombre' in kwargs:
@@ -680,13 +610,13 @@
                               # Salida: Hola, desconocido.
                             </code>
                           </pre>
-                        </div>
-                      </li>
-                      <li>
-                        Construcción de objetos dinámicos: Se usa para
-                        inicializar objetos con atributos variables.
-                        <div class="ej-sintaxis">
-                          <pre data-src-status="loaded" tabindex="0">
+                      </div>
+                    </li>
+                    <li>
+                      Construcción de objetos dinámicos: Se usa para
+                      inicializar objetos con atributos variables.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               class Persona:
                               def __init__(self, **kwargs):
@@ -697,172 +627,182 @@
                               print(persona.edad)    # Salida: 40
                             </code>
                           </pre>
-                        </div>
-                      </li>
-                      <li>
-                        Integración con librerías: Librerías como
-                        <code class="language-python">matplotlib</code> o
-                        <code class="language-python">pandas</code> usan
-                        <code class="language-python">**kwargs</code> para
-                        aceptar configuraciones flexibles en sus funciones.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Aplicaciones comunes fin -->
-                  <!-- Consideraciones -->
-                  <div>
-                    <h4>Consideraciones</h4>
-                    <ul>
-                      <li>
-                        <code class="language-python">**kwargs</code> debe
-                        aparecer al final de los parámetros en la definición de
-                        una función.
-                      </li>
-                      <li>
-                        Es ideal documentar los posibles argumentos que la
-                        función puede aceptar para mantener
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Consideraciones fin -->
+                      </div>
+                    </li>
+                    <li>
+                      Integración con librerías: Librerías como
+                      <code class="language-python">matplotlib</code> o
+                      <code class="language-python">pandas</code> usan
+                      <code class="language-python">**kwargs</code> para
+                      aceptar configuraciones flexibles en sus funciones.
+                    </li>
+                  </ul>
                 </div>
-                <!-- Uso de **kwargs fin -->
+                <!-- Aplicaciones comunes fin -->
+                <!-- Consideraciones  de **kwargs-->
+                <div>
+                  <h4>Consideraciones de <code class="language-python">**kwargs</code></h4>
+                  <ul>
+                    <li>
+                      <code class="language-python">**kwargs</code> debe
+                      aparecer al final de los parámetros en la definición de
+                      una función.
+                    </li>
+                    <li>
+                      Es ideal documentar los posibles argumentos que la
+                      función puede aceptar para mantener
+                    </li>
+                  </ul>
+                </div>
+                <!-- Consideraciones fin -->
               </div>
-              <!-- Parámetros Variables Fin -->
+              <!-- Uso de **kwargs fin -->
             </div>
-          </article>
-          <!--  Cómo las funciones se comunican con su entorno en Python  -->
+            <!-- Parámetros Variables Fin -->
+          </div>
+        </article>
+        <!--  Cómo las funciones se comunican con su entorno en Python  -->
 
-          <!--  comentarios  -->
-          <article class="row pt-5" id="comments">
-            <h2>COMENTARIOS</h2>
-            <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por
-              favor infórmelo a través del formulario disponible para este
-              propósito.
-            </p>
-            <div class="d-flex justify-content-center">
-              <form
-                action="https://formspree.io/f/mdkdawkg"
-                method="POST"
-                id="myForm"
-              >
-                <fieldset class="d-flex flex-column gap-3">
-                  <legend class="text-center fs-4">Deje su comentario</legend>
+        <!--  comentarios  -->
+        <article class="row pt-5" id="comments">
+          <h2>COMENTARIOS</h2>
+          <p>
+            Si tiene alguna inquietud, duda o ha encontrado algún error, por
+            favor infórmelo a través del formulario disponible para este
+            propósito.
+          </p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
 
-                  <div class="d-flex flex-column">
-                    <label for="name">Nombre:</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="User"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
+                </div>
 
-                  <div class="d-flex flex-column">
-                    <label for="email">Email:</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="user@mail.com"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
 
-                  <div class="d-flex flex-column">
-                    <label for="message">Mensaje:</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      cols="30"
-                      rows="5"
-                      placeholder="Su comentario..."
-                      class="form-control rounded-3"
-                      required
-                    ></textarea>
-                  </div>
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
 
-                  <button
-                    type="submit"
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
-                  >
-                    Enviar
-                  </button>
-                </fieldset>
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                  Enviar
+                </button>
+              </fieldset>
 
-                <p class="small text-center">
-                  La política de privacidad, y los términos y condiciones están
-                  disponibles en el formulario de contacto.
-                </p>
-              </form>
+              <p class="small text-center">
+                La política de privacidad, y los términos y condiciones están
+                disponibles en el formulario de contacto.
+              </p>
+            </form>
+          </div>
+        </article>
+        <!--  fin comentarios  -->
+      </section>
+
+      <!--  barra lateral  -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        <h1>En Este Artículo</h1>
+        <div class="menu-scroll">
+          <div class="menu-container">
+            <div class="border border-1">
+              <div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
+              <div class="menu-item"><a href="#parametrosyArgumentos" class="simple-link">Parámetros y Argumentos</a>
+              </div>
+              <div class="menu-item"><a href="#pasoDeArgumentosPosicionales" class="simple-link">Paso de Argumentos
+                  Posicionales</a></div>
+              <div class="menu-item"><a href="#pasoDeArgumentosDePalabraClave" class="simple-link">Paso de Argumentos de
+                  Palabra Clave</a></div>
+              <div class="menu-item"><a href="#MezclaDeArgumentosPosicionalesyDePalabrasClave"
+                  class="simple-link">Mezcla de Argumentos Posicionales y de Palabras Clave</a></div>
+              <div class="menu-item"><a href="#parametrosPorDefecto" class="simple-link">Parámetros por Defecto</a>
+              </div>
+              <div class="menu-item"><a href="#parametrosVariables" class="simple-link">Parámetros Variables</a></div>
+              <!-- Comentarios  -->
+              <div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div>
             </div>
-          </article>
-          <!--  fin comentarios  -->
-        </section>
-        <!--  barra lateral  -->
-        <aside class="col-lg-3 d-none d-lg-block pt-5">
-          <h1>En Este Artículo</h1>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a href="#introduccion">Introducción</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#parametrosyArgumentos">Parámetros y Argumentos</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#pasoDeArgumentosPosicionales"
-                >Paso de Argumentos Posicionales</a
-              >
-            </li>
-            <li class="list-group-item">
-              <a href="#pasoDeArgumentosDePalabraClave"
-                >Paso de Argumentos de Palabra Clave</a
-              >
-            </li>
-            <li class="list-group-item">
-              <a href="#MezclaDeArgumentosPosicionalesyDePalabrasClave"
-                >Mezcla de Argumentos Posicionales y de Palabras Clave</a
-              >
-            </li>
-            <li class="list-group-item">
-              <a href="#parametrosPorDefecto">Parámetros por Defecto</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#parametrosVariables">Parámetros Variables</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#comments">Comentarios</a>
-            </li>
-          </ul>
-        </aside>
-        <!--  fin barra lateral  -->
-      </main>
-      <!--  fin principal  -->
+          </div>
+        </div>
+      </aside>
+      <!--  fin barra lateral  -->
+    </main>
+    <!--  fin principal  -->
+  </div>
+  <!--  Principal Fin  -->
+
+  <!--  pie de pagina  -->
+  <footer class="row border-top border-1 m-1 mt-auto">
+    <div class="row">
+      <!-- contacto -->
+      <address class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Contacto</div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class="ms-3">
+            <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class="ms-3">Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      <!-- Derechos de autor -->
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
+      </div>
+      <!-- redes sociales -->
+      <div class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Redes Sociales</div>
+        <div class="d-flex justify-content-evenly align-items-center gap-5">
+          <div>
+            <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <!--  Principal Fin  -->
+    <div class="d-flex align-items-center justify-content-center gap-2"></div>
+  </footer>
+  <!--  pie de pagina fin  -->
 
-    <!-- button to top -->
-    <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        fill="currentColor"
-        class="bi bi-arrow-bar-up"
-        viewBox="0 0 16 16"
-        style="margin-left: -2px"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"
-        ></path>
-      </svg>
-    </button>
-    <!-- Fin button to top -->
-  </body>
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
 </html>

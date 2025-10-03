@@ -1,899 +1,788 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-  <head>
-    <!-- Metaetiquetas -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="En Photoshop, las herramientas de selección son fundamentales para editar partes específicas de una imagen."
-    />
-    <meta
-      name="title"
-      content="Herramientas de Selección en Photoshop - Ing. Eduardo Herrera Forero."
-    />
-    <meta name="author" content="Ing. Eduardo Herrera Forero" />
-    <meta name="application-name" content="EHF" />
-    <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://eduardoherreraf.github.io/photoshop-0007_herramientas_de_seleccion.html"
-    />
-    <!-- Fin Metaetiquetas -->
 
-    <!-- Open Graph data -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Herramientas de Selección en Photoshop - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      property="og:description"
-      content="En Photoshop, las herramientas de selección son fundamentales para editar partes específicas de una imagen."
-    />
-    <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      property="og:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      property="og:url"
-      content="https://eduardoherreraf.github.io/photoshop-0007_herramientas_de_seleccion.html"
-    />
-    <meta property="og:locale" content="es_CO" />
-    <!-- fin Open Graph data -->
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="En Photoshop, las herramientas de selección son fundamentales para editar partes específicas de una imagen." />
+  <meta name="title" content="Herramientas de Selección en Photoshop - Ing. Eduardo Herrera Forero." />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eduardoherreraf.github.io/photoshop-0007_herramientas_de_seleccion.html" />
+  <!-- Fin Metaetiquetas -->
 
-    <!-- Twitter cards -->
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="Herramientas de Selección en Photoshop - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      name="twitter:description"
-      content="En Photoshop, las herramientas de selección son fundamentales para editar partes específicas de una imagen."
-    />
-    <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      name="twitter:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      name="twitter:url"
-      content="https://eduardoherreraf.github.io/photoshop-0007_herramientas_de_seleccion.html"
-    />
-    <meta name="twitter:site" content="@ehfeduardo" />
-    <!-- Fin Twitter cards -->
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Herramientas de Selección en Photoshop - Ing. Eduardo Herrera Forero." />
+  <meta property="og:description"
+    content="En Photoshop, las herramientas de selección son fundamentales para editar partes específicas de una imagen." />
+  <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta property="og:url" content="https://eduardoherreraf.github.io/photoshop-0007_herramientas_de_seleccion.html" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
 
-    <!-- iconos -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="android-chrome-192x192.png"
-    />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- fin iconos -->
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Herramientas de Selección en Photoshop - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description"
+    content="En Photoshop, las herramientas de selección son fundamentales para editar partes específicas de una imagen." />
+  <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta name="twitter:url" content="https://eduardoherreraf.github.io/photoshop-0007_herramientas_de_seleccion.html" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
 
-    <title>
-      Herramientas de Selección en Photoshop - Ing. Eduardo Herrera Forero.
-    </title>
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
 
-    <script type="module" src="./js/main.js"></script>
+  <title>
+    Herramientas de Selección en Photoshop - Ing. Eduardo Herrera Forero.
+  </title>
 
-    <meta
-      name="google-site-verification"
-      content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"
-    />
-  </head>
+  <script type="module" src="./js/main.js"></script>
 
-  <body>
-    <!-- Barra deNavegación -->
-<nav
-      class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
-    >
-      <div class="container-fluid">
-        <!-- Enlace a la página principal con el logo y nombre -->
-        <a
-          class="navbar-brand d-flex align-items-center ms-2"
-          href="index.html"
-        >
-          <img
-            src="./images/logo.png"
-            alt="Logo de Ing. Eduardo Herrera Forero"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top me-1"
-          />
-          <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
-        </a>
-        <!-- Botón para activar el menú en dispositivos pequeños -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Menú de navegación -->
-        <div
-          class="collapse navbar-collapse ms-auto text-center"
-          id="navbarSupportedContent"
-        >
-          <ul
-            class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100"
-          >
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#portfolio"
-                >PORTAFOLIO</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog"
-                >PUBLICACIONES</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
-            </li>
-          </ul>
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
+
+  <!--  principal  -->
+  <div class="container-fluid" id="introduccion">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!-- Herramientas de Selección -->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <header>
+            <h1>Herramientas de Selección</h1>
+          </header>
+
+          <!-- Introducción -->
+          <div class="mt-5">
+            <h2>Introducción</h2>
+            <p>
+              Photoshop ofrece una variedad de herramientas de selección que
+              permiten al usuario aislar partes específicas de una imagen para
+              editarlas sin afectar el resto.
+            </p>
+            <p>Entre las herramientas de selección las más básicas son:</p>
+            <ul>
+              <li>Herramienta de marco rectangular y elíptico.</li>
+              <li>Pincel de selección.</li>
+              <li>Herramienta de Selección Rápida.</li>
+            </ul>
+          </div>
+
+          <!-- Herramienta Marco Rectangular -->
+          <div id="herramienta-marco-rectangular" class="mt-5">
+            <h2>Herramienta Marco Rectangular</h2>
+            <p>
+              La Herramienta Marco Rectangular y Elíptico en Photoshop es una
+              de las herramientas más básicas y útiles para crear selecciones
+              geométricas simples dentro de una imagen. Estas herramientas
+              permiten seleccionar áreas en forma de rectángulo o elipse, lo
+              que es ideal para trabajos de recorte, enmascarado, o edición
+              localizada. En la
+              <span class="text-danger fw-bold">barra de herramientas</span>
+              se puede elegir esta opción.
+            </p>
+            <div class="centrar-imagen imagen50">
+              <figure>
+                <img src="./images/ps@HerramientaSeleccionRectangular.jpg" class="img-fluid"
+                  alt="Herramienta de Selección Rectangular" />
+                <figcaption>
+                  Herramienta de Selección Rectangular en Photoshop
+                </figcaption>
+              </figure>
+            </div>
+            <p>
+              Para usar esta herramienta, seleccionar un área rectangular o
+              cuadrada arrastrando el cursor sobre la imagen.
+            </p>
+            <p>
+              Para crear un cuadrado perfecto, mantenga presionada la tecla
+              <kbd>Shift</kbd> mientras arrastra el cursor. La siguiente
+              figura muestra un ejemplo de este proceso:
+            </p>
+            <div class="centrar-imagen imagen50">
+              <figure>
+                <img src="./images/ps@HerramientasSeleccionRectangularCuadrado.jpg" class="img-fluid"
+                  alt="Herramienta de Selección Rectangular Cuadrado" />
+                <figcaption>
+                  Herramienta de Selección Rectangular Cuadrado en Photoshop
+                </figcaption>
+              </figure>
+            </div>
+            <p>Algunas aplicaciones comunes:</p>
+            <ul>
+              <li>Recortar una sección rectangular de una imagen.</li>
+              <li>
+                Aplicar efectos o ajustes a una parte específica de la imagen.
+              </li>
+              <li>Crear bordes o marcos de forma precisa.</li>
+            </ul>
+            <p>
+              <span class="fw-bold">Acceso Rápido</span>: Se puede acceder a
+              la Herramienta Marco Rectangular con la tecla de acceso rápido
+              <kbd>M</kbd>.
+            </p>
+            <h3>Modificación de la Selección</h3>
+            <p>
+              Las selecciones creadas con esta herramientas se puede modificar
+              usando las opciones de la
+              <span class="text-success fw-bold">barra de propiedades</span>,
+              como "Suavizar" para crear bordes más suaves o "Añadir a
+              selección" para combinar varias selecciones.
+            </p>
+            <div class="centrar-imagen imagen50">
+              <figure>
+                <img src="./images/ps@HerramientasSeleccionRectangularBarraHerramientas.jpg" class="img-fluid"
+                  alt="Modificación de la Selección Barra Herramientas" />
+                <figcaption>
+                  Modificación de la Selección Barra Herramientas en Photoshop
+                </figcaption>
+              </figure>
+            </div>
+            <p>
+              En la barra de herramientas se puede ver las opciones para la
+              selección
+              <img src="https://helpx-prod.scene7.com/is/image/HelpxProd/se_20-9?$png$&jpegSize=100&wid=126"
+                class="img-fluid" alt="Opciones de Herramientas de Selección" />.
+            </p>
+            <ol type="A">
+              <li>
+                <span class="fw-bold">Selección Nueva</span>: Permite
+                seleccionar un área.
+                <br />
+                En esta opción se puede añadir una selección a otra
+                manteniendo oprimida la tecla <kbd>Shift</kbd> y creando la
+                siguiente zona arrastrando el puntero del ratón.
+                <br />
+                También se puede restar una selección a otra manteniendo
+                oprimida la tecla
+                <kbd>Alt</kbd>, eliminando todo lo que la nueva elección
+                solape.
+                <br />
+                Finalmente, se puede crear una intersección entre dos zonas
+                manteniendo presionadas las teclas
+                <kbd>Shift</kbd> y <kbd>Alt</kbd> al mismo tiempo, y
+                arrastrando el puntero del ratón para crear la nueva zona de
+                trabajo.
+              </li>
+              <li>
+                <span class="fw-bold">Añadir a Selección</span>: Esta opción
+                en Photoshop es una funcionalidad muy útil que permite
+                expandir una selección existente agregando nuevas áreas a ella
+                sin perder la selección original. Esto es particularmente útil
+                cuando se necesitan seleccionar múltiples áreas de una imagen
+                que no están conectadas o que requieren diferentes formas de
+                selección. Las zonas que necesitan ser seleccionadas se
+                escogen una tras otra.
+                <div class="centrar-imagen imagen50">
+                  <figure>
+                    <img src="./images/ps@anhadirSeleccion.jpg" class="img-fluid" alt="Añadir Selección" />
+                    <figcaption>Añadir Selección en Photoshop</figcaption>
+                  </figure>
+                </div>
+              </li>
+              <li>
+                <span class="fw-bold">Restar de la Selección</span>: Restar de
+                la Selección en Photoshop es una función que permite eliminar
+                partes de una selección activa. Esto es útil cuando se
+                necesita ajustar una selección para excluir áreas que no deben
+                ser editadas. La parte de la nueva selección que se superponga
+                con la ya existente será eliminada.
+                <div class="centrar-imagen imagen50">
+                  <figure>
+                    <img src="./images/ps@restarSeleccion.jpg" class="img-fluid" alt="Restar Selección" />
+                    <figcaption>Restar Selección en Photoshop</figcaption>
+                  </figure>
+                </div>
+                La selección queda como se muestra a continuación:
+                <div class="centrar-imagen imagen50">
+                  <figure>
+                    <img src="./images/ps@restarSeleccionResultado.jpg" class="img-fluid"
+                      alt="Restar Selección Resultado" />
+                    <figcaption>
+                      Resultado de Restar Selección en Photoshop
+                    </figcaption>
+                  </figure>
+                </div>
+              </li>
+              <li>
+                <span class="fw-bold">Formar intersección con</span>: Formar
+                una intersección de selecciones permite al usuario conservar
+                solo la parte común entre dos o más selecciones previamente
+                hechas. Esta técnica es útil para crear selecciones precisas,
+                especialmente cuando se trabaja con áreas complejas o se desea
+                seleccionar una parte específica de una imagen que cumple con
+                múltiples criterios.
+                <div class="centrar-imagen imagen50">
+                  <figure>
+                    <img src="./images/ps@formarInterseccionCon.jpg" class="img-fluid" alt="Formar Intersección Con" />
+                    <figcaption>
+                      Formar intersección con en Photoshop
+                    </figcaption>
+                  </figure>
+                </div>
+                <p>
+                  La zona resultante entre la intersección entre las dos zonas
+                  verdes, es la que Photoshop volverá como selección para
+                  trabajo.
+                </p>
+                <div class="centrar-imagen imagen50">
+                  <figure>
+                    <img src="./images/ps@formarInterseccionConResultado.jpg" class="img-fluid"
+                      alt="Formar Intersección Con Resultado" />
+                    <figcaption>
+                      Resultado de Formar intersección con en Photoshop
+                    </figcaption>
+                  </figure>
+                </div>
+              </li>
+            </ol>
+            <h3>Capa de Ajuste con Selección Activa</h3>
+            <p>
+              En Photoshop, una "capa de ajuste con selección activa" se
+              refiere a la aplicación de un ajuste específico (como
+              brillo/contraste, niveles, tono/saturación, etc.) solo a la
+              parte seleccionada de la imagen.
+            </p>
+            <p>
+              ¿Qué es una capa de ajuste?: Una capa de ajuste es una capa
+              especial que permite aplicar modificaciones de color y tono a
+              una imagen sin alterar los píxeles originales. Esto hace que los
+              ajustes sean no destructivos y fácilmente editables.
+            </p>
+            <p>
+              ¿Qué es una selección activa?: Una selección activa es un área
+              específica de la imagen que se ha seleccionado utilizando
+              herramientas como el Marco Rectangular, entre otras. Mientras la
+              selección permanezca activa (marcada por líneas punteadas),
+              cualquier acción o ajuste que se realice se aplicará únicamente
+              dentro de esa área seleccionada.
+            </p>
+            <p>
+              <span class="fw-bold">Capa de ajuste con selección activa</span>: Cuando se tiene una selección activa y
+              se crea una capa de
+              ajuste, dicho ajuste se aplicará únicamente a la parte
+              seleccionada. Esto ocurre automáticamente porque Photoshop
+              convierte la selección en una máscara de capa, lo que garantiza
+              que solo las áreas seleccionadas sean afectadas por el ajuste
+              sin destruir la imagen original.
+            </p>
+            <div class="centrar-imagen imagen50">
+              <figure>
+                <img src="./images/ps@capaAjusteConSelecciónActiva.jpg" class="img-fluid"
+                  alt="Capa de Ajuste Con Selección Activa" />
+                <figcaption>
+                  Capa de Ajuste con Selección Activa en Photoshop
+                </figcaption>
+              </figure>
+            </div>
+            <p>Pasos para crear una capa de ajuste con selección activa:</p>
+            <ul>
+              <li>
+                <span class="fw-bold">Realizar una selección</span>: Usar una
+                herramienta de selección para seleccionar la parte de la
+                imagen que se desee ajustar.
+              </li>
+              <li>
+                <span class="fw-bold">Crear la capa de ajuste</span>: Con la
+                selección aún activa, ve al panel de "Capas" y selecciona el
+                tipo de ajuste que deseas aplicar, por ejemplo,
+                "Brillo/Contraste".
+              </li>
+            </ul>
+            <div class="centrar-imagen imagen50">
+              <figure>
+                <img src="./images/ps@capaAjusteConSelecciónActivaResultado.jpg" class="img-fluid"
+                  alt="Capa de Ajuste Con Selección Activa" />
+                <figcaption>
+                  Capa de Ajuste Con Selección Activa en Photoshop
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Herramienta de Selección Rápida -->
+          <div id="herramienta-de-seleccion-rapida" class="mt-5">
+            <h2>Herramienta de Selección Rápida</h2>
+            <p>
+              La herramienta de
+              <span class="fe-bold">Selección Rápida</span> en Photoshop
+              permite al usuario seleccionar rápidamente áreas de una imagen
+              basándose en colores y texturas similares. Al arrastrar el
+              cursor sobre una región de la imagen, la herramienta
+              automáticamente expande la selección a áreas que comparten
+              características similares, facilitando la selección de objetos o
+              áreas específicas sin la necesidad de trazarlas manualmente.
+            </p>
+            <h3>Características Principales</h3>
+            <ul>
+              <li>
+                <span class="fw-bold">Automatización</span>: La herramienta
+                analiza automáticamente la imagen para identificar bordes y
+                zonas de colores similares, lo que facilita la selección de
+                áreas complejas.
+              </li>
+              <li>
+                <span class="fw-bold">Ajuste de Tamaño del Pincel</span>: El
+                usuario puede ajustar el tamaño del pincel de la herramienta
+                para un mayor control, permitiendo selecciones más precisas o
+                más amplias según sea necesario.
+              </li>
+              <li>
+                <span class="fw-bold">Refinamiento de Bordes</span>: Después
+                de realizar una selección, se puede utilizar la opción
+                "Refinar Bordes" o "Seleccionar y aplicar máscara" para
+                perfeccionar los bordes de la selección, eliminando detalles
+                no deseados o suavizando las transiciones.
+              </li>
+              <li>
+                <span class="fw-bold">Añadir o Restar de la Selección</span>:
+                El usuario puede usar las opciones de añadir o restar de la
+                selección manteniendo presionada la tecla Shift (para añadir)
+                o Alt (para restar), lo que permite un mayor control sobre la
+                selección final.
+              </li>
+            </ul>
+            <h3>Uso común</h3>
+            <p>
+              La herramienta de Selección Rápida es ideal para seleccionar
+              objetos con bordes bien definidos o áreas con colores uniformes,
+              como cielos, edificios, o personas en un fondo de un solo color.
+            </p>
+            <h3>Como se Usa esta Herramienta</h3>
+            <h4>Activar la Herramienta</h4>
+            <ul>
+              <li>
+                <span class="fw-bold">Acceso rápido</span>: Presionar la tecla
+                <kbd>w</kbd> en el teclado.
+              </li>
+              <li>
+                <span class="fw-bold">Manual</span>: En la
+                <span class="text-danger fw-bold">barra de herramientas</span>
+                de la izquierda, buscar el ícono que parece un pincel con un
+                borde punteado. Si no se puede ver, puede estar anidado con la
+                herramienta Varita Mágica; hacer clic derecho en el ícono de
+                la Varita Mágica y seleccionar
+                <span class="fw-bold">Selección Rápida</span>.
+              </li>
+            </ul>
+            <div class="centrar-imagen imagen50">
+              <figure>
+                <img src="./images/ps@herramientaSeleccionRapida2.jpg" class="img-fluid"
+                  alt="Herramienta de Selección Rápida" />
+                <figcaption>
+                  Herramienta de Selección Rápida en Photoshop
+                </figcaption>
+              </figure>
+            </div>
+            <h4>Ajustar el Tamaño del Pincel</h4>
+            <p>
+              En la barra superior de opciones, ajusta el tamaño del pincel.
+            </p>
+            <p>
+              Un pincel pequeño es útil cuando se necesita una selección
+              precisa en áreas pequeñas o detalladas. Por ejemplo, si el
+              usuario está seleccionando un objeto con bordes complejos o
+              elementos finos, como el cabello o los bordes de una flor, un
+              pincel pequeño permitirá mayor control y evitará seleccionar
+              áreas no deseadas. Además un pincel más pequeño permite al
+              usuario ser más preciso al acercarse a los bordes de un objeto o
+              en zonas donde hay mucho detalle o colores muy variados.
+            </p>
+            <p>
+              Un pincel grande es ideal para seleccionar áreas más amplias y
+              uniformes rápidamente. Si el usuario está seleccionando un
+              cielo, un fondo sólido o una gran superficie con colores
+              similares, un pincel grande hará la selección más eficiente y
+              rápida. Por otro lado un pincel grande cubre más área de la
+              imagen en menos tiempo, lo que es útil cuando se trabaja con
+              zonas amplias y relativamente uniformes en términos de color y
+              textura.
+            </p>
+            <div class="centrar-imagen imagen50">
+              <figure>
+                <img src="./images/ps@tamanhoPincel.jpg" class="img-fluid" alt="Tamaño del Pincel" />
+                <figcaption>
+                  Ajustar el Tamaño del Pincel en Photoshop
+                </figcaption>
+              </figure>
+            </div>
+            <h4>Realizar la Selección</h4>
+            <ul>
+              <li>
+                <span class="fw-bold">Hacer Clic y Arrastrar</span>: Coloca el
+                cursor sobre la parte de la imagen que quiere seleccionar.
+                Hacer clic y mantener presionado mientras se arrastra el
+                cursor. La selección se expandirá automáticamente a áreas con
+                colores y texturas similares.
+              </li>
+              <li>
+                <span class="fw-bold">Añadir a la Selección</span>: Si se
+                necesita incluir más áreas, seguir haciendo clic y arrastrar
+                sobre ellas.
+              </li>
+              <li>
+                <span class="fw-bold">Restar de la selección</span>: Si se
+                seleccionó algo incorrectamente, mantener presionada la tecla
+                Alt y arrastrar sobre la parte que se desee quitar de la
+                selección.
+              </li>
+            </ul>
+            <div class="centrar-imagen imagen50">
+              <figure>
+                <img src="./images/ps@herramientaSeleccionRapida.jpg" class="img-fluid"
+                  alt="Herramienta de Selección Rápida" />
+                <figcaption>Realizar la Selección en Photoshop</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Herramienta de Lazo -->
+          <div id="herramienta-de-lazo" class="mt-5">
+            <h2>Herramienta de Lazo</h2>
+            <p>
+              La herramienta de Lazo en Photoshop es una de las funciones
+              básicas más versátiles para la selección de áreas específicas
+              dentro de una imagen. Permite al usuario delinear de forma
+              manual y precisa las secciones que desea editar, cortar o aislar
+              del resto de la imagen.
+            </p>
+            <p>
+              La herramienta de Lazo en Photoshop es fundamental para
+              cualquier trabajo que requiera precisión en la selección de
+              áreas específicas dentro de una imagen. Se utiliza ampliamente
+              en tareas de edición y retoque fotográfico, diseño gráfico y
+              composición de imágenes. Su función principal es permitir al
+              usuario trazar una selección a mano alzada o siguiendo formas
+              geométricas, para luego aplicar cambios solo a esa área
+              seleccionada, sin afectar el resto de la imagen.
+            </p>
+            <p>
+              La herramienta de Lazo es especialmente valiosa en situaciones
+              donde las herramientas de selección más automatizadas, como la
+              herramienta de Selección Rápida o la Varita Mágica, no logran
+              obtener los resultados deseados. Aunque estas herramientas son
+              rápidas y eficientes en muchos casos, pueden fallar cuando las
+              áreas a seleccionar tienen bordes complejos, colores similares
+              al fondo o detalles finos que requieren un control más preciso,
+              como se puede ver en la siguiente imagen la herramienta de
+              selección rápida no seleccionó la pata izquierda del pato, esta
+              será seleccionada con la herramienta de lazo.
+            </p>
+            <div class="centrar-imagen imagen50">
+              <figure>
+                <img src="./images/ps@herramientaLazo.jpg" class="img-fluid" alt="Herramienta de Lazo" />
+                <figcaption>Herramienta de Lazo en Photoshop</figcaption>
+              </figure>
+            </div>
+            <p>
+              En este caso con la
+              <span class="text-danger fw-bold">herramienta de Lazo</span> y
+              la opción <span class="text-success fw-bold">Añadir</span> a la
+              selección de la
+              <span class="text-success fw-bold">barra de herramientas</span>.
+              Se traza el contorno de toda la pata, y Photoshop añade esta
+              pata al resto del cuerpo, resultando en una sola selección que
+              incluye todo el cuerpo.
+            </p>
+          </div>
+
+          <!-- Mejoras en las Opciones de Selección -->
+          <div id="mejoras-en-las-oOpciones-de-seleccion" class="mt-5">
+            <h2>Mejoras en las Opciones de Selección</h2>
+            <p>
+              Para mejorar la selección, se puede usar la opción
+              <span class="text-success fw-bold">Seleccionar y aplicar máscara</span>
+              en la barra superior. Esto permite suavizar bordes, añadir o
+              restar detalles, y aplicar desenfoque o contraste a los bordes
+              de la selección.
+            </p>
+            <div class="centrar-imagen imagen50">
+              <figure>
+                <img src="./images/ps@seleccionarAplicarMascara.jpg" class="img-fluid"
+                  alt="Seleccionar Aplicar Mascara" />
+                <figcaption>
+                  Seleccionar Aplicar Mascara en Photoshop
+                </figcaption>
+              </figure>
+            </div>
+
+            <p>
+              En el panel emergente, se tiene la opción
+              <span class="text-danger fw-bold">Vista</span> en la que se
+              muestra diferentes fondos.
+            </p>
+            <p>
+              Esta opción funciona bien, pero presenta un inconveniente: como
+              se observa en el ejemplo, el pato ha perdido el plumaje
+              superficial. Por esta razón, se selecciona la vista en
+              <span class="text-danger fw-bold">Blanco y Negro</span> para
+              recuperarlo.
+            </p>
+            <div class="centrar-imagen imagen50">
+              <figure>
+                <img src="./images/ps@blancoNegro.jpg" class="img-fluid" alt="Blanco y Negro" />
+                <figcaption>Blanco y Negro en Photoshop</figcaption>
+              </figure>
+            </div>
+            <p>
+              Se elige la opción
+              <span class="text-danger fw-bold">Herramienta de Pincel Perfeccionar de Bordes</span>
+              para refinar los contornos, es decir, hacerlos lo más similares
+              posible a la imagen real. Es necesario recorrer los bordes
+              manteniendo el clic izquierdo presionado.
+            </p>
+            <div class="centrar-imagen imagen50">
+              <figure>
+                <img src="./images/ps@HerramientaPincelPerfeccionarBordes.jpg" class="img-fluid"
+                  alt="Herramienta Pincel Perfeccionar Bordes" />
+                <figcaption>
+                  Herramienta Pincel Perfeccionar Bordes en Photoshop
+                </figcaption>
+              </figure>
+            </div>
+            <p>
+              Resultado de perfeccionar los bordes, como se puede ver en los
+              bordes se puede ver las plumas pequeñas que se habían eliminado
+              con la herramienta de selección rápida.
+            </p>
+            <div class="centrar-imagen imagen50">
+              <figure>
+                <img src="./images/ps@HerramientaPincelPerfeccionarBordesResultado.jpg" class="img-fluid"
+                  alt="Herramienta Pincel Perfeccionar Bordes Resultado" />
+                <figcaption>
+                  Herramienta Pincel Perfeccionar Bordes en Photoshop
+                </figcaption>
+              </figure>
+            </div>
+            <p>
+              Para guardar la extracción de la imagen, en este caso el pato,
+              se hace clic en
+              <span class="text-danger fw-bold">Vista > Papel Cebolla ></span>
+              y luego en
+              <span class="text-success fw-bold">Ajuste de Salida > Enviar a ></span>, acá se puede escoger entre varias
+              opciones:
+            </p>
+            <div class="centrar-imagen imagen50">
+              <figure>
+                <img src="./images/ps@HerramientaPincelPerfeccionarBordesCapaResultado.jpg" class="img-fluid"
+                  alt="Herramienta Pincel Perfeccionar Bordes Capa Resultado" />
+                <figcaption>
+                  Herramienta Pincel Perfeccionar Bordes Guardar Resultado en
+                  Photoshop
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+        <!-- Herramientas de Selección fin-->
+        <!--  comentarios  -->
+        <article class="row pt-5" id="comments">
+          <h2>COMENTARIOS</h2>
+          <p>
+            Si tiene alguna inquietud, duda o ha encontrado algún error, por
+            favor infórmelo a través del formulario disponible para este
+            propósito.
+          </p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
+
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
+                </div>
+
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
+
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                  Enviar
+                </button>
+              </fieldset>
+
+              <p class="small text-center">
+                La política de privacidad, y los términos y condiciones están
+                disponibles en el formulario de contacto.
+              </p>
+            </form>
+          </div>
+        </article>
+        <!--  fin comentarios  -->
+      </section>
+
+      <!--  barra lateral  -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        <h1>En Este Artículo</h1>
+        <div class="menu-scroll">
+          <div class="menu-container">
+            <div class="border border-1">
+              <div class="menu-item">
+                <a href="#introduccion" class="simple-link">Introducción</a>
+              </div>
+              <div class="menu-item">
+                <a href="#herramienta-marco-rectangular" class="simple-link">Herramienta Marco Rectangular</a>
+              </div>
+              <div class="menu-item">
+                <a href="#herramienta-de-seleccion-rapida" class="simple-link">Herramienta de Selección Rápida</a>
+              </div>
+              <div class="menu-item">
+                <a href="#herramienta-de-lazo" class="simple-link">Herramienta de Lazo</a>
+              </div>
+              <div class="menu-item">
+                <a href="#mejoras-en-las-oOpciones-de-seleccion" class="simple-link">Mejoras en las Opciones de
+                  Selección</a>
+              </div>
+
+              <li class="list-group-item">
+                <a href="#"></a>
+              </li>
+
+              <!-- Comentarios  -->
+              <div class="menu-item">
+                <a href="#comments" class="simple-link">Comentarios</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!--  fin barra lateral  -->
+    </main>
+    <!-- fin Principal  -->
+  </div>
+
+  <!--  pie de pagina  -->
+  <footer class="row border-top border-1 m-1 mt-auto">
+    <div class="row">
+      <!-- contacto -->
+      <address class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Contacto</div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class="ms-3">
+            <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class="ms-3">Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      <!-- Derechos de autor -->
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
+      </div>
+      <!-- redes sociales -->
+      <div class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Redes Sociales</div>
+        <div class="d-flex justify-content-evenly align-items-center gap-5">
+          <div>
+            <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
         </div>
       </div>
-    </nav>
-    <!-- Barra deNavegación -->
-
-    <!--  principal  -->
-    <div class="container-fluid" id="introduccion">
-      <main class="row">
-        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
-          <!-- Herramientas de Selección -->
-          <article
-            class="row border-1 border-bottom pb-3"
-            data-bs-spy="scroll"
-            data-bs-target="#list-example"
-            data-bs-smooth-scroll="true"
-          >
-            <header><h1>Herramientas de Selección</h1></header>
-
-            <!-- Introducción -->
-            <div class="mt-5">
-              <h2>Introducción</h2>
-              <p>
-                Photoshop ofrece una variedad de herramientas de selección que
-                permiten al usuario aislar partes específicas de una imagen para
-                editarlas sin afectar el resto.
-              </p>
-              <p>Entre las herramientas de selección las más básicas son:</p>
-              <ul>
-                <li>Herramienta de marco rectangular y elíptico.</li>
-                <li>Pincel de selección.</li>
-                <li>Herramienta de Selección Rápida.</li>
-              </ul>
-            </div>
-
-            <!-- Herramienta Marco Rectangular -->
-            <div id="herramientaMarcoRectangular" class="mt-5">
-              <h2 class="mt-1">Herramienta Marco Rectangular</h2>
-              <p>
-                La Herramienta Marco Rectangular y Elíptico en Photoshop es una
-                de las herramientas más básicas y útiles para crear selecciones
-                geométricas simples dentro de una imagen. Estas herramientas
-                permiten seleccionar áreas en forma de rectángulo o elipse, lo
-                que es ideal para trabajos de recorte, enmascarado, o edición
-                localizada. En la
-                <span class="text-danger fw-bold">barra de herramientas</span>
-                se puede elegir esta opción.
-              </p>
-              <div class="centrar-imagen imagen50">
-                <figure>
-                  <img
-                    src="./images/ps@HerramientaSeleccionRectangular.jpg"
-                    class="img-fluid"
-                    alt="Herramienta de Selección Rectangular"
-                  />
-                  <figcaption>
-                    Herramienta de Selección Rectangular en Photoshop
-                  </figcaption>
-                </figure>
-              </div>
-              <p>
-                Para usar esta herramienta, seleccionar un área rectangular o
-                cuadrada arrastrando el cursor sobre la imagen.
-              </p>
-              <p>
-                Para crear un cuadrado perfecto, mantenga presionada la tecla
-                <kbd>Shift</kbd> mientras arrastra el cursor. La siguiente
-                figura muestra un ejemplo de este proceso:
-              </p>
-              <div class="centrar-imagen imagen50">
-                <figure>
-                  <img
-                    src="./images/ps@HerramientasSeleccionRectangularCuadrado.jpg"
-                    class="img-fluid"
-                    alt="Herramienta de Selección Rectangular Cuadrado"
-                  />
-                  <figcaption>
-                    Herramienta de Selección Rectangular Cuadrado en Photoshop
-                  </figcaption>
-                </figure>
-              </div>
-              <p>Algunas aplicaciones comunes:</p>
-              <ul>
-                <li>Recortar una sección rectangular de una imagen.</li>
-                <li>
-                  Aplicar efectos o ajustes a una parte específica de la imagen.
-                </li>
-                <li>Crear bordes o marcos de forma precisa.</li>
-              </ul>
-              <p>
-                <span class="fw-bold">Acceso Rápido</span>: Se puede acceder a
-                la Herramienta Marco Rectangular con la tecla de acceso rápido
-                <kbd>M</kbd>.
-              </p>
-              <h3>Modificación de la Selección</h3>
-              <p>
-                Las selecciones creadas con esta herramientas se puede modificar
-                usando las opciones de la
-                <span class="text-success fw-bold">barra de propiedades</span>,
-                como "Suavizar" para crear bordes más suaves o "Añadir a
-                selección" para combinar varias selecciones.
-              </p>
-              <div class="centrar-imagen imagen50">
-                <figure>
-                  <img
-                    src="./images/ps@HerramientasSeleccionRectangularBarraHerramientas.jpg"
-                    class="img-fluid"
-                    alt="Modificación de la Selección Barra Herramientas"
-                  />
-                  <figcaption>
-                    Modificación de la Selección Barra Herramientas en Photoshop
-                  </figcaption>
-                </figure>
-              </div>
-              <p>
-                En la barra de herramientas se puede ver las opciones para la
-                selección
-                <img
-                  src="https://helpx-prod.scene7.com/is/image/HelpxProd/se_20-9?$png$&jpegSize=100&wid=126"
-                  class="img-fluid"
-                  alt="Opciones de Herramientas de Selección"
-                />.
-              </p>
-              <ol type="A">
-                <li>
-                  <span class="fw-bold">Selección Nueva</span>: Permite
-                  seleccionar un área.
-                  <br />
-                  En esta opción se puede añadir una selección a otra
-                  manteniendo oprimida la tecla <kbd>Shift</kbd> y creando la
-                  siguiente zona arrastrando el puntero del ratón.
-                  <br />
-                  También se puede restar una selección a otra manteniendo
-                  oprimida la tecla
-                  <kbd>Alt</kbd>, eliminando todo lo que la nueva elección
-                  solape.
-                  <br />
-                  Finalmente, se puede crear una intersección entre dos zonas
-                  manteniendo presionadas las teclas
-                  <kbd>Shift</kbd> y <kbd>Alt</kbd> al mismo tiempo, y
-                  arrastrando el puntero del ratón para crear la nueva zona de
-                  trabajo.
-                </li>
-                <li>
-                  <span class="fw-bold">Añadir a Selección</span>: Esta opción
-                  en Photoshop es una funcionalidad muy útil que permite
-                  expandir una selección existente agregando nuevas áreas a ella
-                  sin perder la selección original. Esto es particularmente útil
-                  cuando se necesitan seleccionar múltiples áreas de una imagen
-                  que no están conectadas o que requieren diferentes formas de
-                  selección. Las zonas que necesitan ser seleccionadas se
-                  escogen una tras otra.
-                  <div class="centrar-imagen imagen50">
-                    <figure>
-                      <img
-                        src="./images/ps@anhadirSeleccion.jpg"
-                        class="img-fluid"
-                        alt="Añadir Selección"
-                      />
-                      <figcaption>Añadir Selección en Photoshop</figcaption>
-                    </figure>
-                  </div>
-                </li>
-                <li>
-                  <span class="fw-bold">Restar de la Selección</span>: Restar de
-                  la Selección en Photoshop es una función que permite eliminar
-                  partes de una selección activa. Esto es útil cuando se
-                  necesita ajustar una selección para excluir áreas que no deben
-                  ser editadas. La parte de la nueva selección que se superponga
-                  con la ya existente será eliminada.
-                  <div class="centrar-imagen imagen50">
-                    <figure>
-                      <img
-                        src="./images/ps@restarSeleccion.jpg"
-                        class="img-fluid"
-                        alt="Restar Selección"
-                      />
-                      <figcaption>Restar Selección en Photoshop</figcaption>
-                    </figure>
-                  </div>
-                  La selección queda como se muestra a continuación:
-                  <div class="centrar-imagen imagen50">
-                    <figure>
-                      <img
-                        src="./images/ps@restarSeleccionResultado.jpg"
-                        class="img-fluid"
-                        alt="Restar Selección Resultado"
-                      />
-                      <figcaption>
-                        Resultado de Restar Selección en Photoshop
-                      </figcaption>
-                    </figure>
-                  </div>
-                </li>
-                <li>
-                  <span class="fw-bold">Formar intersección con</span>: Formar
-                  una intersección de selecciones permite al usuario conservar
-                  solo la parte común entre dos o más selecciones previamente
-                  hechas. Esta técnica es útil para crear selecciones precisas,
-                  especialmente cuando se trabaja con áreas complejas o se desea
-                  seleccionar una parte específica de una imagen que cumple con
-                  múltiples criterios.
-                  <div class="centrar-imagen imagen50">
-                    <figure>
-                      <img
-                        src="./images/ps@formarInterseccionCon.jpg"
-                        class="img-fluid"
-                        alt="Formar Intersección Con"
-                      />
-                      <figcaption>
-                        Formar intersección con en Photoshop
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <p>
-                    La zona resultante entre la intersección entre las dos zonas
-                    verdes, es la que Photoshop volverá como selección para
-                    trabajo.
-                  </p>
-                  <div class="centrar-imagen imagen50">
-                    <figure>
-                      <img
-                        src="./images/ps@formarInterseccionConResultado.jpg"
-                        class="img-fluid"
-                        alt="Formar Intersección Con Resultado"
-                      />
-                      <figcaption>
-                        Resultado de Formar intersección con en Photoshop
-                      </figcaption>
-                    </figure>
-                  </div>
-                </li>
-              </ol>
-              <h3>Capa de Ajuste con Selección Activa</h3>
-              <p>
-                En Photoshop, una "capa de ajuste con selección activa" se
-                refiere a la aplicación de un ajuste específico (como
-                brillo/contraste, niveles, tono/saturación, etc.) solo a la
-                parte seleccionada de la imagen.
-              </p>
-              <p>
-                ¿Qué es una capa de ajuste?: Una capa de ajuste es una capa
-                especial que permite aplicar modificaciones de color y tono a
-                una imagen sin alterar los píxeles originales. Esto hace que los
-                ajustes sean no destructivos y fácilmente editables.
-              </p>
-              <p>
-                ¿Qué es una selección activa?: Una selección activa es un área
-                específica de la imagen que se ha seleccionado utilizando
-                herramientas como el Marco Rectangular, entre otras. Mientras la
-                selección permanezca activa (marcada por líneas punteadas),
-                cualquier acción o ajuste que se realice se aplicará únicamente
-                dentro de esa área seleccionada.
-              </p>
-              <p>
-                <span class="fw-bold">Capa de ajuste con selección activa</span
-                >: Cuando se tiene una selección activa y se crea una capa de
-                ajuste, dicho ajuste se aplicará únicamente a la parte
-                seleccionada. Esto ocurre automáticamente porque Photoshop
-                convierte la selección en una máscara de capa, lo que garantiza
-                que solo las áreas seleccionadas sean afectadas por el ajuste
-                sin destruir la imagen original.
-              </p>
-              <div class="centrar-imagen imagen50">
-                <figure>
-                  <img
-                    src="./images/ps@capaAjusteConSelecciónActiva.jpg"
-                    class="img-fluid"
-                    alt="Capa de Ajuste Con Selección Activa"
-                  />
-                  <figcaption>
-                    Capa de Ajuste con Selección Activa en Photoshop
-                  </figcaption>
-                </figure>
-              </div>
-              <p>Pasos para crear una capa de ajuste con selección activa:</p>
-              <ul>
-                <li>
-                  <span class="fw-bold">Realizar una selección</span>: Usar una
-                  herramienta de selección para seleccionar la parte de la
-                  imagen que se desee ajustar.
-                </li>
-                <li>
-                  <span class="fw-bold">Crear la capa de ajuste</span>: Con la
-                  selección aún activa, ve al panel de "Capas" y selecciona el
-                  tipo de ajuste que deseas aplicar, por ejemplo,
-                  "Brillo/Contraste".
-                </li>
-              </ul>
-              <div class="centrar-imagen imagen50">
-                <figure>
-                  <img
-                    src="./images/ps@capaAjusteConSelecciónActivaResultado.jpg"
-                    class="img-fluid"
-                    alt="Capa de Ajuste Con Selección Activa"
-                  />
-                  <figcaption>
-                    Capa de Ajuste Con Selección Activa en Photoshop
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <!-- Herramienta de Selección Rápida -->
-            <div id="herramientaSelecciónRapida" class="mt-5">
-              <h2 class="mt-1">Herramienta de Selección Rápida</h2>
-              <p>
-                La herramienta de
-                <span class="fe-bold">Selección Rápida</span> en Photoshop
-                permite al usuario seleccionar rápidamente áreas de una imagen
-                basándose en colores y texturas similares. Al arrastrar el
-                cursor sobre una región de la imagen, la herramienta
-                automáticamente expande la selección a áreas que comparten
-                características similares, facilitando la selección de objetos o
-                áreas específicas sin la necesidad de trazarlas manualmente.
-              </p>
-              <h3>Características Principales</h3>
-              <ul>
-                <li>
-                  <span class="fw-bold">Automatización</span>: La herramienta
-                  analiza automáticamente la imagen para identificar bordes y
-                  zonas de colores similares, lo que facilita la selección de
-                  áreas complejas.
-                </li>
-                <li>
-                  <span class="fw-bold">Ajuste de Tamaño del Pincel</span>: El
-                  usuario puede ajustar el tamaño del pincel de la herramienta
-                  para un mayor control, permitiendo selecciones más precisas o
-                  más amplias según sea necesario.
-                </li>
-                <li>
-                  <span class="fw-bold">Refinamiento de Bordes</span>: Después
-                  de realizar una selección, se puede utilizar la opción
-                  "Refinar Bordes" o "Seleccionar y aplicar máscara" para
-                  perfeccionar los bordes de la selección, eliminando detalles
-                  no deseados o suavizando las transiciones.
-                </li>
-                <li>
-                  <span class="fw-bold">Añadir o Restar de la Selección</span>:
-                  El usuario puede usar las opciones de añadir o restar de la
-                  selección manteniendo presionada la tecla Shift (para añadir)
-                  o Alt (para restar), lo que permite un mayor control sobre la
-                  selección final.
-                </li>
-              </ul>
-              <h3>Uso común</h3>
-              <p>
-                La herramienta de Selección Rápida es ideal para seleccionar
-                objetos con bordes bien definidos o áreas con colores uniformes,
-                como cielos, edificios, o personas en un fondo de un solo color.
-              </p>
-              <h3>Como se Usa esta Herramienta</h3>
-              <h4>Activar la Herramienta</h4>
-              <ul>
-                <li>
-                  <span class="fw-bold">Acceso rápido</span>: Presionar la tecla
-                  <kbd>w</kbd> en el teclado.
-                </li>
-                <li>
-                  <span class="fw-bold">Manual</span>: En la
-                  <span class="text-danger fw-bold">barra de herramientas</span>
-                  de la izquierda, buscar el ícono que parece un pincel con un
-                  borde punteado. Si no se puede ver, puede estar anidado con la
-                  herramienta Varita Mágica; hacer clic derecho en el ícono de
-                  la Varita Mágica y seleccionar
-                  <span class="fw-bold">Selección Rápida</span>.
-                </li>
-              </ul>
-              <div class="centrar-imagen imagen50">
-                <figure>
-                  <img
-                    src="./images/ps@herramientaSeleccionRapida2.jpg"
-                    class="img-fluid"
-                    alt="Herramienta de Selección Rápida"
-                  />
-                  <figcaption>
-                    Herramienta de Selección Rápida en Photoshop
-                  </figcaption>
-                </figure>
-              </div>
-              <h4>Ajustar el Tamaño del Pincel</h4>
-              <p>
-                En la barra superior de opciones, ajusta el tamaño del pincel.
-              </p>
-              <p>
-                Un pincel pequeño es útil cuando se necesita una selección
-                precisa en áreas pequeñas o detalladas. Por ejemplo, si el
-                usuario está seleccionando un objeto con bordes complejos o
-                elementos finos, como el cabello o los bordes de una flor, un
-                pincel pequeño permitirá mayor control y evitará seleccionar
-                áreas no deseadas. Además un pincel más pequeño permite al
-                usuario ser más preciso al acercarse a los bordes de un objeto o
-                en zonas donde hay mucho detalle o colores muy variados.
-              </p>
-              <p>
-                Un pincel grande es ideal para seleccionar áreas más amplias y
-                uniformes rápidamente. Si el usuario está seleccionando un
-                cielo, un fondo sólido o una gran superficie con colores
-                similares, un pincel grande hará la selección más eficiente y
-                rápida. Por otro lado un pincel grande cubre más área de la
-                imagen en menos tiempo, lo que es útil cuando se trabaja con
-                zonas amplias y relativamente uniformes en términos de color y
-                textura.
-              </p>
-              <div class="centrar-imagen imagen50">
-                <figure>
-                  <img
-                    src="./images/ps@tamanhoPincel.jpg"
-                    class="img-fluid"
-                    alt="Tamaño del Pincel"
-                  />
-                  <figcaption>
-                    Ajustar el Tamaño del Pincel en Photoshop
-                  </figcaption>
-                </figure>
-              </div>
-              <h4>Realizar la Selección</h4>
-              <ul>
-                <li>
-                  <span class="fw-bold">Hacer Clic y Arrastrar</span>: Coloca el
-                  cursor sobre la parte de la imagen que quiere seleccionar.
-                  Hacer clic y mantener presionado mientras se arrastra el
-                  cursor. La selección se expandirá automáticamente a áreas con
-                  colores y texturas similares.
-                </li>
-                <li>
-                  <span class="fw-bold">Añadir a la Selección</span>: Si se
-                  necesita incluir más áreas, seguir haciendo clic y arrastrar
-                  sobre ellas.
-                </li>
-                <li>
-                  <span class="fw-bold">Restar de la selección</span>: Si se
-                  seleccionó algo incorrectamente, mantener presionada la tecla
-                  Alt y arrastrar sobre la parte que se desee quitar de la
-                  selección.
-                </li>
-              </ul>
-              <div class="centrar-imagen imagen50">
-                <figure>
-                  <img
-                    src="./images/ps@herramientaSeleccionRapida.jpg"
-                    class="img-fluid"
-                    alt="Herramienta de Selección Rápida"
-                  />
-                  <figcaption>Realizar la Selección en Photoshop</figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <!-- Herramienta de Lazo -->
-            <div id="herramientaLazo" class="mt-5">
-              <h2 class="mt-1">Herramienta de Lazo</h2>
-              <p>
-                La herramienta de Lazo en Photoshop es una de las funciones
-                básicas más versátiles para la selección de áreas específicas
-                dentro de una imagen. Permite al usuario delinear de forma
-                manual y precisa las secciones que desea editar, cortar o aislar
-                del resto de la imagen.
-              </p>
-              <p>
-                La herramienta de Lazo en Photoshop es fundamental para
-                cualquier trabajo que requiera precisión en la selección de
-                áreas específicas dentro de una imagen. Se utiliza ampliamente
-                en tareas de edición y retoque fotográfico, diseño gráfico y
-                composición de imágenes. Su función principal es permitir al
-                usuario trazar una selección a mano alzada o siguiendo formas
-                geométricas, para luego aplicar cambios solo a esa área
-                seleccionada, sin afectar el resto de la imagen.
-              </p>
-              <p>
-                La herramienta de Lazo es especialmente valiosa en situaciones
-                donde las herramientas de selección más automatizadas, como la
-                herramienta de Selección Rápida o la Varita Mágica, no logran
-                obtener los resultados deseados. Aunque estas herramientas son
-                rápidas y eficientes en muchos casos, pueden fallar cuando las
-                áreas a seleccionar tienen bordes complejos, colores similares
-                al fondo o detalles finos que requieren un control más preciso,
-                como se puede ver en la siguiente imagen la herramienta de
-                selección rápida no seleccionó la pata izquierda del pato, esta
-                será seleccionada con la herramienta de lazo.
-              </p>
-              <div class="centrar-imagen imagen50">
-                <figure>
-                  <img
-                    src="./images/ps@herramientaLazo.jpg"
-                    class="img-fluid"
-                    alt="Herramienta de Lazo"
-                  />
-                  <figcaption>Herramienta de Lazo en Photoshop</figcaption>
-                </figure>
-              </div>
-              <p>
-                En este caso con la
-                <span class="text-danger fw-bold">herramienta de Lazo</span> y
-                la opción <span class="text-success fw-bold">Añadir</span> a la
-                selección de la
-                <span class="text-success fw-bold">barra de herramientas</span>.
-                Se traza el contorno de toda la pata, y Photoshop añade esta
-                pata al resto del cuerpo, resultando en una sola selección que
-                incluye todo el cuerpo.
-              </p>
-            </div>
-
-            <!-- Mejoras en las Opciones de Selección -->
-            <div id="mejorasOpcionesSeleccion" class="mt-5">
-              <h2 class="mt-1">Mejoras en las Opciones de Selección</h2>
-              <p>
-                Para mejorar la selección, se puede usar la opción
-                <span class="text-success fw-bold"
-                  >Seleccionar y aplicar máscara</span
-                >
-                en la barra superior. Esto permite suavizar bordes, añadir o
-                restar detalles, y aplicar desenfoque o contraste a los bordes
-                de la selección.
-              </p>
-              <div class="centrar-imagen imagen50">
-                <figure>
-                  <img
-                    src="./images/ps@seleccionarAplicarMascara.jpg"
-                    class="img-fluid"
-                    alt="Seleccionar Aplicar Mascara"
-                  />
-                  <figcaption>
-                    Seleccionar Aplicar Mascara en Photoshop
-                  </figcaption>
-                </figure>
-              </div>
-
-              <p>
-                En el panel emergente, se tiene la opción
-                <span class="text-danger fw-bold">Vista</span> en la que se
-                muestra diferentes fondos.
-              </p>
-              <p>
-                Esta opción funciona bien, pero presenta un inconveniente: como
-                se observa en el ejemplo, el pato ha perdido el plumaje
-                superficial. Por esta razón, se selecciona la vista en
-                <span class="text-danger fw-bold">Blanco y Negro</span> para
-                recuperarlo.
-              </p>
-              <div class="centrar-imagen imagen50">
-                <figure>
-                  <img
-                    src="./images/ps@blancoNegro.jpg"
-                    class="img-fluid"
-                    alt="Blanco y Negro"
-                  />
-                  <figcaption>Blanco y Negro en Photoshop</figcaption>
-                </figure>
-              </div>
-              <p>
-                Se elige la opción
-                <span class="text-danger fw-bold"
-                  >Herramienta de Pincel Perfeccionar de Bordes</span
-                >
-                para refinar los contornos, es decir, hacerlos lo más similares
-                posible a la imagen real. Es necesario recorrer los bordes
-                manteniendo el clic izquierdo presionado.
-              </p>
-              <div class="centrar-imagen imagen50">
-                <figure>
-                  <img
-                    src="./images/ps@HerramientaPincelPerfeccionarBordes.jpg"
-                    class="img-fluid"
-                    alt="Herramienta Pincel Perfeccionar Bordes"
-                  />
-                  <figcaption>
-                    Herramienta Pincel Perfeccionar Bordes en Photoshop
-                  </figcaption>
-                </figure>
-              </div>
-              <p>
-                Resultado de perfeccionar los bordes, como se puede ver en los
-                bordes se puede ver las plumas pequeñas que se habían eliminado
-                con la herramienta de selección rápida.
-              </p>
-              <div class="centrar-imagen imagen50">
-                <figure>
-                  <img
-                    src="./images/ps@HerramientaPincelPerfeccionarBordesResultado.jpg"
-                    class="img-fluid"
-                    alt="Herramienta Pincel Perfeccionar Bordes Resultado"
-                  />
-                  <figcaption>
-                    Herramienta Pincel Perfeccionar Bordes en Photoshop
-                  </figcaption>
-                </figure>
-              </div>
-              <p>
-                Para guardar la extracción de la imagen, en este caso el pato,
-                se hace clic en
-                <span class="text-danger fw-bold">Vista > Papel Cebolla ></span>
-                y luego en
-                <span class="text-success fw-bold"
-                  >Ajuste de Salida > Enviar a ></span
-                >, acá se puede escoger entre varias opciones:
-              </p>
-              <div class="centrar-imagen imagen50">
-                <figure>
-                  <img
-                    src="./images/ps@HerramientaPincelPerfeccionarBordesCapaResultado.jpg"
-                    class="img-fluid"
-                    alt="Herramienta Pincel Perfeccionar Bordes Capa Resultado"
-                  />
-                  <figcaption>
-                    Herramienta Pincel Perfeccionar Bordes Guardar Resultado en
-                    Photoshop
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-          </article>
-          <!-- Herramientas de Selección fin-->
-          <!--  comentarios  -->
-          <article class="row pt-5" id="comments">
-            <h2>COMENTARIOS</h2>
-            <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por
-              favor infórmelo a través del formulario disponible para este
-              propósito.
-            </p>
-            <div class="d-flex justify-content-center">
-              <form
-                action="https://formspree.io/f/mdkdawkg"
-                method="POST"
-                id="myForm"
-              >
-                <fieldset class="d-flex flex-column gap-3">
-                  <legend class="text-center fs-4">Deje su comentario</legend>
-
-                  <div class="d-flex flex-column">
-                    <label for="name">Nombre:</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="User"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
-
-                  <div class="d-flex flex-column">
-                    <label for="email">Email:</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="user@mail.com"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
-
-                  <div class="d-flex flex-column">
-                    <label for="message">Mensaje:</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      cols="30"
-                      rows="5"
-                      placeholder="Su comentario..."
-                      class="form-control rounded-3"
-                      required
-                    ></textarea>
-                  </div>
-
-                  <button
-                    type="submit"
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
-                  >
-                    Enviar
-                  </button>
-                </fieldset>
-
-                <p class="small text-center">
-                  La política de privacidad, y los términos y condiciones están
-                  disponibles en el formulario de contacto.
-                </p>
-              </form>
-            </div>
-          </article>
-          <!--  fin comentarios  -->
-        </section>
-        <!--  barra lateral  -->
-        <aside class="col-lg-3 d-none d-lg-block pt-5">
-          <h1>En Este Artículo</h1>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a href="#introduccion">Introducción</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#herramientaMarcoRectangular"
-                >Herramienta Marco Rectangular</a
-              >
-            </li>
-            <li class="list-group-item">
-              <a href="#herramientaSelecciónRapida"
-                >Herramienta de Selección Rápida</a
-              >
-            </li>
-            <li class="list-group-item">
-              <a href="#herramientaLazo">Herramienta de Lazo</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#mejorasOpcionesSeleccion"
-                >Mejoras en las Opciones de Selección</a
-              >
-            </li>
-            <li class="list-group-item">
-              <a href="#comments">Comentarios</a>
-            </li>
-          </ul>
-        </aside>
-        <!--  fin barra lateral  -->
-      </main>
-      <!-- fin Principal  -->
-      <!--  fin principal  -->
     </div>
+    <div class="d-flex align-items-center justify-content-center gap-2"></div>
+  </footer>
+  <!--  pie de pagina fin  -->
 
-    <!--  pie de pagina fin  -->
-    <!-- button to top -->
-    <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        fill="currentColor"
-        class="bi bi-arrow-bar-up"
-        viewBox="0 0 16 16"
-        style="margin-left: -2px"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"
-        ></path>
-      </svg>
-    </button>
-    <!-- Fin button to top -->
-  </body>
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
 </html>

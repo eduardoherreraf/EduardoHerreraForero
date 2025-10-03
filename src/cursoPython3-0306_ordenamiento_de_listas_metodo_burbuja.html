@@ -1,271 +1,205 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-  <head>
-    <!-- Metaetiquetas -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Aprende a ordenar listas simples en Python utilizando el algoritmo de ordenamiento de burbuja. Descubre cómo funciona este método de ordenamiento eficiente y cómo implementarlo en tu código."
-    />
-    <meta
-      name="title"
-      content="Ordenando Listas Simples: El Ordenamiento de Burbuja Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta name="author" content="Ing. Eduardo Herrera Forero" />
-    <meta name="application-name" content="EHF" />
-    <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://eduardoherreraf.github.io/cursoPython3-0306_ordenamiento_de_listas_metodo_burbuja.html"
-    />
-    <!-- Fin Metaetiquetas -->
 
-    <!-- Open Graph data -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Ordenando Listas Simples: El Ordenamiento de Burbuja Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      property="og:description"
-      content="Aprende a ordenar listas simples en Python utilizando el algoritmo de ordenamiento de burbuja. Descubre cómo funciona este método de ordenamiento eficiente y cómo implementarlo en tu código."
-    />
-    <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      property="og:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      property="og:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0306_ordenamiento_de_listas_metodo_burbuja.html"
-    />
-    <meta property="og:locale" content="es_CO" />
-    <!-- fin Open Graph data -->
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Aprende a ordenar listas simples en Python utilizando el algoritmo de ordenamiento de burbuja. Descubre cómo funciona este método de ordenamiento eficiente y cómo implementarlo en tu código." />
+  <meta name="title"
+    content="Ordenando Listas Simples: El Ordenamiento de Burbuja Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical"
+    href="https://eduardoherreraf.github.io/cursoPython3-0306_ordenamiento_de_listas_metodo_burbuja.html" />
+  <!-- Fin Metaetiquetas -->
 
-    <!-- Twitter cards -->
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="Ordenando Listas Simples: El Ordenamiento de Burbuja Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      name="twitter:description"
-      content="Aprende a ordenar listas simples en Python utilizando el algoritmo de ordenamiento de burbuja. Descubre cómo funciona este método de ordenamiento eficiente y cómo implementarlo en tu código."
-    />
-    <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      name="twitter:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      name="twitter:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0306_ordenamiento_de_listas_metodo_burbuja.html"
-    />
-    <meta name="twitter:site" content="@ehfeduardo" />
-    <!-- Fin Twitter cards -->
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title"
+    content="Ordenando Listas Simples: El Ordenamiento de Burbuja Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta property="og:description"
+    content="Aprende a ordenar listas simples en Python utilizando el algoritmo de ordenamiento de burbuja. Descubre cómo funciona este método de ordenamiento eficiente y cómo implementarlo en tu código." />
+  <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta property="og:url"
+    content="https://eduardoherreraf.github.io/cursoPython3-0306_ordenamiento_de_listas_metodo_burbuja.html" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
 
-    <!-- iconos -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="android-chrome-192x192.png"
-    />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- fin iconos -->
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title"
+    content="Ordenando Listas Simples: El Ordenamiento de Burbuja Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description"
+    content="Aprende a ordenar listas simples en Python utilizando el algoritmo de ordenamiento de burbuja. Descubre cómo funciona este método de ordenamiento eficiente y cómo implementarlo en tu código." />
+  <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta name="twitter:url"
+    content="https://eduardoherreraf.github.io/cursoPython3-0306_ordenamiento_de_listas_metodo_burbuja.html" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
 
-    <title>
-      Ordenando Listas Simples: El Ordenamiento de Burbuja Python 3 - Ing.
-      Eduardo Herrera Forero.
-    </title>
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
 
-    <script type="module" src="./js/main.js"></script>
+  <title>
+    Ordenando Listas Simples: El Ordenamiento de Burbuja Python 3 - Ing.
+    Eduardo Herrera Forero.
+  </title>
 
-    <meta
-      name="google-site-verification"
-      content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"
-    />
-  </head>
+  <script type="module" src="./js/main.js"></script>
 
-  <body>
-    <!-- Barra deNavegación -->
-    <nav
-      class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
-    >
-      <div class="container-fluid">
-        <!-- Enlace a la página principal con el logo y nombre -->
-        <a
-          class="navbar-brand d-flex align-items-center ms-2"
-          href="index.html"
-        >
-          <img
-            src="./images/logo.png"
-            alt="Logo de Ing. Eduardo Herrera Forero"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top me-1"
-          />
-          <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
-        </a>
-        <!-- Botón para activar el menú en dispositivos pequeños -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Menú de navegación -->
-        <div
-          class="collapse navbar-collapse ms-auto text-center"
-          id="navbarSupportedContent"
-        >
-          <ul
-            class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100"
-          >
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#portfolio"
-                >PORTAFOLIO</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 publicaciones-activo"
-                href="index.html#blog"
-                >PUBLICACIONES</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
-            </li>
-          </ul>
-        </div>
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Barra deNavegación -->
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
 
-    <!--  principal  -->
-    <div class="container-fluid" id="introduccion">
-      <main class="row">
-        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
-          <!--  Ordenando Listas Simples: El Ordenamiento de Burbuja en Python  -->
-          <article
-            class="row border-1 border-bottom pb-3"
-            data-bs-spy="scroll"
-            data-bs-target="#list-example"
-            data-bs-smooth-scroll="true"
-          >
-            <div>
-              <header>
-                <h1>
-                  Ordenando Listas Simples: El Ordenamiento de Burbuja en Python
-                </h1>
-              </header>
-              <!-- Introducción -->
-              <div class="mt-5">
-                <h2>Introducción</h2>
-                <p>
-                  El ordenamiento de listas es una tarea fundamental en la
-                  programación y en la ciencia de la computación. Existen
-                  diversos algoritmos de ordenamiento, cada uno con sus propias
-                  características y eficiencia. Uno de los algoritmos más
-                  conocidos y sencillos es el algoritmo Burbuja (Bubble Sort).
-                  Este algoritmo funciona comparando cada par de elementos
-                  adyacentes en una lista y, si están en el orden incorrecto,
-                  los intercambia. Este proceso se repite hasta que la lista
-                  esté completamente ordenada. Aunque no es el más eficiente
-                  para listas grandes, el algoritmo Burbuja es fácil de entender
-                  y de implementar, lo que lo convierte en una excelente
-                  herramienta pedagógica para aprender sobre ordenamiento.
-                </p>
-                <div class="centrar-imagen imagen50">
-                  <figure>
-                    <img
-                      src="https://i.ibb.co/W51JTWX/burbujas.jpg"
-                      class="img-fluid"
-                      alt="Ordenando Listas Simples: El Ordenamiento de Burbuja en Python  "
-                      title="Ordenamiento de Burbuja en Python: Cómo Ordenar Listas Sencillas"
-                    />
-                    <figcaption>
-                      Ordenando Listas Simples: El Ordenamiento de Burbuja en
-                      Python
-                    </figcaption>
-                  </figure>
-                </div>
+  <!--  principal  -->
+  <div class="container-fluid" id="introduccion">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!--  Ordenando Listas Simples: El Ordenamiento de Burbuja en Python  -->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <div>
+            <header>
+              <h1>
+                Ordenando Listas Simples: El Ordenamiento de Burbuja en Python
+              </h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-5">
+              <h2>Introducción</h2>
+              <p>
+                El ordenamiento de listas es una tarea fundamental en la
+                programación y en la ciencia de la computación. Existen
+                diversos algoritmos de ordenamiento, cada uno con sus propias
+                características y eficiencia. Uno de los algoritmos más
+                conocidos y sencillos es el algoritmo Burbuja (Bubble Sort).
+                Este algoritmo funciona comparando cada par de elementos
+                adyacentes en una lista y, si están en el orden incorrecto,
+                los intercambia. Este proceso se repite hasta que la lista
+                esté completamente ordenada. Aunque no es el más eficiente
+                para listas grandes, el algoritmo Burbuja es fácil de entender
+                y de implementar, lo que lo convierte en una excelente
+                herramienta pedagógica para aprender sobre ordenamiento.
+              </p>
+              <div class="centrar-imagen imagen50">
+                <figure>
+                  <img src="https://i.ibb.co/W51JTWX/burbujas.jpg" class="img-fluid"
+                    alt="Ordenando Listas Simples: El Ordenamiento de Burbuja en Python  "
+                    title="Ordenamiento de Burbuja en Python: Cómo Ordenar Listas Sencillas" />
+                  <figcaption>
+                    Ordenando Listas Simples: El Ordenamiento de Burbuja en
+                    Python
+                  </figcaption>
+                </figure>
               </div>
+            </div>
 
-              <!-- ¿Qué es el Ordenamiento de Burbuja? -->
-              <div id="queEsElOrdenamientoDeBurbuja" class="mt-5">
-                <h2 class="mt-1">¿Qué es el Ordenamiento de Burbuja?</h2>
-                <p>
-                  En Python, el algoritmo Burbuja puede ser implementado de
-                  manera sencilla utilizando bucles anidados. El proceso
-                  comienza con un bucle externo que recorre todos los elementos
-                  de la lista. Dentro de este bucle, un bucle interno compara
-                  cada par de elementos adyacentes y los intercambia si están en
-                  el orden incorrecto. Este intercambio asegura que, con cada
-                  iteración del bucle externo, el elemento más grande de la
-                  lista se mueva hacia su posición correcta. A medida que el
-                  algoritmo avanza, los elementos más grandes "burbujean" hacia
-                  el final de la lista, de ahí su nombre. Aunque su complejidad
-                  temporal es O(n2)O(n2), lo que lo hace ineficiente para listas
-                  grandes, el algoritmo Burbuja sigue siendo una herramienta
-                  valiosa para entender los conceptos básicos de ordenamiento y
-                  para resolver problemas de ordenamiento en listas pequeñas
-                </p>
-              </div>
-              <!-- ¿Qué es el Ordenamiento de Burbuja? Fin -->
-              <!-- Funcionamiento del Algoritmo -->
-              <div id="funcionamientodelAlgoritmo" class="mt-5">
-                <h2 class="mt-1">Funcionamiento del Algoritmo</h2>
-                <ul>
-                  <li>Comienza desde el primer elemento de la lista.</li>
-                  <li>Compara el elemento actual con el siguiente.</li>
-                  <li>
-                    Si el elemento actual es mayor que el siguiente, se
-                    intercambian.
-                  </li>
-                  <li>
-                    Se avanza al siguiente par de elementos y se repite el
-                    proceso.
-                  </li>
-                  <li>
-                    Este proceso se repite para toda la lista, y se hace una
-                    nueva pasada hasta que no se realicen más intercambios.
-                  </li>
-                </ul>
-              </div>
-              <!-- Funcionamiento del Algoritmo Fin -->
-              <!-- Implementación en Python -->
-              <div id="implementacionEnPython" class="mt-5">
-                <h2 class="mt-1">Implementación en Python</h2>
-                <p>
-                  A continuación, se presenta una implementación simple del
-                  algoritmo de ordenamiento de burbuja en Python:
-                </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+            <!-- ¿Qué es el Ordenamiento de Burbuja? -->
+            <div id="queEsElOrdenamientoDeBurbuja" class="mt-5">
+              <h2>¿Qué es el Ordenamiento de Burbuja?</h2>
+              <p>
+                En Python, el algoritmo Burbuja puede ser implementado de
+                manera sencilla utilizando bucles anidados. El proceso
+                comienza con un bucle externo que recorre todos los elementos
+                de la lista. Dentro de este bucle, un bucle interno compara
+                cada par de elementos adyacentes y los intercambia si están en
+                el orden incorrecto. Este intercambio asegura que, con cada
+                iteración del bucle externo, el elemento más grande de la
+                lista se mueva hacia su posición correcta. A medida que el
+                algoritmo avanza, los elementos más grandes "burbujean" hacia
+                el final de la lista, de ahí su nombre. Aunque su complejidad
+                temporal es O(n2)O(n2), lo que lo hace ineficiente para listas
+                grandes, el algoritmo Burbuja sigue siendo una herramienta
+                valiosa para entender los conceptos básicos de ordenamiento y
+                para resolver problemas de ordenamiento en listas pequeñas
+              </p>
+            </div>
+            <!-- ¿Qué es el Ordenamiento de Burbuja? Fin -->
+            <!-- Funcionamiento del Algoritmo -->
+            <div id="funcionamientodelAlgoritmo" class="mt-5">
+              <h2>Funcionamiento del Algoritmo</h2>
+              <ul>
+                <li>Comienza desde el primer elemento de la lista.</li>
+                <li>Compara el elemento actual con el siguiente.</li>
+                <li>
+                  Si el elemento actual es mayor que el siguiente, se
+                  intercambian.
+                </li>
+                <li>
+                  Se avanza al siguiente par de elementos y se repite el
+                  proceso.
+                </li>
+                <li>
+                  Este proceso se repite para toda la lista, y se hace una
+                  nueva pasada hasta que no se realicen más intercambios.
+                </li>
+              </ul>
+            </div>
+            <!-- Funcionamiento del Algoritmo Fin -->
+            <!-- Implementación en Python -->
+            <div id="implementacionEnPython" class="mt-5">
+              <h2>Implementación en Python</h2>
+              <p>
+                A continuación, se presenta una implementación simple del
+                algoritmo de ordenamiento de burbuja en Python:
+              </p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def bubble_sort(arr):
                             n = len(arr)
@@ -278,331 +212,299 @@
                                         arr[j], arr[j+1] = arr[j+1], arr[j]
                       </code>
                     </pre>
-                </div>
-                <!-- Explicación del código -->
-                <div>
-                  <h3>Explicación del código</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold"
-                        >Definición de la función
-                        <code class="language-python">bubble_sort</code></span
-                      >: La función toma una lista
-                      <code class="language-python">arr</code> como argumento.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Longitud de la lista
-                        <code class="language-python">n = len(arr)</code></span
-                      >: obtiene la longitud de la lista
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Bucle externo
-                        <code class="language-python">n = len(arr)</code></span
-                      >: obtiene la longitud de la lista
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Bucle
-                        <i
-                          class="fa fa-internet-explorer"
-                          aria-hidden="true"
-                        ></i>
-                        <code class="language-python"
-                          >for j in range(0, n-i-1)</code
-                        ></span
-                      >: Este bucle se ejecuta desde el inicio de la lista hasta
-                      <code class="language-python">n-i-1</code>, ya que los
-                      últimos i elementos ya están en su lugar correcto.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Comparación e intercambio</span>:
-                      <ul>
-                        <li>
-                          <span class="fw-bold"
-                            ><code class="language-python"
-                              >if arr[j] > arr[j+1]</code
-                            ></span
-                          >: Si el elemento actual es mayor que el siguiente, se
-                          intercambian.
-                        </li>
-                        <li>
-                          <span class="fw-bold"
-                            ><code class="language-python">
-                              arr[j], arr[j+1] = arr[j+1], arr[j]</code
-                            ></span
-                          >: Intercambio de elementos.
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-                <!-- Explicación del código fin -->
               </div>
-              <!-- Implementación en Python Fin -->
-              <!-- Ejemplo de Uso -->
-              <div id="ejemploDeUso" class="mt-5">
-                <h2 class="mt-1">Ejemplo de Uso</h2>
+              <!-- Explicación del código -->
+              <div>
+                <h3>Explicación del código</h3>
                 <ul>
                   <li>
-                    Se define una lista
-                    <code class="language-python">arr</code> con algunos
-                    elementos:
-                    <code class="language-python"
-                      >arr = [64, 34, 25, 12, 22, 11, 90]</code
-                    >.
+                    <span class="fw-bold">Definición de la función
+                      <code class="language-python">bubble_sort</code></span>: La función toma una lista
+                    <code class="language-python">arr</code> como argumento.
                   </li>
                   <li>
-                    Se imprime la lista original:
-                    <code class="language-python"
-                      >print("Lista original:", arr)</code
-                    >.
+                    <span class="fw-bold">Longitud de la lista
+                      <code class="language-python">n = len(arr)</code></span>: obtiene la longitud de la lista
                   </li>
                   <li>
-                    Se llama a la función
-                    <code class="language-python">bubble_sort</code> para
-                    ordenar la lista:
-                    <code class="language-python">bubble_sort(arr)</code>
+                    <span class="fw-bold">Bucle externo
+                      <code class="language-python">n = len(arr)</code></span>: obtiene la longitud de la lista
                   </li>
                   <li>
-                    Se imprime la lista ordenada:
-                    <code class="language-python"
-                      >print("Lista ordenada:", arr)</code
-                    >
+                    <span class="fw-bold">Bucle
+                      <i class="fa fa-internet-explorer" aria-hidden="true"></i>
+                      <code class="language-python">for j in range(0, n-i-1)</code></span>: Este bucle se ejecuta desde
+                    el inicio de la lista hasta
+                    <code class="language-python">n-i-1</code>, ya que los
+                    últimos i elementos ya están en su lugar correcto.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Comparación e intercambio</span>:
+                    <ul>
+                      <li>
+                        <span class="fw-bold"><code class="language-python">if arr[j] > arr[j+1]</code></span>: Si el
+                        elemento actual es mayor que el siguiente, se
+                        intercambian.
+                      </li>
+                      <li>
+                        <span class="fw-bold"><code class="language-python">
+                              arr[j], arr[j+1] = arr[j+1], arr[j]</code></span>: Intercambio de elementos.
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </div>
-              <!-- Ejemplo de Uso Fin -->
-              <!-- Método sort() -->
-              <div id="metodoSort" class="mt-5">
-                <h2 class="mt-1">Método sort()</h2>
-                <p>
-                  El método <code class="language-python">sort()</code> en
-                  Python se utiliza para ordenar los elementos de una lista en
-                  su lugar, es decir, modifica la lista original en vez de crear
-                  una nueva lista ordenada. Este método es muy útil cuando se
-                  necesita mantener la lista original ordenada sin crear copias
-                  adicionales.
-                </p>
-                <!-- Sintaxis -->
-                <div>
-                  <h3>Sintaxis</h3>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              <!-- Explicación del código fin -->
+            </div>
+            <!-- Implementación en Python Fin -->
+            <!-- Ejemplo de Uso -->
+            <div id="ejemploDeUso" class="mt-5">
+              <h2>Ejemplo de Uso</h2>
+              <ul>
+                <li>
+                  Se define una lista
+                  <code class="language-python">arr</code> con algunos
+                  elementos:
+                  <code class="language-python">arr = [64, 34, 25, 12, 22, 11, 90]</code>.
+                </li>
+                <li>
+                  Se imprime la lista original:
+                  <code class="language-python">print("Lista original:", arr)</code>.
+                </li>
+                <li>
+                  Se llama a la función
+                  <code class="language-python">bubble_sort</code> para
+                  ordenar la lista:
+                  <code class="language-python">bubble_sort(arr)</code>
+                </li>
+                <li>
+                  Se imprime la lista ordenada:
+                  <code class="language-python">print("Lista ordenada:", arr)</code>
+                </li>
+              </ul>
+            </div>
+            <!-- Ejemplo de Uso Fin -->
+            <!-- Método sort() -->
+            <div id="metodoSort" class="mt-5">
+              <h2>Método <code class="language-python">sort()</code></h2>
+              <p>
+                El método <code class="language-python">sort()</code> en
+                Python se utiliza para ordenar los elementos de una lista en
+                su lugar, es decir, modifica la lista original en vez de crear
+                una nueva lista ordenada. Este método es muy útil cuando se
+                necesita mantener la lista original ordenada sin crear copias
+                adicionales.
+              </p>
+              <!-- Sintaxis -->
+              <div>
+                <h3>Sintaxis</h3>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         my_list.sort(key=None, reverse=False)
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Sintaxis fin -->
-                <!-- Parámetros -->
-                <div>
-                  <h3>Parámetros</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python">key</code></span
-                      >: (opcional) Una función que sirve como clave para el
-                      proceso de ordenación. Por defecto, es
-                      <code class="language-python">None</code>, lo que
-                      significa que los elementos se ordenan en su forma
-                      natural.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python">reverse</code></span
-                      >: (opcional) Un valor booleano que, si es
-                      <code class="language-python">True</code>, ordena la lista
-                      en orden descendente. Por defecto, es
-                      <code class="language-python">False</code>, lo que
-                      significa que la lista se ordena en orden ascendente.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Parámetros fin -->
-                <!-- Ejemplos -->
-                <div>
-                  <h3>Ejemplos</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold"
-                        >Ordenar una lista de números en orden ascendente</span
-                      >:
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Sintaxis fin -->
+              <!-- Parámetros -->
+              <div>
+                <h3>Parámetros</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">key</code></span>: (opcional) Una función que
+                    sirve como clave para el
+                    proceso de ordenación. Por defecto, es
+                    <code class="language-python">None</code>, lo que
+                    significa que los elementos se ordenan en su forma
+                    natural.
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">reverse</code></span>: (opcional) Un valor
+                    booleano que, si es
+                    <code class="language-python">True</code>, ordena la lista
+                    en orden descendente. Por defecto, es
+                    <code class="language-python">False</code>, lo que
+                    significa que la lista se ordena en orden ascendente.
+                  </li>
+                </ul>
+              </div>
+              <!-- Parámetros fin -->
+              <!-- Ejemplos -->
+              <div>
+                <h3>Ejemplos</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Ordenar una lista de números en orden ascendente</span>:
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
                             my_list.sort()
                             print(my_list)  # Salida: [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Ordenar una lista de números en orden descendente</span
-                      >:
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Ordenar una lista de números en orden descendente</span>:
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
                             my_list.sort(reverse=True)
                             print(my_list)  # Salida: [9, 6, 5, 5, 5, 4, 3, 3, 2, 1, 1]
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Ordenar una lista de cadenas en orden alfabético</span
-                      >:
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Ordenar una lista de cadenas en orden alfabético</span>:
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             my_list = ["banana", "apple", "cherry", "date"]
                             my_list.sort()
                             print(my_list)  # Salida: ['apple', 'banana', 'cherry', 'date']
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <!-- Ejemplos fin -->
+                    </div>
+                  </li>
+                </ul>
               </div>
-
-              <!-- Método sort() Fin -->
+              <!-- Ejemplos fin -->
             </div>
-          </article>
-          <!--  Ordenando Listas Simples: El Ordenamiento de Burbuja en Python  -->
 
-          <!--  comentarios  -->
-          <article class="row pt-5" id="comments">
-            <h2>COMENTARIOS</h2>
-            <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por
-              favor infórmelo a través del formulario disponible para este
-              propósito.
-            </p>
-            <div class="d-flex justify-content-center">
-              <form
-                action="https://formspree.io/f/mdkdawkg"
-                method="POST"
-                id="myForm"
-              >
-                <fieldset class="d-flex flex-column gap-3">
-                  <legend class="text-center fs-4">Deje su comentario</legend>
+            <!-- Método sort() Fin -->
+          </div>
+        </article>
+        <!--  Ordenando Listas Simples: El Ordenamiento de Burbuja en Python  -->
 
-                  <div class="d-flex flex-column">
-                    <label for="name">Nombre:</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="User"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
+        <!--  comentarios  -->
+        <article class="row pt-5" id="comments">
+          <h2>COMENTARIOS</h2>
+          <p>
+            Si tiene alguna inquietud, duda o ha encontrado algún error, por
+            favor infórmelo a través del formulario disponible para este
+            propósito.
+          </p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
 
-                  <div class="d-flex flex-column">
-                    <label for="email">Email:</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="user@mail.com"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
+                </div>
 
-                  <div class="d-flex flex-column">
-                    <label for="message">Mensaje:</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      cols="30"
-                      rows="5"
-                      placeholder="Su comentario..."
-                      class="form-control rounded-3"
-                      required
-                    ></textarea>
-                  </div>
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
 
-                  <button
-                    type="submit"
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
-                  >
-                    Enviar
-                  </button>
-                </fieldset>
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
 
-                <p class="small text-center">
-                  La política de privacidad, y los términos y condiciones están
-                  disponibles en el formulario de contacto.
-                </p>
-              </form>
-            </div>
-          </article>
-          <!--  fin comentarios  -->
-        </section>
-        <!--  barra lateral  -->
-        <aside class="col-lg-3 d-none d-lg-block pt-5">
-          <h1>En Este Artículo</h1>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a href="#introduccion">Introducción</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#queEsElOrdenamientoDeBurbuja"
-                >¿Qué es el Ordenamiento de Burbuja?</a
-              >
-            </li>
-            <li class="list-group-item">
-              <a href="#funcionamientodelAlgoritmo"
-                >Funcionamiento del Algoritmo</a
-              >
-            </li>
-            <li class="list-group-item">
-              <a href="#implementacionEnPython">Implementación en Python</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#ejemploDeUso">Ejemplo de Uso</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#metodoSort">Método sort()</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#comments">Comentarios</a>
-            </li>
-          </ul>
-        </aside>
-        <!--  fin barra lateral  -->
-      </main>
-      <!--  fin principal  -->
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                  Enviar
+                </button>
+              </fieldset>
+
+              <p class="small text-center">
+                La política de privacidad, y los términos y condiciones están
+                disponibles en el formulario de contacto.
+              </p>
+            </form>
+          </div>
+        </article>
+        <!--  fin comentarios  -->
+      </section>
+
+<!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h1>En Este Artículo</h1><div class="menu-scroll"><div class="menu-container"><div class="border border-1">
+<div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
+<div class="menu-item"><a href="#queEsElOrdenamientoDeBurbuja" class="simple-link">¿Qué es el Ordenamiento de Burbuja?</a></div>
+<div class="menu-item"><a href="#funcionamientodelAlgoritmo" class="simple-link">Funcionamiento del Algoritmo</a></div>
+<div class="menu-item"><a href="#implementacionEnPython" class="simple-link">Implementación en Python</a></div>
+<div class="menu-item"><a href="#ejemploDeUso" class="simple-link">Ejemplo de Uso</a></div>
+<div class="menu-item"><a href="#metodoSort" class="simple-link">Método sort()</a></div>
+<!-- Comentarios  -->
+<div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div></div></div></div></aside>
+<!--  fin barra lateral  -->
+
+    </main>
+    <!--  fin principal  -->
+  </div>
+  <!--  Principal Fin  -->
+
+  <!--  pie de pagina  -->
+  <footer class="row border-top border-1 m-1 mt-auto">
+    <div class="row">
+      <!-- contacto -->
+      <address class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Contacto</div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class="ms-3">
+            <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class="ms-3">Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      <!-- Derechos de autor -->
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
+      </div>
+      <!-- redes sociales -->
+      <div class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Redes Sociales</div>
+        <div class="d-flex justify-content-evenly align-items-center gap-5">
+          <div>
+            <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <!--  Principal Fin  -->
+    <div class="d-flex align-items-center justify-content-center gap-2"></div>
+  </footer>
+  <!--  pie de pagina fin  -->
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
 
-    <!-- button to top -->
-    <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        fill="currentColor"
-        class="bi bi-arrow-bar-up"
-        viewBox="0 0 16 16"
-        style="margin-left: -2px"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"
-        ></path>
-      </svg>
-    </button>
-    <!-- Fin button to top -->
-  </body>
 </html>

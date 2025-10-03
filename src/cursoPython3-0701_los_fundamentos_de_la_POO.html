@@ -1,277 +1,207 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-  <head>
-    <!-- Metaetiquetas -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Aprende los conceptos fundamentales de la Programación Orientada a Objetos (POO) en Python. Descubre cómo crear clases, objetos y métodos para construir aplicaciones más organizadas y eficientes."
-    />
-    <meta
-      name="title"
-      content="Los fundamentos de la POO Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta name="author" content="Ing. Eduardo Herrera Forero" />
-    <meta name="application-name" content="EHF" />
-    <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://eduardoherreraf.github.io/cursoPython3-0701_los_fundamentos_de_la_poo.html"
-    />
-    <!-- Fin Metaetiquetas -->
 
-    <!-- Open Graph data -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Los fundamentos de la POO Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      property="og:description"
-      content="Aprende los conceptos fundamentales de la Programación Orientada a Objetos (POO) en Python. Descubre cómo crear clases, objetos y métodos para construir aplicaciones más organizadas y eficientes."
-    />
-    <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      property="og:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      property="og:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0701_los_fundamentos_de_la_poo.html"
-    />
-    <meta property="og:locale" content="es_CO" />
-    <!-- fin Open Graph data -->
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Aprende los conceptos fundamentales de la Programación Orientada a Objetos (POO) en Python. Descubre cómo crear clases, objetos y métodos para construir aplicaciones más organizadas y eficientes." />
+  <meta name="title" content="Los fundamentos de la POO Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eduardoherreraf.github.io/cursoPython3-0701_los_fundamentos_de_la_poo.html" />
+  <!-- Fin Metaetiquetas -->
 
-    <!-- Twitter cards -->
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="Los fundamentos de la POO Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      name="twitter:description"
-      content="Aprende los conceptos fundamentales de la Programación Orientada a Objetos (POO) en Python. Descubre cómo crear clases, objetos y métodos para construir aplicaciones más organizadas y eficientes."
-    />
-    <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      name="twitter:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      name="twitter:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0701_los_fundamentos_de_la_poo.html"
-    />
-    <meta name="twitter:site" content="@ehfeduardo" />
-    <!-- Fin Twitter cards -->
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Los fundamentos de la POO Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta property="og:description"
+    content="Aprende los conceptos fundamentales de la Programación Orientada a Objetos (POO) en Python. Descubre cómo crear clases, objetos y métodos para construir aplicaciones más organizadas y eficientes." />
+  <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta property="og:url"
+    content="https://eduardoherreraf.github.io/cursoPython3-0701_los_fundamentos_de_la_poo.html" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
 
-    <!-- iconos -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="android-chrome-192x192.png"
-    />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- fin iconos -->
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Los fundamentos de la POO Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description"
+    content="Aprende los conceptos fundamentales de la Programación Orientada a Objetos (POO) en Python. Descubre cómo crear clases, objetos y métodos para construir aplicaciones más organizadas y eficientes." />
+  <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta name="twitter:url"
+    content="https://eduardoherreraf.github.io/cursoPython3-0701_los_fundamentos_de_la_poo.html" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
 
-    <title>
-      Los fundamentos de la POO Python 3 - Ing. Eduardo Herrera Forero.
-    </title>
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
 
-    <script type="module" src="./js/main.js"></script>
+  <title>
+    Los fundamentos de la POO Python 3 - Ing. Eduardo Herrera Forero.
+  </title>
 
-    <meta
-      name="google-site-verification"
-      content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"
-    />
-  </head>
+  <script type="module" src="./js/main.js"></script>
 
-  <body>
-    <!-- Barra deNavegación -->
-    <nav
-      class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
-    >
-      <div class="container-fluid">
-        <!-- Enlace a la página principal con el logo y nombre -->
-        <a
-          class="navbar-brand d-flex align-items-center ms-2"
-          href="index.html"
-        >
-          <img
-            src="./images/logo.png"
-            alt="Logo de Ing. Eduardo Herrera Forero"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top me-1"
-          />
-          <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
-        </a>
-        <!-- Botón para activar el menú en dispositivos pequeños -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Menú de navegación -->
-        <div
-          class="collapse navbar-collapse ms-auto text-center"
-          id="navbarSupportedContent"
-        >
-          <ul
-            class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100"
-          >
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#portfolio"
-                >PORTAFOLIO</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 publicaciones-activo"
-                href="index.html#blog"
-                >PUBLICACIONES</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
-            </li>
-          </ul>
-        </div>
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Barra deNavegación -->
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
 
-    <!--  principal  -->
-    <div class="container-fluid" id="introduccion">
-      <main class="row">
-        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
-          <!--  Los Fundamentos de la Programación Orientada a Objetos (OOP) en Python  -->
-          <article
-            class="row border-1 border-bottom pb-3"
-            data-bs-spy="scroll"
-            data-bs-target="#list-example"
-            data-bs-smooth-scroll="true"
-          >
-            <header>
-              <h1>
-                Los Fundamentos de la Programación Orientada a Objetos (OOP) en
-                Python
-              </h1>
-            </header>
-            <!-- Introducción -->
-            <div class="mt-5">
-              <h2>Introducción</h2>
-              <p>
-                En el mundo de la programación, los errores son inevitables y
-                forman parte del proceso de aprendizaje y desarrollo. Este
-                documento explora los tipos más comunes de errores que los
-                programadores enfrentan al trabajar con Python, así como algunas
-                estrategias para identificarlos y solucionarlos. A través de
-                ejemplos prácticos, se busca proporcionar una comprensión más
-                profunda de cómo manejar errores y mejorar la calidad del
-                código.
-              </p>
-              <div class="centrar-imagen imagen50">
-                <figure>
-                  <img
-                    src="https://i.ibb.co/DQcK4cT/poo.jpg"
-                    class="img-fluid"
-                    alt="Los Fundamentos de la Programación Orientada a Objetos (OOP) en Python  "
-                    title="Estructura de Clase y Objeto en Python"
-                  />
-                  <figcaption>
-                    Los Fundamentos de la Programación Orientada a Objetos (OOP)
-                    en Python
-                  </figcaption>
-                </figure>
-              </div>
-              <!-- Clases y Objetos -->
-              <div id="clasesYObjetos" class="mt-5">
-                <h2 class="mt-1">Clases y Objetos</h2>
-                <!-- Clases -->
+  <!--  principal  -->
+  <div class="container-fluid" id="introduccion">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!--  Los Fundamentos de la Programación Orientada a Objetos (OOP) en Python  -->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <header>
+            <h1>
+              Los Fundamentos de la Programación Orientada a Objetos (OOP) en
+              Python
+            </h1>
+          </header>
+          <!-- Introducción -->
+          <div class="mt-5">
+            <h2>Introducción</h2>
+            <p>
+              En el mundo de la programación, los errores son inevitables y
+              forman parte del proceso de aprendizaje y desarrollo. Este
+              documento explora los tipos más comunes de errores que los
+              programadores enfrentan al trabajar con Python, así como algunas
+              estrategias para identificarlos y solucionarlos. A través de
+              ejemplos prácticos, se busca proporcionar una comprensión más
+              profunda de cómo manejar errores y mejorar la calidad del
+              código.
+            </p>
+            <div class="centrar-imagen imagen50">
+              <figure>
+                <img src="https://i.ibb.co/DQcK4cT/poo.jpg" class="img-fluid"
+                  alt="Los Fundamentos de la Programación Orientada a Objetos (OOP) en Python  "
+                  title="Estructura de Clase y Objeto en Python" />
+                <figcaption>
+                  Los Fundamentos de la Programación Orientada a Objetos (OOP)
+                  en Python
+                </figcaption>
+              </figure>
+            </div>
+            <!-- Clases y Objetos -->
+            <div id="clases-y-objetos" class="mt-5">
+              <h2>Clases y Objetos</h2>
+              <!-- Clases -->
+              <div>
+                <h3>Clases</h3>
+                <!-- Qué Es una Clase -->
                 <div>
-                  <h3>Clases</h3>
-                  <!-- Qué Es una Clase -->
-                  <div>
-                    <h4>Qué Es una Clase</h4>
-                    <p>
-                      Una clase es un molde o plantilla que define las
-                      características y comportamientos de los objetos que se
-                      crearán a partir de ella. Es como un plano que describe
-                      qué propiedades (atributos) y qué acciones (métodos)
-                      tendrán los objetos.
-                    </p>
-                  </div>
-                  <!-- Qué Es una Clase fin -->
-                  <!-- Componentes de una Clase -->
-                  <div>
-                    <h4>Componentes de una Clase</h4>
-                    <ul>
-                      <li>
-                        <span class="fw-bold">Atributos</span>:Son las
-                        propiedades de la clase. Representan los datos o
-                        características de un objeto. Los atributos pueden ser:
-                      </li>
-                      <li>
-                        <span class="fw-bold">Métodos</span>: Son las funciones
-                        definidas dentro de la clase que describen los
-                        comportamientos de los objetos. Existen diferentes tipos
-                        de métodos:
-                      </li>
-                      <li>
-                        <span class="fw-bold">Constructor</span>: El método
-                        especial
-                        <code class="language-python">__init__</code> se llama
-                        automáticamente al crear un objeto. Se utiliza para
-                        inicializar los atributos de la clase.
-                      </li>
-                      <li>
-                        <span class="fw-bold">Encapsulamiento</span>: Permite
-                        controlar el acceso a los atributos y métodos,
-                        utilizando:
-                      </li>
-                      <li>
-                        <span class="fw-bold">Herencia</span>: Permite que una
-                        clase (subclase) herede atributos y métodos de otra
-                        clase (superclase). Esto fomenta la reutilización del
-                        código.
-                      </li>
-                      <li>
-                        <span class="fw-bold">Polimorfismo</span>: Habilidad de
-                        usar un método en diferentes contextos. Por ejemplo,
-                        redefinir métodos en subclases.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Componentes de una Clase fin -->
-                  <!-- Ejemplo Completo de una Clase en Python -->
-                  <div>
-                    <h4>Ejemplo Completo de una Clase en Python</h4>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  <h4>Qué Es una Clase</h4>
+                  <p>
+                    Una clase es un molde o plantilla que define las
+                    características y comportamientos de los objetos que se
+                    crearán a partir de ella. Es como un plano que describe
+                    qué propiedades (atributos) y qué acciones (métodos)
+                    tendrán los objetos.
+                  </p>
+                </div>
+                <!-- Qué Es una Clase fin -->
+                <!-- Componentes de una Clase -->
+                <div>
+                  <h4>Componentes de una Clase</h4>
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Atributos</span>:Son las
+                      propiedades de la clase. Representan los datos o
+                      características de un objeto. Los atributos pueden ser:
+                    </li>
+                    <li>
+                      <span class="fw-bold">Métodos</span>: Son las funciones
+                      definidas dentro de la clase que describen los
+                      comportamientos de los objetos. Existen diferentes tipos
+                      de métodos:
+                    </li>
+                    <li>
+                      <span class="fw-bold">Constructor</span>: El método
+                      especial
+                      <code class="language-python">__init__</code> se llama
+                      automáticamente al crear un objeto. Se utiliza para
+                      inicializar los atributos de la clase.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Encapsulamiento</span>: Permite
+                      controlar el acceso a los atributos y métodos,
+                      utilizando:
+                    </li>
+                    <li>
+                      <span class="fw-bold">Herencia</span>: Permite que una
+                      clase (subclase) herede atributos y métodos de otra
+                      clase (superclase). Esto fomenta la reutilización del
+                      código.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Polimorfismo</span>: Habilidad de
+                      usar un método en diferentes contextos. Por ejemplo,
+                      redefinir métodos en subclases.
+                    </li>
+                  </ul>
+                </div>
+                <!-- Componentes de una Clase fin -->
+                <!-- Ejemplo Completo de una Clase en Python -->
+                <div>
+                  <h4>Ejemplo Completo de una Clase en Python</h4>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           class Persona:
                           # Atributo de clase (compartido por todas las instancias)
@@ -309,49 +239,49 @@
                           print(persona2.especie)  # Cyborg
                         </code>
                       </pre>
-                    </div>
                   </div>
-                  <!-- Ejemplo Completo de una Clase en Python fin -->
                 </div>
-                <!-- Clases fin -->
-                <!-- Objetos -->
+                <!-- Ejemplo Completo de una Clase en Python fin -->
+              </div>
+              <!-- Clases fin -->
+              <!-- Objetos -->
+              <div>
+                <h3>Objetos</h3>
+                <!-- Qué Es un Objeto -->
                 <div>
-                  <h3>Objetos</h3>
-                  <!-- Qué Es un Objeto -->
-                  <div>
-                    <h4>Qué Es un Objeto</h4>
-                    <p>
-                      Un objeto es una entidad única que se crea a partir de una
-                      clase. Mientras que una clase es una plantilla o un molde,
-                      un objeto es una realización específica de esa plantilla.
-                      Los objetos tienen:
-                    </p>
-                    <ul>
-                      <li>
-                        <span class="fw-bold">Identidad</span>: Diferencia a un
-                        objeto de otro (su dirección en memoria).
-                      </li>
-                      <li>
-                        <span class="fw-bold">Estado</span>: Los valores
-                        actuales de sus atributos.
-                      </li>
-                      <li>
-                        <span class="fw-bold">Comportamiento</span>: Las
-                        acciones que puede realizar, definidas por los métodos
-                        de su clase.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Qué Es un Objeto fin -->
-                  <!-- Cómo se Crea un Objeto -->
-                  <div>
-                    <h4>Cómo se Crea un Objeto</h4>
-                    <p>
-                      En Python, se crea un objeto instanciando una clase, es
-                      decir, llamando a la clase como si fuera una función.
-                    </p>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  <h4>Qué Es un Objeto</h4>
+                  <p>
+                    Un objeto es una entidad única que se crea a partir de una
+                    clase. Mientras que una clase es una plantilla o un molde,
+                    un objeto es una realización específica de esa plantilla.
+                    Los objetos tienen:
+                  </p>
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Identidad</span>: Diferencia a un
+                      objeto de otro (su dirección en memoria).
+                    </li>
+                    <li>
+                      <span class="fw-bold">Estado</span>: Los valores
+                      actuales de sus atributos.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Comportamiento</span>: Las
+                      acciones que puede realizar, definidas por los métodos
+                      de su clase.
+                    </li>
+                  </ul>
+                </div>
+                <!-- Qué Es un Objeto fin -->
+                <!-- Cómo se Crea un Objeto -->
+                <div>
+                  <h4>Cómo se Crea un Objeto</h4>
+                  <p>
+                    En Python, se crea un objeto instanciando una clase, es
+                    decir, llamando a la clase como si fuera una función.
+                  </p>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Definición de una clase
                           class Persona:
@@ -364,33 +294,33 @@
                           # persona1 y persona2 son objetos distintos creados a partir de la clase Persona.
                         </code>
                       </pre>
-                    </div>
                   </div>
-                  <!-- Cómo se Crea un Objeto fin -->
-                  <!-- Componentes Principales de un Objeto -->
-                  <div>
-                    <h4>Componentes Principales de un Objeto</h4>
-                    <ul>
-                      <li>
-                        <span class="fw-bold">Atributos del objeto</span>: Los
-                        atributos almacenan el estado del objeto. Cada objeto
-                        puede tener valores diferentes para los mismos
-                        atributos.
-                        <div class="ej-sintaxis">
-                          <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <!-- Cómo se Crea un Objeto fin -->
+                <!-- Componentes Principales de un Objeto -->
+                <div>
+                  <h4>Componentes Principales de un Objeto</h4>
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Atributos del objeto</span>: Los
+                      atributos almacenan el estado del objeto. Cada objeto
+                      puede tener valores diferentes para los mismos
+                      atributos.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               print(persona1.nombre)  # Juan
                               print(persona2.nombre)  # Ana
                             </code>
                           </pre>
-                        </div>
-                      </li>
-                      <li>
-                        <span class="fw-bold">Métodos del objeto</span>: Son
-                        funciones que operan sobre el objeto. Pueden acceder a
-                        sus atributos y modificarlos.
-                        <div class="ej-sintaxis">
-                          <pre data-src-status="loaded" tabindex="0">
+                      </div>
+                    </li>
+                    <li>
+                      <span class="fw-bold">Métodos del objeto</span>: Son
+                      funciones que operan sobre el objeto. Pueden acceder a
+                      sus atributos y modificarlos.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               class Persona:
                                   def __init__(self, nombre, edad):
@@ -406,54 +336,54 @@
                               print(persona2.saludar())  # Hola, soy Ana y tengo 30 años.
                             </code>
                           </pre>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Componentes Principales de un Objeto fin -->
-                  <!-- Propiedades Clave de los Objetos -->
-                  <div>
-                    <h4>Propiedades Clave de los Objetos</h4>
-                    <ul>
-                      <li>
-                        <span class="fw-bold">Identidad única</span>: Cada
-                        objeto tiene una identidad que lo diferencia de otros
-                        objetos. Esto se puede verificar con la función
-                        <code class="language-python">id()</code>.
-                        <div class="ej-sintaxis">
-                          <pre data-src-status="loaded" tabindex="0">
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Componentes Principales de un Objeto fin -->
+                <!-- Propiedades Clave de los Objetos -->
+                <div>
+                  <h4>Propiedades Clave de los Objetos</h4>
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Identidad única</span>: Cada
+                      objeto tiene una identidad que lo diferencia de otros
+                      objetos. Esto se puede verificar con la función
+                      <code class="language-python">id()</code>.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               print(id(persona1))  # Muestra la dirección en memoria del objeto persona1
                               print(id(persona2))  # Será diferente a la de persona1
                             </code>
                           </pre>
-                        </div>
-                      </li>
-                      <li>
-                        <span class="fw-bold">Estado mutable</span>: El estado
-                        del objeto puede cambiar al modificar sus atributos.
-                        <div class="ej-sintaxis">
-                          <pre data-src-status="loaded" tabindex="0">
+                      </div>
+                    </li>
+                    <li>
+                      <span class="fw-bold">Estado mutable</span>: El estado
+                      del objeto puede cambiar al modificar sus atributos.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               persona1.edad = 26  # Cambiando el estado del objeto persona1
                               print(persona1.edad)  # 26
                             </code>
                           </pre>
-                        </div>
-                      </li>
-                      <li>
-                        <span class="fw-bold">Encapsulamiento</span>: Los
-                        atributos de los objetos pueden estar protegidos (o
-                        privados), limitando el acceso directo a ellos.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Propiedades Clave de los Objetos fin -->
-                  <!-- Ejemplo Completo de un Objeto -->
-                  <div>
-                    <h4>Ejemplo Completo de un Objeto</h4>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                      </div>
+                    </li>
+                    <li>
+                      <span class="fw-bold">Encapsulamiento</span>: Los
+                      atributos de los objetos pueden estar protegidos (o
+                      privados), limitando el acceso directo a ellos.
+                    </li>
+                  </ul>
+                </div>
+                <!-- Propiedades Clave de los Objetos fin -->
+                <!-- Ejemplo Completo de un Objeto -->
+                <div>
+                  <h4>Ejemplo Completo de un Objeto</h4>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           class Vehiculo:
                           def __init__(self, marca, modelo, velocidad_maxima):
@@ -482,20 +412,20 @@
                           print(auto.frenar(30))  # 150
                         </code>
                       </pre>
-                    </div>
                   </div>
-                  <!-- Ejemplo Completo de un Objeto fin -->
-                  <!-- Operaciones con Objetos -->
-                  <div>
-                    <h4>Operaciones con Objetos</h4>
-                    <ul>
-                      <li>
-                        <span class="fw-bold"> Comparación de objetos</span>: Se
-                        pueden comparar objetos por identidad
-                        <code class="language-python">is</code> o por valor
-                        <code class="language-python">==</code>.
-                        <div class="ej-sintaxis">
-                          <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <!-- Ejemplo Completo de un Objeto fin -->
+                <!-- Operaciones con Objetos -->
+                <div>
+                  <h4>Operaciones con Objetos</h4>
+                  <ul>
+                    <li>
+                      <span class="fw-bold"> Comparación de objetos</span>: Se
+                      pueden comparar objetos por identidad
+                      <code class="language-python">is</code> o por valor
+                      <code class="language-python">==</code>.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               # Comparación por identidad
                               print(persona1 is persona2)  # False, son objetos distintos
@@ -512,15 +442,15 @@
                               print(p1 is p2)  # False (son instancias distintas)
                             </code>
                           </pre>
-                        </div>
-                      </li>
-                      <li>
-                        <span class="fw-bold">Representación de objetos</span>:
-                        La representación textual de un objeto se puede
-                        personalizar implementando el método especial
-                        <code class="language-python">__str__</code>.
-                        <div class="ej-sintaxis">
-                          <pre data-src-status="loaded" tabindex="0">
+                      </div>
+                    </li>
+                    <li>
+                      <span class="fw-bold">Representación de objetos</span>:
+                      La representación textual de un objeto se puede
+                      personalizar implementando el método especial
+                      <code class="language-python">__str__</code>.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               class Producto:
                               def __init__(self, nombre, precio):
@@ -532,15 +462,15 @@
                               print(producto)  # Producto: Laptop, Precio: $1500.75
                             </code>
                           </pre>
-                        </div>
-                      </li>
-                      <li>
-                        <span class="fw-bold">Copias de objetos</span>: Se
-                        pueden realizar copias superficiales o profundas de un
-                        objeto usando el módulo
-                        <code class="language-python">copy</code>.
-                        <div class="ej-sintaxis">
-                          <pre data-src-status="loaded" tabindex="0">
+                      </div>
+                    </li>
+                    <li>
+                      <span class="fw-bold">Copias de objetos</span>: Se
+                      pueden realizar copias superficiales o profundas de un
+                      objeto usando el módulo
+                      <code class="language-python">copy</code>.
+                      <div class="ej-sintaxis">
+                        <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               import copy
                               objeto_original = Punto(3, 4)
@@ -548,54 +478,53 @@
                               copia_profunda = copy.deepcopy(objeto_original)
                             </code>
                           </pre>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Operaciones con Objetos fin -->
-                </div>
-                <!-- Objetos fin -->
-              </div>
-              <!-- Clases y Objetos Fin -->
-              <!-- Herencia -->
-              <div id="herencia" class="mt-5">
-                <h2 class="mt-1">Herencia</h2>
-                <p>
-                  La herencia es un principio fundamental de la programación
-                  orientada a objetos (POO), y en Python se implementa para
-                  crear una clase base (o clase padre) cuyas propiedades y
-                  métodos pueden ser heredados por otras clases derivadas (o
-                  clases hijas). Este enfoque permite reutilizar código,
-                  simplificar la estructura y facilitar la expansión de
-                  funcionalidades.
-                </p>
-                <!-- Conceptos Clave -->
-                <div>
-                  <h3>Conceptos Clave de Herencia</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Clase Padre (Base)</span>: Es la
-                      clase de la cual se heredan las propiedades y métodos.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Clase Hija (Derivada)</span>: Es la
-                      clase que hereda de la clase padre y puede agregar o
-                      sobrescribir métodos y atributos.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python">super()</code></span
-                      >: Permite llamar métodos y propiedades de la clase padre
-                      desde la clase hija.
+                      </div>
                     </li>
                   </ul>
                 </div>
-                <!-- Conceptos Clave fin -->
-                <!-- Ejemplo Básico de Herencia en Python -->
-                <div>
-                  <h3>Ejemplo Básico de Herencia en Python</h3>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                <!-- Operaciones con Objetos fin -->
+              </div>
+              <!-- Objetos fin -->
+            </div>
+            <!-- Clases y Objetos Fin -->
+            <!-- Herencia -->
+            <div id="herencia" class="mt-5">
+              <h2>Herencia</h2>
+              <p>
+                La herencia es un principio fundamental de la programación
+                orientada a objetos (POO), y en Python se implementa para
+                crear una clase base (o clase padre) cuyas propiedades y
+                métodos pueden ser heredados por otras clases derivadas (o
+                clases hijas). Este enfoque permite reutilizar código,
+                simplificar la estructura y facilitar la expansión de
+                funcionalidades.
+              </p>
+              <!-- Conceptos Clave -->
+              <div>
+                <h3>Conceptos Clave de Herencia</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Clase Padre (Base)</span>: Es la
+                    clase de la cual se heredan las propiedades y métodos.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Clase Hija (Derivada)</span>: Es la
+                    clase que hereda de la clase padre y puede agregar o
+                    sobrescribir métodos y atributos.
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">super()</code></span>: Permite llamar métodos y
+                    propiedades de la clase padre
+                    desde la clase hija.
+                  </li>
+                </ul>
+              </div>
+              <!-- Conceptos Clave fin -->
+              <!-- Ejemplo Básico de Herencia en Python -->
+              <div>
+                <h3>Ejemplo Básico de Herencia en Python</h3>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Clase Padre
                         class Animal:
@@ -626,30 +555,28 @@
                         print(mi_gato.hacer_sonido())  # Miau
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Ejemplo Básico de Herencia en Python fin -->
-                <!-- Características Principales -->
-                <div>
-                  <h3>Características Principales</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Sobrescritura de métodos</span>: Las
-                      clases hijas pueden redefinir métodos de la clase padre
-                      para adaptarlos a sus necesidades.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python">super()</code> para
-                        acceso a la clase padre</span
-                      >: Permite acceder a métodos o atributos de la clase base,
-                      como se muestra en el constructor de Perro.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Herencia múltiple</span>: En Python,
-                      una clase puede heredar de múltiples clases:
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Ejemplo Básico de Herencia en Python fin -->
+              <!-- Características Principales -->
+              <div>
+                <h3>Características Principales</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Sobrescritura de métodos</span>: Las
+                    clases hijas pueden redefinir métodos de la clase padre
+                    para adaptarlos a sus necesidades.
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">super()</code> para
+                      acceso a la clase padre</span>: Permite acceder a métodos o atributos de la clase base,
+                    como se muestra en el constructor de Perro.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Herencia múltiple</span>: En Python,
+                    una clase puede heredar de múltiples clases:
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             class ClaseA:
                             def metodo_a(self):
@@ -664,104 +591,103 @@
                             print(obj.metodo_b())  # B
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Orden de resolución de métodos (MRO)</span
-                      >: Python usa un algoritmo conocido como C3 Linearization
-                      para determinar el orden en el que se buscan métodos y
-                      atributos en la herencia múltiple. <br />
-                      Puedes verificar el MRO con:
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Orden de resolución de métodos (MRO)</span>: Python usa un algoritmo conocido
+                    como C3 Linearization
+                    para determinar el orden en el que se buscan métodos y
+                    atributos en la herencia múltiple. <br />
+                    Puedes verificar el MRO con:
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             print(ClaseC.__mro__)
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <!-- Características Principales fin -->
-                <!-- Ventajas de la Herencia -->
-                <div>
-                  <h3>Ventajas de la Herencia</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Reutilización de código</span>: Las
-                      clases hijas pueden reutilizar código de las clases
-                      padres.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Organización</span>: Facilita la
-                      creación de estructuras jerárquicas y comprensibles.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Extensibilidad</span>: Es fácil
-                      agregar nuevas funcionalidades heredando de una clase
-                      existente.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Ventajas de la Herencia fin -->
-                <!-- Buenas Prácticas -->
-                <div>
-                  <h3>Buenas Prácticas</h3>
-                  <ul>
-                    <li>
-                      Evitar el abuso de herencia múltiple, ya que puede
-                      complicar el código.
-                    </li>
-                    <li>
-                      Usar la herencia solo cuando existe una clara relación "es
-                      un" entre las clases.
-                    </li>
-                    <li>
-                      Considerar la composición como alternativa a la herencia
-                      si es más adecuada al diseño del sistema.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Buenas Prácticas fin -->
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <!-- Herencia Fin -->
-              <!-- Jerarquía de Clases -->
-              <div id="jerarquiaDeClases" class="mt-5">
-                <h2 class="mt-1">Jerarquía de Clases</h2>
-                <p>
-                  En Python, la jerarquía de clases define cómo se relacionan y
-                  organizan las clases entre sí en términos de herencia. Este
-                  sistema establece una estructura jerárquica en la que las
-                  clases derivadas o "hijas" pueden heredar atributos y métodos
-                  de clases "padres" o "base".
-                </p>
-                <!-- Conceptos Básicos de la Jerarquía de Clases en Python -->
-                <div>
-                  <h3>Conceptos Básicos de la Jerarquía de Clases en Python</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Clase Base</span>: Es la clase
-                      principal de la cual otras clases heredan.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Clase Derivada</span>: Es una clase
-                      que hereda de otra, adquiriendo sus atributos y métodos,
-                      pero puede extenderse o modificarse.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Object</span>: En Python, todas las
-                      clases heredan indirectamente de la clase object, que es
-                      la raíz de la jerarquía.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Conceptos Básicos de la Jerarquía de Clases en Python fin -->
-                <!-- Ejemplo Básico de Jerarquía de Clases -->
-                <div>
-                  <h3>Ejemplo Básico de Jerarquía de Clases</h3>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              <!-- Características Principales fin -->
+              <!-- Ventajas de la Herencia -->
+              <div>
+                <h3>Ventajas de la Herencia</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Reutilización de código</span>: Las
+                    clases hijas pueden reutilizar código de las clases
+                    padres.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Organización</span>: Facilita la
+                    creación de estructuras jerárquicas y comprensibles.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Extensibilidad</span>: Es fácil
+                    agregar nuevas funcionalidades heredando de una clase
+                    existente.
+                  </li>
+                </ul>
+              </div>
+              <!-- Ventajas de la Herencia fin -->
+              <!-- Buenas Prácticas -->
+              <div>
+                <h3>Buenas Prácticas</h3>
+                <ul>
+                  <li>
+                    Evitar el abuso de herencia múltiple, ya que puede
+                    complicar el código.
+                  </li>
+                  <li>
+                    Usar la herencia solo cuando existe una clara relación "es
+                    un" entre las clases.
+                  </li>
+                  <li>
+                    Considerar la composición como alternativa a la herencia
+                    si es más adecuada al diseño del sistema.
+                  </li>
+                </ul>
+              </div>
+              <!-- Buenas Prácticas fin -->
+            </div>
+            <!-- Herencia Fin -->
+            <!-- Jerarquía de Clases -->
+            <div id="jerarquia-de-clases" class="mt-5">
+              <h2>Jerarquía de Clases</h2>
+              <p>
+                En Python, la jerarquía de clases define cómo se relacionan y
+                organizan las clases entre sí en términos de herencia. Este
+                sistema establece una estructura jerárquica en la que las
+                clases derivadas o "hijas" pueden heredar atributos y métodos
+                de clases "padres" o "base".
+              </p>
+              <!-- Conceptos Básicos de la Jerarquía de Clases en Python -->
+              <div>
+                <h3>Conceptos Básicos de la Jerarquía de Clases en Python</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Clase Base</span>: Es la clase
+                    principal de la cual otras clases heredan.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Clase Derivada</span>: Es una clase
+                    que hereda de otra, adquiriendo sus atributos y métodos,
+                    pero puede extenderse o modificarse.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Object</span>: En Python, todas las
+                    clases heredan indirectamente de la clase object, que es
+                    la raíz de la jerarquía.
+                  </li>
+                </ul>
+              </div>
+              <!-- Conceptos Básicos de la Jerarquía de Clases en Python fin -->
+              <!-- Ejemplo Básico de Jerarquía de Clases -->
+              <div>
+                <h3>Ejemplo Básico de Jerarquía de Clases</h3>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Clase base
                         class Animal:
@@ -787,22 +713,22 @@
                         main()
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Ejemplo Básico de Jerarquía de Clases fin -->
-                <!-- Características Clave -->
-                <div>
-                  <h3>Características Clave</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Herencia Simple</span>: Una clase
-                      puede heredar de una sola clase base.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Herencia Múltiple</span>: Una clase
-                      puede heredar de múltiples clases base.
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Ejemplo Básico de Jerarquía de Clases fin -->
+              <!-- Características Clave -->
+              <div>
+                <h3>Características Clave</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Herencia Simple</span>: Una clase
+                    puede heredar de una sola clase base.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Herencia Múltiple</span>: Una clase
+                    puede heredar de múltiples clases base.
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             # Clase base que representa características generales de un mamífero
                             class Mamifero:
@@ -835,18 +761,15 @@
                             print(murcielago.volar())  # Este animal puede volar.
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Superclase (<code class="language-python">super()</code
-                        >)</span
-                      >: La función
-                      <code class="language-python">super()</code> se utiliza
-                      para acceder a métodos y atributos de la clase base desde
-                      la clase derivada.
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Superclase (<code class="language-python">super()</code>)</span>: La función
+                    <code class="language-python">super()</code> se utiliza
+                    para acceder a métodos y atributos de la clase base desde
+                    la clase derivada.
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             # Clase base que representa un animal genérico
                             class Animal:
@@ -867,91 +790,90 @@
                             print(perro.speak())  # Salida: "Sonido genérico y también ¡Guau!"
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Resolución de Orden de Métodos (MRO)</span
-                      >: Python utiliza un algoritmo llamado C3 Linearization
-                      para determinar el orden en que se buscan atributos y
-                      métodos en una jerarquía de clases. Se puede visualizar
-                      con el atributo
-                      <code class="language-python">__mro__</code> o el método
-                      <code class="language-python">mro()</code>.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Características Clave fin -->
-                <!-- Jerarquía por Defecto en Python -->
-                <div>
-                  <h3>Jerarquía por Defecto en Python</h3>
-                  <p>
-                    Todas las clases en Python derivan de la clase
-                    <code class="language-python">object</code>, incluso si no
-                    se especifica explícitamente.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Resolución de Orden de Métodos (MRO)</span>: Python utiliza un algoritmo
+                    llamado C3 Linearization
+                    para determinar el orden en que se buscan atributos y
+                    métodos en una jerarquía de clases. Se puede visualizar
+                    con el atributo
+                    <code class="language-python">__mro__</code> o el método
+                    <code class="language-python">mro()</code>.
+                  </li>
+                </ul>
+              </div>
+              <!-- Características Clave fin -->
+              <!-- Jerarquía por Defecto en Python -->
+              <div>
+                <h3>Jerarquía por Defecto en Python</h3>
+                <p>
+                  Todas las clases en Python derivan de la clase
+                  <code class="language-python">object</code>, incluso si no
+                  se especifica explícitamente.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         class MiClase:
                           pass
                           print(MiClase.mro())  # Salida: [<class '__main__.MiClase'>, <class 'object'>]
                         </code>
                       </pre>
-                  </div>
                 </div>
-                <!-- Jerarquía por Defecto en Python fin -->
               </div>
-              <!-- Jerarquía de Clases Fin -->
-              <!-- Encapsulamiento -->
-              <div id="encapsulamiento" class="mt-5">
-                <h2 class="mt-1">Encapsulamiento</h2>
-                <p>
-                  El encapsulamiento en programación orientada a objetos (OOP)
-                  es un principio que consiste en ocultar los detalles internos
-                  de una clase y solo exponer una interfaz pública para
-                  interactuar con esos detalles. Esto se logra mediante la
-                  definición de atributos privados y métodos públicos, de modo
-                  que el acceso a los datos internos de la clase se controle,
-                  evitando manipulaciones externas no deseadas.
-                </p>
-                <p>
-                  En Python, el encapsulamiento se puede implementar utilizando
-                  convenciones de nombres, ya que Python no tiene un mecanismo
-                  estricto de acceso a atributos y métodos como en otros
-                  lenguajes (por ejemplo, Java). Sin embargo, se pueden usar
-                  ciertas prácticas para simular el encapsulamiento.
-                </p>
-                <!-- Conceptos Clave de Ensapsulamiento -->
-                <div>
-                  <h3>Conceptos Clave de Ensapsulamiento</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Atributos públicos</span>: Son
-                      aquellos que pueden ser accedidos y modificados
-                      directamente desde fuera de la clase.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Atributos privados</span>: Son
-                      aquellos que no deben ser accedidos directamente desde
-                      fuera de la clase.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Métodos públicos</span>: Son métodos
-                      que pueden ser utilizados desde fuera de la clase.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Métodos privados</span>: Son métodos
-                      que deberían ser utilizados solo dentro de la clase.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Conceptos Clave de Ensapsulamiento fin -->
-                <!-- Ejemplo de Encapsulamiento en Python -->
-                <div>
-                  <h3>Ejemplo de Encapsulamiento en Python</h3>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              <!-- Jerarquía por Defecto en Python fin -->
+            </div>
+            <!-- Jerarquía de Clases Fin -->
+            <!-- Encapsulamiento -->
+            <div id="encapsulamiento" class="mt-5">
+              <h2>Encapsulamiento</h2>
+              <p>
+                El encapsulamiento en programación orientada a objetos (OOP)
+                es un principio que consiste en ocultar los detalles internos
+                de una clase y solo exponer una interfaz pública para
+                interactuar con esos detalles. Esto se logra mediante la
+                definición de atributos privados y métodos públicos, de modo
+                que el acceso a los datos internos de la clase se controle,
+                evitando manipulaciones externas no deseadas.
+              </p>
+              <p>
+                En Python, el encapsulamiento se puede implementar utilizando
+                convenciones de nombres, ya que Python no tiene un mecanismo
+                estricto de acceso a atributos y métodos como en otros
+                lenguajes (por ejemplo, Java). Sin embargo, se pueden usar
+                ciertas prácticas para simular el encapsulamiento.
+              </p>
+              <!-- Conceptos Clave de Ensapsulamiento -->
+              <div>
+                <h3>Conceptos Clave de Ensapsulamiento</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Atributos públicos</span>: Son
+                    aquellos que pueden ser accedidos y modificados
+                    directamente desde fuera de la clase.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Atributos privados</span>: Son
+                    aquellos que no deben ser accedidos directamente desde
+                    fuera de la clase.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Métodos públicos</span>: Son métodos
+                    que pueden ser utilizados desde fuera de la clase.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Métodos privados</span>: Son métodos
+                    que deberían ser utilizados solo dentro de la clase.
+                  </li>
+                </ul>
+              </div>
+              <!-- Conceptos Clave de Ensapsulamiento fin -->
+              <!-- Ejemplo de Encapsulamiento en Python -->
+              <div>
+                <h3>Ejemplo de Encapsulamiento en Python</h3>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         class Persona:
                         def __init__(self, nombre, edad):
@@ -987,76 +909,75 @@
                     # persona.__metodo_privado()  # Esto causará un AttributeError
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Ejemplo de Encapsulamiento en Python fin -->
-                <!-- Explicación del Código Herencia -->
-                <div>
-                  <h3>Explicación del Código Herencia</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Atributos privados</span>: Se
-                      utiliza <code class="language-python">__edad</code> para
-                      hacer que el atributo edad sea privado.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Métodos privados</span>: El método
-                      <code class="language-python">__metodo_privado</code> solo
-                      puede ser llamado dentro de la clase.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Métodos públicos</span>: Los métodos
-                      como <code class="language-python">obtener_nombre</code>,
-                      <code class="language-python">obtener_edad</code> y
-                      <code class="language-python">establecer_edad</code>
-                      permiten interactuar con los datos internos de la clase de
-                      manera controlada.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Encapsulamiento a través de métodos</span
-                      >: Aunque edad es un atributo privado, se puede acceder a
-                      él mediante el método público
-                      <code class="language-python">obtener_edad</code> y
-                      modificarse a través de
-                      <code class="language-python">establecer_edad</code>.
-                    </li>
-                  </ul>
-                  <p>
-                    En Python, el uso de un solo guion bajo (por ejemplo,
-                    <code class="language-python">_edad</code>) indica una
-                    sugerencia de que el atributo o método es "protegido", es
-                    decir, no debería ser accedido directamente fuera de la
-                    clase, pero no impide el acceso. El uso de dos guiones bajos
-                    (como <code class="language-python">__edad</code>) cambia el
-                    nombre del atributo internamente (name mangling) para evitar
-                    que sea accedido directamente desde fuera de la clase,
-                    aunque no lo impide por completo.
-                  </p>
-                </div>
-                <!-- Explicación del Código Herencia fin -->
               </div>
-              <!-- Encapsulamiento Fin -->
-              <!-- Polimorfismo -->
-              <div id="polimorfismo" class="mt-5">
-                <h2 class="mt-1">Polimorfismo</h2>
+              <!-- Ejemplo de Encapsulamiento en Python fin -->
+              <!-- Explicación del Código Herencia -->
+              <div>
+                <h3>Explicación del Código Herencia</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Atributos privados</span>: Se
+                    utiliza <code class="language-python">__edad</code> para
+                    hacer que el atributo edad sea privado.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Métodos privados</span>: El método
+                    <code class="language-python">__metodo_privado</code> solo
+                    puede ser llamado dentro de la clase.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Métodos públicos</span>: Los métodos
+                    como <code class="language-python">obtener_nombre</code>,
+                    <code class="language-python">obtener_edad</code> y
+                    <code class="language-python">establecer_edad</code>
+                    permiten interactuar con los datos internos de la clase de
+                    manera controlada.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Encapsulamiento a través de métodos</span>: Aunque edad es un atributo
+                    privado, se puede acceder a
+                    él mediante el método público
+                    <code class="language-python">obtener_edad</code> y
+                    modificarse a través de
+                    <code class="language-python">establecer_edad</code>.
+                  </li>
+                </ul>
                 <p>
-                  El polimorfismo en Python es un concepto fundamental de la
-                  programación orientada a objetos, que permite que diferentes
-                  clases tengan métodos con el mismo nombre, pero que se
-                  comporten de manera diferente según el tipo de objeto que los
-                  invoque. Esto se logra a través de la herencia y la
-                  sobrescritura de métodos en clases hijas.
+                  En Python, el uso de un solo guion bajo (por ejemplo,
+                  <code class="language-python">_edad</code>) indica una
+                  sugerencia de que el atributo o método es "protegido", es
+                  decir, no debería ser accedido directamente fuera de la
+                  clase, pero no impide el acceso. El uso de dos guiones bajos
+                  (como <code class="language-python">__edad</code>) cambia el
+                  nombre del atributo internamente (name mangling) para evitar
+                  que sea accedido directamente desde fuera de la clase,
+                  aunque no lo impide por completo.
                 </p>
-                <!-- Ejemplo Básico de Polimorfismo: -->
-                <div>
-                  <h3>Ejemplo Básico de Polimorfismo</h3>
-                  <p>
-                    En Python, el polimorfismo se puede lograr mediante la
-                    herencia de clases y la sobrescritura de métodos.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Explicación del Código Herencia fin -->
+            </div>
+            <!-- Encapsulamiento Fin -->
+            <!-- Polimorfismo -->
+            <div id="polimorfismo" class="mt-5">
+              <h2>Polimorfismo</h2>
+              <p>
+                El polimorfismo en Python es un concepto fundamental de la
+                programación orientada a objetos, que permite que diferentes
+                clases tengan métodos con el mismo nombre, pero que se
+                comporten de manera diferente según el tipo de objeto que los
+                invoque. Esto se logra a través de la herencia y la
+                sobrescritura de métodos en clases hijas.
+              </p>
+              <!-- Ejemplo Básico de Polimorfismo: -->
+              <div>
+                <h3>Ejemplo Básico de Polimorfismo</h3>
+                <p>
+                  En Python, el polimorfismo se puede lograr mediante la
+                  herencia de clases y la sobrescritura de métodos.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         class Animal:
                         def hacer_sonido(self):
@@ -1078,186 +999,190 @@
                         emitir_sonido(gato)   # Output: El gato maúlla
                       </code>
                     </pre>
-                  </div>
-                  <p>
-                    En este ejemplo, el polimorfismo permite que el mismo método
-                    (<code class="language-python">hacer_sonido</code>) se
-                    ejecute de manera diferente según el objeto que lo invoque,
-                    sin que el código que llama a
-                    <code class="language-python">hacer_sonido</code> necesite
-                    saber si está trabajando con un
-                    <code class="language-python">Perro</code> o un
-                    <code class="language-python">Gato</code>.
-                  </p>
                 </div>
-                <!-- Ejemplo Básico de Polimorfismo: fin -->
-                <!-- Explicación del Código Polimorfismo -->
-                <div>
-                  <h3>Explicación del Código Polimorfismo</h3>
-                  <ul>
-                    <li>
-                      Se crea una clase base
-                      <code class="language-python">Animal</code> que tiene un
-                      método <code class="language-python">hacer_sonido</code>.
-                    </li>
-                    <li>
-                      Se crean dos clases derivadas,
-                      <code class="language-python">Perro</code> y
-                      <code class="language-python">Gato</code>, que
-                      sobrescriben el método
-                      <code class="language-python">hacer_sonido</code> con
-                      comportamientos específicos.
-                    </li>
-                    <li>
-                      La función
-                      <code class="language-python">emitir_sonido</code> puede
-                      recibir cualquier objeto de tipo
-                      <code class="language-python">Animal</code> y, dependiendo
-                      del tipo específico de objeto, invoca el método adecuado
-                      (<code class="language-python">hacer_sonido</code> de
-                      <code class="language-python">Perro</code> o
-                      <code class="language-python">Gato</code>), demostrando el
-                      comportamiento polimórfico.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Explicación del Código Polimorfismo fin -->
-                <!-- Polimorfismo con Parámetros -->
-                <div>
-                  <h3>Polimorfismo con Parámetros</h3>
-                  <p>
-                    El polimorfismo también se puede usar cuando se pasan
-                    diferentes tipos de datos como parámetros, y las funciones
-                    pueden ajustarse a esos datos de manera distinta.
-                  </p>
-                </div>
-                <!-- Polimorfismo con Parámetros fin -->
-              </div>
-              <!-- Polimorfismo Fin -->
-            </div>
-          </article>
-          <!--  Los Fundamentos de la Programación Orientada a Objetos (OOP) en Python  -->
-          <!--  comentarios  -->
-          <article class="row pt-5" id="comments">
-            <h2>COMENTARIOS</h2>
-            <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por
-              favor infórmelo a través del formulario disponible para este
-              propósito.
-            </p>
-            <div class="d-flex justify-content-center">
-              <form
-                action="https://formspree.io/f/mdkdawkg"
-                method="POST"
-                id="myForm"
-              >
-                <fieldset class="d-flex flex-column gap-3">
-                  <legend class="text-center fs-4">Deje su comentario</legend>
-
-                  <div class="d-flex flex-column">
-                    <label for="name">Nombre:</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="User"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
-
-                  <div class="d-flex flex-column">
-                    <label for="email">Email:</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="user@mail.com"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
-
-                  <div class="d-flex flex-column">
-                    <label for="message">Mensaje:</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      cols="30"
-                      rows="5"
-                      placeholder="Su comentario..."
-                      class="form-control rounded-3"
-                      required
-                    ></textarea>
-                  </div>
-
-                  <button
-                    type="submit"
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
-                  >
-                    Enviar
-                  </button>
-                </fieldset>
-
-                <p class="small text-center">
-                  La política de privacidad, y los términos y condiciones están
-                  disponibles en el formulario de contacto.
+                <p>
+                  En este ejemplo, el polimorfismo permite que el mismo método
+                  (<code class="language-python">hacer_sonido</code>) se
+                  ejecute de manera diferente según el objeto que lo invoque,
+                  sin que el código que llama a
+                  <code class="language-python">hacer_sonido</code> necesite
+                  saber si está trabajando con un
+                  <code class="language-python">Perro</code> o un
+                  <code class="language-python">Gato</code>.
                 </p>
-              </form>
+              </div>
+              <!-- Ejemplo Básico de Polimorfismo: fin -->
+              <!-- Explicación del Código Polimorfismo -->
+              <div>
+                <h3>Explicación del Código Polimorfismo</h3>
+                <ul>
+                  <li>
+                    Se crea una clase base
+                    <code class="language-python">Animal</code> que tiene un
+                    método <code class="language-python">hacer_sonido</code>.
+                  </li>
+                  <li>
+                    Se crean dos clases derivadas,
+                    <code class="language-python">Perro</code> y
+                    <code class="language-python">Gato</code>, que
+                    sobrescriben el método
+                    <code class="language-python">hacer_sonido</code> con
+                    comportamientos específicos.
+                  </li>
+                  <li>
+                    La función
+                    <code class="language-python">emitir_sonido</code> puede
+                    recibir cualquier objeto de tipo
+                    <code class="language-python">Animal</code> y, dependiendo
+                    del tipo específico de objeto, invoca el método adecuado
+                    (<code class="language-python">hacer_sonido</code> de
+                    <code class="language-python">Perro</code> o
+                    <code class="language-python">Gato</code>), demostrando el
+                    comportamiento polimórfico.
+                  </li>
+                </ul>
+              </div>
+              <!-- Explicación del Código Polimorfismo fin -->
+              <!-- Polimorfismo con Parámetros -->
+              <div>
+                <h3>Polimorfismo con Parámetros</h3>
+                <p>
+                  El polimorfismo también se puede usar cuando se pasan
+                  diferentes tipos de datos como parámetros, y las funciones
+                  pueden ajustarse a esos datos de manera distinta.
+                </p>
+              </div>
+              <!-- Polimorfismo con Parámetros fin -->
             </div>
-          </article>
-          <!--  fin comentarios  -->
-        </section>
-        <!--  barra lateral  -->
-        <aside class="col-lg-3 d-none d-lg-block pt-5">
-          <h1>En Este Artículo</h1>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a href="#introduccion">Introducción</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#clasesYObjetos">Clases y Objetos</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#herencia">Herencia</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#jerarquiaDeClases">Jerarquía de Clases</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#encapsulamiento">Encapsulamiento</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#polimorfismo">Polimorfismo</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#comments">Comentarios</a>
-            </li>
-          </ul>
-        </aside>
-        <!--  fin barra lateral  -->
-      </main>
-      <!--  fin principal  -->
-    </div>
-    <!--  Principal Fin  -->
+            <!-- Polimorfismo Fin -->
+          </div>
+        </article>
+        <!--  Los Fundamentos de la Programación Orientada a Objetos (OOP) en Python  -->
+        <!--  comentarios  -->
+        <article class="row pt-5" id="comments">
+          <h2>COMENTARIOS</h2>
+          <p>
+            Si tiene alguna inquietud, duda o ha encontrado algún error, por
+            favor infórmelo a través del formulario disponible para este
+            propósito.
+          </p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
 
-    <!-- button to top -->
-    <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        fill="currentColor"
-        class="bi bi-arrow-bar-up"
-        viewBox="0 0 16 16"
-        style="margin-left: -2px"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"
-        ></path>
-      </svg>
-    </button>
-    <!-- Fin button to top -->
-  </body>
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
+                </div>
+
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
+
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                  Enviar
+                </button>
+              </fieldset>
+
+              <p class="small text-center">
+                La política de privacidad, y los términos y condiciones están
+                disponibles en el formulario de contacto.
+              </p>
+            </form>
+          </div>
+        </article>
+        <!--  fin comentarios  -->
+      </section>
+
+      <!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h1>En Este Artículo</h1><div class="menu-scroll"><div class="menu-container"><div class="border border-1">
+<div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
+<div class="menu-item"><a href="#clases-y-objetos" class="simple-link">Clases y Objetos</a></div>
+<div class="menu-item"><a href="#herencia" class="simple-link">Herencia</a></div>
+<div class="menu-item"><a href="#jerarquia-de-clases" class="simple-link">Jerarquía de Clases</a></div>
+<div class="menu-item"><a href="#encapsulamiento" class="simple-link">Encapsulamiento</a></div>
+<div class="menu-item"><a href="#polimorfismo" class="simple-link">Polimorfismo</a></div>
+<!-- Comentarios  -->
+<div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div></div></div></div></aside>
+<!--  fin barra lateral  -->
+    </main>
+    <!--  fin principal  -->
+  </div>
+  <!--  Principal Fin  -->
+
+  <!--  pie de pagina  -->
+  <footer class="row border-top border-1 m-1 mt-auto">
+    <div class="row">
+      <!-- contacto -->
+      <address class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Contacto</div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class="ms-3">
+            <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class="ms-3">Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      <!-- Derechos de autor -->
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
+      </div>
+      <!-- redes sociales -->
+      <div class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Redes Sociales</div>
+        <div class="d-flex justify-content-evenly align-items-center gap-5">
+          <div>
+            <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center gap-2"></div>
+  </footer>
+  <!--  pie de pagina fin  -->
+
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
 </html>

@@ -1,250 +1,179 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-  <head>
-    <!-- Metaetiquetas -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Se aprenderá a establecer comunicación con una computadora: se familiarizará con la función input(), realizará conversiones de tipos de datos y se aprenderá a utilizar operadores de cadenas."
-    />
-    <meta
-      name="title"
-      content="Interacción con el Usuario Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta name="author" content="Ing. Eduardo Herrera Forero" />
-    <meta name="application-name" content="EHF" />
-    <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://eduardoherreraf.github.io/cursoPython3-0206_interaccion_con_el_usuario.html"
-    />
-    <!-- Fin Metaetiquetas -->
 
-    <!-- Open Graph data -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Interacción con el Usuario Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      property="og:description"
-      content="Se aprenderá a establecer comunicación con una computadora: se familiarizará con la función input(), realizará conversiones de tipos de datos y se aprenderá a utilizar operadores de cadenas."
-    />
-    <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      property="og:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      property="og:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0206_interaccion_con_el_usuario.html"
-    />
-    <meta property="og:locale" content="es_CO" />
-    <!-- fin Open Graph data -->
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Se aprenderá a establecer comunicación con una computadora: se familiarizará con la función input(), realizará conversiones de tipos de datos y se aprenderá a utilizar operadores de cadenas." />
+  <meta name="title" content="Interacción con el Usuario Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eduardoherreraf.github.io/cursoPython3-0206_interaccion_con_el_usuario.html" />
+  <!-- Fin Metaetiquetas -->
 
-    <!-- Twitter cards -->
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="Interacción con el Usuario Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      name="twitter:description"
-      content="Se aprenderá a establecer comunicación con una computadora: se familiarizará con la función input(), realizará conversiones de tipos de datos y se aprenderá a utilizar operadores de cadenas."
-    />
-    <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      name="twitter:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      name="twitter:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0206_interaccion_con_el_usuario.html"
-    />
-    <meta name="twitter:site" content="@ehfeduardo" />
-    <!-- Fin Twitter cards -->
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Interacción con el Usuario Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta property="og:description"
+    content="Se aprenderá a establecer comunicación con una computadora: se familiarizará con la función input(), realizará conversiones de tipos de datos y se aprenderá a utilizar operadores de cadenas." />
+  <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta property="og:url"
+    content="https://eduardoherreraf.github.io/cursoPython3-0206_interaccion_con_el_usuario.html" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
 
-    <!-- iconos -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="android-chrome-192x192.png"
-    />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- fin iconos -->
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Interacción con el Usuario Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description"
+    content="Se aprenderá a establecer comunicación con una computadora: se familiarizará con la función input(), realizará conversiones de tipos de datos y se aprenderá a utilizar operadores de cadenas." />
+  <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta name="twitter:url"
+    content="https://eduardoherreraf.github.io/cursoPython3-0206_interaccion_con_el_usuario.html" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
 
-    <title>
-      Interacción con el Usuario Python 3 - Ing. Eduardo Herrera Forero.
-    </title>
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
 
-    <script type="module" src="./js/main.js"></script>
+  <title>
+    Interacción con el Usuario Python 3 - Ing. Eduardo Herrera Forero.
+  </title>
 
-    <meta
-      name="google-site-verification"
-      content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"
-    />
-  </head>
+  <script type="module" src="./js/main.js"></script>
 
-  <body>
-    <!-- Barra deNavegación -->
-    <nav
-      class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
-    >
-      <div class="container-fluid">
-        <!-- Enlace a la página principal con el logo y nombre -->
-        <a
-          class="navbar-brand d-flex align-items-center ms-2"
-          href="index.html"
-        >
-          <img
-            src="./images/logo.png"
-            alt="Logo de Ing. Eduardo Herrera Forero"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top me-1"
-          />
-          <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
-        </a>
-        <!-- Botón para activar el menú en dispositivos pequeños -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Menú de navegación -->
-        <div
-          class="collapse navbar-collapse ms-auto text-center"
-          id="navbarSupportedContent"
-        >
-          <ul
-            class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100"
-          >
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#portfolio"
-                >PORTAFOLIO</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 publicaciones-activo"
-                href="index.html#blog"
-                >PUBLICACIONES</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
-            </li>
-          </ul>
-        </div>
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Barra deNavegación -->
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
 
-    <!--  principal  -->
-    <div class="container-fluid" id="introduccion">
-      <main class="row">
-        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
-          <!--  Interacción con el Usuario en Python  -->
-          <article
-            class="row border-1 border-bottom pb-3"
-            data-bs-spy="scroll"
-            data-bs-target="#list-example"
-            data-bs-smooth-scroll="true"
-          >
-            <div>
-              <header>
-                <h1>Interacción con el Usuario en Python</h1>
-              </header>
-              <!-- Introducción -->
-              <div class="mt-5">
-                <h2>Introducción</h2>
-                <p>
-                  La función <code class="language-python">input()</code> en
-                  Python es una herramienta fundamental para interactuar con el
-                  usuario. Permite que el programa solicite y reciba información
-                  directamente del teclado.
-                </p>
-                <p>
-                  Cuando se llama a esta función, el programa se detiene y
-                  espera a que el usuario ingrese algún dato. Una vez que el
-                  usuario presiona
-                  <kbd>Enter</kbd>, el valor ingresado se devuelve como una
-                  cadena de texto (string).
-                </p>
-                <div class="centrar-imagen imagen50">
-                  <figure>
-                    <img
-                      src="https://i.ibb.co/wNwH0x3/input.jpg"
-                      class="img-fluid"
-                      alt="Función input() en Python"
-                      title="Diagrama del funcionamiento de la función input() en Python"
-                    />
-                    <figcaption>Función input() en Python</figcaption>
-                  </figure>
-                </div>
+  <!--  principal  -->
+  <div class="container-fluid" id="introduccion">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!--  Interacción con el Usuario en Python  -->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <div>
+            <header>
+              <h1>Interacción con el Usuario en Python</h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-5">
+              <h2>Introducción</h2>
+              <p>
+                La función <code class="language-python">input()</code> en
+                Python es una herramienta fundamental para interactuar con el
+                usuario. Permite que el programa solicite y reciba información
+                directamente del teclado.
+              </p>
+              <p>
+                Cuando se llama a esta función, el programa se detiene y
+                espera a que el usuario ingrese algún dato. Una vez que el
+                usuario presiona
+                <kbd>Enter</kbd>, el valor ingresado se devuelve como una
+                cadena de texto (string).
+              </p>
+              <div class="centrar-imagen imagen50">
+                <figure>
+                  <img src="https://i.ibb.co/wNwH0x3/input.jpg" class="img-fluid" alt="Función input() en Python"
+                    title="Diagrama del funcionamiento de la función input() en Python" />
+                  <figcaption>Función input() en Python</figcaption>
+                </figure>
               </div>
+            </div>
 
-              <!-- La función input() -->
-              <div id="laFuncionInput" class="mt-5">
-                <h2 class="mt-1">La función input()</h2>
-                <p>
-                  La función <code class="language-python">input()</code> en
-                  Python es una herramienta fundamental para interactuar con el
-                  usuario. Permite que el programa solicite y reciba información
-                  directamente del teclado.
-                </p>
-                <p>
-                  Cuando se llama a esta función, el programa se detiene y
-                  espera a que el usuario ingrese algún dato. Una vez que el
-                  usuario presiona <kbd>Enter</kbd>, el valor ingresado se
-                  devuelve como una cadena de texto (string).
-                </p>
-                <p>Sintaxis:</p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+            <!-- La función input() -->
+            <div id="la-funcion-input" class="mt-5">
+              <h2>La función <code class="language-python">input()</code></h2>
+              <p>
+                La función <code class="language-python">input()</code> en
+                Python es una herramienta fundamental para interactuar con el
+                usuario. Permite que el programa solicite y reciba información
+                directamente del teclado.
+              </p>
+              <p>
+                Cuando se llama a esta función, el programa se detiene y
+                espera a que el usuario ingrese algún dato. Una vez que el
+                usuario presiona <kbd>Enter</kbd>, el valor ingresado se
+                devuelve como una cadena de texto (string).
+              </p>
+              <p>Sintaxis:</p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       variable = input(prompt)
                     </code>
                   </pre>
-                </div>
-                <ul>
-                  <li>
-                    <span class="fw-bold">prompt</span>: Es un mensaje opcional
-                    que se muestra al usuario para indicar qué tipo de
-                    información se espera.
-                  </li>
-                  <li>
-                    <span class="fw-bold">variable</span>: Es una variable donde
-                    se almacena la entrada del usuario.
-                  </li>
-                </ul>
-                <p>Ejemplo:</p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <ul>
+                <li>
+                  <span class="fw-bold">prompt</span>: Es un mensaje opcional
+                  que se muestra al usuario para indicar qué tipo de
+                  información se espera.
+                </li>
+                <li>
+                  <span class="fw-bold">variable</span>: Es una variable donde
+                  se almacena la entrada del usuario.
+                </li>
+              </ul>
+              <p>Ejemplo:</p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       nombre = input("Por favor, ingresa tu nombre: ")
                       edad = input("¿Cuál es tu edad? ")
@@ -252,110 +181,107 @@
                       print("Tienes", edad, "años.")
                       </code>
                   </pre>
-                </div>
-                <ul>
-                  <li>
-                    La línea
-                    <code class="language-python">
-                      nombre = input("Por favor, ingresa tu nombre: ")</code
-                    >
-                    muestra el mensaje "Por favor, ingresa tu nombre:" en la
-                    consola.
-                  </li>
-                  <li>
-                    El programa espera a que el usuario escriba su nombre y
-                    presione Enter.
-                  </li>
-                  <li>
-                    El nombre ingresado se almacena en la variable
-                    <kbd>nombre</kbd>.
-                  </li>
-                  <li>Lo mismo ocurre con la edad en la siguiente línea.</li>
-                  <li>
-                    Finalmente, se imprimen los mensajes de saludo utilizando
-                    las variables nombre y edad.
-                  </li>
-                </ul>
               </div>
-              <!-- La función input() Fin -->
-              <!-- El Resultado de la Función input() -->
-              <div id="elResultadodelaFuncioninput" class="mt-5">
-                <h2 class="mt-1">El Resultado de la Función input()</h2>
-                <p>
-                  La función
-                  <code class="language-python">input()</code> siempre devuelve
-                  una cadena de texto, incluso si el usuario ingresa un número.
-                </p>
-                <p>
-                  Una cadena que contiene todos los caracteres que el usuario ha
-                  introducido desde el teclado. No es un entero ni un flotante.
-                </p>
-                <p>
-                  Esto significa que no se debe utilizar como un argumento para
-                  operaciones matemáticas, por ejemplo, no se pueden utilizar
-                  estos datos para elevarlos al cuadrado, para dividirlos entre
-                  algo o por algo.
-                </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+              <ul>
+                <li>
+                  La línea
+                  <code class="language-python">
+                      nombre = input("Por favor, ingresa tu nombre: ")</code>
+                  muestra el mensaje "Por favor, ingresa tu nombre:" en la
+                  consola.
+                </li>
+                <li>
+                  El programa espera a que el usuario escriba su nombre y
+                  presione Enter.
+                </li>
+                <li>
+                  El nombre ingresado se almacena en la variable
+                  <kbd>nombre</kbd>.
+                </li>
+                <li>Lo mismo ocurre con la edad en la siguiente línea.</li>
+                <li>
+                  Finalmente, se imprimen los mensajes de saludo utilizando
+                  las variables nombre y edad.
+                </li>
+              </ul>
+            </div>
+            <!-- La función input() Fin -->
+            <!-- El Resultado de la Función input() -->
+            <div id="el-resultado-de-la-funcion-input" class="mt-5">
+              <h2>El Resultado de la Función <code class="language-python">input()</code></h2>
+              <p>
+                La función
+                <code class="language-python">input()</code> siempre devuelve
+                una cadena de texto, incluso si el usuario ingresa un número.
+              </p>
+              <p>
+                Una cadena que contiene todos los caracteres que el usuario ha
+                introducido desde el teclado. No es un entero ni un flotante.
+              </p>
+              <p>
+                Esto significa que no se debe utilizar como un argumento para
+                operaciones matemáticas, por ejemplo, no se pueden utilizar
+                estos datos para elevarlos al cuadrado, para dividirlos entre
+                algo o por algo.
+              </p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       anything = input("Ingresa un número:")
                       something = anything ** 2.0
                       print(anything, "al cuadrado es", something)
                     </code>
                   </pre>
-                </div>
-                <p>
-                  Cuando python intente ejecutar
-                  <code class="language-python"
-                    >something = anything ** 2.0</code
-                  >
-                  se devolverá el siguiente error "TypeError: unsupported
-                  operand type(s) for ** or pow(): 'str' and 'float'"
-                </p>
               </div>
-              <!-- El Resultado de la Función input() Fin -->
-              <!-- Conversión de Tipos (Conversiones de Tipos) -->
-              <div id="conversiondeTipos" class="mt-5">
-                <h2 class="mt-1">Conversión de Tipos</h2>
-                <p>
-                  Python ofrece dos simples funciones para especificar un tipo
-                  de dato y resolver este problema, aquí están:
-                  <code class="language-python">int()</code> y
-                  <code class="language-python">float()</code>.
-                </p>
-                <p>Sus nombres indican cual es su función:</p>
-                <ul>
-                  <li>
-                    La función <code class="language-python">int()</code> toma
-                    un argumento (por ejemplo, una cadena:
-                    <code class="language-python">int(string)</code>) e intenta
-                    convertirlo a un valor entero; si llegase a fallar, el
-                    programa entero fallará también.
-                  </li>
-                  <li>
-                    La función <code class="language-python">float()</code> toma
-                    un argumento (por ejemplo, una cadena:
-                    <code class="language-python">float(string)</code>) e
-                    intenta convertirlo a flotante.
-                  </li>
-                </ul>
-                <p>Por ejemplo:</p>
-                <ul>
-                  <li>
-                    Para valores enteros:
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+              <p>
+                Cuando python intente ejecutar
+                <code class="language-python">something = anything ** 2.0</code>
+                se devolverá el siguiente error "TypeError: unsupported
+                operand type(s) for ** or pow(): 'str' and 'float'"
+              </p>
+            </div>
+            <!-- El Resultado de la Función input() Fin -->
+            <!-- Conversión de Tipos (Conversiones de Tipos) -->
+            <div id="conversion-de-tipos" class="mt-5">
+              <h2>Conversión de Tipos</h2>
+              <p>
+                Python ofrece dos simples funciones para especificar un tipo
+                de dato y resolver este problema, aquí están:
+                <code class="language-python">int()</code> y
+                <code class="language-python">float()</code>.
+              </p>
+              <p>Sus nombres indican cual es su función:</p>
+              <ul>
+                <li>
+                  La función <code class="language-python">int()</code> toma
+                  un argumento (por ejemplo, una cadena:
+                  <code class="language-python">int(string)</code>) e intenta
+                  convertirlo a un valor entero; si llegase a fallar, el
+                  programa entero fallará también.
+                </li>
+                <li>
+                  La función <code class="language-python">float()</code> toma
+                  un argumento (por ejemplo, una cadena:
+                  <code class="language-python">float(string)</code>) e
+                  intenta convertirlo a flotante.
+                </li>
+              </ul>
+              <p>Por ejemplo:</p>
+              <ul>
+                <li>
+                  Para valores enteros:
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           edad = int(input("¿Cuál es tu edad? "))
                         </code>
                       </pre>
-                    </div>
-                  </li>
-                  <li>
-                    Para valores flotantes:
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  Para valores flotantes:
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           leg_a = float(input("Ingresa la longitud del primer cateto: "))
                           leg_b = float(input("Ingresa la longitud del segundo cateto: "))
@@ -363,27 +289,27 @@
                           print("La longitud de la hipotenusa es:", hypo)
                         </code>
                       </pre>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- Conversión de Tipos Fin -->
-              <!-- Operadores Cadena -->
-              <div id="operadoresCadena" class="mt-5">
-                <h2 class="mt-1">Operadores Cadena</h2>
-                <h3>Concatenación</h3>
-                <p>
-                  En Python, el signo más (<code class="language-python">+</code
-                  >) se utiliza comúnmente para concatenar cadenas de texto.
-                  Cuando se emplea entre dos o más valores de tipo str, el
-                  operador <code class="language-python">+</code> une esas
-                  cadenas en una sola. Este uso específico del
-                  <code class="language-python">+</code> permite construir
-                  mensajes personalizados o juntar varios fragmentos de texto en
-                  un mismo resultado.
-                </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Conversión de Tipos Fin -->
+            <!-- Operadores Cadena -->
+            <div id="operadores-cadena" class="mt-5">
+              <h2>Operadores Cadena</h2>
+              <h3>Concatenación</h3>
+              <p>
+                En Python, el signo más (<code class="language-python">+</code>) se utiliza comúnmente para concatenar
+                cadenas de texto.
+                Cuando se emplea entre dos o más valores de tipo str, el
+                operador <code class="language-python">+</code> une esas
+                cadenas en una sola. Este uso específico del
+                <code class="language-python">+</code> permite construir
+                mensajes personalizados o juntar varios fragmentos de texto en
+                un mismo resultado.
+              </p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       saludo = "Hola, "
                       nombre = "María"
@@ -391,126 +317,124 @@
                       print(mensaje)  # Resultado: "Hola, María"
                     </code>
                   </pre>
-                </div>
-                <h3>Replicación</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Replicación de cadenas</span>: En este
-                    caso, el operador
-                    <code class="language-python">*</code> permite repetir la
-                    cadena un número específico de veces.
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <h3>Replicación</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Replicación de cadenas</span>: En este
+                  caso, el operador
+                  <code class="language-python">*</code> permite repetir la
+                  cadena un número específico de veces.
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           texto = "Hola " * 3  # texto será "Hola Hola Hola "
                         </code>
                       </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Replicación de listas</span>: En este
-                    caso el operador
-                    <code class="language-python">*</code> permite replicar el
-                    contenido de la cadena.
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Replicación de listas</span>: En este
+                  caso el operador
+                  <code class="language-python">*</code> permite replicar el
+                  contenido de la cadena.
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           lista = [1, 2, 3] * 2  # lista será [1, 2, 3, 1, 2, 3]
                         </code>
                       </pre>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- Operadores Cadena Fin -->
-              <!-- Otros Tipos de Conversiones -->
-              <div id="otrosTiposdeConversiones" class="mt-5">
-                <h2 class="mt-1">Otros Tipos de Conversiones</h2>
-                <h3>str()</h3>
-                <p>
-                  La función <code class="language-python">str()</code> en
-                  Python convierte un valor a su representación en cadena de
-                  texto (string). Esta función se utiliza comúnmente para
-                  transformar valores numéricos, booleanos, listas,
-                  diccionarios, entre otros, en cadenas que pueden ser
-                  visualizadas o impresas fácilmente.
-                </p>
-                <p>Sintaxis:</p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Operadores Cadena Fin -->
+            <!-- Otros Tipos de Conversiones -->
+            <div id="otros-tipos-de-conversiones" class="mt-5">
+              <h2>Otros Tipos de Conversiones</h2>
+              <h3><code class="language-python">str()</code></h3>
+              <p>
+                La función <code class="language-python">str()</code> en
+                Python convierte un valor a su representación en cadena de
+                texto (string). Esta función se utiliza comúnmente para
+                transformar valores numéricos, booleanos, listas,
+                diccionarios, entre otros, en cadenas que pueden ser
+                visualizadas o impresas fácilmente.
+              </p>
+              <p>Sintaxis:</p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       str(objeto)
                     </code>
                   </pre>
-                </div>
-                <p>Parámetro:</p>
-                <ul>
-                  <li>
-                    <span class="fw-bold">objeto</span>: Cualquier valor o
-                    expresión que se quiera convertir en cadena.
-                  </li>
-                </ul>
-                <h3>Ejemplos de uso</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Convertir un número a cadena</span>:
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <p>Parámetro:</p>
+              <ul>
+                <li>
+                  <span class="fw-bold">objeto</span>: Cualquier valor o
+                  expresión que se quiera convertir en cadena.
+                </li>
+              </ul>
+              <h3>Ejemplos de uso</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Convertir un número a cadena</span>:
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           numero = 42
                           texto = str(numero)
                           print(texto)  # Output: '42'
                         </code>
                       </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Convertir un booleano a cadena</span>:
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Convertir un booleano a cadena</span>:
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           verdad = True
                           texto = str(verdad)
                           print(texto)  # Output: 'True'
                         </code>
                       </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Convertir una lista a cadena</span>:
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Convertir una lista a cadena</span>:
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           lista = [1, 2, 3]
                           texto = str(lista)
                           print(texto)  # Output: '[1, 2, 3]'
                         </code>
                       </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      >Convertir un diccionario a cadena</span
-                    >:
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Convertir un diccionario a cadena</span>:
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           diccionario = {'nombre': 'Juan', 'edad': 30}
                           texto = str(diccionario)
                           print(texto)  # Output: "{'nombre': 'Juan', 'edad': 30}"
                         </code>
                       </pre>
-                    </div>
-                  </li>
-                </ul>
-                <h3>Uso Práctico</h3>
-                <p>
-                  <code class="language-python">str()</code> es especialmente
-                  útil al combinar diferentes tipos de datos en una cadena. Por
-                  ejemplo:
-                </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+              </ul>
+              <h3>Uso Práctico</h3>
+              <p>
+                <code class="language-python">str()</code> es especialmente
+                útil al combinar diferentes tipos de datos en una cadena. Por
+                ejemplo:
+              </p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       edad = 25
                       nombre = "Ana"
@@ -519,30 +443,28 @@
                       # Output: 'Hola, Ana. Tienes 25 años.'
                     </code>
                   </pre>
-                </div>
               </div>
-              <!-- Otros Tipos de Conversiones Fin -->
-              <!-- Función de Verificación de Tipo -->
-              <div id="funcióndeVerificacióndeTipo" class="mt-5">
-                <h2 class="mt-1">Función de Verificación de Tipo</h2>
-                <p>
-                  En Python, la función
-                  <code class="language-python">type()</code> se utiliza para
-                  obtener el tipo de dato de un objeto. Cuando se pasa una
-                  variable o cualquier valor a
-                  <code class="language-python">type()</code>, esta función
-                  devuelve el tipo de dato de dicho objeto. Esto puede incluir
-                  tipos de datos básicos como
-                  <code class="language-python">int</code>,
-                  <code class="language-python">float</code> ,<code
-                    class="language-python"
-                    >str</code
-                  >, <code class="language-python">list</code>, entre otros, así
-                  como tipos de datos definidos por el usuario (por ejemplo,
-                  clases).
-                </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <!-- Otros Tipos de Conversiones Fin -->
+            <!-- Función de Verificación de Tipo -->
+            <div id="funcion-de-Verificacion-de-tipo" class="mt-5">
+              <h2>Función de Verificación de Tipo</h2>
+              <p>
+                En Python, la función
+                <code class="language-python">type()</code> se utiliza para
+                obtener el tipo de dato de un objeto. Cuando se pasa una
+                variable o cualquier valor a
+                <code class="language-python">type()</code>, esta función
+                devuelve el tipo de dato de dicho objeto. Esto puede incluir
+                tipos de datos básicos como
+                <code class="language-python">int</code>,
+                <code class="language-python">float</code> ,<code class="language-python">str</code>, <code
+                  class="language-python">list</code>, entre otros, así
+                como tipos de datos definidos por el usuario (por ejemplo,
+                clases).
+              </p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Declaración de diferentes tipos de datos
                       x = 10         # Entero
@@ -556,177 +478,188 @@
                       print(type(w))  # Salida: &lt;class 'list'>
                     </code>
                   </pre>
-                </div>
-                <p>En este ejemplo:</p>
-                <ul>
-                  <li>
-                    <code class="language-python">type(x)</code> devuelve
-                    <code class="language-python">&lt;class 'int'></code>,
-                    indicando que <code class="language-python">x</code> es un
-                    entero.
-                  </li>
-                  <li>
-                    <code class="language-python">type(y)</code> devuelve
-                    <code class="language-python">&lt;class 'float'></code>,
-                    indicando que <code class="language-python">y</code> es un
-                    número decimal.
-                  </li>
-                  <li>
-                    <code class="language-python">type(z)</code> devuelve
-                    <code class="language-python">&lt;class 'str'></code>,
-                    indicando que <code class="language-python">z</code> es una
-                    cadena de texto.
-                  </li>
-                  <li>
-                    <code class="language-python">type(w)</code> devuelve
-                    <code class="language-python">&lt;class 'list'></code>,
-                    indicando que <code class="language-python">w</code> es una
-                    lista.
-                  </li>
-                </ul>
-                <p>
-                  Esta función es particularmente útil para depuración,
-                  comprobaciones de tipos, o cuando se trabaja con tipos
-                  dinámicos en Python.
-                </p>
               </div>
-              <!-- Función de Verificación de Tipo Fin -->
+              <p>En este ejemplo:</p>
+              <ul>
+                <li>
+                  <code class="language-python">type(x)</code> devuelve
+                  <code class="language-python">&lt;class 'int'></code>,
+                  indicando que <code class="language-python">x</code> es un
+                  entero.
+                </li>
+                <li>
+                  <code class="language-python">type(y)</code> devuelve
+                  <code class="language-python">&lt;class 'float'></code>,
+                  indicando que <code class="language-python">y</code> es un
+                  número decimal.
+                </li>
+                <li>
+                  <code class="language-python">type(z)</code> devuelve
+                  <code class="language-python">&lt;class 'str'></code>,
+                  indicando que <code class="language-python">z</code> es una
+                  cadena de texto.
+                </li>
+                <li>
+                  <code class="language-python">type(w)</code> devuelve
+                  <code class="language-python">&lt;class 'list'></code>,
+                  indicando que <code class="language-python">w</code> es una
+                  lista.
+                </li>
+              </ul>
+              <p>
+                Esta función es particularmente útil para depuración,
+                comprobaciones de tipos, o cuando se trabaja con tipos
+                dinámicos en Python.
+              </p>
             </div>
-          </article>
-          <!--  Interacción con el Usuario en Python  -->
-
-          <!--  comentarios  -->
-          <article class="row pt-5" id="comments">
-            <h2>COMENTARIOS</h2>
-            <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por
-              favor infórmelo a través del formulario disponible para este
-              propósito.
-            </p>
-            <div class="d-flex justify-content-center">
-              <form
-                action="https://formspree.io/f/mdkdawkg"
-                method="POST"
-                id="myForm"
-              >
-                <fieldset class="d-flex flex-column gap-3">
-                  <legend class="text-center fs-4">Deje su comentario</legend>
-
-                  <div class="d-flex flex-column">
-                    <label for="name">Nombre:</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="User"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
-
-                  <div class="d-flex flex-column">
-                    <label for="email">Email:</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="user@mail.com"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
-
-                  <div class="d-flex flex-column">
-                    <label for="message">Mensaje:</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      cols="30"
-                      rows="5"
-                      placeholder="Su comentario..."
-                      class="form-control rounded-3"
-                      required
-                    ></textarea>
-                  </div>
-
-                  <button
-                    type="submit"
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
-                  >
-                    Enviar
-                  </button>
-                </fieldset>
-
-                <p class="small text-center">
-                  La política de privacidad, y los términos y condiciones están
-                  disponibles en el formulario de contacto.
-                </p>
-              </form>
-            </div>
-          </article>
-          <!--  fin comentarios  -->
-        </section>
-        <!--  barra lateral  -->
-        <aside class="col-lg-3 d-none d-lg-block pt-5">
-          <div>
-            <h1>En Este Artículo</h1>
-            <ul class="list-group">
-              <li class="list-group-item">
-                <a href="#introduccion">Introducción</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#laFuncionInput">La función input()</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#elResultadodelaFuncioninput"
-                  >El Resultado de la Función input()</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a href="#conversiondeTipos">Conversión de Tipos</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#operadoresCadena">Operadores Cadena</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#otrosTiposdeConversiones"
-                  >Otros Tipos de Conversiones</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a href="#funcióndeVerificacióndeTipo"
-                  >Función de Verificación de Tipo</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a href="#comments">Comentarios</a>
-              </li>
-            </ul>
+            <!-- Función de Verificación de Tipo Fin -->
           </div>
-        </aside>
-        <!--  fin barra lateral  -->
-      </main>
-      <!--  fin principal  -->
-    </div>
-    <!--  Principal Fin  -->
+        </article>
+        <!--  Interacción con el Usuario en Python  -->
 
-    <!-- button to top -->
-    <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        fill="currentColor"
-        class="bi bi-arrow-bar-up"
-        viewBox="0 0 16 16"
-        style="margin-left: -2px"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"
-        ></path>
-      </svg>
-    </button>
-    <!-- Fin button to top -->
-  </body>
+        <!--  comentarios  -->
+        <article class="row pt-5" id="comments">
+          <h2>COMENTARIOS</h2>
+          <p>
+            Si tiene alguna inquietud, duda o ha encontrado algún error, por
+            favor infórmelo a través del formulario disponible para este
+            propósito.
+          </p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
+
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
+                </div>
+
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
+
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                  Enviar
+                </button>
+              </fieldset>
+
+              <p class="small text-center">
+                La política de privacidad, y los términos y condiciones están
+                disponibles en el formulario de contacto.
+              </p>
+            </form>
+          </div>
+        </article>
+        <!--  fin comentarios  -->
+      </section>
+
+
+      <!--  barra lateral  -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        <h1>En Este Artículo</h1>
+        <div class="menu-scroll">
+          <div class="menu-container">
+            <div class="border border-1">
+              <div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
+              <div class="menu-item"><a href="#la-funcion-input" class="simple-link">La función <code
+                    class="language-python">input()</code></a></div>
+              <div class="menu-item"><a href="#el-resultado-de-la-funcion-input" class="simple-link">El Resultado de la
+                  Función <code class="language-python">input()</code></a></div>
+              <div class="menu-item"><a href="#conversion-de-tipos" class="simple-link">Conversión de Tipos</a></div>
+              <div class="menu-item"><a href="#operadores-cadena" class="simple-link">Operadores Cadena</a></div>
+              <div class="menu-item"><a href="#otros-tipos-de-conversiones" class="simple-link">Otros Tipos de
+                  Conversiones</a></div>
+              <div class="menu-item"><a href="#funcion-de-Verificacion-de-tipo" class="simple-link">Función de
+                  Verificación de Tipo</a></div>
+              <!-- Comentarios  -->
+              <div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!--  fin barra lateral  -->
+
+      <li class="list-group-item">
+        <a href="#"></a>
+      </li>
+    </main>
+    <!--  fin principal  -->
+  </div>
+  <!--  Principal Fin  -->
+
+  <!--  pie de pagina  -->
+  <footer class="row border-top border-1 m-1 mt-auto">
+    <div class="row">
+      <!-- contacto -->
+      <address class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Contacto</div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class="ms-3">
+            <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class="ms-3">Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      <!-- Derechos de autor -->
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
+      </div>
+      <!-- redes sociales -->
+      <div class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Redes Sociales</div>
+        <div class="d-flex justify-content-evenly align-items-center gap-5">
+          <div>
+            <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center gap-2"></div>
+  </footer>
+  <!--  pie de pagina fin  -->
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
 </html>

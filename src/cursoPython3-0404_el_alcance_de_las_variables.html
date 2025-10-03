@@ -1,243 +1,173 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-  <head>
-    <!-- Metaetiquetas -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Aprende todo sobre el alcance de variables en Python: locales, globales y nonlocal. Ejemplos prácticos de scope, buenas prácticas y consejos para evitar errores comunes en tus programas."
-    />
-    <meta
-      name="title"
-      content="Alcance de las Variables Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta name="author" content="Ing. Eduardo Herrera Forero" />
-    <meta name="application-name" content="EHF" />
-    <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://eduardoherreraf.github.io/cursoPython3-0404_el_alcance_de_las_variables.html"
-    />
-    <!-- Fin Metaetiquetas -->
 
-    <!-- Open Graph data -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Alcance de las Variables Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      property="og:description"
-      content="Aprende todo sobre el alcance de variables en Python: locales, globales y nonlocal. Ejemplos prácticos de scope, buenas prácticas y consejos para evitar errores comunes en tus programas."
-    />
-    <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      property="og:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      property="og:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0404_el_alcance_de_las_variables.html"
-    />
-    <meta property="og:locale" content="es_CO" />
-    <!-- fin Open Graph data -->
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Aprende todo sobre el alcance de variables en Python: locales, globales y nonlocal. Ejemplos prácticos de scope, buenas prácticas y consejos para evitar errores comunes en tus programas." />
+  <meta name="title" content="Alcance de las Variables Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eduardoherreraf.github.io/cursoPython3-0404_el_alcance_de_las_variables.html" />
+  <!-- Fin Metaetiquetas -->
 
-    <!-- Twitter cards -->
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="Alcance de las Variables Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      name="twitter:description"
-      content="Aprende todo sobre el alcance de variables en Python: locales, globales y nonlocal. Ejemplos prácticos de scope, buenas prácticas y consejos para evitar errores comunes en tus programas."
-    />
-    <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      name="twitter:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      name="twitter:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0404_el_alcance_de_las_variables.html"
-    />
-    <meta name="twitter:site" content="@ehfeduardo" />
-    <!-- Fin Twitter cards -->
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Alcance de las Variables Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta property="og:description"
+    content="Aprende todo sobre el alcance de variables en Python: locales, globales y nonlocal. Ejemplos prácticos de scope, buenas prácticas y consejos para evitar errores comunes en tus programas." />
+  <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta property="og:url"
+    content="https://eduardoherreraf.github.io/cursoPython3-0404_el_alcance_de_las_variables.html" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
 
-    <!-- iconos -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="android-chrome-192x192.png"
-    />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- fin iconos -->
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Alcance de las Variables Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description"
+    content="Aprende todo sobre el alcance de variables en Python: locales, globales y nonlocal. Ejemplos prácticos de scope, buenas prácticas y consejos para evitar errores comunes en tus programas." />
+  <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta name="twitter:url"
+    content="https://eduardoherreraf.github.io/cursoPython3-0404_el_alcance_de_las_variables.html" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
 
-    <title>
-      Alcance de las Variables Python 3 - Ing. Eduardo Herrera Forero.
-    </title>
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
 
-    <script type="module" src="./js/main.js"></script>
+  <title>
+    Alcance de las Variables Python 3 - Ing. Eduardo Herrera Forero.
+  </title>
 
-    <meta
-      name="google-site-verification"
-      content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"
-    />
-  </head>
+  <script type="module" src="./js/main.js"></script>
 
-  <body>
-    <!-- Barra deNavegación -->
-    <nav
-      class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
-    >
-      <div class="container-fluid">
-        <!-- Enlace a la página principal con el logo y nombre -->
-        <a
-          class="navbar-brand d-flex align-items-center ms-2"
-          href="index.html"
-        >
-          <img
-            src="./images/logo.png"
-            alt="Logo de Ing. Eduardo Herrera Forero"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top me-1"
-          />
-          <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
-        </a>
-        <!-- Botón para activar el menú en dispositivos pequeños -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Menú de navegación -->
-        <div
-          class="collapse navbar-collapse ms-auto text-center"
-          id="navbarSupportedContent"
-        >
-          <ul
-            class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100"
-          >
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#portfolio"
-                >PORTAFOLIO</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 publicaciones-activo"
-                href="index.html#blog"
-                >PUBLICACIONES</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
-            </li>
-          </ul>
-        </div>
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Barra deNavegación -->
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
 
-    <!--  principal  -->
-    <div class="container-fluid" id="introduccion">
-      <main class="row">
-        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
-          <!--  El Alcance de las Variables en Python  -->
-          <article
-            class="row border-1 border-bottom pb-3"
-            data-bs-spy="scroll"
-            data-bs-target="#list-example"
-            data-bs-smooth-scroll="true"
-          >
-            <div>
-              <header>
-                <h1>El Alcance de las Variables en Python</h1>
-              </header>
-              <!-- Introducción -->
-              <div class="mt-5">
-                <h2>Introducción</h2>
+  <!--  principal  -->
+  <div class="container-fluid" id="introduccion">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!--  El Alcance de las Variables en Python  -->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <div>
+            <header>
+              <h1>El Alcance de las Variables en Python</h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-5">
+              <h2>Introducción</h2>
 
-                <p>
-                  El alcance de las variables en Python es un concepto
-                  fundamental que determina la visibilidad y la duración de las
-                  variables en un programa. Comprender cómo funcionan las
-                  variables y su alcance es crucial para evitar errores y
-                  escribir código más eficiente y legible. Este artículo explora
-                  los diferentes tipos de alcance de las variables en Python,
-                  incluyendo el alcance local, global y no local, así como
-                  ejemplos prácticos que ilustran cada uno de estos conceptos.
-                </p>
-                <div class="centrar-imagen imagen50">
-                  <figure>
-                    <img
-                      src="https://i.ibb.co/1RVDMWw/alcance.jpg"
-                      class="img-fluid"
-                      alt="El Alcance de las Variables en Python  "
-                      title="Comprendiendo el alcance de las variables en Python"
-                    />
-                    <figcaption>
-                      El Alcance de las Variables en Python
-                    </figcaption>
-                  </figure>
-                </div>
+              <p>
+                El alcance de las variables en Python es un concepto
+                fundamental que determina la visibilidad y la duración de las
+                variables en un programa. Comprender cómo funcionan las
+                variables y su alcance es crucial para evitar errores y
+                escribir código más eficiente y legible. Este artículo explora
+                los diferentes tipos de alcance de las variables en Python,
+                incluyendo el alcance local, global y no local, así como
+                ejemplos prácticos que ilustran cada uno de estos conceptos.
+              </p>
+              <div class="centrar-imagen imagen50">
+                <figure>
+                  <img src="https://i.ibb.co/1RVDMWw/alcance.jpg" class="img-fluid"
+                    alt="El Alcance de las Variables en Python  "
+                    title="Comprendiendo el alcance de las variables en Python" />
+                  <figcaption>
+                    El Alcance de las Variables en Python
+                  </figcaption>
+                </figure>
               </div>
+            </div>
 
-              <!-- Alcance Local -->
-              <div id="alcanceLocal" class="mt-5">
-                <h2 class="mt-1">Alcance Local</h2>
+            <!-- Alcance Local -->
+            <div id="alcance-local" class="mt-5">
+              <h2>Alcance Local</h2>
+              <p>
+                El alcance local es un concepto fundamental en Python y otros
+                lenguajes de programación. Se refiere al contexto específico
+                en el que una variable está definida y accesible dentro de un
+                programa. En Python, el alcance local se relaciona
+                principalmente con las funciones y los bloques de código que
+                contienen variables propias que no son visibles fuera de ese
+                contexto.
+              </p>
+              <!-- ¿Qué es el Alcance Local? -->
+              <div>
+                <h3>¿Qué es el Alcance Local?</h3>
                 <p>
-                  El alcance local es un concepto fundamental en Python y otros
-                  lenguajes de programación. Se refiere al contexto específico
-                  en el que una variable está definida y accesible dentro de un
-                  programa. En Python, el alcance local se relaciona
-                  principalmente con las funciones y los bloques de código que
-                  contienen variables propias que no son visibles fuera de ese
-                  contexto.
+                  Cuando se declara una variable dentro de una función, su
+                  alcance se limita a esa función. Esto significa que:
                 </p>
-                <!-- ¿Qué es el Alcance Local? -->
-                <div>
-                  <h3>¿Qué es el Alcance Local?</h3>
-                  <p>
-                    Cuando se declara una variable dentro de una función, su
-                    alcance se limita a esa función. Esto significa que:
-                  </p>
-                  <ul>
-                    <li>Solo puede ser utilizada dentro de la función.</li>
-                    <li>No puede ser accedida desde fuera de la función.</li>
-                    <li>
-                      Una vez que la función termina de ejecutarse, la variable
-                      se destruye.
-                    </li>
-                  </ul>
-                  <p>Ejemplo:</p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                <ul>
+                  <li>Solo puede ser utilizada dentro de la función.</li>
+                  <li>No puede ser accedida desde fuera de la función.</li>
+                  <li>
+                    Una vez que la función termina de ejecutarse, la variable
+                    se destruye.
+                  </li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def mi_funcion():
                             variable_local = "Hola desde dentro de la función"
@@ -246,62 +176,62 @@
                         print(variable_local)  # Esto causaría un error, ya que variable_local solo existe dentro de mi_funcion(
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- ¿Qué es el Alcance Local? fin -->
-                <!-- ¿Por Qué Es Importante el Alcance Local? -->
-                <div>
-                  <h3>¿Por Qué Es Importante el Alcance Local?</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Evita conflictos</span>: Al limitar
-                      el alcance de las variables, se reduce la posibilidad de
-                      que dos variables con el mismo nombre se confundan en
-                      diferentes partes del código.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Organización del código</span>:
-                      Ayuda a mantener el código más organizado y fácil de
-                      entender, ya que las variables están definidas donde se
-                      utilizan.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Modularidad</span>: Permite crear
-                      funciones más independientes y reutilizables.
-                    </li>
-                  </ul>
-                </div>
-                <!-- ¿Por Qué Es Importante el Alcance Local? fin -->
-                <!-- ¿Cómo Funciona el Alcance en Python? -->
-                <div>
-                  <h3>¿Cómo Funciona el Alcance en Python?</h3>
-                  <p>
-                    Python sigue la regla LEGB para determinar el alcance de una
-                    variable:
-                  </p>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Local</span>: Dentro de la función
-                      actual.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Enclosing</span>: Dentro de una
-                      función anidada.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Global</span>: En el módulo actual,
-                      fuera de todas las funciones.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Built-in</span>: En el módulo
-                      builtins, que contiene funciones y nombres integrados como
-                      <code class="language-python">print()</code> o
-                      <code class="language-python">len()</code>.
-                    </li>
-                  </ul>
-                  <p>Ejemplo de alcance anidado:</p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- ¿Qué es el Alcance Local? fin -->
+              <!-- ¿Por Qué Es Importante el Alcance Local? -->
+              <div>
+                <h3>¿Por Qué Es Importante el Alcance Local?</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Evita conflictos</span>: Al limitar
+                    el alcance de las variables, se reduce la posibilidad de
+                    que dos variables con el mismo nombre se confundan en
+                    diferentes partes del código.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Organización del código</span>:
+                    Ayuda a mantener el código más organizado y fácil de
+                    entender, ya que las variables están definidas donde se
+                    utilizan.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Modularidad</span>: Permite crear
+                    funciones más independientes y reutilizables.
+                  </li>
+                </ul>
+              </div>
+              <!-- ¿Por Qué Es Importante el Alcance Local? fin -->
+              <!-- ¿Cómo Funciona el Alcance en Python? -->
+              <div>
+                <h3>¿Cómo Funciona el Alcance en Python?</h3>
+                <p>
+                  Python sigue la regla LEGB para determinar el alcance de una
+                  variable:
+                </p>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Local</span>: Dentro de la función
+                    actual.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Enclosing</span>: Dentro de una
+                    función anidada.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Global</span>: En el módulo actual,
+                    fuera de todas las funciones.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Built-in</span>: En el módulo
+                    builtins, que contiene funciones y nombres integrados como
+                    <code class="language-python">print()</code> o
+                    <code class="language-python">len()</code>.
+                  </li>
+                </ul>
+                <p>Ejemplo de alcance anidado:</p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def funcion_externa():
                             variable_externa = "Soy externa"
@@ -313,36 +243,36 @@
                         funcion_externa()       # Salida: Soy externa Soy interna
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- ¿Cómo Funciona el Alcance en Python? fin -->
-                <!-- Recomendaciones -->
-                <div>
-                  <h3>Recomendaciones</h3>
-                  <ul>
-                    <li>Utilizar nombres descriptivos para las variables.</li>
-                    <li>
-                      Evitar usar variables globales a menos que sea
-                      estrictamente necesario.
-                    </li>
-                    <li>
-                      Aprovechar el alcance local para crear funciones más
-                      modulares y reutilizables.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Recomendaciones fin -->
-                <!-- Diferencias entre Alcance Local y Global -->
-                <div>
-                  <h3>Diferencias entre Alcance Local y Global</h3>
-                  <p>
-                    El alcance local contrasta directamente con el alcance
-                    global, donde las variables están definidas fuera de
-                    cualquier función y son accesibles desde cualquier parte del
-                    programa.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- ¿Cómo Funciona el Alcance en Python? fin -->
+              <!-- Recomendaciones -->
+              <div>
+                <h3>Recomendaciones</h3>
+                <ul>
+                  <li>Utilizar nombres descriptivos para las variables.</li>
+                  <li>
+                    Evitar usar variables globales a menos que sea
+                    estrictamente necesario.
+                  </li>
+                  <li>
+                    Aprovechar el alcance local para crear funciones más
+                    modulares y reutilizables.
+                  </li>
+                </ul>
+              </div>
+              <!-- Recomendaciones fin -->
+              <!-- Diferencias entre Alcance Local y Global -->
+              <div>
+                <h3>Diferencias entre Alcance Local y Global</h3>
+                <p>
+                  El alcance local contrasta directamente con el alcance
+                  global, donde las variables están definidas fuera de
+                  cualquier función y son accesibles desde cualquier parte del
+                  programa.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         x = 10  # Variable de alcance global
                         def sumar(numero):
@@ -353,147 +283,64 @@
                         print(y)  # Error: NameError: name 'y' is not defined
                       </code>
                     </pre>
-                  </div>
-                  <p>
-                    El comando
-                    <code class="language-python">print(y)</code> genera un
-                    error porque la variable
-                    <code class="language-python">y</code> tiene un alcance
-                    local y únicamente es accesible dentro de la función
-                    <code class="language-python">sumar()</code>.
-                  </p>
                 </div>
-                <!-- Diferencias entre Alcance Local y Global fin -->
-              </div>
-              <!-- Alcance Local Fin -->
-              <!-- Palabra Reservada Global -->
-              <div id="palabraReservadaGlobal" class="mt-5">
-                <h2 class="mt-1">Palabra Reservada Global</h2>
                 <p>
-                  En Python, una variable global es aquella que se define fuera
-                  de cualquier función o clase y, por lo tanto, es accesible
-                  desde cualquier parte del código. Esto significa que su valor
-                  puede ser modificado o consultado desde cualquier función o
-                  módulo.
+                  El comando
+                  <code class="language-python">print(y)</code> genera un
+                  error porque la variable
+                  <code class="language-python">y</code> tiene un alcance
+                  local y únicamente es accesible dentro de la función
+                  <code class="language-python">sumar()</code>.
                 </p>
-                <!-- La palabra clave "global" -->
-                <div>
-                  <h3>La palabra clave "global"</h3>
-                  <p>
-                    Para indicar que una variable dentro de una función se
-                    refiere a una variable global existente, se utiliza la
-                    palabra clave
-                    <code class="language-python">global</code> seguida del
-                    nombre de la variable. Esto le indica al intérprete de
-                    Python que no debe crear una nueva variable local con el
-                    mismo nombre, sino que debe utilizar la variable global.
-                  </p>
-                </div>
-                <!-- La palabra clave "global" fin -->
-                <!-- ¿Cuándo usar "global"? -->
-                <div>
-                  <h3>¿Cuándo usar "global"?</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold"
-                        >Modificar variables globales dentro de funciones</span
-                      >: Si se necesita cambiar el valor de una variable global
-                      desde una función, se debe declarar como global dentro de
-                      esa función.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Acceso a variables globales desde dentro de
-                        funciones</span
-                      >: Si simplemente se quiere leer el valor de una variable
-                      global dentro de una función, no es estrictamente
-                      necesario declararla como global. Sin embargo, declararla
-                      de esta manera puede mejorar la legibilidad del código.
-                    </li>
-                  </ul>
-                  <p>Ejemplo:</p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-python" data-prismjs-copy="Copy">
-                        # Definición de una variable global
-                        contador = 0
-                        def incrementar_contador():
-                            global contador
-                            contador += 1
-                            print(f"Contador incrementado: {contador}")
-                        # Llamada a la función
-                        incrementar_contador()  # Salida: Contador incrementado: 1
-                        incrementar_contador()  # Salida: Contador incrementado: 2
-                      </code>
-                    </pre>
-                  </div>
-                </div>
-                <!-- ¿Cuándo usar "global"? fin -->
-                <!-- Consideraciones importantes: -->
-                <div>
-                  <h3>Consideraciones Importantes:</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Uso moderado</span>: El uso excesivo
-                      de variables globales puede dificultar la depuración y el
-                      mantenimiento del código, ya que los cambios en una
-                      variable global pueden afectar a muchas partes del
-                      programa.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Alternativas</span>: En muchos
-                      casos, es preferible pasar variables como argumentos a las
-                      funciones o utilizar variables locales dentro de las
-                      funciones. Esto hace que el código sea más modular y fácil
-                      de entender.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Alcance de las variables</span>: Es
-                      importante comprender el concepto de alcance (scope) en
-                      Python para utilizar correctamente las variables globales
-                      y locales.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Evita conflictos de nombres</span>:
-                      Cada variable local tiene su propio espacio de nombres, lo
-                      que reduce la posibilidad de que se sobrescriban
-                      accidentalmente.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Mejora la legibilidad</span>: Al
-                      limitar el alcance de las variables, se hace más fácil
-                      seguir el flujo de datos en un programa.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Fomenta la modularidad</span>: Las
-                      funciones con variables locales son más independientes y
-                      fáciles de reutilizar.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Consideraciones importantes: fin -->
               </div>
-              <!-- Palabra Reservada Global Fin -->
-              <!-- Alcance Global -->
-              <div id="alcanceGlobal" class="mt-5">
-                <h2 class="mt-1">Alcance Global</h2>
-                <!-- Variables Globales: Visibles en Todo el Programa -->
-                <div>
-                  <h3>Variables Globales: Visibles en Todo el Programa</h3>
-                  <p>
-                    El alcance global se refiere a las variables que se definen
-                    en el nivel más alto de un script o módulo, fuera de
-                    cualquier función o clase. Estas variables son accesibles
-                    desde cualquier parte del código, lo que las hace útiles
-                    para almacenar información que debe ser compartida entre
-                    múltiples funciones o clases.
-                  </p>
-                  <p>
-                    A continuación, se presenta un ejemplo sencillo para
-                    ilustrar el uso del alcance global en Python:
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              <!-- Diferencias entre Alcance Local y Global fin -->
+            </div>
+            <!-- Alcance Local Fin -->
+            <!-- Palabra Reservada Global -->
+            <div id="palabra-reservada-global" class="mt-5">
+              <h2>Palabra Reservada Global</h2>
+              <p>
+                En Python, una variable global es aquella que se define fuera
+                de cualquier función o clase y, por lo tanto, es accesible
+                desde cualquier parte del código. Esto significa que su valor
+                puede ser modificado o consultado desde cualquier función o
+                módulo.
+              </p>
+              <!-- La palabra clave global -->
+              <div>
+                <h3>La palabra clave <code class="language-python">global</code></h3>
+                <p>
+                  Para indicar que una variable dentro de una función se
+                  refiere a una variable global existente, se utiliza la
+                  palabra clave
+                  <code class="language-python">global</code> seguida del
+                  nombre de la variable. Esto le indica al intérprete de
+                  Python que no debe crear una nueva variable local con el
+                  mismo nombre, sino que debe utilizar la variable global.
+                </p>
+              </div>
+              <!-- La palabra clave global fin -->
+              <!-- ¿Cuándo usar global? -->
+              <div>
+                <h3>¿Cuándo usar <code class="language-python">global</code>?</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Modificar variables globales dentro de funciones</span>: Si se necesita
+                    cambiar el valor de una variable global
+                    desde una función, se debe declarar como global dentro de
+                    esa función.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Acceso a variables globales desde dentro de
+                      funciones</span>: Si simplemente se quiere leer el valor de una variable
+                    global dentro de una función, no es estrictamente
+                    necesario declararla como global. Sin embargo, declararla
+                    de esta manera puede mejorar la legibilidad del código.
+                  </li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Definición de una variable global
                         contador = 0
@@ -506,95 +353,173 @@
                         incrementar_contador()  # Salida: Contador incrementado: 2
                       </code>
                     </pre>
-                  </div>
-                  <p>
-                    En este ejemplo, la variable
-                    <code class="language-python">contador</code> se define en
-                    el ámbito global. Dentro de la función
-                    <code class="language-python">incrementar_contador</code>,
-                    se utiliza la palabra clave
-                    <code class="language-python">global</code> para indicar que
-                    se está refiriendo a la variable global
-                    <code class="language-python">contador</code>. Esto permite
-                    que la función modifique el valor de contador cada vez que
-                    se llama.
-                  </p>
                 </div>
-                <!-- Buenas Prácticas -->
-                <div>
-                  <h3>Buenas Prácticas</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold"
-                        >Minimizar el uso de variables globales</span
-                      >: Trata de utilizar variables locales siempre que sea
-                      posible.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Utilizar argumentos y valores de retorno</span
-                      >: Pasa datos a las funciones a través de argumentos y
-                      devuelve resultados a través de valores de retorno.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Considerar el uso de clases</span>:
-                      Las clases encapsulan datos y métodos, lo que puede ayudar
-                      a organizar el código y evitar conflictos de nombres.
-                    </li>
-                  </ul>
+              </div>
+              <!-- ¿Cuándo usar "global"? fin -->
+              <!-- Consideraciones importantes: -->
+              <div>
+                <h3>Consideraciones Importantes:</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Uso moderado</span>: El uso excesivo
+                    de variables globales puede dificultar la depuración y el
+                    mantenimiento del código, ya que los cambios en una
+                    variable global pueden afectar a muchas partes del
+                    programa.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Alternativas</span>: En muchos
+                    casos, es preferible pasar variables como argumentos a las
+                    funciones o utilizar variables locales dentro de las
+                    funciones. Esto hace que el código sea más modular y fácil
+                    de entender.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Alcance de las variables</span>: Es
+                    importante comprender el concepto de alcance (scope) en
+                    Python para utilizar correctamente las variables globales
+                    y locales.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Evita conflictos de nombres</span>:
+                    Cada variable local tiene su propio espacio de nombres, lo
+                    que reduce la posibilidad de que se sobrescriban
+                    accidentalmente.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Mejora la legibilidad</span>: Al
+                    limitar el alcance de las variables, se hace más fácil
+                    seguir el flujo de datos en un programa.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Fomenta la modularidad</span>: Las
+                    funciones con variables locales son más independientes y
+                    fáciles de reutilizar.
+                  </li>
+                </ul>
+              </div>
+              <!-- Consideraciones importantes: fin -->
+            </div>
+            <!-- Palabra Reservada Global Fin -->
+            <!-- Alcance Global -->
+            <div id="alcanceGlobal" class="mt-5">
+              <h2>Alcance Global</h2>
+              <!-- Variables Globales: Visibles en Todo el Programa -->
+              <div>
+                <h3>Variables Globales: Visibles en Todo el Programa</h3>
+                <p>
+                  El alcance global se refiere a las variables que se definen
+                  en el nivel más alto de un script o módulo, fuera de
+                  cualquier función o clase. Estas variables son accesibles
+                  desde cualquier parte del código, lo que las hace útiles
+                  para almacenar información que debe ser compartida entre
+                  múltiples funciones o clases.
+                </p>
+                <p>
+                  A continuación, se presenta un ejemplo sencillo para
+                  ilustrar el uso del alcance global en Python:
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        # Definición de una variable global
+                        contador = 0
+                        def incrementar_contador():
+                            global contador
+                            contador += 1
+                            print(f"Contador incrementado: {contador}")
+                        # Llamada a la función
+                        incrementar_contador()  # Salida: Contador incrementado: 1
+                        incrementar_contador()  # Salida: Contador incrementado: 2
+                      </code>
+                    </pre>
                 </div>
-                <!-- Buenas Prácticas fin -->
+                <p>
+                  En este ejemplo, la variable
+                  <code class="language-python">contador</code> se define en
+                  el ámbito global. Dentro de la función
+                  <code class="language-python">incrementar_contador</code>,
+                  se utiliza la palabra clave
+                  <code class="language-python">global</code> para indicar que
+                  se está refiriendo a la variable global
+                  <code class="language-python">contador</code>. Esto permite
+                  que la función modifique el valor de contador cada vez que
+                  se llama.
+                </p>
+              </div>
+              <!-- Buenas Prácticas -->
+              <div>
+                <h3>Buenas Prácticas</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Minimizar el uso de variables globales</span>: Trata de utilizar variables
+                    locales siempre que sea
+                    posible.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Utilizar argumentos y valores de retorno</span>: Pasa datos a las funciones a
+                    través de argumentos y
+                    devuelve resultados a través de valores de retorno.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Considerar el uso de clases</span>:
+                    Las clases encapsulan datos y métodos, lo que puede ayudar
+                    a organizar el código y evitar conflictos de nombres.
+                  </li>
+                </ul>
+              </div>
+              <!-- Buenas Prácticas fin -->
 
-                <!-- Variables Globales: Visibles en Todo el Programa fin -->
+              <!-- Variables Globales: Visibles en Todo el Programa fin -->
+            </div>
+            <!-- Alcance Global Fin -->
+            <!-- Alcance No Local -->
+            <div id="alcanceNoLocal" class="mt-5">
+              <h2>Alcance No Local</h2>
+              <!-- Alcance No Local en Python: Más Allá de lo Local -->
+              <div>
+                <h3>Alcance No Local en Python: Más Allá de lo Local</h3>
+                <p>
+                  En el mundo de la programación en Python, la comprensión del
+                  alcance de las variables es fundamental para escribir código
+                  limpio, eficiente y libre de errores. El alcance determina
+                  dónde se puede acceder a una variable dentro de un programa.
+                  Generalmente, las variables tienen un alcance local, lo que
+                  significa que solo son accesibles dentro de la función o
+                  bloque de código en el que se definen. Sin embargo, existen
+                  situaciones en las que necesitamos acceder o modificar
+                  variables que se encuentran fuera de nuestro alcance local
+                  inmediato. Aquí es donde entra en juego el concepto de
+                  alcance no local.
+                </p>
               </div>
-              <!-- Alcance Global Fin -->
-              <!-- Alcance No Local -->
-              <div id="alcanceNoLocal" class="mt-5">
-                <h2 class="mt-1">Alcance No Local</h2>
-                <!-- Alcance No Local en Python: Más Allá de lo Local -->
-                <div>
-                  <h3>Alcance No Local en Python: Más Allá de lo Local</h3>
-                  <p>
-                    En el mundo de la programación en Python, la comprensión del
-                    alcance de las variables es fundamental para escribir código
-                    limpio, eficiente y libre de errores. El alcance determina
-                    dónde se puede acceder a una variable dentro de un programa.
-                    Generalmente, las variables tienen un alcance local, lo que
-                    significa que solo son accesibles dentro de la función o
-                    bloque de código en el que se definen. Sin embargo, existen
-                    situaciones en las que necesitamos acceder o modificar
-                    variables que se encuentran fuera de nuestro alcance local
-                    inmediato. Aquí es donde entra en juego el concepto de
-                    alcance no local.
-                  </p>
-                </div>
-                <!-- Alcance No Local en Python: Más Allá de lo Local fin -->
-                <!-- ¿Qué es el Alcance No Local? -->
-                <div>
-                  <h3>¿Qué es el Alcance No Local?</h3>
-                  <p>
-                    El alcance no local se refiere a la capacidad de una función
-                    de acceder a variables definidas en un ámbito superior, como
-                    en una función envolvente. Esto es especialmente útil cuando
-                    necesitamos modificar el valor de una variable que ya existe
-                    en un contexto más amplio, sin tener que pasarla como
-                    argumento a la función.
-                  </p>
-                </div>
-                <!-- ¿Qué es el Alcance No Local? fin -->
-                <!-- La Palabra Clave nonlocal -->
-                <div>
-                  <h3>La Palabra Clave nonlocal</h3>
-                  <p>
-                    Para declarar que se quiere modificar una variable no local
-                    dentro de una función, utilizamos la palabra clave
-                    <code class="language-python">nonlocal</code>. Esta palabra
-                    le indica al intérprete de Python que la variable a la que
-                    estamos haciendo referencia no es una nueva variable local,
-                    sino una variable que ya existe en un ámbito superior.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              <!-- Alcance No Local en Python: Más Allá de lo Local fin -->
+              <!-- ¿Qué es el Alcance No Local? -->
+              <div>
+                <h3>¿Qué es el Alcance No Local?</h3>
+                <p>
+                  El alcance no local se refiere a la capacidad de una función
+                  de acceder a variables definidas en un ámbito superior, como
+                  en una función envolvente. Esto es especialmente útil cuando
+                  necesitamos modificar el valor de una variable que ya existe
+                  en un contexto más amplio, sin tener que pasarla como
+                  argumento a la función.
+                </p>
+              </div>
+              <!-- ¿Qué es el Alcance No Local? fin -->
+              <!-- La Palabra Clave nonlocal -->
+              <div>
+                <h3>La Palabra Clave <code class="language-python">nonlocal</code></h3>
+                <p>
+                  Para declarar que se quiere modificar una variable no local
+                  dentro de una función, utilizamos la palabra clave
+                  <code class="language-python">nonlocal</code>. Esta palabra
+                  le indica al intérprete de Python que la variable a la que
+                  estamos haciendo referencia no es una nueva variable local,
+                  sino una variable que ya existe en un ámbito superior.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def outer_function():
                             x = "valor externo"
@@ -607,202 +532,175 @@
                         outer_function()
                       </code>
                     </pre>
-                  </div>
-                  <p>Código explicado:</p>
-                  <ul>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python"
-                          >def outer_function()</code
-                        ></span
-                      >: Define una función llamada
-                      <code class="language-python">outer_function()</code>.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python"
-                          >x = "valor externo"</code
-                        ></span
-                      >: Dentro de
-                      <code class="language-python">outer_function()</code>, se
-                      crea una variable local x con el valor
-                      <code class="language-python">valor externo</code>.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python"
-                          >def inner_function()</code
-                        ></span
-                      >: Define una función anidada llamada
-                      <code class="language-python">inner_function</code>.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python">nonlocal x</code></span
-                      >: Declara que x no es una variable local de
-                      <code class="language-python">inner_function</code>, sino
-                      que se refiere a la variable x de la función contenedora
-                      (<code class="language-python">outer_function()</code>).
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python"
-                          >x = "nuevo valor"</code
-                        ></span
-                      >: Modifica el valor de x en el ámbito de
-                      <code class="language-python">outer_function()</code> a
-                      <code class="language-python">nuevo valor</code>.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python">print(x)</code></span
-                      >: Imprime el valor actual de x, que ahora es
-                      <code class="language-python">nuevo valor</code>.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python"
-                          >inner_function()</code
-                        ></span
-                      >: Llama a
-                      <code class="language-python">inner_function()</code>, lo
-                      que provoca que:
-                      <ul>
-                        <li>
-                          Se cambie el valor de
-                          <code class="language-python">x</code> a
-                          <code class="language-python">nuevo valor</code>.
-                        </li>
-                        <li>
-                          Se imprima
-                          <code class="language-python">nuevo valor</code>.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python">print(x)</code></span
-                      >: Imprime el valor actual de x después de la ejecución de
-                      <code class="language-python">inner_function</code>, que
-                      sigue siendo
-                      <code class="language-python">nuevo valor</code>.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        ><code class="language-python"
-                          >outer_function()</code
-                        ></span
-                      >: Llama a
-                      <code class="language-python">outer_function()</code>,
-                      iniciando todo el proceso.
-                    </li>
-                  </ul>
-                  <p>Salida del programa:</p>
-                  <ul>
-                    <li>
-                      El primer print dentro de
-                      <code class="language-python">inner_function</code>
-                      imprime:
-                      <code class="language-python">nuevo valor</code>
-                    </li>
-                    <li>
-                      El segundo print dentro de
-                      <code class="language-python">outer_function</code>
-                      imprime el mismo valor:
-                      <code class="language-python">nuevo valor</code>
-                    </li>
-                  </ul>
                 </div>
-                <!-- La Palabra Clave nonlocal fin -->
-                <!-- Usos Comunes del Alcance No Local -->
-                <div>
-                  <h3>Usos Comunes del Alcance No Local</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Closures</span>: Los closures son
-                      funciones que "recuerdan" las variables de su entorno
-                      léxico, incluso después de que la función que las creó
-                      haya terminado de ejecutarse. El alcance no local es
-                      fundamental para crear closures.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Modificación de variables en bucles</span
-                      >: En algunos casos, es necesario modificar una variable
-                      externa desde dentro de un bucle anidado.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Creación de contadores y acumuladores</span
-                      >: El alcance no local permite crear contadores o
-                      acumuladores que se actualizan a medida que se ejecuta una
-                      función.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Usos Comunes del Alcance No Local fin -->
-                <!-- Precauciones al Usar Alcance No Local -->
-                <div>
-                  <h3>Precauciones al Usar Alcance No Local</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Exceso de acoplamiento</span>: El
-                      uso excesivo de variables no locales puede hacer que el
-                      código sea más difícil de entender y mantener, ya que las
-                      dependencias entre diferentes partes del programa se
-                      vuelven menos claras.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Efectos secundarios no deseados</span
-                      >: Modificar variables no locales puede tener efectos
-                      secundarios inesperados en otras partes del programa.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Alternativas</span>: En muchos
-                      casos, es preferible utilizar argumentos y valores de
-                      retorno para pasar datos entre funciones, en lugar de
-                      depender del alcance no local.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Precauciones al Usar Alcance No Local fin -->
+                <p>Código explicado:</p>
+                <ul>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">def outer_function()</code></span>: Define una
+                    función llamada
+                    <code class="language-python">outer_function()</code>.
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">x = "valor externo"</code></span>: Dentro de
+                    <code class="language-python">outer_function()</code>, se
+                    crea una variable local x con el valor
+                    <code class="language-python">valor externo</code>.
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">def inner_function()</code></span>: Define una
+                    función anidada llamada
+                    <code class="language-python">inner_function</code>.
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">nonlocal x</code></span>: Declara que x no es
+                    una variable local de
+                    <code class="language-python">inner_function</code>, sino
+                    que se refiere a la variable x de la función contenedora
+                    (<code class="language-python">outer_function()</code>).
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">x = "nuevo valor"</code></span>: Modifica el
+                    valor de x en el ámbito de
+                    <code class="language-python">outer_function()</code> a
+                    <code class="language-python">nuevo valor</code>.
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">print(x)</code></span>: Imprime el valor actual
+                    de x, que ahora es
+                    <code class="language-python">nuevo valor</code>.
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">inner_function()</code></span>: Llama a
+                    <code class="language-python">inner_function()</code>, lo
+                    que provoca que:
+                    <ul>
+                      <li>
+                        Se cambie el valor de
+                        <code class="language-python">x</code> a
+                        <code class="language-python">nuevo valor</code>.
+                      </li>
+                      <li>
+                        Se imprima
+                        <code class="language-python">nuevo valor</code>.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">print(x)</code></span>: Imprime el valor actual
+                    de x después de la ejecución de
+                    <code class="language-python">inner_function</code>, que
+                    sigue siendo
+                    <code class="language-python">nuevo valor</code>.
+                  </li>
+                  <li>
+                    <span class="fw-bold"><code class="language-python">outer_function()</code></span>: Llama a
+                    <code class="language-python">outer_function()</code>,
+                    iniciando todo el proceso.
+                  </li>
+                </ul>
+                <p>Salida del programa:</p>
+                <ul>
+                  <li>
+                    El primer print dentro de
+                    <code class="language-python">inner_function</code>
+                    imprime:
+                    <code class="language-python">nuevo valor</code>
+                  </li>
+                  <li>
+                    El segundo print dentro de
+                    <code class="language-python">outer_function</code>
+                    imprime el mismo valor:
+                    <code class="language-python">nuevo valor</code>
+                  </li>
+                </ul>
               </div>
-              <!-- Alcance No Local Fin -->
-              <!-- La Recursividad en Python: Un Concepto Autoreferencial -->
-              <div id="laRecursividad" class="mt-5">
-                <h2 class="mt-1">
-                  La Recursividad en Python: Un Concepto Autoreferencial
-                </h2>
+              <!-- La Palabra Clave nonlocal fin -->
+              <!-- Usos Comunes del Alcance No Local -->
+              <div>
+                <h3>Usos Comunes del Alcance No Local</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Closures</span>: Los closures son
+                    funciones que "recuerdan" las variables de su entorno
+                    léxico, incluso después de que la función que las creó
+                    haya terminado de ejecutarse. El alcance no local es
+                    fundamental para crear closures.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Modificación de variables en bucles</span>: En algunos casos, es necesario
+                    modificar una variable
+                    externa desde dentro de un bucle anidado.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Creación de contadores y acumuladores</span>: El alcance no local permite
+                    crear contadores o
+                    acumuladores que se actualizan a medida que se ejecuta una
+                    función.
+                  </li>
+                </ul>
+              </div>
+              <!-- Usos Comunes del Alcance No Local fin -->
+              <!-- Precauciones al Usar Alcance No Local -->
+              <div>
+                <h3>Precauciones al Usar Alcance No Local</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Exceso de acoplamiento</span>: El
+                    uso excesivo de variables no locales puede hacer que el
+                    código sea más difícil de entender y mantener, ya que las
+                    dependencias entre diferentes partes del programa se
+                    vuelven menos claras.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Efectos secundarios no deseados</span>: Modificar variables no locales puede
+                    tener efectos
+                    secundarios inesperados en otras partes del programa.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Alternativas</span>: En muchos
+                    casos, es preferible utilizar argumentos y valores de
+                    retorno para pasar datos entre funciones, en lugar de
+                    depender del alcance no local.
+                  </li>
+                </ul>
+              </div>
+              <!-- Precauciones al Usar Alcance No Local fin -->
+            </div>
+            <!-- Alcance No Local Fin -->
+            <!-- La Recursividad en Python: Un Concepto Autoreferencial -->
+            <div id="laRecursividad" class="mt-5">
+              <h2>
+                La Recursividad en Python: Un Concepto Autoreferencial
+              </h2>
+              <p>
+                La recursividad es un concepto fundamental en programación que
+                implica que una función se llame a sí misma. En Python, esta
+                técnica permite resolver problemas complejos dividiéndolos en
+                subproblemas más pequeños y similares, hasta llegar a un caso
+                base que se resuelve directamente
+              </p>
+              <!-- ¿Cómo funciona la Recursividad? -->
+              <div>
+                <h3>¿Cómo funciona la Recursividad?</h3>
                 <p>
-                  La recursividad es un concepto fundamental en programación que
-                  implica que una función se llame a sí misma. En Python, esta
-                  técnica permite resolver problemas complejos dividiéndolos en
-                  subproblemas más pequeños y similares, hasta llegar a un caso
-                  base que se resuelve directamente
+                  Una función recursiva se compone de dos partes esenciales:
                 </p>
-                <!-- ¿Cómo funciona la Recursividad? -->
-                <div>
-                  <h3>¿Cómo funciona la Recursividad?</h3>
-                  <p>
-                    Una función recursiva se compone de dos partes esenciales:
-                  </p>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Caso base</span>: Es la condición
-                      que detiene la recursión. Cuando se alcanza el caso base,
-                      la función devuelve un valor y deja de llamarse a sí
-                      misma.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Caso recursivo</span>: Es la parte
-                      de la función donde se llama a sí misma con un conjunto de
-                      argumentos modificados, acercándose así al caso base.
-                    </li>
-                  </ul>
-                  <p>Ejemplo:</p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                <ul>
+                  <li>
+                    <span class="fw-bold">Caso base</span>: Es la condición
+                    que detiene la recursión. Cuando se alcanza el caso base,
+                    la función devuelve un valor y deja de llamarse a sí
+                    misma.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Caso recursivo</span>: Es la parte
+                    de la función donde se llama a sí misma con un conjunto de
+                    argumentos modificados, acercándose así al caso base.
+                  </li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def factorial(n):
                             if n == 0:
@@ -811,235 +709,238 @@
                                 return n * factorial(n-1)  # Caso recursivo
                       </code>
                     </pre>
-                  </div>
-                  <p>
-                    En este ejemplo, el factorial de un número se define en
-                    términos del factorial de un número menor. La función se
-                    llama a sí misma repetidamente hasta que n llega a 0, que es
-                    el caso base.
-                  </p>
                 </div>
-                <!-- ¿Cómo funciona la Recursividad? fin -->
-                <!-- Ventajas de la Recursividad -->
-                <div>
-                  <h3>Ventajas de la Recursividad</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Legibilidad</span>: En muchos casos,
-                      las soluciones recursivas pueden ser más concisas y
-                      fáciles de entender que las iterativas.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Estructura de datos</span>: La
-                      recursividad es ideal para trabajar con estructuras de
-                      datos recursivas como árboles y listas enlazadas.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Dividir y conquistar</span>: Permite
-                      descomponer problemas complejos en subproblemas más
-                      manejables.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Ventajas de la Recursividad fin -->
-                <!-- Desventajas de la Recursividad -->
-                <div>
-                  <h3>Desventajas de la Recursividad</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Consumo de memoria</span>: Cada
-                      llamada recursiva consume memoria en la pila. Si la
-                      recursión es demasiado profunda, puede provocar un
-                      desbordamiento de pila.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Dificultad de depuración</span>: Los
-                      errores en funciones recursivas pueden ser más difíciles
-                      de identificar y depurar.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Ineficiencia</span>: En algunos
-                      casos, las soluciones iterativas pueden ser más eficientes
-                      en términos de tiempo de ejecución.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Desventajas de la Recursividad fin -->
-                <!-- Casos de Uso Comunes -->
-                <div>
-                  <h3>Casos de Uso Comunes</h3>
-                  <ul>
-                    <li>Cálculo de factoriales, números de Fibonacci, etc.</li>
-                    <li>
-                      <span class="fw-bold">Ordenamiento de datos</span>:
-                      Algoritmos como el quicksort utilizan la recursividad de
-                      forma efectiva.
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Búsqueda en estructuras de datos</span
-                      >: La búsqueda en árboles binarios es un ejemplo clásico
-                      de recursividad.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Procesamiento de lenguajes</span>:
-                      Los compiladores y analizadores sintácticos emplean
-                      técnicas recursivas para analizar la estructura de los
-                      programas.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Casos de Uso Comunes fin -->
-                <!-- Consideraciones Importantes -->
-                <div>
-                  <h3>Consideraciones Importantes</h3>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Caso base</span>: Es fundamental
-                      definir un caso base claro para evitar bucles infinitos.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Optimización</span>: En algunos
-                      casos, es posible optimizar funciones recursivas
-                      utilizando técnicas como la memoización para evitar
-                      recalcular los mismos valores.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Alternativas</span>: No siempre la
-                      recursividad es la mejor opción. En ocasiones, las
-                      soluciones iterativas pueden ser más eficientes o más
-                      fáciles de entender.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Consideraciones Importantes fin -->
-              </div>
-              <!-- La Recursividad en Python: Un Concepto Autoreferencial Fin -->
-            </div>
-          </article>
-          <!--  El Alcance de las Variables en Python  -->
-
-          <!--  comentarios  -->
-          <article class="row pt-5" id="comments">
-            <h2>COMENTARIOS</h2>
-            <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por
-              favor infórmelo a través del formulario disponible para este
-              propósito.
-            </p>
-            <div class="d-flex justify-content-center">
-              <form
-                action="https://formspree.io/f/mdkdawkg"
-                method="POST"
-                id="myForm"
-              >
-                <fieldset class="d-flex flex-column gap-3">
-                  <legend class="text-center fs-4">Deje su comentario</legend>
-
-                  <div class="d-flex flex-column">
-                    <label for="name">Nombre:</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="User"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
-
-                  <div class="d-flex flex-column">
-                    <label for="email">Email:</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="user@mail.com"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
-
-                  <div class="d-flex flex-column">
-                    <label for="message">Mensaje:</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      cols="30"
-                      rows="5"
-                      placeholder="Su comentario..."
-                      class="form-control rounded-3"
-                      required
-                    ></textarea>
-                  </div>
-
-                  <button
-                    type="submit"
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
-                  >
-                    Enviar
-                  </button>
-                </fieldset>
-
-                <p class="small text-center">
-                  La política de privacidad, y los términos y condiciones están
-                  disponibles en el formulario de contacto.
+                <p>
+                  En este ejemplo, el factorial de un número se define en
+                  términos del factorial de un número menor. La función se
+                  llama a sí misma repetidamente hasta que n llega a 0, que es
+                  el caso base.
                 </p>
-              </form>
+              </div>
+              <!-- ¿Cómo funciona la Recursividad? fin -->
+              <!-- Ventajas de la Recursividad -->
+              <div>
+                <h3>Ventajas de la Recursividad</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Legibilidad</span>: En muchos casos,
+                    las soluciones recursivas pueden ser más concisas y
+                    fáciles de entender que las iterativas.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Estructura de datos</span>: La
+                    recursividad es ideal para trabajar con estructuras de
+                    datos recursivas como árboles y listas enlazadas.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Dividir y conquistar</span>: Permite
+                    descomponer problemas complejos en subproblemas más
+                    manejables.
+                  </li>
+                </ul>
+              </div>
+              <!-- Ventajas de la Recursividad fin -->
+              <!-- Desventajas de la Recursividad -->
+              <div>
+                <h3>Desventajas de la Recursividad</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Consumo de memoria</span>: Cada
+                    llamada recursiva consume memoria en la pila. Si la
+                    recursión es demasiado profunda, puede provocar un
+                    desbordamiento de pila.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Dificultad de depuración</span>: Los
+                    errores en funciones recursivas pueden ser más difíciles
+                    de identificar y depurar.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Ineficiencia</span>: En algunos
+                    casos, las soluciones iterativas pueden ser más eficientes
+                    en términos de tiempo de ejecución.
+                  </li>
+                </ul>
+              </div>
+              <!-- Desventajas de la Recursividad fin -->
+              <!-- Casos de Uso Comunes -->
+              <div>
+                <h3>Casos de Uso Comunes</h3>
+                <ul>
+                  <li>Cálculo de factoriales, números de Fibonacci, etc.</li>
+                  <li>
+                    <span class="fw-bold">Ordenamiento de datos</span>:
+                    Algoritmos como el quicksort utilizan la recursividad de
+                    forma efectiva.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Búsqueda en estructuras de datos</span>: La búsqueda en árboles binarios es un
+                    ejemplo clásico
+                    de recursividad.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Procesamiento de lenguajes</span>:
+                    Los compiladores y analizadores sintácticos emplean
+                    técnicas recursivas para analizar la estructura de los
+                    programas.
+                  </li>
+                </ul>
+              </div>
+              <!-- Casos de Uso Comunes fin -->
+              <!-- Consideraciones Importantes -->
+              <div>
+                <h3>Consideraciones Importantes</h3>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Caso base</span>: Es fundamental
+                    definir un caso base claro para evitar bucles infinitos.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Optimización</span>: En algunos
+                    casos, es posible optimizar funciones recursivas
+                    utilizando técnicas como la memoización para evitar
+                    recalcular los mismos valores.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Alternativas</span>: No siempre la
+                    recursividad es la mejor opción. En ocasiones, las
+                    soluciones iterativas pueden ser más eficientes o más
+                    fáciles de entender.
+                  </li>
+                </ul>
+              </div>
+              <!-- Consideraciones Importantes fin -->
             </div>
-          </article>
-          <!--  fin comentarios  -->
-        </section>
-        <!--  barra lateral  -->
-        <aside class="col-lg-3 d-none d-lg-block pt-5">
-          <h1>En Este Artículo</h1>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a href="#introduccion">Introducción</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#alcanceLocal">Alcance Local</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#palabraReservadaGlobal">Palabra Reservada Global</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#alcanceGlobal">Alcance Global</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#alcanceNoLocal">Alcance No Local</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#laRecursividad">La Recursividad</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#comments">Comentarios</a>
-            </li>
-          </ul>
-        </aside>
-        <!--  fin barra lateral  -->
-      </main>
-      <!--  fin principal  -->
-    </div>
-    <!--  Principal Fin  -->
+            <!-- La Recursividad en Python: Un Concepto Autoreferencial Fin -->
+          </div>
+        </article>
+        <!--  El Alcance de las Variables en Python  -->
 
-    <!-- button to top -->
-    <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        fill="currentColor"
-        class="bi bi-arrow-bar-up"
-        viewBox="0 0 16 16"
-        style="margin-left: -2px"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"
-        ></path>
-      </svg>
-    </button>
-    <!-- Fin button to top -->
-  </body>
+        <!--  comentarios  -->
+        <article class="row pt-5" id="comments">
+          <h2>COMENTARIOS</h2>
+          <p>
+            Si tiene alguna inquietud, duda o ha encontrado algún error, por
+            favor infórmelo a través del formulario disponible para este
+            propósito.
+          </p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
+
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
+                </div>
+
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
+
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                  Enviar
+                </button>
+              </fieldset>
+
+              <p class="small text-center">
+                La política de privacidad, y los términos y condiciones están
+                disponibles en el formulario de contacto.
+              </p>
+            </form>
+          </div>
+        </article>
+        <!--  fin comentarios  -->
+      </section>
+
+<!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h1>En Este Artículo</h1><div class="menu-scroll"><div class="menu-container"><div class="border border-1">
+<div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
+<div class="menu-item"><a href="#alcance-local" class="simple-link">Alcance Local</a></div>
+<div class="menu-item"><a href="#palabra-reservada-global" class="simple-link">Palabra Reservada <code class="language-python">global</code></a></div>
+<div class="menu-item"><a href="#alcanceGlobal" class="simple-link">Alcance Global</a></div>
+<div class="menu-item"><a href="#alcanceNoLocal" class="simple-link">Alcance No Local</a></div>
+<div class="menu-item"><a href="#laRecursividad" class="simple-link">La Recursividad</a></div>
+<!-- Comentarios  -->
+<div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div></div></div></div></aside>
+<!--  fin barra lateral  -->
+    </main>
+    <!--  fin principal  -->
+  </div>
+  <!--  Principal Fin  -->
+
+  <!--  pie de pagina  -->
+  <footer class="row border-top border-1 m-1 mt-auto">
+    <div class="row">
+      <!-- contacto -->
+      <address class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Contacto</div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class="ms-3">
+            <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class="ms-3">Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      <!-- Derechos de autor -->
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
+      </div>
+      <!-- redes sociales -->
+      <div class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Redes Sociales</div>
+        <div class="d-flex justify-content-evenly align-items-center gap-5">
+          <div>
+            <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center gap-2"></div>
+  </footer>
+  <!--  pie de pagina fin  -->
+
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
 </html>

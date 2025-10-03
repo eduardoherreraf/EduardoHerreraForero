@@ -1,252 +1,179 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-  <head>
-    <!-- Metaetiquetas -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Aprende a declarar y usar variables en Python. Descubre los tipos de datos, buenas prácticas y ejemplos para mejorar tus habilidades de programación."
-    />
-    <meta
-      name="title"
-      content="Variables Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta name="author" content="Ing. Eduardo Herrera Forero" />
-    <meta name="application-name" content="EHF" />
-    <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://eduardoherreraf.github.io/cursoPython3-0204_variables.html"
-    />
-    <!-- Fin Metaetiquetas -->
 
-    <!-- Open Graph data -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Variables Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      property="og:description"
-      content="Aprende a declarar y usar variables en Python. Descubre los tipos de datos, buenas prácticas y ejemplos para mejorar tus habilidades de programación."
-    />
-    <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      property="og:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      property="og:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0204_variables.html"
-    />
-    <meta property="og:locale" content="es_CO" />
-    <!-- fin Open Graph data -->
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Aprende a declarar y usar variables en Python. Descubre los tipos de datos, buenas prácticas y ejemplos para mejorar tus habilidades de programación." />
+  <meta name="title" content="Variables Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eduardoherreraf.github.io/cursoPython3-0204_variables.html" />
+  <!-- Fin Metaetiquetas -->
 
-    <!-- Twitter cards -->
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="Variables Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      name="twitter:description"
-      content="Aprende a declarar y usar variables en Python. Descubre los tipos de datos, buenas prácticas y ejemplos para mejorar tus habilidades de programación."
-    />
-    <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      name="twitter:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      name="twitter:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0204_variables.html"
-    />
-    <meta name="twitter:site" content="@ehfeduardo" />
-    <!-- Fin Twitter cards -->
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Variables Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta property="og:description"
+    content="Aprende a declarar y usar variables en Python. Descubre los tipos de datos, buenas prácticas y ejemplos para mejorar tus habilidades de programación." />
+  <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta property="og:url" content="https://eduardoherreraf.github.io/cursoPython3-0204_variables.html" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
 
-    <!-- iconos -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="android-chrome-192x192.png"
-    />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- fin iconos -->
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Variables Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description"
+    content="Aprende a declarar y usar variables en Python. Descubre los tipos de datos, buenas prácticas y ejemplos para mejorar tus habilidades de programación." />
+  <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta name="twitter:url" content="https://eduardoherreraf.github.io/cursoPython3-0204_variables.html" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
 
-    <title>Variables Python 3 - Ing. Eduardo Herrera Forero.</title>
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
 
-    <script type="module" src="./js/main.js"></script>
+  <title>Variables Python 3 - Ing. Eduardo Herrera Forero.</title>
 
-    <meta
-      name="google-site-verification"
-      content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"
-    />
-  </head>
+  <script type="module" src="./js/main.js"></script>
 
-  <body>
-    <!-- Barra deNavegación -->
-    <nav
-      class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
-    >
-      <div class="container-fluid">
-        <!-- Enlace a la página principal con el logo y nombre -->
-        <a
-          class="navbar-brand d-flex align-items-center ms-2"
-          href="index.html"
-        >
-          <img
-            src="./images/logo.png"
-            alt="Logo de Ing. Eduardo Herrera Forero"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top me-1"
-          />
-          <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
-        </a>
-        <!-- Botón para activar el menú en dispositivos pequeños -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Menú de navegación -->
-        <div
-          class="collapse navbar-collapse ms-auto text-center"
-          id="navbarSupportedContent"
-        >
-          <ul
-            class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100"
-          >
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#portfolio"
-                >PORTAFOLIO</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 publicaciones-activo"
-                href="index.html#blog"
-                >PUBLICACIONES</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
-            </li>
-          </ul>
-        </div>
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Barra deNavegación -->
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
 
-    <!--  principal  -->
-    <div class="container-fluid" id="introduccion">
-      <main class="row">
-        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
-          <!--  Variables  -->
-          <article
-            class="row border-1 border-bottom pb-3"
-            data-bs-spy="scroll"
-            data-bs-target="#list-example"
-            data-bs-smooth-scroll="true"
-          >
-            <div>
-              <header>
-                <h1>Variables en Python</h1>
-              </header>
-              <!-- Introducción -->
-              <div class="mt-5">
-                <h2>Introducción</h2>
-                <p>
-                  Los operadores en Python son símbolos especiales que realizan
-                  operaciones específicas en uno o más valores (operandos). Son
-                  esenciales para realizar cálculos, comparaciones y
-                  manipulaciones de datos en los programas.
-                </p>
+  <!--  principal  -->
+  <div class="container-fluid" id="introduccion">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!--  Variables  -->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <div>
+            <header>
+              <h1>Variables en Python</h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-5">
+              <h2>Introducción</h2>
+              <p>
+                Los operadores en Python son símbolos especiales que realizan
+                operaciones específicas en uno o más valores (operandos). Son
+                esenciales para realizar cálculos, comparaciones y
+                manipulaciones de datos en los programas.
+              </p>
+            </div>
+            <!-- ¿Qué es una variable en Python? -->
+            <div id="que-es-una-variable-en-python" class="mt-5">
+              <h2>¿Qué es una variable en Python?</h2>
+              <p>
+                En Python, una variable puede ser entendida como un contenedor
+                o un nombre que se asigna a un valor específico. Este valor
+                puede ser de diferentes tipos, como un número, una palabra
+                (texto) o incluso una estructura de datos más compleja.
+                Imaginar una caja con un rótulo: la caja es la variable y el
+                rótulo es el nombre que le damos. Dentro de la caja, se guarda
+                el valor que quieres recordar.
+              </p>
+              <div class="centrar-imagen imagen50">
+                <figure>
+                  <img src="https://i.ibb.co/tBQ8BjN/variables.jpg" class="img-fluid" alt="Variables en Python"
+                    title="Mejores prácticas de nomenclatura de variables en Python" />
+                  <figcaption>
+                    Mejores prácticas de nomenclatura de variables en Python
+                  </figcaption>
+                </figure>
               </div>
-              <!-- ¿Qué es una variable en Python? -->
-              <div id="QueEsUnaVariableEnPython" class="mt-5">
-                <h2 class="mt-1">¿Qué es una variable en Python?</h2>
-                <p>
-                  En Python, una variable puede ser entendida como un contenedor
-                  o un nombre que se asigna a un valor específico. Este valor
-                  puede ser de diferentes tipos, como un número, una palabra
-                  (texto) o incluso una estructura de datos más compleja.
-                  Imaginar una caja con un rótulo: la caja es la variable y el
-                  rótulo es el nombre que le damos. Dentro de la caja, se guarda
-                  el valor que quieres recordar.
-                </p>
-                <div class="centrar-imagen imagen50">
-                  <figure>
-                    <img
-                      src="https://i.ibb.co/tBQ8BjN/variables.jpg"
-                      class="img-fluid"
-                      alt="Variables en Python"
-                      title="Mejores prácticas de nomenclatura de variables en Python"
-                    />
-                    <figcaption>
-                      Mejores prácticas de nomenclatura de variables en Python
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <!-- ¿Qué es una variable en Python? Fin -->
-              <!-- ¿Para qué Sirven las Variables? -->
-              <div id="ParaQueSirvenVariables" class="mt-5">
-                <h2 class="mt-1">¿Para qué Sirven las Variables?</h2>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Almacenar datos</span>: Las variables
-                    nos permiten guardar datos de manera temporal o permanente
-                    dentro de un programa.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Manipular datos</span>: Podemos
-                    realizar operaciones matemáticas, comparaciones o cualquier
-                    otra acción sobre los valores almacenados en las variables.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Hacer nuestro código más legible</span
-                    >: Al asignar nombres significativos a las variables,
-                    hacemos que nuestro código sea más fácil de entender y
-                    mantener
-                  </li>
-                </ul>
-              </div>
-              <!-- ¿Para qué Sirven las Variables? fin -->
-              <!-- Cómo declarar una Variable en Python -->
-              <div id="comoDeclararUnaVariableEnPython" class="mt-5">
-                <h2 class="mt-1">Cómo declarar una Variable en Python</h2>
-                <p>
-                  Para crear una variable en Python, simplemente asignamos un
-                  valor a un nombre. No es necesario declarar el tipo de dato de
-                  antemano, ya que Python lo infiere automáticamente.
-                </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <!-- ¿Qué es una variable en Python? Fin -->
+            <!-- ¿Para qué Sirven las Variables? -->
+            <div id="para-que-Sirven-las-Variables" class="mt-5">
+              <h2>¿Para qué Sirven las Variables?</h2>
+              <ul>
+                <li>
+                  <span class="fw-bold">Almacenar datos</span>: Las variables
+                  nos permiten guardar datos de manera temporal o permanente
+                  dentro de un programa.
+                </li>
+                <li>
+                  <span class="fw-bold">Manipular datos</span>: Podemos
+                  realizar operaciones matemáticas, comparaciones o cualquier
+                  otra acción sobre los valores almacenados en las variables.
+                </li>
+                <li>
+                  <span class="fw-bold">Hacer nuestro código más legible</span>: Al asignar nombres significativos a las
+                  variables,
+                  hacemos que nuestro código sea más fácil de entender y
+                  mantener
+                </li>
+              </ul>
+            </div>
+            <!-- ¿Para qué Sirven las Variables? fin -->
+            <!-- Cómo declarar una Variable en Python -->
+            <div id="como-declarar-una-variable-en-python" class="mt-5">
+              <h2>Cómo declarar una Variable en Python</h2>
+              <p>
+                Para crear una variable en Python, simplemente asignamos un
+                valor a un nombre. No es necesario declarar el tipo de dato de
+                antemano, ya que Python lo infiere automáticamente.
+              </p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Ejemplo de declaración de variables
                       nombre = "Juan"  # Variable de tipo cadena (texto)
@@ -254,132 +181,126 @@
                       altura = 1.75    # Variable de tipo flotante (número con decimales)
                     </code>
                   </pre>
-                </div>
               </div>
-              <!-- Cómo declarar una Variable en Python fin -->
-              <!-- Reglas para Nombrar Variables -->
-              <div id="reglasParaNombrarVariables" class="mt-5">
-                <h2 class="mt-1">Reglas para Nombrar Variables</h2>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Iniciar con una letra</span>: El
-                    nombre de una variable debe comenzar con una letra
-                    (mayúscula o minúscula) o un guion bajo (_).
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      >Usar solo letras, números y guiones bajos</span
-                    >: No se permiten espacios ni caracteres especiales.
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      >Distinguir entre mayúsculas y minúsculas</span
-                    >: Python es case-sensitive, por lo que
-                    <code class="language-python">nombre</code> y
-                    <code class="language-python">Nombre</code> son variables
-                    diferentes.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Evitar palabras reservadas</span>: No
-                    se pueden usar como nombres de variables palabras que tienen
-                    un significado especial en Python (como if, else, for,
-                    etc.).
-                  </li>
-                </ul>
-                <p>
-                  Python no impone restricciones en la longitud de los nombres
-                  de las variables, pero eso no significa que un nombre de
-                  variable largo sea mejor que uno corto.
-                </p>
-              </div>
-              <!-- Reglas para Nombrar Variables fin-->
-              <!-- Convenciones de Nomenclatura -->
-              <div id="ConvencionesDeNomenclatura" class="mt-5">
-                <h2 class="mt-1">Convenciones de Nomenclatura</h2>
-                <p>
-                  Aunque Python no impone reglas estrictas para nombrar
-                  variables, se recomienda seguir algunas convenciones para
-                  mejorar la legibilidad del código:
-                </p>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Nombres descriptivos</span>: Los
-                    nombres de las variables deben ser lo más descriptivos
-                    posible para indicar el propósito de la variable.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Snake case</span>: Se recomienda
-                    utilizar el estilo "snake case", en el que las palabras se
-                    separan por guiones bajos (ejemplo: mi_variable).
-                  </li>
-                </ul>
-                <p>
-                  El
-                  <a
-                    href="https://www.python.org/dev/peps/pep-0008/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >PEP 8 -- Style Guide for Python Code</a
-                  >
-                  recomienda la siguiente convención de nomenclatura para
-                  variables y funciones en Python:
-                </p>
-                <ul>
-                  <li>
-                    Los nombres de las variables deben estar en minúsculas, con
-                    palabras separadas por guiones bajos para mejorar la
-                    legibilidad (por ejemplo, var, my_variable)
-                  </li>
-                  <li>
-                    Los nombres de las funciones siguen la misma convención que
-                    los nombres de las variables (por ejemplo, fun, my_function)
-                  </li>
-                  <li>
-                    También es posible usar letras mixtas (por ejemplo,
-                    myVariable), pero solo en contextos donde ese ya es el
-                    estilo predominante, para mantener la compatibilidad
-                    retroactiva con la convención adoptada.
-                  </li>
-                </ul>
-              </div>
-              <!-- Tipos de Datos en Python -->
-              <div id="tiposDeDatosEnPython" class="mt-5">
-                <h2 class="mt-1">Tipos de Datos en Python</h2>
-                <p>Python soporta varios tipos de datos, incluyendo:</p>
-                <ul>
-                  <li>
-                    <span class="fw-bold">int</span>: Números enteros (ej: 42,
-                    -10)
-                  </li>
-                  <li>
-                    <span class="fw-bold">float</span>: Números de punto
-                    flotante (ej: 3.14, -0.5)
-                  </li>
-                  <li>
-                    <span class="fw-bold">str</span>: Cadenas de texto (ej:
-                    "Hola", 'mundo')
-                  </li>
-                  <li>
-                    <span class="fw-bold">bool</span>: Valores booleanos (True o
-                    False)
-                  </li>
-                  <li>
-                    <span class="fw-bold">list</span>: Listas ordenadas de
-                    elementos (ej: [1, 2, 3])
-                  </li>
-                  <li>
-                    <span class="fw-bold">tuple</span>: Tuplas ordenadas e
-                    inmutables (ej: (1, 2, 3))
-                  </li>
-                  <li>
-                    <span class="fw-bold">dict</span>: Diccionarios de
-                    clave-valor (ej: {'nombre': 'Juan', 'edad': 30})
-                  </li>
-                  <li><span class="fw-bold">Y muchos otros...</span></li>
-                </ul>
-                <p>Ejemplo completo:</p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <!-- Cómo declarar una Variable en Python fin -->
+            <!-- Reglas para Nombrar Variables -->
+            <div id="reglas-para-nombrar-variables" class="mt-5">
+              <h2>Reglas para Nombrar Variables</h2>
+              <ul>
+                <li>
+                  <span class="fw-bold">Iniciar con una letra</span>: El
+                  nombre de una variable debe comenzar con una letra
+                  (mayúscula o minúscula) o un guion bajo (_).
+                </li>
+                <li>
+                  <span class="fw-bold">Usar solo letras, números y guiones bajos</span>: No se permiten espacios ni
+                  caracteres especiales.
+                </li>
+                <li>
+                  <span class="fw-bold">Distinguir entre mayúsculas y minúsculas</span>: Python es case-sensitive, por
+                  lo que
+                  <code class="language-python">nombre</code> y
+                  <code class="language-python">Nombre</code> son variables
+                  diferentes.
+                </li>
+                <li>
+                  <span class="fw-bold">Evitar palabras reservadas</span>: No
+                  se pueden usar como nombres de variables palabras que tienen
+                  un significado especial en Python (como if, else, for,
+                  etc.).
+                </li>
+              </ul>
+              <p>
+                Python no impone restricciones en la longitud de los nombres
+                de las variables, pero eso no significa que un nombre de
+                variable largo sea mejor que uno corto.
+              </p>
+            </div>
+            <!-- Reglas para Nombrar Variables fin-->
+            <!-- Convenciones de Nomenclatura -->
+            <div id="convenciones-de-nomenclatura" class="mt-5">
+              <h2>Convenciones de Nomenclatura</h2>
+              <p>
+                Aunque Python no impone reglas estrictas para nombrar
+                variables, se recomienda seguir algunas convenciones para
+                mejorar la legibilidad del código:
+              </p>
+              <ul>
+                <li>
+                  <span class="fw-bold">Nombres descriptivos</span>: Los
+                  nombres de las variables deben ser lo más descriptivos
+                  posible para indicar el propósito de la variable.
+                </li>
+                <li>
+                  <span class="fw-bold">Snake case</span>: Se recomienda
+                  utilizar el estilo "snake case", en el que las palabras se
+                  separan por guiones bajos (ejemplo: mi_variable).
+                </li>
+              </ul>
+              <p>
+                El
+                <a href="https://www.python.org/dev/peps/pep-0008/" target="_blank" rel="noopener noreferrer">PEP 8 --
+                  Style Guide for Python Code</a>
+                recomienda la siguiente convención de nomenclatura para
+                variables y funciones en Python:
+              </p>
+              <ul>
+                <li>
+                  Los nombres de las variables deben estar en minúsculas, con
+                  palabras separadas por guiones bajos para mejorar la
+                  legibilidad (por ejemplo, var, my_variable)
+                </li>
+                <li>
+                  Los nombres de las funciones siguen la misma convención que
+                  los nombres de las variables (por ejemplo, fun, my_function)
+                </li>
+                <li>
+                  También es posible usar letras mixtas (por ejemplo,
+                  myVariable), pero solo en contextos donde ese ya es el
+                  estilo predominante, para mantener la compatibilidad
+                  retroactiva con la convención adoptada.
+                </li>
+              </ul>
+            </div>
+            <!-- Tipos de Datos en Python -->
+            <div id="tipos-de-datos-en-python" class="mt-5">
+              <h2>Tipos de Datos en Python</h2>
+              <p>Python soporta varios tipos de datos, incluyendo:</p>
+              <ul>
+                <li>
+                  <span class="fw-bold">int</span>: Números enteros (ej: 42,
+                  -10)
+                </li>
+                <li>
+                  <span class="fw-bold">float</span>: Números de punto
+                  flotante (ej: 3.14, -0.5)
+                </li>
+                <li>
+                  <span class="fw-bold">str</span>: Cadenas de texto (ej:
+                  "Hola", 'mundo')
+                </li>
+                <li>
+                  <span class="fw-bold">bool</span>: Valores booleanos (True o
+                  False)
+                </li>
+                <li>
+                  <span class="fw-bold">list</span>: Listas ordenadas de
+                  elementos (ej: [1, 2, 3])
+                </li>
+                <li>
+                  <span class="fw-bold">tuple</span>: Tuplas ordenadas e
+                  inmutables (ej: (1, 2, 3))
+                </li>
+                <li>
+                  <span class="fw-bold">dict</span>: Diccionarios de
+                  clave-valor (ej: {'nombre': 'Juan', 'edad': 30})
+                </li>
+                <li><span class="fw-bold">Y muchos otros...</span></li>
+              </ul>
+              <p>Ejemplo completo:</p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Calcular el área de un círculo
                       radio = 5  # Radio del círculo (en cm)
@@ -388,263 +309,267 @@
                       print("El área del círculo es:", area, "cm²")
                     </code>
                   </pre>
-                </div>
               </div>
-              <!-- Tipos de Datos en Python fin-->
-              <!-- Operadores Abreviados -->
-              <div id="operadoresAbreviados" class="mt-5">
-                <h2 class="mt-1">Operadores Abreviados</h2>
-                <p>
-                  Es tiempo de explicar el siguiente conjunto de operadores que
-                  harán la vida del programador/desarrollador más fácil. Muy
-                  seguido, se desea utilizar la misma variable al lado derecho y
-                  al lado izquierdo del operador = operator.
-                </p>
-                <p>
-                  Por ejemplo, si se necesita calcular una serie de valores
-                  sucesivos de la potencia de 2, se puede usar el siguiente
-                  código:
-                </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <!-- Tipos de Datos en Python fin-->
+            <!-- Operadores Abreviados -->
+            <div id="operadores-abreviados" class="mt-5">
+              <h2>Operadores Abreviados</h2>
+              <p>
+                Es tiempo de explicar el siguiente conjunto de operadores que
+                harán la vida del programador/desarrollador más fácil. Muy
+                seguido, se desea utilizar la misma variable al lado derecho y
+                al lado izquierdo del operador = operator.
+              </p>
+              <p>
+                Por ejemplo, si se necesita calcular una serie de valores
+                sucesivos de la potencia de 2, se puede usar el siguiente
+                código:
+              </p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       x = x * 2
                     </code>
                   </pre>
-                </div>
-                <p>
-                  Python ofrece una manera más corta de escribir operaciones
-                  como estas, lo cual se puede codificar de la siguiente manera:
-                </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <p>
+                Python ofrece una manera más corta de escribir operaciones
+                como estas, lo cual se puede codificar de la siguiente manera:
+              </p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       x *= 2
                     </code>
                   </pre>
-                </div>
-                <p>
-                  A continuación se intenta presentar una descripción general
-                  para este tipo de operaciones. Si op es un operador de dos
-                  argumentos (esta es una condición muy importante) y el
-                  operador es utilizado en el siguiente contexto...:
-                </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <p>
+                A continuación se intenta presentar una descripción general
+                para este tipo de operaciones. Si op es un operador de dos
+                argumentos (esta es una condición muy importante) y el
+                operador es utilizado en el siguiente contexto...:
+              </p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       variable = variable op expresión
                     </code>
                   </pre>
-                </div>
-                <p>
-                  ...entonces se puede simplificar y mostrar de la siguiente
-                  manera:
-                </p>
-                <div class="ej-sintaxis">
-                  <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <p>
+                ...entonces se puede simplificar y mostrar de la siguiente
+                manera:
+              </p>
+              <div class="ej-sintaxis">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       variable op= expresión
                     </code>
                   </pre>
-                </div>
-                <p>Ejemplos de operaciones:</p>
-                <div class="mx-auto miTabla">
-                  <table class="table table-striped table-bordered table-sm">
-                    <thead class="text-center">
-                      <tr>
-                        <th scope="col" class="miCol20">#</th>
-                        <th scope="col" class="miCol40">Expresión</th>
-                        <th scope="col" class="miCol40">Operador Abreviado</th>
-                      </tr>
-                    </thead>
-                    <tbody class="table-group-divider text-center">
-                      <tr>
-                        <td>1</td>
-                        <td>
-                          <code class="language-python">i = i + 2 * j</code>
-                        </td>
-                        <td><code class="language-python">i += 2 * 3</code></td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>
-                          <code class="language-python">var = var / 2</code>
-                        </td>
-                        <td><code class="language-python">var /= 2</code></td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>
-                          <code class="language-python">rem = rem % 10</code>
-                        </td>
-                        <td><code class="language-python">rem %= 10</code></td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>
-                          <code class="language-python"
-                            >j = j - (i + var + rem)</code
-                          >
-                        </td>
-                        <td>
-                          <code class="language-python"
-                            >j -= (i + var + rem)</code
-                          >
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>5</td>
-                        <td><code class="language-python">x = x ** 2</code></td>
-                        <td><code class="language-python">x **= 2 </code></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
               </div>
-              <!-- Operadores Abreviados fin -->
+              <p>Ejemplos de operaciones:</p>
+              <div class="mx-auto miTabla">
+                <table class="table table-striped table-bordered table-sm">
+                  <thead class="text-center">
+                    <tr>
+                      <th scope="col" class="miCol20">#</th>
+                      <th scope="col" class="miCol40">Expresión</th>
+                      <th scope="col" class="miCol40">Operador Abreviado</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-group-divider text-center">
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <code class="language-python">i = i + 2 * j</code>
+                      </td>
+                      <td><code class="language-python">i += 2 * 3</code></td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>
+                        <code class="language-python">var = var / 2</code>
+                      </td>
+                      <td><code class="language-python">var /= 2</code></td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>
+                        <code class="language-python">rem = rem % 10</code>
+                      </td>
+                      <td><code class="language-python">rem %= 10</code></td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>
+                        <code class="language-python">j = j - (i + var + rem)</code>
+                      </td>
+                      <td>
+                        <code class="language-python">j -= (i + var + rem)</code>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td><code class="language-python">x = x ** 2</code></td>
+                      <td><code class="language-python">x **= 2 </code></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </article>
-          <!--  Variables  -->
-
-          <!--  comentarios  -->
-          <article class="row pt-5" id="comments">
-            <h2>COMENTARIOS</h2>
-            <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por
-              favor infórmelo a través del formulario disponible para este
-              propósito.
-            </p>
-            <div class="d-flex justify-content-center">
-              <form
-                action="https://formspree.io/f/mdkdawkg"
-                method="POST"
-                id="myForm"
-              >
-                <fieldset class="d-flex flex-column gap-3">
-                  <legend class="text-center fs-4">Deje su comentario</legend>
-
-                  <div class="d-flex flex-column">
-                    <label for="name">Nombre:</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="User"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
-
-                  <div class="d-flex flex-column">
-                    <label for="email">Email:</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="user@mail.com"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
-
-                  <div class="d-flex flex-column">
-                    <label for="message">Mensaje:</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      cols="30"
-                      rows="5"
-                      placeholder="Su comentario..."
-                      class="form-control rounded-3"
-                      required
-                    ></textarea>
-                  </div>
-
-                  <button
-                    type="submit"
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
-                  >
-                    Enviar
-                  </button>
-                </fieldset>
-
-                <p class="small text-center">
-                  La política de privacidad, y los términos y condiciones están
-                  disponibles en el formulario de contacto.
-                </p>
-              </form>
-            </div>
-          </article>
-          <!--  fin comentarios  -->
-        </section>
-        <!--  barra lateral  -->
-        <aside class="col-lg-3 d-none d-lg-block pt-5">
-          <div>
-            <h1>En Este Artículo</h1>
-            <ul class="list-group">
-              <li class="list-group-item">
-                <a href="#introduccion">Introducción</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#QueEsUnaVariableEnPython"
-                  >¿Qué es una variable en Python?</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a href="#ParaQueSirvenVariables"
-                  >¿Para qué Sirven las Variables?</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a href="#comoDeclararUnaVariableEnPython"
-                  >Cómo declarar una Variable en Python</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a href="#reglasParaNombrarVariables"
-                  >Reglas para Nombrar Variables</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a href="#ConvencionesDeNomenclatura"
-                  >Convenciones de Nomenclatura</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a href="#tiposDeDatosEnPython">Tipos de Datos en Python</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#operadoresAbreviados">Operadores Abreviados</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#comments">Comentarios</a>
-              </li>
-            </ul>
+            <!-- Operadores Abreviados fin -->
           </div>
-        </aside>
-        <!--  fin barra lateral  -->
-      </main>
-      <!--  fin principal  -->
-    </div>
-    <!--  Principal Fin  -->
+        </article>
+        <!--  Variables  -->
 
-    <!-- button to top -->
-    <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        fill="currentColor"
-        class="bi bi-arrow-bar-up"
-        viewBox="0 0 16 16"
-        style="margin-left: -2px"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"
-        ></path>
-      </svg>
-    </button>
-    <!-- Fin button to top -->
-  </body>
+        <!--  comentarios  -->
+        <article class="row pt-5" id="comments">
+          <h2>COMENTARIOS</h2>
+          <p>
+            Si tiene alguna inquietud, duda o ha encontrado algún error, por
+            favor infórmelo a través del formulario disponible para este
+            propósito.
+          </p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
+
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
+                </div>
+
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
+
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                  Enviar
+                </button>
+              </fieldset>
+
+              <p class="small text-center">
+                La política de privacidad, y los términos y condiciones están
+                disponibles en el formulario de contacto.
+              </p>
+            </form>
+          </div>
+        </article>
+        <!--  fin comentarios  -->
+      </section>
+
+      <!--  barra lateral  -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        <h1>En Este Artículo</h1>
+        <div class="menu-scroll">
+          <div class="menu-container">
+            <div class="border border-1">
+              <div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
+              <div class="menu-item"><a href="#que-es-una-variable-en-python" class="simple-link">¿Qué es una Variable
+                  en Python?</a></div>
+              <div class="menu-item"><a href="#para-que-Sirven-las-Variables" class="simple-link">¿Para qué Sirven las
+                  Variables?</a></div>
+              <div class="menu-item"><a href="#como-declarar-una-variable-en-python" class="simple-link">Cómo Declarar
+                  una Variable en Python</a></div>
+              <div class="menu-item"><a href="#reglas-para-nombrar-variables" class="simple-link">Reglas para Nombrar
+                  Variables</a></div>
+              <div class="menu-item"><a href="#convenciones-de-nomenclatura" class="simple-link">Convenciones de
+                  Nomenclatura</a></div>
+              <div class="menu-item"><a href="#tipos-de-datos-en-python" class="simple-link">Tipos de Datos en
+                  Python</a></div>
+              <div class="menu-item"><a href="#operadores-abreviados" class="simple-link">Operadores Abreviados</a>
+              </div>
+              <!-- Comentarios  -->
+              <div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!--  fin barra lateral  -->
+
+      <li class="list-group-item">
+        <a href="#"></a>
+      </li>
+    </main>
+    <!--  fin principal  -->
+  </div>
+  <!--  Principal Fin  -->
+
+  <!--  pie de pagina  -->
+  <footer class="row border-top border-1 m-1 mt-auto">
+    <div class="row">
+      <!-- contacto -->
+      <address class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Contacto</div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class="ms-3">
+            <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class="ms-3">Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      <!-- Derechos de autor -->
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
+      </div>
+      <!-- redes sociales -->
+      <div class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Redes Sociales</div>
+        <div class="d-flex justify-content-evenly align-items-center gap-5">
+          <div>
+            <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center gap-2"></div>
+  </footer>
+  <!--  pie de pagina fin  -->
+
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
 </html>

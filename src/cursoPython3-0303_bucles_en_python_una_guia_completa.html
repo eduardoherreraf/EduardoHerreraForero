@@ -1,343 +1,268 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-  <head>
-    <!-- Metaetiquetas -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Aprende sobre los bucles en Python: while y for. Incluye ejemplos prácticos. Domina el control de flujo en tus programas Python."
-    />
-    <meta
-      name="title"
-      content="Bucles en Python: Una Guía Completa - Ing. Eduardo Herrera Forero."
-    />
-    <meta name="author" content="Ing. Eduardo Herrera Forero" />
-    <meta name="application-name" content="EHF" />
-    <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://eduardoherreraf.github.io/cursoPython3-0303_bucles_en_python_una_guia_completa.html"
-    />
-    <!-- Fin Metaetiquetas -->
 
-    <!-- Open Graph data -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Bucles en Python: Una Guía Completa - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      property="og:description"
-      content="Aprende sobre los bucles en Python: while y for. Incluye ejemplos prácticos. Domina el control de flujo en tus programas Python."
-    />
-    <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      property="og:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      property="og:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0303_bucles_en_python_una_guia_completa.html"
-    />
-    <meta property="og:locale" content="es_CO" />
-    <!-- fin Open Graph data -->
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Aprende sobre los bucles en Python: while y for. Incluye ejemplos prácticos. Domina el control de flujo en tus programas Python." />
+  <meta name="title" content="Bucles en Python: Una Guía Completa - Ing. Eduardo Herrera Forero." />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical"
+    href="https://eduardoherreraf.github.io/cursoPython3-0303_bucles_en_python_una_guia_completa.html" />
+  <!-- Fin Metaetiquetas -->
 
-    <!-- Twitter cards -->
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="Bucles en Python: Una Guía Completa - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      name="twitter:description"
-      content="Aprende sobre los bucles en Python: while y for. Incluye ejemplos prácticos. Domina el control de flujo en tus programas Python."
-    />
-    <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      name="twitter:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      name="twitter:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0303_bucles_en_python_una_guia_completa.html"
-    />
-    <meta name="twitter:site" content="@ehfeduardo" />
-    <!-- Fin Twitter cards -->
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Bucles en Python: Una Guía Completa - Ing. Eduardo Herrera Forero." />
+  <meta property="og:description"
+    content="Aprende sobre los bucles en Python: while y for. Incluye ejemplos prácticos. Domina el control de flujo en tus programas Python." />
+  <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta property="og:url"
+    content="https://eduardoherreraf.github.io/cursoPython3-0303_bucles_en_python_una_guia_completa.html" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
 
-    <!-- iconos -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="android-chrome-192x192.png"
-    />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- fin iconos -->
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Bucles en Python: Una Guía Completa - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description"
+    content="Aprende sobre los bucles en Python: while y for. Incluye ejemplos prácticos. Domina el control de flujo en tus programas Python." />
+  <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta name="twitter:url"
+    content="https://eduardoherreraf.github.io/cursoPython3-0303_bucles_en_python_una_guia_completa.html" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
 
-    <title>
-      Bucles en Python: Una Guía Completa - Ing. Eduardo Herrera Forero.
-    </title>
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
 
-    <script type="module" src="./js/main.js"></script>
+  <title>
+    Bucles en Python: Una Guía Completa - Ing. Eduardo Herrera Forero.
+  </title>
 
-    <meta
-      name="google-site-verification"
-      content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"
-    />
-  </head>
+  <script type="module" src="./js/main.js"></script>
 
-  <body>
-    <!-- Barra deNavegación -->
-    <nav
-      class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
-    >
-      <div class="container-fluid">
-        <!-- Enlace a la página principal con el logo y nombre -->
-        <a
-          class="navbar-brand d-flex align-items-center ms-2"
-          href="index.html"
-        >
-          <img
-            src="./images/logo.png"
-            alt="Logo de Ing. Eduardo Herrera Forero"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top me-1"
-          />
-          <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
-        </a>
-        <!-- Botón para activar el menú en dispositivos pequeños -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Menú de navegación -->
-        <div
-          class="collapse navbar-collapse ms-auto text-center"
-          id="navbarSupportedContent"
-        >
-          <ul
-            class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100"
-          >
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#portfolio"
-                >PORTAFOLIO</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 publicaciones-activo"
-                href="index.html#blog"
-                >PUBLICACIONES</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
-            </li>
-          </ul>
-        </div>
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Barra deNavegación -->
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
 
-    <!--  principal  -->
-    <div class="container-fluid" id="introduccion">
-      <main class="row">
-        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
-          <!--  Bucles en Python: Una Guía Completa -->
-          <article
-            class="row border-1 border-bottom pb-3"
-            data-bs-spy="scroll"
-            data-bs-target="#list-example"
-            data-bs-smooth-scroll="true"
-          >
-            <div>
-              <header>
-                <h1>Bucles en Python: Una Guía Completa</h1>
-              </header>
-              <!-- Introducción -->
-              <div class="mt-5">
-                <h2>Introducción</h2>
-                <p>
-                  Este artículo explora en profundidad los bucles en Python, una
-                  de las estructuras de control fundamentales y útiles en la
-                  programación. Los bucles permiten ejecutar un bloque de código
-                  múltiples veces, característica esencial para la
-                  automatización de tareas repetitivas y el manejo eficiente de
-                  colecciones de datos. El documento analiza detalladamente los
-                  diferentes tipos de bucles disponibles en Python, presentando
-                  sus estructuras sintácticas, casos de uso prácticos y
-                  recomendaciones para su implementación óptima.
-                </p>
-                <div class="centrar-imagen imagen50">
-                  <figure>
-                    <img
-                      src="https://i.ibb.co/nMng1fL/bucles.jpg"
-                      class="img-fluid"
-                      alt="Bucles en Python: Una Guía Completa "
-                      title="Explicación gráfica de estructuras iterativas en Python: while y for."
-                    />
-                    <figcaption>Bucles en Python: Una Guía Completa</figcaption>
-                  </figure>
-                </div>
+  <!--  principal  -->
+  <div class="container-fluid" id="introduccion">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!--  Bucles en Python: Una Guía Completa -->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <div>
+            <header>
+              <h1>Bucles en Python: Una Guía Completa</h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-5">
+              <h2>Introducción</h2>
+              <p>
+                Este artículo explora en profundidad los bucles en Python, una
+                de las estructuras de control fundamentales y útiles en la
+                programación. Los bucles permiten ejecutar un bloque de código
+                múltiples veces, característica esencial para la
+                automatización de tareas repetitivas y el manejo eficiente de
+                colecciones de datos. El documento analiza detalladamente los
+                diferentes tipos de bucles disponibles en Python, presentando
+                sus estructuras sintácticas, casos de uso prácticos y
+                recomendaciones para su implementación óptima.
+              </p>
+              <div class="centrar-imagen imagen50">
+                <figure>
+                  <img src="https://i.ibb.co/nMng1fL/bucles.jpg" class="img-fluid"
+                    alt="Bucles en Python: Una Guía Completa "
+                    title="Explicación gráfica de estructuras iterativas en Python: while y for." />
+                  <figcaption>Bucles en Python: Una Guía Completa</figcaption>
+                </figure>
               </div>
-              <!-- Bucle for -->
-              <div id="BucleFor" class="mt-5">
-                <h2 class="mt-1">Bucle for</h2>
-                <p>
-                  La sentencia <code class="language-python">for</code> en
-                  programación se usa para realizar iteraciones, es decir, para
-                  ejecutar repetidamente un bloque de código un número
-                  específico de veces o hasta que se recorran todos los
-                  elementos de una secuencia (como una lista, tupla, conjunto,
-                  cadena o rango). Es particularmente útil cuando se sabe de
-                  antemano cuántas veces se desea repetir una acción o se desea
-                  iterar sobre una colección de datos.
-                </p>
-                <p>
-                  En términos generales, la estructura del bucle
-                  <code class="language-python">for</code> sigue la siguiente
-                  lógica:
-                </p>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Recorrer secuencias</span>: En Python,
-                    <code class="language-python">for</code> permite iterar
-                    sobre los elementos de una secuencia sin necesidad de un
-                    contador explícito.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Rangos de números</span>: Se utiliza
-                    <code class="language-python">for</code> junto con funciones
-                    como <code class="language-python">range()</code> para
-                    generar secuencias numéricas, repitiendo el bloque de código
-                    según el rango definido.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Ejecutar acciones repetitivas</span>:
-                    Al definir el código dentro del bucle, se pueden realizar
-                    tareas repetitivas, como cálculos, comparaciones,
-                    procesamiento de datos o visualización de información.
-                  </li>
-                </ul>
-                <!-- Estructura Básica de for  -->
-                <div>
-                  <h3>Estructura Básica de la Sentencia for</h3>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <!-- Bucle for -->
+            <div id="Bucle-for" class="mt-5">
+              <h2>Bucle <code class="language-python">for</code></h2>
+              <p>
+                La sentencia <code class="language-python">for</code> en
+                programación se usa para realizar iteraciones, es decir, para
+                ejecutar repetidamente un bloque de código un número
+                específico de veces o hasta que se recorran todos los
+                elementos de una secuencia (como una lista, tupla, conjunto,
+                cadena o rango). Es particularmente útil cuando se sabe de
+                antemano cuántas veces se desea repetir una acción o se desea
+                iterar sobre una colección de datos.
+              </p>
+              <p>
+                En términos generales, la estructura del bucle
+                <code class="language-python">for</code> sigue la siguiente
+                lógica:
+              </p>
+              <ul>
+                <li>
+                  <span class="fw-bold">Recorrer secuencias</span>: En Python,
+                  <code class="language-python">for</code> permite iterar
+                  sobre los elementos de una secuencia sin necesidad de un
+                  contador explícito.
+                </li>
+                <li>
+                  <span class="fw-bold">Rangos de números</span>: Se utiliza
+                  <code class="language-python">for</code> junto con funciones
+                  como <code class="language-python">range()</code> para
+                  generar secuencias numéricas, repitiendo el bloque de código
+                  según el rango definido.
+                </li>
+                <li>
+                  <span class="fw-bold">Ejecutar acciones repetitivas</span>:
+                  Al definir el código dentro del bucle, se pueden realizar
+                  tareas repetitivas, como cálculos, comparaciones,
+                  procesamiento de datos o visualización de información.
+                </li>
+              </ul>
+              <!-- Estructura Básica de for  -->
+              <div>
+                <h3>Estructura Básica de la Sentencia <code class="language-python">for</code></h3>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         for variable in secuencia:
                             # bloque de código
                       </code>
                     </pre>
-                  </div>
-                  <p>Ejemplo, recorrer un arreglo:</p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <p>Ejemplo, recorrer un arreglo:</p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         frutas = ["manzana", "banana", "cereza"]
                         for fruta in frutas:
                             print(fruta)    # Imprime: manzana banana cereza
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Estructura Básica de for  fin -->
-                <!-- Uso de la Función range() -->
-                <div>
-                  <h3>Uso de la Función range()</h3>
-                  <p>
-                    La función <code class="language-python">range()</code> es
-                    comúnmente utilizada con bucles
-                    <code class="language-python">for</code> para generar una
-                    secuencia de números. Puede tomar uno, dos o tres
-                    argumentos: inicio, fin y paso.
-                  </p>
-                </div>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Rango con valor final (stop)</span>:
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Estructura Básica de for  fin -->
+              <!-- Uso de la Función range() -->
+              <div>
+                <h3>Uso de la Función <code class="language-python">range()</code></h3>
+                <p>
+                  La función <code class="language-python">range()</code> es
+                  comúnmente utilizada con bucles
+                  <code class="language-python">for</code> para generar una
+                  secuencia de números. Puede tomar uno, dos o tres
+                  argumentos: inicio, fin y paso.
+                </p>
+              </div>
+              <ul>
+                <li>
+                  <span class="fw-bold">Rango con valor final (stop)</span>:
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # range(stop) - cuenta desde 0 hasta stop-1
                           for i in range(5):
                               print(i)  # Imprime: 0, 1, 2, 3, 4
                         </code>
                       </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      >Rango con valor inicial y final (start, stop)</span
-                    >:
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Rango con valor inicial y final (start, stop)</span>:
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # range(start, stop) - cuenta desde start hasta stop-1
                           for i in range(2, 6):
                               print(i)  # Imprime: 2, 3, 4, 5
                         </code>
                       </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      >Rango con valor inicial, final y paso (start, stop,
-                      step)</span
-                    >:
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Rango con valor inicial, final y paso (start, stop,
+                    step)</span>:
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # range(start, stop, step) - cuenta desde start hasta stop-1, incrementando step
                           for i in range(0, 10, 2):
                               print(i)  # Imprime: 0, 2, 4, 6, 8
                         </code>
                       </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold"
-                      >Rango en reversa (conteo hacia atrás)</span
-                    >:
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Rango en reversa (conteo hacia atrás)</span>:
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Usando paso negativo
                           for i in range(5, -1, -1):
                               print(i)  # Imprime: 5, 4, 3, 2, 1, 0
                         </code>
                       </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Uso común con listas</span>:
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Uso común con listas</span>:
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           lista = ['a', 'b', 'c', 'd']
                           # Para obtener índices
@@ -345,70 +270,70 @@
                               print(f"Índice {i}: {lista[i]}")
                         </code>
                       </pre>
-                    </div>
-                  </li>
-                </ul>
-                <!-- Uso de la Función range() fin -->
-                <!-- Bucles Anidados -->
-                <div>
-                  <h3>Bucles Anidados</h3>
-                  <p>
-                    Los bucles pueden ser anidados, es decir, un bucle dentro de
-                    otro. Esto es útil para trabajar con estructuras de datos
-                    más complejas.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+              </ul>
+              <!-- Uso de la Función range() fin -->
+              <!-- Bucles Anidados -->
+              <div>
+                <h3>Bucles Anidados</h3>
+                <p>
+                  Los bucles pueden ser anidados, es decir, un bucle dentro de
+                  otro. Esto es útil para trabajar con estructuras de datos
+                  más complejas.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         for i in range(3):
                             for j in range(2):
                                 print(f"i: {i}, j: {j}")
                       </code>
                     </pre>
-                  </div>
-                  <p>
-                    Este código imprimirá todas las combinaciones de i y j.:
-                    <br />
-                    i: 0, j: 0 <br />
-                    i: 0, j: 1 <br />
-                    i: 1, j: 0 <br />
-                    i: 1, j: 1 <br />
-                    i: 2, j: 0 <br />
-                    i: 2, j: 1
-                  </p>
                 </div>
-                <!-- Bucles Anidados fin -->
-              </div>
-              <!-- Bucle for Fin -->
-
-              <!-- Bucle While -->
-              <div id="BucleWhile" class="mt-5">
-                <h2 class="mt-1">Bucle While</h2>
                 <p>
-                  La sentencia <code class="language-python">while</code> se
-                  utiliza para crear bucles o ciclos, permitiendo que un bloque
-                  de código se ejecute repetidamente mientras se cumpla una
-                  condición específica. En términos sencillos,
-                  <code class="language-python">while</code> evalúa una
-                  condición y, si esta es verdadera, ejecuta el bloque de código
-                  asociado; esto se repite hasta que la condición se vuelva
-                  falsa.
+                  Este código imprimirá todas las combinaciones de i y j.:
+                  <br />
+                  i: 0, j: 0 <br />
+                  i: 0, j: 1 <br />
+                  i: 1, j: 0 <br />
+                  i: 1, j: 1 <br />
+                  i: 2, j: 0 <br />
+                  i: 2, j: 1
                 </p>
-                <!-- Estructura Básica de la Sentencia while -->
-                <div>
-                  <h3>Estructura Básica de la Sentencia while</h3>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Bucles Anidados fin -->
+            </div>
+            <!-- Bucle for Fin -->
+
+            <!-- Bucle While -->
+            <div id="Bucle-while" class="mt-5">
+              <h2>Bucle <code class="language-python">while</code></h2>
+              <p>
+                La sentencia <code class="language-python">while</code> se
+                utiliza para crear bucles o ciclos, permitiendo que un bloque
+                de código se ejecute repetidamente mientras se cumpla una
+                condición específica. En términos sencillos,
+                <code class="language-python">while</code> evalúa una
+                condición y, si esta es verdadera, ejecuta el bloque de código
+                asociado; esto se repite hasta que la condición se vuelva
+                falsa.
+              </p>
+              <!-- Estructura Básica de la Sentencia while -->
+              <div>
+                <h3>Estructura Básica de la Sentencia <code class="language-python">while</code> </h3>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         while condición:
                             # bloque de código que se ejecuta cuando la condición es <code class="language-python">True</code>.
                         # bloque de código que se ejecuta cuando la condición ya no se cumple.
                       </code>
                     </pre>
-                  </div>
-                  <p>Ejemplo:</p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <p>Ejemplo:</p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         contador = 0
                         while contador &lt; 5:
@@ -417,37 +342,37 @@
                         print(contador)  # Imprime: 5
                       </code>
                     </pre>
-                  </div>
-                  <p>En este código:</p>
-                  <ul>
-                    <li>La variable contador inicia en 0.</li>
-                    <li>
-                      La sentencia while contador &lt; 5 verifica si el valor de
-                      contador es menor que 5.
-                    </li>
-                    <li>
-                      Si la condición es verdadera, se ejecuta el bloque de
-                      código dentro de while.
-                    </li>
-                    <li>
-                      Cada vez que se ejecuta el bloque, se incrementa contador
-                      en 1 con contador += 1.
-                    </li>
-                    <li>
-                      Cuando contador llega a 5, la condición es falsa y el
-                      ciclo while se detiene.
-                    </li>
-                  </ul>
                 </div>
-                <!-- Estructura Básica de la Sentencia while fin -->
-                <!-- Control de Bucles -->
+                <p>En este código:</p>
+                <ul>
+                  <li>La variable contador inicia en 0.</li>
+                  <li>
+                    La sentencia while contador &lt; 5 verifica si el valor de
+                    contador es menor que 5.
+                  </li>
+                  <li>
+                    Si la condición es verdadera, se ejecuta el bloque de
+                    código dentro de while.
+                  </li>
+                  <li>
+                    Cada vez que se ejecuta el bloque, se incrementa contador
+                    en 1 con contador += 1.
+                  </li>
+                  <li>
+                    Cuando contador llega a 5, la condición es falsa y el
+                    ciclo while se detiene.
+                  </li>
+                </ul>
+              </div>
+              <!-- Estructura Básica de la Sentencia while fin -->
+              <!-- Control de Bucles -->
+              <div>
+                <h3>Control de Bucles</h3>
+                <!-- Función else -->
                 <div>
-                  <h3>Control de Bucles</h3>
-                  <!-- Función else -->
-                  <div>
-                    <h4>Función else</h4>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  <h4>Función <code class="language-python">else</code></h4>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           while condición:
                               # bloque de código que se ejecuta cuando la condición es <code class="language-python">True</code>.
@@ -455,16 +380,16 @@
                               # bloque de código que se ejecuta cuando la condición no se cumple.
                         </code>
                       </pre>
-                    </div>
-                    <p>
-                      La sentencia
-                      <code class="language-python">While</code> con
-                      <code class="language-python">else</code> (se ejecuta
-                      cuando la condición es
-                      <code class="language-python">False</code>):
-                    </p>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                  <p>
+                    La sentencia
+                    <code class="language-python">While</code> con
+                    <code class="language-python">else</code> (se ejecuta
+                    cuando la condición es
+                    <code class="language-python">False</code>):
+                  </p>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           numero = 0
                           while numero &lt; 3:
@@ -474,20 +399,20 @@
                             print("Bucle terminado") # Imprime cuando numero es = 3, Bucle terminado
                         </code>
                       </pre>
-                    </div>
                   </div>
-                  <!-- Función else fin -->
-                  <!-- Función break -->
-                  <div>
-                    <h4>Función break</h4>
-                    <p>
-                      La sentencia
-                      <code class="language-python">While</code> con
-                      <code class="language-python">break</code> (para salir del
-                      bucle):
-                    </p>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <!-- Función else fin -->
+                <!-- Función break -->
+                <div>
+                  <h4>Función <code class="language-python">break</code></h4>
+                  <p>
+                    La sentencia
+                    <code class="language-python">While</code> con
+                    <code class="language-python">break</code> (para salir del
+                    bucle):
+                  </p>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           while True:
                           respuesta = input("Escribe 'salir' para terminar: ")
@@ -496,20 +421,20 @@
                           print("Continuamos...")
                         </code>
                       </pre>
-                    </div>
                   </div>
-                  <!-- Función break fin -->
-                  <!-- Función continue -->
-                  <div>
-                    <h4>Función continue</h4>
-                    <p>
-                      La sentencia
-                      <code class="language-python">While</code> con
-                      <code class="language-python">continue</code> (salta a la
-                      siguiente iteración):
-                    </p>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <!-- Función break fin -->
+                <!-- Función continue -->
+                <div>
+                  <h4>Función <code class="language-python">continue</code></h4>
+                  <p>
+                    La sentencia
+                    <code class="language-python">While</code> con
+                    <code class="language-python">continue</code> (salta a la
+                    siguiente iteración):
+                  </p>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           i = 0
                           while i &lt; 5:
@@ -519,14 +444,14 @@
                               print(i)
                         </code>
                       </pre>
-                    </div>
                   </div>
-                  <!-- Función continue fin -->
-                  <!-- While con múltiples condiciones -->
-                  <div>
-                    <h4>While con múltiples condiciones</h4>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <!-- Función continue fin -->
+                <!-- While con múltiples condiciones -->
+                <div>
+                  <h4><code class="language-python">while</code> con múltiples condiciones</h4>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           x = 0
                           y = 5
@@ -536,22 +461,22 @@
                               y -= 1
                         </code>
                       </pre>
-                    </div>
-                    <p>
-                      El programa imprime: <br />
-                      x: 0, y: 5 <br />
-                      x: 1, y: 4 <br />
-                      x: 2, y: 3 <br />
-                      x: 3, y: 2 <br />
-                      x: 4, y: 1
-                    </p>
                   </div>
-                  <!-- While con múltiples condiciones fin -->
-                  <!-- Función While para recorrer una lista -->
-                  <div>
-                    <h4>Función While para recorrer una lista</h4>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                  <p>
+                    El programa imprime: <br />
+                    x: 0, y: 5 <br />
+                    x: 1, y: 4 <br />
+                    x: 2, y: 3 <br />
+                    x: 3, y: 2 <br />
+                    x: 4, y: 1
+                  </p>
+                </div>
+                <!-- While con múltiples condiciones fin -->
+                <!-- Función While para recorrer una lista -->
+                <div>
+                  <h4>Función <code class="language-python">while</code> para recorrer una lista</h4>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           lista = [1, 2, 3, 4, 5]
                           indice = 0
@@ -560,194 +485,208 @@
                               indice += 1
                         </code>
                       </pre>
-                    </div>
                   </div>
-                  <!-- Función While para recorrer una lista fin -->
                 </div>
-                <!-- Control de Bucles fin -->
+                <!-- Función While para recorrer una lista fin -->
               </div>
-              <!-- Bucle While Fin -->
-
-              <!-- Mejores Prácticas -->
-              <div id="mejoresPracticas" class="mt-5">
-                <h2 class="mt-1">Mejores Prácticas</h2>
-                <ul>
-                  <li>
-                    <span class="fw-bold">
-                      Optimizar el código evitando bucles innecesarios</span
-                    >: En Python, se puede aprovechar las funciones incorporadas
-                    como <code class="language-python">map()</code>,
-                    <code class="language-python">filter()</code> y las
-                    comprensiones de listas, ya que ofrecen una sintaxis más
-                    elegante y eficiente que los bucles tradicionales. Estas
-                    herramientas no solo hacen el código más legible, sino que
-                    generalmente se ejecutan más rápido que los bucles
-                    <code class="language-python">for</code> convencionales.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Usar nombres descriptivos</span>: Al
-                    nombrar las variables de control, utilizar nombres que
-                    reflejen su propósito.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Mantener el código legible</span>:
-                    Asegurarse de que el código dentro de los bucles sea claro y
-                    fácil de entender.
-                  </li>
-                </ul>
-              </div>
-              <!-- Mejores Prácticas Fin -->
-
-              <!-- Consideraciones importantes -->
-              <div id="consideracionesImportantes" class="mt-5">
-                <h2 class="mt-1">Consideraciones importantes</h2>
-                <ul>
-                  <li>
-                    Siempre estar seguro que la condición eventualmente se
-                    vuelva
-                    <code class="language-python">False</code>.
-                  </li>
-                  <li>Evitar bucles infinitos no intencionales.</li>
-                  <li>Actualizar las variables que controlan el bucle.</li>
-                  <li>
-                    Usar break cuando se necesite salir del bucle
-                    prematuramente.
-                  </li>
-                  <li>
-                    Utilizar continue cuando se quiera saltar a la siguiente
-                    iteración.
-                  </li>
-                  <li>
-                    Colocar la sangría de cuatro espacios a todas las
-                    instrucciones que se ejecutaran dentro de un while.
-                  </li>
-                </ul>
-              </div>
-              <!-- Consideraciones importantes Fin -->
+              <!-- Control de Bucles fin -->
             </div>
-          </article>
+            <!-- Bucle While Fin -->
 
-          <!--  comentarios  -->
-          <article class="row pt-5" id="comments">
-            <h2>COMENTARIOS</h2>
-            <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por
-              favor infórmelo a través del formulario disponible para este
-              propósito.
-            </p>
-            <div class="d-flex justify-content-center">
-              <form
-                action="https://formspree.io/f/mdkdawkg"
-                method="POST"
-                id="myForm"
-              >
-                <fieldset class="d-flex flex-column gap-3">
-                  <legend class="text-center fs-4">Deje su comentario</legend>
-
-                  <div class="d-flex flex-column">
-                    <label for="name">Nombre:</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="User"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
-
-                  <div class="d-flex flex-column">
-                    <label for="email">Email:</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="user@mail.com"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
-
-                  <div class="d-flex flex-column">
-                    <label for="message">Mensaje:</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      cols="30"
-                      rows="5"
-                      placeholder="Su comentario..."
-                      class="form-control rounded-3"
-                      required
-                    ></textarea>
-                  </div>
-
-                  <button
-                    type="submit"
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
-                  >
-                    Enviar
-                  </button>
-                </fieldset>
-
-                <p class="small text-center">
-                  La política de privacidad, y los términos y condiciones están
-                  disponibles en el formulario de contacto.
-                </p>
-              </form>
+            <!-- Mejores Prácticas -->
+            <div id="mejores-practicas" class="mt-5">
+              <h2>Mejores Prácticas</h2>
+              <ul>
+                <li>
+                  <span class="fw-bold">
+                    Optimizar el código evitando bucles innecesarios</span>: En Python, se puede aprovechar las
+                  funciones incorporadas
+                  como <code class="language-python">map()</code>,
+                  <code class="language-python">filter()</code> y las
+                  comprensiones de listas, ya que ofrecen una sintaxis más
+                  elegante y eficiente que los bucles tradicionales. Estas
+                  herramientas no solo hacen el código más legible, sino que
+                  generalmente se ejecutan más rápido que los bucles
+                  <code class="language-python">for</code> convencionales.
+                </li>
+                <li>
+                  <span class="fw-bold">Usar nombres descriptivos</span>: Al
+                  nombrar las variables de control, utilizar nombres que
+                  reflejen su propósito.
+                </li>
+                <li>
+                  <span class="fw-bold">Mantener el código legible</span>:
+                  Asegurarse de que el código dentro de los bucles sea claro y
+                  fácil de entender.
+                </li>
+              </ul>
             </div>
-          </article>
-          <!--  fin comentarios  -->
-          <!--  Bucles en Python: Una Guía Completa -->
-        </section>
-        <!--  barra lateral  -->
-        <aside class="col-lg-3 d-none d-lg-block pt-5">
-          <h1>En Este Artículo</h1>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a href="#introduccion">Introducción</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#BucleFor">Bucle for</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#BucleWhile">Bucle While</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#mejoresPracticas">Mejores Prácticas</a>
-            </li>
-            <li class="list-group-item">
-              <a href="#consideracionesImportantes"
-                >Consideraciones importantes</a
-              >
-            </li>
-            <li class="list-group-item">
-              <a href="#comments">Comentarios</a>
-            </li>
-          </ul>
-        </aside>
-        <!--  fin barra lateral  -->
-      </main>
-      <!--  fin principal  -->
+            <!-- Mejores Prácticas Fin -->
+
+            <!-- Consideraciones importantes -->
+            <div id="consideracionesImportantes" class="mt-5">
+              <h2>Consideraciones importantes</h2>
+              <ul>
+                <li>
+                  Siempre estar seguro que la condición eventualmente se
+                  vuelva
+                  <code class="language-python">False</code>.
+                </li>
+                <li>Evitar bucles infinitos no intencionales.</li>
+                <li>Actualizar las variables que controlan el bucle.</li>
+                <li>
+                  Usar break cuando se necesite salir del bucle
+                  prematuramente.
+                </li>
+                <li>
+                  Utilizar continue cuando se quiera saltar a la siguiente
+                  iteración.
+                </li>
+                <li>
+                  Colocar la sangría de cuatro espacios a todas las
+                  instrucciones que se ejecutaran dentro de un while.
+                </li>
+              </ul>
+            </div>
+            <!-- Consideraciones importantes Fin -->
+          </div>
+        </article>
+
+        <!--  comentarios  -->
+        <article class="row pt-5" id="comments">
+          <h2>COMENTARIOS</h2>
+          <p>
+            Si tiene alguna inquietud, duda o ha encontrado algún error, por
+            favor infórmelo a través del formulario disponible para este
+            propósito.
+          </p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
+
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
+                </div>
+
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
+
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                  Enviar
+                </button>
+              </fieldset>
+
+              <p class="small text-center">
+                La política de privacidad, y los términos y condiciones están
+                disponibles en el formulario de contacto.
+              </p>
+            </form>
+          </div>
+        </article>
+        <!--  fin comentarios  -->
+        <!--  Bucles en Python: Una Guía Completa -->
+      </section>
+
+      <!--  barra lateral  -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        <h1>En Este Artículo</h1>
+        <div class="menu-scroll">
+          <div class="menu-container">
+            <div class="border border-1">
+              <div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
+              <div class="menu-item"><a href="#Bucle-for" class="simple-link">Bucle <code class="language-python">for</code></a></div>
+              <div class="menu-item"><a href="#Bucle-while" class="simple-link">Bucle <code class="language-python">while</code></a></div>
+              <div class="menu-item"><a href="#mejores-practicas" class="simple-link">Mejores Prácticas</a></div>
+              <div class="menu-item"><a href="#consideracionesImportantes" class="simple-link">Consideraciones
+                  importantes</a></div>
+              <!-- Comentarios  -->
+              <div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!--  fin barra lateral  -->
+    </main>
+    <!--  fin principal  -->
+  </div>
+  <!--  Principal Fin  -->
+
+  <!--  pie de pagina  -->
+  <footer class="row border-top border-1 m-1 mt-auto">
+    <div class="row">
+      <!-- contacto -->
+      <address class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Contacto</div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class="ms-3">
+            <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class="ms-3">Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      <!-- Derechos de autor -->
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
+      </div>
+      <!-- redes sociales -->
+      <div class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Redes Sociales</div>
+        <div class="d-flex justify-content-evenly align-items-center gap-5">
+          <div>
+            <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <!--  Principal Fin  -->
+    <div class="d-flex align-items-center justify-content-center gap-2"></div>
+  </footer>
+  <!--  pie de pagina fin  -->
 
-    <!-- button to top -->
-    <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        fill="currentColor"
-        class="bi bi-arrow-bar-up"
-        viewBox="0 0 16 16"
-        style="margin-left: -2px"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"
-        ></path>
-      </svg>
-    </button>
-    <!-- Fin button to top -->
-  </body>
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
 </html>

@@ -1,219 +1,146 @@
 <!-- @format -->
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-  <head>
-    <!-- Metaetiquetas -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Aprende sobre los literales en Python: valores fijos en el código como números, cadenas y booleanos. Descubre su sintaxis y uso en programación Python."
-    />
-    <meta
-      name="title"
-      content="Literales Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta name="author" content="Ing. Eduardo Herrera Forero" />
-    <meta name="application-name" content="EHF" />
-    <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://eduardoherreraf.github.io/cursoPython3-0202_literales.html"
-    />
-    <!-- Fin Metaetiquetas -->
 
-    <!-- Open Graph data -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Literales Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      property="og:description"
-      content="Aprende sobre los literales en Python: valores fijos en el código como números, cadenas y booleanos. Descubre su sintaxis y uso en programación Python."
-    />
-    <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      property="og:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      property="og:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0202_literales.html"
-    />
-    <meta property="og:locale" content="es_CO" />
-    <!-- fin Open Graph data -->
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Aprende sobre los literales en Python: valores fijos en el código como números, cadenas y booleanos. Descubre su sintaxis y uso en programación Python." />
+  <meta name="title" content="Literales Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eduardoherreraf.github.io/cursoPython3-0202_literales.html" />
+  <!-- Fin Metaetiquetas -->
 
-    <!-- Twitter cards -->
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="Literales Python 3 - Ing. Eduardo Herrera Forero."
-    />
-    <meta
-      name="twitter:description"
-      content="Aprende sobre los literales en Python: valores fijos en el código como números, cadenas y booleanos. Descubre su sintaxis y uso en programación Python."
-    />
-    <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
-    <meta
-      name="twitter:image:alt"
-      content="Logo del ingeniero Eduardo Herrera Forero"
-    />
-    <meta
-      name="twitter:url"
-      content="https://eduardoherreraf.github.io/cursoPython3-0202_literales.html"
-    />
-    <meta name="twitter:site" content="@ehfeduardo" />
-    <!-- Fin Twitter cards -->
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Literales Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta property="og:description"
+    content="Aprende sobre los literales en Python: valores fijos en el código como números, cadenas y booleanos. Descubre su sintaxis y uso en programación Python." />
+  <meta property="og:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta property="og:url" content="https://eduardoherreraf.github.io/cursoPython3-0202_literales.html" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
 
-    <!-- iconos -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="android-chrome-192x192.png"
-    />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- fin iconos -->
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Literales Python 3 - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description"
+    content="Aprende sobre los literales en Python: valores fijos en el código como números, cadenas y booleanos. Descubre su sintaxis y uso en programación Python." />
+  <meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png" />
+  <meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero" />
+  <meta name="twitter:url" content="https://eduardoherreraf.github.io/cursoPython3-0202_literales.html" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
 
-    <title>Literales Python 3 - Ing. Eduardo Herrera Forero.</title>
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
 
-    <script type="module" src="./js/main.js"></script>
+  <title>Literales Python 3 - Ing. Eduardo Herrera Forero.</title>
 
-    <meta
-      name="google-site-verification"
-      content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"
-    />
-  </head>
+  <script type="module" src="./js/main.js"></script>
 
-  <body>
-    <!-- Barra deNavegación -->
-    <nav
-      class="navbar navbar-expand-lg border-1 border fixed-top nav-underline"
-    >
-      <div class="container-fluid">
-        <!-- Enlace a la página principal con el logo y nombre -->
-        <a
-          class="navbar-brand d-flex align-items-center ms-2"
-          href="index.html"
-        >
-          <img
-            src="./images/logo.png"
-            alt="Logo de Ing. Eduardo Herrera Forero"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top me-1"
-          />
-          <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
-        </a>
-        <!-- Botón para activar el menú en dispositivos pequeños -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Menú de navegación -->
-        <div
-          class="collapse navbar-collapse ms-auto text-center"
-          id="navbarSupportedContent"
-        >
-          <ul
-            class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100"
-          >
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#portfolio"
-                >PORTAFOLIO</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link mx-1 publicaciones-activo"
-                href="index.html#blog"
-                >PUBLICACIONES</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
-            </li>
-          </ul>
-        </div>
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Barra deNavegación -->
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
 
-    <!--  principal  -->
-    <div class="container-fluid" id="introduccion">
-      <main class="row">
-        <section class="pb-3 pt-5 col-lg-9 px-lg-4">
-          <!--  Literales  -->
-          <article
-            class="row border-1 border-bottom pb-3"
-            data-bs-spy="scroll"
-            data-bs-target="#list-example"
-            data-bs-smooth-scroll="true"
-          >
-            <div>
-              <header>
-                <h1>Literales en Python</h1>
-              </header>
-              <!-- Introducción -->
-              <div class="mt-5">
-                <h2>Introducción</h2>
-                <p>
-                  En Python 3, los literales son representaciones directas de
-                  valores que se escriben en el código fuente. Estos valores
-                  pueden ser números, cadenas de texto, booleanos, listas, etc.
-                </p>
-                <div class="centrar-imagen imagen50">
-                  <figure>
-                    <img
-                      src="https://i.ibb.co/4T9PbR6/literales.jpg"
-                      class="img-fluid"
-                      alt="Literales en Python"
-                      title="Literales en Python"
-                    />
-                    <figcaption>Literales en Python</figcaption>
-                  </figure>
-                </div>
+  <!--  principal  -->
+  <div class="container-fluid" id="introduccion">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!--  Literales  -->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <div>
+            <header>
+              <h1>Literales en Python</h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-5">
+              <h2>Introducción</h2>
+              <p>
+                En Python 3, los literales son representaciones directas de
+                valores que se escriben en el código fuente. Estos valores
+                pueden ser números, cadenas de texto, booleanos, listas, etc.
+              </p>
+              <div class="centrar-imagen imagen50">
+                <figure>
+                  <img src="https://i.ibb.co/4T9PbR6/literales.jpg" class="img-fluid" alt="Literales en Python"
+                    title="Literales en Python" />
+                  <figcaption>Literales en Python</figcaption>
+                </figure>
               </div>
+            </div>
 
-              <!-- Tipos de Literales en Python -->
-              <div id="tiposLiteralesPython" class="mt-5">
-                <h2 class="mt-1">Tipos de Literales en Python</h2>
-                <!-- Literales Numéricos -->
-                <div id="literalesNumericos">
-                  <h3>Literales Numéricos</h3>
-                  <p>Representan valores numéricos. Hay varios tipos:</p>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Enteros</span>: Se pueden
-                      representar en formato decimal, octal (prefijados por
-                      <kbd>0o</kbd> o <kbd>0O</kbd>), hexadecimal (prefijados
-                      por <kbd>0x</kbd> o <kbd>0X</kbd>) o binario (prefijados
-                      por <kbd>0b</kbd> o <kbd>0B</kbd>).
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+            <!-- Tipos de Literales en Python -->
+            <div id="tipos-de-literales-en-python" class="mt-5">
+              <h2>Tipos de Literales en Python</h2>
+              <!-- Literales Numéricos -->
+              <div id="literalesNumericos">
+                <h3>Literales Numéricos</h3>
+                <p>Representan valores numéricos. Hay varios tipos:</p>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Enteros</span>: Se pueden
+                    representar en formato decimal, octal (prefijados por
+                    <kbd>0o</kbd> o <kbd>0O</kbd>), hexadecimal (prefijados
+                    por <kbd>0x</kbd> o <kbd>0X</kbd>) o binario (prefijados
+                    por <kbd>0b</kbd> o <kbd>0B</kbd>).
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             10    # Decimal
                             0o12  # Octal
@@ -221,537 +148,547 @@
                             0b1010  # Binario
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Flotantes</span>: Se utilizan para
-                      representar números con decimales. También pueden
-                      representarse en notación científica usando <kbd>e</kbd> o
-                      <kbd>E</kbd>.
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Flotantes</span>: Se utilizan para
+                    representar números con decimales. También pueden
+                    representarse en notación científica usando <kbd>e</kbd> o
+                    <kbd>E</kbd>.
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             10.5     # Número flotante
                             1.5e2    # Notación científica, equivalente a 1.5 * 10^2
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Complejos</span>: Se utilizan para
-                      representar números complejos, donde <kbd>j</kbd> es la
-                      parte imaginaria.
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Complejos</span>: Se utilizan para
+                    representar números complejos, donde <kbd>j</kbd> es la
+                    parte imaginaria.
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             3 + 5j
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <!--  Literales de Cadenas de Texto -->
-                <div id="literalescadenasTexto">
-                  <h3>Literales de Cadenas de Texto</h3>
-                  <p>
-                    Se utilizan para representar texto. Se pueden escribir con
-                    comillas simples (<kbd>'</kbd>) o comillas dobles
-                    (<kbd>"</kbd>). Para cadenas multilínea se utilizan triples
-                    comillas (<kbd>'''</kbd> o <kbd>"""</kbd>).
-                  </p>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Cadenas de una línea</span>:
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!--  Literales de Cadenas de Texto -->
+              <div id="literalescadenasTexto">
+                <h3>Literales de Cadenas de Texto</h3>
+                <p>
+                  Se utilizan para representar texto. Se pueden escribir con
+                  comillas simples (<kbd>'</kbd>) o comillas dobles
+                  (<kbd>"</kbd>). Para cadenas multilínea se utilizan triples
+                  comillas (<kbd>'''</kbd> o <kbd>"""</kbd>).
+                </p>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Cadenas de una línea</span>:
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         'Hola' "Mundo"
                       </code>
                     </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Cadenas multilínea</span>:
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Cadenas multilínea</span>:
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             '''Esto es
                             una cadena
                             multilínea'''
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold"
-                        >Cadenas con caracteres especiales</span
-                      >:
-                    </li>
-                    <div class="ej-sintaxis">
-                      <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Cadenas con caracteres especiales</span>:
+                  </li>
+                  <div class="ej-sintaxis">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           "Hola\nMundo"  # Nueva línea
                           "Hola\tMundo"  # Tabulación
                         </code>
                       </pre>
-                    </div>
-                  </ul>
-                </div>
-                <!-- Literales Booleanos -->
-                <div id="literalesBooleanoss">
-                  <h3>Literales Booleanos</h3>
-                  <p>
-                    Solo hay dos literales booleanos: <kbd>True</kbd> y
-                    <kbd>False</kbd>. Estos representan los valores lógicos de
-                    verdadero y falso.
-                  </p>
-                </div>
-                <!-- Literales de Colecciones -->
-                <div id="literalesColeccioness">
-                  <h3>Literales de Colecciones</h3>
-                  <p>
-                    Se usan para definir estructuras de datos como listas,
-                    tuplas, conjuntos y diccionarios.
-                  </p>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Lista</span>: Se define usando
-                      corchetes <kbd>[]</kbd> y puede contener elementos de
-                      cualquier tipo.
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </ul>
+              </div>
+              <!-- Literales Booleanos -->
+              <div id="literalesBooleanoss">
+                <h3>Literales Booleanos</h3>
+                <p>
+                  Solo hay dos literales booleanos: <kbd>True</kbd> y
+                  <kbd>False</kbd>. Estos representan los valores lógicos de
+                  verdadero y falso.
+                </p>
+              </div>
+              <!-- Literales de Colecciones -->
+              <div id="literalesColeccioness">
+                <h3>Literales de Colecciones</h3>
+                <p>
+                  Se usan para definir estructuras de datos como listas,
+                  tuplas, conjuntos y diccionarios.
+                </p>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Lista</span>: Se define usando
+                    corchetes <kbd>[]</kbd> y puede contener elementos de
+                    cualquier tipo.
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             [1, 2, 3, 'a', 'b']
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Tupla</span>: Se define usando
-                      paréntesis <kbd>()</kbd> y, a diferencia de las listas, es
-                      inmutable.
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Tupla</span>: Se define usando
+                    paréntesis <kbd>()</kbd> y, a diferencia de las listas, es
+                    inmutable.
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             (1, 2, 3)
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Conjunto</span>: Se define usando
-                      llaves <kbd>{}</kbd>. Los conjuntos no tienen elementos
-                      duplicados y no conservan el orden.
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Conjunto</span>: Se define usando
+                    llaves <kbd>{}</kbd>. Los conjuntos no tienen elementos
+                    duplicados y no conservan el orden.
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             {1, 2, 3, 4, 4}  # El 4 duplicado será ignorado
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Diccionario</span>: También se
-                      define usando llaves <kbd>{}</kbd>, pero contiene pares
-                      clave-valor.
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Diccionario</span>: También se
+                    define usando llaves <kbd>{}</kbd>, pero contiene pares
+                    clave-valor.
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             {'clave1': 'valor1', 'clave2': 'valor2'}
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <!-- Literales None -->
-                <div id="literalesNones">
-                  <h3>Literales None</h3>
-                  <p>
-                    <code class="language-python">none</code> es un literal que
-                    representa la ausencia de valor o un valor nulo.
-                  </p>
-                </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <!-- Características de los Literales -->
-              <div id="característicasLiterales" class="mt-5">
-                <h2 class="mt-1">Características de los Literales</h2>
+              <!-- Literales None -->
+              <div id="literalesNones">
+                <h3>Literales None</h3>
                 <p>
-                  Los literales en Python son valores que se escriben
-                  directamente en el código fuente. Tienen ciertas
-                  características que dependen del tipo de dato que representan.
-                  A continuación, se destacan las características clave de los
-                  literales en Python:
+                  <code class="language-python">none</code> es un literal que
+                  representa la ausencia de valor o un valor nulo.
                 </p>
-                <!-- Inmutabilidad -->
-                <div id="inmutabilidads">
-                  <h3>Inmutabilidad</h3>
-                  <p>
-                    La mayoría de los literales, como los números, cadenas y
-                    tuplas, son inmutables. Una vez que se asigna un valor
-                    literal, no puede cambiar durante la ejecución del programa.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+            </div>
+            <!-- Características de los Literales -->
+            <div id="características-de-los-literales" class="mt-5">
+              <h2>Características de los Literales</h2>
+              <p>
+                Los literales en Python son valores que se escriben
+                directamente en el código fuente. Tienen ciertas
+                características que dependen del tipo de dato que representan.
+                A continuación, se destacan las características clave de los
+                literales en Python:
+              </p>
+              <!-- Inmutabilidad -->
+              <div id="inmutabilidads">
+                <h3>Inmutabilidad</h3>
+                <p>
+                  La mayoría de los literales, como los números, cadenas y
+                  tuplas, son inmutables. Una vez que se asigna un valor
+                  literal, no puede cambiar durante la ejecución del programa.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         texto = "Hola"
                         texto[0] = 'h'  # Esto dará un error, las cadenas son inmutables
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Inmutabilidad fin -->
-                <!-- Tipo Implícito -->
-                <div id="tipoImplicitos">
-                  <h3>Tipo Implícito</h3>
-                  <p>
-                    Los literales tienen un tipo de dato asociado de manera
-                    implícita según su valor. Python automáticamente interpreta
-                    el tipo de literal, como entero, flotante, cadena, etc.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Inmutabilidad fin -->
+              <!-- Tipo Implícito -->
+              <div id="tipoImplicitos">
+                <h3>Tipo Implícito</h3>
+                <p>
+                  Los literales tienen un tipo de dato asociado de manera
+                  implícita según su valor. Python automáticamente interpreta
+                  el tipo de literal, como entero, flotante, cadena, etc.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         numero = 5               # Literal entero
                         numero_flotante = 5.5    # Literal flotante
                         cadena = "Texto"         # Literal cadena
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Tipo Implícito fin -->
-                <!-- Soporte para Literales Especiales (Caracteres de Escape) -->
-                <div id="soporteLiteralesEspecialess">
-                  <h3>
-                    Soporte para Literales Especiales (Caracteres de Escape)
-                  </h3>
-                  <p>
-                    Las cadenas en Python pueden incluir caracteres especiales
-                    mediante secuencias de escape (\), como \n para una nueva
-                    línea o \t para tabulación.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Tipo Implícito fin -->
+              <!-- Soporte para Literales Especiales (Caracteres de Escape) -->
+              <div id="soporteLiteralesEspecialess">
+                <h3>
+                  Soporte para Literales Especiales (Caracteres de Escape)
+                </h3>
+                <p>
+                  Las cadenas en Python pueden incluir caracteres especiales
+                  mediante secuencias de escape (\), como \n para una nueva
+                  línea o \t para tabulación.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         "Hola\nMundo"  # Nueva línea
                         "Hola\tMundo"  # Tabulación
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Soporte para Literales Especiales (Caracteres de Escape) fin -->
-                <!-- Colecciones Mutables e Inmutables -->
-                <div id="coleccionesMutablesInmutabless">
-                  <h3>Colecciones Mutables e Inmutables</h3>
-                  <p>
-                    Los literales pueden representar colecciones de datos
-                    mutables (como listas y diccionarios) o inmutables (como
-                    tuplas). Esto permite tener flexibilidad a la hora de
-                    manejar datos.
-                  </p>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Listas (mutables)</span>:
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Soporte para Literales Especiales (Caracteres de Escape) fin -->
+              <!-- Colecciones Mutables e Inmutables -->
+              <div id="coleccionesMutablesInmutabless">
+                <h3>Colecciones Mutables e Inmutables</h3>
+                <p>
+                  Los literales pueden representar colecciones de datos
+                  mutables (como listas y diccionarios) o inmutables (como
+                  tuplas). Esto permite tener flexibilidad a la hora de
+                  manejar datos.
+                </p>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Listas (mutables)</span>:
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             lista = [1, 2, 3]
                             lista.append(4)  # Se puede modificar
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Tuplas (inmutables)</span>:
-                      <div class="ej-sintaxis">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Tuplas (inmutables)</span>:
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             tupla = (1, 2, 3)
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <!-- Colecciones Mutables e Inmutables fin -->
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <!-- ¿Por Qué Son Importantes los Literales? -->
-              <div id="PorQueSonImportantesLiterales" class="mt-5">
-                <h2 class="mt-1">¿Por Qué Son Importantes los Literales?</h2>
+              <!-- Colecciones Mutables e Inmutables fin -->
+            </div>
+            <!-- ¿Por Qué Son Importantes los Literales? -->
+            <div id="Por-que-son-importantes-los-literales" class="mt-5">
+              <h2>¿Por Qué Son Importantes los Literales?</h2>
+              <p>
+                Los literales en Python son importantes por varias razones
+                fundamentales que afectan tanto el desarrollo del código como
+                su ejecución. A continuación se detallan las principales
+                razones por las que son esenciales:
+              </p>
+              <!-- Facilitan la Representación Directa de Datos -->
+              <div id="facilitanRepresentacionDirectaDatoss">
+                <h3>Facilitan la Representación Directa de Datos</h3>
                 <p>
-                  Los literales en Python son importantes por varias razones
-                  fundamentales que afectan tanto el desarrollo del código como
-                  su ejecución. A continuación se detallan las principales
-                  razones por las que son esenciales:
+                  Los literales permiten escribir valores de manera directa y
+                  explícita en el código, lo que hace que sea más claro y
+                  legible. En lugar de tener que definir variables o utilizar
+                  funciones para obtener un valor, se pueden usar literales
+                  directamente para representar datos como números, cadenas o
+                  booleanos.
                 </p>
-                <!-- Facilitan la Representación Directa de Datos -->
-                <div id="facilitanRepresentacionDirectaDatoss">
-                  <h3>Facilitan la Representación Directa de Datos</h3>
-                  <p>
-                    Los literales permiten escribir valores de manera directa y
-                    explícita en el código, lo que hace que sea más claro y
-                    legible. En lugar de tener que definir variables o utilizar
-                    funciones para obtener un valor, se pueden usar literales
-                    directamente para representar datos como números, cadenas o
-                    booleanos.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         numero = 10        # Literal entero
                         nombre = "Python"  # Literal cadena
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Facilitan la Representación Directa de Datos fin -->
-                <!-- Mejoran la Legibilidad del Código -->
-                <div id="mejoranLegibilidadCodigos">
-                  <h3>Mejoran la Legibilidad del Código</h3>
-                  <p>
-                    El uso de literales mejora la legibilidad del código, ya que
-                    los valores que se manejan son inmediatamente comprensibles
-                    para los programadores que lean el código. Un número, una
-                    cadena de texto o un valor booleano se identifican
-                    fácilmente como tales cuando están escritos como literales.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Facilitan la Representación Directa de Datos fin -->
+              <!-- Mejoran la Legibilidad del Código -->
+              <div id="mejoranLegibilidadCodigos">
+                <h3>Mejoran la Legibilidad del Código</h3>
+                <p>
+                  El uso de literales mejora la legibilidad del código, ya que
+                  los valores que se manejan son inmediatamente comprensibles
+                  para los programadores que lean el código. Un número, una
+                  cadena de texto o un valor booleano se identifican
+                  fácilmente como tales cuando están escritos como literales.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         if edad >= 18:
                             print("Eres mayor de edad")  # Es fácil entender que '18' es una constante numérica.
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Mejoran la Legibilidad del Código fin -->
-                <!-- Base de la Inicialización de Variables -->
-                <div id="baseInicializacionVariabless">
-                  <h3>Base de la Inicialización de Variables</h3>
-                  <p>
-                    Los literales permiten inicializar variables de manera
-                    directa y sencilla, lo que es fundamental para el
-                    funcionamiento de cualquier programa. Cada vez que se define
-                    una variable, usualmente se asigna un valor literal.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Mejoran la Legibilidad del Código fin -->
+              <!-- Base de la Inicialización de Variables -->
+              <div id="baseInicializacionVariabless">
+                <h3>Base de la Inicialización de Variables</h3>
+                <p>
+                  Los literales permiten inicializar variables de manera
+                  directa y sencilla, lo que es fundamental para el
+                  funcionamiento de cualquier programa. Cada vez que se define
+                  una variable, usualmente se asigna un valor literal.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         pi = 3.14159  # Literal flotante
                         es_activo = True  # Literal booleano
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Base de la Inicialización de Variables fin -->
-                <!-- Eficiencia en la Ejecución -->
-                <div id="eficienciaEjecucions">
-                  <h3>Eficiencia en la Ejecución</h3>
-                  <p>
-                    Como los literales son valores constantes directamente
-                    interpretados por el intérprete de Python, su uso es
-                    eficiente en términos de rendimiento. No es necesario
-                    realizar cálculos o evaluaciones para obtener su valor, lo
-                    que reduce el tiempo de ejecución en comparación con otras
-                    formas de obtener datos.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Base de la Inicialización de Variables fin -->
+              <!-- Eficiencia en la Ejecución -->
+              <div id="eficienciaEjecucions">
+                <h3>Eficiencia en la Ejecución</h3>
+                <p>
+                  Como los literales son valores constantes directamente
+                  interpretados por el intérprete de Python, su uso es
+                  eficiente en términos de rendimiento. No es necesario
+                  realizar cálculos o evaluaciones para obtener su valor, lo
+                  que reduce el tiempo de ejecución en comparación con otras
+                  formas de obtener datos.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         velocidad_luz = 299792458  # Un número constante que no requiere cálculo adicional
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Eficiencia en la Ejecución fin -->
-                <!-- Claridad en la Lógica del Programa -->
-                <div id="claridadLogicaProgramas">
-                  <h3>Claridad en la Lógica del Programa</h3>
-                  <p>
-                    Los literales permiten expresar la lógica del programa de
-                    manera más clara. Cuando se usan directamente en expresiones
-                    o estructuras de control, es fácil entender qué está
-                    evaluando el programa. Por ejemplo, al usar literales
-                    booleanos, se puede ver de inmediato cómo se comportarán las
-                    condiciones.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Eficiencia en la Ejecución fin -->
+              <!-- Claridad en la Lógica del Programa -->
+              <div id="claridadLogicaProgramas">
+                <h3>Claridad en la Lógica del Programa</h3>
+                <p>
+                  Los literales permiten expresar la lógica del programa de
+                  manera más clara. Cuando se usan directamente en expresiones
+                  o estructuras de control, es fácil entender qué está
+                  evaluando el programa. Por ejemplo, al usar literales
+                  booleanos, se puede ver de inmediato cómo se comportarán las
+                  condiciones.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         while True:  # Es claro que este bucle es infinito porque 'True' es un literal booleano.
                             print("Bucle infinito")
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Claridad en la Lógica del Programa fin -->
-                <!-- Manejo Directo de Datos Complejos -->
-                <div id="manejoDirectoDatosComplejoss">
-                  <h3>Manejo Directo de Datos Complejos</h3>
-                  <p>
-                    Los literales permiten representar estructuras de datos
-                    complejas de manera sencilla. Literales como las listas,
-                    diccionarios o tuplas pueden contener otros literales y
-                    valores, lo que permite inicializar colecciones de datos sin
-                    necesidad de procedimientos adicionales.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Claridad en la Lógica del Programa fin -->
+              <!-- Manejo Directo de Datos Complejos -->
+              <div id="manejoDirectoDatosComplejoss">
+                <h3>Manejo Directo de Datos Complejos</h3>
+                <p>
+                  Los literales permiten representar estructuras de datos
+                  complejas de manera sencilla. Literales como las listas,
+                  diccionarios o tuplas pueden contener otros literales y
+                  valores, lo que permite inicializar colecciones de datos sin
+                  necesidad de procedimientos adicionales.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]  # Literal de lista de listas
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Manejo Directo de Datos Complejos fin -->
-                <!-- Versatilidad en Representación de Tipos de Datos -->
-                <div id="VersatilidadRepresentaciónTiposDatoss">
-                  <h3>Versatilidad en Representación de Tipos de Datos</h3>
-                  <p>
-                    Los literales en Python son versátiles y permiten
-                    representar diferentes tipos de datos: numéricos, cadenas de
-                    texto, booleanos, colecciones, etc. Esto brinda flexibilidad
-                    al programador al escribir código que debe trabajar con
-                    distintos tipos de información.
-                  </p>
-                  <div class="ej-sintaxis">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Manejo Directo de Datos Complejos fin -->
+              <!-- Versatilidad en Representación de Tipos de Datos -->
+              <div id="VersatilidadRepresentaciónTiposDatoss">
+                <h3>Versatilidad en Representación de Tipos de Datos</h3>
+                <p>
+                  Los literales en Python son versátiles y permiten
+                  representar diferentes tipos de datos: numéricos, cadenas de
+                  texto, booleanos, colecciones, etc. Esto brinda flexibilidad
+                  al programador al escribir código que debe trabajar con
+                  distintos tipos de información.
+                </p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         entero = 42  # Literal entero
                         flotante = 3.14  # Literal flotante
                         texto = "Python"  # Literal cadena
                       </code>
                     </pre>
-                  </div>
                 </div>
-                <!-- Versatilidad en Representación de Tipos de Datos fin -->
               </div>
+              <!-- Versatilidad en Representación de Tipos de Datos fin -->
             </div>
-          </article>
-          <!--  Literales  -->
-
-          <!--  comentarios  -->
-          <article class="row pt-5" id="comments">
-            <h2>COMENTARIOS</h2>
-            <p>
-              Si tiene alguna inquietud, duda o ha encontrado algún error, por
-              favor infórmelo a través del formulario disponible para este
-              propósito.
-            </p>
-            <div class="d-flex justify-content-center">
-              <form
-                action="https://formspree.io/f/mdkdawkg"
-                method="POST"
-                id="myForm"
-              >
-                <fieldset class="d-flex flex-column gap-3">
-                  <legend class="text-center fs-4">Deje su comentario</legend>
-
-                  <div class="d-flex flex-column">
-                    <label for="name">Nombre:</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="User"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
-
-                  <div class="d-flex flex-column">
-                    <label for="email">Email:</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="user@mail.com"
-                      class="form-control rounded"
-                      required
-                    />
-                  </div>
-
-                  <div class="d-flex flex-column">
-                    <label for="message">Mensaje:</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      cols="30"
-                      rows="5"
-                      placeholder="Su comentario..."
-                      class="form-control rounded-3"
-                      required
-                    ></textarea>
-                  </div>
-
-                  <button
-                    type="submit"
-                    class="btn btn-outline-light my-3 border rounded-pill border-2"
-                  >
-                    Enviar
-                  </button>
-                </fieldset>
-
-                <p class="small text-center">
-                  La política de privacidad, y los términos y condiciones están
-                  disponibles en el formulario de contacto.
-                </p>
-              </form>
-            </div>
-          </article>
-          <!--  fin comentarios  -->
-        </section>
-        <!--  barra lateral  -->
-        <aside class="col-lg-3 d-none d-lg-block pt-5">
-          <div>
-            <h1>En Este Artículo</h1>
-            <ul class="list-group">
-              <li class="list-group-item">
-                <a href="#introduccion">Introducción</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#tiposLiteralesPython">Tipos de Literales en Python</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#característicasLiterales"
-                  >Características de los Literales</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a href="#PorQueSonImportantesLiterales"
-                  >¿Por Qué Son Importantes los Literales?</a
-                >
-              </li>
-              <li class="list-group-item">
-                <a href="#comments">Comentarios</a>
-              </li>
-            </ul>
           </div>
-        </aside>
-        <!--  fin barra lateral  -->
-      </main>
-      <!--  fin principal  -->
-    </div>
-    <!--  Principal Fin  -->
+        </article>
+        <!--  Literales  -->
 
-    <!-- button to top -->
-    <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        fill="currentColor"
-        class="bi bi-arrow-bar-up"
-        viewBox="0 0 16 16"
-        style="margin-left: -2px"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"
-        ></path>
-      </svg>
-    </button>
-    <!-- Fin button to top -->
-  </body>
+        <!--  comentarios  -->
+        <article class="row pt-5" id="comments">
+          <h2>COMENTARIOS</h2>
+          <p>
+            Si tiene alguna inquietud, duda o ha encontrado algún error, por
+            favor infórmelo a través del formulario disponible para este
+            propósito.
+          </p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
+
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
+                </div>
+
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
+
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                  Enviar
+                </button>
+              </fieldset>
+
+              <p class="small text-center">
+                La política de privacidad, y los términos y condiciones están
+                disponibles en el formulario de contacto.
+              </p>
+            </form>
+          </div>
+        </article>
+        <!--  fin comentarios  -->
+      </section>
+<!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h1>En Este Artículo</h1><div class="menu-scroll"><div class="menu-container"><div class="border border-1">
+<div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
+<div class="menu-item"><a href="#tipos-de-literales-en-python" class="simple-link">Tipos de Literales en Python</a></div>
+<div class="menu-item"><a href="#características-de-los-literales" class="simple-link">Características de los Literales</a></div>
+<div class="menu-item"><a href="#Por-que-son-importantes-los-literales" class="simple-link">¿Por Qué Son Importantes los Literales?</a></div>
+<!-- Comentarios  -->
+<div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div></div></div></div></aside>
+<!--  fin barra lateral  -->
+
+            <li class="list-group-item">
+              <a href="#"></a>
+            </li>
+            <li class="list-group-item">
+              <a href="#"></a>
+            </li>
+            <li class="list-group-item">
+              <a href="#"></a>
+            </li>
+      <!--  fin barra lateral  -->
+    </main>
+    <!--  fin principal  -->
+  </div>
+  <!--  Principal Fin  -->
+
+  <!--  pie de pagina  -->
+  <footer class="row border-top border-1 m-1 mt-auto">
+    <div class="row">
+      <!-- contacto -->
+      <address class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Contacto</div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class="ms-3">
+            <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class="ms-3">Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      <!-- Derechos de autor -->
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
+      </div>
+      <!-- redes sociales -->
+      <div class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Redes Sociales</div>
+        <div class="d-flex justify-content-evenly align-items-center gap-5">
+          <div>
+            <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center gap-2"></div>
+  </footer>
+  <!--  pie de pagina fin  -->
+
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
 </html>
