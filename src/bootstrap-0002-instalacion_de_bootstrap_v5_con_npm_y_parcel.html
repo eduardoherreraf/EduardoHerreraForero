@@ -224,8 +224,9 @@
                 importar Bootstrap.
               </p>
             </div>
+
             <div id="configuracion-parcel" class="mt-5">
-              <h2>Configuración de Parcel</h2>
+              <h2>Configuración de Parcel <span class="text-blink-yellow">Editado</span></h2>
               <p>
                 El archivo
                 <span class="fw-bold text-warning">src/index.html</span> se
@@ -394,6 +395,7 @@
                   </pre>
               </div>
             </div>
+
             <div id="importacion-bootstrap-v5" class="mt-5">
               <h2>Importación de BOOTSTRAP</h2>
               <p>
@@ -441,6 +443,7 @@
                 y Parcel.
               </p>
             </div>
+
             <div id="compilacion-proyecto-produccion" class="mt-5">
               <h2>Compilación del proyecto para Producción</h2>
               <p>
@@ -464,6 +467,243 @@
                 compilación del código HTML pueden no reflejar esos cambios en
                 las instancias correspondientes en el código JavaScript.
               </p>
+            </div>
+
+            <div id="instalacion-de-un-servidor-local" class="mt-5">
+              <h2>Instalación de un Servidor Local <span class="text-blink-yellow">Nuevo</span></h2>
+              <!-- Qué Es un Servidor Local  -->
+              <div id="que-es-un-servidor-local">
+                <h3>Qué Es un Servidor Local </h3>
+                <p>Un servidor local es un entorno o programa que permite ejecutar y probar aplicaciones web
+                  directamente en el computador del usuario, sin necesidad de estar conectado a Internet ni depender de
+                  un servidor remoto.</p>
+                <p>En otras palabras, simula el funcionamiento de un servidor web real, pero dentro del equipo personal,
+                  lo que facilita el desarrollo, prueba y depuración de sitios o aplicaciones antes de publicarlos en
+                  línea.</p>
+              </div>
+              <!-- Qué Es un Servidor Local  fin -->
+              <!-- Ejemplo Práctico  -->
+              <div id="ejemplo-practico">
+                <h3>Ejemplo Práctico </h3>
+                <p>Cuando se desarrolla una página web con HTML, CSS, JavaScript, PHP o bases de datos, se puede usar un
+                  servidor local para que el navegador interprete correctamente el código y muestre el resultado como lo
+                  haría en Internet.</p>
+              </div>
+              <!-- Ejemplo Práctico  fin -->
+              <!-- Necesidad de un Servidor Local para PrismJS  -->
+              <div id="necesidad-de-un-servidor-local-para-prismjs">
+                <h3>Necesidad de un Servidor Local para <code class="language-none">PrismJS</code></h3>
+                <p>Un servidor local se utiliza porque, al intentar ejecutar una página web directamente desde el
+                  archivo <code class="language-html">index.html</code> almacenado en el computador del usuario (en modo
+                  desarrollo), algunas bibliotecas de JavaScript pueden no funcionar correctamente. En particular,
+                  <code class="language-none">PrismJS</code> no aplica el formato esperado al código. Por esta razón, se
+                  recurre a un servidor local, que permite simular el entorno de un servidor real y garantizar el
+                  funcionamiento adecuado de todos los scripts y recursos del proyecto. En este caso, se utilizará el
+                  paquete <code class="language-none">http-server</code> de <code class="language-none">Node.js</code>.
+                </p>
+                <p></p>
+              </div>
+              <!-- Necesidad de un Servidor Local para PrismJS  fin -->
+
+              <!-- http-server (Node.js-npm)  -->
+              <div id="http-server-(node-js-npm)">
+                <h3>http-server (<code class="language-none">node.js</code> / <code class="language-none">npm</code>)
+                </h3>
+                <p><code class="language-none">http-server</code> en el ecosistema Node.js es una herramienta sencilla
+                  para servir archivos estáticos desde cualquier carpeta del sistema, ideal para pruebas locales o
+                  despliegues ligeros.</p>
+                <p>A continuación se muestra su uso completo y detallado:</p>
+              </div>
+              <!-- http-server (Node-js-npm)  fin -->
+
+              <!-- Instalación http-server  -->
+              <div id="instalacion-http-server">
+                <h3>Instalación <code class="language-none">http-server</code></h3>
+                <p>Puede instalarse globalmente o como dependencia de desarrollo:</p>
+
+                <p><span class="fw-bold">Global</span>:</p>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-bash" data-prismjs-copy="Copy">
+                        npm install -g http-server
+                      </code>
+                    </pre>
+                </div>
+                <!-- Sintaxis fin -->
+                <p><span class="fw-bold">Local (para un proyecto)</span>:</p>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-bash" data-prismjs-copy="Copy">
+                        npm install --save-dev http-server
+                      </code>
+                    </pre>
+                </div>
+                <!-- Sintaxis fin -->
+              </div>
+              <!-- Ejemplo completo de uso de http-server  fin -->
+              <!-- Uso Básico  -->
+              <div id="uso-basico">
+                <h3>Uso Básico </h3>
+                <p>Dentro del directorio del proyecto (por ejemplo, donde está el archivo <code
+                    class="language-html">index.html</code>):</p>
+
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-bash" data-prismjs-copy="Copy">
+                        http-server
+                      </code>
+                    </pre>
+                </div>
+                <!-- Sintaxis fin -->
+                <p>Por defecto:</p>
+                <ul>
+                  <li>Servirá los archivos del directorio actual.</li>
+                  <li>Usará el puerto 8080.</li>
+                  <li>Mostrará la URL de acceso, algo como:
+                    <div class="ej-sintaxis">
+                      <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-nginx" data-prismjs-copy="Copy">
+                            Starting up http-server, serving ./
+                             Available on:
+                               http://127.0.0.1:8080
+                  
+                          </code>
+                        </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                    <p>Luego se puede abrir esa dirección en el navegador.</p>
+                  </li>
+                </ul>
+              </div>
+              <!-- Uso Básico  fin -->
+              <!-- Opciones más Comunes  -->
+              <div id="opciones-mas-comunes">
+                <h3>Opciones más Comunes </h3>
+                <div class="table-responsive">
+                  <table class="table table-bordered table-striped table-hover align-middle">
+                    <thead class="table-dark">
+                      <tr>
+                        <th scope="col">Opción</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Ejemplo</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><code class="language-bash">-p &lt;n&gt;</code></td>
+                        <td>Define el puerto.</td>
+                        <td><code class="language-bash">http-server -p 3000</code></td>
+                      </tr>
+                      <tr>
+                        <td><code class="language-bash">-a &lt;ip&gt;</code></td>
+                        <td>Define la IP o interfaz de red.</td>
+                        <td><code class="language-bash">http-server -a 0.0.0.0</code></td>
+                      </tr>
+                      <tr>
+                        <td><code class="language-bash">-c &lt;segundos&gt;</code></td>
+                        <td>Tiempo de caché (por defecto 3600). <code class="language-bash">-c-1</code> desactiva
+                          cache.</td>
+                        <td><code class="language-bash">http-server -c-1</code></td>
+                      </tr>
+                      <tr>
+                        <td><code class="language-bash">-o</code></td>
+                        <td>Abre el navegador automáticamente.</td>
+                        <td><code class="language-bash">http-server -o</code></td>
+                      </tr>
+                      <tr>
+                        <td><code class="language-bash">-s</code></td>
+                        <td>Modo “single page app”: redirige todo a <code class="language-html">index.html</code>.
+                        </td>
+                        <td><code class="language-bash">http-server -s</code></td>
+                      </tr>
+                      <tr>
+                        <td><code class="language-bash">--cors</code></td>
+                        <td>Habilita CORS (útil para pruebas con APIs).</td>
+                        <td><code class="language-bash">http-server --cors</code></td>
+                      </tr>
+                      <tr>
+                        <td><code class="language-bash">--ssl, --cert, --key</code></td>
+                        <td>Sirve contenido con HTTPS (requiere certificados).</td>
+                        <td><code class="language-bash">http-server --ssl --cert cert.pem --key key.pem</code></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- Opciones más Comunes  fin -->
+              <!-- Ejemplo completo de uso de http-server  -->
+              <div id="ejemplo-completo-de-uso-de-http-server">
+                <h3>Ejemplo Completo de Uso de <code class="language-none">http-server</code></h3>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      http-server ./dist -p 8081 -c-1 -o ó http-server ./dist
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+                <ul>
+                  <li>Sirve la carpeta <code class="language-bash">dist</code></li>
+                  <li>Usa el puerto <code class="language-bash">8081</code></li>
+                  <li>Desactiva el caché</li>
+                  <li>Abre el navegador automáticamente</li>
+                </ul>
+              </div>
+              <!-- Ejemplo completo de uso de http-server fin -->
+
+              <!-- Uso desde package.json  -->
+              <div id="uso-desde-package.json">
+                <h3>Uso desde <code class="language-none">package.json</code></h3>
+                <p>En un proyecto Node, se puede agregar un script:</p>
+                <p><span class="fw-bold">Sintaxis básica</span>:</p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-json" data-prismjs-copy="Copy">
+                      {
+                        "scripts": {
+                          "start": "http-server ./dist -p 8080 -c-1"
+                        }
+                      }
+
+                      ó
+                      
+                      {
+                        "scripts": {
+                          "dev": "http-server ./dist -p 8080 -c-1"
+                        }
+                      }
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+                <p>A continuación, se ejecuta el comando correspondiente, según la opción seleccionada antes:</p>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-html" data-prismjs-copy="Copy">
+                      npm start ó node --run start
+                      
+                      ó
+
+                      npm run dev ó node --run dev
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+              </div>
+              <!-- Uso desde package.json  fin -->
+              <!-- ⚠️ Nota Importante  -->
+              <div id="⚠️-nota-importante">
+                <h3>⚠️ Nota Importante </h3>
+                <p><code class="language-none">http-server</code> no debe usarse en producción.</p>
+                <p>No ofrece seguridad avanzada, compresión, ni manejo eficiente de conexiones concurrentes.</p>
+                <p>Para entornos productivos, se recomienda Nginx, Caddy, o Express con configuración personalizada.</p>
+              </div>
+              <!-- ⚠️ Nota Importante  fin -->
             </div>
           </div>
         </article>
@@ -538,9 +778,15 @@
               <div class="menu-item">
                 <a href="#importacion-bootstrap-v5" class="simple-link">Importación Bootstrap v5</a>
               </div>
+
               <div class="menu-item">
                 <a href="#compilacion-proyecto-produccion" class="simple-link">Compilación del proyecto para
                   Producción</a>
+              </div>
+
+              <div class="menu-item">
+                <a href="#instalacion-de-un-servidor-local" class="simple-link">Instalación de un Servidor Local <span
+                    class="text-blink-yellow">Nuevo</span></a>
               </div>
               <!-- Comentarios  -->
               <div class="menu-item">
