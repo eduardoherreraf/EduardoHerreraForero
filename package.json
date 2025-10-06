@@ -4,7 +4,7 @@
   "version": "8.15.0",
   "description": "",
   "scripts": {
-    "dev": "rimraf dist && parcel --lazy --open http://localhost:1234/ --no-source-maps",
+    "dev": "http-server ./dist -p 8080 -c-1",
     "start": "rimraf .parcel-cache dist && parcel serve",
     "build": "rimraf .parcel-cache dist && parcel build --public-url ./ --no-source-maps",
     "test": "echo \"Error: no test specified\" && exit 1"

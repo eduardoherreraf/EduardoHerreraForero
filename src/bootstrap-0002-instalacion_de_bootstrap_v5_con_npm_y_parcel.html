@@ -261,7 +261,7 @@
               </p>
               <p>
                 en el archivo
-                <span class="fw-bold text-warning">package.json</span> añadir
+                <code class="language-json">package.json</code> añadir
                 como funcionaran los scripts de PARCEL:
               </p>
               <div class="ej-sintaxis">
@@ -325,8 +325,7 @@
               </ul>
               <p>
                 También en este mismo archivo
-                <span class="fw-bold text-warning">package.json</span> se debe
-                intercambiar:
+                <code class="language-json">package.json</code> se debe intercambiar:
               </p>
               <div class="ej-sintaxis">
                 <pre data-src-status="loaded" tabindex="0">
@@ -366,7 +365,7 @@
               </div>
               <p>
                 Este archivo debe estar en el directorio del proyecto junto al
-                archivo <code class="language-bash">package.json</code>
+                archivo <code class="language-json">package.json</code>
               </p>
               <p>
                 Esta plantilla está configurada de forma tal que es
@@ -499,7 +498,8 @@
                   <code class="language-none">PrismJS</code> no aplica el formato esperado al código. Por esta razón, se
                   recurre a un servidor local, que permite simular el entorno de un servidor real y garantizar el
                   funcionamiento adecuado de todos los scripts y recursos del proyecto. En este caso, se utilizará el
-                  paquete <code class="language-none">http-server</code> de <code class="language-none">Node.js</code>.
+                  paquete <code class="language-none">http-server</code> de <code
+                    class="language-javascript">Node.js</code>.
                 </p>
                 <p></p>
               </div>
@@ -507,9 +507,11 @@
 
               <!-- http-server (Node.js-npm)  -->
               <div id="http-server-(node-js-npm)">
-                <h3>http-server (<code class="language-none">node.js</code> / <code class="language-none">npm</code>)
+                <h3>http-server (<code class="language-javascript">Node.js</code> / <code
+                    class="language-javascript">npm</code>)
                 </h3>
-                <p><code class="language-none">http-server</code> en el ecosistema Node.js es una herramienta sencilla
+                <p><code class="language-none">http-server</code> en el ecosistema <code
+                    class="language-javascript">Node.js</code> es una herramienta sencilla
                   para servir archivos estáticos desde cualquier carpeta del sistema, ideal para pruebas locales o
                   despliegues ligeros.</p>
                 <p>A continuación se muestra su uso completo y detallado:</p>
@@ -657,7 +659,7 @@
 
               <!-- Uso desde package.json  -->
               <div id="uso-desde-package.json">
-                <h3>Uso desde <code class="language-none">package.json</code></h3>
+                <h3>Uso desde <code class="language-json">package.json</code></h3>
                 <p>En un proyecto Node, se puede agregar un script:</p>
                 <p><span class="fw-bold">Sintaxis básica</span>:</p>
                 <div class="ej-sintaxis">
@@ -704,6 +706,114 @@
                 <p>Para entornos productivos, se recomienda Nginx, Caddy, o Express con configuración personalizada.</p>
               </div>
               <!-- ⚠️ Nota Importante  fin -->
+            </div>
+
+            <div id="rimraf-herramienta-para-eliminar-carpetas-y-archivos" class="mt-5">
+              <h2><code class="language-bash">rimraf</code> : Herramienta para Eliminar Carpetas y Archivos <span
+                  class="text-blink-yellow">Nuevo</span>
+              </h2>
+              <p><code class="language-bash">rimraf</code> es una herramienta de <code
+                  class="language-javascript">Node.js</code> que elimina archivos y carpetas
+                de forma recursiva (borra todo el contenido interno). Es equivalente al comando <code
+                  class="language-bash">rm -rf</code> de Unix y se usa comúnmente para limpiar directorios de proyectos
+                como <code class="language-bash">node_modules</code>, <code class="language-bash">dist</code> o <code
+                  class="language-bash">build</code>.</p>
+              <!-- Instalación de rimraf  -->
+              <div id="instalacion-de-rimraf">
+                <h3>Instalación de <code class="language-bash">rimraf</code></h3>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-bash" data-prismjs-copy="Copy">
+                        npm install rimraf --save-dev
+                      </code>
+                    </pre>
+                </div>
+                <!-- Sintaxis fin -->
+              </div>
+              <!-- Instalación de rimraf  fin -->
+              <!-- Uso básico en la terminal  -->
+              <div id="uso-basico-en-la-terminal">
+                <h3>Uso básico en la terminal </h3>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-bash" data-prismjs-copy="Copy">
+                        npx rimraf dist
+                      </code>
+                    </pre>
+                </div>
+                <!-- Sintaxis fin -->
+                <p>El ejemplo anterior elimina la carpeta <code class="language-bash">dist</code> y todo su
+                  contenido. Si la carpeta no existe, no genera ningún error.</p>
+              </div>
+              <!-- Uso básico en la terminal  fin -->
+              <!-- Uso en package.json  -->
+              <div id="uso-en-package-json">
+                <h3>Uso en <code class="language-json">package.json</code> </h3>
+                <p>Puede agregarse dentro de los scripts para automatizar limpiezas antes de construir el proyecto:</p>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-json" data-prismjs-copy="Copy">
+                      "scripts": {
+                        "dev": "rimraf dist && parcel --lazy --open http://localhost:1234/ --no-source-maps",
+                        "start": "rimraf .parcel-cache dist && parcel serve",
+                        "build": "rimraf .parcel-cache dist && parcel build --public-url ./ --no-source-maps",
+                        "test": "echo \"Error: no test specified\" && exit 1"
+                      },                      
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+              </div>
+              <!-- Uso en package.json  fin -->
+              <!-- Archivo package.json Final  -->
+              <div id="archivo-package.json-final">
+                <h3>Archivo <code class="language-json">package.json</code> Final</h3>
+                <p>Este es el archivo <code class="language-json">package.json</code> que finalmente se debe usar con el
+                  proyecto incluyendo el uso de del servidor local <code class="language-none">http-server</code> y el
+                  eliminador de carpetas y de archivos <code class="language-bash">rimraf</code>.</p>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-json" data-prismjs-copy="Copy">
+                      {
+                        "name": "eduardoherreraforero",
+                        "source": "src/index.html",
+                        "version": "8.15.0",
+                        "description": "",
+                        "scripts": {
+                          "dev": "http-server ./dist -p 8080 -c-1",
+                          "start": "rimraf .parcel-cache dist && parcel serve",
+                          "build": "rimraf .parcel-cache dist && parcel build --public-url ./ --no-source-maps",
+                          "test": "echo \"Error: no test specified\" && exit 1"
+                        },
+                        "keywords": [],
+                        "author": "",
+                        "license": "ISC",
+                        "devDependencies": {
+                          "@parcel/packager-raw-url": "^2.16.0",
+                          "@parcel/transformer-sass": "^2.16.0",
+                          "@parcel/transformer-webmanifest": "^2.16.0",
+                          "parcel": "^2.16.0",
+                          "rimraf": "^6.0.1",
+                          "svgo": "^3.3.2"
+                        },
+                        "dependencies": {
+                          "@popperjs/core": "^2.11.8",
+                          "bootstrap": "^5.3.2",
+                          "bootstrap-icons": "^1.11.3",
+                          "prismjs": "^1.29.0"
+                        }
+                      }
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+
+              </div>
+              <!-- Archivo package.json Final  fin -->
             </div>
           </div>
         </article>
@@ -787,6 +897,12 @@
               <div class="menu-item">
                 <a href="#instalacion-de-un-servidor-local" class="simple-link">Instalación de un Servidor Local <span
                     class="text-blink-yellow">Nuevo</span></a>
+              </div>
+
+              <div class="menu-item">
+                <a href="#rimraf-herramienta-para-eliminar-carpetas-y-archivos" class="simple-link"><code
+                    class="language-bash">rimraf</code> : Herramienta
+                  para Eliminar Carpetas y Archivos <span class="text-blink-yellow">Nuevo</span></a>
               </div>
               <!-- Comentarios  -->
               <div class="menu-item">
