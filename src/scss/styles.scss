@@ -374,15 +374,14 @@ nav {
 aside {
   position: sticky-webkit-sticky; /* For Safari */
   position: sticky;
-  // top: 2.5rem; /* Space for the fixed navbar */
+  top: 3.1rem; /* Space for the fixed navbar */
   height: calc(100dvh - 0rem); /* Fill remaining viewport height */
   // height: 100dvh; /* Fill remaining viewport height */
-  padding-bottom: opx;
+  padding-bottom: 0px;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
   align-self: flex-start;
-  top: 2.5rem;
 }
 
 .menu-scroll {
