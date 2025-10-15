@@ -59,12 +59,28 @@ code {
   display: inline;
 }
 
-.img-container,
-.img-caption {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+figure {
+  display: inline-block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+figure picture {
+  display: block;
+  width: 100%;
+}
+
+figure picture img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+figure .img-caption {
+  display: block;
+  text-align: center;
+  margin-top: 0.5rem;
+  width: 100%;
 }
 
 /* Fondo Códigos */
@@ -88,14 +104,13 @@ iframe {
 // Altura de las cajas de .ej-ejecutado, ej-code-html y ej-code-css
 /* Alternativa con scroll para acceso al contenido completo */
 .ej-ejecutado {
-  height: var(--alto-caja-ejecutado);
+  max-height: var(--alto-caja-ejecutado);
   overflow-y: auto;
-  padding-top: 2rem;
   background-color: var(--color-fondo) !important;
   border-top: 1px solid var(--color-borde);
   border-right: 1px solid var(--color-borde);
   border-left: 8px solid red;
-  padding: 10px;
+  padding: 20px;
   border-radius: 8px;
   background-color: #272822;
   color: white;
@@ -187,19 +202,33 @@ header {
 
 .imagen50 {
   width: 50%;
+  font-weight: auto;
 }
 
 .imagen40 {
   width: 40%;
+  font-weight: auto;
 }
 
 .imagen20 {
   width: 20%;
+  font-weight: auto;
 }
 
-/* picture img {
-  border-radius: 0.5rem;
-} */
+.imagen80 {
+  width: 80%; // imagen de 800px x 800px
+  font-weight: auto;
+}
+
+figure {
+  width: fit-content;
+  max-width: 100%;
+}
+
+figure picture,
+figure img {
+  display: block;
+}
 
 .gris {
   color: #dee2e6;
@@ -7031,4 +7060,16 @@ details summary::marker {
   text-align: center;
   font-weight: 600;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+// css-0301_flexbox.html - ¿Qué es Convertir un Contenedor en Flexible?
+.ej-flex-elemento-normal {
+  border-top: 3px solid red;
+  border-right: 3px solid red;
+  border-left: 3px solid red;
+  width: 100px;
+}
+
+.ej-flex-elemento-normal:nth-child(3) {
+  border-bottom: 3px solid red;
 }

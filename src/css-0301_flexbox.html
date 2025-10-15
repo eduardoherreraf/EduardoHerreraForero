@@ -1,0 +1,3178 @@
+<!-- @format -->
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Guía completa sobre Flexbox en CSS. Explica cómo funciona el modelo flexible, sus propiedades principales, ejemplos prácticos y ventajas para crear diseños web adaptables y modernos." />
+  <meta name="title" content="CSS Flexbox (Flexible Box Layout) - Ing. Eduardo Herrera Forero." />
+  <meta name="keywords"
+    content="Flexbox, CSS, diseño web, layout flexible, align-items, justify-content, responsive design, web moderna, CSS3, frontend" />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eduardoherreraf.github.io/css-0301_flexbox.html" />
+  <!-- Fin Metaetiquetas -->
+
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="CSS Flexbox (Flexible Box Layout) - Ing. Eduardo Herrera Forero." />
+  <meta property="og:description"
+    content="Guía completa sobre Flexbox en CSS. Explica cómo funciona el modelo flexible, sus propiedades principales, ejemplos prácticos y ventajas para crear diseños web adaptables y modernos." />
+  <meta property="og:image" content="https://i.postimg.cc/c1Y0qdsW/flexbox-introduccion-comp.png" />
+  <meta property="og:image:alt"
+    content="Estante de madera con libros y cajas que simboliza el funcionamiento de Flexbox en CSS." />
+  <meta property="og:url" content="https://eduardoherreraf.github.io/css-0301_flexbox.html" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
+
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="CSS Flexbox (Flexible Box Layout) - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description"
+    content="Guía completa sobre Flexbox en CSS. Explica cómo funciona el modelo flexible, sus propiedades principales, ejemplos prácticos y ventajas para crear diseños web adaptables y modernos." />
+  <meta name="twitter:image" content="https://i.postimg.cc/c1Y0qdsW/flexbox-introduccion-comp.png" />
+  <meta name="twitter:image:alt"
+    content="Ilustración de un estante de madera con libros y cajas, que representa la distribución flexible de elementos en CSS Flexbox.">
+  <meta name="twitter:url" content="https://eduardoherreraf.github.io/css-0301_flexbox.html" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
+
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
+
+  <title>
+    CSS Flexbox (Flexible Box Layout) - Ing. Eduardo Herrera Forero.
+  </title>
+
+  <style>
+    /* Todos los ejemplos*/
+    .ej-normal-contenedor {
+      padding: 20px;
+      border: 3px solid green;
+      background-color: green;
+    }
+
+    .ej-flex-elemento {
+      border: 3px solid red;
+      width: 100px;
+      background-color: white;
+      color: black;
+    }
+
+    .ej-flex-contenedor-flex {
+      display: flex;
+      padding: 20px;
+      border: 3px solid green;
+    }
+
+    .ej-flex-elemento-flex {
+      border-top: 3px solid red;
+      border-bottom: 3px solid red;
+      border-left: 3px solid red;
+      width: 100px;
+    }
+
+    .ej-flex-contenedor-normal {
+      padding: 20px;
+      border: 3px solid green;
+    }
+
+    /* css-0301_flexbox.html - ¿Qué es Convertir un Contenedor en Flexible?  */
+    .ej-flex {
+      display: flex;
+    }
+
+    /* css-0301_flexbox.html - display */
+    .ej-inline-flex {
+      display: inline-flex;
+    }
+
+    /* css-0301_flexbox.html - flex-direction */
+    .ej-row {
+      flex-direction: row;
+    }
+
+    .ej-row-reverse {
+      flex-direction: row-reverse;
+    }
+
+    .ej-column {
+      flex-direction: column;
+    }
+
+    .ej-column-reverse {
+      flex-direction: column-reverse;
+    }
+
+    /* css-0301_flexbox.html - flex-wrap */
+    .ej-nowrap {
+      flex-wrap: nowrap;
+    }
+
+    .ej-wrap {
+      flex-wrap: wrap;
+    }
+
+    .ej-wrap-reverse {
+      flex-wrap: wrap-reverse;
+    }
+
+    /* css-0301_flexbox.html - flex-flow */
+    .ej-flex-flow-row-nowrap {
+      flex-flow: row nowrap;
+    }
+
+    .ej-flex-flow-column-wrap {
+      height: 200px;
+      flex-flow: column wrap;
+    }
+
+    .ej-flex-flow-row-wrap {
+      height: 100px;
+      flex-flow: row wrap;
+    }
+
+    /* css-0301_flexbox.html - justify-content */
+    .ej-flex-start {
+      justify-content: flex-start;
+    }
+
+    .ej-flex-end {
+      justify-content: flex-end;
+    }
+
+    .ej-space-between {
+      justify-content: space-between;
+    }
+
+    .ej-justify-space-around {
+      justify-content: space-around;
+    }
+
+    .ej-justify-space-evenly {
+      justify-content: space-evenly;
+    }
+
+    /* Todos los ejemplos*/
+    .ej-normal-contenedor {
+      padding: 10px;
+      border: 3px solid green;
+      background-color: green;
+      height: 100px
+    }
+
+    .ej-flex {
+      display: flex;
+    }
+
+    /* css-0301_flexbox.html - align-items */
+    .ej-flex-elemento-align-items {
+      border: 3px solid red;
+      width: 100px;
+      background-color: white;
+      color: black;
+    }
+
+    .ej-flex-elemento-align-items:nth-child(2) {
+      height: 70px;
+      font-size: 50px;
+    }
+
+    .ej-flex-elemento-align-items:nth-child(3) {
+      height: 50px;
+      font-size: 30px;
+    }
+
+    .ej-flex-stretch {
+      align-items: stretch
+    }
+
+    .ej-flex-start {
+      align-items: flex-start;
+    }
+
+    .ej-flex-end {
+      align-items: flex-end;
+    }
+
+    .ej-center {
+      align-items: center;
+    }
+
+    .ej-baseline {
+      align-items: baseline;
+    }
+
+    /* css-0301_flexbox.html - flex-flow */
+    .ej-normal-contenedor-aling-content {
+      padding: 20px;
+      border: 3px solid green;
+      background-color: green;
+      height: 300px;
+    }
+
+    .ej-align-content-stretch {
+      align-content: stretch;
+    }
+
+    .ej-align-content-flex-start {
+      align-content: flex-start;
+    }
+
+    .ej-align-content-flex-end {
+      align-content: flex-end;
+    }
+
+    .ej-align-content-center {
+      align-content: center;
+    }
+
+    .ej-align-content-space-between {
+      align-content: space-between;
+    }
+
+    .ej-align-content-space-around {
+      align-content: space-around;
+    }
+
+    .ej-align-content-space-evenly {
+      align-content: space-evenly;
+    }
+
+    /* css-0301_flexbox.html - order */
+    .ej-flex-elemento:nth-child(4) {
+      order: 2;
+      background-color: cyan;
+    }
+
+    .ej-flex-elemento:nth-child(1) {
+      order: 3;
+      background-color: cyan;
+    }
+
+    /* css-0301_flexbox.html - flex-grow */
+    .ej-flex-elemento-grow {
+      border: 3px solid red;
+      width: 100px;
+      background-color: white;
+      color: black;
+    }
+
+    .ej-flex-elemento-grow:nth-child(4) {
+      flex-grow: 2;
+      background-color: cyan;
+    }
+
+    .ej-flex-elemento-grow:nth-child(1) {
+      flex-grow: 1;
+      background-color: cyan;
+    }
+
+    /* css-0301_flexbox.html - flex-shrink */
+    .ej-flex-elemento-shrink {
+      border: 3px solid red;
+      width: 100px;
+      background-color: white;
+      color: black;
+    }
+
+    .ej-flex-elemento-shrink:nth-child(4) {
+      flex-grow: 2;
+      background-color: cyan;
+    }
+
+    .ej-flex-elemento-shrink:nth-child(1) {
+      flex-grow: 1;
+      background-color: cyan;
+    }
+
+    /* css-0301_flexbox.html - align-self */
+    .ej-flex-elemento-align-self {
+      border: 3px solid red;
+      width: 100px;
+      background-color: white;
+      color: black;
+    }
+
+    .ej-flex-elemento-align-self:nth-child(1) {
+      align-self: auto;
+    }
+
+    .ej-flex-elemento-align-self:nth-child(2) {
+      align-self: flex-start;
+    }
+
+    .ej-flex-elemento-align-self:nth-child(3) {
+      align-self: flex-end;
+    }
+
+    .ej-flex-elemento-align-self:nth-child(4) {
+      align-self: center;
+    }
+
+    .ej-flex-elemento-align-self:nth-child(5) {
+      align-self: baseline;
+    }
+
+    .ej-flex-elemento-align-self:nth-child(6) {
+      align-self: stretch;
+    }
+
+    /* css-0301_flexbox.html - gap */
+    .ej-normal-contenedor-gap {
+      padding: 20px;
+      height: 300px;
+      border: 3px solid green;
+      background-color: green;
+    }
+
+    .ej-flex-elemento-gap {
+      border: 3px solid red;
+      width: 100px;
+      height: 30px;
+      background-color: white;
+      color: black;
+    }
+
+    .ej-flex-wrap {
+      flex-wrap: wrap;
+    }
+
+    .ej-flex-gap {
+      gap: 5px 10px;
+    }
+  </style>
+
+  <script type="module" defer src="./js/main.js"></script>
+
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
+
+  <!--  Principal  -->
+  <div class="container-fluid" id="introduccion">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!--  CSS Flexbox (Flexible Box Layout)-->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <header>
+            <h1>CSS Flexbox (Flexible Box Layout)</h1>
+          </header>
+          <!-- Introducción -->
+          <div class="mt-5">
+            <h2>Introducción Flexbox</h2>
+            <div class="centrar-imagen imagen40">
+              <figure class="img-container">
+                <img src="https://i.postimg.cc/c1Y0qdsW/flexbox-introduccion-comp.png" class="img-fluid"
+                  alt="Estante de madera con libros y cajas que simboliza el funcionamiento de Flexbox en CSS."
+                  title="Analogía visual de Flexbox: distribución flexible de elementos." loading="lazy" />
+                <figcaption class="img-caption">Representación visual de Flexbox como un estante que organiza libros y
+                  cajas según el espacio disponible.</figcaption>
+              </figure>
+            </div>
+            <p>Flexbox puede compararse con un estante ajustable que organiza objetos según el espacio disponible.</p>
+            <p>El contenedor flex sería el estante, y los ítems flexibles serían los libros o cajas colocados en él.</p>
+            <p>Cuando el estante es ancho, los objetos se distribuyen con más espacio entre sí; si el espacio se reduce,
+              los objetos se acercan, se encogen o se reacomodan automáticamente.</p>
+            <p>Propiedades como <code class="language-html">justify-content</code> definen cómo se reparten los objetos
+              a lo largo del estante (alineados a la izquierda, al centro o con espacio entre ellos), mientras que <code
+                class="language-html">align-items</code> controla cómo se alinean verticalmente dentro del estante.</p>
+            <p>Si los objetos no caben en una sola fila, <code class="language-html">flex-wrap</code> permite crear otra
+              repisa para acomodarlos.</p>
+            <p>En conjunto, Flexbox funciona como un estante inteligente que ajusta la posición y el tamaño de su
+              contenido para aprovechar al máximo el espacio disponible.</p>
+
+          </div>
+          <!-- Introducción Fin -->
+          <hr class="subtle-divider" />
+
+          <!-- Conceptos Básicos -->
+          <div id="conceptos-basicos" class="mt-5">
+            <h2>Conceptos Básicos</h2>
+            <p>El módulo <code class="language-none">Flexbox Layout</code> (Caja Flexible), reconocido como una <a
+                href="https://www.w3.org/TR/css-flexbox/" target="_blank" rel="noopener noreferrer">Recomendación
+                Candidata por el W3C</a> desde octubre de 2017, fue creado para ofrecer un método más eficaz de
+              organización, alineación y distribución del espacio entre los elementos de un contenedor, incluso cuando
+              sus dimensiones son desconocidas o variables (de ahí el término “flex”, por flexible).</p>
+            <p>La esencia del diseño flexible consiste en otorgar al contenedor la capacidad de ajustar el ancho, la
+              altura e incluso el orden de sus elementos, optimizando así el uso del espacio disponible y permitiendo
+              una mejor adaptación a distintos dispositivos y resoluciones de pantalla.</p>
+            <p>Un contenedor flexible puede ampliar los elementos para ocupar el espacio libre o reducirlos
+              automáticamente para evitar que se desborden fuera de sus límites.</p>
+            <p>Una característica clave de Flexbox es que no está limitado a una orientación específica, a diferencia de
+              los modelos tradicionales: el modelo <code class="language-css">block</code>, que organiza los elementos
+              en dirección vertical, y el modelo <code class="language-css">inline</code>, que lo hace en dirección
+              horizontal.
+            </p>
+            <p>Aunque esos modelos funcionan adecuadamente en estructuras de páginas simples, carecen de la flexibilidad
+              necesaria para responder a los desafíos de aplicaciones más grandes o complejas, especialmente cuando se
+              requiere ajustar la orientación, redimensionar, estirar o comprimir los elementos.</p>
+            <div class="text-bg-light p-3 mb-3"><span class="fw-bold">Nota</span>: Flexbox resulta ideal para el diseño
+              de componentes individuales y estructuras pequeñas, mientras
+              que CSS Grid está orientado a la creación de diseños más amplios y de nivel superior.</div>
+            <div class="text-bg-light p-3 mb-3"><span class="fw-bold">Flexbox vs. Grid</span>: <br>
+              CSS Flexbox se utiliza para diseños unidimensionales, con filas <span class="fst-italic">o</span>
+              columnas.
+              <br>
+              CSS Grid se utiliza para diseños bidimensionales, con filas <span class="fst-italic">y</span> columnas.
+            </div>
+            <p>Antes de iniciar con las propiedades de Flexbox, es importante comprender los conceptos clave que
+              subyacen a su funcionamiento:</p>
+
+            <div class="centrar-imagen imagen50">
+              <figure class="img-container">
+                <picture>
+                  <source srcset="https://i.ibb.co/Jjxhgtd0/flexbox-introduccion-es-comp.png" type="image/png">
+                  <img src="https://i.postimg.cc/jdL95Myd/flexbox-introduccion-es-comp.png"
+                    alt="Estante de madera con libros y cajas que simboliza el funcionamiento de Flexbox en CSS"
+                    class="img-fluid" title="Analogía visual de Flexbox: distribución flexible de elementos.">
+                </picture>
+                <figcaption class="img-caption">
+                  Representación visual de Flexbox como un estante que organiza libros y cajas según el espacio
+                  disponible.
+                </figcaption>
+              </figure>
+            </div>
+            <ul>
+              <li><span class="fw-bold">Contenedor flexible (Flex Container)</span>: Es el elemento HTML al que se
+                aplica la propiedad <code class="language-css">display: flex</code> o <code
+                  class="language-css">display: inline-flex</code>. Al hacerlo, se convierte en un contenedor
+                principal que establece un contexto flexible para organizar sus elementos internos.</li>
+              <li><span class="fw-bold">Elementos Flex (Flex Items)</span>: Los hijos directos del contenedor flex.
+                Estos elementos se convierten en elementos flexibles y se organizan según las propiedades de Flexbox.
+              </li>
+              <li><span class="fw-bold">Eje Principal (Main Axis)</span>: El eje a lo largo del cual se organizan los
+                elementos flex. La dirección del eje principal se define con la propiedad <code
+                  class="language-css">flex-direction</code>.</li>
+              <li><span class="fw-bold">Eje Transversal (Cross Axis)</span>: El eje perpendicular al eje principal. La
+                alineación de los elementos flex a lo largo del eje transversal se controla con la propiedad <code
+                  class="language-css">align-items</code> y <code class="language-css">align-content</code>.</li>
+            </ul>
+          </div>
+          <!-- Conceptos Básicos Fin -->
+          <hr class="subtle-divider" />
+
+          <!-- Contenedor Flexible -->
+          <div id="contenedor-flexible" class="mt-5">
+            <h2>Contenedor Flexible</h2>
+            <!-- ¿Qué es Convertir un Contenedor en Flexible?  -->
+            <div id="que-es-convertir-un-contenedor-en-flexible">
+              <h3>¿Qué es Convertir un Contenedor en Flexible? </h3>
+              <p>Cuando se activa Flexbox en un contenedor (<code class="language-css">display: flex</code>), por
+                defecto los elementos hijos se organizan en una sola fila horizontal (<code
+                  class="language-css">flex-direction: row</code>), comenzando desde la izquierda hacia la derecha.
+              </p>
+              <p>Cada elemento mantiene su tamaño natural y no se ajusta automáticamente al ancho total del
+                contenedor, ya que el valor predeterminado de flex-wrap es <code class="language-html">nowrap</code>
+                (todos los elementos permanecen en una sola línea).</p>
+              <p>Además, los elementos se alinean al inicio del eje principal (<code
+                  class="language-css">justify-content: flex-start</code>) y se estiran para ocupar toda la altura del
+                contenedor a lo largo del eje transversal (<code class="language-css">align-items:
+                  stretch</code>).</p>
+              <p>En resumen, por defecto Flexbox distribuye los elementos en fila, sin envolver, alineados al inicio y
+                estirados verticalmente.</p>
+              <!-- Ejemplo -->
+              <div class="row">
+                <div class="ej-ejemplo">
+                  <div class="row ej-ejecutado mt-3">
+                    <!-- código ejecutado -->
+                    <div class="mb-3">
+                      <div>
+                        <div>
+                          <p>Contenedor Normal</p>
+                          <div class="ej-normal-contenedor">
+                            <div class="ej-flex-elemento">1</div>
+                            <div class="ej-flex-elemento">2</div>
+                            <div class="ej-flex-elemento">3</div>
+                          </div>
+                        </div>
+                        <br>
+                        <div>
+                          <p>Contenedor Flex</p>
+                          <div class="ej-normal-contenedor ej-flex">
+                            <div class="ej-flex-elemento">1</div>
+                            <div class="ej-flex-elemento">2</div>
+                            <div class="ej-flex-elemento">3</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- código ejecutado fin -->
+                  </div>
+                  <div class="row">
+                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <!-- código HTML -->
+                      <pre>
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          <div>
+                            &lt;div&gt;
+                              &lt;p&gt;Contenedor Normal&lt;/p&gt;
+                              &lt;div class="ej-normal-contenedor"&gt;
+                                &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;br&gt;
+                            &lt;div&gt;
+                              &lt;p&gt;Contenedor Flex&lt;/p&gt;
+                              &lt;div class="ej-normal-contenedor ej-flex"&gt;
+                                &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;                          
+                          </div>       
+                        </code>
+                        </pre>
+                      <!-- código HTML -->
+                    </div>
+                    <div class="ej-code-css col-lg-6 mb-3">
+                      <!-- código CSS -->
+                      <pre>
+                        <code class="language-css" data-prismjs-copy="Copy">
+                          <div>
+                            /* Todos los ejemplos*/
+                            .ej-normal-contenedor {
+                              padding: 20px;
+                              border: 3px solid green;
+                              background-color: green;
+                            }
+
+                            .ej-flex-elemento {
+                              border: 3px solid red;
+                              width: 100px;
+                              background-color: white;
+                              color: black;
+                            }
+
+                            .ej-flex-contenedor-flex {
+                              display: flex;
+                              padding: 20px;
+                              border: 3px solid green;
+                            }
+
+                            .ej-flex-elemento-flex {
+                              border-top: 3px solid red;
+                              border-bottom: 3px solid red;
+                              border-left: 3px solid red;
+                              width: 100px;
+                            }
+
+                            .ej-flex-elemento-flex:nth-child(3) {
+                              border-right: 3px solid red;
+                            }
+
+                            .ej-flex-contenedor-normal {
+                              padding: 20px;
+                              border: 3px solid green;
+                            }
+
+                            /* css-0301_flexbox.html - flex-direction */
+                            .ej-flex {
+                              display: flex;
+                            }
+                          </div>    
+                        </code>
+                      </pre>
+                      <!-- código HTML -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Ejemplo fin -->
+              <p>El elemento contenedor flexible puede tener las siguientes propiedades:</p>
+            </div>
+
+            <!-- display  -->
+            <div id="display">
+              <h3><code class="language-css">display: flex | inline-flex</code></h3>
+              <p>La propiedad <code class="language-css">display: flex</code> o <code
+                  class="language-css">display: inline-flex</code> activa el <span class="fw-bold">modelo de diseño
+                  flexible (Flexbox)</span> en
+                un elemento HTML:</p>
+              <ul>
+                <li><code class="language-css">display: flex;</code>: convierte al elemento en un contenedor
+                  flexible
+                  de tipo bloque, ocupando todo el ancho disponible y ubicándose en una nueva línea.</li>
+                <li><code class="language-css">display: inline-flex;</code>: crea también un contenedor flexible,
+                  pero de tipo en línea, lo que permite que se sitúe junto a otros elementos sin ocupar toda la
+                  fila.</li>
+              </ul>
+              <!-- Ejemplo -->
+              <div class="row">
+                <div class="ej-ejemplo">
+                  <div class="row ej-ejecutado mt-3">
+                    <!-- código ejecutado -->
+                    <div>
+                      <div>
+                        <p><code class="language-css">display: flex;</code></p>
+                        <div class="ej-normal-contenedor ej-flex">
+                          <div class="ej-flex-elemento">1</div>
+                          <div class="ej-flex-elemento">2</div>
+                          <div class="ej-flex-elemento">3</div>
+                        </div>
+                      </div>
+                      <br>
+                      <div>
+                        <p><code class="language-css">display: inflex;</code></p>
+                        <div class="ej-normal-contenedor ej-inline-flex">
+                          <div class="ej-flex-elemento">1</div>
+                          <div class="ej-flex-elemento">2</div>
+                          <div class="ej-flex-elemento">3</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- código ejecutado fin -->
+                  </div>
+                  <div class="row">
+                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <!-- código HTML -->
+                      <pre>
+                        <code class="language-html" data-prismjs-copy="Copy">
+                        <div>
+                          &lt;div&gt;
+                            &lt;p&gt;&lt;code class="language-css"&gt;display: flex;&lt;/code&gt;&lt;/p&gt;
+                            &lt;div class="ej-normal-contenedor ej-flex"&gt;
+                              &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                              &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                              &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                          &lt;br&gt;
+                          &lt;div&gt;
+                            &lt;p&gt;&lt;code class="language-css"&gt;display: inflex;&lt;/code&gt;&lt;/p&gt;
+                            &lt;div class="ej-normal-contenedor ej-inline-flex"&gt;
+                              &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                              &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                              &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        </div>    
+                        </code>
+                      </pre>
+                      <!-- código HTML -->
+                    </div>
+                    <div class="ej-code-css col-lg-6 mb-3">
+                      <!-- código CSS -->
+                      <pre>
+                        <code class="language-css" data-prismjs-copy="Copy">
+                          <div>
+                            /* Todos los ejemplos*/
+                            .ej-normal-contenedor {
+                              padding: 20px;
+                              border: 3px solid green;
+                              background-color: green;
+                            }
+
+                            .ej-flex-elemento {
+                              border: 3px solid red;
+                              width: 100px;
+                              background-color: white;
+                              color: black;
+                            }
+
+                            .ej-flex-contenedor-flex {
+                              display: flex;
+                              padding: 20px;
+                              border: 3px solid green;
+                            }
+
+                            .ej-flex-elemento-flex {
+                              border-top: 3px solid red;
+                              border-bottom: 3px solid red;
+                              border-left: 3px solid red;
+                              width: 100px;
+                            }
+
+                            .ej-flex-contenedor-normal {
+                              padding: 20px;
+                              border: 3px solid green;
+                            }
+
+                            .ej-flex {
+                              display: flex;
+                            }
+
+                            /* css-0301_flexbox.html - display */
+                            .ej-inline-flex {
+                              display: inline-flex;
+                            }
+                          </div>
+                        </code>
+                      </pre>
+                      <!-- código HTML -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Ejemplo fin -->
+              <p>En ambos casos, los hijos directos del contenedor se convierten en <span class="fw-bold">elementos
+                  flexibles (flex items)</span>, que pueden alinearse, distribuirse y dimensionarse dinámicamente
+                según las
+                propiedades del
+                modelo Flexbox.</p>
+            </div>
+            <!-- display  fin -->
+
+            <!-- flex-direction  -->
+            <div id="flex-direction">
+              <h3><code class="language-css">flex-direction: row | row-reverse | column | column-reverse;</code>
+              </h3>
+              <p>La propiedad <code class="language-css">flex-direction</code> define la <span class="fw-bold">dirección
+                  del eje principal</span>
+                en un contenedor flexible (Flexbox), determinando cómo se colocan los elementos flexibles (flex
+                items) dentro del contenedor:
+              </p>
+              <ul>
+                <li><code class="language-css">row</code> (valor por defecto): Los elementos se organizan en una fila
+                  horizontal, de izquierda a derecha. El eje principal es horizontal y el eje transversal es vertical.
+                </li>
+                <li><code class="language-css">row-reverse</code>:Los elementos se organizan en una fila horizontal,
+                  pero en sentido inverso, de derecha a izquierda. El eje principal sigue siendo horizontal, pero con
+                  dirección invertida.</li>
+                <li><code class="language-css">column</code>: Los elementos se organizan en una columna vertical, de
+                  arriba hacia abajo. El eje principal es vertical y el eje transversal es horizontal.</li>
+                <li><code class="language-css">column-reverse</code>: Los elementos se organizan en una columna
+                  vertical, pero en sentido inverso, de abajo hacia arriba. El eje principal es vertical, con dirección
+                  invertida.</li>
+              </ul>
+              <!-- Ejemplo -->
+              <div class="row">
+                <div class="ej-ejemplo">
+                  <div class="row ej-ejecutado mt-3">
+                    <!-- código ejecutado -->
+                    <div>
+                      <div>
+                        <p><code class="language-css">flex-direction: row;</code></p>
+                        <div class="ej-normal-contenedor ej-flex ej-row">
+                          <div class="ej-flex-elemento">1</div>
+                          <div class="ej-flex-elemento">2</div>
+                          <div class="ej-flex-elemento">3</div>
+                        </div>
+                      </div>
+                      <br>
+                      <div>
+                        <p><code class="language-css">flex-direction: row-reverse;</code></p>
+                        <div class="ej-normal-contenedor ej-flex ej-row-reverse">
+                          <div class="ej-flex-elemento">1</div>
+                          <div class="ej-flex-elemento">2</div>
+                          <div class="ej-flex-elemento">3</div>
+                        </div>
+                      </div>
+                      <br>
+                      <div>
+                        <p><code class="language-css">flex-direction: column;</code></p>
+                        <div class="ej-normal-contenedor ej-flex ej-column">
+                          <div class="ej-flex-elemento">1</div>
+                          <div class="ej-flex-elemento">2</div>
+                          <div class="ej-flex-elemento">3</div>
+                        </div>
+                      </div>
+                      <br>
+                      <div>
+                        <p><code class="language-css">flex-direction: column-reverse;</code></p>
+                        <div class="ej-normal-contenedor ej-flex ej-column-reverse">
+                          <div class="ej-flex-elemento">1</div>
+                          <div class="ej-flex-elemento">2</div>
+                          <div class="ej-flex-elemento">3</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- código ejecutado fin -->
+                  </div>
+                  <div class="row">
+                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <!-- código HTML -->
+                      <pre>
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          <div>
+                            &lt;div&gt;
+                              &lt;p&gt;&lt;code class="language-css"&gt;flex-direction: row;&lt;/code&gt;&lt;/p&gt;
+                              &lt;div class="ej-normal-contenedor ej-flex ej-row"&gt;
+                                &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;br&gt;
+                            &lt;div&gt;
+                              &lt;p&gt;&lt;code class="language-css"&gt;flex-direction: row-reverse;&lt;/code&gt;&lt;/p&gt;
+                              &lt;div class="ej-normal-contenedor ej-flex ej-row-reverse"&gt;
+                                &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;br&gt;
+                            &lt;div&gt;
+                              &lt;p&gt;&lt;code class="language-css"&gt;flex-direction: column;&lt;/code&gt;&lt;/p&gt;
+                              &lt;div class="ej-normal-contenedor ej-flex ej-column"&gt;
+                                &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;br&gt;
+                            &lt;div&gt;
+                              &lt;p&gt;&lt;code class="language-css"&gt;flex-direction: column-reverse;&lt;/code&gt;&lt;/p&gt;
+                              &lt;div class="ej-normal-contenedor ej-flex ej-column-reverse"&gt;
+                                &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;                            
+                          </div>    
+                        </code>
+                      </pre>
+                      <!-- código HTML -->
+                    </div>
+                    <div class="ej-code-css col-lg-6 mb-3">
+                      <!-- código CSS -->
+                      <pre>
+                        <code class="language-css" data-prismjs-copy="Copy">
+                        <div>
+                          /* Todos los ejemplos*/
+                          .ej-normal-contenedor {
+                            padding: 20px;
+                            border: 3px solid green;
+                            background-color: green;
+                          }
+
+                          .ej-flex-elemento {
+                            border: 3px solid red;
+                            width: 100px;
+                            background-color: white;
+                            color: black;
+                          }
+
+                          .ej-flex-contenedor-flex {
+                            display: flex;
+                            padding: 20px;
+                            border: 3px solid green;
+                          }
+
+                          .ej-flex-elemento-flex {
+                            border-top: 3px solid red;
+                            border-bottom: 3px solid red;
+                            border-left: 3px solid red;
+                            width: 100px;
+                          }
+
+                          .ej-flex-contenedor-normal {
+                            padding: 20px;
+                            border: 3px solid green;
+                          }
+
+                          /* css-0301_flexbox.html - flex-direction */
+                          .ej-flex {
+                            display: flex;
+                          }
+
+                          .ej-row {
+                            flex-direction: row;
+                          }
+
+                          .ej-row-reverse {
+                            flex-direction: row-reverse;
+                          }
+
+                          .ej-column {
+                            flex-direction: column;
+                          }
+
+                          .ej-column-reverse {
+                            flex-direction: column-reverse;
+                          }                    
+                        </div>        
+                        </code>
+                      </pre>
+                      <!-- código HTML -->
+                    </div>
+                  </div>
+                </div>
+                <p>En resumen, <code class="language-css">flex-direction</code> controla la orientación y el sentido en
+                  que los elementos flexibles se disponen dentro del contenedor.</p>
+              </div>
+              <!-- Ejemplo fin -->
+            </div>
+            <!-- flex-direction  fin -->
+
+            <!-- flex-wrap: nowrap | wrap | wrap-reverse;  -->
+            <div id="flex-wrap">
+              <h3><code class="language-css">flex-wrap: nowrap | wrap | wrap-reverse;</code> </h3>
+              <p>La propiedad <code class="language-css">flex-wrap</code> en Flexbox controla si los elementos flexibles
+                (flex items) deben permanecer en una sola línea o si pueden pasar a una nueva línea cuando el espacio
+                del contenedor no es suficiente:
+              </p>
+              <ul>
+                <li><code class="language-css">nowrap</code> (valor por defecto): Todos los elementos flexibles se
+                  colocan en una sola línea, incluso si exceden el ancho del contenedor. Esto puede hacer que los
+                  elementos se compriman para caber en el espacio disponible.</li>
+                <li><code class="language-css">wrap</code>: Los elementos flexibles se distribuyen en varias líneas
+                  cuando el espacio no alcanza. Las líneas adicionales se colocan debajo de la anterior (en dirección
+                  normal del flujo).</li>
+                <li><code class="language-css">wrap-reverse</code>: Similar a wrap, pero las líneas adicionales se
+                  colocan encima de la línea inicial, invirtiendo el orden vertical del apilamiento.</li>
+              </ul>
+
+              <!-- Ejemplo -->
+              <div class="row">
+                <div class="ej-ejemplo">
+                  <div class="row ej-ejecutado mt-3">
+                    <!-- código ejecutado -->
+                    <div>
+                      <div>
+                        <p><code class="language-css">flex-wrap: nowrap</code></p>
+                        <div class="ej-normal-contenedor ej-flex ej-nowrap">
+                          <div class="ej-flex-elemento">1</div>
+                          <div class="ej-flex-elemento">2</div>
+                          <div class="ej-flex-elemento">3</div>
+                          <div class="ej-flex-elemento">4</div>
+                          <div class="ej-flex-elemento">5</div>
+                          <div class="ej-flex-elemento">6</div>
+                          <div class="ej-flex-elemento">7</div>
+                          <div class="ej-flex-elemento">8</div>
+                          <div class="ej-flex-elemento">9</div>
+                          <div class="ej-flex-elemento">10</div>
+                          <div class="ej-flex-elemento">11</div>
+                          <div class="ej-flex-elemento">12</div>
+                          <div class="ej-flex-elemento">13</div>
+                          <div class="ej-flex-elemento">14</div>
+                          <div class="ej-flex-elemento">16</div>
+                        </div>
+                      </div>
+                      <br>
+                      <div>
+                        <p><code class="language-css">flex-wrap: wrap;</code></p>
+                        <div class="ej-normal-contenedor ej-flex ej-wrap">
+                          <div class="ej-flex-elemento">1</div>
+                          <div class="ej-flex-elemento">2</div>
+                          <div class="ej-flex-elemento">3</div>
+                          <div class="ej-flex-elemento">4</div>
+                          <div class="ej-flex-elemento">5</div>
+                          <div class="ej-flex-elemento">6</div>
+                          <div class="ej-flex-elemento">7</div>
+                          <div class="ej-flex-elemento">8</div>
+                          <div class="ej-flex-elemento">9</div>
+                          <div class="ej-flex-elemento">10</div>
+                          <div class="ej-flex-elemento">11</div>
+                          <div class="ej-flex-elemento">12</div>
+                          <div class="ej-flex-elemento">13</div>
+                          <div class="ej-flex-elemento">14</div>
+                          <div class="ej-flex-elemento">16</div>
+                        </div>
+                      </div>
+                      <br>
+                      <div>
+                        <p><code class="language-css">flex-wrap: wrap-reverse;</code></p>
+                        <div class="ej-normal-contenedor ej-flex ej-wrap-reverse">
+                          <div class="ej-flex-elemento">1</div>
+                          <div class="ej-flex-elemento">2</div>
+                          <div class="ej-flex-elemento">3</div>
+                          <div class="ej-flex-elemento">4</div>
+                          <div class="ej-flex-elemento">5</div>
+                          <div class="ej-flex-elemento">6</div>
+                          <div class="ej-flex-elemento">7</div>
+                          <div class="ej-flex-elemento">8</div>
+                          <div class="ej-flex-elemento">9</div>
+                          <div class="ej-flex-elemento">10</div>
+                          <div class="ej-flex-elemento">11</div>
+                          <div class="ej-flex-elemento">12</div>
+                          <div class="ej-flex-elemento">13</div>
+                          <div class="ej-flex-elemento">14</div>
+                          <div class="ej-flex-elemento">16</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- código ejecutado fin -->
+                  </div>
+                  <div class="row">
+                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <!-- código HTML -->
+                      <pre>
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          <div>
+                            &lt;div&gt;
+                              &lt;p&gt;&lt;code class="language-css"&gt;flex-direction: row;&lt;/code&gt;&lt;/p&gt;
+                              &lt;div class="ej-normal-contenedor ej-flex ej-nowrap"&gt;
+                                &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;4&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;5&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;6&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;7&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;8&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;9&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;10&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;11&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;12&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;13&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;14&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;16&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;br&gt;
+                            &lt;div&gt;
+                              &lt;p&gt;&lt;code class="language-css"&gt;flex-direction: row;&lt;/code&gt;&lt;/p&gt;
+                              &lt;div class="ej-normal-contenedor ej-flex ej-wrap"&gt;
+                                &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;4&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;5&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;6&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;7&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;8&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;9&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;10&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;11&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;12&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;13&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;14&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;16&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;br&gt;
+                            &lt;div&gt;
+                              &lt;p&gt;&lt;code class="language-css"&gt;flex-direction: row;&lt;/code&gt;&lt;/p&gt;
+                              &lt;div class="ej-normal-contenedor ej-flex ej-wrap-reverse"&gt;
+                                &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;4&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;5&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;6&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;7&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;8&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;9&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;10&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;11&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;12&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;13&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;14&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;16&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;                            
+                          </div>    
+                        </code>
+                          </pre>
+                      <!-- código HTML -->
+                    </div>
+                    <div class="ej-code-css col-lg-6 mb-3">
+                      <!-- código CSS -->
+                      <pre>
+                        <code class="language-css" data-prismjs-copy="Copy">
+                          <div>
+                            /* Todos los ejemplos*/
+                            .ej-normal-contenedor {
+                              padding: 20px;
+                              border: 3px solid green;
+                              background-color: green;
+                            }
+
+                            .ej-flex-elemento {
+                              border: 3px solid red;
+                              width: 100px;
+                              background-color: white;
+                              color: black;
+                            }
+
+                            .ej-flex-contenedor-flex {
+                              display: flex;
+                              padding: 20px;
+                              border: 3px solid green;
+                            }
+
+                            .ej-flex-elemento-flex {
+                              border-top: 3px solid red;
+                              border-bottom: 3px solid red;
+                              border-left: 3px solid red;
+                              width: 100px;
+                            }
+
+                            .ej-flex-contenedor-normal {
+                              padding: 20px;
+                              border: 3px solid green;
+                            }
+
+                            .ej-flex {
+                              display: flex;
+                            }
+
+                            /* css-0301_flexbox.html - flex-wrap */
+                            .ej-nowrap {
+                              flex-wrap: nowrap; 
+                            }
+
+                            .ej-wrap {
+                              flex-wrap: wrap; 
+                            }
+
+                            .ej-wrap-reverse {
+                              flex-wrap: wrap-reverse; 
+                            }
+                          </div>        
+                        </code>
+                      </pre>
+                      <!-- código HTML -->
+                    </div>
+                  </div>
+                </div>
+                <p>En resumen, <code class="language-css">flex-wrap</code> determina si los elementos flexibles deben
+                  mantenerse en una sola línea o repartirse en varias, y en qué dirección deben hacerlo.</p>
+              </div>
+              <!-- Ejemplo fin -->
+            </div>
+            <!-- flex-wrap flex-wrap: nowrap | wrap | wrap-reverse;S fin -->
+
+            <!-- flex-flow: <flex-direction> <flex-wrap>;  -->
+            <div id="flex-flow">
+              <h3><code class="language-css">flex-flow: &lt;flex-direction> &lt;flex-wrap>;</code></h3>
+              <p>La propiedad <code class="language-css">flex-flow</code> es una <span class="fw-bold">propiedad
+                  abreviada (shorthand)</span> de Flexbox que combina dos propiedades en una sola declaración:</p>
+              <ul>
+                <li><code class="language-css">flex-direction</code>: Define la dirección principal en la que se
+                  organizan los elementos flexibles (por ejemplo, en fila o en columna).</li>
+                <li><code class="language-css">flex-wrap</code>: Controla si los elementos flexibles deben ajustarse
+                  (envolverse) a una nueva línea o permanecer todos en una sola línea.</li>
+              </ul>
+              <!-- Valores posibles -->
+              <div>
+                <h4>Valores posibles</h4>
+                <ul>
+                  <li>Para <code class="language-code">flex-wrap:</code>
+                    <ul>
+                      <li><code class="language-css">row</code>: Los elementos se organizan en una fila, de izquierda a
+                        derecha (valor por defecto).</li>
+                      <li><code class="language-css">row-reverse</code>: En una fila, pero de derecha a izquierda.</li>
+                      <li><code class="language-css">column</code>: En una columna, de arriba hacia abajo.</li>
+                      <li><code class="language-css">column-reverse</code>: En una columna, pero de abajo hacia arriba.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>Para <code class="language-code">flex-wrap:</code>
+                    <ul>
+                      <li><code class="language-css">nowrap</code>: Todos los elementos permanecen en una sola línea
+                        (valor por defecto).</li>
+                      <li><code class="language-css">wrap</code>: Los elementos se ajustan a una nueva línea si no
+                        caben.</li>
+                      <li><code class="language-css">wrap-reverse</code>: Igual que wrap, pero las líneas se apilan en
+                        sentido inverso.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!-- Valores posibles  fin -->
+              <!-- Valor por defecto para flex-flow  -->
+              <div>
+                <h4>Valor por defecto para <code class="language-css">flex-flow</code></h4>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      flex-flow: row nowrap;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- Valor por defecto para flex-flow  fin -->
+              <!-- Ejemplos con flex-flow  -->
+              <div>
+                <h4>Ejemplos con flex-flow </h4>
+                <div class="row">
+                  <div class="ej-ejemplo">
+                    <div class="row ej-ejecutado mt-3">
+                      <!-- código ejecutado -->
+                      <div>
+                        <div>
+                          <p><code class="language-css">flex-flow: row nowrap;</code>: Valores por defecto</p>
+                          <div class="ej-normal-contenedor ej-flex ej-flex-flow-row-nowrap">
+                            <div class="ej-flex-elemento">1</div>
+                            <div class="ej-flex-elemento">2</div>
+                            <div class="ej-flex-elemento">3</div>
+                            <div class="ej-flex-elemento">4</div>
+                            <div class="ej-flex-elemento">5</div>
+                            <div class="ej-flex-elemento">6</div>
+                            <div class="ej-flex-elemento">7</div>
+                            <div class="ej-flex-elemento">8</div>
+                            <div class="ej-flex-elemento">9</div>
+                            <div class="ej-flex-elemento">10</div>
+                          </div>
+                        </div>
+                        <br>
+                        <div>
+                          <p><code class="language-css">flex-flow: column wrap;</code></p>
+                          <div class="ej-normal-contenedor ej-flex ej-flex-flow-column-wrap">
+                            <div class="ej-flex-elemento">1</div>
+                            <div class="ej-flex-elemento">2</div>
+                            <div class="ej-flex-elemento">3</div>
+                            <div class="ej-flex-elemento">4</div>
+                            <div class="ej-flex-elemento">5</div>
+                            <div class="ej-flex-elemento">6</div>
+                            <div class="ej-flex-elemento">7</div>
+                            <div class="ej-flex-elemento">8</div>
+                            <div class="ej-flex-elemento">9</div>
+                            <div class="ej-flex-elemento">10</div>
+                          </div>
+                        </div>
+                        <br>
+                        <div>
+                          <p><code class="language-css">flex-flow: row nowrap;</code>: Valores por defecto</p>
+                          <div class="ej-normal-contenedor ej-flex ej-flex-flow-row-wrap">
+                            <div class="ej-flex-elemento">1</div>
+                            <div class="ej-flex-elemento">2</div>
+                            <div class="ej-flex-elemento">3</div>
+                            <div class="ej-flex-elemento">4</div>
+                            <div class="ej-flex-elemento">5</div>
+                            <div class="ej-flex-elemento">6</div>
+                            <div class="ej-flex-elemento">7</div>
+                            <div class="ej-flex-elemento">8</div>
+                            <div class="ej-flex-elemento">9</div>
+                            <div class="ej-flex-elemento">10</div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- código ejecutado fin -->
+                    </div>
+                    <div class="row">
+                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <!-- código HTML -->
+                        <pre>
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          <div>
+                            &lt;div&gt;
+                              &lt;p&gt; Valores por defecto: &lt;code class="language-css"&gt;flex-flow: row nowrap;&lt;/code&gt;&lt;/p&gt;
+                              &lt;div class="ej-normal-contenedor ej-flex ej-flex-flow-row-nowrap"&gt;
+                                &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;4&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;5&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;6&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;7&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;8&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;9&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;10&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;br&gt;
+                            &lt;div&gt;
+                              &lt;p&gt;&lt;code class="language-css"&gt;flex-flow: column wrap;&lt;/code&gt;&lt;/p&gt;
+                              &lt;div class="ej-normal-contenedor ej-flex ej-flex-flow-column-wrap"&gt;
+                                &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;4&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;5&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;6&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;7&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;8&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;9&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;10&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;br&gt;
+                            &lt;div&gt;
+                              &lt;p&gt;&lt;code class="language-css"&gt;flex-flow: row wrap;&lt;/code&gt;&lt;/p&gt;
+                              &lt;div class="ej-normal-contenedor ej-flex ej-flex-flow-row-wrap"&gt;
+                                &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;4&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;5&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;6&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;7&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;8&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;9&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;10&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;                            
+                          </div>        
+                        </code>
+                      </pre>
+                        <!-- código HTML -->
+                      </div>
+                      <div class="ej-code-css col-lg-6 mb-3">
+                        <!-- código CSS -->
+                        <pre>
+                          <code class="language-css" data-prismjs-copy="Copy">
+                            <div>
+                              /* Todos los ejemplos*/
+                              .ej-normal-contenedor {
+                                padding: 20px;
+                                border: 3px solid green;
+                                background-color: green;
+                              }
+
+                              .ej-flex-elemento {
+                                border: 3px solid red;
+                                width: 100px;
+                                background-color: white;
+                                color: black;
+                              }
+
+                              .ej-flex-contenedor-flex {
+                                display: flex;
+                                padding: 20px;
+                                border: 3px solid green;
+                              }
+
+                              .ej-flex-contenedor-normal {
+                                padding: 20px;
+                                border: 3px solid green;
+                              }
+
+                              .ej-flex {
+                                display: flex;
+                              }
+
+                              /* css-0301_flexbox.html - flex-flow */
+                              .ej-flex-flow-row-nowrap {
+                                flex-flow: row nowrap;
+                              }
+
+                              .ej-flex-flow-column-wrap {
+                                height: 200px;
+                                flex-flow: column wrap;
+                              }
+
+                              .ej-flex-flow-row-wrap {
+                                height: 100px;
+                                flex-flow: row wrap;
+                              }                              
+                            </div>   
+                          </code>
+                        </pre>
+                        <!-- código HTML -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Ejemplo fin -->
+              </div>
+              <!-- Ejemplos con flex-flow  fin -->
+
+
+
+            </div>
+            <!-- flex-flow: <flex-direction> <flex-wrap>;  fin -->
+
+            <!-- justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly  -->
+            <div id="justify-content">
+              <h3><code
+                  class="language-css">justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly</code>
+              </h3>
+              <p>La propiedad <code class="language-css">justify-content</code> en Flexbox se utiliza para alinear y
+                distribuir los elementos flexibles (flex items) a lo largo del eje principal (main axis) del contenedor
+                flexible.</p>
+              <p>Su comportamiento depende del valor de <code class="language-css">flex-direction</code>, ya que este
+                define si el eje principal es horizontal o vertical.</p>
+              <!-- Valores principales de justify-content  -->
+              <div>
+                <h4>Valores principales de <code class="language-css">justify-content</code></h4>
+                <ul>
+                  <li><code class="language-css">flex-start</code>: Alinea todos los elementos al inicio del eje
+                    principal. Es el valor por defecto.</li>
+                  <li><code class="language-css">flex-end</code>: Alinea todos los elementos al final del eje principal.
+                  </li>
+                  <li><code class="language-css">center</code>: Centra los elementos en el medio del eje principal.</li>
+                  <li><code class="language-css">space-between</code>: Distribuye los elementos dejando el mismo espacio
+                    entre ellos, sin espacio al inicio ni al final.</li>
+                  <li><code class="language-css">space-around</code>: Asigna espacios iguales alrededor de cada
+                    elemento, dejando la mitad del espacio en los extremos.</li>
+                  <li><code class="language-css">space-evenly</code>: Distribuye los elementos con espacios
+                    completamente iguales entre todos y también en los extremos.</li>
+                </ul>
+              </div>
+              <!-- Valores principales de justify-content  fin -->
+              <!-- Valores de alineación más recientes (CSS Box Alignment Level 3)  -->
+              <div>
+                <h4>Valores de Alineación más Recientes (CSS Box Alignment Level 3)</h4>
+                <ul>
+                  <li><code class="language-css">start</code>: Alinea los elementos al inicio físico del contenedor
+                    (distingue entre direcciones LTR y RTL).</li>
+                  <li><code class="language-css">end</code>: Alinea los elementos al final físico del contenedor.</li>
+                  <li><code class="language-css">left</code>: Alinea al lado izquierdo, sin importar la dirección del
+                    texto.</li>
+                  <li><code class="language-css">right</code>: Alinea al lado derecho, sin importar la dirección del
+                    texto.</li>
+                </ul>
+
+                <div class="text-bg-light p-3 mb-3">
+                  Estos valores (<code class="language-css">start</code>, <code class="language-css">end</code>, <code
+                    class="language-css">left</code>, <code class="language-css">right</code>) tienen un soporte más
+                  reciente y su comportamiento puede
+                  variar según el navegador.</div>
+              </div>
+              <!-- Valores de alineación más recientes (CSS Box Alignment Level 3)  fin -->
+              <!-- Ejemplos con justify-content  -->
+              <div>
+                <h4>Ejemplos con justify-content </h4>
+                <!-- Ejemplo -->
+                <div class="row">
+                  <div class="ej-ejemplo">
+                    <div class="row ej-ejecutado mt-3">
+                      <!-- código ejecutado -->
+                      <div>
+                        <div>
+                          <p><code class="language-css">justify-content: flex-start;</code></p>
+                          <div class="ej-normal-contenedor ej-flex ej-flex-start">
+                            <div class="ej-flex-elemento">1</div>
+                            <div class="ej-flex-elemento">2</div>
+                            <div class="ej-flex-elemento">3</div>
+                          </div>
+                        </div>
+                        <div>
+                          <p><code class="language-css">justify-content: flex-end;</code></p>
+                          <div class="ej-normal-contenedor ej-flex ej-flex-end">
+                            <div class="ej-flex-elemento">1</div>
+                            <div class="ej-flex-elemento">2</div>
+                            <div class="ej-flex-elemento">3</div>
+                          </div>
+                        </div>
+                        <div>
+                          <p><code class="language-css">justify-content: center;</code></p>
+                          <div class="ej-normal-contenedor ej-flex ej-flex-center">
+                            <div class="ej-flex-elemento">1</div>
+                            <div class="ej-flex-elemento">2</div>
+                            <div class="ej-flex-elemento">3</div>
+                          </div>
+                        </div>
+                        <div>
+                          <p><code class="language-css">justify-content: space-between</code></p>
+                          <div class="ej-normal-contenedor ej-flex ej-space-between">
+                            <div class="ej-flex-elemento">1</div>
+                            <div class="ej-flex-elemento">2</div>
+                            <div class="ej-flex-elemento">3</div>
+                          </div>
+                        </div>
+                        <div>
+                          <p><code class="language-css">justify-content: space-around;</code></p>
+                          <div class="ej-normal-contenedor ej-flex ej-justify-space-around">
+                            <div class="ej-flex-elemento">1</div>
+                            <div class="ej-flex-elemento">2</div>
+                            <div class="ej-flex-elemento">3</div>
+                          </div>
+                        </div>
+                        <div>
+                          <p><code class="language-css">justify-content:space-evenly;</code></p>
+                          <div class="ej-normal-contenedor ej-flex ej-justify-space-evenly ">
+                            <div class="ej-flex-elemento">1</div>
+                            <div class="ej-flex-elemento">2</div>
+                            <div class="ej-flex-elemento">3</div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- código ejecutado fin -->
+                    </div>
+                    <div class="row">
+                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <!-- código HTML -->
+                        <pre>
+                          <code class="language-html" data-prismjs-copy="Copy">
+                            <div>
+                              &lt;div&gt;
+                                &lt;p&gt;&lt;code class="language-css"&gt;justify-content: flex-start;&lt;/code&gt;&lt;/p&gt;
+                                &lt;div class="ej-normal-contenedor ej-flex ej-flex-start"&gt;
+                                  &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                  &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                  &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;div&gt;
+                                &lt;p&gt;&lt;code class="language-css"&gt;justify-content: flex-end;&lt;/code&gt;&lt;/p&gt;
+                                &lt;div class="ej-normal-contenedor ej-flex ej-flex-end"&gt;
+                                  &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                  &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                  &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;div&gt;
+                                &lt;p&gt;&lt;code class="language-css"&gt;justify-content: center;&lt;/code&gt;&lt;/p&gt;
+                                &lt;div class="ej-normal-contenedor ej-flex ej-flex-center"&gt;
+                                  &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                  &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                  &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;div&gt;
+                                &lt;p&gt;&lt;code class="language-css"&gt;justify-content: space-between&lt;/code&gt;&lt;/p&gt;
+                                &lt;div class="ej-normal-contenedor ej-flex ej-space-between"&gt;
+                                  &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                  &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                  &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;div&gt;
+                                &lt;p&gt;&lt;code class="language-css"&gt;justify-content: space-around;&lt;/code&gt;&lt;/p&gt;
+                                &lt;div class="ej-normal-contenedor ej-flex ej-justify-space-around"&gt;
+                                  &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                  &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                  &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;div&gt;
+                                &lt;p&gt;&lt;code class="language-css"&gt;justify-content:space-evenly;&lt;/code&gt;&lt;/p&gt;
+                                &lt;div class="ej-normal-contenedor ej-flex ej-justify-space-evenly "&gt;
+                                  &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                  &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                  &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;                                                            
+                            </div>        
+                          </code>
+                        </pre>
+                        <!-- código HTML -->
+                      </div>
+                      <div class="ej-code-css col-lg-6 mb-3">
+                        <!-- código CSS -->
+                        <pre>
+                          <code class="language-css" data-prismjs-copy="Copy">
+                            <div>
+                              /* Todos los ejemplos*/
+                              .ej-normal-contenedor {
+                                padding: 20px;
+                                border: 3px solid green;
+                                background-color: green;
+                              }
+
+                              .ej-flex-elemento {
+                                border: 3px solid red;
+                                width: 100px;
+                                background-color: white;
+                                color: black;
+                              }
+
+                              .ej-flex-contenedor-flex {
+                                display: flex;
+                                padding: 20px;
+                                border: 3px solid green;
+                              }
+
+                              .ej-flex-contenedor-normal {
+                                padding: 20px;
+                                border: 3px solid green;
+                              }
+
+                              .ej-flex {
+                                display: flex;
+                              }
+
+                              /* css-0301_flexbox.html - justify-content */
+                              .ej-flex-start {
+                                justify-content: flex-start;
+                              }
+
+                              .ej-flex-end {
+                                justify-content: flex-end;
+                              }
+
+                              .ej-flex-center {
+                                justify-content: center;
+                              }
+
+                              .ej-space-between {
+                                justify-content: space-between;
+                              }
+
+                              .ej-justify-space-around {
+                                justify-content: space-around;
+                              }
+
+                              .ej-justify-space-evenly {
+                                justify-content: space-evenly;
+                              }
+                            </div>        
+                          </code>
+                        </pre>
+                        <!-- código HTML -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Ejemplo fin -->
+                <p><code class="language-css">justify-content</code> controla cómo se reparten los elementos flexibles a
+                  lo largo del eje principal, determinando su posición y el espacio entre ellos dentro del contenedor
+                  flexible.</p>
+              </div>
+              <!-- Ejemplos con justify-content  fin -->
+            </div>
+            <!-- justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly  fin -->
+
+            <!-- align-items: stretch | flex-start | flex-end | center | baseline | normal | start | end;  -->
+            <div id="align-items">
+              <h3><code
+                  class="language-css">align-items: stretch | flex-start | flex-end | center | baseline | normal | start | end;</code>
+              </h3>
+              <p>La propiedad <code class="language-css">align-items</code> en Flexbox se utiliza para alinear los
+                elementos flexibles a lo largo del eje transversal (cross axis), es decir, en dirección perpendicular al
+                eje principal definido por <code class="language-css">flex-direction</code>.</p>
+              <p>Afecta a todos los elementos flexibles dentro del contenedor, y su comportamiento depende del tamaño
+                del contenedor y del alto o ancho de los elementos, según la orientación del eje.</p>
+              <ul>
+                <li><code class="language-css">stretch</code> (valor por defecto): Los elementos flexibles se estiran
+                  para ocupar todo el espacio disponible en el eje transversal. Ejemplo: en una fila (<code
+                    class="language-css">flex-direction:
+                  row</code>), los ítems se estiran verticalmente para igualar la altura del contenedor.</li>
+                <li><code class="language-css">flex-start</code>: Los elementos se alinean al inicio del eje transversal
+                  (parte superior si el eje es vertical).</li>
+                <li><code class="language-css">flex-end</code>:Los elementos se alinean al final del eje transversal
+                  (parte inferior si el eje es vertical).</li>
+                <li><code class="language-css">center</code>: Los elementos se centran a lo largo del eje transversal.
+                </li>
+                <li><code class="language-css">baseline</code>: Los elementos se alinean según la línea base del texto,
+                  útil cuando tienen diferentes alturas o tamaños de fuente.</li>
+                <li><code class="language-css">normal</code> (nuevo valor en especificaciones modernas): Indica que los
+                  elementos siguen el comportamiento de alineación predeterminado del modelo de caja, equivalente a
+                  stretch en la mayoría de los casos.</li>
+                <li><code class="language-css">start</code> y <code class="language-css">end</code> (nuevos valores
+                  lógicos)</code>: Permiten alinear los elementos al inicio o final lógico del eje transversal,
+                  considerando la dirección del texto o escritura (writing-mode), a diferencia de <code
+                    class="language-css">flex-start</code> y <code class="language-css">flex-end</code>, que son
+                  físicos.</li>
+              </ul>
+              <!-- Ejemplo -->
+              <div class="row">
+                <div class="ej-ejemplo">
+                  <div class="row ej-ejecutado mt-3">
+                    <!-- código ejecutado -->
+                    <div>
+                      <div>
+                        <p><code class="language-css">align-items: stretch;</code></p>
+                        <div class="ej-normal-contenedor ej-flex ej-flex-stretch">
+                          <div class="ej-flex-elemento-align-items">1</div>
+                          <div class="ej-flex-elemento-align-items">2</div>
+                          <div class="ej-flex-elemento-align-items">3</div>
+                        </div>
+                      </div>
+                      <div>
+                        <p><code class="language-css">align-items: flex-start;</code></p>
+                        <div class="ej-normal-contenedor ej-flex ej-flex-start">
+                          <div class="ej-flex-elemento-align-items">1</div>
+                          <div class="ej-flex-elemento-align-items">2</div>
+                          <div class="ej-flex-elemento-align-items">3</div>
+                        </div>
+                      </div>
+                      <div>
+                        <p><code class="language-css">align-items: flex-end;</code></p>
+                        <div class="ej-normal-contenedor ej-flex ej-flex-end">
+                          <div class="ej-flex-elemento-align-items">1</div>
+                          <div class="ej-flex-elemento-align-items">2</div>
+                          <div class="ej-flex-elemento-align-items">3</div>
+                        </div>
+                      </div>
+                      <div>
+                        <p><code class="language-css">align-items: center;</code></p>
+                        <div class="ej-normal-contenedor ej-flex ej-center">
+                          <div class="ej-flex-elemento-align-items">1</div>
+                          <div class="ej-flex-elemento-align-items">2</div>
+                          <div class="ej-flex-elemento-align-items">3</div>
+                        </div>
+                      </div>
+                      <div>
+                        <p><code class="language-css">align-items: baseline;</code></p>
+                        <div class="ej-normal-contenedor ej-flex ej-baseline">
+                          <div class="ej-flex-elemento-align-items">1</div>
+                          <div class="ej-flex-elemento-align-items">2</div>
+                          <div class="ej-flex-elemento-align-items">3</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- código ejecutado fin -->
+                  </div>
+                  <div class="row">
+                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <!-- código HTML -->
+                      <pre>
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          <div>
+                            &lt;div&gt;
+                              &lt;p&gt;&lt;code class="language-css"&gt;align-items: stretch;&lt;/code&gt;&lt;/p&gt;
+                              &lt;div class="ej-normal-contenedor ej-flex ej-flex-stretch"&gt;
+                                &lt;div class="ej-flex-elemento-align-items"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-align-items"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-align-items"&gt;3&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div&gt;
+                              &lt;p&gt;&lt;code class="language-css"&gt;align-items: flex-start;&lt;/code&gt;&lt;/p&gt;
+                              &lt;div class="ej-normal-contenedor ej-flex ej-flex-start"&gt;
+                                &lt;div class="ej-flex-elemento-align-items"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-align-items"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-align-items"&gt;3&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div&gt;
+                              &lt;p&gt;&lt;code class="language-css"&gt;align-items: flex-end;&lt;/code&gt;&lt;/p&gt;
+                              &lt;div class="ej-normal-contenedor ej-flex ej-flex-end"&gt;
+                                &lt;div class="ej-flex-elemento-align-items"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-align-items"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-align-items"&gt;3&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div&gt;
+                              &lt;p&gt;&lt;code class="language-css"&gt;align-items: center;&lt;/code&gt;&lt;/p&gt;
+                              &lt;div class="ej-normal-contenedor ej-flex ej-center"&gt;
+                                &lt;div class="ej-flex-elemento-align-items"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-align-items"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-align-items"&gt;3&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div&gt;
+                              &lt;p&gt;&lt;code class="language-css"&gt;align-items: baseline;&lt;/code&gt;&lt;/p&gt;
+                              &lt;div class="ej-normal-contenedor ej-flex ej-baseline"&gt;
+                                &lt;div class="ej-flex-elemento-align-items"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-align-items"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-align-items"&gt;3&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          </div>        
+                        </code>
+                          </pre>
+                      <!-- código HTML -->
+                    </div>
+                    <div class="ej-code-css col-lg-6 mb-3">
+                      <!-- código CSS -->
+                      <pre>
+                        <code class="language-css" data-prismjs-copy="Copy">
+                          <div>
+                            /* Todos los ejemplos*/
+                            .ej-normal-contenedor {
+                              padding: 10px;
+                              border: 3px solid green;
+                              background-color: green;
+                              height: 100px
+                            }
+
+                            .ej-flex {
+                              display: flex;
+                            }
+
+                            /* css-0301_flexbox.html - align-items */
+                            .ej-flex-elemento-align-items {
+                              border: 3px solid red;
+                              width: 100px;
+                              background-color: white;
+                              color: black;
+                            }
+
+                            .ej-flex-elemento-align-items:nth-child(2) {
+                              height: 70px;
+                              font-size: 50px;
+                            }
+
+                            .ej-flex-elemento-align-items:nth-child(3) {
+                              height: 50px;
+                              font-size: 30px;
+                            }
+
+                            .ej-flex-stretch {
+                              align-items: stretch
+                            }
+
+                            .ej-flex-start {
+                              align-items: flex-start;
+                            }
+
+                            .ej-flex-end {
+                              align-items: flex-end;
+                            }
+
+                            .ej-center {
+                              align-items: center;
+                            }
+
+                            .ej-baseline {
+                              align-items: baseline;
+                            }                            
+                          </div>      
+                        </code>
+                      </pre>
+                      <!-- código HTML -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Ejemplo fin -->
+            </div>
+            <!-- align-items: stretch | flex-start | flex-end | center | baseline | normal | start | end;  fin -->
+
+            <!-- align-content: stretch | flex-start | flex-end | center | space-between | space-around | space-evenly;  -->
+            <div id="align-content">
+              <h3><code
+                  class="language-css">align-content: stretch | flex-start | flex-end | center | space-between | space-around | space-evenly;</code>
+              </h3>
+              <p>La propiedad <code class="language-css">align-content</code> en Flexbox controla cómo se distribuyen
+                las líneas del contenedor flexible a lo largo del eje transversal (el eje perpendicular al eje
+                principal), cuando existen múltiples líneas de elementos (es decir, cuando <code
+                  class="language-css">flex-wrap</code> está en <code class="language-css">wrap</code> o <code
+                  class="language-css">wrap-reverse</code>).</p>
+              <p>En otras palabras, <code class="language-css">align-content</code> no afecta a los elementos
+                individuales, sino al espacio entre las filas o columnas completas dentro del contenedor.</p>
+              <ul>
+                <li><code class="language-css">stretch</code> (valor por defecto): Las líneas se estiran para ocupar
+                  todo el espacio disponible en el eje transversal.</li>
+                <li><code class="language-css">flex-start</code>: Todas las líneas se agrupan al inicio del eje
+                  transversal (por ejemplo, en la parte superior si el eje es vertical).</li>
+                <li><code class="language-css">flex-end</code>: Todas las líneas se agrupan al final del eje
+                  transversal.</li>
+                <li><code class="language-css">center</code>: Las líneas se agrupan en el centro del eje transversal.
+                </li>
+                <li><code class="language-css">space-between</code>: La primera línea se coloca al inicio y la última al
+                  final del eje transversal; el espacio restante se reparte equitativamente entre las líneas
+                  intermedias.</li>
+                <li><code class="language-css">space-around</code>: Se distribuye espacio igual alrededor de cada línea;
+                  esto genera medio espacio al inicio y al final del contenedor.</li>
+                <li><code class="language-css">space-evenly</code>: Se asigna el mismo espacio entre todas las líneas,
+                  incluyendo los bordes del contenedor.</li>
+              </ul>
+              <!-- Ejemplo -->
+              <div class="row">
+                <div class="ej-ejemplo">
+                  <div class="row ej-ejecutado mt-3">
+                    <!-- código ejecutado -->
+                    <div>
+                      <div>
+                        <p><code class="language-css">align-content: stretch;</code></p>
+                        <div class="ej-normal-contenedor-aling-content ej-flex ej-wrap ej-align-content-stretch">
+                          <div class="ej-flex-elemento">1</div>
+                          <div class="ej-flex-elemento">2</div>
+                          <div class="ej-flex-elemento">3</div>
+                          <div class="ej-flex-elemento">4</div>
+                          <div class="ej-flex-elemento">5</div>
+                          <div class="ej-flex-elemento">6</div>
+                          <div class="ej-flex-elemento">7</div>
+                          <div class="ej-flex-elemento">8</div>
+                          <div class="ej-flex-elemento">9</div>
+                          <div class="ej-flex-elemento">10</div>
+                          <div class="ej-flex-elemento">11</div>
+                          <div class="ej-flex-elemento">12</div>
+                          <div class="ej-flex-elemento">13</div>
+                          <div class="ej-flex-elemento">14</div>
+                          <div class="ej-flex-elemento">15</div>
+                          <div class="ej-flex-elemento">16</div>
+                          <div class="ej-flex-elemento">17</div>
+                          <div class="ej-flex-elemento">18</div>
+                          <div class="ej-flex-elemento">19</div>
+                          <div class="ej-flex-elemento">20</div>
+                        </div>
+                      </div>
+                      <div>
+                        <p><code class="language-css">align-content: flex-start;</code></p>
+                        <div class="ej-normal-contenedor-aling-content ej-flex ej-wrap ej-align-content-flex-start">
+                          <div class="ej-flex-elemento">1</div>
+                          <div class="ej-flex-elemento">2</div>
+                          <div class="ej-flex-elemento">3</div>
+                          <div class="ej-flex-elemento">4</div>
+                          <div class="ej-flex-elemento">5</div>
+                          <div class="ej-flex-elemento">6</div>
+                          <div class="ej-flex-elemento">7</div>
+                          <div class="ej-flex-elemento">8</div>
+                          <div class="ej-flex-elemento">9</div>
+                          <div class="ej-flex-elemento">10</div>
+                          <div class="ej-flex-elemento">11</div>
+                          <div class="ej-flex-elemento">12</div>
+                          <div class="ej-flex-elemento">13</div>
+                          <div class="ej-flex-elemento">14</div>
+                          <div class="ej-flex-elemento">15</div>
+                          <div class="ej-flex-elemento">16</div>
+                          <div class="ej-flex-elemento">17</div>
+                          <div class="ej-flex-elemento">18</div>
+                          <div class="ej-flex-elemento">19</div>
+                          <div class="ej-flex-elemento">20</div>
+                        </div>
+                      </div>
+                      <div>
+                        <p><code class="language-css">align-content: flex-end;</code></p>
+                        <div class="ej-normal-contenedor-aling-content ej-flex  ej-wrap ej-align-content-flex-end">
+                          <div class="ej-flex-elemento">1</div>
+                          <div class="ej-flex-elemento">2</div>
+                          <div class="ej-flex-elemento">3</div>
+                          <div class="ej-flex-elemento">4</div>
+                          <div class="ej-flex-elemento">5</div>
+                          <div class="ej-flex-elemento">6</div>
+                          <div class="ej-flex-elemento">7</div>
+                          <div class="ej-flex-elemento">8</div>
+                          <div class="ej-flex-elemento">9</div>
+                          <div class="ej-flex-elemento">10</div>
+                          <div class="ej-flex-elemento">11</div>
+                          <div class="ej-flex-elemento">12</div>
+                          <div class="ej-flex-elemento">13</div>
+                          <div class="ej-flex-elemento">14</div>
+                          <div class="ej-flex-elemento">15</div>
+                          <div class="ej-flex-elemento">16</div>
+                          <div class="ej-flex-elemento">17</div>
+                          <div class="ej-flex-elemento">18</div>
+                          <div class="ej-flex-elemento">19</div>
+                          <div class="ej-flex-elemento">20</div>
+                        </div>
+                      </div>
+                      <div>
+                        <p><code class="language-css">align-content: center;</code></p>
+                        <div class="ej-normal-contenedor-aling-content ej-flex ej-wrap ej-align-content-center">
+                          <div class="ej-flex-elemento">1</div>
+                          <div class="ej-flex-elemento">2</div>
+                          <div class="ej-flex-elemento">3</div>
+                          <div class="ej-flex-elemento">4</div>
+                          <div class="ej-flex-elemento">5</div>
+                          <div class="ej-flex-elemento">6</div>
+                          <div class="ej-flex-elemento">7</div>
+                          <div class="ej-flex-elemento">8</div>
+                          <div class="ej-flex-elemento">9</div>
+                          <div class="ej-flex-elemento">10</div>
+                          <div class="ej-flex-elemento">11</div>
+                          <div class="ej-flex-elemento">12</div>
+                          <div class="ej-flex-elemento">13</div>
+                          <div class="ej-flex-elemento">14</div>
+                          <div class="ej-flex-elemento">15</div>
+                          <div class="ej-flex-elemento">16</div>
+                          <div class="ej-flex-elemento">17</div>
+                          <div class="ej-flex-elemento">18</div>
+                          <div class="ej-flex-elemento">19</div>
+                          <div class="ej-flex-elemento">20</div>
+                        </div>
+                      </div>
+                      <div>
+                        <p><code class="language-css">align-content: space-between;</code></p>
+                        <div class="ej-normal-contenedor-aling-content ej-flex ej-wrap ej-align-content-space-between">
+                          <div class="ej-flex-elemento">1</div>
+                          <div class="ej-flex-elemento">2</div>
+                          <div class="ej-flex-elemento">3</div>
+                          <div class="ej-flex-elemento">4</div>
+                          <div class="ej-flex-elemento">5</div>
+                          <div class="ej-flex-elemento">6</div>
+                          <div class="ej-flex-elemento">7</div>
+                          <div class="ej-flex-elemento">8</div>
+                          <div class="ej-flex-elemento">9</div>
+                          <div class="ej-flex-elemento">10</div>
+                          <div class="ej-flex-elemento">11</div>
+                          <div class="ej-flex-elemento">12</div>
+                          <div class="ej-flex-elemento">13</div>
+                          <div class="ej-flex-elemento">14</div>
+                          <div class="ej-flex-elemento">15</div>
+                          <div class="ej-flex-elemento">16</div>
+                          <div class="ej-flex-elemento">17</div>
+                          <div class="ej-flex-elemento">18</div>
+                          <div class="ej-flex-elemento">19</div>
+                          <div class="ej-flex-elemento">20</div>
+                        </div>
+                      </div>
+                      <div>
+                        <p><code class="language-css">align-content: space-around;</code></p>
+                        <div class="ej-normal-contenedor-aling-content ej-flex ej-wrap ej-align-content-space-around">
+                          <div class="ej-flex-elemento">1</div>
+                          <div class="ej-flex-elemento">2</div>
+                          <div class="ej-flex-elemento">3</div>
+                          <div class="ej-flex-elemento">4</div>
+                          <div class="ej-flex-elemento">5</div>
+                          <div class="ej-flex-elemento">6</div>
+                          <div class="ej-flex-elemento">7</div>
+                          <div class="ej-flex-elemento">8</div>
+                          <div class="ej-flex-elemento">9</div>
+                          <div class="ej-flex-elemento">10</div>
+                          <div class="ej-flex-elemento">11</div>
+                          <div class="ej-flex-elemento">12</div>
+                          <div class="ej-flex-elemento">13</div>
+                          <div class="ej-flex-elemento">14</div>
+                          <div class="ej-flex-elemento">15</div>
+                          <div class="ej-flex-elemento">16</div>
+                          <div class="ej-flex-elemento">17</div>
+                          <div class="ej-flex-elemento">18</div>
+                          <div class="ej-flex-elemento">19</div>
+                          <div class="ej-flex-elemento">20</div>
+                        </div>
+                      </div>
+                      <div>
+                        <p><code class="language-css">align-content: space-evenly;</code></p>
+                        <div class="ej-normal-contenedor-aling-content ej-flex ej-wrap ej-align-content-space-evenly">
+                          <div class="ej-flex-elemento">1</div>
+                          <div class="ej-flex-elemento">2</div>
+                          <div class="ej-flex-elemento">3</div>
+                          <div class="ej-flex-elemento">4</div>
+                          <div class="ej-flex-elemento">5</div>
+                          <div class="ej-flex-elemento">6</div>
+                          <div class="ej-flex-elemento">7</div>
+                          <div class="ej-flex-elemento">8</div>
+                          <div class="ej-flex-elemento">9</div>
+                          <div class="ej-flex-elemento">10</div>
+                          <div class="ej-flex-elemento">11</div>
+                          <div class="ej-flex-elemento">12</div>
+                          <div class="ej-flex-elemento">13</div>
+                          <div class="ej-flex-elemento">14</div>
+                          <div class="ej-flex-elemento">15</div>
+                          <div class="ej-flex-elemento">16</div>
+                          <div class="ej-flex-elemento">17</div>
+                          <div class="ej-flex-elemento">18</div>
+                          <div class="ej-flex-elemento">19</div>
+                          <div class="ej-flex-elemento">20</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- código ejecutado fin -->
+                  </div>
+                  <div class="row">
+                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <!-- código HTML -->
+                      <pre>
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          <div>
+                            &lt;div&gt;
+                              &lt;p&gt;&lt;code class="language-css"&gt;ej-align-content-stretch&lt;/code&gt;&lt;/p&gt;
+                              &lt;div class="ej-normal-contenedor-aling-content ej-flex ej-wrap ej-align-content-stretch"&gt;
+                                &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;4&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;5&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;6&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;7&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;8&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;9&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;10&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;11&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;12&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;13&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;14&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;15&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;16&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;17&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;18&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;19&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;20&lt;/div&gt;
+                                
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div&gt;
+                              &lt;p&gt;&lt;code class="language-css"&gt;align-content: flex-start;&lt;/code&gt;&lt;/p&gt;
+                              &lt;div class="ej-normal-contenedor-aling-content ej-flex ej-wrap ej-align-content-flex-start"&gt;
+                                &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;4&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;5&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;6&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;7&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;8&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;9&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;10&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;11&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;12&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div&gt;
+                              &lt;p&gt;&lt;code class="language-css"&gt;align-content: flex-end;&lt;/code&gt;&lt;/p&gt;
+                              &lt;div class="ej-normal-contenedor-aling-content ej-flex  ej-wrap ej-align-content-flex-end"&gt;
+                                &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;4&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;5&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;6&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;7&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;8&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;9&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;10&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;11&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;12&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div&gt;
+                              &lt;p&gt;&lt;code class="language-css"&gt;align-content: center;&lt;/code&gt;&lt;/p&gt;
+                              &lt;div class="ej-normal-contenedor-aling-content ej-flex ej-wrap ej-align-content-center"&gt;
+                                &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;4&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;5&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;6&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;7&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;8&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;9&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;10&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;11&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;12&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div&gt;
+                              &lt;p&gt;&lt;code class="language-css"&gt;align-content: space-between;&lt;/code&gt;&lt;/p&gt;
+                              &lt;div class="ej-normal-contenedor-aling-content ej-flex ej-wrap ej-align-content-space-between"&gt;
+                                &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;4&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;5&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;6&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;7&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;8&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;9&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;10&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;11&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;12&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div&gt;
+                              &lt;p&gt;&lt;code class="language-css"&gt;align-content: space-around;&lt;/code&gt;&lt;/p&gt;
+                              &lt;div class="ej-normal-contenedor-aling-content ej-flex ej-wrap ej-align-content-space-around"&gt;
+                                &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;4&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;5&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;6&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;7&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;8&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;9&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;10&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;11&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;12&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div&gt;
+                              &lt;p&gt;&lt;code class="language-css"&gt;align-content: space-evenly;&lt;/code&gt;&lt;/p&gt;
+                              &lt;div class="ej-normal-contenedor-aling-content ej-flex ej-wrap ej-align-content-space-evenly"&gt;
+                                &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;4&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;5&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;6&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;7&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;8&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;9&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;10&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;11&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;12&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;                            
+                          </div>        
+                        </code>
+                      </pre>
+                      <!-- código HTML -->
+                    </div>
+                    <div class="ej-code-css col-lg-6 mb-3">
+                      <!-- código CSS -->
+                      <pre>
+                        <code class="language-css" data-prismjs-copy="Copy">
+                          <div>
+                            /* Todos los ejemplos*/
+                            .ej-flex {
+                              display: flex;
+                            }
+
+                            .ej-wrap {
+                              flex-wrap: wrap;
+                            }
+
+                            .ej-flex-elemento {
+                              border: 3px solid red;
+                              width: 100px;
+                              background-color: white;
+                              color: black;
+                            }
+
+                            /* css-0301_flexbox.html - flex-flow */
+                            .ej-normal-contenedor-aling-content {
+                              padding: 20px;
+                              border: 3px solid green;
+                              background-color: green;
+                              height: 300px;
+                            }
+
+                            .ej-align-content-stretch {
+                              align-content: stretch;
+                            }
+
+                            .ej-align-content-flex-start {
+                              align-content: flex-start;
+                            }
+
+                            .ej-align-content-flex-end {
+                              align-content: flex-end;
+                            }
+
+                            .ej-align-content-center {
+                              align-content: center;
+                            }
+
+                            .ej-align-content-space-between {
+                              align-content: space-between;
+                            }
+
+                            .ej-align-content-space-around {
+                              align-content: space-around;
+                            }
+
+                            .ej-align-content-space-evenly {
+                              align-content: space-evenly;
+                            }                            
+                          </div>      
+                        </code>
+                      </pre>
+                      <!-- código HTML -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Ejemplo fin -->
+            </div>
+            <!-- align-content: stretch | flex-start | flex-end | center | space-between | space-around | space-evenly;  fin -->
+          </div>
+          <!-- Contenedor Flexible fin -->
+
+          <hr class="subtle-divider" />
+
+          <!-- Los Elementos Flexibles -->
+          <div id="los-elementos-flexibles" class="mt-5">
+            <h2>Los Elementos Flexibles</h2>
+            <!-- Definición Elementos flexibles (Flex Items)  -->
+            <div id="definicion-elementos-flexibles-(flex-items)">
+              <h3>Definición Elementos flexibles (Flex Items) </h3>
+              <p>Son los hijos directos de un contenedor flexible (es decir, de un elemento con <code
+                  class="language-css">display: flex</code> o <code class="language-css">display:
+                inline-flex</code>).</p>
+              <p>Cada uno de estos elementos se comporta de forma flexible dentro del contenedor, lo que significa que
+                pueden crecer, encogerse o ajustarse automáticamente según el espacio disponible y las reglas definidas
+                por las propiedades de Flexbox.</p>
+              <p>Su posición y tamaño se controlan mediante propiedades específicas, tanto del contenedor como de los
+                propios elementos, entre ellas:</p>
+              <p><span class="fw-bold">Del contenedor</span>: <code class="language-css">justify-content</code>, <code
+                  class="language-css">align-items</code>, <code class="language-css">align-content</code>, <code
+                  class="language-css">flex-wrap</code>,
+                <code class="language-css">flex-direction</code>, ya explicadas en la sección anterior.
+              </p>
+              <p><span class="fw-bold">Del elemento</span>: <code class="language-css">flex-grow</code>, <code
+                  class="language-css">flex-shrink</code>, <code class="language-css">flex-basis</code>, <code
+                  class="language-css">align-self</code>, <code class="language-css">order</code>.</p>
+
+              <!-- Ejemplo -->
+              <div class="row">
+                <div class="ej-ejemplo">
+                  <div class="row ej-ejecutado mt-3">
+                    <!-- código ejecutado -->
+                    <div>
+                      <div>
+                        <div class="ej-normal-contenedor ej-flex">
+                          <div class="ej-flex-elemento">1</div>
+                          <div class="ej-flex-elemento">2</div>
+                          <div class="ej-flex-elemento">3</div>
+                          <div class="ej-flex-elemento">4</div>
+                          <div class="ej-flex-elemento">5</div>
+                          <div class="ej-flex-elemento">6</div>
+                        </div>
+                        <br>
+                        <p>La imagen anterior ilustra seis elementos flexibles de color blanco dispuestos dentro de un
+                          contenedor flexible de tono verde.</p>
+                      </div>
+                    </div>
+                    <!-- código ejecutado fin -->
+                  </div>
+                  <div class="row">
+                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <!-- código HTML -->
+                      <pre>
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          <div>
+                            &lt;div&gt;
+                              &lt;p&gt;Contenedor Flex&lt;/p&gt;
+                              &lt;div class="ej-normal-contenedor ej-flex"&gt;
+                                &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;4&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;5&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;6&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;                            
+                          </div>        
+                        </code>
+                      </pre>
+                      <!-- código HTML -->
+                    </div>
+                    <div class="ej-code-css col-lg-6 mb-3">
+                      <!-- código CSS -->
+                      <pre>
+                        <code class="language-css" data-prismjs-copy="Copy">
+                          <div>
+                            /* css-0301_flexbox.html - Definición Elementos flexibles (Flex Items) */
+                            .ej-normal-contenedor {
+                              padding: 20px;
+                              border: 3px solid green;
+                              background-color: green;
+                            }
+
+                            .ej-flex-elemento {
+                              border: 3px solid red;
+                              width: 100px;
+                              background-color: white;
+                              color: black;
+                            }
+
+                            .ej-flex {
+                              display: flex;
+                            }
+                          </div>        
+                        </code>
+                      </pre>
+                      <!-- código HTML -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Ejemplo fin -->
+
+            </div>
+            <!-- Definición Elementos flexibles (Flex Items)  fin -->
+
+            <!-- order: <número>;  -->
+            <div id="order">
+              <h3><code class="language-css">order: &lt;número&gt;;</code></h3>
+              <p>La propiedad <code class="language-css">order</code> en Flexbox define el orden visual en el que se
+                muestran los elementos flexibles dentro de un contenedor, independientemente del orden en el código
+                HTML.</p>
+              <p>Por defecto, todos los elementos tienen order: 0. Los valores más bajos se muestran antes y los valores
+                más altos después, siguiendo el eje principal definido por <code
+                  class="language-css">flex-direction</code>.</p>
+              <p>&lt;número&gt;: puede tomar cualquier valor: positivo, negativo o cero. </p>
+
+              <!-- Ejemplo -->
+              <div class="row">
+                <div class="ej-ejemplo">
+                  <div class="row ej-ejecutado mt-3">
+                    <!-- código ejecutado -->
+                    <div>
+                      <div>
+                        <div class="ej-normal-contenedor ej-flex">
+                          <div class="ej-flex-elemento">1</div>
+                          <div class="ej-flex-elemento">2</div>
+                          <div class="ej-flex-elemento">3</div>
+                          <div class="ej-flex-elemento">4</div>
+                          <div class="ej-flex-elemento">5</div>
+                          <div class="ej-flex-elemento">6</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- código ejecutado fin -->
+                  </div>
+                  <div class="row">
+                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <!-- código HTML -->
+                      <pre>
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          <div>
+                            &lt;div&gt;
+                              &lt;p&gt;Contenedor Flex&lt;/p&gt;
+                              &lt;div class="ej-normal-contenedor ej-flex"&gt;
+                                &lt;div class="ej-flex-elemento"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;3&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;4&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;5&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento"&gt;6&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;                            
+                          </div>        
+                        </code>
+                      </pre>
+                      <!-- código HTML -->
+                    </div>
+                    <div class="ej-code-css col-lg-6 mb-3">
+                      <!-- código CSS -->
+                      <pre>
+                        <code class="language-css" data-prismjs-copy="Copy">
+                          <div>
+                            /* Todos los ejemplos*/
+                            .ej-normal-contenedor {
+                              padding: 20px;
+                              border: 3px solid green;
+                              background-color: green;
+                            }
+
+                            .ej-flex-elemento {
+                              border: 3px solid red;
+                              width: 100px;
+                              background-color: white;
+                              color: black;
+                            }
+
+                            .ej-flex {
+                              display: flex;
+                            }
+
+                            /* css-0301_flexbox.html - order */
+                            .ej-flex-elemento:nth-child(4){ 
+                              order: 2;
+                              background-color: cyan;
+                              }
+                              
+                            .ej-flex-elemento:nth-child(1){ 
+                              order: 3;
+                              background-color: cyan;
+                              }                            
+                          </div>        
+                        </code>
+                      </pre>
+                      <!-- código HTML -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Ejemplo fin -->
+
+              <p>La propiedad <code class="language-css">order</code> no cambia la estructura del documento, solo el
+                orden de presentación visual en el diseño Flexbox.</p>
+              <p>Como es el orden visual final en la fila flex (de izquierda a derecha): </p>
+              <ul>
+                <li><span class="fw-bold">Elementos con order</span>: 0; (los más bajos): 2, 3, 5, 6 (mantienen su
+                  relativa posición del HTML).</li>
+                <li><span class="fw-bold">Luego order</span>: 2;: 4 (fondo cian).</li>
+                <li><span class="fw-bold">Finalmente order</span>: 3;: 1 (fondo cian).</li>
+              </ul>
+            </div>
+            <!-- order: <número>;  fin -->
+
+            <!-- flex-grow: <número>;  -->
+            <div id="flex-grow">
+              <h3><code class="language-css">flex-grow: &lt;número&gt;;</code></h3>
+              <p>La propiedad <code class="language-css">flex-grow</code> define cuánto puede crecer un elemento
+                flexible en relación con los demás elementos dentro del mismo contenedor Flexbox cuando hay espacio
+                libre disponible en el eje principal.
+              </p>
+              <p>&lt;número&gt;: puede tomar cualquier valor: positivo o cero.</p>
+              <p>Valor por defecto: <code class="language-css">flex-grow: 0;</code></p>
+              <p><code class="language-css">flex-grow</code> controla la proporción de expansión de un elemento dentro
+                de
+                un contenedor flexible. Un valor mayor indica que el elemento ocupará más espacio disponible en
+                comparación con los demás.</p>
+
+              <!-- Ejemplo -->
+              <div class="row">
+                <div class="ej-ejemplo">
+                  <div class="row ej-ejecutado mt-3">
+                    <!-- código ejecutado -->
+                    <div>
+                      <div>
+                        <div class="ej-normal-contenedor ej-flex">
+                          <div class="ej-flex-elemento-grow">1</div>
+                          <div class="ej-flex-elemento-grow">2</div>
+                          <div class="ej-flex-elemento-grow">3</div>
+                          <div class="ej-flex-elemento-grow">4</div>
+                          <div class="ej-flex-elemento-grow">5</div>
+                          <div class="ej-flex-elemento-grow">6</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- código ejecutado fin -->
+                  </div>
+                  <div class="row">
+                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <!-- código HTML -->
+                      <pre>
+                      <code class="language-html" data-prismjs-copy="Copy">
+                        <div>
+                          &lt;div&gt;
+                            &lt;p&gt;Contenedor Flex&lt;/p&gt;
+                            &lt;div class="ej-normal-contenedor ej-flex"&gt;
+                              &lt;div class="ej-flex-elemento-grow"&gt;1&lt;/div&gt;
+                              &lt;div class="ej-flex-elemento-grow"&gt;2&lt;/div&gt;
+                              &lt;div class="ej-flex-elemento-grow"&gt;3&lt;/div&gt;
+                              &lt;div class="ej-flex-elemento-grow"&gt;4&lt;/div&gt;
+                              &lt;div class="ej-flex-elemento-grow"&gt;5&lt;/div&gt;
+                              &lt;div class="ej-flex-elemento-grow"&gt;6&lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;                          
+                        </div>        
+                      </code>
+                    </pre>
+                      <!-- código HTML -->
+                    </div>
+                    <div class="ej-code-css col-lg-6 mb-3">
+                      <!-- código CSS -->
+                      <pre>
+                        <code class="language-css" data-prismjs-copy="Copy">
+                          <div>
+                            /* Todos los ejemplos*/
+                            .ej-normal-contenedor {
+                              padding: 20px;
+                              border: 3px solid green;
+                              background-color: green;
+                            }
+
+                            .ej-flex {
+                              display: flex;
+                            }
+
+                            /* css-0301_flexbox.html - flex-grow */
+                            .ej-flex-elemento-grow {
+                              border: 3px solid red;
+                              width: 100px;
+                              background-color: white;
+                              color: black;
+                            }
+
+                            .ej-flex-elemento-grow:nth-child(4) {
+                              flex-grow: 2;
+                              background-color: cyan;
+                            }
+
+                            .ej-flex-elemento-grow:nth-child(1) {
+                              flex-grow: 1;
+                              background-color: cyan;
+                            }      
+                          </div>        
+                        </code>
+                      </pre>
+                      <!-- código HTML -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Ejemplo fin -->
+
+              <!-- Calculo de la Proporción de Crecimiento  -->
+              <div>
+                <h4>Calculo de la Proporción de Crecimiento </h4>
+                <p>La suma de los valores de flex-grow es 1 + 2 = 3. Esto define la proporción de reparto del espacio
+                  libre.</p>
+                <p>El item1 recibe 1/3 del espacio libre y el item2 recibe 2/3 del espacio libre.</p>
+              </div>
+              <!-- Calculo de la Proporción de Crecimiento  fin -->
+            </div>
+            <!-- flex-grow: <número>;  fin -->
+
+            <!-- flex-shrink: <número>;  -->
+            <div id="flex-shrink">
+              <h3><code class="language-css">flex-shrink: &lt;número&gt;;</code></h3>
+              <p>La propiedad <code class="language-css">flex-shrink</code> controla cuánto puede reducirse el tamaño de
+                un elemento flexible (flex item) en relación con los demás cuando el espacio disponible en el contenedor
+                es insuficiente.</p>
+              <p>Valor por defecto: <code class="language-css">flex-shrink: 1;</code></p>
+              <p>&lt;valor&gt;:
+              <ul>
+                <li><span class="fw-bold">0</span>: el elemento no se encoge, mantiene su tamaño base (definido por
+                  <code class="language-javascript">width</code>, <code class="language-javascript">flex-basis</code> o
+                  su contenido).
+                </li>
+                <li><span class="fw-bold">1 o mayor</span>: el elemento se encoge proporcionalmente respecto a los demás
+                  elementos que también tengan <code class="language-css">flex-shrink</code> > 0. Cuanto mayor sea el
+                  valor, más espacio cederá ese
+                  elemento.</li>
+              </ul>
+              </p>
+              <!-- Ejemplo -->
+              <div class="row">
+                <div class="ej-ejemplo">
+                  <div class="row ej-ejecutado mt-3">
+                    <!-- código ejecutado -->
+                    <div>
+                      <div>
+                        <div class="ej-normal-contenedor ej-flex">
+                          <div class="ej-flex-elemento-shrink">1</div>
+                          <div class="ej-flex-elemento-shrink">2</div>
+                          <div class="ej-flex-elemento-shrink">3</div>
+                          <div class="ej-flex-elemento-shrink">4</div>
+                          <div class="ej-flex-elemento-shrink">5</div>
+                          <div class="ej-flex-elemento-shrink">6</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- código ejecutado fin -->
+                  </div>
+                  <div class="row">
+                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <!-- código HTML -->
+                      <pre>
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          <div>
+                            &lt;div&gt;
+                              &lt;div class="ej-normal-contenedor ej-flex"&gt;
+                                &lt;div class="ej-flex-elemento-shrink"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-shrink"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-shrink"&gt;3&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-shrink"&gt;4&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-shrink"&gt;5&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-shrink"&gt;6&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;                   
+                          </div>        
+                        </code>
+                      </pre>
+                      <!-- código HTML -->
+                    </div>
+                    <div class="ej-code-css col-lg-6 mb-3">
+                      <!-- código CSS -->
+                      <pre>
+                        <code class="language-css" data-prismjs-copy="Copy">
+                          <div>
+                            /* Todos los ejemplos*/
+                            .ej-normal-contenedor {
+                              padding: 20px;
+                              border: 3px solid green;
+                              background-color: green;
+                            }
+
+                            .ej-flex {
+                              display: flex;
+                            }
+
+                            /* css-0301_flexbox.html - flex-shrink */
+                            .ej-flex-elemento-shrink {
+                              border: 3px solid red;
+                              width: 100px;
+                              background-color: white;
+                              color: black;
+                            }
+
+                            .ej-flex-elemento-shrink:nth-child(4) {
+                              flex-grow: 2;
+                              background-color: cyan;
+                            }
+
+                            .ej-flex-elemento-shrink:nth-child(1) {
+                              flex-grow: 1;
+                              background-color: cyan;
+                            }                            
+                          </div>        
+                        </code>
+                      </pre>
+                      <!-- código HTML -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Ejemplo fin -->
+              <p>En conclusión, <code class="language-css">flex-shrink</code> define la proporción de reducción de
+                tamaño de cada elemento flexible cuando el contenedor no puede mostrar todos los elementos en su tamaño
+                ideal.</p>
+            </div>
+            <!-- flex-shrink: <número>;  fin -->
+
+            <!-- flex-basis: <valor>;  -->
+            <div id="flex-basis">
+              <h3><code class="language-css">flex-basis: &lt;valor&gt;;</code> </h3>
+              <p>La propiedad <code class="language-css">flex-basis</code> define el tamaño inicial de un elemento
+                flexible (flex item) antes de que el espacio disponible en el contenedor se distribuya según las reglas
+                de Flexbox.</p>
+              <p>En otras palabras, establece la base sobre la cual se calculan los valores de crecimiento (flex-grow) y
+                encogimiento (flex-shrink) del elemento.</p>
+              <p>&lt;valor&gt;:</p>
+              <ul>
+                <li><code class="language-css">auto</code>: Valor por defecto. El tamaño base se calcula según el
+                  contenido, o según la propiedad <code class="language-css">width</code> o <code
+                    class="language-css">height</code> (dependiendo de la dirección del eje principal).</li>
+                <li><code class="language-css">&lt;longitud&gt;</code>: Un valor fijo como px, em, rem, etc.</li>
+                <li><code class="language-css">&lt;porcentaje&gt;</code>: Un tamaño relativo al tamaño del contenedor
+                  flexible.</li>
+                <li><code class="language-css">0</code>: Indica que el tamaño base inicial es cero; todo el espacio se
+                  distribuirá según flex-grow y flex-shrink.</li>
+                <li><code class="language-css">content</code>: El tamaño se ajusta exactamente al contenido del
+                  elemento, sin considerar <code class="language-css">width</code> o <code
+                    class="language-css">height</code>. (Soporte limitado en algunos navegadores).</li>
+              </ul>
+            </div>
+            <!-- flex-basis: <valor>;  fin -->
+
+            <!-- flex: <flex-grow> <flex-shrink> <flex-basis>;  -->
+            <div id="flex">
+              <h3><code class="language-css">flex: &lt;flex-grow&gt; &lt;flex-shrink&gt; &lt;flex-basis&gt;;</code></h3>
+              <p>La propiedad <code class="language-css">flex</code> en CSS es una propiedad abreviada (shorthand) que
+                combina tres propiedades individuales del modelo Flexbox:</p>
+              <ul>
+                <li><code class="language-css">flex-grow</code>.</li>
+                <li><code class="language-css">flex-shrink</code>.</li>
+                <li><code class="language-css">flex-basis</code>.</li>
+              </ul>
+              <p>Su función es controlar cómo los <span class="fw-bold">elementos flexibles (flex items)</span> crecen,
+                se encogen y establecen su
+                tamaño base dentro de un contenedor flexible (flex container).</p>
+              <p>Valores abreviados comunes:</p>
+              <ul>
+                <li><code class="language-css">flex: 0 1 auto;</code>: Valor por defecto (sin crecimiento, con
+                  encogimiento y tamaño automático).</li>
+                <li><code class="language-css">flex: 1;</code>: Equivale a flex: 1 1 0;, permite que el elemento crezca
+                  y se encoja equitativamente.</li>
+                <li><code class="language-css">flex: none;</code>: Equivale a flex: 0 0 auto;, el elemento no crece ni
+                  se encoge.</li>
+                <li><code class="language-css">flex: auto;</code>: Equivale a flex: 1 1 auto;, el elemento crece y se
+                  encoge según el espacio disponible.</li>
+              </ul>
+            </div>
+            <!-- flex: <flex-grow> <flex-shrink> <flex-basis>;  fin -->
+
+            <!-- align-self: auto | flex-start | flex-end | center | baseline | stretch;  -->
+            <div id="align-self">
+              <h3><code
+                  class="language-css">align-self: auto | flex-start | flex-end | center | baseline | stretch;</code>
+              </h3>
+              <p>La propiedad <code class="language-css">align-self</code> en Flexbox permite controlar la alineación
+                individual de un elemento flexible (flex item) a lo largo del eje transversal (perpendicular al eje
+                principal), anulando el valor establecido por la propiedad align-items del contenedor.</p>
+              <ul>
+                <li><code class="language-css">auto</code>: Valor predeterminado. El elemento hereda la alineación
+                  definida por el contenedor mediante <code class="language-css">align-items</code>. Si el contenedor no
+                  tiene <code class="language-css">align-items</code> definido, se
+                  comporta como <code class="language-css">stretch</code>.</li>
+                <li><code class="language-css">flex-start</code>: Alinea el elemento al inicio del eje transversal
+                  (parte superior en una fila o izquierda en una columna).</li>
+                <li><code class="language-css">flex-end</code>: Alinea el elemento al final del eje transversal (parte
+                  inferior en una fila o derecha en una columna).</li>
+                <li><code class="language-css">center</code>: Centra el elemento en el eje transversal.</li>
+                <li><code class="language-css">baseline</code>: Alinea el elemento de acuerdo con la línea base del
+                  texto del resto de los elementos.</li>
+                <li><code class="language-css">stretch</code>: (Valor por defecto si no se define ninguno y auto hereda
+                  este comportamiento). El elemento se estira para ocupar todo el espacio disponible en el eje
+                  transversal, siempre que no tenga una altura o ancho fijo en ese eje.</li>
+              </ul>
+              <!-- Ejemplo -->
+              <div class="row">
+                <div class="ej-ejemplo">
+                  <div class="row ej-ejecutado mt-3">
+                    <!-- código ejecutado -->
+                    <div>
+                      <div>
+                        <div class="ej-normal-contenedor ej-flex">
+                          <div class="ej-flex-elemento-align-self">1</div>
+                          <div class="ej-flex-elemento-align-self">2</div>
+                          <div class="ej-flex-elemento-align-self">3</div>
+                          <div class="ej-flex-elemento-align-self">4</div>
+                          <div class="ej-flex-elemento-align-self">5</div>
+                          <div class="ej-flex-elemento-align-self">6</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- código ejecutado fin -->
+                  </div>
+                  <div class="row">
+                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <!-- código HTML -->
+                      <pre>
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          <div>
+                            &lt;div&gt;
+                              &lt;div class="ej-normal-contenedor ej-flex"&gt;
+                                &lt;div class="ej-flex-elemento-align-self"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-align-self"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-align-self"&gt;3&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-align-self"&gt;4&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-align-self"&gt;5&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-align-self"&gt;6&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;                            
+                          </div>        
+                        </code>
+                      </pre>
+                      <!-- código HTML -->
+                    </div>
+                    <div class="ej-code-css col-lg-6 mb-3">
+                      <!-- código CSS -->
+                      <pre>
+                        <code class="language-css" data-prismjs-copy="Copy">
+                          <div>
+                            /* Todos los ejemplos*/
+                            .ej-normal-contenedor {
+                              padding: 20px;
+                              height: 200px;
+                              border: 3px solid green;
+                              background-color: green;
+                            }
+
+                            .ej-flex {
+                              display: flex;
+                            }
+
+                            /* css-0301_flexbox.html - align-self */
+                            .ej-flex-elemento-align-self {
+                              border: 3px solid red;
+                              width: 100px;
+                              background-color: white;
+                              color: black;
+                            }
+
+                            .ej-flex-elemento-align-self:nth-child(1) {
+                              align-self: auto; 
+                            }
+                            .ej-flex-elemento-align-self:nth-child(2) {
+                              align-self: flex-start; 
+                            }
+
+                            .ej-flex-elemento-align-self:nth-child(3) {
+                            align-self: flex-end;
+                            }
+
+                            .ej-flex-elemento-align-self:nth-child(4) {
+                              align-self: center; 
+                            }
+
+                            .ej-flex-elemento-align-self:nth-child(5) {
+                              align-self: baseline; 
+                            }
+
+                            .ej-flex-elemento-align-self:nth-child(6) {
+                              align-self: stretch; 
+                            }                            
+                          </div>        
+                        </code>
+                      </pre>
+                      <!-- código HTML -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Ejemplo fin -->
+              <p><code class="language-css">align-self</code> otorga a cada elemento flexible control individual sobre
+                su alineación vertical (o transversal), sin afectar la alineación de los demás elementos dentro del
+                contenedor.</p>
+            </div>
+            <!-- align-self: auto | flex-start | flex-end | center | baseline | stretch;  fin -->
+
+            <!-- column-gap: <espacio>;  -->
+            <div id="column-gap:-espacio;">
+              <h3><code class="language-css">column-gap: &lt;espacio&gt;;</code></h3>
+              <p>La propiedad <code class="language-css">column-gap: &lt;espacio&gt;;</code> en Flexbox define el
+                espacio horizontal entre los elementos flexibles (flex items) cuando se organizan en columnas o filas
+                dentro de un contenedor flexible. Debe estar <code class="language-css">flex-wrap</code> está activado).
+              </p>
+              <p>Donde &lt;espacio&gt; puede expresarse en unidades como px, em, rem, %, etc.</p>
+            </div>
+            <!-- column-gap: <espacio>;  fin -->
+
+            <!-- row-gap: <espacio>;  -->
+            <div id="row-gap:-espacio;">
+              <h3><code class="language-css">row-gap: &lt;espacio&gt;;</code></h3>
+              <p>La propiedad <code class="language-css">row-gap: &lt;espacio&gt;;</code> en Flexbox se utiliza para
+                definir el espacio vertical entre las filas de los elementos flexibles cuando el contenedor tiene varias
+                líneas (es decir, cuando <code class="language-css">flex-wrap</code> está activado).</p>
+              <p>Donde &lt;espacio&gt; puede expresarse en unidades como px, em, rem, %, etc.</p>
+            </div>
+            <!-- row-gap: <espacio>;  fin -->
+
+            <!-- gap: <espacio-filas> <espacio-columnas>;  -->
+            <div id="gap:-espacio-filas-espacio-columnas;">
+              <h3><code class="language-css">gap: &lt;espacio-filas&gt; &lt;espacio-columnas&gt;;</code></h3>
+              <p>En Flexbox, la propiedad <code class="language-css">gap</code> define el espacio entre los elementos
+                flexibles (los flex items) dentro de un contenedor.</p>
+              <p>No afecta los márgenes exteriores del contenedor, solo el espaciado interno entre los hijos directos.
+              </p>
+              <ul>
+                <li><code class="language-css">&lt;espacio-filas&gt;</code>: define el espacio vertical entre filas
+                  (cuando los elementos se distribuyen en varias líneas).</li>
+                <li><code class="language-css">&lt;espacio-columnas&gt;</code>: define el espacio horizontal entre
+                  columnas.</li>
+                <li>Si se especifica un solo valor, se aplica el mismo espacio tanto a filas como a columnas.</li>
+              </ul>
+              <!-- Ejemplo -->
+              <div class="row">
+                <div class="ej-ejemplo">
+                  <div class="row ej-ejecutado mt-3">
+                    <!-- código ejecutado -->
+                    <div>
+                      <div>
+                        <div class="ej-normal-contenedor-gap ej-flex ej-flex-wrap ej-flex-gap">
+                          <div class="ej-flex-elemento-gap">1</div>
+                          <div class="ej-flex-elemento-gap">2</div>
+                          <div class="ej-flex-elemento-gap">3</div>
+                          <div class="ej-flex-elemento-gap">4</div>
+                          <div class="ej-flex-elemento-gap">5</div>
+                          <div class="ej-flex-elemento-gap">6</div>
+                          <div class="ej-flex-elemento-gap">7</div>
+                          <div class="ej-flex-elemento-gap">8</div>
+                          <div class="ej-flex-elemento-gap">9</div>
+                          <div class="ej-flex-elemento-gap">10</div>
+                          <div class="ej-flex-elemento-gap">11</div>
+                          <div class="ej-flex-elemento-gap">12</div>
+                          <div class="ej-flex-elemento-gap">13</div>
+                          <div class="ej-flex-elemento-gap">14</div>
+                          <div class="ej-flex-elemento-gap">15</div>
+                          <div class="ej-flex-elemento-gap">16</div>
+                          <div class="ej-flex-elemento-gap">17</div>
+                          <div class="ej-flex-elemento-gap">18</div>
+                          <div class="ej-flex-elemento-gap">19</div>
+                          <div class="ej-flex-elemento-gap">20</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- código ejecutado fin -->
+                  </div>
+                  <div class="row">
+                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <!-- código HTML -->
+                      <pre>
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          <div>
+                            &lt;div&gt;
+                              &lt;div class="ej-normal-contenedor-gap ej-flex ej-flex-wrap ej-flex-gap"&gt;
+                                &lt;div class="ej-flex-elemento-gap"&gt;1&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-gap"&gt;2&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-gap"&gt;3&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-gap"&gt;4&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-gap"&gt;5&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-gap"&gt;6&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-gap"&gt;7&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-gap"&gt;8&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-gap"&gt;9&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-gap"&gt;10&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-gap"&gt;11&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-gap"&gt;12&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-gap"&gt;13&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-gap"&gt;14&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-gap"&gt;15&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-gap"&gt;16&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-gap"&gt;17&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-gap"&gt;18&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-gap"&gt;19&lt;/div&gt;
+                                &lt;div class="ej-flex-elemento-gap"&gt;20&lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;                          
+                          </div>        
+                        </code>
+                      </pre>
+                      <!-- código HTML -->
+                    </div>
+                    <div class="ej-code-css col-lg-6 mb-3">
+                      <!-- código CSS -->
+                      <pre>
+                        <code class="language-css" data-prismjs-copy="Copy">
+                          <div>
+                            /* Todos los ejemplos*/
+                            .ej-flex {
+                              display: flex;
+                            }
+
+                            /* css-0301_flexbox.html - gap */
+                            .ej-normal-contenedor-gap {
+                              padding: 20px;
+                              height: 300px;
+                              border: 3px solid green;
+                              background-color: green;
+                            }
+                            .ej-flex-elemento-gap {
+                              border: 3px solid red;
+                              width: 100px;
+                              height: 30px;
+                              background-color: white;
+                              color: black;
+                            }
+
+                            .ej-flex-wrap {
+                              flex-wrap: wrap;
+                            }
+
+                            .ej-flex-gap {
+                              gap: 5px 10px;
+                            }
+                          </div>        
+                        </code>
+                      </pre>
+                      <!-- código HTML -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Ejemplo fin -->
+            </div>
+            <!-- gap: <espacio-filas> <espacio-columnas>;  fin -->
+
+
+          </div>
+          <!-- Los Elementos Flexibles Fin -->
+          <hr class="subtle-divider" />
+
+          <!-- Ejemplos Prácticos -->
+          <div id="ejemplos-practicos" class="mt-5">
+            <h2>Ejemplos Prácticos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aut, nobis quam, natus eaque
+              atque
+              unde mollitia nostrum, reprehenderit ipsa aliquid voluptatibus? Perspiciatis corrupti.</p>
+          </div>
+          <!-- Ejemplos Prácticos Fin -->
+
+
+        </article>
+        <article class="row" id="comments">
+          <h2>COMENTARIOS</h2>
+          <p>Si tiene alguna inquietud, duda o ha encontrado algún error, porfavor infórmelo a través del formulario
+            disponible para estepropósito.</p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
+                </div>
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">Enviar</button>
+              </fieldset>
+              <p class="small text-center">La política de privacidad, y los términos y condiciones estándisponibles en
+                el formulario de contacto.</p>
+            </form>
+          </div>
+        </article>
+        <!-- Comentarios fin -->
+      </section>
+      <!-- -------------------------------- barra lateral -------------------------------- -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        <h2>En Este Artículo</h2>
+        <div class="menu-scroll">
+          <div class="menu-container">
+            <div class="border border-1">
+              <div class="menu-item">
+                <a href="#introduccion" class="simple-link">Introducción</a>
+              </div>
+              <div class="menu-item">
+                <a href="#conceptos-basicos" class="simple-link">Conceptos Básicos</a>
+              </div>
+              <div class="menu-item">
+                <a href="#contenedor-flexible" class="simple-link">Contenedor Flexible</a>
+              </div>
+              <div class="menu-item">
+                <a href="#los-elementos-flexibles" class="simple-link">Los Elementos Flexibles</a>
+              </div>
+              <div class="menu-item">
+                <a href="#ejemplos-practicos" class="simple-link">Ejemplos Prácticos</a>
+              </div>
+              <!-- Comentarios  -->
+              <div class="menu-item">
+                <a href="#comments" class="simple-link">Comentarios</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- -------------------------------- fin barra lateral -------------------------------- -->
+    </main>
+  </div>
+  <!--  Principal Fin  -->
+
+
+  <!--  pie de pagina  -->
+  <footer class="row border-top border-1 m-1 mt-auto">
+    <div class="row">
+      <!-- contacto -->
+      <address class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Contacto</div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class="ms-3">
+            <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class="ms-3">Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      <!-- Derechos de autor -->
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
+      </div>
+      <!-- redes sociales -->
+      <div class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Redes Sociales</div>
+        <div class="d-flex justify-content-evenly align-items-center gap-5">
+          <div>
+            <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center gap-2"></div>
+  </footer>
+  <!--  pie de pagina fin  -->
+
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
+</html>
