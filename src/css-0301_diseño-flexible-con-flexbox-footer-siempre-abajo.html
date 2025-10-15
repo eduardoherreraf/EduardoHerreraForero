@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer Pegado al Fondo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem;
+      background: #ecf0f1;
+      height: 300px;
+    }
+
+    .content-box {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background: #34495e;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    footer p {
+      color: white
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.6;
+      color: black;
+    }
+
+    .highlight {
+      background: #3498db;
+      color: white;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Header</h1>
+  </header>
+
+  <main>
+    <div class="content-box">
+      <h2>Main con altura de 300px</h2>
+      <p>Aunque el contenido principal sea corto (300px), el <span class="highlight">flex: 1</span> hace que el footer
+        se mantenga pegado al fondo de la pantalla.</p>
+      <p style="margin-top: 1rem;">Prueba redimensionar la ventana verticalmente y verás que el footer siempre está
+        abajo.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Footer siempre pegado al fondo.</p>
+  </footer>
+</body>
+
+</html>
