@@ -1,0 +1,782 @@
+<!-- @format -->
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Guía completa sobre funciones en Python: definición, sintaxis, parámetros, retorno de valores, alcance de variables, funciones lambda y buenas prácticas. Ideal para principiantes que desean aprender a programar de forma modular y eficiente" />
+  <meta name="title" content="Funciones en Python - Ing. Eduardo Herrera Forero." />
+  <meta name="keywords"
+    content="funciones en Python, Python funciones, programación en Python, ejemplos de funciones, parámetros en Python, return en Python, funciones lambda, alcance de variables, aprender Python, tutorial Python, programación modular" />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eduardoherreraf.github.io/analisis-de-datos-0009_funciones-en-pyhon.html" />
+  <!-- Fin Metaetiquetas -->
+
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Funciones en Python - Ing. Eduardo Herrera Forero." />
+  <meta property="og:description"
+    content="Guía completa sobre funciones en Python: definición, sintaxis, parámetros, retorno de valores, alcance de variables, funciones lambda y buenas prácticas. Ideal para principiantes que desean aprender a programar de forma modular y eficiente" />
+  <meta property="og:image" content="https://i.postimg.cc/YChM6grw/py-funciones-comp.jpg" />
+  <meta property="og:image:alt"
+    content="Niño armando un rompecabezas educativo que representa las partes de una función en Python: función, parámetros, cuerpo de la función y valor retornado" />
+  <meta property="og:url" content="https://eduardoherreraf.github.io/analisis-de-datos-0009_funciones-en-pyhon.html" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
+
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Funciones en Python - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description"
+    content="Guía completa sobre funciones en Python: definición, sintaxis, parámetros, retorno de valores, alcance de variables, funciones lambda y buenas prácticas. Ideal para principiantes que desean aprender a programar de forma modular y eficiente" />
+  <meta name="twitter:image" content="https://i.postimg.cc/YChM6grw/py-funciones-comp.jpg" />
+  <meta name="twitter:image:alt"
+    content="Ejemplo introductorio de Python: programa que pide el nombre del usuario y muestra un saludo personalizado. Ideal para aprender los fundamentos del lenguaje">
+  <meta name="twitter:url" content="https://eduardoherreraf.github.io/analisis-de-datos-0009_funciones-en-pyhon.html" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
+
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
+
+  <title>
+    Funciones en Python - Ing. Eduardo Herrera Forero.
+  </title>
+
+  <script type="module" defer src="./js/main.js"></script>
+
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
+
+  <!--  Principal  -->
+  <div class="container-fluid" id="introduccion">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!--  Funciones en Python-->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <header>
+            <h1>Funciones en Python</h1>
+          </header>
+          <!-- Introducción -->
+          <div>
+            <h2>Introducción: Funciones en Python</h2>
+            <div class="centrar-imagen imagen40 mb-5">
+              <figure class="img-container">
+                <img src="https://i.ibb.co/tMLx70rG/py-funciones-comp.jpg" class="img-fluid"
+                  alt="Niño armando un rompecabezas educativo que representa las partes de una función en Python: función, parámetros, cuerpo de la función y valor retornado"
+                  title="Funciones en Python: guía completa para principiantes" loading="lazy"
+                  onerror="this.onerror=null; this.src='https://i.postimg.cc/YChM6grw/py-funciones-comp.jpg';" />
+                <figcaption class="img-caption">
+                  Representación visual del concepto de funciones en Python, incluyendo su sintaxis, parámetros, retorno
+                  de valores y buenas prácticas para programar de manera eficiente.
+                </figcaption>
+              </figure>
+            </div>
+            <p>Las funciones en Python son uno de los pilares fundamentales de la programación, ya que permiten
+              organizar, reutilizar y simplificar el código. Una función puede entenderse como un bloque de
+              instrucciones diseñado para realizar una tarea específica. En lugar de repetir fragmentos de código, las
+              funciones permiten agruparlos bajo un nombre identificador, facilitando su uso y mantenimiento.</p>
+          </div>
+          <!-- Introducción Fin -->
+          <hr class="subtle-divider" />
+
+          <!-- Que Son las Funciones -->
+          <div id="que-son-las-funciones">
+            <h2>Que Son las Funciones</h2>
+            <p>En programación, una función es un bloque de código organizado y reutilizable que realiza una tarea
+              específica. Las funciones permiten dividir programas complejos en partes más pequeñas y manejables,
+              promoviendo la modularidad, la legibilidad y la reutilización del código.</p>
+          </div>
+          <!-- Que Son las Funciones Fin -->
+          <hr class="subtle-divider" />
+
+          <!-- Sintaxis de una Función en Python -->
+          <div id="sintaxis-de-una-funcion-en-python">
+            <h2>Sintaxis de una Función en Python</h2>
+            <p>En Python, una función se define mediante la palabra reservada <code class="language-py">def</code>,
+              seguida del nombre de la función, un conjunto de parámetros opcionales entre paréntesis y dos puntos <code
+                class="language-py">:</code>.</p>
+            <p>El bloque de código interno debe ir indentado (generalmente con cuatro espacios).</p>
+            <!-- Sintaxis -->
+            <p><span class="fw-bold">Sintaxis básica</span>:</p>
+            <div class="ej-sintaxis-100">
+              <pre data-src-status="loaded" tabindex="0">
+                <code class="language-py" data-prismjs-copy="Copy">
+                 def nombre_de_la_funcion(parametro1, parametro2, ...):
+                      """Documentación de la función (docstring)"""
+                      # Cuerpo de la función
+                      # ...
+                      return valor_de_retorno
+                </code>
+              </pre>
+            </div>
+            <!-- Sintaxis fin -->
+            <!-- Sintaxis -->
+            <p><span class="fw-bold">Ejemplo básico</span>:</p>
+            <div class="ej-sintaxis-100">
+              <pre data-src-status="loaded" tabindex="0">
+                <code class="language-py" data-prismjs-copy="Copy">
+                 def saludar():
+                      print("Hola, bienvenido al mundo de Python.")
+
+                  saludar()  # Llamada a la función
+                </code>
+              </pre>
+            </div>
+            <!-- Sintaxis fin -->
+            <p>En este ejemplo, la función <code class="language-py">saludar()</code> imprime un mensaje en pantalla. La
+              llamada a la función se realiza simplemente escribiendo su nombre seguido de paréntesis.</p>
+            <ul>
+              <li><code class="language-py">def</code>: Palabra clave que indica el inicio de la definición de una
+                función.
+              </li>
+              <li><span class="fw-bold">nombre_de_la_funcion</span>: Identificador único que se utiliza para llamar a la
+                función. Debe seguir las reglas de nomenclatura de Python (letras, números y guiones bajos, comenzando
+                con una letra o guión bajo).</li>
+              <li><span class="fw-bold">(parametro1, parametro2, ...)</span>: Lista opcional de parámetros que la
+                función recibe como entrada. Los parámetros son variables que se utilizan dentro de la función para
+                realizar cálculos o acciones.</li>
+              <li><code class="language-py">:</code>: Dos puntos que indican el final de la línea de definición de la
+                función.</li>
+              <li><span class="fw-bold">"Documentación de la función (docstring)"</span>: Cadena de texto opcional que
+                describe el propósito, los parámetros y el valor de retorno de la función. Es una buena práctica incluir
+                un docstring para documentar el código.</li>
+              <li><span class="fw-bold"># Cuerpo de la función</span>: Bloque de código que contiene las instrucciones
+                que se ejecutan cuando se llama a la función. Debe estar indentado.</li>
+              <li><code class="language-py">return valor_de_retorno</code>: Sentencia opcional que devuelve un
+                valor como resultado de la ejecución de la función. Si no se especifica un valor de retorno, la función
+                devuelve None por defecto.</li>
+            </ul>
+          </div>
+          <!-- Sintaxis de una Función en Python Fin -->
+          <hr class="subtle-divider" />
+
+          <!-- Tipos de Funciones -->
+          <div id="tipos-de-funciones">
+            <h2>Tipos de Funciones</h2>
+            <p>En Python, existen dos tipos principales de funciones:</p>
+            <ul>
+              <li><span class="fw-bold">Funciones integradas (built-in functions)</span>: Son funciones que ya están
+                definidas en el lenguaje y se pueden utilizar directamente sin necesidad de importarlas. <br>
+                Ejemplos: <code class="language-py">print()</code>, <code class="language-py">len()</code>, <code
+                  class="language-py">type()</code>, <code class="language-py">max()</code>, <code
+                  class="language-py">min()</code>.</li>
+              <li><span class="fw-bold">Funciones definidas por el usuario</span>: Son funciones que el programador crea
+                para realizar tareas específicas.</li>
+            </ul>
+          </div>
+          <!-- Tipos de Funciones Fin -->
+          <hr class="subtle-divider" />
+
+          <!-- Argumentos de una Función -->
+          <div id="argumentos-de-una-funcion">
+            <h2>Argumentos de una Función</h2>
+            <p>Los argumentos son los valores que se pasan a una función cuando se la llama. Python admite diferentes
+              tipos de argumentos:</p>
+            <!-- Argumentos Posicionales  -->
+            <div id="argumentos-posicionales">
+              <h3>Argumentos Posicionales </h3>
+              <p>Se pasan a la función en el mismo orden en que se definen los parámetros.</p>
+              <!-- Sintaxis -->
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                   def mostrar_info(nombre, edad):
+                        print(f"Nombre: {nombre}, Edad: {edad}")
+
+                    mostrar_info("Carlos", 30)         # Por posición
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+            </div>
+            <!-- Argumentos Posicionales  fin -->
+
+            <!-- Argumentos por Nombre  -->
+            <div id="argumentos-por-nombre">
+              <h3>Argumentos por Nombre</h3>
+              <p>Se pasan a la función especificando el nombre del parámetro y su valor. Permiten pasar los argumentos
+                en cualquier orden.</p>
+              <!-- Sintaxis -->
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                   def mostrar_info(nombre, edad):
+                        print(f"Nombre: {nombre}, Edad: {edad}")
+
+                    mostrar_info(edad=25, nombre="Ana")  # Por nombre
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+            </div>
+            <!-- Argumentos por Nombre  fin -->
+
+            <!-- Argumentos por Defecto  -->
+            <div id="argumentos-por-defecto">
+              <h3>Argumentos por Defecto </h3>
+              <p>Se definen con un valor predeterminado en la definición de la función. Si no se proporciona un valor
+                para el argumento al llamar a la función, se utiliza el valor por defecto.</p>
+              <!-- Sintaxis -->
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                   def mostrar_info(nombre = "Desconocido", edad = 0):
+                        print(f"Nombre: {nombre}, Edad: {edad}")
+
+                    mostrar_info(edad=25, nombre="Ana")  # Por nombre
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+            </div>
+            <!-- Argumentos por Defecto  fin -->
+
+            <!-- Argumentos Variables  -->
+            <div id="argumentos-variables">
+              <h3>Argumentos Variables </h3>
+              <p>En ocasiones, una función necesita recibir una cantidad indefinida de argumentos. Para ello, Python
+                utiliza dos formas especiales:</p>
+              <ul>
+                <li><code class="language-py">*args</code>: Para argumentos posicionales variables.</li>
+                <li><code class="language-py">**kwargs</code>: Para argumentos con nombre variables.</li>
+              </ul>
+
+              <!-- *args  -->
+              <div>
+                <h4><code class="language-py">*args</code></h4>
+                <p><code class="language-py">*numeros</code> es un parámetro especial que permite recibir una cantidad
+                  variable de argumentos. El asterisco <code class="language-py">*</code> indica que la función puede
+                  aceptar cualquier número de valores, y Python los agrupa automáticamente en una tupla.
+                </p>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-py" data-prismjs-copy="Copy">
+                      def sumar_todo(*numeros):
+                          total = sum(numeros)
+                          return total
+
+                      print(sumar_todo(2, 5, 7, 10))
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+
+                <!-- Sintaxis -->
+                <p>Esta función es flexible. Se puede llamar con cualquier cantidad de números:</p>
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                       sumar_todo(1, 2)           # devuelve 3
+                        sumar_todo(10, 20, 30, 40) # devuelve 100
+                        sumar_todo(5)              # devuelve 5                        
+                      </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+              </div>
+              <!-- *args  fin -->
+
+              <!-- **kwargs  -->
+              <div>
+                <h4><code class="language-py">**kwargs</code></h4>
+                <p><code class="language-py">**persona</code> es un parámetro especial que permite recibir una cantidad
+                  variable de argumentos con nombre (keyword arguments). Los dos asteriscos <code
+                    class="language-py">**</code> indican que Python agrupa estos argumentos en un diccionario.</p>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-py" data-prismjs-copy="Copy">
+                     def mostrar_datos(**persona):
+                          for clave, valor in persona.items():
+                              print(f"{clave}: {valor}")
+
+                      mostrar_datos(nombre="Eduardo", edad=35, ciudad="Bogotá")
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+              </div>
+              <!-- **kwargs  fin -->
+
+              <!-- Ejemplo Argumentos Variables  -->
+              <div id="ejemplo-argumentos-variables">
+                <h3>Ejemplo Argumentos Variables </h3>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-py" data-prismjs-copy="Copy">
+                     def saludar(nombre, saludo="Hola"):
+                          """Saluda a una persona con un saludo personalizado."""
+                          print(f"{saludo}, {nombre}!")
+
+                      saludar("Juan")  # Imprime: Hola, Juan!
+                      saludar("Maria", "Buenos días")  # Imprime: Buenos días, Maria!
+
+                      def sumar(*args):
+                          """Suma un número variable de argumentos."""
+                          suma = 0
+                          for numero in args:
+                              suma += numero
+                          return suma
+
+                      print(sumar(1, 2, 3, 4))  # Imprime: 10
+
+                      def mostrar_datos(**kwargs):
+                          """Muestra datos de una persona."""
+                          for clave, valor in kwargs.items():
+                              print(f"{clave}: {valor}")
+
+                      mostrar_datos(nombre="Pedro", edad=30, ciudad="Madrid")
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+              </div>
+              <!-- Ejemplo Argumentos Variables  fin -->
+            </div>
+            <!-- Argumentos Variables  fin -->
+          </div>
+          <!-- Argumentos de una Función Fin -->
+          <hr class="subtle-divider" />
+
+          <!-- Valores de Retorno -->
+          <div id="valores-de-retorno">
+            <h2>Valores de Retorno</h2>
+            <p>Una función puede devolver un valor utilizando la sentencia <code class="language-py">return</code>. El
+              valor de retorno puede ser de cualquier tipo de dato (número, cadena, lista, diccionario, etc.). Si no se
+              especifica un valor de retorno, la función devuelve <code class="language-py">None</code> por defecto.</p>
+
+            <!-- Sintaxis -->
+            <p><span class="fw-bold">Sintaxis básica</span>:</p>
+            <div class="ej-sintaxis-100">
+              <pre data-src-status="loaded" tabindex="0">
+                <code class="language-py" data-prismjs-copy="Copy">
+                 def cuadrado(numero):
+                      """Calcula el cuadrado de un número."""
+                      return numero * numero
+
+                  resultado = cuadrado(5)
+                  print(resultado)  # Imprime: 25
+                  print(cuadrado(6))  # Imprime: 36
+                </code>
+              </pre>
+            </div>
+            <!-- Sintaxis fin -->
+
+            <p>Aquí, la función devuelve el cuadrado de un número, y ese resultado puede almacenarse en una variable o
+              usarse directamente.</p>
+          </div>
+          <!-- Valores de Retorno Fin -->
+          <hr class="subtle-divider" />
+
+          <!-- Alcance de las Variables -->
+          <div id="alcance-de-las-variables">
+            <h2>Alcance de las Variables</h2>
+            <p>El alcance de una variable se refiere a la región del código donde la variable es accesible. En Python,
+              existen dos tipos principales de alcance:</p>
+            <ul>
+              <li><span class="fw-bold">Alcance local</span>: Las variables definidas dentro de una función tienen un
+                alcance local, lo que significa que solo son accesibles dentro de esa función.</li>
+              <li><span class="fw-bold">Alcance global</span>: Las variables definidas fuera de cualquier función tienen
+                un alcance global, lo que significa que son accesibles desde cualquier parte del código, incluyendo
+                dentro de las funciones.</li>
+            </ul>
+            <p>Es importante tener en cuenta que si una variable local tiene el mismo nombre que una variable global, la
+              variable local "oculta" a la variable global dentro de la función.</p>
+
+            <!-- Sintaxis -->
+            <p><span class="fw-bold">Ejemplo</span>:</p>
+            <div class="ej-sintaxis-100">
+              <pre data-src-status="loaded" tabindex="0">
+                <code class="language-py" data-prismjs-copy="Copy">
+                 mensaje = "Variable global"
+
+                  def mostrar():
+                      """Función que muestra el mensaje."""
+                      mensaje_local = "Variable local"
+                      print(mensaje)  
+                      print(mensaje_local)
+
+                  mostrar()
+                </code>
+              </pre>
+            </div>
+            <!-- Sintaxis fin -->
+            <!-- Sintaxis -->
+            <p><span class="fw-bold">Salida</span>:</p>
+            <div class="ej-sintaxis-100">
+              <pre data-src-status="loaded" tabindex="0">
+                <code class="language-py" data-prismjs-copy="Copy">
+                 Variable global
+                  Variable local
+                </code>
+              </pre>
+            </div>
+            <!-- Sintaxis fin -->
+          </div>
+          <!-- Alcance de las Variables Fin -->
+          <hr class="subtle-divider" />
+
+          <!-- Funciones Lambda (Anónimas) -->
+          <div id="funciones-lambda-(anonimas)">
+            <h2>Funciones Lambda (Anónimas)</h2>
+            <p>Las funciones <code class="language-py">lambda</code> son funciones pequeñas y anónimas que se definen en
+              una sola línea utilizando la palabra clave <code class="language-py">lambda</code>. Se utilizan
+              principalmente para crear funciones simples y concisas que se pueden pasar como argumentos a otras
+              funciones.</p>
+            <!-- Sintaxis -->
+            <p><span class="fw-bold">Sintaxis básica</span>:</p>
+            <div class="ej-sintaxis-100">
+              <pre data-src-status="loaded" tabindex="0">
+                <code class="language-py" data-prismjs-copy="Copy">
+                 lambda argumentos: expresión
+                </code>
+              </pre>
+            </div>
+            <!-- Sintaxis fin -->
+            <!-- Sintaxis -->
+            <p><span class="fw-bold">Ejemplo</span>:</p>
+            <div class="ej-sintaxis-100">
+              <pre data-src-status="loaded" tabindex="0">
+                <code class="language-py" data-prismjs-copy="Copy">
+                 cuadrado = lambda x: x ** 2
+                  print(cuadrado(5))
+                </code>
+              </pre>
+            </div>
+            <!-- Sintaxis fin -->
+            <!-- Sintaxis -->
+            <p><span class="fw-bold">También pueden combinarse con funciones como <code
+                  class="language-py">map()</code>, <code class="language-py">filter()</code> o <code
+                  class="language-py">sorted()</code>:</span>:
+            </p>
+            <div class="ej-sintaxis-100">
+              <pre data-src-status="loaded" tabindex="0">
+                <code class="language-py" data-prismjs-copy="Copy">
+                 numeros = [1, 2, 3, 4, 5]
+                  cuadrados = list(map(lambda n: n ** 2, numeros))
+                  print(cuadrados)
+                </code>
+              </pre>
+            </div>
+            <!-- Sintaxis fin -->
+          </div>
+          <!-- Funciones Lambda (Anónimas) Fin -->
+          <hr class="subtle-divider" />
+
+          <!-- Recursividad -->
+          <div id="recursividad">
+            <h2>Recursividad</h2>
+            <p>La recursividad es una técnica de programación en la que una función se llama a sí misma dentro de su
+              propia definición. Se utiliza para resolver problemas que se pueden dividir en subproblemas más pequeños
+              del mismo tipo. Es importante que una función recursiva tenga un caso base que detenga la recursión para
+              evitar un bucle infinito.</p>
+            <!-- Sintaxis -->
+            <div class="ej-sintaxis-100">
+              <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                    def factorial(n):
+                        """Calcula el factorial de un número de forma recursiva."""
+                        if n == 0:
+                            return 1
+                        else:
+                            return n * factorial(n-1)
+
+                    print(factorial(5))  # Imprime: 120
+                  </code>
+                </pre>
+            </div>
+            <!-- Sintaxis fin -->
+          </div>
+          <!-- Recursividad Fin -->
+          <hr class="subtle-divider" />
+
+          <!-- Decoradores -->
+          <div id="decoradores">
+            <h2>Decoradores</h2>
+            <p>Los decoradores son una característica poderosa de Python que permite modificar o extender el
+              comportamiento de una función sin modificar su código fuente. Un decorador es una función que toma otra
+              función como argumento y devuelve una nueva función que envuelve a la función original.</p>
+            <!-- Sintaxis -->
+            <div class="ej-sintaxis-100">
+              <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                    def mi_decorador(funcion):
+                        def funcion_envolvente():
+                            print("Antes de llamar a la función.")
+                            funcion()
+                            print("Después de llamar a la función.")
+                        return funcion_envolvente
+
+                    @mi_decorador
+                    def saludar():
+                        print("Hola!")
+
+                    saludar()
+                  </code>
+                </pre>
+            </div>
+            <!-- Sintaxis fin -->
+            <!-- Sintaxis -->
+            <p><span class="fw-bold">Salida</span>:</p>
+            <div class="ej-sintaxis-100">
+              <pre data-src-status="loaded" tabindex="0">
+                <code class="language-py" data-prismjs-copy="Copy">
+                 Antes de llamar a la función.
+                  Hola!
+                  Después de llamar a la función.
+                </code>
+              </pre>
+            </div>
+            <!-- Sintaxis fin -->
+          </div>
+          <!-- Decoradores Fin -->
+          <hr class="subtle-divider" />
+
+          <!-- Mejores Prácticas -->
+          <div id="mejores-practicas">
+            <h2>Mejores Prácticas</h2>
+            <ul>
+              <li><span class="fw-bold">Documentar las funciones</span>: Utilizar docstrings para describir el
+                propósito,
+                los parámetros y el valor de retorno de cada función.</li>
+              <li><span class="fw-bold">Mantener las funciones pequeñas y enfocadas</span>: Cada función debe realizar
+                una tarea específica y bien definida.</li>
+              <li><span class="fw-bold">Utilizar nombres descriptivos para las funciones y los parámetros</span>: Esto
+                facilita la lectura y comprensión del código.</li>
+              <li><span class="fw-bold">Evitar efectos secundarios</span>: Las funciones deben ser lo más puras posible,
+                es decir, no deben modificar el estado global del programa.</li>
+              <li><span class="fw-bold">Utilizar argumentos por defecto cuando sea apropiado</span>: Esto facilita la
+                llamada a la función y reduce la cantidad de código repetitivo.</li>
+              <li>Considerar el uso de funciones lambda para tareas simples y concisas.</li>
+              <li><span class="fw-bold">Utilizar la recursividad con precaución</span>: Asegurarse de que la función
+                recursiva tenga un caso base para evitar un bucle infinito.</li>
+              <li>Aprovechar los decoradores para modificar el comportamiento de las funciones de forma elegante y
+                reutilizable.</li>
+              <li>Evitar variables globales cuando sea posible.</li>
+              <li>Retornar valores útiles en lugar de imprimir directamente dentro de la función.</li>
+            </ul>
+          </div>
+          <!-- Mejores Prácticas Fin -->
+        </article>
+        <article class="row" id="comments">
+          <h2>COMENTARIOS</h2>
+          <p>Si tiene alguna inquietud, duda o ha encontrado algún error, porfavor infórmelo a través del formulario
+            disponible para estepropósito.</p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
+                </div>
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">Enviar</button>
+              </fieldset>
+              <p class="small text-center">La política de privacidad, y los términos y condiciones estándisponibles en
+                el formulario de contacto.</p>
+            </form>
+          </div>
+        </article>
+        <!-- Comentarios fin -->
+      </section>
+      <!-- -------------------------------- barra lateral -------------------------------- -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        <h2>En Este Artículo</h2>
+        <div class="menu-scroll">
+          <div class="menu-container">
+            <div class="border border-1">
+              <div class="menu-item">
+                <a href="#introduccion" class="simple-link">Introducción</a>
+              </div>
+              <div class="menu-item">
+                <a href="#que-son-las-funciones" class="simple-link">Que Son las Funciones</a>
+              </div>
+              <div class="menu-item">
+                <a href="#sintaxis-de-una-funcion-en-python" class="simple-link">Sintaxis de una Función en Python</a>
+              </div>
+              <div class="menu-item">
+                <a href="#tipos-de-funciones" class="simple-link">Tipos de Funciones</a>
+              </div>
+              <div class="menu-item">
+                <details>
+                  <summary>
+                    Argumentos de una Función
+                  </summary>
+                  <div class="submenu">
+                    <a href="#argumentos-de-una-funcion" class="submenu-item">Argumentos de una Función</a>
+                    <a href="#argumentos-posicionales" class="submenu-item">Argumentos Posicionales</a>
+                    <a href="#argumentos-por-nombre" class="submenu-item">Argumentos por Nombre</a>
+                    <a href="#argumentos-por-defecto" class="submenu-item">Argumentos por Defecto</a>
+                    <a href="#argumentos-variables" class="submenu-item">Argumentos Variables</a>
+                    <a href="#ejemplo-argumentos-variables" class="submenu-item">Ejemplo Argumentos Variables</a>
+                  </div>
+                </details>
+              </div>
+              <div class="menu-item">
+                <a href="#valores-de-retorno" class="simple-link">Valores de Retorno</a>
+              </div>
+              <div class="menu-item">
+                <a href="#alcance-de-las-variables" class="simple-link">Alcance de las Variables</a>
+                </li>
+                <div class="menu-item">
+                  <a href="#funciones-lambda-(anonimas)" class="simple-link">Funciones Lambda (Anónimas)</a>
+                </div>
+
+                <a href="#recursividad" class="simple-link">Recursividad</a>
+
+                <div class="menu-item">
+                  <a href="#decoradores" class="simple-link">Decoradores</a>
+                </div>
+                <div class="menu-item">
+                  <a href="#mejores-practicas" class="simple-link">Mejores Prácticas</a>
+                </div>
+                <!-- Comentarios  -->
+                <div class="menu-item">
+                  <a href="#comments" class="simple-link">Comentarios</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </aside>
+      <!-- -------------------------------- fin barra lateral -------------------------------- -->
+    </main>
+  </div>
+  <!--  Principal Fin  -->
+
+  <!--  pie de pagina  -->
+  <footer class="row border-top border-1 m-1 mt-auto">
+    <div class="row">
+      <!-- contacto -->
+      <address class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Contacto</div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class="ms-3">
+            <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class="ms-3">Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      <!-- Derechos de autor -->
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
+      </div>
+      <!-- redes sociales -->
+      <div class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Redes Sociales</div>
+        <div class="d-flex justify-content-evenly align-items-center gap-5">
+          <div>
+            <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center gap-2"></div>
+  </footer>
+  <!--  pie de pagina fin  -->
+
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
+</html>
