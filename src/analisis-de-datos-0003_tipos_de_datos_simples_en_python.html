@@ -1,0 +1,413 @@
+<!-- @format -->
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Aprenda los fundamentos de Python, uno de los lenguajes de programación más usados en el mundo. Descubra su sintaxis, estructuras básicas, y cómo empezar a crear programas paso a paso" />
+  <meta name="title" content="Fundamentos a Python - Ing. Eduardo Herrera Forero." />
+  <meta name="keywords"
+    content="Python, programación, introducción a Python, aprender Python, curso Python, lenguaje de programación, tutorial Python, fundamentos de Python, código en Python" />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eduardoherreraf.github.io/analisis-de-datos-0002_introduccion_a_python..html" />
+  <!-- Fin Metaetiquetas -->
+
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Fundamentos a Python - Ing. Eduardo Herrera Forero." />
+  <meta property="og:description"
+    content="Aprenda los fundamentos de Python, uno de los lenguajes de programación más usados en el mundo. Descubra su sintaxis, estructuras básicas, y cómo empezar a crear programas paso a paso" />
+  <meta property="og:image" content="https://i.ibb.co/dsgttHFn/introduccion-de-python-comp.jpg" />
+  <meta property="og:image:alt"
+    content="Ejemplo introductorio en Python donde el programa solicita el nombre del usuario y muestra el mensaje: Hola, Eduardo" />
+  <meta property="og:url"
+    content="https://eduardoherreraf.github.io/analisis-de-datos-0002_introduccion_a_python..html" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
+
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Fundamentos a Python - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description"
+    content="Aprenda los fundamentos de Python, uno de los lenguajes de programación más usados en el mundo. Descubra su sintaxis, estructuras básicas, y cómo empezar a crear programas paso a paso" />
+  <meta name="twitter:image" content="https://i.ibb.co/dsgttHFn/introduccion-de-python-comp.jpg" />
+  <meta name="twitter:image:alt"
+    content="Ejemplo introductorio de Python: programa que pide el nombre del usuario y muestra un saludo personalizado. Ideal para aprender los fundamentos del lenguaje">
+  <meta name="twitter:url"
+    content="https://eduardoherreraf.github.io/analisis-de-datos-0002_introduccion_a_python..html" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
+
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
+
+  <title>
+    Fundamentos a Python - Ing. Eduardo Herrera Forero.
+  </title>
+
+  <script type="module" defer src="./js/main.js"></script>
+
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
+
+  <!--  Principal  -->
+  <div class="container-fluid" id="introduccion">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!--  Fundamentos de Python-->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <header>
+            <h1>Tipos de Datos Simples en Python</h1>
+          </header>
+          <!-- Introducción -->
+          <div class="mt-3">
+            <h2>Introducción a Tipos de Datos Simples en Python</h2>
+            <div class="centrar-imagen imagen40 mb-5">
+              <figure class="img-container">
+                <img src="https://i.postimg.cc/FR2C0ZTk/introduccion-de-python-comp.jpg" class="img-fluid"
+                  alt="Ejemplo introductorio en Python donde el programa solicita el nombre del usuario y muestra el mensaje: Hola, Eduardo"
+                  title="Ejemplo básico en Python para principiantes: programa que saluda al usuario por su nombre"
+                  loading="lazy"
+                  onerror="this.onerror=null; this.src='https://i.ibb.co/dsgttHFn/introduccion-de-python-comp.jpg';" />
+                <figcaption class="img-caption">
+                  Ejemplo de un programa en Python que solicita el nombre del usuario y muestra un saludo personalizado.
+                  Una forma sencilla de comprender la entrada y salida de datos en Python.
+                </figcaption>
+              </figure>
+            </div>
+            <p>En el lenguaje Python, los tipos de datos básicos constituyen la base fundamental para el manejo y
+              procesamiento de la información. Cada tipo de dato define la naturaleza del valor que se almacena en una
+              variable y determina qué operaciones pueden realizarse sobre él. Comprender estos tipos es esencial para
+              escribir programas correctos, eficientes y fáciles de mantener. Python, al ser un lenguaje de tipado
+              dinámico, permite que las variables cambien de tipo en tiempo de ejecución, lo que brinda una gran
+              flexibilidad al programador.</p>
+            <p>A continuación, se explican los principales tipos de datos básicos en Python:</p>
+            <ul>
+              <li>Números (enteros, flotantes y complejos)</li>
+              <li>Cadenas de Texto (Strings)</li>
+              <li>Booleanos (True, False)</li>
+            </ul>
+          </div>
+          <!-- Introducción Fin -->
+          <hr class="subtle-divider" />
+
+          <!-- Números (enteros, flotantes y complejos)  -->
+          <div id="números-(enteros,-flotantes-y-complejos)">
+            <h2>Números (enteros, flotantes y complejos) </h2>
+            <p>Python maneja tres tipos principales de números: enteros, flotantes y complejos.
+            </p>
+            <ul>
+              <li><code class="language-py">Enteros (int)</code>: representan números sin parte decimal. <br>
+                Ejemplo:
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                        edad = 30
+                      </code>
+                    </pre>
+                </div>
+                <!-- Sintaxis fin -->
+                <p>Aquí, la variable <code class="language-py">edad</code> almacena un número entero.</p>
+              </li>
+              <li><code class="language-py">Flotantes (float)</code>: representan números reales con parte decimal.
+                <br>
+                Ejemplo:
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                        temperatura = 25.7
+                      </code>
+                    </pre>
+                </div>
+                <!-- Sintaxis fin -->
+                <p>El número cod <code class="language-py">25.7</code> es de tipo flotante.</p>
+              </li>
+              <li><code class="language-py">Complejos (complex)</code>: se utilizan en cálculos matemáticos avanzados
+                y contienen una parte real y una parte imaginaria. <br>
+                Ejemplo:
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                        z = 2 + 3j
+                      </code>
+                    </pre>
+                </div>
+                <!-- Sintaxis fin -->
+                <p>En este caso, <code class="language-py">2</code> es la parte real y <code
+                    class="language-py">3j</code>la parte imaginaria.</p>
+              </li>
+            </ul>
+          </div>
+          <!-- Números (enteros, flotantes y complejos)  fin -->
+
+          <!-- Cadenas de Texto (Strings)  -->
+          <div id="cadenas-de-texto-(strings)">
+            <h2>Cadenas de Texto (Strings) </h2>
+            <p>Las cadenas de texto o strings (<code class="language-py">str</code>) representan secuencias de
+              caracteres, como palabras, frases o
+              incluso números que se tratan como texto.</p>
+            <p>Se encierran entre comillas simples, dobles o triples.</p>
+            <p>Ejemplo:</p>
+            <!-- Sintaxis -->
+            <div class="ej-sintaxis-100">
+              <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                   nombre = "Eduardo"
+                    mensaje = 'Bienvenido al análisis de datos con Python'
+                  </code>
+                </pre>
+            </div>
+            <!-- Sintaxis fin -->
+            <p>Las cadenas permiten múltiples operaciones, como concatenación (+), repetición (*) o acceso a
+              caracteres individuales mediante índices.</p>
+            <p>Ejemplo:</p>
+            <!-- Sintaxis -->
+            <div class="ej-sintaxis-100">
+              <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                    print(nombre[0])  # Muestra la letra 'E'
+                  </code>
+                </pre>
+            </div>
+            <!-- Sintaxis fin -->
+          </div>
+          <!-- Cadenas de Texto (Strings)  fin -->
+
+          <!-- Booleanos (True, False)  -->
+          <div id="booleanos-(true,-false)">
+            <h2>Booleanos (True, False) </h2>
+            <p>El tipo booleano (bool) tiene solo dos valores posibles: True y False, que representan verdadero o
+              falso.</p>
+            <p>Este tipo se utiliza principalmente en estructuras de control como condiciones o bucles.</p>
+            <p>Ejemplo:</p>
+            <!-- Sintaxis -->
+            <div class="ej-sintaxis-100">
+              <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                   activo = True
+                    es_mayor = edad > 18
+                  </code>
+                </pre>
+            </div>
+            <!-- Sintaxis fin -->
+          </div>
+          <!-- Booleanos (True, False)  fin -->
+
+          <!-- Conversión de Tipos (Casting)  -->
+          <div id="conversion-de-tipos-(casting)">
+            <h2>Conversión de Tipos (Casting) </h2>
+            <p>Python permite convertir un valor de un tipo de dato a otro utilizando funciones integradas. Este
+              proceso se conoce como casting o conversión de tipos.</p>
+            <p>Algunas funciones comunes son:</p>
+            <ul>
+              <li><code class="language-py">int()</code>: convierte a entero.</li>
+              <li><code class="language-py">float()</code>: convierte a flotante.</li>
+              <li><code class="language-py">str()</code>: convierte a cadena.</li>
+            </ul>
+            <p>Ejemplos:</p>
+            <!-- Sintaxis -->
+            <p><span class="fw-bold">Sintaxis básica</span>:</p>
+            <div class="ej-sintaxis-100">
+              <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                   x = int(3.7)     # Devuelve 3
+                    y = float(5)     # Devuelve 5.0
+                    z = str(10)      # Devuelve "10"
+                    b = bool(0)      # Devuelve False
+                  </code>
+                </pre>
+            </div>
+            <!-- Sintaxis fin -->
+            <p>Estas conversiones son muy útiles cuando se recibe información en diferentes formatos (por ejemplo,
+              desde la entrada del usuario o archivos de texto) y se necesita trabajar con tipos numéricos o lógicos.
+            </p>
+          </div>
+          <!-- Conversión de Tipos (Casting)  fin -->
+        </article>
+        <article class="row" id="comments">
+          <h2>Comentarios</h2>
+          <p>Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del formulario
+            disponible para este propósito.</p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
+                </div>
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">Enviar</button>
+              </fieldset>
+              <p class="small text-center">La política de privacidad, y los términos y condiciones estándisponibles en
+                el formulario de contacto.</p>
+            </form>
+          </div>
+        </article>
+        <!-- Comentarios fin -->
+      </section>
+      <!-- -------------------------------- barra lateral -------------------------------- -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        <h2>En Este Artículo</h2>
+        <div class="menu-scroll">
+          <div class="menu-container">
+            <div class="border border-1">
+
+              <div class="menu-item">
+                <a href="#introduccion" class="simple-link">Introducción a Tipos de Datos Simples en Python</a>
+              </div>
+              <a href="#números-(enteros,-flotantes-y-complejos)" class="simple-link">Números (enteros, flotantes
+                y complejos)</a>
+              <a href="#cadenas-de-texto-(strings)" class="simple-link">Cadenas de Texto (Strings)</a>
+              <a href="#booleanos-(true,-false)" class="simple-link">Booleanos (True, False)</a>
+              <a href="#conversion-de-tipos-(casting)" class="simple-link">Conversión de Tipos (Casting)</a>
+              
+              <!-- Comentarios  -->
+              <div class="menu-item">
+                <a href="#comments" class="simple-link">Comentarios</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- -------------------------------- fin barra lateral -------------------------------- -->
+    </main>
+  </div>
+  <!--  Principal Fin  -->
+
+  <!--  pie de pagina  -->
+  <footer class="row border-top border-1 m-1 mt-auto">
+    <div class="row">
+      <!-- contacto -->
+      <address class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Contacto</div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class="ms-3">
+            <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class="ms-3">Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      <!-- Derechos de autor -->
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
+      </div>
+      <!-- redes sociales -->
+      <div class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Redes Sociales</div>
+        <div class="d-flex justify-content-evenly align-items-center gap-5">
+          <div>
+            <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center gap-2"></div>
+  </footer>
+  <!--  pie de pagina fin  -->
+
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
+</html>
