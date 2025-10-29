@@ -1,0 +1,1158 @@
+<!-- @format -->
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Aprenda los fundamentos de Python, uno de los lenguajes de programación más usados en el mundo. Descubra su sintaxis, estructuras básicas, y cómo empezar a crear programas paso a paso" />
+  <meta name="title" content="Fundamentos a Python - Ing. Eduardo Herrera Forero." />
+  <meta name="keywords"
+    content="Python, programación, introducción a Python, aprender Python, curso Python, lenguaje de programación, tutorial Python, fundamentos de Python, código en Python" />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eduardoherreraf.github.io/analisis-de-datos-0002_introduccion_a_python..html" />
+  <!-- Fin Metaetiquetas -->
+
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Fundamentos a Python - Ing. Eduardo Herrera Forero." />
+  <meta property="og:description"
+    content="Aprenda los fundamentos de Python, uno de los lenguajes de programación más usados en el mundo. Descubra su sintaxis, estructuras básicas, y cómo empezar a crear programas paso a paso" />
+  <meta property="og:image" content="https://i.ibb.co/dsgttHFn/introduccion-de-python-comp.jpg" />
+  <meta property="og:image:alt"
+    content="Ejemplo introductorio en Python donde el programa solicita el nombre del usuario y muestra el mensaje: Hola, Eduardo" />
+  <meta property="og:url"
+    content="https://eduardoherreraf.github.io/analisis-de-datos-0002_introduccion_a_python..html" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
+
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Fundamentos a Python - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description"
+    content="Aprenda los fundamentos de Python, uno de los lenguajes de programación más usados en el mundo. Descubra su sintaxis, estructuras básicas, y cómo empezar a crear programas paso a paso" />
+  <meta name="twitter:image" content="https://i.ibb.co/dsgttHFn/introduccion-de-python-comp.jpg" />
+  <meta name="twitter:image:alt"
+    content="Ejemplo introductorio de Python: programa que pide el nombre del usuario y muestra un saludo personalizado. Ideal para aprender los fundamentos del lenguaje">
+  <meta name="twitter:url"
+    content="https://eduardoherreraf.github.io/analisis-de-datos-0002_introduccion_a_python..html" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
+
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
+
+  <title>
+    Fundamentos a Python - Ing. Eduardo Herrera Forero.
+  </title>
+
+  <script type="module" defer src="./js/main.js"></script>
+
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
+
+  <!--  Principal  -->
+  <div class="container-fluid" id="introduccion">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!-- Estructuras de Datos en Python Fin -->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <header>
+            <h1>Estructuras de Datos en Python</h1>
+          </header>
+          <!-- Introducción -->
+          <div class="mt-3">
+            <h2>Introducción Estructuras de Datos en Python</h2>
+            <div class="centrar-imagen imagen40 mb-5">
+              <figure class="img-container">
+                <img src="https://i.postimg.cc/FR2C0ZTk/introduccion-de-python-comp.jpg" class="img-fluid"
+                  alt="Ejemplo introductorio en Python donde el programa solicita el nombre del usuario y muestra el mensaje: Hola, Eduardo"
+                  title="Ejemplo básico en Python para principiantes: programa que saluda al usuario por su nombre"
+                  loading="lazy"
+                  onerror="this.onerror=null; this.src='https://i.ibb.co/dsgttHFn/introduccion-de-python-comp.jpg';" />
+                <figcaption class="img-caption">
+                  Ejemplo de un programa en Python que solicita el nombre del usuario y muestra un saludo personalizado.
+                  Una forma sencilla de comprender la entrada y salida de datos en Python.
+                </figcaption>
+              </figure>
+            </div>
+            <p>Las estructuras de datos en Python son contenedores que permiten organizar, almacenar y manipular
+              información de manera eficiente. Estas estructuras facilitan el manejo de colecciones de elementos (como
+              listas de números, cadenas o diccionarios de datos).</p>
+            <p>A continuación se presentan las principales estructuras de datos en Python, junto con su descripción:</p>
+            <ul>
+              <li><code class="language-py">Listas (list) </code>:</li>
+              <li><code class="language-py">Tuplas (tuple) </code>:</li>
+              <li><code class="language-py">Diccionarios (dict) </code>:</li>
+              <li><code class="language-py">Conjuntos (set)</code>:</li>
+              <li><code class="language-py">Cadenas de texto (str)</code>:</li>
+            </ul>
+          </div>
+          <!-- Introducción Fin -->
+          <hr class="subtle-divider" />
+
+
+
+
+          <!-- Listas (list)  -->
+          <div id="listas-list">
+            <h2>Listas (<code class="language-py">list</code>) </h2>
+            <ul>
+              <li>Son colecciones ordenadas (mantienen una posición fija o índice y conservan la posición en el que
+                fueron
+                agregados) y mutables (pueden modificarse después de su creación).</li>
+              <li>Permiten almacenar diferentes tipos de datos.</li>
+              <li>Se definen con corchetes <code class="language-py">[ ]</code>.</li>
+              <li><span class="fw-bold">Ejemplo</span>:
+                <!-- Sintaxis -->
+                <p><span class="fw-bold">Sintaxis básica</span>:</p>
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                       numeros = [10, 20, 30, 40]
+                        nombres = ["Juan", "María", "Pedro"]
+                      </code>
+                    </pre>
+                </div>
+                <!-- Sintaxis fin -->
+              </li>
+              <li><span class="fw-bold">Características</span>:
+                <ul>
+                  <li>Mantienen el orden de los elementos.</li>
+                  <li>Permiten duplicados.</li>
+                  <li>Soportan operaciones como agregar, eliminar o modificar elementos.</li>
+                </ul>
+              </li>
+              <li>Funciones para listas:
+                <ul>
+                  <li>Crear y conocer listas:
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis-100">
+                      <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-py" data-prismjs-copy="Copy">
+                           # Creación de una lista, uso de corchetes ([ ]) 
+                            lst = [1, 2, 3]
+
+                            # list(iterable): Permite convertir un iterable 
+                            t = (1, 2, 3)  # tupla
+                            lst = list(t)  # [1, 2, 3]
+
+                            # len(lista): Función que devuelve el número de elementos de la lista. 
+                            nums = [5, 10, 15]
+                            print(len(nums))  # 3
+                          </code>
+                        </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </li>
+                  <li>Métodos para agregar elementos a listas:
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis-100">
+                      <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-py" data-prismjs-copy="Copy">
+                           # lista.append(x): Agrega el elemento x al final de la lista. 
+                            fruits = ['apple', 'banana']
+                            fruits.append('orange')         # ['apple', 'banana', 'orange']
+
+                            # lista.extend(iterable): Agrega todos los elementos del iterable al final de la lista. 
+                            nums = [1, 2]
+                            nums.extend([3, 4, 5])  # [1, 2, 3, 4, 5]
+                            
+                            # lista.insert(i, x): Inserta el elemento x en la posición i, desplazando los elementos posteriores. 
+                            vals = [10, 30]
+                            vals.insert(1, 20)  # [10, 20, 30]
+                          </code>
+                        </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </li>
+                  <li>Métodos para consultar / encontrar elementos en una Lista:
+                    <!-- Sintaxis -->
+
+                    <div class="ej-sintaxis-100">
+                      <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-py" data-prismjs-copy="Copy">
+                           # lista.index(x): Devuelve el índice (posición) de la primera
+                            # aparición de x en la lista (y da error si no está).
+                            items = ['a', 'b', 'c']
+                            print(items.index('b'))  # 1
+
+                            # lista.count(x): Cuenta cuántas veces aparece x en la lista.
+                            numbers = [1,2,2,3]
+                            print(numbers.count(2))  # 2
+                          </code>
+                        </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </li>
+                  <li>Métodos para eliminar / vaciar elementos en una Lista:
+                    <div class="ej-sintaxis-100">
+                      <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-py" data-prismjs-copy="Copy">
+                           # lista.remove(x): Elimina la primera aparición de x en la lista. Da error si x no está.
+                            letters = ['a','b','c','b']
+                            letters.remove('b')  # ['a','c','b']
+
+                            # lista.pop(i): Elimina y devuelve el elemento en el índice i. Si no se indica i, elimina el último elemento.
+                            stack = [10,20,30]
+                            x = stack.pop()  # x = 30, stack = [10,20]
+
+                            lista.clear(): Elimina todos los elementos de la lista, dejándola vacía.
+                            data = [1,2,3]
+                            data.clear()  # []                           
+                          </code>
+                        </pre>
+                    </div>
+                  </li>
+                  <li>Métodos para reordenar / copiar en una Lista:
+                    <div class="ej-sintaxis-100">
+                      <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-py" data-prismjs-copy="Copy">
+                           # lista.sort(): Ordena los elementos de la lista in-place (modifica la lista) en orden ascendente por defecto.
+                            arr = [3, 1, 2]
+                            arr.sort()  # [1,2,3]
+
+                            # lista.reverse(): Invierte el orden de los elementos en la lista (in-place).
+                            seq = [1,2,3]
+                            seq.reverse()  # [3,2,1]
+
+                            # lista.copy(): Devuelve una copia superficial (“shallow copy”) de la lista.
+                            orig = [1,2,3]
+                            copy_lst = orig.copy()                           
+                          </code>
+                        </pre>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>Algunos ejemplos de uso:
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                       # Crear una lista
+                        mi_lista = [5, 10, 15]
+
+                        # Agregar
+                        mi_lista.append(20)         # [5,10,15,20]
+                        mi_lista.extend([25,30])    # [5,10,15,20,25,30]
+                        mi_lista.insert(2, 12)      # [5,10,12,15,20,25,30]
+
+                        # Consultar
+                        print(mi_lista.index(15))   # posición de 15 → 3
+                        print(mi_lista.count(10))   # cuántas veces aparece 10 → 1
+
+                        # Eliminar
+                        mi_lista.remove(12)         # elimina el elemento 12
+                        ult = mi_lista.pop()        # elimina y retorna el último → 30
+                        mi_lista.clear()            # queda []
+
+                        # Reordenar / copiar
+                        otra = [3,1,2]
+                        otra.sort()                 # [1,2,3]
+                        otra.reverse()              # [3,2,1]
+                        copia = otra.copy()         # copia de la lista
+                      </code>
+                    </pre>
+                </div>
+                <!-- Sintaxis fin -->
+              </li>
+            </ul>
+          </div>
+          <!-- Listas (list)  fin -->
+
+          <!-- Tuplas (tuple)  -->
+          <div id="tuplas-tuple">
+            <h2>Tuplas (<code class="language-py">tuple</code>) </h2>
+            <ul>
+              <li>Son colecciones ordenadas pero inmutables (no se pueden modificar después de creadas).</li>
+              <li>Se definen con paréntesis <code class="language-py">( )</code>.</li>
+              <li><span class="fw-bold">Ejemplo</span>:
+                <!-- Sintaxis -->
+                <p><span class="fw-bold">Sintaxis básica</span>:</p>
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                       coordenadas = (4, 5)
+                        colores = ("rojo", "verde", "azul")
+                      </code>
+                    </pre>
+                </div>
+                <!-- Sintaxis fin -->
+              </li>
+              <li><span class="fw-bold">Características</span>:
+                <ul>
+                  <li>Más rápidas que las listas.</li>
+                  <li>Útiles para datos que no deben cambiar (por ejemplo, posiciones o configuraciones fijas).</li>
+                </ul>
+              </li>
+              <li><span class="fw-bold">Funciones para Tuplas</span>:
+                <ul>
+                  <li>Crear y conocer tuplas:
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis-100">
+                      <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-py" data-prismjs-copy="Copy">
+                           # tuple(iterable): Función que convierte un iterable (por ejemplo una lista, una cadena de caracteres) en una tupla.
+                            lista = [1, 2, 3]
+                            tup = tuple(lista)  # (1, 2, 3)
+
+                            # Uso de paréntesis () para definir una tupla literal.
+                            t = (4, 5, 6)
+
+                            # Función que devuelve el número de elementos de la tupla.
+                            len(tupla)
+
+                            t = (10, 20, 30)
+                            print(len(t))  # 3
+                          </code>
+                        </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </li>
+                  <li>Inmutabilidad: lo que NO se puede hacer: Dado que una tupla es inmutable, una vez creada no se
+                    puede modificar (no se pueden añadir, eliminar o cambiar elementos).
+                    <div class="ej-sintaxis-100">
+                      <pre data-src-status="loaded" tabindex="0">
+                              <code class="language-py" data-prismjs-copy="Copy">
+                               t = (1, 2, 3)
+                                t[0] = 5  # Produce error: 'tuple' object does not support item assignment
+                              </code>
+                            </pre>
+                    </div>
+                  </li>
+                  <li>Métodos para consultar / encontrar elementos:
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis-100">
+                      <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-py" data-prismjs-copy="Copy">
+                           # tupla.count(x): Devuelve la cantidad de veces que aparece x en la tupla.
+                            t = (1, 2, 2, 3, 2)
+                            print(t.count(2))  # 3
+
+                            # tupla.index(x[, start[, end]]): Devuelve el índice de la primera aparición de x en la tupla (puede opcionalmente buscar desde start hasta end). Si x no está, lanza ValueError.                            
+                            t = (0, 1, 2, 3, 2, 3)
+                            print(t.index(3))    # 3
+                            print(t.index(2, 3)) # 4
+                          </code>
+                        </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </li>
+                  <li>Operaciones comunes con tuplas: Además de los métodos, hay funciones y operadores que funcionan
+                    con tuplas (y en muchos casos con otros tipos de secuencias).
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis-100">
+                      <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-py" data-prismjs-copy="Copy">
+                           # in: Verificar si un valor está en la tupla.
+                            t = ('apple', 'banana', 'cherry')
+                            print('banana' in t)  # True
+
+                            # Indexación y slicing (rebanado):
+                            t = (10, 20, 30, 40)
+                            print(t[1])     # 20
+                            print(t[1:3])   # (20, 30)
+
+                            # Concatenación (+): Combina dos o más tuplas en una nueva tupla.
+                            t1 = (1, 2)
+                            t2 = (3, 4)
+                            t3 = t1 + t2  # (1, 2, 3, 4)
+
+                            # Repetición (*): Repite una tupla un número de veces.
+                            t = (5,)
+                            t2 = t * 3  # (5, 5, 5)
+
+                            # Funciones como max(), min(), sum() (para tuplas de valores numéricos) o sorted() (que devuelve una lista ordenada de los elementos) también se pueden usar.
+                            t = (4, 1, 7, 3)
+                            print(max(t))    # 7
+                            print(min(t))    # 1
+                            print(sum(t))    # 15
+                            print(sorted(t)) # [1, 3, 4, 7]  — nota: devuelve lista, no tupla
+                          </code>
+                        </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </li>
+                  <!-- Sintaxis -->
+                  <p><span class="fw-bold">Algunos ejemplos de uso</span>:</p>
+                  <div class="ej-sintaxis-100">
+                    <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-py" data-prismjs-copy="Copy">
+                          # Crear una tupla
+                          mi_tupla = ('python', 'java', 'c#')
+
+                          # Consultar
+                          print(mi_tupla.index('java'))  # 1
+                          print(mi_tupla.count('python')) # 1
+
+                          # Operaciones
+                          if 'c#' in mi_tupla:
+                              print("c# está en la tupla")
+
+                          otra = (100, 200) 
+                          combinada = mi_tupla + otra   # ('python','java','c#',100,200)
+                          repetida = (0,)*4             # (0,0,0,0)
+
+                          # Funciones
+                          numeros = (10, 20, 30, 40)
+                          print(len(numeros))            # 4
+                          print(max(numeros))            # 40
+                          print(min(numeros))            # 10
+                          print(sum(numeros))            # 100
+                          sorted(numeros)                # [10,20,30,40]
+                        </code>
+                      </pre>
+                  </div>
+                  <!-- Sintaxis fin -->
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- Tuplas (tuple)  fin -->
+
+          <!-- Diccionarios (dict)  -->
+          <div id="diccionarios-dict">
+            <h2>Diccionarios (<code class="language-py">dict</code>) </h2>
+            <ul>
+              <li>Son colecciones no ordenadas de pares clave–valor.</li>
+              <li>Se definen con llaves <code class="language-py">{ }</code>.</li>
+              <li><span class="fw-bold">Ejemplo</span>:
+                <!-- Sintaxis -->
+                <p><span class="fw-bold">Sintaxis básica</span>:</p>
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                        persona = {"nombre": "Eduardo", "edad": 35, "ciudad": "Bogotá"}
+                      </code>
+                    </pre>
+                </div>
+                <!-- Sintaxis fin -->
+              </li>
+              <li><span class="fw-bold">Características</span>:
+                <ul>
+                  <li>Se accede a los datos mediante la clave.</li>
+                  <li>Muy usados para representar objetos o registros de datos.</li>
+                  <li>Permiten duplicados.</li>
+                </ul>
+              </li>
+              <li><span class="fw-bold">Funciones para Diccionarios</span>:
+                <ul>
+                  <li>Crear y conocer diccionarios en Diccionarios:
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis-100">
+                      <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-py" data-prismjs-copy="Copy">
+                           # dict(iterable): Permite crear un diccionario a partir de un iterable de pares clave-valor o mediante el constructor dict().
+                            d = dict(a = 1, b = 2)  # {'a': 1, 'b': 2}
+
+                            # len(diccionario): Función que devuelve el número de pares clave-valor en el diccionario.
+                            d = {'x': 10, 'y': 20}
+                            print(len(d))  # 2
+                          </code>
+                        </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </li>
+                  <li>Métodos para agregar o actualizar elementos en Diccionarios:
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis-100">
+                      <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-py" data-prismjs-copy="Copy">
+                           # diccionario[key] = value: Añade una nueva clave con su valor o actualiza el valor si la clave ya existe.
+                            config = {'color': 'green', 'width': 42}
+                            config['height'] = 100  # Añade
+                            config['width'] = 50    # Actualiza
+
+                            # diccionario.update(other_dictionary_or_iterable): Añade múltiples pares clave-valor de otro diccionario o iterable, 
+                            # actualizando los existentes si las claves coinciden.
+                            d1 = {'a': 1, 'b': 2}
+                            d2 = {'b': 3, 'c': 4}
+                            d1.update(d2)  # d1 ahora es {'a':1, 'b':3, 'c':4}
+                          </code>
+                        </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </li>
+                  <li>Métodos para consultar / encontrar elementos en Diccionarios:
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis-100">
+                      <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-py" data-prismjs-copy="Copy">
+                           # diccionario.get(key, default=None): Devuelve el valor asociado a key; si la clave no existe, devuelve default (por defecto None). 
+                            # Evita que se produzca un KeyError. 
+                            d = {'name': 'Alice', 'age': 30}
+                            print(d.get('age'))        # 30
+                            print(d.get('gender', 'N/A'))  # 'N/A'
+
+                            # diccionario.keys(): Devuelve un objeto “vista” de todas las claves del diccionario.
+                            d = {'x':10, 'y':20}
+                            print(d.values())  # dict_values([10,20])
+
+                            # diccionario.items(): Devuelve un objeto vista de pares (clave, valor). Muy útil para iterar sobre ambos.  
+                            d = {'x':10, 'y':20}
+                            for key, value in d.items():
+                                print(key, value) # x 10 y y 20
+                          </code>
+                        </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </li>
+                  <li>Métodos para eliminar / vaciar elementos en Diccionarios:
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis-100">
+                      <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-py" data-prismjs-copy="Copy">
+                           # diccionario.pop(key, default): Elimina la clave key y devuelve su valor; si no existe, devuelve default si se especifica, o lanza KeyError.
+                            d = {'a':1, 'b':2}
+                            val = d.pop('a')  # val=1, d={'b':2}
+
+                            # diccionario.popitem(): Elimina y devuelve el último par clave-valor insertado (desde Python 3.7 las inserciones tienen un orden definido).
+                            d = {'a':1, 'b':2}
+                            last = d.popitem()  # e.g. ('b',2)
+
+                            # diccionario.clear(): Elimina todos los elementos del diccionario, dejándolo vacío.
+                            d = {'a':1, 'b':2}
+                            d.clear()  # {}
+                          </code>
+                        </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </li>
+                  <li>Métodos para copia / estructuras en Diccionarios:
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis-100">
+                      <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-py" data-prismjs-copy="Copy">
+                           # diccionario.copy(): Devuelve una copia superficial (“shallow copy”) del diccionario.
+                            orig = {'x':10, 'y':20}
+                            copy_dic = orig.copy()
+
+                            # dict.fromkeys(iterable_of_keys, value=None): Crea un nuevo diccionario con las claves provenientes de iterable_of_keys y asigna a todas el valor value.
+                            keys = ['a','b','c']
+                            new_dic = dict.fromkeys(keys, 0)  # {'a':0, 'b':0, 'c':0}
+                         </code>
+                        </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </li>
+                </ul>
+              </li>
+              <li><span class="fw-bold">Algunos ejemplos de uso</span>:
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                       # Crear un diccionario
+                        mi_dic = {'name':'Eduardo', 'role':'Ingeniero', 'city':'Bogotá'}
+
+                        # Agregar/actualizar
+                        mi_dic['project'] = 'Telecom'
+                        mi_dic.update({'city':'Bogotá D.C.', 'experience':5})
+
+                        # Consultar
+                        print(mi_dic.get('name'))        # 'Eduardo'
+                        print(mi_dic.keys())             # todas las claves
+                        print(mi_dic.items())            # pares (clave, valor)
+
+                        # Eliminar
+                        mi_dic.pop('experience')         # elimina clave 'experience'
+                        mi_dic.popitem()                 # elimina el último par insertado
+                        mi_dic.clear()                   # deja el diccionario vacío {}
+
+                        # Copiar / estructuras
+                        otra = mi_dic.copy()
+                        base = dict.fromkeys(['a','b','c'], None)
+                      </code>
+                    </pre>
+                </div>
+                <!-- Sintaxis fin -->
+              </li>
+            </ul>
+          </div>
+          <!-- Diccionarios (dict)  fin -->
+
+          <!-- Conjuntos (set)  -->
+          <div id="conjuntos-set">
+            <h2>Conjuntos (<code class="language-py">set</code>) </h2>
+            <ul>
+              <li>Son colecciones no ordenadas de elementos únicos (no se repiten).</li>
+              <li>Se definen con llaves <code class="language-py">{ }</code>, igual que los diccionarios, pero sin
+                pares clave–valor.</li>
+              <li><span class="fw-bold">Ejemplo</span>:
+                <!-- Sintaxis -->
+                <p><span class="fw-bold">Sintaxis básica</span>:</p>
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                       frutas = {"manzana", "pera", "uva"}
+                        numeros = {1, 2, 3, 4, 5}
+                      </code>
+                    </pre>
+                </div>
+                <!-- Sintaxis fin -->
+              </li>
+              <li><span class="fw-bold">Características</span>:
+                <ul>
+                  <li>No permiten duplicados.</li>
+                  <li>Soportan operaciones matemáticas como unión, intersección y diferencia.</li>
+                </ul>
+              </li>
+              <li>
+                <span class="fw-bold">Funciones para Conjuntos</span>:
+                <ul>
+                  <li>Crear y conocer conjuntos:
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis-100">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-py" data-prismjs-copy="Copy">
+                         # set(iterable): Permite crear un conjunto a partir de un iterable (lista, tupla, cadena, etc.).
+                          t = [1, 2, 2, 3]
+                          conj = set(t)  # {1, 2, 3}
+
+                          # {…}: Literal de conjunto con elementos explícitos.
+                          conj2 = {'apple', 'banana', 'cherry'}
+
+                          # len(conj): Función que devuelve la cantidad de elementos del conjunto (la “cardinalidad”).
+
+                        </code>
+                      </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </li>
+                  <li>Métodos para agregar y eliminar elementos en Conjuntos:
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis-100">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-py" data-prismjs-copy="Copy">
+                         # conj.add(x): Agrega el elemento x al conjunto, si no estaba ya. 
+                          conj.add(x): Agrega el elemento x al conjunto, si no estaba ya. 
+
+                          # conj.update(iterable): Agrega todos los elementos del iterable al conjunto. 
+                          s.update([5,6,2])  # {1,2,3,4,5,6}
+
+                          # conj.remove(x): Elimina el elemento x. Si no existe, genera un KeyError. 
+                          s.remove(2)  # elimina 2
+
+                          # conj.discard(x): Elimina el elemento x si existe; no genera error si no existe
+                          s.discard(10)  # si 10 no está, no pasa nada
+
+                          # conj.pop(): Elimina y retorna un elemento arbitrario del conjunto. Como el conjunto es desordenado, no es “el primero” o “el último” según posición. 
+                          x = s.pop()  # s se modifica, x puede ser cualquier elemento.
+
+                          # conj.clear(): Elimina todos los elementos del conjunto, dejándolo vacío.
+                          s.clear()  # s = set()
+                        </code>
+                      </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </li>
+                  <li>Métodos para consultar relaciones entre conjuntos
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis-100">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-py" data-prismjs-copy="Copy">
+                         # conj.issubset(other): Devuelve True si todos los elementos de conj están en other.
+                          {1,2}.issubset({1,2,3})  # True
+
+                          # conj.issuperset(other): Devuelve True si el conjunto conj contiene todos los elementos de other.
+                          {1,2,3}.issuperset({1,2})  # True
+
+                          # conj.isdisjoint(other): Devuelve True si conj y other no tienen elementos en común.
+                          {1,2}.isdisjoint({3,4})  # True
+                        </code>
+                      </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </li>
+                  <li>Métodos / operaciones para combinación de conjuntos
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis-100">
+                      <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-py" data-prismjs-copy="Copy">
+                         # conj.union(other, ...): Devuelve un nuevo conjunto con todos los elementos de conj y de los otros. (También se puede usar el operador |).
+                          a = {1,2,3}
+                          b = {3,4,5}
+                          c = a.union(b)  # {1,2,3,4,5}
+
+                          # conj.intersection(other, …): Devuelve el nuevo conjunto que contiene solo los elementos presentes en ambos conjuntos. (Operador &).
+                          a.intersection(b)  # {3}
+
+                          # conj.difference(other, …): Devuelve los elementos de conj que no están en other. (Operador -).
+                          a.difference(b)  # {1,2}
+
+                          # conj.symmetric_difference(other): Devuelve el conjunto de elementos que están en uno u otro conjunto, pero no en ambos. (Operador ^)
+                          a.symmetric_difference(b)  # {1,2,4,5}
+
+                          # Métodos “_update” para modificar el conjunto existente en lugar de devolver uno nuevo:
+                          conj.difference_update(other) 
+                          conj.intersection_update(other) 
+                          conj.symmetric_difference_update(other) 
+                          conj.update(other) (ya indicado antes)
+                        </code>
+                      </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </li>
+                  <li>Algunos ejemplos de uso de Conjuntos:</li>
+                  <!-- Sintaxis -->
+                  <div class="ej-sintaxis-100">
+                    <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-py" data-prismjs-copy="Copy">
+                         # Crear un conjunto
+                          mi_conj = set([5, 10, 15, 10])  # {5,10,15}
+
+                          # Agregar
+                          mi_conj.add(20)                 # {5,10,15,20}
+                          mi_conj.update([25,30,10])      # {5,10,15,20,25,30}
+
+                          # Consultar relaciones
+                          print(mi_conj.issubset({5,10,15,20,25,30,40}))  # True
+                          print(mi_conj.isdisjoint({100,101}))            # True
+
+                          # Operaciones de conjuntos
+                          a = {1,2,3}
+                          b = {2,3,4}
+                          print(a.union(b))              # {1,2,3,4}
+                          print(a.intersection(b))       # {2,3}
+                          print(a.difference(b))         # {1}
+                          print(a.symmetric_difference(b))  # {1,4}
+
+                          # Eliminar / vaciar
+                          mi_conj.discard(10)            # elimina 10 si estaba
+                          mi_conj.remove(25)             # elimina 25, error si no está
+                          x = mi_conj.pop()              # elimina y retorna un elemento arbitrario
+                          mi_conj.clear()                # conjunto queda vacío
+                        </code>
+                      </pre>
+                  </div>
+                  <!-- Sintaxis fin -->
+              </li>
+            </ul>
+          </div>
+          <!-- Conjuntos (set)  fin -->
+
+          <!-- Cadenas de texto (str)  -->
+          <div id="cadenas-de-texto-str">
+            <h2>Cadenas de texto (<code class="language-py">str</code>) </h2>
+            <ul>
+              <li>Aunque no siempre se consideran una estructura de datos compleja, las cadenas son secuencias
+                inmutables de caracteres.</li>
+              <li>Se definen con comillas simples o dobles.</li>
+              <li><span class="fw-bold">Ejemplo</span>:
+                <!-- Sintaxis -->
+                <p><span class="fw-bold">Sintaxis básica</span>:</p>
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                        saludo = "Hola, mundo"
+                      </code>
+                    </pre>
+                </div>
+                <!-- Sintaxis fin -->
+              </li>
+              <li><span class="fw-bold">Características</span>:
+                <ul>
+                  <li>Se accede a los datos mediante la clave.</li>
+                  <li>Muy usados para representar objetos o registros de datos.</li>
+                  <li>Permiten duplicados.</li>
+                </ul>
+              </li>
+              <li><span class="fw-bold">Funciones para Cadenas de Texto:</span>
+                <ul>
+                  <li>Crear y conocer cadenas de texto:
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis-100">
+                      <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-py" data-prismjs-copy="Copy">
+                           # str(obj): Convierte el objeto en su representación como cadena de texto.
+                            x = 123
+                            s = str(x)  # x = "123"
+                            
+                            # len(cadena): Devuelve el número de caracteres de la cadena (incluye espacios, signos). 
+                            saludo = "Hola"
+                            print(len(saludo))  # 4
+                          </code>
+                        </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </li>
+                  <li>Métodos para cambiar mayúsculas/minúsculas y título:
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis-100">
+                      <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-py" data-prismjs-copy="Copy">
+                           # cadena.lower(): Devuelve una nueva cadena con todos los caracteres alfabéticos en minúscula.
+                            texto = "PYTHON"
+                            print(texto.lower())  # "python"
+                            
+                            # cadena.upper(): Devuelve una nueva cadena con todos los caracteres alfabéticos en mayúscula.
+                            texto = "python"
+                            print(texto.upper())  # "PYTHON"
+
+                            # cadena.title(): Devuelve una cadena en “title case”: la primera letra de cada palabra en mayúscula, el resto en minúscula.
+                            frase = "hola mundo desde python"
+                            print(frase.title())  # "Hola Mundo Desde Python"
+
+                            # cadena.capitalize(): Devuelve la cadena con el primer carácter en mayúscula y el resto en minúscula.
+                            palabra = "hOLA"
+                            print(palabra.capitalize())  # "Hola"
+                          </code>
+                        </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </li>
+                  <li>Métodos para buscar, dividir, comprobar:
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis-100">
+                      <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-py" data-prismjs-copy="Copy">
+                           # cadena.count(subcadena): Cuenta cuántas veces aparece subcadena en la cadena.
+                            texto = "ababa"
+                            print(texto.count("ba"))  # 2
+
+                            # cadena.find(subcadena): Devuelve el índice de la primera aparición de subcadena, o -1 si no la encuentra.
+                            texto = "Hola mundo"
+                            print(texto.find("mundo"))  # 5
+
+                            # cadena.startswith(prefijo): Devuelve True si la cadena empieza por prefijo. 
+                            texto = "Python es genial"
+                            print(texto.startswith("Python"))  # True
+
+                            # cadena.endswith(sufijo): Devuelve True si la cadena termina con sufijo.
+                            archivo = "documento.pdf"
+                            print(archivo.endswith(".pdf"))  # True
+
+                            # cadena.split(separador): Divide la cadena usando separador (o espacio por defecto) y devuelve una lista de sub-cadenas.
+                            lista = "uno,dos,tres".split(",")
+                            # ['uno', 'dos', 'tres']
+
+                            # separador.join(iterable_de_cadenas): Une un iterable de cadenas en una sola, usando el string que invoca join como separador.
+                            palabras = ["Hola", "mundo"]
+                          </code>
+                        </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </li>
+                  <li>Métodos para eliminar espacios, prefijos, sufijos o cambiar:
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis-100">
+                      <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-py" data-prismjs-copy="Copy">
+                           # cadena.strip(): Devuelve una nueva cadena con los espacios (u otros caracteres especificados) eliminados al inicio y al final.
+                            s = "   hola   "
+                            print(s.strip())  # "hola"
+
+                            # cadena.lstrip() / cadena.rstrip(): Similar a strip(), pero solo a la izquierda (lstrip) o a la derecha (rstrip).
+                            s = "...hola..."
+                            print(s.rstrip("."))  # "...hola"
+
+                            # cadena.replace(viejo, nuevo): Devuelve una cadena en la que todas las apariciones de viejo se reemplazan por nuevo.
+                            s = "manzana manzana"
+                            print(s.replace("manzana", "pera"))  # "pera pera"
+
+                            # cadena.removeprefix(prefijo) / cadena.removesuffix(sufijo): Métodos añadidos en Python 3.9+ que eliminan un prefijo o sufijo si está presente. 
+                            codigo = "0xFFAA"
+                            print(codigo.removeprefix("0x"))  # "FFAA"
+                            print(codigo.removeprefix("AA"))  # "FF"
+                          </code>
+                        </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </li>
+                  <li>Métodos para formatear, justificar o modificar el “relleno”:
+                    <!-- Sintaxis -->
+                    <div class="ej-sintaxis-100">
+                      <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-py" data-prismjs-copy="Copy">
+                            # cadena.format(...): Método para formatear cadenas con placeholders. Aunque hoy en día se recomienda el uso de f-strings, aún es útil.
+                            plantilla = "Hola {nombre}, tienes {n} mensajes"
+                            print(plantilla.format(nombre="Eduardo", n=5))
+
+                            # cadena.center(width, fillchar=' '): Devuelve la cadena centrada dentro de un ancho width, rellenando con fillchar.
+                            s = "Hola"
+                            print(s.center(10, "-"))  # "--Hola---"
+
+                            # cadena.zfill(width): Rellena la cadena por la izquierda con ceros hasta que tenga longitud width.
+                            numero = "42"
+                            print(numero.zfill(5))  # "00042"
+
+                            # cadena.ljust(width, fillchar=' ') / cadena.rjust(width, fillchar=' '): Son métodos de cadenas que ajustan el ancho de un texto añadiendo caracteres de relleno.
+                            # ljust() = left justify (justificar a la izquierda) - añade relleno a la derecha
+                            # rjust() = right justify (justificar a la derecha) - añade relleno a la izquierda
+                            texto = "Python"
+                            print(texto.ljust(10))        # 'Python    ' (Python + 4 espacios a la derecha)
+                            print(texto.rjust(10, '-'))   # '----Python' (4 guiones a la izquierda + Python)
+                          </code>
+                        </pre>
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </li>
+              </li>
+            </ul>
+            </li>
+            <li>Algunos ejemplos de uso con combinaciones:
+              <!-- Sintaxis -->
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-py" data-prismjs-copy="Copy">
+                      texto = "  Bienvenido al Curso de Python  "
+                      # Eliminar espacios al inicio/final
+                      limpio = texto.strip()
+                      # Convertir a mayúsculas
+                      mayus = limpio.upper()
+                      # Reemplazar palabra
+                      nuevo = mayus.replace("PYTHON", "IA")
+                      # Dividir en palabras
+                      palabras = nuevo.split()
+                      # Unir con guiones
+                      resultado = "-".join(palabras)
+                      print(resultado)
+                      # Ejemplo salida: "BIENVENIDO-AL-CURSO-DE-IA"
+                    </code>
+                  </pre>
+              </div>
+              <!-- Sintaxis fin -->
+            </li>
+            </ul>
+          </div>
+          <!-- Cadenas de texto (str)  fin -->
+          <!-- Clasificación General de Estructuras de Datos en Python  -->
+          <div id="clasificacion-general-de-estructuras-de-datos-en-python">
+            <h2>Clasificación General de Estructuras de Datos en Python</h2>
+            <!-- Tabla de estructuras de datos en Python con Bootstrap 5.3 -->
+            <div class="container mt-4">
+              <div class="table-responsive">
+                <table class="table table-bordered table-striped text-center align-middle">
+                  <thead class="table-primary">
+                    <tr>
+                      <th>Tipo de estructura</th>
+                      <th>Ordenada</th>
+                      <th>Mutable</th>
+                      <th>Sintaxis</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Lista (<code class="language-py">list</code>)</td>
+                      <td>✔️ Sí</td>
+                      <td>✔️ Sí</td>
+                      <td><code class="language-py">[ ]</code></td>
+                    </tr>
+                    <tr>
+                      <td>Tupla (<code class="language-py">tuple</code>)</td>
+                      <td>✔️ Sí</td>
+                      <td>❌ No</td>
+                      <td><code class="language-py">( )</code></td>
+                    </tr>
+                    <tr>
+                      <td>Diccionario (<code class="language-py">dict</code>)</td>
+                      <td>❌ No</td>
+                      <td>✔️ Sí</td>
+                      <td><code class="language-py">{clave: valor}</code></td>
+                    </tr>
+                    <tr>
+                      <td>Conjunto (<code class="language-py">set</code>)</td>
+                      <td>❌ No</td>
+                      <td>✔️ Sí</td>
+                      <td><code class="language-py">{elemento}</code></td>
+                    </tr>
+                    <tr>
+                      <td>Cadena (<code class="language-py">str</code>)</td>
+                      <td>✔️ Sí</td>
+                      <td>❌ No</td>
+                      <td><code class="language-py">"texto"</code> o <code class="language-py">'texto'</code></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- Clasificación General de Estructuras de Datos en Python  fin -->
+        </article>
+        <article class="row" id="comments">
+          <h2>COMENTARIOS</h2>
+          <p>Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del formulario
+            disponible para este propósito.</p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
+                </div>
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">Enviar</button>
+              </fieldset>
+              <p class="small text-center">La política de privacidad, y los términos y condiciones estándisponibles en
+                el formulario de contacto.</p>
+            </form>
+          </div>
+        </article>
+        <!-- Comentarios fin -->
+      </section>
+      <!-- -------------------------------- barra lateral -------------------------------- -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        <h2>En Este Artículo</h2>
+        <div class="menu-scroll">
+          <div class="menu-container">
+            <div class="border border-1">
+
+              <div class="menu-item">
+                <a href="#introduccion" class="simple-link">Introducción Estructuras de Datos en Pytho</a>
+              </div>
+              <div class="menu-item"><a href="#listas-list" class="simple-link">Listas (list)</a></div>
+              <div class="menu-item"><a href="#tuplas-tuple" class="simple-link">Tuplas (tuple)</a></div>
+              <div class="menu-item"><a href="#diccionarios-dict" class="simple-link">Diccionarios (dict)</a></div>
+              <div class="menu-item"><a href="#conjuntos-set" class="simple-link">Conjuntos (set)</a></div>
+              <div class="menu-item"><a href="#cadenas-de-texto-str" class="simple-link">Cadenas de texto (str)</a>
+                <div class="menu-item"><a href="#clasificacion-general-de-estructuras-de-datos-en-python"
+                    class="simple-link">Clasificación General de
+                    Estructuras de Datos en Python</a>
+                </div>
+                <!-- Comentarios  -->
+                <div class="menu-item">
+                  <a href="#comments" class="simple-link">Comentarios</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </aside>
+      <!-- -------------------------------- fin barra lateral -------------------------------- -->
+    </main>
+  </div>
+  <!--  Principal Fin  -->
+
+  <!--  pie de pagina  -->
+  <footer class="row border-top border-1 m-1 mt-auto">
+    <div class="row">
+      <!-- contacto -->
+      <address class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Contacto</div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class="ms-3">
+            <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class="ms-3">Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      <!-- Derechos de autor -->
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
+      </div>
+      <!-- redes sociales -->
+      <div class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Redes Sociales</div>
+        <div class="d-flex justify-content-evenly align-items-center gap-5">
+          <div>
+            <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center gap-2"></div>
+  </footer>
+  <!--  pie de pagina fin  -->
+
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
+</html>

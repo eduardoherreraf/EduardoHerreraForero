@@ -109,15 +109,15 @@
   <div class="container-fluid" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
-        <!--  Fundamentos de Python-->
+        <!-- Funciones de Entrada y Salida en Python -->
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
           <header>
-            <h1>Tipos de Datos Simples en Python</h1>
+            <h1>Funciones de Entrada y Salida en Python</h1>
           </header>
           <!-- Introducción -->
           <div class="mt-3">
-            <h2>Introducción a Tipos de Datos Simples en Python</h2>
+            <h2>Introducción a Funciones de Entrada y Salida en Python</h2>
             <div class="centrar-imagen imagen40 mb-5">
               <figure class="img-container">
                 <img src="https://i.postimg.cc/FR2C0ZTk/introduccion-de-python-comp.jpg" class="img-fluid"
@@ -131,160 +131,204 @@
                 </figcaption>
               </figure>
             </div>
-            <p>En el lenguaje Python, los tipos de datos básicos constituyen la base fundamental para el manejo y
-              procesamiento de la información. Cada tipo de dato define la naturaleza del valor que se almacena en una
-              variable y determina qué operaciones pueden realizarse sobre él. Comprender estos tipos es esencial para
-              escribir programas correctos, eficientes y fáciles de mantener. Python, al ser un lenguaje de tipado
-              dinámico, permite que las variables cambien de tipo en tiempo de ejecución, lo que brinda una gran
-              flexibilidad al programador.</p>
-            <p>A continuación, se explican los principales tipos de datos básicos en Python:</p>
-            <ul>
-              <li>Números (enteros, flotantes y complejos)</li>
-              <li>Cadenas de Texto (Strings)</li>
-              <li>Booleanos (True, False)</li>
-            </ul>
+            <p>En Python, las funciones de entrada y salida (I/O) son las que permiten interactuar con el usuario o con
+              el sistema, ya sea recibiendo datos (entrada) o mostrando resultados (salida).</p>
+            <p>A continuación se explica en detalle cada una con ejemplos claros.</p>
           </div>
           <!-- Introducción Fin -->
           <hr class="subtle-divider" />
 
-          <!-- Números (enteros, flotantes y complejos)  -->
-          <div id="números-(enteros,-flotantes-y-complejos)">
-            <h2>Números (enteros, flotantes y complejos) </h2>
-            <p>Python maneja tres tipos principales de números: enteros, flotantes y complejos.
-            </p>
-            <ul>
-              <li><code class="language-py">Enteros (int)</code>: representan números sin parte decimal. <br>
-                Ejemplo:
-                <!-- Sintaxis -->
-                <div class="ej-sintaxis-100">
-                  <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-py" data-prismjs-copy="Copy">
-                        edad = 30
-                      </code>
-                    </pre>
-                </div>
-                <!-- Sintaxis fin -->
-                <p>Aquí, la variable <code class="language-py">edad</code> almacena un número entero.</p>
-              </li>
-              <li><code class="language-py">Flotantes (float)</code>: representan números reales con parte decimal.
-                <br>
-                Ejemplo:
-                <!-- Sintaxis -->
-                <div class="ej-sintaxis-100">
-                  <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-py" data-prismjs-copy="Copy">
-                        temperatura = 25.7
-                      </code>
-                    </pre>
-                </div>
-                <!-- Sintaxis fin -->
-                <p>El número cod <code class="language-py">25.7</code> es de tipo flotante.</p>
-              </li>
-              <li><code class="language-py">Complejos (complex)</code>: se utilizan en cálculos matemáticos avanzados
-                y contienen una parte real y una parte imaginaria. <br>
-                Ejemplo:
-                <!-- Sintaxis -->
-                <div class="ej-sintaxis-100">
-                  <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-py" data-prismjs-copy="Copy">
-                        z = 2 + 3j
-                      </code>
-                    </pre>
-                </div>
-                <!-- Sintaxis fin -->
-                <p>En este caso, <code class="language-py">2</code> es la parte real y <code
-                    class="language-py">3j</code>la parte imaginaria.</p>
-              </li>
-            </ul>
-          </div>
-          <!-- Números (enteros, flotantes y complejos)  fin -->
-
-          <!-- Cadenas de Texto (Strings)  -->
-          <div id="cadenas-de-texto-(strings)">
-            <h2>Cadenas de Texto (Strings) </h2>
-            <p>Las cadenas de texto o strings (<code class="language-py">str</code>) representan secuencias de
-              caracteres, como palabras, frases o
-              incluso números que se tratan como texto.</p>
-            <p>Se encierran entre comillas simples, dobles o triples.</p>
-            <p>Ejemplo:</p>
-            <!-- Sintaxis -->
-            <div class="ej-sintaxis-100">
-              <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-py" data-prismjs-copy="Copy">
-                   nombre = "Eduardo"
-                    mensaje = 'Bienvenido al análisis de datos con Python'
-                  </code>
-                </pre>
-            </div>
-            <!-- Sintaxis fin -->
-            <p>Las cadenas permiten múltiples operaciones, como concatenación (+), repetición (*) o acceso a
-              caracteres individuales mediante índices.</p>
-            <p>Ejemplo:</p>
-            <!-- Sintaxis -->
-            <div class="ej-sintaxis-100">
-              <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-py" data-prismjs-copy="Copy">
-                    print(nombre[0])  # Muestra la letra 'E'
-                  </code>
-                </pre>
-            </div>
-            <!-- Sintaxis fin -->
-          </div>
-          <!-- Cadenas de Texto (Strings)  fin -->
-
-          <!-- Booleanos (True, False)  -->
-          <div id="booleanos-(true,-false)">
-            <h2>Booleanos (True, False) </h2>
-            <p>El tipo booleano (bool) tiene solo dos valores posibles: True y False, que representan verdadero o
-              falso.</p>
-            <p>Este tipo se utiliza principalmente en estructuras de control como condiciones o bucles.</p>
-            <p>Ejemplo:</p>
-            <!-- Sintaxis -->
-            <div class="ej-sintaxis-100">
-              <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-py" data-prismjs-copy="Copy">
-                   activo = True
-                    es_mayor = edad > 18
-                  </code>
-                </pre>
-            </div>
-            <!-- Sintaxis fin -->
-          </div>
-          <!-- Booleanos (True, False)  fin -->
-
-          <!-- Conversión de Tipos (Casting)  -->
-          <div id="conversion-de-tipos-(casting)">
-            <h2>Conversión de Tipos (Casting) </h2>
-            <p>Python permite convertir un valor de un tipo de dato a otro utilizando funciones integradas. Este
-              proceso se conoce como casting o conversión de tipos.</p>
-            <p>Algunas funciones comunes son:</p>
-            <ul>
-              <li><code class="language-py">int()</code>: convierte a entero.</li>
-              <li><code class="language-py">float()</code>: convierte a flotante.</li>
-              <li><code class="language-py">str()</code>: convierte a cadena.</li>
-            </ul>
-            <p>Ejemplos:</p>
+          <!-- Función de Entrada: input()  -->
+          <div id="funcion-de-entrada:-input()">
+            <h3>Función de Entrada: <code class="language-py">input()</code>
+            </h3>
+            <p>La función <code class="language-py">input()</code> permite leer información desde el teclado.</p>
+            <p>Siempre devuelve el dato como una cadena de texto (tipo <code class="language-py">str</code>), por lo
+              que si se necesita trabajar con
+              números, se debe convertir el tipo.</p>
             <!-- Sintaxis -->
             <p><span class="fw-bold">Sintaxis básica</span>:</p>
             <div class="ej-sintaxis-100">
               <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
-                   x = int(3.7)     # Devuelve 3
-                    y = float(5)     # Devuelve 5.0
-                    z = str(10)      # Devuelve "10"
-                    b = bool(0)      # Devuelve False
+                    variable = input("Mensaje al usuario: ")
                   </code>
                 </pre>
             </div>
             <!-- Sintaxis fin -->
-            <p>Estas conversiones son muy útiles cuando se recibe información en diferentes formatos (por ejemplo,
-              desde la entrada del usuario o archivos de texto) y se necesita trabajar con tipos numéricos o lógicos.
-            </p>
+            <p><span class="fw-bold">Ejemplos</span>:</p>
+            <ul>
+              <li>
+                <span class="fw-bold">Entrada de texto</span>:
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                      nombre = input("Ingrese su nombre: ")
+                        print("Hola,", nombre)
+                      </code>
+                    </pre>
+                </div>
+                <span class="fw-bold">Salida</span>: <br>
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-texto" data-prismjs-copy="Copy">
+                    Ingrese su nombre: Eduardo
+                      Hola, Eduardo
+                    </code>
+                  </pre>
+                </div>
+              </li>
+              <li>
+                <span class="fw-bold">Entrada de número entero</span>: <br>
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                      edad = int(input("Ingrese su edad: "))                   # se hace necesaria la conversión a entero
+                        print("Su edad en 5 años será:", edad + 5)
+                      </code>
+                    </pre>
+                </div>
+              </li>
+              <li>
+                <span class="fw-bold">Entrada de número decimal</span>: <br>
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                      altura = float(input("Ingrese su altura en metros: "))   # se hace necesaria la conversión a flotante
+                        print("Su altura es:", altura, "m")
+                      </code>
+                    </pre>
+                </div>
+              </li>
+            </ul>
           </div>
-          <!-- Conversión de Tipos (Casting)  fin -->
+
+          <!-- Funciones de Salida: print()  -->
+          <div id="funciones-de-salida:-print()">
+            <h3>Funciones de Salida: <code class="language-py">print()</code></h3>
+            <p>La función <code class="language-py">print()</code> sirve para mostrar datos o resultados en
+              pantalla.</p>
+            <p>Permite imprimir textos, variables, expresiones matemáticas o el resultado de funciones.</p>
+            <!-- Sintaxis -->
+            <p><span class="fw-bold">Sintaxis básica</span>:</p>
+            <div class="ej-sintaxis-100">
+              <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-py" data-prismjs-copy="Copy">
+                      print(valor1, valor2, ..., sep=' ', end='\n')
+                    </code>
+                  </pre>
+            </div>
+            <!-- Sintaxis fin -->
+            <ul>
+              <li><code class="language-py">sep</code>: define el separador entre los valores (por defecto un
+                espacio).
+              </li>
+              <li><code class="language-py">end</code>: define qué se imprime al final (por defecto un salto de
+                línea <code class="language-py">\n</code>).</li>
+            </ul>
+            <p><span class="fw-bold">Ejemplos</span>:</p>
+            <ul>
+              <li>
+                <span class="fw-bold">Salida básica</span>: <br>
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                        print("Hola mundo")
+                      </code>
+                    </pre>
+                </div>
+              </li>
+              <li>
+                <span class="fw-bold">Salida de múltiples valores</span>: <br>
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                       nombre = "Eduardo"
+                        edad = 35
+                        print("Nombre:", nombre, "Edad:", edad)
+                      </code>
+                    </pre>
+                </div>
+              </li>
+              <li>
+                <span class="fw-bold">Uso de <code class="language-py">sep</code> y <code
+                    class="language-py">end</code></span>: <br>
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                        print("Python", "es", "genial", sep="-", end="!!!\n")
+                      </code>
+                    </pre>
+                </div>
+                <span class="fw-bold">Salida:</span>: <br>
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-texto" data-prismjs-copy="Copy">
+                        Python-es-genial!!!
+                      </code>
+                    </pre>
+                </div>
+              </li>
+              <li>
+                <span class="fw-bold">Uso de f-strings (formateo moderno)</span>: <br>
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                       nombre = "Eduardo"
+                        edad = 35
+                        print(f"Hola {nombre}, tienes {edad} años.")
+                      </code>
+                    </pre>
+                </div>
+              </li>
+              <li>
+                <span class="fw-bold">Entrada de número entero</span>: <br>
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                      edad = int(input("Ingrese su edad: "))                   # se hace necesaria la conversión a entero
+                        print("Su edad en 5 años será:", edad + 5)
+                      </code>
+                    </pre>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- Funciones de Salida: print()  fin -->
+
+          <!-- Ejemplo completo combinando entrada y salida  -->
+          <div id="ejemplo-completo-combinando-entrada-y-salida">
+            <h3>Ejemplo completo combinando entrada y salida </h3>
+            <p>
+              <span class="fw-bold">Salida básica</span>: <br>
+            <div class="ej-sintaxis-100">
+              <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-py" data-prismjs-copy="Copy">
+                     nombre = input("Ingrese su nombre: ")
+                      edad = int(input("Ingrese su edad: "))
+
+                      print(f"Hola {nombre}, el próximo año tendrás {edad + 1} años.")
+                    </code>
+                  </pre>
+            </div>
+            </p>
+            <p>
+              <span class="fw-bold">Salida básica</span>: <br>
+            <div class="ej-sintaxis-100">
+              <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-texto" data-prismjs-copy="Copy">
+                     Ingrese su nombre: Eduardo
+                      Ingrese su edad: 35
+                      Hola Eduardo, el próximo año tendrás 36 años.
+                    </code>
+                  </pre>
+            </div>
+            <!-- Ejemplo completo combinando entrada y salida  fin -->
+          </div>
         </article>
+        <!-- Funciones de Entrada y Salida en Python fin -->
         <article class="row" id="comments">
-          <h2>Comentarios</h2>
+          <h2>COMENTARIOS</h2>
           <p>Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del formulario
             disponible para este propósito.</p>
           <div class="d-flex justify-content-center">
@@ -322,18 +366,14 @@
             <div class="border border-1">
 
               <div class="menu-item">
-                <a href="#introduccion" class="simple-link">Introducción a Tipos de Datos Simples en Python</a>
+                <a href="#introduccion" class="simple-link">Introducción</a>
               </div>
-              <div class="menu-item"><a href="#números-(enteros,-flotantes-y-complejos)" class="simple-link">Números
-                  (enteros, flotantes
-                  y complejos)</a></div>
-              <div class="menu-item"><a href="#cadenas-de-texto-(strings)" class="simple-link">Cadenas de Texto
-                  (Strings)</a></div>
-              <div class="menu-item"><a href="#booleanos-(true,-false)" class="simple-link">Booleanos (True, False)</a>
-              </div>
-              <div class="menu-item"><a href="#conversion-de-tipos-(casting)" class="simple-link">Conversión de Tipos
-                  (Casting)</a></div>
-
+              <div class="menu-item"><a href="#funcion-de-entrada:-input()" class="simple-link">Función de Entrada:
+                  <code class="language-py">input()</code></a></div>
+              <div class="menu-item"><a href="#funciones-de-salida:-print()" class="simple-link">Funciones de Salida:
+                  <code class="language-py">print()</code></a></div>
+              <div class="menu-item"><a href="#ejemplo-completo-combinando-entrada-y-salida" class="simple-link">Ejemplo
+                  completo combinando entrada y salida</a></div>
               <!-- Comentarios  -->
               <div class="menu-item">
                 <a href="#comments" class="simple-link">Comentarios</a>
