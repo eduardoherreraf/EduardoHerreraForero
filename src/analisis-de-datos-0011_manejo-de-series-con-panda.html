@@ -119,7 +119,7 @@
           <div class="mt-3">
             <h2>Introducción a Manejo de Series con Pandas
             </h2>
-            <div class="centrar-imagen imagen40 mb-5">
+            <div class="centrar-imagen magen-intro mb-5">
               <figure class="img-container">
                 <img src="https://i.postimg.cc/52CP3cmm/Pandas-Series-comp.jpg" class="img-fluid"
                   alt="Agenda con columnas de nombres e índices que representa una Serie de Pandas en Python."
@@ -141,6 +141,73 @@
           </div>
           <!-- Introducción Fin -->
           <hr class="subtle-divider" />
+
+          <!-- Definición de Series -->
+          <div id="definicion-de-series" class="mt-3">
+            <h2>Definición de Series</h2>
+            <p>Una serie en pandas es una estructura de datos unidimensional que puede contener cualquier tipo de dato
+              (enteros, strings, flotantes, objetos de Python, etc.). Es similar a una columna en una hoja de cálculo o
+              una tabla de base de datos.</p>
+            <p>Cada elemento de una Series tiene un índice asociado, lo que facilita el acceso a los datos.</p>
+
+            <!-- Características Clave  -->
+            <div>
+              <h4>Características Clave</h4>
+              <ul>
+                <li><span class="fw-bold">Unidimensional</span>: Solo tiene una columna de datos.</li>
+                <li><span class="fw-bold">Indexada</span>: Cada valor tiene una etiqueta o índice asociado.</li>
+                <li><span class="fw-bold">Homogénea</span>: Aunque puede contener diferentes tipos, generalmente se usa
+                  con un solo tipo de dato.</li>
+                <li><span class="fw-bold">Tamaño inmutable</span>: Una vez creada, no puedes cambiar su tamaño (pero sí
+                  modificar valores).</li>
+                <li><span class="fw-bold">Permite operaciones matemáticas</span>: Operaciones como suma, promedio, o
+                  multiplicación pueden aplicarse directamente.</li>
+              </ul>
+            </div>
+            <!-- Características Clave  fin -->
+
+            <!-- Ejemplo Básico Creación de una Serie  -->
+            <div>
+              <h4>Ejemplo Básico Creación de una Serie </h4>
+              <!-- Sintaxis -->
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                   import pandas as pd
+
+                    # Crear una Serie simple
+                    s = pd.Series([10, 20, 30, 40, 50])
+                    print(s)
+
+                    # Salida esperada:
+                    # 0    10
+                    # 1    20
+                    # 2    30
+                    # 3    40
+                    # 4    50
+                    # dtype: int64
+
+                    # Serie con índices personalizados
+                    serie_nombres = pd.Series([25, 30, 35], index=['Ana', 'Luis', 'María'])
+                    print(serie_nombres)
+
+                    # Salida esperada:
+                    # Ana      25
+                    # Luis     30
+                    # María    35
+                    # dtype: int64
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+
+            </div>
+            <!-- Ejemplo Básico Creación de una Serie  fin -->
+
+
+
+          </div>
+          <!-- Definición de Series Fin -->
 
           <!-- Primera aproximación a las Series en Pandas -->
           <div id="primera-aproximacion-a-las-series-en-pandas" class="mt-3">
@@ -164,11 +231,11 @@
               <!-- Sintaxis -->
               <div class="ej-sintaxis-100">
                 <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-bash" data-prismjs-copy="Copy">
-                       pip install pandas         # Terminal / Línea de comandos
-                        !pip install pandas       # Notebooks (Jupyter, Google Colab, etc.)
-                      </code>
-                    </pre>
+                  <code class="language-bash" data-prismjs-copy="Copy">
+                   pip install pandas         # Terminal / Línea de comandos
+                    !pip install pandas       # Notebooks (Jupyter, Google Colab, etc.)
+                  </code>
+                </pre>
               </div>
               <!-- Sintaxis fin -->
               <p>Este comando descarga e instala la versión más reciente de <span class="text-warning">Pandas</span>
@@ -202,7 +269,7 @@
               <div class="ej-sintaxis-100">
                 <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
-                        from IPython.core.interactiveshell import InteractiveShell
+                       from IPython.core.interactiveshell import InteractiveShell
                         InteractiveShell.ast_node_interactivity = "all"
                       </code>
                     </pre>
@@ -228,30 +295,25 @@
                     s = pd.Series(datos)
 
                     print(s)
+
+                    # Salida esperada
+                    # 0     10
+                    # 1     10
+                    # 2     30
+                    # 3     40
+                    # 4     40
+                    # 5     40
+                    # 6     70
+                    # 7     80
+                    # 8     90
+                    # 9    100
+                    # dtype: int64
+
                   </code>
                 </pre>
               </div>
               <!-- Sintaxis fin -->
-              <!-- Sintaxis -->
-              <p><span class="fw-bold">Salida esperada</span>:</p>
-              <div class="ej-sintaxis-100">
-                <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-none" data-prismjs-copy="Copy">
-                       0     10
-                        1     10
-                        2     30
-                        3     40
-                        4     40
-                        5     40
-                        6     70
-                        7     80
-                        8     90
-                        9    100
-                        dtype: int64
-                      </code>
-                    </pre>
-              </div>
-              <!-- Sintaxis fin -->
+
             </div>
             <!-- Creación y Uso de una Serie fin -->
 
@@ -266,26 +328,19 @@
                   <code class="language-py" data-prismjs-copy="Copy">
                    s = pd.Series(datos, index=["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"])
                     print(s)
-                  </code>
-                </pre>
-              </div>
-              <!-- Sintaxis fin -->
-              <!-- Sintaxis -->
-              <p><span class="fw-bold">Salida esperada</span>:</p>
-              <div class="ej-sintaxis-100">
-                <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-none" data-prismjs-copy="Copy">
-                   A     10
-                    B     10
-                    C     30
-                    D     40
-                    E     40
-                    F     40
-                    G     70
-                    H     80
-                    I     90
-                    J    100
-                    dtype: int64
+
+                    # Salida esperada:
+                    # A     10
+                    # B     10
+                    # C     30
+                    # D     40
+                    # E     40
+                    # F     40
+                    # G     70
+                    # H     80
+                    # I     90
+                    # J    100
+                    # dtype: int64
                   </code>
                 </pre>
               </div>
@@ -301,32 +356,25 @@
               <div class="ej-sintaxis-100">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
-                   print("B =", s["B"])                # Acceder por etiqueta → 20
-                    print("Promedio =", s.mean(),"\n")       # Calcular el promedio → 51.0
-                    print(s + 5)                        # Operaciones vectorizadas
-                  </code>
-                </pre>
-              </div>
-              <!-- Sintaxis fin -->
-              <!-- Sintaxis -->
-              <p><span class="fw-bold">Salida esperada</span>:</p>
-              <div class="ej-sintaxis-100">
-                <pre data-src-status="loaded" tabindex="0">
-                  <code class="language-none" data-prismjs-copy="Copy">
-                   B = 10
-                    Promedio = 51.0
-                    
-                    A     15
-                    B     15
-                    C     35
-                    D     45
-                    E     45
-                    F     45
-                    G     75
-                    H     85
-                    I     95
-                    J    105
-                   dtype: int64
+                   print("B =", s["B"])                      # Acceder por etiqueta → 20
+                    print("Promedio =", s.mean(),"\n")        # Calcular el promedio → 51.0
+                    print(s + 5)                              # Operaciones vectorizadas
+
+                    # Salida esperada:
+                    # B = 10
+                    # Promedio = 51.0
+                    # 
+                    # A     15
+                    # B     15
+                    # C     35
+                    # D     45
+                    # E     45
+                    # F     45
+                    # G     75
+                    # H     85
+                    # I     95
+                    # J    105
+                    # dtype: int64
                   </code>
                 </pre>
               </div>
@@ -372,20 +420,14 @@
                         data = [10, 20, 30, 40, 50]
                         s = pd.Series(data)
                         print(s)
-                      </code>
-                    </pre>
-                  </div>
-                  <!-- Sintaxis fin -->
-                  <!-- Sintaxis -->
-                  <div class="ej-sintaxis-100">
-                    <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-py" data-prismjs-copy="Copy">
-                       0    10
-                        1    20
-                        2    30
-                        3    40
-                        4    50
-                        dtype: int64
+
+                        # Salida esperada:
+                        # 0    10
+                        # 1    20
+                        # 2    30
+                        # 3    40
+                        # 4    50
+                        # dtype: int64
                       </code>
                     </pre>
                   </div>
@@ -401,20 +443,14 @@
                         data = pd.Series({"a": 10, "b": 20, "c":30, "d":40, "e":50})
                         s_dict = pd.Series(data)
                         print(s_dict)
-                      </code>
-                    </pre>
-                  </div>
-                  <!-- Sintaxis fin -->
-                  <!-- Sintaxis -->
-                  <div class="ej-sintaxis-100">
-                    <pre data-src-status="loaded" tabindex="0">
-                      <code class="language-py" data-prismjs-copy="Copy">
-                       a    10
-                        b    20
-                        c    30
-                        d    40
-                        e    50
-                        dtype: int64
+
+                        # Salida esperada:
+                        # a    10
+                        # b    20
+                        # c    30
+                        # d    40
+                        # e    50
+                        # dtype: int64                        
                       </code>
                     </pre>
                   </div>
@@ -793,8 +829,8 @@
             </div>
             <!-- Combinación y Concatenación de Series  fin -->
 
-            <!-- Exportación de Datos  -->
-            <div id="exportacion-de-datos">
+            <!-- Exportación e Importación de Datos  -->
+            <div id="exportacion-e-importacion-de-datos">
               <h3>Exportación de Datos </h3>
               <p>Métodos para guardar o exportar el contenido de una Serie.</p>
               <!-- Sintaxis -->
@@ -813,11 +849,6 @@
                 </pre>
               </div>
               <!-- Sintaxis fin -->
-            </div>
-            <!-- Exportación de Datos  fin -->
-
-            <!-- Importación de Datos  -->
-            <div id="importacion-de-datos">
               <h3>Importación de Datos </h3>
               <p>Métodos para importar el contenido de una Serie des archivos, clipboard, etc.</p>
               <!-- Sintaxis -->
@@ -856,7 +887,7 @@
               </div>
               <!-- Sintaxis fin -->
             </div>
-            <!-- Importación de Datos  fin -->
+            <!-- Exportación e Importación de Datos  fin -->
 
             <!-- Métodos Avanzados y Utilitarios  -->
             <div id="metodos-avanzados-y-utilitarios">
@@ -866,7 +897,7 @@
               <div class="ej-sintaxis-100">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
-                   import pandas as pd
+                    import pandas as pd
                     import numpy as np
 
                     s = pd.Series([10, 20, 30, 20, 40, 10, 50, np.nan, 60, 70])
@@ -915,12 +946,117 @@
               <!-- Sintaxis fin -->
             </div>
             <!-- Métodos Avanzados y Utilitarios  fin -->
+
+            <!-- Manejo de Funciones de Cadena str  -->
+            <div id="manejo-de-funciones-de-cadena-str">
+              <h3>Manejo de Funciones de Cadena <code class="language-py">str</code></h3>
+              <p>Para poder usar las funciones de texto, se utiliza:</p>
+              <!-- Sintaxis -->
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                  s.str.función()
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+              <!-- Sintaxis -->
+              <p><span class="fw-bold">Ejemplo</span>:</p>
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                   import pandas as pd
+
+                    s = pd.Series(['Python', 'pandas', 'Datos', 'Análisis'])
+
+                    # Convertir todo a minúsculas
+                    s_lower = s.str.lower()
+                    print(s_lower)
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+              <!-- Funciones de Formato de Texto  -->
+              <div>
+                <h4>Funciones de Formato de Texto</h4>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-py" data-prismjs-copy="Copy">
+                     str.lower()                    # Convierte a minúsculas
+                      str.upper()                    # Convierte a mayúsculas
+                      str.title()                    # Convierte a formato título
+                      str.capitalize()	            # Capitaliza la primera letra
+                      str.strip()	                # Elimina espacios al inicio y final
+                      str.replace(a, b)	            # Reemplaza texto	=> s.str.replace('a', '@')
+                      str.pad(width, side, fillchar)	# Rellena con caracteres => s.str.pad(width, side='right/left/both', fillchar='-')
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+              </div>
+
+              <!-- Funciones de Formato de Texto  fin -->
+
+              <!-- Extracción y División de Texto  -->
+              <div>
+                <h4>Extracción y División de Texto </h4>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-py" data-prismjs-copy="Copy">
+                     str.split(sep)	# Divide la cadena en partes	s.str.split(' ')
+                      str.get(i)	   # Obtiene el elemento i de una lista resultante	s.str.split(' ').str.get(0)
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+              </div>
+              <!-- Extracción y División de Texto  fin -->
+
+              <!-- Búsqueda y Conteo de Texto  -->
+              <div>
+                <h4>Búsqueda y Conteo de Texto </h4>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-py" data-prismjs-copy="Copy">
+                     str.slice(start, stop)                  # Extrae subcadenas por posición	
+                      str.extract(patrón)                     # Extrae datos con expresiones regulares	s.str.extract('(\d+)')
+                      Búsqueda y conteo	str.contains(patrón) # Verifica si contiene un texto
+                      str.startswith(patrón)                  # Verifica si empieza con texto
+                      str.endswith(patrón)                    # Verifica si termina con texto
+                      str.count(patrón)                       # Cuenta ocurrencias del patrón
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+              </div>
+              <!-- Búsqueda y Conteo de Texto  fin -->
+
+              <!-- Longitud y Validación de Texto  -->
+              <div>
+                <h4>Longitud y Validación de Texto </h4>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-py" data-prismjs-copy="Copy">
+                     str.len()                 # Devuelve la longitud de cada texto
+                      str.isalpha()             # Verifica si son solo letras
+                      str.isnumeric()           # Verifica si son solo números
+                      str.isalnum()             # Verifica si son solo letras y/o números, False si contiene símbolos y espacios
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+              </div>
+              <!-- Longitud y Validación de Texto  fin -->
+            </div>
+            <!-- Manejo de Funciones de Cadena str fin -->
           </div>
           <!-- Sentencias para Manejo de Series Fin -->
-
-
-
         </article>
+
         <article class="row" id="comments">
           <h2>COMENTARIOS</h2>
           <p>Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del formulario
@@ -962,6 +1098,9 @@
                 <a href="#introduccion" class="simple-link">Introducción</a>
               </div>
               <div class="menu-item">
+                <a href="#definicion-de-series" class="simple-link">Definición de Series</a>
+              </div>
+              <div class="menu-item">
                 <details>
                   <summary>
                     Primera aproximación a las Series en Pandas
@@ -1000,9 +1139,11 @@
                     <a href="#operaciones-con-índices" class="submenu-item">Operaciones con Índices</a>
                     <a href="#combinacion-y-concatenacion-de-series" class="submenu-item">Combinación y Concatenación de
                       Series</a>
-                    <a href="#exportacion-de-datos" class="submenu-item">Exportación de Datos</a>
-                    <a href="#importacion-de-datos" class="submenu-item">Importación de Datos</a>
+                    <a href="#exportacion-e-importacion-de-datos" class="submenu-item">Exportación e Importación de
+                      Datos</a>
                     <a href="#metodos-avanzados-y-utilitarios" class="submenu-item">Métodos Avanzados y Utilitarios</a>
+                    <a href="#manejo-de-funciones-de-cadena-str" class="submenu-item">Manejo de Funciones de Cadena
+                      <code class="language-py">str</code></a>
                   </div>
                 </details>
               </div>

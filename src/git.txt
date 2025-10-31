@@ -1,0 +1,22 @@
+git add .
+git commit --amend --no-edit
+git push origin feature/pandas --force
+
+
+# Opción 3: Merge sin fast-forward, aceptando todo de la otra rama
+git switch main
+git merge --no-ff -X theirs feature/pandas
+
+
+
+# Borrar una rama (si ya está mergeada)
+git branch -d nombre-de-la-rama
+
+# Forzar el borrado (aunque no esté mergeada) 
+git branch -D feature/pandas
+
+cambiar nombre del ultimo commit
+git commit --amend -m "Add: analisis-de-datos-0011_manejo-de-series-con-panda.html"
+
+git push --force
+git push --force-with-lease

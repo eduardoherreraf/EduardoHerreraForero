@@ -200,14 +200,16 @@ header {
   border-radius: 5px;
 }
 
-.imagen50 {
-  width: 50%;
+.magen-intro {
+  width: 40%;
   font-weight: auto;
 }
 
-.imagen40 {
-  width: 40%;
-  font-weight: auto;
+@media (max-width: 991.98px) {
+  .magen-intro {
+    width: 100%;   /* o el porcentaje que desee */
+    height: auto;
+  }
 }
 
 .imagen20 {
@@ -223,7 +225,10 @@ header {
 figure {
   width: fit-content;
   max-width: 100%;
+
 }
+
+
 
 figure picture,
 figure img {

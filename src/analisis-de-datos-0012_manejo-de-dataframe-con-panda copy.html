@@ -1,0 +1,580 @@
+<!-- @format -->
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Aprenda a manejar DataFrames en Python utilizando la biblioteca Pandas. Conozca cómo crear, modificar, filtrar y analizar datos de forma eficiente para proyectos de análisis y ciencia de datos." />
+  <meta name="title" content="Manejo de Dataframes en Python - Ing. Eduardo Herrera Forero." />
+  <meta name="keywords"
+    content="DataFrames en Python, Pandas, análisis de datos, manejo de datos, Python para principiantes, ciencia de datos, estructuras de datos, programación en Python" />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical"
+    href="https://eduardoherreraf.github.io/analisis-de-datos-0012_manejo-de-dataframe-con-panda copy.html" />
+  <!-- Fin Metaetiquetas -->
+
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Manejo de Dataframes en Python - Ing. Eduardo Herrera Forero." />
+  <meta property="og:description"
+    content="Aprenda a manejar DataFrames en Python utilizando la biblioteca Pandas. Conozca cómo crear, modificar, filtrar y analizar datos de forma eficiente para proyectos de análisis y ciencia de datos." />
+  <meta property="og:image" content="https://i.ibb.co/JwkL9fZ5/analisis-de-datos-dataframes.jpg" />
+  <meta property="og:image:alt"
+    content="Ilustración que compara un DataFrame con una hoja de cálculo de empleados, mostrando datos organizados en columnas como nombre, edad, cargo y salario." />
+  <meta property="og:url"
+    content="https://eduardoherreraf.github.io/analisis-de-datos-0012_manejo-de-dataframe-con-panda copy.html" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
+
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Manejo de Dataframes en Python - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description"
+    content="Aprenda a manejar DataFrames en Python utilizando la biblioteca Pandas. Conozca cómo crear, modificar, filtrar y analizar datos de forma eficiente para proyectos de análisis y ciencia de datos." />
+  <meta name="twitter:image" content="https://i.ibb.co/JwkL9fZ5/analisis-de-datos-dataframes.jpg" />
+  <meta name="twitter:image:alt"
+    content="Comparación entre un DataFrame en Python y una hoja de cálculo en la vida real, mostrando cómo ambos organizan información en filas y columnas de manera estructurada.">
+  <meta name="twitter:url"
+    content="https://eduardoherreraf.github.io/analisis-de-datos-0012_manejo-de-dataframe-con-panda copy.html" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
+
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
+
+  <title>
+    Manejo de Dataframes en Python - Ing. Eduardo Herrera Forero.
+  </title>
+
+  <script type="module" defer src="./js/main.js"></script>
+
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
+
+  <!--  Principal  -->
+  <div class="container-fluid" id="introduccion">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!--  Manejo de Dataframes en Python-->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <header>
+            <h1>Manejo de Dataframes en Python</h1>
+          </header>
+          <!-- Introducción -->
+          <div class="mt-3">
+            <h2>Introducción:Manejo de Dataframes en Python</h2>
+            <div class="centrar-imagen magen-intro mb-5">
+              <figure class="img-container">
+                <img src="https://i.ibb.co/JwkL9fZ5/analisis-de-datos-dataframes.jpg" class="img-fluid"
+                  alt="Ilustración que compara un DataFrame con una hoja de cálculo de empleados, mostrando datos organizados en columnas como nombre, edad, cargo y salario."
+                  title="Analogía visual entre un DataFrame de Python y una hoja de cálculo de la vida real."
+                  loading="lazy"
+                  onerror="this.onerror=null; this.src='https://i.postimg.cc/59LGVT1g/analisis-de-datos-dataframes.jpg';" />
+                <figcaption class="img-caption">
+                  Un DataFrame se asemeja a una hoja de cálculo donde cada fila representa un registro y cada columna un
+                  tipo de dato, permitiendo organizar, filtrar y analizar la información de forma clara y estructurada.
+                </figcaption>
+              </figure>
+            </div>
+            <p>Un DataFrame es una de las estructuras de datos más potentes y utilizadas dentro de la biblioteca Pandas
+              en Python, diseñada especialmente para el análisis y la manipulación de información tabular. Su principal
+              característica es que organiza los datos en <span class="fw-bold">filas</span> y <span
+                class="fw-bold">columnas</span>, de manera similar a una hoja de cálculo o
+              una <span class="fw-bold">tabla en una base de datos</span>.</p>
+            <p>Esta estructura permite trabajar con grandes volúmenes de información de forma eficiente, ofreciendo
+              herramientas para <span class="fw-bold">filtrar</span>, <span class="fw-bold">ordenar</span>, <span
+                class="fw-bold">combinar</span>, <span class="fw-bold">agrupar</span> y <span
+                class="fw-bold">transformar datos</span> con facilidad. Además, los
+              DataFrames admiten distintos tipos de datos en cada columna (numéricos, de texto, fechas, booleanos, entre
+              otros), lo que los hace extremadamente versátiles.</p>
+            <p>Gracias a su flexibilidad, los DataFrames se han convertido en un componente esencial en tareas de
+              <span class="fw-bold">análisis de datos</span>, <span class="fw-bold">ciencia de datos</span>, <span
+                class="fw-bold">machine learning</span> y <span class="fw-bold">visualización</span>, permitiendo a los
+              desarrolladores y
+              analistas extraer conocimiento valioso a partir de conjuntos de datos estructurados o no estructurados.
+            </p>
+          </div>
+          <!-- Introducción Fin -->
+          <hr class="subtle-divider" />
+
+          <!-- Definición: Dataframe -->
+          <div id="definicion:-dataframe" class="mt-3">
+            <h2>Definición: Dataframe</h2>
+            <p>Un DataFrame en Pandas (Python) es una estructura de datos bidimensional que permite almacenar y
+              manipular información en forma de tabla, similar a una hoja de cálculo de Excel o una tabla de base de
+              datos.</p>
+            <p>Cada <span class="fw-bold">fila</span> representa un registro u observación, y cada <span
+                class="fw-bold">columna</span> representa una variable o campo de datos.
+              <!-- Características Principales de Dataframes  -->
+            <div id="características-principales-de-dataframes">
+              <h3>Características Principales de Dataframes </h3>
+              <ul>
+                <li><span class="fw-bold">Estructura etiquetada</span>: Las filas y columnas tienen etiquetas llamadas
+                  índices, lo que permite acceder fácilmente a los datos por nombre o posición.</li>
+                <li><span class="fw-bold">Tipos de datos mixtos</span>: Cada columna puede contener un tipo de dato
+                  distinto (números, texto, fechas, valores booleanos, etc.).</li>
+                <li><span class="fw-bold">Manipulación sencilla</span>: Permite filtrar, ordenar, agrupar, combinar y
+                  transformar datos de forma muy eficiente.</li>
+                <li><span class="fw-bold">Integración con otras herramientas</span>: Es ampliamente usado en análisis de
+                  datos, machine learning y visualización, y puede leer/escribir datos desde múltiples formatos como
+                  CSV, Excel, SQL, JSON, entre otros.</li>
+              </ul>
+            </div>
+            <!-- Características Principales de Dataframes  fin -->
+            <!-- Ejemplo Básico  -->
+            <div id="ejemplo-basico">
+              <h3>Ejemplo Básico </h3>
+              <!-- Sintaxis -->
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                    import pandas as pd
+
+                    # Crear un DataFrame a partir de un diccionario
+                    data = {
+                        'Nombre': ['Ana', 'Luis', 'Carlos', 'Eduardo', 'Natalia', 'Carmen'],
+                        'Edad': [23, 30, 27, 53, 48, 38],
+                        'Ciudad': ['Bogotá', 'Medellín', 'Cali', 'Bogotá', 'Cali', 'Medellín']
+                    }
+
+                    df = pd.DataFrame(data)
+                    print(df)
+                    # Salida esperada
+                    #   Nombre  Edad    Ciudad
+                    # 0 Ana     23      Bogotá
+                    # 1 Luis    30    Medellín
+                    # 2 Carlos  27        Cali
+                    # 3 Eduardo 53      Bogotá
+                    # 4 Natalia 48        Cali
+                    # 5 Carmen  38    Medellín                    
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+              <p>En resumen, un DataFrame es la herramienta principal de Pandas para manejar datos estructurados en
+                Python, combinando la potencia de las listas y diccionarios con la facilidad de una tabla organizada.
+              </p>
+            </div>
+            <!-- Ejemplo Básico  fin -->
+          </div>
+          <!-- Definición: Dataframe Fin -->
+          <hr class="subtle-divider" />
+
+          <!-- Como se Usan los Dataframes -->
+          <div id="como-se-usan-los-dataframes" class="mt-3">
+            <h2>Como se Usan los Dataframes</h2>
+            <!-- Acceder a los datos  -->
+            <div id="acceder-a-los-datos">
+              <h3>Acceder a los datos </h3>
+              <!-- Sintaxis -->
+              <p><span class="fw-bold">Por columna</span>:</p>
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                   df['Nombre']                # Devuelve la columna 'Nombre'
+                    # Salida esperada
+                    #  0        Ana
+                    # 1       Luis
+                    # 2     Carlos
+                    # 3    Eduardo
+                    # 4    Natalia
+                    # 5     Carmen
+                    # Name: Nombre, dtype: object 
+
+                    df[['Nombre', 'Ciudad']]    # Devuelve varias columnas
+                    # Salida esperada
+                    #     Nombre    Ciudad
+                    # 0      Ana    Bogotá
+                    # 1     Luis  Medellín
+                    # 2   Carlos      Cali
+                    # 3  Eduardo    Bogotá
+                    # 4  Natalia      Cali
+                    # 5   Carmen  Medellín                    
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+              <!-- Sintaxis -->
+              <p><span class="fw-bold">Por filas (posición o etiqueta):</span>:</p>
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                   df.iloc[0]     # Accede a la primera fila (por índice)
+                    # Salida esperada
+                    # Nombre       Ana
+                    # Edad          23
+                    # Ciudad    Bogotá
+                    # Name: 0, dtype: object 
+
+                    df.loc[1]      # Accede a la fila con etiqueta 1
+                    # Salida esperada
+                    # Nombre         Luis
+                    # Edad             30
+                    # Ciudad     Medellín
+                    # Name: 1, dtype: object                    
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+              <p>La diferencia entre <code class="language-py">loc</code> e <code class="language-py">iloc</code> en
+                Pandas se resume así:</p>
+              <div class="container my-3">
+                <div class="table-responsive">
+                  <table class="table table-striped table-bordered">
+                    <thead class="table-light">
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col" class="text-center">loc</th>
+                        <th scope="col" class="text-center">iloc</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="fw-bold">Tipo de acceso</td>
+                        <td>Por etiquetas (nombres de filas o columnas)</td>
+                        <td>Por posición numérica (índices 0, 1, 2, …)</td>
+                      </tr>
+                      <tr>
+                        <td class="fw-bold">Inclusión del rango final</td>
+                        <td>Incluye el límite final</td>
+                        <td>Excluye el límite final</td>
+                      </tr>
+                      <tr>
+                        <td class="fw-bold">Ejemplo</td>
+                        <td><code class="language-py">df.loc['a', 'Edad']</code> → usa nombres</td>
+                        <td><code class="language-py">df.iloc[0, 1]</code> → usa posiciones</td>
+                      </tr>
+                      <tr>
+                        <td class="fw-bold">Uso recomendado</td>
+                        <td>Cuando se conocen las etiquetas</td>
+                        <td>Cuando se conocen las posiciones</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <p>Razones del porqué usar <code class="language-py">loc</code> y no <code
+                  class="language-py">iloc</code>:
+              <p>
+              <ul>
+                <li><span class="fw-bold">Mayor legibilidad</span>: <code class="language-py">loc</code> hace que el
+                  código sea más comprensible al usar
+                  nombres en lugar de números.</li>
+                <li><span class="fw-bold">Menor riesgo de errores</span>: Las etiquetas no cambian si se reordenan las
+                  filas o columnas, lo que evita confusiones.</li>
+                <li><span class="fw-bold">Más intuitivo</span>: Trabajar con nombres de columnas es más natural en
+                  análisis de datos.</li>
+                <li><span class="fw-bold">Acceso combinado</span>: Permite filtrar y seleccionar datos por etiquetas y
+                  condiciones en una sola línea.</li>
+              </ul>
+            </div>
+            <!-- Acceder a los datos  fin -->
+            <!-- Operaciones Comunes -->
+            <div id="operaciones-comunes">
+              <h3>Operaciones Comunes</h3>
+              <!-- Filtrado de Datos  -->
+              <div>
+                <h4>Filtrado de Datos </h4>
+                <p>El filtrado de datos en un DataFrame de Pandas permite seleccionar únicamente las filas que cumplen
+                  una o varias condiciones específicas. Es una de las operaciones más útiles para analizar información y
+                  obtener resultados precisos.</p>
+                <p>Se puede usar operadores lógicos para crear una condición que seleccione filas:</p>
+                <!-- Sintaxis -->
+                <p><span class="fw-bold">Sintaxis básica</span>:</p>
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-py" data-prismjs-copy="Copy">
+                     import pandas as pd
+
+                      # Crear un DataFrame a partir de un diccionario
+                      data = {
+                          'Nombre': ['Ana', 'Luis', 'Carlos', 'Eduardo', 'Natalia', 'Carmen'],
+                          'Edad': [23, 30, 27, 53, 48, 38],
+                          'Ciudad': ['Bogotá', 'Medellín', 'Cali', 'Bogotá', 'Cali', 'Medellín']
+                      }
+
+                      df = pd.DataFrame(data)
+
+                      # Filtrar las personas mayores de 25 años
+                      filtro = df['Edad'] > 25
+                      df_filtrado = df[filtro]
+                      print(df_filtrado)
+
+                      # Salida esperada
+                      #     Nombre  Edad    Ciudad
+                      # 1     Luis    30  Medellín
+                      # 2   Carlos    27      Cali
+                      # 3  Eduardo    53    Bogotá
+                      # 4  Natalia    48      Cali
+                      # 5   Carmen    38  Medellín
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+
+              </div>
+              <!-- Filtrado de Datos  fin -->
+              <!-- Filtrado Descriptivo  -->
+              <div>
+                <h4>Descripción Estadística</h4>
+                <p>La descripción estadística es el proceso mediante el cual se resumen y analizan los datos para
+                  comprender sus características principales, sin realizar inferencias ni predicciones. Su propósito es
+                  explicar cómo se comportan los datos mediante valores numéricos, tablas o gráficos que muestran
+                  tendencias, variaciones y distribuciones.</p>
+                <p>El objetivo de la descripción estadística es entender la información contenida en un conjunto de
+                  datos de forma sencilla y cuantificable. Permite responder preguntas como:</p>
+                <ul>
+                  <li>¿Cuál es el valor promedio?</li>
+                  <li>¿Cuánto varían los datos?</li>
+                  <li>¿Cuáles son los valores mínimos y máximos?</li>
+                  <li>¿Cómo se distribuyen los datos en general?</li>
+                </ul>
+                <!-- Sintaxis -->
+                <p><span class="fw-bold">Sintaxis básica</span>:</p>
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-py" data-prismjs-copy="Copy">
+                      import pandas as pd
+                                          
+                      df = pd.DataFrame({
+                          'Nombre': ['Ana', 'Luis', 'Carlos', 'María', 'Sofía'],
+                          'Edad': [23, 30, 27, 22, 35],
+                          'Ciudad': ['Bogotá', 'Cali', 'Medellín', 'Bogotá', 'Cali'],
+                          'Salario': [2500, 3200, 2800, 2400, 3500]
+                      })
+
+                      # Descripción estadística del subconjunto
+                      descripcion = df.describe()
+                      print(descripcion)
+                      
+                      # Salida esperada:
+                      #             Edad      Salario
+                      # count   5.000000     5.000000       Indica la cantidad de datos no nulos (no vacíos) en la columna.
+                      # mean   27.400000  2880.000000       Representa la media aritmética o promedio de los valores de la columna.
+                      # std     5.319774   465.832588       Es la desviación estándar, una medida de cuánto varían los datos respecto al promedio.
+                      # min    22.000000  2400.000000       Muestra el valor mínimo encontrado en la columna.
+                      # 25%    23.000000  2500.000000       Indica que el 25% de los valores son menores o iguales a este número
+                      # 50%    27.000000  2800.000000       Es el valor central de los datos ordenados.
+                      # 75%    30.000000  3200.000000       Indica que el 75% de los valores son menores o iguales a este número.
+                      # max    35.000000  3500.000000       Muestra el valor máximo en la columna.
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+              </div>
+              <!-- Filtrado Descriptivo  fin -->
+
+            </div>
+            <!-- Operaciones Comunes  fin -->
+
+
+
+
+
+
+          </div>
+          <!-- Como se Usan los Dataframes Fin -->
+
+        </article>
+        <article class="row" id="comments">
+          <h2>COMENTARIOS</h2>
+          <p>Si tiene alguna inquietud, duda o ha encontrado algún error, porfavor infórmelo a través del formulario
+            disponible para estepropósito.</p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
+                </div>
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">Enviar</button>
+              </fieldset>
+              <p class="small text-center">La política de privacidad, y los términos y condiciones estándisponibles en
+                el formulario de contacto.</p>
+            </form>
+          </div>
+        </article>
+        <!-- Comentarios fin -->
+      </section>
+      <!-- -------------------------------- barra lateral -------------------------------- -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        <h2>En Este Artículo</h2>
+        <div class="menu-scroll">
+          <div class="menu-container">
+            <div class="border border-1">
+              <div class="menu-item">
+                <a href="#introduccion" class="simple-link">Introducción</a>
+              </div>
+              <div class="menu-item">
+                <details>
+                  <summary>
+                    Definición: Dataframe
+                  </summary>
+                  <div class="submenu"> <a href="#características-principales-de-dataframes"
+                      class="submenu-item">Características Principales de Dataframes</a>
+                    <a href="#ejemplo-basico" class="submenu-item">Ejemplo Básico</a>
+                  </div>
+                </details>
+              </div>
+              <div class="menu-item">
+                <details>
+                  <summary>
+                    Como se Usan los Dataframes
+                  </summary>
+                  <div class="submenu"> <a href="#acceder-a-los-datos" class="submenu-item">Acceder a los datos</a>
+                    <a href="#operaciones-comunes" class="submenu-item">Operaciones Comunes</a>
+                  </div>
+                </details>
+              </div>
+
+
+
+              <!-- Comentarios  -->
+              <div class="menu-item">
+                <a href="#comments" class="simple-link">Comentarios</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- -------------------------------- fin barra lateral -------------------------------- -->
+    </main>
+  </div>
+  <!--  Principal Fin  -->
+
+
+  <!--  pie de pagina  -->
+  <footer class="row border-top border-1 m-1 mt-auto">
+    <div class="row">
+      <!-- contacto -->
+      <address class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Contacto</div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class="ms-3">
+            <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class="ms-3">Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      <!-- Derechos de autor -->
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
+      </div>
+      <!-- redes sociales -->
+      <div class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Redes Sociales</div>
+        <div class="d-flex justify-content-evenly align-items-center gap-5">
+          <div>
+            <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center gap-2"></div>
+  </footer>
+  <!--  pie de pagina fin  -->
+
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
+</html>
