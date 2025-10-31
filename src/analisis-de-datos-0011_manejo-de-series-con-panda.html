@@ -1,0 +1,1100 @@
+<!-- @format -->
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Aprenda a manejar Series con Pandas en Python. Guía práctica paso a paso para crear, modificar, analizar y visualizar datos de forma eficiente con ejemplos claros." />
+  <meta name="title" content="Manejo de Series con Pandas - Ing. Eduardo Herrera Forero." />
+  <meta name="keywords"
+    content="Pandas, Series, Python, análisis de datos, manipulación de datos, programación, ciencia de datos, tutorial Pandas, Python Pandas, curso Pandas" />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eduardoherreraf.github.io/analisis-de-datos-0011_manejo-de-series-con-panda" />
+  <!-- Fin Metaetiquetas -->
+
+  <!-- Open Graph data -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Manejo de Series con Pandas - Ing. Eduardo Herrera Forero." />
+  <meta property="og:description"
+    content="Aprenda a manejar Series con Pandas en Python. Guía práctica paso a paso para crear, modificar, analizar y visualizar datos de forma eficiente con ejemplos claros." />
+  <meta property="og:image" content="https://i.postimg.cc/52CP3cmm/Pandas-Series-comp.jpg" />
+  <meta property="og:image:alt"
+    content="Agenda con columnas de nombres e índices que representa una Serie de Pandas en Python." />
+  <meta property="og:url"
+    content="https://eduardoherreraf.github.io/analisis-de-datos-0011_manejo-de-series-con-panda" />
+  <meta property="og:locale" content="es_CO" />
+  <!-- fin Open Graph data -->
+
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Manejo de Series con Pandas - Ing. Eduardo Herrera Forero." />
+  <meta name="twitter:description"
+    content="Aprenda a manejar Series con Pandas en Python. Guía práctica paso a paso para crear, modificar, analizar y visualizar datos de forma eficiente con ejemplos claros." />
+  <meta name="twitter:image" content="https://i.postimg.cc/52CP3cmm/Pandas-Series-comp.jpg" />
+  <meta name="twitter:image:alt"
+    content="Analogía visual de una Serie en Pandas representada como una agenda con nombres y números, mostrando cómo los índices se asocian con los datos en Python.">
+  <meta name="twitter:url"
+    content="https://eduardoherreraf.github.io/analisis-de-datos-0011_manejo-de-series-con-panda" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
+
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
+
+  <title>
+    Manejo de Series con Pandas - Ing. Eduardo Herrera Forero.
+  </title>
+
+  <script type="module" defer src="./js/main.js"></script>
+
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra deNavegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Barra deNavegación -->
+
+  <!--  Principal  -->
+  <div class="container-fluid" id="introduccion">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!--  Manejo de Series con Pandas-->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <header>
+            <h1>Manejo de Series con Pandas</h1>
+          </header>
+          <!-- Introducción -->
+          <div class="mt-3">
+            <h2>Introducción a Manejo de Series con Pandas
+            </h2>
+            <div class="centrar-imagen imagen40 mb-5">
+              <figure class="img-container">
+                <img src="https://i.postimg.cc/52CP3cmm/Pandas-Series-comp.jpg" class="img-fluid"
+                  alt="Agenda con columnas de nombres e índices que representa una Serie de Pandas en Python."
+                  title="Analogía visual: Manejo de Series con Pandas en Python." loading="lazy"
+                  onerror="this.onerror=null; this.src='https://i.ibb.co/fG0FfSD7/Pandas-Series-comp.jpg';" />
+                <figcaption class="img-caption">
+                  Analogía de una Serie con Pandas: cada nombre actúa como un índice y cada número telefónico como un
+                  dato asociado, facilitando la comprensión de cómo Pandas organiza la información en Python.
+                </figcaption>
+              </figure>
+            </div>
+            <p>La biblioteca Pandas es una herramienta fundamental en Python para el análisis y la manipulación de
+              datos. Su estructura denominada <span class="text-warning">Serie</span> permite manejar información
+              unidimensional de forma eficiente, combinando los beneficios de los arreglos de NumPy con un índice que
+              identifica cada elemento. Gracias a las <span class="text-warning">Series</span> , es posible realizar
+              operaciones estadísticas, filtrado, selección y transformación de datos de manera rápida y flexible, lo
+              que convierte a Pandas en una opción ideal para el trabajo con conjuntos de datos en proyectos de ciencia
+              de datos, ingeniería y análisis numérico.</p>
+          </div>
+          <!-- Introducción Fin -->
+          <hr class="subtle-divider" />
+
+          <!-- Primera aproximación a las Series en Pandas -->
+          <div id="primera-aproximacion-a-las-series-en-pandas" class="mt-3">
+            <h2>Primera aproximación a las Series en Pandas</h2>
+            <p>Una Serie en <span class="text-warning">Pandas</span> se utiliza para almacenar y manipular
+              datos unidimensionales, acompañados por un
+              índice que identifica cada elemento. Es ideal para representar una columna de datos, una lista de
+              valores o una secuencia etiquetada.</p>
+            <p>Para utilizar una Serie, se debe importar la biblioteca <span class="text-warning">Pandas</span> y
+              crear un objeto de tipo Series. A partir de allí, es
+              posible acceder, modificar, filtrar y realizar operaciones matemáticas o estadísticas sobre los datos.
+            </p>
+            <p>A continuación, se describe el proceso completo paso a paso, de cmo se usa la biblioteca <span
+                class="text-warning">Pandas</span>:</p>
+            <!-- Instalación de la Biblioteca Pandas  -->
+            <div id="instalacion-de-la-biblioteca-pandas">
+              <h3>Instalación de la Biblioteca Pandas </h3>
+              <p>Para instalar <span class="text-warning">Pandas</span>, se utiliza el gestor de paquetes pip, que
+                es la herramienta estándar de
+                Python para instalar bibliotecas externas.</p>
+              <!-- Sintaxis -->
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-bash" data-prismjs-copy="Copy">
+                       pip install pandas         # Terminal / Línea de comandos
+                        !pip install pandas       # Notebooks (Jupyter, Google Colab, etc.)
+                      </code>
+                    </pre>
+              </div>
+              <!-- Sintaxis fin -->
+              <p>Este comando descarga e instala la versión más reciente de <span class="text-warning">Pandas</span>
+                junto con sus dependencias (como <span class="fst-italic">NumPy</span>).
+              </p>
+            </div>
+            <!-- Instalación de la Biblioteca Pandas fin -->
+
+            <!-- Importación de la Biblioteca  -->
+            <div id="importacion-de-la-biblioteca">
+              <h3>Importación de la Biblioteca </h3>
+              <p>Una vez instalada, es necesario importarla en el código para poder utilizar sus funciones y
+                estructuras. Por convención, se importa con el alias <code class="language-py">pd</code>:</p>
+              <!-- Sintaxis -->
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                        import pandas as s
+                      </code>
+                    </pre>
+              </div>
+              <!-- Sintaxis fin -->
+            </div>
+            <!-- Importación de la Biblioteca fin -->
+
+            <!-- Mostrar la ejecución de Celda Completa  -->
+            <div id="mostrar-la-ejecucion-de-celda-comleta">
+              <h3>Mostrar la ejecución de Celda Completa </h3>
+              <p>Para que se pueda ver todos los resultados en cada celda ejecutar:</p>
+              <!-- Sintaxis -->
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                        from IPython.core.interactiveshell import InteractiveShell
+                        InteractiveShell.ast_node_interactivity = "all"
+                      </code>
+                    </pre>
+              </div>
+              <!-- Sintaxis fin -->
+            </div>
+            <!-- Mostrar la ejecución de Celda Completa  fin -->
+
+
+            <!-- Creación y Uso de una Serie  -->
+            <div id="creacion-y-uso-de-una-serie">
+              <h3>Creación y Uso de una Serie </h3>
+              <p>Una Serie es una estructura unidimensional de <span class="text-warning">Pandas</span>, similar a
+                una columna de una hoja de cálculo o a un arreglo de NumPy, que puede contener distintos tipos de
+                datos (números, cadenas, booleanos, etc.).</p>
+              <!-- Sintaxis -->
+              <p><span class="fw-bold">Ejemplo básico</span>:</p>
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                   # Crear una Serie a partir de una lista de Python
+                    datos = [10, 10, 30, 40, 40, 40, 70, 80, 90, 100]
+                    s = pd.Series(datos)
+
+                    print(s)
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+              <!-- Sintaxis -->
+              <p><span class="fw-bold">Salida esperada</span>:</p>
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-none" data-prismjs-copy="Copy">
+                       0     10
+                        1     10
+                        2     30
+                        3     40
+                        4     40
+                        5     40
+                        6     70
+                        7     80
+                        8     90
+                        9    100
+                        dtype: int64
+                      </code>
+                    </pre>
+              </div>
+              <!-- Sintaxis fin -->
+            </div>
+            <!-- Creación y Uso de una Serie fin -->
+
+            <!-- Personalización de índices  -->
+            <div id="personalizacion-de-índices">
+              <h3>Personalización de índices </h3>
+              <p>Se pueden asignar índices personalizados en lugar de los numéricos por defecto:</p>
+              <!-- Sintaxis -->
+              <p><span class="fw-bold">Ejemplo básico</span>:</p>
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                   s = pd.Series(datos, index=["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"])
+                    print(s)
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+              <!-- Sintaxis -->
+              <p><span class="fw-bold">Salida esperada</span>:</p>
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-none" data-prismjs-copy="Copy">
+                   A     10
+                    B     10
+                    C     30
+                    D     40
+                    E     40
+                    F     40
+                    G     70
+                    H     80
+                    I     90
+                    J    100
+                    dtype: int64
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+            </div>
+            <!-- Personalización de índices fin -->
+
+            <!-- Acceso y operaciones con una Serie -->
+            <div id="acceso-y-operaciones-con-una-serie">
+              <h3>Acceso y operaciones con una Serie </h3>
+              <p><span class="text-warning">Pandas</span> permite acceder y operar sobre los datos fácilmente:</p>
+              <!-- Sintaxis -->
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                   print("B =", s["B"])                # Acceder por etiqueta → 20
+                    print("Promedio =", s.mean(),"\n")       # Calcular el promedio → 51.0
+                    print(s + 5)                        # Operaciones vectorizadas
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+              <!-- Sintaxis -->
+              <p><span class="fw-bold">Salida esperada</span>:</p>
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-none" data-prismjs-copy="Copy">
+                   B = 10
+                    Promedio = 51.0
+                    
+                    A     15
+                    B     15
+                    C     35
+                    D     45
+                    E     45
+                    F     45
+                    G     75
+                    H     85
+                    I     95
+                    J    105
+                   dtype: int64
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+            </div>
+            <!-- Acceso y operaciones con una Serie fin -->
+          </div>
+          <!-- Primera aproximación a las Series en Pandas fin -->
+          <hr class="subtle-divider" />
+
+          <!-- Sentencias para Manejo de Series -->
+          <div id="sentencias-para-manejo-de-series" class="mt-3">
+            <h2>Sentencias para Manejo de Series</h2>
+            <p>Las sentencias para el manejo de Series en Pandas constituyen un conjunto de instrucciones que permiten
+              crear, modificar, acceder y analizar datos de manera estructurada y eficiente. Mediante estas sentencias,
+              es posible realizar operaciones como filtrado, selección de elementos, cálculos estadísticos y
+              transformaciones sobre colecciones unidimensionales de datos. Su uso facilita el trabajo con información
+              numérica o categórica, optimizando procesos de análisis y preparación de datos dentro del entorno de
+              Python.</p>
+            <!-- Creación de Series  -->
+            <div id="creacion-de-series">
+              <h3>Creación de Series </h3>
+              <p>Estas sentencias permiten crear o definir una Serie a partir de diferentes estructuras de datos de
+                Python.</p>
+              <!-- Sintaxis -->
+              <p><span class="fw-bold">Sintaxis básica</span>:</p>
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                    pd.Series(data, index=None, dtype=None)
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+              <p>Fuentes de datos comunes:</p>
+              <ul>
+                <li><span class="fw-bold">Lista</span>: <code class="language-py">pd.Series([10, 20, 30, 40, 50])</code>
+                  <!-- Sintaxis -->
+                  <div class="ej-sintaxis-100">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                       import pandas as pd
+                        data = [10, 20, 30, 40, 50]
+                        s = pd.Series(data)
+                        print(s)
+                      </code>
+                    </pre>
+                  </div>
+                  <!-- Sintaxis fin -->
+                  <!-- Sintaxis -->
+                  <div class="ej-sintaxis-100">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                       0    10
+                        1    20
+                        2    30
+                        3    40
+                        4    50
+                        dtype: int64
+                      </code>
+                    </pre>
+                  </div>
+                  <!-- Sintaxis fin -->
+                </li>
+                <li><span class="fw-bold">Diccionario</span>: <code
+                    class="language-py">pd.Series({"a": 10, "b": 20, "c":30, "d":40, "e":50})</code>
+                  <!-- Sintaxis -->
+                  <div class="ej-sintaxis-100">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                       import pandas as pd
+                        data = pd.Series({"a": 10, "b": 20, "c":30, "d":40, "e":50})
+                        s_dict = pd.Series(data)
+                        print(s_dict)
+                      </code>
+                    </pre>
+                  </div>
+                  <!-- Sintaxis fin -->
+                  <!-- Sintaxis -->
+                  <div class="ej-sintaxis-100">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                       a    10
+                        b    20
+                        c    30
+                        d    40
+                        e    50
+                        dtype: int64
+                      </code>
+                    </pre>
+                  </div>
+                  <!-- Sintaxis fin -->
+                </li>
+                <li><span class="fw-bold">Arreglo NumPy</span>: <code
+                    class="language-py">pd.Series(np.array([1, 2, 3]))</code></li>
+              </ul>
+            </div>
+            <!-- Creación de Series  fin -->
+
+            <!-- Exploración y Análisis de la Serie  -->
+            <div id="exploracion-y-analisis-de-la-serie">
+              <h3>Exploración y Análisis de la Serie </h3>
+              <p>Comandos para inspeccionar la estructura, el contenido y las características básicas de la Serie.</p>
+              <!-- Sintaxis -->
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                   s.head()         # Muestra los 5 primeros elementos
+                    s.head(n)        # Muestra los n primeros elementos
+                    s.tail()         # Muestra los 5 últimos elementos
+                    s.tail(n)        # Muestra los n últimos elementos
+                    
+                    s.ndim           # Dimensión (1 para Series)
+                    s.shape          # Tamaño (número de elementos), devuelve una tupla (n,)
+                    s.size           # Número total de elementos, devuelve una entero n
+
+                    s.index          # Devuelve las etiquetas del índice
+                    s.values         # Devuelve los valores como un array
+
+                    s.name           # Nombre de la Serie
+
+                    s.dtype          # Tipo de datos de la Serie
+                    s.describe()     # Estadísticas descriptivas
+                    s.info()         # Información general de la Serie
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+              <p>Salida esperada para <code class="language-py">s.dtype</code>:</p>
+              <div class="table-responsive">
+                <table class="table table-striped table-hover table-bordered">
+                  <thead class="table-dark">
+                    <tr>
+                      <th scope="col">Tipo de dato</th>
+                      <th scope="col">Descripción</th>
+                      <th scope="col">Ejemplo de contenido</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><code class="language-py">int64</code></td>
+                      <td>Números enteros (enteros grandes)</td>
+                      <td><code class="language-py">[10, 20, 30]</code></td>
+                    </tr>
+                    <tr>
+                      <td><code class="language-py">int32</code></td>
+                      <td>Enteros de 32 bits (en algunos sistemas)</td>
+                      <td><code class="language-py">[1, 2, 3]</code></td>
+                    </tr>
+                    <tr>
+                      <td><code class="language-py">float64</code></td>
+                      <td>Números decimales (flotantes)</td>
+                      <td><code class="language-py">[1.2, 3.5, 4.8]</code></td>
+                    </tr>
+                    <tr>
+                      <td><code class="language-py">float32</code></td>
+                      <td>Flotantes de precisión simple</td>
+                      <td><code class="language-py">[1.1, 2.2, 3.3]</code></td>
+                    </tr>
+                    <tr>
+                      <td><code class="language-py">object</code></td>
+                      <td>Cadenas de texto o datos mixtos</td>
+                      <td><code class="language-py">['a', 'b', 'c']</code></td>
+                    </tr>
+                    <tr>
+                      <td><code class="language-py">bool</code></td>
+                      <td>Valores lógicos (True / False)</td>
+                      <td><code class="language-py">[True, False, True]</code></td>
+                    </tr>
+                    <tr>
+                      <td><code class="language-py">datetime64[ns]</code></td>
+                      <td>Fechas y horas con precisión de nanosegundos</td>
+                      <td><code class="language-py">['2023-01-01', '2023-02-01']</code></td>
+                    </tr>
+                    <tr>
+                      <td><code class="language-py">timedelta64[ns]</code></td>
+                      <td>Diferencias de tiempo o duraciones</td>
+                      <td><code class="language-py">pd.Series(pd.to_timedelta(['1 days', '2 days']))</code></td>
+                    </tr>
+                    <tr>
+                      <td><code class="language-py">category</code></td>
+                      <td>Datos categóricos (optimizan memoria)</td>
+                      <td><code class="language-py">['bajo', 'medio', 'alto']</code> (convertidos a categorías)</td>
+                    </tr>
+                    <tr>
+                      <td><code class="language-py">string</code></td>
+                      <td>Tipo de texto moderno de Pandas (desde v1.0)</td>
+                      <td><code class="language-py">pd.Series(['uno', 'dos'], dtype='string')</code></td>
+                    </tr>
+                    <tr>
+                      <td><code class="language-py">complex128</code></td>
+                      <td>Números complejos</td>
+                      <td><code class="language-py">[1+2j, 3+4j]</code></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>Salida esperada para <code class="language-py">s.describe()</code>: analiza el contenido de la Serie y
+                devuelve estadísticas resumidas, pero su resultado depende del tipo de datos que contenga la Serie:</p>
+              <ul>
+                <li>Si los datos son <span class="fw-bold">numéricos</span>, <code
+                    class="language-py">s.describe()</code> mostrará medidas estadísticas:
+                  <!-- Sintaxis -->
+                  <div class="ej-sintaxis-100">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                       0
+                        count 	5.000000         # Cantidad de valores no nulos.
+                        mean 	30.000000        # Media (promedio).
+                        std 	15.811388        # Desviación estándar.
+                        min 	10.000000        # Valor mínimo.
+                        25% 	20.000000        # Primer cuartil (25%).
+                        50% 	30.000000        # Mediana (50%).
+                        75% 	40.000000        # Tercer cuartil (75%).
+                        max 	50.000000        # Valor máximo
+
+                        dtype: float64
+                      </code>
+                    </pre>
+                  </div>
+                  <!-- Sintaxis fin -->
+                </li>
+                <li>Si los datos son <span class="fw-bold">categóricos</span> o de texto, <code
+                    class="language-py">s_dict.describe()</code>mostrará medidas de
+                  frecuencia.
+                  <!-- Sintaxis -->
+                  <div class="ej-sintaxis-100">
+                    <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                       count        6
+                        unique       3
+                        top       rojo
+                        freq         3
+                        dtype: object
+                      </code>
+                    </pre>
+                  </div>
+                  <!-- Sintaxis fin -->
+                </li>
+              </ul>
+            </div>
+            <!-- Exploración y Análisis de la Serie  fin -->
+
+            <!-- Acceso y Selección de Datos  -->
+            <div id="acceso-y-seleccion-de-datos">
+              <h3>Acceso y Selección de Datos </h3>
+              <p>Métodos para acceder, indexar o filtrar datos en una Serie.</p>
+              <!-- Sintaxis -->
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                   s[0]             # Acceso por posición
+                    s["A"]           # Acceso por etiqueta
+                    s.loc["A"]       # Acceso por etiqueta (explícito)
+                    s.iloc[0]        # Acceso por posición (explícito)
+                    s[["A", "B"]]    # Selección múltiple
+                    s[serie > 10]    # Filtrado condicional
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+              <!-- Sintaxis -->
+              <p><span class="fw-bold">Ejemplo</span>:</p>
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                   # Se crea una serie con etiquetas personalizadas.
+                    s = pd.Series(
+                        [5, 12, 7, 20, 3],
+                        index=["A", "B", "C", "D", "E"]
+                    )
+
+                    valor = s[0]
+                    print("valor en posición 0 =>", valor)  # -> 5
+                    valor = s.iloc[0]
+                    print("valor en posición 0 =>", valor)  # -> 5
+                    valor = s["B"]
+                    print("valor en la etiqueta B =>",valor)  # -> 12
+                    valor = s.loc["B"]
+                    print("valor en la etiqueta B =>",valor)  # -> 12
+                    sub = s[["A", "B"]]
+                    print("valor en las etiqueta A y B =>\n",sub)
+                    # A     5
+                    # B    12
+                    filtrada = s[s > 10]
+                    print("filtrado para valores > 10 =>\n",filtrada)
+                    # B    12
+                    # D    20
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+            </div>
+            <!-- Acceso y Selección de Datos  fin -->
+
+            <!-- Operaciones Matemáticas y Estadísticas  -->
+            <div id="operaciones-matematicas-y-estadísticas">
+              <h3>Operaciones Matemáticas y Estadísticas </h3>
+              <p>Métodos para realizar operaciones numéricas y estadísticas sobre los datos.</p>
+              <!-- Sintaxis -->
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                   s = pd.Series(
+                      [5, 20, 7, 20, 7, 20, 7],
+                      index=["A", "B", "C", "D", "E", "F", "G"]
+                    )
+
+                    print("Suma total", s.sum())                              # 86
+                    print("Promedio", s.mean())                               # 12.285714285714286 
+                    print("Mediana", s.median())                              # 7.0
+                    print("Moda\n", s.mode())                                 
+                    # 0     7    se repite tres veces 
+                    # 1     20   se repite tres veces
+                    # dtype: int64
+                    print("Desviación estándar", s.std())                     # 7.250615737399726        
+                    print("Valor mínimo", s.min())                            # 5
+                    print("Valor máximo", s.max())                            # 20
+                    print("Varianza", s.var())                                # 52.57142857142858
+                    print("Suma acumulativa\n", s.cumsum())                   
+                    #  A     5
+                    #  B    25
+                    #  C    32
+                    #  D    52
+                    #  E    59
+                    #  F    79
+                    #  G    86
+                    #  dtype: int64 
+                    print("Producto acumulativo\n", s.cumprod())              
+                    # A           5
+                    # B         100
+                    # C         700
+                    # D       14000
+                    # E       98000
+                    # F     1960000
+                    # G    13720000
+                    # dtype: int64             
+                    print("Frecuencia de valores únicos\n", s.value_counts())
+                    # 20    3
+                    # 7     3
+                    # 5     1
+                    # Name: count, dtype: int64                                                
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+
+            </div>
+            <!-- Operaciones Matemáticas y Estadísticas  fin -->
+
+            <!-- Manipulación y Transformación de Datos  -->
+            <div id="manipulacion-y-transformacion-de-datos">
+              <h3>Manipulación y Transformación de Datos </h3>
+              <p>Sentencias para modificar o transformar los valores de una Serie.</p>
+              <!-- Sintaxis -->
+              <p><span class="fw-bold">Sintaxis básica</span>:</p>
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                   s = pd.Series(
+                      [5, 20, 7, 20, 7, 20, 7],
+                      index=["A", "B", "C", "D", "E", "F", "G"]
+                    )
+
+                    s.add(n)                       # Le suma n a cada elemento de la serie
+                    s.sub(n)                       # Le resta n
+                    s.mul(n)                       # Le Multiplica n
+                    s.div(n)                       # Divide en n
+                    s.round(n)                     # Redondeo a n decimales
+
+                    s.replace(val_ant, val_nuevo)  # Reemplaza valores
+                    s.astype(tipo)                 # Cambia el tipo de dato
+
+                    s.apply(función)               # Aplica una función personalizada
+                    s.map(función)                 # Mapea valores mediante una función o diccionario
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+
+            </div>
+            <!-- Manipulación y Transformación de Datos  fin -->
+
+            <!-- Limpieza y Tratamiento de Valores Nulos  -->
+            <div id="limpieza-y-tratamiento-de-valores-nulos">
+              <h3>Limpieza y Tratamiento de Valores Nulos </h3>
+              <p>Métodos esenciales para detectar, eliminar o reemplazar valores faltantes:</p>
+              <!-- Sintaxis -->
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                   import pandas as pd
+                    import numpy as np
+
+                    # Crear una Serie con algunos valores nulos
+                    s = pd.Series(
+                        [5, np.nan, 7, 20, np.nan, 15, 7],
+                        index=["A", "B", "C", "D", "E", "F", "G"]
+                    )
+
+                    s.isna()                  # Detecta valores nulos (True/False)
+                    s.notna()                 # Detecta valores no nulos
+                    s.dropna()                # Elimina valores nulos
+                    s.fillna(-1)              # Sustituye valores nulos por -1
+                    s.replace(np.nan, 0)      # Reemplaza nulos por cero                   
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+
+            </div>
+            <!-- Limpieza y Tratamiento de Valores Nulos  fin -->
+
+            <!-- Operaciones con Índices  -->
+            <div id="operaciones-con-índices">
+              <h3>Operaciones con Índices </h3>
+              <p>Sentencias que permiten gestionar o modificar el índice de una Serie.</p>
+              <!-- Sintaxis -->
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                   s = pd.Series(
+                        [5, 20, 7, 20, 7, 20, 7],
+                        index=["A", "B", "C", "D", "E", "F", "G"]
+                    )
+
+                    nuevo_indice = ["G", "E", "C", "A", "B", "D", "F"]
+
+                    s.index                          # Muestra el índice
+                    s = s.reindex(nuevo_indice)      # Asigna un nuevo índice, se crea una nueva serie
+                    s.index                          # Muestra el nuevo índice
+                    s = s.reset_index()              # Reinicia el índice, convierte el índice actual 
+                                                     # en una columna y asigna un nuevo índice numérico por defecto
+                    s.index                          # Muestra la nueva serie
+
+                    s.rename_axis("Título")           # Renombra título del índice
+                    
+                    s.sort_index()                   # Ordena por índice
+                    s.sort_values()                  # Ordena por valores         
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+
+            </div>
+            <!-- Operaciones con Índices  fin -->
+
+            <!-- Combinación y Concatenación de Series  -->
+            <div id="combinacion-y-concatenacion-de-series">
+              <h3>Combinación y Concatenación de Series </h3>
+              <p>Permiten unir o concatenar varias Series entre sí:</p>
+              <!-- Sintaxis -->
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                   s1 = pd.Series([1, 2, 3])
+                    s2 = pd.Series([11, 12, 13])
+
+                    s_concatenated = pd.concat([s1, s2])
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+            </div>
+            <!-- Combinación y Concatenación de Series  fin -->
+
+            <!-- Exportación de Datos  -->
+            <div id="exportacion-de-datos">
+              <h3>Exportación de Datos </h3>
+              <p>Métodos para guardar o exportar el contenido de una Serie.</p>
+              <!-- Sintaxis -->
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                   s.to_csv("datos.csv")        # Exporta a CSV
+                    s.to_excel("datos.xlsx")     # Exporta a Excel
+                    s.to_json("datos.json")      # Exporta a JSON
+
+                    s.to_dict()                  # Convierte a diccionario, Devuelve un diccionario de Python estándar 
+                                                 # donde las claves son los índices y los valores son los datos de la Serie.
+
+                    s.to_list()                  # Convierte a lista, devuelve únicamente los valores, sin incluir el índice
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+            </div>
+            <!-- Exportación de Datos  fin -->
+
+            <!-- Importación de Datos  -->
+            <div id="importacion-de-datos">
+              <h3>Importación de Datos </h3>
+              <p>Métodos para importar el contenido de una Serie des archivos, clipboard, etc.</p>
+              <!-- Sintaxis -->
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                   pd.read_csv("datos.csv")        # Importa datos desde un archivo CSV
+                    pd.read_excel("datos.xlsx")     # Importa datos desde un archivo Excel
+                    pd.read_json("datos.json")      # Importa datos desde un archivo JSON
+
+                    pd.read_html("pagina.html")     # Importa tablas desde una página web (HTML)
+                    pd.read_table("datos.txt")      # Importa datos desde un archivo de texto delimitado
+                    pd.read_clipboard()             # Importa datos copiados desde el portapapeles
+
+                    pd.read_sql("SELECT * FROM tabla", conexion)   # Importa datos desde una base de datos SQL
+                    
+                    pd.read_parquet("datos.parquet") # Importa datos en formato Parquet (alta eficiencia)
+                    pd.read_feather("datos.feather") # Importa datos en formato Feather (rápido y ligero)
+                    pd.read_pickle("datos.pkl")      # Importa objetos serializados en formato Pickle
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+              <!-- Sintaxis -->
+              <p><span class="fw-bold">Ejemplo</span>: Como importar un archivo CSV:</p>
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                   df = pd.read_csv("datos.csv", index_col=0)
+                    s3 = pd.Series(df.iloc[:, 0])
+
+                    s3_ordenada = s3.sort_values()
+                    print(s3_ordenada)
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+            </div>
+            <!-- Importación de Datos  fin -->
+
+            <!-- Métodos Avanzados y Utilitarios  -->
+            <div id="metodos-avanzados-y-utilitarios">
+              <h3>Métodos Avanzados y Utilitarios </h3>
+              <p>Opciones adicionales para análisis más profundo o depuración.</p>
+              <!-- Sintaxis -->
+              <div class="ej-sintaxis-100">
+                <pre data-src-status="loaded" tabindex="0">
+                  <code class="language-py" data-prismjs-copy="Copy">
+                   import pandas as pd
+                    import numpy as np
+
+                    s = pd.Series([10, 20, 30, 20, 40, 10, 50, np.nan, 60, 70])
+                    s4 = pd.Series([10, 20, 30, 20, 40, 10, 50, np.nan, 60, 70])
+
+                    s.unique()        # Valores únicos: [10. 20. 30. 40. 50. nan 60. 70.]
+                    s.nunique()       # Cantidad de valores únicos, 7
+                    s.sample(3)       # Muestra aleatoria
+                    # 5    10.0
+                    # 3    20.0
+                    # 8    60.0
+                    
+                    s.clip(0, n)    # Limita valores dentro de un rango
+                    # si n = 40
+                    # 0    10.0
+                    # 1    20.0
+                    # 2    30.0
+                    # 3    20.0
+                    # 4    40.0
+                    # 5    10.0
+                    # 6    40.0
+                    # 7     NaN
+                    # 8    40.0
+                    # 9    40.0
+                    # dtype: float64
+
+                    s.between(n1, n2) # Verifica rango de valores, n1 y n2
+                    # si n1 = 10 y n2 = 50                    
+                    # 0     True
+                    # 1     True
+                    # 2     True
+                    # 3     True
+                    # 4     True
+                    # 5     True
+                    # 6     True
+                    # 7    False
+                    # 8    False
+                    # 9    False
+                    # dtype: bool
+                   
+                  s.equals(s4)    # Compara Series si son iguales => True
+                                  # si cambia cualquier cosa => False         
+                  </code>
+                </pre>
+              </div>
+              <!-- Sintaxis fin -->
+            </div>
+            <!-- Métodos Avanzados y Utilitarios  fin -->
+          </div>
+          <!-- Sentencias para Manejo de Series Fin -->
+
+
+
+        </article>
+        <article class="row" id="comments">
+          <h2>COMENTARIOS</h2>
+          <p>Si tiene alguna inquietud, duda o ha encontrado algún error, porfavor infórmelo a través del formulario
+            disponible para estepropósito.</p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
+                </div>
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">Enviar</button>
+              </fieldset>
+              <p class="small text-center">La política de privacidad, y los términos y condiciones estándisponibles en
+                el formulario de contacto.</p>
+            </form>
+          </div>
+        </article>
+        <!-- Comentarios fin -->
+      </section>
+      <!-- -------------------------------- barra lateral -------------------------------- -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        <h2>En Este Artículo</h2>
+        <div class="menu-scroll">
+          <div class="menu-container">
+            <div class="border border-1">
+              <div class="menu-item">
+                <a href="#introduccion" class="simple-link">Introducción</a>
+              </div>
+              <div class="menu-item">
+                <details>
+                  <summary>
+                    Primera aproximación a las Series en Pandas
+                  </summary>
+                  <div class="submenu">
+                    <a href="#primera-aproximacion-a-las-series-en-pandas" class="submenu-item">Primera aproximación a
+                      las Series en Pandas</a>
+                    <a href="#instalacion-de-la-biblioteca-pandas" class="submenu-item">Instalación de la Biblioteca
+                      Pandas</a>
+                    <a href="#importacion-de-la-biblioteca" class="submenu-item">Importación de la Biblioteca</a>
+                    <a href="#mostrar-la-ejecucion-de-celda-comleta" class="submenu-item">Mostrar la ejecución de Celda
+                      Completa</a>
+                    <a href="#creacion-y-uso-de-una-serie" class="submenu-item">Creación y Uso de una Serie</a>
+                    <a href="#personalizacion-de-índices" class="submenu-item">Personalización de índices</a>
+                    <a href="#acceso-y-operaciones-con-una-serie" class="submenu-item">Acceso y Operaciones con una
+                      Serie</a>
+                  </div>
+                </details>
+              </div>
+              <div class="menu-item">
+                <details>
+                  <summary>
+                    Sentencias para Manejo de Series
+                  </summary>
+                  <div class="submenu">
+                    <a href="#sentencias-para-manejo-de-series" class="submenu-item">Sentencias para Manejo de
+                      Series</a>
+                    <a href="#creacion-y-uso-de-una-serie" class="submenu-item">Creación y Uso de una Serie</a>
+                    <a href="#personalizacion-de-índices" class="submenu-item">Personalización de índices</a>
+                    <a href="#acceso-y-operaciones-con-una-serie" class="submenu-item">Acceso y operaciones con una
+                      Serie</a>
+                    <a href="#sentencias-para-manejo-de-series" class="submenu-item">Sentencias para Manejo de
+                      Series</a>
+                    <a href="#creacion-de-series" class="submenu-item">Creación de Series</a>
+                    <a href="#exploracion-y-analisis-de-la-serie" class="submenu-item">Exploración y Análisis de la
+                      Serie</a>
+                    <a href="#acceso-y-seleccion-de-datos" class="submenu-item">Acceso y Selección de Datos</a>
+                    <a href="#operaciones-matematicas-y-estadísticas" class="submenu-item">Operaciones Matemáticas y
+                      Estadísticas</a>
+                    <a href="#manipulacion-y-transformacion-de-datos" class="submenu-item">Manipulación y Transformación
+                      de Datos</a>
+                    <a href="#limpieza-y-tratamiento-de-valores-nulos" class="submenu-item">Limpieza y Tratamiento de
+                      Valores Nulos</a>
+                    <a href="#operaciones-con-índices" class="submenu-item">Operaciones con Índices</a>
+                    <a href="#combinacion-y-concatenacion-de-series" class="submenu-item">Combinación y Concatenación de
+                      Series</a>
+                    <a href="#exportacion-de-datos" class="submenu-item">Exportación de Datos</a>
+                    <a href="#importacion-de-datos" class="submenu-item">Importación de Datos</a>
+                    <a href="#metodos-avanzados-y-utilitarios-" class="submenu-item">Métodos Avanzados y Utilitarios
+                    </a>
+
+                  </div>
+                </details>
+              </div>
+
+              <!-- Comentarios  -->
+              <div class="menu-item">
+                <a href="#comments" class="simple-link">Comentarios</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- -------------------------------- fin barra lateral -------------------------------- -->
+    </main>
+  </div>
+  <!--  Principal Fin  -->
+
+  <!--  pie de pagina  -->
+  <footer class="row border-top border-1 m-1 mt-auto">
+    <div class="row">
+      <!-- contacto -->
+      <address class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Contacto</div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class="ms-3">
+            <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class="ms-3">Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      <!-- Derechos de autor -->
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
+      </div>
+      <!-- redes sociales -->
+      <div class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Redes Sociales</div>
+        <div class="d-flex justify-content-evenly align-items-center gap-5">
+          <div>
+            <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center gap-2"></div>
+  </footer>
+  <!--  pie de pagina fin  -->
+
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
+</html>
