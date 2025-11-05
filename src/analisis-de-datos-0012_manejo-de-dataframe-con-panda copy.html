@@ -227,7 +227,7 @@
               <div class="ej-sintaxis-100">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
-                   df['Nombre']                # Devuelve la columna 'Nombre'
+                    df['Nombre']                # Devuelve la columna 'Nombre'
                     # Salida esperada
                     #  0        Ana
                     # 1       Luis
@@ -255,7 +255,7 @@
               <div class="ej-sintaxis-100">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
-                   df.iloc[0]     # Accede a la primera fila (por índice)
+                    df.iloc[0]     # Accede a la primera fila (por índice)
                     # Salida esperada
                     # Nombre       Ana
                     # Edad          23
@@ -340,7 +340,7 @@
                 <div class="ej-sintaxis-100">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-py" data-prismjs-copy="Copy">
-                     import pandas as pd
+                      import pandas as pd
 
                       # Crear un DataFrame a partir de un diccionario
                       data = {
@@ -419,17 +419,507 @@
                 <!-- Sintaxis fin -->
               </div>
               <!-- Filtrado Descriptivo  fin -->
-
             </div>
             <!-- Operaciones Comunes  fin -->
-
-
-
-
-
-
           </div>
           <!-- Como se Usan los Dataframes Fin -->
+          <hr class="subtle-divider" />
+
+          <!-- Importación en Análisis de Datos con Python -->
+          <div id="importacion-en-analisis-de-datos-con-python" class="mt-3">
+            <h2>Importación en Análisis de Datos con Python</h2>
+
+            <!-- Importación de Archivos CSV -->
+            <div id="importacion-de-archivos-csv">
+              <h3>Importación de Archivos CSV </h3>
+              <p>La capacidad de importar y exportar datos es fundamental en el análisis de datos, ya que la mayoría
+                de los datos que utilizamos provienen de fuentes externas, como archivos CSV, Excel, bases de datos, o
+                APIs. En Python, la librería Pandas simplifica enormemente estas tareas.</p>
+
+              <!-- Estructura Básica -->
+              <div>
+                <h4>Estructura Básica</h4>
+                <p>Un archivo CSV tiene una estructura muy simple:</p>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-csv" data-prismjs-copy="Copy">
+                        Nombre,Edad,País
+                        Ana,25,Colombia
+                        Luis,30,México
+                        María,28,Argentina
+                      </code>
+                    </pre>
+                </div>
+                <!-- Sintaxis fin -->
+                <ul>
+                  <li>La primera línea suele contener los nombres de las columnas (encabezados).</li>
+                  <li>Cada fila siguiente contiene los valores de cada registro.</li>
+                  <li>Los campos se separan por comas, aunque en algunos países o configuraciones se usa punto y coma
+                    (;).</li>
+                </ul>
+              </div>
+              <!-- Estructura Básica fin -->
+              <!-- Características Principales -->
+              <div>
+                <h4>Características Principales</h4>
+                <ul>
+                  <li>Es un archivo de texto plano, por lo que puede abrirse con cualquier editor (como Bloc de
+                    notas).</li>
+                  <li>Es ligero y fácil de compartir.</li>
+                  <li>Puede ser leído por hojas de cálculo (Excel, Google Sheets) y por lenguajes de programación como
+                    Python.</li>
+                  <li>No guarda formato visual (colores, fórmulas o estilos), solo datos estructurados.</li>
+                </ul>
+              </div>
+              <!-- Características Principales fin -->
+              <!-- Uso en Python con Pandas -->
+              <div>
+                <h4>Uso en Python con Pandas</h4>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                        import pandas as pd
+
+                        df.to_csv('productos_modificados.csv', index=False)
+                      </code>
+                    </pre>
+                </div>
+                <!-- Sintaxis fin -->
+                <p>Parámetros útiles de <code class="language-py">read_csv()</code>:</p>
+                <div class="container my-3">
+                  <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                      <thead class="table-light">
+                        <tr>
+                          <th scope="col">Parámetro</th>
+                          <th scope="col">Descripción</th>
+                          <th scope="col">Ejemplo</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="fw-bold"><code class="language-py">index</code></td>
+                          <td>Guarda solo los datos (<code class="language-py">False</code>)</td>
+                          <td><code class="language-py">index=False</code></td>
+                        </tr>
+                        <tr>
+                          <td class="fw-bold"><code class="language-py">sep</code></td>
+                          <td>Separador (<code class="language-py">,</code>, <code class="language-py">;</code>, <code
+                              class="language-py">\t</code>)</td>
+                          <td><code class="language-py">sep=';'</code></td>
+                        </tr>
+                        <tr>
+                          <td class="fw-bold"><code class="language-py">header</code></td>
+                          <td>Indica si el archivo tiene encabezado</td>
+                          <td><code class="language-py">header=None</code></td>
+                        </tr>
+                        <tr>
+                          <td class="fw-bold"><code class="language-py">names</code></td>
+                          <td>Define nombres de columnas manualmente</td>
+                          <td><code class="language-py">names=['Producto','Cantidad','Precio']</code></td>
+                        </tr>
+                        <tr>
+                          <td class="fw-bold"><code class="language-py">encoding</code></td>
+                          <td>Codificación del archivo</td>
+                          <td><code class="language-py">encoding='utf-8'</code></td>
+                        </tr>
+                        <tr>
+                          <td class="fw-bold"><code class="language-py">usecols</code></td>
+                          <td>Selecciona columnas específicas</td>
+                          <td><code class="language-py">usecols=['Producto','Precio']</code></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <p><span class="fw-bold">Opción A –
+                    Archivo local (desde tu computador)</span>: Importar un archivo CSV con Pandas:</p>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                        import pandas as pd
+
+                        # Subir archivo manualmente, agrega botón para escoger archivo local
+                        archivo = files.upload()
+
+                        # Leer el archivo CSV
+                        df = pd.read_csv('productos.csv')
+
+                        # Mostrar primeras filas
+                        df.head()                        
+                      </code>
+                    </pre>
+                </div>
+                <!-- Sintaxis fin -->
+                <p><span class="fw-bold">Opción B – Archivo en una ruta local (PC o servidor)</span>:</p>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                        import pandas as pd
+
+                        # Cambia la ruta al lugar donde guardaste tu archivo
+                        ruta = "C:/Users/Asus/Descargas/productos.csv"   # 🧭 En Windows
+                        # ruta = "/home/usuario/Documentos/productos.csv"     # 🐧 En Linux/Mac
+
+                        # Si el CSV usa punto y coma (;) como separador:
+                        df = pd.read_csv(ruta, sep=';')
+
+                        # Si el CSV usa coma (,) como separador (por defecto):
+                        # df = pd.read_csv(ruta)
+
+                        # Mostrar las primeras filas
+                        print(df.head())
+                      </code>
+                    </pre>
+                </div>
+                <!-- Sintaxis fin -->
+                <p><span class="fw-bold">Opción C – Cargar CSV desde una URL</span>:</p>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                        url = "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/tips.csv"
+                        df = pd.read_csv(url)
+                        df.head()
+                      </code>
+                    </pre>
+                </div>
+                <!-- Sintaxis fin -->
+                <p><span class="fw-bold">Opción D – Importar desde Colab</span>:</p>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                        from google.colab import drive
+                        import pandas as pd
+
+                        # Montar Google Drive
+                        drive.mount('/content/drive')
+
+                        # Cambia la ruta a donde está tu archivo
+                        ruta = "/content/drive/MyDrive/productos.csv"
+
+                        df = pd.read_csv(ruta)
+                        df.head()
+                      </code>
+                    </pre>
+                </div>
+                <!-- Sintaxis fin -->
+              </div>
+              <!-- Uso en Python con Pandas fin -->
+              <!-- Ventajas de CSV -->
+              <div>
+                <h4>Ventajas de CSV</h4>
+                <ul>
+                  <li>Compatible con casi todas las aplicaciones.</li>
+                  <li>Fácil de generar y procesar.</li>
+                  <li>Ideal para intercambiar datos entre sistemas diferentes.</li>
+                </ul>
+
+              </div>
+              <!-- Ventajas de CSV fin -->
+
+              <!-- Desventajas de CSV -->
+              <div>
+                <h5>Desventajas de CSV</h5>
+                <ul>
+                  <li>No admite tipos de datos complejos (solo texto y números).</li>
+                  <li>No guarda formato ni fórmulas.</li>
+                  <li>Puede generar errores si el separador (coma o punto y coma) no se interpreta correctamente.</li>
+                </ul>
+              </div>
+              <!-- Desventajas de CSV fin -->
+            </div>
+            <!-- Importación de Archivos CSV Fin -->
+
+            <!-- Importación de Archivos Excel  -->
+            <div id="importacion-de-archivos-excel">
+              <h3>Importación de Archivos Excel </h3>
+              <p>La importación de archivos Excel en pandas con Python es una tarea fundamental en el análisis de datos,
+                ya que permite leer información almacenada en hojas de cálculo y convertirla en estructuras de datos
+                manipulables, como los DataFrames. A continuación se explica paso a paso cómo se realiza este proceso.
+              </p>
+              <!-- Requisitos Previos para Importar Documentos Excel  -->
+              <div>
+                <h4>Requisitos Previos para Importar Documentos Excel </h4>
+                <p>Antes de importar archivos Excel, es necesario tener instalada la biblioteca pandas y el motor de
+                  lectura de Excel, como openpyxl o xlrd.</p>
+                <p>En la terminal o consola de Python se deben ejecutar los siguientes comandos:</p>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                     pip install pandas openpyxl
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+                <p>Nota: openpyxl se utiliza para leer y escribir archivos Excel con extensión .xlsx.
+                  En versiones actuales de pandas, xlrd ya no soporta este formato.</p>
+              </div>
+              <!-- Requisitos Previos para Importar Documentos Excel fin -->
+              <!-- Cargar un Archivo Excel  -->
+              <div>
+                <h4>Cargar un Archivo Excel </h4>
+                <!-- Sintaxis -->
+                <p>'datos.xlsx' es el nombre del archivo que se encuentra en la misma carpeta del script.</p>
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-py" data-prismjs-copy="Copy">
+                      df = pd.read_excel('datos.xlsx')
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+                <p>Si el archivo está en otra ubicación, se debe incluir la ruta completa:</p>
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-py" data-prismjs-copy="Copy">
+                      df = pd.read_excel('C:/Usuarios/Eduardo/Documentos/datos.xlsx')
+                    </code>
+                  </pre>
+                </div>
+
+              </div>
+              <!-- Cargar un Archivo Excel  fin -->
+              <!-- Especificar una Hoja (sheet)  -->
+              <div>
+                <h4>Especificar una Hoja (sheet) </h4>
+                <p>Un archivo Excel puede tener varias hojas.</p>
+                <p>Para leer una hoja específica se usa el parámetro <code class="language-py">sheet_name</code>:</p>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-py" data-prismjs-copy="Copy">
+                      df = pd.read_excel('datos.xlsx', sheet_name='Hoja1')
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+                <p>También se puede leer varias hojas al mismo tiempo (retorna un diccionario de DataFrames):</p>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-py" data-prismjs-copy="Copy">
+                      datos = pd.read_excel('datos.xlsx', sheet_name=['Hoja1', 'Hoja2'])
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+              </div>
+              <!-- Especificar una Hoja (sheet)  fin -->
+              <!-- Parámetros ÚFtiles en read_excel()  -->
+              <div>
+                <h4>Parámetros Útiles en <code class="language-py">read_excel()</code></h4>
+                <div class="container my-3">
+                  <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                      <thead class="table-light">
+                        <tr>
+                          <th scope="col">Parámetro</th>
+                          <th scope="col">Descripción</th>
+                          <th scope="col">Ejemplo</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="fw-bold"><code class="language-py">usecols</code></td>
+                          <td>Selecciona columnas específicas</td>
+                          <td><code class="language-py">usecols=['Nombre', 'Edad']</code></td>
+                        </tr>
+                        <tr>
+                          <td class="fw-bold"><code class="language-py">nrows</code></td>
+                          <td>Limita el número de filas leídas</td>
+                          <td><code class="language-py">nrows=10</code></td>
+                        </tr>
+                        <tr>
+                          <td class="fw-bold"><code class="language-py">skiprows</code></td>
+                          <td>Omite filas iniciales</td>
+                          <td><code class="language-py">skiprows=1</code></td>
+                        </tr>
+                        <tr>
+                          <td class="fw-bold"><code class="language-py">header</code></td>
+                          <td>Define la fila donde están los nombres de columnas</td>
+                          <td><code class="language-py">header=2</code></td>
+                        </tr>
+                        <tr>
+                          <td class="fw-bold"><code class="language-py">dtype</code></td>
+                          <td>Establece el tipo de dato de columnas</td>
+                          <td><code class="language-py">dtype={'Edad': int}</code></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <!-- Parámetros Útiles en read_excel()  fin -->
+
+              <!-- Verificar los Datos Importados  -->
+              <div>
+                <h4>Verificar los Datos Importados </h4>
+                <p>Después de la carga, es buena práctica inspeccionar el contenido del DataFrame:</p>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis-100">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-py" data-prismjs-copy="Copy">
+                      print(df.head())      # Muestra las primeras 5 filas
+                      print(df.info())      # Muestra información general
+                      print(df.describe())  # Estadísticas básicas
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+              </div>
+              <!-- Verificar los Datos Importados  fin -->
+            </div>
+            <!-- Importación de Archivos Excel  fin -->
+
+            <!-- Importación de Otras Fuentes  -->
+            <div id="importacion-de-otras-fuentes">
+              <h3>Importación de Otras Fuentes </h3>
+              <!-- Archivos de Texto Plano (.txt)  -->
+              <div>
+                <h4>Archivos de Texto Plano (.txt) </h4>
+                <p>Los archivos .txt se pueden importar con el mismo método que los CSV, especificando el separador.</p>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-py" data-prismjs-copy="Copy">
+                      df = pd.read_csv('datos.txt', sep='\t')                # separados por tabulación
+
+                      df = pd.read_csv('datos.txt', delim_whitespace=True)    # separados por espacios
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+              </div>
+              <!-- Archivos de Texto Plano (.txt)  fin -->
+
+              <!-- Archivos JSON (JavaScript Object Notation)  -->
+              <div>
+                <h4>Archivos JSON (JavaScript Object Notation) </h4>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-py" data-prismjs-copy="Copy">
+                      df = pd.read_json('https://api.exemplo.com/usuarios.json')
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+                <p>pandas convierte automáticamente el contenido JSON en un DataFrame, si tiene estructura tabular.</p>
+              </div>
+              <!-- Archivos JSON (JavaScript Object Notation)  fin -->
+
+              <!-- Bases de Datos SQL  -->
+              <div>
+                <h4>Bases de Datos SQL </h4>
+                <p>Pandas puede conectarse directamente a bases de datos como MySQL, PostgreSQL, SQLite, etc.</p>
+                <p><span class="fw-bold">Ejemplo con SQLite</span>:</p>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-py" data-prismjs-copy="Copy">
+                      import sqlite3
+                      import pandas as pd
+
+                      conexion = sqlite3.connect('empresa.db')
+                      df = pd.read_sql_query("SELECT * FROM empleados", conexion)
+                      conexion.close()
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+                <p><span class="fw-bold">Ejemplo con MySQL o PostgreSQL</span>:</p>
+                <p>Requiere instalar <code class="language-bash">sqlalchemy</code> y el conector correspondiente:</p>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      pip install sqlalchemy pymysql
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-py" data-prismjs-copy="Copy">
+                      from sqlalchemy import create_engine
+                      engine = create_engine('mysql+pymysql://usuario:contraseña@localhost/base_datos')
+                      df = pd.read_sql('SELECT * FROM clientes', engine)
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+              </div>
+              <!-- Bases de Datos SQL  fin -->
+
+              <!-- Datos desde una URL o API  -->
+              <div>
+                <h4>Datos desde una URL o API </h4>
+                <!-- Sintaxis -->
+                <p>Ejemplo con CSV en línea:</p>
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-py" data-prismjs-copy="Copy">
+                      url = 'https://raw.githubusercontent.com/datasets/covid-19/main/data/countries-aggregated.csv'
+                      df = pd.read_csv(url)
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+                <p>Ejemplo con JSON desde una API:</p>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-py" data-prismjs-copy="Copy">
+                      url = 'https://api.coindesk.com/v1/bpi/currentprice.json'
+                      df = pd.read_json(url)
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+              </div>
+              <!-- Datos desde una URL o API  fin -->
+              <!-- Archivos Parquet (columnar data)  -->
+              <div>
+                <h4>Archivos Parquet (columnar data)</h4>
+                <p>El formato Parquet es muy usado en Big Data por su eficiencia.</p>
+                <!-- Sintaxis -->
+                <div class="ej-sintaxis">
+                  <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-py" data-prismjs-copy="Copy">
+                      df.to_parquet('nuevo.parquet')
+                    </code>
+                  </pre>
+                </div>
+                <!-- Sintaxis fin -->
+              </div>
+              <!-- Archivos Parquet (columnar data)  fin -->
+
+            </div>
+            <!-- Importación de Otras Fuentes  fin -->
+          </div>
+          <!-- Importación en Análisis de Datos con Python Fin -->
+
+          <hr class="subtle-divider" />
+
+          <!-- Exportación en Análisis de Datos con Python -->
+          <div id="exportacion-en-analisis-de-datos-con-python" class="mt-3">
+            <h2>Exportación en Análisis de Datos con Python</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aut, nobis quam, natus eaque atque
+              unde mollitia nostrum, reprehenderit ipsa aliquid voluptatibus? Perspiciatis corrupti.</p>
+          </div>
+          <!-- Exportación en Análisis de Datos con Python Fin -->
+
+
+
 
         </article>
         <article class="row" id="comments">
@@ -493,7 +983,18 @@
                   </div>
                 </details>
               </div>
-
+              <div class="menu-item">
+                <details>
+                  <summary>
+                    Importación en Análisis de Datos con Python
+                  </summary>
+                  <div class="submenu">
+                    <a href="#importacion-de-archivos-csv" class="submenu-item">Importación de Archivos CSV</a>
+                    <a href="#importacion-de-archivos-excel" class="submenu-item">Importación de Archivos Excel</a>
+                    <a href="#importacion-de-otras-fuentes" class="submenu-item">Importación de Otras Fuentes</a>
+                  </div>
+                </details>
+              </div>
 
 
               <!-- Comentarios  -->
