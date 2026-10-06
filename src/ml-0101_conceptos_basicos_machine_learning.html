@@ -1,0 +1,705 @@
+<!-- @format -->
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+  <!-- Metaetiquetas -->
+  <meta charset="utf-8" />
+
+  <title>Conceptos Básicos de Machine Learning - Ing. Eduardo Herrera Forero</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Conceptos básicos de machine learning: tipos de aprendizaje (supervisado, no supervisado y por refuerzo), proceso, métricas y herramientas para empezar, presentado por el Ing. Eduardo Herrera Forero." />
+  <meta name="keywords"
+    content="machine learning, conceptos básicos de machine learning, aprendizaje automático, aprendizaje supervisado, aprendizaje no supervisado, aprendizaje por refuerzo, inteligencia artificial, deep learning, scikit-learn, Python, Eduardo Herrera Forero" />
+  <meta name="author" content="Ing. Eduardo Herrera Forero" />
+  <meta name="application-name" content="EHF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eduardoherreraf.github.io/ml-0101_conceptos_basicos_machine_learning.html" />
+  <!-- Fin Metaetiquetas -->
+
+  <!-- Open Graph data -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Conceptos Básicos de Machine Learning - Ing. Eduardo Herrera Forero" />
+  <meta property="og:description"
+    content="Conceptos básicos de machine learning: tipos de aprendizaje (supervisado, no supervisado y por refuerzo), proceso, métricas y herramientas para empezar, presentado por el Ing. Eduardo Herrera Forero." />
+  <meta property="og:image"
+    content="https://ik.imagekit.io/lskvay0t7/conceptos-basicos-machine-learning-og-1200x630.png" />
+  <meta property="og:image:alt"
+    content="Esquema de los tres tipos de machine learning: aprendizaje supervisado, no supervisado y por refuerzo" />
+  <meta property="og:url" content="https://eduardoherreraf.github.io/ml-0101_conceptos_basicos_machine_learning.html" />
+  <meta property="og:locale" content="es_CO" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Ing. Eduardo Herrera Forero" />
+  <!-- fin Open Graph data -->
+
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Conceptos Básicos de Machine Learning - Ing. Eduardo Herrera Forero" />
+  <meta name="twitter:description"
+    content="Esquema de los tres tipos de machine learning: aprendizaje supervisado, no supervisado y por refuerzo" />
+  <meta name="twitter:image"
+    content="https://ik.imagekit.io/lskvay0t7/conceptos-basicos-machine-learning-tw-1000x1000.png" />
+  <meta name="twitter:image:alt"
+    content="Esquema de los tres tipos de machine learning: aprendizaje supervisado, no supervisado y por refuerzo" />
+  <meta name="twitter:site" content="@ehfeduardo" />
+  <meta name="twitter:creator" content="@ehfeduardo" />
+  <!-- Fin Twitter cards -->
+
+  <!-- iconos -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fin iconos -->
+
+  <script type="module" defer src="./js/main.js"></script>
+
+  <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
+</head>
+
+<body>
+  <!-- Barra de Navegación -->
+  <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
+    <div class="container-fluid">
+      <!-- Enlace a la página principal con el logo y nombre -->
+      <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+        <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
+          class="d-inline-block align-text-top me-1" />
+        <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
+      </a>
+      <!-- Botón para activar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-lg-end w-100">
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#resume">EXPERIENCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#portfolio">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Barra de Navegación -->
+
+  <!--  Principal  -->
+  <div class="container-fluid" id="conceptos-basicos-de-machine-learning">
+    <main class="row">
+      <section class="pb-3 pt-5 col-lg-9 px-lg-4">
+        <!--  Conceptos Básicos de Machine Learning -->
+        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
+          data-bs-smooth-scroll="true">
+          <header>
+            <h1>Conceptos Básicos de Machine Learning</h1>
+          </header>
+          <!-- Conceptos Básicos de Machine Learning Intro -->
+          <div class="mt-3">
+            <div class="centrar-imagen magen-intro mb-5">
+              <figure class="img-container">
+                <img src="https://ik.imagekit.io/lskvay0t7/conceptos-basicos-machine-learning-og-1200x630.png"
+                  class="img-fluid" alt="Tres tipos de machine learning: supervisado, no supervisado y por refuerzo"
+                  title="Conceptos básicos de machine learning: tipos, proceso y herramientas" loading="lazy" />
+                <figcaption class="img-caption">
+                  Los tres tipos de aprendizaje del machine learning: con etiquetas, sin etiquetas y por recompensa
+                </figcaption>
+              </figure>
+            </div>
+            <p>El machine learning, o aprendizaje automático, es una rama de la inteligencia artificial que permite a
+              los sistemas informáticos aprender a partir de datos sin ser programados explícitamente para cada tarea.
+              En lugar de seguir instrucciones codificadas paso a paso, los algoritmos identifican patrones en grandes
+              conjuntos de datos y los utilizan para hacer predicciones o tomar decisiones. Este campo ha transformado
+              industrias como la salud, las finanzas, el entretenimiento y el transporte, impulsando la innovación y la
+              eficiencia.</p>
+            <p></p>
+            <p></p>
+          </div>
+          <!--  Conceptos Básicos de Machine Learning Intro Fin-->
+
+          <!-- ¿Qué es el machine learning? -->
+          <div id="que-es-el-machine-learning" class="mt-3">
+            <h2>¿Qué es el machine learning?</h2>
+            <p>El machine learning (aprendizaje automático) es una rama de la inteligencia artificial que permite que un
+              sistema aprenda patrones a partir de datos y utilice lo aprendido para realizar predicciones o tomar
+              decisiones, sin tener que programar de manera explícita cada una de las reglas necesarias para resolver el
+              problema.</p>
+            <p>En términos sencillos, en lugar de indicarle al computador todas las reglas que debe seguir, se le
+              proporcionan ejemplos para que encuentre por sí mismo los patrones que existen en los datos.</p>
+            <p>El proceso básico puede entenderse en tres momentos:</p>
+            <ul>
+              <li><span class="fw-bold">Entrenamiento</span>: se proporciona al algoritmo un conjunto de datos de
+                entrenamiento. a partir de estos ejemplos, el algoritmo busca patrones y relaciones que le permitan
+                resolver la tarea planteada.</li>
+              <li><span class="fw-bold">Aprendizaje</span>: mediante el entrenamiento, el algoritmo ajusta sus
+                parámetros internos para representar los patrones encontrados en los datos. el resultado de este proceso
+                es un modelo entrenado.</li>
+              <li><span class="fw-bold">Predicción</span>: el modelo entrenado recibe datos nuevos que no utilizó
+                durante el entrenamiento y utiliza lo aprendido para realizar una predicción, clasificación o
+                estimación.</li>
+            </ul>
+            <p>Por ejemplo, si se quiere desarrollar un sistema que identifique si una imagen contiene un gato, se
+              pueden proporcionar miles de imágenes previamente clasificadas. Durante el entrenamiento, el modelo
+              aprende características y patrones presentes en esos ejemplos. Posteriormente, puede recibir una imagen
+              nueva y estimar si contiene un gato, aunque esa imagen específica no haya formado parte de los datos de
+              entrenamiento.</p>
+            <!-- La importancia de los datos  -->
+            <div id="la-importancia-de-los-datos">
+              <h3>La importancia de los datos </h3>
+              <p>La calidad de los datos es fundamental para obtener buenos resultados. tener muchos datos no garantiza
+                que un modelo sea bueno. si los datos contienen errores, información incompleta, valores incorrectos,
+                sesgos o información que no representa adecuadamente el problema real, el modelo puede aprender patrones
+                equivocados.</p>
+              <p>Por esta razón, en machine learning es tan importante recopilar, limpiar, analizar y preparar
+                correctamente los datos como seleccionar y entrenar el modelo.</p>
+            </div>
+            <!-- La importancia de los datos  fin -->
+
+            <!-- Relación con la inteligencia artificial y el deep learning  -->
+            <div id="relacion-con-la-inteligencia-artificial-y-el-deep-learning">
+              <h3>Relación con la inteligencia artificial y el deep learning </h3>
+              <p>Los términos inteligencia artificial (<abbr title="Artificial Intelligence">AI</abbr>), machine
+                learning (ML) y deep learning (DL) están relacionados, pero no significan lo mismo. La forma más
+                sencilla de entenderlos es como tres niveles que se encuentran uno dentro de otro:</p>
+              <ul>
+                <li><span class="fw-bold">Inteligencia artificial (<abbr
+                      title="Artificial Intelligence">AI</abbr>)</span>: es el campo más amplio. busca desarrollar
+                  sistemas capaces de realizar tareas que normalmente requieren capacidades asociadas con la
+                  inteligencia humana, como aprender, razonar, reconocer patrones, comprender lenguaje o tomar
+                  decisiones.</li>
+                <li><span class="fw-bold">Machine learning (ml) o aprendizaje automático</span>: es una rama de la
+                  inteligencia artificial. en lugar de programar manualmente todas las reglas, permite que los sistemas
+                  aprendan patrones a partir de datos y utilicen lo aprendido para realizar predicciones o tomar
+                  decisiones.</li>
+                <li><span class="fw-bold">Deep learning (dl) o aprendizaje profundo</span>: es una rama del machine
+                  learning que utiliza principalmente redes neuronales artificiales con múltiples capas para aprender
+                  patrones complejos. ha sido especialmente importante en áreas como el reconocimiento de imágenes, el
+                  procesamiento del lenguaje, el reconocimiento de voz y otras aplicaciones avanzadas.</li>
+              </ul>
+
+            </div>
+            <!-- Relación con la inteligencia artificial y el deep learning  fin -->
+
+          </div>
+          <!-- ¿Qué es el machine learning? Fin -->
+
+          <!-- Tipos de machine learning -->
+          <div id="tipos-de-machine-learning" class="mt-3">
+            <h2>Tipos de machine learning</h2>
+            <p>Existen tres categorías principales, cada una con un enfoque y una aplicación diferentes.</p>
+            <!-- Aprendizaje supervisado  -->
+            <div id="aprendizaje-supervisado">
+              <h3>Aprendizaje supervisado </h3>
+              <p>El algoritmo se entrena con un conjunto de datos etiquetado: cada ejemplo incluye una "respuesta
+                correcta". El objetivo es aprender a relacionar las entradas con las salidas a partir de esos ejemplos.
+              </p>
+              <ul>
+                <li><span class="fw-bold">Clasificación</span>: predice una categoría discreta. ejemplos: detectar
+                  correo no deseado (spam) o distinguir imágenes de gatos y perros.</li>
+                <li><span class="fw-bold">Regresión</span>: predice un valor continuo. ejemplos: estimar el precio de
+                  una vivienda o la temperatura del día siguiente.</li>
+                <li><span class="fw-bold">Algoritmos frecuentes</span>: regresión lineal y logística, árboles de
+                  decisión, random forest, k vecinos más cercanos (k-nn), máquinas de vectores de soporte (svm) y redes
+                  neuronales.</li>
+              </ul>
+            </div>
+            <!-- Aprendizaje supervisado  fin -->
+
+            <!-- Aprendizaje no supervisado -->
+            <div id="aprendizaje-no-supervisado">
+              <h3>Aprendizaje no supervisado </h3>
+              <p>Trabaja con datos sin etiquetar. El algoritmo debe descubrir por sí mismo patrones y estructuras
+                ocultas, sin una guía externa.</p>
+              <ul>
+                <li><span class="fw-bold">Agrupamiento (clustering)</span>: agrupa datos similares en clústeres. se usa
+                  en la segmentación de clientes o en la organización de documentos. algoritmo frecuente: k-means.</li>
+                <li><span class="fw-bold">Reducción de dimensionalidad</span>: disminuye el número de variables
+                  conservando la información esencial. es útil para visualizar datos o mejorar el rendimiento de otros
+                  algoritmos. algoritmo frecuente: pca.</li>
+                <li><span class="fw-bold">Detección de anomalías</span>: identifica datos que se salen de lo normal,
+                  como transacciones sospechosas.</li>
+              </ul>
+            </div>
+            <!-- Aprendizaje no supervisado  fin -->
+
+            <!-- Aprendizaje por refuerzo  -->
+            <div id="aprendizaje-por-refuerzo">
+              <h3>Aprendizaje por refuerzo </h3>
+              <p>Un agente aprende a tomar decisiones interactuando con un entorno. Recibe recompensas por las acciones
+                acertadas y penalizaciones por las erróneas, y con el tiempo desarrolla una estrategia que maximiza su
+                recompensa total.</p>
+              <ul>
+                <li><span class="fw-bold">Aplicaciones</span>: robótica, juegos (como alphago), control de recursos y
+                  algunos sistemas de recomendación.</li>
+              </ul>
+            </div>
+            <!-- Aprendizaje por refuerzo  fin -->
+
+            <!-- Un cuarto enfoque: el aprendizaje semisupervisado  -->
+            <div id="un-cuarto-enfoque:-el-aprendizaje-semisupervisado">
+              <h3>Un cuarto enfoque: el aprendizaje semisupervisado </h3>
+              <p>Combina una pequeña cantidad de datos etiquetados con una gran cantidad de datos sin etiquetar. Resulta
+                útil cuando etiquetar es costoso, por ejemplo en imágenes médicas revisadas por especialistas.</p>
+            </div>
+            <!-- Un cuarto enfoque: el aprendizaje semisupervisado  fin -->
+
+          </div>
+          <!-- Tipos de machine learning Fin -->
+
+          <!-- El proceso de machine learning -->
+          <div id="el-proceso-de-machine-learning" class="mt-3">
+            <h2>El proceso de machine learning</h2>
+            <p>El desarrollo de un modelo de machine learning es un proceso compuesto por varias etapas. Aunque el
+              proceso puede variar según el proyecto, normalmente comienza con la definición del problema, continúa con
+              la preparación de los datos y el entrenamiento del modelo, y termina con su evaluación, implementación y
+              seguimiento.</p>
+            <ul>
+              <li><span class="fw-bold">Definición del problema</span>: se establece qué se quiere resolver, qué
+                variable se desea predecir o clasificar y cómo se determinará si el modelo está funcionando
+                correctamente. por ejemplo, se puede buscar predecir las ventas de un producto o determinar si una
+                transacción podría ser fraudulenta.</li>
+              <li><span class="fw-bold">Recopilación de datos</span>: se reúnen los datos necesarios para que el modelo
+                pueda aprender. estos pueden proceder de bases de datos, archivos, sensores, aplicaciones, páginas web,
+                apis u otras fuentes.</li>
+              <li><span class="fw-bold">Preprocesamiento de los datos</span>: los datos se limpian y transforman para
+                que puedan ser utilizados por el modelo. esta etapa puede incluir la eliminación de duplicados, el
+                tratamiento de valores faltantes, la corrección de errores, la normalización de variables y la
+                conversión de datos categóricos a un formato que el modelo pueda interpretar.</li>
+              <li><span class="fw-bold">División de los datos</span>: los datos disponibles se separan normalmente en
+                diferentes conjuntos. el conjunto de entrenamiento se utiliza para que el modelo aprenda; el conjunto de
+                validación puede utilizarse para comparar configuraciones y ajustar el modelo; y el conjunto de prueba
+                se reserva para comprobar su rendimiento final con datos que el modelo no ha utilizado durante el
+                entrenamiento.</li>
+              <li><span class="fw-bold">Selección del modelo</span>: se elige el algoritmo más apropiado según el tipo
+                de problema, los datos disponibles y los resultados que se esperan obtener. por ejemplo, se pueden
+                utilizar algoritmos diferentes para clasificación, regresión o agrupamiento.</li>
+              <li><span class="fw-bold">Entrenamiento</span>: el algoritmo recibe los datos de entrenamiento y ajusta
+                sus parámetros internos para aprender los patrones presentes en ellos. en términos sencillos, es la
+                etapa en la que el modelo "aprende" a partir de los ejemplos proporcionados.</li>
+              <li><span class="fw-bold">Evaluación</span>: se comprueba qué tan bien funciona el modelo utilizando datos
+                que no fueron utilizados para entrenarlo. para ello se emplean métricas adecuadas al problema, como
+                accuracy, precision, recall, f1-score, mae o rmse.</li>
+              <li><span class="fw-bold">Ajuste de hiperparámetros</span>: se modifican determinadas configuraciones del
+                algoritmo, conocidas como hiperparámetros, para intentar mejorar su rendimiento. este proceso debe
+                realizarse cuidadosamente para evitar que el modelo termine sobreajustándose a los datos utilizados para
+                la evaluación.</li>
+              <li><span class="fw-bold">Despliegue</span>: una vez que el modelo presenta un rendimiento adecuado, puede
+                integrarse en una aplicación, sistema o proceso real para comenzar a generar predicciones sobre nuevos
+                datos.</li>
+              <li><span class="fw-bold">Monitoreo y mantenimiento</span>: el trabajo no termina cuando el modelo se pone
+                en funcionamiento. es necesario supervisar su rendimiento porque los datos y las condiciones del mundo
+                real pueden cambiar con el tiempo. si el comportamiento de los datos cambia significativamente, puede
+                ser necesario actualizar, volver a entrenar o incluso reemplazar el modelo.</li>
+            </ul>
+            <!-- Resumen del proceso  -->
+            <div id="resumen-del-proceso">
+              <h3>Resumen del proceso </h3>
+              <p>De forma sencilla, el proceso puede resumirse de la siguiente manera:</p>
+              <p>Problema → datos → preparación → división → modelo → entrenamiento → evaluación → ajuste → despliegue →
+                monitoreo</p>
+              <p>Es importante entender que el proceso no siempre es completamente lineal. si durante la evaluación se
+                descubre que el modelo no funciona adecuadamente, puede ser necesario regresar a etapas anteriores,
+                mejorar los datos, seleccionar otro algoritmo o modificar la forma en que se preparan las variables.</p>
+            </div>
+            <!-- Resumen del proceso  fin -->
+          </div>
+          <!-- El proceso de machine learning Fin -->
+
+          <!-- Conceptos clave para evaluar un modelo -->
+          <div id="conceptos-clave-para-evaluar-un-modelo" class="mt-3">
+            <h2>Conceptos clave para evaluar un modelo</h2>
+            <p>Evaluar un modelo de machine learning permite determinar qué tan bien aprende los patrones de los datos
+              y, sobre todo, qué tan bien puede realizar predicciones sobre datos que no ha visto anteriormente. Para
+              ello, existen varios conceptos y métricas fundamentales.</p>
+            <ul>
+              <li><span class="fw-bold">Sobreajuste (overfitting)</span>: ocurre cuando el modelo aprende los datos de
+                entrenamiento de una manera demasiado específica, llegando incluso a memorizar el ruido, los errores y
+                las particularidades de esos datos, en lugar de aprender los patrones generales. es como un estudiante
+                que memoriza las respuestas de un examen de práctica y obtiene una excelente calificación en ese mismo
+                examen, pero tiene dificultades cuando las preguntas cambian. un modelo sobreajustado suele presentar un
+                rendimiento muy alto con los datos de entrenamiento, pero significativamente menor con datos nuevos.
+              </li>
+              <li><span class="fw-bold">Subajuste (underfitting)</span>: ocurre cuando el modelo es demasiado simple o
+                no ha aprendido lo suficiente para representar adecuadamente los patrones presentes en los datos. es
+                como intentar describir una curva compleja utilizando únicamente una línea recta. en este caso, el
+                modelo suele presentar un rendimiento deficiente tanto con los datos de entrenamiento como con los datos
+                nuevos.</li>
+              <li><span class="fw-bold">Generalización</span>: es la capacidad de un modelo para aplicar correctamente
+                lo aprendido durante el entrenamiento a datos nuevos que no había visto anteriormente. un buen modelo no
+                debe limitarse a memorizar los datos de entrenamiento, sino aprender patrones que puedan mantenerse
+                cuando se enfrente a nuevos casos.</li>
+              <li><span class="fw-bold">Métricas de clasificación</span>: se utilizan cuando el modelo debe asignar una
+                categoría o clase, por ejemplo, determinar si un correo es spam o no. entre las principales se
+                encuentran:
+                <ul>
+                  <li><span class="fw-bold">Exactitud (accuracy)</span>: indica el porcentaje total de predicciones
+                    correctas respecto al número total de predicciones.</li>
+                  <li><span class="fw-bold">Precisión (precision)</span>: indica qué tan confiables son las predicciones
+                    positivas de un modelo. Es decir, de todos los casos que el modelo dijo que eran positivos, ¿cuántos
+                    realmente lo eran?, en otras palabras, cuán tan confiable es el "sí" del modelo.</li>
+                  <li><span class="fw-bold">Sensibilidad o recall</span>: indica qué proporción de los casos positivos
+                    reales consiguió detectar correctamente el modelo. es importante cuando no detectar un caso positivo
+                    puede tener consecuencias importantes.</li>
+                  <li><span class="fw-bold">Puntuación f1 (f1-score)</span>: combina precisión y sensibilidad en una
+                    única
+                    métrica, buscando un equilibrio entre ambas. resulta especialmente útil cuando existe un
+                    desequilibrio
+                    entre las clases.</li>
+                </ul>
+              </li>
+              <li><span class="fw-bold">Métricas de regresión</span>: se utilizan cuando el modelo debe predecir un
+                valor numérico, como un precio, una temperatura o unas ventas. entre las más utilizadas se encuentran:
+                <ul>
+                  <li><span class="fw-bold">Error absoluto medio (mae)</span>: representa el promedio de la magnitud de
+                    los errores entre los valores reales y las predicciones. su resultado se expresa en las mismas
+                    unidades de la variable que se está prediciendo y es relativamente fácil de interpretar.</li>
+                  <li><span class="fw-bold">Raíz del error cuadrático medio (rmse)</span>: calcula la raíz cuadrada del
+                    promedio de los errores al cuadrado. al elevar los errores al cuadrado, penaliza con mayor
+                    intensidad los errores grandes, por lo que resulta útil cuando estos errores son especialmente
+                    importantes.</li>
+                </ul>
+              </li>
+            </ul>
+            <!-- ¿Qué se debe tener en cuenta?  -->
+            <div id="que-se-debe-tener-en-cuenta">
+              <h3>¿Qué se debe tener en cuenta? </h3>
+              <p>No existe una única métrica que determine por sí sola si un modelo es bueno. la métrica adecuada
+                depende del tipo de problema, de las características de los datos y de las consecuencias que puedan
+                tener los errores.</p>
+              <p>Por ejemplo, en un sistema médico podría ser especialmente importante detectar la mayor cantidad
+                posible de casos positivos, mientras que en otro sistema podría ser más importante evitar falsas
+                alarmas. por esta razón, la evaluación debe considerar el contexto en el que se utilizará el modelo y no
+                únicamente un valor de precisión o exactitud.</p>
+            </div>
+            <!-- ¿Qué se debe tener en cuenta?  fin -->
+          </div>
+          <!-- Conceptos clave para evaluar un modelo Fin -->
+
+          <!-- Aplicaciones del machine learning -->
+          <div id="aplicaciones-del-machine-learning" class="mt-3">
+            <h2>Aplicaciones del machine learning</h2>
+            <p>El machine learning tiene aplicaciones en numerosos sectores porque permite que los sistemas aprendan
+              patrones a partir de datos y utilicen ese aprendizaje para realizar predicciones, clasificaciones,
+              recomendaciones o tomar decisiones.</p>
+            <ul>
+              <li><span class="fw-bold">Datos clínicos</span>: identificar factores de riesgo, descubrir posibles nuevos
+                medicamentos y desarrollar tratamientos más personalizados. en estos casos, los modelos sirven como
+                herramientas de apoyo y no necesariamente sustituyen la decisión de los profesionales de la salud.</li>
+              <li><span class="fw-bold">Finanzas</span>: permite detectar operaciones sospechosas o fraudulentas,
+                evaluar el riesgo asociado a determinadas operaciones, analizar el comportamiento financiero y
+                automatizar diferentes procesos de análisis. también se utiliza en sistemas de negociación algorítmica,
+                aunque estos sistemas implican riesgos y requieren controles adecuados.</li>
+              <li><span class="fw-bold">Comercio electrónico</span>: permite analizar el comportamiento de los usuarios
+                para recomendar productos, personalizar contenidos y mejorar la experiencia de compra. por ejemplo, una
+                plataforma puede aprender de las búsquedas y compras anteriores para sugerir productos que podrían
+                resultar de interés.</li>
+              <li><span class="fw-bold">Automoción y transporte</span>: se utiliza para desarrollar sistemas de
+                asistencia a la conducción, analizar el comportamiento del tráfico, optimizar rutas y realizar
+                mantenimiento predictivo. en vehículos y sistemas de transporte, los modelos pueden analizar datos de
+                sensores para detectar posibles problemas antes de que ocurra una falla.</li>
+              <li><span class="fw-bold">Procesamiento del lenguaje natural (pln)</span>: permite que los sistemas
+                informáticos trabajen con lenguaje humano. algunas aplicaciones incluyen traducción automática,
+                clasificación de textos, análisis de sentimientos, reconocimiento de voz, generación de texto y
+                asistentes conversacionales.</li>
+              <li><span class="fw-bold">Visión por computadora</span>: permite que los sistemas analicen e interpreten
+                imágenes y videos. sus aplicaciones incluyen reconocimiento de objetos, inspección industrial, análisis
+                de imágenes médicas, sistemas de seguridad y reconocimiento facial, este último con importantes
+                consideraciones relacionadas con privacidad y uso responsable.</li>
+              <li><span class="fw-bold">Industria y manufactura</span>: se utiliza para detectar defectos en productos,
+                controlar procesos, predecir fallas en maquinaria y optimizar la producción. esto permite reducir
+                tiempos de inactividad y mejorar la eficiencia de los procesos industriales.</li>
+              <li><span class="fw-bold">Agricultura</span>: permite analizar imágenes de cultivos, detectar enfermedades
+                en las plantas, estimar rendimientos y optimizar el uso de agua, fertilizantes y otros recursos mediante
+                el análisis de diferentes tipos de datos.</li>
+              <li><span class="fw-bold">Marketing y publicidad</span>: ayuda a identificar patrones en el comportamiento
+                de los consumidores, segmentar audiencias, predecir posibles compras y personalizar campañas de acuerdo
+                con las características y preferencias de cada grupo.</li>
+            </ul>
+            <p>En general, el machine learning resulta especialmente útil cuando existe una gran cantidad de datos y se
+              busca encontrar patrones que serían difíciles de identificar manualmente. Sin embargo, la calidad de los
+              resultados depende de factores como la calidad de los datos, el diseño del modelo y la correcta
+              interpretación de sus resultados.</p>
+          </div>
+          <!-- Aplicaciones del machine learning Fin -->
+
+          <!-- Retos y consideraciones éticas -->
+          <div id="retos-y-consideraciones-eticas" class="mt-3">
+            <h2>Retos y consideraciones éticas</h2>
+            <p>El desarrollo y uso de sistemas de inteligencia artificial y aprendizaje automático no solo plantea
+              desafíos técnicos, sino también cuestiones éticas que deben tenerse en cuenta para garantizar un uso
+              responsable y confiable de estas tecnologías.</p>
+            <ul>
+              <li><span class="fw-bold">Sesgo en los datos</span>: si los datos utilizados para entrenar un modelo
+                contienen prejuicios, desequilibrios o representaciones insuficientes de determinados grupos, el modelo
+                puede aprenderlos y reproducirlos, e incluso amplificarlos al tomar nuevas decisiones.</li>
+              <li><span class="fw-bold">Privacidad y protección de datos</span>: muchos sistemas de inteligencia
+                artificial utilizan grandes cantidades de información. cuando estos datos contienen información
+                personal, su recopilación, almacenamiento y procesamiento deben realizarse de forma responsable y de
+                acuerdo con las normas de protección de datos aplicables.</li>
+              <li><span class="fw-bold">Explicabilidad y transparencia</span>: algunos modelos, especialmente los más
+                complejos, pueden funcionar como una "caja negra", dificultando la comprensión de cómo llegaron a una
+                determinada predicción o decisión. esto puede ser especialmente importante cuando sus resultados afectan
+                a las personas.</li>
+              <li><span class="fw-bold">Calidad de los datos</span>: datos incompletos, incorrectos, duplicados,
+                desactualizados o mal estructurados pueden afectar directamente el rendimiento del modelo y producir
+                resultados poco confiables.</li>
+              <li><span class="fw-bold">Seguridad</span>: los sistemas de inteligencia artificial deben protegerse
+                frente a errores, manipulaciones, accesos no autorizados y otros riesgos que puedan comprometer la
+                información o alterar sus resultados.</li>
+              <li><span class="fw-bold">Responsabilidad</span>: debe existir claridad sobre quién es responsable de
+                diseñar, implementar, supervisar y corregir un sistema de inteligencia artificial cuando este genera
+                resultados incorrectos o causa consecuencias no deseadas.</li>
+              <li><span class="fw-bold">Supervisión humana</span>: la inteligencia artificial no debería considerarse
+                infalible. en aplicaciones de alto impacto, resulta importante mantener mecanismos de revisión humana
+                que permitan detectar errores, cuestionar resultados y tomar decisiones cuando el sistema no sea
+                confiable.</li>
+              <li><span class="fw-bold">Equidad y no discriminación</span>: los sistemas deben evaluarse para comprobar
+                que sus resultados no generen un trato injusto o discriminatorio hacia determinados grupos de personas.
+              </li>
+              <li><span class="fw-bold">Uso responsable</span>: una herramienta de inteligencia artificial puede
+                utilizarse para diferentes propósitos, pero no todos ellos son apropiados. es necesario establecer
+                límites y criterios que permitan prevenir usos perjudiciales, irresponsables o contrarios a las normas.
+              </li>
+            </ul>
+            <p>En conjunto, estos retos muestran que desarrollar una solución de inteligencia artificial no consiste
+              únicamente en conseguir que un modelo sea preciso. También es necesario garantizar que los datos sean
+              adecuados, que el sistema sea seguro y transparente y que sus resultados puedan utilizarse de manera
+              responsable.</p>
+          </div>
+          <!-- Retos y consideraciones éticas Fin -->
+
+          <!-- Herramientas para empezar -->
+          <div id="herramientas-para-empezar" class="mt-3">
+            <h2>Herramientas para empezar</h2>
+            <p>Para comenzar en el campo de la inteligencia artificial, el aprendizaje automático y el análisis de
+              datos, existe un conjunto de herramientas que permite trabajar desde la preparación de los datos hasta la
+              creación y evaluación de modelos.</p>
+            <ul>
+              <li><span class="fw-bold">Python</span>: es uno de los lenguajes de programación más utilizados en ciencia
+                de datos, inteligencia artificial y machine learning. su principal ventaja es la gran cantidad de
+                bibliotecas disponibles para trabajar con datos, modelos matemáticos y redes neuronales.</li>
+              <li><span class="fw-bold">Numpy</span>: proporciona estructuras y funciones para trabajar de forma
+                eficiente con arreglos numéricos y operaciones matemáticas. constituye una de las bases del ecosistema
+                científico de python.</li>
+              <li><span class="fw-bold">Pandas</span>: facilita la carga, limpieza, transformación y análisis de datos
+                mediante estructuras como series y dataframe. es especialmente útil para trabajar con archivos csv,
+                excel y diferentes fuentes de datos.</li>
+              <li><span class="fw-bold">Matplotlib y seaborn</span>: permiten crear gráficos para explorar y visualizar
+                los datos. matplotlib proporciona las herramientas fundamentales de visualización, mientras que seaborn
+                facilita la creación de gráficos estadísticos más elaborados.</li>
+              <li><span class="fw-bold">Scikit-learn</span>: es una de las principales bibliotecas de python para
+                machine learning tradicional. permite implementar algoritmos de clasificación, regresión, agrupamiento,
+                reducción de dimensionalidad y evaluación de modelos sin tener que programar estos algoritmos desde
+                cero.</li>
+              <li><span class="fw-bold">Tensorflow y pytorch</span>: son frameworks utilizados principalmente para deep
+                learning. permiten construir y entrenar redes neuronales para tareas como reconocimiento de imágenes,
+                procesamiento del lenguaje natural y otros problemas complejos de inteligencia artificial.</li>
+              <li><span class="fw-bold">Jupyter notebook</span>: proporciona un entorno interactivo en el que se puede
+                combinar código python, resultados, gráficos y explicaciones en un mismo documento. es especialmente
+                útil para aprender, experimentar y documentar análisis.</li>
+              <li><span class="fw-bold">Google colab</span>: ofrece un entorno similar a jupyter notebook que funciona
+                directamente desde el navegador, sin necesidad de instalar python y muchas de sus bibliotecas
+                localmente. además, puede proporcionar acceso a recursos de hardware acelerado para determinados
+                proyectos de machine learning y deep learning.</li>
+            </ul>
+
+            <!-- ¿Cómo se utilizan en conjunto?  -->
+            <div id="como-se-utilizan-en-conjunto">
+              <h3>¿Cómo se utilizan en conjunto? </h3>
+              <p>Estas herramientas no funcionan necesariamente de manera aislada. en un proyecto típico, el flujo puede
+                comenzar con python y pandas para cargar y preparar los datos, utilizar numpy para operaciones
+                numéricas, emplear matplotlib o seaborn para explorar los resultados, utilizar scikit-learn para
+                desarrollar modelos de machine learning y recurrir a tensorflow o pytorch cuando se necesitan redes
+                neuronales y técnicas de deep learning.</p>
+              <p>Para una persona que está comenzando, no es necesario aprender todas estas herramientas al mismo
+                tiempo. un camino práctico consiste en comenzar con python, numpy, pandas y matplotlib, continuar con
+                scikit-learn y posteriormente incorporar tensorflow o pytorch cuando ya se tengan fundamentos de
+                programación, análisis de datos y machine learning.</p>
+            </div>
+            <!-- ¿Cómo se utilizan en conjunto?  fin -->
+
+          </div>
+          <!-- Herramientas para empezar Fin -->
+
+          <!-- Conclusión -->
+          <div id="conclusion" class="mt-3">
+            <h2>Conclusión</h2>
+            <p>El machine learning es un campo dinámico y en rápida evolución, con el potencial de abordar algunos de
+              los desafíos más complejos de la humanidad. A medida que crece el volumen de datos disponibles y los
+              algoritmos se vuelven más sofisticados, se esperan nuevas innovaciones y aplicaciones transformadoras.
+              Comprender sus principios básicos y sus usos es cada vez más importante en el panorama tecnológico actual.
+            </p>
+
+          </div>
+          <!-- Conclusión Fin -->
+
+        </article>
+        <article class="row" id="comments">
+          <h2>COMENTARIOS</h2>
+          <p>Si tiene alguna inquietud, duda o ha encontrado algún error, porfavor infórmelo a través del formulario
+            disponible para estepropósito.</p>
+          <div class="d-flex justify-content-center">
+            <form action="https://formspree.io/f/mdkdawkg" method="POST" id="myForm">
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="text-center fs-4">Deje su comentario</legend>
+                <div class="d-flex flex-column">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="User" class="form-control rounded" required />
+                </div>
+                <div class="d-flex flex-column">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="user@mail.com" class="form-control rounded"
+                    required />
+                </div>
+                <div class="d-flex flex-column">
+                  <label for="message">Mensaje:</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
+                    class="form-control rounded-3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">Enviar</button>
+              </fieldset>
+              <p class="small text-center">La política de privacidad, y los términos y condiciones estándisponibles en
+                el formulario de contacto.</p>
+            </form>
+          </div>
+        </article>
+        <!-- Comentarios fin -->
+      </section>
+      <!-- -------------------------------- barra lateral -------------------------------- -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        <h2>En Este Artículo</h2>
+        <div class="menu-scroll">
+          <div class="menu-container">
+            <div class="border border-1">
+              <div class="menu-item">
+                <a href="#conceptos-basicos-de-machine-learning" class="simple-link">Conceptos Básicos de Machine
+                  Learning</a>
+              </div>
+              <div class="menu-item">
+                <a href="#que-es-el-machine-learning" class="simple-link">¿Qué es el machine learning?</a>
+              </div>
+              <div class="menu-item">
+                <a href="#tipos-de-machine-learning" class="simple-link">Tipos de machine learning</a>
+              </div>
+              <div class="menu-item">
+                <a href="#el-proceso-de-machine-learning" class="simple-link">El proceso de machine learning</a>
+              </div>
+              <div class="menu-item">
+                <a href="#conceptos-clave-para-evaluar-un-modelo" class="simple-link">Conceptos clave para evaluar un
+                  modelo</a>
+              </div>
+              <div class="menu-item">
+                <a href="#aplicaciones-del-machine-learning" class="simple-link">Aplicaciones del machine learning</a>
+              </div>
+              <div class="menu-item">
+                <a href="#retos-y-consideraciones-eticas" class="simple-link">Retos y consideraciones éticas</a>
+              </div>
+              <div class="menu-item">
+                <a href="#herramientas-para-empezar" class="simple-link">Herramientas para empezar</a>
+              </div>
+              <div class="menu-item">
+                <a href="#conclusion" class="simple-link">Conclusión</a>
+              </div>
+              <!-- Comentarios  -->
+              <div class="menu-item">
+                <a href="#comments" class="simple-link">Comentarios</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- -------------------------------- fin barra lateral -------------------------------- -->
+    </main>
+  </div>
+  <!--  Principal Fin  -->
+
+  <!--  pie de pagina  -->
+  <footer class="row border-top border-1 m-1 mt-auto">
+    <div class="row">
+      <!-- contacto -->
+      <address class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Contacto</div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class="ms-3">
+            <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class="ms-3">Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      <!-- Derechos de autor -->
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class="ms-2">All Rights Reserved 2025</div>
+      </div>
+      <!-- redes sociales -->
+      <div class="col-lg-4 d-flex flex-column align-items-center">
+        <div class="text-center fs-2">Redes Sociales</div>
+        <div class="d-flex justify-content-evenly align-items-center gap-5">
+          <div>
+            <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center gap-2"></div>
+  </footer>
+  <!--  pie de pagina fin  -->
+
+  <!-- button to top -->
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
+      viewBox="0 0 16 16" style="margin-left: -2px">
+      <path fill-rule="evenodd"
+        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5">
+      </path>
+    </svg>
+  </button>
+  <!-- Fin button to top -->
+</body>
+
+</html>
