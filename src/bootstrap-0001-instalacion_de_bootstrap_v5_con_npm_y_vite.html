@@ -56,7 +56,7 @@
     Instalación de Bootstrap V5, NPM y VITE - Ing. Eduardo Herrera Forero
   </title>
 
-  <script type="module" src="./js/main.js"></script>
+  <script type="module" defer src="./js/main.js"></script>
 
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
@@ -116,9 +116,20 @@
         <!-- vite NPM -->
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
-          <h1>Instalación de Bootstrap V5, NPM y VITE</h1>
-          <div class="mt-5">
+          <header>
+            <h1>Instalación de Bootstrap V5, NPM y VITE</h1>
+          </header>
+          <div class="mt-3">
             <h2>Introducción</h2>
+            <div class="site-image site-intro-image mb-5">
+              <figure class="site-content__img-container">
+                <img src="https://i.ibb.co/SDgmGxnB/bootstrap-vite-2x.png" class="img-fluid" loading="lazy"
+                  alt="Instalación de Bootstrap V5, NPM y VITE" />
+                <figcaption class="site-image__caption">
+                  Instalación de Bootstrap V5, NPM y VITE
+                </figcaption>
+              </figure>
+            </div>
             <p>
               Esta documentación se realizó con base a la oficial entregada
               por Bootstrap en su página web
@@ -133,19 +144,11 @@
               instalado Node.js y que se tiene cierta experiencia con el uso
               del terminal.
             </p>
-
-            <div class="site-image site-intro-image">
-              <figure>
-                <img src="https://i.ibb.co/SDgmGxnB/bootstrap-vite-2x.png" class="img-fluid"
-                  alt="Instalación de Bootstrap V5, NPM y VITE" />
-                <figcaption>
-                  Instalación de Bootstrap V5, NPM y VITE
-                </figcaption>
-              </figure>
-            </div>
           </div>
 
-          <div id="configuracion-inicial" class="mt-5">
+          <hr class="site-divider--subtle site-divider" />
+
+          <div id="configuracion-inicial" class="mt-3">
             <h2>Configuración Inicial</h2>
             <p>
               <b>Crear una carpeta de proyecto e inicializar
@@ -327,7 +330,9 @@
             </div>
           </div>
 
-          <div id="importacion-bootstrap-v5" class="mt-5">
+          <hr class="site-divider--subtle site-divider" />
+
+          <div id="importacion-bootstrap-v5" class="mt-3">
             <h2>Importación Bootstrap v5</h2>
             <p>
               <b>Importación de archivos CSS de Bootstrap:</b> En el archivo
@@ -388,7 +393,9 @@
             </div>
           </div>
 
-          <div id="instalacion-plugin-Purgecss-y-plugin-html" class="mt-5">
+          <hr class="site-divider--subtle site-divider" />
+
+          <div id="instalacion-plugin-Purgecss-y-plugin-html" class="mt-3">
             <h2>Instalación Plugin PurgeCSS y Plugin HTML</h2>
             <div class="code-example__syntax">
               <pre data-src-status="loaded" tabindex="0">
@@ -434,7 +441,9 @@
             </div>
           </div>
 
-          <div id="configuraciones-finales" class="mt-5">
+          <hr class="site-divider--subtle site-divider" />
+
+          <div id="configuraciones-finales" class="mt-3">
             <h2>Configuraciones Finales</h2>
             <p>
               El archivo
@@ -473,7 +482,9 @@
             </div>
           </div>
 
-          <div id="compilacion-del-proyecto-para-produccion" class="mt-5">
+          <hr class="site-divider--subtle site-divider" />
+
+          <div id="compilacion-del-proyecto-para-produccion" class="mt-3">
             <h2>Compilación del proyecto para Producción</h2>
             <p>
               Una vez finalizado el desarrollo, para generar la versión
@@ -568,13 +579,12 @@
         </article>
         <!--  fin comentarios  -->
       </section>
-      <!--  barra lateral  -->
-      <!--  barra lateral  -->
-      <aside class="col-lg-3 d-none d-lg-block" style="align-self: flex-start; position: sticky; top: rem;">
+      <!-- -------------------------------- barra lateral -------------------------------- -->
+      <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
           <div class="site-menu">
-            <div class="border border-1 site-menu__scroller">
+            <div class="border border-1">
               <div class="site-menu__item">
                 <a href="#introduccion" class="site-menu__link">Introducción</a>
               </div>
@@ -588,9 +598,9 @@
                 <a href="#instalacion-plugin-Purgecss-y-plugin-html" class="site-menu__link">Instalación Plugin PurgeCSS y
                   Plugin HTML</a>
               </div>
-              <li class="site-menu__item">
+              <div class="site-menu__item">
                 <a href="#configuraciones-finales" class="site-menu__link">Configuraciones Finales</a>
-              </li>
+              </div>
               <div class="site-menu__item">
                 <a href="#compilacion-del-proyecto-para-produccion" class="site-menu__link">Compilación del proyecto para
                   Producción</a>
@@ -603,7 +613,7 @@
           </div>
         </div>
       </aside>
-      <!--  fin barra lateral  -->
+      <!-- -------------------------------- fin barra lateral -------------------------------- -->
     </main>
   </div>
   <!--  fin principal  -->

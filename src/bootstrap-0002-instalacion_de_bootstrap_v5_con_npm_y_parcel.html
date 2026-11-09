@@ -50,7 +50,7 @@
   <title>
     Instalación de Bootstrap V5, NPM y PARCEL - Ing. Eduardo Herrera Forero.
   </title>
-  <script type="module" src="./js/main.js"></script>
+  <script type="module" defer src="./js/main.js"></script>
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
@@ -109,10 +109,20 @@
         <!-- Parcel NPM -->
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
-          <h1>Instalación de Bootstrap V5, NPM y PARCEL</h1>
-          <div>
-            <div class="mt-5">
+          <header>
+            <h1>Instalación de Bootstrap V5, NPM y PARCEL</h1>
+          </header>
+            <div class="mt-3">
               <h2>Introducción</h2>
+              <div class="site-image site-intro-image mb-5">
+                <figure class="site-content__img-container">
+                  <img src="https://i.ibb.co/1GNFG8ST/Bootstrap-and-parcel.png" class="img-fluid"
+                    alt="Instalación de Bootstrap V5, NPM y Parcel" />
+                  <figcaption class="site-image__caption">
+                    Instalación de Bootstrap V5, NPM y Parcel
+                  </figcaption>
+                </figure>
+              </div>
               <p>
                 La guía oficial sobre cómo incluir y empaquetar el CSS y
                 JavaScript de Bootstrap en un proyecto utilizando Parcel.
@@ -133,17 +143,11 @@
                 son
                 ejecutados en la terminal BASH de GIT.
               </p>
-              <div class="site-image site-intro-image">
-                <figure>
-                  <img src="https://i.ibb.co/1GNFG8ST/Bootstrap-and-parcel.png" class="img-fluid"
-                    alt="Instalación de Bootstrap V5, NPM y Parcel" />
-                  <figcaption>
-                    Instalación de Bootstrap V5, NPM y Parcel
-                  </figcaption>
-                </figure>
-              </div>
+
             </div>
-            <div id="configuracion-inicial" class="mt-5">
+            <hr class="site-divider--subtle site-divider" />
+
+            <div id="configuracion-inicial" class="mt-3">
               <h2>Configuración Inicial</h2>
               <p>
                 Se esta construyendo un proyecto Parcel con Bootstrap desde
@@ -193,7 +197,9 @@
                   </pre>
               </div>
             </div>
-            <div id="instalacion-parcel" class="mt-5">
+            <hr class="site-divider--subtle site-divider" />
+
+            <div id="instalacion-parcel" class="mt-3">
               <h2>Instalación de Parcel</h2>
               <p>
                 Sólo hay una dependencia de una única herramienta de
@@ -214,7 +220,9 @@
               <p>Se debe verificar la versión instalada de Parcel, debe ser <code class="language-bash">2.16</code>
                 con el comando en consola <code class="language-bash">npx parcel --version</code>.</p>
             </div>
-            <div id="instalacion-bootstrap-v5" class="mt-5">
+            <hr class="site-divider--subtle site-divider" />
+
+            <div id="instalacion-bootstrap-v5" class="mt-3">
               <h2>Instalación de Bootstrap </h2>
               <p>
                 Ahora se puede instalar Bootstrap.También se instalará Popper
@@ -236,7 +244,9 @@
               </p>
             </div>
 
-            <div id="configuracion-parcel" class="mt-5">
+            <hr class="site-divider--subtle site-divider" />
+
+            <div id="configuracion-parcel" class="mt-3">
               <h2>Configuración de Parcel </h2>
               <p>
                 El archivo
@@ -405,7 +415,9 @@
               </div>
             </div>
 
-            <div id="importacion-bootstrap-v5" class="mt-5">
+            <hr class="site-divider--subtle site-divider" />
+
+            <div id="importacion-bootstrap-v5" class="mt-3">
               <h2>Importación de BOOTSTRAP</h2>
               <p>
                 Para la importación de Bootstrap en Parcel se requiere dos
@@ -453,7 +465,9 @@
               </p>
             </div>
 
-            <div id="compilacion-proyecto-produccion" class="mt-5">
+            <hr class="site-divider--subtle site-divider" />
+
+            <div id="compilacion-proyecto-produccion" class="mt-3">
               <h2>Compilación del proyecto para Producción</h2>
               <p>
                 Cuando se haya terminado y se quiera obtener la versión para
@@ -478,7 +492,9 @@
               </p>
             </div>
 
-            <div id="instalacion-de-un-servidor-local" class="mt-5">
+            <hr class="site-divider--subtle site-divider" />
+
+            <div id="instalacion-de-un-servidor-local" class="mt-3">
               <h2>Instalación de un Servidor Local </h2>
               <!-- Qué Es un Servidor Local  -->
               <div id="que-es-un-servidor-local">
@@ -711,7 +727,9 @@
               <!-- ⚠️ Nota Importante  fin -->
             </div>
 
-            <div id="rimraf-herramienta-para-eliminar-carpetas-y-archivos" class="mt-5">
+            <hr class="site-divider--subtle site-divider" />
+
+            <div id="rimraf-herramienta-para-eliminar-carpetas-y-archivos" class="mt-3">
               <h2><code class="language-bash">rimraf</code>: Herramienta para Eliminar Carpetas y Archivos</h2>
               <p><code class="language-bash">rimraf</code> es una herramienta de <code
                   class="language-javascript">Node.js</code> que elimina archivos y carpetas
@@ -817,7 +835,9 @@
               <!-- Archivo package.json Final  fin -->
             </div>
 
-            <div id="ultimas-configuraciones-del-proyecto" class="mt-5">
+            <hr class="site-divider--subtle site-divider" />
+
+            <div id="ultimas-configuraciones-del-proyecto" class="mt-3">
               <h2>Últimas Configuraciones del Proyecto</h2>
               <p>En el final de la configuración de la plantilla se instalan dos archivos muy importantes:
               <ul>
@@ -1053,7 +1073,6 @@
               <!-- Archivo gitattributes fin -->
             </div>
 
-          </div>
         </article>
         <!-- fin Parcel NPM -->
         <!--  comentarios  -->
@@ -1101,6 +1120,7 @@
         <!--  fin comentarios  -->
       </section>
 
+      <!-- -------------------------------- barra lateral -------------------------------- -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
@@ -1154,7 +1174,7 @@
           </div>
         </div>
       </aside>
-      <!--  fin barra lateral  -->
+      <!-- -------------------------------- fin barra lateral -------------------------------- -->
     </main>
     <!--  fin principal  -->
   </div>
