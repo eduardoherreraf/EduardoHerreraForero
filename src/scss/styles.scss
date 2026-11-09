@@ -24,6 +24,12 @@ $enable-negative-margins: true;
   --alto-caja-ejecutado: 350px;
 }
 
+[data-bs-theme="light"] {
+  --color-texto: #212529;
+  --color-borde: #adb5bd;
+  --color-fondo: #fff;
+}
+
 html {
   scroll-behavior: smooth;
   /* Ajuste para la barra de navegación fija */
@@ -357,6 +363,46 @@ code {
 nav {
   background-color: rgb(56, 56, 56);
   font-size: 0.9rem;
+}
+
+[data-bs-theme="light"] .navbar {
+  background-color: var(--bs-tertiary-bg);
+}
+
+.site-nav__theme-toggle {
+  --bs-nav-underline-border-width: 0;
+  background: transparent;
+  border: 0;
+  text-decoration: none;
+  font: inherit;
+  cursor: pointer;
+  transform: scale(1.1);
+  border-radius: 0.375rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.site-nav__theme-toggle:hover {
+  box-shadow: 0 2px 8px rgba(var(--bs-emphasis-color-rgb), 0.15);
+}
+
+.site-nav__theme-toggle:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+[data-bs-theme="light"] .code-example__output {
+  color: var(--color-texto);
+}
+
+[data-bs-theme="light"] .site-text--muted {
+  color: var(--bs-secondary-color);
+}
+
+// El tema Okaidia de Prism conserva su fondo oscuro y su contraste.
+[data-bs-theme="light"] pre[class*="language-"],
+[data-bs-theme="light"] code[class*="language-"] {
+  background-color: #272822;
+  color: #f8f8f2;
 }
 
 /*  */
