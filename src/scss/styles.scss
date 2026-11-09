@@ -76,6 +76,17 @@ figure picture img {
   height: auto;
 }
 
+.site-image__figure--intro {
+  width: 100%;
+}
+
+.site-image__figure--intro > picture > img,
+.site-image__figure--intro > img {
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+}
+
 figure .site-image__caption {
   display: block;
   text-align: center;
