@@ -50,7 +50,7 @@
 
   <title>Imágenes y Multimedia HTML - Ing. Eduardo Herrera Forero.</title>
 
-  <script type="module" src="./js/main.js"></script>
+  <script type="module" defer src="./js/main.js"></script>
 
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
@@ -110,14 +110,23 @@
         <!--  Imágenes y Multimedia HTML-->
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
-          <div>
+
             <header>
               <h1>Imágenes y Multimedia HTML</h1>
             </header>
 
             <!-- Introducción -->
-            <div>
+            <div class="mt-3">
               <h2>Introducción</h2>
+              <div class="site-image site-intro-image mb-5">
+                <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                  <img src="https://i.ibb.co/RpWzpCP8/Imagenes-y-multimedia-HTML.png" class="img-fluid"
+                    alt="Imágenes y Multimedia HTML" title="Imágenes y Multimedia HTML" draggable="true"  loading="lazy"/>
+                  <figcaption class="site-image__caption">
+                    Página Web que muestra una Imagen y un vídeo con HTML.
+                  </figcaption>
+                </figure>
+              </div>
               <p>
                 HTML no solo facilita la organización de texto, sino que
                 también permite incorporar contenido multimedia, como
@@ -139,15 +148,7 @@
                 optimizar los archivos para minimizar el tiempo de carga,
                 mejorando así la accesibilidad y el rendimiento del sitio web.
               </p>
-              <div class="site-image site-intro-image">
-                <picture>
-                  <img src="https://i.ibb.co/RpWzpCP8/Imagenes-y-multimedia-HTML.png" class="img-fluid"
-                    alt="Imágenes y Multimedia HTML" title="Imágenes y Multimedia HTML" draggable="true" />
-                  <figcaption>
-                    Página Web que muestra una Imagen y un vídeo con HTML.
-                  </figcaption>
-                </picture>
-              </div>
+
             </div>
             <!-- Introducción Fin -->
             <hr class="site-divider--subtle site-divider" />
@@ -1556,9 +1557,11 @@
               </ul>
             </div>
             <!-- Etiqueta HTML <figure> Fin -->
-          </div>
+
 
           <!-- Etiqueta HTML <picture> -->
+          <hr class="site-divider--subtle site-divider" />
+
           <div id="etiqueta-html-picture" class="mt-3">
             <h2>
               Etiqueta HTML <code class="language-html">&lt;picture></code>
@@ -2205,7 +2208,7 @@
         </article>
         <!--  fin comentarios  -->
       </section>
-      <!--  barra lateral  -->
+      <!-- -------------------------------- barra lateral -------------------------------- -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
@@ -2241,7 +2244,7 @@
           </div>
         </div>
       </aside>
-      <!--  fin barra lateral  -->
+      <!-- -------------------------------- fin barra lateral -------------------------------- -->
       <!--  Imágenes y Multimedia HTML-->
     </main>
   </div>

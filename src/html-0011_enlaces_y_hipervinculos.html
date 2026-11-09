@@ -49,7 +49,7 @@
 
   <title>Enlaces y hipervínculos HTML - Ing. Eduardo Herrera Forero.</title>
 
-  <script type="module" src="./js/main.js"></script>
+  <script type="module" defer src="./js/main.js"></script>
 
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
@@ -109,25 +109,25 @@
         <!--  Enlaces y hipervínculos HTML-->
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
-          <div>
+
             <header>
               <h1>Enlaces y hipervínculos HTML</h1>
             </header>
 
             <!-- Introducción -->
-            <div>
+            <div class="mt-3">
               <h2>Introducción</h2>
 
-              <div class="site-image site-intro-image">
-                <picture>
+              <div class="site-image site-intro-image mb-5">
+                <figure class="site-content__img-container site-image__figure site-image__figure--intro">
                   <img src="https://i.postimg.cc/MHBr9FzF/img-ancla-y-hirpervinculo-comp.png" class="img-fluid"
                     alt="Enlaces y hipervínculos HTML"
-                    title="Guía que explica cómo utilizar los enlaces e hipervínculos en una página web." />
-                  <figcaption>
+                    title="Guía que explica cómo utilizar los enlaces e hipervínculos en una página web."  loading="lazy"/>
+                  <figcaption class="site-image__caption">
                     Analogía de un hipervínculo y la dirección de una
                     invitación.
                   </figcaption>
-                </picture>
+                </figure>
               </div>
 
               <p>
@@ -1364,6 +1364,8 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
             <!-- Marcadores (Anchors) Fin -->
 
             <!-- Otros Atributos para Enlaces -->
+            <hr class="site-divider--subtle site-divider" />
+
             <div id="otros-atributos-para-enlaces" class="mt-3">
               <h2>Otros Atributos para Enlaces</h2>
               <!-- Atributos de Seguridad  -->
@@ -1513,7 +1515,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
               <!-- Ejemplo Completo Enlaces  fin -->
             </div>
             <!-- Otros Atributos para Enlaces Fin -->
-          </div>
+
         </article>
         <!--  Enlaces y hipervínculos HTML fin -->
 
@@ -1562,7 +1564,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
         <!--  fin comentarios  -->
       </section>
       <!--  Enlaces y hipervínculos HTML-->
-      <!--  barra lateral  -->
+      <!-- -------------------------------- barra lateral -------------------------------- -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
@@ -1668,7 +1670,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
           </div>
         </div>
       </aside>
-      <!--  fin barra lateral  -->
+      <!-- -------------------------------- fin barra lateral -------------------------------- -->
     </main>
     <!--  fin principal  -->
   </div>

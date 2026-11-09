@@ -50,7 +50,7 @@
 
   <title>Estructura del Documento HTML - Ing. Eduardo Herrera Forero.</title>
 
-  <script type="module" src="./js/main.js"></script>
+  <script type="module" defer src="./js/main.js"></script>
 
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
@@ -110,14 +110,22 @@
         <!-- Introducción HTML -->
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
-          <div>
+
             <header>
-              <h2>Estructura del Documento HTML</h1>
+              <h1>Estructura del Documento HTML</h1>
             </header>
 
             <!-- Introducción -->
             <div class="mt-3">
               <h2>Introducción</h2>
+              <div class="site-image site-intro-image mb-5">
+                <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                  <img src="https://i.ibb.co/5WGDvxYb/Estructura-del-Documento-HTML.png" class="img-fluid"
+                    alt="Estructura del Documento HTML"
+                    title="Analogía entre Estructura del Documento HTML y una casa"  loading="lazy"/>
+                  <figcaption class="site-image__caption">Estructura del Documento HTML</figcaption>
+                </figure>
+              </div>
               <p>
                 Un documento HTML debe estar correctamente estructurado para
                 que el navegador pueda interpretarlo sin errores y mostrar el
@@ -133,14 +141,7 @@
                 propósito específico que contribuye al correcto funcionamiento
                 y presentación de la página.
               </p>
-              <div class="site-image site-intro-image">
-                <picture>
-                  <img src="https://i.ibb.co/5WGDvxYb/Estructura-del-Documento-HTML.png" class="img-fluid"
-                    alt="Estructura del Documento HTML"
-                    title="Analogía entre Estructura del Documento HTML y una casa" />
-                  <figcaption>Estructura del Documento HTML</figcaption>
-                </picture>
-              </div>
+
             </div>
             <!-- Introducción fin -->
 
@@ -476,7 +477,7 @@
               <!-- Atributos Comunes de &lt;body> fin -->
             </div>
             <!-- Cuerpo de Página Fin -->
-          </div>
+
         </article>
         <!--  Estructura del Documento HTML fin-->
 
@@ -568,7 +569,7 @@
           </div>
         </div>
       </aside>
-      <!--  fin barra lateral  -->
+      <!-- -------------------------------- fin barra lateral -------------------------------- -->
     </main>
     <!--  fin principal  -->
     <!--  barra lateral  -->

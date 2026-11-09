@@ -47,7 +47,7 @@
 
   <title>Formato de Texto HTML - Ing. Eduardo Herrera Forero.</title>
 
-  <script type="module" src="./js/main.js"></script>
+  <script type="module" defer src="./js/main.js"></script>
 
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
@@ -107,14 +107,25 @@
         <!--  Formato de Texto HTML -->
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
-          <div>
+
             <header>
-              <h1 id="introduccion" class="site-layout__intro">Formato de Texto HTML</h1>
+              <h1>Formato de Texto HTML</h1>
             </header>
 
             <!-- Introducción -->
-            <div>
+            <div class="mt-3">
               <h2>Introducción</h2>
+              <div class="site-image site-intro-image mb-5">
+                <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                  <img src="https://i.postimg.cc/k55FGb2w/b-vs-strong-gibili3.png" class="img-fluid"
+                    alt="Formato de Texto HTML " title="Formato de Texto HTML : <b> y <strong>"  loading="lazy"/>
+                  <figcaption class="site-image__caption">
+                    Ejemplo de Etiquetas de Texto HTML
+                    <code class="language-html">&lt;b></code> y
+                    <code class="language-html">&lt;strong></code>
+                  </figcaption>
+                </figure>
+              </div>
 
               <p>
                 En el fascinante mundo del desarrollo web, dar estilo y
@@ -126,17 +137,7 @@
                 organización, el objetivo es transformar las palabras en
                 contenido visualmente impactante.
               </p>
-              <div class="site-image site-intro-image">
-                <picture>
-                  <img src="https://i.postimg.cc/k55FGb2w/b-vs-strong-gibili3.png" class="img-fluid"
-                    alt="Formato de Texto HTML " title="Formato de Texto HTML : <b> y <strong>" />
-                  <figcaption>
-                    Ejemplo de Etiquetas de Texto HTML
-                    <code class="language-html">&lt;b></code> y
-                    <code class="language-html">&lt;strong></code>
-                  </figcaption>
-                </picture>
-              </div>
+
               <p>
                 La imagen compara las etiquetas HTML
                 <code class="language-html">&lt;b></code> y
@@ -154,7 +155,7 @@
             <hr class="site-divider--subtle site-divider" />
 
             <!-- Etiquetas HTML <b> Negrita y <strong> Importante -->
-            <div id="etiquetas-html-b-negrita-y-strong-importante">
+            <div id="etiquetas-html-b-negrita-y-strong-importante" class="mt-3">
               <h2>
                 Etiquetas HTML
                 <code class="language-html">&lt;b></code> Negrita y
@@ -559,7 +560,7 @@
             <hr class="site-divider--subtle site-divider" />
 
             <!-- Etiquetas HTML <i> Itálica y <em> Énfasis -->
-            <div id="etiquetas-html-i-italica-y-em-enfasis">
+            <div id="etiquetas-html-i-italica-y-em-enfasis" class="mt-3">
               <h2>
                 Etiquetas HTML
                 <code class="language-html">&lt;i></code> Itálica y
@@ -1220,7 +1221,7 @@
             <hr class="site-divider--subtle site-divider" />
 
             <!-- Etiqueta HTML <small> Pequeño -->
-            <div id="etiqueta-html-small-pequeno">
+            <div id="etiqueta-html-small-pequeno" class="mt-3">
               <h2>
                 Etiqueta HTML
                 <code class="language-html">&lt;small></code> Pequeño
@@ -1641,7 +1642,7 @@
             <hr class="site-divider--subtle site-divider" />
 
             <!-- Etiquetas HTML <del> Borrado y <ins> Insertado -->
-            <div id="etiquetas-html-del-borrado-y-ins-insertado">
+            <div id="etiquetas-html-del-borrado-y-ins-insertado" class="mt-3">
               <h2>
                 Etiquetas HTML
                 <code class="language-html">&lt;del></code> Borrado y
@@ -2248,7 +2249,7 @@
             <hr class="site-divider--subtle site-divider" />
 
             <!-- Etiquetas HTML <sup> Superíndice y <sub> Subíndice -->
-            <div id="etiquetas-html-sup-superindice-e-sub-subindice">
+            <div id="etiquetas-html-sup-superindice-e-sub-subindice" class="mt-3">
               <h2>
                 Etiquetas HTML
                 <code class="language-html">&lt;sup></code> Superíndice y
@@ -2766,11 +2767,11 @@
               <!-- Alternativas CSS recomendadas <sup> y <sub> fin -->
             </div>
             <!-- Etiquetas HTML <sup> Superíndice y <sub> Subíndice Fin -->
-          </div>
+
           <hr class="site-divider--subtle site-divider" />
 
           <!-- Etiquetas HTML <code> Código de Programación -->
-          <div id="etiquetas-html-code-codigo-de-programacion">
+          <div id="etiquetas-html-code-codigo-de-programacion" class="mt-3">
             <h2>
               Etiquetas HTML
               <code class="language-html">&lt;code></code> Código de
@@ -3237,12 +3238,14 @@
               <!-- Estilos base modernos para <code> fin -->
             </div>
             <!-- Alternativas CSS recomendadas <code> fin -->
-            <hr class="site-divider--subtle site-divider" />
+
 
             <!-- Etiquetas HTML <code> Código de Programación Fin -->
           </div>
           <!-- Etiquetas HTML <kbd> Entrada del Teclado -->
-          <div id="etiquetas-html-kbd-entrada-del-teclado">
+          <hr class="site-divider--subtle site-divider" />
+
+          <div id="etiquetas-html-kbd-entrada-del-teclado" class="mt-3">
             <h2>
               Etiquetas HTML
               <code class="language-html">&lt;kbd></code> Entrada del Teclado
@@ -3675,7 +3678,7 @@
           <hr class="site-divider--subtle site-divider" />
 
           <!-- Etiquetas HTML <samp> Salida de un programa -->
-          <div id="etiquetas-html-samp-salida-de-un-programa">
+          <div id="etiquetas-html-samp-salida-de-un-programa" class="mt-3">
             <h2>
               Etiquetas HTML
               <code class="language-html">&lt;samp></code> Salida de un
@@ -4104,7 +4107,7 @@
           <hr class="site-divider--subtle site-divider" />
 
           <!-- Etiquetas HTML <var> Variable -->
-          <div id="etiquetas-html-var-variable">
+          <div id="etiquetas-html-var-variable" class="mt-3">
             <h2>
               Etiquetas HTML
               <code class="language-html">&lt;var></code> Variable
@@ -4620,7 +4623,7 @@
           <hr class="site-divider--subtle site-divider" />
 
           <!-- Etiquetas HTML <pre> Texto Preformateado -->
-          <div id="etiquetas-html-pre-texto-preformateado">
+          <div id="etiquetas-html-pre-texto-preformateado" class="mt-3">
             <h2>Etiquetas HTML &lt;pre> Texto Preformateado</h2>
             <!-- Definición <pre> -->
             <div>
@@ -5062,7 +5065,7 @@ usuarios&lt;span class="token punctuation">.&lt;/span>&lt;span class="token func
         </article>
         <!--  fin comentarios  -->
       </section>
-      <!--  barra lateral  -->
+      <!-- -------------------------------- barra lateral -------------------------------- -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
@@ -5127,7 +5130,7 @@ usuarios&lt;span class="token punctuation">.&lt;/span>&lt;span class="token func
           </div>
         </div>
       </aside>
-      <!--  fin barra lateral  -->
+      <!-- -------------------------------- fin barra lateral -------------------------------- -->
       <!--  Formato de Texto HTML -->
     </main>
     <!--  fin principal  -->

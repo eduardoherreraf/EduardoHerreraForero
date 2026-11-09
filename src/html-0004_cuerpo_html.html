@@ -50,7 +50,7 @@
 
   <title>El Cuerpo HTML - Ing. Eduardo Herrera Forero.</title>
 
-  <script type="module" src="./js/main.js"></script>
+  <script type="module" defer src="./js/main.js"></script>
 
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
@@ -110,13 +110,23 @@
         <!-- El Cuerpo HTML -->
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
-          <div>
+
             <header>
               <h1>El Cuerpo HTML</h1>
             </header>
             <!-- Introducción -->
-            <div>
+            <div class="mt-3">
               <h2>Introducción</h2>
+              <div class="site-image site-intro-image mb-5">
+                <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                  <img src="https://i.ibb.co/CDK57S6/El-Cuerpo-HTML.png" class="img-fluid" alt="El Cuerpo HTML "
+                    title="Analogía del cuerpo de una página web y el cuerpo hmano"  loading="lazy"/>
+                  <figcaption class="site-image__caption">
+                    Estructura básica de un documento HTML5 utilizando
+                    elementos semánticos.
+                  </figcaption>
+                </figure>
+              </div>
               <p>
                 En el mundo actual del desarrollo web, la estructura de una
                 página no solo es importante para su visualización, sino
@@ -156,16 +166,7 @@
                 calidad, durabilidad y alcance de tu presencia digital.
               </p>
 
-              <div class="site-image site-intro-image">
-                <picture>
-                  <img src="https://i.ibb.co/CDK57S6/El-Cuerpo-HTML.png" class="img-fluid" alt="El Cuerpo HTML "
-                    title="Analogía del cuerpo de una página web y el cuerpo hmano" />
-                  <figcaption>
-                    Estructura básica de un documento HTML5 utilizando
-                    elementos semánticos.
-                  </figcaption>
-                </picture>
-              </div>
+
             </div>
             <!-- Introducción Fin -->
 
@@ -9750,7 +9751,7 @@
             <hr class="site-divider--subtle site-divider" />
 
             <!-- Plantilla HTML de un Diseño Semántico Con ARIA -->
-            <div>
+            <div class="mt-3">
               <h2 id="plantilla-html-de-un-diseno-semantico-con-aria" class="mt-3">
                 Plantilla HTML de un Diseño Semántico Con ARIA
               </h2>
@@ -10299,7 +10300,7 @@
               </div>
             </div>
             <!-- Plantilla HTML de un Diseño Semántico Con ARIA fin -->
-          </div>
+
         </article>
         <!--  comentarios  -->
         <article class="row" id="comments">
@@ -10345,7 +10346,7 @@
         </article>
         <!--  fin comentarios  -->
       </section>
-      <!--  barra lateral  -->
+      <!-- -------------------------------- barra lateral -------------------------------- -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
@@ -10421,7 +10422,7 @@
             </div>
           </div>
       </aside>
-      <!--  fin barra lateral  -->
+      <!-- -------------------------------- fin barra lateral -------------------------------- -->
     </main>
   </div>
   <!--  Fin Principal -->
