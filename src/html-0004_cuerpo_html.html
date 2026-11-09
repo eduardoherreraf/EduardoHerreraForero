@@ -67,7 +67,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -85,7 +85,7 @@
             <a class="nav-link mx-1 text-decoration-none" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo text-decoration-none" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active text-decoration-none site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1 text-decoration-none" href="index.html#contact">CONTACTO</a>
@@ -97,7 +97,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!-- El Cuerpo HTML -->
@@ -149,7 +149,7 @@
                 calidad, durabilidad y alcance de tu presencia digital.
               </p>
 
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <picture>
                   <img src="https://i.ibb.co/CDK57S6/El-Cuerpo-HTML.png" class="img-fluid" alt="El Cuerpo HTML "
                     title="Analogía del cuerpo de una página web y el cuerpo hmano" />
@@ -162,7 +162,7 @@
             </div>
             <!-- Introducción Fin -->
 
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Estructura HTML no Semántica -->
             <div id="estructura-html-no-semantica" class="mt-3">
@@ -176,7 +176,7 @@
                 difícil de mantener.
               </p>
               <p>Un ejemplo de una estructura no semántica típica:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-html" data-prismjs-copy="Copy">
                     &lt;!DOCTYPE html>
@@ -197,16 +197,16 @@
                       &lt;!-- Contenido principal --&gt;
                       &lt;div id="main-content">
                         &lt;div id="featured-post">
-                          &lt;div class="post-title">Título del Artículo&lt;/div>
-                          &lt;div class="post-content">
+                          &lt;div class="site-content__post-title">Título del Artículo&lt;/div>
+                          &lt;div class="site-content__post-content">
                             &lt;p>Este es el contenido del artículo principal...&lt;/p>
                           &lt;/div>
                         &lt;/div>
 
                         &lt;div id="other-posts">
-                          &lt;div class="post">
-                            &lt;div class="post-title">Artículo Secundario&lt;/div>
-                            &lt;div class="post-content">
+                          &lt;div class="site-content__post">
+                            &lt;div class="site-content__post-title">Artículo Secundario&lt;/div>
+                            &lt;div class="site-content__post-content">
                               &lt;p>Contenido de un artículo secundario...&lt;/p>
                             &lt;/div>
                           &lt;/div>
@@ -215,18 +215,18 @@
 
                       &lt;!-- Barra lateral --&gt;
                       &lt;div id="sidebar">
-                        &lt;div class="widget">
-                          &lt;div class="widget-title">Categorías&lt;/div>
-                          &lt;div class="widget-content">
-                            &lt;div class="category">Categoría 1&lt;/div>
-                            &lt;div class="category">Categoría 2&lt;/div>
+                        &lt;div class="site-content__widget">
+                          &lt;div class="site-content__widget-title">Categorías&lt;/div>
+                          &lt;div class="site-content__widget-content">
+                            &lt;div class="site-content__category">Categoría 1&lt;/div>
+                            &lt;div class="site-content__category">Categoría 2&lt;/div>
                           &lt;/div>
                         &lt;/div>
                       &lt;/div>
 
                       &lt;!-- Pie de página --&gt;
                       &lt;div id="footer">
-                        &lt;div class="copyright">© 2025 Mi Sitio Web&lt;/div>
+                        &lt;div class="site-content__copyright">© 2025 Mi Sitio Web&lt;/div>
                       &lt;/div>
 
                     &lt;/body>
@@ -273,7 +273,7 @@
             </div>
             <!-- Estructura HTML no Semántica Fin -->
 
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Estructura HTML con Etiquetas Semánticas -->
             <div id="estructura-html-con-etiquetas-semanticas" class="mt-3">
@@ -330,7 +330,7 @@
                   accesibilidad, optimización para motores de búsqueda (SEO) y
                   una mayor eficiencia en el desarrollo y la colaboración.
                 </p>
-                <div class="centrar-imagen magen-intro">
+                <div class="site-image site-intro-image">
                   <picture>
                     <img src="https://i.ibb.co/0jbNQFms/no-semantico-vs-semantico-compress.png" class="img-fluid"
                       alt="HTML no semántico vs HTML semántico" title="HTML no semántico vs HTML semántico" />
@@ -501,7 +501,7 @@
             </div>
             <!-- Estructura HTML con Etiquetas Semánticas Fin -->
 
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Etiquetas Semánticas HTML -->
             <div id="etiquetas-semanticas-html" class="mt-3">
@@ -611,7 +611,7 @@
                     <code class="language-html">&lt;main></code> se utiliza
                     para definir el contenido principal de una página web.
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;body>
@@ -819,7 +819,7 @@
                     <code class="language-html">&lt;main></code> tiene las
                     siguientes propiedades CSS por defecto:
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-css" data-prismjs-copy="Copy">
                           main {
@@ -843,18 +843,18 @@
                   </p>
                   <div class="row">
                     <!-- Ejemplo -->
-                    <div class="ej-ejemplo">
-                      <div class="row ej-ejecutado mt-3">
+                    <div class="code-example">
+                      <div class="row code-example__output mt-3">
                         <!-- código ejecutado -->
                         <div>
-                          <div class="ej-contenedor-main">
-                            <header class="ej-header-main">
-                              <p class="ej-h1-main">Mi Página con Main</p>
+                          <div class="demo-main__contenedor">
+                            <header class="demo-main__header">
+                              <p class="demo-main__h1">Mi Página con Main</p>
                             </header>
 
-                            <main class="ej-main-main">
-                              <section id="sec1" class="ej-sec1-main">
-                                <p class="ej-h2-main">
+                            <main class="demo-main__main">
+                              <section id="sec1" class="demo-main__sec1">
+                                <p class="demo-main__h2">
                                   Sección 1: Introducción
                                 </p>
                                 <p>
@@ -869,8 +869,8 @@
                                 </ul>
                               </section>
 
-                              <section id="sec2" class="ej-sec2-main">
-                                <p class="ej-h2-main">
+                              <section id="sec2" class="demo-main__sec2">
+                                <p class="demo-main__h2">
                                   Sección 2: Desarrollo
                                 </p>
                                 <p>
@@ -881,8 +881,8 @@
                                 </p>
                               </section>
 
-                              <section id="sec3" class="ej-sec3-main">
-                                <p class="ej-h2-main">
+                              <section id="sec3" class="demo-main__sec3">
+                                <p class="demo-main__h2">
                                   Sección 3: Conclusión
                                 </p>
                                 <p>
@@ -894,7 +894,7 @@
                               </section>
                             </main>
 
-                            <footer class="ej-footer-main">
+                            <footer class="demo-main__footer">
                               <p>© 2025 Mi Página con Secciones</p>
                             </footer>
                           </div>
@@ -902,18 +902,18 @@
                         <!-- código ejecutado fin -->
                       </div>
                       <div class="row">
-                        <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                           <!-- código HTML -->
                           <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;div class="contenedor">
-                                    &lt;header class="header">
+                                &lt;div class="site-content__contenedor">
+                                    &lt;header class="site-content__header">
                                         &lt;p class="h1">Mi Página con Main&lt;/p>
                                     &lt;/header>
 
-                                    &lt;main class="main">
-                                        &lt;section id="sec1" class="sec1">
+                                    &lt;main class="site-content__main">
+                                        &lt;section id="sec1" class="site-content__sec1">
                                             &lt;p class="h2">Sección 1: Introducción&lt;/p>
                                             &lt;p>Esta es la primera sección de la página. Aquí puedes incluir una introducción o un resumen del tema
                                                 principal.&lt;/p>
@@ -924,13 +924,13 @@
                                             &lt;/ul>
                                         &lt;/section>
 
-                                        &lt;section id="sec2" class="sec2">
+                                        &lt;section id="sec2" class="site-content__sec2">
                                             &lt;p class="h2">Sección 2: Desarrollo&lt;/p>
                                             &lt;p>En esta sección, se desarrolla el tema principal con más detalle. Puedes incluir información adicional,
                                                 ejemplos o explicaciones.&lt;/p>
                                         &lt;/section>
 
-                                        &lt;section id="sec3" class="sec3">
+                                        &lt;section id="sec3" class="site-content__sec3">
                                             &lt;p class="h2">Sección 3: Conclusión&lt;/p>
                                             &lt;p>Aquí se presenta una conclusión o resumen de los puntos principales tratados en las secciones anteriores.
                                             &lt;/p>
@@ -938,7 +938,7 @@
                                         &lt;/section>
                                     &lt;/main>
 
-                                    &lt;footer class="footer">
+                                    &lt;footer class="site-content__footer">
                                         &lt;p>© 2025 Mi Página con Secciones&lt;/p>
                                     &lt;/footer>
                                 &lt;/div>                                
@@ -947,7 +947,7 @@
                           </pre>
                           <!-- código HTML -->
                         </div>
-                        <div class="ej-code-css col-lg-6 mb-3">
+                        <div class="code-example__css-panel col-lg-6 mb-3">
                           <!-- código CSS -->
                           <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
@@ -1070,7 +1070,7 @@
                     </li>
                   </ul>
                   <p>Ejemplo:</p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                       &lt;!DOCTYPE html>
@@ -1269,7 +1269,7 @@
                     La forma correcta de escribir la etiqueta
                     <code class="language-html">&lt;section></code> es:
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;section>
@@ -1540,7 +1540,7 @@
                     defecto a
                     <code class="language-html">&lt;section></code>:
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-css" data-prismjs-copy="Copy">
                           section {
@@ -1561,20 +1561,20 @@
                   <p>Código de una página con varias secciones:</p>
                   <div class="row">
                     <!-- Ejemplo -->
-                    <div class="ej-ejemplo">
-                      <div class="row ej-ejecutado mt-3">
+                    <div class="code-example">
+                      <div class="row code-example__output mt-3">
                         <!-- código ejecutado -->
                         <div>
-                          <div class="ej-body-container">
-                            <div class="ej-contenedor-section">
-                              <header class="ej-header-section">
-                                <p class="ej-h1-section">
+                          <div class="demo-content__body-container">
+                            <div class="demo-section__contenedor">
+                              <header class="demo-section__header">
+                                <p class="demo-section__h1">
                                   Mi Página con Varias Secciones
                                 </p>
                               </header>
                               <main>
-                                <section id="sec1" class="ej-section-1-section">
-                                  <p class="ej-h2-section">
+                                <section id="sec1" class="demo-section__section-1">
+                                  <p class="demo-section__h2">
                                     Sección 1: Introducción
                                   </p>
                                   <p>
@@ -1588,8 +1588,8 @@
                                     <li>Punto 3</li>
                                   </ul>
                                 </section>
-                                <section id="sec2" class="ej-section-2-section">
-                                  <p class="ej-h2-section">
+                                <section id="sec2" class="demo-section__section-2">
+                                  <p class="demo-section__h2">
                                     Sección 2: Desarrollo
                                   </p>
                                   <p>
@@ -1599,8 +1599,8 @@
                                     explicaciones.
                                   </p>
                                 </section>
-                                <section id="sec3" class="ej-section-3-section">
-                                  <p class="ej-h2-section">
+                                <section id="sec3" class="demo-section__section-3">
+                                  <p class="demo-section__h2">
                                     Sección 3: Conclusión
                                   </p>
                                   <p>
@@ -1611,7 +1611,7 @@
                                   <a href="https://eduardoherreraf.github.io/">Contáctanos para más información</a>
                                 </section>
                               </main>
-                              <footer class="ej-footer-section">
+                              <footer class="demo-section__footer">
                                 <p>© 2025 Mi Página con Secciones</p>
                               </footer>
                             </div>
@@ -1620,21 +1620,21 @@
                         <!-- código ejecutado fin -->
                       </div>
                       <div class="row">
-                        <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                           <!-- código HTML -->
                           <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;div class="body-container">
-                                  &lt;div class="contenedor-section">
-                                      &lt;header class="header-section">
-                                          &lt;p class="h1-section">
+                                &lt;div class="site-content__body-container">
+                                  &lt;div class="site-content__contenedor-section">
+                                      &lt;header class="site-content__header-section">
+                                          &lt;p class="site-content__h1-section">
                                               Mi Página con Varias Secciones
                                           &lt;/p>
                                       &lt;/header>
                                       &lt;main>
-                                          &lt;section id="sec1" class="section-1-section">
-                                              &lt;p class="h2-section">
+                                          &lt;section id="sec1" class="site-content__section-1-section">
+                                              &lt;p class="site-content__h2-section">
                                                   Sección 1: Introducción
                                               &lt;/p>
                                               &lt;p>
@@ -1648,8 +1648,8 @@
                                                   &lt;li>Punto 3&lt;/li>
                                               &lt;/ul>
                                           &lt;/section>
-                                          &lt;section id="sec2" class="section-2-section">
-                                              &lt;p class="h2-section">
+                                          &lt;section id="sec2" class="site-content__section-2-section">
+                                              &lt;p class="site-content__h2-section">
                                                   Sección 2: Desarrollo
                                               &lt;/p>
                                               &lt;p>
@@ -1659,8 +1659,8 @@
                                                   explicaciones.
                                               &lt;/p>
                                           &lt;/section>
-                                          &lt;section id="sec3" class="section-3-section">
-                                              &lt;p class="h2-section">
+                                          &lt;section id="sec3" class="site-content__section-3-section">
+                                              &lt;p class="site-content__h2-section">
                                                   Sección 3: Conclusión
                                               &lt;/p>
                                               &lt;p>
@@ -1671,7 +1671,7 @@
                                               &lt;a href="https://eduardoherreraf.github.io/">Contáctanos para más información&lt;/a>
                                           &lt;/section>
                                       &lt;/main>
-                                      &lt;footer class="footer-section">
+                                      &lt;footer class="site-content__footer-section">
                                           &lt;p>© 2025 Mi Página con Secciones&lt;/p>
                                       &lt;/footer>
                                   &lt;/div>
@@ -1681,7 +1681,7 @@
                           </pre>
                           <!-- código HTML -->
                         </div>
-                        <div class="ej-code-css col-lg-6 mb-3">
+                        <div class="code-example__css-panel col-lg-6 mb-3">
                           <!-- código CSS -->
                           <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
@@ -1949,7 +1949,7 @@
                     </tbody>
                   </table>
                   <p><b>Ejemplo con ARIA</b>:</p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                       &lt;section id="noticias" role="region" aria-labelledby="titulo-noticias" aria-describedby="descripcion-noticias">
@@ -2069,7 +2069,7 @@
                     A continuación, se presenta la forma correcta de usar
                     <code class="language-html">&lt;article></code>:
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;article>
@@ -2277,7 +2277,7 @@
                     Los navegadores aplican los siguientes estilos base a
                     <code class="language-html">&lt;article></code>:
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-css" data-prismjs-copy="Copy">
                           article {
@@ -2301,8 +2301,8 @@
                   </p>
                   <div class="row">
                     <!-- Ejemplo -->
-                    <div class="ej-ejemplo">
-                      <div class="row ej-ejecutado mt-3">
+                    <div class="code-example">
+                      <div class="row code-example__output mt-3">
                         <!-- código ejecutado -->
                         <div>
                           <div>
@@ -2312,22 +2312,22 @@
                         <!-- código ejecutado fin -->
                       </div>
                       <div class="row">
-                        <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                           <!-- código HTML -->
                           <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;div class="body-article1">
+                                &lt;div class="demo-article">
                                   &lt;button
-                                          class="button-article1"
-                                          onclick="document.querySelector('.body-article1').classList.toggle('dark-mode-article1')"
+                                          class="demo-article__toggle"
+                                          onclick="document.querySelector('.demo-article').classList.toggle('demo-article--dark')"
                                       >
                                           🌙 Modo Oscuro
                                       &lt;/button>
 
-                                  &lt;div class="container-article1">
-                                      &lt;article class="article-article1">
-                                          &lt;p class="h2-article1">Novedades en IA&lt;/p>
+                                  &lt;div class="demo-article__container">
+                                      &lt;article class="demo-article__card">
+                                          &lt;p class="demo-article__title">Novedades en IA&lt;/p>
                                           &lt;p>
                                               Investigadores han desarrollado un nuevo algoritmo de aprendizaje profundo que promete revolucionar el
                                               campo de la inteligencia artificial. Este avance representa un salto significativo en la capacidad de
@@ -2335,8 +2335,8 @@
                                           &lt;/p>
                                       &lt;/article>
 
-                                      &lt;article class="article-article1">
-                                          &lt;p class="h2-article1">Avances en Hardware&lt;/p>
+                                      &lt;article class="demo-article__card">
+                                          &lt;p class="demo-article__title">Avances en Hardware&lt;/p>
                                           &lt;p>
                                               La última generación de procesadores promete mayor rendimiento con menor consumo energético. Estos chips
                                               utilizan arquitecturas innovadoras que optimizan tanto la velocidad como la eficiencia, marcando el
@@ -2344,8 +2344,8 @@
                                           &lt;/p>
                                       &lt;/article>
 
-                                      &lt;article class="article-article1">
-                                          &lt;p class="h2-article1">Tecnología Sostenible&lt;/p>
+                                      &lt;article class="demo-article__card">
+                                          &lt;p class="demo-article__title">Tecnología Sostenible&lt;/p>
                                           &lt;p>
                                               Las empresas tecnológicas están adoptando prácticas más sostenibles en el desarrollo de sus productos.
                                               Desde el uso de materiales reciclados hasta la implementación de energías renovables en sus centros de
@@ -2359,7 +2359,7 @@
                           </pre>
                           <!-- código HTML -->
                         </div>
-                        <div class="ej-code-css col-lg-6 mb-3">
+                        <div class="code-example__css-panel col-lg-6 mb-3">
                           <!-- código CSS -->
                           <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
@@ -2633,7 +2633,7 @@
                     lectores de pantalla.
                   </p>
                   <p>Ejemplo:</p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;!DOCTYPE html>
@@ -2792,7 +2792,7 @@
                       Sintaxis Básica
                       <code class="language-html">&lt;nav></code>
                     </h5>
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;header>
@@ -2837,7 +2837,7 @@
                       <code class="language-html">&lt;footer></code> para
                       organizar mejor la estructura de la página.
                     </p>
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;header>
@@ -2862,7 +2862,7 @@
                     <p>
                       Se pueden crear menús desplegables dentro de &lt;nav>.
                     </p>
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;nav>
@@ -3035,7 +3035,7 @@
                     Configuración CSS por Defecto
                     <code class="language-html">&lt;nav></code>
                   </h4>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                       <code class="language-css" data-prismjs-copy="Copy">
                         nav {
@@ -3061,35 +3061,35 @@
                   </p>
                   <div class="row">
                     <!-- Ejemplo -->
-                    <div class="ej-ejemplo">
-                      <div class="row ej-ejecutado mt-3">
+                    <div class="code-example">
+                      <div class="row code-example__output mt-3">
                         <!-- código ejecutado -->
                         <div>
-                          <div class="ej-nav-contenedor">
+                          <div class="demo-navigation__contenedor">
                             <!-- Barra de navegación -->
-                            <nav class="ej-nav">
-                              <div class="ej-nav-logo">
+                            <nav class="demo-navigation">
+                              <div class="demo-navigation__logo">
                                 <a href="#">LOGO</a>
                               </div>
-                              <ul class="ej-nav-menu">
-                                <li class="ej-nav-item">
-                                  <a href="#" class="ej-nav-enlace">Inicio</a>
+                              <ul class="demo-navigation__menu">
+                                <li class="demo-navigation__item">
+                                  <a href="#" class="demo-navigation__enlace">Inicio</a>
                                 </li>
-                                <li class="ej-nav-item">
-                                  <a href="#" class="ej-nav-enlace">Servicios</a>
+                                <li class="demo-navigation__item">
+                                  <a href="#" class="demo-navigation__enlace">Servicios</a>
                                 </li>
-                                <li class="ej-nav-item">
-                                  <a href="#" class="ej-nav-enlace">Contacto</a>
+                                <li class="demo-navigation__item">
+                                  <a href="#" class="demo-navigation__enlace">Contacto</a>
                                 </li>
                               </ul>
                             </nav>
 
                             <!-- Contenido de ejemplo -->
-                            <div class="ej-nav-contenido">
-                              <h1 class="ej-nav-titulo">
+                            <div class="demo-navigation__contenido">
+                              <h1 class="demo-navigation__titulo">
                                 Navegación Creativa
                               </h1>
-                              <p class="ej-nav-descripcion">
+                              <p class="demo-navigation__descripcion">
                                 Una navegación moderna con efectos
                                 glassmorphism, animaciones suaves y un diseño
                                 completamente responsivo.
@@ -3100,36 +3100,36 @@
                         <!-- código ejecutado fin -->
                       </div>
                       <div class="row">
-                        <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                           <!-- código HTML -->
                           <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;div class="contenedor">
+                                &lt;div class="site-content__contenedor">
                                     &lt;!-- Barra de navegación -->
-                                    &lt;nav class="ej-nav">
-                                        &lt;div class="logo">
+                                    &lt;nav class="demo-navigation">
+                                        &lt;div class="site-content__logo">
                                             &lt;a href="#">LOGO&lt;/a>
                                         &lt;/div>
-                                        &lt;ul class="menu">
-                                            &lt;li class="item">
-                                                &lt;a href="#" class="enlace">Inicio&lt;/a>
+                                        &lt;ul class="site-content__menu">
+                                            &lt;li class="site-content__item">
+                                                &lt;a href="#" class="site-content__enlace">Inicio&lt;/a>
                                             &lt;/li>
-                                            &lt;li class="item">
-                                                &lt;a href="#" class="enlace">Servicios&lt;/a>
+                                            &lt;li class="site-content__item">
+                                                &lt;a href="#" class="site-content__enlace">Servicios&lt;/a>
                                             &lt;/li>
-                                            &lt;li class="item">
-                                                &lt;a href="#" class="enlace">Contacto&lt;/a>
+                                            &lt;li class="site-content__item">
+                                                &lt;a href="#" class="site-content__enlace">Contacto&lt;/a>
                                             &lt;/li>
                                         &lt;/ul>
                                     &lt;/nav>
 
                                     &lt;!-- Contenido de ejemplo -->
-                                    &lt;div class="contenido">
-                                        &lt;h1 class="titulo">
+                                    &lt;div class="site-content__contenido">
+                                        &lt;h1 class="site-title">
                                             Navegación Creativa
                                         &lt;/h1>
-                                        &lt;p class="descripcion">
+                                        &lt;p class="site-content__descripcion">
                                             Una navegación moderna con efectos
                                             glassmorphism, animaciones suaves y un diseño
                                             completamente responsivo.
@@ -3141,7 +3141,7 @@
                           </pre>
                           <!-- código HTML -->
                         </div>
-                        <div class="ej-code-css col-lg-6 mb-3">
+                        <div class="code-example__css-panel col-lg-6 mb-3">
                           <!-- código CSS -->
                           <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
@@ -3522,7 +3522,7 @@
                     contenido complementario y debe estar correctamente
                     estructurada en HTML.
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;aside>
@@ -3690,8 +3690,8 @@
 
                   <div class="row">
                     <!-- Ejemplo -->
-                    <div class="ej-ejemplo">
-                      <div class="row ej-ejecutado mt-3">
+                    <div class="code-example">
+                      <div class="row code-example__output mt-3">
                         <!-- código ejecutado -->
                         <div>
                           <iframe src="./html-0004_cuerpo_aside_html.html" title="Etiqueta aside"></iframe>
@@ -3699,58 +3699,58 @@
                         <!-- código ejecutado fin -->
                       </div>
                       <div class="row">
-                        <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                           <!-- código HTML -->
                           <pre>
                               <code class="language-html" data-prismjs-copy="Copy">
                                 <div>
-                                  &lt;div class="wrapper-aside">
-                                      &lt;div class="container-aside">
-                                          &lt;p class="h1-aside">
+                                  &lt;div class="site-content__wrapper-aside">
+                                      &lt;div class="site-content__container-aside">
+                                          &lt;p class="site-content__h1-aside">
                                               Pasta Carbonara Auténtica
                                           &lt;/p>
 
-                                          &lt;div class="section-aside">
-                                              &lt;p class="h2-aside">Ingredientes&lt;/p>
-                                              &lt;ul class="ul-aside">
-                                                  &lt;li class="li-aside">
+                                          &lt;div class="site-content__section-aside">
+                                              &lt;p class="site-content__h2-aside">Ingredientes&lt;/p>
+                                              &lt;ul class="site-content__ul-aside">
+                                                  &lt;li class="site-content__li-aside">
                                                       400g de espaguetis
                                                   &lt;/li>
-                                                  &lt;li class="li-aside">200g de panceta&lt;/li>
-                                                  &lt;li class="li-aside">4 huevos&lt;/li>
-                                                  &lt;li class="li-aside">
+                                                  &lt;li class="site-content__li-aside">200g de panceta&lt;/li>
+                                                  &lt;li class="site-content__li-aside">4 huevos&lt;/li>
+                                                  &lt;li class="site-content__li-aside">
                                                       100g de queso pecorino
                                                   &lt;/li>
-                                                  &lt;li class="li-aside">Pimienta negra&lt;/li>
+                                                  &lt;li class="site-content__li-aside">Pimienta negra&lt;/li>
                                               &lt;/ul>
                                           &lt;/div>
 
-                                          &lt;div class="section-aside">
-                                              &lt;p class="h2-aside">Preparación&lt;/p>
-                                              &lt;ol class="ol-aside">
-                                                  &lt;li class="li-aside">
+                                          &lt;div class="site-content__section-aside">
+                                              &lt;p class="site-content__h2-aside">Preparación&lt;/p>
+                                              &lt;ol class="site-content__ol-aside">
+                                                  &lt;li class="site-content__li-aside">
                                                       Cortar la panceta en cubos pequeños
                                                   &lt;/li>
-                                                  &lt;li class="li-aside">
+                                                  &lt;li class="site-content__li-aside">
                                                       Dorar la panceta en una sartén
                                                   &lt;/li>
-                                                  &lt;li class="li-aside">
+                                                  &lt;li class="site-content__li-aside">
                                                       Cocinar los espaguetis al dente
                                                   &lt;/li>
-                                                  &lt;li class="li-aside">
+                                                  &lt;li class="site-content__li-aside">
                                                       Mezclar huevos y queso
                                                   &lt;/li>
-                                                  &lt;li class="li-aside">
+                                                  &lt;li class="site-content__li-aside">
                                                       Incorporar la pasta y la panceta
                                                   &lt;/li>
                                               &lt;/ol>
                                           &lt;/div>
 
-                                          &lt;div class="aside-aside">
-                                              &lt;p class="h3-aside">
-                                                  &lt;span class="emoji-aside">💡&lt;/span>Consejo del Chef
+                                          &lt;div class="site-content__aside-aside">
+                                              &lt;p class="site-content__h3-aside">
+                                                  &lt;span class="site-content__emoji-aside">💡&lt;/span>Consejo del Chef
                                               &lt;/p>
-                                              &lt;p class="p-aside">
+                                              &lt;p class="site-content__p-aside">
                                                   La auténtica carbonara romana NO lleva
                                                   crema. El secreto está en mezclar los huevos
                                                   fuera del fuego para crear una salsa cremosa
@@ -3758,9 +3758,9 @@
                                               &lt;/p>
                                           &lt;/div>
 
-                                          &lt;div class="section-aside">
-                                              &lt;p class="h2-aside">Origen de la Receta&lt;/p>
-                                              &lt;p class="p-aside">
+                                          &lt;div class="site-content__section-aside">
+                                              &lt;p class="site-content__h2-aside">Origen de la Receta&lt;/p>
+                                              &lt;p class="site-content__p-aside">
                                                   La carbonara es un plato tradicional de
                                                   Roma, con origen en la región de Lacio
                                                   durante la Segunda Guerra Mundial.
@@ -3773,7 +3773,7 @@
                             </pre>
                           <!-- código HTML -->
                         </div>
-                        <div class="ej-code-css col-lg-6 mb-3">
+                        <div class="code-example__css-panel col-lg-6 mb-3">
                           <!-- código CSS -->
                           <pre>
                                 <code class="language-css" data-prismjs-copy="Copy">
@@ -4122,7 +4122,7 @@
                     obligatorios y su contenido puede variar según la
                     necesidad del desarrollador.
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;header>
@@ -4334,7 +4334,7 @@
                     de estilo a
                     <code class="language-html">&lt;header></code>:
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-css" data-prismjs-copy="Copy">
                           header {
@@ -4354,25 +4354,25 @@
                   </h4>
                   <div class="row">
                     <!-- Ejemplo -->
-                    <div class="ej-ejemplo">
-                      <div class="row ej-ejecutado mt-3">
+                    <div class="code-example">
+                      <div class="row code-example__output mt-3">
                         <!-- código ejecutado -->
                         <div>
-                          <div class="ej-body-header">
-                            <header class="ej-header-header">
-                              <div class="ej-profile-intro-header">
+                          <div class="demo-header">
+                            <header class="demo-header__header">
+                              <div class="demo-header__profile-intro">
                                 <img src="https://imageplaceholder.net/150" alt="Foto de Eduardo Herrera Forero" />
                                 <div>
-                                  <p class="ej-h1-header">
+                                  <p class="demo-header__h1">
                                     Eduardo Herrera Forero
                                   </p>
-                                  <p class="ej-subtitle-header">
+                                  <p class="demo-header__subtitle">
                                     Desarrollador Web Full Stack
                                   </p>
                                 </div>
                               </div>
 
-                              <nav class="ej-nav-header">
+                              <nav class="demo-navigation__header">
                                 <ul>
                                   <li><a href="#sobre-mi">Sobre Mí</a></li>
                                   <li><a href="#proyectos">Proyectos</a></li>
@@ -4384,10 +4384,10 @@
                               </nav>
                             </header>
 
-                            <main class="ej-main-header">
-                              <section id="sobre-mi" class="ej-section-header">
-                                <p class="ej-h2-header">Sobre Mí</p>
-                                <p class="ej-p-header">
+                            <main class="demo-header__main">
+                              <section id="sobre-mi" class="demo-header__section">
+                                <p class="demo-header__h2">Sobre Mí</p>
+                                <p class="demo-header__p">
                                   Soy un desarrollador web apasionado por
                                   crear soluciones digitales innovadoras. Me
                                   especializo en tecnologías modernas y
@@ -4396,11 +4396,11 @@
                                 </p>
                               </section>
 
-                              <section id="proyectos" class="ej-section-header">
-                                <p class="ej-h2-header">
+                              <section id="proyectos" class="demo-header__section">
+                                <p class="demo-header__h2">
                                   Proyectos Destacados
                                 </p>
-                                <ul class="ej-projects-list-header">
+                                <ul class="demo-header__projects-list">
                                   <li>Aplicación de Gestión de Tareas</li>
                                   <li>Plataforma de E-learning</li>
                                   <li>Sistema de Reservas de Restaurantes</li>
@@ -4408,8 +4408,8 @@
                               </section>
                             </main>
 
-                            <footer class="ej-footer-header">
-                              <p class="ej-footer-text-header">
+                            <footer class="demo-header__footer">
+                              <p class="demo-header__footer-text">
                                 © 2024 Eduardo Herrera Forero. Todos los
                                 derechos reservados.
                               </p>
@@ -4419,22 +4419,22 @@
                         <!-- código ejecutado fin -->
                       </div>
                       <div class="row">
-                        <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                           <!-- código HTML -->
                           <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;div class="body-header">
-                                    &lt;header class="header-header">
-                                        &lt;div class="profile-intro-header">
+                                &lt;div class="site-content__body-header">
+                                    &lt;header class="site-content__header-header">
+                                        &lt;div class="site-content__profile-intro-header">
                                             &lt;img src="/api/placeholder/120/120" alt="Foto de Eduardo Herrera Forero">
                                             &lt;div>
-                                                &lt;p class="h1-header">Eduardo Herrera Forero&lt;/p>
-                                                &lt;p class="subtitle-header">Desarrollador Web Full Stack&lt;/p>
+                                                &lt;p class="site-content__h1-header">Eduardo Herrera Forero&lt;/p>
+                                                &lt;p class="site-content__subtitle-header">Desarrollador Web Full Stack&lt;/p>
                                             &lt;/div>
                                         &lt;/div>
 
-                                        &lt;nav class="nav-header">
+                                        &lt;nav class="site-content__nav-header">
                                             &lt;ul>
                                                 &lt;li>&lt;a href="#sobre-mi">Sobre Mí&lt;/a>&lt;/li>
                                                 &lt;li>&lt;a href="#proyectos">Proyectos&lt;/a>&lt;/li>
@@ -4444,15 +4444,15 @@
                                         &lt;/nav>
                                     &lt;/header>
 
-                                    &lt;main class="main-header">
-                                        &lt;section id="sobre-mi" class="section-header">
-                                            &lt;p class="h2-header">Sobre Mí&lt;/p>
-                                            &lt;p class="p-header">Soy un desarrollador web apasionado por crear soluciones digitales innovadoras. Me especializo en tecnologías modernas y siempre busco aprender nuevas herramientas para mejorar mis habilidades.&lt;/p>
+                                    &lt;main class="site-content__main-header">
+                                        &lt;section id="sobre-mi" class="site-content__section-header">
+                                            &lt;p class="site-content__h2-header">Sobre Mí&lt;/p>
+                                            &lt;p class="site-content__p-header">Soy un desarrollador web apasionado por crear soluciones digitales innovadoras. Me especializo en tecnologías modernas y siempre busco aprender nuevas herramientas para mejorar mis habilidades.&lt;/p>
                                         &lt;/section>
 
-                                        &lt;section id="proyectos" class="section-header">
-                                            &lt;p class="h2-header">Proyectos Destacados&lt;/p>
-                                            &lt;ul class="projects-list-header">
+                                        &lt;section id="proyectos" class="site-content__section-header">
+                                            &lt;p class="site-content__h2-header">Proyectos Destacados&lt;/p>
+                                            &lt;ul class="site-content__projects-list-header">
                                                 &lt;li>Aplicación de Gestión de Tareas&lt;/li>
                                                 &lt;li>Plataforma de E-learning&lt;/li>
                                                 &lt;li>Sistema de Reservas de Restaurantes&lt;/li>
@@ -4460,8 +4460,8 @@
                                         &lt;/section>
                                     &lt;/main>
 
-                                    &lt;footer class="footer-header">
-                                        &lt;p class="footer-text-header">© 2024 Eduardo Herrera Forero. Todos los derechos reservados.&lt;/p>
+                                    &lt;footer class="site-content__footer-header">
+                                        &lt;p class="site-content__footer-text-header">© 2024 Eduardo Herrera Forero. Todos los derechos reservados.&lt;/p>
                                     &lt;/footer>
                                 &lt;/div>
                               </div>
@@ -4469,7 +4469,7 @@
                           </pre>
                           <!-- código HTML -->
                         </div>
-                        <div class="ej-code-css col-lg-6 mb-3">
+                        <div class="code-example__css-panel col-lg-6 mb-3">
                           <!-- código CSS -->
                           <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
@@ -4702,7 +4702,7 @@
                       ocultar de los lectores de pantalla.
                     </li>
                   </ul>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;!DOCTYPE html>
@@ -4779,7 +4779,7 @@
                               &lt;/section>
 
                               &lt;!-- ✅ HEADER DECORATIVO con aria-hidden="true" --&gt;
-                              &lt;header class="decorativo" aria-hidden="true">
+                              &lt;header class="site-content__decorativo" aria-hidden="true">
                                   &lt;img src="banner.jpg" alt="Decoración">
                               &lt;/header>
 
@@ -4925,7 +4925,7 @@
                     Sintaxis Correcta
                     <code class="language-html">&lt;footer></code>
                   </h4>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;footer>
@@ -5160,7 +5160,7 @@
                     <code class="language-html">&lt;footer></code> con los
                     siguientes valores por defecto:
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-css" data-prismjs-copy="Copy">
                           footer {
@@ -5194,8 +5194,8 @@
                   </h4>
                   <div class="row">
                     <!-- Ejemplo -->
-                    <div class="ej-ejemplo">
-                      <div class="row ej-ejecutado mt-3">
+                    <div class="code-example">
+                      <div class="row code-example__output mt-3">
                         <!-- código ejecutado -->
                         <div>
                           <iframe src="./html-0004_cuerpo_footer_html.html" title="Etiqueta footer"></iframe>
@@ -5203,87 +5203,87 @@
                         <!-- código ejecutado fin -->
                       </div>
                       <div class="row">
-                        <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                           <!-- código HTML -->
                           <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>    
-                                &lt;nav class="navbar-horizontal">
-                                  &lt;div class="navbar-content">
+                                &lt;nav class="site-content__navbar-horizontal">
+                                  &lt;div class="site-content__navbar-content">
                                     &lt;div class="navbar-brand">Mi Sitio&lt;/div>
-                                    &lt;ul class="navbar-menu">
-                                      &lt;li>&lt;a href="#" class="navbar-item">Inicio&lt;/a>&lt;/li>
-                                      &lt;li>&lt;a href="#" class="navbar-item">Acerca de&lt;/a>&lt;/li>
-                                      &lt;li>&lt;a href="#" class="navbar-item">Servicios&lt;/a>&lt;/li>
-                                      &lt;li>&lt;a href="#" class="navbar-item">Blog&lt;/a>&lt;/li>
-                                      &lt;li>&lt;a href="#" class="navbar-item">Contacto&lt;/a>&lt;/li>
+                                    &lt;ul class="site-content__navbar-menu">
+                                      &lt;li>&lt;a href="#" class="site-content__navbar-item">Inicio&lt;/a>&lt;/li>
+                                      &lt;li>&lt;a href="#" class="site-content__navbar-item">Acerca de&lt;/a>&lt;/li>
+                                      &lt;li>&lt;a href="#" class="site-content__navbar-item">Servicios&lt;/a>&lt;/li>
+                                      &lt;li>&lt;a href="#" class="site-content__navbar-item">Blog&lt;/a>&lt;/li>
+                                      &lt;li>&lt;a href="#" class="site-content__navbar-item">Contacto&lt;/a>&lt;/li>
                                     &lt;/ul>
                                   &lt;/div>
                                 &lt;/nav>
 
-                                &lt;div class="container-principal">
-                                  &lt;main class="main-content">
-                                    &lt;h1 class="main-title">Contenido Principal&lt;/h1>
-                                    &lt;p class="main-text">
+                                &lt;div class="site-content__container-principal">
+                                  &lt;main class="site-content__main-content">
+                                    &lt;h1 class="site-content__main-title">Contenido Principal&lt;/h1>
+                                    &lt;p class="site-content__main-text">
                                       Este es el contenido principal de la página. Aquí puedes agregar
                                       artículos, información importante o cualquier contenido que necesites
                                       mostrar. El diseño está optimizado para que el footer sea el
                                       protagonista visual.
                                     &lt;/p>
-                                    &lt;p class="main-text">
+                                    &lt;p class="site-content__main-text">
                                       El contenido principal mantiene una opacidad reducida para no competir
                                       con el footer, pero sigue siendo completamente legible y funcional.
                                     &lt;/p>
-                                    &lt;p class="main-text">
+                                    &lt;p class="site-content__main-text">
                                       Puedes agregar más secciones, imágenes, formularios o cualquier
                                       elemento que necesites para tu proyecto específico.
                                     &lt;/p>
                                   &lt;/main>
 
-                                  &lt;aside class="aside-sidebar">
-                                    &lt;h2 class="aside-title">Información Adicional&lt;/h2>
-                                    &lt;div class="aside-item">Noticias recientes&lt;/div>
-                                    &lt;div class="aside-item">Eventos próximos&lt;/div>
-                                    &lt;div class="aside-item">Enlaces útiles&lt;/div>
-                                    &lt;div class="aside-item">Recursos&lt;/div>
-                                    &lt;div class="aside-item">Documentos&lt;/div>
+                                  &lt;aside class="site-content__aside-sidebar">
+                                    &lt;h2 class="site-content__aside-title">Información Adicional&lt;/h2>
+                                    &lt;div class="site-content__aside-item">Noticias recientes&lt;/div>
+                                    &lt;div class="site-content__aside-item">Eventos próximos&lt;/div>
+                                    &lt;div class="site-content__aside-item">Enlaces útiles&lt;/div>
+                                    &lt;div class="site-content__aside-item">Recursos&lt;/div>
+                                    &lt;div class="site-content__aside-item">Documentos&lt;/div>
                                   &lt;/aside>
                                 &lt;/div>
 
-                                &lt;footer class="hero-footer">
-                                  &lt;div class="footer-content">
-                                    &lt;h2 class="footer-title">FOOTER PROTAGONISTA&lt;/h2>
-                                    &lt;p class="footer-subtitle">
+                                &lt;footer class="site-content__hero-footer">
+                                  &lt;div class="site-content__footer-content">
+                                    &lt;h2 class="site-content__footer-title">FOOTER PROTAGONISTA&lt;/h2>
+                                    &lt;p class="site-content__footer-subtitle">
                                       El elemento más importante de esta plantilla
                                     &lt;/p>
 
-                                    &lt;div class="footer-grid">
-                                      &lt;div class="footer-section">
-                                        &lt;h3 class="footer-section-title">Empresa&lt;/h3>
-                                        &lt;a href="#" class="footer-link">Acerca de nosotros&lt;/a>
-                                        &lt;a href="#" class="footer-link">Nuestro equipo&lt;/a>
-                                        &lt;a href="#" class="footer-link">Carreras&lt;/a>
-                                        &lt;a href="#" class="footer-link">Contacto&lt;/a>
+                                    &lt;div class="site-content__footer-grid">
+                                      &lt;div class="site-content__footer-section">
+                                        &lt;h3 class="site-content__footer-section-title">Empresa&lt;/h3>
+                                        &lt;a href="#" class="site-content__footer-link">Acerca de nosotros&lt;/a>
+                                        &lt;a href="#" class="site-content__footer-link">Nuestro equipo&lt;/a>
+                                        &lt;a href="#" class="site-content__footer-link">Carreras&lt;/a>
+                                        &lt;a href="#" class="site-content__footer-link">Contacto&lt;/a>
                                       &lt;/div>
 
-                                      &lt;div class="footer-section">
-                                        &lt;h3 class="footer-section-title">Servicios&lt;/h3>
-                                        &lt;a href="#" class="footer-link">Desarrollo Web&lt;/a>
-                                        &lt;a href="#" class="footer-link">Diseño UX/UI&lt;/a>
-                                        &lt;a href="#" class="footer-link">Consultoría&lt;/a>
-                                        &lt;a href="#" class="footer-link">Soporte técnico&lt;/a>
+                                      &lt;div class="site-content__footer-section">
+                                        &lt;h3 class="site-content__footer-section-title">Servicios&lt;/h3>
+                                        &lt;a href="#" class="site-content__footer-link">Desarrollo Web&lt;/a>
+                                        &lt;a href="#" class="site-content__footer-link">Diseño UX/UI&lt;/a>
+                                        &lt;a href="#" class="site-content__footer-link">Consultoría&lt;/a>
+                                        &lt;a href="#" class="site-content__footer-link">Soporte técnico&lt;/a>
                                       &lt;/div>
 
-                                      &lt;div class="footer-section">
-                                        &lt;h3 class="footer-section-title">Redes Sociales&lt;/h3>
-                                        &lt;a href="#" class="footer-link">Twitter&lt;/a>
-                                        &lt;a href="#" class="footer-link">LinkedIn&lt;/a>
-                                        &lt;a href="#" class="footer-link">GitHub&lt;/a>
-                                        &lt;a href="#" class="footer-link">Instagram&lt;/a>
+                                      &lt;div class="site-content__footer-section">
+                                        &lt;h3 class="site-content__footer-section-title">Redes Sociales&lt;/h3>
+                                        &lt;a href="#" class="site-content__footer-link">Twitter&lt;/a>
+                                        &lt;a href="#" class="site-content__footer-link">LinkedIn&lt;/a>
+                                        &lt;a href="#" class="site-content__footer-link">GitHub&lt;/a>
+                                        &lt;a href="#" class="site-content__footer-link">Instagram&lt;/a>
                                       &lt;/div>
                                     &lt;/div>
 
-                                    &lt;div class="footer-bottom">
+                                    &lt;div class="site-content__footer-bottom">
                                       &lt;p>© 2025 Tu Empresa. Todos los derechos reservados.&lt;/p>
                                     &lt;/div>
                                   &lt;/div>
@@ -5293,7 +5293,7 @@
                           </pre>
                           <!-- código HTML -->
                         </div>
-                        <div class="ej-code-css col-lg-6 mb-3">
+                        <div class="code-example__css-panel col-lg-6 mb-3">
                           <!-- código CSS -->
                           <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
@@ -5621,7 +5621,7 @@
                     mayor accesibilidad, se pueden aplicar ciertos roles y
                     atributos ARIA.
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;footer role="contentinfo" aria-labelledby="footer-title">
@@ -5734,7 +5734,7 @@
                     Sintaxis Correcta
                     <code class="language-html">&lt;figure></code>
                   </h4>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;figure>
@@ -5757,7 +5757,7 @@
                     <code class="language-html">&lt;picture></code> con
                     Imagen:
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;figure>
@@ -5772,7 +5772,7 @@
                     Múltiples Imágenes: Se usa para ilustraciones comparativas
                     o secuencias de imágenes:
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;figure>
@@ -5786,7 +5786,7 @@
                   <p>
                     <code class="language-html">&lt;picture></code> con Video:
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;figure>
@@ -5801,7 +5801,7 @@
                   <p>
                     <code class="language-html">&lt;picture></code> con Audio:
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;figure>
@@ -5817,7 +5817,7 @@
                     <code class="language-html">&lt;picture></code> con
                     Diagrama o Ilustración SVG:
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;figure>
@@ -5833,7 +5833,7 @@
                     <code class="language-html">&lt;picture></code> con
                     Código:
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;figure>
@@ -5853,7 +5853,7 @@
                     <code class="language-html">&lt;picture></code> sin
                     Leyenda (Opcional):
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" s tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;figure>
@@ -5866,7 +5866,7 @@
                     <code class="language-html">&lt;picture></code> con
                     Imágenes Adaptativas:
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;figure>
@@ -5984,7 +5984,7 @@
                     <code class="language-html">&lt;picture></code> para
                     Diferentes Tamaños de Pantalla:
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;figure>
@@ -6238,7 +6238,7 @@
                     navegador, pero generalmente incluye los siguientes
                     estilos predeterminados:
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-css" data-prismjs-copy="Copy">
                           figure {
@@ -6264,16 +6264,16 @@
                   </h4>
                   <div class="row">
                     <!-- Ejemplo -->
-                    <div class="ej-ejemplo">
-                      <div class="row ej-ejecutado mt-3">
+                    <div class="code-example">
+                      <div class="row code-example__output mt-3">
                         <!-- código ejecutado -->
                         <div>
-                          <p class="ej-h1-fig">Amanecer</p>
-                          <figure class="ej-figure-fig">
+                          <p class="demo-fig__h1">Amanecer</p>
+                          <figure class="demo-fig__figure">
                             <img
                               src="https://www.gratistodo.com/wp-content/uploads/2016/07/atardecer-en-la-playa-con-pisada-en-la-arena.jpg"
-                              alt="Hermoso paisaje al atardecer" class="ej-img-fig" />
-                            <figcaption class="ej-figcaption-fig">
+                              alt="Hermoso paisaje al atardecer" class="demo-fig__img" />
+                            <figcaption class="demo-fig__figcaption">
                               Atardecer en la montaña - Fotografía de John Doe
                             </figcaption>
                           </figure>
@@ -6281,23 +6281,23 @@
                         <!-- código ejecutado fin -->
                       </div>
                       <div class="row">
-                        <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                           <!-- código HTML -->
                           <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;p class="h1-fig">Amanecer&lt;/p>
+                                &lt;p class="site-content__h1-fig">Amanecer&lt;/p>
 
-                                &lt;figure class="figure-fig">
-                                  &lt;img src="https://www.gratistodo.com/wp-content/uploads/2016/07/atardecer-en-la-playa-con-pisada-en-la-arena.jpg" alt="Hermoso paisaje al atardecer" class="img-fig">
-                                  &lt;figcaption class="figcaption-fig">Atardecer en la montaña - Fotografía de John Doe&lt;/figcaption>
+                                &lt;figure class="site-content__figure-fig">
+                                  &lt;img src="https://www.gratistodo.com/wp-content/uploads/2016/07/atardecer-en-la-playa-con-pisada-en-la-arena.jpg" alt="Hermoso paisaje al atardecer" class="site-content__img-fig">
+                                  &lt;figcaption class="site-content__figcaption-fig">Atardecer en la montaña - Fotografía de John Doe&lt;/figcaption>
                                 &lt;/figure>                               
                               </div>        
                             </code>
                           </pre>
                           <!-- código HTML -->
                         </div>
-                        <div class="ej-code-css col-lg-6 mb-3">
+                        <div class="code-example__css-panel col-lg-6 mb-3">
                           <!-- código CSS -->
                           <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
@@ -6377,7 +6377,7 @@
                     semánticos, se pueden agregar atributos ARIA para mayor
                     compatibilidad con lectores de pantalla.
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;figure role="group" aria-labelledby="descripcion-imagen">
@@ -6482,7 +6482,7 @@
                     <code class="language-html">&lt;details></code> es la
                     siguiente:
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;details>
@@ -6665,7 +6665,7 @@
                       Estilos predeterminados de
                       <code class="language-html">&lt;details></code>:
                       <ul>
-                        <div class="ej-sintaxis">
+                        <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                             <code class="language-css" data-prismjs-copy="Copy">
                               details {
@@ -6687,7 +6687,7 @@
                       Estilos predeterminados de
                       <code class="language-html">&lt;summary></code>:
                       <ul>
-                        <div class="ej-sintaxis">
+                        <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                             <code class="language-css" data-prismjs-copy="Copy">
                               summary {
@@ -6736,41 +6736,41 @@
                   </h4>
                   <div class="row">
                     <!-- Ejemplo -->
-                    <div class="ej-ejemplo">
-                      <div class="row ej-ejecutado mt-3">
+                    <div class="code-example">
+                      <div class="row code-example__output mt-3">
                         <!-- código ejecutado -->
                         <div>
-                          <div class="ej-container-det">
-                            <p class="ej-h2-det">
+                          <div class="demo-det__container">
+                            <p class="demo-det__h2">
                               Preguntas Frecuentes (FAQ)
                             </p>
 
-                            <details class="ej-details-det">
-                              <summary class="ej-summary-det">
+                            <details class="demo-det__details">
+                              <summary class="demo-det__summary">
                                 ¿Cómo puedo contactar con soporte?
                               </summary>
-                              <p class="ej-p-det">
+                              <p class="demo-det__p">
                                 Puedes contactarnos enviando un correo a
                                 soporte@ejemplo.com o llamando al +123 456
                                 789.
                               </p>
                             </details>
 
-                            <details class="ej-details-det">
-                              <summary class="ej-summary-det">
+                            <details class="demo-det__details">
+                              <summary class="demo-det__summary">
                                 ¿Cuáles son los métodos de pago aceptados?
                               </summary>
-                              <p class="ej-p-det">
+                              <p class="demo-det__p">
                                 Aceptamos tarjetas de crédito, PayPal y
                                 transferencias bancarias.
                               </p>
                             </details>
 
-                            <details class="ej-details-det">
-                              <summary class="ej-summary-det">
+                            <details class="demo-det__details">
+                              <summary class="demo-det__summary">
                                 ¿Cuánto tarda el envío?
                               </summary>
-                              <p class="ej-p-det">
+                              <p class="demo-det__p">
                                 Los envíos nacionales tardan entre 3 y 5 días
                                 hábiles, mientras que los internacionales
                                 pueden tardar hasta 10 días.
@@ -6781,27 +6781,27 @@
                         <!-- código ejecutado fin -->
                       </div>
                       <div class="row">
-                        <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                           <!-- código HTML -->
                           <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;div class="container-det">
-                                    &lt;p class="h2-det">Preguntas Frecuentes (FAQ)&lt;/p>
+                                &lt;div class="site-content__container-det">
+                                    &lt;p class="site-content__h2-det">Preguntas Frecuentes (FAQ)&lt;/p>
 
-                                    &lt;details class="details-det">
-                                        &lt;summary class="summary-det">¿Cómo puedo contactar con soporte?&lt;/summary>
-                                        &lt;p class="p-det">Puedes contactarnos enviando un correo a soporte@ejemplo.com o llamando al +123 456 789.&lt;/p>
+                                    &lt;details class="site-content__details-det">
+                                        &lt;summary class="site-content__summary-det">¿Cómo puedo contactar con soporte?&lt;/summary>
+                                        &lt;p class="site-content__p-det">Puedes contactarnos enviando un correo a soporte@ejemplo.com o llamando al +123 456 789.&lt;/p>
                                     &lt;/details>
 
-                                    &lt;details class="details-det">
-                                        &lt;summary class="summary-det">¿Cuáles son los métodos de pago aceptados?&lt;/summary>
-                                        &lt;p class="p-det">Aceptamos tarjetas de crédito, PayPal y transferencias bancarias.&lt;/p>
+                                    &lt;details class="site-content__details-det">
+                                        &lt;summary class="site-content__summary-det">¿Cuáles son los métodos de pago aceptados?&lt;/summary>
+                                        &lt;p class="site-content__p-det">Aceptamos tarjetas de crédito, PayPal y transferencias bancarias.&lt;/p>
                                     &lt;/details>
 
-                                    &lt;details class="details-det">
-                                        &lt;summary class="summary-det">¿Cuánto tarda el envío?&lt;/summary>
-                                        &lt;p class="p-det">Los envíos nacionales tardan entre 3 y 5 días hábiles, mientras que los internacionales
+                                    &lt;details class="site-content__details-det">
+                                        &lt;summary class="site-content__summary-det">¿Cuánto tarda el envío?&lt;/summary>
+                                        &lt;p class="site-content__p-det">Los envíos nacionales tardan entre 3 y 5 días hábiles, mientras que los internacionales
                                             pueden tardar hasta 10 días.&lt;/p>
                                     &lt;/details>
                                 &lt;/div>                                
@@ -6810,7 +6810,7 @@
                           </pre>
                           <!-- código HTML -->
                         </div>
-                        <div class="ej-code-css col-lg-6 mb-3">
+                        <div class="code-example__css-panel col-lg-6 mb-3">
                           <!-- código CSS -->
                           <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
@@ -6998,7 +6998,7 @@
                     accesibilidad.
                   </p>
                   <p>Estados ARIA para mejorar la accesibilidad:</p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;!DOCTYPE html>
@@ -7185,7 +7185,7 @@
                     <code class="language-html">&lt;mark></code> es la
                     siguiente:
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;p>Este es un &lt;mark>texto resaltado&lt;/mark> en un párrafo.&lt;/p>
@@ -7370,7 +7370,7 @@
                     Configuración CSS por Defecto
                     <code class="language-html">&lt;mark></code>
                   </h4>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                       <code class="language-css" data-prismjs-copy="Copy">
                         mark {
@@ -7407,44 +7407,44 @@
                   </h4>
                   <div class="row">
                     <!-- Ejemplo -->
-                    <div class="ej-ejemplo">
-                      <div class="row ej-ejecutado mt-3">
+                    <div class="code-example">
+                      <div class="row code-example__output mt-3">
                         <!-- código ejecutado -->
-                        <div class="ej-container-footer">
-                          <main class="ej-main-footer">
-                            <p class="ej-h2-footer">
+                        <div class="demo-footer__container">
+                          <main class="demo-footer__main">
+                            <p class="demo-footer__h2">
                               Artículo sobre Desarrollo Web
                             </p>
-                            <p class="ej-paragraph-footer">
+                            <p class="demo-footer__paragraph">
                               El lenguaje
-                              <mark class="ej-mark-footer">HTML</mark> es
+                              <mark class="demo-footer__mark">HTML</mark> es
                               fundamental para la creación de páginas web.
                             </p>
-                            <p class="ej-paragraph-footer">
+                            <p class="demo-footer__paragraph">
                               Junto con CSS y JavaScript,
-                              <mark class="ej-mark-footer">HTML</mark> permite
+                              <mark class="demo-footer__mark">HTML</mark> permite
                               estructurar y diseñar sitios web.
                             </p>
                           </main>
 
-                          <footer class="ej-footer-footer">
-                            <div class="ej-footer-content-footer">
-                              <p class="ej-footer-title-footer">
+                          <footer class="demo-footer__footer">
+                            <div class="demo-footer__footer-content">
+                              <p class="demo-footer__footer-title">
                                 Desarrollo Web Moderno
                               </p>
-                              <p class="ej-footer-text-footer">
+                              <p class="demo-footer__footer-text">
                                 Explora el fascinante mundo del desarrollo web
                                 con
-                                <span class="ej-footer-highlight-footer">HTML5</span>,
-                                <span class="ej-footer-highlight-footer">CSS3</span>
+                                <span class="demo-footer__footer-highlight">HTML5</span>,
+                                <span class="demo-footer__footer-highlight">CSS3</span>
                                 y
-                                <span class="ej-footer-highlight-footer">JavaScript</span>. Crea experiencias digitales
+                                <span class="demo-footer__footer-highlight">JavaScript</span>. Crea experiencias digitales
                                 increíbles.
                               </p>
-                              <div class="ej-footer-links-footer">
-                                <a href="#" class="ej-footer-link-footer">Tutoriales</a>
-                                <a href="#" class="ej-footer-link-footer">Recursos</a>
-                                <a href="#" class="ej-footer-link-footer">Comunidad</a>
+                              <div class="demo-footer__footer-links">
+                                <a href="#" class="demo-footer__footer-link">Tutoriales</a>
+                                <a href="#" class="demo-footer__footer-link">Recursos</a>
+                                <a href="#" class="demo-footer__footer-link">Comunidad</a>
                               </div>
                             </div>
                           </footer>
@@ -7452,39 +7452,39 @@
                         <!-- código ejecutado fin -->
                       </div>
                       <div class="row">
-                        <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                           <!-- código HTML -->
                           <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;div class="container-footer">
-                                  &lt;main class="main-footer">
-                                      &lt;p class="h2-footer">Artículo sobre Desarrollo Web&lt;/p>
-                                      &lt;p class="paragraph-footer">
-                                          El lenguaje &lt;mark class="mark-footer">HTML&lt;/mark> es fundamental para
+                                &lt;div class="site-content__container-footer">
+                                  &lt;main class="site-content__main-footer">
+                                      &lt;p class="site-content__h2-footer">Artículo sobre Desarrollo Web&lt;/p>
+                                      &lt;p class="site-content__paragraph-footer">
+                                          El lenguaje &lt;mark class="site-content__mark-footer">HTML&lt;/mark> es fundamental para
                                           la creación de páginas web.
                                       &lt;/p>
-                                      &lt;p class="paragraph-footer">
+                                      &lt;p class="site-content__paragraph-footer">
                                           Junto con CSS y JavaScript,
-                                          &lt;mark class="mark-footer">HTML&lt;/mark> permite estructurar y diseñar
+                                          &lt;mark class="site-content__mark-footer">HTML&lt;/mark> permite estructurar y diseñar
                                           sitios web.
                                       &lt;/p>
                                   &lt;/main>
 
-                                  &lt;footer class="footer-footer">
-                                      &lt;div class="footer-content-footer">
-                                          &lt;p class="footer-title-footer">Desarrollo Web Moderno&lt;/p>
-                                          &lt;p class="footer-text-footer">
+                                  &lt;footer class="site-content__footer-footer">
+                                      &lt;div class="site-content__footer-content-footer">
+                                          &lt;p class="site-content__footer-title-footer">Desarrollo Web Moderno&lt;/p>
+                                          &lt;p class="site-content__footer-text-footer">
                                               Explora el fascinante mundo del desarrollo web con 
-                                              &lt;span class="footer-highlight-footer">HTML5&lt;/span>, 
-                                              &lt;span class="footer-highlight-footer">CSS3&lt;/span> y 
-                                              &lt;span class="footer-highlight-footer">JavaScript&lt;/span>.
+                                              &lt;span class="site-content__footer-highlight-footer">HTML5&lt;/span>,
+                                              &lt;span class="site-content__footer-highlight-footer">CSS3&lt;/span> y
+                                              &lt;span class="site-content__footer-highlight-footer">JavaScript&lt;/span>.
                                               Crea experiencias digitales increíbles.
                                           &lt;/p>
-                                          &lt;div class="footer-links-footer">
-                                              &lt;a href="#" class="footer-link-footer">Tutoriales&lt;/a>
-                                              &lt;a href="#" class="footer-link-footer">Recursos&lt;/a>
-                                              &lt;a href="#" class="footer-link-footer">Comunidad&lt;/a>
+                                          &lt;div class="site-content__footer-links-footer">
+                                              &lt;a href="#" class="site-content__footer-link-footer">Tutoriales&lt;/a>
+                                              &lt;a href="#" class="site-content__footer-link-footer">Recursos&lt;/a>
+                                              &lt;a href="#" class="site-content__footer-link-footer">Comunidad&lt;/a>
                                           &lt;/div>
                                       &lt;/div>
                                   &lt;/footer>
@@ -7494,7 +7494,7 @@
                           </pre>
                           <!-- código HTML -->
                         </div>
-                        <div class="ej-code-css col-lg-6 mb-3">
+                        <div class="code-example__css-panel col-lg-6 mb-3">
                           <!-- código CSS -->
                           <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
@@ -7742,7 +7742,7 @@
                       adecuado para asegurar la legibilidad del texto marcado.
                     </li>
                   </ul>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;!DOCTYPE html>
@@ -7843,7 +7843,7 @@
                     Sintaxis Correcta
                     <code class="language-html">&lt;mark></code>
                   </h4>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;time datetime="2025-03-29">29 de marzo de 2025&lt;/time>
@@ -7869,7 +7869,7 @@
                   <ul>
                     <li>
                       <b>Fecha y Hora (Año-Mes-DíaTHH:MM)</b>:
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" data-prismjs-copy="Copy">
                               &lt;time datetime="2025-09-15T09:00">15 de septiembre de 2025 a las 9:00 AM&lt;/time>
@@ -7882,7 +7882,7 @@
                     <li>
                       <b>Fecha, Hora y Zona Horaria
                         (Año-Mes-DíaTHH:MM±HH:MM)</b>:
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;time datetime="2025-09-15T09:00-05:00">15 de septiembre de 2025, 9:00 AM (GMT-5)&lt;/time> <br/>
@@ -7894,7 +7894,7 @@
                     </li>
                     <li>
                       <b>Solo la Hora (HH:MM)</b>:
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;time datetime="14:30">2:30 PM&lt;/time>
@@ -7907,7 +7907,7 @@
                     </li>
                     <li>
                       <b>Año y Mes (Año-Mes)</b>:
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" data-prismjs-copy="Copy">
                               &lt;time datetime="2025-07">julio de 2025&lt;/time>
@@ -7920,7 +7920,7 @@
                     </li>
                     <li>
                       <b>Solo el Año (YYYY)</b>:
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" data-prismjs-copy="Copy">
                               &lt;time datetime="2023">2023&lt;/time>
@@ -7932,7 +7932,7 @@
                     </li>
                     <li>
                       <b>Solo el Mes y Día (MM-DD)</b>:
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" data-prismjs-copy="Copy">
                               &lt;time datetime="12-25">25 de diciembre&lt;/time>
@@ -7945,7 +7945,7 @@
                     </li>
                     <li>
                       <b>Solo la Duración (P[n]Y[n]M[n]DT[n]H[n]M[n]S)</b>:
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" data-prismjs-copy="Copy">
                               &lt;time datetime="P2DT3H30M">2 días, 3 horas y 30 minutos&lt;/time>
@@ -8093,7 +8093,7 @@
                     la de un elemento en línea (inline). Sin embargo, su
                     configuración CSS predeterminada es la siguiente:
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-css" data-prismjs-copy="Copy">
                           time {
@@ -8121,51 +8121,51 @@
                   </p>
                   <div class="row">
                     <!-- Ejemplo -->
-                    <div class="ej-ejemplo">
-                      <div class="row ej-ejecutado mt-3">
+                    <div class="code-example">
+                      <div class="row code-example__output mt-3">
                         <!-- código ejecutado -->
                         <div>
-                          <div class="ej-body-time">
-                            <div class="ej-container-time">
-                              <p class="ej-h1-time">Conferencia Tech 2025</p>
-                              <p class="ej-subtitle-time">
+                          <div class="demo-time">
+                            <div class="demo-time__container">
+                              <p class="demo-time__h1">Conferencia Tech 2025</p>
+                              <p class="demo-time__subtitle">
                                 Explora las últimas innovaciones en tecnología
                                 y desarrollo.
                               </p>
 
-                              <div class="ej-event-details-time">
-                                <p class="ej-h2-time">Detalles del Evento</p>
-                                <p class="ej-detail-time">
-                                  <span class="ej-emoji-time">📅</span>
+                              <div class="demo-time__event-details">
+                                <p class="demo-time__h2">Detalles del Evento</p>
+                                <p class="demo-time__detail">
+                                  <span class="demo-time__emoji">📅</span>
                                   Fecha del evento:
-                                  <time datetime="2025-09-15" class="ej-time-time">15 de septiembre de 2025</time>
+                                  <time datetime="2025-09-15" class="demo-time__time">15 de septiembre de 2025</time>
                                 </p>
-                                <p class="ej-detail-time">
-                                  <span class="ej-emoji-time">⏰</span>
+                                <p class="demo-time__detail">
+                                  <span class="demo-time__emoji">⏰</span>
                                   Hora de inicio:
-                                  <time datetime="2025-09-15T09:00" class="ej-time-time">9:00 AM</time>
+                                  <time datetime="2025-09-15T09:00" class="demo-time__time">9:00 AM</time>
                                 </p>
-                                <p class="ej-detail-time">
-                                  <span class="ej-emoji-time">🕒</span>
+                                <p class="demo-time__detail">
+                                  <span class="demo-time__emoji">🕒</span>
                                   Duración estimada:
-                                  <time datetime="03:30" class="ej-time-time">3 horas y 30 minutos</time>
+                                  <time datetime="03:30" class="demo-time__time">3 horas y 30 minutos</time>
                                 </p>
-                                <p class="ej-detail-time">
-                                  <span class="ej-emoji-time">📅</span>
+                                <p class="demo-time__detail">
+                                  <span class="demo-time__emoji">📅</span>
                                   Inscripciones abiertas desde:
-                                  <time datetime="2025-07" class="ej-time-time">julio de 2025</time>
+                                  <time datetime="2025-07" class="demo-time__time">julio de 2025</time>
                                 </p>
-                                <p class="ej-detail-time">
-                                  <span class="ej-emoji-time">🏆</span>
+                                <p class="demo-time__detail">
+                                  <span class="demo-time__emoji">🏆</span>
                                   Última edición:
-                                  <time datetime="2023" class="ej-time-time">2023</time>
+                                  <time datetime="2023" class="demo-time__time">2023</time>
                                 </p>
                               </div>
 
-                              <div class="ej-footer-time">
+                              <div class="demo-time__footer">
                                 <p>
                                   ©
-                                  <time datetime="2025" class="ej-time-time">2025</time>
+                                  <time datetime="2025" class="demo-time__time">2025</time>
                                   Conferencia Tech. Todos los derechos
                                   reservados.
                                 </p>
@@ -8176,42 +8176,42 @@
                         <!-- código ejecutado fin -->
                       </div>
                       <div class="row">
-                        <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                           <!-- código HTML -->
                           <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;div class="body-time">
-                                    &lt;div class="container-time">
-                                        &lt;p class="h1-time">Conferencia Tech 2025&lt;/p>
-                                        &lt;p class="subtitle-time">Explora las últimas innovaciones en tecnología y desarrollo.&lt;/p>
+                                &lt;div class="site-content__body-time">
+                                    &lt;div class="site-content__container-time">
+                                        &lt;p class="site-content__h1-time">Conferencia Tech 2025&lt;/p>
+                                        &lt;p class="site-content__subtitle-time">Explora las últimas innovaciones en tecnología y desarrollo.&lt;/p>
 
-                                        &lt;div class="event-details-time">
-                                            &lt;p class="h2-time">Detalles del Evento&lt;/p>
-                                            &lt;p class="detail-time">
-                                                &lt;span class="emoji-time">📅&lt;/span>
-                                                Fecha del evento: &lt;time datetime="2025-09-15" class="time-time">15 de septiembre de 2025&lt;/time>
+                                        &lt;div class="site-content__event-details-time">
+                                            &lt;p class="site-content__h2-time">Detalles del Evento&lt;/p>
+                                            &lt;p class="site-content__detail-time">
+                                                &lt;span class="site-content__emoji-time">📅&lt;/span>
+                                                Fecha del evento: &lt;time datetime="2025-09-15" class="site-content__time-time">15 de septiembre de 2025&lt;/time>
                                             &lt;/p>
-                                            &lt;p class="detail-time">
-                                                &lt;span class="emoji-time">⏰&lt;/span>
-                                                Hora de inicio: &lt;time datetime="2025-09-15T09:00" class="time-time">9:00 AM&lt;/time>
+                                            &lt;p class="site-content__detail-time">
+                                                &lt;span class="site-content__emoji-time">⏰&lt;/span>
+                                                Hora de inicio: &lt;time datetime="2025-09-15T09:00" class="site-content__time-time">9:00 AM&lt;/time>
                                             &lt;/p>
-                                            &lt;p class="detail-time">
-                                                &lt;span class="emoji-time">🕒&lt;/span>
-                                                Duración estimada: &lt;time datetime="03:30" class="time-time">3 horas y 30 minutos&lt;/time>
+                                            &lt;p class="site-content__detail-time">
+                                                &lt;span class="site-content__emoji-time">🕒&lt;/span>
+                                                Duración estimada: &lt;time datetime="03:30" class="site-content__time-time">3 horas y 30 minutos&lt;/time>
                                             &lt;/p>
-                                            &lt;p class="detail-time">
-                                                &lt;span class="emoji-time">📅&lt;/span>
-                                                Inscripciones abiertas desde: &lt;time datetime="2025-07" class="time-time">julio de 2025&lt;/time>
+                                            &lt;p class="site-content__detail-time">
+                                                &lt;span class="site-content__emoji-time">📅&lt;/span>
+                                                Inscripciones abiertas desde: &lt;time datetime="2025-07" class="site-content__time-time">julio de 2025&lt;/time>
                                             &lt;/p>
-                                            &lt;p class="detail-time">
-                                                &lt;span class="emoji-time">🏆&lt;/span>
-                                                Última edición: &lt;time datetime="2023" class="time-time">2023&lt;/time>
+                                            &lt;p class="site-content__detail-time">
+                                                &lt;span class="site-content__emoji-time">🏆&lt;/span>
+                                                Última edición: &lt;time datetime="2023" class="site-content__time-time">2023&lt;/time>
                                             &lt;/p>
                                         &lt;/div>
 
-                                        &lt;div class="footer-time">
-                                            &lt;p>© &lt;time datetime="2025" class="time-time">2025&lt;/time> Conferencia Tech. Todos los derechos reservados.
+                                        &lt;div class="site-content__footer-time">
+                                            &lt;p>© &lt;time datetime="2025" class="site-content__time-time">2025&lt;/time> Conferencia Tech. Todos los derechos reservados.
                                             &lt;/p>
                                         &lt;/div>
                                     &lt;/div>
@@ -8221,7 +8221,7 @@
                           </pre>
                           <!-- código HTML -->
                         </div>
-                        <div class="ej-code-css col-lg-6 mb-3">
+                        <div class="code-example__css-panel col-lg-6 mb-3">
                           <!-- código CSS -->
                           <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
@@ -8423,7 +8423,7 @@
                         usar
                         <code class="language-html">aria-label</code> para
                         proporcionar una lectura más clara.
-                        <div class="ej-sintaxis">
+                        <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-html" data-prismjs-copy="Copy">
                                 &lt;time datetime="2025-09-15" aria-label="15 de septiembre de 2025">
@@ -8443,7 +8443,7 @@
 
                         <code class="language-html">aria-live</code> para
                         notificar el cambio.
-                        <div class="ej-sintaxis">
+                        <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-html" data-prismjs-copy="Copy">
                                 &lt;p>
@@ -8465,7 +8465,7 @@
                         <code class="language-html">role="presentation"</code>
                         para evitar que los lectores de pantalla lo procesen
                         innecesariamente.
-                        <div class="ej-sintaxis">
+                        <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-html" data-prismjs-copy="Copy">
                                 &lt;time datetime="2025-12-31" role="presentation">31/12/2025&lt;/time>
@@ -8490,7 +8490,7 @@
                   Etiqueta HTML <code class="language-html">&lt;hr></code>:
                   Regla Horizontal
                 </h3>
-                <span class="titulo text-blink-yellow">Nuevo</span>
+                <span class="site-title site-text--blinking site-text">Nuevo</span>
                 <!-- Definición <hr> -->
                 <div>
                   <h4>
@@ -8702,7 +8702,7 @@
                     Los navegadores aplican por defecto un estilo similar a
                     este:
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-css" data-prismjs-copy="Copy">
                           hr {
@@ -8735,30 +8735,30 @@
                   </h4>
                   <div class="row">
                     <!-- Ejemplo -->
-                    <div class="ej-ejemplo">
-                      <div class="row ej-ejecutado mt-3">
+                    <div class="code-example">
+                      <div class="row code-example__output mt-3">
                         <!-- código ejecutado -->
                         <div>
-                          <div class="ej-body-hr">
-                            <div class="ej-header-hr">
-                              <p class="ej-h1-hr">Blog de Viajes</p>
-                              <p class="ej-subtitle-hr">
+                          <div class="demo-hr">
+                            <div class="demo-hr__header">
+                              <p class="demo-hr__h1">Blog de Viajes</p>
+                              <p class="demo-hr__subtitle">
                                 Experiencias y consejos para viajeros
                               </p>
                             </div>
 
                             <article>
-                              <p class="ej-h2-hr">
+                              <p class="demo-hr__h2">
                                 Mi viaje por la costa mediterránea
                               </p>
-                              <p class="ej-post-date-hr">
+                              <p class="demo-hr__post-date">
                                 Publicado: 20 de mayo de 2025
                               </p>
 
                               <!-- HR estándar (sin estilo personalizado) -->
-                              <hr class="ej-standard-hr" />
+                              <hr class="demo-hr__standard" />
 
-                              <p class="ej-paragraph-hr">
+                              <p class="demo-hr__paragraph">
                                 Durante mis vacaciones de verano, decidí
                                 explorar la hermosa costa mediterránea
                                 española. El viaje comenzó en Barcelona, una
@@ -8766,7 +8766,7 @@
                                 forma fascinante.
                               </p>
 
-                              <p class="ej-paragraph-hr">
+                              <p class="demo-hr__paragraph">
                                 Los primeros días los dediqué a visitar los
                                 impresionantes edificios de Gaudí, disfrutar
                                 de la gastronomía local y pasear por Las
@@ -8774,21 +8774,21 @@
                               </p>
 
                               <!-- HR con estilo personalizado para separar destinos -->
-                              <hr class="ej-section-divider-hr" />
+                              <hr class="demo-hr__section-divider" />
 
-                              <p class="ej-h3-hr">
+                              <p class="demo-hr__h3">
                                 Valencia: La Ciudad de las Artes y las
                                 Ciencias
                               </p>
 
-                              <p class="ej-paragraph-hr">
+                              <p class="demo-hr__paragraph">
                                 Después de Barcelona, continué mi viaje hacia
                                 Valencia. Esta ciudad me sorprendió gratamente
                                 con su combinación de arquitectura futurista y
                                 su casco antiguo lleno de historia.
                               </p>
 
-                              <p class="ej-paragraph-hr">
+                              <p class="demo-hr__paragraph">
                                 El complejo de la Ciudad de las Artes y las
                                 Ciencias es verdaderamente impresionante, un
                                 sitio que no puedes dejar de visitar si vas a
@@ -8796,11 +8796,11 @@
                               </p>
 
                               <!-- HR sutil para separar contenido relacionado -->
-                              <hr class="ej-subtle-divider-hr" />
+                              <hr class="demo-hr__subtle-divider" />
 
-                              <p class="ej-h4-hr">Gastronomía valenciana</p>
+                              <p class="demo-hr__h4">Gastronomía valenciana</p>
 
-                              <p class="ej-paragraph-hr">
+                              <p class="demo-hr__paragraph">
                                 No podía dejar Valencia sin probar su famosa
                                 paella. Descubrí un pequeño restaurante local
                                 donde preparan la auténtica paella valenciana.
@@ -8808,17 +8808,17 @@
                               </p>
 
                               <!-- HR decorativo para marcar el final de una sección principal -->
-                              <hr class="ej-fancy-divider-hr" />
+                              <hr class="demo-hr__fancy-divider" />
 
-                              <p class="ej-h3-hr">Consejos para viajeros</p>
+                              <p class="demo-hr__h3">Consejos para viajeros</p>
 
-                              <p class="ej-paragraph-hr">
+                              <p class="demo-hr__paragraph">
                                 Si estás planeando visitar la costa
                                 mediterránea, aquí tienes algunos consejos
                                 útiles basados en mi experiencia:
                               </p>
 
-                              <ul class="ej-list-hr">
+                              <ul class="demo-hr__list">
                                 <li>
                                   La mejor época para visitar es mayo o
                                   septiembre (menos turistas)
@@ -8834,9 +8834,9 @@
                               </ul>
                             </article>
 
-                            <div class="ej-footer-hr">
+                            <div class="demo-hr__footer">
                               <!-- HR estándar usado para separar el contenido principal del pie de página -->
-                              <hr class="ej-standard-hr" />
+                              <hr class="demo-hr__standard" />
                               © 2025 Blog de Viajes | Todos los derechos
                               reservados
                             </div>
@@ -8845,68 +8845,68 @@
                         <!-- código ejecutado fin -->
                       </div>
                       <div class="row">
-                        <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                           <!-- código HTML -->
                           <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;div class="body-hr">
-                                    &lt;div class="header-hr">
-                                        &lt;p class="h1-hr">Blog de Viajes&lt;/p>
-                                        &lt;p class="subtitle-hr">Experiencias y consejos para viajeros&lt;/p>
+                                &lt;div class="site-content__body-hr">
+                                    &lt;div class="site-content__header-hr">
+                                        &lt;p class="site-content__h1-hr">Blog de Viajes&lt;/p>
+                                        &lt;p class="site-content__subtitle-hr">Experiencias y consejos para viajeros&lt;/p>
                                     &lt;/div>
 
                                     &lt;article>
-                                        &lt;p class="h2-hr">Mi viaje por la costa mediterránea&lt;/p>
-                                        &lt;p class="post-date-hr">Publicado: 20 de mayo de 2025&lt;/p>
+                                        &lt;p class="site-content__h2-hr">Mi viaje por la costa mediterránea&lt;/p>
+                                        &lt;p class="site-content__post-date-hr">Publicado: 20 de mayo de 2025&lt;/p>
 
                                         &lt;!-- HR estándar (sin estilo personalizado) -->
-                                        &lt;hr class="standard-hr">
+                                        &lt;hr class="site-content__standard-hr">
 
-                                        &lt;p class="paragraph-hr">Durante mis vacaciones de verano, decidí explorar la hermosa costa mediterránea
+                                        &lt;p class="site-content__paragraph-hr">Durante mis vacaciones de verano, decidí explorar la hermosa costa mediterránea
                                             española. El viaje comenzó en Barcelona, una ciudad que combina modernidad y tradición de forma fascinante.
                                         &lt;/p>
 
-                                        &lt;p class="paragraph-hr">Los primeros días los dediqué a visitar los impresionantes edificios de Gaudí, disfrutar
+                                        &lt;p class="site-content__paragraph-hr">Los primeros días los dediqué a visitar los impresionantes edificios de Gaudí, disfrutar
                                             de la gastronomía local y pasear por Las Ramblas.&lt;/p>
 
                                         &lt;!-- HR con estilo personalizado para separar destinos -->
-                                        &lt;hr class="section-divider-hr">
+                                        &lt;hr class="site-content__section-divider-hr">
 
-                                        &lt;p class="h3-hr">Valencia: La Ciudad de las Artes y las Ciencias&lt;/p>
+                                        &lt;p class="site-content__h3-hr">Valencia: La Ciudad de las Artes y las Ciencias&lt;/p>
 
-                                        &lt;p class="paragraph-hr">Después de Barcelona, continué mi viaje hacia Valencia. Esta ciudad me sorprendió
+                                        &lt;p class="site-content__paragraph-hr">Después de Barcelona, continué mi viaje hacia Valencia. Esta ciudad me sorprendió
                                             gratamente con su combinación de arquitectura futurista y su casco antiguo lleno de historia.&lt;/p>
 
-                                        &lt;p class="paragraph-hr">El complejo de la Ciudad de las Artes y las Ciencias es verdaderamente impresionante, un
+                                        &lt;p class="site-content__paragraph-hr">El complejo de la Ciudad de las Artes y las Ciencias es verdaderamente impresionante, un
                                             sitio que no puedes dejar de visitar si vas a Valencia.&lt;/p>
 
                                         &lt;!-- HR sutil para separar contenido relacionado -->
-                                        &lt;hr class="subtle-divider-hr">
+                                        &lt;hr class="site-content__subtle-divider-hr">
 
-                                        &lt;p class="h4-hr">Gastronomía valenciana&lt;/p>
+                                        &lt;p class="site-content__h4-hr">Gastronomía valenciana&lt;/p>
 
-                                        &lt;p class="paragraph-hr">No podía dejar Valencia sin probar su famosa paella. Descubrí un pequeño restaurante
+                                        &lt;p class="site-content__paragraph-hr">No podía dejar Valencia sin probar su famosa paella. Descubrí un pequeño restaurante
                                             local donde preparan la auténtica paella valenciana. ¡Una experiencia culinaria inolvidable!&lt;/p>
 
                                         &lt;!-- HR decorativo para marcar el final de una sección principal -->
-                                        &lt;hr class="fancy-divider-hr">
+                                        &lt;hr class="site-content__fancy-divider-hr">
 
-                                        &lt;p class="h3-hr">Consejos para viajeros&lt;/p>
+                                        &lt;p class="site-content__h3-hr">Consejos para viajeros&lt;/p>
 
-                                        &lt;p class="paragraph-hr">Si estás planeando visitar la costa mediterránea, aquí tienes algunos consejos útiles
+                                        &lt;p class="site-content__paragraph-hr">Si estás planeando visitar la costa mediterránea, aquí tienes algunos consejos útiles
                                             basados en mi experiencia:&lt;/p>
 
-                                        &lt;ul class="list-hr">
+                                        &lt;ul class="site-content__list-hr">
                                             &lt;li>La mejor época para visitar es mayo o septiembre (menos turistas)&lt;/li>
                                             &lt;li>Compra el abono de transporte público si vas a moverte mucho por la ciudad&lt;/li>
                                             &lt;li>Reserva las entradas a atracciones principales con antelación&lt;/li>
                                         &lt;/ul>
                                     &lt;/article>
 
-                                    &lt;div class="footer-hr">
+                                    &lt;div class="site-content__footer-hr">
                                         &lt;!-- HR estándar usado para separar el contenido principal del pie de página -->
-                                        &lt;hr class="standard-hr">
+                                        &lt;hr class="site-content__standard-hr">
                                         © 2025 Blog de Viajes | Todos los derechos reservados
                                     &lt;/div>
                                 &lt;/div>                                
@@ -8915,7 +8915,7 @@
                           </pre>
                           <!-- código HTML -->
                         </div>
-                        <div class="ej-code-css col-lg-6 mb-3">
+                        <div class="code-example__css-panel col-lg-6 mb-3">
                           <!-- código CSS -->
                           <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
@@ -9138,7 +9138,7 @@
             </div>
             <!-- Etiquetas Semánticas HTML Fin -->
 
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Plantilla HTML de un Diseño Semántico -->
             <div id="plantilla-html-de-un-diseno-semantico" class="mt-3">
@@ -9146,8 +9146,8 @@
               <p>Plantilla HTML de un Diseño Semántico</p>
               <div class="row">
                 <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
+                <div class="code-example">
+                  <div class="row code-example__output mt-3">
                     <!-- código ejecutado -->
                     <div>
                       <iframe src="./html-0004_cuerpo_semantico.html" title="Web Semántica"></iframe>
@@ -9155,7 +9155,7 @@
                     <!-- código ejecutado fin -->
                   </div>
                   <div class="row">
-                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                    <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                       <!-- código HTML -->
                       <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
@@ -9333,7 +9333,7 @@
                           </pre>
                       <!-- código HTML -->
                     </div>
-                    <div class="ej-code-css col-lg-6 mb-3">
+                    <div class="code-example__css-panel col-lg-6 mb-3">
                       <!-- código CSS -->
                       <pre>
                           <code class="language-css" data-prismjs-copy="Copy">
@@ -9740,7 +9740,7 @@
             </div>
             <!-- Plantilla HTML de un Diseño Semántico Fin -->
 
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Plantilla HTML de un Diseño Semántico Con ARIA -->
             <div>
@@ -9750,8 +9750,8 @@
 
               <div class="row">
                 <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
+                <div class="code-example">
+                  <div class="row code-example__output mt-3">
                     <!-- código ejecutado -->
                     <div>
                       <iframe src="./html-0004_cuerpo_aria.html" title="Sitio con accesibilidad ARIA"></iframe>
@@ -9759,7 +9759,7 @@
                     <!-- código ejecutado fin -->
                   </div>
                   <div class="row">
-                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                    <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                       <!-- código HTML -->
                       <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
@@ -9933,7 +9933,7 @@
                           </pre>
                       <!-- código HTML -->
                     </div>
-                    <div class="ej-code-css col-lg-6 mb-3">
+                    <div class="code-example__css-panel col-lg-6 mb-3">
                       <!-- código CSS -->
                       <pre>
                           <code class="language-css" data-prismjs-copy="Copy">
@@ -10324,7 +10324,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -10341,74 +10341,74 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
 
-              <div class="menu-container">
-                <div class="menu-item">
-                  <a href="#introduccion" class="simple-link">Introducción</a>
+              <div class="site-menu">
+                <div class="site-menu__item">
+                  <a href="#introduccion" class="site-menu__link">Introducción</a>
                 </div>
 
-                <div class="menu-item">
-                  <a href="#estructura-html-no-semantica" class="simple-link">Estructura HTML no Semántica</a>
+                <div class="site-menu__item">
+                  <a href="#estructura-html-no-semantica" class="site-menu__link">Estructura HTML no Semántica</a>
                 </div>
 
-                <div class="menu-item">
+                <div class="site-menu__item">
                   <details>
                     <summary>Estructura HTML con Etiquetas Semánticas</summary>
-                    <div class="submenu">
-                      <a href="#estructura-html-con-etiquetas-semanticas" class="submenu-item">Estructura HTML con
+                    <div class="site-menu__submenu">
+                      <a href="#estructura-html-con-etiquetas-semanticas" class="site-menu__submenu-link">Estructura HTML con
                         Etiquetas Semánticas</a>
 
-                      <a href="#beneficios-del-uso-de-la-semantica" class="submenu-item">Beneficios del Uso de la
+                      <a href="#beneficios-del-uso-de-la-semantica" class="site-menu__submenu-link">Beneficios del Uso de la
                         Semántica</a>
                     </div>
                   </details>
                 </div>
 
-                <div class="menu-item">
+                <div class="site-menu__item">
                   <details>
                     <summary>Etiquetas Semánticas HTML</summary>
-                    <div class="submenu">
-                      <a href="#etiquetas-semanticas-html" class="submenu-item">Etiquetas Semánticas HTML</a>
-                      <a href="#etiqueta-html-main" class="submenu-item"><code
+                    <div class="site-menu__submenu">
+                      <a href="#etiquetas-semanticas-html" class="site-menu__submenu-link">Etiquetas Semánticas HTML</a>
+                      <a href="#etiqueta-html-main" class="site-menu__submenu-link"><code
                           class="language-html">&lt;main></code></a>
-                      <a href="#etiqueta-html-section" class="submenu-item"><code
+                      <a href="#etiqueta-html-section" class="site-menu__submenu-link"><code
                           class="language-html">&lt;section></code></a>
-                      <a href="#etiqueta-html-article" class="submenu-item"><code
+                      <a href="#etiqueta-html-article" class="site-menu__submenu-link"><code
                           class="language-html">&lt;article></code></a>
-                      <a href="#etiqueta-html-nav" class="submenu-item"><code class="language-html">&lt;nav></code></a>
-                      <a href="#etiqueta-html-aside" class="submenu-item"><code
+                      <a href="#etiqueta-html-nav" class="site-menu__submenu-link"><code class="language-html">&lt;nav></code></a>
+                      <a href="#etiqueta-html-aside" class="site-menu__submenu-link"><code
                           class="language-html">&lt;aside></code></a>
-                      <a href="#etiqueta-html-header" class="submenu-item"><code
+                      <a href="#etiqueta-html-header" class="site-menu__submenu-link"><code
                           class="language-html">&lt;header></code></a>
-                      <a href="#etiqueta-html-footer" class="submenu-item"><code
+                      <a href="#etiqueta-html-footer" class="site-menu__submenu-link"><code
                           class="language-html">&lt;footer></code></a>
-                      <a href="#etiqueta-html-figure" class="submenu-item"><code
+                      <a href="#etiqueta-html-figure" class="site-menu__submenu-link"><code
                           class="language-html">&lt;figure></code></a>
-                      <a href="#etiqueta-html-details" class="submenu-item"><code
+                      <a href="#etiqueta-html-details" class="site-menu__submenu-link"><code
                           class="language-html">&lt;details></code></a>
-                      <a href="#etiqueta-html-mark" class="submenu-item"><code
+                      <a href="#etiqueta-html-mark" class="site-menu__submenu-link"><code
                           class="language-html">&lt;mark></code></a>
-                      <a href="#etiqueta-html-time" class="submenu-item"><code
+                      <a href="#etiqueta-html-time" class="site-menu__submenu-link"><code
                           class="language-html">&lt;time></code></a>
-                      <a href="#etiqueta-html-hr" class="submenu-item"><code class="language-html">&lt;hr></code></a>
+                      <a href="#etiqueta-html-hr" class="site-menu__submenu-link"><code class="language-html">&lt;hr></code></a>
                     </div>
                   </details>
                 </div>
 
-                <div class="menu-item">
-                  <a href="#plantilla-html-de-un-diseno-semantico" class="simple-link">Plantilla HTML de un Diseño
+                <div class="site-menu__item">
+                  <a href="#plantilla-html-de-un-diseno-semantico" class="site-menu__link">Plantilla HTML de un Diseño
                     Semántico</a>
                 </div>
 
-                <div class="menu-item">
-                  <a href="#plantilla-html-de-un-diseno-semantico-con-aria" class="simple-link">Plantilla HTML de un
+                <div class="site-menu__item">
+                  <a href="#plantilla-html-de-un-diseno-semantico-con-aria" class="site-menu__link">Plantilla HTML de un
                     Diseño Semántico con ARIA</a>
                 </div>
-                <div class="menu-item">
-                  <a href="#comments" class="simple-link">Comentarios</a>
+                <div class="site-menu__item">
+                  <a href="#comments" class="site-menu__link">Comentarios</a>
                 </div>
               </div>
             </div>
@@ -10474,7 +10474,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

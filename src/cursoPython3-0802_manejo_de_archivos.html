@@ -68,7 +68,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -86,7 +86,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -98,7 +98,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Manejo de Archivos en Python  -->
@@ -121,7 +121,7 @@
                 archivos, así como el manejo de excepciones y la manipulación
                 de archivos en diferentes formatos.
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <figure>
                   <img src="https://i.ibb.co/Z86kBk1/manejoarchivos.jpg" class="img-fluid"
                     alt="Manejo de Archivos en Python  " title="Dominando Técnicas de Archivos en Python" />
@@ -144,7 +144,7 @@
               <!-- Sintaxis Básica  Open -->
               <div>
                 <h3>Sintaxis Básica - <code class="language-python">open</code></h3>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)
@@ -254,7 +254,7 @@
                   <li>
                     <span class="fw-bold">Abrir un archivo para lectura (<code
                         class="language-python">'r'</code>)</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             # Abrir un archivo en modo lectura
@@ -271,7 +271,7 @@
                   <li>
                     <span class="fw-bold">Abrir un archivo para escritura (<code
                         class="language-python">'w'</code>)</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             # Abrir un archivo en modo escritura (sobrescribe si existe)
@@ -287,7 +287,7 @@
                   <li>
                     <span class="fw-bold">Abrir un archivo para añadir contenido (<code
                         class="language-python">'a'</code>)</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             # Abrir un archivo en modo añadir (agrega al final)
@@ -302,7 +302,7 @@
                   </li>
                   <li>
                     <span class="fw-bold">Leer un archivo línea por línea</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             # Abrir un archivo en modo añadir (agrega al final)
@@ -318,7 +318,7 @@
                   <li>
                     <span class="fw-bold">Abrir un archivo en modo binario (<code
                         class="language-python">'rb</code>')</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             # Abrir un archivo binario en modo lectura
@@ -368,7 +368,7 @@
               <ul>
                 <li>
                   <span class="fw-bold">Leer todo el archivo</span>:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Leer todo el archivo
@@ -382,7 +382,7 @@
                 </li>
                 <li>
                   <span class="fw-bold">Leer una línea</span>:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Leer una línea
@@ -398,7 +398,7 @@
                 </li>
                 <li>
                   <span class="fw-bold">Leer todas las líneas</span>:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Leer todas las líneas
@@ -411,7 +411,7 @@
                 </li>
                 <li>
                   <span class="fw-bold">Leer línea por línea</span>:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Leer línea por línea
@@ -479,7 +479,7 @@
                   modo abre el archivo para escribir. Si el archivo no existe,
                   se crea uno nuevo. Si el archivo ya existe, su contenido se
                   sobrescribe.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Abrir el archivo en modo de escritura
@@ -495,7 +495,7 @@
                   abre el archivo para escribir. Si el archivo no existe, se
                   crea uno nuevo. Si el archivo ya existe, el nuevo contenido
                   se añade al final del archivo.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Abrir el archivo en modo de anexar
@@ -509,7 +509,7 @@
                   <span class="fw-bold">Modo de Lectura y Escritura ('r+')</span>: Este modo abre el archivo para leer y
                   escribir. El
                   puntero del archivo se coloca al principio del archivo.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Abrir el archivo en modo de lectura y escritura
@@ -523,7 +523,7 @@
                 <li>
                   <strong>Escritura de Múltiples Líneas</strong>: Para
                   escribir múltiples líneas de manera eficiente:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Abrir el archivo en modo de escritura
@@ -538,7 +538,7 @@
                   <strong>Escribir Objetos Convertidos a Texto</strong>: Si se
                   desea guardar datos como listas o diccionarios, estos deben
                   convertirse en cadenas:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           datos = {"nombre": "Juan", "edad": 30}
@@ -562,7 +562,7 @@
                       <span class="fw-bold">Codificación</span>: Si el archivo
                       contiene caracteres especiales, especifique la
                       codificación:
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               with open("archivo.txt", "w", encoding="utf-8") as archivo:
@@ -589,7 +589,7 @@
                 Aquí se tiene un ejemplo completo que muestra cómo usar estos
                 modos:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Escribir en el archivo (sobrescribir si existe)
@@ -625,7 +625,7 @@
                 recursos asociados al archivo, pero si se usa la sentencia
                 <code class="language-python">with</code> es innecesario.
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       file.close()
@@ -685,7 +685,7 @@
                   <code class="language-python">else</code>, y
                   <code class="language-python">finally</code>:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         try:
@@ -716,7 +716,7 @@
                 <ul>
                   <li>
                     <span class="fw-bold">Leer un archivo con manejo de errores</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             try:
@@ -733,7 +733,7 @@
                   </li>
                   <li>
                     <span class="fw-bold">Escribir en un archivo con validación de permisos</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             try:
@@ -752,7 +752,7 @@
                   <li>
                     <span class="fw-bold">Gestionar múltiples errores en lectura y
                       escritura</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             try:
@@ -805,7 +805,7 @@
                   Se pueden lanzar errores personalizados si se desea realizar
                   validaciones adicionales:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         try:
@@ -839,7 +839,7 @@
               <!-- Sintaxis Básica de with -->
               <div>
                 <h3>Sintaxis Básica de <code class="language-python">with</code></h3>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         with open('archivo.txt', 'modo') as variable:
@@ -888,7 +888,7 @@
                 <ul>
                   <li>
                     <span class="fw-bold">Leer un archivo</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             with open('archivo.txt', 'r') as archivo:
@@ -901,7 +901,7 @@
                   </li>
                   <li>
                     <span class="fw-bold">Escribir en un archivo</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             with open('archivo.txt', 'w') as archivo:
@@ -913,7 +913,7 @@
                   </li>
                   <li>
                     <span class="fw-bold">Añadir contenido a un archivo</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             with open('archivo.txt', 'a') as archivo:
@@ -925,7 +925,7 @@
                   </li>
                   <li>
                     <span class="fw-bold">Leer un archivo línea por línea</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             with open('archivo.txt', 'r') as archivo:
@@ -974,7 +974,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -992,23 +992,23 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
-              <div class="menu-item"><a href="#abrir-archivos-open" class="simple-link">Abrir archivos <code
+              <div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
+              <div class="site-menu__item"><a href="#abrir-archivos-open" class="site-menu__link">Abrir archivos <code
                     class="language-python">open()</code></a></div>
-              <div class="menu-item"><a href="#lectura-de-archivos" class="simple-link">Lectura de Archivos</a></div>
-              <div class="menu-item"><a href="#escritura-en-archivos" class="simple-link">Escritura en Archivos</a>
+              <div class="site-menu__item"><a href="#lectura-de-archivos" class="site-menu__link">Lectura de Archivos</a></div>
+              <div class="site-menu__item"><a href="#escritura-en-archivos" class="site-menu__link">Escritura en Archivos</a>
               </div>
-              <div class="menu-item"><a href="#cerrar-archivos" class="simple-link">Cerrar archivos <code
+              <div class="site-menu__item"><a href="#cerrar-archivos" class="site-menu__link">Cerrar archivos <code
                     class="language-python">close()</code></a></div>
-              <div class="menu-item"><a href="#manejo-de-excepciones" class="simple-link">Manejo de Excepciones</a>
+              <div class="site-menu__item"><a href="#manejo-de-excepciones" class="site-menu__link">Manejo de Excepciones</a>
               </div>
-              <div class="menu-item"><a href="#uso-de-la-declaracion-with" class="simple-link">Uso de la Declaración
+              <div class="site-menu__item"><a href="#uso-de-la-declaracion-with" class="site-menu__link">Uso de la Declaración
                   <code class="language-python">with</code></a></div>
               <!-- Comentarios  -->
-              <div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div>
+              <div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div>
             </div>
           </div>
         </div>
@@ -1073,7 +1073,7 @@
 
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

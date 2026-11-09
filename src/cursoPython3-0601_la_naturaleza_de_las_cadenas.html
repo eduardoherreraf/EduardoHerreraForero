@@ -72,7 +72,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -90,7 +90,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -102,7 +102,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  La naturaleza de las cadenas en Python  -->
@@ -124,7 +124,7 @@
                 métodos y usos de las cadenas, así como su importancia en el
                 desarrollo de aplicaciones.
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <figure>
                   <img src="https://i.ibb.co/VHpnX1w/cadenas.jpg" class="img-fluid"
                     alt="La naturaleza de las cadenas en Python"
@@ -150,7 +150,7 @@
                   crear una nueva cadena a partir de las operaciones
                   realizadas sobre la original.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         cadena = "Hola"
@@ -159,7 +159,7 @@
                     </pre>
                 </div>
                 <p>Para "modificar" una cadena, se debe crear una nueva.</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         texto = "Hola"
@@ -181,7 +181,7 @@
                   facilita la manipulación de subcadenas a través de técnicas
                   como slicing.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         texto = "Python"
@@ -206,7 +206,7 @@
                 <h4>Parámetros del Rebanado</h4>
                 <p>La sintaxis general es.</p>
                 <div>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           cadena[inicio:fin:paso]
@@ -238,7 +238,7 @@
                   <ul>
                     <li>
                       <span class="fw-bold">Rebanado Básico:</span>
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               cadena = "Python"
@@ -254,7 +254,7 @@
                     </li>
                     <li>
                       <span class="fw-bold">Uso de Índices Negativos:</span>
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               # Últimos 2 caracteres
@@ -268,7 +268,7 @@
                     <li>
                       <span class="fw-bold">Especificar un paso:</span> El
                       paso indica cuántos caracteres omitir:
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               # Caracteres en posiciones pares
@@ -318,7 +318,7 @@
               <ul>
                 <li>
                   <span class="fw-bold">Con comillas simples</span>:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       cadena1 = 'Hola, mundo'
@@ -328,7 +328,7 @@
                 </li>
                 <li>
                   <span class="fw-bold">Con comillas dobles</span>:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       cadena2 = "Hola, mundo"
@@ -339,7 +339,7 @@
                 <li>
                   <span class="fw-bold">Con comillas triples</span>: Útil para
                   cadenas multilínea
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           cadena3 = '''Esta es una cadena
@@ -348,7 +348,7 @@
                       </pre>
                   </div>
                   <p>o</p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           cadena4 = """Otra forma de hacer
@@ -369,7 +369,7 @@
                   <span class="fw-bold">Concatenación</span>: Unir cadenas
                   usando el operador <code class="language-python">+</code> o
                   <code class="language-python">join()</code>.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           cadena1 = "Hola"
@@ -383,7 +383,7 @@
                 <li>
                   <span class="fw-bold">Repetición</span>: Repetir una cadena
                   usando el operador <code class="language-python">*</code>.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           cadena = "Python"
@@ -395,7 +395,7 @@
                 <li>
                   <span class="fw-bold">Subcadenas</span>: Extraer partes de
                   una cadena.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           cadena = "Python es divertido"
@@ -409,7 +409,7 @@
                   <span class="fw-bold">Longitud</span>: Obtener la cantidad
                   de caracteres con
                   <code class="language-python">len()</code>.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           cadena = "Python"
@@ -473,7 +473,7 @@
                       esta en cadena.
                     </li>
                   </ul>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           cadena = "aprende Python con Python"
@@ -523,7 +523,7 @@
                       caracteres.
                     </li>
                   </ul>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           cadena = "hola MUNDO"
@@ -567,7 +567,7 @@
                       alcanzar el ancho especificado.
                     </li>
                   </ul>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           cadena = "   Python   "
@@ -613,7 +613,7 @@
                       busca desde el final.
                     </li>
                   </ul>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           cadena = "uno,dos,tres"
@@ -630,7 +630,7 @@
                   <span class="fw-bold">Unir listas en una cadena</span>:
                   Combinar elementos de una lista en una sola cadena con
                   <code class="language-python">join()</code>.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           palabras = ["Python", "es", "genial"]
@@ -675,7 +675,7 @@
                       tiene formato de título.
                     </li>
                   </ul>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           cadena = "Python3"
@@ -702,7 +702,7 @@
                     la cadena a la derecha.
                   </li>
                 </ul>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         cadena = "Python"
@@ -723,7 +723,7 @@
                 Cuando se necesitan incluir caracteres como comillas o saltos
                 de línea, se usa la barra invertida (<code class="language-python">\</code>):
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       cadena = "Esto es un \"ejemplo\" de cadena."
@@ -747,7 +747,7 @@
                 Para evitar que los caracteres de escape sean interpretados,
                 se usa el prefijo <code class="language-python">r</code>:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       ruta = r"C:\nueva\carpeta"
@@ -772,7 +772,7 @@
                 <h3>
                   Iterar sobre los Caracteres de un String con un Bucle for
                 </h3>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         mi_string = "Hola Mundo"
@@ -789,7 +789,7 @@
                   Usar enumerate() para Obtener el Índice y el Valor del
                   Carácter
                 </h3>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         mi_string = "Hola Mundo"
@@ -806,7 +806,7 @@
                   Iterar sobre un Rango de Índices para Acceder a los
                   Caracteres Usando un Bucle for
                 </h3>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         mi_string = "Hola Mundo"
@@ -823,7 +823,7 @@
                   Usar Comprensión de Listas para Crear una Lista con los
                   Caracteres
                 </h3>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         mi_string = "Hola Mundo"
@@ -837,7 +837,7 @@
               <!-- Iterar Usando while -->
               <div>
                 <h3>Iterar Usando while</h3>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         mi_string = "Hola Mundo"
@@ -863,7 +863,7 @@
                   Permite insertar valores en una cadena utilizando marcadores
                   de posición.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         nombre = "Juan"
@@ -896,7 +896,7 @@
                   <code class="language-python">{}</code> como marcadores de
                   posición.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         nombre = "Juan"
@@ -906,7 +906,7 @@
                     </pre>
                 </div>
                 <p>También permite nombrar variables dentro de las llaves:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         print("Hola, {nombre}. Tienes {edad} años.".format(nombre="Juan", edad=25))
@@ -924,7 +924,7 @@
                   expresiones dentro de las llaves
                   <code class="language-python">{}</code>.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         nombre = "Juan"
@@ -936,7 +936,7 @@
                 <p>
                   Incluso permite incluir operaciones dentro de las llaves:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         print(f"El año que viene tendrás {edad + 1} años.")
@@ -953,7 +953,7 @@
                   especialmente en entornos donde se manejan plantillas de
                   texto.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         from string import Template
@@ -975,7 +975,7 @@
                   <code class="language-python">f-strings</code>, se puede
                   especificar el formato de los números.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         pi = 3.14159
@@ -1021,7 +1021,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -1036,17 +1036,17 @@
         <!--  fin comentarios  -->
       </section>
 
-<!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h2>En Este Artículo</h2><div class="menu-scroll"><div class="menu-container"><div class="border border-1">
-<div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
-<div class="menu-item"><a href="#caracteristicas-de-las-cadenas" class="simple-link">Características de las Cadenas</a></div>
-<div class="menu-item"><a href="#creacion-de-cadenas" class="simple-link">Creación de Cadenas</a></div>
-<div class="menu-item"><a href="#operaciones-con-cadenas" class="simple-link">Operaciones con Cadenas</a></div>
-<div class="menu-item"><a href="#uso-de-caracteres-especiales" class="simple-link">Uso de Caracteres Especiales</a></div>
-<div class="menu-item"><a href="#representacion-de-cadenas-crudas" class="simple-link">Representación de Cadenas Crudas</a></div>
-<div class="menu-item"><a href="#soporte-para-iteracion" class="simple-link">Soporte para Iteración</a></div>
-<div class="menu-item"><a href="#dar-formato-a-las-cadenas " class="simple-link">Dar Formato a las Cadenas</a></div>
+<!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h2>En Este Artículo</h2><div class="site-menu__scroll"><div class="site-menu"><div class="border border-1">
+<div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
+<div class="site-menu__item"><a href="#caracteristicas-de-las-cadenas" class="site-menu__link">Características de las Cadenas</a></div>
+<div class="site-menu__item"><a href="#creacion-de-cadenas" class="site-menu__link">Creación de Cadenas</a></div>
+<div class="site-menu__item"><a href="#operaciones-con-cadenas" class="site-menu__link">Operaciones con Cadenas</a></div>
+<div class="site-menu__item"><a href="#uso-de-caracteres-especiales" class="site-menu__link">Uso de Caracteres Especiales</a></div>
+<div class="site-menu__item"><a href="#representacion-de-cadenas-crudas" class="site-menu__link">Representación de Cadenas Crudas</a></div>
+<div class="site-menu__item"><a href="#soporte-para-iteracion" class="site-menu__link">Soporte para Iteración</a></div>
+<div class="site-menu__item"><a href="#dar-formato-a-las-cadenas " class="site-menu__link">Dar Formato a las Cadenas</a></div>
 <!-- Comentarios  -->
-<div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div></div></div></div></aside>
+<div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div></div></div></div></aside>
 <!--  fin barra lateral  -->
     </main>
     <!--  fin principal  -->
@@ -1109,7 +1109,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

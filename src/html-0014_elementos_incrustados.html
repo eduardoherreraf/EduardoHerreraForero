@@ -64,7 +64,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -82,7 +82,7 @@
             <a class="nav-link mx-1 text-decoration-none" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo text-decoration-none" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active text-decoration-none site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1 text-decoration-none" href="index.html#contact">CONTACTO</a>
@@ -94,7 +94,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Elementos Incrustados HTM-->
@@ -107,12 +107,12 @@
             <!-- Introducción -->
             <div>
               <h2>Introducción</h2>
-              <div class="centrar-imagen magen-intro">
-                <figure class="img-container">
+              <div class="site-image site-intro-image">
+                <figure class="site-content__img-container">
                   <img src="https://i.postimg.cc/ydDhpkj7/Elementos-Incrustados-Compressed.png" class="img-fluid"
                     alt="Una ventana de madera que muestra un paisaje exterior y un televisor CRT incrustado en la pared mostrando una escena similar"
                     title="Elementos Incrustados HTML" loading="lazy" />
-                  <figcaption class="img-caption">
+                  <figcaption class="site-image__caption">
                     Analogía visual de las etiquetas HTML incrustadas: una
                     ventana representa un &lt;iframe> y un televisor
                     incrustado representa un &lt;embed>, ambos insertados en
@@ -157,7 +157,7 @@
               </ul>
             </div>
             <!-- Introducción Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Elemento <iframe> -->
             <div id="elemento-iframe" class="mt-3">
@@ -174,7 +174,7 @@
               </p>
               <!-- Sintaxis -->
               <p><span class="fw-bold">Sintaxis básica</span>:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                  <code class="language-html" data-prismjs-copy="Copy">
                     &lt;iframe src="https://www.ejemplo.com"
@@ -227,7 +227,7 @@
                       el iframe tiene las restricciones más estrictas
                       posibles:
                       <!-- Sintaxis -->
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;iframe src="ejemplo.html" sandbox>&lt;/iframe>
@@ -321,20 +321,20 @@
               <!-- Ejemplo -->
               <p><span class="language-html">Ejemplo</span>:</p>
               <div>
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
+                <div class="code-example">
+                  <div class="row code-example__output mt-3">
                     <!-- código ejecutado -->
                     <div>
-                      <div class="ej-container-iframe">
-                        <p class="ej-h1-iframe">
+                      <div class="demo-iframe__container">
+                        <p class="demo-iframe__h1">
                           Ejemplos Prácticos de &lt;iframe&gt;
                         </p>
 
-                        <div class="ej-card-iframe">
-                          <p class="ej-h2-iframe">
+                        <div class="demo-iframe__card">
+                          <p class="demo-iframe__h2">
                             1. YouTube Video Embebido
                           </p>
-                          <p class="ej-text-iframe">
+                          <p class="demo-iframe__text">
                             Video responsivo con controles habilitados y
                             reproducción automática deshabilitada:
                           </p>
@@ -342,35 +342,35 @@
                           <iframe src="https://www.youtube.com/embed/qP23O70ve7k?si=frOFpcVp9p8Rqb9m" width="560"
                             height="315" title="Video de YouTube" frameborder="0" allowfullscreen
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            class="ej-iframe-iframe">
+                            class="demo-iframe__iframe">
                           </iframe>
                         </div>
 
-                        <div class="ej-card-iframe">
-                          <p class="ej-h2-iframe">2. Google Maps Embebido</p>
-                          <p class="ej-text-iframe">
+                        <div class="demo-iframe__card">
+                          <p class="demo-iframe__h2">2. Google Maps Embebido</p>
+                          <p class="demo-iframe__text">
                             Mapa interactivo con ubicación específica:
                           </p>
 
                           <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.2623658098954!2d-74.0817291!3d4.6486259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a0c0b1c0c0b%3A0x0!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1ses!2sco!4v1234567890"
                             width="600" height="400" style="border: 0" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade" title="Mapa de Bogotá" class="ej-iframe-iframe">
+                            referrerpolicy="no-referrer-when-downgrade" title="Mapa de Bogotá" class="demo-iframe__iframe">
                           </iframe>
                         </div>
 
-                        <div class="ej-card-iframe">
-                          <p class="ej-h2-iframe">
+                        <div class="demo-iframe__card">
+                          <p class="demo-iframe__h2">
                             3. Página Web Externa con Sandbox
                           </p>
-                          <p class="ej-text-iframe">
+                          <p class="demo-iframe__text">
                             Iframe con restricciones de seguridad usando
                             sandbox:
                           </p>
 
                           <iframe src="https://example.com" width="100%" height="300" title="Sitio web de ejemplo"
                             frameborder="0" sandbox="allow-scripts allow-same-origin allow-forms" loading="lazy"
-                            class="ej-iframe-iframe">
+                            class="demo-iframe__iframe">
                             <p>
                               Tu navegador no soporta iframes.
                               <a href="https://example.com">Visita el sitio directamente</a>
@@ -378,15 +378,15 @@
                           </iframe>
                         </div>
 
-                        <div class="ej-card-iframe">
-                          <p class="ej-h2-iframe">
+                        <div class="demo-iframe__card">
+                          <p class="demo-iframe__h2">
                             4. Formulario de Contacto Externo
                           </p>
-                          <p class="ej-text-iframe">
+                          <p class="demo-iframe__text">
                             Iframe responsivo para embeber un formulario:
                           </p>
 
-                          <div class="ej-placeholder-iframe">
+                          <div class="demo-iframe__placeholder">
                             <p>
                               📝 Aquí se cargaría un formulario externo<br />(Ejemplo
                               de Google Forms)
@@ -398,55 +398,55 @@
                     <!-- código ejecutado fin -->
                   </div>
                   <div class="row">
-                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                    <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                       <!-- código HTML -->
                       <pre>
                         <code class="language-html" data-prismjs-copy="Copy">
                           <div>
-                            &lt;div class="ej-container-iframe">
-                              &lt;p class="ej-h1-iframe">Ejemplos Prácticos de &lt;iframe&gt;&lt;/p>
+                            &lt;div class="demo-iframe__container">
+                              &lt;p class="demo-iframe__h1">Ejemplos Prácticos de &lt;iframe&gt;&lt;/p>
 
-                              &lt;div class="ej-card-iframe">
-                                &lt;p class="ej-h2-iframe">1. YouTube Video Embebido&lt;/p>
-                                &lt;p class="ej-text-iframe">Video responsivo con controles habilitados y reproducción automática
+                              &lt;div class="demo-iframe__card">
+                                &lt;p class="demo-iframe__h2">1. YouTube Video Embebido&lt;/p>
+                                &lt;p class="demo-iframe__text">Video responsivo con controles habilitados y reproducción automática
                                   deshabilitada:&lt;/p>
 
                                 &lt;iframe src="https://www.youtube.com/embed/qP23O70ve7k?si=frOFpcVp9p8Rqb9m" width="560" height="315"
                                   title="Video de YouTube" frameborder="0" allowfullscreen
                                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                  class="ej-iframe-iframe">
+                                  class="demo-iframe__iframe">
                                 &lt;/iframe>
                               &lt;/div>
 
-                              &lt;div class="ej-card-iframe">
-                                &lt;p class="ej-h2-iframe">2. Google Maps Embebido&lt;/p>
-                                &lt;p class="ej-text-iframe">Mapa interactivo con ubicación específica:&lt;/p>
+                              &lt;div class="demo-iframe__card">
+                                &lt;p class="demo-iframe__h2">2. Google Maps Embebido&lt;/p>
+                                &lt;p class="demo-iframe__text">Mapa interactivo con ubicación específica:&lt;/p>
 
                                 &lt;iframe
                                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.2623658098954!2d-74.0817291!3d4.6486259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a0c0b1c0c0b%3A0x0!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1ses!2sco!4v1234567890"
                                   width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                                  referrerpolicy="no-referrer-when-downgrade" title="Mapa de Bogotá" class="ej-iframe-iframe">
+                                  referrerpolicy="no-referrer-when-downgrade" title="Mapa de Bogotá" class="demo-iframe__iframe">
                                 &lt;/iframe>
                               &lt;/div>
 
-                              &lt;div class="ej-card-iframe">
-                                &lt;p class="ej-h2-iframe">3. Página Web Externa con Sandbox&lt;/p>
-                                &lt;p class="ej-text-iframe">Iframe con restricciones de seguridad usando sandbox:&lt;/p>
+                              &lt;div class="demo-iframe__card">
+                                &lt;p class="demo-iframe__h2">3. Página Web Externa con Sandbox&lt;/p>
+                                &lt;p class="demo-iframe__text">Iframe con restricciones de seguridad usando sandbox:&lt;/p>
 
                                 &lt;iframe src="https://example.com" width="100%" height="300" title="Sitio web de ejemplo"
                                   frameborder="0" sandbox="allow-scripts allow-same-origin allow-forms" loading="lazy"
-                                  class="ej-iframe-iframe">
+                                  class="demo-iframe__iframe">
                                   &lt;p>Tu navegador no soporta iframes.
                                     &lt;a href="https://example.com">Visita el sitio directamente&lt;/a>
                                   &lt;/p>
                                 &lt;/iframe>
                               &lt;/div>
 
-                              &lt;div class="ej-card-iframe">
-                                &lt;p class="ej-h2-iframe">4. Formulario de Contacto Externo&lt;/p>
-                                &lt;p class="ej-text-iframe">Iframe responsivo para embeber un formulario:&lt;/p>
+                              &lt;div class="demo-iframe__card">
+                                &lt;p class="demo-iframe__h2">4. Formulario de Contacto Externo&lt;/p>
+                                &lt;p class="demo-iframe__text">Iframe responsivo para embeber un formulario:&lt;/p>
 
-                                &lt;div class="ej-placeholder-iframe">
+                                &lt;div class="demo-iframe__placeholder">
                                   &lt;p>📝 Aquí se cargaría un formulario externo&lt;br>(Ejemplo de Google Forms)&lt;/p>
                                 &lt;/div>
                               &lt;/div>
@@ -456,7 +456,7 @@
                       </pre>
                       <!-- código HTML -->
                     </div>
-                    <div class="ej-code-css col-lg-6 mb-3">
+                    <div class="code-example__css-panel col-lg-6 mb-3">
                       <!-- código CSS -->
                       <pre>
                         <code class="language-css" data-prismjs-copy="Copy">
@@ -571,7 +571,7 @@
               <!-- Ejemplo fin -->
             </div>
             <!-- Elemento <iframe> Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Elemento <embed> -->
             <div id="elemento-embed" class="mt-3">
@@ -589,7 +589,7 @@
               </p>
               <!-- Sintaxis -->
               <p><span class="fw-bold">Sintaxis básica</span>:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-html" data-prismjs-copy="Copy">
                     &lt;embed src="archivo.pdf" type="application/pdf" width="600" height="400">
@@ -731,7 +731,7 @@
               </ul>
               <p><span class="fw-bold">Ejemplos prácticos</span>:</p>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                 <code class="language-html" data-prismjs-copy="Copy">
                   &lt;!-- Incrustar un PDF --&gt;
@@ -748,7 +748,7 @@
               </div>
             </div>
             <!-- Elemento <embed> Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Elemento <object> -->
             <div id="elemento-object" class="mt-3">
@@ -783,7 +783,7 @@
               </ul>
               <!-- Sintaxis -->
               <p><span class="fw-bold">Sintaxis básica</span>:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-html" data-prismjs-copy="Copy">
                    &lt;object data="ruta-del-archivo" type="tipo-mime" width="ancho" height="alto">
@@ -866,7 +866,7 @@
               </ul>
               <!-- Sintaxis -->
               <p><span class="fw-bold">Ejemplos</span>:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-html" data-prismjs-copy="Copy">
                     &lt;!-- Incrustar un PDF --&gt;
@@ -903,7 +903,7 @@
               </p>
               <!-- Sintaxis -->
               <p><span class="fw-bold">Sintaxis básica</span>:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-html" data-prismjs-copy="Copy">
                   &lt;object data="video.mp4" type="video/mp4" width="400" height="300">
@@ -982,7 +982,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -999,34 +999,34 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item">
-                <a href="#introduccion" class="simple-link">Introducción</a>
+              <div class="site-menu__item">
+                <a href="#introduccion" class="site-menu__link">Introducción</a>
               </div>
 
-              <div class="menu-item">
-                <a href="#elemento-iframe" class="simple-link">Elemento <code
+              <div class="site-menu__item">
+                <a href="#elemento-iframe" class="site-menu__link">Elemento <code
                     class="language-html">&lt;iframe></code></a>
               </div>
 
-              <div class="menu-item">
-                <a href="#elemento-embed" class="simple-link">Elemento <code class="language-html">&lt;embed></code></a>
+              <div class="site-menu__item">
+                <a href="#elemento-embed" class="site-menu__link">Elemento <code class="language-html">&lt;embed></code></a>
               </div>
 
-              <div class="menu-item">
-                <a href="#elemento-object" class="simple-link">Elemento <code
+              <div class="site-menu__item">
+                <a href="#elemento-object" class="site-menu__link">Elemento <code
                     class="language-html">&lt;object></code></a>
               </div>
 
-              <div class="menu-item">
-                <a href="#elemento-param" class="simple-link">Elemento <code class="language-html">&lt;param></code></a>
+              <div class="site-menu__item">
+                <a href="#elemento-param" class="site-menu__link">Elemento <code class="language-html">&lt;param></code></a>
               </div>
 
               <!-- Comentarios  -->
-              <div class="menu-item">
-                <a href="#comments" class="simple-link">Comentarios</a>
+              <div class="site-menu__item">
+                <a href="#comments" class="site-menu__link">Comentarios</a>
               </div>
             </div>
           </div>
@@ -1095,7 +1095,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

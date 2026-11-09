@@ -74,7 +74,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -92,7 +92,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -104,7 +104,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Errores: el pan diario del programador  -->
@@ -127,7 +127,7 @@
                 comprensión más profunda de cómo manejar errores y mejorar la
                 calidad del código.
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <figure>
                   <img src="https://i.ibb.co/56h2n3H/errores.jpg" class="img-fluid"
                     alt="Errores: el pan diario del programador  " title="Dominando los Errores de Python" />
@@ -154,7 +154,7 @@
               <ul>
                 <li>
                   Olvidar cerrar un paréntesis o una comilla:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           print("Hola mundo)
@@ -164,7 +164,7 @@
                 </li>
                 <li>
                   Uso incorrecto de una palabra clave:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           def = 5
@@ -190,7 +190,7 @@
                     <code class="language-python">IndentationError</code></span>: Se produce cuando no se respeta la
                   indentación del
                   código.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           def saludo():
@@ -204,7 +204,7 @@
                     <code class="language-python">TypeError</code></span>: Se produce cuando se intenta realizar una
                   operación con
                   un tipo de datos incompatible.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           resultado = "Hola" + 5
@@ -217,7 +217,7 @@
                     <code class="language-python">ValueError</code></span>: Sucede cuando se pasa un argumento a una
                   función que no
                   es adecuado, aunque su tipo de datos sea correcto.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           int("abc")
@@ -230,7 +230,7 @@
                     <code class="language-python">IndexError</code></span>: Se da cuando se intenta acceder a un índice
                   fuera del
                   rango de una lista.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           lista = [1, 2, 3]
@@ -244,7 +244,7 @@
                     <code class="language-python">KeyError</code></span>: Ocurre cuando se intenta acceder a una clave
                   que no
                   existe en un diccionario.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           diccionario = {"nombre": "Juan"}
@@ -258,7 +258,7 @@
                     <code class="language-python">AttributeError</code></span>: Se genera cuando se intenta acceder a un
                   atributo o
                   método que no existe en un objeto.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           objeto = "Hola"
@@ -271,7 +271,7 @@
                   <span class="fw-bold">Error de
                     <code class="language-python">ZeroDivisionError</code></span>: Ocurre cuando se intenta dividir un
                   número entre cero.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           x = 5 / 0
@@ -284,7 +284,7 @@
                     <code class="language-python">FileNotFoundError</code></span>: Se produce cuando se intenta abrir un
                   archivo que no
                   existe.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           open("archivo_inexistente.txt")
@@ -304,7 +304,7 @@
                 esperado. Son errores en la lógica del programa.
               </p>
               <p>Ejemplo.</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       def calcular_area(base, altura):
@@ -596,7 +596,7 @@
                 módulo o paquete especificado.
               </p>
               <p>Ejemplo:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import modulo_inexistente
@@ -613,7 +613,7 @@
                 condición de parada adecuada y se llama infinitamente.
               </p>
               <p>Ejemplo:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       def funcion_recursiva(): return funcion_recursiva()
@@ -666,7 +666,7 @@
                   un tipo de dato incorrecto), detecta que la operación no
                   puede continuar de forma normal. <br />
                   Ejemplo:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           x = [1, 2, 3]
@@ -708,7 +708,7 @@
                   error. Esto interrumpe inmediatamente la ejecución normal
                   del programa y comienza a buscar un manejador de excepciones
                   adecuado en el código (un bloque try...except). Ejemplo:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           x = [1, 2, 3]
@@ -755,7 +755,7 @@
                         </li>
                       </ul>
                       <strong>Ejemplo sin manejo</strong>:
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               print(10 / 0)  # Sin bloque try...except
@@ -773,7 +773,7 @@
                       <code class="language-python">except</code> se ejecuta,
                       permitiendo que el programa continúe su ejecución de
                       manera controlada.
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               try:
@@ -825,7 +825,7 @@
                   <code class="language-python">try...except</code> es la
                   siguiente:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         try:
@@ -862,7 +862,7 @@
                     como <code class="language-python">ValueError</code>,
                     <code class="language-python">ZeroDivisionError</code>, o
                     cualquier otra.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             try:
@@ -880,7 +880,7 @@
                     <span class="fw-bold">Capturar múltiples excepciones</span>: Si varias excepciones deben manejarse
                     de la misma
                     manera, se pueden agrupar usando una tupla.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             try:
@@ -897,7 +897,7 @@
                     Utilizando un
                     <code class="language-python">except</code> sin
                     especificar el tipo, se capturan todas las excepciones.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             try:
@@ -916,7 +916,7 @@
                     <span class="fw-bold">Obtener detalles de la excepción</span>: La excepción puede ser capturada en
                     una variable para
                     acceder a información detallada.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             try:
@@ -945,7 +945,7 @@
                     se genera ninguna
                     excepción dentro del bloque
                     <code class="language-python">try</code>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             try:
@@ -964,7 +964,7 @@
                     ejecuta, ya sea que ocurra o no
                     una excepción. Se utiliza para realizar limpieza de
                     recursos, como cerrar archivos o conexiones.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             try:
@@ -1010,7 +1010,7 @@
                   Supongamos que se desea leer números de un archivo y
                   calcular el recíproco de cada uno:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         try:
@@ -1055,7 +1055,7 @@
                 <ul>
                   <li>Fácil de usar.</li>
                   <li>No requiere herramientas externas.</li>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           def suma(a, b):
@@ -1092,7 +1092,7 @@
                       <li>Ejecutar el programa y usar comandos de pdb.</li>
                     </ul>
                     Ejemplo:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             import pdb
@@ -1156,7 +1156,7 @@
                   registrar información sobre la ejecución del programa en un
                   archivo o en la consola, lo que facilita la depuración.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         import logging
@@ -1182,7 +1182,7 @@
                   errores comunes y verificar la tipificación estática.
                 </p>
                 <p>Ejemplo con flake8: Ejecutar en la terminal:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         flake8 mi_codigo.py
@@ -1211,7 +1211,7 @@
                 <p>
                   Ejemplo con <code class="language-python">cProfile</code>:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         python -m cProfile mi_codigo.py
@@ -1231,7 +1231,7 @@
                 ocurran en producción.
               </p>
               <p>Ejemplo con unittest:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import unittest
@@ -1260,7 +1260,7 @@
                 No se puede agregar más de un bloque
                 <code class="language-python">except</code> sin nombre
                 (anónimo) después de los bloques con nombre.
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Este es el código principal que siempre se ejecuta sin problemas
@@ -1294,7 +1294,7 @@
                 No se debe poner excepciones más concretas antes de las más
                 generales dentro de la misma secuencia de bloques except. Por
                 ejemplo, se puede hacer esto:
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         try:
@@ -1310,7 +1310,7 @@
                 una certeza absoluta de que se desea que una parte específica
                 del código quede excluida de la generación de su excepción
                 correspondiente en caso que suceda).
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         try:
@@ -1332,7 +1332,7 @@
                 puede usar solamente dentro del bloque
                 <code class="language-python">except</code>, y genera la misma
                 excepción que se está manejando actualmente.
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         edad = int(input("Introduce tu edad: "))
@@ -1376,7 +1376,7 @@
                 problemas durante el desarrollo y garantizando la integridad
                 de los datos. <br />
                 Si se desea estar seguro que un número sea positivo:
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         numero = 5
@@ -1437,7 +1437,7 @@
                   </li>
                   <li>
                     <strong>Ejemplo</strong>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             raise BaseException("Esto es una excepción general")
@@ -1460,7 +1460,7 @@
                   </li>
                   <li>
                     <strong>Ejemplo</strong>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             raise Exception("Excepción genérica")
@@ -1482,7 +1482,7 @@
                   </li>
                   <li>
                     <strong>Ejemplo</strong>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             x = 1 / 0  # Genera un ZeroDivisionError, hijo de ArithmeticError
@@ -1505,7 +1505,7 @@
                   </li>
                   <li>
                     <strong>Ejemplo</strong>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             x = 10 / 0
@@ -1528,7 +1528,7 @@
                   </li>
                   <li>
                     <strong>Ejemplo</strong>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             "import math
@@ -1551,7 +1551,7 @@
                   </li>
                   <li>
                     <strong>Ejemplo</strong>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             assert 2 + 2 == 5, "Aserción fallida"
@@ -1573,7 +1573,7 @@
                   </li>
                   <li>
                     <strong>Ejemplo</strong>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             "obj = 5
@@ -1596,7 +1596,7 @@
                   </li>
                   <li>
                     <strong>Ejemplo</strong>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             input("Ingresa algo: ")  # Genera EOFError si se presiona Ctrl+D (Linux/Mac) o Ctrl+Z (Windows)
@@ -1618,7 +1618,7 @@
                   </li>
                   <li>
                     <strong>Ejemplo</strong>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             import nonexistent_module
@@ -1642,7 +1642,7 @@
                   </li>
                   <li>
                     <strong>Ejemplo</strong>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             "lista = [1, 2, 3]
@@ -1666,7 +1666,7 @@
                   </li>
                   <li>
                     <strong>Ejemplo</strong>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                 "diccionario = {""a"": 1}
@@ -1690,7 +1690,7 @@
                   </li>
                   <li>
                     <strong>Ejemplo</strong>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             "while True:
@@ -1713,7 +1713,7 @@
                   </li>
                   <li>
                     <strong>Ejemplo</strong>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             a = [1] * (10**10)
@@ -1735,7 +1735,7 @@
                   </li>
                   <li>
                     <strong>Ejemplo</strong>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             print(una_variable_no_definida)
@@ -1758,7 +1758,7 @@
                   </li>
                   <li>
                     <strong>Ejemplo</strong>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             "class MiClase:
@@ -1782,7 +1782,7 @@
                   </li>
                   <li>
                     <strong>Ejemplo</strong>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             open("/ruta/no/existe.txt")
@@ -1804,7 +1804,7 @@
                   </li>
                   <li>
                     <strong>Ejemplo</strong>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             x = "texto" + 5
@@ -1826,7 +1826,7 @@
                   </li>
                   <li>
                     <strong>Ejemplo</strong>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             int("texto")
@@ -1849,7 +1849,7 @@
                   </li>
                   <li>
                     <strong>Ejemplo</strong>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             b"\xff".decode("utf-8")
@@ -1871,7 +1871,7 @@
                   </li>
                   <li>
                     <strong>Ejemplo</strong>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             "iterador = iter([1, 2, 3])
@@ -1920,7 +1920,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -1938,20 +1938,20 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
-              <div class="menu-item"><a href="#tipos-de-errores-en-python" class="simple-link">Tipos de Errores en
+              <div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
+              <div class="site-menu__item"><a href="#tipos-de-errores-en-python" class="site-menu__link">Tipos de Errores en
                   Python</a></div>
-              <div class="menu-item"><a href="#estrategias-para-manejar-errores" class="simple-link">Estrategias para
+              <div class="site-menu__item"><a href="#estrategias-para-manejar-errores" class="site-menu__link">Estrategias para
                   Manejar Errores</a></div>
-              <div class="menu-item"><a href="#la-anatomia-de-las-excepciones" class="simple-link">La Anatomía de las
+              <div class="site-menu__item"><a href="#la-anatomia-de-las-excepciones" class="site-menu__link">La Anatomía de las
                   Excepciones</a></div>
-              <div class="menu-item"><a href="#excepciones-integradas" class="simple-link">Excepciones Integradas</a>
+              <div class="site-menu__item"><a href="#excepciones-integradas" class="site-menu__link">Excepciones Integradas</a>
               </div>
               <!-- Comentarios  -->
-              <div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div>
+              <div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div>
             </div>
           </div>
         </div>
@@ -2018,7 +2018,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

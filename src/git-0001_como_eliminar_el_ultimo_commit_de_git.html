@@ -66,7 +66,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -84,7 +84,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -95,7 +95,7 @@
   </nav>
   <!-- Barra de Navegación -->
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!-- Borrar Ultimo Commit -->
@@ -150,7 +150,7 @@
                   correr en línea de comandos del terminal el siguiente
                   comando:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code
                       class="language-bash"
@@ -176,7 +176,7 @@
                   lo único que se debe hacer es corregir un archivo y no más,
                   en este caso se usa el siguiente comando:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         git reset HEAD^ --soft
@@ -193,7 +193,7 @@
                   <span class="fw-bold text-warning">commit</span>
                   sin necesidad de borrarlo con el siguiente código:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         git add .
@@ -232,7 +232,7 @@
                 <span class="fw-bold text-warning">commit</span> , para ello
                 se usa el comando:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code
                     class="language-bash"
@@ -244,7 +244,7 @@
                 Y luego se debe sincronizar forzosamente este cambio al repo
                 remoto, con el comando:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code
                     class="language-bash"
@@ -296,7 +296,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -314,22 +314,22 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-container-content">
-                <div class="menu-item">
-                  <a href="#introduccion" class="simple-link">Introducción</a>
+              <div class="site-menu__content">
+                <div class="site-menu__item">
+                  <a href="#introduccion" class="site-menu__link">Introducción</a>
                 </div>
-                <div class="menu-item">
-                  <a href="#el-commit-aun-no-esta-en-github" class="simple-link">El Commit aún no Está en Github</a>
+                <div class="site-menu__item">
+                  <a href="#el-commit-aun-no-esta-en-github" class="site-menu__link">El Commit aún no Está en Github</a>
                 </div>
-                <div class="menu-item">
-                  <a href="#el-commit-ya-esta-en-github" class="simple-link">El Commit ya Está en Github</a>
+                <div class="site-menu__item">
+                  <a href="#el-commit-ya-esta-en-github" class="site-menu__link">El Commit ya Está en Github</a>
                 </div>
                 <!-- Comentarios  -->
-                <div class="menu-item">
-                  <a href="#comments" class="simple-link">Comentarios</a>
+                <div class="site-menu__item">
+                  <a href="#comments" class="site-menu__link">Comentarios</a>
                 </div>
               </div>
             </div>
@@ -396,7 +396,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

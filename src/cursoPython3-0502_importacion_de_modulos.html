@@ -70,7 +70,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -88,7 +88,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -100,7 +100,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--   Importación de módulos en Python  -->
@@ -123,7 +123,7 @@
                 manejables, facilitando su mantenimiento y mejorando la
                 legibilidad.
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <figure>
                   <img src="https://i.ibb.co/4s1PXb7/importacionmodulos.jpg" class="img-fluid"
                     alt="Importación de módulos en Python" title="Importando y Usando un Módulo de Python" />
@@ -140,7 +140,7 @@
                 <code class="language-python">import</code> seguido del nombre
                 del módulo.
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import math
@@ -158,7 +158,7 @@
                 del módulo, se puede usar
                 <code class="language-python">from</code>.
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       from math import sqrt
@@ -176,7 +176,7 @@
                 se puede renombrar con
                 <code class="language-python">as</code>.
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import math as m
@@ -195,7 +195,7 @@
                 pero no es recomendable en proyectos grandes ya que puede
                 causar conflictos de nombres
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       from math import *
@@ -214,7 +214,7 @@
                 el mismo directorio que el archivo principal, se puede
                 importar así:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import mi_modulo
@@ -229,7 +229,7 @@
                 <code class="language-python">sys</code> para agregar el
                 directorio al sistema de búsqueda:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import sys
@@ -252,7 +252,7 @@
               <div>
                 <h3>Verificar si pip Está Instalado</h3>
                 <p>Ejecutar en la terminal o línea de comandos:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         pip --version
@@ -263,7 +263,7 @@
                   Si devuelve una versión, significa que está instalado, por
                   ejemplo:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         pip 23.0.1 from ... (python 3.10)
@@ -281,7 +281,7 @@
               <div>
                 <h3>Instalar un Módulo Externo</h3>
                 <p>El comando básico para instalar un módulo es:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         pip install nombre_del_modulo
@@ -296,7 +296,7 @@
               <div>
                 <h3>Instalar una Versión Específica</h3>
                 <p>Si se necesita una versión específica del módulo:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         pip install nombre_del_modulo==1.2.3
@@ -314,7 +314,7 @@
                   Para actualizar a la última versión de un módulo ya
                   instalado:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         pip install --upgrade nombre_del_modulo
@@ -333,7 +333,7 @@
                   archivo requirements.txt. Para instalar todos los módulos
                   listados:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         pip install -r requirements.txt
@@ -341,7 +341,7 @@
                     </pre>
                 </div>
                 <p>El archivo podría contener líneas como estas:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         requests==2.28.1
@@ -357,7 +357,7 @@
                 <p>
                   Si ya no se necesita un módulo, se puede desinstalar con:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         pip uninstall nombre_del_modulo
@@ -372,7 +372,7 @@
               <div>
                 <h3>Ver Módulos Instalados</h3>
                 <p>Para listar todos los módulos instalados:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         pip list
@@ -380,7 +380,7 @@
                     </pre>
                 </div>
                 <p>Esto mostrará algo similar a:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         Package    Version
@@ -407,7 +407,7 @@
                     aparece un error de permisos, use
                     <code class="language-python">sudo</code> en Linux/macOS o
                     abra CMD/PowerShell como administrador en Windows:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             sudo pip install nombre_del_modulo
@@ -435,7 +435,7 @@
               <ul>
                 <li>
                   <span class="fw-bold">Crear el entorno</span>:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           python -m venv mi_entorno
@@ -445,7 +445,7 @@
                 </li>
                 <li>
                   <span class="fw-bold">Activar el entorno</span>:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           mi_entorno\Scripts\activate
@@ -495,7 +495,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -510,17 +510,17 @@
         <!--  fin comentarios  -->
       </section>
 
-<!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h2>En Este Artículo</h2><div class="menu-scroll"><div class="menu-container"><div class="border border-1">
-<div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
-<div class="menu-item"><a href="#Importacion-directa" class="simple-link">Importación Directa</a></div>
-<div class="menu-item"><a href="#importar-un-elemento-especifico" class="simple-link">Importar un Elemento Específico</a></div>
-<div class="menu-item"><a href="#importar-y-renombrar" class="simple-link">Importar y Renombrar</a></div>
-<div class="menu-item"><a href="#Importar-todos-los-elementos-de-un-modulo" class="simple-link">Importar Todos los Elementos de un Módulo</a></div>
-<div class="menu-item"><a href="#importar-modulos-personalizados" class="simple-link">Importar Módulos Personalizados</a></div>
-<div class="menu-item"><a href="#modulos-externos" class="simple-link">Módulos Externos</a></div>
-<div class="menu-item"><a href="#uso-de-entornos-virtuales" class="simple-link">Uso de Entornos Virtuales</a></div>
+<!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h2>En Este Artículo</h2><div class="site-menu__scroll"><div class="site-menu"><div class="border border-1">
+<div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
+<div class="site-menu__item"><a href="#Importacion-directa" class="site-menu__link">Importación Directa</a></div>
+<div class="site-menu__item"><a href="#importar-un-elemento-especifico" class="site-menu__link">Importar un Elemento Específico</a></div>
+<div class="site-menu__item"><a href="#importar-y-renombrar" class="site-menu__link">Importar y Renombrar</a></div>
+<div class="site-menu__item"><a href="#Importar-todos-los-elementos-de-un-modulo" class="site-menu__link">Importar Todos los Elementos de un Módulo</a></div>
+<div class="site-menu__item"><a href="#importar-modulos-personalizados" class="site-menu__link">Importar Módulos Personalizados</a></div>
+<div class="site-menu__item"><a href="#modulos-externos" class="site-menu__link">Módulos Externos</a></div>
+<div class="site-menu__item"><a href="#uso-de-entornos-virtuales" class="site-menu__link">Uso de Entornos Virtuales</a></div>
 <!-- Comentarios  -->
-<div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div></div></div></div></aside>
+<div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div></div></div></div></aside>
     </main>
     <!--  fin principal  -->
   </div>
@@ -582,7 +582,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

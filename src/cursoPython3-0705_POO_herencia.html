@@ -68,7 +68,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -86,7 +86,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -98,7 +98,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  POO: Herencia en Python  -->
@@ -129,7 +129,7 @@
                 de los pilares fundamentales de la POO es la herencia, que
                 permite crear nuevas clases basadas en clases existentes.
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <figure>
                   <img src="https://i.ibb.co/BLLRnCg/pooherencia.jpg" class="img-fluid" alt="POO: Herencia en Python  "
                     title="Entendiendo la Herencia en Python" />
@@ -154,7 +154,7 @@
                 Aquí se tiene un ejemplo básico de cómo funciona la herencia
                 en Python:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Definición de la clase base
@@ -225,7 +225,7 @@
                 complejidad, especialmente en términos de resolución de
                 métodos y atributos cuando hay conflictos.
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Definición de la primera clase base
@@ -345,7 +345,7 @@
                     herencia y evita conflictos.
                   </p>
                   <p>Ejemplo:</p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Clase base A, define un método general llamado "method"
@@ -449,7 +449,7 @@
                   una clase es una subclase de otra. Esto es útil al trabajar
                   con jerarquías de clases y herencia.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         issubclass(subclass, class)
@@ -458,7 +458,7 @@
                     </pre>
                 </div>
                 <p>Ejemplo: Verificar una subclase directa:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         class A
@@ -471,7 +471,7 @@
                     </pre>
                 </div>
                 <p>Uso con múltiples clases en una tupla:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Definición de clases
@@ -503,7 +503,7 @@
                   validar tipos de datos en un programa y mejorar la
                   legibilidad y la seguridad del código.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         isinstance(objectName, ClassName_or_tuple)
@@ -511,7 +511,7 @@
                     </pre>
                 </div>
                 <p>Ejemplo: Verificar múltiples clases con una tupla:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         class MiClase:
@@ -536,7 +536,7 @@
                   la misma ubicación de memoria.
                 </p>
                 <p>Ejemplo:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         a = [1, 2, 3]
@@ -589,7 +589,7 @@
                     de clases.
                   </p>
                   <p>Ejemplo:</p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           class Animal:
@@ -682,7 +682,7 @@
                 A continuación, se muestra un ejemplo de una jerarquía de
                 clases para un sistema de gestión de empleados:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Clase base
@@ -872,7 +872,7 @@
                 crear subclases con comportamientos específicos (polimorfismo)
                 a partir de una clase base.
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class Animal:
@@ -931,7 +931,7 @@
                   complejas. Mantenga su
                   funcionalidad lo más genérica posible para que sean
                   reutilizables y fáciles de extender.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           class Persona:
@@ -957,7 +957,7 @@
                     </li>
                     <li>
                       Ejemplo de una clase mixin:
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               # Definimos un mixin para agregar la funcionalidad de volar.
@@ -1001,7 +1001,7 @@
                   <code class="language-python">__init__</code>, utilice
                   <code class="language-python">super()</code> para garantizar
                   que la clase base sea inicializada correctamente.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           class Mamifero(Animal):
@@ -1029,7 +1029,7 @@
                     </li>
                     <li>
                       Aquí está el código ejemplo:
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               from typing import override  # Disponible desde Python 3.12
@@ -1119,7 +1119,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -1138,21 +1138,21 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
-              <div class="menu-item"><a href="#que-es-la-herencia" class="simple-link">¿Qué es la Herencia?</a></div>
-              <div class="menu-item"><a href="#herencia-multiple" class="simple-link">Herencia Múltiple</a></div>
-              <div class="menu-item"><a href="#metodos-especiales-y-super" class="simple-link">Métodos especiales y
+              <div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
+              <div class="site-menu__item"><a href="#que-es-la-herencia" class="site-menu__link">¿Qué es la Herencia?</a></div>
+              <div class="site-menu__item"><a href="#herencia-multiple" class="site-menu__link">Herencia Múltiple</a></div>
+              <div class="site-menu__item"><a href="#metodos-especiales-y-super" class="site-menu__link">Métodos especiales y
                   <code class="language-python">super()</code></a></div>
-              <div class="menu-item"><a href="#comoconstruir-una-jerarquia-de-clases" class="simple-link">Cómo Construir
+              <div class="site-menu__item"><a href="#comoconstruir-una-jerarquia-de-clases" class="site-menu__link">Cómo Construir
                   una Jerarquía de Clases</a></div>
-              <div class="menu-item"><a href="#ventajas-de-la-herencia" class="simple-link">Ventajas de la Herencia</a>
+              <div class="site-menu__item"><a href="#ventajas-de-la-herencia" class="site-menu__link">Ventajas de la Herencia</a>
               </div>
-              <div class="menu-item"><a href="#buenas-practicas" class="simple-link">Buenas Prácticas</a></div>
+              <div class="site-menu__item"><a href="#buenas-practicas" class="site-menu__link">Buenas Prácticas</a></div>
               <!-- Comentarios  -->
-              <div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div>
+              <div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div>
             </div>
           </div>
         </div>
@@ -1219,7 +1219,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

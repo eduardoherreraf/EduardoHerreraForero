@@ -4,13 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Página Web Semántica</title>
     <style>
-      body {
+      .demo-template {
         font-family: Arial, sans-serif;
         padding: 20px;
         background-color: #f5f5f5;
       }
 
-      .container {
+      .demo-template__container {
         max-width: 600px;
         margin: 0 auto;
         background: white;
@@ -19,7 +19,7 @@
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       }
 
-      button {
+      .demo-template__button {
         background-color: #007bff;
         color: white;
         border: none;
@@ -31,11 +31,11 @@
         transition: background-color 0.3s;
       }
 
-      button:hover {
+      .demo-template__button:hover {
         background-color: #0056b3;
       }
 
-      .tarjeta {
+      .demo-template__tarjeta {
         border: 2px solid #28a745;
         border-radius: 8px;
         padding: 20px;
@@ -56,27 +56,27 @@
         }
       }
 
-      .tarjeta h3 {
+      .demo-template__tarjeta .demo-template__h3 {
         color: #28a745;
         margin-top: 0;
       }
 
-      .tarjeta p {
+      .demo-template__tarjeta .demo-template__p {
         color: #666;
         line-height: 1.5;
       }
 
-      .tarjeta button {
+      .demo-template__tarjeta .demo-template__button {
         background-color: #28a745;
         font-size: 14px;
         padding: 8px 16px;
       }
 
-      .tarjeta button:hover {
+      .demo-template__tarjeta .demo-template__button:hover {
         background-color: #218838;
       }
 
-      .contador {
+      .demo-template__contador {
         background-color: #e9ecef;
         padding: 10px;
         border-radius: 5px;
@@ -85,41 +85,41 @@
         font-weight: bold;
       }
 
-      .limpiar {
+      .demo-template__limpiar {
         background-color: #dc3545;
       }
 
-      .limpiar:hover {
+      .demo-template__limpiar:hover {
         background-color: #c82333;
       }
     </style>
   </head>
-  <body>
+  <body class="demo-template">
     <main>
-      <div class="container">
+      <div class="container demo-template__container">
         <h1>Ejemplo de Template con Botón</h1>
-        <p>Haz clic en el botón para agregar contenido usando la plantilla:</p>
+        <p class="demo-template__p">Haz clic en el botón para agregar contenido usando la plantilla:</p>
 
         <!-- Template - No se renderiza hasta ser usado -->
         <template id="mi-plantilla">
-          <div class="tarjeta">
-            <h3>🎉 Contenido Generado</h3>
-            <p>
+          <div class="demo-template__tarjeta">
+            <h3 class="demo-template__h3">🎉 Contenido Generado</h3>
+            <p class="demo-template__p">
               Este contenido fue creado dinámicamente usando la plantilla HTML.
               Cada vez que presionas el botón, se clona este template.
             </p>
-            <button onclick="this.parentElement.remove()">
+            <button onclick="this.parentElement.remove()" class="demo-template__button">
               ❌ Eliminar esta tarjeta
             </button>
           </div>
         </template>
 
         <!-- Botones de control -->
-        <button id="agregar-contenido">➕ Agregar Contenido</button>
-        <button id="limpiar-todo" class="limpiar">🗑️ Limpiar Todo</button>
+        <button id="agregar-contenido" class="demo-template__button">➕ Agregar Contenido</button>
+        <button id="limpiar-todo" class="demo-template__limpiar demo-template__button">🗑️ Limpiar Todo</button>
 
         <!-- Contador -->
-        <div class="contador">
+        <div class="demo-template__contador">
           Tarjetas creadas: <span id="contador">0</span>
         </div>
 

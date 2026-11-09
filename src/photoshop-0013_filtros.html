@@ -68,7 +68,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -86,7 +86,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -98,7 +98,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Filtros  -->
@@ -141,7 +141,7 @@
                 principal en:
                 <span class="text-success fw-bold">Filtros > Galería de Filtros</span>.
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <figure>
                   <img src="./images/ps@galeriaFiltros.jpg" class="img-fluid" alt="Galería de Filtros" />
                   <figcaption>Galería de Filtros en Photoshop</figcaption>
@@ -220,7 +220,7 @@
                     <span class="fw-bold">Cargar la imagen</span>: en el menú
                     principal:
                     <span class="text-success fw-bold">Archivo > Colocar Elemento Incrustado... ></span>
-                    <div class="centrar-imagen magen-intro">
+                    <div class="site-image site-intro-image">
                       <figure>
                         <img src="./images/ps@colocarImagenIncrustado.jpg" class="img-fluid"
                           alt="Colocar una Imagen Incrustado..." />
@@ -234,7 +234,7 @@
                   <li>
                     <span class="fw-bold">Convertir la imagen en Inteligente:</span>
                     hacer doble clic sobre la imagen recién colocada.
-                    <div class="centrar-imagen magen-intro">
+                    <div class="site-image site-intro-image">
                       <figure>
                         <img src="./images/ps@imagenInteligente.jpg" class="img-fluid" alt="Imagen Inteligente" />
                         <figcaption>
@@ -251,7 +251,7 @@
                   <li>
                     <span class="fw-bold">Aplicar el filtro de Desenfoque</span>: En el menú principal escoger:
                     <span class="text-success fw-bold">Filter > Desenfocar > Desenfoque Gaussiano... ></span>
-                    <div class="centrar-imagen magen-intro">
+                    <div class="site-image site-intro-image">
                       <figure>
                         <img src="./images/ps@imagenInteligenteDesenfoqueGauss.jpg" class="img-fluid"
                           alt="Filtros Inteligente Desenfoque Gauss" />
@@ -262,14 +262,14 @@
                       </figure>
                     </div>
                     En esta opción del menú están los
-                    <span class="text-warning f-bold">Filtros Inteligentes</span>, se ha escogido el desenfoque
+                    <span class="text-warning site-content__f-bold">Filtros Inteligentes</span>, se ha escogido el desenfoque
                     gaussiano.
                   </li>
                   <li>
                     <span class="fw-bold">Ajustar los parámetros del filtro</span>: En este caso se cambio de 1px a 4px
                     el parámetro radio.
                   </li>
-                  <div class="centrar-imagen magen-intro">
+                  <div class="site-image site-intro-image">
                     <figure>
                       <img src="./images/ps@imagenInteligenteDesenfoqueGaussResultado.jpg" class="img-fluid"
                         alt="Filtros Inteligente Desenfoque Gauss Resultado" />
@@ -297,7 +297,7 @@
                         original.
                       </li>
                     </ul>
-                    <div class="centrar-imagen magen-intro">
+                    <div class="site-image site-intro-image">
                       <figure>
                         <img src="./images/ps@imagenInteligenteDesenfoqueGaussResultadoFinal.jpg" class="img-fluid"
                           alt="Filtros Inteligente Desenfoque Gauss Resultado Final" />
@@ -358,7 +358,7 @@
                     <li>
                       Hacer clic derecho sobre la capa seleccionada y elegir
                       la opción "Convertir en Objeto Inteligente".
-                      <div class="centrar-imagen magen-intro">
+                      <div class="site-image site-intro-image">
                         <figure>
                           <img src="./images/ps@convertirImagenInteligenteCapal.jpg" class="img-fluid"
                             alt="Convertir Imagen Inteligente Capa" />
@@ -373,7 +373,7 @@
                       Alternativamente, se puede ir al menú superior y
                       seleccionar
                       <span class="text-success fw-bold">Filtro > Convertir en objeto inteligente ></span>.
-                      <div class="centrar-imagen magen-intro">
+                      <div class="site-image site-intro-image">
                         <figure>
                           <img src="./images/ps@convertirImagenInteligente.jpg" class="img-fluid"
                             alt="Convertir Imagen Inteligente" />
@@ -437,7 +437,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -455,18 +455,18 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
-              <div class="menu-item"><a href="#galeria-de-filtros" class="simple-link">Galería de Filtros</a></div>
-              <div class="menu-item"><a href="#desenfoque-con-filtro-inteligente" class="simple-link">Desenfoque con
+              <div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
+              <div class="site-menu__item"><a href="#galeria-de-filtros" class="site-menu__link">Galería de Filtros</a></div>
+              <div class="site-menu__item"><a href="#desenfoque-con-filtro-inteligente" class="site-menu__link">Desenfoque con
                   Filtro Inteligente</a></div>
-              <div class="menu-item"><a href="#convertir-a-filtro-inteligente" class="simple-link">Convertir a Filtro
+              <div class="site-menu__item"><a href="#convertir-a-filtro-inteligente" class="site-menu__link">Convertir a Filtro
                   Inteligente</a></div>
               <!-- Comentarios  -->
-              <div class="menu-item">
-                <a href="#comments" class="simple-link">Comentarios</a>
+              <div class="site-menu__item">
+                <a href="#comments" class="site-menu__link">Comentarios</a>
               </div>
             </div>
           </div>
@@ -535,7 +535,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

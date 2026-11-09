@@ -77,7 +77,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -95,7 +95,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -107,7 +107,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Módulos especializados de Python: matemático, aleatorio y de sistema en Python  -->
@@ -129,7 +129,7 @@
                 matemáticas, generación de números aleatorios y la obtención
                 de información sobre el sistema en ejecución, respectivamente.
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <figure>
                   <img src="https://i.ibb.co/BPcv16g/modulosmathrandomos.jpg" class="img-fluid"
                     alt="Módulos especializados de Python: matemático, aleatorio y de sistema en Python  "
@@ -165,7 +165,7 @@
                     local actual, incluyendo variables, funciones, y otros
                     objetos.
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Ejemplo sin argumentos
@@ -195,7 +195,7 @@
                     Cuando se pasa un objeto como argumento, devuelve una
                     lista de los atributos y métodos del objeto.
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Ejemplo con un argumento
@@ -214,7 +214,7 @@
                     Si se utiliza con un objeto definido por el usuario,<code>dir()</code>
                     muestra los atributos y métodos de ese objeto.
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           class MiClase:
@@ -240,7 +240,7 @@
                     nombres reservados o especiales utilizados por Python para
                     funcionalidades internas.
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           print(dir(int))
@@ -266,7 +266,7 @@
                     Es útil para inspeccionar qué métodos y atributos están
                     disponibles en un módulo.
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           import math
@@ -280,7 +280,7 @@
                     nombres de todas las entidades dentro del módulo
                     <code class="language-python">math:</code>
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           import math
@@ -305,7 +305,7 @@
                     de nombres actual durante la depuración.
                   </p>
                   <p>
-                    <span class="fw-bod">Nota</span>: Si el nombre del módulo
+                    <span class="site-content__fw-bod">Nota</span>: Si el nombre del módulo
                     tiene un alias, debes usar el alias, no el nombre
                     original.
                   </p>
@@ -519,7 +519,7 @@
               <!-- Ejemplo de Uso Práctico -->
               <div>
                 <h3>Ejemplo de Uso Práctico</h3>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         import math
@@ -613,7 +613,7 @@
                     <li>
                       <code class="language-python">random()</code>: Devuelve
                       un número flotante entre 0.0 y 1.0.
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               print(random.random())  # Ejemplo: 0.453627327015
@@ -625,7 +625,7 @@
                       <code class="language-python">uniform(a, b)</code>:
                       Genera un número flotante entre los valores
                       especificados a y b.
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               print(random.uniform(1, 10))  # Ejemplo: 7.934
@@ -637,7 +637,7 @@
                       <code class="language-python">randint(a, b)</code>:
                       Genera un número entero aleatorio entre a y b (ambos
                       inclusive).
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               print(random.randint(1, 10))  # Ejemplo: 4
@@ -648,7 +648,7 @@
                     <li>
                       <code class="language-python">randrange(start, stop[, step])</code>: Devuelve un número entero de
                       un rango especificado.
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               print(random.randrange(1, 10, 2))  # Ejemplo: 3
@@ -667,7 +667,7 @@
                       <code class="language-python">choice(seq)</code>:
                       Selecciona un elemento aleatorio de una secuencia
                       (lista, tupla, cadena, etc.).
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               opciones = ['rojo', 'verde', 'azul']
@@ -680,7 +680,7 @@
                       <code class="language-python">choices(population, weights=None, k=1)</code>: Selecciona k
                       elementos con reemplazo, opcionalmente
                       ponderados.
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               colores = ['rojo', 'verde', 'azul']
@@ -691,7 +691,7 @@
                     </li>
                     <li>
                       <code class="language-python">sample(population, k)</code>: Selecciona k elementos sin reemplazo.
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               numeros = [1, 2, 3, 4, 5]
@@ -710,7 +710,7 @@
                     <li>
                       <code class="language-python">shuffle(x)</code>: Mezcla
                       los elementos de una lista en su lugar.
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               cartas = [1, 2, 3, 4, 5] random.shuffle(cartas)
@@ -730,7 +730,7 @@
                       <code class="language-python">seed(a=None)</code>:
                       Establece la semilla del generador aleatorio para
                       obtener los mismos resultados en cada ejecución.
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               random.seed(42)
@@ -758,7 +758,7 @@
                       <code class="language-python">setstate(state)</code>:
                       Restablece el estado interno del generador de números
                       aleatorios a partir del objeto de estado proporcionado.
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               import random
@@ -788,7 +788,7 @@
                   Crear un programa que genere una lista de números
                   aleatorios:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         import random
@@ -828,7 +828,7 @@
                     <code class="language-python">platform.platform()</code>:
                     Genera una descripción de la plataforma en la que se está
                     ejecutando el programa.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             import platform
@@ -852,7 +852,7 @@
                   <li>
                     <code class="language-python">platform.system()</code>:
                     Devuelve el nombre del sistema operativo.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             import platform
@@ -865,7 +865,7 @@
                   <li>
                     <code class="language-python">platform.release()</code>:
                     Obtiene la versión del sistema operativo.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             import platform
@@ -879,7 +879,7 @@
                     <code class="language-python">platform.version()</code>:
                     Proporciona más detalles sobre la versión del sistema
                     operativo.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             import platform
@@ -892,7 +892,7 @@
                   <li>
                     <code class="language-python">platform.machine()</code>:
                     Devuelve el tipo de máquina.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             import platform
@@ -905,7 +905,7 @@
                   <li>
                     <code class="language-python">platform.processor()</code>:
                     Indica el tipo de procesador, si está disponible.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             import platform
@@ -918,7 +918,7 @@
                   <li>
                     <code class="language-python">platform.python_version()</code>: Devuelve la versión de Python que se
                     está utilizando.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             import platform
@@ -931,7 +931,7 @@
                   <li>
                     <code class="language-python">platform.architecture()</code>: Indica si el sistema es de 32 o 64
                     bits.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             import platform
@@ -943,7 +943,7 @@
                   <li>
                     <code class="language-python">platform.node()</code>:
                     Devuelve el nombre del host de la máquina.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             import platform
@@ -956,7 +956,7 @@
                     <code class="language-python">platform.uname()</code>:
                     Devuelve un objeto con toda la información del sistema:
                     sistema operativo, nodo, versión, máquina, etc.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             import platform
@@ -976,7 +976,7 @@
                   El siguiente ejemplo muestra cómo usar varias funciones del
                   módulo <code class="language-python">platform</code>:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         import platform
@@ -1095,7 +1095,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -1110,15 +1110,15 @@
         <!--  fin comentarios  -->
       </section>
 
-<!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h2>En Este Artículo</h2><div class="menu-scroll"><div class="menu-container"><div class="border border-1">
-<div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
-<div class="menu-item"><a href="#inspector-de-nombres-y-aAtributos" class="simple-link">Inspector de Nombres y Atributos</a></div>
-<div class="menu-item"><a href="#modulo-math" class="simple-link">Módulo <code class="language-python">math</code></a></div>
-<div class="menu-item"><a href="#moduloRandom" class="simple-link">Módulo <code class="language-python">random</code></a></div>
-<div class="menu-item"><a href="#modulo-platform" class="simple-link">Módulo <code class="language-python">platform</code></a></div>
+<!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h2>En Este Artículo</h2><div class="site-menu__scroll"><div class="site-menu"><div class="border border-1">
+<div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
+<div class="site-menu__item"><a href="#inspector-de-nombres-y-aAtributos" class="site-menu__link">Inspector de Nombres y Atributos</a></div>
+<div class="site-menu__item"><a href="#modulo-math" class="site-menu__link">Módulo <code class="language-python">math</code></a></div>
+<div class="site-menu__item"><a href="#moduloRandom" class="site-menu__link">Módulo <code class="language-python">random</code></a></div>
+<div class="site-menu__item"><a href="#modulo-platform" class="site-menu__link">Módulo <code class="language-python">platform</code></a></div>
 
 <!-- Comentarios  -->
-<div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div></div></div></div></aside>
+<div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div></div></div></div></aside>
 <!--  fin barra lateral  -->
    </main>
     <!--  fin principal  -->
@@ -1181,7 +1181,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

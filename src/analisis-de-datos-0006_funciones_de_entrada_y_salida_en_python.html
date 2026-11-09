@@ -79,7 +79,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -97,7 +97,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -109,7 +109,7 @@
   <!-- Barra de Navegación -->
 
   <!--  Principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Funciones de Entrada y Salida en Python-->
@@ -121,14 +121,14 @@
           <!-- Introducción -->
           <div class="mt-3">
             <h2>Introducción</h2>
-            <div class="centrar-imagen magen-intro mb-5">
-              <figure class="img-container">
+            <div class="site-image site-intro-image mb-5">
+              <figure class="site-content__img-container">
                 <img src="https://i.ibb.co/yFBWMj0p/analisis-de-datos-funciones-de-Entrada-y-Salida-en-Python-comp.jpg"
                   class="img-fluid"
                   alt="Ilustración que representa la función input y print en Python como una interacción entre una persona que entrega información y un asistente que devuelve una respuesta."
                   title="Analogía visual de las funciones de entrada y salida en Python" loading="lazy"
                   onerror="this.onerror=null; this.src='https://i.postimg.cc/D0CTNJ74/analisis-de-datos-funciones-de-Entrada-y-Salida-en-Python-comp.jpg';" />
-                <figcaption class="img-caption">
+                <figcaption class="site-image__caption">
                   Representación visual de cómo las funciones <code class="language-py">input()</code> y <code
                     class="language-py">print()</code> en Python permiten comunicarse con el
                   usuario, como en un diálogo donde se entrega y se recibe información.
@@ -141,7 +141,7 @@
             <p>A continuación se explica en detalle cada una con ejemplos claros.</p>
           </div>
           <!-- Introducción Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Función de Entrada: input()  -->
           <div id="funcion-de-entrada:-input()">
@@ -154,7 +154,7 @@
               números, se debe convertir el tipo.</p>
             <!-- Sintaxis -->
             <p><span class="fw-bold">Sintaxis básica</span>:</p>
-            <div class="ej-sintaxis-100">
+            <div class="code-example__full-syntax">
               <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                     variable = input("Mensaje al usuario: ")
@@ -166,7 +166,7 @@
             <ul>
               <li>
                 <span class="fw-bold">Entrada de texto</span>:
-                <div class="ej-sintaxis-100">
+                <div class="code-example__full-syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
                       nombre = input("Ingrese su nombre: ")
@@ -175,7 +175,7 @@
                     </pre>
                 </div>
                 <span class="fw-bold">Salida</span>: <br>
-                <div class="ej-sintaxis-100">
+                <div class="code-example__full-syntax">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-texto" data-prismjs-copy="Copy">
                     Ingrese su nombre: Eduardo
@@ -186,7 +186,7 @@
               </li>
               <li>
                 <span class="fw-bold">Entrada de número entero</span>: <br>
-                <div class="ej-sintaxis-100">
+                <div class="code-example__full-syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
                       edad = int(input("Ingrese su edad: "))                   # se hace necesaria la conversión a entero
@@ -197,7 +197,7 @@
               </li>
               <li>
                 <span class="fw-bold">Entrada de número decimal</span>: <br>
-                <div class="ej-sintaxis-100">
+                <div class="code-example__full-syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
                       altura = float(input("Ingrese su altura en metros: "))   # se hace necesaria la conversión a flotante
@@ -217,7 +217,7 @@
             <p>Permite imprimir textos, variables, expresiones matemáticas o el resultado de funciones.</p>
             <!-- Sintaxis -->
             <p><span class="fw-bold">Sintaxis básica</span>:</p>
-            <div class="ej-sintaxis-100">
+            <div class="code-example__full-syntax">
               <pre data-src-status="loaded" tabindex="0">
                     <code class="language-py" data-prismjs-copy="Copy">
                       print(valor1, valor2, ..., sep=' ', end='\n')
@@ -236,7 +236,7 @@
             <ul>
               <li>
                 <span class="fw-bold">Salida básica</span>: <br>
-                <div class="ej-sintaxis-100">
+                <div class="code-example__full-syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
                         print("Hola mundo")
@@ -246,7 +246,7 @@
               </li>
               <li>
                 <span class="fw-bold">Salida de múltiples valores</span>: <br>
-                <div class="ej-sintaxis-100">
+                <div class="code-example__full-syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
                        nombre = "Eduardo"
@@ -259,7 +259,7 @@
               <li>
                 <span class="fw-bold">Uso de <code class="language-py">sep</code> y <code
                     class="language-py">end</code></span>: <br>
-                <div class="ej-sintaxis-100">
+                <div class="code-example__full-syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
                         print("Python", "es", "genial", sep="-", end="!!!\n")
@@ -267,7 +267,7 @@
                     </pre>
                 </div>
                 <span class="fw-bold">Salida:</span>: <br>
-                <div class="ej-sintaxis-100">
+                <div class="code-example__full-syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-texto" data-prismjs-copy="Copy">
                         Python-es-genial!!!
@@ -277,7 +277,7 @@
               </li>
               <li>
                 <span class="fw-bold">Uso de f-strings (formateo moderno)</span>: <br>
-                <div class="ej-sintaxis-100">
+                <div class="code-example__full-syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
                        nombre = "Eduardo"
@@ -289,7 +289,7 @@
               </li>
               <li>
                 <span class="fw-bold">Entrada de número entero</span>: <br>
-                <div class="ej-sintaxis-100">
+                <div class="code-example__full-syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
                       edad = int(input("Ingrese su edad: "))                   # se hace necesaria la conversión a entero
@@ -307,7 +307,7 @@
             <h3>Ejemplo completo combinando entrada y salida </h3>
             <p>
               <span class="fw-bold">Salida básica</span>: <br>
-            <div class="ej-sintaxis-100">
+            <div class="code-example__full-syntax">
               <pre data-src-status="loaded" tabindex="0">
                     <code class="language-py" data-prismjs-copy="Copy">
                      nombre = input("Ingrese su nombre: ")
@@ -320,7 +320,7 @@
             </p>
             <p>
               <span class="fw-bold">Salida básica</span>: <br>
-            <div class="ej-sintaxis-100">
+            <div class="code-example__full-syntax">
               <pre data-src-status="loaded" tabindex="0">
                     <code class="language-texto" data-prismjs-copy="Copy">
                      Ingrese su nombre: Eduardo
@@ -355,7 +355,7 @@
                   <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
                     class="form-control rounded-3" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">Enviar</button>
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">Enviar</button>
               </fieldset>
               <p class="small text-center">La política de privacidad, y los términos y condiciones estándisponibles en
                 el formulario de contacto.</p>
@@ -367,22 +367,22 @@
       <!-- -------------------------------- barra lateral -------------------------------- -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
 
-              <div class="menu-item">
-                <a href="#introduccion" class="simple-link">Introducción</a>
+              <div class="site-menu__item">
+                <a href="#introduccion" class="site-menu__link">Introducción</a>
               </div>
-              <div class="menu-item"><a href="#funcion-de-entrada:-input()" class="simple-link">Función de Entrada:
+              <div class="site-menu__item"><a href="#funcion-de-entrada:-input()" class="site-menu__link">Función de Entrada:
                   <code class="language-py">input()</code></a></div>
-              <div class="menu-item"><a href="#funciones-de-salida:-print()" class="simple-link">Funciones de Salida:
+              <div class="site-menu__item"><a href="#funciones-de-salida:-print()" class="site-menu__link">Funciones de Salida:
                   <code class="language-py">print()</code></a></div>
-              <div class="menu-item"><a href="#ejemplo-completo-combinando-entrada-y-salida" class="simple-link">Ejemplo
+              <div class="site-menu__item"><a href="#ejemplo-completo-combinando-entrada-y-salida" class="site-menu__link">Ejemplo
                   completo combinando entrada y salida</a></div>
               <!-- Comentarios  -->
-              <div class="menu-item">
-                <a href="#comments" class="simple-link">Comentarios</a>
+              <div class="site-menu__item">
+                <a href="#comments" class="site-menu__link">Comentarios</a>
               </div>
             </div>
           </div>
@@ -449,7 +449,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

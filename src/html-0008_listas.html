@@ -58,7 +58,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -76,7 +76,7 @@
             <a class="nav-link mx-1 text-decoration-none" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo text-decoration-none" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active text-decoration-none site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1 text-decoration-none" href="index.html#contact">CONTACTO</a>
@@ -88,7 +88,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Listas HTML -->
@@ -111,7 +111,7 @@
                 organización, el objetivo es transformar las palabras en
                 contenido visualmente impactante.
               </p>
-              <div class="centrar-imagen imagen20">
+              <div class="site-image site-image-size--small site-image-size">
                 <picture>
                   <img src="https://i.ibb.co/nsLkz5xm/listas-html-ejemplo.png" class="img-fluid" alt="Listas HTML "
                     title="Listas HTML " />
@@ -120,7 +120,7 @@
               </div>
             </div>
             <!-- Introducción Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Definición de Listas en HTML -->
             <div id="definicion-de-listas-en-html">
@@ -140,7 +140,7 @@
               </p>
             </div>
             <!-- Definición de Listas en HTML Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Tipos de Listas -->
             <div id="tipos-de-listas">
@@ -199,91 +199,91 @@
                     <code class="language-html">&lt;ol></code>:
                   </p>
                   <!-- Ejemplos de código -->
-                  <div class="code p-3">
+                  <div class="site-content__code p-3">
                     <div class="row">
                       <!-- Ejemplo -->
-                      <div class="ej-ejemplo">
-                        <div class="row ej-ejecutado mt-3">
+                      <div class="code-example">
+                        <div class="row code-example__output mt-3">
                           <!-- código ejecutado -->
-                          <div class="ej-container">
-                            <p class="ej-h3-ol">
+                          <div class="demo-content__container">
+                            <p class="demo-content__h3-ol">
                               🍋 Pasos para hacer una limonada
                             </p>
 
-                            <div class="ej-step">
-                              <span class="ej-step-number">1</span>
-                              <span class="ej-step-text">Corta los limones por la mitad.</span>
+                            <div class="demo-content__step">
+                              <span class="demo-content__step-number">1</span>
+                              <span class="demo-content__step-text">Corta los limones por la mitad.</span>
                             </div>
 
-                            <div class="ej-step">
-                              <span class="ej-step-number">2</span>
-                              <span class="ej-step-text">Exprime el jugo de los limones en un
+                            <div class="demo-content__step">
+                              <span class="demo-content__step-number">2</span>
+                              <span class="demo-content__step-text">Exprime el jugo de los limones en un
                                 recipiente.</span>
                             </div>
 
-                            <div class="ej-step">
-                              <span class="ej-step-number">3</span>
-                              <span class="ej-step-text">Añade agua y azúcar al gusto.</span>
+                            <div class="demo-content__step">
+                              <span class="demo-content__step-number">3</span>
+                              <span class="demo-content__step-text">Añade agua y azúcar al gusto.</span>
                             </div>
 
-                            <div class="ej-step">
-                              <span class="ej-step-number">4</span>
-                              <span class="ej-step-text">Revuelve bien hasta disolver el azúcar.</span>
+                            <div class="demo-content__step">
+                              <span class="demo-content__step-number">4</span>
+                              <span class="demo-content__step-text">Revuelve bien hasta disolver el azúcar.</span>
                             </div>
 
-                            <div class="ej-step">
-                              <span class="ej-step-number">5</span>
-                              <span class="ej-step-text">Sirve con hielo y disfruta.</span>
+                            <div class="demo-content__step">
+                              <span class="demo-content__step-number">5</span>
+                              <span class="demo-content__step-text">Sirve con hielo y disfruta.</span>
                             </div>
                           </div>
 
                           <!-- código ejecutado fin -->
                         </div>
                         <div class="row">
-                          <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                          <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                             <!-- código HTML -->
                             <pre>
                                 <code class="language-html" data-prismjs-copy="Copy">
                                   <div>
-                                    <div class="example">
+                                    <div class="site-content__example">
                                       &lt;div class="container">
                                         &lt;p class="h3">
                                           🍋 Pasos para hacer una limonada
                                         &lt;/p>
 
-                                        &lt;div class="step">
-                                          &lt;span class="step-number">1&lt;/span>
-                                          &lt;span class="step-text"
+                                        &lt;div class="site-content__step">
+                                          &lt;span class="site-content__step-number">1&lt;/span>
+                                          &lt;span class="site-content__step-text"
                                             >Corta los limones por la mitad.&lt;/span
                                           >
                                         &lt;/div>
 
-                                        &lt;div class="step">
-                                          &lt;span class="step-number">2&lt;/span>
-                                          &lt;span class="step-text"
+                                        &lt;div class="site-content__step">
+                                          &lt;span class="site-content__step-number">2&lt;/span>
+                                          &lt;span class="site-content__step-text"
                                             >Exprime el jugo de los limones en un
                                             recipiente.&lt;/span
                                           >
                                         &lt;/div>
 
-                                        &lt;div class="step">
-                                          &lt;span class="step-number">3&lt;/span>
-                                          &lt;span class="step-text"
+                                        &lt;div class="site-content__step">
+                                          &lt;span class="site-content__step-number">3&lt;/span>
+                                          &lt;span class="site-content__step-text"
                                             >Añade agua y azúcar al gusto.&lt;/span
                                           >
                                         &lt;/div>
 
-                                        &lt;div class="step">
-                                          &lt;span class="step-number">4&lt;/span>
-                                          &lt;span class="step-text"
+                                        &lt;div class="site-content__step">
+                                          &lt;span class="site-content__step-number">4&lt;/span>
+                                          &lt;span class="site-content__step-text"
                                             >Revuelve bien hasta disolver el
                                             azúcar.&lt;/span
                                           >
                                         &lt;/div>
 
-                                        &lt;div class="step">
-                                          &lt;span class="step-number">5&lt;/span>
-                                          &lt;span class="step-text"
+                                        &lt;div class="site-content__step">
+                                          &lt;span class="site-content__step-number">5&lt;/span>
+                                          &lt;span class="site-content__step-text"
                                             >Sirve con hielo y disfruta.&lt;/span
                                           >
                                         &lt;/div>
@@ -294,7 +294,7 @@
                               </pre>
                             <!-- código HTML -->
                           </div>
-                          <div class="ej-code-css col-lg-6 mb-3">
+                          <div class="code-example__css-panel col-lg-6 mb-3">
                             <!-- código CSS -->
                             <pre>
                                 <code class="language-css" data-prismjs-copy="Copy">
@@ -403,43 +403,43 @@
                   </ul>
                   Ejemplos de uso:
                   <!-- Ejemplos de código -->
-                  <div class="code p-3 rounded-2">
+                  <div class="site-content__code p-3 rounded-2">
                     <div class="row">
                       <!-- Ejemplo -->
-                      <div class="ej-ejemplo">
-                        <div class="row ej-ejecutado mt-3">
+                      <div class="code-example">
+                        <div class="row code-example__output mt-3">
                           <!-- código ejecutado -->
                           <div>
-                            <div class="ej-container-ol2">
-                              <div class="ej-example-ol2">
-                                <p class="ej-h3-ol2">
+                            <div class="demo-ol2__container">
+                              <div class="demo-ol2__example">
+                                <p class="demo-ol2__h3">
                                   Enumeración con números romanos:
                                 </p>
-                                <ol class="ej-ol2" type="I">
-                                  <li class="ej-li2">Julio</li>
-                                  <li class="ej-li2">Carmen</li>
-                                  <li class="ej-li2">Ignacio</li>
+                                <ol class="demo-content__ol2" type="I">
+                                  <li class="demo-content__li2">Julio</li>
+                                  <li class="demo-content__li2">Carmen</li>
+                                  <li class="demo-content__li2">Ignacio</li>
                                 </ol>
                               </div>
 
-                              <div class="ej-example-ol2">
-                                <p class="ej-h3-ol2">Inicia desde D o 4:</p>
-                                <ol class="ej-ol2" type="A" start="4">
-                                  <li class="ej-li2">Julio</li>
-                                  <li class="ej-li2">Carmen</li>
-                                  <li class="ej-li2">Ignacio</li>
+                              <div class="demo-ol2__example">
+                                <p class="demo-ol2__h3">Inicia desde D o 4:</p>
+                                <ol class="demo-content__ol2" type="A" start="4">
+                                  <li class="demo-content__li2">Julio</li>
+                                  <li class="demo-content__li2">Carmen</li>
+                                  <li class="demo-content__li2">Ignacio</li>
                                 </ol>
                               </div>
 
-                              <div class="ej-example-ol2">
-                                <p class="ej-h3-ol2">
+                              <div class="demo-ol2__example">
+                                <p class="demo-ol2__h3">
                                   Inicia desde V o 5 romano con conteo
                                   inverso:
                                 </p>
-                                <ol class="ej-ol2" type="I" start="5" reversed>
-                                  <li class="ej-li2">Julio</li>
-                                  <li class="ej-li2">Carmen</li>
-                                  <li class="ej-li2">Ignacio</li>
+                                <ol class="demo-content__ol2" type="I" start="5" reversed>
+                                  <li class="demo-content__li2">Julio</li>
+                                  <li class="demo-content__li2">Carmen</li>
+                                  <li class="demo-content__li2">Ignacio</li>
                                 </ol>
                               </div>
                             </div>
@@ -447,47 +447,47 @@
                           <!-- código ejecutado fin -->
                         </div>
                         <div class="row">
-                          <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                          <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                             <!-- código HTML -->
                             <pre>
                                 <code class="language-html" data-prismjs-copy="Copy">
                                   <div>
                                     &lt;div>
-                                      &lt;div class="container-ol">
-                                        &lt;div class="example-ol2">
+                                      &lt;div class="site-content__container-ol">
+                                        &lt;div class="site-content__example-ol2">
                                           &lt;p class="h3">
                                             Enumeración con números romanos:
                                           &lt;/p>
-                                          &lt;ol class="ol2" type="I">
-                                            &lt;li class="li2">Julio&lt;/li>
-                                            &lt;li class="li2">Carmen&lt;/li>
-                                            &lt;li class="li2">Ignacio&lt;/li>
+                                          &lt;ol class="site-content__ol2" type="I">
+                                            &lt;li class="site-content__li2">Julio&lt;/li>
+                                            &lt;li class="site-content__li2">Carmen&lt;/li>
+                                            &lt;li class="site-content__li2">Ignacio&lt;/li>
                                           &lt;/ol>
                                         &lt;/div>
 
-                                        &lt;div class="example-ol2">
+                                        &lt;div class="site-content__example-ol2">
                                           &lt;p class="h3">Inicia desde D o 4:&lt;/p>
-                                          &lt;ol class="ol2" type="A" start="4">
-                                            &lt;li class="li2">Julio&lt;/li>
-                                            &lt;li class="li2">Carmen&lt;/li>
-                                            &lt;li class="li2">Ignacio&lt;/li>
+                                          &lt;ol class="site-content__ol2" type="A" start="4">
+                                            &lt;li class="site-content__li2">Julio&lt;/li>
+                                            &lt;li class="site-content__li2">Carmen&lt;/li>
+                                            &lt;li class="site-content__li2">Ignacio&lt;/li>
                                           &lt;/ol>
                                         &lt;/div>
 
-                                        &lt;div class="example-ol2">
+                                        &lt;div class="site-content__example-ol2">
                                           &lt;p class="h3">
                                             Inicia desde V o 5 romano con conteo
                                             inverso:
                                           &lt;/p>
                                           &lt;ol
-                                            class="ol2"
+                                            class="site-content__ol2"
                                             type="I"
                                             start="5"
                                             reversed
                                           >
-                                            &lt;li class="li2">Julio&lt;/li>
-                                            &lt;li class="li2">Carmen&lt;/li>
-                                            &lt;li class="li2">Ignacio&lt;/li>
+                                            &lt;li class="site-content__li2">Julio&lt;/li>
+                                            &lt;li class="site-content__li2">Carmen&lt;/li>
+                                            &lt;li class="site-content__li2">Ignacio&lt;/li>
                                           &lt;/ol>
                                         &lt;/div>
                                       &lt;/div>
@@ -497,7 +497,7 @@
                               </pre>
                             <!-- código HTML -->
                           </div>
-                          <div class="ej-code-css col-lg-6 mb-3">
+                          <div class="code-example__css-panel col-lg-6 mb-3">
                             <!-- código CSS -->
                             <pre>
                                 <code class="language-css" data-prismjs-copy="Copy">
@@ -621,37 +621,37 @@
 
                   <div class="row">
                     <!-- Ejemplo -->
-                    <div class="ej-ejemplo">
-                      <div class="row ej-ejecutado mt-3">
+                    <div class="code-example">
+                      <div class="row code-example__output mt-3">
                         <!-- código ejecutado -->
                         <div>
-                          <div class="ej-example-ul">
-                            <p class="ej-h3-ul">Lista de compras</p>
-                            <ul class="ej-ul">
-                              <li class="ej-li">Manzanas</li>
-                              <li class="ej-li">Pan</li>
-                              <li class="ej-li">Leche</li>
-                              <li class="ej-li">Huevos</li>
-                              <li class="ej-li">Café</li>
+                          <div class="demo-content__example-ul">
+                            <p class="demo-content__h3-ul">Lista de compras</p>
+                            <ul class="demo-content__ul">
+                              <li class="demo-content__li">Manzanas</li>
+                              <li class="demo-content__li">Pan</li>
+                              <li class="demo-content__li">Leche</li>
+                              <li class="demo-content__li">Huevos</li>
+                              <li class="demo-content__li">Café</li>
                             </ul>
                           </div>
                         </div>
                         <!-- código ejecutado fin -->
                       </div>
                       <div class="row">
-                        <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                           <!-- código HTML -->
                           <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;div class="example-ul">
-                                  &lt;p class="h3-ul">Lista de compras&lt;/p>
-                                  &lt;ul class="-ul">
-                                    &lt;li class="li">Manzanas&lt;/li>
-                                    &lt;li class="li">Pan&lt;/li>
-                                    &lt;li class="li">Leche&lt;/li>
-                                    &lt;li class="li">Huevos&lt;/li>
-                                    &lt;li class="li">Café&lt;/li>
+                                &lt;div class="site-content__example-ul">
+                                  &lt;p class="site-content__h3-ul">Lista de compras&lt;/p>
+                                  &lt;ul class="site-content__ul">
+                                    &lt;li class="site-content__li">Manzanas&lt;/li>
+                                    &lt;li class="site-content__li">Pan&lt;/li>
+                                    &lt;li class="site-content__li">Leche&lt;/li>
+                                    &lt;li class="site-content__li">Huevos&lt;/li>
+                                    &lt;li class="site-content__li">Café&lt;/li>
                                   &lt;/ul>
                                 &lt;/div>                                
                               </div>        
@@ -659,7 +659,7 @@
                           </pre>
                           <!-- código HTML -->
                         </div>
-                        <div class="ej-code-css col-lg-6 mb-3">
+                        <div class="code-example__css-panel col-lg-6 mb-3">
                           <!-- código CSS -->
                           <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
@@ -805,77 +805,77 @@
                   <!-- Ejemplos de código -->
                   <div class="row">
                     <!-- Ejemplo -->
-                    <div class="ej-ejemplo">
-                      <div class="row ej-ejecutado mt-3">
+                    <div class="code-example">
+                      <div class="row code-example__output mt-3">
                         <!-- código ejecutado -->
                         <div>
-                          <div class="ej-example-ul2">
-                            <p class="ej-example-ul2-h3">
+                          <div class="demo-ul2__example">
+                            <p class="demo-content__example-ul2-h3">
                               Ejemplos de estilos de viñetas:
                             </p>
-                            <ul class="ej-lista-disco-ul2">
-                              <li class="ej-li-ul2">
+                            <ul class="demo-ul2__lista-disco">
+                              <li class="demo-ul2__li">
                                 Ítem con círculo relleno (disc)
                               </li>
-                              <li class="ej-li-ul2">
+                              <li class="demo-ul2__li">
                                 Otro ítem con círculo relleno
                               </li>
                             </ul>
-                            <ul class="ej-lista-circulo-ul2">
-                              <li class="ej-li-ul2">
+                            <ul class="demo-ul2__lista-circulo">
+                              <li class="demo-ul2__li">
                                 Ítem con círculo vacío (circle)
                               </li>
-                              <li class="ej-li-ul2">
+                              <li class="demo-ul2__li">
                                 Otro ítem con círculo vacío
                               </li>
                             </ul>
-                            <ul class="ej-lista-cuadrado-ul2">
-                              <li class="ej-li-ul2">
+                            <ul class="demo-ul2__lista-cuadrado">
+                              <li class="demo-ul2__li">
                                 Ítem con cuadrado (square)
                               </li>
-                              <li class="ej-li-ul2">
+                              <li class="demo-ul2__li">
                                 Otro ítem con cuadrado
                               </li>
                             </ul>
-                            <ul class="ej-lista-sin-vineta">
-                              <li class="ej-li-ul2">
+                            <ul class="demo-content__lista-sin-vineta">
+                              <li class="demo-ul2__li">
                                 Ítem sin viñeta (none)
                               </li>
-                              <li class="ej-li-ul2">Otro ítem sin viñeta</li>
+                              <li class="demo-ul2__li">Otro ítem sin viñeta</li>
                             </ul>
                           </div>
 
-                          <div class="ej-example-ul2">
-                            <p class="ej-example-ul2-h3">
+                          <div class="demo-ul2__example">
+                            <p class="demo-content__example-ul2-h3">
                               Viñeta Personalizada
                             </p>
-                            <ul class="ej-list-style-image">
-                              <li class="ej-li-ul2">
+                            <ul class="demo-content__list-style-image">
+                              <li class="demo-ul2__li">
                                 Elemento uno con viñeta personalizada
                               </li>
-                              <li class="ej-li-ul2">
+                              <li class="demo-ul2__li">
                                 Elemento dos con viñeta personalizada
                               </li>
                             </ul>
                           </div>
 
-                          <div class="ej-example-ul2">
-                            <p class="ej-example-ul2-h3">
+                          <div class="demo-ul2__example">
+                            <p class="demo-content__example-ul2-h3">
                               Cambio de posición de la viñeta
                             </p>
-                            <ul class="ej-inside ul-ul2">
-                              <li class="ej-li-ul2">
+                            <ul class="demo-content__inside site-content__ul-ul2">
+                              <li class="demo-ul2__li">
                                 Elemento uno, viñeta adentro (inside)
                               </li>
-                              <li class="ej-li-ul2">
+                              <li class="demo-ul2__li">
                                 Elemento dos, el texto se alinea con la viñeta
                               </li>
                             </ul>
-                            <ul class="ej-outside ul-ul2">
-                              <li class="ej-li-ul2">
+                            <ul class="demo-content__outside site-content__ul-ul2">
+                              <li class="demo-ul2__li">
                                 Elemento tres, viñeta afuera (ej-outside)
                               </li>
-                              <li class="ej-li-ul2">
+                              <li class="demo-ul2__li">
                                 Elemento cuatro, el texto se alinea
                                 independiente de la viñeta
                               </li>
@@ -885,46 +885,46 @@
                         <!-- código ejecutado fin -->
                       </div>
                       <div class="row">
-                        <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                           <!-- código HTML -->
                           <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>    
-                                &lt;div class="example">
+                                &lt;div class="site-content__example">
                                   &lt;h3>Ejemplos de estilos de viñetas:&lt;/h3>
-                                  &lt;ul class="lista-disco">
+                                  &lt;ul class="site-content__lista-disco">
                                       &lt;li>Ítem con círculo relleno (disc)&lt;/li>
                                       &lt;li>Otro ítem con círculo relleno&lt;/li>
                                   &lt;/ul>
-                                  &lt;ul class="lista-circulo">
+                                  &lt;ul class="site-content__lista-circulo">
                                       &lt;li>Ítem con círculo vacío (circle)&lt;/li>
                                       &lt;li>Otro ítem con círculo vacío&lt;/li>
                                   &lt;/ul>
-                                  &lt;ul class="lista-cuadrado">
+                                  &lt;ul class="site-content__lista-cuadrado">
                                       &lt;li>Ítem con cuadrado (square)&lt;/li>
                                       &lt;li>Otro ítem con cuadrado&lt;/li>
                                   &lt;/ul>
-                                  &lt;ul class="lista-sin-vineta">
+                                  &lt;ul class="site-content__lista-sin-vineta">
                                       &lt;li>Ítem sin viñeta (none)&lt;/li>
                                       &lt;li>Otro ítem sin viñeta&lt;/li>
                                   &lt;/ul>
                               &lt;/div>
 
-                              &lt;div class="example">
+                              &lt;div class="site-content__example">
                                   &lt;h3>Viñeta Personalizada&lt;/h3>
-                                  &lt;ul class="list-style-image">
+                                  &lt;ul class="site-content__list-style-image">
                                       &lt;li>Elemento uno con viñeta personalizada&lt;/li>
                                       &lt;li>Elemento dos con viñeta personalizada&lt;/li>
                                   &lt;/ul>
                               &lt;/div>
 
-                              &lt;div class="example">
+                              &lt;div class="site-content__example">
                                   &lt;h3>Cambio de posición de la viñeta&lt;/h3>
-                                  &lt;ul class="inside">
+                                  &lt;ul class="site-content__inside">
                                       &lt;li>Elemento uno, viñeta adentro (inside)&lt;/li>
                                       &lt;li>Elemento dos, el texto se alinea con la viñeta&lt;/li>
                                   &lt;/ul>
-                                  &lt;ul class="outside">
+                                  &lt;ul class="site-content__outside">
                                       &lt;li>Elemento tres, viñeta afuera (outside)&lt;/li>
                                       &lt;li>Elemento cuatro, el texto se alinea independiente de la viñeta&lt;/li>
                                   &lt;/ul>
@@ -935,7 +935,7 @@
                           </pre>
                           <!-- código HTML -->
                         </div>
-                        <div class="ej-code-css col-lg-6 mb-3">
+                        <div class="code-example__css-panel col-lg-6 mb-3">
                           <!-- código CSS -->
                           <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
@@ -1093,12 +1093,12 @@
                   </h4>
                   <div class="row">
                     <!-- Ejemplo -->
-                    <div class="ej-ejemplo">
-                      <div class="row ej-ejecutado mt-3">
+                    <div class="code-example">
+                      <div class="row code-example__output mt-3">
                         <!-- código ejecutado -->
                         <div>
-                          <div class="ej-example-box">
-                            <p class="ej-h3-dl">Tecnologías Front-End</p>
+                          <div class="demo-content__example-box">
+                            <p class="demo-content__h3-dl">Tecnologías Front-End</p>
                             <dl>
                               <dt>HTML</dt>
                               <dd>
@@ -1132,11 +1132,11 @@
                             </dl>
                           </div>
 
-                          <div class="ej-example-box">
-                            <p class="ej-h3-dl">
+                          <div class="demo-content__example-box">
+                            <p class="demo-content__h3-dl">
                               Lista con Estilo Personalizado
                             </p>
-                            <dl class="ej-styled-dl">
+                            <dl class="demo-content__styled-dl">
                               <dt>React</dt>
                               <dd>
                                 Biblioteca de JavaScript para construir
@@ -1161,9 +1161,9 @@
                             </dl>
                           </div>
 
-                          <div class="ej-example-box">
-                            <p class="ej-h3-dl">Estilo Tarjeta</p>
-                            <dl class="ej-card-dl">
+                          <div class="demo-content__example-box">
+                            <p class="demo-content__h3-dl">Estilo Tarjeta</p>
+                            <dl class="demo-content__card-dl">
                               <dt>¿Qué es una API?</dt>
                               <dd>
                                 Una API (Application Programming Interface) es
@@ -1192,13 +1192,13 @@
                         <!-- código ejecutado fin -->
                       </div>
                       <div class="row">
-                        <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                           <!-- código HTML -->
                           <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;div class="example-box">
-                                    &lt;p class="h3-dl">Tecnologías Front-End&lt;/p>
+                                &lt;div class="site-content__example-box">
+                                    &lt;p class="site-content__h3-dl">Tecnologías Front-End&lt;/p>
                                     &lt;dl>
                                         &lt;dt>HTML&lt;/dt>
                                         &lt;dd>
@@ -1232,9 +1232,9 @@
                                     &lt;/dl>
                                 &lt;/div>
 
-                                &lt;div class="example-box">
-                                    &lt;p class="h3-dl">Lista con Estilo Personalizado&lt;/p>
-                                    &lt;dl class="styled-dl">
+                                &lt;div class="site-content__example-box">
+                                    &lt;p class="site-content__h3-dl">Lista con Estilo Personalizado&lt;/p>
+                                    &lt;dl class="site-content__styled-dl">
                                         &lt;dt>React&lt;/dt>
                                         &lt;dd>
                                             Biblioteca de JavaScript para construir
@@ -1259,9 +1259,9 @@
                                     &lt;/dl>
                                 &lt;/div>
 
-                                &lt;div class="example-box">
-                                  &lt;p class="h3-dl">Estilo Tarjeta&lt;/p>
-                                    &lt;dl class="card-dl">
+                                &lt;div class="site-content__example-box">
+                                  &lt;p class="site-content__h3-dl">Estilo Tarjeta&lt;/p>
+                                    &lt;dl class="site-content__card-dl">
                                         &lt;dt>¿Qué es una API?&lt;/dt>
                                         &lt;dd>
                                             Una API (Application Programming Interface) es
@@ -1291,7 +1291,7 @@
                           </pre>
                           <!-- código HTML -->
                         </div>
-                        <div class="ej-code-css col-lg-6 mb-3">
+                        <div class="code-example__css-panel col-lg-6 mb-3">
                           <!-- código CSS -->
                           <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
@@ -1633,7 +1633,7 @@
                     de las listas mezcladas.
                   </p>
                   <p>
-                    <span class="span fw-bold">Mecánica del Funcionamiento</span>:
+                    <span class="site-content__span fw-bold">Mecánica del Funcionamiento</span>:
                   </p>
                   <ul>
                     <li>
@@ -1642,7 +1642,7 @@
                       <code class="language-html">&lt;ol></code>), cada punto
                       de esta lista principal es un
                       <code class="language-html">&lt;li></code>.
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" data-prismjs-copy="Copy">
                               &lt;ul>
@@ -1665,7 +1665,7 @@
                       <code class="language-html">&lt;ol>),</code> creando una
                       estructura anidada, p. ej. sub-lista 2, en el Elemento
                       Principal 2:
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" data-prismjs-copy="Copy">
                               &lt;ul>
@@ -1687,7 +1687,7 @@
                       elementos de ítem de lista (
                       <code class="language-html">&lt;li></code>) para los
                       sub-puntos:
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;ul>
@@ -1719,18 +1719,18 @@
                   </ul>
                   <div class="row">
                     <!-- Ejemplo -->
-                    <div class="ej-ejemplo">
-                      <div class="row ej-ejecutado mt-3">
+                    <div class="code-example">
+                      <div class="row code-example__output mt-3">
                         <!-- código ejecutado -->
                         <div>
-                          <div class="ej-example-box">
+                          <div class="demo-content__example-box">
                             <h3 class="pt-5">Lista Mezclada Básica</h3>
                             <p>
                               Combinación de lista ordenada con sub-listas no
                               ordenadas:
                             </p>
 
-                            <ol class="ej-lista-principal">
+                            <ol class="demo-content__lista-principal">
                               <li>
                                 Primer elemento principal
                                 <ul>
@@ -1757,10 +1757,10 @@
                             </ol>
                           </div>
 
-                          <div class="ej-example-box">
+                          <div class="demo-content__example-box">
                             <h3 class="pt-5">Lista Mezclada Inversa</h3>
                             <p>Lista no ordenada con sub-listas ordenadas:</p>
-                            <ul class="ej-lista-secundaria">
+                            <ul class="demo-content__lista-secundaria">
                               <li>
                                 Categoría Frutas
                                 <ol>
@@ -1788,11 +1788,11 @@
                             </ul>
                           </div>
 
-                          <div class="ej-example-box">
+                          <div class="demo-content__example-box">
                             <h3 class="pt-5">
                               Lista Mezclada con Descripciones Compleja
                             </h3>
-                            <dl class="ej-lista-definiciones">
+                            <dl class="demo-content__lista-definiciones">
                               <dt>
                                 <strong>🚀 Tecnologías Frontend Modernas</strong>
                               </dt>
@@ -1924,19 +1924,19 @@
                         <!-- código ejecutado fin -->
                       </div>
                       <div class="row">
-                        <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                           <!-- código HTML -->
                           <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;div class="example-box">
+                                &lt;div class="site-content__example-box">
                                   &lt;h3>Lista Mezclada Básica&lt;/h3>
                                   &lt;p>
                                     Combinación de lista ordenada con sub-listas no
                                     ordenadas:
                                   &lt;/p>
 
-                                  &lt;ol class="lista-principal">
+                                  &lt;ol class="site-content__lista-principal">
                                     &lt;li>
                                       Primer elemento principal
                                       &lt;ul>
@@ -1963,10 +1963,10 @@
                                   &lt;/ol>
                                 &lt;/div>
 
-                                &lt;div class="example-box">
+                                &lt;div class="site-content__example-box">
                                   &lt;h3>Lista Mezclada Inversa&lt;/h3>
                                   &lt;p>Lista no ordenada con sub-listas ordenadas:&lt;/p>
-                                  &lt;ul class="lista-secundaria">
+                                  &lt;ul class="site-content__lista-secundaria">
                                     &lt;li>
                                       Categoría Frutas
                                       &lt;ol>
@@ -1994,9 +1994,9 @@
                                   &lt;/ul>
                                 &lt;/div>
               
-                                &lt;div class="example-box">
+                                &lt;div class="site-content__example-box">
                                   &lt;h3>Lista Mezclada con Descripciones Compleja&lt;/h3>
-                                  &lt;dl class="lista-definiciones">
+                                  &lt;dl class="site-content__lista-definiciones">
                                     &lt;dt>
                                       &lt;strong>🚀 Tecnologías Frontend Modernas&lt;/strong>
                                     &lt;/dt>
@@ -2129,7 +2129,7 @@
                           </pre>
                           <!-- código HTML -->
                         </div>
-                        <div class="ej-code-css col-lg-6 mb-3">
+                        <div class="code-example__css-panel col-lg-6 mb-3">
                           <!-- código CSS -->
                           <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
@@ -2430,7 +2430,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -2447,36 +2447,36 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-container">
-                <div class="menu-item">
-                  <a href="#introduccion" class="simple-link">Introducción</a>
+              <div class="site-menu">
+                <div class="site-menu__item">
+                  <a href="#introduccion" class="site-menu__link">Introducción</a>
                 </div>
 
-                <div class="menu-item">
-                  <a href="#definicion-de-listas-en-html" class="simple-link">Definición de Listas en HTML</a>
+                <div class="site-menu__item">
+                  <a href="#definicion-de-listas-en-html" class="site-menu__link">Definición de Listas en HTML</a>
                 </div>
 
-                <div class="menu-item">
+                <div class="site-menu__item">
                   <details>
                     <summary>Tipos de Listas</summary>
-                    <div class="submenu">
-                      <a href="#tipos-de-listas" class="submenu-item">Tipos de Listas</a>
+                    <div class="site-menu__submenu">
+                      <a href="#tipos-de-listas" class="site-menu__submenu-link">Tipos de Listas</a>
 
-                      <a href="#listas-ordenadas-ol" class="submenu-item">Listas Ordenadas
+                      <a href="#listas-ordenadas-ol" class="site-menu__submenu-link">Listas Ordenadas
                         <code class="language-html">&lt;ol></code></a>
-                      <a href="#listas-desordenadas-ul" class="submenu-item">Listas Desordenadas
+                      <a href="#listas-desordenadas-ul" class="site-menu__submenu-link">Listas Desordenadas
                         <code class="language-html">&lt;ul></code></a>
-                      <a href="#listas-de-descripcion-dl" class="submenu-item">Listas de Descripción
+                      <a href="#listas-de-descripcion-dl" class="site-menu__submenu-link">Listas de Descripción
                         <code class="language-html">&lt;dl></code></a>
-                      <a href="#listas-mezcladas" class="submenu-item">Listas Mezcladas</a>
+                      <a href="#listas-mezcladas" class="site-menu__submenu-link">Listas Mezcladas</a>
                     </div>
                   </details>
                 </div>
-                <div class="menu-item">
-                  <a href="#comments" class="simple-link">Comentarios</a>
+                <div class="site-menu__item">
+                  <a href="#comments" class="site-menu__link">Comentarios</a>
                 </div>
               </div>
             </div>
@@ -2545,7 +2545,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

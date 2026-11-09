@@ -10,7 +10,7 @@
         box-sizing: border-box;
       }
 
-      body {
+      .demo-semantic {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         line-height: 1.6;
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -18,7 +18,7 @@
         color: #333;
       }
 
-      header {
+      .demo-semantic__header {
         background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(10px);
         padding: 2rem;
@@ -28,7 +28,7 @@
         overflow: hidden;
       }
 
-      header::before {
+      .demo-semantic__header::before {
         content: "";
         position: absolute;
         top: -50%;
@@ -53,7 +53,7 @@
         }
       }
 
-      h1 {
+      .demo-semantic__h1 {
         color: white;
         font-size: 2.5rem;
         font-weight: 300;
@@ -62,7 +62,7 @@
         z-index: 1;
       }
 
-      nav {
+      .demo-semantic__nav {
         background: rgba(255, 255, 255, 0.95);
         padding: 1rem 2rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -71,14 +71,14 @@
         z-index: 100;
       }
 
-      nav ul {
+      .demo-semantic__nav .demo-semantic__ul {
         list-style: none;
         display: flex;
         gap: 2rem;
         justify-content: center;
       }
 
-      nav ul li a {
+      .demo-semantic__nav .demo-semantic__ul .demo-semantic__li .demo-semantic__a {
         text-decoration: none;
         color: #333;
         font-weight: 500;
@@ -89,7 +89,7 @@
         overflow: hidden;
       }
 
-      nav ul li a::before {
+      .demo-semantic__nav .demo-semantic__ul .demo-semantic__li .demo-semantic__a::before {
         content: "";
         position: absolute;
         top: 0;
@@ -105,17 +105,17 @@
         transition: left 0.5s ease;
       }
 
-      nav ul li a:hover::before {
+      .demo-semantic__nav .demo-semantic__ul .demo-semantic__li .demo-semantic__a:hover::before {
         left: 100%;
       }
 
-      nav ul li a:hover {
+      .demo-semantic__nav .demo-semantic__ul .demo-semantic__li .demo-semantic__a:hover {
         background: linear-gradient(45deg, #667eea, #764ba2);
         color: white;
         transform: translateY(-2px);
       }
 
-      main {
+      .demo-semantic__main {
         display: flex;
         gap: 2rem;
         padding: 2rem;
@@ -123,14 +123,14 @@
         margin: 0 auto;
       }
 
-      .content {
+      .demo-semantic__content {
         flex: 2;
         display: flex;
         flex-direction: column;
         gap: 3rem;
       }
 
-      section {
+      .demo-semantic__section {
         background: rgba(255, 255, 255, 0.9);
         border-radius: 20px;
         padding: 2rem;
@@ -138,7 +138,7 @@
         backdrop-filter: blur(10px);
       }
 
-      section h2 {
+      .demo-semantic__section .demo-semantic__h2 {
         color: #667eea;
         font-size: 2rem;
         margin-bottom: 1.5rem;
@@ -146,7 +146,7 @@
         position: relative;
       }
 
-      section h2::after {
+      .demo-semantic__section .demo-semantic__h2::after {
         content: "";
         position: absolute;
         bottom: -10px;
@@ -158,7 +158,7 @@
         border-radius: 2px;
       }
 
-      article {
+      .demo-semantic__article {
         background: white;
         margin-bottom: 2rem;
         padding: 1.5rem;
@@ -169,7 +169,7 @@
         overflow: hidden;
       }
 
-      article::before {
+      .demo-semantic__article::before {
         content: "";
         position: absolute;
         top: 0;
@@ -190,23 +190,23 @@
         }
       }
 
-      article:hover {
+      .demo-semantic__article:hover {
         transform: translateY(-5px);
         box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
       }
 
-      article h3 {
+      .demo-semantic__article .demo-semantic__h3 {
         color: #333;
         margin-bottom: 1rem;
         font-size: 1.3rem;
       }
 
-      figure {
+      .demo-semantic__figure {
         margin: 1rem 0;
         text-align: center;
       }
 
-      figure img {
+      .demo-semantic__figure .demo-semantic__img {
         max-width: 100%;
         height: 200px;
         object-fit: cover;
@@ -219,25 +219,25 @@
         font-size: 1.2rem;
       }
 
-      figcaption {
+      .demo-semantic__figcaption {
         margin-top: 0.5rem;
         font-style: italic;
         color: #666;
       }
 
-      mark {
+      .demo-semantic__mark {
         background: linear-gradient(45deg, #ffeb3b, #ff9800);
         padding: 2px 6px;
         border-radius: 4px;
         font-weight: bold;
       }
 
-      time {
+      .demo-semantic__time {
         color: #667eea;
         font-weight: 500;
       }
 
-      aside {
+      .demo-semantic__aside {
         flex: 1;
         background: rgba(255, 255, 255, 0.9);
         border-radius: 20px;
@@ -247,13 +247,13 @@
         height: fit-content;
       }
 
-      aside h2 {
+      .demo-semantic__aside .demo-semantic__h2 {
         color: #764ba2;
         margin-bottom: 1rem;
         text-align: center;
       }
 
-      dialog {
+      .demo-semantic__dialog {
         border: none;
         border-radius: 15px;
         padding: 2rem;
@@ -263,19 +263,19 @@
         text-align: center;
       }
 
-      dialog::backdrop {
+      .demo-semantic__dialog::backdrop {
         background: rgba(0, 0, 0, 0.7);
         backdrop-filter: blur(5px);
       }
 
-      dialog summary {
+      .demo-semantic__dialog .demo-semantic__summary {
         font-size: 1.2rem;
         font-weight: bold;
         color: #667eea;
         margin-bottom: 1rem;
       }
 
-      dialog button {
+      .demo-semantic__dialog .demo-semantic__button {
         background: linear-gradient(45deg, #667eea, #764ba2);
         color: white;
         border: none;
@@ -287,11 +287,11 @@
         transition: transform 0.3s ease;
       }
 
-      dialog button:hover {
+      .demo-semantic__dialog .demo-semantic__button:hover {
         transform: scale(1.05);
       }
 
-      footer {
+      .demo-semantic__footer {
         background: rgba(0, 0, 0, 0.8);
         color: white;
         text-align: center;
@@ -311,68 +311,68 @@
         }
       }
 
-      article {
+      .demo-semantic__article {
         animation: fadeInUp 0.6s ease;
       }
 
-      article:nth-child(2) {
+      .demo-semantic__article:nth-child(2) {
         animation-delay: 0.2s;
       }
 
-      article:nth-child(3) {
+      .demo-semantic__article:nth-child(3) {
         animation-delay: 0.4s;
       }
 
-      article:nth-child(4) {
+      .demo-semantic__article:nth-child(4) {
         animation-delay: 0.6s;
       }
 
       /* Responsivo */
       @media (max-width: 768px) {
-        main {
+        .demo-semantic__main {
           flex-direction: column;
           padding: 1rem;
         }
 
-        .content {
+        .demo-semantic__content {
           flex: 1;
         }
 
-        nav ul {
+        .demo-semantic__nav .demo-semantic__ul {
           flex-wrap: wrap;
           gap: 1rem;
         }
 
-        h1 {
+        .demo-semantic__h1 {
           font-size: 2rem;
         }
       }
     </style>
   </head>
-  <body>
-    <header>
-      <h1>Mi Página Web Semántica</h1>
+  <body class="demo-semantic">
+    <header class="demo-semantic__header">
+      <h1 class="demo-semantic__h1">Mi Página Web Semántica</h1>
     </header>
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Contacto</a></li>
+    <nav class="demo-semantic__nav">
+      <ul class="demo-semantic__ul">
+        <li class="demo-semantic__li"><a href="#" class="demo-semantic__a">Inicio</a></li>
+        <li class="demo-semantic__li"><a href="#" class="demo-semantic__a">Servicios</a></li>
+        <li class="demo-semantic__li"><a href="#" class="demo-semantic__a">Contacto</a></li>
       </ul>
     </nav>
-    <main>
-      <section>
-        <h2>🚀 Tecnología</h2>
-        <article>
-          <h3>Inteligencia Artificial: El Futuro Ya Está Aquí</h3>
+    <main class="demo-semantic__main">
+      <section class="demo-semantic__section">
+        <h2 class="demo-semantic__h2">🚀 Tecnología</h2>
+        <article class="demo-semantic__article">
+          <h3 class="demo-semantic__h3">Inteligencia Artificial: El Futuro Ya Está Aquí</h3>
           <p>
             La inteligencia artificial está transformando cada aspecto de
             nuestras vidas. Desde asistentes virtuales hasta
-            <mark>algoritmos de aprendizaje automático</mark>, la IA está
+            <mark class="demo-semantic__mark">algoritmos de aprendizaje automático</mark>, la IA está
             revolucionando la forma en que trabajamos, nos comunicamos y
             resolvemos problemas complejos.
           </p>
-          <figure>
+          <figure class="demo-semantic__figure">
             <div
               style="
                 width: 100%;
@@ -388,24 +388,24 @@
             >
               🤖 IA & Robots
             </div>
-            <figcaption>
+            <figcaption class="demo-semantic__figcaption">
               Representación visual de la inteligencia artificial moderna.
             </figcaption>
           </figure>
           <p>
-            Publicado el <time datetime="2025-07-03">3 de julio de 2025</time>.
+            Publicado el <time datetime="2025-07-03" class="demo-semantic__time">3 de julio de 2025</time>.
           </p>
         </article>
-        <article>
-          <h3>Computación Cuántica: La Nueva Frontera</h3>
+        <article class="demo-semantic__article">
+          <h3 class="demo-semantic__h3">Computación Cuántica: La Nueva Frontera</h3>
           <p>
             Los ordenadores cuánticos prometen resolver problemas que son
             imposibles para los computadores clásicos. Esta tecnología
-            <mark>revolucionaria</mark> utiliza los principios de la mecánica
+            <mark class="demo-semantic__mark">revolucionaria</mark> utiliza los principios de la mecánica
             cuántica para procesar información de manera exponencialmente más
             rápida.
           </p>
-          <figure>
+          <figure class="demo-semantic__figure">
             <div
               style="
                 width: 100%;
@@ -421,28 +421,28 @@
             >
               ⚛️ Computación Cuántica
             </div>
-            <figcaption>
+            <figcaption class="demo-semantic__figcaption">
               Visualización de qubits en computación cuántica.
             </figcaption>
           </figure>
           <p>
-            Publicado el <time datetime="2025-07-02">2 de julio de 2025</time>.
+            Publicado el <time datetime="2025-07-02" class="demo-semantic__time">2 de julio de 2025</time>.
           </p>
         </article>
       </section>
 
-      <section>
-        <h2>🌿 Naturaleza</h2>
-        <article>
-          <h3>Bosques Tropicales: Pulmones del Planeta</h3>
+      <section class="demo-semantic__section">
+        <h2 class="demo-semantic__h2">🌿 Naturaleza</h2>
+        <article class="demo-semantic__article">
+          <h3 class="demo-semantic__h3">Bosques Tropicales: Pulmones del Planeta</h3>
           <p>
             Los bosques tropicales albergan más del 50% de la biodiversidad
             mundial y juegan un papel crucial en la regulación del clima global.
-            Estos ecosistemas <mark>extraordinarios</mark> son hogar de millones
+            Estos ecosistemas <mark class="demo-semantic__mark">extraordinarios</mark> son hogar de millones
             de especies y comunidades indígenas que han vivido en armonía con la
             naturaleza durante siglos.
           </p>
-          <figure>
+          <figure class="demo-semantic__figure">
             <div
               style="
                 width: 100%;
@@ -458,24 +458,24 @@
             >
               🌳 Bosque Tropical
             </div>
-            <figcaption>
+            <figcaption class="demo-semantic__figcaption">
               Exuberante vegetación de un bosque tropical.
             </figcaption>
           </figure>
           <p>
-            Publicado el <time datetime="2025-07-01">1 de julio de 2025</time>.
+            Publicado el <time datetime="2025-07-01" class="demo-semantic__time">1 de julio de 2025</time>.
           </p>
         </article>
-        <article>
-          <h3>Océanos: Misterios de las Profundidades</h3>
+        <article class="demo-semantic__article">
+          <h3 class="demo-semantic__h3">Océanos: Misterios de las Profundidades</h3>
           <p>
             Los océanos cubren más del 70% de la superficie terrestre y siguen
             siendo uno de los lugares menos explorados del planeta. Desde
             arrecifes de coral hasta fosas abisales, los ecosistemas marinos
-            albergan una <mark>diversidad increíble</mark> de vida que apenas
+            albergan una <mark class="demo-semantic__mark">diversidad increíble</mark> de vida que apenas
             estamos comenzando a comprender.
           </p>
-          <figure>
+          <figure class="demo-semantic__figure">
             <div
               style="
                 width: 100%;
@@ -491,31 +491,31 @@
             >
               🌊 Océano Profundo
             </div>
-            <figcaption>
+            <figcaption class="demo-semantic__figcaption">
               Misterios del fondo marino y su biodiversidad.
             </figcaption>
           </figure>
           <p>
-            Publicado el <time datetime="2025-06-30">30 de junio de 2025</time>.
+            Publicado el <time datetime="2025-06-30" class="demo-semantic__time">30 de junio de 2025</time>.
           </p>
         </article>
       </section>
-      <aside>
-        <h2>Información Adicional</h2>
+      <aside class="demo-semantic__aside">
+        <h2 class="demo-semantic__h2">Información Adicional</h2>
         <p>
           Aquí se pueden incluir enlaces, anuncios o información complementaria.
         </p>
       </aside>
     </main>
-    <dialog open>
-      <summary>Mensaje Importante</summary>
+    <dialog open class="demo-semantic__dialog">
+      <summary class="demo-semantic__summary">Mensaje Importante</summary>
       <p>
         Este es un mensaje dentro de un diálogo emergente para mostrar
         información relevante.
       </p>
-      <button onclick="this.parentElement.close()">Cerrar</button>
+      <button onclick="this.parentElement.close()" class="demo-semantic__button">Cerrar</button>
     </dialog>
-    <footer>
+    <footer class="demo-semantic__footer">
       <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
     </footer>
   </body>

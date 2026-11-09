@@ -67,7 +67,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -85,7 +85,7 @@
             <a class="nav-link mx-1 text-decoration-none" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo text-decoration-none" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active text-decoration-none site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1 text-decoration-none" href="index.html#contact">CONTACTO</a>
@@ -97,7 +97,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!-- Introducción HTML -->
@@ -124,7 +124,7 @@
               y mejorar su posicionamiento en buscadores.
             </p>
 
-            <div class="centrar-imagen magen-intro">
+            <div class="site-image site-intro-image">
               <picture>
                 <img src="https://img12.pixhost.to/images/857/575188671_png-transparent-html5-plain-logo-icon-wbg.png"
                   class="img-fluid" alt="Introducción a HTML" title="Logo HTML" />
@@ -132,7 +132,7 @@
               </picture>
             </div>
 
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- ¿Qué es  HTML? -->
             <div id="que-es-html" class="mt-3">
@@ -168,7 +168,7 @@
                 distintos dispositivos y tamaños de pantalla, además de una
                 experiencia interactiva fluida.
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <picture>
                   <img src="https://i.ibb.co/VWz5WL60/HTML-CSS-JS.png" class="img-fluid" alt="HTML, CSS y Javascript."
                     title="Comparación entre HTML, CSS y JavaScript en el diseño de páginas web." />
@@ -206,7 +206,7 @@
             </div>
             <!-- ¿Qué es  HTML? fin -->
 
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Etiquetas y Atributos HTML -->
             <div id="etiquetas-y-atributos-html" class="mt-3">
@@ -229,7 +229,7 @@
                     generalmente está compuesta por una etiqueta de apertura,
                     un contenido y una etiqueta de cierre. <br />
                     Ejemplo:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;p>Este es un párrafo.&lt;/p>
@@ -248,7 +248,7 @@
                     son autocontenidas, lo que significa que no necesitan una
                     etiqueta de cierre. <br />
                     Ejemplo:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;img src="imagen.jpg" alt="Descripción de la imagen" />
@@ -263,7 +263,7 @@
                     <strong>Atributos</strong>: Las etiquetas pueden incluir
                     atributos para modificar su comportamiento o apariencia.
                     <br />ejemplo:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;a href="https://www.ejemplo.com">Visitar página&lt;/a>
@@ -342,7 +342,7 @@
                   escriben dentro de la etiqueta de apertura y siguen la
                   estructura:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;etiqueta atributo="valor">Contenido&lt;/etiqueta>
@@ -408,11 +408,11 @@
                       </li>
                     </ul>
                     <p>Ejemplo:</p>
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;p id="parrafo1" 
-                            &nbsp;&nbsp;&nbsp;class="texto-importante"
+                            &nbsp;&nbsp;&nbsp;class="site-content__texto-importante"
                             &nbsp;&nbsp;&nbsp;style="color: red;"
                             &nbsp;&nbsp;&nbsp;title="Este es un párrafo">Este es un texto con atributos.&lt;/p>
                           </code>
@@ -442,7 +442,7 @@
                           </li>
                         </ul>
                         Ejemplo:
-                        <div class="ej-sintaxis">
+                        <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-html" data-prismjs-copy="Copy">
                                 &lt;a href="https://www.ejemplo.com"
@@ -474,7 +474,7 @@
                           </li>
                         </ul>
                         Ejemplo:
-                        <div class="ej-sintaxis">
+                        <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-html" data-prismjs-copy="Copy">
                                 &lt;img src="imagen.jpg"
@@ -510,7 +510,7 @@
                           </li>
                         </ul>
                         Ejemplo:
-                        <div class="ej-sintaxis">
+                        <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-html" data-prismjs-copy="Copy">
                                 &lt;input type="email"
@@ -566,7 +566,7 @@
             </div>
             <!-- Etiquetas y Atributos HTML Fin -->
 
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- La Semántica Web -->
             <div id="la-semantica-web" class="mt-3">
@@ -711,12 +711,12 @@
                   Diferencia entre HTML Semántico y no Semántico
                 </h3>
                 <p>Ejemplo de código no semántico:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
-                        &lt;div class="header">Mi sitio web&lt;/div>
-                        &lt;div class="content">Bienvenido a mi página&lt;/div>
-                        &lt;div class="footer">© 2025 Todos los derechos reservados&lt;/div>
+                        &lt;div class="site-content__header">Mi sitio web&lt;/div>
+                        &lt;div class="site-content__content">Bienvenido a mi página&lt;/div>
+                        &lt;div class="site-content__footer">© 2025 Todos los derechos reservados&lt;/div>
                       </code>
                     </pre>
                 </div>
@@ -725,7 +725,7 @@
                   aportan información sobre el contenido.
                 </p>
                 <p>Ejemplo de código semántico:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;header>Mi sitio web&lt;/header>
@@ -750,7 +750,7 @@
             </div>
             <!-- La Semántica Web Fin -->
 
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Comentarios -->
             <div id="comentarios" class="mt-5">
@@ -771,7 +771,7 @@
                   Para escribir un comentario en HTML, se debe utilizar la
                   siguiente sintaxis:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;!-- Este es un comentario en HTML --&gt;
@@ -785,7 +785,7 @@
                   el navegador.
                 </p>
                 <p>Ejemplo en código HTML:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;!DOCTYPE html&gt;
@@ -833,7 +833,7 @@
                     estructura del código, lo cual es útil cuando se trabaja
                     en equipo o se revisa el código después de un tiempo.
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;!-- Navegación principal del sitio --&gt;
@@ -856,7 +856,7 @@
                     Si se necesita ocultar un elemento sin eliminarlo, se
                     puede comentar.
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;!-- &lt;img src="imagen.jpg" alt="Imagen de ejemplo"> --&gt;
@@ -873,7 +873,7 @@
                     Se pueden usar comentarios para indicar partes del código
                     que requieren correcciones o mejoras.
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;!-- TODO: Agregar más enlaces a la barra de navegación --&gt;
@@ -889,7 +889,7 @@
                   <ul>
                     <li>
                       <strong>No se pueden anidar comentarios</strong>:
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" data-prismjs-copy="Copy">
                               &lt;!-- Este es un &lt;!-- comentario anidado --&gt; y dará error --&gt;
@@ -949,7 +949,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -968,68 +968,68 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item">
-                <a href="#introduccion" class="simple-link">Introducción HTML</a>
+              <div class="site-menu__item">
+                <a href="#introduccion" class="site-menu__link">Introducción HTML</a>
               </div>
 
-              <div class="menu-item">
-                <a href="#que-es-html" class="simple-link">¿Qué es HTML?</a>
+              <div class="site-menu__item">
+                <a href="#que-es-html" class="site-menu__link">¿Qué es HTML?</a>
               </div>
 
-              <div class="menu-item">
+              <div class="site-menu__item">
                 <details>
                   <summary>Etiquetas y Atributos HTML</summary>
-                  <div class="submenu">
-                    <a href="#etiquetas-y-atributos-html" class="submenu-item">Etiquetas y Atributos HTML</a>
+                  <div class="site-menu__submenu">
+                    <a href="#etiquetas-y-atributos-html" class="site-menu__submenu-link">Etiquetas y Atributos HTML</a>
 
-                    <a href="#caracteristicas-de-las-etiquetas-html" class="submenu-item">Características de las
+                    <a href="#caracteristicas-de-las-etiquetas-html" class="site-menu__submenu-link">Características de las
                       etiquetas
                       HTML</a>
 
-                    <a href="#clasificacion-de-las-etiquetas-html" class="submenu-item">Clasificación de las etiquetas
+                    <a href="#clasificacion-de-las-etiquetas-html" class="site-menu__submenu-link">Clasificación de las etiquetas
                       HTML</a>
 
-                    <a href="#atributos-html" class="submenu-item">Atributos HTML</a>
+                    <a href="#atributos-html" class="site-menu__submenu-link">Atributos HTML</a>
                   </div>
                 </details>
               </div>
 
-              <div class="menu-item">
+              <div class="site-menu__item">
                 <details>
                   <summary>La Semántica Web</summary>
-                  <div class="submenu">
-                    <a href="#la-semantica-web" class="submenu-item">La Semántica Web</a>
+                  <div class="site-menu__submenu">
+                    <a href="#la-semantica-web" class="site-menu__submenu-link">La Semántica Web</a>
 
-                    <a href="#importancia-de-la-semantica-en-html" class="submenu-item">Importancia de la Semántica en
+                    <a href="#importancia-de-la-semantica-en-html" class="site-menu__submenu-link">Importancia de la Semántica en
                       HTML</a>
 
-                    <a href="#etiquetas-semanticas-mas-utilizadas-en-html" class="submenu-item">Etiquetas Semánticas más
+                    <a href="#etiquetas-semanticas-mas-utilizadas-en-html" class="site-menu__submenu-link">Etiquetas Semánticas más
                       Utilizadas en HTML</a>
 
-                    <a href="#diferencia-entre-html-semantico-y-no-semantico" class="submenu-item">Diferencia entre HTML
+                    <a href="#diferencia-entre-html-semantico-y-no-semantico" class="site-menu__submenu-link">Diferencia entre HTML
                       Semántico y no Semántico</a>
                   </div>
                 </details>
               </div>
 
-              <div class="menu-item">
+              <div class="site-menu__item">
                 <details>
                   <summary>Comentarios HTML</summary>
-                  <div class="submenu">
-                    <a href="#comentarios" class="submenu-item">Comentarios</a>
+                  <div class="site-menu__submenu">
+                    <a href="#comentarios" class="site-menu__submenu-link">Comentarios</a>
 
-                    <a href="#sintaxis-de-los-comentarios-en-html" class="submenu-item">Sintaxis de los Comentarios en
+                    <a href="#sintaxis-de-los-comentarios-en-html" class="site-menu__submenu-link">Sintaxis de los Comentarios en
                       HTML</a>
 
-                    <a href="#usos-de-los-comentarios-en-html" class="submenu-item">Usos de los Comentarios en HTML</a>
+                    <a href="#usos-de-los-comentarios-en-html" class="site-menu__submenu-link">Usos de los Comentarios en HTML</a>
                   </div>
                 </details>
               </div>
-              <div class="menu-item">
-                <a href="#comments" class="simple-link">Comentarios</a>
+              <div class="site-menu__item">
+                <a href="#comments" class="site-menu__link">Comentarios</a>
               </div>
             </div>
           </div>
@@ -1096,7 +1096,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

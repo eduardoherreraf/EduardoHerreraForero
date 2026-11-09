@@ -12,54 +12,54 @@
       box-sizing: border-box;
     }
 
-    body {
+    .demo-sticky-footer {
       display: flex;
       flex-direction: column;
       min-height: 100vh;
       font-family: Arial, sans-serif;
     }
 
-    header {
+    .demo-sticky-footer__header {
       background: #2c3e50;
       color: white;
       padding: 1.5rem;
       text-align: center;
     }
 
-    main {
+    .demo-sticky-footer__main {
       flex: 1;
       padding: 2rem;
       background: #ecf0f1;
       height: 300px;
     }
 
-    .content-box {
+    .demo-sticky-footer__content-box {
       background: white;
       padding: 2rem;
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
-    footer {
+    .demo-sticky-footer__footer {
       background: #34495e;
       padding: 1.5rem;
       text-align: center;
     }
 
-    footer p {
+    .demo-sticky-footer__footer .demo-sticky-footer__p {
       color: white
     }
 
-    h1 {
+    .demo-sticky-footer__h1 {
       margin-bottom: 1rem;
     }
 
-    p {
+    .demo-sticky-footer__p {
       line-height: 1.6;
       color: black;
     }
 
-    .highlight {
+    .demo-sticky-footer__highlight {
       background: #3498db;
       color: white;
       padding: 0.2rem 0.5rem;
@@ -68,23 +68,23 @@
   </style>
 </head>
 
-<body>
-  <header>
-    <h1>Header</h1>
+<body class="demo-sticky-footer">
+  <header class="demo-sticky-footer__header">
+    <h1 class="demo-sticky-footer__h1">Header</h1>
   </header>
 
-  <main>
-    <div class="content-box">
+  <main class="demo-sticky-footer__main">
+    <div class="demo-sticky-footer__content-box">
       <h2>Main con altura de 300px</h2>
-      <p>Aunque el contenido principal sea corto (300px), el <span class="highlight">flex: 1</span> hace que el footer
+      <p class="demo-sticky-footer__p">Aunque el contenido principal sea corto (300px), el <span class="demo-sticky-footer__highlight">flex: 1</span> hace que el footer
         se mantenga pegado al fondo de la pantalla.</p>
-      <p style="margin-top: 1rem;">Prueba redimensionar la ventana verticalmente y verás que el footer siempre está
+      <p style="margin-top: 1rem;" class="demo-sticky-footer__p">Prueba redimensionar la ventana verticalmente y verás que el footer siempre está
         abajo.</p>
     </div>
   </main>
 
-  <footer>
-    <p>Footer siempre pegado al fondo.</p>
+  <footer class="demo-sticky-footer__footer">
+    <p class="demo-sticky-footer__p">Footer siempre pegado al fondo.</p>
   </footer>
 </body>
 

@@ -64,7 +64,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -82,7 +82,7 @@
             <a class="nav-link mx-1 text-decoration-none" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo text-decoration-none" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active text-decoration-none site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1 text-decoration-none" href="index.html#contact">CONTACTO</a>
@@ -94,7 +94,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Tablas HTML -->
@@ -115,7 +115,7 @@
                 empleaban para el diseño y maquetación de páginas, su función
                 principal hoy en día es la de mostrar datos tabulares.
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <picture>
                   <img src="https://i.postimg.cc/FFdYyYkx/tabla-html.png" class="img-fluid" alt="Tablas HTML "
                     title="Tablas HTML " />
@@ -124,7 +124,7 @@
               </div>
             </div>
             <!-- Introducción Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Qué son las Tablas HTML -->
             <div id="que-son-las-tablas-html" class="mt-3">
@@ -142,7 +142,7 @@
               </p>
             </div>
             <!-- Qué son las Tablas HTML Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Estructura Básica de una Tabla HTML -->
             <div id="estructura-basica-de-una-tabla-html" class="mt-3">
@@ -208,7 +208,7 @@
               </ul>
             </div>
             <!-- Estructura Básica de una Tabla HTML Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Ejemplo de una Tabla HTML -->
             <div id="ejemplo-de-una-tabla-html" class="mt-3">
@@ -220,11 +220,11 @@
 
               <div class="row">
                 <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
+                <div class="code-example">
+                  <div class="row code-example__output mt-3">
                     <!-- código ejecutado -->
                     <div>
-                      <table class="ej-table">
+                      <table class="demo-content__table">
                         <thead>
                           <tr>
                             <th>Nombre</th>
@@ -261,7 +261,7 @@
                     <!-- código ejecutado fin -->
                   </div>
                   <div class="row">
-                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                    <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                       <!-- código HTML -->
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
@@ -304,7 +304,7 @@
                         </pre>
                       <!-- código HTML -->
                     </div>
-                    <div class="ej-code-css col-lg-6 mb-3">
+                    <div class="code-example__css-panel col-lg-6 mb-3">
                       <!-- código CSS -->
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-css" data-prismjs-copy="Copy">
@@ -410,7 +410,7 @@
               </ul>
             </div>
             <!-- Ejemplo de una Tabla HTML Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Elementos Opcionales y Atributos Adicionales -->
             <div id="elementos-opcionales-y-atributos-adicionales" class="mt-3">
@@ -473,59 +473,59 @@
               Ejemplo:
               <div class="row">
                 <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
+                <div class="code-example">
+                  <div class="row code-example__output mt-3">
                     <!-- código ejecutado -->
                     <div>
-                      <table class="ej-table">
-                        <caption class="ej-caption">
+                      <table class="demo-content__table">
+                        <caption class="demo-content__caption">
                           Calificaciones de Estudiantes
                         </caption>
                         <colgroup>
-                          <col class="ej-col-nombre" />
-                          <col span="2" class="ej-col-notas" />
-                          <col class="ej-col-promedio" />
+                          <col class="demo-content__col-nombre" />
+                          <col span="2" class="demo-content__col-notas" />
+                          <col class="demo-content__col-promedio" />
                         </colgroup>
                         <thead>
                           <tr>
-                            <th class="ej-th">Estudiante</th>
-                            <th class="ej-th">Examen 1</th>
-                            <th class="ej-th">Examen 2</th>
-                            <th class="ej-th">Promedio</th>
+                            <th class="demo-content__th">Estudiante</th>
+                            <th class="demo-content__th">Examen 1</th>
+                            <th class="demo-content__th">Examen 2</th>
+                            <th class="demo-content__th">Promedio</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td class="ej-td">Ana López</td>
-                            <td class="ej-td">85</td>
-                            <td class="ej-td">92</td>
-                            <td class="ej-td">88.5</td>
+                            <td class="demo-content__td">Ana López</td>
+                            <td class="demo-content__td">85</td>
+                            <td class="demo-content__td">92</td>
+                            <td class="demo-content__td">88.5</td>
                           </tr>
                           <tr>
-                            <td class="ej-td">Carlos García</td>
-                            <td class="ej-td">78</td>
-                            <td class="ej-td">84</td>
-                            <td class="ej-td">81.0</td>
+                            <td class="demo-content__td">Carlos García</td>
+                            <td class="demo-content__td">78</td>
+                            <td class="demo-content__td">84</td>
+                            <td class="demo-content__td">81.0</td>
                           </tr>
                           <tr>
-                            <td class="ej-td">María Ruiz</td>
-                            <td class="ej-td">95</td>
-                            <td class="ej-td">89</td>
-                            <td class="ej-td">92.0</td>
+                            <td class="demo-content__td">María Ruiz</td>
+                            <td class="demo-content__td">95</td>
+                            <td class="demo-content__td">89</td>
+                            <td class="demo-content__td">92.0</td>
                           </tr>
                           <tr>
-                            <td class="ej-td">Pedro Sánchez</td>
-                            <td class="ej-td">72</td>
-                            <td class="ej-td">79</td>
-                            <td class="ej-td">75.5</td>
+                            <td class="demo-content__td">Pedro Sánchez</td>
+                            <td class="demo-content__td">72</td>
+                            <td class="demo-content__td">79</td>
+                            <td class="demo-content__td">75.5</td>
                           </tr>
                         </tbody>
-                        <tfoot class="ej-tfoot">
+                        <tfoot class="demo-content__tfoot">
                           <tr>
-                            <td class="ej-td">Tot. Estudiantes: 4</td>
-                            <td class="ej-td">Prom.: 82.5</td>
-                            <td class="ej-td">Prom.: 86.0</td>
-                            <td class="ej-td">Prom. Gen.: 84.25</td>
+                            <td class="demo-content__td">Tot. Estudiantes: 4</td>
+                            <td class="demo-content__td">Prom.: 82.5</td>
+                            <td class="demo-content__td">Prom.: 86.0</td>
+                            <td class="demo-content__td">Prom. Gen.: 84.25</td>
                           </tr>
                         </tfoot>
                       </table>
@@ -533,60 +533,60 @@
                     <!-- código ejecutado fin -->
                   </div>
                   <div class="row">
-                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                    <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                       <!-- código HTML -->
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             <div>
                               &lt;table class="table">
-                                  &lt;caption class="caption">
+                                  &lt;caption class="site-content__caption">
                                       Calificaciones de Estudiantes
                                   &lt;/caption>
                                   &lt;colgroup>
-                                      &lt;col class="col-nombre">
-                                      &lt;col span="2" class="col-notas">
-                                      &lt;col class="col-promedio">
+                                      &lt;col class="site-content__col-nombre">
+                                      &lt;col span="2" class="site-content__col-notas">
+                                      &lt;col class="site-content__col-promedio">
                                   &lt;/colgroup>
                                   &lt;thead>
                                       &lt;tr>
-                                          &lt;th class="th">Estudiante&lt;/th>
-                                          &lt;th class="th">Examen 1&lt;/th>
-                                          &lt;th class="th">Examen 2&lt;/th>
-                                          &lt;th class="th">Promedio&lt;/th>
+                                          &lt;th class="site-content__th">Estudiante&lt;/th>
+                                          &lt;th class="site-content__th">Examen 1&lt;/th>
+                                          &lt;th class="site-content__th">Examen 2&lt;/th>
+                                          &lt;th class="site-content__th">Promedio&lt;/th>
                                       &lt;/tr>
                                   &lt;/thead>
                                   &lt;tbody>
                                       &lt;tr>
-                                          &lt;td class="td">Ana López&lt;/td>
-                                          &lt;td class="td">85&lt;/td>
-                                          &lt;td class="td">92&lt;/td>
-                                          &lt;td class="td">88.5&lt;/td>
+                                          &lt;td class="demo-table__cell">Ana López&lt;/td>
+                                          &lt;td class="demo-table__cell">85&lt;/td>
+                                          &lt;td class="demo-table__cell">92&lt;/td>
+                                          &lt;td class="demo-table__cell">88.5&lt;/td>
                                       &lt;/tr>
                                       &lt;tr>
-                                          &lt;td class="td">Carlos García&lt;/td>
-                                          &lt;td class="td">78&lt;/td>
-                                          &lt;td class="td">84&lt;/td>
-                                          &lt;td class="td">81.0&lt;/td>
+                                          &lt;td class="demo-table__cell">Carlos García&lt;/td>
+                                          &lt;td class="demo-table__cell">78&lt;/td>
+                                          &lt;td class="demo-table__cell">84&lt;/td>
+                                          &lt;td class="demo-table__cell">81.0&lt;/td>
                                       &lt;/tr>
                                       &lt;tr>
-                                          &lt;td class="td">María Ruiz&lt;/td>
-                                          &lt;td class="td">95&lt;/td>
-                                          &lt;td class="td">89&lt;/td>
-                                          &lt;td class="td">92.0&lt;/td>
+                                          &lt;td class="demo-table__cell">María Ruiz&lt;/td>
+                                          &lt;td class="demo-table__cell">95&lt;/td>
+                                          &lt;td class="demo-table__cell">89&lt;/td>
+                                          &lt;td class="demo-table__cell">92.0&lt;/td>
                                       &lt;/tr>
                                       &lt;tr>
-                                          &lt;td class="td">Pedro Sánchez&lt;/td>
-                                          &lt;td class="td">72&lt;/td>
-                                          &lt;td class="td">79&lt;/td>
-                                          &lt;td class="td">75.5&lt;/td>
+                                          &lt;td class="demo-table__cell">Pedro Sánchez&lt;/td>
+                                          &lt;td class="demo-table__cell">72&lt;/td>
+                                          &lt;td class="demo-table__cell">79&lt;/td>
+                                          &lt;td class="demo-table__cell">75.5&lt;/td>
                                       &lt;/tr>
                                   &lt;/tbody>
-                                  &lt;tfoot class="tfoot">
+                                  &lt;tfoot class="demo-table__footer">
                                       &lt;tr>
-                                          &lt;td class="td">Tot. Estudiantes: 4&lt;/td>
-                                          &lt;td class="td">Prom.: 82.5&lt;/td>
-                                          &lt;td class="td">Prom.: 86.0&lt;/td>
-                                          &lt;td class="td">Prom. Gen.: 84.25&lt;/td>
+                                          &lt;td class="demo-table__cell">Tot. Estudiantes: 4&lt;/td>
+                                          &lt;td class="demo-table__cell">Prom.: 82.5&lt;/td>
+                                          &lt;td class="demo-table__cell">Prom.: 86.0&lt;/td>
+                                          &lt;td class="demo-table__cell">Prom. Gen.: 84.25&lt;/td>
                                       &lt;/tr>
                                   &lt;/tfoot>
                               &lt;/table>                              
@@ -595,7 +595,7 @@
                         </pre>
                       <!-- código HTML -->
                     </div>
-                    <div class="ej-code-css col-lg-6 mb-3">
+                    <div class="code-example__css-panel col-lg-6 mb-3">
                       <!-- código CSS -->
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-css" data-prismjs-copy="Copy">
@@ -772,7 +772,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -789,28 +789,28 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item">
-                <a href="#introduccion" class="simple-link">Introducción</a>
+              <div class="site-menu__item">
+                <a href="#introduccion" class="site-menu__link">Introducción</a>
               </div>
-              <div class="menu-item">
-                <a href="#que-son-las-tablas-html" class="simple-link">Qué son las Tablas HTML</a>
+              <div class="site-menu__item">
+                <a href="#que-son-las-tablas-html" class="site-menu__link">Qué son las Tablas HTML</a>
               </div>
-              <div class="menu-item">
-                <a href="#estructura-basica-de-una-tabla-html" class="simple-link">Estructura Básica de una Tabla
+              <div class="site-menu__item">
+                <a href="#estructura-basica-de-una-tabla-html" class="site-menu__link">Estructura Básica de una Tabla
                   HTML</a>
               </div>
-              <div class="menu-item">
-                <a href="#ejemplo-de-una-tabla-html" class="simple-link">Ejemplo de una Tabla HTML</a>
+              <div class="site-menu__item">
+                <a href="#ejemplo-de-una-tabla-html" class="site-menu__link">Ejemplo de una Tabla HTML</a>
               </div>
-              <div class="menu-item">
-                <a href="#elementos-opcionales-y-atributos-adicionales" class="simple-link">Elementos Opcionales y
+              <div class="site-menu__item">
+                <a href="#elementos-opcionales-y-atributos-adicionales" class="site-menu__link">Elementos Opcionales y
                   Atributos Adicionales</a>
               </div>
-              <div class="menu-item">
-                <a href="#comments" class="simple-link">Comentarios</a>
+              <div class="site-menu__item">
+                <a href="#comments" class="site-menu__link">Comentarios</a>
               </div>
             </div>
           </div>
@@ -879,7 +879,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

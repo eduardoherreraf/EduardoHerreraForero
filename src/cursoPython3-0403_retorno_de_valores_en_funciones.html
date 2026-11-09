@@ -73,7 +73,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -91,7 +91,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -103,7 +103,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Retorno de Valores en Funciones Python  -->
@@ -125,7 +125,7 @@
                 prácticos, se aprenderá a definir funciones, usar la
                 declaración return y manejar los resultados devueltos.
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <figure>
                   <img src="https://i.ibb.co/MBqwk1b/retornovalores.jpg" class="img-fluid"
                     alt="Retorno de Valores en Funciones Python"
@@ -225,7 +225,7 @@
               <!-- Sintaxis Básica de return -->
               <div>
                 <h3>Sintaxis Básica de <code class="language-python">return</code></h3>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def nombre_de_la_funcion(parametros):
@@ -236,7 +236,7 @@
                     </pre>
                 </div>
                 <p>Ejemplo:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def suma(a, b):
@@ -317,7 +317,7 @@
                 Python permite que una función devuelva múltiples valores
                 utilizando una tupla:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       def obtener_coordenadas():
@@ -332,7 +332,7 @@
                   </pre>
               </div>
               <p>Otro ejemplo:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       def operaciones(a, b):
@@ -355,7 +355,7 @@
                 posterior. También se pueden pasar como argumentos a otras
                 funciones. Aquí hay un ejemplo:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       def cuadrado(x):
@@ -417,7 +417,7 @@
                     valor devuelven
                     <code class="language-python">None</code> por defecto.
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           def funcion_sin_retorno():
@@ -438,7 +438,7 @@
                     valor
                     significativo.
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           variable = None
@@ -455,7 +455,7 @@
                     <code class="language-python">None</code>se puede comparar
                     con otros valores usando operadores de comparación.
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           if variable is None:
@@ -492,7 +492,7 @@
                   misma manera que pasarías cualquier otro tipo de dato. Aquí
                   hay un ejemplo básico:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def imprimir_lista(lista):
@@ -518,7 +518,7 @@
                   que se puede modificar la lista dentro de la función y los
                   cambios se reflejarán fuera de la función.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def agregar_elemento(lista, elemento):
@@ -571,7 +571,7 @@
                     estar seguro que la lista original no se modifique, se
                     puede pasar una copia de ella.
                   </li>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           def agregar_elemento_seguro(lista, elemento):
@@ -657,7 +657,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -672,17 +672,17 @@
         <!--  fin comentarios  -->
       </section>
 
-      <!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h2>En Este Artículo</h2><div class="menu-scroll"><div class="menu-container"><div class="border border-1">
-<div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
-<div class="menu-item"><a href="#ventajas-y-desventajas" class="simple-link">Ventajas y Desventajas</a></div>
-<div class="menu-item"><a href="#UsoDeLaDeclaraciOnReturn" class="simple-link">Uso de la Declaración <code class="language-python">return</code></a></div>
-<div class="menu-item"><a href="#multiples-valores-de-retorno" class="simple-link">Múltiples Valores de Retorno</a></div>
-<div class="menu-item"><a href="#manejo-de--rResultados-devueltos" class="simple-link">Manejo de Resultados Devueltos</a></div>
-<div class="menu-item"><a href="#palabra-reservada-none" class="simple-link">Palabra Reservada <code class="language-python">none</code></a></div>
-<div class="menu-item"><a href="#resultados-con-listas-y-funciones" class="simple-link">Resultados con Listas y Funciones</a></div>
-<div class="menu-item"><a href="#buenas-practicas" class="simple-link">Buenas Prácticas</a></div>
+      <!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h2>En Este Artículo</h2><div class="site-menu__scroll"><div class="site-menu"><div class="border border-1">
+<div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
+<div class="site-menu__item"><a href="#ventajas-y-desventajas" class="site-menu__link">Ventajas y Desventajas</a></div>
+<div class="site-menu__item"><a href="#UsoDeLaDeclaraciOnReturn" class="site-menu__link">Uso de la Declaración <code class="language-python">return</code></a></div>
+<div class="site-menu__item"><a href="#multiples-valores-de-retorno" class="site-menu__link">Múltiples Valores de Retorno</a></div>
+<div class="site-menu__item"><a href="#manejo-de--rResultados-devueltos" class="site-menu__link">Manejo de Resultados Devueltos</a></div>
+<div class="site-menu__item"><a href="#palabra-reservada-none" class="site-menu__link">Palabra Reservada <code class="language-python">none</code></a></div>
+<div class="site-menu__item"><a href="#resultados-con-listas-y-funciones" class="site-menu__link">Resultados con Listas y Funciones</a></div>
+<div class="site-menu__item"><a href="#buenas-practicas" class="site-menu__link">Buenas Prácticas</a></div>
 <!-- Comentarios  -->
-<div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div></div></div></div></aside>
+<div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div></div></div></div></aside>
 <!--  fin barra lateral  -->
     </main>
     <!--  fin principal  -->
@@ -745,7 +745,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

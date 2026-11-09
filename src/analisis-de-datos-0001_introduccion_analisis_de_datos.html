@@ -77,7 +77,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -95,7 +95,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -107,7 +107,7 @@
   <!-- Barra de Navegación -->
 
   <!--  Principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Análisis de Datos-->
@@ -119,13 +119,13 @@
           <!-- Introducción -->
           <div class="mt-3">
             <h2>Introducción: Análisis de Datos</h2>
-            <div class="centrar-imagen magen-intro mb-5">
-              <figure class="img-container">
+            <div class="site-image site-intro-image mb-5">
+              <figure class="site-content__img-container">
                 <img src="https://i.ibb.co/5xMJYYDy/introduccion-analisis-de-datos-comp.jpg" class="img-fluid"
                   alt="Ingeniero inspeccionando una máquina de engranajes mientras revisa gráficos en una tableta — metáfora del análisis de datos en ingeniería"
                   title="Analogía visual de análisis de datos: Ingeniero analizando datos y planos" loading="lazy"
                   onerror="this.onerror=null; this.src='https://i.postimg.cc/BsmNXBkD/introduccion-analisis-de-datos-comp.jpg'" />
-                <figcaption class="img-caption">
+                <figcaption class="site-image__caption">
                   La imagen muestra a un ingeniero que compara planos y lecturas gráficas en una tableta frente a una
                   maquinaria compleja. Representa el proceso de identificar qué variables (engranajes) generan
                   movimiento y cómo optimizarlas mediante el análisis de datos para mejorar el rendimiento del sistema.
@@ -144,7 +144,7 @@
               eficientes.</p>
           </div>
           <!-- Introducción Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Básicos del Análisis de Datos -->
           <div id="basicos-del-analisis-de-datos" class="mt-3">
@@ -213,7 +213,7 @@
             <!-- El Propósito Esencial del Análisis de Datos  fin -->
           </div>
           <!-- Básicos del Análisis de Datos Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Tipos de Análisis de Datos -->
           <div id="tipos-de-analisis-de-datos" class="mt-3">
@@ -243,7 +243,7 @@
             </ul>
           </div>
           <!-- Tipos de Análisis de Datos Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
 
           <!-- Ciclo de Vida del Análisis de Datos -->
@@ -280,7 +280,7 @@
             </ul>
           </div>
           <!-- Ciclo de Vida del Análisis de Datos Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Herramientas para el Análisis de Datos -->
           <div id="herramientas-para-el-analisis-de-datos" class="mt-3">
@@ -306,7 +306,7 @@
             </ul>
           </div>
           <!-- Herramientas para el Análisis de Datos Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Tipos de Datos en Análisis de Datos -->
           <div id="tipos-de-datos-en-analisis-de-datos" class="mt-3">
@@ -394,7 +394,7 @@
                       <li><span class="fw-bold">Archivo JSON de una API de clima</span>:
                         <!-- Sintaxis -->
                         <p><span class="fw-bold">Sintaxis básica</span>:</p>
-                        <div class="ej-sintaxis">
+                        <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                             <code class="language-json" data-prismjs-copy="Copy">
                               {
@@ -487,7 +487,7 @@
             <!-- Según su Naturaleza  fin -->
           </div>
           <!-- Tipos de Datos en Análisis de Datos Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Consideraciones Éticas en el Análisis de Datos -->
           <div id="consideraciones-eticas-en-el-analisis-de-datos" class="mt-3">
@@ -509,7 +509,7 @@
             </ul>
           </div>
           <!-- Consideraciones Éticas en el Análisis de Datos Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Aplicaciones Prácticas de Análisis de Datos -->
           <div id="aplicaciones-practicas-de-analisis-de-datos" class="mt-3">
@@ -709,7 +709,7 @@
                   <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
                     class="form-control rounded-3" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">Enviar</button>
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">Enviar</button>
               </fieldset>
               <p class="small text-center">La política de privacidad, y los términos y condiciones estándisponibles en
                 el formulario de contacto.</p>
@@ -721,41 +721,41 @@
       <!-- -------------------------------- barra lateral -------------------------------- -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item">
-                <a href="#introduccion" class="simple-link">Introducción</a>
+              <div class="site-menu__item">
+                <a href="#introduccion" class="site-menu__link">Introducción</a>
               </div>
-              <div class="menu-item">
-                <a href="#basicos-del-analisis-de-datos" class="simple-link">Básicos del Análisis de Datos</a>
+              <div class="site-menu__item">
+                <a href="#basicos-del-analisis-de-datos" class="site-menu__link">Básicos del Análisis de Datos</a>
               </div>
-              <div class="menu-item">
-                <a href="#tipos-de-analisis-de-datos" class="simple-link">Tipos de Análisis de Datos</a>
+              <div class="site-menu__item">
+                <a href="#tipos-de-analisis-de-datos" class="site-menu__link">Tipos de Análisis de Datos</a>
               </div>
-              <div class="menu-item">
-                <a href="#ciclo-de-vida-del-analisis-de-datos" class="simple-link">Ciclo de Vida del Análisis de
+              <div class="site-menu__item">
+                <a href="#ciclo-de-vida-del-analisis-de-datos" class="site-menu__link">Ciclo de Vida del Análisis de
                   Datos</a>
               </div>
-              <div class="menu-item">
-                <a href="#herramientas-para-el-analisis-de-datos" class="simple-link">Herramientas para el Análisis de
+              <div class="site-menu__item">
+                <a href="#herramientas-para-el-analisis-de-datos" class="site-menu__link">Herramientas para el Análisis de
                   Datos</a>
               </div>
-              <div class="menu-item">
-                <a href="#tipos-de-datos-en-analisis-de-datos" class="simple-link">Tipos de Datos en Análisis de
+              <div class="site-menu__item">
+                <a href="#tipos-de-datos-en-analisis-de-datos" class="site-menu__link">Tipos de Datos en Análisis de
                   Datos</a>
               </div>
-              <div class="menu-item">
-                <a href="#consideraciones-eticas-en-el-analisis-de-datos" class="simple-link">Consideraciones Éticas en
+              <div class="site-menu__item">
+                <a href="#consideraciones-eticas-en-el-analisis-de-datos" class="site-menu__link">Consideraciones Éticas en
                   el Análisis de Datos</a>
                 </li>
-                <div class="menu-item">
-                  <a href="#aplicaciones-practicas-de-analisis-de-datos" class="simple-link">Aplicaciones Prácticas de
+                <div class="site-menu__item">
+                  <a href="#aplicaciones-practicas-de-analisis-de-datos" class="site-menu__link">Aplicaciones Prácticas de
                     Análisis de Datos</a>
                 </div>
                 <!-- Comentarios  -->
-                <div class="menu-item">
-                  <a href="#comments" class="simple-link">Comentarios</a>
+                <div class="site-menu__item">
+                  <a href="#comments" class="site-menu__link">Comentarios</a>
                 </div>
               </div>
             </div>
@@ -823,7 +823,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

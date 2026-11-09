@@ -77,7 +77,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -95,7 +95,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -107,7 +107,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Introducción al Curso de Python 3 para Principiantes  -->
@@ -133,12 +133,12 @@
                 prácticos, se demostrará cómo utilizar este módulo para
                 facilitar tareas cotidianas en la programación.
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <figure>
                   <img src="https://i.ibb.co/GkPHLKv/moduloos.jpg" class="img-fluid" alt="El módulo os, Interactuando con el
                     sistema operativo en Python " title="Explorando las
                     Funcionalidades del Módulo
-                    <code class=" language-python">OS</code> de Python" />
+                    <code class="language-python">OS</code> de Python" />
                   <figcaption>
                     El módulo os, Interactuando con el sistema operativo en
                     Python
@@ -242,7 +242,7 @@
                 </li>
               </ul>
               <p><strong>Ejemplo</strong>:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   import os
@@ -283,7 +283,7 @@
                 </li>
               </ul>
               <p><strong>Ejemplo</strong>:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import os
@@ -319,7 +319,7 @@
                 </li>
               </ul>
               <p><strong>Ejemplo</strong>:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import os
@@ -347,7 +347,7 @@
                 </li>
               </ul>
               <p><strong>Ejemplo</strong>:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import os
@@ -375,7 +375,7 @@
                 </li>
               </ul>
               <p><strong>Ejemplo</strong>:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import stat
@@ -405,7 +405,7 @@
                 </li>
               </ul>
               <p><strong>Ejemplo</strong>:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import os
@@ -454,7 +454,7 @@
                   permisos.
                 </li>
               </ul>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import os
@@ -501,7 +501,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -519,33 +519,33 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
-              <div class="menu-item"><a href="#introduccion-al-modulo-os" class="simple-link">Introducción al Módulo
+              <div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
+              <div class="site-menu__item"><a href="#introduccion-al-modulo-os" class="site-menu__link">Introducción al Módulo
                   OS</a></div>
-              <div class="menu-item"><a href="#por-que-usar-el-modulo-os" class="simple-link">¿Por Qué Usar el Módulo
+              <div class="site-menu__item"><a href="#por-que-usar-el-modulo-os" class="site-menu__link">¿Por Qué Usar el Módulo
                   OS?</a></div>
-              <div class="menu-item"><a href="#trabajarConRutasYDirectorios" class="simple-link">Trabajar con Rutas y
+              <div class="site-menu__item"><a href="#trabajarConRutasYDirectorios" class="site-menu__link">Trabajar con Rutas y
                   Directorios</a></div>
-              <div class="menu-item"><a href="#informacion-sobre-archivos-y-directorios" class="simple-link">Información
+              <div class="site-menu__item"><a href="#informacion-sobre-archivos-y-directorios" class="site-menu__link">Información
                   sobre Archivos y Directorios</a></div>
-              <div class="menu-item"><a href="#manipulacion-de-archivos" class="simple-link">Manipulación de
+              <div class="site-menu__item"><a href="#manipulacion-de-archivos" class="site-menu__link">Manipulación de
                   Archivos</a></div>
-              <div class="menu-item"><a href="#interaccion-con-procesos" class="simple-link">Interacción con
+              <div class="site-menu__item"><a href="#interaccion-con-procesos" class="site-menu__link">Interacción con
                   Procesos</a></div>
-              <div class="menu-item"><a href="#permisos-y-propietarios" class="simple-link">Permisos y Propietarios</a>
+              <div class="site-menu__item"><a href="#permisos-y-propietarios" class="site-menu__link">Permisos y Propietarios</a>
               </div>
-              <div class="menu-item"><a href="#operaciones-relacionadas-con-el-sistema" class="simple-link">Operaciones
+              <div class="site-menu__item"><a href="#operaciones-relacionadas-con-el-sistema" class="site-menu__link">Operaciones
                   Relacionadas con el Sistema</a></div>
-              <div class="menu-item"><a href="#compatibilidad-con-sistemas-operativos"
-                  class="simple-link">Compatibilidad
+              <div class="site-menu__item"><a href="#compatibilidad-con-sistemas-operativos"
+                  class="site-menu__link">Compatibilidad
                   con Sistemas Operativos</a></div>
-              <div class="menu-item"><a href="#buenas-practicas-para-usar-os" class="simple-link">Buenas Practicas para
+              <div class="site-menu__item"><a href="#buenas-practicas-para-usar-os" class="site-menu__link">Buenas Practicas para
                   Usar OS</a></div>
               <!-- Comentarios  -->
-              <div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div>
+              <div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div>
             </div>
           </div>
         </div>
@@ -613,7 +613,7 @@
 
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

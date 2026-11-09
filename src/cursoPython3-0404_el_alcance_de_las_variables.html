@@ -72,7 +72,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -90,7 +90,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -102,7 +102,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  El Alcance de las Variables en Python  -->
@@ -126,7 +126,7 @@
                 incluyendo el alcance local, global y no local, así como
                 ejemplos prácticos que ilustran cada uno de estos conceptos.
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <figure>
                   <img src="https://i.ibb.co/1RVDMWw/alcance.jpg" class="img-fluid"
                     alt="El Alcance de las Variables en Python  "
@@ -166,7 +166,7 @@
                   </li>
                 </ul>
                 <p>Ejemplo:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def mi_funcion():
@@ -230,7 +230,7 @@
                   </li>
                 </ul>
                 <p>Ejemplo de alcance anidado:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def funcion_externa():
@@ -271,7 +271,7 @@
                   cualquier función y son accesibles desde cualquier parte del
                   programa.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         x = 10  # Variable de alcance global
@@ -339,7 +339,7 @@
                   </li>
                 </ul>
                 <p>Ejemplo:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Definición de una variable global
@@ -419,7 +419,7 @@
                   A continuación, se presenta un ejemplo sencillo para
                   ilustrar el uso del alcance global en Python:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Definición de una variable global
@@ -518,7 +518,7 @@
                   estamos haciendo referencia no es una nueva variable local,
                   sino una variable que ya existe en un ámbito superior.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def outer_function():
@@ -699,7 +699,7 @@
                   </li>
                 </ul>
                 <p>Ejemplo:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def factorial(n):
@@ -846,7 +846,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -861,15 +861,15 @@
         <!--  fin comentarios  -->
       </section>
 
-<!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h2>En Este Artículo</h2><div class="menu-scroll"><div class="menu-container"><div class="border border-1">
-<div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
-<div class="menu-item"><a href="#alcance-local" class="simple-link">Alcance Local</a></div>
-<div class="menu-item"><a href="#palabra-reservada-global" class="simple-link">Palabra Reservada <code class="language-python">global</code></a></div>
-<div class="menu-item"><a href="#alcanceGlobal" class="simple-link">Alcance Global</a></div>
-<div class="menu-item"><a href="#alcanceNoLocal" class="simple-link">Alcance No Local</a></div>
-<div class="menu-item"><a href="#laRecursividad" class="simple-link">La Recursividad</a></div>
+<!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h2>En Este Artículo</h2><div class="site-menu__scroll"><div class="site-menu"><div class="border border-1">
+<div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
+<div class="site-menu__item"><a href="#alcance-local" class="site-menu__link">Alcance Local</a></div>
+<div class="site-menu__item"><a href="#palabra-reservada-global" class="site-menu__link">Palabra Reservada <code class="language-python">global</code></a></div>
+<div class="site-menu__item"><a href="#alcanceGlobal" class="site-menu__link">Alcance Global</a></div>
+<div class="site-menu__item"><a href="#alcanceNoLocal" class="site-menu__link">Alcance No Local</a></div>
+<div class="site-menu__item"><a href="#laRecursividad" class="site-menu__link">La Recursividad</a></div>
 <!-- Comentarios  -->
-<div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div></div></div></div></aside>
+<div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div></div></div></div></aside>
 <!--  fin barra lateral  -->
     </main>
     <!--  fin principal  -->
@@ -932,7 +932,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

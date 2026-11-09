@@ -73,7 +73,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -91,7 +91,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -103,7 +103,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Iteradores, Generadores y Cierres en Python  -->
@@ -126,7 +126,7 @@
                 utilizados para mejorar la calidad y la eficiencia del código
                 en Python.
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <figure>
                   <img src="https://i.ibb.co/h2ddmyG/iteradoresgeneradorescierres.jpg" class="img-fluid"
                     alt="Iteradores, Generadores y Cierres en Python  "
@@ -295,7 +295,7 @@
               <!-- Ejemplo de Uso Iteradores -->
               <div>
                 <h3>Ejemplo de Uso Iteradores</h3>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         mi_lista = [1, 2, 3]
@@ -465,7 +465,7 @@
                     generador en Python. El código genera números del 1 al 5,
                     uno a la vez, en lugar de crear toda la lista en memoria.
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           def generador_numeros():
@@ -528,7 +528,7 @@
                     <code class="language-python">()</code> en lugar de
                     corchetes <code class="language-python">[]</code>.
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           generador = (expresión for elemento in iterable if condición)
@@ -562,7 +562,7 @@
                     Ejemplo de Código Generador Usando Listas por Comprensión
                   </h4>
                   <p>Generar cuadrados de los números del 1 al 5:</p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           generador = (x**2 for x in range(1, 6))
@@ -595,7 +595,7 @@
                     <strong>Ejemplo de <code class="language-python">in</code> con
                       una expresión generadora</strong>:
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Lista de palabras
@@ -758,7 +758,7 @@
                   </li>
                 </ul>
                 <p><strong>Ejemplo básico de cierre</strong>:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def <code class="language-python">funcion_externa</code>(x):
@@ -811,7 +811,7 @@
                 <p>
                   <strong>Ejemplo práctico de cierre para un contador</strong>
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def contador():
@@ -896,7 +896,7 @@
                   </li>
                 </ul>
                 <p><strong>Sintaxis básica</strong>:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         lambda argumentos: expresión
@@ -913,7 +913,7 @@
                     <span class="fw-bold">Como funciones anónimas</span>: Se
                     usan directamente sin necesidad de asignarlas a un nombre.
                     Por ejemplo:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             resultado = (lambda x, y: x + y)(5, 3)
@@ -926,7 +926,7 @@
                     <span class="fw-bold">Asignadas a variables</span>: Se
                     puede asignar a una variable para usarlas como funciones
                     normales.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             sumar = lambda x, y: x + y
@@ -942,7 +942,7 @@
                     <code class="language-python">filter</code> y
                     <code class="language-python">sorted</code> que aceptan
                     otras funciones como parámetros.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             numeros = [1, 2, 3, 4]
@@ -956,7 +956,7 @@
                     <span class="fw-bold">En listas o diccionarios</span>:
                     Pueden ser usadas para transformar o filtrar elementos
                     dinámicamente.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             palabras = ["python", "lambda", "función"]
@@ -995,7 +995,7 @@
               <div>
                 <h3>Ejemplo Práctico de Funciones lambda</h3>
                 <p>Ordenar una lista de tuplas por el segundo elemento:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         datos = [(1, 'b'), (3, 'a'), (2, 'c')]
@@ -1017,7 +1017,7 @@
                     <code class="language-python">def</code>. Esto reduce la
                     cantidad de código, haciéndolo más legible en tareas
                     simples.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             suma = lambda x, y: x + y
@@ -1038,7 +1038,7 @@
                         <code class="language-python">map</code>,
                         <code class="language-python">filter</code> o
                         <code class="language-python">reduce</code>:
-                        <div class="ej-sintaxis">
+                        <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 lista = [1, 2, 3, 4]
@@ -1070,7 +1070,7 @@
                       <li>
                         Ejemplo: Ordenar una lista de tuplas por el segundo
                         valor.
-                        <div class="ej-sintaxis">
+                        <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 datos = [(1, 'a'), (3, 'c'), (2, 'b')]
@@ -1112,7 +1112,7 @@
                       </li>
                       <li>
                         Ejemplo válido:
-                        <div class="ej-sintaxis">
+                        <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 suma = lambda x, y: x + y
@@ -1123,7 +1123,7 @@
                       </li>
                       <li>
                         Ejemplo inválido:
-                        <div class="ej-sintaxis">
+                        <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 # Esto generará un error porque lambda no permite múltiples líneas
@@ -1147,7 +1147,7 @@
                       </li>
                       <li>
                         Ejemplo válido con operador ternario:
-                        <div class="ej-sintaxis">
+                        <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 par_o_impar = lambda x: "par" if x % 2 == 0 else "impar"
@@ -1158,7 +1158,7 @@
                       </li>
                       <li>
                         Ejemplo inválido:
-                        <div class="ej-sintaxis">
+                        <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 # Esto generará un error porque "for" no es permitido en una lambda
@@ -1175,7 +1175,7 @@
                     un nombre interno como las funciones definidas con
                     <code class="language-python">def</code>. Esto significa
                     que puede ser menos útil para depuración o documentación.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             multiplicar = lambda x, y: x * y
@@ -1195,7 +1195,7 @@
                       <li>
                         Ejemplo válido con
                         <code class="language-python">def</code>:
-                        <div class="ej-sintaxis">
+                        <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 def sumar(x: int, y: int) -> int:
@@ -1221,7 +1221,7 @@
                       </li>
                       <li>
                         Ejemplo con map:
-                        <div class="ej-sintaxis">
+                        <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 numeros = [1, 2, 3, 4]
@@ -1238,7 +1238,7 @@
                     return dentro de una
                     lambda, ya que siempre devuelve implícitamente el
                     resultado de la expresión.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             # Correcto
@@ -1266,7 +1266,7 @@
                 devuelve un iterable de los resultados.
               </p>
               <p><strong>Sintaxis</strong>:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       map(func, iterable)
@@ -1289,7 +1289,7 @@
                 función anónima para realizar la operación.
               </p>
               <p><strong>Ejemplo</strong>:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Multiplicar cada número de la lista por 2 usando lambda y map
@@ -1317,7 +1317,7 @@
                 cumplen con la condición.
               </p>
               <p><strong>Sintaxis</strong>:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       filter(func, iterable)
@@ -1342,7 +1342,7 @@
                 condición anónima para filtrar los elementos.
               </p>
               <p><strong>Ejemplo</strong>:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Filtrar los números impares de la lista usando lambda y filter
@@ -1395,7 +1395,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -1413,16 +1413,16 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
-              <div class="menu-item"><a href="#iteradores" class="simple-link">Iteradores</a></div>
-              <div class="menu-item"><a href="#generadores" class="simple-link">Generadores</a></div>
-              <div class="menu-item"><a href="#cierres" class="simple-link">Cierres</a></div>
-              <div class="menu-item"><a href="#la-funcion-lambda" class="simple-link">La Función lambda</a></div>
+              <div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
+              <div class="site-menu__item"><a href="#iteradores" class="site-menu__link">Iteradores</a></div>
+              <div class="site-menu__item"><a href="#generadores" class="site-menu__link">Generadores</a></div>
+              <div class="site-menu__item"><a href="#cierres" class="site-menu__link">Cierres</a></div>
+              <div class="site-menu__item"><a href="#la-funcion-lambda" class="site-menu__link">La Función lambda</a></div>
               <!-- Comentarios  -->
-              <div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div>
+              <div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div>
             </div>
           </div>
         </div>
@@ -1489,7 +1489,7 @@
 
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

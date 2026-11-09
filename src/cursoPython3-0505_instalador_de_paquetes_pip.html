@@ -72,7 +72,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -90,7 +90,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -102,7 +102,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Instalador de Paquetes de Python (PIP)  -->
@@ -123,9 +123,9 @@
                 funcionalidades adicionales desarrolladas por la comunidad,
                 disponibles en el repositorio PyPI (Python Package Index).
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <figure>
-                  <img src="https://i.ibb.co/GC81Y2X/pip.jpg" class="img-fluid rounded-4 rounded-4"
+                  <img src="https://i.ibb.co/GC81Y2X/pip.jpg" class="img-fluid rounded-4"
                     alt="Instalador de Paquetes de Python (PIP)  "
                     title="Instalador de Paquetes PIP en Python: Guía Completa de Gestión de Bibliotecas" />
                   <figcaption>
@@ -156,7 +156,7 @@
                       <li>
                         Permite instalar paquetes disponibles en PyPI con un
                         solo comando:
-                        <div class="ej-sintaxis">
+                        <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-bash" data-prismjs-copy="Copy">
                                 pip install requests # instalará la biblioteca requests.
@@ -166,7 +166,7 @@
                       </li>
                       <li>
                         Facilita la desinstalación de paquetes:
-                        <div class="ej-sintaxis">
+                        <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-bash" data-prismjs-copy="Copy">
                                 pip uninstall requests # desinstalará la biblioteca requests.
@@ -195,7 +195,7 @@
                     <code class="language-python">requirements.txt</code> para
                     instalar varias dependencias necesarias de un proyecto con
                     un único comando:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             pip install -r requirements.txt
@@ -220,7 +220,7 @@
                     <span class="fw-bold">Actualización de paquetes</span>:
                     Facilita la actualización de paquetes a versiones más
                     recientes:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             pip install --upgrade numpy
@@ -233,7 +233,7 @@
                     <ul>
                       <li>
                         Muestra los paquetes instalados en el entorno actual:
-                        <div class="ej-sintaxis">
+                        <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-bash" data-prismjs-copy="Copy">
                                 pip list
@@ -243,7 +243,7 @@
                       </li>
                       <li>
                         Proporciona detalles específicos sobre un paquete:
-                        <div class="ej-sintaxis">
+                        <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-bash" data-prismjs-copy="Copy">
                                 pip show nombre_paquete
@@ -289,7 +289,7 @@
                 <ul>
                   <li>
                     <span class="fw-bold">Instalar un paquete</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             pip install nombre_del_paquete
@@ -299,7 +299,7 @@
                   </li>
                   <li>
                     <span class="fw-bold">Verificar versión de PIP</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             pip --version
@@ -309,7 +309,7 @@
                   </li>
                   <li>
                     <span class="fw-bold">Actualizar PIP</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             python -m pip install --upgrade pip
@@ -319,7 +319,7 @@
                   </li>
                   <li>
                     <span class="fw-bold">Mostrar detalles de un paquete instalado</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             pip show nombre_del_paquete
@@ -471,7 +471,7 @@
                 <ul>
                   <li>
                     <span class="fw-bold">Instalación de paquetes con pip</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             pip install numpy
@@ -481,7 +481,7 @@
                   </li>
                   <li>
                     <span class="fw-bold">Listar paquetes instalados</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             pip list
@@ -491,7 +491,7 @@
                   </li>
                   <li>
                     <span class="fw-bold">Actualizar un paquete</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             pip install --upgrade numpy
@@ -501,7 +501,7 @@
                   </li>
                   <li>
                     <span class="fw-bold">Crear un entorno virtual</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             python -m venv nombre_entorno
@@ -527,7 +527,7 @@
                   <li>Usar entornos virtuales para cada proyecto.</li>
                   <li>
                     Congelar dependencias en requirements.txt:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             pip freeze > requirements.txt
@@ -629,7 +629,7 @@
                     <span class="fw-bold">Publicación de paquetes</span>: Los
                     desarrolladores pueden publicar sus paquetes utilizando
                     herramientas como setuptools y twine. Por ejemplo:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             python setup.py sdist bdist_wheel
@@ -680,7 +680,7 @@
               <div>
                 <h3>Verificar si PIP ya Está Instalado</h3>
                 <p>Ejecutar el siguiente comando en la terminal o consola:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         pip --version
@@ -710,7 +710,7 @@
                   </li>
                   <li>
                     <span class="fw-bold">Verificar la instalación</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             pip --version
@@ -735,7 +735,7 @@
                       rel="noopener noreferrer">https://bootstrap.pypa.io/get-pip.py</a>.
                   </li>
                   <li>Ejecutar el archivo con Python:</li>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-bash" data-prismjs-copy="Copy">
                           python get-pip.py
@@ -749,7 +749,7 @@
               <div>
                 <h3>Actualizar PIP</h3>
                 <p>Para asegurarse de usar la última versión:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         python -m pip install --upgrade pip
@@ -765,7 +765,7 @@
                   Si se necesita instalar paquetes sin permisos de
                   administrador:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         pip install nombre-del-paquete --user
@@ -825,7 +825,7 @@
                   sus versiones, o solo los nombres de los paquetes si no se
                   especifica la versión.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-txt" data-prismjs-copy="Copy">
                         # requirements.txt
@@ -852,7 +852,7 @@
                   también incluye la versión de Python que se debe usar para
                   el entorno. A continuación se muestra una plantilla básica:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-toml" data-prismjs-copy="Copy">
                         # Pipfile
@@ -958,7 +958,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -976,19 +976,19 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
-              <div class="menu-item"><a href="#queEsPip" class="simple-link">¿Qué es PIP?</a></div>
-              <div class="menu-item"><a href="#queEsElEcosistemaDePaquetesDePython" class="simple-link">¿Qué es el
+              <div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
+              <div class="site-menu__item"><a href="#queEsPip" class="site-menu__link">¿Qué es PIP?</a></div>
+              <div class="site-menu__item"><a href="#queEsElEcosistemaDePaquetesDePython" class="site-menu__link">¿Qué es el
                   ecosistema de paquetes de Python?</a></div>
-              <div class="menu-item"><a href="#elRepositorioDePypi" class="simple-link">El Repositorio de PyPI</a></div>
-              <div class="menu-item"><a href="#instalacionDePip" class="simple-link">Instalación de PIP</a></div>
-              <div class="menu-item"><a href="#dependencias" class="simple-link">Dependencias</a></div>
-              <div class="menu-item"><a href="#resumen" class="simple-link">Resumen</a></div>
+              <div class="site-menu__item"><a href="#elRepositorioDePypi" class="site-menu__link">El Repositorio de PyPI</a></div>
+              <div class="site-menu__item"><a href="#instalacionDePip" class="site-menu__link">Instalación de PIP</a></div>
+              <div class="site-menu__item"><a href="#dependencias" class="site-menu__link">Dependencias</a></div>
+              <div class="site-menu__item"><a href="#resumen" class="site-menu__link">Resumen</a></div>
               <!-- Comentarios  -->
-              <div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div>
+              <div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div>
             </div>
           </div>
         </div>
@@ -1062,7 +1062,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

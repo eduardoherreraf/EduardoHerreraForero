@@ -62,7 +62,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -80,7 +80,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -91,7 +91,7 @@
   </nav>
   <!-- Barra de Navegación -->
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!-- Configuración Inicial de GIT  -->
@@ -126,7 +126,7 @@
               los commits, permitiendo identificar quién hizo los cambios en
               un proyecto.
             </p>
-            <div class="ej-sintaxis">
+            <div class="code-example__syntax">
               <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --global user.name "Nombre del usuario"
@@ -141,7 +141,7 @@
               repositorio en particular, se puede omitir
               <strong>--global</strong>:
             </p>
-            <div class="ej-sintaxis">
+            <div class="code-example__syntax">
               <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config user.name "Otro Nombre"
@@ -183,7 +183,7 @@
               o archivos de configuración. Es útil configurar el editor de
               texto preferido para estas tareas.
             </p>
-            <div class="ej-sintaxis">
+            <div class="code-example__syntax">
               <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --global core.editor "nombre-del-editor"
@@ -210,7 +210,7 @@
           </div>
 
           <!-- Configuración de la terminal de colores -->
-          <div id="configuracion-de-los-colores-de-texto-en-la-terminal" class=" mt-5">
+          <div id="configuracion-de-los-colores-de-texto-en-la-terminal" class="mt-5">
             <h2>
               Configuración de los Colores de Texto en la Terminal
             </h2>
@@ -223,7 +223,7 @@
               Se usa principalmente para mejorar la legibilidad de los
               mensajes en la terminal.
             </p>
-            <div class="ej-sintaxis">
+            <div class="code-example__syntax">
               <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --global color.ui auto
@@ -238,7 +238,7 @@
                 Además, se pueden personalizar colores para distintas
                 secciones de los mensajes en Git:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       # Colorea la salida de 'git status'
@@ -265,7 +265,7 @@
                 Si se desea personalizar los colores con más detalle, se
                 pueden definir colores específicos. Por ejemplo:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       # Archivos añadidos en verde y negrita
@@ -283,7 +283,7 @@
                 Para ver todas las opciones de colores disponibles, se puede
                 consultar la documentación de Git con:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       git help config
@@ -300,7 +300,7 @@
                 Para comprobar la configuración de colores en Git, se puede
                 ejecutar:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       git config --global --list | grep color
@@ -318,7 +318,7 @@
               Se puedes especificar cómo Git debe manejar las fusiones de
               archivos.
             </p>
-            <div class="ej-sintaxis">
+            <div class="code-example__syntax">
               <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --global merge.tool "nombre-del-herramienta-de-fusión"
@@ -377,7 +377,7 @@
               Los alias se utilizan para abreviar comandos largos o
               complicados, facilitando y agilizando su uso.
             </p>
-            <div class="ej-sintaxis">
+            <div class="code-example__syntax">
               <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --global alias.st status
@@ -388,7 +388,7 @@
             <p>
               En este ejemplo, ambos comandos producen el mismo resultado.
             </p>
-            <div class="ej-sintaxis">
+            <div class="code-example__syntax">
               <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git st
@@ -403,7 +403,7 @@
               <!-- Alias para comandos básicos -->
               <div>
                 <h4>Alias para comandos básicos</h4>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         # Muestra el estado del repositorio
@@ -435,7 +435,7 @@
               <!-- Alias para Agregar y Confirmar Cambios -->
               <div>
                 <h4>Alias para Agregar y Confirmar Cambios</h4>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         # Añade todos los cambios al área de preparación
@@ -460,7 +460,7 @@
               <!-- Alias para Manejar Ramas -->
               <div>
                 <h4>Alias para Manejar Ramas</h4>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         # Crea y cambia a una nueva rama
@@ -486,7 +486,7 @@
               <!-- Alias para Trabajar con Remotos -->
               <div>
                 <h4>Alias para Trabajar con Remotos</h4>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         # Envía cambios al repositorio remoto
@@ -510,7 +510,7 @@
               <!-- Alias para Reiniciar y Limpiar Cambios -->
               <div>
                 <h4>Alias para Reiniciar y Limpiar Cambios</h4>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         # Revierte el último commit manteniendo los cambios
@@ -531,7 +531,7 @@
               <!-- Alias Avanzados -->
               <div>
                 <h4>Alias Avanzados</h4>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         git config --global alias.lg "log --graph --decorate --oneline --all"
@@ -557,7 +557,7 @@
               <p>
                 Para ver la lista completa de alias configurados en Git, usar:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       git config --global --list | grep alias
@@ -577,7 +577,7 @@
               correo electrónico, alias y más. Es un comando útil para revisar
               la configuración de GIT de un vistazo.
             </p>
-            <div class="ej-sintaxis">
+            <div class="code-example__syntax">
               <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git config --list
@@ -629,7 +629,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -647,37 +647,37 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item">
-                <a href="#introduccion" class="simple-link">Introducción</a>
+              <div class="site-menu__item">
+                <a href="#introduccion" class="site-menu__link">Introducción</a>
               </div>
-              <div class="menu-item">
-                <a href="#configuracion-nombre-y-correo-usuario" class="simple-link">Configuración el Nombre y el Correo
+              <div class="site-menu__item">
+                <a href="#configuracion-nombre-y-correo-usuario" class="site-menu__link">Configuración el Nombre y el Correo
                   del
                   Usuario</a>
               </div>
-              <div class="menu-item">
-                <a href="#configuracion-de-editor-por-defecto" class="simple-link">Configuración del Editor por
+              <div class="site-menu__item">
+                <a href="#configuracion-de-editor-por-defecto" class="site-menu__link">Configuración del Editor por
                   Defecto</a>
               </div>
-              <div class="menu-item">
-                <a href="#configuracion-de-los-colores-de-texto-en-la-terminal" class=" simple-link">Configuración de
+              <div class="site-menu__item">
+                <a href="#configuracion-de-los-colores-de-texto-en-la-terminal" class="site-menu__link">Configuración de
                   los Colores de Texto la Terminal</a>
               </div>
-              <div class="menu-item">
-                <a href="#configuracion-de-metodo-de-fusion" class="simple-link">Configuración del Método de Fusión</a>
+              <div class="site-menu__item">
+                <a href="#configuracion-de-metodo-de-fusion" class="site-menu__link">Configuración del Método de Fusión</a>
               </div>
-              <div class="menu-item">
-                <a href="#configuracion-de-alias" class="simple-link">Configuración de Alias</a>
+              <div class="site-menu__item">
+                <a href="#configuracion-de-alias" class="site-menu__link">Configuración de Alias</a>
               </div>
-              <div class="menu-item">
-                <a href="#ver-la-configuracion" class="simple-link">Ver la configuración</a>
+              <div class="site-menu__item">
+                <a href="#ver-la-configuracion" class="site-menu__link">Ver la configuración</a>
               </div>
               <!-- Comentarios  -->
-              <div class="menu-item">
-                <a href="#comments" class="simple-link">Comentarios</a>
+              <div class="site-menu__item">
+                <a href="#comments" class="site-menu__link">Comentarios</a>
               </div>
       </aside>
       <!--  fin barra lateral  -->
@@ -741,7 +741,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

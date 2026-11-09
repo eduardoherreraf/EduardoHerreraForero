@@ -72,7 +72,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -90,7 +90,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -102,7 +102,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--   Introducción a los módulos en Python  -->
@@ -124,7 +124,7 @@
               manejables, facilitando su mantenimiento y mejorando la
               legibilidad.
             </p>
-            <div class="centrar-imagen magen-intro">
+            <div class="site-image site-intro-image">
               <figure>
                 <img src="https://i.ibb.co/52CcWPN/intromodulos.jpg" class="img-fluid"
                   alt=" Introducción a los módulos en Python  " title="Componentes Básicos de los Módulos de Python" />
@@ -338,7 +338,7 @@
                 .py y se importan en otros programas. Por ejemplo, si se tiene
                 un archivo llamado mi_modulo.py con el siguiente contenido:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # mi_modulo.py
@@ -348,7 +348,7 @@
                   </pre>
               </div>
               <p>Puede importarse y usarse en otro archivo:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import mi_modulo
@@ -367,7 +367,7 @@
                 estructurar los proyectos en submódulos. Por ejemplo:
               </p>
               <p>Estructura de un paquete llamado mi_paquete:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       mi_paquete/
@@ -378,7 +378,7 @@
                   </pre>
               </div>
               <p>El paquete puede importarse como:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       from mi_paquete import modulo1
@@ -455,7 +455,7 @@
                 funciones, clases y/o
                 variables que serán parte del módulo.
                 <p>Por ejemplo:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Archivo: utilidades.py
@@ -476,7 +476,7 @@
                 <code class="language-python">if __name__ == "__main__"</code>. Esto permite ejecutar el módulo
                 directamente para pruebas
                 sin afectar su uso en otros contextos. Ejemplo:
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         if __name__ == "__main__":
@@ -493,7 +493,7 @@
                 <code class="language-python">import</code> o
                 <code class="language-python">from ... import</code>. Por
                 ejemplo:
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         import utilidades
@@ -503,7 +503,7 @@
                     </pre>
                 </div>
                 <p>También se pueden importar funciones específicas:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         from utilidades import restar
@@ -556,7 +556,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -571,14 +571,14 @@
         <!--  fin comentarios  -->
       </section>
 
-<!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h2>En Este Artículo</h2><div class="menu-scroll"><div class="menu-container"><div class="border border-1">
-<div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
-<div class="menu-item"><a href="#queEsUnModulo" class="simple-link">¿Qué es un módulo?</a></div>
-<div class="menu-item"><a href="#características-principales-deu-un-modulo" class="simple-link">Características Principales de un Módulo</a></div>
-<div class="menu-item"><a href="#tipos-de-modulos" class="simple-link">Tipos de módulos</a></div>
-<div class="menu-item"><a href="#creacion-de-un-modulo" class="simple-link">Creación de un módulo</a></div>
+<!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h2>En Este Artículo</h2><div class="site-menu__scroll"><div class="site-menu"><div class="border border-1">
+<div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
+<div class="site-menu__item"><a href="#queEsUnModulo" class="site-menu__link">¿Qué es un módulo?</a></div>
+<div class="site-menu__item"><a href="#características-principales-deu-un-modulo" class="site-menu__link">Características Principales de un Módulo</a></div>
+<div class="site-menu__item"><a href="#tipos-de-modulos" class="site-menu__link">Tipos de módulos</a></div>
+<div class="site-menu__item"><a href="#creacion-de-un-modulo" class="site-menu__link">Creación de un módulo</a></div>
 <!-- Comentarios  -->
-<div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div></div></div></div></aside>
+<div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div></div></div></div></aside>
 <!--  fin barra lateral  -->
     </main>
     <!--  fin principal  -->
@@ -641,7 +641,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

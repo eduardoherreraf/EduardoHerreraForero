@@ -21,7 +21,7 @@
             box-sizing: border-box;
         }
 
-        body {
+        .demo-aside {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: var(--color-fondo);
             color: var(--color-texto);
@@ -31,7 +31,7 @@
             flex-direction: column;
         }
 
-        .ej-navbar-horizontal {
+        .demo-aside__navbar-horizontal {
             background-color: var(--color-secundario);
             padding: 1rem 0;
             box-shadow: 0 2px 4px var(--sombra-sutil);
@@ -40,7 +40,7 @@
             z-index: 100;
         }
 
-        .ej-navbar-content {
+        .demo-aside__navbar-content {
             max-width: 1200px;
             margin: 0 auto;
             display: flex;
@@ -49,19 +49,19 @@
             padding: 0 1rem;
         }
 
-        .ej-navbar-brand {
+        .demo-aside__navbar-brand {
             font-size: 1.3rem;
             font-weight: 400;
             color: var(--color-texto);
         }
 
-        .ej-navbar-menu {
+        .demo-aside__navbar-menu {
             display: flex;
             gap: 1.5rem;
             list-style: none;
         }
 
-        .ej-navbar-item {
+        .demo-aside__navbar-item {
             color: var(--color-texto);
             text-decoration: none;
             padding: 0.4rem 0.8rem;
@@ -71,12 +71,12 @@
             font-size: 0.9rem;
         }
 
-        .ej-navbar-item:hover {
+        .demo-aside__navbar-item:hover {
             background-color: rgba(59, 130, 246, 0.2);
             color: var(--color-acento);
         }
 
-        .ej-container-principal {
+        .demo-aside__container-principal {
             display: grid;
             grid-template-columns: 1fr 280px;
             gap: 1.5rem;
@@ -87,7 +87,7 @@
             width: 100%;
         }
 
-        .ej-main-content {
+        .demo-aside__main-content {
             background-color: var(--color-secundario);
             padding: 2rem;
             border-radius: 12px;
@@ -96,25 +96,25 @@
             transition: opacity 0.3s ease;
         }
 
-        .ej-main-content:hover {
+        .demo-aside__main-content:hover {
             opacity: 0.8;
         }
 
-        .ej-main-title {
+        .demo-aside__main-title {
             font-size: 1.8rem;
             margin-bottom: 1rem;
             color: var(--color-texto);
             font-weight: 400;
         }
 
-        .ej-main-text {
+        .demo-aside__main-text {
             font-size: 1rem;
             margin-bottom: 1.5rem;
             color: var(--color-texto);
             line-height: 1.6;
         }
 
-        .ej-aside-sidebar {
+        .demo-aside__aside-sidebar {
             background: linear-gradient(135deg, var(--color-acento), #2563eb);
             padding: 3rem 2rem;
             border-radius: 16px;
@@ -125,7 +125,7 @@
             overflow: hidden;
         }
 
-        .ej-aside-sidebar::before {
+        .demo-aside__aside-sidebar::before {
             content: '';
             position: absolute;
             top: -50%;
@@ -136,12 +136,12 @@
             animation: pulse 4s ease-in-out infinite;
         }
 
-        .ej-aside-sidebar:hover {
+        .demo-aside__aside-sidebar:hover {
             transform: translateY(-5px);
             box-shadow: 0 12px 40px rgba(59, 130, 246, 0.5);
         }
 
-        .ej-aside-title {
+        .demo-aside__aside-title {
             font-size: 1.8rem;
             margin-bottom: 2rem;
             color: var(--color-footer-texto);
@@ -152,7 +152,7 @@
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         }
 
-        .ej-aside-item {
+        .demo-aside__aside-item {
             padding: 1rem;
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             color: var(--color-footer-texto);
@@ -164,17 +164,17 @@
             margin-bottom: 0.5rem;
         }
 
-        .ej-aside-item:last-child {
+        .demo-aside__aside-item:last-child {
             border-bottom: none;
         }
 
-        .ej-aside-item:hover {
+        .demo-aside__aside-item:hover {
             background: rgba(255, 255, 255, 0.1);
             transform: translateX(5px);
             backdrop-filter: blur(10px);
         }
 
-        .ej-hero-footer {
+        .demo-aside__hero-footer {
             background-color: var(--color-secundario);
             color: var(--color-texto);
             padding: 2rem;
@@ -182,47 +182,47 @@
             opacity: 0.7;
         }
 
-        .ej-footer-content {
+        .demo-aside__footer-content {
             max-width: 1200px;
             margin: 0 auto;
         }
 
-        .ej-footer-title {
+        .demo-aside__footer-title {
             font-size: 1.8rem;
             font-weight: 400;
             margin-bottom: 1rem;
             color: var(--color-texto);
         }
 
-        .ej-footer-subtitle {
+        .demo-aside__footer-subtitle {
             font-size: 1rem;
             margin-bottom: 2rem;
             color: var(--color-texto);
             font-weight: 300;
         }
 
-        .ej-footer-grid {
+        .demo-aside__footer-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
         }
 
-        .ej-footer-section {
+        .demo-section__footer {
             background: rgba(255, 255, 255, 0.05);
             padding: 1.5rem;
             border-radius: 12px;
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .ej-footer-section-title {
+        .demo-aside__footer-section-title {
             font-size: 1.1rem;
             font-weight: 500;
             margin-bottom: 1rem;
             color: var(--color-texto);
         }
 
-        .ej-footer-link {
+        .demo-aside__footer-link {
             display: block;
             color: var(--color-texto);
             text-decoration: none;
@@ -231,12 +231,12 @@
             opacity: 0.8;
         }
 
-        .ej-footer-link:hover {
+        .demo-aside__footer-link:hover {
             color: var(--color-acento);
             opacity: 1;
         }
 
-        .ej-footer-bottom {
+        .demo-aside__footer-bottom {
             margin-top: 2rem;
             padding-top: 1rem;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -245,127 +245,127 @@
         }
 
         @media (max-width: 768px) {
-            .ej-navbar-content {
+            .demo-aside__navbar-content {
                 flex-direction: column;
                 gap: 1rem;
             }
 
-            .ej-navbar-menu {
+            .demo-aside__navbar-menu {
                 flex-wrap: wrap;
                 justify-content: center;
                 gap: 1rem;
             }
 
-            .ej-container-principal {
+            .demo-aside__container-principal {
                 grid-template-columns: 1fr;
                 gap: 1rem;
                 padding: 0.5rem;
             }
 
-            .ej-main-content,
-            .ej-aside-sidebar {
+            .demo-aside__main-content,
+            .demo-aside__aside-sidebar {
                 padding: 1.5rem;
             }
 
-            .ej-hero-footer {
+            .demo-aside__hero-footer {
                 padding: 3rem 1rem;
             }
 
-            .ej-footer-title {
+            .demo-aside__footer-title {
                 font-size: 2.2rem;
             }
 
-            .ej-footer-subtitle {
+            .demo-aside__footer-subtitle {
                 font-size: 1.1rem;
             }
         }
     </style>
 </head>
-<body>
-<body>
-    <nav class="ej-navbar-horizontal">
-        <div class="ej-navbar-content">
-            <div class="ej-navbar-brand">Mi Sitio</div>
-            <ul class="ej-navbar-menu">
-                <li><a href="#" class="ej-navbar-item">Inicio</a></li>
-                <li><a href="#" class="ej-navbar-item">Acerca de</a></li>
-                <li><a href="#" class="ej-navbar-item">Servicios</a></li>
-                <li><a href="#" class="ej-navbar-item">Blog</a></li>
-                <li><a href="#" class="ej-navbar-item">Contacto</a></li>
+<body class="demo-aside">
+<body class="demo-aside">
+    <nav class="demo-aside__navbar-horizontal">
+        <div class="demo-aside__navbar-content">
+            <div class="demo-aside__navbar-brand">Mi Sitio</div>
+            <ul class="demo-aside__navbar-menu">
+                <li><a href="#" class="demo-aside__navbar-item">Inicio</a></li>
+                <li><a href="#" class="demo-aside__navbar-item">Acerca de</a></li>
+                <li><a href="#" class="demo-aside__navbar-item">Servicios</a></li>
+                <li><a href="#" class="demo-aside__navbar-item">Blog</a></li>
+                <li><a href="#" class="demo-aside__navbar-item">Contacto</a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="ej-container-principal">
-        <main class="ej-main-content">
-            <h1 class="ej-main-title">Contenido Principal</h1>
-            <p class="ej-main-text">
+    <div class="demo-aside__container-principal">
+        <main class="demo-aside__main-content">
+            <h1 class="demo-aside__main-title">Contenido Principal</h1>
+            <p class="demo-aside__main-text">
                 Este es el contenido principal de la página. Aquí puedes agregar artículos, 
                 información importante o cualquier contenido que necesites mostrar. El diseño 
                 está optimizado para que el footer sea el protagonista visual.
             </p>
-            <p class="ej-main-text">
+            <p class="demo-aside__main-text">
                 El contenido principal mantiene una opacidad reducida para no competir con 
                 el footer, pero sigue siendo completamente legible y funcional.
             </p>
-            <p class="ej-main-text">
+            <p class="demo-aside__main-text">
                 Puedes agregar más secciones, imágenes, formularios o cualquier elemento 
                 que necesites para tu proyecto específico.
             </p>
         </main>
 
-        <aside class="ej-aside-sidebar">
-            <h2 class="ej-aside-title">DESTACADO aside</h2>
-            <div class="ej-aside-item">⭐ Ofertas especiales</div>
-            <div class="ej-aside-item">🎯 Servicios premium</div>
-            <div class="ej-aside-item">📈 Estadísticas</div>
-            <div class="ej-aside-item">🔥 Tendencias</div>
-            <div class="ej-aside-item">💎 Contenido exclusivo</div>
+        <aside class="demo-aside__aside-sidebar">
+            <h2 class="demo-aside__aside-title">DESTACADO aside</h2>
+            <div class="demo-aside__aside-item">⭐ Ofertas especiales</div>
+            <div class="demo-aside__aside-item">🎯 Servicios premium</div>
+            <div class="demo-aside__aside-item">📈 Estadísticas</div>
+            <div class="demo-aside__aside-item">🔥 Tendencias</div>
+            <div class="demo-aside__aside-item">💎 Contenido exclusivo</div>
         </aside>
     </div>
 
-    <footer class="ej-hero-footer">
-        <div class="ej-footer-content">
-            <h2 class="ej-footer-title">Información de Contacto</h2>
-            <p class="ej-footer-subtitle">
+    <footer class="demo-aside__hero-footer">
+        <div class="demo-aside__footer-content">
+            <h2 class="demo-aside__footer-title">Información de Contacto</h2>
+            <p class="demo-aside__footer-subtitle">
                 Encuentra toda la información que necesitas
             </p>
             
-            <div class="ej-footer-grid">
-                <div class="ej-footer-section">
-                    <h3 class="ej-footer-section-title">Empresa</h3>
-                    <a href="#" class="ej-footer-link">Acerca de nosotros</a>
-                    <a href="#" class="ej-footer-link">Nuestro equipo</a>
-                    <a href="#" class="ej-footer-link">Carreras</a>
-                    <a href="#" class="ej-footer-link">Contacto</a>
+            <div class="demo-aside__footer-grid">
+                <div class="demo-section__footer">
+                    <h3 class="demo-aside__footer-section-title">Empresa</h3>
+                    <a href="#" class="demo-aside__footer-link">Acerca de nosotros</a>
+                    <a href="#" class="demo-aside__footer-link">Nuestro equipo</a>
+                    <a href="#" class="demo-aside__footer-link">Carreras</a>
+                    <a href="#" class="demo-aside__footer-link">Contacto</a>
                 </div>
                 
-                <div class="ej-footer-section">
-                    <h3 class="ej-footer-section-title">Servicios</h3>
-                    <a href="#" class="ej-footer-link">Desarrollo Web</a>
-                    <a href="#" class="ej-footer-link">Diseño UX/UI</a>
-                    <a href="#" class="ej-footer-link">Consultoría</a>
-                    <a href="#" class="ej-footer-link">Soporte técnico</a>
+                <div class="demo-section__footer">
+                    <h3 class="demo-aside__footer-section-title">Servicios</h3>
+                    <a href="#" class="demo-aside__footer-link">Desarrollo Web</a>
+                    <a href="#" class="demo-aside__footer-link">Diseño UX/UI</a>
+                    <a href="#" class="demo-aside__footer-link">Consultoría</a>
+                    <a href="#" class="demo-aside__footer-link">Soporte técnico</a>
                 </div>
                 
-                <div class="ej-footer-section">
-                    <h3 class="ej-footer-section-title">Recursos</h3>
-                    <a href="#" class="ej-footer-link">Blog</a>
-                    <a href="#" class="ej-footer-link">Documentación</a>
-                    <a href="#" class="ej-footer-link">Tutorials</a>
-                    <a href="#" class="ej-footer-link">FAQ</a>
+                <div class="demo-section__footer">
+                    <h3 class="demo-aside__footer-section-title">Recursos</h3>
+                    <a href="#" class="demo-aside__footer-link">Blog</a>
+                    <a href="#" class="demo-aside__footer-link">Documentación</a>
+                    <a href="#" class="demo-aside__footer-link">Tutorials</a>
+                    <a href="#" class="demo-aside__footer-link">FAQ</a>
                 </div>
                 
-                <div class="ej-footer-section">
-                    <h3 class="ej-footer-section-title">Redes Sociales</h3>
-                    <a href="#" class="ej-footer-link">Twitter</a>
-                    <a href="#" class="ej-footer-link">LinkedIn</a>
-                    <a href="#" class="ej-footer-link">GitHub</a>
-                    <a href="#" class="ej-footer-link">Instagram</a>
+                <div class="demo-section__footer">
+                    <h3 class="demo-aside__footer-section-title">Redes Sociales</h3>
+                    <a href="#" class="demo-aside__footer-link">Twitter</a>
+                    <a href="#" class="demo-aside__footer-link">LinkedIn</a>
+                    <a href="#" class="demo-aside__footer-link">GitHub</a>
+                    <a href="#" class="demo-aside__footer-link">Instagram</a>
                 </div>
             </div>
             
-            <div class="ej-footer-bottom">
+            <div class="demo-aside__footer-bottom">
                 <p>&copy; 2025 Tu Empresa. Todos los derechos reservados.</p>
             </div>
         </div>

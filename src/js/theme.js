@@ -20,7 +20,7 @@ const temaOscuro = () => {
         .querySelector("#dl-icon")
         .setAttribute(
             "class",
-            "btn text-center d-flex bg-body-tertiary text-light"
+            "btn site-button text-center d-flex bg-body-tertiary text-light"
         );
     localStorage.setItem("theme", "dark");
 };
@@ -28,6 +28,6 @@ const temaClaro = () => {
     document.querySelector("body").setAttribute("data-bs-theme", "light");
     document
         .querySelector("#dl-icon")
-        .setAttribute("class", "btn text-center d-flex bg-light text-dark");
+        .setAttribute("class", "btn site-button text-center d-flex bg-light text-dark");
     localStorage.setItem("theme", "light");
 };

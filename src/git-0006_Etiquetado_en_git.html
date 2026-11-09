@@ -55,7 +55,7 @@
     Etiquetado en GIT - Ing. Eduardo Herrera Forero.
   </title>
   <style>
-    .menu-container-content {}
+    .site-menu__content {}
   </style>
 
   <script type="module" defer src="./js/main.js"></script>
@@ -77,7 +77,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -95,7 +95,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -106,7 +106,7 @@
   </nav>
   <!-- Barra de Navegación -->
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Git Tags: Marcando Puntos Importantes en la Historia de tu Proyecto -->
@@ -127,12 +127,12 @@
               incorporar tags de manera efectiva en el flujo de trabajo de desarrollo.
             </p>
 
-            <div class="centrar-imagen magen-intro">
-              <figure class="img-container">
+            <div class="site-image site-intro-image">
+              <figure class="site-content__img-container">
                 <img src="https://i.postimg.cc/6WRvrSCj/git-0006-etiqueta-tag-en-git-comp.png" class="img-fluid"
                   alt="Programador trabajando frente a pantallas con etiquetas de versiones de software como v1.0 y v1.1"
                   title="Uso de etiquetas en Git" loading="lazy" />
-                <figcaption class="img-caption">Ilustración que representa cómo las etiquetas en Git marcan hitos en el
+                <figcaption class="site-image__caption">Ilustración que representa cómo las etiquetas en Git marcan hitos en el
                   desarrollo de software, como versiones alfa, beta y estables</figcaption>
               </figure>
             </div>
@@ -172,7 +172,7 @@
               permite marcar esos puntos
               críticos con tags para volver a ellos en cualquier momento sin perderse en el historial de cambios.</p>
           </div>
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- ¿Qué Son las Etiquetas Tab? -->
           <div id="que-son-las-etiquetas-tab" class="mt-5">
@@ -186,7 +186,7 @@
             </p>
           </div>
           <!-- ¿Qué Son las Etiquetas Tab? fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- ¿Por qué Usar Etiquetas Git? -->
           <div id="por-que-usar-etiquetas-git" class="mt-5">
@@ -210,7 +210,7 @@
             </ul>
           </div>
           <!-- ¿Por qué Usar Etiquetas Git? fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Tipos de Etiquetas Git -->
           <div id="tipos-de-etiqetas-git" class="mt-5">
@@ -228,7 +228,7 @@
 
           </div>
           <!-- Tipos de Etiquetas Git Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Creando Etiquetas Git -->
           <div id="creando-etiquetas-tags" class="mt-5">
@@ -238,7 +238,7 @@
             <div id="creando-una-etiqueta-anotada">
               <h3>Creando una Etiqueta Anotada</h3>
               <p>Para crear una etiquetaanotado, usar el siguiente comando:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git tag -a &lt;nombre-etiqueta&gt; -m "mensaje_del_tag" &lt;commit-hash&gt;
@@ -257,7 +257,7 @@
                   no se especifica, la etiqueta apuntará al commit actual (HEAD).</li>
               </ul>
               <p>Ejemplo:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git tag -a v1.0.0 -m "Lanzamiento de la versión 1.0.0"
@@ -271,7 +271,7 @@
             <div id="creando-un-etiqueta-ligera">
               <h3>Creando una Etiqueta Ligera </h3>
               <p>Para crear una etiquetaligero, usar el siguiente comando:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                   git tag &lt;nombre-etiqueta&gt; &lt;commit-hash&gt;
@@ -286,7 +286,7 @@
                   se especifica, la etiqueta apuntará al commit actual (HEAD).</li>
               </ul>
               <p>Ejemplo:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                   git tag v1.0.0-rc1
@@ -297,13 +297,13 @@
             <!-- Creando una Etiqueta Ligera  fin -->
           </div>
           <!-- Creando Etiquetas Git Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Listando Etiquetas Git -->
           <div id="listando-etiquetas-git" class="mt-5">
             <h2>Listando Etiquetas Git</h2>
             <p>Para listar todos las etiquetas de un repositorio, usar el siguiente comando:</p>
-            <div class="ej-sintaxis">
+            <div class="code-example__syntax">
               <pre data-src-status="loaded" tabindex="0">
                 <code class="language-bash" data-prismjs-copy="Copy">
                   git tag
@@ -312,7 +312,7 @@
             </div>
             <p>Este comando mostrará una lista alfabética de todos las etiquetas.</p>
             <p>Para filtrar la lista de tags, se puede usar el comodín <code class="language-bash">*</code>:</p>
-            <div class="ej-sintaxis">
+            <div class="code-example__syntax">
               <pre data-src-status="loaded" tabindex="0">
                 <code class="language-bash" data-prismjs-copy="Copy">
                   git tag -l "v1.0.*"
@@ -322,7 +322,7 @@
             <p>Esto mostrará todos las etiquetas que comiencen con <code class="language-bash">v1.0.</code>.</p>
           </div>
           <!-- Listando Etiquetas Git Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Verificando Etiquetas Git -->
           <div id="verificando-git-tags" class="mt-5">
@@ -331,7 +331,7 @@
             <div id="verificando-Etiqueta-local">
               <h3>Verificando Etiqueta local </h3>
               <p>Para mostrar la información de una etiquetaanotado, usa el siguiente comando:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git show &lt;nombre-etiqueta&gt;
@@ -346,7 +346,7 @@
             <div id="verificando-Etiqueta-remota">
               <h3>Verificando Etiqueta Remota </h3>
               <p>Para mostrar la información de una etiquetaanotado remoto, usar el siguiente comando:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git ls-remote --tags origin | grep &lt;nombre-etiqueta&gt;
@@ -354,7 +354,7 @@
                 </pre>
               </div>
               <p>Muestra todas las etiquetas (tags) remotas del repositorio:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git ls-remote --tags origin
@@ -368,7 +368,7 @@
 
           </div>
           <!-- Verificando Etiquetas Git Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Sincronización de Etiquetas con el Repositorio Remoto -->
           <div id="sincronizacion-de-etiquetas-con-el-repositorio-remoto" class="mt-5">
@@ -376,7 +376,7 @@
             <p>Por defecto, las etiquetas no se envían al repositorio remoto cuando se ejecuta el comando <code
                 class="language-bash">git push</code>. Para enviar todos las etiquetas,
               se debe usar siempre la opción <code class="language-bash">--tags</code>:</p>
-            <div class="ej-sintaxis">
+            <div class="code-example__syntax">
               <pre data-src-status="loaded" tabindex="0">
                 <code class="language-bash" data-prismjs-copy="Copy">
                   git push origin --tags
@@ -388,7 +388,7 @@
             </p>
             <p>Con el siguiente comando se sincroniza una etiqueta específica:</p>
 
-            <div class="ej-sintaxis">
+            <div class="code-example__syntax">
               <pre data-src-status="loaded" tabindex="0">
                 <code class="language-bash" data-prismjs-copy="Copy">
                   git push origin &lt;nombre-etiqueta&gt;
@@ -397,7 +397,7 @@
             </div>
           </div>
           <!-- Sincronización de Etiquetas con el Repositorio Remoto Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Renombrando Etiquetas Git -->
           <div id="renombrando-etiquetas-git" class="mt-5">
@@ -408,7 +408,7 @@
             <div id="renombrando-etiquetas-ligeras">
               <h3>Renombrando Etiquetas Ligeras </h3>
               <p>Renombrado de etiqueta local:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     # Crear nuevo tag apuntando al mismo commit
@@ -423,7 +423,7 @@
                 </pre>
               </div>
               <p>Eliminación de etiqueta remota:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     # Versión actual, más clara
@@ -435,7 +435,7 @@
                 </pre>
               </div>
               <p>Sincronización de etiquetas locales con el repositorio remoto:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                 <code class="language-bash" data-prismjs-copy="Copy">
                   git push origin &lt;etiqueta-nueva&gt;
@@ -449,7 +449,7 @@
                 <!-- Con botón outline Bootstrap 5.3 -->
                 <div class="text-center mt-3">
                   <a href="../scripts/renombrar-git-tag-ligera.sh" download target="_blank" rel="noopener noreferrer"
-                    class="btn d-inline-flex align-items-center gap-2"
+                    class="btn site-button d-inline-flex align-items-center gap-2"
                     style="background: var(--color-fondo); color: var(--color-texto); border: 2px solid var(--color-borde);">
                     Script renombrar Etiqueta Ligera
                     <i class="bi bi-cloud-download"></i>
@@ -472,7 +472,7 @@
               <!-- Método 1: Eliminar y recrear la etiqueta  -->
               <div>
                 <h4>Método 1: Eliminar y recrear la etiqueta </h4>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       # Eliminar la etiqueta local
@@ -494,7 +494,7 @@
               <!-- Método 2: Preservar el Contenido de la Etiqueta Antigua  -->
               <div>
                 <h4>Método 2: Preservar el Contenido de la Etiqueta Antigua </h4>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       # Ver la información de la etiqueta actual
@@ -520,7 +520,7 @@
                 <!-- Con botón outline Bootstrap 5.3 -->
                 <div class="text-center mt-3">
                   <a href="../scripts/renombrar-git-tag-anotada.sh" download target="_blank" rel="noopener noreferrer"
-                    class="btn d-inline-flex align-items-center gap-2"
+                    class="btn site-button d-inline-flex align-items-center gap-2"
                     style="background: var(--color-fondo); color: var(--color-texto); border: 2px solid var(--color-borde);">
                     Script renombrar Etiqueta Anotada
                     <i class="bi bi-cloud-download"></i>
@@ -536,7 +536,7 @@
             <!-- Renombrando Etiquetas Remotas  fin -->
           </div>
           <!-- Renombrando Etiquetas Git Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Eliminando Etiquetas Git -->
           <div id="eliminando-etiquetas-git" class="mt-5">
@@ -545,7 +545,7 @@
             <div id="eliminando-una-etiqueta-local">
               <h3>Eliminando una Etiqueta Local </h3>
               <p>Para eliminar una etiqueta (tag) local, usar el siguiente comando:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git tag -d &lt;nombre-etiqueta&gt;
@@ -559,7 +559,7 @@
             <div id="eliminando-una-etiqueta-remota">
               <h3>Eliminando una Etiqueta Remota </h3>
               <p>Para eliminar una etiqueta (tag) remota, usar el siguiente comando:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     git push origin --delete tag &lt;nombre-etiqueta&gt;
@@ -571,7 +571,7 @@
 
           </div>
           <!-- Eliminando Etiquetas Git Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Escenarios Comunes de Uso -->
           <div id="escenarios-comunes-de-uso" class="mt-5">
@@ -593,7 +593,7 @@
 
           </div>
           <!-- Escenarios Comunes de Uso Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
 
           <!-- Error Comunes con las Etiquetas Git -->
@@ -656,7 +656,7 @@
                 <h4>Soluciones para una Etiqueta Creada con un Nombre Incorrecto </h4>
                 <ul>
                   <li>Eliminar la etiqueta local:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-bash" data-prismjs-copy="Copy">
                           git tag -d &lt;nombre-incorrecto&gt;
@@ -665,7 +665,7 @@
                     </div>
                   </li>
                   <li>Eliminar la etiqueta remota (si ya se envió):
-                    s <div class="ej-sintaxis">
+                    s <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-bash" data-prismjs-copy="Copy">
                           git push origin --delete &lt;nombre-incorrecto&gt;
@@ -675,7 +675,7 @@
                     <!-- Sintaxis fin -->
                   </li>
                   <li>Crear la etiqueta ligera correcta con el &lt;commit-hash&gt; si es necesario:</li>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         git tag &lt;nombre-correcto&gt; &lt;commit-hash&gt;
@@ -683,7 +683,7 @@
                     </pre>
                   </div>
                   <li>Crear la etiqueta anotada correcta con el &lt;commit-hash&gt; si es necesario:</li>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         git tag -a &lt;nombre-incorrecto&gt; &lt;commit-hash&gt; -m "Mensaje de la etiqueta"
@@ -691,7 +691,7 @@
                     </pre>
                   </div>
                   <li>Subir la etiqueta corregida:</li>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         git push origin &lt;nombre-correcto&gt;
@@ -757,7 +757,7 @@
                 <h4>Soluciones para Sincronización entre Local y Remoto</h4>
                 <ul>
                   <li>Las etiquetas remotas no aparecen en el entorno local:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-bash" data-prismjs-copy="Copy">
                           # Descargar todos los tags del remoto
@@ -770,7 +770,7 @@
                     </div>
                   </li>
                   <li>El repositorio remoto contiene etiquetas que no se quieren en el entorno local:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-bash" data-prismjs-copy="Copy">
                           # Ver tags remotos
@@ -783,7 +783,7 @@
                     </div>
                   </li>
                   <li>Se quiere sincronizar exactamente con el repositorio remoto:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-bash" data-prismjs-copy="Copy">
                           # Eliminar todos los tags locales que no existen en el remoto
@@ -793,7 +793,7 @@
                     </div>
                   </li>
                   <li>El envío de todas las etiquetas falla parcialmente:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-bash" data-prismjs-copy="Copy">
                           # Ver cuáles etiquetas no se han subido
@@ -842,7 +842,7 @@
                 <ul>
                   <li><span class="fw-bold">Updates were rejected because the tag already exists</span>: Se intenta
                     subir una etiqueta que ya existe en el remoto pero apunta a un commit diferente.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-bash" data-prismjs-copy="Copy">
                           # Error típico:
@@ -859,7 +859,7 @@
                     </div>
                   </li>
                   <li><span class="fw-bold">Etiqueta apunta a un commit diferente en local vs remoto:</span>
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-bash" data-prismjs-copy="Copy">
                           # Ver a qué commit apunta la etiqueta localmente
@@ -880,7 +880,7 @@
                     </div>
                   </li>
                   <li><span class="fw-bold">Permisos insuficientes para modificar etiquetas</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-bash" data-prismjs-copy="Copy">
                           # Error: "denied to delete"
@@ -897,7 +897,7 @@
             <!-- Conflictos al Subir Etiquetas fin -->
           </div>
           <!-- Error Comunes con las Etiquetas Git Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Mejores Prácticas -->
           <div id="mejores-practicas" class="mt-5">
@@ -905,7 +905,7 @@
             <ul>
               <li><span class="fw-bold">Usar Etiquetas Anotadas Siempre que Sea Posible</span>: La información adicional
                 almacenada en los etiquetas anotadas puede ser muy útil en el futuro.
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       # Siempre usa tags anotados para releases
@@ -929,7 +929,7 @@
                 beneficiarse de las etiquetas propias y facilitará la colaboración.
               </li>
               <li><span class="fw-bold">Verificar Sincronización Regularmente</span>:
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       # actualiza el repositorio local con todas las ramas y todas las etiquetas remotas sin modificar 
@@ -948,7 +948,7 @@
                 conviene
                 verificarlas para asegurar que el nombre y el commit asociado sean correctos y evitar conflictos o
                 inconsistencias.
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       git tag -l                  # Listar tags locales
@@ -973,7 +973,7 @@
             </ul>
           </div>
           <!-- Mejores Prácticas Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Ejemplos -->
           <div id="ejemplos" class="mt-5">
@@ -981,7 +981,7 @@
             <!-- Crear Etiqueta Anotada -->
             <div id="crear-etiqueta-anotada">
               <h3>Crear Etiqueta Anotada</h3>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     # Crear etiqueta anotada
@@ -1005,7 +1005,7 @@
             <!-- Borrar la Etiqueta Local y Remota  -->
             <div id="borrar-la-etiqueta-local-y-remota">
               <h3>Borrar la Etiqueta Local y Remota </h3>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     # Borrar etiqueta local
@@ -1034,7 +1034,7 @@
               <!-- Renombrar Etiqueta Ligera -->
               <div>
                 <h4>Renombrar Etiqueta Ligera</h4>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       # Verificar que la etiqueta existente
@@ -1075,7 +1075,7 @@
               <!-- Renombrar Etiquetas Anotadas  -->
               <div>
                 <h4>Renombrar Etiquetas Anotadas</h4>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       # Ver etiquetas
@@ -1149,7 +1149,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -1166,110 +1166,110 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item">
-                <a href="#introduccion" class="simple-link">Introducción</a>
+              <div class="site-menu__item">
+                <a href="#introduccion" class="site-menu__link">Introducción</a>
               </div>
-              <div class="menu-item">
-                <a href="#que-son-las-etiquetas-tab" class="simple-link">¿Qué Son las Etiquetas Tab?</a>
+              <div class="site-menu__item">
+                <a href="#que-son-las-etiquetas-tab" class="site-menu__link">¿Qué Son las Etiquetas Tab?</a>
               </div>
-              <div class="menu-item">
-                <a href="#por-que-usar-etiquetas-git" class="simple-link">¿Por qué Usar Etiquetas Git?</a>
+              <div class="site-menu__item">
+                <a href="#por-que-usar-etiquetas-git" class="site-menu__link">¿Por qué Usar Etiquetas Git?</a>
               </div>
-              <div class="menu-item">
-                <a href="#tipos-de-etiqetas-git" class="simple-link">Tipos de Etiquetas Git</a>
+              <div class="site-menu__item">
+                <a href="#tipos-de-etiqetas-git" class="site-menu__link">Tipos de Etiquetas Git</a>
               </div>
-              <div class="menu-item">
+              <div class="site-menu__item">
                 <details>
                   <summary>
                     Creando Etiquetas Git
                   </summary>
-                  <div class="submenu">
-                    <a href="#creando-una-etiqueta-anotada" class="submenu-item">Creando una Etiqueta Anotada</a>
-                    <a href="#creando-un-etiqueta-ligera" class="submenu-item">Creando una Etiqueta Ligera</a>
+                  <div class="site-menu__submenu">
+                    <a href="#creando-una-etiqueta-anotada" class="site-menu__submenu-link">Creando una Etiqueta Anotada</a>
+                    <a href="#creando-un-etiqueta-ligera" class="site-menu__submenu-link">Creando una Etiqueta Ligera</a>
                   </div>
                 </details>
               </div>
-              <div class="menu-item">
-                <a href="#listando-etiquetas-git" class="simple-link">Listando Etiquetas Git</a>
+              <div class="site-menu__item">
+                <a href="#listando-etiquetas-git" class="site-menu__link">Listando Etiquetas Git</a>
               </div>
-              <div class="menu-item">
+              <div class="site-menu__item">
                 <details>
                   <summary>
                     Verificando Etiquetas Git
                   </summary>
-                  <div class="submenu">
-                    <a href="#verificando-Etiqueta-local" class="submenu-item">Verificando Etiqueta local</a>
-                    <a href="#verificando-Etiqueta-remota" class="submenu-item">Verificando Etiqueta Remota</a>
+                  <div class="site-menu__submenu">
+                    <a href="#verificando-Etiqueta-local" class="site-menu__submenu-link">Verificando Etiqueta local</a>
+                    <a href="#verificando-Etiqueta-remota" class="site-menu__submenu-link">Verificando Etiqueta Remota</a>
                   </div>
                 </details>
               </div>
-              <div class="menu-item">
-                <a href="#sincronizacion-de-etiquetas-con-el-repositorio-remoto" class="simple-link">Sincronización de
+              <div class="site-menu__item">
+                <a href="#sincronizacion-de-etiquetas-con-el-repositorio-remoto" class="site-menu__link">Sincronización de
                   Etiquetas con el Repositorio Remoto</a>
               </div>
-              <div class="menu-item">
+              <div class="site-menu__item">
                 <details>
                   <summary>
                     Renombrando Etiquetas Git
                   </summary>
-                  <div class="submenu">
-                    <a href="#renombrando-etiquetas-ligeras" class="submenu-item">Renombrando Etiquetas Ligeras</a>
-                    <a href="#renombrando-etiquetas-anotadas" class="submenu-item">Renombrando Etiquetas Anotadas </a>
+                  <div class="site-menu__submenu">
+                    <a href="#renombrando-etiquetas-ligeras" class="site-menu__submenu-link">Renombrando Etiquetas Ligeras</a>
+                    <a href="#renombrando-etiquetas-anotadas" class="site-menu__submenu-link">Renombrando Etiquetas Anotadas </a>
                   </div>
                 </details>
               </div>
-              <div class="menu-item">
+              <div class="site-menu__item">
                 <details>
                   <summary>
                     Eliminando Etiquetas Git
                   </summary>
-                  <div class="submenu">
-                    <a href="#eliminando-una-etiqueta-local" class="submenu-item">Eliminando una Etiqueta Local</a>
-                    <a href="#eliminando-una-etiqueta-remota" class="submenu-item">Eliminando una Etiqueta Remota</a>
+                  <div class="site-menu__submenu">
+                    <a href="#eliminando-una-etiqueta-local" class="site-menu__submenu-link">Eliminando una Etiqueta Local</a>
+                    <a href="#eliminando-una-etiqueta-remota" class="site-menu__submenu-link">Eliminando una Etiqueta Remota</a>
                   </div>
                 </details>
               </div>
-              <div class="menu-item">
-                <a href="#escenarios-comunes-de-uso" class="simple-link">Escenarios Comunes de Uso</a>
+              <div class="site-menu__item">
+                <a href="#escenarios-comunes-de-uso" class="site-menu__link">Escenarios Comunes de Uso</a>
               </div>
-              <div class="menu-item">
+              <div class="site-menu__item">
                 <details>
                   <summary>
                     Error Comunes con las Etiquetas Git
                   </summary>
-                  <div class="submenu">
-                    <a href="#etiqueta-creada-con-el-nombre-incorrecto" class="submenu-item">Etiqueta Creada con el
+                  <div class="site-menu__submenu">
+                    <a href="#etiqueta-creada-con-el-nombre-incorrecto" class="site-menu__submenu-link">Etiqueta Creada con el
                       Nombre
                       Incorrecto</a>
                     <a href="#problemas-de-sincronizacion-entre-repositorio-local-y-remoto"
-                      class="submenu-item">Problemas
+                      class="site-menu__submenu-link">Problemas
                       de Sincronización entre Repositorio Local y Remoto</a>
-                    <a href="#conflictos-al-subir-etiguetas" class="submenu-item">Conflictos al Hacer push de tags</a>
+                    <a href="#conflictos-al-subir-etiguetas" class="site-menu__submenu-link">Conflictos al Hacer push de tags</a>
                   </div>
                 </details>
               </div>
-              <div class="menu-item">
-                <a href="#mejores-practicas" class="simple-link">Mejores Prácticas</a>
+              <div class="site-menu__item">
+                <a href="#mejores-practicas" class="site-menu__link">Mejores Prácticas</a>
               </div>
-              <div class="menu-item">
+              <div class="site-menu__item">
                 <details>
                   <summary>
                     Ejemplos
                   </summary>
-                  <div class="submenu">
-                    <a href="#crear-etiqueta-anotada" class="submenu-item">Crear Etiqueta Anotada</a>
-                    <a href="#borrar-la-etiqueta-local-y-remota" class="submenu-item">Borrar la Etiqueta Local y
+                  <div class="site-menu__submenu">
+                    <a href="#crear-etiqueta-anotada" class="site-menu__submenu-link">Crear Etiqueta Anotada</a>
+                    <a href="#borrar-la-etiqueta-local-y-remota" class="site-menu__submenu-link">Borrar la Etiqueta Local y
                       Remota</a>
-                    <a href="#renombrar-etiquetas" class="submenu-item">Renombrar Etiquetas</a>
+                    <a href="#renombrar-etiquetas" class="site-menu__submenu-link">Renombrar Etiquetas</a>
                   </div>
                 </details>
               </div>
               <!-- Comentarios  -->
-              <div class="menu-item">
-                <a href="#comments" class="simple-link">Comentarios</a>
+              <div class="site-menu__item">
+                <a href="#comments" class="site-menu__link">Comentarios</a>
               </div>
             </div>
           </div>
@@ -1337,7 +1337,7 @@
 
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

@@ -11,7 +11,7 @@
         box-sizing: border-box;
       }
 
-      body {
+      .demo-aria {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         line-height: 1.6;
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -19,7 +19,7 @@
         color: #333;
       }
 
-      header {
+      .demo-aria__header {
         background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(10px);
         padding: 2rem;
@@ -29,7 +29,7 @@
         overflow: hidden;
       }
 
-      header::before {
+      .demo-aria__header::before {
         content: "";
         position: absolute;
         top: -50%;
@@ -54,7 +54,7 @@
         }
       }
 
-      h1 {
+      .demo-aria__h1 {
         color: white;
         font-size: 2.5rem;
         font-weight: 300;
@@ -63,7 +63,7 @@
         z-index: 1;
       }
 
-      nav {
+      .demo-aria__nav {
         background: rgba(255, 255, 255, 0.95);
         padding: 1rem 2rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -72,14 +72,14 @@
         z-index: 100;
       }
 
-      nav ul {
+      .demo-aria__nav .demo-aria__ul {
         list-style: none;
         display: flex;
         gap: 2rem;
         justify-content: center;
       }
 
-      nav ul li a {
+      .demo-aria__nav .demo-aria__ul .demo-aria__li .demo-aria__a {
         text-decoration: none;
         color: #333;
         font-weight: 500;
@@ -90,7 +90,7 @@
         overflow: hidden;
       }
 
-      nav ul li a::before {
+      .demo-aria__nav .demo-aria__ul .demo-aria__li .demo-aria__a::before {
         content: "";
         position: absolute;
         top: 0;
@@ -106,17 +106,17 @@
         transition: left 0.5s ease;
       }
 
-      nav ul li a:hover::before {
+      .demo-aria__nav .demo-aria__ul .demo-aria__li .demo-aria__a:hover::before {
         left: 100%;
       }
 
-      nav ul li a:hover {
+      .demo-aria__nav .demo-aria__ul .demo-aria__li .demo-aria__a:hover {
         background: linear-gradient(45deg, #667eea, #764ba2);
         color: white;
         transform: translateY(-2px);
       }
 
-      main {
+      .demo-aria__main {
         display: flex;
         gap: 2rem;
         padding: 2rem;
@@ -124,14 +124,14 @@
         margin: 0 auto;
       }
 
-      .content {
+      .demo-aria__content {
         flex: 2;
         display: flex;
         flex-direction: column;
         gap: 3rem;
       }
 
-      section {
+      .demo-aria__section {
         background: rgba(255, 255, 255, 0.9);
         border-radius: 20px;
         padding: 2rem;
@@ -139,7 +139,7 @@
         backdrop-filter: blur(10px);
       }
 
-      section h2 {
+      .demo-aria__section .demo-aria__h2 {
         color: #667eea;
         font-size: 2rem;
         margin-bottom: 1.5rem;
@@ -147,7 +147,7 @@
         position: relative;
       }
 
-      section h2::after {
+      .demo-aria__section .demo-aria__h2::after {
         content: "";
         position: absolute;
         bottom: -10px;
@@ -159,7 +159,7 @@
         border-radius: 2px;
       }
 
-      article {
+      .demo-aria__article {
         background: white;
         margin-bottom: 2rem;
         padding: 1.5rem;
@@ -170,7 +170,7 @@
         overflow: hidden;
       }
 
-      article::before {
+      .demo-aria__article::before {
         content: "";
         position: absolute;
         top: 0;
@@ -191,23 +191,23 @@
         }
       }
 
-      article:hover {
+      .demo-aria__article:hover {
         transform: translateY(-5px);
         box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
       }
 
-      article h3 {
+      .demo-aria__article .demo-aria__h3 {
         color: #333;
         margin-bottom: 1rem;
         font-size: 1.3rem;
       }
 
-      figure {
+      .demo-aria__figure {
         margin: 1rem 0;
         text-align: center;
       }
 
-      figure img {
+      .demo-aria__figure .demo-aria__img {
         max-width: 100%;
         height: 200px;
         object-fit: cover;
@@ -220,25 +220,25 @@
         font-size: 1.2rem;
       }
 
-      figcaption {
+      .demo-aria__figcaption {
         margin-top: 0.5rem;
         font-style: italic;
         color: #666;
       }
 
-      mark {
+      .demo-aria__mark {
         background: linear-gradient(45deg, #ffeb3b, #ff9800);
         padding: 2px 6px;
         border-radius: 4px;
         font-weight: bold;
       }
 
-      time {
+      .demo-aria__time {
         color: #667eea;
         font-weight: 500;
       }
 
-      aside {
+      .demo-aria__aside {
         flex: 1;
         background: rgba(255, 255, 255, 0.9);
         border-radius: 20px;
@@ -248,13 +248,13 @@
         height: fit-content;
       }
 
-      aside h2 {
+      .demo-aria__aside .demo-aria__h2 {
         color: #764ba2;
         margin-bottom: 1rem;
         text-align: center;
       }
 
-      dialog {
+      .demo-aria__dialog {
         border: none;
         border-radius: 15px;
         padding: 2rem;
@@ -264,19 +264,19 @@
         text-align: center;
       }
 
-      dialog::backdrop {
+      .demo-aria__dialog::backdrop {
         background: rgba(0, 0, 0, 0.7);
         backdrop-filter: blur(5px);
       }
 
-      dialog summary {
+      .demo-aria__dialog .demo-aria__summary {
         font-size: 1.2rem;
         font-weight: bold;
         color: #667eea;
         margin-bottom: 1rem;
       }
 
-      dialog button {
+      .demo-aria__dialog .demo-aria__button {
         background: linear-gradient(45deg, #667eea, #764ba2);
         color: white;
         border: none;
@@ -288,11 +288,11 @@
         transition: transform 0.3s ease;
       }
 
-      dialog button:hover {
+      .demo-aria__dialog .demo-aria__button:hover {
         transform: scale(1.05);
       }
 
-      footer {
+      .demo-aria__footer {
         background: rgba(0, 0, 0, 0.8);
         color: white;
         text-align: center;
@@ -312,70 +312,70 @@
         }
       }
 
-      article {
+      .demo-aria__article {
         animation: fadeInUp 0.6s ease;
       }
 
-      article:nth-child(2) {
+      .demo-aria__article:nth-child(2) {
         animation-delay: 0.2s;
       }
 
-      article:nth-child(3) {
+      .demo-aria__article:nth-child(3) {
         animation-delay: 0.4s;
       }
 
-      article:nth-child(4) {
+      .demo-aria__article:nth-child(4) {
         animation-delay: 0.6s;
       }
 
       /* Responsivo */
       @media (max-width: 768px) {
-        main {
+        .demo-aria__main {
           flex-direction: column;
           padding: 1rem;
         }
 
-        .content {
+        .demo-aria__content {
           flex: 1;
         }
 
-        nav ul {
+        .demo-aria__nav .demo-aria__ul {
           flex-wrap: wrap;
           gap: 1rem;
         }
 
-        h1 {
+        .demo-aria__h1 {
           font-size: 2rem;
         }
       }
     </style>
   </head>
-  <body>
-    <header role="banner">
-      <h1>Sitio con accesibilidad ARIA</h1>
+  <body class="demo-aria">
+    <header role="banner" class="demo-aria__header">
+      <h1 class="demo-aria__h1">Sitio con accesibilidad ARIA</h1>
     </header>
-    <nav role="navigation" aria-label="Navegación principal">
-      <ul>
-        <li><a href="#" aria-current="page">Inicio</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Contacto</a></li>
+    <nav role="navigation" aria-label="Navegación principal" class="demo-aria__nav">
+      <ul class="demo-aria__ul">
+        <li class="demo-aria__li"><a href="#" aria-current="page" class="demo-aria__a">Inicio</a></li>
+        <li class="demo-aria__li"><a href="#" class="demo-aria__a">Servicios</a></li>
+        <li class="demo-aria__li"><a href="#" class="demo-aria__a">Contacto</a></li>
       </ul>
     </nav>
-    <main role="main">
-      <section aria-labelledby="tech-heading">
-        <h2 id="tech-heading">🚀 Tecnología</h2>
-        <article aria-labelledby="ai-heading">
-          <h3 id="ai-heading">
+    <main role="main" class="demo-aria__main">
+      <section aria-labelledby="tech-heading" class="demo-aria__section">
+        <h2 id="tech-heading" class="demo-aria__h2">🚀 Tecnología</h2>
+        <article aria-labelledby="ai-heading" class="demo-aria__article">
+          <h3 id="ai-heading" class="demo-aria__h3">
             Inteligencia Artificial: El Futuro Ya Está Aquí
           </h3>
           <p>
             La inteligencia artificial está transformando cada aspecto de
             nuestras vidas. Desde asistentes virtuales hasta
-            <mark>algoritmos de aprendizaje automático</mark>, la IA está
+            <mark class="demo-aria__mark">algoritmos de aprendizaje automático</mark>, la IA está
             revolucionando la forma en que trabajamos, nos comunicamos y
             resolvemos problemas complejos.
           </p>
-          <figure role="img" aria-labelledby="ai-caption">
+          <figure role="img" aria-labelledby="ai-caption" class="demo-aria__figure">
             <div
               style="
                 width: 100%;
@@ -391,24 +391,24 @@
             >
               🤖 IA & Robots
             </div>
-            <figcaption id="ai-caption">
+            <figcaption id="ai-caption" class="demo-aria__figcaption">
               Representación visual de la inteligencia artificial moderna.
             </figcaption>
           </figure>
           <p>
-            Publicado el <time datetime="2025-07-03">3 de julio de 2025</time>.
+            Publicado el <time datetime="2025-07-03" class="demo-aria__time">3 de julio de 2025</time>.
           </p>
         </article>
-        <article aria-labelledby="quantum-heading">
-          <h3 id="quantum-heading">Computación Cuántica: La Nueva Frontera</h3>
+        <article aria-labelledby="quantum-heading" class="demo-aria__article">
+          <h3 id="quantum-heading" class="demo-aria__h3">Computación Cuántica: La Nueva Frontera</h3>
           <p>
             Los ordenadores cuánticos prometen resolver problemas que son
             imposibles para los computadores clásicos. Esta tecnología
-            <mark>revolucionaria</mark> utiliza los principios de la mecánica
+            <mark class="demo-aria__mark">revolucionaria</mark> utiliza los principios de la mecánica
             cuántica para procesar información de manera exponencialmente más
             rápida.
           </p>
-          <figure role="img" aria-labelledby="quantum-caption">
+          <figure role="img" aria-labelledby="quantum-caption" class="demo-aria__figure">
             <div
               style="
                 width: 100%;
@@ -424,28 +424,28 @@
             >
               ⚛️ Computación Cuántica
             </div>
-            <figcaption id="quantum-caption">
+            <figcaption id="quantum-caption" class="demo-aria__figcaption">
               Visualización de qubits en computación cuántica.
             </figcaption>
           </figure>
           <p>
-            Publicado el <time datetime="2025-07-02">2 de julio de 2025</time>.
+            Publicado el <time datetime="2025-07-02" class="demo-aria__time">2 de julio de 2025</time>.
           </p>
         </article>
       </section>
 
-      <section aria-labelledby="nature-heading">
-        <h2 id="nature-heading">🌿 Naturaleza</h2>
-        <article aria-labelledby="forest-heading">
-          <h3 id="forest-heading">Bosques Tropicales: Pulmones del Planeta</h3>
+      <section aria-labelledby="nature-heading" class="demo-aria__section">
+        <h2 id="nature-heading" class="demo-aria__h2">🌿 Naturaleza</h2>
+        <article aria-labelledby="forest-heading" class="demo-aria__article">
+          <h3 id="forest-heading" class="demo-aria__h3">Bosques Tropicales: Pulmones del Planeta</h3>
           <p>
             Los bosques tropicales albergan más del 50% de la biodiversidad
             mundial y juegan un papel crucial en la regulación del clima global.
-            Estos ecosistemas <mark>extraordinarios</mark> son hogar de millones
+            Estos ecosistemas <mark class="demo-aria__mark">extraordinarios</mark> son hogar de millones
             de especies y comunidades indígenas que han vivido en armonía con la
             naturaleza durante siglos.
           </p>
-          <figure role="img" aria-labelledby="forest-caption">
+          <figure role="img" aria-labelledby="forest-caption" class="demo-aria__figure">
             <div
               style="
                 width: 100%;
@@ -461,24 +461,24 @@
             >
               🌳 Bosque Tropical
             </div>
-            <figcaption id="forest-caption">
+            <figcaption id="forest-caption" class="demo-aria__figcaption">
               Exuberante vegetación de un bosque tropical.
             </figcaption>
           </figure>
           <p>
-            Publicado el <time datetime="2025-07-01">1 de julio de 2025</time>.
+            Publicado el <time datetime="2025-07-01" class="demo-aria__time">1 de julio de 2025</time>.
           </p>
         </article>
-        <article aria-labelledby="ocean-heading">
-          <h3 id="ocean-heading">Océanos: Misterios de las Profundidades</h3>
+        <article aria-labelledby="ocean-heading" class="demo-aria__article">
+          <h3 id="ocean-heading" class="demo-aria__h3">Océanos: Misterios de las Profundidades</h3>
           <p>
             Los océanos cubren más del 70% de la superficie terrestre y siguen
             siendo uno de los lugares menos explorados del planeta. Desde
             arrecifes de coral hasta fosas abisales, los ecosistemas marinos
-            albergan una <mark>diversidad increíble</mark> de vida que apenas
+            albergan una <mark class="demo-aria__mark">diversidad increíble</mark> de vida que apenas
             estamos comenzando a comprender.
           </p>
-          <figure role="img" aria-labelledby="ocean-caption">
+          <figure role="img" aria-labelledby="ocean-caption" class="demo-aria__figure">
             <div
               style="
                 width: 100%;
@@ -494,17 +494,17 @@
             >
               🌊 Océano Profundo
             </div>
-            <figcaption id="ocean-caption">
+            <figcaption id="ocean-caption" class="demo-aria__figcaption">
               Misterios del fondo marino y su biodiversidad.
             </figcaption>
           </figure>
           <p>
-            Publicado el <time datetime="2025-06-30">30 de junio de 2025</time>.
+            Publicado el <time datetime="2025-06-30" class="demo-aria__time">30 de junio de 2025</time>.
           </p>
         </article>
       </section>
-      <aside role="complementary" aria-labelledby="sidebar-heading">
-        <h2 id="sidebar-heading">Información Adicional</h2>
+      <aside role="complementary" aria-labelledby="sidebar-heading" class="demo-aria__aside">
+        <h2 id="sidebar-heading" class="demo-aria__h2">Información Adicional</h2>
         <p>
           Aquí se pueden incluir enlaces, anuncios o información complementaria.
         </p>
@@ -515,17 +515,17 @@
       role="dialog"
       aria-labelledby="dialog-title"
       aria-describedby="dialog-description"
-    >
-      <summary id="dialog-title">Mensaje Importante</summary>
+     class="demo-aria__dialog">
+      <summary id="dialog-title" class="demo-aria__summary">Mensaje Importante</summary>
       <p id="dialog-description">
         Este es un mensaje dentro de un diálogo emergente para mostrar
         información relevante.
       </p>
-      <button onclick="this.parentElement.close()" aria-label="Cerrar diálogo">
+      <button onclick="this.parentElement.close()" aria-label="Cerrar diálogo" class="demo-aria__button">
         Cerrar
       </button>
     </dialog>
-    <footer role="contentinfo">
+    <footer role="contentinfo" class="demo-aria__footer">
       <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
     </footer>
   </body>

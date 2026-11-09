@@ -67,7 +67,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -85,7 +85,7 @@
             <a class="nav-link mx-1 text-decoration-none" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo text-decoration-none" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active text-decoration-none site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1 text-decoration-none" href="index.html#contact">CONTACTO</a>
@@ -97,7 +97,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Estructura del Documento HTML -->
@@ -122,7 +122,7 @@
                 motores de búsqueda y otros servicios en línea sobre cómo
                 interpretar y procesar el contenido del documento.
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <picture>
                   <img src="https://i.ibb.co/j9t6vkMy/El-Encabezado-HTML.png" class="img-fluid" alt="Encabezado HTML "
                     title="Encabezado HTML " />
@@ -165,7 +165,7 @@
             </div>
             <!-- Introducción Fin -->
 
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Las Etiquetas y sus Funciones -->
             <div id="las-etiquetas-y-sus-funciones" class="mt-3">
@@ -189,7 +189,7 @@
                   configuración para SEO y compatibilidad con navegadores.
                 </p>
                 <p>Sintaxis básica:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;meta name="nombre" content="valor">
@@ -206,7 +206,7 @@
                 <ul>
                   <li>
                     Definir la codificación de caracteres:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;meta charset="UTF-8">
@@ -216,7 +216,7 @@
                   </li>
                   <li>
                     Configurar la vista en dispositivos móviles (viewport):
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -226,7 +226,7 @@
                   </li>
                   <li>
                     Proporcionar descripción para motores de búsqueda:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;meta name="description" content="Descripción breve de la página web para SEO">
@@ -237,7 +237,7 @@
                   <li>
                     Definir palabras clave (menos relevante actualmente para
                     SEO):
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;meta name="keywords" content="html, meta, etiqueta, tutorial">
@@ -247,7 +247,7 @@
                   </li>
                   <li>
                     Identificar al autor:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;meta name="author" content="Nombre del Autor">
@@ -257,7 +257,7 @@
                   </li>
                   <li>
                     Controlar el comportamiento de los robots de búsqueda:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;meta name="robots" content="index, follow">
@@ -286,7 +286,7 @@
                         instrucciones específicas para un buscador concreto
                         utilizando su nombre en lugar del término "robots",
                         por ejemplo:
-                        <div class="ej-sintaxis">
+                        <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-html" data-prismjs-copy="Copy">
                                 &lt;!-- Instrucciones solo para Google --&gt;
@@ -374,7 +374,7 @@
                         Estas directivas pueden combinarse según sea
                         necesario. Por ejemplo:
                       </p>
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" data-prismjs-copy="Copy">
                               &lt;meta name="robots" content="noindex, follow, noarchive" />
@@ -389,7 +389,7 @@
                   </li>
                   <li>
                     Establecer directivas para el navegador:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;meta http-equiv="refresh" content="30;url=https://ejemplo.com/nueva-pagina">
@@ -455,7 +455,7 @@
                   <li>
                     Proporcionar metadatos para redes sociales (Open Graph
                     para Facebook):
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;meta property="og:title" content="Título de la Página">
@@ -533,7 +533,7 @@
                   </li>
                   <li>
                     Metadatos para Twitter:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;meta name="twitter:card" content="summary_large_image">
@@ -635,7 +635,7 @@
                             reproductor, generalmente 16:9. Sirve como imagen
                             de portada/poster antes de reproducir el
                             contenido. Requiere metadatos adicionales como:
-                            <div class="ej-sintaxis">
+                            <div class="code-example__syntax">
                               <pre data-src-status="loaded" tabindex="0">
                                   <code class="language-html" data-prismjs-copy="Copy">
                                     &lt;meta name="twitter:player" content="https://www.ejemplo.com/reproductor.html">
@@ -711,7 +711,7 @@
                 <ul>
                   <li>
                     Vincular hojas de estilo CSS:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;link rel="stylesheet" href="estilos.css">
@@ -721,7 +721,7 @@
                   </li>
                   <li>
                     Definir favicon (icono de la página):
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -731,7 +731,7 @@
                   </li>
                   <li>
                     Establecer relaciones con páginas alternativas:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;link rel="alternate" href="version-movil.html" media="only screen and (max-width: 640px)">
@@ -741,7 +741,7 @@
                   </li>
                   <li>
                     Precargar recursos para mejorar el rendimiento:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;link rel="preload" href="fuente.woff2" as="font" type="font/woff2" crossorigin>
@@ -751,7 +751,7 @@
                   </li>
                   <li>
                     Definir enlaces canónicos para SEO:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;link rel="canonical" href="https://ejemplo.com/pagina-original">
@@ -894,7 +894,7 @@
                   secciones, dependiendo de las necesidades específicas.
                 </p>
                 <p>Sintaxis básica:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;script>
@@ -907,7 +907,7 @@
                     </pre>
                 </div>
                 <p>Para referenciar un archivo JavaScript externo:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;script src="script.js">&lt;/script>
@@ -991,7 +991,7 @@
                   Este elemento es crucial para garantizar la accesibilidad y
                   usabilidad del sitio web para todos los usuarios.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;noscript>
@@ -1029,7 +1029,7 @@
                 <ul>
                   <li>
                     Proporcionar un mensaje informativo:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;noscript>
@@ -1042,7 +1042,7 @@
                   <li>
                     Ofrecer una alternativa de estilo cuando JS está
                     desactivado:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;head>
@@ -1057,7 +1057,7 @@
                   <li>
                     Presentar contenido alternativo para funcionalidades
                     basadas en JS:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;div id="mapa-interactivo">
@@ -1096,7 +1096,7 @@
                   antes de cualquier elemento que use URLs relativas.
                 </p>
                 <p>Sintaxis básica:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;base href="https://www.ejemplo.com/ruta/">
@@ -1110,7 +1110,7 @@
                   <code class="language-html">target</code> para definir el
                   destino predeterminado para todos los enlaces en la página:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;base href="https://www.ejemplo.com/ruta/" target="_blank">
@@ -1181,7 +1181,7 @@
             </div>
             <!-- Las Etiquetas y sus Funciones Fin -->
 
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Estructura Básica del Encabezado HTML -->
             <div id="estructura-basica-del-encabezado-html" class="mt-3">
@@ -1218,7 +1218,7 @@
                 La estructura básica de El encabezado HTML podría ser la
                 siguiente:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-html" data-prismjs-copy="Copy">
                       &lt;head>
@@ -1312,7 +1312,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -1329,39 +1329,39 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item">
-                <a href="#introduccion" class="simple-link">Introducción</a>
+              <div class="site-menu__item">
+                <a href="#introduccion" class="site-menu__link">Introducción</a>
               </div>
-              <div class="menu-item">
+              <div class="site-menu__item">
                 <details>
                   <summary>Las Etiquetas y sus Funciones</summary>
-                  <div class="submenu">
-                    <a href="#las-etiquetas-y-sus-funciones" class="submenu-item">Las Etiquetas y sus Funciones</a>
-                    <a href="#etiqueta-html-meta" class="submenu-item"><code class="language-html">&lt;meta></code></a>
-                    <a href="#etiqueta-html-link" class="submenu-item"><code class="language-html">&lt;link></code></a>
-                    <a href="#etiqueta-html-title" class="submenu-item"><code
+                  <div class="site-menu__submenu">
+                    <a href="#las-etiquetas-y-sus-funciones" class="site-menu__submenu-link">Las Etiquetas y sus Funciones</a>
+                    <a href="#etiqueta-html-meta" class="site-menu__submenu-link"><code class="language-html">&lt;meta></code></a>
+                    <a href="#etiqueta-html-link" class="site-menu__submenu-link"><code class="language-html">&lt;link></code></a>
+                    <a href="#etiqueta-html-title" class="site-menu__submenu-link"><code
                         class="language-html">&lt;title></code></a>
-                    <a href="#etiqueta-html-style" class="submenu-item"><code
+                    <a href="#etiqueta-html-style" class="site-menu__submenu-link"><code
                         class="language-html">&lt;style></code></a>
-                    <a href="#etiqueta-html-script" class="submenu-item"><code
+                    <a href="#etiqueta-html-script" class="site-menu__submenu-link"><code
                         class="language-html">&lt;script></code></a>
-                    <a href="#etiqueta-html-noscript" class="submenu-item"><code
+                    <a href="#etiqueta-html-noscript" class="site-menu__submenu-link"><code
                         class="language-html">&lt;noscript></code></a>
-                    <a href="#etiqueta-html-base" class="submenu-item"><code class="language-html">&lt;base></code></a>
+                    <a href="#etiqueta-html-base" class="site-menu__submenu-link"><code class="language-html">&lt;base></code></a>
                   </div>
                 </details>
               </div>
 
-              <div class="menu-item">
-                <a href="#estructura-basica-del-encabezado-html" class="simple-link">Estructura Básica del Encabezado
+              <div class="site-menu__item">
+                <a href="#estructura-basica-del-encabezado-html" class="site-menu__link">Estructura Básica del Encabezado
                   HTML</a>
               </div>
 
-              <div class="menu-item">
-                <a href="#comments" class="simple-link">Comentarios</a>
+              <div class="site-menu__item">
+                <a href="#comments" class="site-menu__link">Comentarios</a>
               </div>
             </div>
           </div>
@@ -1430,7 +1430,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

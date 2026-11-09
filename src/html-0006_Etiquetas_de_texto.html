@@ -61,7 +61,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -79,7 +79,7 @@
             <a class="nav-link mx-1 text-decoration-none" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo text-decoration-none" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active text-decoration-none site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1 text-decoration-none" href="index.html#contact">CONTACTO</a>
@@ -91,7 +91,7 @@
   <!-- Barra de Navegación -->
 
   <!-- Principal -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Etiquetas de Texto HTML -->
@@ -161,7 +161,7 @@
                 encabezados, párrafos, saltos de línea, reglas horizontales y
                 citas.
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <picture>
                   <img src="https://i.postimg.cc/5yNMYzjN/Etiquetas-de-Texto.png" class="img-fluid" width="30%"
                     alt="Etiquetas de Texto HTML "
@@ -172,7 +172,7 @@
             </div>
             <!-- Introducción Fin -->
 
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Los Encabezados -->
             <div id="los-encabezados">
@@ -236,7 +236,7 @@
                   Sintaxis Correcta Encabezados
                   <code class="language-html">&lt;hx></code>
                 </h3>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;h1>Heading 1&lt;/h1>
@@ -270,7 +270,7 @@
                   </li>
                   <li>
                     <b>Estructura de los encabezados hx</b>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;h1>Título principal de la página&lt;/h1>            &lt;!-- Título principal de la página (solo uno por página) --&gt;
@@ -344,7 +344,7 @@
                         emplearse para organizar el contenido, no como
                         herramienta de diseño. Para dar estilo, se debe usar
                         CSS.
-                        <div class="ej-sintaxis">
+                        <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-css" data-prismjs-copy="Copy">
                                 h2 {
@@ -411,7 +411,7 @@
                 <h3 id="configuración-css-por-defectoencabezados-hx">
                   Configuración CSS por Defecto Encabezados &lt;hx>
                 </h3>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-css" data-prismjs-copy="Copy">
                         h1,h2,h3,h4,h5,h6{
@@ -459,7 +459,7 @@
                     recomienda definir los estilos personalizados para los
                     encabezados:
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-css" data-prismjs-copy="Copy">
                           h1, h2, h3, h4, h5, h6 {
@@ -495,18 +495,18 @@
                 </p>
                 <div class="row">
                   <!-- Ejemplo -->
-                  <div class="ej-ejemplo">
-                    <div class="row ej-ejecutado mt-3">
+                  <div class="code-example">
+                    <div class="row code-example__output mt-3">
                       <!-- código ejecutado -->
                       <div>
-                        <div class="ej-container-header ej-centrar-imagen">
-                          <p class="ej-h1-header">TechNova SmartHub</p>
+                        <div class="demo-header__container demo-content__centrar-imagen">
+                          <p class="demo-header__h1">TechNova SmartHub</p>
                           <p>
                             La solución integral para el hogar inteligente del
                             futuro.
                           </p>
 
-                          <p class="ej-h2-header">
+                          <p class="demo-header__h2">
                             Características Principales
                           </p>
                           <ul>
@@ -518,29 +518,29 @@
                             <li>Panel de gestión desde app móvil</li>
                           </ul>
 
-                          <p class="ej-h2-header">Beneficios del Producto</p>
+                          <p class="demo-header__h2">Beneficios del Producto</p>
 
-                          <p class="ej-h3-header">Seguridad</p>
+                          <p class="demo-header__h3">Seguridad</p>
                           <p>
                             El sistema integra sensores de movimiento, cámaras
                             y alertas en tiempo real.
                           </p>
 
-                          <p class="ej-h3-header">Conectividad</p>
+                          <p class="demo-header__h3">Conectividad</p>
                           <p>
                             Permite la integración de múltiples dispositivos
                             sin pérdida de rendimiento.
                           </p>
 
-                          <p class="ej-h3-header">Eficiencia Energética</p>
+                          <p class="demo-header__h3">Eficiencia Energética</p>
                           <p>
                             Monitorea el consumo eléctrico y sugiere mejoras
                             automáticas.
                           </p>
 
-                          <p class="ej-h2-header">Preguntas Frecuentes</p>
+                          <p class="demo-header__h2">Preguntas Frecuentes</p>
 
-                          <p class="ej-h3-header">
+                          <p class="demo-header__h3">
                             ¿Requiere Instalación Profesional?
                           </p>
                           <p>
@@ -548,12 +548,12 @@
                             instalación en minutos.
                           </p>
 
-                          <p class="ej-h3-header">
+                          <p class="demo-header__h3">
                             ¿Qué Sistemas Operativos Soporta?
                           </p>
                           <p>Compatible con Android, iOS, Windows y macOS.</p>
 
-                          <p class="ej-h2-header">Contacto</p>
+                          <p class="demo-header__h2">Contacto</p>
                           <p>
                             Para más información, escríbanos a:
                             contacto@technova.com
@@ -563,7 +563,7 @@
                       <!-- código ejecutado fin -->
                     </div>
                     <div class="row">
-                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                         <!-- código HTML -->
                         <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
@@ -606,7 +606,7 @@
                           </pre>
                         <!-- código HTML -->
                       </div>
-                      <div class="ej-code-css col-lg-6 mb-3">
+                      <div class="code-example__css-panel col-lg-6 mb-3">
                         <!-- código CSS -->
                         <pre>
                             <code class="language-css" data-prismjs-copy="Copy">
@@ -660,7 +660,7 @@
                   especificar el nivel de un encabezado cuando no se puede
                   usar la etiqueta HTML estándar.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-html" data-prismjs-copy="Copy">
                       &lt;div role="heading" aria-level="1">Título Principal&lt;/div>
@@ -672,7 +672,7 @@
             </div>
             <!-- Los Encabezados Fin -->
 
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Los Párrafos -->
             <div id="los-parrafos">
@@ -720,7 +720,7 @@
                   <li>
                     El navegador eliminará cualquier espacio extra y línea
                     extra cuando se muestre la página:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;p>Este           es otro    parágrafo,
@@ -740,7 +740,7 @@
                 <h3 id="sintaxis-correcta-parrafos-p">
                   Sintaxis Correcta Párrafos &lt;p>
                 </h3>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;p>Este es un párrafo de ejemplo.&lt;/p>
@@ -889,7 +889,7 @@
                   Configuración CSS por Defecto Párrafos &lt;p>
                 </h3>
                 <p>Los navegadores aplican estilos predeterminados como:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-css" data-prismjs-copy="Copy">
                         p {
@@ -914,50 +914,50 @@
                 <p>En una página web básica:</p>
                 <div class="row">
                   <!-- Ejemplo -->
-                  <div class="ej-ejemplo">
-                    <div class="row ej-ejecutado mt-3">
+                  <div class="code-example">
+                    <div class="row code-example__output mt-3">
                       <!-- código ejecutado -->
                       <div>
-                        <div class="ej-body-wrapper-p">
-                          <div class="ej-container-p">
-                            <p class="ej-titulo-p">
+                        <div class="demo-p__body-wrapper">
+                          <div class="demo-p__container">
+                            <p class="demo-p__titulo">
                               🎨 Párrafos con Estilo
                             </p>
 
-                            <p class="ej-neon-p">
+                            <p class="demo-p__neon">
                               Este párrafo tiene un efecto neón que brilla en
                               la oscuridad. Perfecto para darle un toque
                               futurista a tu contenido.
                             </p>
 
-                            <p class="ej-typewriter-p">
+                            <p class="demo-p__typewriter">
                               Simulando una máquina de escribir...
                             </p>
 
-                            <p class="ej-gradient-text-p">
+                            <p class="demo-p__gradient-text">
                               Un párrafo con texto degradado que cambia de
                               colores constantemente. ¡Muy llamativo!
                             </p>
 
-                            <p class="ej-floating-p">
+                            <p class="demo-p__floating">
                               Este párrafo flota suavemente arriba y abajo,
                               creando un efecto hipnotizante que capta la
                               atención del lector.
                             </p>
 
-                            <p class="ej-fade-in-p">
+                            <p class="demo-p__fade-in">
                               Aparezco gradualmente con un efecto de
                               desvanecimiento elegante. Ideal para revelar
                               contenido importante.
                             </p>
 
-                            <p class="ej-interactive-p">
+                            <p class="demo-p__interactive">
                               ¡Pasa el mouse sobre mí! Soy un párrafo
                               interactivo que responde a tus acciones con
                               animaciones suaves.
                             </p>
 
-                            <p class="ej-retro-p">
+                            <p class="demo-p__retro">
                               Estilo retro de los años 80 con colores
                               vibrantes y sombras marcadas.
                             </p>
@@ -967,51 +967,51 @@
                       <!-- código ejecutado fin -->
                     </div>
                     <div class="row">
-                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                         <!-- código HTML -->
                         <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;div class="body-wrapper">
+                                &lt;div class="site-content__body-wrapper">
                                   &lt;div class="container">
-                                    &lt;h1 class="titulo">
+                                    &lt;h1 class="site-title">
                                       🎨 Párrafos con Estilo
                                     &lt;/h1>
 
-                                    &lt;p class="neon">
+                                    &lt;p class="site-content__neon">
                                       Este párrafo tiene un efecto neón que brilla en
                                       la oscuridad. Perfecto para darle un toque
                                       futurista a tu contenido.
                                     &lt;/p>
 
-                                    &lt;p class="typewriter">
+                                    &lt;p class="site-content__typewriter">
                                       Simulando una máquina de escribir...
                                     &lt;/p>
 
-                                    &lt;p class="gradient-text">
+                                    &lt;p class="site-content__gradient-text">
                                       Un párrafo con texto degradado que cambia de
                                       colores constantemente. ¡Muy llamativo!
                                     &lt;/p>
 
-                                    &lt;p class="floating">
+                                    &lt;p class="site-content__floating">
                                       Este párrafo flota suavemente arriba y abajo,
                                       creando un efecto hipnotizante que capta la
                                       atención del lector.
                                     &lt;/p>
 
-                                    &lt;p class="fade-in">
+                                    &lt;p class="site-content__fade-in">
                                       Aparezco gradualmente con un efecto de
                                       desvanecimiento elegante. Ideal para revelar
                                       contenido importante.
                                     &lt;/p>
 
-                                    &lt;p class="interactive">
+                                    &lt;p class="site-content__interactive">
                                       ¡Pasa el mouse sobre mí! Soy un párrafo
                                       interactivo que responde a tus acciones con
                                       animaciones suaves.
                                     &lt;/p>
 
-                                    &lt;p class="retro">
+                                    &lt;p class="site-content__retro">
                                       Estilo retro de los años 80 con colores
                                       vibrantes y sombras marcadas.
                                     &lt;/p>
@@ -1022,7 +1022,7 @@
                           </pre>
                         <!-- código HTML -->
                       </div>
-                      <div class="ej-code-css col-lg-6 mb-3">
+                      <div class="code-example__css-panel col-lg-6 mb-3">
                         <!-- código CSS -->
                         <pre>
                             <code class="language-css" data-prismjs-copy="Copy">
@@ -1249,7 +1249,7 @@
               <!-- Uso con Tecnologías de Asistencia (ARIA) Párrafos p fin -->
             </div>
             <!-- Los Parrafos Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Saltos de Línea -->
             <div id="saltos-de-linea">
@@ -1313,7 +1313,7 @@
                 <ul>
                   <li>
                     HTML5 recomienda usar la siguiente sintaxis:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;br>
@@ -1323,7 +1323,7 @@
                   </li>
                   <li>
                     Para XHTML o estilos más estrictos:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;br />
@@ -1506,7 +1506,7 @@
                   No añade márgenes ni rellenos por defecto, pero puede decir
                   que el formato por defecto puede ser el siguiente:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-css" data-prismjs-copy="Copy">
                         br {
@@ -1535,19 +1535,19 @@
                 </h3>
                 <div class="row">
                   <!-- Ejemplo -->
-                  <div class="ej-ejemplo">
-                    <div class="row ej-ejecutado mt-3">
+                  <div class="code-example">
+                    <div class="row code-example__output mt-3">
                       <!-- código ejecutado -->
                       <div>
-                        <div class="ej-container-br">
-                          <address class="ej-address-br">
+                        <div class="demo-br__container">
+                          <address class="demo-br__address">
                             Empresa Ejemplo S.A.<br />
                             Calle 90 7-23<br />
                             28001 Bogotá, Colombia<br />
                             <a href="tel:+571234567">+57-123-4567</a>
                           </address>
 
-                          <p class="ej-poem-br">
+                          <p class="demo-br__poem">
                             Caminante, son tus huellas<br />
                             el camino y nada más;<br />
                             Caminante, no hay camino,<br />
@@ -1559,20 +1559,20 @@
                     </div>
 
                     <div class="row">
-                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                         <!-- código HTML -->
                         <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
                                 &lt;div class="container">
-                                  &lt;address class="address">
+                                  &lt;address class="site-content__address">
                                     Empresa Ejemplo S.A.&lt;br>
                                     Calle 90 7-23&lt;br>
                                     28001 Bogotá, Colombia&lt;br>
                                     &lt;a href="tel:+571234567">+57-123-4567&lt;/a>
                                   &lt;/address>
 
-                                  &lt;p class="poem">
+                                  &lt;p class="site-content__poem">
                                     Caminante, son tus huellas&lt;br>
                                     el camino y nada más;&lt;br>
                                     Caminante, no hay camino,&lt;br>
@@ -1584,7 +1584,7 @@
                           </pre>
                         <!-- código HTML -->
                       </div>
-                      <div class="ej-code-css col-lg-6 mb-3">
+                      <div class="code-example__css-panel col-lg-6 mb-3">
                         <!-- código CSS -->
                         <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
@@ -1703,7 +1703,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -1721,29 +1721,29 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
 
-              <div class="menu-item">
-                <a href="#introduccion" class="simple-link">Introducción</a>
+              <div class="site-menu__item">
+                <a href="#introduccion" class="site-menu__link">Introducción</a>
               </div>
-              <div class="menu-item">
-                <a href="#los-encabezados" class="simple-link">Los Encabezados
+              <div class="site-menu__item">
+                <a href="#los-encabezados" class="site-menu__link">Los Encabezados
                   <code class="language-html">&lt;hx&gt;</code></a>
               </div>
 
-              <div class="menu-item">
-                <a href="#los-parrafos" class="simple-link">Los Párrafos <code class="language-html">&lt;p></code></a>
+              <div class="site-menu__item">
+                <a href="#los-parrafos" class="site-menu__link">Los Párrafos <code class="language-html">&lt;p></code></a>
               </div>
 
-              <div class="menu-item">
-                <a href="#saltos-de-linea" class="simple-link">Saltos de Línea <code
+              <div class="site-menu__item">
+                <a href="#saltos-de-linea" class="site-menu__link">Saltos de Línea <code
                     class="language-html">&lt;br></code></a>
               </div>
 
-              <div class="menu-item">
-                <a href="#comments" class="simple-link">Comentarios</a>
+              <div class="site-menu__item">
+                <a href="#comments" class="site-menu__link">Comentarios</a>
               </div>
             </div>
           </div>
@@ -1811,7 +1811,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

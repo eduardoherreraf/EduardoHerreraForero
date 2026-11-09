@@ -76,7 +76,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -94,7 +94,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -106,7 +106,7 @@
   <!-- Barra de Navegación -->
 
   <!--  Principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Manejo de Series con Pandas-->
@@ -119,13 +119,13 @@
           <div class="mt-3">
             <h2>Introducción a Manejo de Series con Pandas
             </h2>
-            <div class="centrar-imagen magen-intro mb-5">
-              <figure class="img-container">
+            <div class="site-image site-intro-image mb-5">
+              <figure class="site-content__img-container">
                 <img src="https://i.postimg.cc/52CP3cmm/Pandas-Series-comp.jpg" class="img-fluid"
                   alt="Agenda con columnas de nombres e índices que representa una Serie de Pandas en Python."
                   title="Analogía visual: Manejo de Series con Pandas en Python." loading="lazy"
                   onerror="this.onerror=null; this.src='https://i.ibb.co/fG0FfSD7/Pandas-Series-comp.jpg';" />
-                <figcaption class="img-caption">
+                <figcaption class="site-image__caption">
                   Analogía de una Serie con Pandas: cada nombre actúa como un índice y cada número telefónico como un
                   dato asociado, facilitando la comprensión de cómo Pandas organiza la información en Python.
                 </figcaption>
@@ -140,7 +140,7 @@
               de datos, ingeniería y análisis numérico.</p>
           </div>
           <!-- Introducción Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Definición de Series -->
           <div id="definicion-de-series" class="mt-3">
@@ -170,7 +170,7 @@
             <div>
               <h4>Ejemplo Básico Creación de una Serie </h4>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                    import pandas as pd
@@ -229,7 +229,7 @@
                 es la herramienta estándar de
                 Python para instalar bibliotecas externas.</p>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                    pip install pandas         # Terminal / Línea de comandos
@@ -250,7 +250,7 @@
               <p>Una vez instalada, es necesario importarla en el código para poder utilizar sus funciones y
                 estructuras. Por convención, se importa con el alias <code class="language-py">pd</code>:</p>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
                         import pandas as s
@@ -266,7 +266,7 @@
               <h3>Mostrar la ejecución de Celda Completa </h3>
               <p>Para que se pueda ver todos los resultados en cada celda ejecutar:</p>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
                        from IPython.core.interactiveshell import InteractiveShell
@@ -287,7 +287,7 @@
                 datos (números, cadenas, booleanos, etc.).</p>
               <!-- Sintaxis -->
               <p><span class="fw-bold">Ejemplo básico</span>:</p>
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                    # Crear una Serie a partir de una lista de Python
@@ -323,7 +323,7 @@
               <p>Se pueden asignar índices personalizados en lugar de los numéricos por defecto:</p>
               <!-- Sintaxis -->
               <p><span class="fw-bold">Ejemplo básico</span>:</p>
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                    s = pd.Series(datos, index=["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"])
@@ -353,7 +353,7 @@
               <h3>Acceso y operaciones con una Serie </h3>
               <p><span class="text-warning">Pandas</span> permite acceder y operar sobre los datos fácilmente:</p>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                    print("B =", s["B"])                      # Acceder por etiqueta → 20
@@ -383,7 +383,7 @@
             <!-- Acceso y operaciones con una Serie fin -->
           </div>
           <!-- Primera aproximación a las Series en Pandas fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Sentencias para Manejo de Series -->
           <div id="sentencias-para-manejo-de-series" class="mt-3">
@@ -401,7 +401,7 @@
                 Python.</p>
               <!-- Sintaxis -->
               <p><span class="fw-bold">Sintaxis básica</span>:</p>
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                     pd.Series(data, index=None, dtype=None)
@@ -413,7 +413,7 @@
               <ul>
                 <li><span class="fw-bold">Lista</span>: <code class="language-py">pd.Series([10, 20, 30, 40, 50])</code>
                   <!-- Sintaxis -->
-                  <div class="ej-sintaxis-100">
+                  <div class="code-example__full-syntax">
                     <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
                        import pandas as pd
@@ -436,7 +436,7 @@
                 <li><span class="fw-bold">Diccionario</span>: <code
                     class="language-py">pd.Series({"a": 10, "b": 20, "c":30, "d":40, "e":50})</code>
                   <!-- Sintaxis -->
-                  <div class="ej-sintaxis-100">
+                  <div class="code-example__full-syntax">
                     <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
                        import pandas as pd
@@ -467,7 +467,7 @@
               <h3>Exploración y Análisis de la Serie </h3>
               <p>Comandos para inspeccionar la estructura, el contenido y las características básicas de la Serie.</p>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                    s.head()         # Muestra los 5 primeros elementos
@@ -566,7 +566,7 @@
                 <li>Si los datos son <span class="fw-bold">numéricos</span>, <code
                     class="language-py">s.describe()</code> mostrará medidas estadísticas:
                   <!-- Sintaxis -->
-                  <div class="ej-sintaxis-100">
+                  <div class="code-example__full-syntax">
                     <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
                        0
@@ -589,7 +589,7 @@
                     class="language-py">s_dict.describe()</code>mostrará medidas de
                   frecuencia.
                   <!-- Sintaxis -->
-                  <div class="ej-sintaxis-100">
+                  <div class="code-example__full-syntax">
                     <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
                        count        6
@@ -611,7 +611,7 @@
               <h3>Acceso y Selección de Datos </h3>
               <p>Métodos para acceder, indexar o filtrar datos en una Serie.</p>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                    s[0]             # Acceso por posición
@@ -626,7 +626,7 @@
               <!-- Sintaxis fin -->
               <!-- Sintaxis -->
               <p><span class="fw-bold">Ejemplo</span>:</p>
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                    # Se crea una serie con etiquetas personalizadas.
@@ -663,7 +663,7 @@
               <h3>Operaciones Matemáticas y Estadísticas </h3>
               <p>Métodos para realizar operaciones numéricas y estadísticas sobre los datos.</p>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                    s = pd.Series(
@@ -719,7 +719,7 @@
               <p>Sentencias para modificar o transformar los valores de una Serie.</p>
               <!-- Sintaxis -->
               <p><span class="fw-bold">Sintaxis básica</span>:</p>
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                    s = pd.Series(
@@ -751,7 +751,7 @@
               <h3>Limpieza y Tratamiento de Valores Nulos </h3>
               <p>Métodos esenciales para detectar, eliminar o reemplazar valores faltantes:</p>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                    import pandas as pd
@@ -781,7 +781,7 @@
               <h3>Operaciones con Índices </h3>
               <p>Sentencias que permiten gestionar o modificar el índice de una Serie.</p>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                    s = pd.Series(
@@ -815,7 +815,7 @@
               <h3>Combinación y Concatenación de Series </h3>
               <p>Permiten unir o concatenar varias Series entre sí:</p>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                    s1 = pd.Series([1, 2, 3])
@@ -834,7 +834,7 @@
               <h3>Exportación de Datos </h3>
               <p>Métodos para guardar o exportar el contenido de una Serie.</p>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                    s.to_csv("datos.csv")        # Exporta a CSV
@@ -852,7 +852,7 @@
               <h3>Importación de Datos </h3>
               <p>Métodos para importar el contenido de una Serie des archivos, clipboard, etc.</p>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                    pd.read_csv("datos.csv")        # Importa datos desde un archivo CSV
@@ -874,7 +874,7 @@
               <!-- Sintaxis fin -->
               <!-- Sintaxis -->
               <p><span class="fw-bold">Ejemplo</span>: Como importar un archivo CSV:</p>
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                    df = pd.read_csv("datos.csv", index_col=0)
@@ -894,7 +894,7 @@
               <h3>Métodos Avanzados y Utilitarios </h3>
               <p>Opciones adicionales para análisis más profundo o depuración.</p>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                     import pandas as pd
@@ -952,7 +952,7 @@
               <h3>Manejo de Funciones de Cadena <code class="language-py">str</code></h3>
               <p>Para poder usar las funciones de texto, se utiliza:</p>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                   s.str.función()
@@ -962,7 +962,7 @@
               <!-- Sintaxis fin -->
               <!-- Sintaxis -->
               <p><span class="fw-bold">Ejemplo</span>:</p>
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                    import pandas as pd
@@ -980,7 +980,7 @@
               <div>
                 <h4>Funciones de Formato de Texto</h4>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis-100">
+                <div class="code-example__full-syntax">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-py" data-prismjs-copy="Copy">
                      str.lower()                    # Convierte a minúsculas
@@ -1002,7 +1002,7 @@
               <div>
                 <h4>Extracción y División de Texto </h4>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis-100">
+                <div class="code-example__full-syntax">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-py" data-prismjs-copy="Copy">
                      str.split(sep)	# Divide la cadena en partes	s.str.split(' ')
@@ -1018,7 +1018,7 @@
               <div>
                 <h4>Búsqueda y Conteo de Texto </h4>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis-100">
+                <div class="code-example__full-syntax">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-py" data-prismjs-copy="Copy">
                      str.slice(start, stop)                  # Extrae subcadenas por posición	
@@ -1038,7 +1038,7 @@
               <div>
                 <h4>Longitud y Validación de Texto </h4>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis-100">
+                <div class="code-example__full-syntax">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-py" data-prismjs-copy="Copy">
                      str.len()                 # Devuelve la longitud de cada texto
@@ -1079,7 +1079,7 @@
                   <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
                     class="form-control rounded-3" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">Enviar</button>
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">Enviar</button>
               </fieldset>
               <p class="small text-center">La política de privacidad, y los términos y condiciones estándisponibles en
                 el formulario de contacto.</p>
@@ -1091,65 +1091,65 @@
       <!-- -------------------------------- barra lateral -------------------------------- -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item">
-                <a href="#introduccion" class="simple-link">Introducción</a>
+              <div class="site-menu__item">
+                <a href="#introduccion" class="site-menu__link">Introducción</a>
               </div>
-              <div class="menu-item">
-                <a href="#definicion-de-series" class="simple-link">Definición de Series</a>
+              <div class="site-menu__item">
+                <a href="#definicion-de-series" class="site-menu__link">Definición de Series</a>
               </div>
-              <div class="menu-item">
+              <div class="site-menu__item">
                 <details>
                   <summary>
                     Primera aproximación a las Series en Pandas
                   </summary>
-                  <div class="submenu">
-                    <a href="#primera-aproximacion-a-las-series-en-pandas" class="submenu-item">Primera aproximación a
+                  <div class="site-menu__submenu">
+                    <a href="#primera-aproximacion-a-las-series-en-pandas" class="site-menu__submenu-link">Primera aproximación a
                       las Series en Pandas</a>
-                    <a href="#instalacion-de-la-biblioteca-pandas" class="submenu-item">Instalación de la Biblioteca
+                    <a href="#instalacion-de-la-biblioteca-pandas" class="site-menu__submenu-link">Instalación de la Biblioteca
                       Pandas</a>
-                    <a href="#importacion-de-la-biblioteca" class="submenu-item">Importación de la Biblioteca</a>
-                    <a href="#mostrar-la-ejecucion-de-celda-comleta" class="submenu-item">Mostrar la ejecución de Celda
+                    <a href="#importacion-de-la-biblioteca" class="site-menu__submenu-link">Importación de la Biblioteca</a>
+                    <a href="#mostrar-la-ejecucion-de-celda-comleta" class="site-menu__submenu-link">Mostrar la ejecución de Celda
                       Completa</a>
-                    <a href="#creacion-y-uso-de-una-serie" class="submenu-item">Creación y Uso de una Serie</a>
-                    <a href="#personalizacion-de-índices" class="submenu-item">Personalización de índices</a>
-                    <a href="#acceso-y-operaciones-con-una-serie" class="submenu-item">Acceso y Operaciones con una
+                    <a href="#creacion-y-uso-de-una-serie" class="site-menu__submenu-link">Creación y Uso de una Serie</a>
+                    <a href="#personalizacion-de-índices" class="site-menu__submenu-link">Personalización de índices</a>
+                    <a href="#acceso-y-operaciones-con-una-serie" class="site-menu__submenu-link">Acceso y Operaciones con una
                       Serie</a>
                   </div>
                 </details>
               </div>
-              <div class="menu-item">
+              <div class="site-menu__item">
                 <details>
                   <summary>
                     Sentencias para Manejo de Series
                   </summary>
-                  <div class="submenu">
-                    <a href="#creacion-de-series" class="submenu-item">Creación de Series </a>
-                    <a href="#exploracion-y-analisis-de-la-serie" class="submenu-item">Exploración y Análisis de la
+                  <div class="site-menu__submenu">
+                    <a href="#creacion-de-series" class="site-menu__submenu-link">Creación de Series </a>
+                    <a href="#exploracion-y-analisis-de-la-serie" class="site-menu__submenu-link">Exploración y Análisis de la
                       Serie</a>
-                    <a href="#acceso-y-seleccion-de-datos" class="submenu-item">Acceso y Selección de Datos</a>
-                    <a href="#operaciones-matematicas-y-estadísticas" class="submenu-item">Operaciones Matemáticas y
+                    <a href="#acceso-y-seleccion-de-datos" class="site-menu__submenu-link">Acceso y Selección de Datos</a>
+                    <a href="#operaciones-matematicas-y-estadísticas" class="site-menu__submenu-link">Operaciones Matemáticas y
                       Estadísticas</a>
-                    <a href="#manipulacion-y-transformacion-de-datos" class="submenu-item">Manipulación y Transformación
+                    <a href="#manipulacion-y-transformacion-de-datos" class="site-menu__submenu-link">Manipulación y Transformación
                       de Datos</a>
-                    <a href="#limpieza-y-tratamiento-de-valores-nulos" class="submenu-item">Limpieza y Tratamiento de
+                    <a href="#limpieza-y-tratamiento-de-valores-nulos" class="site-menu__submenu-link">Limpieza y Tratamiento de
                       Valores Nulos</a>
-                    <a href="#operaciones-con-índices" class="submenu-item">Operaciones con Índices</a>
-                    <a href="#combinacion-y-concatenacion-de-series" class="submenu-item">Combinación y Concatenación de
+                    <a href="#operaciones-con-índices" class="site-menu__submenu-link">Operaciones con Índices</a>
+                    <a href="#combinacion-y-concatenacion-de-series" class="site-menu__submenu-link">Combinación y Concatenación de
                       Series</a>
-                    <a href="#exportacion-e-importacion-de-datos" class="submenu-item">Exportación e Importación de
+                    <a href="#exportacion-e-importacion-de-datos" class="site-menu__submenu-link">Exportación e Importación de
                       Datos</a>
-                    <a href="#metodos-avanzados-y-utilitarios" class="submenu-item">Métodos Avanzados y Utilitarios</a>
-                    <a href="#manejo-de-funciones-de-cadena-str" class="submenu-item">Manejo de Funciones de Cadena
+                    <a href="#metodos-avanzados-y-utilitarios" class="site-menu__submenu-link">Métodos Avanzados y Utilitarios</a>
+                    <a href="#manejo-de-funciones-de-cadena-str" class="site-menu__submenu-link">Manejo de Funciones de Cadena
                       <code class="language-py">str</code></a>
                   </div>
                 </details>
               </div>
               <!-- Comentarios  -->
-              <div class="menu-item">
-                <a href="#comments" class="simple-link">Comentarios</a>
+              <div class="site-menu__item">
+                <a href="#comments" class="site-menu__link">Comentarios</a>
               </div>
             </div>
           </div>
@@ -1216,7 +1216,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

@@ -74,7 +74,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -92,7 +92,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -103,7 +103,7 @@
   </nav>
   <!-- Barra de Navegación -->
 
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Bucles en Python-->
@@ -115,13 +115,13 @@
           <!-- Introducción -->
           <div class="mt-3">
             <h2>Introducción</h2>
-            <div class="centrar-imagen magen-intro mb-5">
-              <figure class="img-container">
+            <div class="site-image site-intro-image mb-5">
+              <figure class="site-content__img-container">
                 <img src="https://i.postimg.cc/R0L3sdnx/analisis-de-datos-bucles-en-Python-comp.jpg" class="img-fluid"
                   alt="Ilustración que muestra a un hombre lavando una pila de platos para explicar los bucles for y while en Python."
                   title="Analogía de los bucles en Python con lavar platos" loading="lazy"
                   onerror="this.onerror=null; this.src='https://i.ibb.co/BFmhDP3/analisis-de-datos-bucles-en-Python-comp.jpg';" />
-                <figcaption class="img-caption">
+                <figcaption class="site-image__caption">
                   La imagen representa cómo funcionan los bucles en Python: un hombre repite la acción de lavar platos,
                   mostrando la diferencia entre un bucle for, que se ejecuta un número definido de veces, y un bucle
                   while, que continúa mientras haya platos sucios.
@@ -133,7 +133,7 @@
               cada elemento de esa secuencia.</p>
           </div>
           <!-- Introducción Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Bucles en Python -->
           <div id="bucles-en-python" class="mt-3">
@@ -151,7 +151,7 @@
               <h2>Bucle <code class="language-py">for</code></h2>
 
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                    for variable in secuencia:
@@ -168,7 +168,7 @@
               </ul>
               <p><span class="fw-bold">Ejemplo 1: recorrer una lista</span>:</p>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                    frutas = ["manzana", "banana", "cereza"]
@@ -181,7 +181,7 @@
               <!-- Sintaxis fin -->
               <p><span class="language-py">Salida</span>:</p>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-none" data-prismjs-copy="Copy">
                    manzana
@@ -195,7 +195,7 @@
 
               <p><span class="fw-bold">Ejemplo 2: usar <code class="language-py">range()</code></span>:</p>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                    for numero in range(5):
@@ -206,7 +206,7 @@
               <!-- Sintaxis fin -->
               <p><span class="fw-bold">Salida</span>:</p>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-none" data-prismjs-copy="Copy">
                    0
@@ -226,7 +226,7 @@
                   class="language-py">range(inicio, fin, paso), con parámetros</code></span>:</p>
               <!-- Sintaxis -->
               <p><span class="fw-bold">Sintaxis básica</span>:</p>
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                    for i in range(inicio, fin, paso)
@@ -236,7 +236,7 @@
               </div>
               <!-- Sintaxis fin -->
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                    for i in range(2, 10, 2):
@@ -247,7 +247,7 @@
               <!-- Sintaxis fin -->
               <p><span class="fw-bold">Salida</span>:</p>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-none" data-prismjs-copy="Copy">
                    2
@@ -273,7 +273,7 @@
                 detiene.</p>
               <!-- Sintaxis -->
               <p><span class="fw-bold">Sintaxis básica</span>:</p>
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                    while condición:
@@ -286,7 +286,7 @@
 
             <p><span class="fw-bold">Ejemplo</span>:</p>
             <!-- Sintaxis -->
-            <div class="ej-sintaxis-100">
+            <div class="code-example__full-syntax">
               <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                    for i in range(5):
@@ -297,7 +297,7 @@
             <!-- Sintaxis fin -->
             <p><span class="fw-bold">Salida</span>:</p>
             <!-- Sintaxis -->
-            <div class="ej-sintaxis-100">
+            <div class="code-example__full-syntax">
               <pre data-src-status="loaded" tabindex="0">
                   <code class="language-none" data-prismjs-copy="Copy">
                    0
@@ -320,7 +320,7 @@
 
               <p><span class="fw-bold">Ejemplo</span>:</p>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                    for i in range(10):
@@ -333,7 +333,7 @@
               <!-- Sintaxis fin -->
               <p><span class="fw-bold">Salida</span>:</p>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-none" data-prismjs-copy="Copy">
                    0
@@ -356,7 +356,7 @@
 
               <p><span class="fw-bold">Ejemplo</span>:</p>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                    for i in range(5):
@@ -369,7 +369,7 @@
               <!-- Sintaxis fin -->
               <p><span class="fw-bold">Salida</span>:</p>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-none" data-prismjs-copy="Copy">
                    0
@@ -393,7 +393,7 @@
 
               <p><span class="fw-bold">Ejemplo</span>:</p>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-py" data-prismjs-copy="Copy">
                    for i in range(5):
@@ -406,7 +406,7 @@
               <!-- Sintaxis fin -->
               <p><span class="fw-bold">Salida</span>:</p>
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-none" data-prismjs-copy="Copy">
                    0
@@ -452,7 +452,7 @@
                   <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
                     class="form-control rounded-3" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">Enviar</button>
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">Enviar</button>
               </fieldset>
               <p class="small text-center">La política de privacidad, y los términos y condiciones estándisponibles en
                 el formulario de contacto.</p>
@@ -464,20 +464,20 @@
       <!-- -------------------------------- barra lateral -------------------------------- -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
 
-              <div class="menu-item">
-                <a href="#introduccion" class="simple-link">Introducción</a>
+              <div class="site-menu__item">
+                <a href="#introduccion" class="site-menu__link">Introducción</a>
               </div>
-              <div class="menu-item"><a href="#bucle-for" class="simple-link">Bucle <code class="language-py">for</code>
+              <div class="site-menu__item"><a href="#bucle-for" class="site-menu__link">Bucle <code class="language-py">for</code>
                 </a></div>
-              <div class="menu-item"><a href="#bucle-while" class="simple-link">Bucle <code class="language-py">while
+              <div class="site-menu__item"><a href="#bucle-while" class="site-menu__link">Bucle <code class="language-py">while
                   </code></a></div>
               <!-- Comentarios  -->
-              <div class="menu-item">
-                <a href="#comments" class="simple-link">Comentarios</a>
+              <div class="site-menu__item">
+                <a href="#comments" class="site-menu__link">Comentarios</a>
               </div>
             </div>
           </div>
@@ -544,7 +544,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

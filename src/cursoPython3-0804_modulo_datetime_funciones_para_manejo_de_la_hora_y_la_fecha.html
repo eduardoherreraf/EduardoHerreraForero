@@ -77,7 +77,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -95,7 +95,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -107,7 +107,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  El Módulo datetime, Funciones para Manejo de la Hora y la Fecha en Python  -->
@@ -136,7 +136,7 @@
                 utilizar este módulo para resolver problemas cotidianos
                 relacionados con el tiempo.
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <figure>
                   <img src="https://i.ibb.co/j3d9mCK/modulodatetime.jpg" class="img-fluid"
                     alt="El Módulo datetime, Funciones para Manejo de la Hora y la Fecha en Python  "
@@ -194,8 +194,8 @@
                   <span class="fw-bold"><code class="language-python"
                       class="language-python">date(año, mes, día)</code></span>: Crea una fecha (solo contiene año, mes
                   y día).
-                  <div class="ej-sintaxis">
-                    <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" class="language-python" data-prismjs-copy="Copy">
                             from datetime import datetime
@@ -211,8 +211,8 @@
                       class="language-python">time(hora, minuto, segundo, microsegundo)</code></span>: Crea una hora
                   (solo contiene hora, minuto, segundo y
                   opcionalmente microsegundos).
-                  <div class="ej-sintaxis">
-                    <div class="ej-sintaxis"></div>
+                  <div class="code-example__syntax">
+                    <div class="code-example__syntax"></div>
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" class="language-python" data-prismjs-copy="Copy">
                           from datetime import time
@@ -225,8 +225,8 @@
                 <li>
                   <span class="fw-bold"><code class="language-python">datetime(año, mes, día, hora, minuto, segundo,
                         microsegundo</code>)</span>: Crea una combinación de fecha y hora.
-                  <div class="ej-sintaxis">
-                    <div class="ej-sintaxis"></div>
+                  <div class="code-example__syntax">
+                    <div class="code-example__syntax"></div>
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" class="language-python" data-prismjs-copy="Copy">
                           from datetime import datetime
@@ -240,8 +240,8 @@
                   <span class="fw-bold"><code class="language-python">replace(year, month, day, hour, minute, second,
                         microsecond, tzinfo)</code></span>: Devuelve un nuevo objeto datetime con los atributos
                   especificados reemplazados.
-                  <div class="ej-sintaxis">
-                    <div class="ej-sintaxis"></div>
+                  <div class="code-example__syntax">
+                    <div class="code-example__syntax"></div>
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" class="language-python" data-prismjs-copy="Copy">
                           from datetime import datetime
@@ -262,8 +262,8 @@
                   en una cadena con un formato de fecha y hora legible por
                   humanos. Si no se proporciona un valor de tiempo, la función
                   devuelve la fecha y hora actuales del sistema.
-                  <sdiv class="ej-sintaxis">
-                    <div class="ej-sintaxis"></div>
+                  <sdiv class="code-example__syntax">
+                    <div class="code-example__syntax"></div>
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" class="language-python" data-prismjs-copy="Copy">
                           import time
@@ -283,8 +283,8 @@
                 <li>
                   <span class="fw-bold"><code class="language-python"
                       class="language-python">datetime.now()</code></span>: Devuelve la fecha y hora actual.
-                  <div class="ej-sintaxis">
-                    <div class="ej-sintaxis"></div>
+                  <div class="code-example__syntax">
+                    <div class="code-example__syntax"></div>
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" class="language-python" data-prismjs-copy="Copy">
                           from datetime import datetime
@@ -297,8 +297,8 @@
                 <li>
                   <span class="fw-bold"><code class="language-python"
                       class="language-python">date.today()</code></span>: Devuelve solo la fecha actual.
-                  <div class="ej-sintaxis">
-                    <div class="ej-sintaxis"></div>
+                  <div class="code-example__syntax">
+                    <div class="code-example__syntax"></div>
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" class="language-python" data-prismjs-copy="Copy">
                           from datetime import date
@@ -313,8 +313,8 @@
                       class="language-python">datetime.now(timezone.utc)</code></span>: Devuelve la fecha y hora actual
                   en UTC (Tiempo Universal
                   Coordinado).
-                  <div class="ej-sintaxis">
-                    <div class="ej-sintaxis"></div>
+                  <div class="code-example__syntax">
+                    <div class="code-example__syntax"></div>
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" class="language-python" data-prismjs-copy="Copy">
                           from datetime import datetime, timezone
@@ -341,8 +341,8 @@
                       class="language-python">strftime(formato)</code></span>: Convierte un objeto
                   <code class="language-python" class="language-python">datetime</code>
                   a una cadena de texto en un formato específico.
-                  <div class="ej-sintaxis">
-                    <div class="ej-sintaxis"></div>
+                  <div class="code-example__syntax">
+                    <div class="code-example__syntax"></div>
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" class="language-python" data-prismjs-copy="Copy">
                           from datetime import datetime
@@ -387,8 +387,8 @@
                       class="language-python">strptime(cadena, formato)</code></span>: Convierte una cadena de texto a
                   un objeto
                   <code class="language-python" class="language-python">datetime</code>.
-                  <div class="ej-sintaxis">
-                    <div class="ej-sintaxis"></div>
+                  <div class="code-example__syntax">
+                    <div class="code-example__syntax"></div>
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" class="language-python" data-prismjs-copy="Copy">
                           from datetime import datetime
@@ -414,8 +414,8 @@
                       class="language-python">timedelta(días, segundos, minutos, horas)</code></span>: Representa un
                   cambio en el tiempo, útil para sumar o
                   restar.
-                  <div class="ej-sintaxis">
-                    <div class="ej-sintaxis"></div>
+                  <div class="code-example__syntax">
+                    <div class="code-example__syntax"></div>
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" class="language-python" data-prismjs-copy="Copy">
                           from datetime import datetime, timedelta
@@ -431,8 +431,8 @@
                 </li>
                 <li>
                   Restar dos fechas u horas devuelve un timedelta.
-                  <div class="ej-sintaxis">
-                    <div class="ej-sintaxis"></div>
+                  <div class="code-example__syntax">
+                    <div class="code-example__syntax"></div>
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" class="language-python" data-prismjs-copy="Copy">
                           diferencia = nueva_fecha - fecha_hora
@@ -456,8 +456,8 @@
                   <span class="fw-bold"><code class="language-python" class="language-python">year</code>,
                     <code class="language-python" class="language-python">month</code>,
                     <code class="language-python" class="language-python">day</code></span>: Obtienen el año, mes o día.
-                  <div class="ej-sintaxis">
-                    <div class="ej-sintaxis"></div>
+                  <div class="code-example__syntax">
+                    <div class="code-example__syntax"></div>
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" class="language-python" data-prismjs-copy="Copy">
                           from datetime import datetime, timedelta
@@ -476,8 +476,8 @@
                     <code class="language-python" class="language-python">second</code>,
                     <code class="language-python" class="language-python">microsecond</code></span>: Obtienen la hora,
                   minuto, segundo o microsegundo.
-                  <div class="ej-sintaxis">
-                    <div class="ej-sintaxis"></div>
+                  <div class="code-example__syntax">
+                    <div class="code-example__syntax"></div>
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" class="language-python" data-prismjs-copy="Copy">
                           from datetime import datetime, timedelta
@@ -500,8 +500,8 @@
                       class="language-python">isoweekday()</code></span>: Devuelve el día de la semana como un entero
                   (lunes=1,
                   domingo=7).
-                  <div class="ej-sintaxis">
-                    <div class="ej-sintaxis"></div>
+                  <div class="code-example__syntax">
+                    <div class="code-example__syntax"></div>
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" class="language-python" data-prismjs-copy="Copy">
                           from datetime import datetime, timedelta
@@ -523,8 +523,8 @@
                 <li>
                   <span class="fw-bold">datetime.timezone</span>: Define un
                   objeto de zona horaria.
-                  <div class="ej-sintaxis">
-                    <div class="ej-sintaxis"></div>
+                  <div class="code-example__syntax">
+                    <div class="code-example__syntax"></div>
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" class="language-python" data-prismjs-copy="Copy">
                           from datetime import datetime, timezone, timedelta
@@ -538,8 +538,8 @@
                 <li>
                   <span class="fw-bold">astimezone(zona)</span>: Convierte un
                   objeto datetime a otra zona horaria.
-                  <div class="ej-sintaxis">
-                    <div class="ej-sintaxis"></div>
+                  <div class="code-example__syntax">
+                    <div class="code-example__syntax"></div>
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" class="language-python" data-prismjs-copy="Copy">
                           from datetime import datetime, timezone, timedelta
@@ -583,8 +583,8 @@
                   La resolución de timedelta (1 microsegundo)
                 </li>
               </ul>
-              <div class="ej-sintaxis">
-                <div class="ej-sintaxis"></div>
+              <div class="code-example__syntax">
+                <div class="code-example__syntax"></div>
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" class="language-python" data-prismjs-copy="Copy">
                       from datetime import datetime, timedelta
@@ -649,7 +649,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -667,26 +667,26 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
-              <div class="menu-item"><a href="#introduccion-al-modulo-datetime" class="simple-link">Introducción al
+              <div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
+              <div class="site-menu__item"><a href="#introduccion-al-modulo-datetime" class="site-menu__link">Introducción al
                   Módulo <code class="language-python">datetime</code></a></div>
-              <div class="menu-item"><a href="#creacion-de-fechas-y-horas" class="simple-link">Creación de Fechas y
+              <div class="site-menu__item"><a href="#creacion-de-fechas-y-horas" class="site-menu__link">Creación de Fechas y
                   Horas</a></div>
-              <div class="menu-item"><a href="#obtencion-defecha-y-hora-actual" class="simple-link">Obtención de Fecha y
+              <div class="site-menu__item"><a href="#obtencion-defecha-y-hora-actual" class="site-menu__link">Obtención de Fecha y
                   Hora Actual</a></div>
-              <div class="menu-item"><a href="#formateo-y-conversion" class="simple-link">Formateo Y Conversión</a>
+              <div class="site-menu__item"><a href="#formateo-y-conversion" class="site-menu__link">Formateo Y Conversión</a>
               </div>
-              <div class="menu-item"><a href="#operaciones-con-fechas-y-horas" class="simple-link">Operaciones con
+              <div class="site-menu__item"><a href="#operaciones-con-fechas-y-horas" class="site-menu__link">Operaciones con
                   Fechas y Horas</a></div>
-              <div class="menu-item"><a href="#propiedades-y-metodos-utiles" class="simple-link">Propiedades y Métodos
+              <div class="site-menu__item"><a href="#propiedades-y-metodos-utiles" class="site-menu__link">Propiedades y Métodos
                   Útiles</a></div>
-              <div class="menu-item"><a href="#zona-horaria" class="simple-link">Zona Horaria</a></div>
-              <div class="menu-item"><a href="#constantes" class="simple-link">Constantes</a></div>
+              <div class="site-menu__item"><a href="#zona-horaria" class="site-menu__link">Zona Horaria</a></div>
+              <div class="site-menu__item"><a href="#constantes" class="site-menu__link">Constantes</a></div>
               <!-- Comentarios  -->
-              <div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div>
+              <div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div>
             </div>
           </div>
         </div>
@@ -763,7 +763,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

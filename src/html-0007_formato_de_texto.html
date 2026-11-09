@@ -64,7 +64,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -82,7 +82,7 @@
             <a class="nav-link mx-1 text-decoration-none" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo text-decoration-none" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active text-decoration-none site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1 text-decoration-none" href="index.html#contact">CONTACTO</a>
@@ -94,7 +94,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Formato de Texto HTML -->
@@ -102,7 +102,7 @@
           data-bs-smooth-scroll="true">
           <div>
             <header>
-              <h1 id="introduccion">Formato de Texto HTML</h1>
+              <h1 id="introduccion" class="site-layout__intro">Formato de Texto HTML</h1>
             </header>
 
             <!-- Introducción -->
@@ -119,7 +119,7 @@
                 organización, el objetivo es transformar las palabras en
                 contenido visualmente impactante.
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <picture>
                   <img src="https://i.postimg.cc/k55FGb2w/b-vs-strong-gibili3.png" class="img-fluid"
                     alt="Formato de Texto HTML " title="Formato de Texto HTML : <b> y <strong>" />
@@ -144,7 +144,7 @@
               </p>
             </div>
             <!-- Introducción Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Etiquetas HTML <b> Negrita y <strong> Importante -->
             <div id="etiquetas-html-b-negrita-y-strong-importante">
@@ -286,12 +286,12 @@
                 </h3>
                 <div class="row">
                   <!-- Ejemplo -->
-                  <div class="ej-ejemplo">
-                    <div class="row ej-ejecutado mt-3">
+                  <div class="code-example">
+                    <div class="row code-example__output mt-3">
                       <!-- código ejecutado -->
                       <p>
                         Capítulo 1:
-                        <strong class="ej-strong">Introducción HTML</strong>
+                        <strong class="demo-content__strong">Introducción HTML</strong>
                       </p>
                       <figcaption>
                         Figura 1.<strong>Dinámica de la colonia de abejas</strong>. Las abejas de esta colonia se ven
@@ -299,22 +299,22 @@
                         ola de calor actual y la escasez de alimento.
                       </figcaption>
                       <p>
-                        <strong class="ej-strong">Java, Cobol y Fortran</strong>
+                        <strong class="demo-content__strong">Java, Cobol y Fortran</strong>
                         y demás lenguajes que no comprendo.
                       </p>
                       <p>
-                        <strong class="ej-strong">Cuidado.</strong> Este
+                        <strong class="demo-content__strong">Cuidado.</strong> Este
                         calabozo representa un peligro.
-                        <strong class="ej-strong">Mantente lejos de los patos.</strong>
+                        <strong class="demo-content__strong">Mantente lejos de los patos.</strong>
                         Recoge cualquier oro que veas.
-                        <strong class="ej-strong">No agarres los diamantes</strong>, ya que son explosivos y arrasarán
+                        <strong class="demo-content__strong">No agarres los diamantes</strong>, ya que son explosivos y arrasarán
                         con todo a diez
                         metros a la redonda. Se te ha avisado.
                       </p>
                       <!-- código ejecutado fin -->
                     </div>
                     <div class="row">
-                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                         <!-- código HTML -->
                         <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
@@ -341,7 +341,7 @@
                       </pre>
                         <!-- código HTML -->
                       </div>
-                      <div class="ej-code-css col-lg-6 mb-3">
+                      <div class="code-example__css-panel col-lg-6 mb-3">
                         <!-- código CSS -->
                         <pre data-src-status="loaded" tabindex="0">
                         <code class="language-css" data-prismjs-copy="Copy">
@@ -402,7 +402,7 @@
                   Los navegadores aplican automáticamente los siguientes
                   estilos CSS:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-css" data-prismjs-copy="Copy">
                        b {
@@ -494,7 +494,7 @@
                   <li>
                     <span class="fw-bold">Clases CSS</span>: Definir una clase
                     en una hoja de estilos:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-css" data-prismjs-copy="Copy">
                             .fw-bold {
@@ -504,7 +504,7 @@
                         </pre>
                     </div>
                     <p>Y usarla en HTML:</p>
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;p>Texto normal y &lt;span class="fw-bold">texto en negrita&lt;/span> con CSS.&lt;/p>
@@ -514,7 +514,7 @@
                   </li>
                   <li>
                     <span class="fw-bold">Estilo en línea (no recomendado)</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;span style="font-weight: bold;">Texto en negrita&lt;/span>
@@ -549,7 +549,7 @@
               <!-- Alternativas CSS recomendadas fin -->
             </div>
             <!-- Etiquetas HTML <b> Negrita y <strong> Importante fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Etiquetas HTML <i> Itálica y <em> Énfasis -->
             <div id="etiquetas-html-i-italica-y-em-enfasis">
@@ -686,33 +686,33 @@
                     </p>
 
                     <!-- Ejemplo -->
-                    <div class="ej-ejemplo">
-                      <div class="row ej-ejecutado mt-3">
+                    <div class="code-example">
+                      <div class="row code-example__output mt-3">
                         <!-- código ejecutado -->
                         <p>
-                          <em class="ej-em">&lt;em>: para énfasis contextual:</em>
+                          <em class="demo-content__em">&lt;em>: para énfasis contextual:</em>
                         </p>
                         <p>
                           No puedes
-                          <em class="ej-em">solo</em> copiar código sin
+                          <em class="demo-content__em">solo</em> copiar código sin
                           entenderlo.
                         </p>
                         <br />
                         <p>
-                          <strong class="ej-strong">&lt;strong> para importancia crítica:</strong>
+                          <strong class="demo-content__strong">&lt;strong> para importancia crítica:</strong>
                         </p>
                         <p>
-                          <strong class="ej-strong">Advertencia</strong>: para
+                          <strong class="demo-content__strong">Advertencia</strong>: para
                           importancia crítica.
                         </p>
                         <p>
                           El plazo vence
-                          <strong class="ej-strong">mañana</strong>.
+                          <strong class="demo-content__strong">mañana</strong>.
                         </p>
                         <!-- código ejecutado fin -->
                       </div>
                       <div class="row">
-                        <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                           <pre data-src-status="loaded" tabindex="0">
                               <code
                                 class="language-html"
@@ -729,7 +729,7 @@
                               </code>
                             </pre>
                         </div>
-                        <div class="ej-code-css col-lg-6 mb-3">
+                        <div class="code-example__css-panel col-lg-6 mb-3">
                           <pre data-src-status="loaded" tabindex="0">
                             <code class="language-css" data-prismjs-copy="Copy">
                               <!-- código CSS -->
@@ -854,7 +854,7 @@
                   Los navegadores aplican automáticamente los siguientes
                   estilos CSS:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-css" data-prismjs-copy="Copy">
                         i {
@@ -889,25 +889,25 @@
                 </p>
 
                 <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
+                <div class="code-example">
+                  <div class="row code-example__output mt-3">
                     <!-- código ejecutado -->
                     <p>
-                      Guarda <em class="ej-em">siempre</em> una copia de
+                      Guarda <em class="demo-content__em">siempre</em> una copia de
                       seguridad antes de actualizar.
                     </p>
                     <p>
-                      Lee <em class="ej-em">toda</em> la documentación antes
+                      Lee <em class="demo-content__em">toda</em> la documentación antes
                       de empezar.
                     </p>
                     <p>
-                      Prueba el código <em class="ej-em">primero</em> en el
+                      Prueba el código <em class="demo-content__em">primero</em> en el
                       entorno de desarrollo.
                     </p>
                     <!-- código ejecutado fin -->
                   </div>
                   <div class="row">
-                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                    <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                       <!-- código HTML -->
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
@@ -926,7 +926,7 @@
                         </pre>
                       <!-- código HTML -->
                     </div>
-                    <div class="ej-code-css col-lg-6 mb-3">
+                    <div class="code-example__css-panel col-lg-6 mb-3">
                       <!-- código CSS -->
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-css" data-prismjs-copy="Copy">
@@ -951,31 +951,31 @@
                   ejemplo:
                 </p>
                 <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
+                <div class="code-example">
+                  <div class="row code-example__output mt-3">
                     <!-- código ejecutado -->
                     <p class="fw-bold text-info">
                       Palabras en idiomas extranjeros:
                     </p>
                     <p>
-                      El término <i class="ej-i">zeitgeist</i> describe el
+                      El término <i class="demo-content__i">zeitgeist</i> describe el
                       espíritu de una época.
                     </p>
                     <p>
-                      Ordené <i class="ej-i">ramen</i> y
-                      <i class="ej-i">tempura</i> en el restaurante.
+                      Ordené <i class="demo-content__i">ramen</i> y
+                      <i class="demo-content__i">tempura</i> en el restaurante.
                     </p>
                     <br />
                     <p class="fw-bold text-info">
                       Nombres científicos y términos técnicos:
                     </p>
                     <p>
-                      El <i class="ej-i">Tyrannosaurus rex</i> fue uno de los
+                      El <i class="demo-content__i">Tyrannosaurus rex</i> fue uno de los
                       dinosaurios más grandes.
                     </p>
                     <p>
                       La vitamina se llama técnicamente
-                      <i class="ej-i">ácido ascórbico</i>.
+                      <i class="demo-content__i">ácido ascórbico</i>.
                     </p>
                     <br />
                     <p class="fw-bold text-info">
@@ -983,18 +983,18 @@
                     </p>
                     <p>
                       Acabo de terminar de leer
-                      <i class="ej-i">El Quijote</i>.
+                      <i class="demo-content__i">El Quijote</i>.
                     </p>
                     <p>
-                      Mi serie favorita es <i class="ej-i">Breaking Bad</i>.
+                      Mi serie favorita es <i class="demo-content__i">Breaking Bad</i>.
                     </p>
                     <br />
                     <p class="fw-bold text-info">
                       Nombres de vehículos, barcos, naves:
                     </p>
-                    <p>El <i class="ej-i">Titanic</i> se hundió en 1912.</p>
+                    <p>El <i class="demo-content__i">Titanic</i> se hundió en 1912.</p>
                     <p>
-                      La misión <i class="ej-i">Apollo 11</i> llegó a la Luna.
+                      La misión <i class="demo-content__i">Apollo 11</i> llegó a la Luna.
                     </p>
                     <br />
                     <p class="fw-bold text-info">
@@ -1002,10 +1002,10 @@
                     </p>
                     <p>
                       Miró el examen y pensó:
-                      <i class="ej-i">Esto va a estar difícil</i>.
+                      <i class="demo-content__i">Esto va a estar difícil</i>.
                     </p>
                     <p>
-                      <i class="ej-i">¿Será esta la decisión correcta?</i>, se
+                      <i class="demo-content__i">¿Será esta la decisión correcta?</i>, se
                       preguntó María.
                     </p>
                     <br />
@@ -1014,7 +1014,7 @@
                       vez:
                     </p>
                     <p>
-                      Un <i class="ej-i">framework</i> es una estructura base
+                      Un <i class="demo-content__i">framework</i> es una estructura base
                       para desarrollar software.
                     </p>
                     <p>
@@ -1026,14 +1026,14 @@
                       Uso mixto: se pueden combinar con&lt;strong>:
                     </p>
                     <p>
-                      El usuario <i class="ej-i">admin</i> debe presionar el
+                      El usuario <i class="demo-content__i">admin</i> debe presionar el
                       botón
-                      <em class="ej-em">Enviar <strong class="ej-strong">ahora</strong></em>.
+                      <em class="demo-content__em">Enviar <strong class="demo-content__strong">ahora</strong></em>.
                     </p>
                     <!-- código ejecutado fin -->
                   </div>
                   <div class="row">
-                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                    <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                       <!-- código HTML -->
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
@@ -1067,7 +1067,7 @@
                         </pre>
                       <!-- código HTML -->
                     </div>
-                    <div class="ej-code-css col-lg-6 mb-3">
+                    <div class="code-example__css-panel col-lg-6 mb-3">
                       <!-- código CSS -->
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-css" data-prismjs-copy="Copy">
@@ -1154,7 +1154,7 @@
                   <li>
                     <span class="fw-bold">Clases CSS</span>: Definir una clase
                     en una hoja de estilos:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-css" data-prismjs-copy="Copy">
                             .fst-italic { 
@@ -1164,7 +1164,7 @@
                         </pre>
                     </div>
                     <p>Y usarla en HTML:</p>
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;span class="fst-italic">Palabra en cursiva&lt;/span>
@@ -1174,7 +1174,7 @@
                   </li>
                   <li>
                     <span class="fw-bold">Estilo en línea (no recomendado)</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;span font-style: italic;;">Texto en cursiva&lt;/span>
@@ -1210,7 +1210,7 @@
               <!-- Alternativas CSS recomendadas fin -->
             </div>
             <!-- Etiquetas HTML <i> Itálica y <em> Énfasis Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Etiqueta HTML <small> Pequeño -->
             <div id="etiqueta-html-small-pequeno">
@@ -1408,7 +1408,7 @@
                     la jerarquía visual y el propósito semántico del elemento
                     como contenido secundario o complementario.
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-css" data-prismjs-copy="Copy">
                           small {
@@ -1429,8 +1429,8 @@
                     <code class="language-html">&lt;small></code>
                   </h3>
                   <!-- Ejemplo -->
-                  <div class="ej-ejemplo">
-                    <div class="row ej-ejecutado mt-3">
+                  <div class="code-example">
+                    <div class="row code-example__output mt-3">
                       <!-- código ejecutado -->
                       <div>
                         <p>
@@ -1456,7 +1456,7 @@
                         </p>
                         <br />
                         <p class="d-block">Texto legal en formularios:</p>
-                        <form class="form">
+                        <form class="site-content__form">
                           <label for="email">Email:</label>
                           <input type="email" id="email" name="email" />
                           <small>Al suscribirse, acepta recibir emails
@@ -1467,7 +1467,7 @@
                       <!-- código ejecutado fin -->
                     </div>
                     <div class="row">
-                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                         <!-- código HTML -->
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" data-prismjs-copy="Copy">
@@ -1495,7 +1495,7 @@
                                 &lt;/p>
                                 &lt;br />
                                 &lt;p class="d-block">Texto legal en formularios:&lt;/p>
-                                &lt;form class="form">
+                                &lt;form class="site-content__form">
                                   &lt;label for="email">Email:&lt;/label>
                                   &lt;input type="email" id="email" name="email" />
                                   &lt;small
@@ -1509,7 +1509,7 @@
                           </pre>
                         <!-- código HTML -->
                       </div>
-                      <div class="ej-code-css col-lg-6 mb-3">
+                      <div class="code-example__css-panel col-lg-6 mb-3">
                         <!-- código CSS -->
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-css" data-prismjs-copy="Copy">
@@ -1598,7 +1598,7 @@
                     Si el texto pequeño es necesario únicamente por razones
                     visuales, utilizar CSS:
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-css" data-prismjs-copy="Copy">
                           /* Para texto decorativo o de diseño */
@@ -1631,7 +1631,7 @@
               </div>
             </div>
             <!-- Etiqueta HTML <small> Pequeño Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Etiquetas HTML <del> Borrado y <ins> Insertado -->
             <div id="etiquetas-html-del-borrado-y-ins-insertado">
@@ -1760,7 +1760,7 @@
                     <code class="language-html">&lt;ins></code>,
                     proporcionando contexto adicional para mejorar la
                     trazabilidad y compatibilidad con tecnologías asistivas:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;p>El precio del producto es
@@ -1780,7 +1780,7 @@
                     el seguimiento temporal de los cambios y mejorando la
                     interacción con tecnologías asistivas, se debe utilizar el
                     formato ISO 8601:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;p>La reunión será el
@@ -1799,7 +1799,7 @@
                     que los cambios sean accesibles y comprensibles para
                     usuarios de lectores de pantalla, promoviendo
                     inclusividad:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;p>El estado del pedido es:
@@ -1820,7 +1820,7 @@
                     <span class="fw-bold"><code class="language-html">Title</code></span>: Proporciona información
                     adicional que aparece como
                     tooltip al pasar el mouse sobre el elemento:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;p>El nombre de la empresa es &lt;del title="Nombre anterior antes de la fusión">TechCorp&lt;/del>
@@ -1871,7 +1871,7 @@
                   <li>
                     <span class="fw-bold">Estilos Predeterminados para
                       <code class="language-html">&lt;del></code></span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-css" data-prismjs-copy="Copy">
                             del {
@@ -1890,7 +1890,7 @@
                   <li>
                     <span class="fw-bold">Estilos Predeterminados para
                       <code class="language-html">&lt;ins></code></span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-css" data-prismjs-copy="Copy">
                             ins {
@@ -1912,8 +1912,8 @@
                   <code class="language-html">&lt;ins></code>
                 </h3>
                 <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
+                <div class="code-example">
+                  <div class="row code-example__output mt-3">
                     <!-- código ejecutado -->
                     <div>
                       <p class="fw-bold">
@@ -1975,7 +1975,7 @@
                     <!-- código ejecutado fin -->
                   </div>
                   <div class="row">
-                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                    <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                       <!-- código HTML -->
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
@@ -1983,11 +1983,11 @@
                               &lt;p class="fw-bold">
                                 Ejemplos básicos de uso de
                                 &lt;code class="language-html"
-                                  >&lt;span class="token tag"
-                                    >&lt;span class="token tag"
-                                      >&lt;span class="token ej-punctuation">&lt;&lt;/span
+                                  >&lt;span class="token site-content__tag"
+                                    >&lt;span class="token site-content__tag"
+                                      >&lt;span class="token demo-content__punctuation">&lt;&lt;/span
                                       >sup&lt;/span
-                                    >&lt;span class="token ej-punctuation">&gt;&lt;/span>&lt;/span
+                                    >&lt;span class="token demo-content__punctuation">&gt;&lt;/span>&lt;/span
                                   >&lt;/code
                                 >:
                               &lt;/p>
@@ -2025,11 +2025,11 @@
                               &lt;p class="fw-bold">
                                 Ejemplos de
                                 &lt;code class="language-html"
-                                  >&lt;span class="token tag"
-                                    >&lt;span class="token tag"
-                                      >&lt;span class="token ej-punctuation">&lt;&lt;/span
+                                  >&lt;span class="token site-content__tag"
+                                    >&lt;span class="token site-content__tag"
+                                      >&lt;span class="token demo-content__punctuation">&lt;&lt;/span
                                       >sub&lt;/span
-                                    >&lt;span class="token ej-punctuation">&gt;&lt;/span>&lt;/span
+                                    >&lt;span class="token demo-content__punctuation">&gt;&lt;/span>&lt;/span
                                   >&lt;/code
                                 >:
                               &lt;/p>
@@ -2071,7 +2071,7 @@
                         </pre>
                       <!-- código HTML -->
                     </div>
-                    <div class="ej-code-css col-lg-6 mb-3">
+                    <div class="code-example__css-panel col-lg-6 mb-3">
                       <!-- código CSS -->
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-css" data-prismjs-copy="Copy">
@@ -2148,16 +2148,16 @@
                   usar elementos <code class="language-html">span</code> con
                   clases personalizadas:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;p>
-                          Precio anterior: &lt;span class="tachado">$50&lt;/span>,
-                          nuevo precio: &lt;span class="resaltado">$40&lt;/span>
+                          Precio anterior: &lt;span class="site-content__tachado">$50&lt;/span>,
+                          nuevo precio: &lt;span class="site-content__resaltado">$40&lt;/span>
                         &lt;/p>
                       </code>
                     </pre>
-                  <div class="ej-sintaxis"></div>
+                  <div class="code-example__syntax"></div>
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-css" data-prismjs-copy="Copy">
                         .tachado {
@@ -2192,20 +2192,20 @@
                     </code>
                   </pre>
                 <p>Para comparaciones de precios complejas:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;!--  Estructura más semántica --&gt;
-                        &lt;div class="price-comparison">
-                            &lt;span class="price-old" aria-label="precio anterior">$29.99&lt;/span>
-                            &lt;span class="price-current" aria-label="precio actual">$19.99&lt;/span>
-                            &lt;span class="discount">33% descuento&lt;/span>
+                        &lt;div class="site-content__price-comparison">
+                            &lt;span class="site-content__price-old" aria-label="precio anterior">$29.99&lt;/span>
+                            &lt;span class="site-content__price-current" aria-label="precio actual">$19.99&lt;/span>
+                            &lt;span class="site-content__discount">33% descuento&lt;/span>
                         &lt;/div>
                       </code>
                     </pre>
                 </div>
                 <p>Componentes modernos con CSS:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-css" data-prismjs-copy="Copy">
                       .revision-block {
@@ -2238,7 +2238,7 @@
               <!-- Alternativas CSS recomendadas <del> y <ins> fin -->
             </div>
             <!-- Etiquetas HTML <del> Borrado y <ins> Insertado Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Etiquetas HTML <sup> Superíndice y <sub> Subíndice -->
             <div id="etiquetas-html-sup-superindice-e-sub-subindice">
@@ -2411,7 +2411,7 @@
                         Agregar un atributo
                         <code class="language-html">aria-label</code> o usar
                         etiquetas explicativas cuando el contexto lo requiera:
-                        <div class="ej-sintaxis">
+                        <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-html" data-prismjs-copy="Copy">
                                 &lt;!-- Añadir contexto con aria-label --&gt;
@@ -2422,7 +2422,7 @@
 
                                 &lt;!-- Proporcionar texto alternativo --&gt;
                                 &lt;p>Einstein demostró que E=mc&lt;sup>2&lt;/sup>
-                                  &lt;span class="sr-only">(E igual a m por c al cuadrado)&lt;/span>&lt;/p>
+                                  &lt;span class="site-accessibility__sr-only">(E igual a m por c al cuadrado)&lt;/span>&lt;/p>
                               </code>
                             </pre>
                         </div>
@@ -2458,7 +2458,7 @@
                   Los navegadores aplican estilos predefinidos para estas
                   etiquetas:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-css" data-prismjs-copy="Copy">
                         sup {
@@ -2481,7 +2481,7 @@
                     class="language-html">sub</code>).
                 </p>
                 <p>Personalización común:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-css" data-prismjs-copy="Copy">
                         sup, sub {
@@ -2512,18 +2512,18 @@
                   <code class="language-html">&lt;sub></code>
                 </h3>
                 <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
+                <div class="code-example">
+                  <div class="row code-example__output mt-3">
                     <!-- código ejecutado -->
                     <div>
                       <p class="fw-bold">
                         Ejemplos básicos de uso de
-                        <code class="language-html"><span class="ej-token-tag"
-                              ><span class="ej-token-tag"
-                                ><span class="ej-token ej-punctuation"
+                        <code class="language-html"><span class="demo-content__token-tag"
+                              ><span class="demo-content__token-tag"
+                                ><span class="demo-content__token demo-content__punctuation"
                                   >&lt;</span
                                 >sup</span
-                              ><span class="ej-token ej-punctuation"
+                              ><span class="demo-content__token demo-content__punctuation"
                                 >&gt;</span
                               ></span
                             ></code>
@@ -2547,12 +2547,12 @@
                       </p>
                       <p class="fw-bold">
                         Ejemplos de
-                        <code class="language-html"><span class="ej-token-tag"
-                              ><span class="ej-token-tag"
-                                ><span class="ej-token ej-punctuation"
+                        <code class="language-html"><span class="demo-content__token-tag"
+                              ><span class="demo-content__token-tag"
+                                ><span class="demo-content__token demo-content__punctuation"
                                   >&lt;</span
                                 >sub</span
-                              ><span class="ej-token ej-punctuation"
+                              ><span class="demo-content__token demo-content__punctuation"
                                 >&gt;</span
                               ></span
                             ></code>:
@@ -2581,14 +2581,14 @@
                     <!-- código ejecutado fin -->
                   </div>
                   <div class="row">
-                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                    <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                       <!-- código HTML -->
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             <div>
                             &lt;p class="fw-bold">
                             Ejemplos básicos de uso de
-                            &lt;code class="language-html">&lt;span class="token tag">&lt;span class="token tag">&lt;span class="token ej-punctuation">&lt;&lt;/span>sup&lt;/span>&lt;span class="token ej-punctuation">&gt;&lt;/span>&lt;/span>&lt;/code>
+                            &lt;code class="language-html">&lt;span class="token site-content__tag">&lt;span class="token site-content__tag">&lt;span class="token demo-content__punctuation">&lt;&lt;/span>sup&lt;/span>&lt;span class="token demo-content__punctuation">&gt;&lt;/span>&lt;/span>&lt;/code>
                           &lt;/p>
                           &lt;p>
                             Exponente en Matemáticas: El valor de 2&lt;sup >3&lt;/sup>
@@ -2610,7 +2610,7 @@
                           &lt;/p>
                           &lt;p class="fw-bold">
                             Ejemplos de
-                            &lt;code class="language-html">&lt;span class="token tag">&lt;span class="token tag">&lt;span class="token ej-punctuation">&lt;&lt;/span>sub&lt;/span>&lt;span class="token ej-punctuation">&gt;&lt;/span>&lt;/span>&lt;/code>:
+                            &lt;code class="language-html">&lt;span class="token site-content__tag">&lt;span class="token site-content__tag">&lt;span class="token demo-content__punctuation">&lt;&lt;/span>sub&lt;/span>&lt;span class="token demo-content__punctuation">&gt;&lt;/span>&lt;/span>&lt;/code>:
                           &lt;/p>
                           &lt;p>
                             Fórmula Química: La fórmula del agua es H&lt;sub>2&lt;/sub>O.
@@ -2636,7 +2636,7 @@
                         </pre>
                       <!-- código HTML -->
                     </div>
-                    <div class="ej-code-css col-lg-6 mb-3">
+                    <div class="code-example__css-panel col-lg-6 mb-3">
                       <!-- código CSS -->
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-css" data-prismjs-copy="Copy">
@@ -2718,7 +2718,7 @@
                   Cuando se desee crear el efecto visual sin usar etiquetas
                   semánticas, puede emplearse CSS:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-css" data-prismjs-copy="Copy">
                         /* Alternativa CSS para superíndice decorativo */
@@ -2760,7 +2760,7 @@
             </div>
             <!-- Etiquetas HTML <sup> Superíndice y <sub> Subíndice Fin -->
           </div>
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Etiquetas HTML <code> Código de Programación -->
           <div id="etiquetas-html-code-codigo-de-programacion">
@@ -2827,7 +2827,7 @@
                 </li>
               </ul>
               <p>Por ejemplo:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-html" data-prismjs-copy="Copy">
                       &lt;p>Para imprimir un mensaje en Python, se utiliza la función &lt;code>print()&lt;/code>.&lt;/p>
@@ -2842,7 +2842,7 @@
                 <code class="language-html">&lt;pre></code> combinado con
                 <code class="language-html">&lt;code></code>: a saber:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-js" data-prismjs-copy="Copy">
                       function alertMessage() {
@@ -2891,7 +2891,7 @@
                 Configuración CSS por Defecto
                 <code class="language-html">&lt;code></code>
               </h3>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-css" data-prismjs-copy="Copy">
                     code {
@@ -2918,8 +2918,8 @@
                   <code class="language-html">&lt;code></code>
                 </h3>
                 <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
+                <div class="code-example">
+                  <div class="row code-example__output mt-3">
                     <!-- código ejecutado -->
                     <div>
                       <p>
@@ -2938,11 +2938,11 @@
                         <br />
                       </p>
 
-                      <div class="ej-code-toolbar">
-                        <pre class="language-js" tabindex="0"><code class="language-js"><span class="ej-keyword">const</span> usuarios <span class="ej-operator">=</span> <span class="ej-punctuation">[</span>
-    <span class="ej-punctuation">{</span> <span class="ej-iteral-property ej-property">id</span><span class="ej-operator">:</span> <span class="ej-number">1</span><span class="ej-punctuation">,</span> <span class="ej-iteral-property ej-property">nombre</span><span class="ej-operator">:</span> <span class="ej-string">'Ana'</span> <span class="ej-punctuation">}</span><span class="ej-punctuation">,</span>
-    <span class="ej-punctuation">{</span> <span class="ej-iteral-property ej-property">id</span><span class="ej-operator">:</span> <span class="ej-number">2</span><span class="ej-punctuation">,</span> <span class="ej-iteral-property ej-property">nombre</span><span class="ej-operator">:</span> <span class="ej-string">'Luis'</span> <span class="ej-punctuation">}</span>
-<span class="ej-punctuation">]</span><span class="ej-punctuation">;</span>  </code>
+                      <div class="demo-code__toolbar">
+                        <pre class="language-js" tabindex="0"><code class="language-js"><span class="demo-content__keyword">const</span> usuarios <span class="demo-content__operator">=</span> <span class="demo-content__punctuation">[</span>
+    <span class="demo-content__punctuation">{</span> <span class="demo-content__iteral-property demo-content__property">id</span><span class="demo-content__operator">:</span> <span class="demo-content__number">1</span><span class="demo-content__punctuation">,</span> <span class="demo-content__iteral-property demo-content__property">nombre</span><span class="demo-content__operator">:</span> <span class="demo-content__string">'Ana'</span> <span class="demo-content__punctuation">}</span><span class="demo-content__punctuation">,</span>
+    <span class="demo-content__punctuation">{</span> <span class="demo-content__iteral-property demo-content__property">id</span><span class="demo-content__operator">:</span> <span class="demo-content__number">2</span><span class="demo-content__punctuation">,</span> <span class="demo-content__iteral-property demo-content__property">nombre</span><span class="demo-content__operator">:</span> <span class="demo-content__string">'Luis'</span> <span class="demo-content__punctuation">}</span>
+<span class="demo-content__punctuation">]</span><span class="demo-content__punctuation">;</span>  </code>
                   </pre>
                       </div>
 
@@ -2966,14 +2966,14 @@
                         para verificar el tipo de dato
                       </p>
 
-                      <div id="js-tip" class="sr-only">
+                      <div id="js-tip" class="site-accessibility__sr-only">
                         Operador JavaScript para verificación de tipos
                       </div>
                     </div>
                     <!-- código ejecutado fin -->
                   </div>
                   <div class="row">
-                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                    <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                       <!-- código HTML -->
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
@@ -2996,13 +2996,13 @@
                                 &lt;br />
                               &lt;/p>
 
-                              &lt;div class="code-toolbar">
+                              &lt;div class="site-content__code-toolbar">
                                 &lt;pre
                                   class="language-js"
                                   tabindex="0"
-                                >&lt;code class="language-js">&lt;span class="keyword">const&lt;/span> usuarios &lt;span class="operator">=&lt;/span> &lt;span class="punctuation">[&lt;/span>
-                                    &lt;span class="punctuation">{&lt;/span> &lt;span class="literal-property property">id&lt;/span>&lt;span class="operator">:&lt;/span> &lt;span class="number">1&lt;/span>&lt;span class="punctuation">,&lt;/span> &lt;span class="literal-property property">nombre&lt;/span>&lt;span class="operator">:&lt;/span> &lt;span class="string">'Ana'&lt;/span> &lt;span class="punctuation">}&lt;/span>&lt;span class="punctuation">,&lt;/span>
-                                    &lt;span class="punctuation">{&lt;/span> &lt;span class="literal-property property">id&lt;/span>&lt;span class="operator">:&lt;/span> &lt;span class="number">2&lt;/span>&lt;span class="punctuation">,&lt;/span> &lt;span class="literal-property property">nombre&lt;/span>&lt;span class="operator">:&lt;/span> &lt;span class="string">'Luis'&lt;/span> &lt;span class="punctuation">}&lt;/span>
+                                >&lt;code class="language-js">&lt;span class="keyword">const&lt;/span> usuarios &lt;span class="site-content__operator">=&lt;/span> &lt;span class="punctuation">[&lt;/span>
+                                    &lt;span class="punctuation">{&lt;/span> &lt;span class="site-content__literal-property property">id&lt;/span>&lt;span class="site-content__operator">:&lt;/span> &lt;span class="number">1&lt;/span>&lt;span class="punctuation">,&lt;/span> &lt;span class="site-content__literal-property property">nombre&lt;/span>&lt;span class="site-content__operator">:&lt;/span> &lt;span class="string">'Ana'&lt;/span> &lt;span class="punctuation">}&lt;/span>&lt;span class="punctuation">,&lt;/span>
+                                    &lt;span class="punctuation">{&lt;/span> &lt;span class="site-content__literal-property property">id&lt;/span>&lt;span class="site-content__operator">:&lt;/span> &lt;span class="number">2&lt;/span>&lt;span class="punctuation">,&lt;/span> &lt;span class="site-content__literal-property property">nombre&lt;/span>&lt;span class="site-content__operator">:&lt;/span> &lt;span class="string">'Luis'&lt;/span> &lt;span class="punctuation">}&lt;/span>
                                 &lt;span class="punctuation">]&lt;/span>&lt;span class="punctuation">;&lt;/span>&lt;/code>&lt;/pre>
                               &lt;/div>
 
@@ -3026,7 +3026,7 @@
                                 para verificar el tipo de dato
                               &lt;/p>
 
-                              &lt;div id="js-tip" class="sr-only">
+                              &lt;div id="js-tip" class="site-accessibility__sr-only">
                                 Operador JavaScript para verificación de tipos
                               &lt;/div>
                     
@@ -3035,7 +3035,7 @@
                       </pre>
                       <!-- código HTML -->
                     </div>
-                    <div class="ej-code-css col-lg-6 mb-3">
+                    <div class="code-example__css-panel col-lg-6 mb-3">
                       <!-- código CSS -->
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-css" data-prismjs-copy="Copy">
@@ -3152,7 +3152,7 @@
                   <code class="language-html">&lt;code></code>, se pueden usar
                   las siguientes recomendaciones CSS:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-css" data-prismjs-copy="Copy">
                       code {
@@ -3176,7 +3176,7 @@
                   <code class="language-html">&lt;code></code>
                 </h4>
                 <p>Estilo minimalista:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-css" data-prismjs-copy="Copy">
                         code {
@@ -3191,7 +3191,7 @@
                     </pre>
                 </div>
                 <p>Tema oscuro:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-css" data-prismjs-copy="Copy">
                         @media (prefers-color-scheme: dark) {
@@ -3205,7 +3205,7 @@
                     </pre>
                 </div>
                 <p>Para código inline vs bloques:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-css" data-prismjs-copy="Copy">
                         code {
@@ -3230,7 +3230,7 @@
               <!-- Estilos base modernos para <code> fin -->
             </div>
             <!-- Alternativas CSS recomendadas <code> fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Etiquetas HTML <code> Código de Programación Fin -->
           </div>
@@ -3365,7 +3365,7 @@
                 La mayoría de navegadores aplican estos estilos por defecto al
                 elemento <code class="language-html">&lt;kbd></code>:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-css" data-prismjs-copy="Copy">
                       kbd {
@@ -3390,8 +3390,8 @@
                 Ejemplos de código <code class="language-html">&lt;kbd></code>
               </h3>
               <!-- Ejemplo -->
-              <div class="ej-ejemplo">
-                <div class="row ej-ejecutado mt-3">
+              <div class="code-example">
+                <div class="row code-example__output mt-3">
                   <!-- código ejecutado -->
                   <div>
                     <div>
@@ -3414,22 +3414,22 @@
 
                     <div>
                       <p class="h3">Comandos de terminal</p>
-                      <div class="ej-instructions">
+                      <div class="demo-content__instructions">
                         <p>Para instalar las dependencias del proyecto:</p>
-                        <div class="ej-code-block">
+                        <div class="demo-code__block">
                           $ <kbd>npm install</kbd>
                         </div>
                       </div>
 
-                      <div class="ej-instructions">
+                      <div class="demo-content__instructions">
                         <p>Para ver el historial de git:</p>
-                        <div class="ej-code-block">
+                        <div class="demo-code__block">
                           $ <kbd>git log --oneline</kbd>
                         </div>
                       </div>
-                      <div class="ej-instructions">
+                      <div class="demo-content__instructions">
                         <p>Para crear un nuevo directorio:</p>
-                        <div class="ej-code-block">
+                        <div class="demo-code__block">
                           $ <kbd>mkdir mi-proyecto</kbd>
                         </div>
                       </div>
@@ -3462,7 +3462,7 @@
                   <!-- código ejecutado fin -->
                 </div>
                 <div class="row">
-                  <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                  <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                     <!-- código HTML -->
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
@@ -3486,22 +3486,22 @@
 
                       &lt;div>
                         &lt;p class="h3">Comandos de terminal&lt;/p>
-                        &lt;div class="instructions">
+                        &lt;div class="site-content__instructions">
                           &lt;p>Para instalar las dependencias del proyecto:&lt;/p>
-                          &lt;div class="code-block">
+                          &lt;div class="site-content__code-block">
                             $ &lt;kbd>npm install&lt;/kbd>
                           &lt;/div>
                         &lt;/div>
 
-                        &lt;div class="instructions">
+                        &lt;div class="site-content__instructions">
                           &lt;p>Para ver el historial de git:&lt;/p>
-                          &lt;div class="code-block">
+                          &lt;div class="site-content__code-block">
                             $ &lt;kbd>git log --oneline&lt;/kbd>
                           &lt;/div>
                         &lt;/div>
-                        &lt;div class="instructions">
+                        &lt;div class="site-content__instructions">
                           &lt;p>Para crear un nuevo directorio:&lt;/p>
-                          &lt;div class="code-block">
+                          &lt;div class="site-content__code-block">
                             $ &lt;kbd>mkdir mi-proyecto&lt;/kbd>
                           &lt;/div>
                         &lt;/div>
@@ -3535,7 +3535,7 @@
                       </pre>
                     <!-- código HTML -->
                   </div>
-                  <div class="ej-code-css col-lg-6 mb-3">
+                  <div class="code-example__css-panel col-lg-6 mb-3">
                     <!-- código CSS -->
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-css" data-prismjs-copy="Copy">
@@ -3620,7 +3620,7 @@
                 <code class="language-html">&lt;kbd></code>
               </h3>
               <p>Estilo moderno con gradiente sutil:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-css" data-prismjs-copy="Copy">
                       kbd {
@@ -3645,7 +3645,7 @@
                   </pre>
               </div>
               <p>Para modo oscuro:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-css" data-prismjs-copy="Copy">
                       @media (prefers-color-scheme: dark) {
@@ -3665,7 +3665,7 @@
             <!-- Alternativas CSS recomendadas <kbd> fin -->
           </div>
           <!-- Etiquetas HTML <kbd> Entrada del Teclado Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Etiquetas HTML <samp> Salida de un programa -->
           <div id="etiquetas-html-samp-salida-de-un-programa">
@@ -3766,7 +3766,7 @@
                 estilo similar al de
                 <code class="language-html">&lt;code></code>, es decir:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-css" data-prismjs-copy="Copy">
                       samp {
@@ -3788,8 +3788,8 @@
                 <code class="language-html">&lt;samp></code>
               </h3>
               <!-- Ejemplo -->
-              <div class="ej-ejemplo">
-                <div class="row ej-ejecutado mt-3">
+              <div class="code-example">
+                <div class="row code-example__output mt-3">
                   <!-- código ejecutado -->
                   <div>
                     <h3>Salida básica de terminal</h3>
@@ -3807,21 +3807,21 @@
                   <div>
                     <h3>Mensajes de error del sistema</h3>
                     <p>Error típico de permisos:</p>
-                    <samp class="ej-error-output">Permission denied: cannot access
+                    <samp class="demo-content__error-output">Permission denied: cannot access
                       '/root/protected_file'</samp>
 
                     <p>Error de archivo no encontrado:</p>
-                    <samp class="ej-error-output">bash: comando_inexistente: command not found</samp>
+                    <samp class="demo-content__error-output">bash: comando_inexistente: command not found</samp>
                   </div>
 
                   <div>
                     <h3>Salida de compilador</h3>
                     <p>Mensaje de compilación exitosa:</p>
-                    <samp class="ej-success-output">Build successful! ✓ Compiled successfully in 2.34s ✓
+                    <samp class="demo-content__success-output">Build successful! ✓ Compiled successfully in 2.34s ✓
                       Assets optimized ✓ Ready for production</samp>
 
                     <p>Errores de compilación:</p>
-                    <samp class="ej-error-output">Error: Syntax error in main.js:15:7 Expected ';' but
+                    <samp class="demo-content__error-output">Error: Syntax error in main.js:15:7 Expected ';' but
                       found 'const' Warning: Unused variable 'unusedVar' in
                       utils.js:42</samp>
                   </div>
@@ -3834,11 +3834,11 @@
                     </p>
                     <p>Salida: <samp>v18.17.0</samp></p>
 
-                    <div class="ej-code-block">
+                    <div class="demo-code__block">
                       <code class="language-html">console.log("Hola mundo");</code>
                     </div>
                     <p>Resultado:</p>
-                    <samp class="ej-custom-samp">Hola mundo</samp>
+                    <samp class="demo-content__custom-samp">Hola mundo</samp>
                   </div>
                   <div>
                     <h3>Con atributos ARIA para accesibilidad</h3>
@@ -3852,7 +3852,7 @@
                   <!-- código ejecutado fin -->
                 </div>
                 <div class="row">
-                  <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                  <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                     <!-- código HTML -->
                     <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
@@ -3873,21 +3873,21 @@
                               &lt;div>
                                 &lt;h3>Mensajes de error del sistema&lt;/h3>
                                 &lt;p>Error típico de permisos:&lt;/p>
-                                &lt;samp class="error-output">Permission denied: cannot access
+                                &lt;samp class="site-content__error-output">Permission denied: cannot access
                                   '/root/protected_file'&lt;/samp>
 
                                 &lt;p>Error de archivo no encontrado:&lt;/p>
-                                &lt;samp class="error-output">bash: comando_inexistente: command not found&lt;/samp>
+                                &lt;samp class="site-content__error-output">bash: comando_inexistente: command not found&lt;/samp>
                               &lt;/div>
 
                               &lt;div>
                                 &lt;h3>Salida de compilador&lt;/h3>
                                 &lt;p>Mensaje de compilación exitosa:&lt;/p>
-                                &lt;samp class="success-output">Build successful! ✓ Compiled successfully in 2.34s ✓
+                                &lt;samp class="site-content__success-output">Build successful! ✓ Compiled successfully in 2.34s ✓
                                   Assets optimized ✓ Ready for production&lt;/samp>
 
                                 &lt;p>Errores de compilación:&lt;/p>
-                                &lt;samp class="error-output">Error: Syntax error in main.js:15:7 Expected ';' but
+                                &lt;samp class="site-content__error-output">Error: Syntax error in main.js:15:7 Expected ';' but
                                   found 'const' Warning: Unused variable 'unusedVar' in
                                   utils.js:42&lt;/samp>
                               &lt;/div>
@@ -3900,11 +3900,11 @@
                                 &lt;/p>
                                 &lt;p>Salida: &lt;samp>v18.17.0&lt;/samp>&lt;/p>
 
-                                &lt;div class="code-block">
+                                &lt;div class="site-content__code-block">
                                   &lt;code class="language-html">console.log("Hola mundo");&lt;/code>
                                 &lt;/div>
                                 &lt;p>Resultado:&lt;/p>
-                                &lt;samp class="custom-samp">Hola mundo&lt;/samp>
+                                &lt;samp class="site-content__custom-samp">Hola mundo&lt;/samp>
                               &lt;/div>
                               &lt;div>
                                 &lt;h3>Con atributos ARIA para accesibilidad&lt;/h3>
@@ -3919,7 +3919,7 @@
                         </pre>
                     <!-- código HTML -->
                   </div>
-                  <div class="ej-code-css col-lg-6 mb-3">
+                  <div class="code-example__css-panel col-lg-6 mb-3">
                     <!-- código CSS -->
                     <pre data-src-status="loaded" tabindex="0">
                           <code class="language-css" data-prismjs-copy="Copy">
@@ -4003,7 +4003,7 @@
                 </li>
                 <li>
                   Dar siempre un contexto:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;!-- Correcto: contexto claro --&gt;
@@ -4026,7 +4026,7 @@
                 Alternativas CSS recomendadas
                 <code class="language-html">&lt;samp></code>
               </h3>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-css" data-prismjs-copy="Copy">
                       /* Clase utilitaria para texto monoespaciado */
@@ -4094,7 +4094,7 @@
             <!-- Alternativas CSS recomendadas <samp> fin -->
           </div>
           <!-- Etiquetas HTML <samp> Salida de un programa Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Etiquetas HTML <var> Variable -->
           <div id="etiquetas-html-var-variable">
@@ -4211,7 +4211,7 @@
                 <code class="language-html">&lt;var></code> suele heredar las
                 siguientes propiedades CSS:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-css" data-prismjs-copy="Copy">
                     var {
@@ -4238,22 +4238,22 @@
                 Ejemplos de código <code class="language-html">&lt;var></code>
               </h3>
               <!-- Ejemplo -->
-              <div class="ej-ejemplo">
-                <div class="row ej-ejecutado mt-3">
+              <div class="code-example">
+                <div class="row code-example__output mt-3">
                   <!-- código ejecutado -->
                   <div>
                     <h3>Variables Matemáticas</h3>
                     <p>
                       En la ecuación cuadrática
-                      <var class="ej-math-var">ax²</var> +
-                      <var class="ej-math-var">bx</var> +
-                      <var class="ej-math-var">c</var> = 0, las variables
-                      <var class="ej-math-var">a</var>,
-                      <var class="ej-math-var">b</var>, y
-                      <var class="ej-math-var">c</var> son coeficientes.
+                      <var class="demo-content__math-var">ax²</var> +
+                      <var class="demo-content__math-var">bx</var> +
+                      <var class="demo-content__math-var">c</var> = 0, las variables
+                      <var class="demo-content__math-var">a</var>,
+                      <var class="demo-content__math-var">b</var>, y
+                      <var class="demo-content__math-var">c</var> son coeficientes.
                     </p>
 
-                    <div class="ej-formula">
+                    <div class="demo-content__formula">
                       <var>x</var> = (-<var>b</var> ± √(<var>b</var>² -
                       4<var>ac</var>)) / (2<var>a</var>)
                     </div>
@@ -4263,13 +4263,13 @@
                     <h3>Variables de Programación</h3>
                     <p>Para declarar una variable en JavaScript:</p>
 
-                    <code>let <var class="ej-code-var">nombreUsuario</var> =
+                    <code>let <var class="demo-content__code-var">nombreUsuario</var> =
                         prompt("Ingresa tu nombre"); console.log("Hola, " +
-                        <var class="ej-code-var">nombreUsuario</var>);</code>
+                        <var class="demo-content__code-var">nombreUsuario</var>);</code>
 
                     <p>
                       La función recibe el parámetro
-                      <var class="ej-code-var">edad</var> y retorna un valor
+                      <var class="demo-content__code-var">edad</var> y retorna un valor
                       booleano.
                     </p>
                   </div>
@@ -4278,27 +4278,27 @@
                     <h3>Constantes Físicas</h3>
                     <p>
                       La velocidad de la luz
-                      <var class="ej-physics-var">c</var> = 3 × 10⁸ m/s es
+                      <var class="demo-content__physics-var">c</var> = 3 × 10⁸ m/s es
                       fundamental en la ecuación
-                      <var class="ej-physics-var">E</var> =
-                      <var class="ej-physics-var">mc²</var>.
+                      <var class="demo-content__physics-var">E</var> =
+                      <var class="demo-content__physics-var">mc²</var>.
                     </p>
 
                     <p>
                       En la ley de Ohm:
-                      <var class="ej-physics-var">V</var> =
-                      <var class="ej-physics-var">I</var> ×
-                      <var class="ej-physics-var">R</var>, donde:
+                      <var class="demo-content__physics-var">V</var> =
+                      <var class="demo-content__physics-var">I</var> ×
+                      <var class="demo-content__physics-var">R</var>, donde:
                     </p>
                     <ul>
                       <li>
-                        <var class="ej-physics-var">V</var> es el voltaje
+                        <var class="demo-content__physics-var">V</var> es el voltaje
                       </li>
                       <li>
-                        <var class="ej-physics-var">I</var> es la corriente
+                        <var class="demo-content__physics-var">I</var> es la corriente
                       </li>
                       <li>
-                        <var class="ej-physics-var">R</var> es la resistencia
+                        <var class="demo-content__physics-var">R</var> es la resistencia
                       </li>
                     </ul>
                   </div>
@@ -4348,7 +4348,7 @@
                   <!-- código ejecutado fin -->
                 </div>
                 <div class="row">
-                  <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                  <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                     <!-- código HTML -->
                     <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
@@ -4356,15 +4356,15 @@
                               &lt;h3>Variables Matemáticas&lt;/h3>
                                 &lt;p>
                                   En la ecuación cuadrática
-                                  &lt;var class="math-var">ax²&lt;/var> +
-                                  &lt;var class="math-var">bx&lt;/var> +
-                                  &lt;var class="math-var">c&lt;/var> = 0, las variables
-                                  &lt;var class="math-var">a&lt;/var>,
-                                  &lt;var class="math-var">b&lt;/var>, y
-                                  &lt;var class="math-var">c&lt;/var> son coeficientes.
+                                  &lt;var class="site-content__math-var">ax²&lt;/var> +
+                                  &lt;var class="site-content__math-var">bx&lt;/var> +
+                                  &lt;var class="site-content__math-var">c&lt;/var> = 0, las variables
+                                  &lt;var class="site-content__math-var">a&lt;/var>,
+                                  &lt;var class="site-content__math-var">b&lt;/var>, y
+                                  &lt;var class="site-content__math-var">c&lt;/var> son coeficientes.
                                 &lt;/p>
 
-                                &lt;div class="formula">
+                                &lt;div class="site-content__formula">
                                   &lt;var>x&lt;/var> = (-&lt;var>b&lt;/var> ± √(&lt;var>b&lt;/var>² -
                                   4&lt;var>ac&lt;/var>)) / (2&lt;var>a&lt;/var>)
                                 &lt;/div>
@@ -4374,13 +4374,13 @@
                                 &lt;h3>Variables de Programación&lt;/h3>
                                 &lt;p>Para declarar una variable en JavaScript:&lt;/p>
 
-                                &lt;code >let &lt;var class="code-var">nombreUsuario&lt;/var> =
+                                &lt;code >let &lt;var class="code-example__variable">nombreUsuario&lt;/var> =
                                   prompt("Ingresa tu nombre"); console.log("Hola, " +
-                                  &lt;var class="code-var">nombreUsuario&lt;/var>);&lt;/code>
+                                  &lt;var class="code-example__variable">nombreUsuario&lt;/var>);&lt;/code>
 
                                 &lt;p>
                                   La función recibe el parámetro
-                                  &lt;var class="code-var">edad&lt;/var> y retorna un valor
+                                  &lt;var class="code-example__variable">edad&lt;/var> y retorna un valor
                                   booleano.
                                 &lt;/p>
                               &lt;/div>
@@ -4389,27 +4389,27 @@
                                 &lt;h3>Constantes Físicas&lt;/h3>
                                 &lt;p>
                                   La velocidad de la luz
-                                  &lt;var class="physics-var">c&lt;/var> = 3 × 10⁸ m/s es
+                                  &lt;var class="site-content__physics-var">c&lt;/var> = 3 × 10⁸ m/s es
                                   fundamental en la ecuación
-                                  &lt;var class="physics-var">E&lt;/var> =
-                                  &lt;var class="physics-var">mc²&lt;/var>.
+                                  &lt;var class="site-content__physics-var">E&lt;/var> =
+                                  &lt;var class="site-content__physics-var">mc²&lt;/var>.
                                 &lt;/p>
 
                                 &lt;p>
                                   En la ley de Ohm:
-                                  &lt;var class="physics-var">V&lt;/var> =
-                                  &lt;var class="physics-var">I&lt;/var> ×
-                                  &lt;var class="physics-var">R&lt;/var>, donde:
+                                  &lt;var class="site-content__physics-var">V&lt;/var> =
+                                  &lt;var class="site-content__physics-var">I&lt;/var> ×
+                                  &lt;var class="site-content__physics-var">R&lt;/var>, donde:
                                 &lt;/p>
                                 &lt;ul>
                                   &lt;li>
-                                    &lt;var class="physics-var">V&lt;/var> es el voltaje
+                                    &lt;var class="site-content__physics-var">V&lt;/var> es el voltaje
                                   &lt;/li>
                                   &lt;li>
-                                    &lt;var class="physics-var">I&lt;/var> es la corriente
+                                    &lt;var class="site-content__physics-var">I&lt;/var> es la corriente
                                   &lt;/li>
                                   &lt;li>
-                                    &lt;var class="physics-var">R&lt;/var> es la resistencia
+                                    &lt;var class="site-content__physics-var">R&lt;/var> es la resistencia
                                   &lt;/li>
                                 &lt;/ul>
                               &lt;/div>
@@ -4459,7 +4459,7 @@
                         </pre>
                     <!-- código HTML -->
                   </div>
-                  <div class="ej-code-css col-lg-6 mb-3">
+                  <div class="code-example__css-panel col-lg-6 mb-3">
                     <!-- código CSS -->
                     <pre data-src-status="loaded" tabindex="0">
                           <code class="language-css" data-prismjs-copy="Copy">
@@ -4562,7 +4562,7 @@
                 para estilo, considera estas alternativas:
               </p>
               <p>Para énfasis semántico:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-css" data-prismjs-copy="Copy">
                       .emphasis { font-style: italic; }
@@ -4571,7 +4571,7 @@
                   </pre>
               </div>
               <p>Para variables en documentación técnica:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-css" data-prismjs-copy="Copy">
                       .api-param {
@@ -4589,7 +4589,7 @@
                   </pre>
               </div>
               <p>Para fórmulas matemáticas:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-css" data-prismjs-copy="Copy">
                       .math-expression var {
@@ -4610,7 +4610,7 @@
             <!-- Alternativas CSS recomendadas <var> fin -->
           </div>
           <!-- Etiquetas HTML <var> Variable Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Etiquetas HTML <pre> Texto Preformateado -->
           <div id="etiquetas-html-pre-texto-preformateado">
@@ -4687,7 +4687,7 @@
                   espacios; por ello, se recomienda incluir una opción para
                   copiar el contenido o proporcionar un resumen y para código
                   es recomendable:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;pre role="img" aria-label="Ejemplo de código JavaScript">
@@ -4699,7 +4699,7 @@
                       </pre>
                   </div>
                   O mejor aún, usar la combinación semántica:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-css" data-prismjs-copy="Copy">
                           &lt;pre data-src-status="loaded" tabindex="0">
@@ -4743,7 +4743,7 @@
                 <code class="language-html">&lt;pre></code> en la mayoría de
                 los navegadores aplica:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-css" data-prismjs-copy="Copy">
                       pre {
@@ -4764,8 +4764,8 @@
                 Ejemplos de código <code class="language-html">&lt;pre></code>
               </h3>
               <!-- Ejemplo -->
-              <div class="ej-ejemplo">
-                <div class="row ej-ejecutado mt-3">
+              <div class="code-example">
+                <div class="row code-example__output mt-3">
                   <!-- código ejecutado -->
                   <div>
                     <p class="h3">Ejemplo básico</p>
@@ -4778,15 +4778,15 @@ Línea final
                   </div>
                   <div>
                     <p class="h3">Para código con sintaxis</p>
-                    <div class="ej-code-toolbar">
-                      <pre class="language-javascript" tabindex="0"><code class="language-javascript"><span class="token ej-keyword">const</span> usuarios <span class="token ej-operator">=</span> <span class="token ">[</span>
-    <span class="token ej-punctuation">{</span> <span class="token literal-property ej-property">nombre</span><span class="token ej-operator">:</span> <span class="token string">"Ana"</span><span class="token ej-punctuation">,</span> <span class="token literal-property ej-property">edad</span><span class="token ej-operator">:</span> <span class="token number">25</span> <span class="token ej-punctuation">}</span><span class="token ej-punctuation">,</span>
-    <span class="token ej-punctuation">{</span> <span class="token literal-property ej-property">nombre</span><span class="token ej-operator">:</span> <span class="token string">"Luis"</span><span class="token ej-punctuation">,</span> <span class="token literal-property property">edad</span><span class="token ej-operator">:</span> <span class="token number">30</span> <span class="token ej-punctuation">}</span>
-<span class="token ej-punctuation">]</span><span class="token ej-punctuation">;</span>
+                    <div class="demo-code__toolbar">
+                      <pre class="language-javascript" tabindex="0"><code class="language-javascript"><span class="token demo-content__keyword">const</span> usuarios <span class="token demo-content__operator">=</span> <span class="token">[</span>
+    <span class="token demo-content__punctuation">{</span> <span class="token site-content__literal-property demo-content__property">nombre</span><span class="token demo-content__operator">:</span> <span class="token string">"Ana"</span><span class="token demo-content__punctuation">,</span> <span class="token site-content__literal-property demo-content__property">edad</span><span class="token demo-content__operator">:</span> <span class="token number">25</span> <span class="token demo-content__punctuation">}</span><span class="token demo-content__punctuation">,</span>
+    <span class="token demo-content__punctuation">{</span> <span class="token site-content__literal-property demo-content__property">nombre</span><span class="token demo-content__operator">:</span> <span class="token string">"Luis"</span><span class="token demo-content__punctuation">,</span> <span class="token site-content__literal-property property">edad</span><span class="token demo-content__operator">:</span> <span class="token number">30</span> <span class="token demo-content__punctuation">}</span>
+<span class="token demo-content__punctuation">]</span><span class="token demo-content__punctuation">;</span>
 
-usuarios<span class="token ej-punctuation">.</span><span class="token function">forEach</span><span class="token ej-punctuation">(</span><span class="token parameter">user</span> <span class="token ej-operator">=&gt;</span> <span class="token ej-punctuation">{</span>
-    console<span class="token ej-punctuation">.</span><span class="token function">log</span><span class="token ej-punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation ej-punctuation">${</span>user<span class="token ej-punctuation">.</span>nombre<span class="token interpolation-punctuation ej-punctuation">}</span></span><span class="token string">: </span><span class="token interpolation"><span class="token interpolation-punctuation ej-punctuation">${</span>user<span class="token ej-punctuation">.</span>edad<span class="token interpolation-punctuation ej-punctuation">}</span></span><span class="token string"> años</span><span class="token template-punctuation string">`</span></span><span class="token ej-punctuation">)</span><span class="token ej-punctuation">;</span>
-<span class="token ej-punctuation">}</span><span class="token ej-punctuation">)</span><span class="token ej-punctuation">;</span>  </code>
+usuarios<span class="token demo-content__punctuation">.</span><span class="token function">forEach</span><span class="token demo-content__punctuation">(</span><span class="token parameter">user</span> <span class="token demo-content__operator">=&gt;</span> <span class="token demo-content__punctuation">{</span>
+    console<span class="token demo-content__punctuation">.</span><span class="token function">log</span><span class="token demo-content__punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation demo-content__punctuation">${</span>user<span class="token demo-content__punctuation">.</span>nombre<span class="token interpolation-punctuation demo-content__punctuation">}</span></span><span class="token string">: </span><span class="token interpolation"><span class="token interpolation-punctuation demo-content__punctuation">${</span>user<span class="token demo-content__punctuation">.</span>edad<span class="token interpolation-punctuation demo-content__punctuation">}</span></span><span class="token string"> años</span><span class="token template-punctuation string">`</span></span><span class="token demo-content__punctuation">)</span><span class="token demo-content__punctuation">;</span>
+<span class="token demo-content__punctuation">}</span><span class="token demo-content__punctuation">)</span><span class="token demo-content__punctuation">;</span>  </code>
                   </pre>
                       <div class="toolbar">
                         <div class="toolbar-item">
@@ -4811,7 +4811,7 @@ usuarios<span class="token ej-punctuation">.</span><span class="token function">
                   <!-- código ejecutado fin -->
                 </div>
                 <div class="row">
-                  <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                  <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                     <!-- código HTML -->
                     <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
@@ -4825,13 +4825,13 @@ Línea final
 &lt;/div>
 &lt;div>
   &lt;p class="h3">Para código con sintaxis&lt;/p>
-  &lt;div class="ej-code-toolbar">
-    &lt;div class="code-toolbar">&lt;pre class="language-javascript" tabindex="0">&lt;code class="language-javascript">&lt;span class="token keyword">const&lt;/span> usuarios &lt;span class="token operator">=&lt;/span> &lt;span class="token punctuation">[&lt;/span>
-    &lt;span class="token punctuation">{&lt;/span> &lt;span class="token literal-property property">nombre&lt;/span>&lt;span class="token operator">:&lt;/span> &lt;span class="token string">"Ana"&lt;/span>&lt;span class="token punctuation">,&lt;/span> &lt;span class="token literal-property property">edad&lt;/span>&lt;span class="token operator">:&lt;/span> &lt;span class="token number">25&lt;/span> &lt;span class="token punctuation">}&lt;/span>&lt;span class="token punctuation">,&lt;/span>
-    &lt;span class="token punctuation">{&lt;/span> &lt;span class="token literal-property property">nombre&lt;/span>&lt;span class="token operator">:&lt;/span> &lt;span class="token string">"Luis"&lt;/span>&lt;span class="token punctuation">,&lt;/span> &lt;span class="token literal-property property">edad&lt;/span>&lt;span class="token operator">:&lt;/span> &lt;span class="token number">30&lt;/span> &lt;span class="token punctuation">}&lt;/span>
+  &lt;div class="demo-code__toolbar">
+    &lt;div class="site-content__code-toolbar">&lt;pre class="language-javascript" tabindex="0">&lt;code class="language-javascript">&lt;span class="token keyword">const&lt;/span> usuarios &lt;span class="token site-content__operator">=&lt;/span> &lt;span class="token punctuation">[&lt;/span>
+    &lt;span class="token punctuation">{&lt;/span> &lt;span class="token site-content__literal-property property">nombre&lt;/span>&lt;span class="token site-content__operator">:&lt;/span> &lt;span class="token string">"Ana"&lt;/span>&lt;span class="token punctuation">,&lt;/span> &lt;span class="token site-content__literal-property property">edad&lt;/span>&lt;span class="token site-content__operator">:&lt;/span> &lt;span class="token number">25&lt;/span> &lt;span class="token punctuation">}&lt;/span>&lt;span class="token punctuation">,&lt;/span>
+    &lt;span class="token punctuation">{&lt;/span> &lt;span class="token site-content__literal-property property">nombre&lt;/span>&lt;span class="token site-content__operator">:&lt;/span> &lt;span class="token string">"Luis"&lt;/span>&lt;span class="token punctuation">,&lt;/span> &lt;span class="token site-content__literal-property property">edad&lt;/span>&lt;span class="token site-content__operator">:&lt;/span> &lt;span class="token number">30&lt;/span> &lt;span class="token punctuation">}&lt;/span>
 &lt;span class="token punctuation">]&lt;/span>&lt;span class="token punctuation">;&lt;/span>
 
-usuarios&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">forEach&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token parameter">user&lt;/span> &lt;span class="token operator">=&gt;&lt;/span> &lt;span class="token punctuation">{&lt;/span>
+usuarios&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">forEach&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token parameter">user&lt;/span> &lt;span class="token site-content__operator">=&gt;&lt;/span> &lt;span class="token punctuation">{&lt;/span>
     console&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">log&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token template-string">&lt;span class="token template-punctuation string">`&lt;/span>&lt;span class="token interpolation">&lt;span class="token interpolation-punctuation punctuation">${&lt;/span>user&lt;span class="token punctuation">.&lt;/span>nombre&lt;span class="token interpolation-punctuation punctuation">}&lt;/span>&lt;/span>&lt;span class="token string">: &lt;/span>&lt;span class="token interpolation">&lt;span class="token interpolation-punctuation punctuation">${&lt;/span>user&lt;span class="token punctuation">.&lt;/span>edad&lt;span class="token interpolation-punctuation punctuation">}&lt;/span>&lt;/span>&lt;span class="token string"> años&lt;/span>&lt;span class="token template-punctuation string">`&lt;/span>&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>
 &lt;span class="token punctuation">}&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>&lt;/code>&lt;/pre>&lt;div class="toolbar">&lt;div class="toolbar-item">&lt;button class="copy-to-clipboard-button" type="button" data-copy-state="copy">&lt;span>Copy&lt;/span>&lt;/button>&lt;/div>&lt;div class="toolbar-item">&lt;span>JavaScript&lt;/span>&lt;/div>&lt;/div>&lt;/div>
   &lt;div class="toolbar">
@@ -4858,7 +4858,7 @@ usuarios&lt;span class="token punctuation">.&lt;/span>&lt;span class="token func
                         </pre>
                     <!-- código HTML -->
                   </div>
-                  <div class="ej-code-css col-lg-6 mb-3">
+                  <div class="code-example__css-panel col-lg-6 mb-3">
                     <!-- código CSS -->
                     <pre data-src-status="loaded" tabindex="0">
                           <code class="language-css" data-prismjs-copy="Copy">
@@ -4953,17 +4953,17 @@ usuarios&lt;span class="token punctuation">.&lt;/span>&lt;span class="token func
                 Simular formato de texto preformateado con
                 <code class="language-css">white-space</code>:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-html" data-prismjs-copy="Copy">
-                      &lt;div class="texto-formateado">
+                      &lt;div class="site-content__texto-formateado">
                         Línea 1
                         Línea 2    con espacio
                       &lt;/div>
                     </code>
                   </pre>
               </div>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-css" data-prismjs-copy="Copy">
                       .texto-formateado {
@@ -4981,14 +4981,14 @@ usuarios&lt;span class="token punctuation">.&lt;/span>&lt;span class="token func
                 Código corto en línea: usar
                 <code class="language-html">&lt;code></code> con estilo:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-html" data-prismjs-copy="Copy">
                       &lt;p>Use la función &lt;code>console.log()&lt;/code> para depurar.&lt;/p>
                     </code>
                   </pre>
               </div>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-css" data-prismjs-copy="Copy">
                       code {
@@ -5041,7 +5041,7 @@ usuarios&lt;span class="token punctuation">.&lt;/span>&lt;span class="token func
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -5058,63 +5058,63 @@ usuarios&lt;span class="token punctuation">.&lt;/span>&lt;span class="token func
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item">
-                <a href="#introduccion" class="simple-link">Introducción</a>
+              <div class="site-menu__item">
+                <a href="#introduccion" class="site-menu__link">Introducción</a>
               </div>
 
-              <div class="menu-item">
-                <a href="#etiquetas-html-b-negrita-y-strong-importante" class="simple-link">Etiquetas HTML
+              <div class="site-menu__item">
+                <a href="#etiquetas-html-b-negrita-y-strong-importante" class="site-menu__link">Etiquetas HTML
                   <code class="language-html">&lt;b></code> Negrita y
                   <code class="language-html">&lt;strong></code> Importante</a>
               </div>
-              <div class="menu-item">
-                <a href="#etiquetas-html-i-italica-y-em-enfasis" class="simple-link">Etiquetas HTML
+              <div class="site-menu__item">
+                <a href="#etiquetas-html-i-italica-y-em-enfasis" class="site-menu__link">Etiquetas HTML
                   <code class="language-html">&lt;i></code> Itálica y
                   <code class="language-html">&lt;em></code> Énfasis</a>
               </div>
-              <div class="menu-item">
-                <a href="#etiqueta-html-small-pequeno" class="simple-link">Etiqueta HTML
+              <div class="site-menu__item">
+                <a href="#etiqueta-html-small-pequeno" class="site-menu__link">Etiqueta HTML
                   <code class="language-html">&lt;small></code> Pequeño</a>
               </div>
-              <div class="menu-item">
-                <a href="#etiquetas-html-del-borrado-y-ins-insertado" class="simple-link">Etiquetas HTML
+              <div class="site-menu__item">
+                <a href="#etiquetas-html-del-borrado-y-ins-insertado" class="site-menu__link">Etiquetas HTML
                   <code class="language-html">&lt;del></code> Borrado y
                   <code class="language-html">&lt;ins></code> Insertado</a>
               </div>
-              <div class="menu-item">
-                <a href="#etiquetas-html-sup-superindice-e-sub-subindice" class="simple-link">Etiquetas HTML
+              <div class="site-menu__item">
+                <a href="#etiquetas-html-sup-superindice-e-sub-subindice" class="site-menu__link">Etiquetas HTML
                   <code class="language-html">&lt;sup></code> Superíndice y
                   <code class="language-html">&lt;sub></code> Subríndice</a>
               </div>
-              <div class="menu-item">
-                <a href="#etiquetas-html-code-codigo-de-programacion" class="simple-link">Etiquetas HTML
+              <div class="site-menu__item">
+                <a href="#etiquetas-html-code-codigo-de-programacion" class="site-menu__link">Etiquetas HTML
                   <code class="language-html">&lt;code></code> Código de
                   Programación</a>
               </div>
-              <div class="menu-item">
-                <a href="#etiquetas-html-kbd-entrada-del-teclado" class="simple-link">Etiquetas HTML
+              <div class="site-menu__item">
+                <a href="#etiquetas-html-kbd-entrada-del-teclado" class="site-menu__link">Etiquetas HTML
                   <code class="language-html">&lt;kbd></code> Entrada del
                   Teclado</a>
               </div>
-              <div class="menu-item">
-                <a href="#etiquetas-html-samp-salida-de-un-programa" class="simple-link">Etiquetas HTML
+              <div class="site-menu__item">
+                <a href="#etiquetas-html-samp-salida-de-un-programa" class="site-menu__link">Etiquetas HTML
                   <code class="language-html">&lt;samp></code> Salida de un
                   programa</a>
               </div>
-              <div class="menu-item">
-                <a href="#etiquetas-html-var-variable" class="simple-link">Etiquetas HTML
+              <div class="site-menu__item">
+                <a href="#etiquetas-html-var-variable" class="site-menu__link">Etiquetas HTML
                   <code class="language-html">&lt;var></code> Variable</a>
               </div>
-              <div class="menu-item">
-                <a href="#etiquetas-html-pre-texto-preformateado" class="simple-link">Etiquetas HTML
+              <div class="site-menu__item">
+                <a href="#etiquetas-html-pre-texto-preformateado" class="site-menu__link">Etiquetas HTML
                   <code class="language-html">&lt;pre></code> Texto
                   Preformateado</a>
               </div>
-              <div class="menu-item">
-                <a href="#comments" class="simple-link">Comentarios</a>
+              <div class="site-menu__item">
+                <a href="#comments" class="site-menu__link">Comentarios</a>
               </div>
             </div>
           </div>
@@ -5183,7 +5183,7 @@ usuarios&lt;span class="token punctuation">.&lt;/span>&lt;span class="token func
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

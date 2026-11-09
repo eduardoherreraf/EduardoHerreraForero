@@ -66,7 +66,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -84,7 +84,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -96,7 +96,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!-- Parcel NPM -->
@@ -126,7 +126,7 @@
                 son
                 ejecutados en la terminal BASH de GIT.
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <figure>
                   <img src="https://i.ibb.co/1GNFG8ST/Bootstrap-and-parcel.png" class="img-fluid"
                     alt="Instalación de Bootstrap V5, NPM y Parcel" />
@@ -153,7 +153,7 @@
                 <code class="language-bash">-y</code> para evitar que haga
                 todas las preguntas interactivas.
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                      FOLDER_NAME="my-page"
@@ -177,7 +177,7 @@
                 manualmente la estructura de carpetas y archivos que se
                 muestra a continuación.
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                      mkdir {src,src/js,src/scss}
@@ -197,7 +197,7 @@
                 esta dependencia es sólo para uso de desarrollo y no para
                 producción.
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       npm install --save-dev parcel@latest
@@ -215,7 +215,7 @@
                 para su posicionamiento. Si no se planea usar esos
                 componentes, se puede omitir Popper aquí.
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       npm install --save bootstrap@latest @popperjs/core@latest
@@ -236,7 +236,7 @@
                 <span class="fw-bold text-warning">src/index.html</span> se
                 debe configurar así:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-html" data-prismjs-copy="Copy">
                       &lt;!doctype html&gt;
@@ -250,7 +250,7 @@
                       &lt;body&gt;
                       &lt;div class="container py-4 px-3 mx-auto"&gt;
                       &lt;h1&gt;Hello, Bootstrap and Parcel!&lt;/h1&gt;
-                      &lt;button class="btn btn-primary"&gt;Primary button&lt;/button&gt;
+                      &lt;button class="btn site-button btn-primary"&gt;Primary button&lt;/button&gt;
                       &lt;/div&gt;
                       &lt;/body&gt;
                       &lt;/html&gt;
@@ -268,7 +268,7 @@
                 <code class="language-json">package.json</code> añadir
                 como funcionaran los scripts de PARCEL:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-javascript" data-prismjs-copy="Copy">
                       "scripts": {
@@ -331,7 +331,7 @@
                 También en este mismo archivo
                 <code class="language-json">package.json</code> se debe intercambiar:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-javascript" data-prismjs-copy="Copy">
                       "main": "index.js",
@@ -354,7 +354,7 @@
                 <code class="language-bash">.parcelrc</code>:, así:
               </p>
 
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-json" data-prismjs-copy="Copy">
                      {
@@ -381,7 +381,7 @@
                 en el terminal, ejecuta cualquiera de los dos scripts npm
                 recién añadidos:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       npm start
@@ -389,7 +389,7 @@
                   </pre>
               </div>
               <p>ó</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       npm run dev
@@ -412,7 +412,7 @@
                 el siguiente código para importar todo el Sass fuente de
                 Bootstrap.
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-css" data-prismjs-copy="Copy">
                       // Import all of Bootstrap's CSS
@@ -430,7 +430,7 @@
                 La importación de código CSS de usuario también se importa en
                 este mismo archivo.
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-javascript" data-prismjs-copy="Copy">
                       // Import all of Bootstrap's JS
@@ -454,7 +454,7 @@
                 quedan disponibles en la carpeta
                 <span class="fw-bold text-warning">dist</span>.
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       npm run build
@@ -528,7 +528,7 @@
 
                 <p><span class="fw-bold">Global</span>:</p>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         npm install -g http-server
@@ -538,7 +538,7 @@
                 <!-- Sintaxis fin -->
                 <p><span class="fw-bold">Local (para un proyecto)</span>:</p>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         npm install --save-dev http-server
@@ -555,7 +555,7 @@
                     class="language-html">index.html</code>):</p>
 
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         http-server
@@ -568,7 +568,7 @@
                   <li>Servirá los archivos del directorio actual.</li>
                   <li>Usará el puerto 8080.</li>
                   <li>Mostrará la URL de acceso, algo como:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-nginx" data-prismjs-copy="Copy">
                             Starting up http-server, serving ./
@@ -643,7 +643,7 @@
               <div id="ejemplo-completo-de-uso-de-http-server">
                 <h3>Ejemplo Completo de Uso de <code class="language-none">http-server</code></h3>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       http-server ./dist -p 8081 -c-1 -o ó http-server ./dist
@@ -665,7 +665,7 @@
                 <h3>Uso desde <code class="language-json">package.json</code></h3>
                 <p>En un proyecto Node, se puede agregar un script:</p>
                 <p><span class="fw-bold">Sintaxis básica</span>:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-json" data-prismjs-copy="Copy">
                       {
@@ -680,7 +680,7 @@
                 <!-- Sintaxis fin -->
                 <p>A continuación, se ejecuta el comando correspondiente, según la opción seleccionada antes:</p>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       npm start ó node --run start
@@ -716,7 +716,7 @@
               <div id="instalacion-de-rimraf">
                 <h3>Instalación de <code class="language-bash">rimraf</code></h3>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         npm install rimraf --save-dev
@@ -730,7 +730,7 @@
               <div id="uso-basico-en-la-terminal">
                 <h3>Uso básico en la terminal </h3>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         npx rimraf dist
@@ -747,7 +747,7 @@
                 <h3>Uso en <code class="language-json">package.json</code> </h3>
                 <p>Puede agregarse dentro de los scripts para automatizar limpiezas antes de construir el proyecto:</p>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-json" data-prismjs-copy="Copy">
   "scripts": {
@@ -769,7 +769,7 @@
                   proyecto incluyendo el uso de del servidor local <code class="language-none">http-server</code> y el
                   eliminador de carpetas y de archivos <code class="language-bash">rimraf</code>.</p>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-json" data-prismjs-copy="Copy">
                       {
@@ -835,11 +835,11 @@
                   <li>Son específicos de la máquina local.</li>
                 </ul>
 
-                <p>Ejemplo típico de un archivo <code class="  language-plaintext">.gitignore</code> en un proyecto
+                <p>Ejemplo típico de un archivo <code class="language-plaintext">.gitignore</code> en un proyecto
                   <code class="language-plaintext">node.js</code>:
                 </p>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-gitignore" data-prismjs-copy="Copy">
                         # Dependencias
@@ -906,7 +906,7 @@
                 <ul>
                   <li>Normalizar finales de línea (lo más común):
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                     <code class="language-gitattributes" data-prismjs-copy="Copy">
                       # Asegurar que todos usen LF en el repo
@@ -919,7 +919,7 @@
                     <!-- Sintaxis fin -->
                   </li>
                   <li>Marcar archivos como binarios: <!-- Sintaxis -->
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-gitattributes" data-prismjs-copy="Copy">
                           # Archivos binarios
@@ -933,7 +933,7 @@
                   </li>
                   <li>Excluir archivos de exportaciones/archivos:
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-gitattributes" data-prismjs-copy="Copy">
                           # Excluir de exportaciones (opcional)
@@ -947,7 +947,7 @@
                   </li>
                   <li>Definir cómo se muestran los diffs:
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-gitattributes" data-prismjs-copy="Copy">
                           *.json diff=json
@@ -960,7 +960,7 @@
                   </li>
                   <li>Configurar estrategias de fusión (<span class="fst-italic">merge strategies</span>):
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-gitattributes" data-prismjs-copy="Copy">
                           package-lock.json merge=ours
@@ -972,7 +972,7 @@
                   </li>
                   <li>Lenguaje para estadísticas de GitHub (Linguist):
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-gitattributes" data-prismjs-copy="Copy">
                           *.js linguist-language=JavaScript
@@ -989,7 +989,7 @@
                   <code class="language-plaintext">node.js</code>:
                 </p>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-gitattributes" data-prismjs-copy="Copy">
                         # Normalizar todos los archivos de texto a LF en el repositorio
@@ -1079,7 +1079,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -1096,52 +1096,52 @@
 
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item">
-                <a href="#introduccion" class="simple-link">Introducción</a>
+              <div class="site-menu__item">
+                <a href="#introduccion" class="site-menu__link">Introducción</a>
               </div>
-              <div class="menu-item">
-                <a href="#configuracion-inicial" class="simple-link">Configuración Inicial</a>
+              <div class="site-menu__item">
+                <a href="#configuracion-inicial" class="site-menu__link">Configuración Inicial</a>
               </div>
-              <div class="menu-item">
-                <a href="#instalacion-parcel" class="simple-link">Instalación de Parcel</a>
+              <div class="site-menu__item">
+                <a href="#instalacion-parcel" class="site-menu__link">Instalación de Parcel</a>
               </div>
-              <div class="menu-item">
-                <a href="#instalacion-bootstrap-v5" class="simple-link">Instalación de Bootstrap</a>
+              <div class="site-menu__item">
+                <a href="#instalacion-bootstrap-v5" class="site-menu__link">Instalación de Bootstrap</a>
               </div>
-              <div class="menu-item">
-                <a href="#configuracion-parcel" class="simple-link ">Configuración de Parcel</a>
-              </div>
-
-              <div class="menu-item">
-                <a href="#importacion-bootstrap-v5" class="simple-link">Importación Bootstrap v5</a>
+              <div class="site-menu__item">
+                <a href="#configuracion-parcel" class="site-menu__link">Configuración de Parcel</a>
               </div>
 
-              <div class="menu-item">
-                <a href="#compilacion-proyecto-produccion" class="simple-link">Compilación del proyecto para
+              <div class="site-menu__item">
+                <a href="#importacion-bootstrap-v5" class="site-menu__link">Importación Bootstrap v5</a>
+              </div>
+
+              <div class="site-menu__item">
+                <a href="#compilacion-proyecto-produccion" class="site-menu__link">Compilación del proyecto para
                   Producción</a>
               </div>
 
-              <div class="menu-item">
-                <a href="#instalacion-de-un-servidor-local" class="simple-link">Instalación de un Servidor Local</a>
+              <div class="site-menu__item">
+                <a href="#instalacion-de-un-servidor-local" class="site-menu__link">Instalación de un Servidor Local</a>
               </div>
 
-              <div class="menu-item">
-                <a href="#rimraf-herramienta-para-eliminar-carpetas-y-archivos" class="simple-link"><code
+              <div class="site-menu__item">
+                <a href="#rimraf-herramienta-para-eliminar-carpetas-y-archivos" class="site-menu__link"><code
                     class="language-bash">rimraf</code>:&nbsp; Herramienta
                   para Eliminar Carpetas y Archivos</a>
               </div>
 
-              <div class="menu-item">
-                <a href="#ultimas-configuraciones-del-proyecto" class="simple-link">Últimas Configuraciones del
+              <div class="site-menu__item">
+                <a href="#ultimas-configuraciones-del-proyecto" class="site-menu__link">Últimas Configuraciones del
                   Proyecto</a>
               </div>
 
               <!-- Comentarios  -->
-              <div class="menu-item">
-                <a href="#comments" class="simple-link">Comentarios</a>
+              <div class="site-menu__item">
+                <a href="#comments" class="site-menu__link">Comentarios</a>
               </div>
             </div>
           </div>
@@ -1208,7 +1208,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

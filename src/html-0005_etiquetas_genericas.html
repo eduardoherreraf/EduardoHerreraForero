@@ -67,7 +67,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -85,7 +85,7 @@
             <a class="nav-link mx-1 text-decoration-none" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo text-decoration-none" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active text-decoration-none site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1 text-decoration-none" href="index.html#contact">CONTACTO</a>
@@ -97,7 +97,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Etiquetas de Texto HTML -->
@@ -149,7 +149,7 @@
                 posicionamiento en buscadores.
               </p>
 
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <picture>
                   <img src="https://i.postimg.cc/KjG2V8kV/Etiquetas-Genericas-Transparente-Final.png" class="img-fluid"
                     alt="Etiquetas Genéricas HTML " title="Etiquetas Genéricas HTML <div> y <span>" />
@@ -159,7 +159,7 @@
             </div>
             <!-- Introducción Fin -->
 
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- División <div> -->
             <div id="división-div" class="mt-3">
@@ -243,7 +243,7 @@
                   cierre que delimitan el contenido que se desea agrupar. La
                   estructura básica es la siguiente:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;div>
@@ -265,11 +265,11 @@
                   debería evitarse el uso de atributos obsoletos.
                 </p>
                 <p>Con atributos comunes:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;div>
-                          &lt;div class="nombre-clase" id="identificador-unico">
+                          &lt;div class="site-content__nombre-clase" id="identificador-unico">
                             &lt;p>Contenido del div&lt;/p>
                           &lt;div>
                         &lt;/div>
@@ -277,11 +277,11 @@
                     </pre>
                 </div>
                 <p>Con múltiples clases:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-html" data-prismjs-copy="Copy">
                       &lt;div>
-                        &lt;div class="clase1 clase2 clase3">
+                        &lt;div class="site-content__clase1 site-content__clase2 site-content__clase3">
                           &lt;p>Contenido del div&lt;/p>
                         &lt;div>
                       &lt;/div>
@@ -289,7 +289,7 @@
                   </pre>
                 </div>
                 <p>Con atributos de datos personalizados:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-html" data-prismjs-copy="Copy">
                       &lt;div data-valor="100" data-tipo="contenedor">
@@ -316,23 +316,23 @@
                     <b>Agrupamiento Lógico</b>: Organizar secciones de la
                     página web que no tienen una etiqueta semántica
                     específica. Por ejemplo, una sección de un formulario:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
-                          &lt;div class="comments">
+                          &lt;div class="site-content__comments">
                             &lt;h2>Formulario de Comentarios&lt;/h2>
                             &lt;form>
-                                &lt;div class="form-group">
+                                &lt;div class="site-content__form-group">
                                     &lt;label for="nombre">Nombre y Apellido:&lt;/label>
                                     &lt;input type="text" id="nombre" name="nombre" required>
                                 &lt;/div>
 
-                                &lt;div class="form-group">
+                                &lt;div class="site-content__form-group">
                                     &lt;abel for="comentario">Comentario:&lt;/label>
                                     &lt;textarea id="comentario" name="comentario" placeholder="Escribe tu comentario aquí..." required>&lt;/textarea>
                                 &lt;/div>
 
-                                &lt;button type="submit" class="submit-btn">Enviar Comentario&lt;/button>
+                                &lt;button type="submit" class="site-content__submit-btn">Enviar Comentario&lt;/button>
                             &lt;/form>
                             &lt;/div>
                           </code>
@@ -348,10 +348,10 @@
                     contiene. Para ello, se suelen usar los atributos:
                     <code class="language-html">class</code> o
                     <code class="language-html">id</code>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
-                            &lt;div class="overlay">
+                            &lt;div class="site-content__overlay">
                                 &lt;div class="modal">
                                     &lt;h2>Ventana Modal&lt;/h2>
                                     &lt;p>Contenido del modal&lt;/p>
@@ -414,7 +414,7 @@
                     <code class="language-html">id</code>s o
                     <code class="language-html">class</code>es como
                     <code class="language-html">id="header"</code> o
-                    <code class="language-html">class="navigation"</code>.
+                    <code class="language-html">class="site-content__navigation"</code>.
                     Ahora, lo ideal es usar las etiquetas semánticas cuando su
                     propósito coincide con el contenido, y reservar
                     <code class="language-html">&lt;div></code> para
@@ -528,7 +528,7 @@
                   <code class="language-html">&lt;div></code>
                 </h3>
                 <p>CSS por defecto del navegador (estilos user-agent):</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-css" data-prismjs-copy="Copy">
                         div {
@@ -583,84 +583,84 @@
                 </p>
                 <div class="row">
                   <!-- Ejemplo -->
-                  <div class="ej-ejemplo">
-                    <div class="row ej-ejecutado mt-3">
+                  <div class="code-example">
+                    <div class="row code-example__output mt-3">
                       <!-- código ejecutado -->
                       <div>
-                        <div class="ej-productos-grid-div">
+                        <div class="demo-div__productos-grid">
                           <!-- Producto 1 -->
-                          <div class="ej-producto-tarjeta-div">
-                            <div class="ej-producto-imagen-div">
+                          <div class="demo-div__producto-tarjeta">
+                            <div class="demo-div__producto-imagen">
                               Imagen del Producto 1
                             </div>
-                            <div class="ej-producto-info-div">
-                              <h3 class="ej-producto-titulo-div">
+                            <div class="demo-div__producto-info">
+                              <h3 class="demo-div__producto-titulo">
                                 Auriculares Bluetooth Premium
                               </h3>
-                              <p class="ej-producto-descripcion-div">
+                              <p class="demo-div__producto-descripcion">
                                 Auriculares inalámbricos con cancelación de
                                 ruido activa y 30 horas de batería para una
                                 experiencia de audio excepcional.
                               </p>
-                              <div class="ej-producto-precio-div">€29.99</div>
+                              <div class="demo-div__producto-precio">€29.99</div>
                             </div>
-                            <div class="ej-producto-acciones-div">
-                              <button class="ej-btn-div ej-btn-primario-div">
+                            <div class="demo-div__producto-acciones">
+                              <button class="demo-div__btn demo-div__btn-primario">
                                 Comprar
                               </button>
-                              <button class="ej-btn-div ej-btn-secundario-div">
+                              <button class="demo-div__btn demo-div__btn-secundario">
                                 Ver detalles
                               </button>
                             </div>
                           </div>
 
                           <!-- Producto 2 -->
-                          <div class="ej-producto-tarjeta-div">
-                            <div class="ej-producto-imagen-div">
+                          <div class="demo-div__producto-tarjeta">
+                            <div class="demo-div__producto-imagen">
                               Imagen del Producto 2
                             </div>
-                            <div class="ej-producto-info-div">
-                              <h3 class="ej-producto-titulo-div">
+                            <div class="demo-div__producto-info">
+                              <h3 class="demo-div__producto-titulo">
                                 Smartwatch Deportivo
                               </h3>
-                              <p class="ej-producto-descripcion-div">
+                              <p class="demo-div__producto-descripcion">
                                 Reloj inteligente resistente al agua con
                                 monitor de frecuencia cardíaca y GPS integrado
                                 para deportistas.
                               </p>
-                              <div class="ej-producto-precio-div">€34.99</div>
+                              <div class="demo-div__producto-precio">€34.99</div>
                             </div>
-                            <div class="ej-producto-acciones-div">
-                              <button class="ej-btn-div ej-btn-primario-div">
+                            <div class="demo-div__producto-acciones">
+                              <button class="demo-div__btn demo-div__btn-primario">
                                 Comprar
                               </button>
-                              <button class="ej-btn-div ej-btn-secundario-div">
+                              <button class="demo-div__btn demo-div__btn-secundario">
                                 Ver detalles
                               </button>
                             </div>
                           </div>
 
                           <!-- Producto 3 -->
-                          <div class="ej-producto-tarjeta-div">
-                            <div class="ej-producto-imagen-div">
+                          <div class="demo-div__producto-tarjeta">
+                            <div class="demo-div__producto-imagen">
                               Imagen del Producto 3
                             </div>
-                            <div class="ej-producto-info-div">
-                              <h3 class="ej-producto-titulo-div">
+                            <div class="demo-div__producto-info">
+                              <h3 class="demo-div__producto-titulo">
                                 Cargador Inalámbrico Rápido
                               </h3>
-                              <p class="ej-producto-descripcion-div">
+                              <p class="demo-div__producto-descripcion">
                                 Base de carga inalámbrica compatible con todos
                                 los dispositivos Qi, diseño elegante y carga
                                 ultrarrápida.
                               </p>
-                              <div class="ej-producto-precio-div">€24.99</div>
+                              <div class="demo-div__producto-precio">€24.99</div>
                             </div>
-                            <div class="ej-producto-acciones-div">
-                              <button class="ej-btn-div ej-btn-primario-div">
+                            <div class="demo-div__producto-acciones">
+                              <button class="demo-div__btn demo-div__btn-primario">
                                 Comprar
                               </button>
-                              <button class="ej-btn-div ej-btn-secundario-div">
+                              <button class="demo-div__btn demo-div__btn-secundario">
                                 Ver detalles
                               </button>
                             </div>
@@ -670,54 +670,54 @@
                       <!-- código ejecutado fin -->
                     </div>
                     <div class="row">
-                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                         <!-- código HTML -->
                         <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;div class="productos-grid">
+                                &lt;div class="site-content__productos-grid">
                                   &lt;!-- Producto 1 -->
-                                  &lt;div class="producto-tarjeta">
-                                    &lt;div class="producto-imagen">Imagen del Producto 1&lt;/div>
-                                    &lt;div class="producto-info">
-                                      &lt;h3 class="producto-titulo">Auriculares Bluetooth Premium&lt;/h3>
-                                      &lt;p class="producto-descripcion">Auriculares inalámbricos con cancelación de ruido activa y 30 horas de
+                                  &lt;div class="site-content__producto-tarjeta">
+                                    &lt;div class="site-content__producto-imagen">Imagen del Producto 1&lt;/div>
+                                    &lt;div class="site-content__producto-info">
+                                      &lt;h3 class="site-content__producto-titulo">Auriculares Bluetooth Premium&lt;/h3>
+                                      &lt;p class="site-content__producto-descripcion">Auriculares inalámbricos con cancelación de ruido activa y 30 horas de
                                         batería para una experiencia de audio excepcional.&lt;/p>
-                                      &lt;div class="producto-precio">€29.99&lt;/div>
+                                      &lt;div class="site-content__producto-precio">€29.99&lt;/div>
                                     &lt;/div>
-                                    &lt;div class="producto-acciones">
-                                      &lt;button class="btn btn-primario">Comprar&lt;/button>
-                                      &lt;button class="btn btn-secundario">Ver detalles&lt;/button>
+                                    &lt;div class="site-content__producto-acciones">
+                                      &lt;button class="btn site-button site-content__btn-primario">Comprar&lt;/button>
+                                      &lt;button class="btn site-button site-content__btn-secundario">Ver detalles&lt;/button>
                                     &lt;/div>
                                   &lt;/div>
 
                                   &lt;!-- Producto 2 -->
-                                  &lt;div class="producto-tarjeta">
-                                    &lt;div class="producto-imagen">Imagen del Producto 2&lt;/div>
-                                    &lt;div class="producto-info">
-                                      &lt;h3 class="producto-titulo">Smartwatch Deportivo&lt;/h3>
-                                      &lt;p class="producto-descripcion">Reloj inteligente resistente al agua con monitor de frecuencia cardíaca y
+                                  &lt;div class="site-content__producto-tarjeta">
+                                    &lt;div class="site-content__producto-imagen">Imagen del Producto 2&lt;/div>
+                                    &lt;div class="site-content__producto-info">
+                                      &lt;h3 class="site-content__producto-titulo">Smartwatch Deportivo&lt;/h3>
+                                      &lt;p class="site-content__producto-descripcion">Reloj inteligente resistente al agua con monitor de frecuencia cardíaca y
                                         GPS integrado para deportistas.&lt;/p>
-                                      &lt;div class="producto-precio">€34.99&lt;/div>
+                                      &lt;div class="site-content__producto-precio">€34.99&lt;/div>
                                     &lt;/div>
-                                    &lt;div class="producto-acciones">
-                                      &lt;button class="btn btn-primario">Comprar&lt;/button>
-                                      &lt;button class="btn btn-secundario">Ver detalles&lt;/button>
+                                    &lt;div class="site-content__producto-acciones">
+                                      &lt;button class="btn site-button site-content__btn-primario">Comprar&lt;/button>
+                                      &lt;button class="btn site-button site-content__btn-secundario">Ver detalles&lt;/button>
                                     &lt;/div>
                                   &lt;/div>
 
                                   &lt;!-- Producto 3 -->
-                                  &lt;div class="producto-tarjeta">
-                                    &lt;div class="producto-imagen">Imagen del Producto 3&lt;/div>
-                                    &lt;div class="producto-info">
-                                      &lt;h3 class="producto-titulo">Cargador Inalámbrico Rápido&lt;/h3>
-                                      &lt;p class="producto-descripcion">Base de carga inalámbrica compatible con todos los dispositivos Qi, diseño
+                                  &lt;div class="site-content__producto-tarjeta">
+                                    &lt;div class="site-content__producto-imagen">Imagen del Producto 3&lt;/div>
+                                    &lt;div class="site-content__producto-info">
+                                      &lt;h3 class="site-content__producto-titulo">Cargador Inalámbrico Rápido&lt;/h3>
+                                      &lt;p class="site-content__producto-descripcion">Base de carga inalámbrica compatible con todos los dispositivos Qi, diseño
                                         elegante y carga ultrarrápida.&lt;/p>
-                                      &lt;div class="producto-precio">€24.99&lt;/div>
+                                      &lt;div class="site-content__producto-precio">€24.99&lt;/div>
                                     &lt;/div>
-                                    &lt;div class="producto-acciones">
-                                      &lt;button class="btn btn-primario">Comprar&lt;/button>
-                                      &lt;button class="btn btn-secundario">Ver detalles&lt;/button>
+                                    &lt;div class="site-content__producto-acciones">
+                                      &lt;button class="btn site-button site-content__btn-primario">Comprar&lt;/button>
+                                      &lt;button class="btn site-button site-content__btn-secundario">Ver detalles&lt;/button>
                                     &lt;/div>
                                   &lt;/div>
                                 &lt;/div>                                
@@ -726,7 +726,7 @@
                           </pre>
                         <!-- código HTML -->
                       </div>
-                      <div class="ej-code-css col-lg-6 mb-3">
+                      <div class="code-example__css-panel col-lg-6 mb-3">
                         <!-- código CSS -->
                         <pre>
                             <code class="language-css" data-prismjs-copy="Copy">
@@ -920,7 +920,7 @@
                 <!-- Agregando Roles ARIA -->
                 <div>
                   <h4>Agregando Roles ARIA</h4>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;!-- Div con rol de navegación --&gt;
@@ -932,12 +932,12 @@
                           &lt;/div>
 
                           &lt;!-- Div con rol de banner --&gt;
-                          &lt;div role="banner" class="site-header">
+                          &lt;div role="banner" class="site-content__site-header">
                               &lt;h1>Título del sitio&lt;/h1>
                           &lt;/div>
 
                           &lt;!-- Div con rol de main --&gt;
-                          &lt;div role="main" class="main-content">
+                          &lt;div role="main" class="site-content__main-content">
                               &lt;article>Contenido principal&lt;/article>
                           &lt;/div>
                         </code>
@@ -949,25 +949,25 @@
                 <!-- Etiquetas ARIA para Accesibilidad -->
                 <div>
                   <h4>Etiquetas ARIA para Accesibilidad</h4>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;!-- Div con etiqueta descriptiva --&gt;
-                          &lt;div aria-labelledby="section-title" class="content-section">
+                          &lt;div aria-labelledby="section-title" class="site-content__content-section">
                               &lt;h2 id="section-title">Título de la Sección&lt;/h2>
                               &lt;p>Contenido de la sección...&lt;/p>
                           &lt;/div>
 
                           &lt;!-- Div con descripción aria --&gt;
-                          &lt;div aria-describedby="help-text" class="form-group">
+                          &lt;div aria-describedby="help-text" class="site-content__form-group">
                               &lt;input type="email" id="email">
                               &lt;div id="help-text">Ingrese un email válido&lt;/div>
                           &lt;/div>
 
                           &lt;!-- Div con estado aria --&gt;
-                          &lt;div aria-expanded="false" class="collapsible-menu">
+                          &lt;div aria-expanded="false" class="site-content__collapsible-menu">
                             &lt;button aria-controls="menu-content">Menú&lt;/button>
-                            &lt;div id="menu-content" class="menu-content">
+                            &lt;div id="menu-content" class="site-content__menu-content">
                                 &lt;ul>
                                     &lt;li>&lt;a href="#">Opción 1&lt;/a>&lt;/li>
                                     &lt;li>&lt;a href="#">Opción 2&lt;/a>&lt;/li>
@@ -983,27 +983,27 @@
                 <!-- Marcadores de Región con ARIA -->
                 <div>
                   <h4>Marcadores de Región con ARIA</h4>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;!-- Regiones landmark --&gt;
                           &lt;div role="complementary" aria-label="Barra lateral">
-                              &lt;div class="widget">
+                              &lt;div class="site-content__widget">
                                   &lt;h3>Widget 1&lt;/h3>
                                   &lt;p>Contenido del widget...&lt;/p>
                               &lt;/div>
                           &lt;/div>
 
-                          &lt;div role="contentinfo" class="site-footer">
+                          &lt;div role="contentinfo" class="site-content__site-footer">
                               &lt;p>Información de contacto y derechos de autor&lt;/p>
                           &lt;/div>
 
                           &lt;!-- Estados dinámicos --&gt;
-                          &lt;div aria-live="polite" id="status-message" class="status-container">
+                          &lt;div aria-live="polite" id="status-message" class="site-content__status-container">
                               &lt;!-- Mensajes de estado se insertan aquí dinámicamente --&gt;
                           &lt;/div>
 
-                          &lt;div aria-atomic="true" aria-live="assertive" class="alert-container">
+                          &lt;div aria-atomic="true" aria-live="assertive" class="site-content__alert-container">
                               &lt;!-- Alertas importantes --&gt;
                           &lt;/div>
                         </code>
@@ -1018,11 +1018,11 @@
                     Mejores Prácticas ARIA con
                     <code class="language-html">&lt;div></code>
                   </h4>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;!-- Cuando no se pueda usar elementos semánticos --&gt;
-                          &lt;div role="article" class="blog-post">
+                          &lt;div role="article" class="site-content__blog-post">
                               &lt;div role="heading" aria-level="1">Título del artículo&lt;/div>
                               &lt;div role="paragraph">Contenido del artículo...&lt;/div>
                           &lt;/div>
@@ -1036,7 +1036,7 @@
             </div>
             <!-- División <div> Fin -->
 
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Fragmento en Línea <span> -->
             <div id="fragmento-en-línea-span" class="mt-3">
@@ -1162,25 +1162,25 @@
                   <code class="language-html">&lt;span>Contenido de texto&lt;span></code>
                 </p>
                 <p>Con Atributos Comunes:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-html" data-prismjs-copy="Copy">
-                      &lt;span class="destacado" id="texto-importante">Texto destacado&lt;/span>
+                      &lt;span class="site-content__destacado" id="texto-importante">Texto destacado&lt;/span>
                       &lt;span style="color: red; font-weight: bold;">Texto rojo y negrita&lt;/span>
                       &lt;span data-info="información adicional">Texto con datos personalizados&lt;/span>
                     </code>
                   </pre>
                 </div>
                 <p>Anidación Correcta:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
-                        &lt;p>Este es un párrafo con &lt;span class="resaltado">texto resaltado&lt;/span> en el medio.&lt;/p>
+                        &lt;p>Este es un párrafo con &lt;span class="site-content__resaltado">texto resaltado&lt;/span> en el medio.&lt;/p>
 
                         &lt;!-- Anidación múltiple --&gt;
-                        &lt;span class="contenedor">
-                            &lt;span class="icono">📧&lt;/span>
-                            &lt;span class="texto">Correo electrónico&lt;/span>
+                        &lt;span class="site-content__contenedor">
+                            &lt;span class="site-content__icono">📧&lt;/span>
+                            &lt;span class="site-content__texto">Correo electrónico&lt;/span>
                         &lt;/span>
                       </code>
                     </pre>
@@ -1203,15 +1203,15 @@
                     <b>Aplicación de estilos</b>: Cambiar el color, tamaño,
                     fuente, o añadir efectos como subrayados a partes
                     específicas del texto. Por ejemplo:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
-                            &lt;p>La palabra &lt;span class="destacado">importante&lt;/span> está resaltada.&lt;/p>
+                            &lt;p>La palabra &lt;span class="site-content__destacado">importante&lt;/span> está resaltada.&lt;/p>
                           </code>
                         </pre>
                     </div>
                     <p>Con CSS:</p>
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-css" data-prismjs-copy="Copy">
                             .destacado { color: blue; font-weight: bold; }
@@ -1223,7 +1223,7 @@
                     <b>Manipulación con JavaScript</b>: Agrupar contenido para
                     seleccionarlo y modificarlo dinámicamente, como cambiar
                     texto o añadir eventos:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;p>Hola, &lt;span id="nombre">Juan&lt;/span>.&lt;/p>
@@ -1239,11 +1239,11 @@
                     usarse para agrupar contenido relacionado cuando no hay
                     otra etiqueta más adecuada, como en accesibilidad con
                     <code class="language-html">ARIA</code>.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;p>
-                              &lt;span class="status-indicator status-away"
+                              &lt;span class="site-content__status-indicator site-content__status-away"
                                 role="img"
                                 aria-label="Ausente">&lt;/span>
                               Usuario María está &lt;span aria-live="polite">ausente&lt;/span>
@@ -1380,7 +1380,7 @@
                   tiene estilos específicos. Hereda los estilos de su elemento
                   padre.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-css" data-prismjs-copy="Copy">
                         span {
@@ -1398,7 +1398,7 @@
                     </pre>
                 </div>
                 <p>Estilos comunes aplicados:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-css" data-prismjs-copy="Copy">
                       /* Estilos típicos para diferentes usos */
@@ -1458,71 +1458,71 @@
                 <p>Sistema de Notificaciones:</p>
                 <div class="row">
                   <!-- Ejemplo -->
-                  <div class="ej-ejemplo">
-                    <div class="row ej-ejecutado mt-3">
+                  <div class="code-example">
+                    <div class="row code-example__output mt-3">
                       <!-- código ejecutado -->
                       <div>
-                        <div class="ej-contenedor-notificaciones-span">
+                        <div class="demo-span__contenedor-notificaciones">
                           <!-- Notificación de éxito -->
-                          <div class="ej-notificacion-span ej-notificacion--exito-span">
-                            <span class="ej-notificacion__icono-span">✅</span>
-                            <div class="ej-notificacion__contenido-span">
-                              <span class="ej-notificacion__titulo-span">Operación completada</span>
-                              <div class="ej-notificacion__mensaje-span">
+                          <div class="demo-notification demo-notification--exito">
+                            <span class="demo-notification__icono">✅</span>
+                            <div class="demo-notification__contenido">
+                              <span class="demo-notification__titulo">Operación completada</span>
+                              <div class="demo-notification__mensaje">
                                 El archivo se ha guardado correctamente en
-                                <span class="ej-codigo-span">/documentos/archivo.pdf</span>
+                                <span class="demo-span__codigo">/documentos/archivo.pdf</span>
                               </div>
-                              <span class="ej-notificacion__tiempo-span">hace 2 minutos</span>
+                              <span class="demo-notification__tiempo">hace 2 minutos</span>
                             </div>
-                            <div class="ej-notificacion__acciones-span">
-                              <button class="ej-btn-accion-span">
+                            <div class="demo-notification__acciones">
+                              <button class="demo-span__btn-accion">
                                 Abrir
                               </button>
-                              <button class="ej-btn-accion-span">✕</button>
+                              <button class="demo-span__btn-accion">✕</button>
                             </div>
                           </div>
 
                           <!-- Notificación de advertencia -->
-                          <div class="ej-notificacion-span ej-notificacion--advertencia-span">
-                            <span class="ej-notificacion__icono-span">⚠️</span>
-                            <div class="ej-notificacion__contenido-span">
-                              <span class="ej-notificacion__titulo-span">Espacio de almacenamiento bajo</span>
-                              <div class="ej-notificacion__mensaje-span">
+                          <div class="demo-notification demo-notification--advertencia">
+                            <span class="demo-notification__icono">⚠️</span>
+                            <div class="demo-notification__contenido">
+                              <span class="demo-notification__titulo">Espacio de almacenamiento bajo</span>
+                              <div class="demo-notification__mensaje">
                                 Quedan
-                                <span class="ej-texto-error-span">150 MB</span>
+                                <span class="demo-span__texto-error">150 MB</span>
                                 de
-                                <span class="ej-texto-destacado-span">2 GB</span>
+                                <span class="demo-span__texto-destacado">2 GB</span>
                                 disponibles
                               </div>
-                              <span class="ej-notificacion__tiempo-span">hace 5 minutos</span>
+                              <span class="demo-notification__tiempo">hace 5 minutos</span>
                             </div>
-                            <div class="ej-notificacion__acciones-span">
-                              <button class="ej-btn-accion-span">
+                            <div class="demo-notification__acciones">
+                              <button class="demo-span__btn-accion">
                                 Limpiar
                               </button>
-                              <button class="ej-btn-accion-span">✕</button>
+                              <button class="demo-span__btn-accion">✕</button>
                             </div>
                           </div>
 
                           <!-- Notificación de error -->
-                          <div class="ej-notificacion-span ej-notificacion--error-span">
-                            <span class="ej-notificacion__icono-span">❌</span>
-                            <div class="ej-notificacion__contenido-span">
-                              <span class="ej-notificacion__titulo-span">Error de conexión</span>
-                              <div class="ej-notificacion__mensaje-span">
+                          <div class="demo-notification demo-notification--error">
+                            <span class="demo-notification__icono">❌</span>
+                            <div class="demo-notification__contenido">
+                              <span class="demo-notification__titulo">Error de conexión</span>
+                              <div class="demo-notification__mensaje">
                                 No se pudo conectar al servidor
-                                <span class="ej-codigo-error-span">api.ejemplo.com</span>
+                                <span class="demo-span__codigo-error">api.ejemplo.com</span>
                                 <br />
                                 <small>Código de error:
-                                  <span class="ej-texto-destacado-span">ERR_CONNECTION_TIMEOUT</span></small>
+                                  <span class="demo-span__texto-destacado">ERR_CONNECTION_TIMEOUT</span></small>
                               </div>
-                              <span class="ej-notificacion__tiempo-span">hace 1 minuto</span>
+                              <span class="demo-notification__tiempo">hace 1 minuto</span>
                             </div>
-                            <div class="ej-notificacion__acciones-span">
-                              <button class="ej-btn-accion-span">
+                            <div class="demo-notification__acciones">
+                              <button class="demo-span__btn-accion">
                                 Reintentar
                               </button>
-                              <button class="ej-btn-accion-span">✕</button>
+                              <button class="demo-span__btn-accion">✕</button>
                             </div>
                           </div>
                         </div>
@@ -1530,62 +1530,62 @@
                       <!-- código ejecutado fin -->
                     </div>
                     <div class="row">
-                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                         <!-- código HTML -->
                         <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;div class="contenedor-notificaciones">
+                                &lt;div class="site-content__contenedor-notificaciones">
                                   &lt;!-- Notificación de éxito -->
-                                  &lt;div class="notificacion notificacion--exito">
-                                    &lt;span class="notificacion__icono">✅&lt;/span>
-                                    &lt;div class="notificacion__contenido">
-                                      &lt;span class="notificacion__titulo">Operación completada&lt;/span>
-                                      &lt;div class="notificacion__mensaje">
+                                  &lt;div class="site-content__notificacion site-content__notificacion-exito">
+                                    &lt;span class="site-content__notificacion-icono">✅&lt;/span>
+                                    &lt;div class="site-content__notificacion-contenido">
+                                      &lt;span class="site-content__notificacion-titulo">Operación completada&lt;/span>
+                                      &lt;div class="site-content__notificacion-mensaje">
                                         El archivo se ha guardado correctamente en
                                         &lt;span style="font-family: monospace; background-color: #e9ecef; padding: 0.1em 0.3em; border-radius: 0.2em;">/documentos/archivo.pdf&lt;/span>
                                       &lt;/div>
-                                      &lt;span class="notificacion__tiempo">hace 2 minutos&lt;/span>
+                                      &lt;span class="site-content__notificacion-tiempo">hace 2 minutos&lt;/span>
                                     &lt;/div>
-                                    &lt;div class="notificacion__acciones">
-                                      &lt;button class="btn-accion">Abrir&lt;/button>
-                                      &lt;button class="btn-accion">✕&lt;/button>
+                                    &lt;div class="site-content__notificacion-acciones">
+                                      &lt;button class="site-content__btn-accion">Abrir&lt;/button>
+                                      &lt;button class="site-content__btn-accion">✕&lt;/button>
                                     &lt;/div>
                                   &lt;/div>
 
                                   &lt;!-- Notificación de advertencia -->
-                                  &lt;div class="notificacion notificacion--advertencia">
-                                    &lt;span class="notificacion__icono">⚠️&lt;/span>
-                                    &lt;div class="notificacion__contenido">
-                                      &lt;span class="notificacion__titulo">Espacio de almacenamiento bajo&lt;/span>
-                                      &lt;div class="notificacion__mensaje">
+                                  &lt;div class="site-content__notificacion site-content__notificacion-advertencia">
+                                    &lt;span class="site-content__notificacion-icono">⚠️&lt;/span>
+                                    &lt;div class="site-content__notificacion-contenido">
+                                      &lt;span class="site-content__notificacion-titulo">Espacio de almacenamiento bajo&lt;/span>
+                                      &lt;div class="site-content__notificacion-mensaje">
                                         Quedan &lt;span style="font-weight: bold; color: #d63384;">150 MB&lt;/span>
                                         de &lt;span style="font-weight: bold;">2 GB&lt;/span> disponibles
                                       &lt;/div>
-                                      &lt;span class="notificacion__tiempo">hace 5 minutos&lt;/span>
+                                      &lt;span class="site-content__notificacion-tiempo">hace 5 minutos&lt;/span>
                                     &lt;/div>
-                                    &lt;div class="notificacion__acciones">
-                                      &lt;button class="btn-accion">Limpiar&lt;/button>
-                                      &lt;button class="btn-accion">✕&lt;/button>
+                                    &lt;div class="site-content__notificacion-acciones">
+                                      &lt;button class="site-content__btn-accion">Limpiar&lt;/button>
+                                      &lt;button class="site-content__btn-accion">✕&lt;/button>
                                     &lt;/div>
                                   &lt;/div>
 
                                   &lt;!-- Notificación de error --&gt;
-                                  &lt;div class="notificacion notificacion--error">
-                                    &lt;span class="notificacion__icono">❌&lt;/span>
-                                    &lt;div class="notificacion__contenido">
-                                      &lt;span class="notificacion__titulo">Error de conexión&lt;/span>
-                                      &lt;div class="notificacion__mensaje">
+                                  &lt;div class="site-content__notificacion site-content__notificacion-error">
+                                    &lt;span class="site-content__notificacion-icono">❌&lt;/span>
+                                    &lt;div class="site-content__notificacion-contenido">
+                                      &lt;span class="site-content__notificacion-titulo">Error de conexión&lt;/span>
+                                      &lt;div class="site-content__notificacion-mensaje">
                                         No se pudo conectar al servidor
                                         &lt;span style="font-family: monospace; background-color: #f8d7da; padding: 0.1em 0.3em; border-radius: 0.2em;">api.ejemplo.com&lt;/span>
                                         &lt;br>
                                         &lt;small>Código de error: &lt;span style="font-weight: bold;">ERR_CONNECTION_TIMEOUT&lt;/span>&lt;/small>
                                       &lt;/div>
-                                      &lt;span class="notificacion__tiempo">hace 1 minuto&lt;/span>
+                                      &lt;span class="site-content__notificacion-tiempo">hace 1 minuto&lt;/span>
                                     &lt;/div>
-                                    &lt;div class="notificacion__acciones">
-                                      &lt;button class="btn-accion">Reintentar&lt;/button>
-                                      &lt;button class="btn-accion">✕&lt;/button>
+                                    &lt;div class="site-content__notificacion-acciones">
+                                      &lt;button class="site-content__btn-accion">Reintentar&lt;/button>
+                                      &lt;button class="site-content__btn-accion">✕&lt;/button>
                                     &lt;/div>
                                   &lt;/div>
                                 &lt;/div>                                
@@ -1594,7 +1594,7 @@
                           </pre>
                         <!-- código HTML -->
                       </div>
-                      <div class="ej-code-css col-lg-6 mb-3">
+                      <div class="code-example__css-panel col-lg-6 mb-3">
                         <!-- código CSS -->
                         <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
@@ -1691,7 +1691,7 @@
                   mejorar la accesibilidad si tiene un propósito funcional o
                   semántico al aplicar estilos o interacción:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;span role="alert" aria-live="polite">Mensaje importante&lt;/span>
@@ -1742,7 +1742,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -1759,24 +1759,24 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item">
-                <a href="#introduccion" class="simple-link">Introducción</a>
+              <div class="site-menu__item">
+                <a href="#introduccion" class="site-menu__link">Introducción</a>
               </div>
 
-              <div class="menu-item">
-                <a href="#división-div" class="simple-link">División <code class="language-html">&lt;div></code></a>
+              <div class="site-menu__item">
+                <a href="#división-div" class="site-menu__link">División <code class="language-html">&lt;div></code></a>
               </div>
 
-              <div class="menu-item">
-                <a href="#fragmento-en-línea-span" class="simple-link">Fragmento en Línea
+              <div class="site-menu__item">
+                <a href="#fragmento-en-línea-span" class="site-menu__link">Fragmento en Línea
                   <code class="language-html">&lt;span></code></a>
               </div>
 
-              <div class="menu-item">
-                <a href="#comments" class="simple-link">Comentarios</a>
+              <div class="site-menu__item">
+                <a href="#comments" class="site-menu__link">Comentarios</a>
               </div>
             </div>
           </div>
@@ -1845,7 +1845,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

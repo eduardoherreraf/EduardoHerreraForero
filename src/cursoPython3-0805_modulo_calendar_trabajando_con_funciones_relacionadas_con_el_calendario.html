@@ -77,7 +77,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -95,7 +95,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -107,7 +107,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  El módulo <code class="language-python">calendar</code>, trabajando con funciones relacionadas con el calendario en Python  -->
@@ -134,7 +134,7 @@
                 <code class="language-python">calendar</code>, así como
                 ejemplos prácticos de su uso.
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <figure>
                   <img src="https://i.ibb.co/pyRL4b6/modulocalendar.jpg" class="img-fluid"
                     alt="El módulo calendar, trabajando con funciones relacionadas con el calendario en Python  "
@@ -167,7 +167,7 @@
                   <span class="fw-bold"><code class="language-python">calendar.month(year, month)</code></span>: Esta
                   función devuelve el calendario de un mes específico
                   en formato de texto.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           import calendar
@@ -189,7 +189,7 @@
                   <span class="fw-bold"><code class="language-python">calendar.calendar(year)</code></span>: Devuelve el
                   calendario completo del año en formato de
                   texto.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           import calendar
@@ -204,7 +204,7 @@
                   Esta función cambia el primer día de la semana. El valor
                   predeterminado es 0 (lunes), pero se puede establecer otro
                   valor (por ejemplo, 6 para domingo).
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           import calendar
@@ -237,7 +237,7 @@
                   <span class="fw-bold"><code class="language-python">calendar.weekheader(n)</code></span>:Este método
                   es útil cuando se necesita un encabezado
                   compacto para los días en un calendario.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           import calendar
@@ -265,7 +265,7 @@
                   <span class="fw-bold"><code class="language-python">calendar.month_name</code></span>: Devuelve el
                   nombre de un mes dado su número. Es útil para
                   mostrar nombres de meses en lugar de solo los números.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           import calendar
@@ -279,7 +279,7 @@
                   <span class="fw-bold"><code class="language-python">calendar.weekday(year, month, day)</code></span>:
                   Devuelve el día de la semana para una fecha específica (0
                   = lunes, 1 = martes, ..., 6 = domingo).
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           import calendar
@@ -293,7 +293,7 @@
                   <span class="fw-bold"><code class="language-python">calendar.day_name</code></span>: Lista con los
                   nombres completos de los días de la semana,
                   donde el índice 0 es "Lunes" y el índice 6 es "Domingo".
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           import calendar
@@ -305,7 +305,7 @@
                 <li>
                   <span class="fw-bold">calendar.day_abbr</span>: Lista con
                   las abreviaturas de los días de la semana.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           <pre  data-src-status="loaded" tabindex="0">
@@ -328,7 +328,7 @@
                   <code class="language-python">True</code> si el
                   año es bisiesto, de lo contrario, devuelve
                   <code class="language-python">False</code>.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           import calendar
@@ -342,7 +342,7 @@
                   <span class="fw-bold"><code class="language-python">calendar.leapdays(year1, year2)</code></span>:
                   Devuelve el número de años bisiestos entre dos años
                   (excluyendo el año final).
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           import calendar
@@ -366,7 +366,7 @@
                   <span class="fw-bold"><code class="language-python">calendar.firstweekday()</code></span>: Devuelve el
                   primer día de la semana actual (en formato
                   numérico).
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           import calendar
@@ -395,7 +395,7 @@
                   Devuelve una lista de semanas (cada una representada como
                   una lista de 7 días). Si un día no está en el mes, se
                   representa como 0.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           import calendar
@@ -417,7 +417,7 @@
                   <span class="fw-bold"><code class="language-python">calendar.prmonth(year, month)</code></span>:
                   Imprime el calendario de un mes específico en formato
                   tabular.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           import calendar
@@ -430,7 +430,7 @@
                   <span class="fw-bold"><code class="language-python">calendar.prcal(year)</code></span>: Imprime el
                   calendario completo de un año en formato
                   tabular.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           import calendar
@@ -476,7 +476,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -494,22 +494,22 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
-              <div class="menu-item"><a href="#funciones-para-obtener-el-calendario" class="simple-link">Funciones para
+              <div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
+              <div class="site-menu__item"><a href="#funciones-para-obtener-el-calendario" class="site-menu__link">Funciones para
                   Obtener el Calendario</a></div>
-              <div class="menu-item"><a href="#funciones-de-dIas-de-la-semana" class="simple-link">Funciones de Días de
+              <div class="site-menu__item"><a href="#funciones-de-dIas-de-la-semana" class="site-menu__link">Funciones de Días de
                   la Semana</a></div>
-              <div class="menu-item"><a href="#funciones-para-anno-bisiesto" class="simple-link">Funciones Para Año
+              <div class="site-menu__item"><a href="#funciones-para-anno-bisiesto" class="site-menu__link">Funciones Para Año
                   Bisiesto</a></div>
-              <div class="menu-item"><a href="#funciones-para-primer-dia-de-la-semana" class="simple-link">Funciones
+              <div class="site-menu__item"><a href="#funciones-para-primer-dia-de-la-semana" class="site-menu__link">Funciones
                   para Primer Día de la Semana</a></div>
-              <div class="menu-item"><a href="#funciones-de-calendario-en-formato-de-tabla"
-                  class="simple-link">Funciones de Calendario En Formato De Tabla</a></div>
+              <div class="site-menu__item"><a href="#funciones-de-calendario-en-formato-de-tabla"
+                  class="site-menu__link">Funciones de Calendario En Formato De Tabla</a></div>
               <!-- Comentarios  -->
-              <div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div>
+              <div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div>
             </div>
           </div>
         </div>
@@ -576,7 +576,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

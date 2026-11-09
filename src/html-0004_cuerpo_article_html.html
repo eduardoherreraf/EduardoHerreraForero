@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plantilla Footer Protagonista</title>
     <style>
-        .body-article1 {
+        .demo-article {
             font-family: "Arial", sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
@@ -14,12 +14,12 @@
             transition: all 0.3s ease;
         }
 
-        .body-article1.dark-mode-article1 {
+        .demo-article.demo-article--dark {
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             color: #e0e6ed;
         }
 
-        .button-article1 {
+        .demo-article__toggle {
             position: fixed;
             top: 20px;
             right: 20px;
@@ -35,12 +35,12 @@
             z-index: 1000;
         }
 
-        .button-article1:hover {
+        .demo-article__toggle:hover {
             background: rgba(255, 255, 255, 0.3);
             transform: scale(1.05);
         }
 
-        .container-article1 {
+        .demo-article__container {
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
@@ -49,7 +49,7 @@
             padding: 60px 20px 20px;
         }
 
-        .article-article1 {
+        .demo-article__card {
             background: rgba(255, 255, 255, 0.95);
             border-radius: 20px;
             padding: 40px;
@@ -61,7 +61,7 @@
             overflow: hidden;
         }
 
-        .article-article1::before {
+        .demo-article__card::before {
             content: "";
             position: absolute;
             top: 0;
@@ -73,28 +73,28 @@
             transition: opacity 0.3s ease;
         }
 
-        .article-article1:hover::before {
+        .demo-article__card:hover::before {
             opacity: 1;
         }
 
-        .article-article1:hover {
+        .demo-article__card:hover {
             transform: translateY(-10px);
             box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
             border-color: rgba(255, 255, 255, 0.3);
         }
 
-        .dark-mode-article1 .article-article1 {
+        .demo-article--dark .demo-article__card {
             background: rgba(45, 55, 72, 0.9);
             color: #e0e6ed;
             border-color: rgba(255, 255, 255, 0.1);
         }
 
-        .dark-mode-article1 .article-article1:hover {
+        .demo-article--dark .demo-article__card:hover {
             background: rgba(55, 65, 82, 0.95);
             border-color: rgba(255, 255, 255, 0.2);
         }
 
-        .h2-article1 {
+        .demo-article__title {
             font-size: 28px;
             font-weight: 700;
             margin-bottom: 20px;
@@ -103,7 +103,7 @@
             padding-bottom: 15px;
         }
 
-        .h2-article1::after {
+        .demo-article__title::after {
             content: "";
             position: absolute;
             bottom: 0;
@@ -114,72 +114,72 @@
             border-radius: 2px;
         }
 
-        .dark-mode-article1 .h2-article1 {
+        .demo-article--dark .demo-article__title {
             color: #f7fafc;
         }
 
-        .article-article1 p:not(.h2-article1) {
+        .demo-article__card p:not(.demo-article__title) {
             font-size: 16px;
             line-height: 1.8;
             color: #4a5568;
             margin-bottom: 15px;
         }
 
-        .dark-mode-article1 .article-article1 p:not(.h2-article1) {
+        .demo-article--dark .demo-article__card p:not(.demo-article__title) {
             color: #cbd5e0;
         }
 
-        .article-article1:nth-child(1) {
+        .demo-article__card:nth-child(1) {
             background: linear-gradient(135deg,
                     rgba(255, 107, 107, 0.1),
                     rgba(255, 255, 255, 0.95));
         }
 
-        .article-article1:nth-child(2) {
+        .demo-article__card:nth-child(2) {
             background: linear-gradient(135deg,
                     rgba(78, 205, 196, 0.1),
                     rgba(255, 255, 255, 0.95));
         }
 
-        .article-article1:nth-child(3) {
+        .demo-article__card:nth-child(3) {
             background: linear-gradient(135deg,
                     rgba(69, 183, 209, 0.1),
                     rgba(255, 255, 255, 0.95));
         }
 
-        .dark-mode-article1 .article-article1:nth-child(1) {
+        .demo-article--dark .demo-article__card:nth-child(1) {
             background: linear-gradient(135deg,
                     rgba(255, 107, 107, 0.1),
                     rgba(45, 55, 72, 0.9));
         }
 
-        .dark-mode-article1 .article-article1:nth-child(2) {
+        .demo-article--dark .demo-article__card:nth-child(2) {
             background: linear-gradient(135deg,
                     rgba(78, 205, 196, 0.1),
                     rgba(45, 55, 72, 0.9));
         }
 
-        .dark-mode-article1 .article-article1:nth-child(3) {
+        .demo-article--dark .demo-article__card:nth-child(3) {
             background: linear-gradient(135deg,
                     rgba(69, 183, 209, 0.1),
                     rgba(45, 55, 72, 0.9));
         }
 
         @media (max-width: 768px) {
-            .container-article1 {
+            .demo-article__container {
                 grid-template-columns: 1fr;
                 padding: 80px 10px 20px;
             }
 
-            .article-article1 {
+            .demo-article__card {
                 padding: 30px;
             }
 
-            .h2-article1 {
+            .demo-article__title {
                 font-size: 24px;
             }
 
-            .button-article1 {
+            .demo-article__toggle {
                 top: 10px;
                 right: 10px;
                 padding: 10px 16px;
@@ -199,19 +199,19 @@
             }
         }
 
-        .article-article1 {
+        .demo-article__card {
             animation: fadeInUp 0.6s ease forwards;
         }
 
-        .article-article1:nth-child(1) {
+        .demo-article__card:nth-child(1) {
             animation-delay: 0.1s;
         }
 
-        .article-article1:nth-child(2) {
+        .demo-article__card:nth-child(2) {
             animation-delay: 0.2s;
         }
 
-        .article-article1:nth-child(3) {
+        .demo-article__card:nth-child(3) {
             animation-delay: 0.3s;
         }
     </style>
@@ -220,15 +220,15 @@
 <body>
 
     <body>
-        <div class="body-article1">
-            <button class="button-article1"
-                onclick="document.querySelector('.body-article1').classList.toggle('dark-mode-article1')">
+        <div class="demo-article">
+            <button class="demo-article__toggle"
+                onclick="document.querySelector('.demo-article').classList.toggle('demo-article--dark')">
                 🌙 Modo Oscuro
             </button>
 
-            <div class="container-article1">
-                <article class="article-article1">
-                    <p class="h2-article1">Novedades en IA</p>
+            <div class="demo-article__container">
+                <article class="demo-article__card">
+                    <p class="demo-article__title">Novedades en IA</p>
                     <p>
                         Investigadores han desarrollado un nuevo algoritmo de aprendizaje profundo que promete
                         revolucionar el
@@ -238,8 +238,8 @@
                     </p>
                 </article>
 
-                <article class="article-article1">
-                    <p class="h2-article1">Avances en Hardware</p>
+                <article class="demo-article__card">
+                    <p class="demo-article__title">Avances en Hardware</p>
                     <p>
                         La última generación de procesadores promete mayor rendimiento con menor consumo energético.
                         Estos chips
@@ -249,8 +249,8 @@
                     </p>
                 </article>
 
-                <article class="article-article1">
-                    <p class="h2-article1">Tecnología Sostenible</p>
+                <article class="demo-article__card">
+                    <p class="demo-article__title">Tecnología Sostenible</p>
                     <p>
                         Las empresas tecnológicas están adoptando prácticas más sostenibles en el desarrollo de sus
                         productos.

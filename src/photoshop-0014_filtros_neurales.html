@@ -68,7 +68,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -86,7 +86,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -98,7 +98,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Filtros Neurales  -->
@@ -180,7 +180,7 @@
                   <span class="fw-bold">Acceder a los Filtros Neurales</span>:
                   Ir a la barra de menú superior y seleccionar:
                   <span class="text-success fw-bold">Filtro > Filtros Neurales ></span>.
-                  <div class="centrar-imagen magen-intro">
+                  <div class="site-image site-intro-image">
                     <figure>
                       <img src="./images/ps@filtroNeural.jpg" class="img-fluid" alt="Filtro Neural" />
                       <figcaption>
@@ -191,7 +191,7 @@
                   </div>
                   Esto abrirá una ventana emergente donde se encuentran los
                   filtros disponibles.
-                  <div class="centrar-imagen magen-intro">
+                  <div class="site-image site-intro-image">
                     <figure>
                       <img src="./images/ps@filtroNeuralVentana.jpg" class="img-fluid"
                         alt="Filtro Neural Ventana Configuración" />
@@ -208,7 +208,7 @@
                   defecto. Si aparece un ícono de nube al lado del filtro, se
                   debe hacer clic en él para descargarlo e instalarlo antes de
                   usarlo.
-                  <div class="centrar-imagen magen-intro">
+                  <div class="site-image site-intro-image">
                     <figure>
                       <img src="./images/ps@filtroNeuralVentanaDescragar.jpg" class="img-fluid"
                         alt="Filtro Neural Descargar Filtros" />
@@ -224,7 +224,7 @@
                   Seleccionar el filtro deseado haciendo clic en su casilla de
                   verificación, en este caso el filtro colorizer para
                   convertir de B/N a Color.
-                  <div class="centrar-imagen magen-intro">
+                  <div class="site-image site-intro-image">
                     <figure>
                       <img src="./images/ps@filtroNeuralAplicar.jpg" class="img-fluid" alt="Filtro Neural Colorizer" />
                       <figcaption>
@@ -251,7 +251,7 @@
                   <span class="fw-bold">Aplicar el Filtro</span>: Después de
                   ajustar el filtro a satisfacción, se puede hacer clic en
                   Aceptar para aplicarlo a la imagen.
-                  <div class="centrar-imagen magen-intro">
+                  <div class="site-image site-intro-image">
                     <figure>
                       <img src="./images/ps@filtroNeuralColorizer.jpg" class="img-fluid"
                         alt="Filtro Neural Colorizer Resultado" />
@@ -264,7 +264,7 @@
                 </li>
                 <li>
                   <span class="fw-bold">Guardar la imagen</span>:
-                  <div class="centrar-imagen magen-intro">
+                  <div class="site-image site-intro-image">
                     <figure>
                       <img src="./images/ps@filtroNeuralColorizerGuerzarNuevaCapa.jpg" class="img-fluid"
                         alt="Filtro Neural Colorizer Guardar Nueva Capa" />
@@ -278,7 +278,7 @@
                   editada en el formato deseado. Si se desea mantener la
                   imagen original intacta, es recomendable guardar la imagen
                   nueva en una capa nueva.
-                  <div class="centrar-imagen magen-intro">
+                  <div class="site-image site-intro-image">
                     <figure>
                       <img src="./images/ps@filtroNeuralColorizerGuerzarNuevaCapaFinal.jpg" class="img-fluid"
                         alt="Filtro Neural Colorizer  Nueva Capa Final" />
@@ -330,7 +330,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -348,14 +348,14 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
-              <div class="menu-item"><a href="#filtros-neurales" class="simple-link">Filtros Neurales</a></div>
+              <div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
+              <div class="site-menu__item"><a href="#filtros-neurales" class="site-menu__link">Filtros Neurales</a></div>
               <!-- Comentarios  -->
-              <div class="menu-item">
-                <a href="#comments" class="simple-link">Comentarios</a>
+              <div class="site-menu__item">
+                <a href="#comments" class="site-menu__link">Comentarios</a>
               </div>
             </div>
           </div>
@@ -422,7 +422,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

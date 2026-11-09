@@ -12,18 +12,18 @@
             box-sizing: border-box;
         }
 
-        body {
+        .demo-fixed-sidebar {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             height: 100vh;
             overflow: hidden;
         }
 
-        .container {
+        .demo-fixed-sidebar__container {
             display: flex;
             height: 100vh;
         }
 
-        .sidebar {
+        .demo-fixed-sidebar__sidebar {
             width: 250px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -32,22 +32,22 @@
             overflow-y: auto;
         }
 
-        .sidebar h2 {
+        .demo-fixed-sidebar__sidebar .demo-fixed-sidebar__h2 {
             margin-bottom: 30px;
             font-size: 24px;
             border-bottom: 2px solid rgba(255, 255, 255, 0.3);
             padding-bottom: 10px;
         }
 
-        .sidebar nav ul {
+        .demo-fixed-sidebar__sidebar .demo-fixed-sidebar__nav .demo-fixed-sidebar__ul {
             list-style: none;
         }
 
-        .sidebar nav li {
+        .demo-fixed-sidebar__sidebar .demo-fixed-sidebar__nav .demo-fixed-sidebar__li {
             margin-bottom: 15px;
         }
 
-        .sidebar nav a {
+        .demo-fixed-sidebar__sidebar .demo-fixed-sidebar__nav .demo-fixed-sidebar__a {
             color: white;
             text-decoration: none;
             display: block;
@@ -56,25 +56,25 @@
             transition: all 0.3s ease;
         }
 
-        .sidebar nav a:hover {
+        .demo-fixed-sidebar__sidebar .demo-fixed-sidebar__nav .demo-fixed-sidebar__a:hover {
             background: rgba(255, 255, 255, 0.2);
             transform: translateX(5px);
         }
 
-        .content {
+        .demo-fixed-sidebar__content {
             flex: 1;
             background: #f5f7fa;
             padding: 40px;
             overflow-y: auto;
         }
 
-        .content h1 {
+        .demo-fixed-sidebar__content .demo-fixed-sidebar__h1 {
             color: #2d3748;
             margin-bottom: 20px;
             font-size: 32px;
         }
 
-        .card {
+        .demo-fixed-sidebar__card {
             background: white;
             padding: 25px;
             border-radius: 12px;
@@ -82,54 +82,54 @@
             margin-bottom: 20px;
         }
 
-        .card h3 {
+        .demo-fixed-sidebar__card .demo-fixed-sidebar__h3 {
             color: #667eea;
             margin-bottom: 10px;
         }
 
-        .card p {
+        .demo-fixed-sidebar__card .demo-fixed-sidebar__p {
             color: #4a5568;
             line-height: 1.6;
         }
     </style>
 </head>
 
-<body>
-    <div class="container">
-        <aside class="sidebar">
-            <h2>Menú</h2>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">🏠 Inicio</a></li>
-                    <li><a href="#servicios">💼 Servicios</a></li>
-                    <li><a href="#proyectos">📁 Proyectos</a></li>
-                    <li><a href="#equipo">👥 Equipo</a></li>
-                    <li><a href="#contacto">📧 Contacto</a></li>
+<body class="demo-fixed-sidebar">
+    <div class="container demo-fixed-sidebar__container">
+        <aside class="demo-fixed-sidebar__sidebar">
+            <h2 class="demo-fixed-sidebar__h2">Menú</h2>
+            <nav class="demo-fixed-sidebar__nav">
+                <ul class="demo-fixed-sidebar__ul">
+                    <li class="demo-fixed-sidebar__li"><a href="#inicio" class="demo-fixed-sidebar__a">🏠 Inicio</a></li>
+                    <li class="demo-fixed-sidebar__li"><a href="#servicios" class="demo-fixed-sidebar__a">💼 Servicios</a></li>
+                    <li class="demo-fixed-sidebar__li"><a href="#proyectos" class="demo-fixed-sidebar__a">📁 Proyectos</a></li>
+                    <li class="demo-fixed-sidebar__li"><a href="#equipo" class="demo-fixed-sidebar__a">👥 Equipo</a></li>
+                    <li class="demo-fixed-sidebar__li"><a href="#contacto" class="demo-fixed-sidebar__a">📧 Contacto</a></li>
                 </ul>
             </nav>
         </aside>
 
-        <main class="content">
-            <h1>Contenido Principal</h1>
+        <main class="demo-fixed-sidebar__content">
+            <h1 class="demo-fixed-sidebar__h1">Contenido Principal</h1>
 
-            <div class="card">
-                <h3>Bienvenido</h3>
-                <p>Este es un ejemplo de layout con sidebar de ancho fijo y contenido flexible usando Flexbox. El
+            <div class="card demo-fixed-sidebar__card">
+                <h3 class="demo-fixed-sidebar__h3">Bienvenido</h3>
+                <p class="demo-fixed-sidebar__p">Este es un ejemplo de layout con sidebar de ancho fijo y contenido flexible usando Flexbox. El
                     sidebar mantiene sus 250px de ancho mientras que el contenido se expande para ocupar el resto del
                     espacio disponible.</p>
             </div>
 
-            <div class="card">
-                <h3>Características</h3>
-                <p>✓ Sidebar con ancho fijo de 250px<br>
+            <div class="card demo-fixed-sidebar__card">
+                <h3 class="demo-fixed-sidebar__h3">Características</h3>
+                <p class="demo-fixed-sidebar__p">✓ Sidebar con ancho fijo de 250px<br>
                     ✓ Contenido flexible que se adapta al espacio restante<br>
                     ✓ Diseño responsivo y moderno<br>
                     ✓ Scroll independiente en cada sección</p>
             </div>
 
-            <div class="card">
-                <h3>Flexbox</h3>
-                <p>El contenedor principal usa <code>display: flex</code> para crear el layout. El sidebar tiene
+            <div class="card demo-fixed-sidebar__card">
+                <h3 class="demo-fixed-sidebar__h3">Flexbox</h3>
+                <p class="demo-fixed-sidebar__p">El contenedor principal usa <code>display: flex</code> para crear el layout. El sidebar tiene
                     <code>width: 250px</code> y <code>flex-shrink: 0</code> para mantener su ancho fijo, mientras que el
                     contenido usa <code>flex: 1</code> para ocupar todo el espacio restante.</p>
             </div>

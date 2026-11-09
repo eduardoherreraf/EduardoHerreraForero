@@ -55,14 +55,14 @@
            ======================================== */
         
         /* NAVBAR: Conversión de d-flex a Grid */
-        .navbar-brand {
+        .site-grid__navbar-brand {
             display: grid;
             grid-template-columns: auto 1fr;
             align-items: center;
             gap: 0.25rem;
         }
         
-        .navbar-nav {
+        .site-grid__navbar-nav {
             display: grid;
             grid-auto-flow: column;
             justify-content: end;
@@ -70,21 +70,21 @@
         }
         
         @media (max-width: 991.98px) {
-            .navbar-nav {
+            .site-grid__navbar-nav {
                 grid-auto-flow: row;
                 justify-content: center;
             }
         }
         
         /* LAYOUT PRINCIPAL: Conversión de row a Grid */
-        #introduccion main.row {
+        .site-layout__intro main.site-grid__row {
             display: grid;
             grid-template-columns: 1fr;
             gap: 0;
         }
         
         @media (min-width: 992px) {
-            #introduccion main.row {
+            .site-layout__intro main.site-grid__row {
                 grid-template-columns: 75% 25%;
             }
         }
@@ -99,26 +99,26 @@
         /* FOOTER: Conversión completa a Grid */
         
         /* Footer contenedor principal */
-        footer.row {
+        footer.site-grid__row {
             display: grid;
             grid-template-rows: auto auto;
             gap: 1rem;
         }
         
-        footer > .row {
+        footer > .site-grid__row {
             display: grid;
             grid-template-columns: 1fr;
             gap: 2rem;
         }
         
         @media (min-width: 992px) {
-            footer > .row {
+            footer > .site-grid__row {
                 grid-template-columns: repeat(3, 1fr);
             }
         }
         
         /* SECCIÓN CONTACTO: d-flex flex-column align-items-center */
-        footer address.col-lg-4 {
+        footer address.site-grid__col-lg-4 {
             display: grid;
             grid-template-rows: auto auto auto;
             justify-items: center;
@@ -126,7 +126,7 @@
         }
         
         /* d-flex flex-row align-items-center */
-        footer address .d-flex.flex-row {
+        footer address .site-grid__d-flex.site-grid__flex-row {
             display: grid;
             grid-template-columns: auto 1fr;
             align-items: center;
@@ -134,7 +134,7 @@
         }
         
         /* SECCIÓN DERECHOS DE AUTOR: d-flex flex-column align-items-center justify-content-center */
-        footer .col-lg-4:nth-child(2) {
+        footer .site-grid__col-lg-4:nth-child(2) {
             display: grid;
             grid-template-rows: auto auto;
             justify-items: center;
@@ -143,7 +143,7 @@
         }
         
         /* SECCIÓN REDES SOCIALES: d-flex flex-column align-items-center */
-        footer .col-lg-4:nth-child(3) {
+        footer .site-grid__col-lg-4:nth-child(3) {
             display: grid;
             grid-template-rows: auto auto;
             justify-items: center;
@@ -151,7 +151,7 @@
         }
         
         /* d-flex justify-content-evenly align-items-center gap-5 */
-        footer .col-lg-4:nth-child(3) > div:last-child {
+        footer .site-grid__col-lg-4:nth-child(3) > div:last-child {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             justify-items: center;
@@ -169,7 +169,7 @@
         }
         
         /* Sobreescribir clases de Bootstrap para usar Grid */
-        .d-grid-custom {
+        .site-grid__d-grid-custom {
             display: grid !important;
         }
     </style>
@@ -180,7 +180,7 @@
     <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
         <div class="container-fluid">
             <!-- Enlace a la página principal con el logo y nombre -->
-            <a class="navbar-brand ms-2" href="index.html">
+            <a class="navbar-brand site-grid__navbar-brand ms-2" href="index.html">
                 <img src="./images/logo.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30"
                     class="d-inline-block align-text-top me-1" />
                 <span class="d-none d-lg-inline">Ing. Eduardo Herrera Forero</span>
@@ -189,11 +189,11 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
             </button>
             <!-- Menú de navegación -->
             <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 w-100">
+                <ul class="navbar-nav site-grid__navbar-nav ms-auto mb-2 mb-lg-0 w-100">
                     <li class="nav-item">
                         <a class="nav-link mx-1 active" aria-current="page" href="index.html#about">SOBRE MÍ</a>
                     </li>
@@ -219,32 +219,32 @@
     <!-- Barra de Navegación -->
     
     <!--  principal  -->
-    <div class="container-fluid" id="introduccion">
-        <main class="row">
+    <div class="container-fluid site-layout__intro" id="introduccion">
+        <main class="row site-grid__row">
             <section class="pb-3 pt-5 col-lg-9 px-lg-4">
                 <!-- about -->
-                <article class="row border-1 border-bottom pb-3" id="about"></article>
+                <article class="row site-grid__row border-1 border-bottom pb-3" id="about"></article>
                 <!-- fin About -->
 
                 <!-- resume -->
-                <article class="row border-1 border-bottom pb-3" id="resume"></article>
+                <article class="row site-grid__row border-1 border-bottom pb-3" id="resume"></article>
                 <!-- fin resume -->
 
                 <!-- portfolio -->
-                <article class="row border-1 border-bottom pb-3" id="portfolio"></article>
+                <article class="row site-grid__row border-1 border-bottom pb-3" id="portfolio"></article>
                 <!-- fin portfolio -->
 
                 <!-- formación -->
-                <article class="row" id="studies"></article>
-                <article class="row border-1 border-bottom py-3"></article>
+                <article class="row site-grid__row" id="studies"></article>
+                <article class="row site-grid__row border-1 border-bottom py-3"></article>
                 <!-- fin formación -->
 
                 <!-- Blog ------ -->
-                <article class="row border-1 border-bottom pb-3" id="blog"></article>
+                <article class="row site-grid__row border-1 border-bottom pb-3" id="blog"></article>
                 <!-- fin Blog -->
 
                 <!--  contacto  -->
-                <article class="row" id="contact"></article>
+                <article class="row site-grid__row" id="contact"></article>
                 <!--  fin contacto  -->
             </section>
             <!--  fin principal  -->
@@ -259,25 +259,25 @@
     <!--  principal fin -->
 
     <!--  pie de pagina  -->
-    <footer class="row border-top border-1 m-1 mt-auto">
-        <div class="row">
+    <footer class="row site-grid__row border-top border-1 m-1 mt-auto">
+        <div class="row site-grid__row">
             <!-- contacto -->
-            <address class="col-lg-4">
+            <address class="col-lg-4 site-grid__col-lg-4">
                 <div class="text-center fs-2">Contacto</div>
-                <div class="d-flex flex-row align-items-center">
+                <div class="d-flex site-grid__d-flex flex-row site-grid__flex-row align-items-center">
                     <i class="bi bi-envelope-at fs-3"></i>
                     <span class="ms-3">
                         <a class="text-decoration-none" href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a>
                     </span>
                 </div>
-                <div class="d-flex flex-row align-items-center">
+                <div class="d-flex site-grid__d-flex flex-row site-grid__flex-row align-items-center">
                     <i class="bi bi-geo-alt fs-3"></i>
                     <span class="ms-3">Bogotá D. C. - Colombia</span>
                 </div>
             </address>
             
             <!-- Derechos de autor -->
-            <div class="col-lg-4">
+            <div class="col-lg-4 site-grid__col-lg-4">
                 <div>
                     <i class="bi bi-c-circle fs-5"></i>
                 </div>
@@ -285,7 +285,7 @@
             </div>
             
             <!-- redes sociales -->
-            <div class="col-lg-4">
+            <div class="col-lg-4 site-grid__col-lg-4">
                 <div class="text-center fs-2">Redes Sociales</div>
                 <div>
                     <div>

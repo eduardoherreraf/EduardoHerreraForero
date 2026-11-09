@@ -66,7 +66,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -84,7 +84,7 @@
             <a class="nav-link mx-1 text-decoration-none" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo text-decoration-none" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active text-decoration-none site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1 text-decoration-none" href="index.html#contact">CONTACTO</a>
@@ -96,7 +96,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Enlaces y hipervínculos HTML-->
@@ -111,7 +111,7 @@
             <div>
               <h2>Introducción</h2>
 
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <picture>
                   <img src="https://i.postimg.cc/MHBr9FzF/img-ancla-y-hirpervinculo-comp.png" class="img-fluid"
                     alt="Enlaces y hipervínculos HTML"
@@ -166,7 +166,7 @@
               </p>
             </div>
             <!-- Introducción Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Enlaces HTML-Hiperenlaces -->
             <div id="enlaces-html-hiperenlaces" class="mt-3">
@@ -185,7 +185,7 @@
               </p>
             </div>
             <!-- Enlaces HTML-Hiperenlaces Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Enlaces HTML-Sintaxis -->
             <div id="enlaces-html-sintaxis" class="mt-3">
@@ -196,7 +196,7 @@
                 hipervínculo. Tiene la siguiente sintaxis:
               </p>
 
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                       &lt;a href="url">link text&lt;/a>
@@ -224,8 +224,8 @@
                 </li>
               </ul>
               <!-- Ejemplo -->
-              <div class="ej-ejemplo">
-                <div class="ej-ejecutado mt-3">
+              <div class="code-example">
+                <div class="code-example__output mt-3">
                   <!-- código ejecutado -->
                   <p>
                     Este ejemplo muestra cómo crear un enlace a la página del
@@ -233,7 +233,7 @@
                   </p>
                   <!-- código ejecutado fin -->
                 </div>
-                <div class="ej-code-html mb-3">
+                <div class="code-example__html mb-3">
                   <!-- código código HTML -->
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" class="language-html" data-prismjs-copy="Copy">
@@ -268,7 +268,7 @@
               </ul>
             </div>
             <!-- Enlaces HTML-Sintaxis Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Enlaces HTML - El Atributo target -->
             <div id="enlaces-html---el-atributo-target" class="mt-3">
@@ -319,8 +319,8 @@
                 </li>
               </ul>
               <!-- Ejemplo -->
-              <div class="ej-ejemplo">
-                <div class="ej-ejecutado mt-3">
+              <div class="code-example">
+                <div class="code-example__output mt-3">
                   <!-- código ejecutado -->
                   <p>
                     <code class="language-html">_self</code>:
@@ -333,7 +333,7 @@
                   </p>
                   <!-- código ejecutado fin -->
                 </div>
-                <div class="ej-code-html mb-3">
+                <div class="code-example__html mb-3">
                   <!-- código código HTML -->
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-html" class="language-html" data-prismjs-copy="Copy">
@@ -354,7 +354,7 @@
               <!-- Ejemplo fin -->
             </div>
             <!-- Enlaces HTML - El Atributo target Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- URLs absolutas vs URLs relativas -->
             <div id="urls-absolutas-vs-urls-relativas" class="mt-3">
@@ -407,8 +407,8 @@
                   </li>
                 </ul>
                 <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="ej-ejecutado mt-3">
+                <div class="code-example">
+                  <div class="code-example__output mt-3">
                     <!-- código ejecutado -->
                     <p>
                       Para la página inicial de la Nasa:
@@ -431,7 +431,7 @@
                     </p>
                     <!-- código ejecutado fin -->
                   </div>
-                  <div class="ej-code-html mb-3">
+                  <div class="code-example__html mb-3">
                     <!-- código HTML -->
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" class="language-html" data-prismjs-copy="Copy">
@@ -516,7 +516,7 @@
                   <ul>
                     <li>
                       <span class="fw-bold">Relativas al documento actual</span>:
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                               &lt;!-- Archivo en la misma carpeta --&gt;
@@ -533,7 +533,7 @@
                     </li>
                     <li>
                       <span class="fw-bold">Relativas a la raíz del sitio</span>:
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                               &lt;!-- Comienzan con / --&gt;
@@ -545,7 +545,7 @@
                     </li>
                     <li>
                       <span class="fw-bold">Relativas con navegación de directorios</span>:
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                               &lt;!-- Subir un nivel --&gt;
@@ -567,7 +567,7 @@
                 <div>
                   <h4>Ejemplos Prácticos de URLs Relativas</h4>
                   <!-- Estructura de Carpetas para URLs Relativas -->
-                  <div class="contenedor">
+                  <div class="site-content__contenedor">
                     <div class="row">
                       <div class="col-lg-4">
                         <p>
@@ -703,7 +703,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
               <!-- Cuándo Usar Cada Tipo de URL  fin -->
             </div>
             <!-- URLs absolutas vs URLs relativas Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Enlaces HTML - Usar una Imagen como Enlace -->
             <div id="enlaces-html---usar-una-imagen-como-enlace" class="mt-3">
@@ -720,7 +720,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
               </p>
               <!-- Sintaxis -->
               <p><span class="fw-bold">Sintaxis Básica</span>:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                       &lt;a href="URL_destino">
@@ -732,10 +732,10 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
               <!-- Sintaxis fin -->
               <p><span class="fw-bold">Ejemplo</span>:</p>
               <!-- Ejemplo -->
-              <div class="ej-ejemplo">
-                <div class="ej-ejecutado mt-3">
+              <div class="code-example">
+                <div class="code-example__output mt-3">
                   <!-- código ejecutado -->
-                  <div class="ej-centrar-imagen">
+                  <div class="demo-content__centrar-imagen">
                     <a href="https://www.nasa.gov/">
                       <img src="https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg"
                         alt="Logo de NASA" width="150" />
@@ -743,7 +743,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                   </div>
                   <!-- código ejecutado fin -->
                 </div>
-                <div class="ej-code-html mb-3">
+                <div class="code-example__html mb-3">
                   <!-- código HTML -->
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" class="language-html" data-prismjs-copy="Copy">
@@ -762,7 +762,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
               <!-- Ejemplo fin -->
             </div>
             <!-- Enlaces HTML - Usar una Imagen como Enlace fin-->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Enlaces HTML - Enlace a una Dirección de Correo Electrónico -->
             <div id="enlaces-html---enlace-a-una-direccion-de-correo-electronico" class="mt-3">
@@ -780,7 +780,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
               </p>
               <!-- Sintaxis -->
               <p><span class="fw-bold">Sintaxis Básica</span>:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                       &lt;a href="mailto:correo@ejemplo.com">Enviar correo&lt;/a>
@@ -811,7 +811,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                     <code class="language-html">Mi%20consulta</code>.
                   </p>
                   <!-- Sintaxis -->
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                           &lt;p>
@@ -832,7 +832,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                     el código <code class="language-html">%20</code>.
                   </p>
                   <!-- Sintaxis -->
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                           &lt;p>
@@ -854,7 +854,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                     una coma (,).
                   </p>
                   <!-- Sintaxis -->
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                           &lt;p>
@@ -872,7 +872,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                 <div>
                   <h4>Con copia (CC) y copia oculta (BCC)</h4>
                   <!-- Sintaxis -->
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                           &lt;p>
@@ -893,8 +893,8 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                     Este ejemplo ilustra cómo usar todas las opciones
                     disponibles para enviar un correo electrónico.
                   </p>
-                  <div class="ej-ejemplo">
-                    <div class="ej-ejecutado">
+                  <div class="code-example">
+                    <div class="code-example__output">
                       <!-- código ejecutado -->
                       <p>
                         Se envía el correo a:
@@ -907,7 +907,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                       </p>
                       <!-- código ejecutado fin -->
                     </div>
-                    <div class="ej-code-html mb-3">
+                    <div class="code-example__html mb-3">
                       <!-- código HTML -->
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" class="language-html" data-prismjs-copy="Copy">
@@ -930,7 +930,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
               <!-- Opciones Adicionales para Enviar Correos  fin -->
             </div>
             <!-- Enlaces HTML - Enlace a una Dirección de Correo Electrónico Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Enlaces HTML - Un Botón como un Enlace -->
             <div id="enlaces-html---un-boton-como-un-enlace" class="mt-3">
@@ -952,8 +952,8 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                   web.
                 </p>
                 <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
+                <div class="code-example">
+                  <div class="row code-example__output mt-3">
                     <!-- código ejecutado -->
                     <p>
                       Este botón lo lleva a la Página de inicio de la NASA:
@@ -964,7 +964,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                     <!-- código ejecutado fin -->
                   </div>
                   <div class="row">
-                    <div class="ej-code-html mb-3">
+                    <div class="code-example__html mb-3">
                       <!-- código HTML -->
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" class="language-html" data-prismjs-copy="Copy">
@@ -986,17 +986,17 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                 <h3>Enlace Estilizado como Botón</h3>
                 <p>Es la opción más semánticamente correcta y accesible.</p>
                 <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
+                <div class="code-example">
+                  <div class="row code-example__output mt-3">
                     <!-- código ejecutado -->
                     <p>
                       Este botón lo lleva a la Página de inicio de la NASA:
-                      <a href="https://nasa.gov/" target="_blank" class="ej-boton">NASA</a>
+                      <a href="https://nasa.gov/" target="_blank" class="demo-content__boton">NASA</a>
                     </p>
                     <!-- código ejecutado fin -->
                   </div>
                   <div class="row">
-                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                    <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                       <!-- código HTML -->
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" class="language-html" data-prismjs-copy="Copy">
@@ -1006,14 +1006,14 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                             &lt;a <br>
                               href="https://nasa.gov/" <br>
                               target="_blank" <br>
-                              class="boton" <br>
+                              class="site-content__boton" <br>
                               >NASA&lt;/a> <br>
                             &lt;/p>
                           </code>
                         </pre>
                       <!-- código HTML -->
                     </div>
-                    <div class="ej-code-css col-lg-6 mb-3">
+                    <div class="code-example__css-panel col-lg-6 mb-3">
                       <!-- código CSS -->
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" class="language-css" data-prismjs-copy="Copy">
@@ -1045,22 +1045,22 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                 <h3>Formulario con Botón</h3>
                 <p>Es útil cuando se necesita enviar datos POST.</p>
                 <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
+                <div class="code-example">
+                  <div class="row code-example__output mt-3">
                     <div class="d-flex align-items-center gap-2">
                       <!-- código ejecutado -->
                       <p>
                         Este botón lo lleva a la Página de inicio de la
                         NASA:&nbsp;
                       </p>
-                      <form action="https://www.nasa.gov/" method="get" target="_blank" class="ej-form">
+                      <form action="https://www.nasa.gov/" method="get" target="_blank" class="demo-content__form">
                         <button type="submit">NASA</button>
                       </form>
                       <!-- código ejecutado fin -->
                     </div>
                   </div>
                   <div class="row">
-                    <div class="ej-code-html mb-3">
+                    <div class="code-example__html mb-3">
                       <!-- código HTML -->
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" class="language-html" data-prismjs-copy="Copy">
@@ -1088,8 +1088,8 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
               <div id="botón-con-javascript">
                 <h3>Botón con JavaScript</h3>
                 <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
+                <div class="code-example">
+                  <div class="row code-example__output mt-3">
                     <div class="d-flex align-items-center gap-2">
                       <!-- código ejecutado -->
                       <p>
@@ -1102,9 +1102,9 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="ej-code-html mb-3">
+                    <div class="code-example__html mb-3">
                       <!-- código HTML -->
-                      <pre class="ej-pre">
+                      <pre class="code-example__pre">
                           <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                             &lt;p>
                               Este botón lo lleva a la Página de inicio de la
@@ -1129,20 +1129,20 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
               <div id="botón-con-data-attribute-y-javascript">
                 <h3>Botón con data attribute y JavaScript</h3>
                 <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
+                <div class="code-example">
+                  <div class="row code-example__output mt-3">
                     <div class="d-flex align-items-center gap-2">
                       <!-- código ejecutado -->
                       <p>
                         Este botón lo lleva a la Página de inicio de la NASA:
                       </p>
-                      <button data-url="https://nasa.gov" class="link-button">
+                      <button data-url="https://nasa.gov" class="demo-link__button">
                         NASA
                       </button>
 
                       <script>
                         document
-                          .querySelectorAll(".link-button")
+                          .querySelectorAll(".demo-link__button")
                           .forEach((button) => {
                             button.addEventListener("click", function () {
                               window.open(this.dataset.url, "_blank");
@@ -1153,17 +1153,17 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="ej-code-html mb-3">
+                    <div class="code-example__html mb-3">
                       <!-- código HTML -->
-                      <pre class="ej-pre">
+                      <pre class="code-example__pre">
                           <code class="language-html" class="language-html" data-prismjs-copy="Copy">
-                            &lt;button data-url="https://nasa.gov" class="link-button">
+                            &lt;button data-url="https://nasa.gov" class="demo-link__button">
                               NASA
                             &lt;/button> <br>
 
                             &lt;script> <br>
                               document
-                                .querySelectorAll(".link-button") <br>
+                                .querySelectorAll(".demo-link__button") <br>
                                 .forEach((button) => { <br>
                                   button.addEventListener("click", function () { <br>
                                     window.open(this.dataset.url, "_blank"); <br>
@@ -1181,7 +1181,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
               <!-- Botón con data attribute y JavaScript  fin -->
             </div>
             <!-- Enlaces HTML - Un Botón como un Enlace Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Marcadores (Anchors) -->
             <div id="marcadores-anchors" class="mt-3">
@@ -1248,7 +1248,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                 <!-- Navegación Interna  -->
                 <div>
                   <h4>Navegación Interna</h4>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                           &lt;!-- Enlaces en el menú --&gt;
@@ -1280,7 +1280,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                 <!-- Botón "Volver al Inicio"  -->
                 <div>
                   <h4>Botón "Volver al Inicio"</h4>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                           &lt;!-- Al inicio de la página --&gt;
@@ -1291,7 +1291,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                           .
                                                   
                           &lt;!-- En cualquier parte de la página --&gt;
-                          &lt;a href="#top" class="back-to-top"&gt;↑ Volver arriba&lt;/a&gt;   
+                          &lt;a href="#top" class="site-content__back-to-top"&gt;↑ Volver arriba&lt;/a&gt;
                         </code>
                       </pre>
                   </div>
@@ -1340,7 +1340,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                   páginas:
                 </p>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                     <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                       &lt;!-- Enlace a una sección específica de otra página --&gt;
@@ -1387,7 +1387,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                   garantizar la seguridad y evitar posibles vulnerabilidades.
                 </p>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                         &lt;a href="https://sitioexterno.com" target="_blank" rel="noopener noreferrer">Enlace seguro&lt;/a>
@@ -1405,7 +1405,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                   información adicional que aparece como tooltip:
                 </p>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                         &lt;a href="documento.pdf" title="Descargar documento PDF (2MB)">Descargar&lt;/a>
@@ -1418,7 +1418,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                   alternativa para lectores de pantalla::
                 </p>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                         &lt;a href="/inicio" aria-label="Ir a página de inicio">🏠&lt;/a>
@@ -1436,7 +1436,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                   descargar el recurso en lugar de navegarlo:
                 </p>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                         &lt;a href="archivo.pdf" download="manual-usuario.pdf">Descargar manual&lt;/a>
@@ -1454,7 +1454,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                   idioma del contenido enlazado:
                 </p>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                         &lt;a href="https://ejemplo.com/en/" hreflang="en">English version&lt;/a>
@@ -1467,7 +1467,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                   MIME del contenido enlazado:
                 </p>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                         &lt;a href="documento.pdf" type="application/pdf">Ver PDF&lt;/a>
@@ -1482,7 +1482,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                 <h3>Ejemplo Completo Enlaces</h3>
                 <!-- Sintaxis -->
                 <p><span class="fw-bold">Sintaxis Básica</span>:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                         &lt;a href="https://ejemplo.com/articulo" 
@@ -1540,7 +1540,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -1558,104 +1558,104 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item">
-                <a href="#introduccion" class="simple-link">Introducción</a>
+              <div class="site-menu__item">
+                <a href="#introduccion" class="site-menu__link">Introducción</a>
               </div>
 
-              <div class="menu-item">
-                <a href="#enlaces-html-hiperenlaces" class="simple-link">Enlaces HTML-Hiperenlaces</a>
+              <div class="site-menu__item">
+                <a href="#enlaces-html-hiperenlaces" class="site-menu__link">Enlaces HTML-Hiperenlaces</a>
               </div>
 
-              <div class="menu-item">
-                <a href="#enlaces-html-sintaxis" class="simple-link">Enlaces HTML-Sintaxis</a>
+              <div class="site-menu__item">
+                <a href="#enlaces-html-sintaxis" class="site-menu__link">Enlaces HTML-Sintaxis</a>
               </div>
 
-              <div class="menu-item">
-                <a href="#enlaces-html---el-atributo-target" class="simple-link">Enlaces HTML - El Atributo target</a>
+              <div class="site-menu__item">
+                <a href="#enlaces-html---el-atributo-target" class="site-menu__link">Enlaces HTML - El Atributo target</a>
               </div>
 
-              <div class="menu-item">
+              <div class="site-menu__item">
                 <details>
                   <summary>URLs Absolutas vs URLs Relativas</summary>
-                  <div class="submenu">
-                    <a href="#urls-absolutas-vs-urls-relativas" class="submenu-item">URLs Absolutas vs URLs
+                  <div class="site-menu__submenu">
+                    <a href="#urls-absolutas-vs-urls-relativas" class="site-menu__submenu-link">URLs Absolutas vs URLs
                       Relativas</a>
-                    <a href="#url-absoluta" class="submenu-item">URL Absoluta</a>
-                    <a href="#url-relativa" class="submenu-item">URL Relativa</a>
-                    <a href="#cuándo-usar-cada-tipo-de-url" class="submenu-item">Cuándo Usar Cada Tipo de URL</a>
+                    <a href="#url-absoluta" class="site-menu__submenu-link">URL Absoluta</a>
+                    <a href="#url-relativa" class="site-menu__submenu-link">URL Relativa</a>
+                    <a href="#cuándo-usar-cada-tipo-de-url" class="site-menu__submenu-link">Cuándo Usar Cada Tipo de URL</a>
                   </div>
                 </details>
               </div>
 
-              <div class="menu-item">
-                <a href="#enlaces-html---usar-una-imagen-como-enlace" class="simple-link">Enlaces HTML - Usar una Imagen
+              <div class="site-menu__item">
+                <a href="#enlaces-html---usar-una-imagen-como-enlace" class="site-menu__link">Enlaces HTML - Usar una Imagen
                   como Enlace</a>
               </div>
 
-              <div class="menu-item">
+              <div class="site-menu__item">
                 <details>
                   <summary>
                     Enlaces HTML - Enlace a una Dirección de Correo Electrónico
                   </summary>
-                  <div class="submenu">
-                    <a href="#enlaces-html---enlace-a-una-direccion-de-correo-electronico" class="submenu-item">Enlaces
+                  <div class="site-menu__submenu">
+                    <a href="#enlaces-html---enlace-a-una-direccion-de-correo-electronico" class="site-menu__submenu-link">Enlaces
                       HTML - Enlace a una Dirección de Correo
                       Electrónico
                     </a>
-                    <a href="#opciones-adicionales-para-enviar-correos" class="submenu-item">Opciones Adicionales para
+                    <a href="#opciones-adicionales-para-enviar-correos" class="site-menu__submenu-link">Opciones Adicionales para
                       Enviar Correos</a>
                   </div>
                 </details>
               </div>
 
-              <div class="menu-item">
+              <div class="site-menu__item">
                 <details>
                   <summary>Enlaces HTML - Un Botón como un Enlace</summary>
-                  <div class="submenu">
-                    <a href="#enlaces-html---un-boton-como-un-enlace" class="submenu-item">Enlaces HTML - Un Botón como
+                  <div class="site-menu__submenu">
+                    <a href="#enlaces-html---un-boton-como-un-enlace" class="site-menu__submenu-link">Enlaces HTML - Un Botón como
                       un Enlace</a>
-                    <a href="#botón-dentro-de-un-enlace" class="submenu-item">Botón Dentro de un Enlace</a>
-                    <a href="#enlace-estilizado-como-botón" class="submenu-item">Enlace Estilizado como Botón</a>
-                    <a href="#formulario-con-botón" class="submenu-item">Formulario con Botón</a>
-                    <a href="#botón-con-javascript" class="submenu-item">Botón con JavaScript</a>
-                    <a href="#botón-con-data-attribute-y-javascript" class="submenu-item">Botón con data attribute y
+                    <a href="#botón-dentro-de-un-enlace" class="site-menu__submenu-link">Botón Dentro de un Enlace</a>
+                    <a href="#enlace-estilizado-como-botón" class="site-menu__submenu-link">Enlace Estilizado como Botón</a>
+                    <a href="#formulario-con-botón" class="site-menu__submenu-link">Formulario con Botón</a>
+                    <a href="#botón-con-javascript" class="site-menu__submenu-link">Botón con JavaScript</a>
+                    <a href="#botón-con-data-attribute-y-javascript" class="site-menu__submenu-link">Botón con data attribute y
                       JavaScript</a>
                   </div>
                 </details>
               </div>
 
-              <div class="menu-item">
+              <div class="site-menu__item">
                 <details>
                   <summary>Marcadores (Anchors)</summary>
-                  <div class="submenu">
-                    <a href="#marcadores-anchors" class="submenu-item">Marcadores (Anchors)</a>
-                    <a href="#sintaxis-básica-de-marcadores" class="submenu-item">Sintaxis Básica de Marcadores</a>
-                    <a href="#ejemplos-uso-del-marcador" class="submenu-item">Ejemplos Uso del Marcador</a>
-                    <a href="#consejos-y-mejores-prácticas" class="submenu-item">Consejos y Mejores Prácticas</a>
-                    <a href="#enlaces-a-marcadores-en-otras-páginas" class="submenu-item">Enlaces a Marcadores en Otras
+                  <div class="site-menu__submenu">
+                    <a href="#marcadores-anchors" class="site-menu__submenu-link">Marcadores (Anchors)</a>
+                    <a href="#sintaxis-básica-de-marcadores" class="site-menu__submenu-link">Sintaxis Básica de Marcadores</a>
+                    <a href="#ejemplos-uso-del-marcador" class="site-menu__submenu-link">Ejemplos Uso del Marcador</a>
+                    <a href="#consejos-y-mejores-prácticas" class="site-menu__submenu-link">Consejos y Mejores Prácticas</a>
+                    <a href="#enlaces-a-marcadores-en-otras-páginas" class="site-menu__submenu-link">Enlaces a Marcadores en Otras
                       Páginas</a>
                   </div>
                 </details>
               </div>
 
-              <div class="menu-item">
+              <div class="site-menu__item">
                 <details>
                   <summary>Otros Atributos para Enlaces</summary>
-                  <div class="submenu">
-                    <a href="#atributos-de-seguridad" class="submenu-item">Atributos de Seguridad</a>
-                    <a href="#atributos-de-accesibilidad" class="submenu-item">Atributos de Accesibilidad</a>
-                    <a href="#atributos-de-descarga" class="submenu-item">Atributos de Descarga</a>
-                    <a href="#atributos-de-navegación" class="submenu-item">Atributos de Navegación</a>
-                    <a href="#ejemplo-completo-enlaces" class="submenu-item">Ejemplo Completo Enlaces</a>
+                  <div class="site-menu__submenu">
+                    <a href="#atributos-de-seguridad" class="site-menu__submenu-link">Atributos de Seguridad</a>
+                    <a href="#atributos-de-accesibilidad" class="site-menu__submenu-link">Atributos de Accesibilidad</a>
+                    <a href="#atributos-de-descarga" class="site-menu__submenu-link">Atributos de Descarga</a>
+                    <a href="#atributos-de-navegación" class="site-menu__submenu-link">Atributos de Navegación</a>
+                    <a href="#ejemplo-completo-enlaces" class="site-menu__submenu-link">Ejemplo Completo Enlaces</a>
                   </div>
                 </details>
               </div>
 
-              <div class="menu-item">
-                <a href="#comments" class="simple-link">Comentarios</a>
+              <div class="site-menu__item">
+                <a href="#comments" class="site-menu__link">Comentarios</a>
               </div>
             </div>
           </div>
@@ -1723,7 +1723,7 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

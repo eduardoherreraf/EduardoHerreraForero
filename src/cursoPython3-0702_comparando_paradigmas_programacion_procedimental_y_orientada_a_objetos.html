@@ -77,7 +77,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -95,7 +95,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -107,7 +107,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Comparando Paradigmas: Programación Procedimental y Orientada a Objetos en Python  -->
@@ -133,7 +133,7 @@
                 ilustran cómo abordan la resolución de problemas
                 computacionales.
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <figure>
                   <img src="https://i.ibb.co/xJ6xjwd/procedimentalvspoo.jpg" class="img-fluid"
                     alt="Comparando Paradigmas: Programación Procedimental y Orientada a Objetos en Python  "
@@ -270,7 +270,7 @@
                 <h3>
                   Implementación Procedimental de Estructuras de una Pila
                 </h3>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Implementación de la pila con enfoque procedimental
@@ -565,7 +565,7 @@
                   Implementación Orientada a Objetos de Estructuras de una
                   Pila
                 </h3>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         class Pila:
@@ -702,7 +702,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -717,14 +717,14 @@
         <!--  fin comentarios  -->
       </section>
 
-<!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h2>En Este Artículo</h2><div class="menu-scroll"><div class="menu-container"><div class="border border-1">
-<div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
-<div class="menu-item"><a href="#que-es-una-pila" class="simple-link">¿Qué es una Pila?</a></div>
-<div class="menu-item"><a href="#la-pila-el-enfoque-procedimental" class="simple-link">La Pila: el Enfoque Procedimental</a></div>
-<div class="menu-item"><a href="#la-Pila-el-enfoque-procedimental-versus-el-enfoque-oOrientado-a-objetos" class="simple-link">La Pila: El Enfoque Procedimental Versus El Enfoque Orientado a Objetos</a></div>
-<div class="menu-item"><a href="#la-pila-el-enfoque-orientado-a-objetos" class="simple-link">La Pila: El Enfoque Orientado a Objetos</a></div>
+<!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h2>En Este Artículo</h2><div class="site-menu__scroll"><div class="site-menu"><div class="border border-1">
+<div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
+<div class="site-menu__item"><a href="#que-es-una-pila" class="site-menu__link">¿Qué es una Pila?</a></div>
+<div class="site-menu__item"><a href="#la-pila-el-enfoque-procedimental" class="site-menu__link">La Pila: el Enfoque Procedimental</a></div>
+<div class="site-menu__item"><a href="#la-Pila-el-enfoque-procedimental-versus-el-enfoque-oOrientado-a-objetos" class="site-menu__link">La Pila: El Enfoque Procedimental Versus El Enfoque Orientado a Objetos</a></div>
+<div class="site-menu__item"><a href="#la-pila-el-enfoque-orientado-a-objetos" class="site-menu__link">La Pila: El Enfoque Orientado a Objetos</a></div>
 <!-- Comentarios  -->
-<div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div></div></div></div></aside>
+<div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div></div></div></div></aside>
 <!--  fin barra lateral  -->
     </main>
     <!--  fin principal  -->
@@ -787,7 +787,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

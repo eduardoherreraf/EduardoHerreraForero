@@ -67,7 +67,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -85,7 +85,7 @@
             <a class="nav-link mx-1 text-decoration-none" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo text-decoration-none" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active text-decoration-none site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1 text-decoration-none" href="index.html#contact">CONTACTO</a>
@@ -97,7 +97,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!-- Introducción HTML -->
@@ -126,7 +126,7 @@
                 propósito específico que contribuye al correcto funcionamiento
                 y presentación de la página.
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <picture>
                   <img src="https://i.ibb.co/5WGDvxYb/Estructura-del-Documento-HTML.png" class="img-fluid"
                     alt="Estructura del Documento HTML"
@@ -137,7 +137,7 @@
             </div>
             <!-- Introducción fin -->
 
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Estructura de la Página -->
             <div id="estructura-de-la-pagina" class="mt-3">
@@ -155,7 +155,7 @@
                 scripts, y el cuerpo del documento (<code class="language-html">&lt;body></code>), donde se define el
                 contenido visible de la página web.
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-html" data-prismjs-copy="Copy">
                       &lt;!DOCTYPE html>
@@ -176,7 +176,7 @@
             </div>
             <!-- Estructura de la Página Fin -->
 
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Tipo de Documento -->
             <div id="tipo-de-documento" class="mt-3">
@@ -224,7 +224,7 @@
             </div>
             <!-- Tipo de Documento Fin -->
 
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Encabezado -->
             <div id="encabezado" class="mt-3">
@@ -279,7 +279,7 @@
             </div>
             <!-- Encabezado Fin -->
 
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Cuerpo de Página -->
             <div id="cuerpo-de-pagina" class="mt-3">
@@ -426,7 +426,7 @@
                   <ul>
                     <li>
                       <strong>Aplicación de estilos con style</strong>:
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" data-prismjs-copy="Copy">
                               &lt;body style="background-color: lightblue; color: black;">
@@ -439,7 +439,7 @@
                     <li>
                       <strong>Uso del evento onload para mostrar un mensaje al
                         cargar la página</strong>:
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" data-prismjs-copy="Copy">
                               &lt;body onload="alert('Bienvenido a mi página web')">
@@ -452,7 +452,7 @@
                     <li>
                       <strong>Advertencia antes de salir de la página con
                         onbeforeunload</strong>:
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" data-prismjs-copy="Copy">
                               &lt;body onbeforeunload="return confirm('¿Seguro que quieres salir de la página?');">
@@ -503,7 +503,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -520,42 +520,42 @@
       <!--  Estructura del Documento HTML -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item">
-                <a href="#introduccion" class="simple-link">Introducción</a>
+              <div class="site-menu__item">
+                <a href="#introduccion" class="site-menu__link">Introducción</a>
               </div>
 
-              <div class="menu-item">
-                <a href="#estructura-de-la-pagina" class="simple-link">Estructura de la Página</a>
+              <div class="site-menu__item">
+                <a href="#estructura-de-la-pagina" class="site-menu__link">Estructura de la Página</a>
               </div>
 
-              <div class="menu-item">
-                <a href="#tipo-de-documento" class="simple-link">Tipo de Documento</a>
+              <div class="site-menu__item">
+                <a href="#tipo-de-documento" class="site-menu__link">Tipo de Documento</a>
               </div>
 
-              <div class="menu-item">
-                <a href="#encabezado" class="simple-link">Encabezado</a>
+              <div class="site-menu__item">
+                <a href="#encabezado" class="site-menu__link">Encabezado</a>
               </div>
 
-              <div class="menu-item">
+              <div class="site-menu__item">
                 <details>
                   <summary>Cuerpo de Página</summary>
-                  <div class="submenu">
-                    <a href="#cuerpo-de-pagina" class="submenu-item">Cuerpo de Página</a>
+                  <div class="site-menu__submenu">
+                    <a href="#cuerpo-de-pagina" class="site-menu__submenu-link">Cuerpo de Página</a>
 
-                    <a href="#caracteristicas-y-funcion-de-body" class="submenu-item">Características y Función de
+                    <a href="#caracteristicas-y-funcion-de-body" class="site-menu__submenu-link">Características y Función de
                       <code class="language-html">&lt;body></code></a>
 
-                    <a href="#atributos-comunes-de-body" class="submenu-item">Atributos Comunes de
+                    <a href="#atributos-comunes-de-body" class="site-menu__submenu-link">Atributos Comunes de
                       <code class="language-html">&lt;body></code></a>
                   </div>
                 </details>
               </div>
 
-              <div class="menu-item">
-                <a href="#comments" class="simple-link">Comentarios</a>
+              <div class="site-menu__item">
+                <a href="#comments" class="site-menu__link">Comentarios</a>
               </div>
             </div>
           </div>
@@ -624,7 +624,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

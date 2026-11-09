@@ -68,7 +68,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -86,7 +86,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -98,7 +98,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Instrucción print()  -->
@@ -118,7 +118,7 @@
                 que los desarrolladores verifiquen el valor de variables,
                 mensajes o resultados de alguna operación.
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <figure>
                   <img src="https://i.ibb.co/PrtL4ks/print.jpg" class="img-fluid" alt="Instrucción print() - Python"
                     title="Comprendiendo la función print() de Python" />
@@ -159,7 +159,7 @@
             <!-- Sintaxis básica -->
             <div id="sintaxis-basica" class="mt-5">
               <h2>Sintaxis básica</h2>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       print(objeto, ..., sep=' ', end='<code>\n</code>', file=sys.stdout, flush=False)
@@ -215,7 +215,7 @@
               <ol>
                 <li>
                   <span class="fw-bold">Imprimir texto simple</span>:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           print("Hola, mundo!")
@@ -229,7 +229,7 @@
                 </li>
                 <li>
                   <span class="fw-bold"></span><span class="fw-bold">Imprimir múltiples objetos</span>:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           print("Nombre:", "Juan", "Edad:", 25)
@@ -243,7 +243,7 @@
                 </li>
                 <li>
                   <span class="fw-bold"></span><span class="fw-bold">Usando separadores personalizados</span>:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           print("A", "B", "C", sep="-")
@@ -257,7 +257,7 @@
                 </li>
                 <li>
                   <span class="fw-bold">Modificando el valor de end</span>:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           print("Primera línea", end=" ")
@@ -272,7 +272,7 @@
                 </li>
                 <li>
                   <span class="fw-bold"></span><span class="fw-bold">Formateo de cadenas</span>:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           nombre = "Alice"
@@ -287,7 +287,7 @@
                 </li>
                 <li>
                   <span class="fw-bold"></span><span class="fw-bold">Imprimir variables de diferentes tipos</span>:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           x = 10
@@ -303,7 +303,7 @@
                 </li>
                 <li>
                   <span class="fw-bold"></span><span class="fw-bold">Redirección a un archivo</span>:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           with open("salida.txt", "w") as f:
@@ -320,7 +320,7 @@
                 <li>
                   <span class="fw-bold"></span><span class="fw-bold">Caracteres de escape y nueva línea en
                     Python</span>:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           print("La Witsi Witsi Araña \n subió a su telaraña.")
@@ -412,7 +412,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -430,16 +430,16 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
-              <div class="menu-item"><a href="#funcion-basica" class="simple-link">Función Básica</a></div>
-              <div class="menu-item"><a href="#sintaxis-basica" class="simple-link">Sintaxis Básica</a></div>
-              <div class="menu-item"><a href="#ejemplos" class="simple-link">Ejemplos</a></div>
-              <div class="menu-item"><a href="#consideraciones" class="simple-link">Consideraciones</a></div>
+              <div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
+              <div class="site-menu__item"><a href="#funcion-basica" class="site-menu__link">Función Básica</a></div>
+              <div class="site-menu__item"><a href="#sintaxis-basica" class="site-menu__link">Sintaxis Básica</a></div>
+              <div class="site-menu__item"><a href="#ejemplos" class="site-menu__link">Ejemplos</a></div>
+              <div class="site-menu__item"><a href="#consideraciones" class="site-menu__link">Consideraciones</a></div>
               <!-- Comentarios  -->
-              <div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div>
+              <div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div>
             </div>
           </div>
         </div>
@@ -506,7 +506,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

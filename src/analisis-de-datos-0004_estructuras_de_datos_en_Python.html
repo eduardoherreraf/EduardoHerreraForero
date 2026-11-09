@@ -80,7 +80,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -98,7 +98,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -110,7 +110,7 @@
   <!-- Barra de Navegación -->
 
   <!--  Principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Estructuras de Datos en Python-->
@@ -122,14 +122,14 @@
           <!-- Introducción -->
           <div class="mt-3">
             <h2>Introducción</h2>
-            <div class="centrar-imagen magen-intro mb-5">
-              <figure class="img-container">
+            <div class="site-image site-intro-image mb-5">
+              <figure class="site-content__img-container">
                 <img src="https://i.ibb.co/WNTCkbwK/analisis-de-datos-las-estructuras-de-datos-en-Python-comp.jpg"
                   class="img-fluid"
                   alt="Hombre organizando frascos en una bodega etiquetada con nombres de estructuras de datos de Python como listas, tuplas, conjuntos y diccionarios."
                   title="Analogía visual de estructuras de datos en Python como una bodega organizada." loading="lazy"
                   onerror="this.onerror=null; this.src='https://i.postimg.cc/htFvrTwr/analisis-de-datos-las-estructuras-de-datos-en-Python-comp.jpg';" />
-                <figcaption class="img-caption">
+                <figcaption class="site-image__caption">
                   Ilustración que representa la analogía entre las estructuras de datos en Python y una bodega bien
                   organizada, donde cada tipo de estante simboliza una forma eficiente de almacenar y acceder a la
                   información.
@@ -149,7 +149,7 @@
             </ul>
           </div>
           <!-- Introducción Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Listas (list)  -->
           <div id="listas-list">
@@ -163,7 +163,7 @@
               <li><span class="fw-bold">Ejemplo</span>:
                 <!-- Sintaxis -->
                 <p><span class="fw-bold">Sintaxis básica</span>:</p>
-                <div class="ej-sintaxis-100">
+                <div class="code-example__full-syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
                        numeros = [10, 20, 30, 40]
@@ -184,7 +184,7 @@
                 <ul>
                   <li>Crear y conocer listas:
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis-100">
+                    <div class="code-example__full-syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-py" data-prismjs-copy="Copy">
                            # Creación de una lista, uso de corchetes ([ ]) 
@@ -204,7 +204,7 @@
                   </li>
                   <li>Métodos para agregar elementos a listas:
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis-100">
+                    <div class="code-example__full-syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-py" data-prismjs-copy="Copy">
                            # lista.append(x): Agrega el elemento x al final de la lista. 
@@ -226,7 +226,7 @@
                   <li>Métodos para consultar / encontrar elementos en una Lista:
                     <!-- Sintaxis -->
 
-                    <div class="ej-sintaxis-100">
+                    <div class="code-example__full-syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-py" data-prismjs-copy="Copy">
                            # lista.index(x): Devuelve el índice (posición) de la primera
@@ -243,7 +243,7 @@
                     <!-- Sintaxis fin -->
                   </li>
                   <li>Métodos para eliminar / vaciar elementos en una Lista:
-                    <div class="ej-sintaxis-100">
+                    <div class="code-example__full-syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-py" data-prismjs-copy="Copy">
                            # lista.remove(x): Elimina la primera aparición de x en la lista. Da error si x no está.
@@ -262,7 +262,7 @@
                     </div>
                   </li>
                   <li>Métodos para reordenar / copiar en una Lista:
-                    <div class="ej-sintaxis-100">
+                    <div class="code-example__full-syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-py" data-prismjs-copy="Copy">
                            # lista.sort(): Ordena los elementos de la lista in-place (modifica la lista) en orden ascendente por defecto.
@@ -284,7 +284,7 @@
               </li>
               <li>Algunos ejemplos de uso:
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis-100">
+                <div class="code-example__full-syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
                        # Crear una lista
@@ -327,7 +327,7 @@
               <li><span class="fw-bold">Ejemplo</span>:
                 <!-- Sintaxis -->
                 <p><span class="fw-bold">Sintaxis básica</span>:</p>
-                <div class="ej-sintaxis-100">
+                <div class="code-example__full-syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
                        coordenadas = (4, 5)
@@ -347,7 +347,7 @@
                 <ul>
                   <li>Crear y conocer tuplas:
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis-100">
+                    <div class="code-example__full-syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-py" data-prismjs-copy="Copy">
                            # tuple(iterable): Función que convierte un iterable (por ejemplo una lista, una cadena de caracteres) en una tupla.
@@ -369,7 +369,7 @@
                   </li>
                   <li>Inmutabilidad: lo que NO se puede hacer: Dado que una tupla es inmutable, una vez creada no se
                     puede modificar (no se pueden añadir, eliminar o cambiar elementos).
-                    <div class="ej-sintaxis-100">
+                    <div class="code-example__full-syntax">
                       <pre data-src-status="loaded" tabindex="0">
                               <code class="language-py" data-prismjs-copy="Copy">
                                t = (1, 2, 3)
@@ -380,7 +380,7 @@
                   </li>
                   <li>Métodos para consultar / encontrar elementos:
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis-100">
+                    <div class="code-example__full-syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-py" data-prismjs-copy="Copy">
                            # tupla.count(x): Devuelve la cantidad de veces que aparece x en la tupla.
@@ -399,7 +399,7 @@
                   <li>Operaciones comunes con tuplas: Además de los métodos, hay funciones y operadores que funcionan
                     con tuplas (y en muchos casos con otros tipos de secuencias).
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis-100">
+                    <div class="code-example__full-syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-py" data-prismjs-copy="Copy">
                            # in: Verificar si un valor está en la tupla.
@@ -433,7 +433,7 @@
                   </li>
                   <!-- Sintaxis -->
                   <p><span class="fw-bold">Algunos ejemplos de uso</span>:</p>
-                  <div class="ej-sintaxis-100">
+                  <div class="code-example__full-syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-py" data-prismjs-copy="Copy">
                           # Crear una tupla
@@ -477,7 +477,7 @@
               <li><span class="fw-bold">Ejemplo</span>:
                 <!-- Sintaxis -->
                 <p><span class="fw-bold">Sintaxis básica</span>:</p>
-                <div class="ej-sintaxis-100">
+                <div class="code-example__full-syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
                         persona = {"nombre": "Eduardo", "edad": 35, "ciudad": "Bogotá"}
@@ -497,7 +497,7 @@
                 <ul>
                   <li>Crear y conocer diccionarios en Diccionarios:
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis-100">
+                    <div class="code-example__full-syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-py" data-prismjs-copy="Copy">
                            # dict(iterable): Permite crear un diccionario a partir de un iterable de pares clave-valor o mediante el constructor dict().
@@ -513,7 +513,7 @@
                   </li>
                   <li>Métodos para agregar o actualizar elementos en Diccionarios:
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis-100">
+                    <div class="code-example__full-syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-py" data-prismjs-copy="Copy">
                            # diccionario[key] = value: Añade una nueva clave con su valor o actualiza el valor si la clave ya existe.
@@ -533,7 +533,7 @@
                   </li>
                   <li>Métodos para consultar / encontrar elementos en Diccionarios:
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis-100">
+                    <div class="code-example__full-syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-py" data-prismjs-copy="Copy">
                            # diccionario.get(key, default=None): Devuelve el valor asociado a key; si la clave no existe, devuelve default (por defecto None). 
@@ -557,7 +557,7 @@
                   </li>
                   <li>Métodos para eliminar / vaciar elementos en Diccionarios:
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis-100">
+                    <div class="code-example__full-syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-py" data-prismjs-copy="Copy">
                            # diccionario.pop(key, default): Elimina la clave key y devuelve su valor; si no existe, devuelve default si se especifica, o lanza KeyError.
@@ -578,7 +578,7 @@
                   </li>
                   <li>Métodos para copia / estructuras en Diccionarios:
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis-100">
+                    <div class="code-example__full-syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-py" data-prismjs-copy="Copy">
                            # diccionario.copy(): Devuelve una copia superficial (“shallow copy”) del diccionario.
@@ -597,7 +597,7 @@
               </li>
               <li><span class="fw-bold">Algunos ejemplos de uso</span>:
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis-100">
+                <div class="code-example__full-syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
                        # Crear un diccionario
@@ -639,7 +639,7 @@
               <li><span class="fw-bold">Ejemplo</span>:
                 <!-- Sintaxis -->
                 <p><span class="fw-bold">Sintaxis básica</span>:</p>
-                <div class="ej-sintaxis-100">
+                <div class="code-example__full-syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
                        frutas = {"manzana", "pera", "uva"}
@@ -660,7 +660,7 @@
                 <ul>
                   <li>Crear y conocer conjuntos:
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis-100">
+                    <div class="code-example__full-syntax">
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-py" data-prismjs-copy="Copy">
                          # set(iterable): Permite crear un conjunto a partir de un iterable (lista, tupla, cadena, etc.).
@@ -679,7 +679,7 @@
                   </li>
                   <li>Métodos para agregar y eliminar elementos en Conjuntos:
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis-100">
+                    <div class="code-example__full-syntax">
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-py" data-prismjs-copy="Copy">
                          # conj.add(x): Agrega el elemento x al conjunto, si no estaba ya. 
@@ -706,7 +706,7 @@
                   </li>
                   <li>Métodos para consultar relaciones entre conjuntos
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis-100">
+                    <div class="code-example__full-syntax">
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-py" data-prismjs-copy="Copy">
                          # conj.issubset(other): Devuelve True si todos los elementos de conj están en other.
@@ -724,7 +724,7 @@
                   </li>
                   <li>Métodos / operaciones para combinación de conjuntos
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis-100">
+                    <div class="code-example__full-syntax">
                       <pre data-src-status="loaded" tabindex="0">
                         <code class="language-py" data-prismjs-copy="Copy">
                          # conj.union(other, ...): Devuelve un nuevo conjunto con todos los elementos de conj y de los otros. (También se puede usar el operador |).
@@ -753,7 +753,7 @@
                   </li>
                   <li>Algunos ejemplos de uso de Conjuntos:</li>
                   <!-- Sintaxis -->
-                  <div class="ej-sintaxis-100">
+                  <div class="code-example__full-syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-py" data-prismjs-copy="Copy">
                          # Crear un conjunto
@@ -799,7 +799,7 @@
               <li><span class="fw-bold">Ejemplo</span>:
                 <!-- Sintaxis -->
                 <p><span class="fw-bold">Sintaxis básica</span>:</p>
-                <div class="ej-sintaxis-100">
+                <div class="code-example__full-syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
                         saludo = "Hola, mundo"
@@ -819,7 +819,7 @@
                 <ul>
                   <li>Crear y conocer cadenas de texto:
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis-100">
+                    <div class="code-example__full-syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-py" data-prismjs-copy="Copy">
                            # str(obj): Convierte el objeto en su representación como cadena de texto.
@@ -836,7 +836,7 @@
                   </li>
                   <li>Métodos para cambiar mayúsculas/minúsculas y título:
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis-100">
+                    <div class="code-example__full-syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-py" data-prismjs-copy="Copy">
                            # cadena.lower(): Devuelve una nueva cadena con todos los caracteres alfabéticos en minúscula.
@@ -861,7 +861,7 @@
                   </li>
                   <li>Métodos para buscar, dividir, comprobar:
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis-100">
+                    <div class="code-example__full-syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-py" data-prismjs-copy="Copy">
                            # cadena.count(subcadena): Cuenta cuántas veces aparece subcadena en la cadena.
@@ -893,7 +893,7 @@
                   </li>
                   <li>Métodos para eliminar espacios, prefijos, sufijos o cambiar:
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis-100">
+                    <div class="code-example__full-syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-py" data-prismjs-copy="Copy">
                            # cadena.strip(): Devuelve una nueva cadena con los espacios (u otros caracteres especificados) eliminados al inicio y al final.
@@ -919,7 +919,7 @@
                   </li>
                   <li>Métodos para formatear, justificar o modificar el “relleno”:
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis-100">
+                    <div class="code-example__full-syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-py" data-prismjs-copy="Copy">
                             # cadena.format(...): Método para formatear cadenas con placeholders. Aunque hoy en día se recomienda el uso de f-strings, aún es útil.
@@ -950,7 +950,7 @@
             </li>
             <li>Algunos ejemplos de uso con combinaciones:
               <!-- Sintaxis -->
-              <div class="ej-sintaxis-100">
+              <div class="code-example__full-syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-py" data-prismjs-copy="Copy">
                       texto = "  Bienvenido al Curso de Python  "
@@ -1049,7 +1049,7 @@
                   <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
                     class="form-control rounded-3" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">Enviar</button>
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">Enviar</button>
               </fieldset>
               <p class="small text-center">La política de privacidad, y los términos y condiciones estándisponibles en
                 el formulario de contacto.</p>
@@ -1061,25 +1061,25 @@
       <!-- -------------------------------- barra lateral -------------------------------- -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
 
-              <div class="menu-item">
-                <a href="#introduccion" class="simple-link">Introducción Estructuras de Datos en Pytho</a>
+              <div class="site-menu__item">
+                <a href="#introduccion" class="site-menu__link">Introducción Estructuras de Datos en Pytho</a>
               </div>
-              <div class="menu-item"><a href="#listas-list" class="simple-link">Listas (list)</a></div>
-              <div class="menu-item"><a href="#tuplas-tuple" class="simple-link">Tuplas (tuple)</a></div>
-              <div class="menu-item"><a href="#diccionarios-dict" class="simple-link">Diccionarios (dict)</a></div>
-              <div class="menu-item"><a href="#conjuntos-set" class="simple-link">Conjuntos (set)</a></div>
-              <div class="menu-item"><a href="#cadenas-de-texto-str" class="simple-link">Cadenas de texto (str)</a>
-                <div class="menu-item"><a href="#clasificacion-general-de-estructuras-de-datos-en-python"
-                    class="simple-link">Clasificación General de
+              <div class="site-menu__item"><a href="#listas-list" class="site-menu__link">Listas (list)</a></div>
+              <div class="site-menu__item"><a href="#tuplas-tuple" class="site-menu__link">Tuplas (tuple)</a></div>
+              <div class="site-menu__item"><a href="#diccionarios-dict" class="site-menu__link">Diccionarios (dict)</a></div>
+              <div class="site-menu__item"><a href="#conjuntos-set" class="site-menu__link">Conjuntos (set)</a></div>
+              <div class="site-menu__item"><a href="#cadenas-de-texto-str" class="site-menu__link">Cadenas de texto (str)</a>
+                <div class="site-menu__item"><a href="#clasificacion-general-de-estructuras-de-datos-en-python"
+                    class="site-menu__link">Clasificación General de
                     Estructuras de Datos en Python</a>
                 </div>
                 <!-- Comentarios  -->
-                <div class="menu-item">
-                  <a href="#comments" class="simple-link">Comentarios</a>
+                <div class="site-menu__item">
+                  <a href="#comments" class="site-menu__link">Comentarios</a>
                 </div>
               </div>
             </div>
@@ -1146,7 +1146,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

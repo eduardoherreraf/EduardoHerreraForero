@@ -67,7 +67,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -85,7 +85,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -96,7 +96,7 @@
   </nav>
   <!-- Barra de Navegación -->
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!-- Como Ejecutar un Código Javascript -->
@@ -331,7 +331,7 @@
                 A continuación se muestra un ejemplo de uso de código
                 Javascript en un archivo HTML:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                       &lt;!DOCTYPE html>
@@ -512,7 +512,7 @@
                   <b>Creación del archivo fuente js</b>: Crear el archivo con
                   extensión <code class="language-bash">.js</code>, por
                   ejemplo <code class="language-bash">app.js</code>:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         console.log('Hola desde Node.js');
@@ -525,7 +525,7 @@
                   símbolo del sistema, navegar hasta el directorio donde está
                   guardado el archivo
                   <code class="language-bash">app.js</code> y ejecutar:
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         node app.js
@@ -880,7 +880,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -898,31 +898,31 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item">
-                <a href="#introduccion" class="simple-link">Introducción</a>
+              <div class="site-menu__item">
+                <a href="#introduccion" class="site-menu__link">Introducción</a>
               </div>
-              <div class="menu-item">
-                <a href="#consola-del-navegador" class="simple-link">Consola del Navegador</a>
+              <div class="site-menu__item">
+                <a href="#consola-del-navegador" class="site-menu__link">Consola del Navegador</a>
               </div>
-              <div class="menu-item">
-                <a href="#archivos-html" class="simple-link">Archivos HTML</a>
+              <div class="site-menu__item">
+                <a href="#archivos-html" class="site-menu__link">Archivos HTML</a>
               </div>
-              <div class="menu-item">
-                <a href="#nodejs" class="simple-link">Node.js</a>
+              <div class="site-menu__item">
+                <a href="#nodejs" class="site-menu__link">Node.js</a>
               </div>
-              <div class="menu-item">
-                <a href="#entornos-de-desarrollo-integrados" class="simple-link">Entornos de Desarrollo Integrados
+              <div class="site-menu__item">
+                <a href="#entornos-de-desarrollo-integrados" class="site-menu__link">Entornos de Desarrollo Integrados
                   (IDE)</a>
               </div>
-              <div class="menu-item">
-                <a href="#playgrounds-en-linea" class="simple-link">Playgrounds en Línea</a>
+              <div class="site-menu__item">
+                <a href="#playgrounds-en-linea" class="site-menu__link">Playgrounds en Línea</a>
               </div>
               <!-- Comentarios  -->
-              <div class="menu-item">
-                <a href="#comments" class="simple-link">Comentarios</a>
+              <div class="site-menu__item">
+                <a href="#comments" class="site-menu__link">Comentarios</a>
               </div>
             </div>
           </div>
@@ -934,7 +934,7 @@
   </div>
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

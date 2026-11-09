@@ -74,7 +74,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -92,7 +92,7 @@
             <a class="nav-link mx-1 text-decoration-none" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo text-decoration-none" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active text-decoration-none site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1 text-decoration-none" href="index.html#contact">CONTACTO</a>
@@ -104,7 +104,7 @@
   <!-- Barra de Navegación -->
 
   <!-- Principal -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Etiquetas de Programación y Scripts-->
@@ -117,12 +117,12 @@
             <!-- Introducción -->
             <div class="pt-4">
               <h2 class="pt-2">Introducción</h2>
-              <div class="centrar-imagen magen-intro">
-                <figure class="img-container">
+              <div class="site-image site-intro-image">
+                <figure class="site-content__img-container">
                   <img src="https://i.ibb.co/mCHFPLDm/Script-como-director-de-orquesta-Compressed.png" class="img-fluid"
                     alt="Dibujo de un escenario con actores, decorado y un director usando un megáfono bajo un cartel que dice <script>."
                     title="Etiquetas de Programación y Scripts" loading="lazy" />
-                  <figcaption class="img-caption">
+                  <figcaption class="site-image__caption">
                     Escenario que representa cómo la etiqueta &lt;script>
                     permite que el director (JavaScript) dirija movimiento e
                     interactividad a los elementos de una página, mientras que
@@ -149,7 +149,7 @@
               </p>
             </div>
             <!-- Introducción Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
             <!-- Elemento <script> -->
             <div id="elemento-script" class="pt-4">
               <h2>Elemento <code class="language-html">&lt;script></code></h2>
@@ -190,7 +190,7 @@
                 <h3>Sintaxis Básica</h3>
                 <p>Incrustar el código directamente:</p>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                        &lt;script>
@@ -202,7 +202,7 @@
                 <!-- Sintaxis fin -->
                 <p>Enlazar un archivo externo:</p>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;script src="app.js">&lt;/script>
@@ -302,7 +302,7 @@
                     <code class="language-html">&lt;head></code>
                   </h4>
                   <!-- Sintaxis -->
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                         &lt;head>
@@ -324,7 +324,7 @@
                     <code class="language-html">&lt;/body></code>
                   </h4>
                   <!-- Sintaxis -->
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                          &lt;body>
@@ -347,7 +347,7 @@
                 <div>
                   <h4>Inline (en Línea)</h4>
                   <!-- Sintaxis -->
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;button onclick="alert('¡Hola!')">Hacer clic&lt;/button>
@@ -421,7 +421,7 @@
               <!-- Ubicación en el Documento  fin -->
             </div>
             <!-- Elemento <script> Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
             <!-- Elemento <noscript> -->
             <div id="elemento-noscript" class="pt-4">
               <h2>
@@ -492,7 +492,7 @@
                   <code class="language-html">&lt;noscript></code>
                 </h3>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;script>
@@ -615,7 +615,7 @@
               <!-- Limitaciones y Consideraciones  fin -->
             </div>
             <!-- Elemento <noscript> Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
             <!-- Elemento <template> -->
             <div id="elemento-template" class="pt-4">
               <h2>
@@ -677,8 +677,8 @@
               <div id="ejemplo-basico-de-template">
                 <!-- Ejemplo -->
                 <div class="row">
-                  <div class="ej-ejemplo">
-                    <div class="row ej-ejecutado mt-3">
+                  <div class="code-example">
+                    <div class="row code-example__output mt-3">
                       <!-- código ejecutado -->
                       <div>
                         <iframe src="./html-0015_etiquetas_de_programacion_y_script_template.html"
@@ -687,7 +687,7 @@
                       <!-- código ejecutado fin -->
                     </div>
                     <div class="row">
-                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                         <!-- código HTML -->
                         <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
@@ -698,7 +698,7 @@
 
                                     &lt;!-- Template - No se renderiza hasta ser usado --&gt;
                                     &lt;template id="mi-plantilla">
-                                        &lt;div class="tarjeta">
+                                        &lt;div class="site-content__tarjeta">
                                             &lt;h3>🎉 Contenido Generado&lt;/h3>
                                             &lt;p>Este contenido fue creado dinámicamente usando la plantilla HTML. Cada vez que presionas el botón, se
                                                 clona este template.&lt;/p>
@@ -708,10 +708,10 @@
 
                                     &lt;!-- Botones de control --&gt;
                                     &lt;button id="agregar-contenido">➕ Agregar Contenido&lt;/button>
-                                    &lt;button id="limpiar-todo" class="limpiar">🗑️ Limpiar Todo&lt;/button>
+                                    &lt;button id="limpiar-todo" class="site-content__limpiar">🗑️ Limpiar Todo&lt;/button>
 
                                     &lt;!-- Contador --&gt;
-                                    &lt;div class="contador">
+                                    &lt;div class="site-content__contador">
                                         Tarjetas creadas: &lt;span id="contador">0&lt;/span>
                                     &lt;/div>
 
@@ -755,7 +755,7 @@
                           </pre>
                         <!-- código HTML -->
                       </div>
-                      <div class="ej-code-css col-lg-6 mb-3">
+                      <div class="code-example__css-panel col-lg-6 mb-3">
                         <!-- código CSS -->
                         <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
@@ -865,11 +865,11 @@
                     <code class="language-html">&lt;template></code> no
                     aparece en la página hasta que se use.
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;template id="mi-plantilla">
-                              &lt;div class="tarjeta">
+                              &lt;div class="site-content__tarjeta">
                                 &lt;h3>Contenido Generado&lt;/h3>
                                 &lt;p>Este contenido fue creado dinámicamente...&lt;/p>
                               &lt;/div>
@@ -885,7 +885,7 @@
                     <code class="language-html">&lt;template></code> se usa la
                     propiedad <code class="language-js">content</code>:
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-JS" data-prismjs-copy="Copy">
                            const plantilla = document.querySelector("#mi-plantilla");
@@ -1005,7 +1005,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -1023,28 +1023,28 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item">
-                <a href="#introduccion" class="simple-link">Introducción</a>
+              <div class="site-menu__item">
+                <a href="#introduccion" class="site-menu__link">Introducción</a>
               </div>
-              <div class="menu-item">
-                <a href="#elemento-script" class="simple-link">Elemento <code
+              <div class="site-menu__item">
+                <a href="#elemento-script" class="site-menu__link">Elemento <code
                     class="language-html">&lt;script></code></a>
               </div>
-              <div class="menu-item">
-                <a href="#elemento-noscript" class="simple-link">Elemento <code
+              <div class="site-menu__item">
+                <a href="#elemento-noscript" class="site-menu__link">Elemento <code
                     class="language-html">&lt;noscript></code></a>
               </div>
-              <div class="menu-item">
-                <a href="#elemento-template" class="simple-link">Elemento <code
+              <div class="site-menu__item">
+                <a href="#elemento-template" class="site-menu__link">Elemento <code
                     class="language-html">&lt;template></code></a>
               </div>
 
               <!-- Comentarios  -->
-              <div class="menu-item">
-                <a href="#comments" class="simple-link">Comentarios</a>
+              <div class="site-menu__item">
+                <a href="#comments" class="site-menu__link">Comentarios</a>
               </div>
             </div>
           </div>
@@ -1113,7 +1113,7 @@
   <!--  pie de pagina fin  -->
 
   <!--button to top-->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

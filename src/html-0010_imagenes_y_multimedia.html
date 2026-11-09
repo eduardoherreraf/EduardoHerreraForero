@@ -67,7 +67,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -85,7 +85,7 @@
             <a class="nav-link mx-1 text-decoration-none" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo text-decoration-none" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active text-decoration-none site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1 text-decoration-none" href="index.html#contact">CONTACTO</a>
@@ -97,7 +97,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Imágenes y Multimedia HTML-->
@@ -132,7 +132,7 @@
                 optimizar los archivos para minimizar el tiempo de carga,
                 mejorando así la accesibilidad y el rendimiento del sitio web.
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <picture>
                   <img src="https://i.ibb.co/RpWzpCP8/Imagenes-y-multimedia-HTML.png" class="img-fluid"
                     alt="Imágenes y Multimedia HTML" title="Imágenes y Multimedia HTML" draggable="true" />
@@ -143,7 +143,7 @@
               </div>
             </div>
             <!-- Introducción Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Imágenes HTML <img> -->
             <div id="imagenes-html-img" class="mt-3">
@@ -265,14 +265,14 @@
               </ul>
               <div class="row">
                 <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
+                <div class="code-example">
+                  <div class="row code-example__output mt-3">
                     <!-- código ejecutado -->
                     <div>
-                      <div class="ej-contenedor">
-                        <p class="ej-h3-img">Tecnologías Web</p>
+                      <div class="demo-content__contenedor">
+                        <p class="demo-content__h3-img">Tecnologías Web</p>
                         <img src="https://cdn.pixabay.com/photo/2016/12/28/09/36/web-1935737_1280.png" alt="Diseño web"
-                          width="80%" class="ej-centrar-imagen"
+                          width="80%" class="demo-content__centrar-imagen"
                           title="Algunas tecnologías para la realización de páginas web" loading="lazy"
                           aria-label="Algunas tecnologías para la realización de páginas web, p. ej. CSS, JS, HTML, angular, vue.js, ruby, python..." />
                       </div>
@@ -280,18 +280,18 @@
                     <!-- código ejecutado fin -->
                   </div>
                   <div class="row">
-                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                    <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                       <!-- código HTML -->
                       <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;div class="contenedor">
-                                    &lt;p class="h3-img">Tecnologías Web&lt;/p>
+                                &lt;div class="site-content__contenedor">
+                                    &lt;p class="site-content__h3-img">Tecnologías Web&lt;/p>
                                     &lt;img
                                         src="https://cdn.pixabay.com/photo/2016/12/28/09/36/web-1935737_1280.png"
                                         alt="Diseño web"
                                         width="80%"
-                                        class="centrar-imagen"
+                                        class="site-image"
                                         title="Algunas tecnologías para la realización de páginas web"
                                         loading="lazy"
                                         aria-label="Algunas tecnologías para la realización de páginas web, p. ej. CSS, JS, HTML, angular, vue.js, ruby, python..."
@@ -302,7 +302,7 @@
                           </pre>
                       <!-- código HTML -->
                     </div>
-                    <div class="ej-code-css col-lg-6 mb-3">
+                    <div class="code-example__css-panel col-lg-6 mb-3">
                       <!-- código CSS -->
                       <pre data-src-status="loaded" tabindex="0">
                               <code class="language-css" data-prismjs-copy="Copy">
@@ -348,7 +348,7 @@
               </div>
             </div>
             <!-- Imágenes HTML Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Videos HTML <video> -->
             <div id="videos-html-video" class="mt-3">
@@ -446,16 +446,16 @@
 
               <div class="row">
                 <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
+                <div class="code-example">
+                  <div class="row code-example__output mt-3">
                     <!-- código ejecutado -->
                     <div>
-                      <div class="ej-video-container">
-                        <p class="ej-h3-videos">
+                      <div class="demo-content__video-container">
+                        <p class="demo-content__h3-videos">
                           Reproducción Automática de un Vídeo
                         </p>
 
-                        <video class="ej-video-element" src="./multimedia/202368-918049003_small.mp4" width="80%"
+                        <video class="demo-content__video-element" src="./multimedia/202368-918049003_small.mp4" width="80%"
                           autoplay muted loop>
                           Tu navegador no soporta la reproducción de video.
                         </video>
@@ -464,16 +464,16 @@
                     <!-- código ejecutado fin -->
                   </div>
                   <div class="row">
-                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                    <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                       <!-- código HTML -->
                       <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;div class="video-container">
-                                    &lt;p class="h3-videos">Reproducción Automática de un Vídeo&lt;/p>
+                                &lt;div class="site-video">
+                                    &lt;p class="site-content__h3-videos">Reproducción Automática de un Vídeo&lt;/p>
                                     
                                     &lt;video 
-                                        class="video-element"
+                                        class="site-content__video-element"
                                         src="/202368-918049003_small.05929545.mp4" 
                                         width="80%"
                                         autoplay 
@@ -487,7 +487,7 @@
                           </pre>
                       <!-- código HTML -->
                     </div>
-                    <div class="ej-code-css col-lg-6 mb-3">
+                    <div class="code-example__css-panel col-lg-6 mb-3">
                       <!-- código CSS -->
                       <pre data-src-status="loaded" tabindex="0">
                               <code class="language-css" data-prismjs-copy="Copy">
@@ -541,15 +541,15 @@
               </p>
               <div class="row">
                 <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
+                <div class="code-example">
+                  <div class="row code-example__output mt-3">
                     <!-- código ejecutado -->
                     <div>
-                      <div class="ej-video-container">
-                        <p class="ej-h3-videos">
+                      <div class="demo-content__video-container">
+                        <p class="demo-content__h3-videos">
                           Reproducción un Vídeo con Imagen Previa
                         </p>
-                        <video class="ej-video-element" src="./multimedia/202368-918049003_small.mp4"
+                        <video class="demo-content__video-element" src="./multimedia/202368-918049003_small.mp4"
                           poster="https://i.postimg.cc/3xWF9xR2/poster.png" controls preload="auto" loop
                           aria-label="Video que muestra la panorámica de un parque de diversiones y al fondo hay una rueda de Chicago.">
                           Tu navegador no soporta la reproducción de video.
@@ -559,16 +559,16 @@
                     <!-- código ejecutado fin -->
                   </div>
                   <div class="row">
-                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                    <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                       <!-- código HTML -->
                       <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;div class="video-container">
-                                    &lt;p class="h3-videos">Reproducción Automática de un Vídeo&lt;/p>
+                                &lt;div class="site-video">
+                                    &lt;p class="site-content__h3-videos">Reproducción Automática de un Vídeo&lt;/p>
                                     
                                     &lt;video 
-                                        class="video-element"
+                                        class="site-content__video-element"
                                         src="/202368-918049003_small.05929545.mp4" 
                                         width="80%"
                                         autoplay 
@@ -582,7 +582,7 @@
                           </pre>
                       <!-- código HTML -->
                     </div>
-                    <div class="ej-code-css col-lg-6 mb-3">
+                    <div class="code-example__css-panel col-lg-6 mb-3">
                       <!-- código CSS -->
                       <pre data-src-status="loaded" tabindex="0">
                               <code class="language-css" data-prismjs-copy="Copy">
@@ -637,12 +637,12 @@
               </p>
               <div class="row">
                 <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
+                <div class="code-example">
+                  <div class="row code-example__output mt-3">
                     <!-- código ejecutado -->
                     <div>
-                      <div class="ej-video-container2">
-                        <p class="ej-h3-videos">
+                      <div class="demo-content__video-container2">
+                        <p class="demo-content__h3-videos">
                           Reproducción Moderna de un Vídeo
                         </p>
                         <video controls width="80%">
@@ -654,13 +654,13 @@
                     <!-- código ejecutado fin -->
                   </div>
                   <div class="row">
-                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                    <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                       <!-- código HTML -->
                       <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;div class="video-container2">
-                                  &lt;p class="h3-videos">
+                                &lt;div class="site-content__video-container2">
+                                  &lt;p class="site-content__h3-videos">
                                     Reproducción Moderna de un Vídeo
                                   &lt;/p>
                                   &lt;video controls width="80%">
@@ -676,7 +676,7 @@
                           </pre>
                       <!-- código HTML -->
                     </div>
-                    <div class="ej-code-css col-lg-6 mb-3">
+                    <div class="code-example__css-panel col-lg-6 mb-3">
                       <!-- código CSS -->
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-css" data-prismjs-copy="Copy">
@@ -724,7 +724,7 @@
               </p>
             </div>
             <!-- Videos HTML <video> Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Audio HTML <audio> -->
             <div id="audio-html-audio" class="mt-3">
@@ -780,32 +780,32 @@
               </ul>
               <div class="row">
                 <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
+                <div class="code-example">
+                  <div class="row code-example__output mt-3">
                     <!-- código ejecutado -->
                     <div>
-                      <div class="ej-audio-container">
+                      <div class="demo-content__audio-container">
                         <audio src="./multimedia/commercial-upbeat-energetic-rock-354637.mp3" preload="auto" loop
-                          controls autoplay class="audio-personalizado"
+                          controls autoplay class="site-content__audio-personalizado"
                           aria-label="Reproductor de audio para una pista musical de rock"></audio>
                       </div>
                     </div>
                     <!-- código ejecutado fin -->
                   </div>
                   <div class="row">
-                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                    <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                       <!-- código HTML -->
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             <div>
-                              &lt;div class="audio-container">
+                              &lt;div class="site-content__audio-container">
                                 &lt;audio 
                                   src="/commercial-upbeat-energetic-rock-354637.01e7c64f.mp3" 
                                   preload="auto" 
                                   loop 
                                   controls 
                                   autoplay 
-                                  class="audio-personalizado" 
+                                  class="site-content__audio-personalizado"
                                   aria-label="Reproductor de audio para una pista musical de rock">
                                 &lt;/audio>
                               &lt;/div>                              
@@ -814,7 +814,7 @@
                         </pre>
                       <!-- código HTML -->
                     </div>
-                    <div class="ej-code-css col-lg-6 mb-3">
+                    <div class="code-example__css-panel col-lg-6 mb-3">
                       <!-- código CSS -->
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-css" data-prismjs-copy="Copy">
@@ -847,7 +847,7 @@
               </div>
             </div>
             <!-- Audio HTML <audio> Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Etiqueta HTML <figure> -->
             <div id="etiqueta-html-figure" class="mt-3">
@@ -902,18 +902,18 @@
               qwe
               <div class="row">
                 <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
+                <div class="code-example">
+                  <div class="row code-example__output mt-3">
                     <!-- código ejecutado -->
                     <div>
-                      <div class="ej-example-figure">
-                        <p class="ej-h3-figure">
+                      <div class="demo-figure__example">
+                        <p class="demo-figure__h3">
                           Uso &lt;img> con &lt;figure>
                         </p>
-                        <figure class="ej-figura-estilizada2">
+                        <figure class="demo-content__figura-estilizada2">
                           <img src="https://cdn.pixabay.com/photo/2016/12/28/09/36/web-1935737_1280.png"
                             alt="Diseño web" />
-                          <figcaption class="ej-figcaption">
+                          <figcaption class="demo-content__figcaption">
                             Mi primera imagen con una leyenda.
                           </figcaption>
                         </figure>
@@ -922,21 +922,21 @@
                     <!-- código ejecutado fin -->
                   </div>
                   <div class="row">
-                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                    <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                       <!-- código HTML -->
                       <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;div class="example-figure">
-                                  &lt;p class="h3-figure">
+                                &lt;div class="site-content__example-figure">
+                                  &lt;p class="site-content__h3-figure">
                                     Uso &lt;img> con &lt;figure>
                                   &lt;/p>
-                                  &lt;figure class="figura-estilizada2">
+                                  &lt;figure class="site-content__figura-estilizada2">
                                     &lt;img
                                       src="https://cdn.pixabay.com/photo/2016/12/28/09/36/web-1935737_1280.png"
                                       alt="Diseño web"
                                     />
-                                    &lt;figcaption class="figcaption">
+                                    &lt;figcaption class="site-content__figcaption">
                                       Mi primera imagen con una leyenda.
                                     &lt;/figcaption>
                                   &lt;/figure>
@@ -946,7 +946,7 @@
                           </pre>
                       <!-- código HTML -->
                     </div>
-                    <div class="ej-code-css col-lg-6 mb-3">
+                    <div class="code-example__css-panel col-lg-6 mb-3">
                       <!-- código CSS -->
                       <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
@@ -1044,21 +1044,21 @@
                   Para códigos fuente con explicación:
                   <div class="row">
                     <!-- Ejemplo -->
-                    <div class="ej-ejemplo">
-                      <div class="row ej-ejecutado mt-3">
+                    <div class="code-example">
+                      <div class="row code-example__output mt-3">
                         <!-- código ejecutado -->
                         <div>
-                          <div class="ej-wrapper">
-                            <div class="ej-code-container">
-                              <div class="ej-code-header">
-                                <div class="ej-code-dots">
-                                  <div class="ej-dot red"></div>
-                                  <div class="ej-dot yellow"></div>
-                                  <div class="ej-dot green"></div>
+                          <div class="demo-content__wrapper">
+                            <div class="demo-code">
+                              <div class="demo-code__header">
+                                <div class="demo-code__dots">
+                                  <div class="demo-code__dot demo-code__dot--red"></div>
+                                  <div class="demo-code__dot demo-code__dot--yellow"></div>
+                                  <div class="demo-code__dot demo-code__dot--green"></div>
                                 </div>
                                 <span>script.js</span>
                               </div>
-                              <pre class="ej-pre-code"><code class="ej-code-syntax">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hola mundo"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  </code>
+                              <pre class="demo-content__pre-code"><code class="demo-content__code-syntax">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hola mundo"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  </code>
                   </pre>
                             </div>
                           </div>
@@ -1066,22 +1066,22 @@
                         <!-- código ejecutado fin -->
                       </div>
                       <div class="row">
-                        <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                        <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                           <!-- código HTML -->
                           <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;div class="wrapper">
-                                    &lt;div class="code-container">
-                                        &lt;div class="code-header">
-                                            &lt;div class="code-dots">
-                                                &lt;div class="dot red">&lt;/div>
-                                                &lt;div class="dot yellow">&lt;/div>
-                                                &lt;div class="dot green">&lt;/div>
+                                &lt;div class="site-content__wrapper">
+                                    &lt;div class="site-content__code-container">
+                                        &lt;div class="site-content__code-header">
+                                            &lt;div class="site-content__code-dots">
+                                                &lt;div class="site-content__dot demo-code__dot--red demo-code__dot">&lt;/div>
+                                                &lt;div class="site-content__dot demo-code__dot--yellow demo-code__dot">&lt;/div>
+                                                &lt;div class="site-content__dot demo-code__dot--green demo-code__dot">&lt;/div>
                                             &lt;/div>
                                             &lt;span>script.js&lt;/span>
                                         &lt;/div>
-                                        &lt;pre class="pre-code">&lt;code class="code-syntax">console&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">log&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token string">"Hola mundo"&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>&lt;/code>&lt;/pre>
+                                        &lt;pre class="site-content__pre-code">&lt;code class="site-content__code-syntax">console&lt;span class="token punctuation">.&lt;/span>&lt;span class="token function">log&lt;/span>&lt;span class="token punctuation">(&lt;/span>&lt;span class="token string">"Hola mundo"&lt;/span>&lt;span class="token punctuation">)&lt;/span>&lt;span class="token punctuation">;&lt;/span>&lt;/code>&lt;/pre>
                                     &lt;/div>
                                 &lt;/div>                               
                               </div>        
@@ -1089,7 +1089,7 @@
                           </pre>
                           <!-- código HTML -->
                         </div>
-                        <div class="ej-code-css col-lg-6 mb-3">
+                        <div class="code-example__css-panel col-lg-6 mb-3">
                           <!-- código CSS -->
                           <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
@@ -1293,55 +1293,55 @@
               </p>
               <div class="row">
                 <!-- Ejemplo -->
-                <div class="ej-ejemplo">
-                  <div class="row ej-ejecutado mt-3">
+                <div class="code-example">
+                  <div class="row code-example__output mt-3">
                     <!-- código ejecutado -->
                     <div>
-                      <figure class="ej-main-figure">
-                        <p class="ej-title">
+                      <figure class="demo-figure__main">
+                        <p class="demo-content__title">
                           Instalación de Lámpara de Escritorio
                         </p>
 
-                        <div class="ej-steps-grid">
-                          <figure class="ej-step-card">
-                            <div class="ej-step-number">1</div>
+                        <div class="demo-content__steps-grid">
+                          <figure class="demo-content__step-card">
+                            <div class="demo-content__step-number">1</div>
                             <img src="https://i.ibb.co/cSbZB8mf/figure-0101.png" alt="Paso 1: Fijar el brazo a la base"
-                              class="ej-step-image" />
-                            <figcaption class="ej-step-caption">
-                              <h3 class="ej-step-title">
+                              class="demo-content__step-image" />
+                            <figcaption class="demo-caption__step">
+                              <h3 class="demo-content__step-title">
                                 Fijar el brazo a la base
                               </h3>
-                              <p class="ej-step-description">
+                              <p class="demo-content__step-description">
                                 Conecta el brazo articulado a la base de la
                                 lámpara.
                               </p>
                             </figcaption>
                           </figure>
 
-                          <figure class="ej-step-card">
-                            <div class="ej-step-number">2</div>
+                          <figure class="demo-content__step-card">
+                            <div class="demo-content__step-number">2</div>
                             <img src="https://i.ibb.co/DfvjRzqy/figure-0102.png" alt="Paso 2: Instalar la bombilla"
-                              class="ej-step-image" />
-                            <figcaption class="ej-step-caption">
-                              <h3 class="ej-step-title">
+                              class="demo-content__step-image" />
+                            <figcaption class="demo-caption__step">
+                              <h3 class="demo-content__step-title">
                                 Instalar la bombilla
                               </h3>
-                              <p class="ej-step-description">
+                              <p class="demo-content__step-description">
                                 Coloca la bombilla en el socket y enrosca
                                 firmemente.
                               </p>
                             </figcaption>
                           </figure>
 
-                          <figure class="ej-step-card">
-                            <div class="ej-step-number">3</div>
+                          <figure class="demo-content__step-card">
+                            <div class="demo-content__step-number">3</div>
                             <img src="https://i.ibb.co/Gv0PwQHr/figure-0103.png" alt="Paso 3: Colocar la pantalla"
-                              class="ej-step-image" />
-                            <figcaption class="ej-step-caption">
-                              <h3 class="ej-step-title">
+                              class="demo-content__step-image" />
+                            <figcaption class="demo-caption__step">
+                              <h3 class="demo-content__step-title">
                                 Colocar la pantalla
                               </h3>
-                              <p class="ej-step-description">
+                              <p class="demo-content__step-description">
                                 Instala la pantalla sobre la bombilla para
                                 completar el montaje.
                               </p>
@@ -1349,7 +1349,7 @@
                           </figure>
                         </div>
 
-                        <figcaption class="ej-main-caption">
+                        <figcaption class="demo-caption__main">
                           Pasos para la instalación de una lámpara de
                           escritorio básica
                         </figcaption>
@@ -1358,62 +1358,62 @@
                     <!-- código ejecutado fin -->
                   </div>
                   <div class="row">
-                    <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                    <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                       <!-- código HTML -->
                       <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;figure class="main-figure">
-                                  &lt;p class="title">Instalación de Lámpara de Escritorio&lt;/p>
+                                &lt;figure class="site-content__main-figure">
+                                  &lt;p class="site-content__title">Instalación de Lámpara de Escritorio&lt;/p>
 
-                                    &lt;div class="steps-grid">
-                                      &lt;figure class="step-card">
-                                        &lt;div class="step-number">1&lt;/div>
+                                    &lt;div class="site-content__steps-grid">
+                                      &lt;figure class="site-content__step-card">
+                                        &lt;div class="site-content__step-number">1&lt;/div>
                                         &lt;img
                                                     src="https://i.ibb.co/cSbZB8mf/figure-0101.png"
                                                     alt="Paso 1: Fijar el brazo a la base"
-                                                    class="step-image"
+                                                    class="site-content__step-image"
                                                 />
-                                        &lt;figcaption class="step-caption">
-                                          &lt;h3 class="step-title">Fijar el brazo a la base&lt;/h3>
-                                          &lt;p class="step-description">
+                                        &lt;figcaption class="site-content__step-caption">
+                                          &lt;h3 class="site-content__step-title">Fijar el brazo a la base&lt;/h3>
+                                          &lt;p class="site-content__step-description">
                                             Conecta el brazo articulado a la base de la lámpara.
                                           &lt;/p>
                                         &lt;/figcaption>
                                       &lt;/figure>
 
-                                      &lt;figure class="step-card">
-                                        &lt;div class="step-number">2&lt;/div>
+                                      &lt;figure class="site-content__step-card">
+                                        &lt;div class="site-content__step-number">2&lt;/div>
                                         &lt;img
                                                     src="https://i.ibb.co/DfvjRzqy/figure-0102.png"
                                                     alt="Paso 2: Instalar la bombilla"
-                                                    class="step-image"
+                                                    class="site-content__step-image"
                                                 />
-                                        &lt;figcaption class="step-caption">
-                                          &lt;h3 class="step-title">Instalar la bombilla&lt;/h3>
-                                          &lt;p class="step-description">
+                                        &lt;figcaption class="site-content__step-caption">
+                                          &lt;h3 class="site-content__step-title">Instalar la bombilla&lt;/h3>
+                                          &lt;p class="site-content__step-description">
                                             Coloca la bombilla en el socket y enrosca firmemente.
                                           &lt;/p>
                                         &lt;/figcaption>
                                       &lt;/figure>
 
-                                      &lt;figure class="step-card">
-                                        &lt;div class="step-number">3&lt;/div>
+                                      &lt;figure class="site-content__step-card">
+                                        &lt;div class="site-content__step-number">3&lt;/div>
                                         &lt;img
                                                     src="https://i.ibb.co/Gv0PwQHr/figure-0103.png"
                                                     alt="Paso 3: Colocar la pantalla"
-                                                    class="step-image"
+                                                    class="site-content__step-image"
                                                 />
-                                        &lt;figcaption class="step-caption">
-                                          &lt;h3 class="step-title">Colocar la pantalla&lt;/h3>
-                                          &lt;p class="step-description">
+                                        &lt;figcaption class="site-content__step-caption">
+                                          &lt;h3 class="site-content__step-title">Colocar la pantalla&lt;/h3>
+                                          &lt;p class="site-content__step-description">
                                             Instala la pantalla sobre la bombilla para completar el montaje.
                                           &lt;/p>
                                         &lt;/figcaption>
                                       &lt;/figure>
                                     &lt;/div>
 
-                                    &lt;figcaption class="main-caption">
+                                    &lt;figcaption class="site-content__main-caption">
                                       Pasos para la instalación de una lámpara de escritorio básica
                                     &lt;/figcaption>
                                 &lt;/figure>                                
@@ -1422,7 +1422,7 @@
                           </pre>
                       <!-- código HTML -->
                     </div>
-                    <div class="ej-code-css col-lg-6 mb-3">
+                    <div class="code-example__css-panel col-lg-6 mb-3">
                       <!-- código CSS -->
                       <pre>
                           <code class="language-css" data-prismjs-copy="Copy">
@@ -1602,28 +1602,28 @@
             </p>
             <div class="row">
               <!-- Ejemplo -->
-              <div class="ej-ejemplo">
-                <div class="row ej-ejecutado mt-3">
+              <div class="code-example">
+                <div class="row code-example__output mt-3">
                   <!-- código ejecutado -->
                   <div>
-                    <div class="ej-example-pic ej-centrar-imagen-pic">
-                      <p class="ej-h3-tipos-pic">
+                    <div class="demo-pic__example demo-pic__centrar-imagen">
+                      <p class="demo-pic__h3-tipos">
                         &lt;picture&gt; Diferentes imágenes dependientes el
                         ancho del viewport
                       </p>
-                      <div class="ej-picture-container-pic">
+                      <div class="demo-pic__picture-container">
                         <picture>
-                          <source class="ej-source-pic" media="(width >= 992px)" srcset="
+                          <source class="demo-pic__source" media="(width >= 992px)" srcset="
                                 https://i.postimg.cc/tC9VfH0g/pexels-gasparzaldo-6779117-lg.jpg
                               " />
-                          <source class="ej-source-pic" media="(width >= 576px)" srcset="
+                          <source class="demo-pic__source" media="(width >= 576px)" srcset="
                                 https://i.postimg.cc/G3Fyqm5N/pexels-optical-chemist-340351297-31284696-md.jpg
                               " />
-                          <img class="ej-image-pic"
+                          <img class="demo-pic__image"
                             src="https://i.postimg.cc/fyfSL8dZ/pexels-rachel-claire-5864618-sm.jpg"
                             alt="Imagen responsiva que cambia según el ancho del viewport" />
                         </picture>
-                        <figcaption class="ej-caption-pic">
+                        <figcaption class="demo-pic__caption">
                           Figura 2: Ejemplo que muestra una imagen que depende
                           del ancho del viewport.
                         </figcaption>
@@ -1633,13 +1633,13 @@
                   <!-- código ejecutado fin -->
                 </div>
                 <div class="row">
-                  <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                  <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                     <!-- código HTML -->
                     <pre>
                         <code class="language-html" data-prismjs-copy="Copy">
                           <div>
                             &lt;div class="&lt;example-pic &lt;centrar-imagen-pic">
-                              &lt;p class="h3-tipos-pic">&lt;picture&gt; Diferentes imágenes dependientes el ancho del viewport&lt;/p>
+                              &lt;p class="site-content__h3-tipos-pic">&lt;picture&gt; Diferentes imágenes dependientes el ancho del viewport&lt;/p>
                               &lt;div class="&lt;picture-container-pic">
                                 &lt;picture>
                                   &lt;source class="&lt;source-pic" media="(width >= 992px)"
@@ -1660,7 +1660,7 @@
                       </pre>
                     <!-- código HTML -->
                   </div>
-                  <div class="ej-code-css col-lg-6 mb-3">
+                  <div class="code-example__css-panel col-lg-6 mb-3">
                     <!-- código CSS -->
                     <pre>
                         <code class="language-css" data-prismjs-copy="Copy">
@@ -1842,7 +1842,7 @@
                 <code class="language-html">&lt;source></code> de arriba hacia
                 abajo y evalúa cada condición
                 <code class="language-html">media</code>:
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;!-- PASO 1: ¿La pantalla tiene un ancho mayor o igual a 992px? --&gt;
@@ -1946,20 +1946,20 @@
             <p>Ejemplo:</p>
             <div class="row">
               <!-- Ejemplo -->
-              <div class="ej-ejemplo">
-                <div class="row ej-ejecutado mt-3">
+              <div class="code-example">
+                <div class="row code-example__output mt-3">
                   <!-- código ejecutado -->
                   <div>
-                    <div class="ej-wrapper-ext">
-                      <div class="ej-example-ext">
-                        <p class="ej-h3-ext">Diferentes Formatos de Imagen</p>
-                        <picture class="ej-picture-ext">
+                    <div class="demo-ext__wrapper">
+                      <div class="demo-ext__example">
+                        <p class="demo-ext__h3">Diferentes Formatos de Imagen</p>
+                        <picture class="demo-ext__picture">
                           <source srcset="https://i.ibb.co/Z6fqJW75/img-reddit.webp" type="image/webp" />
                           <source srcset="
                                 https://i.ibb.co/B5ks8yDZ/img-retriver.jpg
                               " type="image/jpeg" />
                           <img src="https://i.ibb.co/nNDDmN0R/img-avatar.png" alt="Avatar"
-                            class="ej-centrar-imagen-ext" />
+                            class="demo-ext__centrar-imagen" />
                         </picture>
                       </div>
                     </div>
@@ -1967,18 +1967,18 @@
                   <!-- código ejecutado fin -->
                 </div>
                 <div class="row">
-                  <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                  <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                     <!-- código HTML -->
                     <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;div class="wrapper-ext">
-                                  &lt;div class="example-ext">
-                                  &lt;p class="h3-ext">Diferentes Formatos de Imagen&lt;/p>
-                                  &lt;picture class="picture-ext">
+                                &lt;div class="site-content__wrapper-ext">
+                                  &lt;div class="site-content__example-ext">
+                                  &lt;p class="site-content__h3-ext">Diferentes Formatos de Imagen&lt;/p>
+                                  &lt;picture class="site-content__picture-ext">
                                       &lt;source srcset="https://i.ibb.co/Z6fqJW75/img-reddit.webp" type="image/webp">
                                       &lt;source srcset="https://i.ibb.co/B5ks8yDZ/img-retriver.jpg" type="image/jpeg">
-                                      &lt;img src="https://i.ibb.co/nNDDmN0R/img-avatar.png" alt="Avatar" class="centrar-imagen-ext">
+                                      &lt;img src="https://i.ibb.co/nNDDmN0R/img-avatar.png" alt="Avatar" class="site-content__centrar-imagen-ext">
                                   &lt;/picture>
                                   &lt;/div>
                               &lt;/div>                                
@@ -1987,7 +1987,7 @@
                           </pre>
                     <!-- código HTML -->
                   </div>
-                  <div class="ej-code-css col-lg-6 mb-3">
+                  <div class="code-example__css-panel col-lg-6 mb-3">
                     <!-- código CSS -->
                     <pre>
                         <code class="language-css" data-prismjs-copy="Copy">
@@ -2184,7 +2184,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -2201,34 +2201,34 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item">
-                <a href="#introduccion" class="simple-link">Introducción</a>
+              <div class="site-menu__item">
+                <a href="#introduccion" class="site-menu__link">Introducción</a>
               </div>
-              <div class="menu-item">
-                <a href="#imagenes-html-img" class="simple-link">Imágenes HTML <code
+              <div class="site-menu__item">
+                <a href="#imagenes-html-img" class="site-menu__link">Imágenes HTML <code
                     class="language-html">&lt;img></code></a>
               </div>
-              <div class="menu-item">
-                <a href="#videos-html-video" class="simple-link">Videos HTML <code
+              <div class="site-menu__item">
+                <a href="#videos-html-video" class="site-menu__link">Videos HTML <code
                     class="language-html">&lt;video></code></a>
               </div>
-              <div class="menu-item">
-                <a href="#audio-html-audio" class="simple-link">Audio HTML <code
+              <div class="site-menu__item">
+                <a href="#audio-html-audio" class="site-menu__link">Audio HTML <code
                     class="language-html">&lt;audio></code></a>
               </div>
-              <div class="menu-item">
-                <a href="#etiqueta-html-figure" class="simple-link">Etiqueta HTML
+              <div class="site-menu__item">
+                <a href="#etiqueta-html-figure" class="site-menu__link">Etiqueta HTML
                   <code class="language-html">&lt;figure></code></a>
               </div>
-              <div class="menu-item">
-                <a href="#etiqueta-html-picture" class="simple-link">Etiqueta HTML
+              <div class="site-menu__item">
+                <a href="#etiqueta-html-picture" class="site-menu__link">Etiqueta HTML
                   <code class="language-html">&lt;picture></code></a>
               </div>
-              <div class="menu-item">
-                <a href="#comments" class="simple-link">Comentarios</a>
+              <div class="site-menu__item">
+                <a href="#comments" class="site-menu__link">Comentarios</a>
               </div>
             </div>
           </div>
@@ -2296,7 +2296,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

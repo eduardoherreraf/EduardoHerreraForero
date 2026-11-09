@@ -68,7 +68,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -86,7 +86,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -98,7 +98,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Operadores  -->
@@ -117,7 +117,7 @@
                 esenciales para realizar cálculos, comparaciones y
                 manipulaciones de datos en los programas.
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <figure>
                   <img src="https://i.ibb.co/bQtJKxH/operadores.jpg" class="img-fluid" alt="Operadores en Python"
                     title="Dominando los Operadores de Python" />
@@ -128,7 +128,7 @@
             <!-- Operadores Aritméticos -->
             <div id="operadores-aritmeticos" class="mt-5">
               <h2>Operadores Aritméticos</h2>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       +: Suma                                     # x = 5 + 3 Resultado: x = 8
@@ -149,7 +149,7 @@
                 Comparan dos valores y devuelven un valor booleano (<code>True</code>
                 o <code>False</code>).
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       ==: Igual a                                   # 5 == 5 # Resultado: True
@@ -165,7 +165,7 @@
             <!-- Operadores Lógicos -->
             <div id="operadores-logicos" class="mt-5">
               <h2>Operadores Lógicos</h2>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       and: Y lógico                             # (5 > 3) and (2 &lt; 4) Resultado: True
@@ -178,7 +178,7 @@
             <!-- Operadores de Asignación -->
             <div id="operadores-asignacion" class="mt-5">
               <h2>Operadores de Asignación</h2>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       =: Asignación simple                        # x = 5 Equivalente a x = 5
@@ -200,7 +200,7 @@
                 Comprueban si dos variables hacen referencia al mismo objeto
                 en memoria.
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       is: Comprueba si dos objetos son el mismo objeto
@@ -222,7 +222,7 @@
                 Comprueban si un valor está presente en una secuencia, como
                 una lista, tupla, cadena o conjunto.
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       in: Comprueba si un valor está en una secuencia
@@ -236,7 +236,7 @@
             <!-- Operadores Bit a Bit (Para tipos enteros) -->
             <div id="operadores-bit-a-bit" class="mt-5">
               <h2>Operadores Bit a Bit (Para tipos enteros)</h2>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       5 | 3  # Resultado: 7 (0101 | 0011 = 0111)
@@ -277,7 +277,7 @@
                   para forzar un orden específico de evaluación en las
                   expresiones.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         (3 + 2) * 4  # Resultado: 20
@@ -295,7 +295,7 @@
                   asociatividad de derecha a izquierda, lo que significa que
                   se evalúa de derecha a izquierda.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         2 ** 3 ** 2  # Resultado: 512
@@ -313,7 +313,7 @@
                   para el valor positivo, - para el negativo, y ~ para la
                   negación bit a bit.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">-5 + 3  # Resultado: -2
                       </code>
@@ -330,7 +330,7 @@
                   Todos estos operadores tienen la misma precedencia y se
                   evalúan de izquierda a derecha.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">5 * 2 // 3  # Resultado: 3
                         # Se evalúa primero 5 * 2, luego el resultado se divide por 3.
@@ -346,7 +346,7 @@
                   La suma y la resta también tienen la misma precedencia y se
                   evalúan de izquierda a derecha.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">5 - 3 + 2  # Resultado: 4
                         # Se evalúa primero 5 - 3, luego se le suma 2.
@@ -362,7 +362,7 @@
                   Estos operadores realizan desplazamientos de bits hacia la
                   izquierda o derecha, respectivamente.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Números positivos
@@ -392,7 +392,7 @@
                   Comparan dos valores y devuelven un valor booleano. Tienen
                   la misma precedencia y se evalúan de izquierda a derecha.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         a = 5
@@ -421,7 +421,7 @@
                   Comprueban si dos valores son iguales o distintos. Tienen
                   menor precedencia que los operadores de comparación.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         a = 5
@@ -443,7 +443,7 @@
                 <p>
                   Este operador realiza una operación AND a nivel de bits.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Ejemplo 1: números simples
@@ -464,7 +464,7 @@
                   Estos operadores realizan operaciones XOR (OR exclusivo) y
                   OR a nivel de bits.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         a = 00001100
@@ -484,7 +484,7 @@
                   Estos operadores se usan para combinar condiciones lógicas.
                   not tiene mayor precedencia que and y or.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Valores binarios, comprobaciones lógicas simples
@@ -514,7 +514,7 @@
                   baja precedencia, por lo que las operaciones del lado
                   derecho de una asignación se evalúan primero.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Operador de asignación simple (=)
@@ -557,7 +557,7 @@
               <div id="operadoresI-de-identidads">
                 <h3>Operadores de Identidad is, is not</h3>
                 <p>Verifican si dos variables se refieren al mismo objeto.</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Ejemplo muy simple de is / is not
@@ -582,7 +582,7 @@
                 <p>
                   Comprueban si un elemento está presente en una secuencia.
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         in: Comprueba si un valor está en una secuencia
@@ -630,7 +630,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -648,40 +648,40 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
-              <div class="menu-item"><a href="#operadores-aritmeticos" class="simple-link">Operadores Aritméticos</a>
+              <div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
+              <div class="site-menu__item"><a href="#operadores-aritmeticos" class="site-menu__link">Operadores Aritméticos</a>
               </div>
-              <div class="menu-item"><a href="#operadores-comparacion" class="simple-link">Operadores de Comparación</a>
+              <div class="site-menu__item"><a href="#operadores-comparacion" class="site-menu__link">Operadores de Comparación</a>
               </div>
-              <div class="menu-item"><a href="#operadores-logicos" class="simple-link">Operadores Lógicos</a></div>
-              <div class="menu-item"><a href="#operadores-asignacion" class="simple-link">Operadores de Asignación</a>
+              <div class="site-menu__item"><a href="#operadores-logicos" class="site-menu__link">Operadores Lógicos</a></div>
+              <div class="site-menu__item"><a href="#operadores-asignacion" class="site-menu__link">Operadores de Asignación</a>
               </div>
-              <div class="menu-item"><a href="#operadoresI-de-identidad" class="simple-link">Operadores de Identidad</a>
+              <div class="site-menu__item"><a href="#operadoresI-de-identidad" class="site-menu__link">Operadores de Identidad</a>
               </div>
-              <div class="menu-item"><a href="#operadores-de-pertenencia" class="simple-link">Operadores de
+              <div class="site-menu__item"><a href="#operadores-de-pertenencia" class="site-menu__link">Operadores de
                   Pertenencia</a></div>
-              <div class="menu-item"><a href="#operadores-bit-a-bit" class="simple-link">Operadores Bit a Bit (Para
+              <div class="site-menu__item"><a href="#operadores-bit-a-bit" class="site-menu__link">Operadores Bit a Bit (Para
                   tipos enteros)</a></div>
-              <div class="menu-item"><a href="#prioridad-de-los-operadores" class="simple-link">Prioridad de los
+              <div class="site-menu__item"><a href="#prioridad-de-los-operadores" class="site-menu__link">Prioridad de los
                   Operadores</a></div>
               <!-- Comentarios  -->
-              <div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div>
+              <div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div>
             </div>
           </div>
         </div>
       </aside>
       <!--  fin barra lateral  -->
 
-      <li class="list-group-item">
+      <li class="list-group-item site-list__item">
         <a href="#">Operadores de Pertenencia</a>
       </li>
-      <li class="list-group-item">
+      <li class="list-group-item site-list__item">
         <a href="#"></a>
       </li>
-      <li class="list-group-item">
+      <li class="list-group-item site-list__item">
         <a href="#"></a>
 
         <!--  fin barra lateral  -->
@@ -746,7 +746,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

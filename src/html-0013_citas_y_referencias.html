@@ -70,7 +70,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -88,7 +88,7 @@
             <a class="nav-link mx-1 text-decoration-none" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo text-decoration-none" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active text-decoration-none site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1 text-decoration-none" href="index.html#contact">CONTACTO</a>
@@ -100,7 +100,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Citas y Referencias HTM-->
@@ -108,7 +108,7 @@
           data-bs-smooth-scroll="true">
           <div>
             <header>
-              <h1 id="introduccion">Citas y Referencias HTML</h1>
+              <h1 id="introduccion" class="site-layout__intro">Citas y Referencias HTML</h1>
             </header>
             <!-- Introducción -->
             <div>
@@ -132,12 +132,12 @@
                 respetar la autoría, mejora la claridad del contenido y
                 fortalece la credibilidad del sitio web.
               </p>
-              <div class="centrar-imagen magen-intro">
-                <figure class="img-container">
+              <div class="site-image site-intro-image">
+                <figure class="site-content__img-container">
                   <img src="https://i.postimg.cc/brqcC44p/465c95f1-246b-4859-8257-edd2011bab44.png" class="img-fluid"
                     alt="Ilustración de un libro abierto con una frase brillante y su referencia al pie."
                     title="Citas y referencias en HTML." loading="lazy" />
-                  <figcaption class="img-caption">
+                  <figcaption class="site-image__caption">
                     Analogía visual que muestra cómo funciona una cita con su
                     referencia en HTML, representada con un libro abierto y
                     una frase que brilla suavemente.
@@ -146,7 +146,7 @@
               </div>
             </div>
             <!-- Introducción Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- <blockquote>: Cita Larga o en Bloque -->
             <div id="cita-larga-o-en-bloque-blockquote" class="mt-3">
@@ -265,7 +265,7 @@
                   <li>
                     <span class="fw-bold">Sintaxis básica</span>:
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;blockquote>
@@ -283,7 +283,7 @@
                   <li>
                     <span class="fw-bold">Con atribución</span>:
                     <!-- Sintaxis -->
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;blockquote>  
@@ -310,12 +310,12 @@
                 </h3>
                 <!-- Ejemplo -->
                 <div class="row">
-                  <div class="ej-ejemplo">
-                    <div class="row ej-ejecutado mt-3">
+                  <div class="code-example">
+                    <div class="row code-example__output mt-3">
                       <!-- código ejecutado -->
                       <div>
-                        <div class="ej-container-blockquote">
-                          <blockquote class="ej-blockquote-blockquote" cite="https://ejemplo.com">
+                        <div class="demo-blockquote__container">
+                          <blockquote class="demo-blockquote__blockquote" cite="https://ejemplo.com">
                             <p>
                               La imaginación es más importante que el
                               conocimiento. El conocimiento es limitado,
@@ -323,48 +323,48 @@
                               mundo, estimulando el progreso, dando origen a
                               la evolución.
                             </p>
-                            <cite class="ej-cite-blockquote">Albert Einstein</cite>
+                            <cite class="demo-blockquote__cite">Albert Einstein</cite>
                           </blockquote>
 
-                          <blockquote class="ej-blockquote-simple-blockquote">
+                          <blockquote class="demo-blockquote__blockquote-simple">
                             <p>
                               No es la especie más fuerte la que sobrevive, ni
                               la más inteligente, sino la que responde mejor
                               al cambio.
                             </p>
-                            <cite class="ej-cite-blockquote">Charles Darwin</cite>
+                            <cite class="demo-blockquote__cite">Charles Darwin</cite>
                           </blockquote>
 
-                          <blockquote class="ej-blockquote-blockquote" cite="https://ejemplo.com">
+                          <blockquote class="demo-blockquote__blockquote" cite="https://ejemplo.com">
                             <p>
                               En medio de la dificultad reside la oportunidad.
                             </p>
-                            <cite class="ej-cite-blockquote">Albert Einstein</cite>
+                            <cite class="demo-blockquote__cite">Albert Einstein</cite>
                           </blockquote>
                         </div>
                       </div>
                       <!-- código ejecutado fin -->
                     </div>
                     <div class="row">
-                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                         <!-- código HTML -->
                         <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;div class="ej-container-blockquote">
-                                    &lt;blockquote class="ej-blockquote-blockquote" cite="https://ejemplo.com">
+                                &lt;div class="demo-blockquote__container">
+                                    &lt;blockquote class="demo-blockquote__blockquote" cite="https://ejemplo.com">
                                         &lt;p>La imaginación es más importante que el conocimiento. El conocimiento es limitado, mientras que la imaginación abraza todo el mundo, estimulando el progreso, dando origen a la evolución.&lt;/p>
-                                        &lt;cite class="ej-cite-blockquote">Albert Einstein&lt;/cite>
+                                        &lt;cite class="demo-blockquote__cite">Albert Einstein&lt;/cite>
                                     &lt;/blockquote>
 
-                                    &lt;blockquote class="ej-blockquote-simple-blockquote">
+                                    &lt;blockquote class="demo-blockquote__blockquote-simple">
                                         &lt;p>No es la especie más fuerte la que sobrevive, ni la más inteligente, sino la que responde mejor al cambio.&lt;/p>
-                                        &lt;cite class="ej-cite-blockquote">Charles Darwin&lt;/cite>
+                                        &lt;cite class="demo-blockquote__cite">Charles Darwin&lt;/cite>
                                     &lt;/blockquote>
 
-                                    &lt;blockquote class="ej-blockquote-blockquote" cite="https://ejemplo.com">
+                                    &lt;blockquote class="demo-blockquote__blockquote" cite="https://ejemplo.com">
                                         &lt;p>En medio de la dificultad reside la oportunidad.&lt;/p>
-                                        &lt;cite class="ej-cite-blockquote">Albert Einstein&lt;/cite>
+                                        &lt;cite class="demo-blockquote__cite">Albert Einstein&lt;/cite>
                                     &lt;/blockquote>
                                 &lt;/div>
                                </div>        
@@ -372,7 +372,7 @@
                           </pre>
                         <!-- código HTML -->
                       </div>
-                      <div class="ej-code-css col-lg-6 mb-3">
+                      <div class="code-example__css-panel col-lg-6 mb-3">
                         <!-- código CSS -->
                         <pre>
                             <code class="language-css" data-prismjs-copy="Copy">
@@ -481,7 +481,7 @@
               <!-- Ejemplo Práctico <blockquote>  fin -->
             </div>
             <!-- <blockquote>: Cita Larga o en Bloque Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Cita de una fuente <cite> -->
             <div id="cita-de-una-fuente-cite" class="mt-3">
@@ -630,7 +630,7 @@
                   Sintaxis Básica <code class="language-html">&lt;cite></code>
                 </h3>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                        &lt;cite>Título de la obra&lt;/cite>
@@ -650,47 +650,47 @@
                 </h3>
                 <!-- Ejemplo -->
                 <div class="row">
-                  <div class="ej-ejemplo">
-                    <div class="row ej-ejecutado mt-3">
+                  <div class="code-example">
+                    <div class="row code-example__output mt-3">
                       <!-- código ejecutado -->
                       <div>
-                        <div class="ej-body-cite">
-                          <div class="ej-container-cite">
-                            <p class="ej-h1-cite">🎨 Ejemplos de Citas</p>
+                        <div class="demo-cite">
+                          <div class="demo-cite__container">
+                            <p class="demo-cite__h1">🎨 Ejemplos de Citas</p>
 
-                            <div class="ej-example-cite">
-                              <p class="ej-title-cite">
-                                <span class="ej-emoji-cite">📚</span>Ejemplo
+                            <div class="demo-cite__example">
+                              <p class="demo-cite__title">
+                                <span class="demo-cite__emoji">📚</span>Ejemplo
                                 1: Cita Literaria
                               </p>
 
-                              <div class="ej-quote-cite">
+                              <div class="demo-cite__quote">
                                 "En un lugar de la Mancha, de cuyo nombre no
                                 quiero acordarme, no ha mucho tiempo que vivía
                                 un hidalgo..."
                               </div>
 
-                              <p class="ej-text-cite">
+                              <p class="demo-cite__text">
                                 Esta famosa frase pertenece a la obra
-                                <cite class="ej-cite-tag">El Quijote de la Mancha</cite>
+                                <cite class="demo-content__cite-tag">El Quijote de la Mancha</cite>
                                 de Miguel de Cervantes.
                               </p>
                             </div>
 
-                            <div class="ej-example-cite">
-                              <p class="ej-title-cite">
-                                <span class="ej-emoji-cite">🎬</span>Ejemplo
+                            <div class="demo-cite__example">
+                              <p class="demo-cite__title">
+                                <span class="demo-cite__emoji">🎬</span>Ejemplo
                                 2: Cita de Película
                               </p>
 
-                              <div class="ej-quote-cite">
+                              <div class="demo-cite__quote">
                                 "Que la fuerza te acompañe"
                               </div>
 
-                              <p class="ej-text-cite">
+                              <p class="demo-cite__text">
                                 Una de las frases más icónicas del cine,
                                 proveniente de
-                                <cite class="ej-cite-tag">Star Wars: Una Nueva Esperanza</cite>
+                                <cite class="demo-content__cite-tag">Star Wars: Una Nueva Esperanza</cite>
                                 dirigida por George Lucas.
                               </p>
                             </div>
@@ -700,39 +700,39 @@
                       <!-- código ejecutado fin -->
                     </div>
                     <div class="row">
-                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                         <!-- código HTML -->
                         <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;div class="ej-body-cite">
-                                  &lt;div class="ej-container-cite">
-                                    &lt;p class="ej-h1-cite">🎨 Ejemplos de Citas&lt;/p>
+                                &lt;div class="demo-cite">
+                                  &lt;div class="demo-cite__container">
+                                    &lt;p class="demo-cite__h1">🎨 Ejemplos de Citas&lt;/p>
 
-                                    &lt;div class="ej-example-cite">
-                                      &lt;p class="ej-title-cite">&lt;span class="ej-emoji-cite">📚&lt;/span>Ejemplo 1: Cita Literaria&lt;/p>
+                                    &lt;div class="demo-cite__example">
+                                      &lt;p class="demo-cite__title">&lt;span class="demo-cite__emoji">📚&lt;/span>Ejemplo 1: Cita Literaria&lt;/p>
 
-                                      &lt;div class="ej-quote-cite">
+                                      &lt;div class="demo-cite__quote">
                                         "En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo..."
                                       &lt;/div>
 
-                                      &lt;p class="ej-text-cite">
+                                      &lt;p class="demo-cite__text">
                                         Esta famosa frase pertenece a la obra
-                                        &lt;cite class="ej-cite-tag">El Quijote de la Mancha&lt;/cite>
+                                        &lt;cite class="demo-content__cite-tag">El Quijote de la Mancha&lt;/cite>
                                         de Miguel de Cervantes.
                                       &lt;/p>
                                     &lt;/div>
 
-                                    &lt;div class="ej-example-cite">
-                                      &lt;p class="ej-title-cite">&lt;span class="ej-emoji-cite">🎬&lt;/span>Ejemplo 2: Cita de Película&lt;/p>
+                                    &lt;div class="demo-cite__example">
+                                      &lt;p class="demo-cite__title">&lt;span class="demo-cite__emoji">🎬&lt;/span>Ejemplo 2: Cita de Película&lt;/p>
 
-                                      &lt;div class="ej-quote-cite">
+                                      &lt;div class="demo-cite__quote">
                                         "Que la fuerza te acompañe"
                                       &lt;/div>
 
-                                      &lt;p class="ej-text-cite">
+                                      &lt;p class="demo-cite__text">
                                         Una de las frases más icónicas del cine, proveniente de
-                                        &lt;cite class="ej-cite-tag">Star Wars: Una Nueva Esperanza&lt;/cite>
+                                        &lt;cite class="demo-content__cite-tag">Star Wars: Una Nueva Esperanza&lt;/cite>
                                         dirigida por George Lucas.
                                       &lt;/p>
                                     &lt;/div>
@@ -743,7 +743,7 @@
                           </pre>
                         <!-- código HTML -->
                       </div>
-                      <div class="ej-code-css col-lg-6 mb-3">
+                      <div class="code-example__css-panel col-lg-6 mb-3">
                         <!-- código CSS -->
                         <pre>
                             <code class="language-css" data-prismjs-copy="Copy">
@@ -875,7 +875,7 @@
               <!-- Ejemplos de uso de <cite>  fin -->
             </div>
             <!-- Cita de una fuente <cite> Fin -->
-            <hr class="subtle-divider" />
+            <hr class="site-divider--subtle site-divider" />
 
             <!-- Citas en Línea <q> -->
             <div id="citas-en-linea-q" class="mt-3">
@@ -955,7 +955,7 @@
                   sitio web. Por ejemplo:
                 </p>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-css" data-prismjs-copy="Copy">
                         q {
@@ -976,7 +976,7 @@
                 </h3>
                 <!-- Sintaxis -->
                 <p><span class="fw-bold">Sintaxis básica</span>:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                        &lt;p>&lt;q>Texto de la cita&lt;/q>&lt;/p>
@@ -989,7 +989,7 @@
                   <span class="fw-bold">Con atributo cite (opcional)</span>:
                 </p>
                 <!-- Sintaxis -->
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;q cite="https://ejemplo.com/fuente">Texto de la cita&lt;/q>
@@ -1007,84 +1007,84 @@
                 </h3>
                 <!-- Ejemplo -->
                 <div class="row">
-                  <div class="ej-ejemplo">
-                    <div class="row ej-ejecutado mt-3">
+                  <div class="code-example">
+                    <div class="row code-example__output mt-3">
                       <!-- código ejecutado -->
                       <div>
-                        <div class="ej-body-q">
-                          <div class="ej-container-q">
-                            <p class="ej-h1-q">Ejemplos con &lt;q&gt;</p>
+                        <div class="demo-q">
+                          <div class="demo-q__container">
+                            <p class="demo-q__h1">Ejemplos con &lt;q&gt;</p>
 
                             <!-- Ejemplo 1: Blog Literario -->
-                            <div class="ej-ejemplo-q">
-                              <p class="ej-h2-q">
+                            <div class="demo-q__ejemplo">
+                              <p class="demo-q__h2">
                                 Blog Literario Minimalista
                               </p>
 
-                              <p class="ej-parrafo-q">
+                              <p class="demo-q__parrafo">
                                 En su última novela, la autora nos recuerda
                                 que
-                                <q class="ej-cita-q">las palabras tienen el poder de construir
+                                <q class="demo-q__cita">las palabras tienen el poder de construir
                                   mundos enteros</q>
                                 y esta reflexión resuena profundamente en cada
                                 página de su obra.
                               </p>
 
-                              <p class="ej-parrafo-q">
+                              <p class="demo-q__parrafo">
                                 Como bien expresó en una entrevista:
-                                <q class="ej-cita-q">escribir es el arte de hacer visible lo
+                                <q class="demo-q__cita">escribir es el arte de hacer visible lo
                                   invisible</q>, una filosofía que define perfectamente su
                                 estilo narrativo.
                               </p>
 
-                              <p class="ej-autor-q">
+                              <p class="demo-q__autor">
                                 — Extracto del blog "Letras & Café"
                               </p>
 
-                              <div class="ej-codigo-q">
-                                <span class="ej-tag-q">&lt;p&gt;</span>Como
+                              <div class="demo-q__codigo">
+                                <span class="demo-q__tag">&lt;p&gt;</span>Como
                                 bien expresó:
-                                <span class="ej-tag-q">&lt;q&gt;</span><span class="ej-texto-q">escribir es el arte de
+                                <span class="demo-q__tag">&lt;q&gt;</span><span class="demo-q__texto">escribir es el arte de
                                   hacer visible lo
-                                  invisible</span><span class="ej-tag-q">&lt;/q&gt;</span>, una
-                                filosofía única.<span class="ej-tag-q">&lt;/p&gt;</span>
+                                  invisible</span><span class="demo-q__tag">&lt;/q&gt;</span>, una
+                                filosofía única.<span class="demo-q__tag">&lt;/p&gt;</span>
                               </div>
                             </div>
 
-                            <hr class="ej-separador-q" />
+                            <hr class="demo-q__separador" />
 
                             <!-- Ejemplo 2: Revista Digital -->
-                            <div class="ej-ejemplo-q">
-                              <p class="ej-h2-q">
+                            <div class="demo-q__ejemplo">
+                              <p class="demo-q__h2">
                                 Revista Digital Innovadora
                               </p>
 
-                              <p class="ej-parrafo-q">
+                              <p class="demo-q__parrafo">
                                 El CEO de la startup tecnológica
                                 revolucionaria declaró que
-                                <q class="ej-cita-q">el futuro pertenece a quienes se atreven a
+                                <q class="demo-q__cita">el futuro pertenece a quienes se atreven a
                                   reimaginar lo imposible</q>
                                 durante la presentación de su nuevo producto.
                               </p>
 
-                              <p class="ej-parrafo-q">
+                              <p class="demo-q__parrafo">
                                 Su visión es clara:
-                                <q class="ej-cita-q">la tecnología debe servir a la humanidad,
+                                <q class="demo-q__cita">la tecnología debe servir a la humanidad,
                                   no al revés</q>, un principio que guía cada decisión en su
                                 empresa.
                               </p>
 
-                              <p class="ej-autor-q">
+                              <p class="demo-q__autor">
                                 — Reportaje especial "Innovadores del Siglo
                                 XXI"
                               </p>
 
-                              <div class="ej-codigo-q">
-                                <span class="ej-tag-q">&lt;p&gt;</span>Su
-                                visión: <span class="ej-tag-q">&lt;q&gt;</span><span class="ej-texto-q">la tecnología
+                              <div class="demo-q__codigo">
+                                <span class="demo-q__tag">&lt;p&gt;</span>Su
+                                visión: <span class="demo-q__tag">&lt;q&gt;</span><span class="demo-q__texto">la tecnología
                                   debe servir a la humanidad,
-                                  no al revés</span><span class="ej-tag-q">&lt;/q&gt;</span>,
-                                principio fundamental.<span class="ej-tag-q">&lt;/p&gt;</span>
+                                  no al revés</span><span class="demo-q__tag">&lt;/q&gt;</span>,
+                                principio fundamental.<span class="demo-q__tag">&lt;/p&gt;</span>
                               </div>
                             </div>
                           </div>
@@ -1093,64 +1093,64 @@
                       <!-- código ejecutado fin -->
                     </div>
                     <div class="row">
-                      <div class="ej-code-html col-lg-6 mb-lg-3 mb-0">
+                      <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                         <!-- código HTML -->
                         <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
-                                &lt;div class="ej-body-q">
-                                  &lt;div class="ej-container-q">
-                                    &lt;p class="ej-h1-q">Ejemplos con &lt;code class="language-html">&amp;lt;q>&lt;/code>&lt;/p>
+                                &lt;div class="demo-q">
+                                  &lt;div class="demo-q__container">
+                                    &lt;p class="demo-q__h1">Ejemplos con &lt;code class="language-html">&amp;lt;q>&lt;/code>&lt;/p>
 
                                     &lt;!-- Ejemplo 1: Blog Literario -->
-                                    &lt;div class="ej-ejemplo-q">
-                                      &lt;p class="ej-h2-q">Blog Literario Minimalista&lt;/p>
+                                    &lt;div class="demo-q__ejemplo">
+                                      &lt;p class="demo-q__h2">Blog Literario Minimalista&lt;/p>
 
-                                      &lt;p class="ej-parrafo-q">
+                                      &lt;p class="demo-q__parrafo">
                                         En su última novela, la autora nos recuerda que
-                                        &lt;q class="ej-cita-q">las palabras tienen el poder de construir mundos enteros&lt;/q>
+                                        &lt;q class="demo-q__cita">las palabras tienen el poder de construir mundos enteros&lt;/q>
                                         y esta reflexión resuena profundamente en cada página de su obra.
                                       &lt;/p>
 
-                                      &lt;p class="ej-parrafo-q">
+                                      &lt;p class="demo-q__parrafo">
                                         Como bien expresó en una entrevista:
-                                        &lt;q class="ej-cita-q">escribir es el arte de hacer visible lo invisible&lt;/q>,
+                                        &lt;q class="demo-q__cita">escribir es el arte de hacer visible lo invisible&lt;/q>,
                                         una filosofía que define perfectamente su estilo narrativo.
                                       &lt;/p>
 
-                                      &lt;p class="ej-autor-q">— Extracto del blog "Letras & Café"&lt;/p>
+                                      &lt;p class="demo-q__autor">— Extracto del blog "Letras & Café"&lt;/p>
 
-                                      &lt;div class="ej-codigo-q">
-                                        &lt;span class="ej-tag-q">&lt;p>&lt;/span>Como bien expresó:
-                                        &lt;span class="ej-tag-q">&lt;q>&lt;/span>&lt;span class="ej-texto-q">escribir es el arte de hacer visible lo invisible&lt;/span>&lt;span class="ej-tag-q">&lt;/q>&lt;/span>,
-                                        una filosofía única.&lt;span class="ej-tag-q">&lt;/p>&lt;/span>
+                                      &lt;div class="demo-q__codigo">
+                                        &lt;span class="demo-q__tag">&lt;p>&lt;/span>Como bien expresó:
+                                        &lt;span class="demo-q__tag">&lt;q>&lt;/span>&lt;span class="demo-q__texto">escribir es el arte de hacer visible lo invisible&lt;/span>&lt;span class="demo-q__tag">&lt;/q>&lt;/span>,
+                                        una filosofía única.&lt;span class="demo-q__tag">&lt;/p>&lt;/span>
                                       &lt;/div>
                                     &lt;/div>
 
-                                    &lt;hr class="ej-separador-q">
+                                    &lt;hr class="demo-q__separador">
 
                                     &lt;!-- Ejemplo 2: Revista Digital -->
-                                    &lt;div class="ej-ejemplo-q">
-                                      &lt;p class="ej-h2-q">Revista Digital Innovadora&lt;/p>
+                                    &lt;div class="demo-q__ejemplo">
+                                      &lt;p class="demo-q__h2">Revista Digital Innovadora&lt;/p>
 
-                                      &lt;p class="ej-parrafo-q">
+                                      &lt;p class="demo-q__parrafo">
                                         El CEO de la startup tecnológica revolucionaria declaró que
-                                        &lt;q class="ej-cita-q">el futuro pertenece a quienes se atreven a reimaginar lo imposible&lt;/q>
+                                        &lt;q class="demo-q__cita">el futuro pertenece a quienes se atreven a reimaginar lo imposible&lt;/q>
                                         durante la presentación de su nuevo producto.
                                       &lt;/p>
 
-                                      &lt;p class="ej-parrafo-q">
+                                      &lt;p class="demo-q__parrafo">
                                         Su visión es clara:
-                                        &lt;q class="ej-cita-q">la tecnología debe servir a la humanidad, no al revés&lt;/q>,
+                                        &lt;q class="demo-q__cita">la tecnología debe servir a la humanidad, no al revés&lt;/q>,
                                         un principio que guía cada decisión en su empresa.
                                       &lt;/p>
 
-                                      &lt;p class="ej-autor-q">— Reportaje especial "Innovadores del Siglo XXI"&lt;/p>
+                                      &lt;p class="demo-q__autor">— Reportaje especial "Innovadores del Siglo XXI"&lt;/p>
 
-                                      &lt;div class="ej-codigo-q">
-                                        &lt;span class="ej-tag-q">&lt;p>&lt;/span>Su visión:
-                                        &lt;span class="ej-tag-q">&lt;q>&lt;/span>&lt;span class="ej-texto-q">la tecnología debe servir a la humanidad, no al revés&lt;/span>&lt;span class="ej-tag-q">&lt;/q>&lt;/span>,
-                                        principio fundamental.&lt;span class="ej-tag-q">&lt;/p>&lt;/span>
+                                      &lt;div class="demo-q__codigo">
+                                        &lt;span class="demo-q__tag">&lt;p>&lt;/span>Su visión:
+                                        &lt;span class="demo-q__tag">&lt;q>&lt;/span>&lt;span class="demo-q__texto">la tecnología debe servir a la humanidad, no al revés&lt;/span>&lt;span class="demo-q__tag">&lt;/q>&lt;/span>,
+                                        principio fundamental.&lt;span class="demo-q__tag">&lt;/p>&lt;/span>
                                       &lt;/div>
                                     &lt;/div>
                                   &lt;/div>
@@ -1160,7 +1160,7 @@
                           </pre>
                         <!-- código HTML -->
                       </div>
-                      <div class="ej-code-css col-lg-6 mb-3">
+                      <div class="code-example__css-panel col-lg-6 mb-3">
                         <!-- código CSS -->
                         <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
@@ -1322,7 +1322,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -1341,99 +1341,99 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item">
-                <a href="#introduccion" class="simple-link">Introducción</a>
+              <div class="site-menu__item">
+                <a href="#introduccion" class="site-menu__link">Introducción</a>
               </div>
 
-              <div class="menu-item">
+              <div class="site-menu__item">
                 <details>
                   <summary>
                     Cita Larga o en Bloque
                     <code class="language-html">&lt;blockquote></code>
                   </summary>
-                  <div class="submenu">
-                    <a href="#cita-larga-o-en-bloque-blockquote" class="submenu-item">Cita Larga o en Bloque
+                  <div class="site-menu__submenu">
+                    <a href="#cita-larga-o-en-bloque-blockquote" class="site-menu__submenu-link">Cita Larga o en Bloque
                       <code class="language-html">&lt;blockquote></code></a>
 
-                    <a href="#características-principales-blockquote" class="submenu-item">Características Principales
+                    <a href="#características-principales-blockquote" class="site-menu__submenu-link">Características Principales
                       <code class="language-html">&lt;blockquote></code></a>
 
-                    <a href="#presentacion-visual-blockquote" class="submenu-item">Presentación Visual
+                    <a href="#presentacion-visual-blockquote" class="site-menu__submenu-link">Presentación Visual
                       <code class="language-html">&lt;blockquote></code></a>
 
-                    <a href="#por-que-usar-una-cita-en-bloque" class="submenu-item">¿Por Qué Usar una Cita en
+                    <a href="#por-que-usar-una-cita-en-bloque" class="site-menu__submenu-link">¿Por Qué Usar una Cita en
                       Bloque?</a>
 
-                    <a href="#sintaxis-blockquote" class="submenu-item">Sintaxis
+                    <a href="#sintaxis-blockquote" class="site-menu__submenu-link">Sintaxis
                       <code class="language-html">&lt;blockquote></code></a>
 
-                    <a href="#ejemplo-practico-blockquote" class="submenu-item">Ejemplo Práctico
+                    <a href="#ejemplo-practico-blockquote" class="site-menu__submenu-link">Ejemplo Práctico
                       <code class="language-html">&lt;blockquote></code></a>
                   </div>
                 </details>
               </div>
 
-              <div class="menu-item">
+              <div class="site-menu__item">
                 <details>
                   <summary>
                     Cita de una fuente
                     <code class="language-html">&lt;cite></code>
                   </summary>
-                  <div class="submenu">
-                    <a href="#cita-de-una-fuente-cite" class="submenu-item">Cita de una fuente
+                  <div class="site-menu__submenu">
+                    <a href="#cita-de-una-fuente-cite" class="site-menu__submenu-link">Cita de una fuente
                       <code class="language-html">&lt;cite></code></a>
 
-                    <a href="#que-es-la-etiqueta-cite" class="submenu-item">¿Qué es la etiqueta
+                    <a href="#que-es-la-etiqueta-cite" class="site-menu__submenu-link">¿Qué es la etiqueta
                       <code class="language-html">&lt;cite></code>?</a>
 
-                    <a href="#para-que-se-usa" class="submenu-item">¿Para qué se usa?</a>
+                    <a href="#para-que-se-usa" class="site-menu__submenu-link">¿Para qué se usa?</a>
 
-                    <a href="#como-se-ve-y-que-hace-el-navegador" class="submenu-item">¿Cómo se ve y qué hace el
+                    <a href="#como-se-ve-y-que-hace-el-navegador" class="site-menu__submenu-link">¿Cómo se ve y qué hace el
                       navegador?</a>
 
-                    <a href="#sintaxis-basica-cite" class="submenu-item">Sintaxis Básica
+                    <a href="#sintaxis-basica-cite" class="site-menu__submenu-link">Sintaxis Básica
                       <code class="language-html">&lt;cite></code></a>
 
-                    <a href="#ejemplos-de-uso-de-cite" class="submenu-item">Ejemplos de uso de
+                    <a href="#ejemplos-de-uso-de-cite" class="site-menu__submenu-link">Ejemplos de uso de
                       <code class="language-html">&lt;cite></code></a>
                   </div>
                 </details>
               </div>
 
-              <div class="menu-item">
+              <div class="site-menu__item">
                 <details>
                   <summary>
                     Citas en Línea <code class="language-html">&lt;q></code>
                   </summary>
-                  <div class="submenu">
-                    <a href="#citas-en-linea-q" class="submenu-item">Citas en Línea
+                  <div class="site-menu__submenu">
+                    <a href="#citas-en-linea-q" class="site-menu__submenu-link">Citas en Línea
                       <code class="language-html">&lt;q></code></a>
-                    <a href="#que-es-la-etiqueta-q" class="submenu-item">¿Qué es la etiqueta
+                    <a href="#que-es-la-etiqueta-q" class="site-menu__submenu-link">¿Qué es la etiqueta
                       <code class="language-html">&lt;q></code>?</a>
 
-                    <a href="#-como-funciona-la-etiqueta-q" class="submenu-item">
+                    <a href="#-como-funciona-la-etiqueta-q" class="site-menu__submenu-link">
                       ¿Cómo funciona la etiqueta
                       <code class="language-html">&lt;q></code>?</a>
 
-                    <a href="#-cuando-usar-q" class="submenu-item">
+                    <a href="#-cuando-usar-q" class="site-menu__submenu-link">
                       Cuándo usar <code class="language-html">&lt;q></code></a>
 
-                    <a href="#personalizacion-con-css" class="submenu-item">Personalización con CSS</a>
+                    <a href="#personalizacion-con-css" class="site-menu__submenu-link">Personalización con CSS</a>
 
-                    <a href="#sintaxis-basica-q" class="submenu-item">Sintaxis Básica
+                    <a href="#sintaxis-basica-q" class="site-menu__submenu-link">Sintaxis Básica
                       <code class="language-html">&lt;q></code></a>
 
-                    <a href="#ejemplo-basico-q" class="submenu-item">Ejemplo básico
+                    <a href="#ejemplo-basico-q" class="site-menu__submenu-link">Ejemplo básico
                       <code class="language-html">&lt;q></code></a>
                   </div>
                 </details>
               </div>
 
-              <div class="menu-item">
-                <a href="#comments" class="simple-link">Comentarios</a>
+              <div class="site-menu__item">
+                <a href="#comments" class="site-menu__link">Comentarios</a>
               </div>
             </div>
           </div>
@@ -1501,7 +1501,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

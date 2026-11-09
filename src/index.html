@@ -63,7 +63,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -92,17 +92,17 @@
   </nav>
   <!-- Barra de Navegación -->
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!-- about -->
         <article class="row border-1 border-bottom pb-3" id="about">
-          <h1 class="text_big">
+          <h1 class="site-text--large site-text">
             EDUARDO
             <span class="text-dark-emphasis">HERRERA FORERO</span>
           </h1>
           <h3>INGENIERO ELECTRÓNICO ESPECIALISTA EN GERENCIA DE PROYECTOS</h3>
-          <p class="text-wrap text_saira text_big2">
+          <p class="text-wrap site-text--saira site-text--medium site-text">
             <!-- CELULAR: (57) 300-614-5402, -->
             BOGOTÁ&nbsp;D.&nbsp;C.&nbsp;-&nbsp;COLOMBIA,
             <a href="mailto:EHFEDUARDO@GMAIL.COM?Subject=Correo%20de%20un%20amigo">EHFEDUARDO@GMAIL.COM</a>
@@ -483,10 +483,11 @@
           <h2>PUBLICACIONES</h2>
           <div class="row mx-auto mt-3 d-flex justify-content-center">
 
-            <!-- Machine Learning -->
-            <div class="col-lg-4 card p-0 mb-3">
-              <a class="text-decoration-none" href="./ml-0000_machine_learning.html" class="ancla stretched-link">
-                <div class="card-header tituloCard d-flex align-items-center">
+           <!-- Machine Learning -->
+           <!--  
+           <div class="col-lg-4 card p-0 mb-3">
+              <a class="text-decoration-none" href="./ml-0000_machine_learning.html" class="site-link--anchor stretched-link site-link">
+                <div class="card-header site-card__title d-flex align-items-center">
                   <div class="col">
                     <h3 class="text-center">Machine Learning</h3>
                   </div>
@@ -504,12 +505,12 @@
                   </p>
                 </div>
               </a>
-            </div>
+            </div> -->
 
             <!-- Claude -->
-            <div class="col-lg-4 card p-0 mb-3">
-              <a class="text-decoration-none" href="./claude.html" class="ancla stretched-link">
-                <div class="card-header tituloCard d-flex align-items-center">
+<!--             <div class="col-lg-4 card p-0 mb-3">
+              <a class="text-decoration-none" href="./claude.html" class="site-link--anchor stretched-link site-link">
+                <div class="card-header site-card__title d-flex align-items-center">
                   <div class="col">
                     <h3 class="text-center">Claude AI</h3>
                   </div>
@@ -526,12 +527,12 @@
                   </p>
                 </div>
               </a>
-            </div>
+            </div> -->
 
             <!-- Bootstrap -->
             <div class="col-lg-4 card p-0 mb-3">
-              <a class="text-decoration-none" href="./bootstrap.html" class="ancla stretched-link">
-                <div class="card-header tituloCard d-flex align-items-center">
+              <a class="text-decoration-none" href="./bootstrap.html" class="site-link--anchor stretched-link site-link">
+                <div class="card-header site-card__title d-flex align-items-center">
                   <div class="col">
                     <h3 class="text-center">BOOTSTRAP Versión 5.3</h3>
                   </div>
@@ -553,9 +554,9 @@
 
             <!-- Análisis de Datos -->
             <div class="col-lg-4 card p-0 mb-3">
-              <a class="text-decoration-none" href="./analisis_de_datos.html" class="ancla stretched-link">
+              <a class="text-decoration-none" href="./analisis_de_datos.html" class="site-link--anchor stretched-link site-link">
 
-                <div class="card-header tituloCard d-flex align-items-center">
+                <div class="card-header site-card__title d-flex align-items-center">
                   <div class="col">
                     <h3 class="text-center">Análisis de Datos</h3>
                   </div>
@@ -577,8 +578,8 @@
 
             <!-- css -->
             <div class="col-lg-4 card p-0 mb-3">
-              <a class="text-decoration-none" href="./css.html" class="ancla stretched-link">
-                <div class="card-header tituloCard d-flex align-items-center">
+              <a class="text-decoration-none" href="./css.html" class="site-link--anchor stretched-link site-link">
+                <div class="card-header site-card__title d-flex align-items-center">
                   <div class="col">
                     <h3 class="text-center"><abbr title="Cascading Style Sheets ">CSS</abbr> (Hojas de Estilo en
                       Cascada)</h3>
@@ -603,8 +604,8 @@
 
             <!-- Git -->
             <div class="col-lg-4 card p-0 mb-3">
-              <a class="text-decoration-none" href="./git.html" class="ancla stretched-link">
-                <div class="card-header tituloCard d-flex align-items-center">
+              <a class="text-decoration-none" href="./git.html" class="site-link--anchor stretched-link site-link">
+                <div class="card-header site-card__title d-flex align-items-center">
                   <div class="col">
                     <h2 class="text-center">Git / Github</h2>
                   </div>
@@ -628,15 +629,15 @@
 
             <!-- HTML -->
             <div class="col-lg-4 card p-0 mb-3">
-              <div class="card-header tituloCard d-flex align-items-center">
+              <div class="card-header site-card__title d-flex align-items-center">
                 <div class="col">
                   <h3 class="text-center">HTML</h3>
                 </div>
               </div>
               <div class="card-body">
-                <a class="text-decoration-none" href="./html.html" class="ancla stretched-link">
+                <a class="text-decoration-none" href="./html.html" class="site-link--anchor stretched-link site-link">
                   <div class="d-flex justify-content-center my-3">
-                    <svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520" width="113"
+                    <svg class="site-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520" width="113"
                       height="130">
                       <path fill="#e34f26" d="M41 460L0 0h451l-41 460-185 52" />
                       <path fill="#ef652a" d="M226 472l149-41 35-394H226" />
@@ -660,8 +661,8 @@
 
             <!-- ChatGPT -->
             <div class="col-lg-4 card p-0 mb-3">
-              <a class="text-decoration-none" href="./chatgpt.html" class="ancla stretched-link">
-                <div class="card-header tituloCard d-flex align-items-center">
+              <a class="text-decoration-none" href="./chatgpt.html" class="site-link--anchor stretched-link site-link">
+                <div class="card-header site-card__title d-flex align-items-center">
                   <div class="col">
                     <h3 class="text-center">ChatGPT</h3>
                   </div>
@@ -686,8 +687,8 @@
 
             <!-- Curso de Python 3 -->
             <div class="col-lg-4 card p-0 mb-3">
-              <a class="text-decoration-none" href="./cursoPython3.html" class="ancla stretched-link">
-                <div class="card-header tituloCard d-flex align-items-center">
+              <a class="text-decoration-none" href="./cursoPython3.html" class="site-link--anchor stretched-link site-link">
+                <div class="card-header site-card__title d-flex align-items-center">
                   <div class="col">
                     <h3 class="text-center">Curso de Python 3</h3>
                   </div>
@@ -711,8 +712,8 @@
 
             <!-- Otros Temas -->
             <div class="col-lg-4 card p-0 mb-3">
-              <a class="text-decoration-none" href="./otrosTemas.html" class="ancla stretched-link">
-                <div class="card-header tituloCard d-flex align-items-center">
+              <a class="text-decoration-none" href="./otrosTemas.html" class="site-link--anchor stretched-link site-link">
+                <div class="card-header site-card__title d-flex align-items-center">
                   <div class="col">
                     <h3 class="text-center">Otros Temas</h3>
                   </div>
@@ -736,8 +737,8 @@
 
             <!-- Photoshop -->
             <div class="col-lg-4 card p-0 mb-3">
-              <a class="text-decoration-none" href="./photoshop.html" class="ancla stretched-link">
-                <div class="card-header tituloCard d-flex align-items-center">
+              <a class="text-decoration-none" href="./photoshop.html" class="site-link--anchor stretched-link site-link">
+                <div class="card-header site-card__title d-flex align-items-center">
                   <div class="col">
                     <h3 class="text-center">Photoshop</h3>
                   </div>
@@ -761,8 +762,8 @@
 
             <!-- Javascript -->
             <div class="col-lg-4 card p-0 mb-3">
-              <a class="text-decoration-none" href="./javascript.html" class="ancla stretched-link">
-                <div class="card-header tituloCard d-flex align-items-center">
+              <a class="text-decoration-none" href="./javascript.html" class="site-link--anchor stretched-link site-link">
+                <div class="card-header site-card__title d-flex align-items-center">
                   <div class="col">
                     <h3 class="text-center">Javascript</h3>
                   </div>
@@ -815,7 +816,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -833,92 +834,92 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block" style="align-self: flex-start; position: sticky;">
         <h2>Publicaciones</h2>
-        <div class="menu-container border-1 border">
-          <div class="menu-item">
-            <a href="./ml-0101_conceptos_basicos_machine_learning.html" class="simple-link">
+        <div class="site-menu border-1 border">
+<!--           <div class="site-menu__item">
+            <a href="./ml-0101_conceptos_basicos_machine_learning.html" class="site-menu__link">
               Conceptos Básicos de Machine Learning</a>
-          </div>
-          <div class="menu-item">
-            <a href="./claude-0101_claude_una_nueva_etapa_en_la_inteligencia_artificial.html" class="simple-link">
+          </div> -->
+<!--           <div class="site-menu__item">
+            <a href="./claude-0101_claude_una_nueva_etapa_en_la_inteligencia_artificial.html" class="site-menu__link">
               Claude: una Nueva Etapa en la Inteligencia Artificial</a>
-          </div>
-          <div class="menu-item">
-            <a href="./bootstrap-0002-instalacion_de_bootstrap_v5_con_npm_y_parcel.html" class="simple-link">
+          </div> -->
+          <div class="site-menu__item">
+            <a href="./bootstrap-0002-instalacion_de_bootstrap_v5_con_npm_y_parcel.html" class="site-menu__link">
               Instalación de Bootstrap V5.3 con NPM y Parcel</a>
           </div>
-          <div class="menu-item">
-            <a href="./analisis-de-datos-0012_manejo-de-dataframe-con-panda.html" class="simple-link">Manejo de
+          <div class="site-menu__item">
+            <a href="./analisis-de-datos-0012_manejo-de-dataframe-con-panda.html" class="site-menu__link">Manejo de
               Dataframes con Pandas</a>
           </div>
-          <div class="menu-item">
-            <a href="./analisis-de-datos-0011_manejo-de-series-con-panda.html" class="simple-link">Manejo de Series con
+          <div class="site-menu__item">
+            <a href="./analisis-de-datos-0011_manejo-de-series-con-panda.html" class="site-menu__link">Manejo de Series con
               Pandas</a>
           </div>
-          <div class="menu-item">
+          <div class="site-menu__item">
             <a href="./analisis-de-datos-0010_pandas_una_biblioteca_poderosa_para_el_analisis_de_datos_en_python.html"
-              class="simple-link">Pandas:
+              class="site-menu__link">Pandas:
               Una Biblioteca Poderosa para el Análisis de Datos en Python</a>
           </div>
-          <div class="menu-item">
-            <a href="./analisis-de-datos-0009_funciones-en-pyhon.html" class="simple-link">Funciones en Python</a>
+          <div class="site-menu__item">
+            <a href="./analisis-de-datos-0009_funciones-en-pyhon.html" class="site-menu__link">Funciones en Python</a>
           </div>
-          <div class="menu-item">
-            <a href="./analisis-de-datos-0008_bucles_en_python.html" class="simple-link">Bucles en Python</a>
+          <div class="site-menu__item">
+            <a href="./analisis-de-datos-0008_bucles_en_python.html" class="site-menu__link">Bucles en Python</a>
           </div>
-          <div class="menu-item">
-            <a href="./analisis-de-datos-0007_condicionales_en_python.html" class="simple-link">Condicionales en
+          <div class="site-menu__item">
+            <a href="./analisis-de-datos-0007_condicionales_en_python.html" class="site-menu__link">Condicionales en
               Python</a>
           </div>
-          <div class="menu-item">
+          <div class="site-menu__item">
             <a href="./analisis-de-datos-0006_funciones_de_entrada_y_salida_en_python.html"
-              class="simple-link">Funciones de Entrada
+              class="site-menu__link">Funciones de Entrada
               y Salida en Python</a>
           </div>
-          <div class="menu-item">
-            <a href="./analisis-de-datos-0005_operadores_basicos_en_python.html" class="simple-link">Operadores Básicos
+          <div class="site-menu__item">
+            <a href="./analisis-de-datos-0005_operadores_basicos_en_python.html" class="site-menu__link">Operadores Básicos
               en Python</a>
           </div>
-          <div class="menu-item">
-            <a href="./analisis-de-datos-0004_estructuras_de_datos_en_Python.html" class="simple-link">Estructuras de
+          <div class="site-menu__item">
+            <a href="./analisis-de-datos-0004_estructuras_de_datos_en_Python.html" class="site-menu__link">Estructuras de
               Datos en Python</a>
           </div>
-          <div class="menu-item">
-            <a href="./analisis-de-datos-0003_tipos_de_datos_simples_en_python.html" class="simple-link">Tipos de
+          <div class="site-menu__item">
+            <a href="./analisis-de-datos-0003_tipos_de_datos_simples_en_python.html" class="site-menu__link">Tipos de
               Datos Simples en Python</a>
 
           </div>
-          <div class="menu-item">
-            <a href="./analisis-de-datos-0002_fundamento_de_python.html" class="simple-link">Fundamentos de Python</a>
+          <div class="site-menu__item">
+            <a href="./analisis-de-datos-0002_fundamento_de_python.html" class="site-menu__link">Fundamentos de Python</a>
           </div>
-          <div class="menu-item">
-            <a href="./analisis-de-datos-0001_introduccion_analisis_de_datos.html" class="simple-link">Introducción
+          <div class="site-menu__item">
+            <a href="./analisis-de-datos-0001_introduccion_analisis_de_datos.html" class="site-menu__link">Introducción
               Análisis de Datos</a>
           </div>
-          <div class="menu-item">
-            <a href="./css-0301_diseño-flexible-con-flexbox.html" class="simple-link">Diseño flexible con Flexbox</a>
+          <div class="site-menu__item">
+            <a href="./css-0301_diseño-flexible-con-flexbox.html" class="site-menu__link">Diseño flexible con Flexbox</a>
           </div>
-          <div class="menu-item">
-            <a href="./css-0001_introduccion_css.html" class="simple-link">Introducción CSS</a>
+          <div class="site-menu__item">
+            <a href="./css-0001_introduccion_css.html" class="site-menu__link">Introducción CSS</a>
           </div>
-          <div class="menu-item">
-            <a href="./git-0006_Etiquetado_en_git.html" class="simple-link">Git Tags: Marcando Puntos Importantes en la
+          <div class="site-menu__item">
+            <a href="./git-0006_Etiquetado_en_git.html" class="site-menu__link">Git Tags: Marcando Puntos Importantes en la
               Historia de tu Proyecto</a>
           </div>
-          <div class="menu-item">
-            <a href="./html-0015_etiquetas_de_programacion_y_script.html" class="simple-link">Etiquetas de
+          <div class="site-menu__item">
+            <a href="./html-0015_etiquetas_de_programacion_y_script.html" class="site-menu__link">Etiquetas de
               Programación y Scripts HTML</a>
           </div>
-          <div class="menu-item">
-            <a href="./html-0014_elementos_incrustados.html" class="simple-link">Elementos Incrustados HTML</a>
+          <div class="site-menu__item">
+            <a href="./html-0014_elementos_incrustados.html" class="site-menu__link">Elementos Incrustados HTML</a>
           </div>
-          <div class="menu-item">
-            <a href="./html-0013_citas_y_referencias.html" class="simple-link">Citas y Referencias HTML</a>
+          <div class="site-menu__item">
+            <a href="./html-0013_citas_y_referencias.html" class="site-menu__link">Citas y Referencias HTML</a>
           </div>
-          <div class="menu-item">
-            <a href="./html-0012_formularios.html" class="simple-link">Formularios HTML</a>
+          <div class="site-menu__item">
+            <a href="./html-0012_formularios.html" class="site-menu__link">Formularios HTML</a>
           </div>
-          <div class="menu-item">
-            <a href="./html-0011_enlaces_y_hipervinculos.html" class="simple-link">Enlaces e Hipervínculos HTML</a>
+          <div class="site-menu__item">
+            <a href="./html-0011_enlaces_y_hipervinculos.html" class="site-menu__link">Enlaces e Hipervínculos HTML</a>
           </div>
         </div>
       </aside>
@@ -983,7 +984,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

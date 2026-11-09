@@ -75,7 +75,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -93,7 +93,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -105,7 +105,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!-- Comandos Básicos GIT -->
@@ -216,7 +216,7 @@
               <div>
                 <h3>Uso de pwd</h3>
                 <p>Simplemente se debe escribir el comando en la terminal:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         pwd
@@ -232,7 +232,7 @@
                       class="language-bash">pwd</code>, la
                     terminal mostrará:
                   </p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-bash" data-prismjs-copy="Copy">
                           /home/usuario/proyectos
@@ -285,7 +285,7 @@
                 esenciales en la interfaz de línea de comandos (CLI).
               </p>
               <h3>Formato ls</h3>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       ls [opciones] [ruta_de_directorio] [nombre_de_los_archivos]
@@ -360,7 +360,7 @@
                 <ul>
                   <li>
                     Listar archivos con detalles completos:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             ls -l
@@ -368,7 +368,7 @@
                         </pre>
                     </div>
                     <p>Salida esperada:</p>
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             -rw-r--r--  1 usuario  grupo   2048 Feb 15 10:30 archivo.txt
@@ -378,7 +378,7 @@
                     </div>
                   </li>
                   <li>Listar todos los archivos, incluyendo los ocultos:</li>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-bash" data-prismjs-copy="Copy">
                           ls -a
@@ -386,7 +386,7 @@
                       </pre>
                   </div>
                   <p>Salida esperada:</p>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-bash" data-prismjs-copy="Copy">
                           .  ..  .oculto  archivo.txt  documentos/
@@ -394,7 +394,7 @@
                       </pre>
                   </div>
                   <li>Listar archivos ordenados por tamaño:</li>
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-bash" data-prismjs-copy="Copy">
                           ls -lS
@@ -404,7 +404,7 @@
                   <p>Esto ordena los archivos de mayor a menor tamaño.</p>
                   <li>
                     Listar archivos en subdirectorios de manera recursiva:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             ls -R
@@ -452,7 +452,7 @@
                     <strong>Ir a un directorio específico</strong>: Esto
                     cambia al directorio llamado "documentos", siempre que se
                     encuentre dentro del directorio actual.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             cd documentos/
@@ -465,7 +465,7 @@
                     punto <code class="language-bash">..</code> indica el
                     directorio padre. Con este comando, se sube un nivel en la
                     jerarquía de directorios.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             cd ..
@@ -476,7 +476,7 @@
                   <li>
                     <strong>Regresar al directorio raíz (<code class="language-bash">/</code>)</strong>: Esto lleva al
                     usuario al directorio raíz del sistema.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             cd /
@@ -495,7 +495,7 @@
                     en macOS o
                     <code class="language-bash">C:\Users\Nombre-de-usuario</code>
                     en Windows.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             cd ~
@@ -508,7 +508,7 @@
                       directorio padre)</strong>: Este comando cambia al directorio en el que el usuario
                     estaba antes de ejecutar el último
                     <code class="language-bash">cd</code>.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                           cd -
@@ -520,7 +520,7 @@
                     <strong>Acceder a un directorio mediante una ruta
                       absoluta</strong>: En este caso, se accede al directorio "proyectos"
                     usando su ruta completa.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             cd /home/usuario/proyectos/
@@ -534,7 +534,7 @@
                     <code class="language-bash">/home/usuario/</code>, este
                     comando lo llevará a
                     <code class="language-bash">/home/usuario/proyectos/</code>.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             cd proyectos/
@@ -544,7 +544,7 @@
                   </li>
                   <li>
                     <strong>Muestra la ayuda de este comando</strong>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             cd --help 
@@ -569,7 +569,7 @@
               </p>
               <h3>Formato mkdir</h3>
               <p>La sintaxis general del comando mkdir es:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       mkdir [nombre_de_directorio]
@@ -585,7 +585,7 @@
                     <strong>Crear un solo directorio</strong>: Este comando
                     crea un directorio llamado "proyectos" en el directorio
                     actual.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             mkdir proyectos
@@ -597,7 +597,7 @@
                     <strong>Crear varios directorios a la vez</strong>: Esto
                     creará tres directorios llamados "carpeta1", "carpeta2" y
                     "carpeta3" en la ubicación actual.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             mkdir carpeta1 carpeta2 carpeta3
@@ -609,7 +609,7 @@
                     <strong>Crear un directorio en una ubicación específica</strong>: Este comando creará el directorio
                     "nuevo_proyecto"
                     dentro de "/home/usuario/documentos/".
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             mkdir /home/usuario/documentos/nuevo_proyecto
@@ -625,7 +625,7 @@
                     por uno. En este caso, si "proyectos" y "clienteX" no
                     existen, <code class="language-bash">mkdir</code> los
                     creará automáticamente junto con "documentos".
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             mkdir -p proyectos/clienteX/documentos
@@ -638,7 +638,7 @@
                     Después de ejecutar
                     <code class="language-bash">mkdir</code>, se puede usar ls
                     para comprobar que el directorio ha sido creado:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             ls -l
@@ -689,7 +689,7 @@
                 interfaz de línea de comandos (CLI).
               </p>
               <h3>Formato touch</h3>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       touch [nombre_del_archivo]
@@ -709,7 +709,7 @@
                     <span class="fw-bold">Crear un archivo vacío</span>: Este
                     comando creará un archivo llamado "documento.txt" en el
                     directorio act
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             touch documento.txt
@@ -721,7 +721,7 @@
                     <span class="fw-bold">Crear varios archivos a la vez</span>: Esto creará los archivos
                     "archivo1.txt", "archivo2.txt"
                     y "archivo3.txt" en el directorio actual.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             touch archivo1.txt archivo2.txt archivo3.txt
@@ -734,7 +734,7 @@
                       existente</span>: Si "informe.txt" ya existe, su fecha de modificación se
                     actualizará a la fecha y hora actual sin modificar su
                     contenido.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             touch informe.txt
@@ -746,7 +746,7 @@
                     <span class="fw-bold">Cambiar la fecha de modificación a una fecha
                       específica</span>: Esto cambia la fecha de modificación de "archivo.txt" a
                     28 de febrero de 2024 a las 15:30.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             touch -t 202402281530 archivo.txt
@@ -758,7 +758,7 @@
                     <span class="fw-bold">Evitar la creación del archivo si no existe (solo
                       actualizar la fecha)</span>: Si el archivo no existe, no se creará. Si existe, se
                     actualizará su fecha de modificación.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             touch -c archivo.txt
@@ -819,7 +819,7 @@
                 papelera, sino que se borran de manera permanente.
               </p>
               <h3>Formato rm</h3>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       rm [opciones] [ruta_de_directorio]/[nombre_del_archivo]
@@ -866,7 +866,7 @@
                     <span class="fw-bold">Eliminar un archivo específico</span>: Borra el archivo
                     <code class="language-bash">archivo.txt</code> en el
                     directorio actual.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             rm archivo.txt
@@ -878,7 +878,7 @@
                     <span class="fw-bold">Eliminar varios archivos</span>:
                     Elimina <code class="language-bash">archivo1.txt</code> y
                     <code class="language-bash">archivo2.txt</code>.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             rm archivo1.txt archivo2.txt
@@ -891,7 +891,7 @@
                     archivos con extensión
                     <code class="language-bash">.log</code> en el directorio
                     actual.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             rm *.log
@@ -903,7 +903,7 @@
                     <span class="fw-bold">Eliminar un directorio y su contenido</span>: Elimina
                     <code class="language-bash">carpeta</code> junto con todos
                     sus archivos y subdirectorios.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             rm -r carpeta
@@ -916,7 +916,7 @@
                     recursiva y sin pedir
                     confirmación. ¡Cuidado con este comando, puede borrar
                     archivos importantes de forma irreversible!.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             rm -rf carpeta
@@ -928,7 +928,7 @@
                     <span class="fw-bold">Confirmar antes de eliminar</span>:
                     Pregunta antes de eliminar
                     <code class="language-bash">archivo.txt</code>.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             rm -i archivo.txt
@@ -969,7 +969,7 @@
                 original intacto.
               </p>
               <h3>Formato cp</h3>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       cp [opciones] origen destino
@@ -1038,7 +1038,7 @@
                   <code class="language-bash">\home\usuario\respaldo\</code>,
                   pero evitando sobrescribirlo si ya existe una versión más
                   reciente en el destino.
-                  <div class="ej-sintaxis">
+                  <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-bash" data-prismjs-copy="Copy">
                           cp -u datos.csv \home\usuario\respaldo\
@@ -1057,7 +1057,7 @@
                 contenido visible en pantalla y dejando una interfaz limpia.
               </p>
               <h3>Formato clear</h3>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       clear
@@ -1070,7 +1070,7 @@
                 <ul>
                   <li>
                     <span class="fw-bold">Limpiar la pantalla sin perder el historial</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             printf "\033c"
@@ -1082,7 +1082,7 @@
                   <li>
                     <span class="fw-bold">Limpiar el historial de la sesión actual y la
                       pantalla</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             history -c && clear
@@ -1106,7 +1106,7 @@
                 comandos previamente utilizados.
               </p>
               <h3>Formato history</h3>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       history [opciones] [n]
@@ -1128,7 +1128,7 @@
                     <span class="fw-bold">Mostrar todo el historial de comandos</span>: Muestra una lista numerada con
                     todos los comandos
                     ejecutados en la sesión actual.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             history
@@ -1139,7 +1139,7 @@
                   <li>
                     <span class="fw-bold">Mostrar solo los últimos n comandos</span>: Muestra los últimos 10 comandos
                     ejecutados.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             history 10
@@ -1151,7 +1151,7 @@
                     <span class="fw-bold">Buscar un comando en el historial</span>: Muestra todas las líneas del
                     historial que contienen el
                     comando <code class="language-bash">ls</code>.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             history | grep "ls"
@@ -1166,7 +1166,7 @@
                     <span class="fw-bold">Reejecutar un comando del historial</span>: Se puede ejecutar un comando
                     directamente usando su
                     número en la lista.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             !100
@@ -1176,7 +1176,7 @@
                     Ejecuta el comando con el número 100 en el historial.
                     <br />
                     Para ejecutar el último comando usado:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             !!
@@ -1187,7 +1187,7 @@
                   <li>
                     <span class="fw-bold">Eliminar un comando específico del historial</span>: Elimina el comando número
                     <code class="language-bash">50</code> del historial.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             history -d 50
@@ -1199,7 +1199,7 @@
                     <span class="fw-bold">Limpiar completamente el historial</span>: Borra todos los comandos
                     almacenados en el historial de
                     la sesión actual.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             history -c
@@ -1211,7 +1211,7 @@
                     <span class="fw-bold">Guardar el historial actual en el archivo de
                       historial</span>: Guarda los cambios en el archivo ~/.bash_history, donde
                     se almacena el historial de comandos.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             history -w
@@ -1229,7 +1229,7 @@
                   El historial de comandos se guarda en el archivo oculto
                   ~/.bash_history. Se puede ver con:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         cat ~/.bash_history
@@ -1277,7 +1277,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -1294,43 +1294,43 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block mb-4">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll pb-1">
-          <div class="menu-container">
-            <div class="menu-container-content">
-              <div class="menu-item">
-                <a href="#introduccion" class="simple-link">Introducción</a>
+        <div class="site-menu__scroll pb-1">
+          <div class="site-menu">
+            <div class="site-menu__content">
+              <div class="site-menu__item">
+                <a href="#introduccion" class="site-menu__link">Introducción</a>
               </div>
-              <div class="menu-item">
-                <a href="#pwd" class="simple-link"><code class="language-shell">pwd</code></a>
+              <div class="site-menu__item">
+                <a href="#pwd" class="site-menu__link"><code class="language-shell">pwd</code></a>
               </div>
-              <div class="menu-item">
-                <a href="#ls" class="simple-link"><code class="language-shell">ls</code></a>
+              <div class="site-menu__item">
+                <a href="#ls" class="site-menu__link"><code class="language-shell">ls</code></a>
               </div>
-              <div class="menu-item">
-                <a href="#cd" class="simple-link"><code class="language-shell">cd</code></a>
+              <div class="site-menu__item">
+                <a href="#cd" class="site-menu__link"><code class="language-shell">cd</code></a>
               </div>
-              <div class="menu-item">
-                <a href="#mkdir" class="simple-link"><code class="language-shell">mkdir</code></a>
+              <div class="site-menu__item">
+                <a href="#mkdir" class="site-menu__link"><code class="language-shell">mkdir</code></a>
               </div>
-              <div class="menu-item">
-                <a href="#touch" class="simple-link"><code class="language-shell">touch</code></a>
+              <div class="site-menu__item">
+                <a href="#touch" class="site-menu__link"><code class="language-shell">touch</code></a>
               </div>
-              <div class="menu-item">
-                <a href="#rm" class="simple-link"><code class="language-shell">rm</code></a>
+              <div class="site-menu__item">
+                <a href="#rm" class="site-menu__link"><code class="language-shell">rm</code></a>
               </div>
 
-              <div class="menu-item">
-                <a href="#cp" class="simple-link"><code class="language-shell">cp</code></a>
+              <div class="site-menu__item">
+                <a href="#cp" class="site-menu__link"><code class="language-shell">cp</code></a>
               </div>
-              <div class="menu-item">
-                <a href="#clear" class="simple-link"><code class="language-shell">clear</code></a>
+              <div class="site-menu__item">
+                <a href="#clear" class="site-menu__link"><code class="language-shell">clear</code></a>
               </div>
-              <div class="menu-item">
-                <a href="#history" class="simple-link"><code class="language-shell">history</code></a>
+              <div class="site-menu__item">
+                <a href="#history" class="site-menu__link"><code class="language-shell">history</code></a>
               </div>
               <!-- Comentarios  -->
-              <div class="menu-item">
-                <a href="#comments" class="simple-link">Comentarios</a>
+              <div class="site-menu__item">
+                <a href="#comments" class="site-menu__link">Comentarios</a>
               </div>
             </div>
           </div>
@@ -1397,7 +1397,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

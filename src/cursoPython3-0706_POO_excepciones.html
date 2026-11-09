@@ -68,7 +68,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -86,7 +86,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -98,7 +98,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  POO: Excepciones en Python  -->
@@ -119,7 +119,7 @@
                 objetos (POO), las excepciones permiten que los objetos
                 manejen errores de manera más estructurada y controlada
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <figure>
                   <img src="https://i.ibb.co/1f9pbDg/poexcepciones.jpg" class="img-fluid"
                     alt="POO: Excepciones en Python  " title="¿Cómo manejar una excepción en Python?" />
@@ -178,7 +178,7 @@
                 </li>
               </ul>
               <p>Ejemplo que ilustra el uso de estos bloques:</p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       def dividir_numeros(a, b):
@@ -229,7 +229,7 @@
                   Aquí hay una vista general de la jerarquía de excepciones en
                   Python:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-plaintext" data-prismjs-copy="Copy">
                         BaseException
@@ -314,7 +314,7 @@
                   <code class="language-python">except</code>.
                 </p>
                 <p>Sintaxis Básica:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         try:
@@ -325,7 +325,7 @@
                   </pre>
                 </div>
                 <p>Ejemplo básico:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         try:
@@ -375,7 +375,7 @@
                   atributo <code class="language-python">errno</code> que
                   contiene el número de error del sistema operativo:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         try:
@@ -407,7 +407,7 @@
                 este ejemplo, se creará una excepción llamada
                 <code class="language-python">MiExcepcionPersonalizada</code>:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Definición de la excepción personalizada
@@ -524,7 +524,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -542,18 +542,18 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
-              <div class="menu-item"><a href="#teoria-basica-de-excepciones-clasicas" class="simple-link">Teoría Básica
+              <div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
+              <div class="site-menu__item"><a href="#teoria-basica-de-excepciones-clasicas" class="site-menu__link">Teoría Básica
                   de Excepciones Clásicas</a></div>
-              <div class="menu-item"><a href="#las-excepciones-son-clases" class="simple-link">Las Excepciones Son
+              <div class="site-menu__item"><a href="#las-excepciones-son-clases" class="site-menu__link">Las Excepciones Son
                   Clases</a></div>
-              <div class="menu-item"><a href="#como-crear-una-excepcion-propia" class="simple-link">Cómo Crear una
+              <div class="site-menu__item"><a href="#como-crear-una-excepcion-propia" class="site-menu__link">Cómo Crear una
                   Excepción Propia</a></div>
               <!-- Comentarios  -->
-              <div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div>
+              <div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div>
             </div>
           </div>
         </div>
@@ -619,7 +619,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

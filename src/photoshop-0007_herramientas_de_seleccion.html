@@ -70,7 +70,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -88,7 +88,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -100,7 +100,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!-- Herramientas de Selección -->
@@ -139,7 +139,7 @@
               <span class="text-danger fw-bold">barra de herramientas</span>
               se puede elegir esta opción.
             </p>
-            <div class="centrar-imagen magen-intro">
+            <div class="site-image site-intro-image">
               <figure>
                 <img src="./images/ps@HerramientaSeleccionRectangular.jpg" class="img-fluid"
                   alt="Herramienta de Selección Rectangular" />
@@ -157,7 +157,7 @@
               <kbd>Shift</kbd> mientras arrastra el cursor. La siguiente
               figura muestra un ejemplo de este proceso:
             </p>
-            <div class="centrar-imagen magen-intro">
+            <div class="site-image site-intro-image">
               <figure>
                 <img src="./images/ps@HerramientasSeleccionRectangularCuadrado.jpg" class="img-fluid"
                   alt="Herramienta de Selección Rectangular Cuadrado" />
@@ -187,7 +187,7 @@
               como "Suavizar" para crear bordes más suaves o "Añadir a
               selección" para combinar varias selecciones.
             </p>
-            <div class="centrar-imagen magen-intro">
+            <div class="site-image site-intro-image">
               <figure>
                 <img src="./images/ps@HerramientasSeleccionRectangularBarraHerramientas.jpg" class="img-fluid"
                   alt="Modificación de la Selección Barra Herramientas" />
@@ -231,7 +231,7 @@
                 que no están conectadas o que requieren diferentes formas de
                 selección. Las zonas que necesitan ser seleccionadas se
                 escogen una tras otra.
-                <div class="centrar-imagen magen-intro">
+                <div class="site-image site-intro-image">
                   <figure>
                     <img src="./images/ps@anhadirSeleccion.jpg" class="img-fluid" alt="Añadir Selección" />
                     <figcaption>Añadir Selección en Photoshop</figcaption>
@@ -245,14 +245,14 @@
                 necesita ajustar una selección para excluir áreas que no deben
                 ser editadas. La parte de la nueva selección que se superponga
                 con la ya existente será eliminada.
-                <div class="centrar-imagen magen-intro">
+                <div class="site-image site-intro-image">
                   <figure>
                     <img src="./images/ps@restarSeleccion.jpg" class="img-fluid" alt="Restar Selección" />
                     <figcaption>Restar Selección en Photoshop</figcaption>
                   </figure>
                 </div>
                 La selección queda como se muestra a continuación:
-                <div class="centrar-imagen magen-intro">
+                <div class="site-image site-intro-image">
                   <figure>
                     <img src="./images/ps@restarSeleccionResultado.jpg" class="img-fluid"
                       alt="Restar Selección Resultado" />
@@ -270,7 +270,7 @@
                 especialmente cuando se trabaja con áreas complejas o se desea
                 seleccionar una parte específica de una imagen que cumple con
                 múltiples criterios.
-                <div class="centrar-imagen magen-intro">
+                <div class="site-image site-intro-image">
                   <figure>
                     <img src="./images/ps@formarInterseccionCon.jpg" class="img-fluid" alt="Formar Intersección Con" />
                     <figcaption>
@@ -283,7 +283,7 @@
                   verdes, es la que Photoshop volverá como selección para
                   trabajo.
                 </p>
-                <div class="centrar-imagen magen-intro">
+                <div class="site-image site-intro-image">
                   <figure>
                     <img src="./images/ps@formarInterseccionConResultado.jpg" class="img-fluid"
                       alt="Formar Intersección Con Resultado" />
@@ -324,7 +324,7 @@
               que solo las áreas seleccionadas sean afectadas por el ajuste
               sin destruir la imagen original.
             </p>
-            <div class="centrar-imagen magen-intro">
+            <div class="site-image site-intro-image">
               <figure>
                 <img src="./images/ps@capaAjusteConSelecciónActiva.jpg" class="img-fluid"
                   alt="Capa de Ajuste Con Selección Activa" />
@@ -347,7 +347,7 @@
                 "Brillo/Contraste".
               </li>
             </ul>
-            <div class="centrar-imagen magen-intro">
+            <div class="site-image site-intro-image">
               <figure>
                 <img src="./images/ps@capaAjusteConSelecciónActivaResultado.jpg" class="img-fluid"
                   alt="Capa de Ajuste Con Selección Activa" />
@@ -363,7 +363,7 @@
             <h2>Herramienta de Selección Rápida</h2>
             <p>
               La herramienta de
-              <span class="fe-bold">Selección Rápida</span> en Photoshop
+              <span class="site-content__fe-bold">Selección Rápida</span> en Photoshop
               permite al usuario seleccionar rápidamente áreas de una imagen
               basándose en colores y texturas similares. Al arrastrar el
               cursor sobre una región de la imagen, la herramienta
@@ -423,7 +423,7 @@
                 <span class="fw-bold">Selección Rápida</span>.
               </li>
             </ul>
-            <div class="centrar-imagen magen-intro">
+            <div class="site-image site-intro-image">
               <figure>
                 <img src="./images/ps@herramientaSeleccionRapida2.jpg" class="img-fluid"
                   alt="Herramienta de Selección Rápida" />
@@ -456,7 +456,7 @@
               zonas amplias y relativamente uniformes en términos de color y
               textura.
             </p>
-            <div class="centrar-imagen magen-intro">
+            <div class="site-image site-intro-image">
               <figure>
                 <img src="./images/ps@tamanhoPincel.jpg" class="img-fluid" alt="Tamaño del Pincel" />
                 <figcaption>
@@ -485,7 +485,7 @@
                 selección.
               </li>
             </ul>
-            <div class="centrar-imagen magen-intro">
+            <div class="site-image site-intro-image">
               <figure>
                 <img src="./images/ps@herramientaSeleccionRapida.jpg" class="img-fluid"
                   alt="Herramienta de Selección Rápida" />
@@ -526,7 +526,7 @@
               selección rápida no seleccionó la pata izquierda del pato, esta
               será seleccionada con la herramienta de lazo.
             </p>
-            <div class="centrar-imagen magen-intro">
+            <div class="site-image site-intro-image">
               <figure>
                 <img src="./images/ps@herramientaLazo.jpg" class="img-fluid" alt="Herramienta de Lazo" />
                 <figcaption>Herramienta de Lazo en Photoshop</figcaption>
@@ -554,7 +554,7 @@
               restar detalles, y aplicar desenfoque o contraste a los bordes
               de la selección.
             </p>
-            <div class="centrar-imagen magen-intro">
+            <div class="site-image site-intro-image">
               <figure>
                 <img src="./images/ps@seleccionarAplicarMascara.jpg" class="img-fluid"
                   alt="Seleccionar Aplicar Mascara" />
@@ -576,7 +576,7 @@
               <span class="text-danger fw-bold">Blanco y Negro</span> para
               recuperarlo.
             </p>
-            <div class="centrar-imagen magen-intro">
+            <div class="site-image site-intro-image">
               <figure>
                 <img src="./images/ps@blancoNegro.jpg" class="img-fluid" alt="Blanco y Negro" />
                 <figcaption>Blanco y Negro en Photoshop</figcaption>
@@ -589,7 +589,7 @@
               posible a la imagen real. Es necesario recorrer los bordes
               manteniendo el clic izquierdo presionado.
             </p>
-            <div class="centrar-imagen magen-intro">
+            <div class="site-image site-intro-image">
               <figure>
                 <img src="./images/ps@HerramientaPincelPerfeccionarBordes.jpg" class="img-fluid"
                   alt="Herramienta Pincel Perfeccionar Bordes" />
@@ -603,7 +603,7 @@
               bordes se puede ver las plumas pequeñas que se habían eliminado
               con la herramienta de selección rápida.
             </p>
-            <div class="centrar-imagen magen-intro">
+            <div class="site-image site-intro-image">
               <figure>
                 <img src="./images/ps@HerramientaPincelPerfeccionarBordesResultado.jpg" class="img-fluid"
                   alt="Herramienta Pincel Perfeccionar Bordes Resultado" />
@@ -620,7 +620,7 @@
               <span class="text-success fw-bold">Ajuste de Salida > Enviar a ></span>, acá se puede escoger entre varias
               opciones:
             </p>
-            <div class="centrar-imagen magen-intro">
+            <div class="site-image site-intro-image">
               <figure>
                 <img src="./images/ps@HerramientaPincelPerfeccionarBordesCapaResultado.jpg" class="img-fluid"
                   alt="Herramienta Pincel Perfeccionar Bordes Capa Resultado" />
@@ -663,7 +663,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -681,33 +681,33 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item">
-                <a href="#introduccion" class="simple-link">Introducción</a>
+              <div class="site-menu__item">
+                <a href="#introduccion" class="site-menu__link">Introducción</a>
               </div>
-              <div class="menu-item">
-                <a href="#herramienta-marco-rectangular" class="simple-link">Herramienta Marco Rectangular</a>
+              <div class="site-menu__item">
+                <a href="#herramienta-marco-rectangular" class="site-menu__link">Herramienta Marco Rectangular</a>
               </div>
-              <div class="menu-item">
-                <a href="#herramienta-de-seleccion-rapida" class="simple-link">Herramienta de Selección Rápida</a>
+              <div class="site-menu__item">
+                <a href="#herramienta-de-seleccion-rapida" class="site-menu__link">Herramienta de Selección Rápida</a>
               </div>
-              <div class="menu-item">
-                <a href="#herramienta-de-lazo" class="simple-link">Herramienta de Lazo</a>
+              <div class="site-menu__item">
+                <a href="#herramienta-de-lazo" class="site-menu__link">Herramienta de Lazo</a>
               </div>
-              <div class="menu-item">
-                <a href="#mejoras-en-las-oOpciones-de-seleccion" class="simple-link">Mejoras en las Opciones de
+              <div class="site-menu__item">
+                <a href="#mejoras-en-las-oOpciones-de-seleccion" class="site-menu__link">Mejoras en las Opciones de
                   Selección</a>
               </div>
 
-              <li class="list-group-item">
+              <li class="list-group-item site-list__item">
                 <a href="#"></a>
               </li>
 
               <!-- Comentarios  -->
-              <div class="menu-item">
-                <a href="#comments" class="simple-link">Comentarios</a>
+              <div class="site-menu__item">
+                <a href="#comments" class="site-menu__link">Comentarios</a>
               </div>
             </div>
           </div>
@@ -774,7 +774,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

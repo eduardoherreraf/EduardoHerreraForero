@@ -68,7 +68,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -86,7 +86,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -98,7 +98,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Módulos y Paquetes de Python  -->
@@ -119,7 +119,7 @@
                 módulos y paquetes, así como su creación y uso en proyectos de
                 programación.
               </p>
-              <div class="centrar-imagen magen-intro">
+              <div class="site-image site-intro-image">
                 <figure>
                   <img src="https://i.ibb.co/k5nTj1r/paquetesmodulos.jpg" class="img-fluid"
                     alt="Módulos y Paquetes de Python  " title="Módulo vs Paquete" />
@@ -145,7 +145,7 @@
                   paquete. pero es buena práctica incluir un docstring que
                   describa el propósito general del paquete. Ejemplo:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         """
@@ -309,7 +309,7 @@
                   <li>
                     <span class="fw-bold"><code class="language-python">module.py</code></span>: Archivo que contiene el
                     código del módulo.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             print("Me gusta ser un módulo.")
@@ -322,7 +322,7 @@
                     importa el módulo
                     <code class="language-python">module.py</code>, ambos
                     archivos deben estar en la misma carpeta.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             import module
@@ -441,7 +441,7 @@
                       adiciona la instrucción
                       <code class="language-python">print(__name__)</code>
                       como se muestra a continuación:
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               # module.py
@@ -468,7 +468,7 @@
                         sin la extensión
                         <code class="language-python">.py</code>.
                       </p>
-                      <div class="ej-sintaxis">
+                      <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               # main.py
@@ -537,7 +537,7 @@
                     qué funciones, variables o clases estarán disponibles al
                     usar
                     <code class="language-python">from modulo import *</code>.
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             # Exportar únicamente lo necesario
@@ -557,7 +557,7 @@
                   <code class="language-python">module.py</code>. El módulo
                   actualizado está aquí:
                 </p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                       #!/usr/bin/env python3
@@ -666,7 +666,7 @@
                     niveles jerárquicos.
                   </li>
                 </ul>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         mi_paquete/
@@ -716,7 +716,7 @@
                     Ejemplo:
                     <code class="language-python">mi_paquete/__init__.py</code>
                     puede contener:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             from .modulo1 import funcion1
@@ -733,7 +733,7 @@
                     <br />
                     Ejemplo de
                     <code class="language-python">modulo1.py</code>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             def funcion1():
@@ -756,7 +756,7 @@
                 <ul>
                   <li>
                     <span class="fw-bold">Crear la siguiente estructura</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             mi_paquete/
@@ -770,7 +770,7 @@
                   <li>
                     <span class="fw-bold">Código en
                       <code class="language-python">modulo1.py</code></span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             def funcion1():
@@ -781,7 +781,7 @@
                   </li>
                   <li>
                     <span class="fw-bold">Código en modulo2.py</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             def funcion2():
@@ -792,7 +792,7 @@
                   </li>
                   <li>
                     <span class="fw-bold">Importar en un script Python</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             from mi_paquete import modulo1, modulo2
@@ -813,7 +813,7 @@
                   jerárquicas.
                 </p>
                 <p>Ejemplo de estructura:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         mi_paquete/
@@ -826,7 +826,7 @@
                     </pre>
                 </div>
                 <p>Para usar el subpaquete:</p>
-                <div class="ej-sintaxis">
+                <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         from mi_paquete.subpaquete import modulo3
@@ -848,7 +848,7 @@
                 <ul>
                   <li>
                     <span class="fw-bold">Instalar un paquete</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             pip install numpy
@@ -858,7 +858,7 @@
                   </li>
                   <li>
                     <span class="fw-bold">Usar el paquete instalado</span>:
-                    <div class="ej-sintaxis">
+                    <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             import numpy as np
@@ -1025,7 +1025,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -1040,15 +1040,15 @@
         <!--  fin comentarios  -->
       </section>
 
-      <!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h2>En Este Artículo</h2><div class="menu-scroll"><div class="menu-container"><div class="border border-1">
-<div class="menu-item"><a href="#introduccion" class="simple-link">Introducción</a></div>
-<div class="menu-item"><a href="#que-es-un-paquete-y-un-modulo" class="simple-link">¿Qué es un Paquete y un Módulo?</a></div>
-<div class="menu-item"><a href="#primer-modulo" class="simple-link">Primer Módulo</a></div>
-<div class="menu-item"><a href="#primer-paquete" class="simple-link">Primer Paquete</a></div>
-<div class="menu-item"><a href="#diferencias-entre-modulos-y-paquetes" class="simple-link">Diferencias entre Módulos y Paquetes</a></div>
-<div class="menu-item"><a href="#cuando-usar-modulos-y-paquetes" class="simple-link">Cuándo Usar Módulos y Paquetes</a></div>
+      <!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h2>En Este Artículo</h2><div class="site-menu__scroll"><div class="site-menu"><div class="border border-1">
+<div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
+<div class="site-menu__item"><a href="#que-es-un-paquete-y-un-modulo" class="site-menu__link">¿Qué es un Paquete y un Módulo?</a></div>
+<div class="site-menu__item"><a href="#primer-modulo" class="site-menu__link">Primer Módulo</a></div>
+<div class="site-menu__item"><a href="#primer-paquete" class="site-menu__link">Primer Paquete</a></div>
+<div class="site-menu__item"><a href="#diferencias-entre-modulos-y-paquetes" class="site-menu__link">Diferencias entre Módulos y Paquetes</a></div>
+<div class="site-menu__item"><a href="#cuando-usar-modulos-y-paquetes" class="site-menu__link">Cuándo Usar Módulos y Paquetes</a></div>
 <!-- Comentarios  -->
-<div class="menu-item"><a href="#comments" class="simple-link">Comentarios</a></div></div></div></div></aside>
+<div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div></div></div></div></aside>
 <!--  fin barra lateral  -->
 
    </main>
@@ -1112,7 +1112,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

@@ -73,7 +73,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -91,7 +91,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -103,7 +103,7 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!-- vite NPM -->
@@ -127,7 +127,7 @@
               del terminal.
             </p>
 
-            <div class="centrar-imagen magen-intro">
+            <div class="site-image site-intro-image">
               <figure>
                 <img src="https://i.ibb.co/SDgmGxnB/bootstrap-vite-2x.png" class="img-fluid"
                   alt="Instalación de Bootstrap V5, NPM y VITE" />
@@ -148,7 +148,7 @@
               señalar que el nombre de la carpeta puede ser cualquier otro
               según las necesidades del proyecto.
             </p>
-            <div class="ej-sintaxis">
+            <div class="code-example__syntax">
               <pre data-src-status="loaded" tabindex="0">
                 <code class="language-bash" data-prismjs-copy="Copy">
                   mkdir mi-proyecto && cd mi-proyecto
@@ -162,7 +162,7 @@
               <code>--save-dev</code> para indicar que esta dependencia es
               sólo para uso de desarrollo y no para producción.
             </p>
-            <div class="ej-sintaxis">
+            <div class="code-example__syntax">
               <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     npm i --save-dev vite
@@ -176,7 +176,7 @@
               previsto usar esos componentes, se puede omitir la instalación
               de este último.
             </p>
-            <div class="ej-sintaxis">
+            <div class="code-example__syntax">
               <pre data-src-status="loaded" tabindex="0">
                 <code class="language-bash" data-prismjs-copy="Copy">
                   npm i --save bootstrap @popperjs/core
@@ -188,7 +188,7 @@
               Bootstrap, es necesario contar con otra dependencia (Sass) para
               importar y empaquetar correctamente el CSS de Bootstrap.
             </p>
-            <div class="ej-sintaxis">
+            <div class="code-example__syntax">
               <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     npm i --save-dev sass
@@ -211,7 +211,7 @@
                 para completar la estructura del proyecto. Para llevar a cabo
                 esto, ejecuta el siguiente código dentro de "mi-proyecto".
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       mkdir {src,src/js,src/scss}
@@ -223,7 +223,7 @@
                 Cuando se haya terminado, el proyecto completo debería tener
                 este aspecto:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       mi-proyecto/
@@ -252,7 +252,7 @@
                 <span class="fw-bold text-warning">vite.config.js</span>, se
                 llena con:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-javascript" data-prismjs-copy="Copy">
                       const path = require('path')
@@ -273,7 +273,7 @@
                 <span class="fw-bold text-warning">src/index.html</span>, se
                 llena con la siguiente plantilla:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-html" data-prismjs-copy="Copy">
                       &lt;!doctype html&gt;
@@ -287,7 +287,7 @@
                       &lt;body&gt;
                       &lt;div class="container py-4 px-3 mx-auto"&gt;
                       &lt;h1&gt;Hello, Bootstrap and Vite!&lt;/h1&gt;
-                      &lt;button class="btn btn-primary"&gt;Primary button&lt;/button&gt;
+                      &lt;button class="btn site-button btn-primary"&gt;Primary button&lt;/button&gt;
                       &lt;/div&gt;
                       &lt;/body&gt;
                       &lt;/html&gt;
@@ -299,7 +299,7 @@
                 <span class="fw-bold text-warning">package.json</span> debe
                 quedar configurado así:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-json" data-prismjs-copy="Copy">
                       {
@@ -327,7 +327,7 @@
               <span class="fw-bold text-warning">src/scss/styles.scss</span>
               se importa los estilos CSS:
             </p>
-            <div class="ej-sintaxis">
+            <div class="code-example__syntax">
               <pre data-src-status="loaded" tabindex="0">
                   <code class="language-css" data-prismjs-copy="Copy">
                     // Import all of Bootstrap's CSS
@@ -341,7 +341,7 @@
               <span class="fw-bold text-warning">src/js/main.js</span> se
               carga e importa los CSS y JS de Bootstrap agregando.
             </p>
-            <div class="ej-sintaxis">
+            <div class="code-example__syntax">
               <pre data-src-status="loaded" tabindex="0">
                   <code class="language-js" data-prismjs-copy="Copy">
                     // Import our custom CSS
@@ -355,7 +355,7 @@
               También puede importar plugins JavaScript individualmente según
               sea necesario para mantener el tamaño de los paquetes bajo:
             </p>
-            <div class="ej-sintaxis">
+            <div class="code-example__syntax">
               <pre data-src-status="loaded" tabindex="0">
                   <code class="language-js" data-prismjs-copy="Copy">
                     import Alert from 'bootstrap/js/dist/alert';
@@ -370,7 +370,7 @@
               el servidor de desarrollo local debería tener ahora este
               aspecto:
             </p>
-            <div class="centrar-imagen magen-intro">
+            <div class="site-image site-intro-image">
               <figure>
                 <img src="https://i.ibb.co/398cGstB/vite-dev-server-bootstrap.png" class="img-fluid"
                   alt="Vite dev server funcionando con Bootstrap" />
@@ -383,7 +383,7 @@
 
           <div id="instalacion-plugin-Purgecss-y-plugin-html" class="mt-5">
             <h2>Instalación Plugin PurgeCSS y Plugin HTML</h2>
-            <div class="ej-sintaxis">
+            <div class="code-example__syntax">
               <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     npm i vite-plugin-purgecss
@@ -398,7 +398,7 @@
               sola línea.
             </p>
             <p>El archivo vite.cfg.js se debe configurar asi:</p>
-            <div class="ej-sintaxis">
+            <div class="code-example__syntax">
               <pre data-src-status="loaded" tabindex="0">
                   <code class="language-javascript" data-prismjs-copy="Copy">
                     import htmlPurge from 'vite-plugin-purgecss'
@@ -434,7 +434,7 @@
               <span class="fw-bold text-warning">package.json</span>,
               finalmente se debe tener asi:
             </p>
-            <div class="ej-sintaxis">
+            <div class="code-example__syntax">
               <pre data-src-status="loaded" tabindex="0">
                   <code class="language-javascript" data-prismjs-copy="Copy">
                     {
@@ -485,7 +485,7 @@
                 <span class="fw-bold text-warning">&lt;head&gt;</span> del
                 archivo debe quedar de la siguiente manera:
               </p>
-              <div class="ej-sintaxis">
+              <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-html" data-prismjs-copy="Copy">
                       &lt;head&gt;
@@ -547,7 +547,7 @@
                     class="form-control rounded-3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">
                   Enviar
                 </button>
               </fieldset>
@@ -565,32 +565,32 @@
       <!--  barra lateral  -->
       <aside class="col-lg-3 d-none d-lg-block" style="align-self: flex-start; position: sticky; top: rem;">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
-            <div class="border border-1 menu-scroller">
-              <div class="menu-item">
-                <a href="#introduccion" class="simple-link">Introducción</a>
+        <div class="site-menu__scroll">
+          <div class="site-menu">
+            <div class="border border-1 site-menu__scroller">
+              <div class="site-menu__item">
+                <a href="#introduccion" class="site-menu__link">Introducción</a>
               </div>
-              <div class="menu-item">
-                <a href="#configuracion-inicial" class="simple-link">Configuración Inicial</a>
+              <div class="site-menu__item">
+                <a href="#configuracion-inicial" class="site-menu__link">Configuración Inicial</a>
               </div>
-              <div class="menu-item">
-                <a href="#importacion-bootstrap-v5" class="simple-link">Importación Bootstrap v5</a>
+              <div class="site-menu__item">
+                <a href="#importacion-bootstrap-v5" class="site-menu__link">Importación Bootstrap v5</a>
               </div>
-              <div class="menu-item">
-                <a href="#instalacion-plugin-Purgecss-y-plugin-html" class="simple-link">Instalación Plugin PurgeCSS y
+              <div class="site-menu__item">
+                <a href="#instalacion-plugin-Purgecss-y-plugin-html" class="site-menu__link">Instalación Plugin PurgeCSS y
                   Plugin HTML</a>
               </div>
-              <li class="menu-item">
-                <a href="#configuraciones-finales" class="simple-link">Configuraciones Finales</a>
+              <li class="site-menu__item">
+                <a href="#configuraciones-finales" class="site-menu__link">Configuraciones Finales</a>
               </li>
-              <div class="menu-item">
-                <a href="#compilacion-del-proyecto-para-produccion" class="simple-link">Compilación del proyecto para
+              <div class="site-menu__item">
+                <a href="#compilacion-del-proyecto-para-produccion" class="site-menu__link">Compilación del proyecto para
                   Producción</a>
               </div>
               <!-- Comentarios  -->
-              <div class="menu-item">
-                <a href="#comments" class="simple-link">Comentarios</a>
+              <div class="site-menu__item">
+                <a href="#comments" class="site-menu__link">Comentarios</a>
               </div>
             </div>
           </div>
@@ -656,7 +656,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"

@@ -77,7 +77,7 @@
       <!-- Botón para activar el menú en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
       </button>
       <!-- Menú de navegación -->
       <div class="collapse navbar-collapse ms-auto text-center" id="navbarSupportedContent">
@@ -95,7 +95,7 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 publicaciones-activo" href="index.html#blog">PUBLICACIONES</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">PUBLICACIONES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -108,7 +108,7 @@
 
 
   <!--  Principal  -->
-  <div class="container-fluid" id="introduccion">
+  <div class="container-fluid site-layout__intro" id="introduccion">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Pandas: Una Biblioteca Poderosa para el Análisis de Datos en Python-->
@@ -120,13 +120,13 @@
           <!-- Introducción -->
           <div class="mt-3">
             <h2>Introducción a Pandas</h2>
-            <div class="centrar-imagen magen-intro mb-5">
-              <figure class="img-container">
+            <div class="site-image site-intro-image mb-5">
+              <figure class="site-content__img-container">
                 <img src="https://i.ibb.co/5x9VsbFr/analisis-de-datos-pandas-comp.jpg" class="img-fluid"
                   alt="Analista de datos utilizando Pandas en Python para procesar información en forma de tablas con DataFrames y Series."
                   title="Pandas en Python: la biblioteca esencial para el análisis de datos." loading="lazy"
                   onerror="this.onerror=null; this.src='https://i.postimg.cc/PfgFzdc3/analisis-de-datos-pandas-comp.jpg';" />
-                <figcaption class="img-caption">
+                <figcaption class="site-image__caption">
                   Ilustración conceptual de cómo <span class="text-warning">Pandas</span> en Python facilita la
                   manipulación, limpieza y análisis de datos
                   estructurados mediante el uso de DataFrames y Series.
@@ -146,7 +146,7 @@
             <p></p>
           </div>
           <!-- Introducción Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Características Principales de la Biblioteca Pandas -->
           <div id="caracteristicas-principales-de-la-biblioteca-pandas" class="mt-3">
@@ -220,7 +220,7 @@
               impulsan el uso y la evolución constante de la biblioteca.</p>
           </div>
           <!-- Características Principales de la Biblioteca Pandas Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
           <!-- Principales Estructuras de Datos en Pandas -->
           <div id="principales-estructuras-de-datos-en-pandas" class="mt-3">
@@ -252,7 +252,7 @@
                     rápidamente a los datos. <br>
                     <!-- Sintaxis -->
                     <p><span class="fw-bold">Poe ejemplo</span>:</p>
-                    <div class="ej-sintaxis-100">
+                    <div class="code-example__full-syntax">
                       <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
                        import pandas as s
@@ -275,7 +275,7 @@
                     utilizar bucles.
                     <!-- Sintaxis -->
                     <p><span class="fw-bold">Ejemplo</span>:</p>
-                    <div class="ej-sintaxis-100">
+                    <div class="code-example__full-syntax">
                       <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
                        s = pd.Series([1, 2, 3])
@@ -326,7 +326,7 @@
             <!-- DataFrame  fin -->
           </div>
           <!-- Principales Estructuras de Datos en Pandas Fin -->
-          <hr class="subtle-divider" />
+          <hr class="site-divider--subtle site-divider" />
         </article>
         <article class="row" id="comments">
           <h2>COMENTARIOS</h2>
@@ -350,7 +350,7 @@
                   <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
                     class="form-control rounded-3" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-outline-light my-3 border rounded-pill border-2">Enviar</button>
+                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">Enviar</button>
               </fieldset>
               <p class="small text-center">La política de privacidad, y los términos y condiciones estándisponibles en
                 el formulario de contacto.</p>
@@ -362,33 +362,33 @@
       <!-- -------------------------------- barra lateral -------------------------------- -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="menu-scroll">
-          <div class="menu-container">
+        <div class="site-menu__scroll">
+          <div class="site-menu">
             <div class="border border-1">
-              <div class="menu-item">
-                <a href="#introduccion" class="simple-link">Introducción</a>
+              <div class="site-menu__item">
+                <a href="#introduccion" class="site-menu__link">Introducción</a>
               </div>
-              <div class="menu-item">
-                <a href="#caracteristicas-principales-de-la-biblioteca-pandas" class="simple-link">Características
+              <div class="site-menu__item">
+                <a href="#caracteristicas-principales-de-la-biblioteca-pandas" class="site-menu__link">Características
                   Principales de la Biblioteca Pandas</a>
               </div>
-              <div class="menu-item">
+              <div class="site-menu__item">
                 <details>
                   <summary>
                     Principales Estructuras de Datos en Pandas
                   </summary>
-                  <div class="submenu">
-                    <a href="#principales-estructuras-de-datos-en-pandas" class="submenu-item">Principales Estructuras
+                  <div class="site-menu__submenu">
+                    <a href="#principales-estructuras-de-datos-en-pandas" class="site-menu__submenu-link">Principales Estructuras
                       de
                       Datos en Pandas</a>
-                    <a href="#serie-(series)" class="submenu-item">Serie (Series)</a>
-                    <a href="#dataframe" class="submenu-item">DataFrame</a>
+                    <a href="#serie-(series)" class="site-menu__submenu-link">Serie (Series)</a>
+                    <a href="#dataframe" class="site-menu__submenu-link">DataFrame</a>
                   </div>
                 </details>
               </div>
               <!-- Comentarios  -->
-              <div class="menu-item">
-                <a href="#comments" class="simple-link">Comentarios</a>
+              <div class="site-menu__item">
+                <a href="#comments" class="site-menu__link">Comentarios</a>
               </div>
             </div>
           </div>
@@ -456,7 +456,7 @@
   <!--  pie de pagina fin  -->
 
   <!-- button to top -->
-  <button onclick="topFunction()" id="myBtnScroll" title="Go to top">
+  <button onclick="topFunction()" id="myBtnScroll" title="Go to top" class="site-scroll-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up"
       viewBox="0 0 16 16" style="margin-left: -2px">
       <path fill-rule="evenodd"
