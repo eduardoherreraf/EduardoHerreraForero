@@ -50,7 +50,7 @@
   <title>
     Reiniciar Repositorio en GIT / GITHUB - Ing. Eduardo Herrera Forero.
   </title>
-  <script type="module" src="./js/main.js"></script>
+  <script type="module" defer src="./js/main.js"></script>
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
@@ -85,7 +85,8 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">ARTÍCULOS</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link"
+              href="index.html#blog">ARTÍCULOS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -109,19 +110,24 @@
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
           <header>
-            <h2>Reiniciar Repositorio en GIT / GITHUB</h1>
+            <h1>Reiniciar Repositorio en GIT / GITHUB</h1>
           </header>
           <!-- Introducción -->
-          <div class="mt-5">
+          <div class="mt-3">
             <h2>Introducción</h2>
-            <p>
-              Este documento proporciona una guía paso a paso sobre cómo
-              reiniciar un repositorio en GIT y GITHUB. Reiniciar un
-              repositorio puede ser útil en diversas situaciones, como cuando
-              se desea comenzar de nuevo con un proyecto o cuando se han
-              realizado cambios que no se desean conservar. A continuación, se
-              presentan los métodos más comunes para reiniciar un repositorio.
-            </p>
+            <div class="site-image site-intro-image mb-5">
+              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                <img src="https://i.ibb.co/M53d2PQy/Borrando-Repo-11.png" class="img-fluid"
+                  alt="Reiniciar Repositorio en GIT / GITHUB"
+                  title="Comparación entre reinicio local y reinicio en GitHub: impacto en los cambios y visibilidad del repositorio" loading="lazy" />
+                <figcaption class="site-image__caption">
+                  Reiniciar Repositorio en GIT / GITHUB
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="text-bg-light p-3 mb-3" style="background-color: #fffacd;">Este documento proporciona una guía paso a paso sobre cómo reiniciar un repositorio en GIT y GITHUB.</div>
+            <p>Reiniciar un repositorio puede ser útil en diversas situaciones, como cuando se desea comenzar de nuevo con un proyecto o cuando se han realizado cambios que no se desean conservar. A continuación, se presentan los métodos más comunes para reiniciar un repositorio.</p>
             <ul>
               <li>
                 Cuando se desea comenzar de nuevo con un proyecto desde un
@@ -140,19 +146,13 @@
               </li>
             </ul>
 
-            <div class="site-image site-intro-image">
-              <figure class="site-image__figure site-image__figure--intro">
-                <img src="https://i.ibb.co/M53d2PQy/Borrando-Repo-11.png" class="img-fluid"
-                  alt="Reiniciar Repositorio en GIT / GITHUB" title="Comparación entre reinicio local y
-                  reinicio en GitHub: impacto en los cambios y visibilidad del
-                  repositorio" />
-                <figcaption>Reiniciar Repositorio en GIT / GITHUB</figcaption>
-              </figure>
-            </div>
+
           </div>
 
           <!-- Reiniciar Eliminando Todo el Historial Manteniendo los Archivos -->
-          <div id="reiniciar-eliminando-todo-eli-historial-manteniendo-los-archivos" class="mt-5">
+          <hr class="site-divider--subtle site-divider" />
+
+          <div id="reiniciar-eliminando-todo-eli-historial-manteniendo-los-archivos" class="mt-3">
             <h2>
               Reiniciar Eliminando Todo el Historial Manteniendo los Archivos
             </h2>
@@ -434,7 +434,7 @@
         <!--  fin comentarios  -->
       </section>
 
-      <!--  barra lateral  -->
+      <!-- -------------------------------- barra lateral -------------------------------- -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
@@ -455,7 +455,7 @@
           </div>
         </div>
       </aside>
-      <!--  fin barra lateral  -->
+      <!-- -------------------------------- fin barra lateral -------------------------------- -->
     </main>
     <!--  fin principal  -->
   </div>

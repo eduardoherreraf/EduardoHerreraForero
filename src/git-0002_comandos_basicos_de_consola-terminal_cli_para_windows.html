@@ -58,7 +58,7 @@
     Herrera Forero.
   </title>
 
-  <script type="module" src="./js/main.js"></script>
+  <script type="module" defer src="./js/main.js"></script>
 
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
@@ -118,12 +118,13 @@
         <!-- Comandos Básicos GIT -->
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
-          <div>
-            <h1>
+            <header>
+              <h1>
               Comandos Básicos de Consola / Terminal
               <abbr title="Command Line Interface">CLI</abbr> para Windows
             </h1>
-            <div class="mt-5">
+            </header>
+            <div class="mt-3">
               <h2>Introducción</h2>
               <p>
                 La interfaz de línea de comandos
@@ -210,7 +211,9 @@
             </div>
 
             <!-- pwd -->
-            <div id="pwd" class="mt-5">
+            <hr class="site-divider--subtle site-divider" />
+
+            <div id="pwd" class="mt-3">
               <h2>pwd (Print Working Directory)</h2>
               <p>
                 El comando <abbr title="Print Working Directory">pwd</abbr> en
@@ -283,7 +286,9 @@
             </div>
 
             <!-- ls -->
-            <div id="ls" class="mt-5">
+            <hr class="site-divider--subtle site-divider" />
+
+            <div id="ls" class="mt-3">
               <h2>ls (LiSt)</h2>
               <p>
                 El comando <abbr title="LiSt">ls</abbr> se utiliza en sistemas
@@ -436,7 +441,9 @@
             </div>
 
             <!-- cd -->
-            <div id="cd" class="mt-5">
+            <hr class="site-divider--subtle site-divider" />
+
+            <div id="cd" class="mt-3">
               <h2>cd (Change Directory)</h2>
               <p>
                 El comando <abbr title="Change Directory">cd</abbr> se utiliza
@@ -565,7 +572,9 @@
             </div>
 
             <!-- mkdir -->
-            <div id="mkdir" class="mt-5">
+            <hr class="site-divider--subtle site-divider" />
+
+            <div id="mkdir" class="mt-3">
               <h2>mkdir (Make Directory)</h2>
               <p>
                 El comando <abbr title="Make Directory">mkdir</abbr> se
@@ -685,7 +694,9 @@
             </div>
 
             <!-- touch -->
-            <div id="touch" class="mt-5">
+            <hr class="site-divider--subtle site-divider" />
+
+            <div id="touch" class="mt-3">
               <h2>touch</h2>
               <p>
                 El comando <code class="language-bash">touch</code> en
@@ -815,7 +826,9 @@
             </div>
 
             <!-- rm -->
-            <div id="rm" class="mt-5">
+            <hr class="site-divider--subtle site-divider" />
+
+            <div id="rm" class="mt-3">
               <h2>rm (ReMove)</h2>
               <p>
                 El comando
@@ -967,7 +980,9 @@
             </div>
 
             <!-- cp -->
-            <div id="cp" class="mt-5">
+            <hr class="site-divider--subtle site-divider" />
+
+            <div id="cp" class="mt-3">
               <h2>cp (CoPy)</h2>
               <p>
                 Este comando <abbr title="CoPy">cp</abbr> se utiliza para
@@ -1057,7 +1072,9 @@
             </div>
 
             <!-- clear -->
-            <div id="clear" class="mt-5">
+            <hr class="site-divider--subtle site-divider" />
+
+            <div id="clear" class="mt-3">
               <h2>clear</h2>
               <p>
                 Este comando se usa para limpiar la terminal, eliminando el
@@ -1105,7 +1122,9 @@
             </div>
 
             <!-- history -->
-            <div id="history" class="mt-5">
+            <hr class="site-divider--subtle site-divider" />
+
+            <div id="history" class="mt-3">
               <h2>history</h2>
               <p>
                 Se utiliza para mostrar el historial de comandos ejecutados en
@@ -1251,7 +1270,6 @@
               </div>
               <!-- Ubicación del historial fin -->
             </div>
-          </div>
         </article>
         <!-- fin Comandos Básicos CLI -->
         <!--  comentarios  -->
@@ -1298,12 +1316,12 @@
         </article>
         <!--  fin comentarios  -->
       </section>
-      <!--  barra lateral  -->
-      <aside class="col-lg-3 d-none d-lg-block mb-4">
+      <!-- -------------------------------- barra lateral -------------------------------- -->
+      <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
-        <div class="site-menu__scroll pb-1">
+        <div class="site-menu__scroll">
           <div class="site-menu">
-            <div class="site-menu__content">
+            <div class="border border-1">
               <div class="site-menu__item">
                 <a href="#introduccion" class="site-menu__link">Introducción</a>
               </div>
@@ -1343,7 +1361,7 @@
           </div>
         </div>
       </aside>
-      <!--  fin barra lateral  -->
+      <!-- -------------------------------- fin barra lateral -------------------------------- -->
     </main>
     <!--  fin principal  -->
   </div>

@@ -123,8 +123,17 @@
             <h1>Git Tags: Marcando Puntos Importantes en la Historia de tu Proyecto</h1>
           </header>
           <!-- Introducción -->
-          <div class="mt-5">
+          <div class="mt-3">
             <h2>Introducción</h2>
+            <div class="site-image site-intro-image mb-5">
+              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                <img src="https://i.postimg.cc/6WRvrSCj/git-0006-etiqueta-tag-en-git-comp.png" class="img-fluid"
+                  alt="Programador trabajando frente a pantallas con etiquetas de versiones de software como v1.0 y v1.1"
+                  title="Uso de etiquetas en Git" loading="lazy" />
+                <figcaption class="site-image__caption">Ilustración que representa cómo las etiquetas en Git marcan hitos en el
+                  desarrollo de software, como versiones alfa, beta y estables</figcaption>
+              </figure>
+            </div>
             <p>
               Este artículo explora en profundidad el concepto de Git tags, una herramienta esencial para marcar puntos
               específicos en la historia de un repositorio Git. Se aprenderá qué son las etiquetas, por qué son útiles,
@@ -134,15 +143,7 @@
               incorporar tags de manera efectiva en el flujo de trabajo de desarrollo.
             </p>
 
-            <div class="site-image site-intro-image">
-              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
-                <img src="https://i.postimg.cc/6WRvrSCj/git-0006-etiqueta-tag-en-git-comp.png" class="img-fluid"
-                  alt="Programador trabajando frente a pantallas con etiquetas de versiones de software como v1.0 y v1.1"
-                  title="Uso de etiquetas en Git" loading="lazy" />
-                <figcaption class="site-image__caption">Ilustración que representa cómo las etiquetas en Git marcan hitos en el
-                  desarrollo de software, como versiones alfa, beta y estables</figcaption>
-              </figure>
-            </div>
+
 
             <p>Para comprender con mayor facilidad cómo funcionan <span class="fw-bold">las etiquetas en GIT</span>,
               imagine el desarrollo de un sistema:</p>
@@ -182,7 +183,7 @@
           <hr class="site-divider--subtle site-divider" />
 
           <!-- ¿Qué Son las Etiquetas Tab? -->
-          <div id="que-son-las-etiquetas-tab" class="mt-5">
+          <div id="que-son-las-etiquetas-tab" class="mt-3">
             <h2>¿Qué Son las Etiquetas Tab?</h2>
             <p>
               Un Git tag es una referencia a un punto específico en la historia de un repositorio. Pensar en ellos como
@@ -196,7 +197,7 @@
           <hr class="site-divider--subtle site-divider" />
 
           <!-- ¿Por qué Usar Etiquetas Git? -->
-          <div id="por-que-usar-etiquetas-git" class="mt-5">
+          <div id="por-que-usar-etiquetas-git" class="mt-3">
             <h2>¿Por qué Usar Etiquetas Git?</h2>
             <p>
               las etiquetas ofrecen varias ventajas importantes:
@@ -220,7 +221,7 @@
           <hr class="site-divider--subtle site-divider" />
 
           <!-- Tipos de Etiquetas Git -->
-          <div id="tipos-de-etiqetas-git" class="mt-5">
+          <div id="tipos-de-etiqetas-git" class="mt-3">
             <h2>Tipos de Etiquetas Git</h2>
             <p>Existen dos tipos principales de tags en Git:</p>
             <ul>
@@ -238,7 +239,7 @@
           <hr class="site-divider--subtle site-divider" />
 
           <!-- Creando Etiquetas Git -->
-          <div id="creando-etiquetas-tags" class="mt-5">
+          <div id="creando-etiquetas-tags" class="mt-3">
             <h2>Creando Etiquetas Git</h2>
 
             <!-- Creando una Etiqueta Anotada  -->
@@ -307,7 +308,7 @@
           <hr class="site-divider--subtle site-divider" />
 
           <!-- Listando Etiquetas Git -->
-          <div id="listando-etiquetas-git" class="mt-5">
+          <div id="listando-etiquetas-git" class="mt-3">
             <h2>Listando Etiquetas Git</h2>
             <p>Para listar todos las etiquetas de un repositorio, usar el siguiente comando:</p>
             <div class="code-example__syntax">
@@ -332,7 +333,7 @@
           <hr class="site-divider--subtle site-divider" />
 
           <!-- Verificando Etiquetas Git -->
-          <div id="verificando-git-tags" class="mt-5">
+          <div id="verificando-git-tags" class="mt-3">
             <h2>Verificando Etiquetas Git</h2>
             <!-- Verificando Etiqueta local  -->
             <div id="verificando-Etiqueta-local">
@@ -378,7 +379,7 @@
           <hr class="site-divider--subtle site-divider" />
 
           <!-- Sincronización de Etiquetas con el Repositorio Remoto -->
-          <div id="sincronizacion-de-etiquetas-con-el-repositorio-remoto" class="mt-5">
+          <div id="sincronizacion-de-etiquetas-con-el-repositorio-remoto" class="mt-3">
             <h2>Sincronización de Etiquetas con el Repositorio Remoto</h2>
             <p>Por defecto, las etiquetas no se envían al repositorio remoto cuando se ejecuta el comando <code
                 class="language-bash">git push</code>. Para enviar todos las etiquetas,
@@ -407,7 +408,7 @@
           <hr class="site-divider--subtle site-divider" />
 
           <!-- Renombrando Etiquetas Git -->
-          <div id="renombrando-etiquetas-git" class="mt-5">
+          <div id="renombrando-etiquetas-git" class="mt-3">
             <h2>Renombrando Etiquetas Git</h2>
             <p>Git no permite renombrar las etiquetas (tags) directamente. La forma de "renombrar" una etiqueta es
               crear una etiqueta nueva y luego eliminar la etiqueta existente apuntando al mismo commit.</p>
@@ -546,7 +547,7 @@
           <hr class="site-divider--subtle site-divider" />
 
           <!-- Eliminando Etiquetas Git -->
-          <div id="eliminando-etiquetas-git" class="mt-5">
+          <div id="eliminando-etiquetas-git" class="mt-3">
             <h2>Eliminando Etiquetas Git</h2>
             <!-- Eliminando una Etiqueta Local  -->
             <div id="eliminando-una-etiqueta-local">
@@ -581,7 +582,7 @@
           <hr class="site-divider--subtle site-divider" />
 
           <!-- Escenarios Comunes de Uso -->
-          <div id="escenarios-comunes-de-uso" class="mt-5">
+          <div id="escenarios-comunes-de-uso" class="mt-3">
             <h2>Escenarios Comunes de Uso</h2>
             <ul>
               <li><span class="fw-bold">Lanzamiento de Versiones</span>: Como se mencionó anteriormente, las etiquetas
@@ -604,7 +605,7 @@
 
 
           <!-- Error Comunes con las Etiquetas Git -->
-          <div id="error-comunes-con-las-etiquetas-git" class="mt-5">
+          <div id="error-comunes-con-las-etiquetas-git" class="mt-3">
             <h2>Error Comunes con las Etiquetas Git</h2>
             <p>En esta sección del artículo se analizan tres escenarios comunes de error que pueden surgir al trabajar
               con etiquetas en Git:</p>
@@ -907,7 +908,7 @@
           <hr class="site-divider--subtle site-divider" />
 
           <!-- Mejores Prácticas -->
-          <div id="mejores-practicas" class="mt-5">
+          <div id="mejores-practicas" class="mt-3">
             <h2>Mejores Prácticas</h2>
             <ul>
               <li><span class="fw-bold">Usar Etiquetas Anotadas Siempre que Sea Posible</span>: La información adicional
@@ -983,7 +984,7 @@
           <hr class="site-divider--subtle site-divider" />
 
           <!-- Ejemplos -->
-          <div id="ejemplos" class="mt-5">
+          <div id="ejemplos" class="mt-3">
             <h2>Ejemplos</h2>
             <!-- Crear Etiqueta Anotada -->
             <div id="crear-etiqueta-anotada">
@@ -1170,7 +1171,7 @@
         <!--  fin comentarios  -->
       </section>
 
-      <!--  barra lateral  -->
+      <!-- -------------------------------- barra lateral -------------------------------- -->
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
@@ -1282,7 +1283,7 @@
           </div>
         </div>
       </aside>
-      <!--  fin barra lateral  -->
+      <!-- -------------------------------- fin barra lateral -------------------------------- -->
     </main>
     <!--  fin principal  -->
   </div>
