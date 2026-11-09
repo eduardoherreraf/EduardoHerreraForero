@@ -390,6 +390,15 @@ nav {
   outline-offset: 2px;
 }
 
+@media (max-width: 991.98px) {
+  .navbar-expand-lg .navbar-collapse .navbar-nav {
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+  }
+}
+
 [data-bs-theme="light"] .code-example__output {
   color: var(--color-texto);
 }
