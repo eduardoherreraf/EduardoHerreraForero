@@ -1,6 +1,14 @@
 /** @format */
 
+// Estilos compartidos del sitio y demostraciones de los artículos.
+// Convenciones: site-* identifica componentes del sitio; code-example-* los
+// paneles de código y resultados; demo-* los ejemplos didácticos.
+// El orden forma parte de la cascada: hay selectores y animaciones repetidos.
+// Antes de mover un bloque, revisar las reglas posteriores que lo sobrescriben.
+// Los comentarios // documentan el SCSS sin añadir texto al CSS generado.
 // $primary: red;
+// Opción Sass declarada antes de cargar Bootstrap. Con @use, las opciones del
+// módulo se configuran con with (...); esta variable local no lo configura.
 $enable-negative-margins: true;
 
 // Import all of Bootstrap's CSS
@@ -16,6 +24,8 @@ $enable-negative-margins: true;
 @import "../../node_modules/prismjs/plugins/match-braces/prism-match-braces.css";
 // @import "../../node_modules/prismjs/plugins/line-highlight/prism-line-highlight.css";
 
+// Variables CSS compartidas: colores base oscuros y alturas máximas de los
+// paneles. Se resuelven en el navegador y permiten cambiar de tema sin recompilar.
 :root {
   --color-texto: #e7e9eb;
   --color-borde: #5c6670;
@@ -24,16 +34,20 @@ $enable-negative-margins: true;
   --alto-caja-ejecutado: 350px;
 }
 
+// El atributo de tema de Bootstrap sustituye únicamente los colores compartidos;
+// las alturas de los paneles conservan los valores definidos en :root.
 [data-bs-theme="light"] {
   --color-texto: #212529;
   --color-borde: #adb5bd;
   --color-fondo: #fff;
 }
 
+// Desplazamiento a anclas: reserva espacio superior para la navegación fija.
 html {
   scroll-behavior: smooth;
   /* Ajuste para la barra de navegación fija */
-  scroll-padding-top: 3rem; /* O un valor que coincida con la altura de tu navbar */
+  scroll-padding-top: 3rem;
+  /* O un valor que coincida con la altura del navbar */
 }
 
 body {
@@ -46,6 +60,8 @@ aside {
   background-color: var(--color-fondo);
 }
 
+// Separación horizontal del contenedor que reúne el contenido y la barra lateral.
+// La separación del footer se establece en el HTML con utilidades de Bootstrap.
 .site-layout__intro {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -59,6 +75,8 @@ code {
   display: inline;
 }
 
+// Figuras adaptables: la imagen ocupa el ancho disponible sin desbordar la figura.
+// Otras reglas de figure más abajo completan su tamaño por contenido.
 figure {
   display: inline-block;
   max-width: 100%;
@@ -76,12 +94,14 @@ figure picture img {
   height: auto;
 }
 
+// Imágenes de introducción: altura uniforme y object-fit: contain para mostrar
+// la imagen completa, aunque queden espacios dentro del área reservada.
 .site-image__figure--intro {
   width: 100%;
 }
 
-.site-image__figure--intro > picture > img,
-.site-image__figure--intro > img {
+.site-image__figure--intro>picture>img,
+.site-image__figure--intro>img {
   width: 100%;
   height: 350px;
   object-fit: contain;
@@ -114,6 +134,8 @@ iframe {
 
 // Altura de las cajas de .code-example__output, ej-code-html y ej-code-css
 /* Alternativa con scroll para acceso al contenido completo */
+// Resultados ejecutados: límite de altura con desplazamiento vertical.
+// Los paneles HTML y CSS usan un límite independiente (--alto-caja).
 .code-example__output {
   max-height: var(--alto-caja-ejecutado);
   overflow-y: auto;
@@ -136,6 +158,8 @@ iframe {
   overflow-y: auto;
 }
 
+// Jerarquía de títulos: familia condensada compartida y tamaños por nivel.
+// Las reglas de code dentro de títulos conservan la tipografía del encabezado.
 h1,
 h2,
 h3 {
@@ -182,12 +206,12 @@ h6 {
 }
 
 /* Estilo para la etiqueta <code> dentro de cualquier título (h1, h2, h3, h4, h5, h6) */
-body h1 > code,
-body h2 > code,
-body h3 > code,
-body h4 > code,
-body h5 > code,
-body h6 > code {
+body h1>code,
+body h2>code,
+body h3>code,
+body h4>code,
+body h5>code,
+body h6>code {
   font-family: "Saira Extra Condensed", sans-serif !important;
   text-transform: lowercase !important;
   background: transparent !important;
@@ -198,6 +222,7 @@ header {
   padding: 0;
 }
 
+// Presentación común de imágenes: centrado, sombra y recorte de esquinas.
 .site-image {
   display: block;
   margin: 0 auto;
@@ -214,9 +239,12 @@ header {
   width: 40%;
 }
 
+// Por debajo del breakpoint lg de Bootstrap (992px), la imagen introductoria
+// ocupa todo el ancho; en pantallas mayores conserva el ancho del 40%.
 @media (max-width: 991.98px) {
   .site-intro-image {
-    width: 100%;   /* o el porcentaje que desee */
+    width: 100%;
+    /* o el porcentaje que desee */
     height: auto;
   }
 }
@@ -249,6 +277,8 @@ nav a:hover {
 }
 
 // subrayar item "publicaciones"
+// Indicador de la sección activa: !important prevalece sobre los estados de
+// los enlaces de Bootstrap y conserva el subrayado del menú.
 .nav-underline .nav-link.site-nav__link--publications-active {
   font-weight: 700 !important;
   color: var(--bs-nav-underline-link-active-color) !important;
@@ -273,6 +303,8 @@ nav a:hover {
 }
 
 // formulario
+// Reglas globales de formularios. Las clases demo-* posteriores pueden
+// sobrescribirlas para reproducir el diseño de cada ejemplo.
 form {
   padding: 20px 55px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
@@ -302,6 +334,8 @@ textarea::placeholder {
 }
 
 //  botón to top
+// Botón flotante de regreso al inicio: empieza oculto; el JavaScript del sitio
+// controla cuándo se muestra según la posición de desplazamiento.
 .site-scroll-top {
   position: fixed;
   bottom: 20px;
@@ -346,6 +380,7 @@ li {
   /* Evita el subrayado en hover */
 }
 
+// Utilidades de ancho para tablas del sitio y sus columnas.
 .site-table {
   width: 80%;
   height: auto;
@@ -380,6 +415,8 @@ nav {
   background-color: var(--bs-tertiary-bg);
 }
 
+// Control del tema integrado en la navegación: elimina el borde de subrayado
+// y conserva un indicador de foco visible para la navegación con teclado.
 .site-nav__theme-toggle {
   --bs-nav-underline-border-width: 0;
   background: transparent;
@@ -410,6 +447,8 @@ nav {
   }
 }
 
+// Ajustes del tema claro para resultados y texto secundario. Los bloques de
+// sintaxis Prism mantienen el fondo oscuro mediante las reglas siguientes.
 [data-bs-theme="light"] .code-example__output {
   color: var(--color-texto);
 }
@@ -438,8 +477,10 @@ nav {
 /* aside */
 aside {
   position: sticky;
-  top: 3.1rem; /* Space for the fixed navbar */
-  height: calc(100dvh - 0rem); /* Fill remaining viewport height */
+  top: 3.1rem;
+  /* Space for the fixed navbar */
+  height: calc(100dvh - 0rem);
+  /* Fill remaining viewport height */
   // height: 100dvh; /* Fill remaining viewport height */
   padding-bottom: 0px;
   display: flex;
@@ -448,6 +489,7 @@ aside {
   align-self: flex-start;
 }
 
+// Espacio al final del menú desplazable para facilitar el acceso al último enlace.
 .site-menu__scroll {
   padding-bottom: 5.2rem;
   padding-right: 0.2rem;
@@ -462,6 +504,7 @@ aside h1 {
 footer {
   position: relative;
 }
+
 //  .codes {
 // height: calc(100% - 1rem);
 /* Altura de la caja results */
@@ -475,6 +518,8 @@ footer {
 
 /* Contador de filas tablas índice */
 /* Aplica contador por defecto */
+// Numeración automática por cuerpo de tabla. Se añade al primer th de cada fila;
+// las tablas que no la necesitan usan .site-table-counter--disabled.
 tbody {
   counter-reset: rowCounter;
 }
@@ -482,25 +527,35 @@ tbody {
 tbody tr th:first-child::before {
   content: counter(rowCounter) ".";
   counter-increment: rowCounter;
-  margin-left: 20px; /* 👈 deja 10px de espacio a la izquierda */
-  margin-right: 0.5em; /* 👈 espacio opcional entre el número y el texto */
+  margin-left: 20px;
+  /* 👈 deja 10px de espacio a la izquierda */
+  margin-right: 0.5em;
+  /* 👈 espacio opcional entre el número y el texto */
   display: inline-block;
 }
+
 tbody tr th[scope="row"] {
-  text-align: left; /* alinea números a la derecha */
-  margin-left: 25px; /* 👈 deja 10px de espacio a la izquierda */
-  margin-right: 0.5em; /* 👈 espacio opcional entre el número y el texto */
-  width: 3em; /* ancho fijo para todos los th */
+  text-align: left;
+  /* alinea números a la derecha */
+  margin-left: 25px;
+  /* 👈 deja 10px de espacio a la izquierda */
+  margin-right: 0.5em;
+  /* 👈 espacio opcional entre el número y el texto */
+  width: 3em;
+  /* ancho fijo para todos los th */
 }
 
 /* 🔴 Anular el contador en tablas con clase .site-table-counter--disabled */
 .site-table-counter--disabled tbody {
-  counter-reset: none; /* elimina el reinicio del contador */
+  counter-reset: none;
+  /* elimina el reinicio del contador */
 }
 
 .site-table-counter--disabled tbody tr th:first-child::before {
-  content: ""; /* no imprime nada */
-  counter-increment: none; /* no incrementa el contador */
+  content: "";
+  /* no imprime nada */
+  counter-increment: none;
+  /* no incrementa el contador */
 }
 
 /* strong {
@@ -547,18 +602,18 @@ hr.site-divider--subtle {
   /* Elimina el borde por defecto */
   height: 3px;
   /* Grosor de la línea */
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.8),
-    white,
-    rgba(50, 50, 50, 0.6)
-  );
+  background-image: linear-gradient(to right,
+      rgba(0, 0, 0, 0.8),
+      white,
+      rgba(50, 50, 50, 0.6));
   /* Degradado */
   margin: 20px 1.25rem;
   /* Margen */
 }
 
 /* Estilos básicos para las cajas de código HTML y CSS */
+// Este componente tiene varias reglas consecutivas: sus declaraciones se
+// combinan y, para una propiedad repetida, prevalece la última del mismo alcance.
 .code-example__css {
   // background-color: #272822;
   /* Color de fondo gris claro para ambas cajas */
@@ -765,6 +820,8 @@ hr.site-divider--subtle {
   /* Ajusta la altura del contenedor, opcional */
 }
 
+// Sintaxis con altura limitada y scroll; la variante full-syntax que sigue
+// no fija max-height y permite mostrar bloques más largos.
 .code-example__syntax {
   border: 2px solid var(--color-borde);
   border-radius: 5px;
@@ -809,6 +866,8 @@ hr.site-divider--subtle {
 }
 
 // barra lateral
+// Contenedor visual del índice lateral. Los enlaces simples y los submenús
+// comparten colores de tema y separadores para mantener una apariencia uniforme.
 .site-menu {
   max-width: 800px;
   margin: 0 auto;
@@ -826,7 +885,8 @@ hr.site-divider--subtle {
 }
 
 .site-menu__item {
-  border-bottom: 1px solid var(--color-borde);;
+  border-bottom: 1px solid var(--color-borde);
+  ;
 }
 
 .site-menu__item:last-child {
@@ -869,6 +929,8 @@ hr.site-divider--subtle {
    ============================================ */
 
 /* Contenedor principal del details */
+// Menús nativos details/summary: el atributo open gobierna su estado.
+// Estas reglas son globales; también pueden afectar a details de los ejemplos.
 details {
   border: none;
   overflow: hidden;
@@ -885,8 +947,7 @@ summary {
   user-select: none;
   color: var(--color-texto);
   border-top: 1px solid var(--color-borde);
-  transition: all var(--dropdown-transition-duration)
-    var(--dropdown-transition-easing);
+  transition: all var(--dropdown-transition-duration) var(--dropdown-transition-easing);
   outline: none;
   /* Remover outline por defecto */
   font-weight: 500;
@@ -909,8 +970,7 @@ summary code {
   padding: 2px 4px;
   border-radius: 3px;
   font-size: 0.9em;
-  transition: all var(--dropdown-transition-duration)
-    var(--dropdown-transition-easing) !important;
+  transition: all var(--dropdown-transition-duration) var(--dropdown-transition-easing) !important;
 }
 
 /* ============================================
@@ -953,8 +1013,7 @@ summary::after {
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
-  transition: transform var(--dropdown-transition-duration)
-    var(--dropdown-transition-easing);
+  transition: transform var(--dropdown-transition-duration) var(--dropdown-transition-easing);
   color: var(--color-texto);
   font-size: var(--dropdown-arrow-size);
   opacity: 0.7;
@@ -986,8 +1045,7 @@ summary::-moz-list-bullet {
   border-top: 1px solid var(--color-borde);
   max-height: 0;
   overflow: hidden;
-  transition: max-height var(--dropdown-transition-duration)
-    var(--dropdown-transition-easing);
+  transition: max-height var(--dropdown-transition-duration) var(--dropdown-transition-easing);
   position: relative;
 }
 
@@ -1005,12 +1063,10 @@ details[open] .site-menu__submenu::before {
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--color-borde),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      var(--color-borde),
+      transparent);
   animation: fadeInLine var(--dropdown-transition-duration) ease-out;
 }
 
@@ -1176,6 +1232,11 @@ details[open] .site-menu__submenu::before {
   }
 }
 
+// Demostraciones de los artículos: los bloques siguientes se agrupan por tema.
+// Los comentarios con nombres de página ayudan a localizar su ejemplo de origen.
+// Los prefijos demo-* separan sus selectores de los componentes site-*.
+// Los nombres de @keyframes son globales: si se repiten, la última definición
+// del archivo determina la animación utilizada por todas sus referencias.
 // html-07_formato_de_texto.html
 .demo-content__em {
   color: blue;
@@ -1644,7 +1705,7 @@ dd {
 }
 
 /* Estilos especiales para diferentes niveles */
-.demo-content__lista-principal > li {
+.demo-content__lista-principal>li {
   background: linear-gradient(90deg, #e3f2fd, #ffffff);
   border-left: 4px solid #2196f3;
   margin: 10px 0;
@@ -1652,7 +1713,7 @@ dd {
   border-radius: 5px;
 }
 
-.demo-content__lista-secundaria > li {
+.demo-content__lista-secundaria>li {
   background: linear-gradient(90deg, #f3e5f5, #ffffff);
   border-left: 3px solid #9c27b0;
   margin: 8px 0;
@@ -1687,7 +1748,7 @@ dd {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.demo-content__lista-definiciones dd > p {
+.demo-content__lista-definiciones dd>p {
   font-style: italic;
   color: #666;
   margin-bottom: 15px;
@@ -1715,7 +1776,7 @@ dd {
 }
 
 /* Colores diferentes para diferentes niveles */
-.demo-content__lista-definiciones li > strong {
+.demo-content__lista-definiciones li>strong {
   color: #2c3e50;
   background: linear-gradient(90deg, #fff, #ecf0f1);
   padding: 5px 10px;
@@ -2146,14 +2207,12 @@ dd {
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(
-    90deg,
-    #ff6b6b 0%,
-    #4ecdc4 25%,
-    #45b7d1 50%,
-    #96ceb4 75%,
-    #ffeaa7 100%
-  );
+  background: linear-gradient(90deg,
+      #ff6b6b 0%,
+      #4ecdc4 25%,
+      #45b7d1 50%,
+      #96ceb4 75%,
+      #ffeaa7 100%);
   background-size: 400% 100%;
   animation: gradient 4s ease infinite;
 }
@@ -2202,12 +2261,10 @@ dd {
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background: linear-gradient(
-    45deg,
-    transparent,
-    rgba(255, 255, 255, 0.1),
-    transparent
-  );
+  background: linear-gradient(45deg,
+      transparent,
+      rgba(255, 255, 255, 0.1),
+      transparent);
   border-radius: 14px;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -2510,12 +2567,10 @@ dd {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.4),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.4),
+      transparent);
   transition: left 0.6s ease;
 }
 
@@ -2546,6 +2601,7 @@ dd {
 }
 
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0px);
@@ -2854,6 +2910,7 @@ dd {
 }
 
 @keyframes blink-caret {
+
   from,
   to {
     border-color: transparent;
@@ -2907,6 +2964,7 @@ dd {
 }
 
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0px);
@@ -3239,6 +3297,7 @@ dd {
 
 /* Efectos de animación */
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0px);
@@ -3340,12 +3399,10 @@ dd {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.3),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.3),
+      transparent);
   transition: left 0.5s;
 }
 
@@ -3432,6 +3489,7 @@ dd {
 }
 
 @keyframes sparkle {
+
   0%,
   100% {
     transform: translateY(-50%) rotate(0deg) scale(1);
@@ -3540,6 +3598,7 @@ dd {
 }
 
 @keyframes bounce {
+
   0%,
   20%,
   50%,
@@ -3731,14 +3790,12 @@ dd {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    rgba(243, 156, 18, 0.1) 25%,
-    rgba(52, 152, 219, 0.1) 50%,
-    rgba(155, 89, 182, 0.1) 75%,
-    transparent 100%
-  );
+  background: linear-gradient(90deg,
+      transparent 0%,
+      rgba(243, 156, 18, 0.1) 25%,
+      rgba(52, 152, 219, 0.1) 50%,
+      rgba(155, 89, 182, 0.1) 75%,
+      transparent 100%);
   animation: shimmer 4s infinite;
 }
 
@@ -3839,15 +3896,15 @@ dd {
   overflow: hidden;
 }
 
-.demo-det__details > summary {
+.demo-det__details>summary {
   list-style: none;
 }
 
-.demo-det__details > summary::-webkit-details-marker {
+.demo-det__details>summary::-webkit-details-marker {
   display: none;
 }
 
-.demo-det__details > summary::marker {
+.demo-det__details>summary::marker {
   content: none;
 }
 
@@ -4070,18 +4127,17 @@ details summary::marker {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(
-    90deg,
-    #00bcd4,
-    #4fc3f7,
-    #81c784,
-    #ffb74d,
-    #f06292
-  );
+  background: linear-gradient(90deg,
+      #00bcd4,
+      #4fc3f7,
+      #81c784,
+      #ffb74d,
+      #f06292);
   animation: gradientMove 3s ease-in-out infinite;
 }
 
 @keyframes gradientMove {
+
   0%,
   100% {
     transform: translateX(-100%);
@@ -4356,14 +4412,12 @@ details summary::marker {
 .demo-hr__section-divider {
   height: 3px;
   border: none;
-  background: linear-gradient(
-    to right,
-    transparent,
-    #00d4ff,
-    #0099cc,
-    #00d4ff,
-    transparent
-  );
+  background: linear-gradient(to right,
+      transparent,
+      #00d4ff,
+      #0099cc,
+      #00d4ff,
+      transparent);
   margin: 40px 0;
   box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
   border-radius: 2px;
@@ -4372,12 +4426,10 @@ details summary::marker {
 .demo-hr__subtle-divider {
   border: 0;
   height: 2px;
-  background: linear-gradient(
-    to right,
-    rgba(0, 212, 255, 0),
-    rgba(0, 212, 255, 0.6),
-    rgba(0, 212, 255, 0)
-  );
+  background: linear-gradient(to right,
+      rgba(0, 212, 255, 0),
+      rgba(0, 212, 255, 0.6),
+      rgba(0, 212, 255, 0));
   margin: 30px 0;
   box-shadow: 0 0 8px rgba(0, 212, 255, 0.2);
 }
@@ -4832,7 +4884,7 @@ details summary::marker {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.demo-checkbox__input:checked + .demo-checkbox__label {
+.demo-checkbox__input:checked+.demo-checkbox__label {
   background: rgba(255, 255, 255, 0.25);
   border-color: rgba(255, 255, 255, 0.5);
   transform: scale(1.02);
@@ -4844,7 +4896,7 @@ details summary::marker {
   transition: transform 0.3s ease;
 }
 
-.demo-checkbox__input:checked + .demo-checkbox__label .demo-checkbox__icon {
+.demo-checkbox__input:checked+.demo-checkbox__label .demo-checkbox__icon {
   transform: scale(1.2) rotate(10deg);
 }
 
@@ -4855,7 +4907,7 @@ details summary::marker {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-.demo-checkbox__input:checked + .demo-checkbox__label .demo-checkbox__text {
+.demo-checkbox__input:checked+.demo-checkbox__label .demo-checkbox__text {
   font-weight: 600;
 }
 
@@ -4868,12 +4920,10 @@ details summary::marker {
   right: 0;
   bottom: 0;
   border-radius: 15px;
-  background: linear-gradient(
-    45deg,
-    transparent,
-    rgba(255, 255, 255, 0.1),
-    transparent
-  );
+  background: linear-gradient(45deg,
+      transparent,
+      rgba(255, 255, 255, 0.1),
+      transparent);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -4883,7 +4933,7 @@ details summary::marker {
 }
 
 /* Animación de pulso para elementos seleccionados */
-.demo-checkbox__input:checked + .demo-checkbox__label {
+.demo-checkbox__input:checked+.demo-checkbox__label {
   animation: ej-pulse-checkbox 2s infinite;
 }
 
@@ -5889,6 +5939,7 @@ details summary::marker {
 }
 
 @keyframes sparkle {
+
   0%,
   100% {
     opacity: 1;
