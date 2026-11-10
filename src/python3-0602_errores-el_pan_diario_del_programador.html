@@ -58,11 +58,12 @@
   </title>
 
   <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/article-scrollspy.js"></script>
 
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -112,39 +113,40 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Errores: el pan diario del programador  -->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
-          <header>
-            <h1>Errores: el pan diario del programador</h1>
-          </header>
-          <!-- Introducción -->
-          <div class="mt-3">
-            <h2>Introducción</h2>
-            <p>
-              En el mundo de la programación, los errores son inevitables y
-              forman parte del proceso de aprendizaje y desarrollo. Este
-              documento explora los tipos más comunes de errores que los
-              programadores enfrentan al trabajar con Python, así como
-              algunas estrategias para identificarlos y solucionarlos. A
-              través de ejemplos prácticos, se busca proporcionar una
-              comprensión más profunda de cómo manejar errores y mejorar la
-              calidad del código.
-            </p>
-            <div class="site-image site-intro-image">
-              <figure class="site-image__figure site-image__figure--intro">
-                <img src="https://i.ibb.co/56h2n3H/errores.jpg" class="img-fluid"
-                  alt="Errores: el pan diario del programador  " title="Dominando los Errores de Python" />
-                <figcaption>
-                  Errores: el pan diario del programador
-                </figcaption>
-              </figure>
+        <article class="row border-1 border-bottom pb-3">
+          <div id="introduccion">
+            <header>
+              <h1>Errores: el pan diario del programador</h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-3">
+              <h2>Introducción</h2>
+              <p>
+                En el mundo de la programación, los errores son inevitables y
+                forman parte del proceso de aprendizaje y desarrollo. Este
+                documento explora los tipos más comunes de errores que los
+                programadores enfrentan al trabajar con Python, así como
+                algunas estrategias para identificarlos y solucionarlos. A
+                través de ejemplos prácticos, se busca proporcionar una
+                comprensión más profunda de cómo manejar errores y mejorar la
+                calidad del código.
+              </p>
+              <div class="site-image site-intro-image">
+                <figure class="site-image__figure site-image__figure--intro">
+                  <img src="https://i.ibb.co/56h2n3H/errores.jpg" class="img-fluid"
+                    alt="Errores: el pan diario del programador  " title="Dominando los Errores de Python" />
+                  <figcaption>
+                    Errores: el pan diario del programador
+                  </figcaption>
+                </figure>
+              </div>
             </div>
-          </div>
 
+          </div>
           <hr class="site-divider--subtle site-divider" />
 
           <!-- Tipos de Errores en Python -->
@@ -1951,23 +1953,23 @@
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
+          <div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo">
             <div class="border border-1">
-              <div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
-              <div class="site-menu__item"><a href="#tipos-de-errores-en-python" class="site-menu__link">Tipos de
+              <div class="site-menu__item"><a href="#introduccion" class=" list-group-item list-group-item-action">Introducción</a></div>
+              <div class="site-menu__item"><a href="#tipos-de-errores-en-python" class=" list-group-item list-group-item-action">Tipos de
                   Errores en
                   Python</a></div>
               <div class="site-menu__item"><a href="#estrategias-para-manejar-errores"
-                  class="site-menu__link">Estrategias para
+                  class=" list-group-item list-group-item-action">Estrategias para
                   Manejar Errores</a></div>
-              <div class="site-menu__item"><a href="#la-anatomia-de-las-excepciones" class="site-menu__link">La Anatomía
+              <div class="site-menu__item"><a href="#la-anatomia-de-las-excepciones" class=" list-group-item list-group-item-action">La Anatomía
                   de las
                   Excepciones</a></div>
-              <div class="site-menu__item"><a href="#excepciones-integradas" class="site-menu__link">Excepciones
+              <div class="site-menu__item"><a href="#excepciones-integradas" class=" list-group-item list-group-item-action">Excepciones
                   Integradas</a>
               </div>
               <!-- Comentarios  -->
-              <div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div>
+              <div class="site-menu__item"><a href="#comments" class=" list-group-item list-group-item-action">Comentarios</a></div>
             </div>
           </div>
         </div>

@@ -65,7 +65,7 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy" data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -114,47 +114,48 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  El Módulo datetime, Funciones para Manejo de la Hora y la Fecha en Python  -->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
-          <header>
-            <h1>
-              El Módulo datetime, Funciones para Manejo de la Hora y la
-              Fecha en Python
-            </h1>
-          </header>
-          <!-- Introducción -->
-          <div class="mt-3">
-            <h2>Introducción</h2>
-            <div class="site-image site-intro-image mb-5">
-              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
-                <img loading="lazy" src="https://i.ibb.co/j3d9mCK/modulodatetime.jpg" class="img-fluid"
-                  alt="El Módulo datetime, Funciones para Manejo de la Hora y la Fecha en Python  "
-                  title="Dominando el Módulo datetime de Python" />
-                <figcaption class="site-image__caption">
-                  El Módulo
-                  <code class="language-python" class="language-python">datetime</code>, Funciones para Manejo de la
-                  Hora y la Fecha en Python.
-                </figcaption>
-              </figure>
-            </div>
-            <p>
-              El módulo
-              <code class="language-python" class="language-python">datetime</code>
-              de Python es una herramienta poderosa y versátil que permite a
-              los desarrolladores trabajar con fechas y horas de manera
-              eficiente. Este documento explora las principales
-              funcionalidades del módulo, incluyendo la creación de objetos
-              de fecha y hora, la manipulación de estos objetos y la
-              realización de operaciones comunes como la comparación y el
-              formateo. A través de ejemplos prácticos, se ilustrará cómo
-              utilizar este módulo para resolver problemas cotidianos
-              relacionados con el tiempo.
-            </p>
+        <article class="row border-1 border-bottom pb-3">
+          <div id="introduccion">
+            <header>
+              <h1>
+                El Módulo datetime, Funciones para Manejo de la Hora y la
+                Fecha en Python
+              </h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-3">
+              <h2>Introducción</h2>
+              <div class="site-image site-intro-image mb-5">
+                <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                  <img loading="lazy" src="https://i.ibb.co/j3d9mCK/modulodatetime.jpg" class="img-fluid"
+                    alt="El Módulo datetime, Funciones para Manejo de la Hora y la Fecha en Python  "
+                    title="Dominando el Módulo datetime de Python" />
+                  <figcaption class="site-image__caption">
+                    El Módulo
+                    <code class="language-python" class="language-python">datetime</code>, Funciones para Manejo de la
+                    Hora y la Fecha en Python.
+                  </figcaption>
+                </figure>
+              </div>
+              <p>
+                El módulo
+                <code class="language-python" class="language-python">datetime</code>
+                de Python es una herramienta poderosa y versátil que permite a
+                los desarrolladores trabajar con fechas y horas de manera
+                eficiente. Este documento explora las principales
+                funcionalidades del módulo, incluyendo la creación de objetos
+                de fecha y hora, la manipulación de estos objetos y la
+                realización de operaciones comunes como la comparación y el
+                formateo. A través de ejemplos prácticos, se ilustrará cómo
+                utilizar este módulo para resolver problemas cotidianos
+                relacionados con el tiempo.
+              </p>
 
+            </div>
           </div>
           <hr class="site-divider--subtle site-divider" />
 
@@ -683,25 +684,25 @@
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
+          <div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo">
             <div class="border border-1">
-              <div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
-              <div class="site-menu__item"><a href="#introduccion-al-modulo-datetime" class="site-menu__link">Introducción al
+              <div class="site-menu__item"><a href="#introduccion" class=" list-group-item list-group-item-action">Introducción</a></div>
+              <div class="site-menu__item"><a href="#introduccion-al-modulo-datetime" class=" list-group-item list-group-item-action">Introducción al
                   Módulo <code class="language-python">datetime</code></a></div>
-              <div class="site-menu__item"><a href="#creacion-de-fechas-y-horas" class="site-menu__link">Creación de Fechas y
+              <div class="site-menu__item"><a href="#creacion-de-fechas-y-horas" class=" list-group-item list-group-item-action">Creación de Fechas y
                   Horas</a></div>
-              <div class="site-menu__item"><a href="#obtencion-defecha-y-hora-actual" class="site-menu__link">Obtención de Fecha y
+              <div class="site-menu__item"><a href="#obtencion-defecha-y-hora-actual" class=" list-group-item list-group-item-action">Obtención de Fecha y
                   Hora Actual</a></div>
-              <div class="site-menu__item"><a href="#formateo-y-conversion" class="site-menu__link">Formateo Y Conversión</a>
+              <div class="site-menu__item"><a href="#formateo-y-conversion" class=" list-group-item list-group-item-action">Formateo Y Conversión</a>
               </div>
-              <div class="site-menu__item"><a href="#operaciones-con-fechas-y-horas" class="site-menu__link">Operaciones con
+              <div class="site-menu__item"><a href="#operaciones-con-fechas-y-horas" class=" list-group-item list-group-item-action">Operaciones con
                   Fechas y Horas</a></div>
-              <div class="site-menu__item"><a href="#propiedades-y-metodos-utiles" class="site-menu__link">Propiedades y Métodos
+              <div class="site-menu__item"><a href="#propiedades-y-metodos-utiles" class=" list-group-item list-group-item-action">Propiedades y Métodos
                   Útiles</a></div>
-              <div class="site-menu__item"><a href="#zona-horaria" class="site-menu__link">Zona Horaria</a></div>
-              <div class="site-menu__item"><a href="#constantes" class="site-menu__link">Constantes</a></div>
+              <div class="site-menu__item"><a href="#zona-horaria" class=" list-group-item list-group-item-action">Zona Horaria</a></div>
+              <div class="site-menu__item"><a href="#constantes" class=" list-group-item list-group-item-action">Constantes</a></div>
               <!-- Comentarios  -->
-              <div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div>
+              <div class="site-menu__item"><a href="#comments" class=" list-group-item list-group-item-action">Comentarios</a></div>
             </div>
           </div>
         </div>

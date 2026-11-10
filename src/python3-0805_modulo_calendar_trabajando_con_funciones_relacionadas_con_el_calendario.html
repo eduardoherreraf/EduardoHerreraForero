@@ -65,7 +65,7 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy" data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -114,45 +114,46 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  El módulo <code class="language-python">calendar</code>, trabajando con funciones relacionadas con el calendario en Python  -->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
-          <header>
-            <h1>
-              El módulo calendar, trabajando con funciones relacionadas con
-              el calendario en Python
-            </h1>
-          </header>
-          <!-- Introducción -->
-          <div class="mt-3">
-            <h2>Introducción</h2>
-            <div class="site-image site-intro-image mb-5">
-              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
-                <img loading="lazy" src="https://i.ibb.co/pyRL4b6/modulocalendar.jpg" class="img-fluid"
-                  alt="El módulo calendar, trabajando con funciones relacionadas con el calendario en Python  "
-                  title="Explorando el Módulo de Calendario de Python" />
-                <figcaption class="site-image__caption">
-                  El módulo <code class="language-python">calendar</code>,
-                  trabajando con funciones relacionadas con el calendario en
-                  Python
-                </figcaption>
-              </figure>
-            </div>
-            <p>
-              El módulo <code class="language-python">calendar</code> en
-              Python es una herramienta poderosa que permite trabajar con
-              calendarios de manera sencilla y eficiente. Este módulo
-              proporciona funciones para manipular fechas, generar
-              calendarios en diferentes formatos y realizar cálculos
-              relacionados con el tiempo. En este documento, exploraremos
-              las principales características y funciones del módulo
-              <code class="language-python">calendar</code>, así como
-              ejemplos prácticos de su uso.
-            </p>
+        <article class="row border-1 border-bottom pb-3">
+          <div id="introduccion">
+            <header>
+              <h1>
+                El módulo calendar, trabajando con funciones relacionadas con
+                el calendario en Python
+              </h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-3">
+              <h2>Introducción</h2>
+              <div class="site-image site-intro-image mb-5">
+                <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                  <img loading="lazy" src="https://i.ibb.co/pyRL4b6/modulocalendar.jpg" class="img-fluid"
+                    alt="El módulo calendar, trabajando con funciones relacionadas con el calendario en Python  "
+                    title="Explorando el Módulo de Calendario de Python" />
+                  <figcaption class="site-image__caption">
+                    El módulo <code class="language-python">calendar</code>,
+                    trabajando con funciones relacionadas con el calendario en
+                    Python
+                  </figcaption>
+                </figure>
+              </div>
+              <p>
+                El módulo <code class="language-python">calendar</code> en
+                Python es una herramienta poderosa que permite trabajar con
+                calendarios de manera sencilla y eficiente. Este módulo
+                proporciona funciones para manipular fechas, generar
+                calendarios en diferentes formatos y realizar cálculos
+                relacionados con el tiempo. En este documento, exploraremos
+                las principales características y funciones del módulo
+                <code class="language-python">calendar</code>, así como
+                ejemplos prácticos de su uso.
+              </p>
 
+            </div>
           </div>
           <hr class="site-divider--subtle site-divider" />
 
@@ -508,21 +509,21 @@
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
+          <div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo">
             <div class="border border-1">
-              <div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
-              <div class="site-menu__item"><a href="#funciones-para-obtener-el-calendario" class="site-menu__link">Funciones para
+              <div class="site-menu__item"><a href="#introduccion" class=" list-group-item list-group-item-action">Introducción</a></div>
+              <div class="site-menu__item"><a href="#funciones-para-obtener-el-calendario" class=" list-group-item list-group-item-action">Funciones para
                   Obtener el Calendario</a></div>
-              <div class="site-menu__item"><a href="#funciones-de-dIas-de-la-semana" class="site-menu__link">Funciones de Días de
+              <div class="site-menu__item"><a href="#funciones-de-dIas-de-la-semana" class=" list-group-item list-group-item-action">Funciones de Días de
                   la Semana</a></div>
-              <div class="site-menu__item"><a href="#funciones-para-anno-bisiesto" class="site-menu__link">Funciones Para Año
+              <div class="site-menu__item"><a href="#funciones-para-anno-bisiesto" class=" list-group-item list-group-item-action">Funciones Para Año
                   Bisiesto</a></div>
-              <div class="site-menu__item"><a href="#funciones-para-primer-dia-de-la-semana" class="site-menu__link">Funciones
+              <div class="site-menu__item"><a href="#funciones-para-primer-dia-de-la-semana" class=" list-group-item list-group-item-action">Funciones
                   para Primer Día de la Semana</a></div>
               <div class="site-menu__item"><a href="#funciones-de-calendario-en-formato-de-tabla"
-                  class="site-menu__link">Funciones de Calendario En Formato De Tabla</a></div>
+                  class=" list-group-item list-group-item-action">Funciones de Calendario En Formato De Tabla</a></div>
               <!-- Comentarios  -->
-              <div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div>
+              <div class="site-menu__item"><a href="#comments" class=" list-group-item list-group-item-action">Comentarios</a></div>
             </div>
           </div>
         </div>

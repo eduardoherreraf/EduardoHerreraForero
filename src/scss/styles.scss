@@ -6219,3 +6219,19 @@ details summary::marker {
 }
 
 // css-0301_flexbox.html - ¿Qué es Convertir un Contenedor en Flexible?
+
+// El encabezado conserva los colores de la lista aunque el submenu este abierto.
+#article-scrollspy details[open] > .site-menu__summary--neutral {
+  background-color: var(--bs-list-group-bg) !important;
+  color: var(--bs-list-group-color) !important;
+  box-shadow: none;
+}
+
+#article-scrollspy details[open] > .site-menu__summary--neutral:hover {
+  background-color: var(--bs-list-group-action-hover-bg) !important;
+  color: var(--bs-list-group-action-hover-color) !important;
+}
+
+#article-scrollspy details[open] > .site-menu__summary--neutral::after {
+  color: currentColor;
+}

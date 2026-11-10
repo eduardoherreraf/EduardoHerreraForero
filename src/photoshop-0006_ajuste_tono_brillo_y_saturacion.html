@@ -58,11 +58,12 @@
   </title>
 
   <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/article-scrollspy.js"></script>
 
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -112,12 +113,11 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!-- Ajuste de Tono, Brillo y Saturación -->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
+        <article id="introduccion" class="row border-1 border-bottom pb-3">
           <header>
             <h1>Ajuste de Tono, Brillo y Saturación</h1>
           </header>
@@ -789,33 +789,30 @@
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
+          <div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo">
             <div class="border border-1">
               <div class="site-menu__item">
-                <a href="#introduccion" class="site-menu__link">Introducción</a>
+                <a href="#introduccion" class=" list-group-item list-group-item-action">Introducción</a>
               </div>
               <div class="site-menu__item">
-                <a href="#conceptos-basicos" class="site-menu__link">Conceptos Básicos</a>
+                <a href="#conceptos-basicos" class=" list-group-item list-group-item-action">Conceptos Básicos</a>
               </div>
               <div class="site-menu__item">
-                <a href="#ajustar-Brillo-y-contraste" class="site-menu__link">Ajustar Brillo y Contraste</a>
+                <a href="#ajustar-Brillo-y-contraste" class=" list-group-item list-group-item-action">Ajustar Brillo y Contraste</a>
               </div>
               <div class="site-menu__item">
-                <a href="#ajustar-la-intensidad" class="site-menu__link">Ajustar la Intensidad</a>
+                <a href="#ajustar-la-intensidad" class=" list-group-item list-group-item-action">Ajustar la Intensidad</a>
               </div>
               <div class="site-menu__item">
-                <a href="#ajuste-de-tono-y-saturacion" class="site-menu__link">Ajuste de Tono y Saturación</a>
+                <a href="#ajuste-de-tono-y-saturacion" class=" list-group-item list-group-item-action">Ajuste de Tono y Saturación</a>
               </div>
               <div class="site-menu__item">
-                <a href="#capas-de-ajuste" class="site-menu__link">Capas de Ajuste</a>
+                <a href="#capas-de-ajuste" class=" list-group-item list-group-item-action">Capas de Ajuste</a>
               </div>
 
-              <li class="list-group-item site-list__item">
-                <a href="#"></a>
-              </li>
               <!-- Comentarios  -->
               <div class="site-menu__item">
-                <a href="#comments" class="site-menu__link">Comentarios</a>
+                <a href="#comments" class=" list-group-item list-group-item-action">Comentarios</a>
               </div>
             </div>
           </div>

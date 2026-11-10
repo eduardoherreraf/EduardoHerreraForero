@@ -65,7 +65,8 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<!-- Scrollspy observa el desplazamiento de la pagina y actualiza el indice lateral. -->
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy" data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -114,17 +115,16 @@
   <!-- Barra de Navegación -->
 
   <!--  Principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Análisis de Datos-->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
+        <article class="row border-1 border-bottom pb-3">
           <header>
             <h1>Análisis de Datos</h1>
           </header>
           <!-- Introducción -->
-          <div class="mt-3">
+          <div id="introduccion">
             <h2>Introducción: Análisis de Datos</h2>
             <div class="site-image site-intro-image mb-5">
               <figure class="site-content__img-container site-image__figure site-image__figure--intro">
@@ -726,47 +726,22 @@
         <!-- Comentarios fin -->
       </section>
       <!-- -------------------------------- barra lateral -------------------------------- -->
-      <aside class="col-lg-3 d-none d-lg-block">
-        <h2>En Este Artículo</h2>
+      <aside class="col-lg-3 d-none d-lg-block" aria-labelledby="article-menu-title">
+        <h2 id="article-menu-title">En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
-            <div class="border border-1">
-              <div class="site-menu__item">
-                <a href="#introduccion" class="site-menu__link">Introducción</a>
-              </div>
-              <div class="site-menu__item">
-                <a href="#basicos-del-analisis-de-datos" class="site-menu__link">Básicos del Análisis de Datos</a>
-              </div>
-              <div class="site-menu__item">
-                <a href="#tipos-de-analisis-de-datos" class="site-menu__link">Tipos de Análisis de Datos</a>
-              </div>
-              <div class="site-menu__item">
-                <a href="#ciclo-de-vida-del-analisis-de-datos" class="site-menu__link">Ciclo de Vida del Análisis de
-                  Datos</a>
-              </div>
-              <div class="site-menu__item">
-                <a href="#herramientas-para-el-analisis-de-datos" class="site-menu__link">Herramientas para el Análisis de
-                  Datos</a>
-              </div>
-              <div class="site-menu__item">
-                <a href="#tipos-de-datos-en-analisis-de-datos" class="site-menu__link">Tipos de Datos en Análisis de
-                  Datos</a>
-              </div>
-              <div class="site-menu__item">
-                <a href="#consideraciones-eticas-en-el-analisis-de-datos" class="site-menu__link">Consideraciones Éticas en
-                  el Análisis de Datos</a>
-                </li>
-                <div class="site-menu__item">
-                  <a href="#aplicaciones-practicas-de-analisis-de-datos" class="site-menu__link">Aplicaciones Prácticas de
-                    Análisis de Datos</a>
-                </div>
-                <!-- Comentarios  -->
-                <div class="site-menu__item">
-                  <a href="#comments" class="site-menu__link">Comentarios</a>
-                </div>
-              </div>
-            </div>
+          <!-- Bootstrap aplica .active al enlace de la seccion visible. -->
+          <div id="article-scrollspy" class="list-group" role="navigation" aria-labelledby="article-menu-title">
+            <a class="list-group-item list-group-item-action" href="#introduccion">Introducción</a>
+            <a class="list-group-item list-group-item-action" href="#basicos-del-analisis-de-datos">Básicos del Análisis de Datos</a>
+            <a class="list-group-item list-group-item-action" href="#tipos-de-analisis-de-datos">Tipos de Análisis de Datos</a>
+            <a class="list-group-item list-group-item-action" href="#ciclo-de-vida-del-analisis-de-datos">Ciclo de Vida del Análisis de Datos</a>
+            <a class="list-group-item list-group-item-action" href="#herramientas-para-el-analisis-de-datos">Herramientas para el Análisis de Datos</a>
+            <a class="list-group-item list-group-item-action" href="#tipos-de-datos-en-analisis-de-datos">Tipos de Datos en Análisis de Datos</a>
+            <a class="list-group-item list-group-item-action" href="#consideraciones-eticas-en-el-analisis-de-datos">Consideraciones Éticas en el Análisis de Datos</a>
+            <a class="list-group-item list-group-item-action" href="#aplicaciones-practicas-de-analisis-de-datos">Aplicaciones Prácticas de Análisis de Datos</a>
+            <a class="list-group-item list-group-item-action" href="#comments">Comentarios</a>
           </div>
+        </div>
       </aside>
       <!-- -------------------------------- fin barra lateral -------------------------------- -->
     </main>

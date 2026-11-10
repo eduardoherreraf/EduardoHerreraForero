@@ -65,7 +65,8 @@
 </head>
 
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy"
+  data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -96,7 +97,8 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">ARTÍCULOS</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link"
+              href="index.html#blog">ARTÍCULOS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -113,72 +115,74 @@
   </nav>
   <!-- Barra de Navegación -->
   <!--  principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Git Tags: Marcando Puntos Importantes en la Historia de tu Proyecto -->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
-          <header>
-            <h1>Git Tags: Marcando Puntos Importantes en la Historia de tu Proyecto</h1>
-          </header>
-          <!-- Introducción -->
-          <div class="mt-3">
-            <h2>Introducción</h2>
-            <div class="site-image site-intro-image mb-5">
-              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
-                <img src="https://i.postimg.cc/6WRvrSCj/git-0006-etiqueta-tag-en-git-comp.png" class="img-fluid"
-                  alt="Programador trabajando frente a pantallas con etiquetas de versiones de software como v1.0 y v1.1"
-                  title="Uso de etiquetas en Git" loading="lazy" />
-                <figcaption class="site-image__caption">Ilustración que representa cómo las etiquetas en Git marcan hitos en el
-                  desarrollo de software, como versiones alfa, beta y estables</figcaption>
-              </figure>
+        <article class="row border-1 border-bottom pb-3">
+          <div id="introduccion">
+            <header>
+              <h1>Git Tags: Marcando Puntos Importantes en la Historia de tu Proyecto</h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-3">
+              <h2>Introducción</h2>
+              <div class="site-image site-intro-image mb-5">
+                <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                  <img src="https://i.postimg.cc/6WRvrSCj/git-0006-etiqueta-tag-en-git-comp.png" class="img-fluid"
+                    alt="Programador trabajando frente a pantallas con etiquetas de versiones de software como v1.0 y v1.1"
+                    title="Uso de etiquetas en Git" loading="lazy" />
+                  <figcaption class="site-image__caption">Ilustración que representa cómo las etiquetas en Git marcan
+                    hitos en el
+                    desarrollo de software, como versiones alfa, beta y estables</figcaption>
+                </figure>
+              </div>
+              <p>
+                Este artículo explora en profundidad el concepto de Git tags, una herramienta esencial para marcar puntos
+                específicos en la historia de un repositorio Git. Se aprenderá qué son las etiquetas, por qué son útiles,
+                los
+                diferentes tipos de tags que existen (anotados y ligeros), cómo crearlos, listarlos, verificarlos,
+                compartirlos y eliminarlos. Además, se abordarán escenarios comunes de uso y las mejores prácticas para
+                incorporar tags de manera efectiva en el flujo de trabajo de desarrollo.
+              </p>
+
+
+
+              <p>Para comprender con mayor facilidad cómo funcionan <span class="fw-bold">las etiquetas en GIT</span>,
+                imagine el desarrollo de un sistema:</p>
+              <ul>
+                <li>Durante el ciclo de vida de un proyecto, los programadores van escribiendo código, corrigiendo errores
+                  y agregando nuevas funciones. Cada vez que guardan un avance en el repositorio, se genera un commit, que
+                  sería como un registro de progreso.</li>
+                <li>No obstante, hay momentos cruciales en el desarrollo que deben quedar marcados: por ejemplo, la
+                  primera versión funcional mínima (MVP), la beta para pruebas internas, la versión candidata (release
+                  candidate) y la entrega final al cliente</li>
+              </ul>
+              <p>Aquí entran las etiquetas:</p>
+              <ul>
+                <li>Son como “post-its” o “sellos” que se colocan en un commit específico para señalar que en ese punto el
+                  software alcanzó un estado importante.</li>
+                <li>Por ejemplo:
+                  <ul>
+                    <li>
+                      <span class="fst-italic">v0.1-alpha</span> → primera versión con la interfaz básica.
+                    </li>
+                    <li>
+                      <span class="fst-italic">v0.5-beta</span> → versión con funcionalidades completas para pruebas.
+                    </li>
+                    <li>
+                      <span class="fst-italic">v1.0</span> → versión estable lista para producción.
+                    </li>
+                    <li>
+                      <span class="fst-italic">v1.1</span> → actualización con mejoras y correcciones.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <p>Así como un arquitecto de software documenta <span class="fw-bold">los hitos de desarrollo</span>, Git
+                permite marcar esos puntos
+                críticos con tags para volver a ellos en cualquier momento sin perderse en el historial de cambios.</p>
             </div>
-            <p>
-              Este artículo explora en profundidad el concepto de Git tags, una herramienta esencial para marcar puntos
-              específicos en la historia de un repositorio Git. Se aprenderá qué son las etiquetas, por qué son útiles,
-              los
-              diferentes tipos de tags que existen (anotados y ligeros), cómo crearlos, listarlos, verificarlos,
-              compartirlos y eliminarlos. Además, se abordarán escenarios comunes de uso y las mejores prácticas para
-              incorporar tags de manera efectiva en el flujo de trabajo de desarrollo.
-            </p>
-
-
-
-            <p>Para comprender con mayor facilidad cómo funcionan <span class="fw-bold">las etiquetas en GIT</span>,
-              imagine el desarrollo de un sistema:</p>
-            <ul>
-              <li>Durante el ciclo de vida de un proyecto, los programadores van escribiendo código, corrigiendo errores
-                y agregando nuevas funciones. Cada vez que guardan un avance en el repositorio, se genera un commit, que
-                sería como un registro de progreso.</li>
-              <li>No obstante, hay momentos cruciales en el desarrollo que deben quedar marcados: por ejemplo, la
-                primera versión funcional mínima (MVP), la beta para pruebas internas, la versión candidata (release
-                candidate) y la entrega final al cliente</li>
-            </ul>
-            <p>Aquí entran las etiquetas:</p>
-            <ul>
-              <li>Son como “post-its” o “sellos” que se colocan en un commit específico para señalar que en ese punto el
-                software alcanzó un estado importante.</li>
-              <li>Por ejemplo:
-                <ul>
-                  <li>
-                    <span class="fst-italic">v0.1-alpha</span> → primera versión con la interfaz básica.
-                  </li>
-                  <li>
-                    <span class="fst-italic">v0.5-beta</span> → versión con funcionalidades completas para pruebas.
-                  </li>
-                  <li>
-                    <span class="fst-italic">v1.0</span> → versión estable lista para producción.
-                  </li>
-                  <li>
-                    <span class="fst-italic">v1.1</span> → actualización con mejoras y correcciones.
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <p>Así como un arquitecto de software documenta <span class="fw-bold">los hitos de desarrollo</span>, Git
-              permite marcar esos puntos
-              críticos con tags para volver a ellos en cualquier momento sin perderse en el historial de cambios.</p>
           </div>
           <hr class="site-divider--subtle site-divider" />
 
@@ -1175,109 +1179,70 @@
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
+          <div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo">
             <div class="border border-1">
               <div class="site-menu__item">
-                <a href="#introduccion" class="site-menu__link">Introducción</a>
+                <a href="#introduccion" class=" list-group-item list-group-item-action">Introducción</a>
               </div>
               <div class="site-menu__item">
-                <a href="#que-son-las-etiquetas-tab" class="site-menu__link">¿Qué Son las Etiquetas Tab?</a>
+                <a href="#que-son-las-etiquetas-tab" class=" list-group-item list-group-item-action">¿Qué Son las
+                  Etiquetas Tab?</a>
               </div>
               <div class="site-menu__item">
-                <a href="#por-que-usar-etiquetas-git" class="site-menu__link">¿Por qué Usar Etiquetas Git?</a>
+                <a href="#por-que-usar-etiquetas-git" class=" list-group-item list-group-item-action">¿Por qué Usar
+                  Etiquetas Git?</a>
               </div>
               <div class="site-menu__item">
-                <a href="#tipos-de-etiqetas-git" class="site-menu__link">Tipos de Etiquetas Git</a>
+                <a href="#tipos-de-etiqetas-git" class=" list-group-item list-group-item-action">Tipos de Etiquetas
+                  Git</a>
               </div>
               <div class="site-menu__item">
-                <details>
-                  <summary>
-                    Creando Etiquetas Git
-                  </summary>
-                  <div class="site-menu__submenu">
-                    <a href="#creando-una-etiqueta-anotada" class="site-menu__submenu-link">Creando una Etiqueta Anotada</a>
-                    <a href="#creando-un-etiqueta-ligera" class="site-menu__submenu-link">Creando una Etiqueta Ligera</a>
-                  </div>
-                </details>
+                <a href="#creando-etiquetas-tags" class=" list-group-item list-group-item-action">Creando Etiquetas
+                  Git</a>
+              </div>
+
+
+
+
+              <div class="site-menu__item">
+                <a href="#listando-etiquetas-git" class=" list-group-item list-group-item-action">Listando Etiquetas
+                  Git</a>
               </div>
               <div class="site-menu__item">
-                <a href="#listando-etiquetas-git" class="site-menu__link">Listando Etiquetas Git</a>
+                <a href="#verificando-git-tags" class=" list-group-item list-group-item-action">Verificando Etiquetas
+                  Git</a>
               </div>
+
               <div class="site-menu__item">
-                <details>
-                  <summary>
-                    Verificando Etiquetas Git
-                  </summary>
-                  <div class="site-menu__submenu">
-                    <a href="#verificando-Etiqueta-local" class="site-menu__submenu-link">Verificando Etiqueta local</a>
-                    <a href="#verificando-Etiqueta-remota" class="site-menu__submenu-link">Verificando Etiqueta Remota</a>
-                  </div>
-                </details>
-              </div>
-              <div class="site-menu__item">
-                <a href="#sincronizacion-de-etiquetas-con-el-repositorio-remoto" class="site-menu__link">Sincronización de
+                <a href="#sincronizacion-de-etiquetas-con-el-repositorio-remoto"
+                  class=" list-group-item list-group-item-action">Sincronización de
                   Etiquetas con el Repositorio Remoto</a>
               </div>
               <div class="site-menu__item">
-                <details>
-                  <summary>
-                    Renombrando Etiquetas Git
-                  </summary>
-                  <div class="site-menu__submenu">
-                    <a href="#renombrando-etiquetas-ligeras" class="site-menu__submenu-link">Renombrando Etiquetas Ligeras</a>
-                    <a href="#renombrando-etiquetas-anotadas" class="site-menu__submenu-link">Renombrando Etiquetas Anotadas </a>
-                  </div>
-                </details>
+                <a href="#renombrando-etiquetas-git" class=" list-group-item list-group-item-action">Renombrando
+                  Etiquetas Git</a>
               </div>
               <div class="site-menu__item">
-                <details>
-                  <summary>
-                    Eliminando Etiquetas Git
-                  </summary>
-                  <div class="site-menu__submenu">
-                    <a href="#eliminando-una-etiqueta-local" class="site-menu__submenu-link">Eliminando una Etiqueta Local</a>
-                    <a href="#eliminando-una-etiqueta-remota" class="site-menu__submenu-link">Eliminando una Etiqueta Remota</a>
-                  </div>
-                </details>
+                <a href="#eliminando-etiquetas-git" class=" list-group-item list-group-item-action">Eliminando Etiquetas
+                  Git</a>
               </div>
               <div class="site-menu__item">
-                <a href="#escenarios-comunes-de-uso" class="site-menu__link">Escenarios Comunes de Uso</a>
+                <a href="#escenarios-comunes-de-uso" class=" list-group-item list-group-item-action">Escenarios Comunes
+                  de Uso</a>
               </div>
               <div class="site-menu__item">
-                <details>
-                  <summary>
-                    Error Comunes con las Etiquetas Git
-                  </summary>
-                  <div class="site-menu__submenu">
-                    <a href="#etiqueta-creada-con-el-nombre-incorrecto" class="site-menu__submenu-link">Etiqueta Creada con el
-                      Nombre
-                      Incorrecto</a>
-                    <a href="#problemas-de-sincronizacion-entre-repositorio-local-y-remoto"
-                      class="site-menu__submenu-link">Problemas
-                      de Sincronización entre Repositorio Local y Remoto</a>
-                    <a href="#conflictos-al-subir-etiguetas" class="site-menu__submenu-link">Conflictos al Hacer push de tags</a>
-                  </div>
-                </details>
+                <a href="#error-comunes-con-las-etiquetas-git" class=" list-group-item list-group-item-action">Error
+                  Comunes con las Etiquetas Git</a>
               </div>
               <div class="site-menu__item">
-                <a href="#mejores-practicas" class="site-menu__link">Mejores Prácticas</a>
+                <a href="#mejores-practicas" class=" list-group-item list-group-item-action">Mejores Prácticas</a>
               </div>
               <div class="site-menu__item">
-                <details>
-                  <summary>
-                    Ejemplos
-                  </summary>
-                  <div class="site-menu__submenu">
-                    <a href="#crear-etiqueta-anotada" class="site-menu__submenu-link">Crear Etiqueta Anotada</a>
-                    <a href="#borrar-la-etiqueta-local-y-remota" class="site-menu__submenu-link">Borrar la Etiqueta Local y
-                      Remota</a>
-                    <a href="#renombrar-etiquetas" class="site-menu__submenu-link">Renombrar Etiquetas</a>
-                  </div>
-                </details>
+                <a href="#ejemplos" class=" list-group-item list-group-item-action">Ejemplos</a>
               </div>
               <!-- Comentarios  -->
               <div class="site-menu__item">
-                <a href="#comments" class="site-menu__link">Comentarios</a>
+                <a href="#comments" class=" list-group-item list-group-item-action">Comentarios</a>
               </div>
             </div>
           </div>

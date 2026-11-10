@@ -52,7 +52,7 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy" data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -101,67 +101,68 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Elementos Incrustados HTM-->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
+        <article class="row border-1 border-bottom pb-3">
 
-            <header>
-              <h1>Elementos Incrustados HTML</h1>
-            </header>
-            <!-- Introducción -->
-            <div class="mt-3">
-              <h2>Introducción</h2>
-              <div class="site-image site-intro-image mb-5">
-                <figure class="site-content__img-container site-image__figure site-image__figure--intro">
-                  <img src="https://i.postimg.cc/ydDhpkj7/Elementos-Incrustados-Compressed.png" class="img-fluid"
-                    alt="Una ventana de madera que muestra un paisaje exterior y un televisor CRT incrustado en la pared mostrando una escena similar"
-                    title="Elementos Incrustados HTML" loading="lazy" />
-                  <figcaption class="site-image__caption">
-                    Analogía visual de las etiquetas HTML incrustadas: una
-                    ventana representa un &lt;iframe> y un televisor
-                    incrustado representa un &lt;embed>, ambos insertados en
-                    una pared.
-                  </figcaption>
-                </figure>
+            <div id="introduccion">
+              <header>
+                <h1>Elementos Incrustados HTML</h1>
+              </header>
+              <!-- Introducción -->
+              <div class="mt-3">
+                <h2>Introducción</h2>
+                <div class="site-image site-intro-image mb-5">
+                  <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                    <img src="https://i.postimg.cc/ydDhpkj7/Elementos-Incrustados-Compressed.png" class="img-fluid"
+                      alt="Una ventana de madera que muestra un paisaje exterior y un televisor CRT incrustado en la pared mostrando una escena similar"
+                      title="Elementos Incrustados HTML" loading="lazy" />
+                    <figcaption class="site-image__caption">
+                      Analogía visual de las etiquetas HTML incrustadas: una
+                      ventana representa un &lt;iframe> y un televisor
+                      incrustado representa un &lt;embed>, ambos insertados en
+                      una pared.
+                    </figcaption>
+                  </figure>
+                </div>
+                <p>
+                  Las etiquetas <code class="language-html">&lt;iframe></code>,
+                  <code class="language-html">&lt;embed></code>,
+                  <code class="language-html">&lt;object></code> y
+                  <code class="language-html">&lt;param></code> forman parte de
+                  los elementos utilizados para incrustar o integrar contenido
+                  externo en una página web.
+                </p>
+                <ul>
+                  <li>
+                    La etiqueta
+                    <code class="language-html">&lt;iframe></code> permite
+                    mostrar otro documento HTML dentro de la página actual, como
+                    si se abriera una ventana hacia otro sitio.
+                  </li>
+                  <li>
+                    por su parte,
+                    <code class="language-html">&lt;embed></code> facilita la
+                    inserción de contenido multimedia, como videos o documentos
+                    PDF, de forma directa y sin controles adicionales.
+                  </li>
+                  <li>
+                    La etiqueta
+                    <code class="language-html">&lt;object></code> es más
+                    versátil y se utiliza para insertar desde archivos
+                    multimedia hasta aplicaciones como applets o visualizadores.
+                  </li>
+                  <li>
+                    Finalmente,
+                    <code class="language-html">&lt;param></code> acompaña a
+                    <code class="language-html">&lt;object></code> y se encarga
+                    de definir los parámetros de configuración del contenido
+                    empotrado, como su comportamiento o presentación.
+                  </li>
+                </ul>
               </div>
-              <p>
-                Las etiquetas <code class="language-html">&lt;iframe></code>,
-                <code class="language-html">&lt;embed></code>,
-                <code class="language-html">&lt;object></code> y
-                <code class="language-html">&lt;param></code> forman parte de
-                los elementos utilizados para incrustar o integrar contenido
-                externo en una página web.
-              </p>
-              <ul>
-                <li>
-                  La etiqueta
-                  <code class="language-html">&lt;iframe></code> permite
-                  mostrar otro documento HTML dentro de la página actual, como
-                  si se abriera una ventana hacia otro sitio.
-                </li>
-                <li>
-                  por su parte,
-                  <code class="language-html">&lt;embed></code> facilita la
-                  inserción de contenido multimedia, como videos o documentos
-                  PDF, de forma directa y sin controles adicionales.
-                </li>
-                <li>
-                  La etiqueta
-                  <code class="language-html">&lt;object></code> es más
-                  versátil y se utiliza para insertar desde archivos
-                  multimedia hasta aplicaciones como applets o visualizadores.
-                </li>
-                <li>
-                  Finalmente,
-                  <code class="language-html">&lt;param></code> acompaña a
-                  <code class="language-html">&lt;object></code> y se encarga
-                  de definir los parámetros de configuración del contenido
-                  empotrado, como su comportamiento o presentación.
-                </li>
-              </ul>
             </div>
             <!-- Introducción Fin -->
             <hr class="site-divider--subtle site-divider" />
@@ -1009,33 +1010,33 @@
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
+          <div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo">
             <div class="border border-1">
               <div class="site-menu__item">
-                <a href="#introduccion" class="site-menu__link">Introducción</a>
+                <a href="#introduccion" class=" list-group-item list-group-item-action">Introducción</a>
               </div>
 
               <div class="site-menu__item">
-                <a href="#elemento-iframe" class="site-menu__link">Elemento <code
+                <a href="#elemento-iframe" class=" list-group-item list-group-item-action">Elemento <code
                     class="language-html">&lt;iframe></code></a>
               </div>
 
               <div class="site-menu__item">
-                <a href="#elemento-embed" class="site-menu__link">Elemento <code class="language-html">&lt;embed></code></a>
+                <a href="#elemento-embed" class=" list-group-item list-group-item-action">Elemento <code class="language-html">&lt;embed></code></a>
               </div>
 
               <div class="site-menu__item">
-                <a href="#elemento-object" class="site-menu__link">Elemento <code
+                <a href="#elemento-object" class=" list-group-item list-group-item-action">Elemento <code
                     class="language-html">&lt;object></code></a>
               </div>
 
               <div class="site-menu__item">
-                <a href="#elemento-param" class="site-menu__link">Elemento <code class="language-html">&lt;param></code></a>
+                <a href="#elemento-param" class=" list-group-item list-group-item-action">Elemento <code class="language-html">&lt;param></code></a>
               </div>
 
               <!-- Comentarios  -->
               <div class="site-menu__item">
-                <a href="#comments" class="site-menu__link">Comentarios</a>
+                <a href="#comments" class=" list-group-item list-group-item-action">Comentarios</a>
               </div>
             </div>
           </div>

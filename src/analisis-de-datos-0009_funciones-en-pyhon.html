@@ -62,7 +62,8 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy"
+  data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0, 0.01, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -93,7 +94,8 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">ARTÍCULOS</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link"
+              href="index.html#blog">ARTÍCULOS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -111,17 +113,16 @@
   <!-- Barra de Navegación -->
 
   <!--  Principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Funciones en Python-->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
-          <header>
-            <h1>Funciones en Python</h1>
-          </header>
+        <article class="row border-1 border-bottom pb-3">
           <!-- Introducción -->
-          <div>
+          <div id="introduccion">
+            <header>
+              <h1>Funciones en Python</h1>
+            </header>
             <h2>Introducción: Funciones en Python</h2>
             <div class="site-image site-intro-image mb-5">
               <figure class="site-content__img-container site-image__figure site-image__figure--intro">
@@ -149,6 +150,9 @@
             <p>En programación, una función es un bloque de código organizado y reutilizable que realiza una tarea
               específica. Las funciones permiten dividir programas complejos en partes más pequeñas y manejables,
               promoviendo la modularidad, la legibilidad y la reutilización del código.</p>
+            <p>La idea con una analogía: Una función es como una receta de cocina con nombre. La receta se escribe una
+              sola vez y se usa cuantas veces haga falta: se le entregan ingredientes (parámetros), ejecuta los pasos y
+              devuelve un plato terminado (resultado).</p>
           </div>
           <!-- Que Son las Funciones Fin -->
           <hr class="site-divider--subtle site-divider" />
@@ -221,11 +225,32 @@
             <ul>
               <li><span class="fw-bold">Funciones integradas (built-in functions)</span>: Son funciones que ya están
                 definidas en el lenguaje y se pueden utilizar directamente sin necesidad de importarlas. <br>
-                Ejemplos: <code class="language-py">print()</code>, <code class="language-py">len()</code>, <code
-                  class="language-py">type()</code>, <code class="language-py">max()</code>, <code
-                  class="language-py">min()</code>.</li>
+                Ejemplo:
+                <div class="code-example__full-syntax">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                        print("Hola")
+                        len([1, 2, 3])      # 3
+                        max(4, 9, 2)        # 9
+                        type(5)             # <class 'int'>
+                    </code>
+                  </pre>
+                </div>
+              </li>
               <li><span class="fw-bold">Funciones definidas por el usuario</span>: Son funciones que el programador crea
-                para realizar tareas específicas.</li>
+                para realizar tareas específicas:
+                Ejemplo:
+                <div class="code-example__full-syntax">
+                  <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-py" data-prismjs-copy="Copy">
+                        def saludar(nombre):
+                            return f"Hola, {nombre}"
+
+                        print(saludar("Ana"))
+                    </code>
+                  </pre>
+                </div>
+              </li>
             </ul>
           </div>
           <!-- Tipos de Funciones Fin -->
@@ -483,7 +508,7 @@
           <hr class="site-divider--subtle site-divider" />
 
           <!-- Funciones Lambda (Anónimas) -->
-          <div id="funciones-lambda-(anonimas)">
+          <div id="funciones-lambda-anonimas">
             <h2>Funciones Lambda (Anónimas)</h2>
             <p>Las funciones <code class="language-py">lambda</code> son funciones pequeñas y anónimas que se definen en
               una sola línea utilizando la palabra clave <code class="language-py">lambda</code>. Se utilizan
@@ -646,7 +671,8 @@
                   <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
                     class="form-control rounded-3" required></textarea>
                 </div>
-                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">Enviar</button>
+                <button type="submit"
+                  class="btn site-button btn-outline-light my-3 border rounded-pill border-2">Enviar</button>
               </fieldset>
               <p class="small text-center">La política de privacidad, y los términos y condiciones estándisponibles en
                 el formulario de contacto.</p>
@@ -659,60 +685,55 @@
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
+          <div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo">
             <div class="border border-1">
               <div class="site-menu__item">
-                <a href="#introduccion" class="site-menu__link">Introducción</a>
+                <a href="#introduccion" class="list-group-item list-group-item-action">Introducción</a>
               </div>
               <div class="site-menu__item">
-                <a href="#que-son-las-funciones" class="site-menu__link">Que Son las Funciones</a>
+                <a href="#que-son-las-funciones" class="list-group-item list-group-item-action">Que Son las
+                  Funciones</a>
               </div>
               <div class="site-menu__item">
-                <a href="#sintaxis-de-una-funcion-en-python" class="site-menu__link">Sintaxis de una Función en Python</a>
+                <a href="#sintaxis-de-una-funcion-en-python" class="list-group-item list-group-item-action">Sintaxis de
+                  una Función en Python</a>
               </div>
               <div class="site-menu__item">
-                <a href="#tipos-de-funciones" class="site-menu__link">Tipos de Funciones</a>
+                <a href="#tipos-de-funciones" class="list-group-item list-group-item-action">Tipos de Funciones</a>
               </div>
               <div class="site-menu__item">
-                <details>
-                  <summary>
-                    Argumentos de una Función
-                  </summary>
-                  <div class="site-menu__submenu">
-                    <a href="#argumentos-de-una-funcion" class="site-menu__submenu-link">Argumentos de una Función</a>
-                    <a href="#argumentos-posicionales" class="site-menu__submenu-link">Argumentos Posicionales</a>
-                    <a href="#argumentos-por-nombre" class="site-menu__submenu-link">Argumentos por Nombre</a>
-                    <a href="#argumentos-por-defecto" class="site-menu__submenu-link">Argumentos por Defecto</a>
-                    <a href="#argumentos-variables" class="site-menu__submenu-link">Argumentos Variables</a>
-                    <a href="#ejemplo-argumentos-variables" class="site-menu__submenu-link">Ejemplo Argumentos Variables</a>
-                  </div>
-                </details>
+                <a href="#argumentos-de-una-funcion" class="list-group-item list-group-item-action">Argumentos de una
+                  Función</a>
               </div>
               <div class="site-menu__item">
-                <a href="#valores-de-retorno" class="site-menu__link">Valores de Retorno</a>
+                <a href="#valores-de-retorno" class="list-group-item list-group-item-action">Valores de Retorno</a>
               </div>
               <div class="site-menu__item">
-                <a href="#alcance-de-las-variables" class="site-menu__link">Alcance de las Variables</a>
-                </li>
-                <div class="site-menu__item">
-                  <a href="#funciones-lambda-(anonimas)" class="site-menu__link">Funciones Lambda (Anónimas)</a>
-                </div>
+                <a href="#alcance-de-las-variables" class="list-group-item list-group-item-action">Alcance de las
+                  Variables</a>
+              </div>
+              <div class="site-menu__item">
+                <a href="#funciones-lambda-anonimas" class="list-group-item list-group-item-action">Funciones Lambda
+                  (Anónimas)</a>
+              </div>
 
-                <a href="#recursividad" class="site-menu__link">Recursividad</a>
+              <div class="site-menu__item">
+                <a href="#recursividad" class="list-group-item list-group-item-action">Recursividad</a>
+              </div>
 
-                <div class="site-menu__item">
-                  <a href="#decoradores" class="site-menu__link">Decoradores</a>
-                </div>
-                <div class="site-menu__item">
-                  <a href="#mejores-practicas" class="site-menu__link">Mejores Prácticas</a>
-                </div>
-                <!-- Comentarios  -->
-                <div class="site-menu__item">
-                  <a href="#comments" class="site-menu__link">Comentarios</a>
-                </div>
+              <div class="site-menu__item">
+                <a href="#decoradores" class="list-group-item list-group-item-action">Decoradores</a>
+              </div>
+              <div class="site-menu__item">
+                <a href="#mejores-practicas" class="list-group-item list-group-item-action">Mejores Prácticas</a>
+              </div>
+              <!-- Comentarios  -->
+              <div class="site-menu__item">
+                <a href="#comments" class="list-group-item list-group-item-action">Comentarios</a>
               </div>
             </div>
           </div>
+        </div>
       </aside>
       <!-- -------------------------------- fin barra lateral -------------------------------- -->
     </main>

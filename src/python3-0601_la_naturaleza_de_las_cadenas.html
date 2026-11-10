@@ -60,7 +60,7 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy" data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -109,38 +109,39 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  La naturaleza de las cadenas en Python  -->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
-          <header>
-            <h1>La naturaleza de las cadenas en Python</h1>
-          </header>
-          <!-- Introducción -->
-          <div class="mt-3">
-            <h2>Introducción</h2>
-            <div class="site-image site-intro-image mb-5">
-              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
-                <img loading="lazy" src="https://i.ibb.co/VHpnX1w/cadenas.jpg" class="img-fluid"
-                  alt="La naturaleza de las cadenas en Python"
-                  title="Guía visual de cadenas en Python: tipos, métodos y manipulación de strings" />
-                <figcaption class="site-image__caption">
-                  La naturaleza de las cadenas en Python
-                </figcaption>
-              </figure>
-            </div>
-            <p>
-              En este artículo se explora la naturaleza de las cadenas en
-              Python, un tipo de dato fundamental en este lenguaje de
-              programación. Las cadenas son secuencias de caracteres que
-              permiten almacenar y manipular texto de manera eficiente. A lo
-              largo de este documento, se abordarán las características,
-              métodos y usos de las cadenas, así como su importancia en el
-              desarrollo de aplicaciones.
-            </p>
+        <article class="row border-1 border-bottom pb-3">
+          <div id="introduccion">
+            <header>
+              <h1>La naturaleza de las cadenas en Python</h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-3">
+              <h2>Introducción</h2>
+              <div class="site-image site-intro-image mb-5">
+                <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                  <img loading="lazy" src="https://i.ibb.co/VHpnX1w/cadenas.jpg" class="img-fluid"
+                    alt="La naturaleza de las cadenas en Python"
+                    title="Guía visual de cadenas en Python: tipos, métodos y manipulación de strings" />
+                  <figcaption class="site-image__caption">
+                    La naturaleza de las cadenas en Python
+                  </figcaption>
+                </figure>
+              </div>
+              <p>
+                En este artículo se explora la naturaleza de las cadenas en
+                Python, un tipo de dato fundamental en este lenguaje de
+                programación. Las cadenas son secuencias de caracteres que
+                permiten almacenar y manipular texto de manera eficiente. A lo
+                largo de este documento, se abordarán las características,
+                métodos y usos de las cadenas, así como su importancia en el
+                desarrollo de aplicaciones.
+              </p>
 
+            </div>
           </div>
           <hr class="site-divider--subtle site-divider" />
 
@@ -1050,17 +1051,17 @@
         <!--  fin comentarios  -->
       </section>
 
-<!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h2>En Este Artículo</h2><div class="site-menu__scroll"><div class="site-menu"><div class="border border-1">
-<div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
-<div class="site-menu__item"><a href="#caracteristicas-de-las-cadenas" class="site-menu__link">Características de las Cadenas</a></div>
-<div class="site-menu__item"><a href="#creacion-de-cadenas" class="site-menu__link">Creación de Cadenas</a></div>
-<div class="site-menu__item"><a href="#operaciones-con-cadenas" class="site-menu__link">Operaciones con Cadenas</a></div>
-<div class="site-menu__item"><a href="#uso-de-caracteres-especiales" class="site-menu__link">Uso de Caracteres Especiales</a></div>
-<div class="site-menu__item"><a href="#representacion-de-cadenas-crudas" class="site-menu__link">Representación de Cadenas Crudas</a></div>
-<div class="site-menu__item"><a href="#soporte-para-iteracion" class="site-menu__link">Soporte para Iteración</a></div>
-<div class="site-menu__item"><a href="#dar-formato-a-las-cadenas " class="site-menu__link">Dar Formato a las Cadenas</a></div>
+<!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h2>En Este Artículo</h2><div class="site-menu__scroll"><div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo"><div class="border border-1">
+<div class="site-menu__item"><a href="#introduccion" class=" list-group-item list-group-item-action">Introducción</a></div>
+<div class="site-menu__item"><a href="#caracteristicas-de-las-cadenas" class=" list-group-item list-group-item-action">Características de las Cadenas</a></div>
+<div class="site-menu__item"><a href="#creacion-de-cadenas" class=" list-group-item list-group-item-action">Creación de Cadenas</a></div>
+<div class="site-menu__item"><a href="#operaciones-con-cadenas" class=" list-group-item list-group-item-action">Operaciones con Cadenas</a></div>
+<div class="site-menu__item"><a href="#uso-de-caracteres-especiales" class=" list-group-item list-group-item-action">Uso de Caracteres Especiales</a></div>
+<div class="site-menu__item"><a href="#representacion-de-cadenas-crudas" class=" list-group-item list-group-item-action">Representación de Cadenas Crudas</a></div>
+<div class="site-menu__item"><a href="#soporte-para-iteracion" class=" list-group-item list-group-item-action">Soporte para Iteración</a></div>
+<div class="site-menu__item"><a href="#dar-formato-a-las-cadenas" class=" list-group-item list-group-item-action">Dar Formato a las Cadenas</a></div>
 <!-- Comentarios  -->
-<div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div></div></div></div></aside>
+<div class="site-menu__item"><a href="#comments" class=" list-group-item list-group-item-action">Comentarios</a></div></div></div></div></aside>
 <!--  fin barra lateral  -->
     </main>
     <!--  fin principal  -->

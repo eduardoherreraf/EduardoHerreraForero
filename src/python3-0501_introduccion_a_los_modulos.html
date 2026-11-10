@@ -60,7 +60,7 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy" data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -109,36 +109,37 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--   Introducción a los módulos en Python  -->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
-          <header>
-            <h1>Introducción a los módulos en Python</h1>
-          </header>
-          <!-- Introducción -->
-          <div class="mt-3">
-            <h2>Introducción</h2>
-            <div class="site-image site-intro-image mb-5">
-              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
-                <img loading="lazy" src="https://i.ibb.co/52CcWPN/intromodulos.jpg" class="img-fluid"
-                  alt=" Introducción a los módulos en Python  " title="Componentes Básicos de los Módulos de Python" />
-                <figcaption class="site-image__caption">Introducción a los módulos en Python</figcaption>
-              </figure>
-            </div>
-            <p>
-              Se explorará el concepto de módulos en Python, una
-              característica fundamental que permite organizar y reutilizar el
-              código de manera eficiente. Los módulos son archivos que
-              contienen definiciones y declaraciones de Python, y pueden
-              incluir funciones, clases y variables. Al utilizar módulos, los
-              desarrolladores pueden dividir su código en partes más
-              manejables, facilitando su mantenimiento y mejorando la
-              legibilidad.
-            </p>
+        <article class="row border-1 border-bottom pb-3">
+          <div id="introduccion">
+            <header>
+              <h1>Introducción a los módulos en Python</h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-3">
+              <h2>Introducción</h2>
+              <div class="site-image site-intro-image mb-5">
+                <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                  <img loading="lazy" src="https://i.ibb.co/52CcWPN/intromodulos.jpg" class="img-fluid"
+                    alt=" Introducción a los módulos en Python  " title="Componentes Básicos de los Módulos de Python" />
+                  <figcaption class="site-image__caption">Introducción a los módulos en Python</figcaption>
+                </figure>
+              </div>
+              <p>
+                Se explorará el concepto de módulos en Python, una
+                característica fundamental que permite organizar y reutilizar el
+                código de manera eficiente. Los módulos son archivos que
+                contienen definiciones y declaraciones de Python, y pueden
+                incluir funciones, clases y variables. Al utilizar módulos, los
+                desarrolladores pueden dividir su código en partes más
+                manejables, facilitando su mantenimiento y mejorando la
+                legibilidad.
+              </p>
 
+            </div>
           </div>
           <hr class="site-divider--subtle site-divider" />
 
@@ -584,14 +585,14 @@
         <!--  fin comentarios  -->
       </section>
 
-<!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h2>En Este Artículo</h2><div class="site-menu__scroll"><div class="site-menu"><div class="border border-1">
-<div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
-<div class="site-menu__item"><a href="#queEsUnModulo" class="site-menu__link">¿Qué es un módulo?</a></div>
-<div class="site-menu__item"><a href="#características-principales-deu-un-modulo" class="site-menu__link">Características Principales de un Módulo</a></div>
-<div class="site-menu__item"><a href="#tipos-de-modulos" class="site-menu__link">Tipos de módulos</a></div>
-<div class="site-menu__item"><a href="#creacion-de-un-modulo" class="site-menu__link">Creación de un módulo</a></div>
+<!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h2>En Este Artículo</h2><div class="site-menu__scroll"><div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo"><div class="border border-1">
+<div class="site-menu__item"><a href="#introduccion" class=" list-group-item list-group-item-action">Introducción</a></div>
+<div class="site-menu__item"><a href="#queEsUnModulo" class=" list-group-item list-group-item-action">¿Qué es un módulo?</a></div>
+<div class="site-menu__item"><a href="#características-principales-deu-un-modulo" class=" list-group-item list-group-item-action">Características Principales de un Módulo</a></div>
+<div class="site-menu__item"><a href="#tipos-de-modulos" class=" list-group-item list-group-item-action">Tipos de módulos</a></div>
+<div class="site-menu__item"><a href="#creacion-de-un-modulo" class=" list-group-item list-group-item-action">Creación de un módulo</a></div>
 <!-- Comentarios  -->
-<div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div></div></div></div></aside>
+<div class="site-menu__item"><a href="#comments" class=" list-group-item list-group-item-action">Comentarios</a></div></div></div></div></aside>
 <!--  fin barra lateral  -->
     </main>
     <!--  fin principal  -->

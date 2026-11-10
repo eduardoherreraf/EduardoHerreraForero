@@ -61,7 +61,7 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy" data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -110,37 +110,38 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Sentencia if de Control de Flujo en Python -->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
-          <header>
-            <h1>Sentencia <code class="language-python" style="font-size: 0.7em;"> if</code> de Control de Flujo en Python</h1>
-          </header>
-          <!-- Introducción -->
-          <div class="mt-3">
-            <h2>Introducción</h2>
-            <div class="site-image site-intro-image mb-5">
-              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
-                <img loading="lazy" src="https://i.ibb.co/VtYvtX5/sentenciaif.jpg" class="img-fluid"
-                  alt="¿Cómo se debe usar la declaración if?"
-                  title="En este artículo se explicará la sentencia condicional if en Python y todas sus variantes." />
-                <figcaption class="site-image__caption">
-                  ¿Cómo se debe usar la declaración if?
-                </figcaption>
-              </figure>
-            </div>
-            <p>
-              La sentencia if es una de las estructuras de control de flujo
-              más fundamentales en Python. Permite a los programadores tomar
-              decisiones en función de condiciones específicas, lo que hace
-              que el código sea más dinámico y adaptable. En este artículo,
-              exploraremos en profundidad cómo funciona la sentencia if, sus
-              variantes, y ejemplos prácticos que ilustran su uso.
-            </p>
+        <article class="row border-1 border-bottom pb-3">
+          <div id="introduccion">
+            <header>
+              <h1>Sentencia <code class="language-python" style="font-size: 0.7em;"> if</code> de Control de Flujo en Python</h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-3">
+              <h2>Introducción</h2>
+              <div class="site-image site-intro-image mb-5">
+                <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                  <img loading="lazy" src="https://i.ibb.co/VtYvtX5/sentenciaif.jpg" class="img-fluid"
+                    alt="¿Cómo se debe usar la declaración if?"
+                    title="En este artículo se explicará la sentencia condicional if en Python y todas sus variantes." />
+                  <figcaption class="site-image__caption">
+                    ¿Cómo se debe usar la declaración if?
+                  </figcaption>
+                </figure>
+              </div>
+              <p>
+                La sentencia if es una de las estructuras de control de flujo
+                más fundamentales en Python. Permite a los programadores tomar
+                decisiones en función de condiciones específicas, lo que hace
+                que el código sea más dinámico y adaptable. En este artículo,
+                exploraremos en profundidad cómo funciona la sentencia if, sus
+                variantes, y ejemplos prácticos que ilustran su uso.
+              </p>
 
+            </div>
           </div>
           <hr class="site-divider--subtle site-divider" />
           <!-- Sentencia if-then  -->
@@ -361,18 +362,18 @@
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
+          <div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo">
             <div class="border border-1">
-              <div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
-              <div class="site-menu__item"><a href="#sentencia-if-then" class="site-menu__link">Sentencia <code
+              <div class="site-menu__item"><a href="#introduccion" class=" list-group-item list-group-item-action">Introducción</a></div>
+              <div class="site-menu__item"><a href="#sentencia-if-then" class=" list-group-item list-group-item-action">Sentencia <code
                     class="language-python">if-then</code></a></div>
-              <div class="site-menu__item"><a href="#aentencia-if-then-else" class="site-menu__link">Sentencia <code
+              <div class="site-menu__item"><a href="#aentencia-if-then-else" class=" list-group-item list-group-item-action">Sentencia <code
                     class="language-python">if-then-else</code></a></div>
-              <div class="site-menu__item"><a href="#sentencia-if-elif-else" class="site-menu__link">Sentencia <code
+              <div class="site-menu__item"><a href="#sentencia-if-elif-else" class=" list-group-item list-group-item-action">Sentencia <code
                     class="language-python">if-elif-else</code></a></div>
-              <div class="site-menu__item"><a href="#indentacion" class="site-menu__link">Indentación</a></div>
+              <div class="site-menu__item"><a href="#indentacion" class=" list-group-item list-group-item-action">Indentación</a></div>
               <!-- Comentarios  -->
-              <div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div>
+              <div class="site-menu__item"><a href="#comments" class=" list-group-item list-group-item-action">Comentarios</a></div>
             </div>
           </div>
         </div>

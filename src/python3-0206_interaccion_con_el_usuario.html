@@ -60,7 +60,7 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy" data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -109,39 +109,40 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Interacción con el Usuario en Python  -->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
-          <header>
-            <h1>Interacción con el Usuario en Python</h1>
-          </header>
-          <!-- Introducción -->
-          <div class="mt-3">
-            <h2>Introducción</h2>
-            <div class="site-image site-intro-image mb-5">
-              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
-                <img loading="lazy" src="https://i.ibb.co/wNwH0x3/input.jpg" class="img-fluid" alt="Función input() en Python"
-                  title="Diagrama del funcionamiento de la función input() en Python" />
-                <figcaption class="site-image__caption">Función input() en Python</figcaption>
-              </figure>
-            </div>
-            <p>
-              La función <code class="language-python">input()</code> en
-              Python es una herramienta fundamental para interactuar con el
-              usuario. Permite que el programa solicite y reciba información
-              directamente del teclado.
-            </p>
-            <p>
-              Cuando se llama a esta función, el programa se detiene y
-              espera a que el usuario ingrese algún dato. Una vez que el
-              usuario presiona
-              <kbd>Enter</kbd>, el valor ingresado se devuelve como una
-              cadena de texto (string).
-            </p>
+        <article class="row border-1 border-bottom pb-3">
+          <div id="introduccion">
+            <header>
+              <h1>Interacción con el Usuario en Python</h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-3">
+              <h2>Introducción</h2>
+              <div class="site-image site-intro-image mb-5">
+                <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                  <img loading="lazy" src="https://i.ibb.co/wNwH0x3/input.jpg" class="img-fluid" alt="Función input() en Python"
+                    title="Diagrama del funcionamiento de la función input() en Python" />
+                  <figcaption class="site-image__caption">Función input() en Python</figcaption>
+                </figure>
+              </div>
+              <p>
+                La función <code class="language-python">input()</code> en
+                Python es una herramienta fundamental para interactuar con el
+                usuario. Permite que el programa solicite y reciba información
+                directamente del teclado.
+              </p>
+              <p>
+                Cuando se llama a esta función, el programa se detiene y
+                espera a que el usuario ingrese algún dato. Una vez que el
+                usuario presiona
+                <kbd>Enter</kbd>, el valor ingresado se devuelve como una
+                cadena de texto (string).
+              </p>
 
+            </div>
           </div>
           <hr class="site-divider--subtle site-divider" />
 
@@ -580,21 +581,21 @@
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
+          <div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo">
             <div class="border border-1">
-              <div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
-              <div class="site-menu__item"><a href="#la-funcion-input" class="site-menu__link">La función <code
+              <div class="site-menu__item"><a href="#introduccion" class=" list-group-item list-group-item-action">Introducción</a></div>
+              <div class="site-menu__item"><a href="#la-funcion-input" class=" list-group-item list-group-item-action">La función <code
                     class="language-python">input()</code></a></div>
-              <div class="site-menu__item"><a href="#el-resultado-de-la-funcion-input" class="site-menu__link">El Resultado de la
+              <div class="site-menu__item"><a href="#el-resultado-de-la-funcion-input" class=" list-group-item list-group-item-action">El Resultado de la
                   Función <code class="language-python">input()</code></a></div>
-              <div class="site-menu__item"><a href="#conversion-de-tipos" class="site-menu__link">Conversión de Tipos</a></div>
-              <div class="site-menu__item"><a href="#operadores-cadena" class="site-menu__link">Operadores Cadena</a></div>
-              <div class="site-menu__item"><a href="#otros-tipos-de-conversiones" class="site-menu__link">Otros Tipos de
+              <div class="site-menu__item"><a href="#conversion-de-tipos" class=" list-group-item list-group-item-action">Conversión de Tipos</a></div>
+              <div class="site-menu__item"><a href="#operadores-cadena" class=" list-group-item list-group-item-action">Operadores Cadena</a></div>
+              <div class="site-menu__item"><a href="#otros-tipos-de-conversiones" class=" list-group-item list-group-item-action">Otros Tipos de
                   Conversiones</a></div>
-              <div class="site-menu__item"><a href="#funcion-de-Verificacion-de-tipo" class="site-menu__link">Función de
+              <div class="site-menu__item"><a href="#funcion-de-Verificacion-de-tipo" class=" list-group-item list-group-item-action">Función de
                   Verificación de Tipo</a></div>
               <!-- Comentarios  -->
-              <div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div>
+              <div class="site-menu__item"><a href="#comments" class=" list-group-item list-group-item-action">Comentarios</a></div>
             </div>
           </div>
         </div>

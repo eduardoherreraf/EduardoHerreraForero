@@ -62,7 +62,7 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy" data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -111,49 +111,50 @@
   <!-- Barra de Navegación -->
 
   <!-- Principal -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Etiquetas de Programación y Scripts-->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
+        <article class="row border-1 border-bottom pb-3">
 
-            <header>
-              <h1>Etiquetas de Programación y Scripts</h1>
-            </header>
-            <!-- Introducción -->
-            <div class="mt-3">
-              <h2>Introducción</h2>
-              <div class="site-image site-intro-image mb-5">
-                <figure class="site-content__img-container site-image__figure site-image__figure--intro">
-                  <img src="https://i.ibb.co/mCHFPLDm/Script-como-director-de-orquesta-Compressed.png" class="img-fluid"
-                    alt="Dibujo de un escenario con actores, decorado y un director usando un megáfono bajo un cartel que dice <script>."
-                    title="Etiquetas de Programación y Scripts" loading="lazy" />
-                  <figcaption class="site-image__caption">
-                    Escenario que representa cómo la etiqueta &lt;script>
-                    permite que el director (JavaScript) dirija movimiento e
-                    interactividad a los elementos de una página, mientras que
-                    HTML define la estructura y CSS aporta el estilo.
-                  </figcaption>
-                </figure>
+            <div id="introduccion">
+              <header>
+                <h1>Etiquetas de Programación y Scripts</h1>
+              </header>
+              <!-- Introducción -->
+              <div class="mt-3">
+                <h2>Introducción</h2>
+                <div class="site-image site-intro-image mb-5">
+                  <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                    <img src="https://i.ibb.co/mCHFPLDm/Script-como-director-de-orquesta-Compressed.png" class="img-fluid"
+                      alt="Dibujo de un escenario con actores, decorado y un director usando un megáfono bajo un cartel que dice <script>."
+                      title="Etiquetas de Programación y Scripts" loading="lazy" />
+                    <figcaption class="site-image__caption">
+                      Escenario que representa cómo la etiqueta &lt;script>
+                      permite que el director (JavaScript) dirija movimiento e
+                      interactividad a los elementos de una página, mientras que
+                      HTML define la estructura y CSS aporta el estilo.
+                    </figcaption>
+                  </figure>
+                </div>
+                <p>
+                  En el desarrollo web, etiquetas como
+                  <code class="language-html">&lt;script></code>,
+                  <code class="language-html">&lt;noscript></code> y
+                  <code class="language-html">&lt;template></code> permiten
+                  añadir dinamismo, control y flexibilidad al contenido. La
+                  etiqueta
+                  <code class="language-html">&lt;script></code> facilita la
+                  incorporación de JavaScript para hacer la página interactiva;
+                  <code class="language-html">&lt;noscript></code> ofrece
+                  contenido alternativo cuando JavaScript no está disponible; y
+                  <code class="language-html">&lt;template></code> define
+                  fragmentos de código HTML reutilizables que no se renderizan
+                  hasta ser activados mediante scripts. Estas herramientas
+                  amplían las posibilidades del HTML, creando experiencias más
+                  ricas y adaptables.
+                </p>
               </div>
-              <p>
-                En el desarrollo web, etiquetas como
-                <code class="language-html">&lt;script></code>,
-                <code class="language-html">&lt;noscript></code> y
-                <code class="language-html">&lt;template></code> permiten
-                añadir dinamismo, control y flexibilidad al contenido. La
-                etiqueta
-                <code class="language-html">&lt;script></code> facilita la
-                incorporación de JavaScript para hacer la página interactiva;
-                <code class="language-html">&lt;noscript></code> ofrece
-                contenido alternativo cuando JavaScript no está disponible; y
-                <code class="language-html">&lt;template></code> define
-                fragmentos de código HTML reutilizables que no se renderizan
-                hasta ser activados mediante scripts. Estas herramientas
-                amplían las posibilidades del HTML, creando experiencias más
-                ricas y adaptables.
-              </p>
             </div>
             <!-- Introducción Fin -->
             <hr class="site-divider--subtle site-divider" />
@@ -1031,27 +1032,27 @@
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
+          <div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo">
             <div class="border border-1">
               <div class="site-menu__item">
-                <a href="#introduccion" class="site-menu__link">Introducción</a>
+                <a href="#introduccion" class=" list-group-item list-group-item-action">Introducción</a>
               </div>
               <div class="site-menu__item">
-                <a href="#elemento-script" class="site-menu__link">Elemento <code
+                <a href="#elemento-script" class=" list-group-item list-group-item-action">Elemento <code
                     class="language-html">&lt;script></code></a>
               </div>
               <div class="site-menu__item">
-                <a href="#elemento-noscript" class="site-menu__link">Elemento <code
+                <a href="#elemento-noscript" class=" list-group-item list-group-item-action">Elemento <code
                     class="language-html">&lt;noscript></code></a>
               </div>
               <div class="site-menu__item">
-                <a href="#elemento-template" class="site-menu__link">Elemento <code
+                <a href="#elemento-template" class=" list-group-item list-group-item-action">Elemento <code
                     class="language-html">&lt;template></code></a>
               </div>
 
               <!-- Comentarios  -->
               <div class="site-menu__item">
-                <a href="#comments" class="site-menu__link">Comentarios</a>
+                <a href="#comments" class=" list-group-item list-group-item-action">Comentarios</a>
               </div>
             </div>
           </div>

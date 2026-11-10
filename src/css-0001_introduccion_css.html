@@ -63,7 +63,7 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy" data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -112,34 +112,35 @@
   <!-- Barra de Navegación -->
 
   <!--  Principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Guía Completa de CSS: Domina las Hojas de Estilo en Cascada-->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
-          <header>
-            <h1>Guía Completa de CSS: Domina las Hojas de Estilo en Cascada</h1>
-          </header>
-          <!-- Introducción -->
-          <div class="mt-3">
-            <h2>Introducción</h2>
-            <div class="site-image site-intro-image mb-5">
-              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
-                <picture>
-                  <source srcset="https://i.ibb.co/FkBs2Hfy/css3-seeklog-comp-sm.png" type="image/png">
-                  <img src="https://i.ibb.co/FkBs2Hfy/css3-seeklog-comp-sm.png" class="img-fluid"
-                    alt="Logo de CSS3 - Escudo azul con el texto CSS3." title="CSS - Cascading Style Sheets"
-                    loading="lazy" />
-                </picture>
-                <figcaption class="site-image__caption">Logo oficial de CSS3, el estándar para hojas de estilo en cascada
-                  utilizado en el desarrollo web moderno.</figcaption>
-              </figure>
+        <article class="row border-1 border-bottom pb-3">
+          <div id="introduccion">
+            <header>
+              <h1>Guía Completa de CSS: Domina las Hojas de Estilo en Cascada</h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-3">
+              <h2>Introducción</h2>
+              <div class="site-image site-intro-image mb-5">
+                <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                  <picture>
+                    <source srcset="https://i.ibb.co/FkBs2Hfy/css3-seeklog-comp-sm.png" type="image/png">
+                    <img src="https://i.ibb.co/FkBs2Hfy/css3-seeklog-comp-sm.png" class="img-fluid"
+                      alt="Logo de CSS3 - Escudo azul con el texto CSS3." title="CSS - Cascading Style Sheets"
+                      loading="lazy" />
+                  </picture>
+                  <figcaption class="site-image__caption">Logo oficial de CSS3, el estándar para hojas de estilo en cascada
+                    utilizado en el desarrollo web moderno.</figcaption>
+                </figure>
+              </div>
+              <p>Este artículo proporciona una introducción completa a <abbr title="Cascading Style Sheets">CSS</abbr>, el
+                lenguaje fundamental para controlar la presentación y el estilo de los documentos HTML. Exploraremos los
+                conceptos básicos de CSS, su sintaxis, cómo aplicarlo a tus páginas web y las ventajas de utilizarlo para
+                crear sitios web visualmente atractivos y accesibles.</p>
             </div>
-            <p>Este artículo proporciona una introducción completa a <abbr title="Cascading Style Sheets">CSS</abbr>, el
-              lenguaje fundamental para controlar la presentación y el estilo de los documentos HTML. Exploraremos los
-              conceptos básicos de CSS, su sintaxis, cómo aplicarlo a tus páginas web y las ventajas de utilizarlo para
-              crear sitios web visualmente atractivos y accesibles.</p>
           </div>
           <!-- Introducción Fin -->
           <hr class="site-divider--subtle site-divider" />
@@ -465,25 +466,15 @@
       </section>
 
       <!-- -------------------------------- barra lateral -------------------------------- -->
-      <aside class="col-lg-3 d-none d-lg-block">
-        <h2>En Este Artículo</h2>
+      <aside class="col-lg-3 d-none d-lg-block" aria-labelledby="article-menu-title">
+        <h2 id="article-menu-title">En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
-            <div class="border border-1">
-              <div class="site-menu__item">
-                <a href="#introduccion" class="site-menu__link">Introducción</a>
-              </div>
-              <div class="site-menu__item">
-                <a href="#que-es-css" class="site-menu__link">¿Qué es CSS?</a>
-              </div>
-              <div class="site-menu__item">
-                <a href="#beneficios-de-usar-css" class="site-menu__link">Beneficios de Usar CSS</a>
-              </div>
-              <!-- Comentarios  -->
-              <div class="site-menu__item">
-                <a href="#comments" class="site-menu__link">Comentarios</a>
-              </div>
-            </div>
+          <!-- Bootstrap aplica .active al enlace de la seccion visible. -->
+          <div id="article-scrollspy" class="list-group" role="navigation" aria-labelledby="article-menu-title">
+            <a class="list-group-item list-group-item-action" href="#introduccion">Introducción</a>
+            <a class="list-group-item list-group-item-action" href="#que-es-css">¿Qué es CSS?</a>
+            <a class="list-group-item list-group-item-action" href="#beneficios-de-usar-css">Beneficios de Usar CSS</a>
+            <a class="list-group-item list-group-item-action" href="#comments">Comentarios</a>
           </div>
         </div>
       </aside>

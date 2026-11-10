@@ -52,11 +52,12 @@
   <title>POO: Herencia Python 3 - Ing. Eduardo Herrera Forero.</title>
 
   <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/article-scrollspy.js"></script>
 
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -105,44 +106,45 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  POO: Herencia en Python  -->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
-          <header>
-            <h1>POO: Herencia en Python</h1>
-          </header>
+        <article class="row border-1 border-bottom pb-3">
+          <div id="introduccion">
+            <header>
+              <h1>POO: Herencia en Python</h1>
+            </header>
 
-          <!-- Introducción -->
-          <div class="mt-3">
-            <h2>Introducción</h2>
-            <div class="site-image site-intro-image mb-5">
-              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
-                <img loading="lazy" src="https://i.ibb.co/BLLRnCg/pooherencia.jpg" class="img-fluid" alt="POO: Herencia en Python  "
-                  title="Entendiendo la Herencia en Python" />
-                <figcaption class="site-image__caption">POO: Herencia en Python</figcaption>
-              </figure>
+            <!-- Introducción -->
+            <div class="mt-3">
+              <h2>Introducción</h2>
+              <div class="site-image site-intro-image mb-5">
+                <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                  <img loading="lazy" src="https://i.ibb.co/BLLRnCg/pooherencia.jpg" class="img-fluid" alt="POO: Herencia en Python  "
+                    title="Entendiendo la Herencia en Python" />
+                  <figcaption class="site-image__caption">POO: Herencia en Python</figcaption>
+                </figure>
+              </div>
+              <p>
+                La Programación Orientada a Objetos (POO) es un paradigma
+                fundamental en el desarrollo de software que permite organizar
+                el código de manera más eficiente y modular. Uno de los
+                conceptos clave de la POO es la herencia, que permite a las
+                clases heredar atributos y métodos de otras clases. En este
+                documento, exploraremos los fundamentos de la herencia en
+                Python, sus beneficios, y cómo implementarla en nuestros
+                programas.
+              </p>
+              <p>
+                La Programación Orientada a Objetos (POO) es un paradigma de
+                programación que organiza el código en torno a objetos, los
+                cuales combinan datos (atributos) y funciones (métodos). Uno
+                de los pilares fundamentales de la POO es la herencia, que
+                permite crear nuevas clases basadas en clases existentes.
+              </p>
+
             </div>
-            <p>
-              La Programación Orientada a Objetos (POO) es un paradigma
-              fundamental en el desarrollo de software que permite organizar
-              el código de manera más eficiente y modular. Uno de los
-              conceptos clave de la POO es la herencia, que permite a las
-              clases heredar atributos y métodos de otras clases. En este
-              documento, exploraremos los fundamentos de la herencia en
-              Python, sus beneficios, y cómo implementarla en nuestros
-              programas.
-            </p>
-            <p>
-              La Programación Orientada a Objetos (POO) es un paradigma de
-              programación que organiza el código en torno a objetos, los
-              cuales combinan datos (atributos) y funciones (métodos). Uno
-              de los pilares fundamentales de la POO es la herencia, que
-              permite crear nuevas clases basadas en clases existentes.
-            </p>
-
           </div>
           <hr class="site-divider--subtle site-divider" />
           <!-- ¿Qué es la Herencia? -->
@@ -1152,20 +1154,20 @@
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
+          <div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo">
             <div class="border border-1">
-              <div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
-              <div class="site-menu__item"><a href="#que-es-la-herencia" class="site-menu__link">¿Qué es la Herencia?</a></div>
-              <div class="site-menu__item"><a href="#herencia-multiple" class="site-menu__link">Herencia Múltiple</a></div>
-              <div class="site-menu__item"><a href="#metodos-especiales-y-super" class="site-menu__link">Métodos especiales y
+              <div class="site-menu__item"><a href="#introduccion" class=" list-group-item list-group-item-action">Introducción</a></div>
+              <div class="site-menu__item"><a href="#que-es-la-herencia" class=" list-group-item list-group-item-action">¿Qué es la Herencia?</a></div>
+              <div class="site-menu__item"><a href="#herencia-multiple" class=" list-group-item list-group-item-action">Herencia Múltiple</a></div>
+              <div class="site-menu__item"><a href="#metodos-especiales-y-super" class=" list-group-item list-group-item-action">Métodos especiales y
                   <code class="language-python">super()</code></a></div>
-              <div class="site-menu__item"><a href="#comoconstruir-una-jerarquia-de-clases" class="site-menu__link">Cómo Construir
+              <div class="site-menu__item"><a href="#comoconstruir-una-jerarquia-de-clases" class=" list-group-item list-group-item-action">Cómo Construir
                   una Jerarquía de Clases</a></div>
-              <div class="site-menu__item"><a href="#ventajas-de-la-herencia" class="site-menu__link">Ventajas de la Herencia</a>
+              <div class="site-menu__item"><a href="#ventajas-de-la-herencia" class=" list-group-item list-group-item-action">Ventajas de la Herencia</a>
               </div>
-              <div class="site-menu__item"><a href="#buenas-practicas" class="site-menu__link">Buenas Prácticas</a></div>
+              <div class="site-menu__item"><a href="#buenas-practicas" class=" list-group-item list-group-item-action">Buenas Prácticas</a></div>
               <!-- Comentarios  -->
-              <div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div>
+              <div class="site-menu__item"><a href="#comments" class=" list-group-item list-group-item-action">Comentarios</a></div>
             </div>
           </div>
         </div>

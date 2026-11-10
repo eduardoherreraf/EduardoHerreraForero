@@ -50,7 +50,7 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy" data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -98,13 +98,12 @@
   </nav>
   <!-- Barra de Navegación -->
   <!--  principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!-- Configuración Inicial de GIT  -->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
-          <header>
+        <article class="row border-1 border-bottom pb-3">
+          <header id="introduccion">
             <h1>Configuración Inicial de GIT</h1>
           </header>
           <!-- Introducción -->
@@ -669,36 +668,36 @@
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
+          <div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo">
             <div class="border border-1">
               <div class="site-menu__item">
-                <a href="#introduccion" class="site-menu__link">Introducción</a>
+                <a href="#introduccion" class=" list-group-item list-group-item-action">Introducción</a>
               </div>
               <div class="site-menu__item">
-                <a href="#configuracion-nombre-y-correo-usuario" class="site-menu__link">Configuración el Nombre y el Correo
+                <a href="#configuracion-nombre-y-correo-usuario" class=" list-group-item list-group-item-action">Configuración el Nombre y el Correo
                   del
                   Usuario</a>
               </div>
               <div class="site-menu__item">
-                <a href="#configuracion-de-editor-por-defecto" class="site-menu__link">Configuración del Editor por
+                <a href="#configuracion-de-editor-por-defecto" class=" list-group-item list-group-item-action">Configuración del Editor por
                   Defecto</a>
               </div>
               <div class="site-menu__item">
-                <a href="#configuracion-de-los-colores-de-texto-en-la-terminal" class="site-menu__link">Configuración de
+                <a href="#configuracion-de-los-colores-de-texto-en-la-terminal" class=" list-group-item list-group-item-action">Configuración de
                   los Colores de Texto la Terminal</a>
               </div>
               <div class="site-menu__item">
-                <a href="#configuracion-de-metodo-de-fusion" class="site-menu__link">Configuración del Método de Fusión</a>
+                <a href="#configuracion-de-metodo-de-fusion" class=" list-group-item list-group-item-action">Configuración del Método de Fusión</a>
               </div>
               <div class="site-menu__item">
-                <a href="#configuracion-de-alias" class="site-menu__link">Configuración de Alias</a>
+                <a href="#configuracion-de-alias" class=" list-group-item list-group-item-action">Configuración de Alias</a>
               </div>
               <div class="site-menu__item">
-                <a href="#ver-la-configuracion" class="site-menu__link">Ver la configuración</a>
+                <a href="#ver-la-configuracion" class=" list-group-item list-group-item-action">Ver la configuración</a>
               </div>
               <!-- Comentarios  -->
               <div class="site-menu__item">
-                <a href="#comments" class="site-menu__link">Comentarios</a>
+                <a href="#comments" class=" list-group-item list-group-item-action">Comentarios</a>
               </div>
       </aside>
       <!-- -------------------------------- fin barra lateral -------------------------------- -->

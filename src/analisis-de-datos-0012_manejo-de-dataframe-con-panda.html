@@ -65,7 +65,8 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy"
+  data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -96,7 +97,8 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">ARTÍCULOS</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link"
+              href="index.html#blog">ARTÍCULOS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -114,17 +116,16 @@
   <!-- Barra de Navegación -->
 
   <!--  Principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Manejo de Dataframes en Python-->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
-          <header>
-            <h1>Manejo de Dataframes en Python</h1>
-          </header>
+        <article class="row border-1 border-bottom pb-3">
           <!-- Introducción -->
-          <div class="mt-3">
+          <div class="mt-3" id="introduccion">
+            <header>
+              <h1>Manejo de Dataframes en Python</h1>
+            </header>
             <h2>Introducción:Manejo de Dataframes en Python</h2>
             <div class="site-image site-intro-image mb-5">
               <figure class="site-content__img-container site-image__figure site-image__figure--intro">
@@ -161,7 +162,7 @@
           <hr class="site-divider--subtle site-divider" />
 
           <!-- Definición: Dataframe -->
-          <div id="definicion:-dataframe" class="mt-3">
+          <div id="definicion-dataframe" class="mt-3">
             <h2>Definición: Dataframe</h2>
             <p>Un DataFrame en Pandas (Python) es una estructura de datos bidimensional que permite almacenar y
               manipular información en forma de tabla, similar a una hoja de cálculo de Excel o una tabla de base de
@@ -951,7 +952,8 @@
                   <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
                     class="form-control rounded-3" required></textarea>
                 </div>
-                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">Enviar</button>
+                <button type="submit"
+                  class="btn site-button btn-outline-light my-3 border rounded-pill border-2">Enviar</button>
               </fieldset>
               <p class="small text-center">La política de privacidad, y los términos y condiciones estándisponibles en
                 el formulario de contacto.</p>
@@ -964,49 +966,26 @@
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
+          <div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo">
             <div class="border border-1">
               <div class="site-menu__item">
-                <a href="#introduccion" class="site-menu__link">Introducción</a>
+                <a href="#introduccion" class="list-group-item list-group-item-action">Introducción</a>
               </div>
               <div class="site-menu__item">
-                <details>
-                  <summary>
-                    Definición: Dataframe
-                  </summary>
-                  <div class="site-menu__submenu"> <a href="#características-principales-de-dataframes"
-                      class="site-menu__submenu-link">Características Principales de Dataframes</a>
-                    <a href="#ejemplo-basico" class="site-menu__submenu-link">Ejemplo Básico</a>
-                  </div>
-                </details>
+                <a href="#definicion-dataframe" class="list-group-item list-group-item-action">Definición: Dataframe</a>
               </div>
               <div class="site-menu__item">
-                <details>
-                  <summary>
-                    Como se Usan los Dataframes
-                  </summary>
-                  <div class="site-menu__submenu"> <a href="#acceder-a-los-datos" class="site-menu__submenu-link">Acceder a los datos</a>
-                    <a href="#operaciones-comunes" class="site-menu__submenu-link">Operaciones Comunes</a>
-                  </div>
-                </details>
+                <a href="#como-se-usan-los-dataframes" class="list-group-item list-group-item-action">Como se Usan los
+                  Dataframes</a>
               </div>
               <div class="site-menu__item">
-                <details>
-                  <summary>
-                    Importación en Análisis de Datos con Python
-                  </summary>
-                  <div class="site-menu__submenu">
-                    <a href="#importacion-de-archivos-csv" class="site-menu__submenu-link">Importación de Archivos CSV</a>
-                    <a href="#importacion-de-archivos-excel" class="site-menu__submenu-link">Importación de Archivos Excel</a>
-                    <a href="#importacion-de-otras-fuentes" class="site-menu__submenu-link">Importación de Otras Fuentes</a>
-                  </div>
-                </details>
+                <a href="#importacion-en-analisis-de-datos-con-python"
+                  class="list-group-item list-group-item-action">Importación en Análisis de Datos con Python</a>
               </div>
-
 
               <!-- Comentarios  -->
               <div class="site-menu__item">
-                <a href="#comments" class="site-menu__link">Comentarios</a>
+                <a href="#comments" class="list-group-item list-group-item-action">Comentarios</a>
               </div>
             </div>
           </div>

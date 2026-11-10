@@ -63,7 +63,8 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy"
+  data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -94,7 +95,8 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">ARTÍCULOS</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link"
+              href="index.html#blog">ARTÍCULOS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -112,18 +114,20 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!-- Comandos Básicos GIT -->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
+        <article class="row border-1 border-bottom pb-3">
+          <div id="introduccion">
             <header>
               <h1>
-              Comandos Básicos de Consola / Terminal
-              <abbr title="Command Line Interface">CLI</abbr> para Windows
-            </h1>
+                Comandos Básicos de Consola / Terminal
+                <abbr title="Command Line Interface">CLI</abbr> para Windows
+              </h1>
             </header>
+
+            <!-- Introducción -->
             <div class="mt-3">
               <h2>Introducción</h2>
               <p>
@@ -209,1067 +213,1068 @@
               </div>
               <!-- Ventajas del Uso de la CLI fin -->
             </div>
+          </div>
 
-            <!-- pwd -->
-            <hr class="site-divider--subtle site-divider" />
+          <!-- pwd -->
+          <hr class="site-divider--subtle site-divider" />
 
-            <div id="pwd" class="mt-3">
-              <h2>pwd (Print Working Directory)</h2>
-              <p>
-                El comando <abbr title="Print Working Directory">pwd</abbr> en
-                sistemas operativos tipo Unix, como Linux y macOS, se utiliza
-                para mostrar la ruta absoluta del directorio en el que se
-                encuentra el usuario en la terminal.
-              </p>
+          <div id="pwd" class="mt-3">
+            <h2>pwd (Print Working Directory)</h2>
+            <p>
+              El comando <abbr title="Print Working Directory">pwd</abbr> en
+              sistemas operativos tipo Unix, como Linux y macOS, se utiliza
+              para mostrar la ruta absoluta del directorio en el que se
+              encuentra el usuario en la terminal.
+            </p>
 
-              <!-- Uso de pwd -->
-              <div>
-                <h3>Uso de pwd</h3>
-                <p>Simplemente se debe escribir el comando en la terminal:</p>
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+            <!-- Uso de pwd -->
+            <div>
+              <h3>Uso de pwd</h3>
+              <p>Simplemente se debe escribir el comando en la terminal:</p>
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         pwd
                       </code>
                     </pre>
-                </div>
-                <!-- Ejemplo de Salida -->
-                <div>
-                  <h4>Ejemplo de Salida</h4>
-                  <p>
-                    Si el usuario está en la carpeta
-                    <code class="language-bash">/home/usuario/proyectos</code>, al ejecutar <code
-                      class="language-bash">pwd</code>, la
-                    terminal mostrará:
-                  </p>
-                  <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Ejemplo de Salida -->
+              <div>
+                <h4>Ejemplo de Salida</h4>
+                <p>
+                  Si el usuario está en la carpeta
+                  <code class="language-bash">/home/usuario/proyectos</code>, al ejecutar <code
+                    class="language-bash">pwd</code>, la
+                  terminal mostrará:
+                </p>
+                <div class="code-example__syntax">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-bash" data-prismjs-copy="Copy">
                           /home/usuario/proyectos
                         </code>
                       </pre>
-                  </div>
                 </div>
-                <!-- Ejemplo de Salida fin -->
               </div>
-              <!-- Uso de pwd fin -->
-
-              <!-- Casos de Uso de pwd -->
-              <div>
-                <h3>Casos de Uso de pwd</h3>
-                <ul>
-                  <li>Ver la ubicación actual en el sistema de archivos.</li>
-                  <li>Evitar confusión al navegar entre directorios.</li>
-                  <li>
-                    Uso en scripts para obtener la ubicación actual y trabajar
-                    con rutas absolutas.
-                  </li>
-                </ul>
-              </div>
-              <!-- Casos de Uso de pwd fin -->
-
-              <!-- Opciones útiles de pwd -->
-              <div>
-                <h3>Opciones útiles de pwd</h3>
-                <ul>
-                  <li>
-                    <code class="language-bash">pwd -L</code>: Muestra el
-                    directorio actual con enlaces simbólicos (por defecto).
-                  </li>
-                  <li>
-                    <code class="language-bash">pwd -P</code>: Muestra la ruta
-                    real sin enlaces simbólicos.
-                  </li>
-                </ul>
-              </div>
-              <!-- Opciones útiles de pwd fin -->
+              <!-- Ejemplo de Salida fin -->
             </div>
+            <!-- Uso de pwd fin -->
 
-            <!-- ls -->
-            <hr class="site-divider--subtle site-divider" />
+            <!-- Casos de Uso de pwd -->
+            <div>
+              <h3>Casos de Uso de pwd</h3>
+              <ul>
+                <li>Ver la ubicación actual en el sistema de archivos.</li>
+                <li>Evitar confusión al navegar entre directorios.</li>
+                <li>
+                  Uso en scripts para obtener la ubicación actual y trabajar
+                  con rutas absolutas.
+                </li>
+              </ul>
+            </div>
+            <!-- Casos de Uso de pwd fin -->
 
-            <div id="ls" class="mt-3">
-              <h2>ls (LiSt)</h2>
-              <p>
-                El comando <abbr title="LiSt">ls</abbr> se utiliza en sistemas
-                Unix/Linux y macOS para listar el contenido de un directorio
-                en la terminal. Es una de las herramientas más básicas y
-                esenciales en la interfaz de línea de comandos (CLI).
-              </p>
-              <h3>Formato ls</h3>
-              <div class="code-example__syntax">
-                <pre data-src-status="loaded" tabindex="0">
+            <!-- Opciones útiles de pwd -->
+            <div>
+              <h3>Opciones útiles de pwd</h3>
+              <ul>
+                <li>
+                  <code class="language-bash">pwd -L</code>: Muestra el
+                  directorio actual con enlaces simbólicos (por defecto).
+                </li>
+                <li>
+                  <code class="language-bash">pwd -P</code>: Muestra la ruta
+                  real sin enlaces simbólicos.
+                </li>
+              </ul>
+            </div>
+            <!-- Opciones útiles de pwd fin -->
+          </div>
+
+          <!-- ls -->
+          <hr class="site-divider--subtle site-divider" />
+
+          <div id="ls" class="mt-3">
+            <h2>ls (LiSt)</h2>
+            <p>
+              El comando <abbr title="LiSt">ls</abbr> se utiliza en sistemas
+              Unix/Linux y macOS para listar el contenido de un directorio
+              en la terminal. Es una de las herramientas más básicas y
+              esenciales en la interfaz de línea de comandos (CLI).
+            </p>
+            <h3>Formato ls</h3>
+            <div class="code-example__syntax">
+              <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       ls [opciones] [ruta_de_directorio] [nombre_de_los_archivos]
                     </code>
                   </pre>
-              </div>
-              <h3>Usos ls</h3>
+            </div>
+            <h3>Usos ls</h3>
+            <ul>
+              <li>
+                <code class="language-bash">ls</code>, muestra el listado de
+                archivos en el directorio de trabajo actual.
+              </li>
+              <li>
+                <code class="language-bash">ls c:\usuario\proyecto</code>,
+                muestra el listado del directorio
+                <code class="language-bash">proyecto</code>.
+              </li>
+              <li>
+                <code class="language-bash">ls ..</code>, muestra el
+                contenido del directorio padre, es decir el nivel superior.
+              </li>
+              <li>
+                <code class="language-bash">ls -d */</code>, lista sólo
+                directorios o carpetas.
+              </li>
+              <li>
+                <code class="language-bash">ls *</code>, presenta todos los
+                archivos incluyendo los que están dentro de los
+                subdirectorios.
+              </li>
+              <li>
+                <code class="language-bash">ls -R</code>, revela todos los
+                archivos incluyendo los que hay en todas las subcarpetas
+                hasta el último.
+              </li>
+              <li>
+                <code class="language-bash">ls -s</code>, exhibe los
+                archivos junto a su tamaño.
+              </li>
+              <li>
+                <code class="language-bash">ls -l</code>, presenta los
+                archivos en formato largo o más detallado.
+              </li>
+              <li>
+                <code class="language-bash">ls -a</code>, desplega todos los
+                archivos y carpetas incluyendo los ocultos.
+              </li>
+              <li>
+                <code class="language-bash">ls -t</code>, muestra los
+                archivos y carpetas ordenados por de su fecha de
+                modificación en orden descendente (de mayor a menor).
+              </li>
+              <li>
+                <code class="language-bash">ls -tr</code>, muestra los
+                archivos y carpetas ordenados por de su fecha de
+                modificación en orden ascendente (de menor a mayor).
+              </li>
+              <li>
+                <code class="language-bash">ls > output.txt</code>, el
+                listado obtenido con el comando
+                <code class="language-bash">ls</code> se guarda en el
+                archivo <code class="language-bash">output.txt</code>.
+              </li>
+              <li>
+                <code class="language-bash">ls --help</code>, muestra la
+                ayuda del comando <code class="language-bash">ls</code>.
+              </li>
+            </ul>
+            <!-- Ejemplos de uso ls -->
+            <div>
+              <h3>Ejemplos de uso ls</h3>
               <ul>
                 <li>
-                  <code class="language-bash">ls</code>, muestra el listado de
-                  archivos en el directorio de trabajo actual.
-                </li>
-                <li>
-                  <code class="language-bash">ls c:\usuario\proyecto</code>,
-                  muestra el listado del directorio
-                  <code class="language-bash">proyecto</code>.
-                </li>
-                <li>
-                  <code class="language-bash">ls ..</code>, muestra el
-                  contenido del directorio padre, es decir el nivel superior.
-                </li>
-                <li>
-                  <code class="language-bash">ls -d */</code>, lista sólo
-                  directorios o carpetas.
-                </li>
-                <li>
-                  <code class="language-bash">ls *</code>, presenta todos los
-                  archivos incluyendo los que están dentro de los
-                  subdirectorios.
-                </li>
-                <li>
-                  <code class="language-bash">ls -R</code>, revela todos los
-                  archivos incluyendo los que hay en todas las subcarpetas
-                  hasta el último.
-                </li>
-                <li>
-                  <code class="language-bash">ls -s</code>, exhibe los
-                  archivos junto a su tamaño.
-                </li>
-                <li>
-                  <code class="language-bash">ls -l</code>, presenta los
-                  archivos en formato largo o más detallado.
-                </li>
-                <li>
-                  <code class="language-bash">ls -a</code>, desplega todos los
-                  archivos y carpetas incluyendo los ocultos.
-                </li>
-                <li>
-                  <code class="language-bash">ls -t</code>, muestra los
-                  archivos y carpetas ordenados por de su fecha de
-                  modificación en orden descendente (de mayor a menor).
-                </li>
-                <li>
-                  <code class="language-bash">ls -tr</code>, muestra los
-                  archivos y carpetas ordenados por de su fecha de
-                  modificación en orden ascendente (de menor a mayor).
-                </li>
-                <li>
-                  <code class="language-bash">ls > output.txt</code>, el
-                  listado obtenido con el comando
-                  <code class="language-bash">ls</code> se guarda en el
-                  archivo <code class="language-bash">output.txt</code>.
-                </li>
-                <li>
-                  <code class="language-bash">ls --help</code>, muestra la
-                  ayuda del comando <code class="language-bash">ls</code>.
-                </li>
-              </ul>
-              <!-- Ejemplos de uso ls -->
-              <div>
-                <h3>Ejemplos de uso ls</h3>
-                <ul>
-                  <li>
-                    Listar archivos con detalles completos:
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  Listar archivos con detalles completos:
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             ls -l
                           </code>
                         </pre>
-                    </div>
-                    <p>Salida esperada:</p>
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                  <p>Salida esperada:</p>
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             -rw-r--r--  1 usuario  grupo   2048 Feb 15 10:30 archivo.txt
                             drwxr-xr-x  2 usuario  grupo   4096 Feb 14 08:12 documentos/
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>Listar todos los archivos, incluyendo los ocultos:</li>
-                  <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>Listar todos los archivos, incluyendo los ocultos:</li>
+                <div class="code-example__syntax">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-bash" data-prismjs-copy="Copy">
                           ls -a
                         </code>
                       </pre>
-                  </div>
-                  <p>Salida esperada:</p>
-                  <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <p>Salida esperada:</p>
+                <div class="code-example__syntax">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-bash" data-prismjs-copy="Copy">
                           .  ..  .oculto  archivo.txt  documentos/
                         </code>
                       </pre>
-                  </div>
-                  <li>Listar archivos ordenados por tamaño:</li>
-                  <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <li>Listar archivos ordenados por tamaño:</li>
+                <div class="code-example__syntax">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-bash" data-prismjs-copy="Copy">
                           ls -lS
                         </code>
                       </pre>
-                  </div>
-                  <p>Esto ordena los archivos de mayor a menor tamaño.</p>
-                  <li>
-                    Listar archivos en subdirectorios de manera recursiva:
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <p>Esto ordena los archivos de mayor a menor tamaño.</p>
+                <li>
+                  Listar archivos en subdirectorios de manera recursiva:
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             ls -R
                           </code>
                         </pre>
-                    </div>
-                    <p>
-                      Esto muestra todos los archivos dentro de los
-                      subdirectorios.
-                    </p>
-                  </li>
-                </ul>
-                <p>
-                  El comando <code class="language-bash">ls</code> es
-                  fundamental para la navegación y gestión de archivos en la
-                  terminal, y su uso combinado con opciones avanzadas permite
-                  optimizar el flujo de trabajo en sistemas Unix/Linux y
-                  macOS.
-                </p>
-              </div>
-              <!-- Ejemplos de uso ls fin -->
-            </div>
-
-            <!-- cd -->
-            <hr class="site-divider--subtle site-divider" />
-
-            <div id="cd" class="mt-3">
-              <h2>cd (Change Directory)</h2>
+                  </div>
+                  <p>
+                    Esto muestra todos los archivos dentro de los
+                    subdirectorios.
+                  </p>
+                </li>
+              </ul>
               <p>
-                El comando <abbr title="Change Directory">cd</abbr> se utiliza
-                en sistemas Unix/Linux y macOS para cambiar de directorio
-                dentro de la terminal. Es una de las herramientas
-                fundamentales para la navegación en la interfaz de línea de
-                comandos (CLI).
+                El comando <code class="language-bash">ls</code> es
+                fundamental para la navegación y gestión de archivos en la
+                terminal, y su uso combinado con opciones avanzadas permite
+                optimizar el flujo de trabajo en sistemas Unix/Linux y
+                macOS.
               </p>
-              <h3>Formato cd</h3>
-              <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <!-- Ejemplos de uso ls fin -->
+          </div>
+
+          <!-- cd -->
+          <hr class="site-divider--subtle site-divider" />
+
+          <div id="cd" class="mt-3">
+            <h2>cd (Change Directory)</h2>
+            <p>
+              El comando <abbr title="Change Directory">cd</abbr> se utiliza
+              en sistemas Unix/Linux y macOS para cambiar de directorio
+              dentro de la terminal. Es una de las herramientas
+              fundamentales para la navegación en la interfaz de línea de
+              comandos (CLI).
+            </p>
+            <h3>Formato cd</h3>
+            <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                     cd [opciones] [ruta_de_directorio] 
                   </code>
                 </pre>
-              <!-- Ejemplos de uso cd -->
-              <div>
-                <h3>Ejemplos de uso cd</h3>
-                <ul>
-                  <li>
-                    <strong>Ir a un directorio específico</strong>: Esto
-                    cambia al directorio llamado "documentos", siempre que se
-                    encuentre dentro del directorio actual.
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+            <!-- Ejemplos de uso cd -->
+            <div>
+              <h3>Ejemplos de uso cd</h3>
+              <ul>
+                <li>
+                  <strong>Ir a un directorio específico</strong>: Esto
+                  cambia al directorio llamado "documentos", siempre que se
+                  encuentre dentro del directorio actual.
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             cd documentos/
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <strong>Regresar al directorio anterior</strong>: El doble
-                    punto <code class="language-bash">..</code> indica el
-                    directorio padre. Con este comando, se sube un nivel en la
-                    jerarquía de directorios.
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <strong>Regresar al directorio anterior</strong>: El doble
+                  punto <code class="language-bash">..</code> indica el
+                  directorio padre. Con este comando, se sube un nivel en la
+                  jerarquía de directorios.
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             cd ..
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <strong>Regresar al directorio raíz (<code class="language-bash">/</code>)</strong>: Esto lleva al
-                    usuario al directorio raíz del sistema.
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <strong>Regresar al directorio raíz (<code class="language-bash">/</code>)</strong>: Esto lleva al
+                  usuario al directorio raíz del sistema.
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             cd /
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <strong>Ir al directorio personal del usuario (<code class="language-bash">home</code>)</strong>: El
-                    símbolo
-                    <code class="language-bash">~</code> representa el home
-                    del usuario, generalmente
-                    <code class="language-bash">/home/nombre_usuario/</code>
-                    en Linux,
-                    <code class="language-bash">/Users/nombre_usuario/</code>
-                    en macOS o
-                    <code class="language-bash">C:\Users\Nombre-de-usuario</code>
-                    en Windows.
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <strong>Ir al directorio personal del usuario (<code class="language-bash">home</code>)</strong>: El
+                  símbolo
+                  <code class="language-bash">~</code> representa el home
+                  del usuario, generalmente
+                  <code class="language-bash">/home/nombre_usuario/</code>
+                  en Linux,
+                  <code class="language-bash">/Users/nombre_usuario/</code>
+                  en macOS o
+                  <code class="language-bash">C:\Users\Nombre-de-usuario</code>
+                  en Windows.
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             cd ~
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <strong>Regresar al directorio anterior (no confundir con el
-                      directorio padre)</strong>: Este comando cambia al directorio en el que el usuario
-                    estaba antes de ejecutar el último
-                    <code class="language-bash">cd</code>.
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <strong>Regresar al directorio anterior (no confundir con el
+                    directorio padre)</strong>: Este comando cambia al directorio en el que el usuario
+                  estaba antes de ejecutar el último
+                  <code class="language-bash">cd</code>.
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                           cd -
                         </code>
                       </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <strong>Acceder a un directorio mediante una ruta
-                      absoluta</strong>: En este caso, se accede al directorio "proyectos"
-                    usando su ruta completa.
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <strong>Acceder a un directorio mediante una ruta
+                    absoluta</strong>: En este caso, se accede al directorio "proyectos"
+                  usando su ruta completa.
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             cd /home/usuario/proyectos/
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <strong>Acceder a un directorio mediante una ruta
-                      relativa</strong>: Si el usuario está en
-                    <code class="language-bash">/home/usuario/</code>, este
-                    comando lo llevará a
-                    <code class="language-bash">/home/usuario/proyectos/</code>.
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <strong>Acceder a un directorio mediante una ruta
+                    relativa</strong>: Si el usuario está en
+                  <code class="language-bash">/home/usuario/</code>, este
+                  comando lo llevará a
+                  <code class="language-bash">/home/usuario/proyectos/</code>.
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             cd proyectos/
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <strong>Muestra la ayuda de este comando</strong>:
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <strong>Muestra la ayuda de este comando</strong>:
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             cd --help 
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- Ejemplos de uso cd fin -->
-            </div>
-
-            <!-- mkdir -->
-            <hr class="site-divider--subtle site-divider" />
-
-            <div id="mkdir" class="mt-3">
-              <h2>mkdir (Make Directory)</h2>
-              <p>
-                El comando <abbr title="Make Directory">mkdir</abbr> se
-                utiliza en sistemas Unix/Linux y macOS para crear directorios
-                (carpetas) desde la terminal. Es una herramienta fundamental
-                en la administración de archivos y directorios en la interfaz
-                de línea de comandos (CLI).
-              </p>
-              <h3>Formato mkdir</h3>
-              <p>La sintaxis general del comando mkdir es:</p>
-              <div class="code-example__syntax">
-                <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-bash" data-prismjs-copy="Copy">
-                      mkdir [nombre_de_directorio]
-                    </code>
-                  </pre>
-              </div>
-              <p>Esto crea un nuevo directorio en la ubicación actual.</p>
-              <!-- Ejemplos de Uso mkdir -->
-              <div>
-                <h3>Ejemplos de Uso mkdir</h3>
-                <ul>
-                  <li>
-                    <strong>Crear un solo directorio</strong>: Este comando
-                    crea un directorio llamado "proyectos" en el directorio
-                    actual.
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-bash" data-prismjs-copy="Copy">
-                            mkdir proyectos
-                          </code>
-                        </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <strong>Crear varios directorios a la vez</strong>: Esto
-                    creará tres directorios llamados "carpeta1", "carpeta2" y
-                    "carpeta3" en la ubicación actual.
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-bash" data-prismjs-copy="Copy">
-                            mkdir carpeta1 carpeta2 carpeta3
-                          </code>
-                        </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <strong>Crear un directorio en una ubicación específica</strong>: Este comando creará el directorio
-                    "nuevo_proyecto"
-                    dentro de "/home/usuario/documentos/".
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-bash" data-prismjs-copy="Copy">
-                            mkdir /home/usuario/documentos/nuevo_proyecto
-                          </code>
-                        </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <strong>Crear un directorio con una subcarpeta (opción
-                      <code class="language-bash">-p</code>)</strong>: La opción
-                    <code class="language-bash">-p</code> (parents) permite
-                    crear directorios anidados sin necesidad de hacerlo uno
-                    por uno. En este caso, si "proyectos" y "clienteX" no
-                    existen, <code class="language-bash">mkdir</code> los
-                    creará automáticamente junto con "documentos".
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-bash" data-prismjs-copy="Copy">
-                            mkdir -p proyectos/clienteX/documentos
-                          </code>
-                        </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <strong>Verificar que el directorio se creó</strong>:
-                    Después de ejecutar
-                    <code class="language-bash">mkdir</code>, se puede usar ls
-                    para comprobar que el directorio ha sido creado:
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-bash" data-prismjs-copy="Copy">
-                            ls -l
-                          </code>
-                        </pre>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- Ejemplos de Uso mkdir fin -->
-
-              <!-- Opciones Útiles de mkdir -->
-              <div>
-                <h3>Opciones Útiles de mkdir</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">mkdir -p</span>: Crea directorios
-                    anidados sin errores si ya existen.
-                  </li>
-                  <li>
-                    <span class="fw-bold">mkdir -v</span>: Muestra un mensaje
-                    con cada directorio creado.
-                  </li>
-                  <li>
-                    <span class="fw-bold">mkdir -m MODE</span>: Establece
-                    permisos específicos al crear el directorio.
-                  </li>
-                  <li>
-                    <span class="fw-bold">mkdir -m 755 carpeta_segura</span>:
-                    Esto crea un directorio con permisos 755 (propietario con
-                    permisos de lectura, escritura y ejecución; otros solo
-                    lectura y ejecución).
-                  </li>
-                </ul>
-              </div>
-              <!-- Opciones Útiles de mkdir fin -->
-            </div>
-
-            <!-- touch -->
-            <hr class="site-divider--subtle site-divider" />
-
-            <div id="touch" class="mt-3">
-              <h2>touch</h2>
-              <p>
-                El comando <code class="language-bash">touch</code> en
-                sistemas Unix/Linux y macOS se utiliza principalmente para
-                crear archivos vacíos o actualizar la fecha y hora de
-                modificación de un archivo sin modificar su contenido. Es una
-                herramienta útil en la administración de archivos dentro de la
-                interfaz de línea de comandos (CLI).
-              </p>
-              <h3>Formato touch</h3>
-              <div class="code-example__syntax">
-                <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-bash" data-prismjs-copy="Copy">
-                      touch [nombre_del_archivo]
-                    </code>
-                  </pre>
-              </div>
-              <p>
-                Si el archivo no existe, el comando lo crea vacío. Si el
-                archivo ya existe, simplemente actualiza su fecha de
-                modificación sin cambiar su contenido.
-              </p>
-              <!-- Ejemplos de uso touch -->
-              <div>
-                <h3>Ejemplos de uso touch</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Crear un archivo vacío</span>: Este
-                    comando creará un archivo llamado "documento.txt" en el
-                    directorio act
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-bash" data-prismjs-copy="Copy">
-                            touch documento.txt
-                          </code>
-                        </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Crear varios archivos a la vez</span>: Esto creará los archivos
-                    "archivo1.txt", "archivo2.txt"
-                    y "archivo3.txt" en el directorio actual.
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-bash" data-prismjs-copy="Copy">
-                            touch archivo1.txt archivo2.txt archivo3.txt
-                          </code>
-                        </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Actualizar la fecha y hora de un archivo
-                      existente</span>: Si "informe.txt" ya existe, su fecha de modificación se
-                    actualizará a la fecha y hora actual sin modificar su
-                    contenido.
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-bash" data-prismjs-copy="Copy">
-                            touch informe.txt
-                          </code>
-                        </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Cambiar la fecha de modificación a una fecha
-                      específica</span>: Esto cambia la fecha de modificación de "archivo.txt" a
-                    28 de febrero de 2024 a las 15:30.
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-bash" data-prismjs-copy="Copy">
-                            touch -t 202402281530 archivo.txt
-                          </code>
-                        </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Evitar la creación del archivo si no existe (solo
-                      actualizar la fecha)</span>: Si el archivo no existe, no se creará. Si existe, se
-                    actualizará su fecha de modificación.
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-bash" data-prismjs-copy="Copy">
-                            touch -c archivo.txt
-                          </code>
-                        </pre>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- Ejemplos de uso touch fin -->
-
-              <!-- Opciones Útiles de touch -->
-              <div>
-                <h3>Opciones Útiles de touch</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">touch -c</span>: No crea el archivo
-                    si no existe, solo actualiza la fecha de modificación si
-                    ya existe.
-                  </li>
-                  <li>
-                    <span class="fw-bold">touch -m</span>: Solo modifica la
-                    fecha de modificación del archivo, sin cambiar la de
-                    acceso.
-                  </li>
-                  <li>
-                    <span class="fw-bold">touch -a</span>: Solo cambia la
-                    fecha de acceso sin modificar la de modificación.
-                  </li>
-                  <li>
-                    <span class="fw-bold">touch -t [[CC]YY]MMDDhhmm[.ss]</span>: Especifica una fecha y hora
-                    personalizada.
-                  </li>
-                  <li>
-                    <span class="fw-bold">touch -t 202402281530 archivo.txt </span>: Esto cambia la fecha de
-                    modificación de "archivo.txt" a
-                    28 de febrero de 2024 a las 15:30.
-                  </li>
-                  <li>
-                    <span class="fw-bold">touch -d "2023-12-01 10:00:00" reporte.txt </span>: Esto cambia la fecha de
-                    "reporte.txt" a 1 de diciembre
-                    de 2023 a las 10:00 AM.
-                  </li>
-                </ul>
-              </div>
-              <!-- Opciones Útiles de touch fin -->
-            </div>
-
-            <!-- rm -->
-            <hr class="site-divider--subtle site-divider" />
-
-            <div id="rm" class="mt-3">
-              <h2>rm (ReMove)</h2>
-              <p>
-                El comando
-                <abbr title="ReMove"><code class="language-bash">rm</code></abbr>
-                se utiliza para eliminar archivos y directorios. Su uso puede
-                ser peligroso porque los archivos eliminados con
-                <code class="language-bash">rm</code> no se envían a la
-                papelera, sino que se borran de manera permanente.
-              </p>
-              <h3>Formato rm</h3>
-              <div class="code-example__syntax">
-                <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-bash" data-prismjs-copy="Copy">
-                      rm [opciones] [ruta_de_directorio]/[nombre_del_archivo]
-                    </code>
-                  </pre>
-              </div>
-              <div>
-                <h3>Usos rm</h3>
-                <ul>
-                  <li>
-                    <code class="language-bash">rm -f c:\usuarios\respaldo\index.css</code>, se hace la eliminación del
-                    archivo
-                    <code class="language-bash">index.css</code> sin pedir
-                    confirmación alguna.
-                  </li>
-                  <li>
-                    <code class="language-bash">rm -i index.css</code>, pide
-                    la confirmación antes de la eliminación del archivo
-                    <code class="language-bash">index.css</code>.
-                  </li>
-                  <li>
-                    <code class="language-bash">rm -r c:\usuarios\respaldo\</code>
-                    o <code class="language-bash">-R</code>, se elimina el
-                    directorio de
-                    <code class="language-bash">respaldo</code>
-                    recursivamente, es decir, se elimina el directorio con
-                    todo su contenido incluyendo subcarpetas y archivos.
-                  </li>
-                  <li>
-                    <code class="language-bash">rm -d c:\usuarios\respaldo\</code>, borra el directorio
-                    <code class="language-bash">respaldo</code>, si y sólo si,
-                    está vacío, de lo contrario mostrará un error.
-                  </li>
-                  <li>
-                    <code class="language-bash">rm -v c:\usuarios\respaldo\</code>, Muestra los archivos eliminados.
-                  </li>
-                </ul>
-              </div>
-              <!-- Ejemplos de Uso rm -->
-              <div>
-                <h3>Ejemplos de Uso rm</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Eliminar un archivo específico</span>: Borra el archivo
-                    <code class="language-bash">archivo.txt</code> en el
-                    directorio actual.
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-bash" data-prismjs-copy="Copy">
-                            rm archivo.txt
-                          </code>
-                        </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Eliminar varios archivos</span>:
-                    Elimina <code class="language-bash">archivo1.txt</code> y
-                    <code class="language-bash">archivo2.txt</code>.
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-bash" data-prismjs-copy="Copy">
-                            rm archivo1.txt archivo2.txt
-                          </code>
-                        </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Eliminar todos los archivos con cierta extensión</span>: Elimina todos los
-                    archivos con extensión
-                    <code class="language-bash">.log</code> en el directorio
-                    actual.
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-bash" data-prismjs-copy="Copy">
-                            rm *.log
-                          </code>
-                        </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Eliminar un directorio y su contenido</span>: Elimina
-                    <code class="language-bash">carpeta</code> junto con todos
-                    sus archivos y subdirectorios.
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-bash" data-prismjs-copy="Copy">
-                            rm -r carpeta
-                          </code>
-                        </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Forzar la eliminación sin confirmación</span>: Elimina carpeta de forma
-                    recursiva y sin pedir
-                    confirmación. ¡Cuidado con este comando, puede borrar
-                    archivos importantes de forma irreversible!.
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-bash" data-prismjs-copy="Copy">
-                            rm -rf carpeta
-                          </code>
-                        </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Confirmar antes de eliminar</span>:
-                    Pregunta antes de eliminar
-                    <code class="language-bash">archivo.txt</code>.
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
-                          <code class="language-bash" data-prismjs-copy="Copy">
-                            rm -i archivo.txt
-                          </code>
-                        </pre>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- Ejemplos de Uso rm fin -->
-              <!-- Consejos de Seguridad rm -->
-              <div>
-                <h3>Consejos de Seguridad rm</h3>
-                <ul>
-                  <li>
-                    Antes de usar <code class="language-bash">rm -rf</code>,
-                    verificar con <code class="language-bash">ls</code> qué se
-                    va a eliminar.
-                  </li>
-                  <li>
-                    Se puede usar
-                    <code class="language-bash">trash-cli</code> como
-                    alternativa segura para mover archivos a la papelera en
-                    lugar de eliminarlos permanentemente.
-                  </li>
-                </ul>
-              </div>
-              <!-- Consejos de Seguridad rm fin -->
-            </div>
-
-            <!-- cp -->
-            <hr class="site-divider--subtle site-divider" />
-
-            <div id="cp" class="mt-3">
-              <h2>cp (CoPy)</h2>
-              <p>
-                Este comando <abbr title="CoPy">cp</abbr> se utiliza para
-                copiar archivos y directorios. Permite duplicar archivos en la
-                misma ubicación o moverlos a otra ubicación, manteniendo el
-                original intacto.
-              </p>
-              <h3>Formato cp</h3>
-              <div class="code-example__syntax">
-                <pre data-src-status="loaded" tabindex="0">
-                    <code class="language-bash" data-prismjs-copy="Copy">
-                      cp [opciones] origen destino
-                    </code>
-                  </pre>
-              </div>
-              <ul>
-                <li>
-                  <span class="fw-bold"><code class="language-bash">origen</code></span>: Archivo o directorio que se
-                  desea copiar.
-                </li>
-                <li>
-                  <span class="fw-bold"><code class="language-bash">destino</code></span>: Ubicación donde se copiará el
-                  archivo o directorio.
-                </li>
-              </ul>
-
-              <h3>Usos cp</h3>
-              <ul>
-                <li>
-                  <code class="language-bash">cp -i index.html c:\usuario\proyecto</code>, copia el archivo index.hml en
-                  el directorio
-                  c:\usuario\proyecto pero si el archivo ya existe se pide la
-                  confirmación.
-                </li>
-                <li>
-                  <code class="language-bash">cp -r c:\usuario\proyecto c:\usuario\respaldo</code>, se copia
-                  recursivamente el contenido de la carpeta
-                  proyecto en la respaldo, o sea, incluyendo todas las
-                  subcarpetas y los archivos.
-                </li>
-                <li>
-                  <code class="language-bash">cp -f origen destino</code>, Se
-                  fuerza la copia sobrescribiendo archivos sin pedir
-                  confirmación.
-                </li>
-                <li>
-                  <code class="language-bash">cp -v origen destino</code>,
-                  muestra cada archivo/directorio que se esta copiando.
-                </li>
-                <li>
-                  <code class="language-bash">cp c:\usuario\archivo_viejo.txt
-                      c:\usuario\archivo_nuevo.txt</code>, renombra el archivo_viejo.txt con archivo_nuevo.txt
-                  quedando ambos archivos en el mismo directorio, ambos son
-                  iguales, se puede borrar el original, archivo_viejo.txt sin
-                  consecuencias.
-                </li>
-
-                <li>
-                  <code class="language-bash">cp -p informe.pdf \home\usuario\respaldo\ </code>, Se copia el archivo
-                  <code class="language-bash">informe.pdf</code> a la carpeta
-                  <code class="language-bash">\home\usuario\respaldo\</code>,
-                  manteniendo sus permisos y fecha de modificación.
-                </li>
-
-                <li>
-                  <code class="language-bash">cp c:\usuario\archivo_viejo.txt
-                      c:\usuario\archivo_nuevo.txt</code>, renombra el archivo_viejo.txt con archivo_nuevo.txt
-                  quedando ambos archivos en el mismo directorio, ambos son
-                  iguales, se puede borrar el original, archivo_viejo.txt sin
-                  consecuencias.
-                </li>
-                <li>
-                  <code class="language-bash">cp -u datos.csv \home\usuario\respaldo\ </code>: Copia el archivo
-                  <code class="language-bash">datos.csv</code> al directorio
-                  <code class="language-bash">\home\usuario\respaldo\</code>,
-                  pero evitando sobrescribirlo si ya existe una versión más
-                  reciente en el destino.
-                  <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
-                        <code class="language-bash" data-prismjs-copy="Copy">
-                          cp -u datos.csv \home\usuario\respaldo\
-                        </code>
-                      </pre>
                   </div>
                 </li>
               </ul>
             </div>
+            <!-- Ejemplos de uso cd fin -->
+          </div>
 
-            <!-- clear -->
-            <hr class="site-divider--subtle site-divider" />
+          <!-- mkdir -->
+          <hr class="site-divider--subtle site-divider" />
 
-            <div id="clear" class="mt-3">
-              <h2>clear</h2>
-              <p>
-                Este comando se usa para limpiar la terminal, eliminando el
-                contenido visible en pantalla y dejando una interfaz limpia.
-              </p>
-              <h3>Formato clear</h3>
-              <div class="code-example__syntax">
-                <pre data-src-status="loaded" tabindex="0">
+          <div id="mkdir" class="mt-3">
+            <h2>mkdir (Make Directory)</h2>
+            <p>
+              El comando <abbr title="Make Directory">mkdir</abbr> se
+              utiliza en sistemas Unix/Linux y macOS para crear directorios
+              (carpetas) desde la terminal. Es una herramienta fundamental
+              en la administración de archivos y directorios en la interfaz
+              de línea de comandos (CLI).
+            </p>
+            <h3>Formato mkdir</h3>
+            <p>La sintaxis general del comando mkdir es:</p>
+            <div class="code-example__syntax">
+              <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      mkdir [nombre_de_directorio]
+                    </code>
+                  </pre>
+            </div>
+            <p>Esto crea un nuevo directorio en la ubicación actual.</p>
+            <!-- Ejemplos de Uso mkdir -->
+            <div>
+              <h3>Ejemplos de Uso mkdir</h3>
+              <ul>
+                <li>
+                  <strong>Crear un solo directorio</strong>: Este comando
+                  crea un directorio llamado "proyectos" en el directorio
+                  actual.
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            mkdir proyectos
+                          </code>
+                        </pre>
+                  </div>
+                </li>
+                <li>
+                  <strong>Crear varios directorios a la vez</strong>: Esto
+                  creará tres directorios llamados "carpeta1", "carpeta2" y
+                  "carpeta3" en la ubicación actual.
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            mkdir carpeta1 carpeta2 carpeta3
+                          </code>
+                        </pre>
+                  </div>
+                </li>
+                <li>
+                  <strong>Crear un directorio en una ubicación específica</strong>: Este comando creará el directorio
+                  "nuevo_proyecto"
+                  dentro de "/home/usuario/documentos/".
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            mkdir /home/usuario/documentos/nuevo_proyecto
+                          </code>
+                        </pre>
+                  </div>
+                </li>
+                <li>
+                  <strong>Crear un directorio con una subcarpeta (opción
+                    <code class="language-bash">-p</code>)</strong>: La opción
+                  <code class="language-bash">-p</code> (parents) permite
+                  crear directorios anidados sin necesidad de hacerlo uno
+                  por uno. En este caso, si "proyectos" y "clienteX" no
+                  existen, <code class="language-bash">mkdir</code> los
+                  creará automáticamente junto con "documentos".
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            mkdir -p proyectos/clienteX/documentos
+                          </code>
+                        </pre>
+                  </div>
+                </li>
+                <li>
+                  <strong>Verificar que el directorio se creó</strong>:
+                  Después de ejecutar
+                  <code class="language-bash">mkdir</code>, se puede usar ls
+                  para comprobar que el directorio ha sido creado:
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            ls -l
+                          </code>
+                        </pre>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Ejemplos de Uso mkdir fin -->
+
+            <!-- Opciones Útiles de mkdir -->
+            <div>
+              <h3>Opciones Útiles de mkdir</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">mkdir -p</span>: Crea directorios
+                  anidados sin errores si ya existen.
+                </li>
+                <li>
+                  <span class="fw-bold">mkdir -v</span>: Muestra un mensaje
+                  con cada directorio creado.
+                </li>
+                <li>
+                  <span class="fw-bold">mkdir -m MODE</span>: Establece
+                  permisos específicos al crear el directorio.
+                </li>
+                <li>
+                  <span class="fw-bold">mkdir -m 755 carpeta_segura</span>:
+                  Esto crea un directorio con permisos 755 (propietario con
+                  permisos de lectura, escritura y ejecución; otros solo
+                  lectura y ejecución).
+                </li>
+              </ul>
+            </div>
+            <!-- Opciones Útiles de mkdir fin -->
+          </div>
+
+          <!-- touch -->
+          <hr class="site-divider--subtle site-divider" />
+
+          <div id="touch" class="mt-3">
+            <h2>touch</h2>
+            <p>
+              El comando <code class="language-bash">touch</code> en
+              sistemas Unix/Linux y macOS se utiliza principalmente para
+              crear archivos vacíos o actualizar la fecha y hora de
+              modificación de un archivo sin modificar su contenido. Es una
+              herramienta útil en la administración de archivos dentro de la
+              interfaz de línea de comandos (CLI).
+            </p>
+            <h3>Formato touch</h3>
+            <div class="code-example__syntax">
+              <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      touch [nombre_del_archivo]
+                    </code>
+                  </pre>
+            </div>
+            <p>
+              Si el archivo no existe, el comando lo crea vacío. Si el
+              archivo ya existe, simplemente actualiza su fecha de
+              modificación sin cambiar su contenido.
+            </p>
+            <!-- Ejemplos de uso touch -->
+            <div>
+              <h3>Ejemplos de uso touch</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Crear un archivo vacío</span>: Este
+                  comando creará un archivo llamado "documento.txt" en el
+                  directorio act
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            touch documento.txt
+                          </code>
+                        </pre>
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Crear varios archivos a la vez</span>: Esto creará los archivos
+                  "archivo1.txt", "archivo2.txt"
+                  y "archivo3.txt" en el directorio actual.
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            touch archivo1.txt archivo2.txt archivo3.txt
+                          </code>
+                        </pre>
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Actualizar la fecha y hora de un archivo
+                    existente</span>: Si "informe.txt" ya existe, su fecha de modificación se
+                  actualizará a la fecha y hora actual sin modificar su
+                  contenido.
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            touch informe.txt
+                          </code>
+                        </pre>
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Cambiar la fecha de modificación a una fecha
+                    específica</span>: Esto cambia la fecha de modificación de "archivo.txt" a
+                  28 de febrero de 2024 a las 15:30.
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            touch -t 202402281530 archivo.txt
+                          </code>
+                        </pre>
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Evitar la creación del archivo si no existe (solo
+                    actualizar la fecha)</span>: Si el archivo no existe, no se creará. Si existe, se
+                  actualizará su fecha de modificación.
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            touch -c archivo.txt
+                          </code>
+                        </pre>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Ejemplos de uso touch fin -->
+
+            <!-- Opciones Útiles de touch -->
+            <div>
+              <h3>Opciones Útiles de touch</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">touch -c</span>: No crea el archivo
+                  si no existe, solo actualiza la fecha de modificación si
+                  ya existe.
+                </li>
+                <li>
+                  <span class="fw-bold">touch -m</span>: Solo modifica la
+                  fecha de modificación del archivo, sin cambiar la de
+                  acceso.
+                </li>
+                <li>
+                  <span class="fw-bold">touch -a</span>: Solo cambia la
+                  fecha de acceso sin modificar la de modificación.
+                </li>
+                <li>
+                  <span class="fw-bold">touch -t [[CC]YY]MMDDhhmm[.ss]</span>: Especifica una fecha y hora
+                  personalizada.
+                </li>
+                <li>
+                  <span class="fw-bold">touch -t 202402281530 archivo.txt </span>: Esto cambia la fecha de
+                  modificación de "archivo.txt" a
+                  28 de febrero de 2024 a las 15:30.
+                </li>
+                <li>
+                  <span class="fw-bold">touch -d "2023-12-01 10:00:00" reporte.txt </span>: Esto cambia la fecha de
+                  "reporte.txt" a 1 de diciembre
+                  de 2023 a las 10:00 AM.
+                </li>
+              </ul>
+            </div>
+            <!-- Opciones Útiles de touch fin -->
+          </div>
+
+          <!-- rm -->
+          <hr class="site-divider--subtle site-divider" />
+
+          <div id="rm" class="mt-3">
+            <h2>rm (ReMove)</h2>
+            <p>
+              El comando
+              <abbr title="ReMove"><code class="language-bash">rm</code></abbr>
+              se utiliza para eliminar archivos y directorios. Su uso puede
+              ser peligroso porque los archivos eliminados con
+              <code class="language-bash">rm</code> no se envían a la
+              papelera, sino que se borran de manera permanente.
+            </p>
+            <h3>Formato rm</h3>
+            <div class="code-example__syntax">
+              <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      rm [opciones] [ruta_de_directorio]/[nombre_del_archivo]
+                    </code>
+                  </pre>
+            </div>
+            <div>
+              <h3>Usos rm</h3>
+              <ul>
+                <li>
+                  <code class="language-bash">rm -f c:\usuarios\respaldo\index.css</code>, se hace la eliminación del
+                  archivo
+                  <code class="language-bash">index.css</code> sin pedir
+                  confirmación alguna.
+                </li>
+                <li>
+                  <code class="language-bash">rm -i index.css</code>, pide
+                  la confirmación antes de la eliminación del archivo
+                  <code class="language-bash">index.css</code>.
+                </li>
+                <li>
+                  <code class="language-bash">rm -r c:\usuarios\respaldo\</code>
+                  o <code class="language-bash">-R</code>, se elimina el
+                  directorio de
+                  <code class="language-bash">respaldo</code>
+                  recursivamente, es decir, se elimina el directorio con
+                  todo su contenido incluyendo subcarpetas y archivos.
+                </li>
+                <li>
+                  <code class="language-bash">rm -d c:\usuarios\respaldo\</code>, borra el directorio
+                  <code class="language-bash">respaldo</code>, si y sólo si,
+                  está vacío, de lo contrario mostrará un error.
+                </li>
+                <li>
+                  <code class="language-bash">rm -v c:\usuarios\respaldo\</code>, Muestra los archivos eliminados.
+                </li>
+              </ul>
+            </div>
+            <!-- Ejemplos de Uso rm -->
+            <div>
+              <h3>Ejemplos de Uso rm</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Eliminar un archivo específico</span>: Borra el archivo
+                  <code class="language-bash">archivo.txt</code> en el
+                  directorio actual.
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            rm archivo.txt
+                          </code>
+                        </pre>
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Eliminar varios archivos</span>:
+                  Elimina <code class="language-bash">archivo1.txt</code> y
+                  <code class="language-bash">archivo2.txt</code>.
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            rm archivo1.txt archivo2.txt
+                          </code>
+                        </pre>
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Eliminar todos los archivos con cierta extensión</span>: Elimina todos los
+                  archivos con extensión
+                  <code class="language-bash">.log</code> en el directorio
+                  actual.
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            rm *.log
+                          </code>
+                        </pre>
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Eliminar un directorio y su contenido</span>: Elimina
+                  <code class="language-bash">carpeta</code> junto con todos
+                  sus archivos y subdirectorios.
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            rm -r carpeta
+                          </code>
+                        </pre>
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Forzar la eliminación sin confirmación</span>: Elimina carpeta de forma
+                  recursiva y sin pedir
+                  confirmación. ¡Cuidado con este comando, puede borrar
+                  archivos importantes de forma irreversible!.
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            rm -rf carpeta
+                          </code>
+                        </pre>
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Confirmar antes de eliminar</span>:
+                  Pregunta antes de eliminar
+                  <code class="language-bash">archivo.txt</code>.
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-bash" data-prismjs-copy="Copy">
+                            rm -i archivo.txt
+                          </code>
+                        </pre>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Ejemplos de Uso rm fin -->
+            <!-- Consejos de Seguridad rm -->
+            <div>
+              <h3>Consejos de Seguridad rm</h3>
+              <ul>
+                <li>
+                  Antes de usar <code class="language-bash">rm -rf</code>,
+                  verificar con <code class="language-bash">ls</code> qué se
+                  va a eliminar.
+                </li>
+                <li>
+                  Se puede usar
+                  <code class="language-bash">trash-cli</code> como
+                  alternativa segura para mover archivos a la papelera en
+                  lugar de eliminarlos permanentemente.
+                </li>
+              </ul>
+            </div>
+            <!-- Consejos de Seguridad rm fin -->
+          </div>
+
+          <!-- cp -->
+          <hr class="site-divider--subtle site-divider" />
+
+          <div id="cp" class="mt-3">
+            <h2>cp (CoPy)</h2>
+            <p>
+              Este comando <abbr title="CoPy">cp</abbr> se utiliza para
+              copiar archivos y directorios. Permite duplicar archivos en la
+              misma ubicación o moverlos a otra ubicación, manteniendo el
+              original intacto.
+            </p>
+            <h3>Formato cp</h3>
+            <div class="code-example__syntax">
+              <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-bash" data-prismjs-copy="Copy">
+                      cp [opciones] origen destino
+                    </code>
+                  </pre>
+            </div>
+            <ul>
+              <li>
+                <span class="fw-bold"><code class="language-bash">origen</code></span>: Archivo o directorio que se
+                desea copiar.
+              </li>
+              <li>
+                <span class="fw-bold"><code class="language-bash">destino</code></span>: Ubicación donde se copiará el
+                archivo o directorio.
+              </li>
+            </ul>
+
+            <h3>Usos cp</h3>
+            <ul>
+              <li>
+                <code class="language-bash">cp -i index.html c:\usuario\proyecto</code>, copia el archivo index.hml en
+                el directorio
+                c:\usuario\proyecto pero si el archivo ya existe se pide la
+                confirmación.
+              </li>
+              <li>
+                <code class="language-bash">cp -r c:\usuario\proyecto c:\usuario\respaldo</code>, se copia
+                recursivamente el contenido de la carpeta
+                proyecto en la respaldo, o sea, incluyendo todas las
+                subcarpetas y los archivos.
+              </li>
+              <li>
+                <code class="language-bash">cp -f origen destino</code>, Se
+                fuerza la copia sobrescribiendo archivos sin pedir
+                confirmación.
+              </li>
+              <li>
+                <code class="language-bash">cp -v origen destino</code>,
+                muestra cada archivo/directorio que se esta copiando.
+              </li>
+              <li>
+                <code class="language-bash">cp c:\usuario\archivo_viejo.txt
+                      c:\usuario\archivo_nuevo.txt</code>, renombra el archivo_viejo.txt con archivo_nuevo.txt
+                quedando ambos archivos en el mismo directorio, ambos son
+                iguales, se puede borrar el original, archivo_viejo.txt sin
+                consecuencias.
+              </li>
+
+              <li>
+                <code class="language-bash">cp -p informe.pdf \home\usuario\respaldo\ </code>, Se copia el archivo
+                <code class="language-bash">informe.pdf</code> a la carpeta
+                <code class="language-bash">\home\usuario\respaldo\</code>,
+                manteniendo sus permisos y fecha de modificación.
+              </li>
+
+              <li>
+                <code class="language-bash">cp c:\usuario\archivo_viejo.txt
+                      c:\usuario\archivo_nuevo.txt</code>, renombra el archivo_viejo.txt con archivo_nuevo.txt
+                quedando ambos archivos en el mismo directorio, ambos son
+                iguales, se puede borrar el original, archivo_viejo.txt sin
+                consecuencias.
+              </li>
+              <li>
+                <code class="language-bash">cp -u datos.csv \home\usuario\respaldo\ </code>: Copia el archivo
+                <code class="language-bash">datos.csv</code> al directorio
+                <code class="language-bash">\home\usuario\respaldo\</code>,
+                pero evitando sobrescribirlo si ya existe una versión más
+                reciente en el destino.
+                <div class="code-example__syntax">
+                  <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-bash" data-prismjs-copy="Copy">
+                          cp -u datos.csv \home\usuario\respaldo\
+                        </code>
+                      </pre>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- clear -->
+          <hr class="site-divider--subtle site-divider" />
+
+          <div id="clear" class="mt-3">
+            <h2>clear</h2>
+            <p>
+              Este comando se usa para limpiar la terminal, eliminando el
+              contenido visible en pantalla y dejando una interfaz limpia.
+            </p>
+            <h3>Formato clear</h3>
+            <div class="code-example__syntax">
+              <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       clear
                     </code>
                   </pre>
-              </div>
-              <!-- Alternativas a clear -->
-              <div>
-                <h3>Alternativas a clear</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Limpiar la pantalla sin perder el historial</span>:
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <!-- Alternativas a clear -->
+            <div>
+              <h3>Alternativas a clear</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Limpiar la pantalla sin perder el historial</span>:
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             printf "\033c"
                           </code>
                         </pre>
-                    </div>
-                    Esto restablece la terminal a su estado inicial.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Limpiar el historial de la sesión actual y la
-                      pantalla</span>:
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                  Esto restablece la terminal a su estado inicial.
+                </li>
+                <li>
+                  <span class="fw-bold">Limpiar el historial de la sesión actual y la
+                    pantalla</span>:
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             history -c && clear
                           </code>
                         </pre>
-                    </div>
-                    Este comando borra completamente el historial de comandos
-                    y limpia la pantalla.
-                  </li>
-                </ul>
-              </div>
-              <!-- Alternativas a clear fin -->
+                  </div>
+                  Este comando borra completamente el historial de comandos
+                  y limpia la pantalla.
+                </li>
+              </ul>
             </div>
+            <!-- Alternativas a clear fin -->
+          </div>
 
-            <!-- history -->
-            <hr class="site-divider--subtle site-divider" />
+          <!-- history -->
+          <hr class="site-divider--subtle site-divider" />
 
-            <div id="history" class="mt-3">
-              <h2>history</h2>
-              <p>
-                Se utiliza para mostrar el historial de comandos ejecutados en
-                la terminal. Esto permite revisar, reutilizar o administrar
-                comandos previamente utilizados.
-              </p>
-              <h3>Formato history</h3>
-              <div class="code-example__syntax">
-                <pre data-src-status="loaded" tabindex="0">
+          <div id="history" class="mt-3">
+            <h2>history</h2>
+            <p>
+              Se utiliza para mostrar el historial de comandos ejecutados en
+              la terminal. Esto permite revisar, reutilizar o administrar
+              comandos previamente utilizados.
+            </p>
+            <h3>Formato history</h3>
+            <div class="code-example__syntax">
+              <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       history [opciones] [n]
                     </code>
                   </pre>
-              </div>
+            </div>
+            <ul>
+              <li>
+                Si se usa sin argumentos, muestra todos los comandos
+                almacenados en el historial.
+              </li>
+              <li>n permite limitar la cantidad de comandos mostrados.</li>
+            </ul>
+            <!-- Ejemplos de uso history -->
+            <div>
+              <h3>Ejemplos de uso history</h3>
               <ul>
                 <li>
-                  Si se usa sin argumentos, muestra todos los comandos
-                  almacenados en el historial.
-                </li>
-                <li>n permite limitar la cantidad de comandos mostrados.</li>
-              </ul>
-              <!-- Ejemplos de uso history -->
-              <div>
-                <h3>Ejemplos de uso history</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Mostrar todo el historial de comandos</span>: Muestra una lista numerada con
-                    todos los comandos
-                    ejecutados en la sesión actual.
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  <span class="fw-bold">Mostrar todo el historial de comandos</span>: Muestra una lista numerada con
+                  todos los comandos
+                  ejecutados en la sesión actual.
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             history
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Mostrar solo los últimos n comandos</span>: Muestra los últimos 10 comandos
-                    ejecutados.
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Mostrar solo los últimos n comandos</span>: Muestra los últimos 10 comandos
+                  ejecutados.
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             history 10
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Buscar un comando en el historial</span>: Muestra todas las líneas del
-                    historial que contienen el
-                    comando <code class="language-bash">ls</code>.
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Buscar un comando en el historial</span>: Muestra todas las líneas del
+                  historial que contienen el
+                  comando <code class="language-bash">ls</code>.
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             history | grep "ls"
                           </code>
                         </pre>
-                    </div>
-                    Otra forma rápida de buscar comandos es presionar
-                    <code class="language-bash">Ctrl + R</code> y escribir una
-                    parte del comando.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Reejecutar un comando del historial</span>: Se puede ejecutar un comando
-                    directamente usando su
-                    número en la lista.
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                  Otra forma rápida de buscar comandos es presionar
+                  <code class="language-bash">Ctrl + R</code> y escribir una
+                  parte del comando.
+                </li>
+                <li>
+                  <span class="fw-bold">Reejecutar un comando del historial</span>: Se puede ejecutar un comando
+                  directamente usando su
+                  número en la lista.
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             !100
                           </code>
                         </pre>
-                    </div>
-                    Ejecuta el comando con el número 100 en el historial.
-                    <br />
-                    Para ejecutar el último comando usado:
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                  Ejecuta el comando con el número 100 en el historial.
+                  <br />
+                  Para ejecutar el último comando usado:
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             !!
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Eliminar un comando específico del historial</span>: Elimina el comando número
-                    <code class="language-bash">50</code> del historial.
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Eliminar un comando específico del historial</span>: Elimina el comando número
+                  <code class="language-bash">50</code> del historial.
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             history -d 50
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Limpiar completamente el historial</span>: Borra todos los comandos
-                    almacenados en el historial de
-                    la sesión actual.
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Limpiar completamente el historial</span>: Borra todos los comandos
+                  almacenados en el historial de
+                  la sesión actual.
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             history -c
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Guardar el historial actual en el archivo de
-                      historial</span>: Guarda los cambios en el archivo ~/.bash_history, donde
-                    se almacena el historial de comandos.
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Guardar el historial actual en el archivo de
+                    historial</span>: Guarda los cambios en el archivo ~/.bash_history, donde
+                  se almacena el historial de comandos.
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             history -w
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- Ejemplos de uso history fin -->
-              <!-- Ubicación del historial -->
-              <div>
-                <h3>Ubicación del historial</h3>
-                <p>
-                  El historial de comandos se guarda en el archivo oculto
-                  ~/.bash_history. Se puede ver con:
-                </p>
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Ejemplos de uso history fin -->
+            <!-- Ubicación del historial -->
+            <div>
+              <h3>Ubicación del historial</h3>
+              <p>
+                El historial de comandos se guarda en el archivo oculto
+                ~/.bash_history. Se puede ver con:
+              </p>
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         cat ~/.bash_history
                       </code>
                     </pre>
-                </div>
-                <p>
-                  El comando <code class="language-bash">history</code> es
-                  útil para reutilizar comandos, depurar errores o automatizar
-                  tareas mediante scripts.
-                </p>
               </div>
-              <!-- Ubicación del historial fin -->
+              <p>
+                El comando <code class="language-bash">history</code> es
+                útil para reutilizar comandos, depurar errores o automatizar
+                tareas mediante scripts.
+              </p>
             </div>
+            <!-- Ubicación del historial fin -->
+          </div>
         </article>
         <!-- fin Comandos Básicos CLI -->
         <!--  comentarios  -->
@@ -1320,42 +1325,47 @@
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
+          <div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo">
             <div class="border border-1">
               <div class="site-menu__item">
-                <a href="#introduccion" class="site-menu__link">Introducción</a>
+                <a href="#introduccion" class=" list-group-item list-group-item-action">Introducción</a>
               </div>
               <div class="site-menu__item">
-                <a href="#pwd" class="site-menu__link"><code class="language-shell">pwd</code></a>
+                <a href="#pwd" class=" list-group-item list-group-item-action"><code
+                    class="language-shell">pwd</code></a>
               </div>
               <div class="site-menu__item">
-                <a href="#ls" class="site-menu__link"><code class="language-shell">ls</code></a>
+                <a href="#ls" class=" list-group-item list-group-item-action"><code class="language-shell">ls</code></a>
               </div>
               <div class="site-menu__item">
-                <a href="#cd" class="site-menu__link"><code class="language-shell">cd</code></a>
+                <a href="#cd" class=" list-group-item list-group-item-action"><code class="language-shell">cd</code></a>
               </div>
               <div class="site-menu__item">
-                <a href="#mkdir" class="site-menu__link"><code class="language-shell">mkdir</code></a>
+                <a href="#mkdir" class=" list-group-item list-group-item-action"><code
+                    class="language-shell">mkdir</code></a>
               </div>
               <div class="site-menu__item">
-                <a href="#touch" class="site-menu__link"><code class="language-shell">touch</code></a>
+                <a href="#touch" class=" list-group-item list-group-item-action"><code
+                    class="language-shell">touch</code></a>
               </div>
               <div class="site-menu__item">
-                <a href="#rm" class="site-menu__link"><code class="language-shell">rm</code></a>
+                <a href="#rm" class=" list-group-item list-group-item-action"><code class="language-shell">rm</code></a>
               </div>
 
               <div class="site-menu__item">
-                <a href="#cp" class="site-menu__link"><code class="language-shell">cp</code></a>
+                <a href="#cp" class=" list-group-item list-group-item-action"><code class="language-shell">cp</code></a>
               </div>
               <div class="site-menu__item">
-                <a href="#clear" class="site-menu__link"><code class="language-shell">clear</code></a>
+                <a href="#clear" class=" list-group-item list-group-item-action"><code
+                    class="language-shell">clear</code></a>
               </div>
               <div class="site-menu__item">
-                <a href="#history" class="site-menu__link"><code class="language-shell">history</code></a>
+                <a href="#history" class=" list-group-item list-group-item-action"><code
+                    class="language-shell">history</code></a>
               </div>
               <!-- Comentarios  -->
               <div class="site-menu__item">
-                <a href="#comments" class="site-menu__link">Comentarios</a>
+                <a href="#comments" class=" list-group-item list-group-item-action">Comentarios</a>
               </div>
             </div>
           </div>

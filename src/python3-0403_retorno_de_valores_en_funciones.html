@@ -61,7 +61,7 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy" data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -110,38 +110,39 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Retorno de Valores en Funciones Python  -->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
-          <header>
-            <h1>Retorno de Valores en Funciones Python</h1>
-          </header>
-          <!-- Introducción -->
-          <div class="mt-3">
-            <h2>Introducción</h2>
-            <div class="site-image site-intro-image mb-5">
-              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
-                <img loading="lazy" src="https://i.ibb.co/MBqwk1b/retornovalores.jpg" class="img-fluid"
-                  alt="Retorno de Valores en Funciones Python"
-                  title="Diagrama de árbol que ilustra la ejecución de una función en Python, mostrando su comportamiento con y sin valor de retorno" />
-                <figcaption class="site-image__caption">
-                  Retorno de Valores en Funciones Python
-                </figcaption>
-              </figure>
-            </div>
-            <p>
-              Se explica cómo devolver el resultado de una función en
-              Python, un concepto fundamental en la programación que permite
-              a los programadores crear funciones capaces de realizar
-              cálculos o procesar datos y proporcionar un resultado
-              utilizable en otras partes del código. A través de ejemplos
-              prácticos, se aprenderá a definir funciones, usar la
-              declaración return y manejar los resultados devueltos.
-            </p>
+        <article class="row border-1 border-bottom pb-3">
+          <div id="introduccion">
+            <header>
+              <h1>Retorno de Valores en Funciones Python</h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-3">
+              <h2>Introducción</h2>
+              <div class="site-image site-intro-image mb-5">
+                <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                  <img loading="lazy" src="https://i.ibb.co/MBqwk1b/retornovalores.jpg" class="img-fluid"
+                    alt="Retorno de Valores en Funciones Python"
+                    title="Diagrama de árbol que ilustra la ejecución de una función en Python, mostrando su comportamiento con y sin valor de retorno" />
+                  <figcaption class="site-image__caption">
+                    Retorno de Valores en Funciones Python
+                  </figcaption>
+                </figure>
+              </div>
+              <p>
+                Se explica cómo devolver el resultado de una función en
+                Python, un concepto fundamental en la programación que permite
+                a los programadores crear funciones capaces de realizar
+                cálculos o procesar datos y proporcionar un resultado
+                utilizable en otras partes del código. A través de ejemplos
+                prácticos, se aprenderá a definir funciones, usar la
+                declaración return y manejar los resultados devueltos.
+              </p>
 
+            </div>
           </div>
           <hr class="site-divider--subtle site-divider" />
           <!-- Ventajas y Desventajas -->
@@ -686,17 +687,17 @@
         <!--  fin comentarios  -->
       </section>
 
-      <!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h2>En Este Artículo</h2><div class="site-menu__scroll"><div class="site-menu"><div class="border border-1">
-<div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
-<div class="site-menu__item"><a href="#ventajas-y-desventajas" class="site-menu__link">Ventajas y Desventajas</a></div>
-<div class="site-menu__item"><a href="#UsoDeLaDeclaraciOnReturn" class="site-menu__link">Uso de la Declaración <code class="language-python">return</code></a></div>
-<div class="site-menu__item"><a href="#multiples-valores-de-retorno" class="site-menu__link">Múltiples Valores de Retorno</a></div>
-<div class="site-menu__item"><a href="#manejo-de--rResultados-devueltos" class="site-menu__link">Manejo de Resultados Devueltos</a></div>
-<div class="site-menu__item"><a href="#palabra-reservada-none" class="site-menu__link">Palabra Reservada <code class="language-python">none</code></a></div>
-<div class="site-menu__item"><a href="#resultados-con-listas-y-funciones" class="site-menu__link">Resultados con Listas y Funciones</a></div>
-<div class="site-menu__item"><a href="#buenas-practicas" class="site-menu__link">Buenas Prácticas</a></div>
+      <!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h2>En Este Artículo</h2><div class="site-menu__scroll"><div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo"><div class="border border-1">
+<div class="site-menu__item"><a href="#introduccion" class=" list-group-item list-group-item-action">Introducción</a></div>
+<div class="site-menu__item"><a href="#ventajas-y-desventajas" class=" list-group-item list-group-item-action">Ventajas y Desventajas</a></div>
+<div class="site-menu__item"><a href="#UsoDeLaDeclaraciOnReturn" class=" list-group-item list-group-item-action">Uso de la Declaración <code class="language-python">return</code></a></div>
+<div class="site-menu__item"><a href="#multiples-valores-de-retorno" class=" list-group-item list-group-item-action">Múltiples Valores de Retorno</a></div>
+<div class="site-menu__item"><a href="#manejo-de--rResultados-devueltos" class=" list-group-item list-group-item-action">Manejo de Resultados Devueltos</a></div>
+<div class="site-menu__item"><a href="#palabra-reservada-none" class=" list-group-item list-group-item-action">Palabra Reservada <code class="language-python">none</code></a></div>
+<div class="site-menu__item"><a href="#resultados-con-listas-y-funciones" class=" list-group-item list-group-item-action">Resultados con Listas y Funciones</a></div>
+<div class="site-menu__item"><a href="#buenas-practicas" class=" list-group-item list-group-item-action">Buenas Prácticas</a></div>
 <!-- Comentarios  -->
-<div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div></div></div></div></aside>
+<div class="site-menu__item"><a href="#comments" class=" list-group-item list-group-item-action">Comentarios</a></div></div></div></div></aside>
 <!--  fin barra lateral  -->
     </main>
     <!--  fin principal  -->

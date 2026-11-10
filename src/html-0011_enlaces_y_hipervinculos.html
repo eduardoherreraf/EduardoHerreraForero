@@ -54,7 +54,8 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy"
+  data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -85,7 +86,8 @@
             <a class="nav-link mx-1 text-decoration-none" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 site-nav__link--publications-active text-decoration-none site-nav__link" href="index.html#blog">ARTÍCULOS</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active text-decoration-none site-nav__link"
+              href="index.html#blog">ARTÍCULOS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1 text-decoration-none" href="index.html#contact">CONTACTO</a>
@@ -103,14 +105,13 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Enlaces y hipervínculos HTML-->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
+        <article class="row border-1 border-bottom pb-3">
 
-            <header>
+            <header id="introduccion">
               <h1>Enlaces y hipervínculos HTML</h1>
             </header>
 
@@ -122,7 +123,8 @@
                 <figure class="site-content__img-container site-image__figure site-image__figure--intro">
                   <img src="https://i.postimg.cc/MHBr9FzF/img-ancla-y-hirpervinculo-comp.png" class="img-fluid"
                     alt="Enlaces y hipervínculos HTML"
-                    title="Guía que explica cómo utilizar los enlaces e hipervínculos en una página web."  loading="lazy"/>
+                    title="Guía que explica cómo utilizar los enlaces e hipervínculos en una página web."
+                    loading="lazy" />
                   <figcaption class="site-image__caption">
                     Analogía de un hipervínculo y la dirección de una
                     invitación.
@@ -172,177 +174,177 @@
                 con un clic.
               </p>
             </div>
-            <!-- Introducción Fin -->
-            <hr class="site-divider--subtle site-divider" />
+          <!-- Introducción Fin -->
+          <hr class="site-divider--subtle site-divider" />
 
-            <!-- Enlaces HTML-Hiperenlaces -->
-            <div id="enlaces-html-hiperenlaces" class="mt-3">
-              <h2>Enlaces HTML-Hiperenlaces</h2>
-              <p>
-                Los enlaces en HTML son hiperenlaces que conectan diferentes
-                recursos en la web.
-              </p>
-              <p>
-                Al hacer clic en un enlace, se puede navegar hacia otro
-                documento o página.
-              </p>
-              <p>
-                Al pasar el cursor sobre un enlace, la flecha del ratón se
-                transforma en una pequeña mano (<i class="bi bi-hand-index-thumb-fill"></i>).
-              </p>
-            </div>
-            <!-- Enlaces HTML-Hiperenlaces Fin -->
-            <hr class="site-divider--subtle site-divider" />
+          <!-- Enlaces HTML-Hiperenlaces -->
+          <div id="enlaces-html-hiperenlaces" class="mt-3">
+            <h2>Enlaces HTML-Hiperenlaces</h2>
+            <p>
+              Los enlaces en HTML son hiperenlaces que conectan diferentes
+              recursos en la web.
+            </p>
+            <p>
+              Al hacer clic en un enlace, se puede navegar hacia otro
+              documento o página.
+            </p>
+            <p>
+              Al pasar el cursor sobre un enlace, la flecha del ratón se
+              transforma en una pequeña mano (<i class="bi bi-hand-index-thumb-fill"></i>).
+            </p>
+          </div>
+          <!-- Enlaces HTML-Hiperenlaces Fin -->
+          <hr class="site-divider--subtle site-divider" />
 
-            <!-- Enlaces HTML-Sintaxis -->
-            <div id="enlaces-html-sintaxis" class="mt-3">
-              <h2>Enlaces HTML-Sintaxis</h2>
-              <p>
-                La etiqueta HTML
-                <code class="language-html">&lt;a></code> define un
-                hipervínculo. Tiene la siguiente sintaxis:
-              </p>
+          <!-- Enlaces HTML-Sintaxis -->
+          <div id="enlaces-html-sintaxis" class="mt-3">
+            <h2>Enlaces HTML-Sintaxis</h2>
+            <p>
+              La etiqueta HTML
+              <code class="language-html">&lt;a></code> define un
+              hipervínculo. Tiene la siguiente sintaxis:
+            </p>
 
-              <div class="code-example__syntax">
-                <pre data-src-status="loaded" tabindex="0">
+            <div class="code-example__syntax">
+              <pre data-src-status="loaded" tabindex="0">
                     <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                       &lt;a href="url">link text&lt;/a>
                     </code>
                   </pre>
+            </div>
+            <ul>
+              <li>
+                <code class="language-html">&lt;a></code>: Es la etiqueta
+                que sirve para crear un enlace (<span class="fst-italic">anchor</span>).
+              </li>
+              <li>
+                <code class="language-html">href</code>: Es el atributo que
+                especifica la URL hacia la cual se redirige al usuario al
+                pulsar.
+              </li>
+              <li>
+                <span class="fw-bold">Texto del vínculo</span>: Es el
+                contenido visible que el usuario puede pulsar.
+              </li>
+              <li>
+                Al pulsar sobre el texto del vínculo, se dirigirá al usuario
+                a la URL indicada en
+                <code class="language-html">href</code>.
+              </li>
+            </ul>
+            <!-- Ejemplo -->
+            <div class="code-example">
+              <div class="code-example__output mt-3">
+                <!-- código ejecutado -->
+                <p>
+                  Este ejemplo muestra cómo crear un enlace a la página del
+                  <a href="https://eduardoherreraf.github.io/" target="_blank">Ing. Eduardo Herrera Forero</a>:
+                </p>
+                <!-- código ejecutado fin -->
               </div>
-              <ul>
-                <li>
-                  <code class="language-html">&lt;a></code>: Es la etiqueta
-                  que sirve para crear un enlace (<span class="fst-italic">anchor</span>).
-                </li>
-                <li>
-                  <code class="language-html">href</code>: Es el atributo que
-                  especifica la URL hacia la cual se redirige al usuario al
-                  pulsar.
-                </li>
-                <li>
-                  <span class="fw-bold">Texto del vínculo</span>: Es el
-                  contenido visible que el usuario puede pulsar.
-                </li>
-                <li>
-                  Al pulsar sobre el texto del vínculo, se dirigirá al usuario
-                  a la URL indicada en
-                  <code class="language-html">href</code>.
-                </li>
-              </ul>
-              <!-- Ejemplo -->
-              <div class="code-example">
-                <div class="code-example__output mt-3">
-                  <!-- código ejecutado -->
-                  <p>
-                    Este ejemplo muestra cómo crear un enlace a la página del
-                    <a href="https://eduardoherreraf.github.io/" target="_blank">Ing. Eduardo Herrera Forero</a>:
-                  </p>
-                  <!-- código ejecutado fin -->
-                </div>
-                <div class="code-example__html mb-3">
-                  <!-- código código HTML -->
-                  <pre data-src-status="loaded" tabindex="0">
+              <div class="code-example__html mb-3">
+                <!-- código código HTML -->
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                         Este ejemplo muestra cómo crear un enlace a la página del 
                         &lt;a href="https://eduardoherreraf.github.io/">Ing. Eduardo Herrera Forero&lt;/a> 
                       </code>
                     </pre>
-                  <!-- código código HTML -->
-                </div>
+                <!-- código código HTML -->
               </div>
-              <!-- Ejemplo fin -->
-              <p>
-                De manera predeterminada, los vínculos se mostrarán de la
-                siguiente forma en todos los navegadores:
-              </p>
-              <ul>
-                <li>
-                  Un enlace sin visitar se resalta en
-                  <span style="color: #9bb5ff">azul</span> y con
-                  <span style="text-decoration: underline">subrayado</span>.
-                </li>
-                <li>
-                  Un enlace visitado se destaca en
-                  <span style="color: #d2a4ff">púrpura</span> y con
-                  <span style="text-decoration: underline">subrayado</span>.
-                </li>
-                <li>
-                  Un enlace activo se marca en
-                  <span style="color: #ff6b6b">rojo</span> y con
-                  <span style="text-decoration: underline">subrayado</span>.
-                </li>
-              </ul>
             </div>
-            <!-- Enlaces HTML-Sintaxis Fin -->
-            <hr class="site-divider--subtle site-divider" />
+            <!-- Ejemplo fin -->
+            <p>
+              De manera predeterminada, los vínculos se mostrarán de la
+              siguiente forma en todos los navegadores:
+            </p>
+            <ul>
+              <li>
+                Un enlace sin visitar se resalta en
+                <span style="color: #9bb5ff">azul</span> y con
+                <span style="text-decoration: underline">subrayado</span>.
+              </li>
+              <li>
+                Un enlace visitado se destaca en
+                <span style="color: #d2a4ff">púrpura</span> y con
+                <span style="text-decoration: underline">subrayado</span>.
+              </li>
+              <li>
+                Un enlace activo se marca en
+                <span style="color: #ff6b6b">rojo</span> y con
+                <span style="text-decoration: underline">subrayado</span>.
+              </li>
+            </ul>
+          </div>
+          <!-- Enlaces HTML-Sintaxis Fin -->
+          <hr class="site-divider--subtle site-divider" />
 
-            <!-- Enlaces HTML - El Atributo target -->
-            <div id="enlaces-html---el-atributo-target" class="mt-3">
-              <h2>Enlaces HTML - El Atributo target</h2>
-              <p>
-                Por defecto, la página enlazada aparecerá en la ventana actual
-                del navegador. Para modificar esto, es necesario definir un
-                destino diferente para el enlace.
-              </p>
-              <p>
-                El atributo
-                <code class="language-html">target</code> especifica dónde
-                abrir el documento enlazado.
-              </p>
-              <p>
-                El atributo <code class="language-html">target</code> puede
-                ser uno de los siguientes valores:
-              </p>
-              <ul>
-                <li>
-                  <code class="language-html">_self</code>: Por omisión, carga
-                  el documento en la misma ventana o pestaña donde se hizo
-                  clic.
-                </li>
-                <li>
-                  <code class="language-html">_blank</code>: Carga el
-                  documento en una nueva ventana o pestaña, se usa en conjunto
-                  con
-                  <code class="language-html">rel="noopener noreferrer"</code>, para una mayor seguridad y privacidad.
-                </li>
-                <li>
-                  <code class="language-html">_parent</code>: Carga el
-                  documento en el marco superior inmediato, si existe.
-                </li>
-                <li>
-                  <code class="language-html">_top</code>: Carga el documento
-                  ocupando todo el espacio de la ventana, rompe todos los
-                  frames.
-                </li>
-                <li>
-                  <sapa class="fw-bold">Nombre Personalizado</sapa>: Abre en
-                  ventana específica.
-                </li>
-                <li>
-                  Los atributos más usados son:
-                  <code class="language-html">_self</code> y
+          <!-- Enlaces HTML - El Atributo target -->
+          <div id="enlaces-html---el-atributo-target" class="mt-3">
+            <h2>Enlaces HTML - El Atributo target</h2>
+            <p>
+              Por defecto, la página enlazada aparecerá en la ventana actual
+              del navegador. Para modificar esto, es necesario definir un
+              destino diferente para el enlace.
+            </p>
+            <p>
+              El atributo
+              <code class="language-html">target</code> especifica dónde
+              abrir el documento enlazado.
+            </p>
+            <p>
+              El atributo <code class="language-html">target</code> puede
+              ser uno de los siguientes valores:
+            </p>
+            <ul>
+              <li>
+                <code class="language-html">_self</code>: Por omisión, carga
+                el documento en la misma ventana o pestaña donde se hizo
+                clic.
+              </li>
+              <li>
+                <code class="language-html">_blank</code>: Carga el
+                documento en una nueva ventana o pestaña, se usa en conjunto
+                con
+                <code class="language-html">rel="noopener noreferrer"</code>, para una mayor seguridad y privacidad.
+              </li>
+              <li>
+                <code class="language-html">_parent</code>: Carga el
+                documento en el marco superior inmediato, si existe.
+              </li>
+              <li>
+                <code class="language-html">_top</code>: Carga el documento
+                ocupando todo el espacio de la ventana, rompe todos los
+                frames.
+              </li>
+              <li>
+                <sapa class="fw-bold">Nombre Personalizado</sapa>: Abre en
+                ventana específica.
+              </li>
+              <li>
+                Los atributos más usados son:
+                <code class="language-html">_self</code> y
+                <code class="language-html">_blank</code>:
+              </li>
+            </ul>
+            <!-- Ejemplo -->
+            <div class="code-example">
+              <div class="code-example__output mt-3">
+                <!-- código ejecutado -->
+                <p>
+                  <code class="language-html">_self</code>:
+                  <a href="https://eduardoherreraf.github.io/" target="_self">
+                    La página abre en la misma pestaña / ventana</a>
+                  <br />
                   <code class="language-html">_blank</code>:
-                </li>
-              </ul>
-              <!-- Ejemplo -->
-              <div class="code-example">
-                <div class="code-example__output mt-3">
-                  <!-- código ejecutado -->
-                  <p>
-                    <code class="language-html">_self</code>:
-                    <a href="https://eduardoherreraf.github.io/" target="_self">
-                      La página abre en la misma pestaña / ventana</a>
-                    <br />
-                    <code class="language-html">_blank</code>:
-                    <a href="https://eduardoherreraf.github.io/" target="_blank" rel="noopener noreferrer">
-                      La página abre en otra pestaña / ventana</a>
-                  </p>
-                  <!-- código ejecutado fin -->
-                </div>
-                <div class="code-example__html mb-3">
-                  <!-- código código HTML -->
-                  <pre data-src-status="loaded" tabindex="0">
+                  <a href="https://eduardoherreraf.github.io/" target="_blank" rel="noopener noreferrer">
+                    La página abre en otra pestaña / ventana</a>
+                </p>
+                <!-- código ejecutado fin -->
+              </div>
+              <div class="code-example__html mb-3">
+                <!-- código código HTML -->
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                       &lt;p>&lt;code>_self&lt;/code>: 
                         &lt;a href="https://eduardoherreraf.github.io/" target="_self">La página abre en la misma pestaña / ventana&lt;/a>
@@ -355,92 +357,92 @@
                       &lt;/p>
                     </code>
                   </pre>
-                  <!-- código código HTML -->
-                </div>
+                <!-- código código HTML -->
               </div>
-              <!-- Ejemplo fin -->
             </div>
-            <!-- Enlaces HTML - El Atributo target Fin -->
-            <hr class="site-divider--subtle site-divider" />
+            <!-- Ejemplo fin -->
+          </div>
+          <!-- Enlaces HTML - El Atributo target Fin -->
+          <hr class="site-divider--subtle site-divider" />
 
-            <!-- URLs absolutas vs URLs relativas -->
-            <div id="urls-absolutas-vs-urls-relativas" class="mt-3">
-              <h2>URLs Absolutas vs URLs Relativas</h2>
+          <!-- URLs absolutas vs URLs relativas -->
+          <div id="urls-absolutas-vs-urls-relativas" class="mt-3">
+            <h2>URLs Absolutas vs URLs Relativas</h2>
+            <p>
+              En el contexto de HTML, las
+              <abbr title="Uniform Resource Locator">URL</abbr>s (Uniform
+              Resource Locators) son fundamentales para especificar la
+              ubicación de recursos como enlaces, imágenes o archivos
+              multimedia. Permiten indicar el nombre y la localización de un
+              archivo o recurso, y se dividen principalmente en dos tipos:
+              absolutas y relativas. <br />
+              <!-- URL Absoluta  -->
+            </p>
+            <div id="url-absoluta">
+              <h3>URL Absoluta</h3>
               <p>
-                En el contexto de HTML, las
-                <abbr title="Uniform Resource Locator">URL</abbr>s (Uniform
-                Resource Locators) son fundamentales para especificar la
-                ubicación de recursos como enlaces, imágenes o archivos
-                multimedia. Permiten indicar el nombre y la localización de un
-                archivo o recurso, y se dividen principalmente en dos tipos:
-                absolutas y relativas. <br />
-                <!-- URL Absoluta  -->
+                Una URL absoluta es una dirección completa e independiente
+                que contiene todos los componentes necesarios para localizar
+                un recurso desde cualquier ubicación, sin depender de la
+                posición del usuario o del documento que la referencia.
               </p>
-              <div id="url-absoluta">
-                <h3>URL Absoluta</h3>
-                <p>
-                  Una URL absoluta es una dirección completa e independiente
-                  que contiene todos los componentes necesarios para localizar
-                  un recurso desde cualquier ubicación, sin depender de la
-                  posición del usuario o del documento que la referencia.
-                </p>
-                <p>
-                  Las URLs absolutas son necesarias cuando se quiere enlazar a
-                  una página o recurso que se encuentra fuera de su propio
-                  sistema o servidor. Este tipo de URL es universalmente
-                  accesible desde cualquier ubicación y no depende del
-                  contexto donde se use.
-                </p>
-                <p>
-                  Una URL absoluta proporciona la dirección completa y
-                  autosuficiente de un recurso en la web. Esto incluye:
-                </p>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Protocolo</span>: Estar seguro de
-                    incluir de primero el protocolo, como
-                    <code class="language-html">http://</code>,
-                    <code class="language-html">https://</code>,
-                    <code class="language-html">ftp://</code>, etc.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Dominio completo</span>: Contiene el
-                    nombre de dominio del sitio web (ej., www.ejemplo.com).
-                  </li>
-                  <li>
-                    <span class="fw-bold">Ruta</span>: Especifica la posición
-                    del recurso en el servidor (ej.,
-                    categoria/computador-Mac.html).
-                  </li>
-                </ul>
-                <!-- Ejemplo -->
-                <div class="code-example">
-                  <div class="code-example__output mt-3">
-                    <!-- código ejecutado -->
-                    <p>
-                      Para la página inicial de la Nasa:
-                      <a href="https://www.nasa.gov/">Página inicial de NASA
-                      </a>
-                    </p>
-                    <p>
-                      Listado de los
-                      <a href="http://localhost:3000/api/usuarios">Usuarios Locales</a>
-                    </p>
-                    <p>
-                      Ver
-                      <a href="ftp://servidor.com/archivos/documento.pdf">documento PDF</a>
-                    </p>
-                    <p>
-                      Las direcciones de correo electrónico en enlaces también
-                      usan una estructura absoluta con
-                      <code class="language-html">mailto:</code>
-                      <a href="mailto:presidente@empresa.com">Presidente de la empresa</a>.
-                    </p>
-                    <!-- código ejecutado fin -->
-                  </div>
-                  <div class="code-example__html mb-3">
-                    <!-- código HTML -->
-                    <pre data-src-status="loaded" tabindex="0">
+              <p>
+                Las URLs absolutas son necesarias cuando se quiere enlazar a
+                una página o recurso que se encuentra fuera de su propio
+                sistema o servidor. Este tipo de URL es universalmente
+                accesible desde cualquier ubicación y no depende del
+                contexto donde se use.
+              </p>
+              <p>
+                Una URL absoluta proporciona la dirección completa y
+                autosuficiente de un recurso en la web. Esto incluye:
+              </p>
+              <ul>
+                <li>
+                  <span class="fw-bold">Protocolo</span>: Estar seguro de
+                  incluir de primero el protocolo, como
+                  <code class="language-html">http://</code>,
+                  <code class="language-html">https://</code>,
+                  <code class="language-html">ftp://</code>, etc.
+                </li>
+                <li>
+                  <span class="fw-bold">Dominio completo</span>: Contiene el
+                  nombre de dominio del sitio web (ej., www.ejemplo.com).
+                </li>
+                <li>
+                  <span class="fw-bold">Ruta</span>: Especifica la posición
+                  del recurso en el servidor (ej.,
+                  categoria/computador-Mac.html).
+                </li>
+              </ul>
+              <!-- Ejemplo -->
+              <div class="code-example">
+                <div class="code-example__output mt-3">
+                  <!-- código ejecutado -->
+                  <p>
+                    Para la página inicial de la Nasa:
+                    <a href="https://www.nasa.gov/">Página inicial de NASA
+                    </a>
+                  </p>
+                  <p>
+                    Listado de los
+                    <a href="http://localhost:3000/api/usuarios">Usuarios Locales</a>
+                  </p>
+                  <p>
+                    Ver
+                    <a href="ftp://servidor.com/archivos/documento.pdf">documento PDF</a>
+                  </p>
+                  <p>
+                    Las direcciones de correo electrónico en enlaces también
+                    usan una estructura absoluta con
+                    <code class="language-html">mailto:</code>
+                    <a href="mailto:presidente@empresa.com">Presidente de la empresa</a>.
+                  </p>
+                  <!-- código ejecutado fin -->
+                </div>
+                <div class="code-example__html mb-3">
+                  <!-- código HTML -->
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                           &lt;p>Para la página inicial de la Nasa: &lt;a href="https://www.nasa.gov/">Página inicial de NASA&lt;/a>&lt;/p> <br>
                           &lt;p>Listado de los &lt;a href="http://localhost:3000/api/usuarios">Usuarios Locales&lt;/a>&lt;/p> <br>
@@ -448,83 +450,83 @@
                           &lt;p>Enviar este documento a: &lt;a href="mailto:presidente@empresa.com">Presidente de la empresa&lt;/a>.&lt;/p>
                         </code>
                       </pre>
-                    <!-- código HTML -->
-                  </div>
+                  <!-- código HTML -->
                 </div>
-                <!-- Ejemplo fin -->
-                <!-- Ventajas de URLs Absolutas  -->
-                <div>
-                  <h4>Ventajas de URLs Absolutas</h4>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Exactitud absoluta</span>: Siempre
-                      dirigen al mismo recurso sin confusiones.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Autonomía del entorno</span>:
-                      Operan correctamente desde cualquier lugar.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Intercambiabilidad</span>: Pueden
-                      compartirse y funcionar en cualquier plataforma.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Optimización SEO</span>: Ideales
-                      para enlaces externos y difusión en redes sociales.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Ventajas de URLs Absolutas  fin -->
-                <!-- Desventajas de URLs Absolutas  -->
-                <div>
-                  <h4>Desventajas de URLs Absolutas</h4>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Menos adaptables</span>:
-                      Complicadas de ajustar si el dominio cambia.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Más extensas</span>: Consumen más
-                      espacio en el código.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Vinculación al dominio</span>:
-                      Dificultades al trasladar entre entornos (desarrollo,
-                      testing, producción).
-                    </li>
-                    <li>
-                      <span class="fw-bold">Mantenimiento</span>: Más
-                      complejas de actualizar en sitios de gran escala.
-                    </li>
-                  </ul>
-                  <p>
-                    Por último, es importante copiar estas direcciones
-                    correctamente, respetando mayúsculas y minúsculas,
-                    especialmente para servidores UNIX o Github Pages que
-                    distinguen entre ellas.
-                  </p>
-                </div>
-                <!-- Desventajas de URLs Absolutas  fin -->
               </div>
-              <!-- URL Absoluta  fin -->
-
-              <!-- URL Relativa  -->
-              <div id="url-relativa">
-                <h3>URL Relativa</h3>
+              <!-- Ejemplo fin -->
+              <!-- Ventajas de URLs Absolutas  -->
+              <div>
+                <h4>Ventajas de URLs Absolutas</h4>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Exactitud absoluta</span>: Siempre
+                    dirigen al mismo recurso sin confusiones.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Autonomía del entorno</span>:
+                    Operan correctamente desde cualquier lugar.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Intercambiabilidad</span>: Pueden
+                    compartirse y funcionar en cualquier plataforma.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Optimización SEO</span>: Ideales
+                    para enlaces externos y difusión en redes sociales.
+                  </li>
+                </ul>
+              </div>
+              <!-- Ventajas de URLs Absolutas  fin -->
+              <!-- Desventajas de URLs Absolutas  -->
+              <div>
+                <h4>Desventajas de URLs Absolutas</h4>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Menos adaptables</span>:
+                    Complicadas de ajustar si el dominio cambia.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Más extensas</span>: Consumen más
+                    espacio en el código.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Vinculación al dominio</span>:
+                    Dificultades al trasladar entre entornos (desarrollo,
+                    testing, producción).
+                  </li>
+                  <li>
+                    <span class="fw-bold">Mantenimiento</span>: Más
+                    complejas de actualizar en sitios de gran escala.
+                  </li>
+                </ul>
                 <p>
-                  Una URL relativa especifica la ubicación de un recurso en
-                  relación con la ubicación del documento HTML actual. Son
-                  comúnmente utilizadas para enlazar a otras páginas o
-                  recursos que forman parte del mismo sitio web.
+                  Por último, es importante copiar estas direcciones
+                  correctamente, respetando mayúsculas y minúsculas,
+                  especialmente para servidores UNIX o Github Pages que
+                  distinguen entre ellas.
                 </p>
-                <!-- Tipos de URLs Relativas  -->
-                <div>
-                  <h4>Tipos de URLs Relativas</h4>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Relativas al documento actual</span>:
-                      <div class="code-example__syntax">
-                        <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Desventajas de URLs Absolutas  fin -->
+            </div>
+            <!-- URL Absoluta  fin -->
+
+            <!-- URL Relativa  -->
+            <div id="url-relativa">
+              <h3>URL Relativa</h3>
+              <p>
+                Una URL relativa especifica la ubicación de un recurso en
+                relación con la ubicación del documento HTML actual. Son
+                comúnmente utilizadas para enlazar a otras páginas o
+                recursos que forman parte del mismo sitio web.
+              </p>
+              <!-- Tipos de URLs Relativas  -->
+              <div>
+                <h4>Tipos de URLs Relativas</h4>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Relativas al documento actual</span>:
+                    <div class="code-example__syntax">
+                      <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                               &lt;!-- Archivo en la misma carpeta --&gt;
                               &lt;a href="contacto.html"&gt;Contacto&lt;/a&gt;
@@ -536,24 +538,24 @@
                               &lt;a href="imagenes/logo.png"&gt;Logo&lt;/a&gt;
                             </code>
                           </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Relativas a la raíz del sitio</span>:
-                      <div class="code-example__syntax">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Relativas a la raíz del sitio</span>:
+                    <div class="code-example__syntax">
+                      <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                               &lt;!-- Comienzan con / --&gt;
                               &lt;a href="/productos/categoria/">Productos&lt;/a>
                               &lt;a href="/css/estilos.css">Estilos&lt;/a>                              
                             </code>
                           </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Relativas con navegación de directorios</span>:
-                      <div class="code-example__syntax">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Relativas con navegación de directorios</span>:
+                    <div class="code-example__syntax">
+                      <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                               &lt;!-- Subir un nivel --&gt;
                               &lt;a href="../index.html"&gt;Inicio&lt;/a&gt;
@@ -565,23 +567,23 @@
                               &lt;a href="../imagenes/banner.jpg"&gt;Banner&lt;/a&gt;
                             </code>
                           </pre>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <!-- Tipos de URLs Relativas  fin -->
-                <!-- Ejemplos Prácticos de URLs Relativas  -->
-                <div>
-                  <h4>Ejemplos Prácticos de URLs Relativas</h4>
-                  <!-- Estructura de Carpetas para URLs Relativas -->
-                  <div class="site-content__contenedor">
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <p>
-                          <span class="fw-bold"> Estructura de Carpetas</span>:
-                        </p>
-                        <div class="d-flex justify-content-center">
-                          <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- Tipos de URLs Relativas  fin -->
+              <!-- Ejemplos Prácticos de URLs Relativas  -->
+              <div>
+                <h4>Ejemplos Prácticos de URLs Relativas</h4>
+                <!-- Estructura de Carpetas para URLs Relativas -->
+                <div class="site-content__contenedor">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p>
+                        <span class="fw-bold"> Estructura de Carpetas</span>:
+                      </p>
+                      <div class="d-flex justify-content-center">
+                        <pre data-src-status="loaded" tabindex="0">
 <span class="text-bg-success">sitio-web (inicio)</span>/
 ├── index.html
 ├── productos/
@@ -593,166 +595,166 @@
 └── css/
     └── <span class="text-bg-light">estilos.css</span>
                               </pre>
-                        </div>
                       </div>
-                      <div class="col-lg-4">
-                        <p>
-                          <span class="fw-bold"> Desde</span>
-                          <code class="language-html"><span class="text-bg-warning"
+                    </div>
+                    <div class="col-lg-4">
+                      <p>
+                        <span class="fw-bold"> Desde</span>
+                        <code class="language-html"><span class="text-bg-warning"
                                 >item.html</span
                               ></code>:
-                        </p>
-                        <div class="d-flex justify-content-center">
-                          <pre data-src-status="loaded" tabindex="0">
+                      </p>
+                      <div class="d-flex justify-content-center">
+                        <pre data-src-status="loaded" tabindex="0">
 Ir a inicio: <code class="language-html"><span class="text-bg-success">../../index.html</span></code>
 Ir a lista: <code class="language-html"><span class="text-bg-danger">../lista.html</span></code>
 Cargar logo: <code class="language-html"><span class="text-bg-primary">../../imagenes/logo.png</span></code>
 Cargar CSS: <code class="language-html"><span class="text-bg-light">../../css/estilos.css</span></code>
                           </pre>
-                        </div>
                       </div>
-                      <div class="col-lg-4">
-                        <p>
-                          <span class="fw-bold">Usando rutas absolutas del sitio</span>:
-                        </p>
-                        <div class="d-flex justify-content-center">
-                          <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                    <div class="col-lg-4">
+                      <p>
+                        <span class="fw-bold">Usando rutas absolutas del sitio</span>:
+                      </p>
+                      <div class="d-flex justify-content-center">
+                        <pre data-src-status="loaded" tabindex="0">
 Ir a inicio: <span class="text-bg-success">/index.html</span>
 Ir a lista: <span class="text-bg-danger">/productos/lista.html</span>
 Cargar logo: <span class="text-bg-primary">/imagenes/logo.png</span>
 Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                           </pre>
-                        </div>
                       </div>
                     </div>
                   </div>
-                  <!-- Estructura de Carpetas para URLs Relativas fin -->
                 </div>
-                <!-- Ejemplos Prácticos de URLs Relativas  fin -->
-                <!-- Ventajas de URLs Relativas  -->
-                <div>
-                  <h4>Ventajas de URLs Relativas</h4>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Portabilidad</span>: Permiten
-                      trasladar el sitio completo de manera funcional y sin
-                      complicaciones.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Flexibilidad</span>: Facilitan la
-                      adaptación y el cambio entre diferentes entornos con
-                      facilidad.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Brevedad</span>: Son más concisas
-                      y claras en su estructura.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Eficiencia</span>: Reducen la
-                      cantidad de código escrito, optimizando recursos.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Desarrollo local</span>: Operan de
-                      forma efectiva sin necesidad de un servidor web.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Ventajas de URLs Relativas  fin -->
-
-                <!-- Desventajas de URLs Relativas  -->
-                <div>
-                  <h4>Desventajas de URLs Relativas</h4>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Dependencia del contexto</span>:
-                      Pueden fallar al trasladar archivos.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Confusión</span>: Resultan más
-                      complejas de rastrear en proyectos extensos.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Limitaciones</span>: No son
-                      adecuadas para compartir fuera de la plataforma.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Depuración</span>: Son más
-                      complicadas de depurar cuando presentan errores.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Desventajas de URLs Relativas  fin -->
+                <!-- Estructura de Carpetas para URLs Relativas fin -->
               </div>
-              <!-- URL Relativa  fin -->
-
-              <!-- Cuándo Usar Cada Tipo de URL  -->
-              <div id="cuándo-usar-cada-tipo-de-url">
-                <h3>Cuándo Usar Cada Tipo de URL</h3>
-                <p>Usar URLs absolutas cuando:</p>
+              <!-- Ejemplos Prácticos de URLs Relativas  fin -->
+              <!-- Ventajas de URLs Relativas  -->
+              <div>
+                <h4>Ventajas de URLs Relativas</h4>
                 <ul>
-                  <li>Enlaces a sitios externos.</li>
-                  <li>APIs y servicios web.</li>
-                  <li>Recursos compartidos en redes sociales.</li>
-                  <li>Configuraciones de producción críticas.</li>
-                  <li>CDNs y recursos externos.</li>
-                  <li>Emails y documentos PDF.</li>
-                </ul>
-
-                <p>Usar URLs relativas cuando:</p>
-                <ul>
-                  <li>Navegación interna del sitio.</li>
-                  <li>Recursos locales (CSS, JS, imágenes).</li>
-                  <li>Enlaces entre páginas del mismo dominio.</li>
-                  <li>Desarrollo y pruebas.</li>
-                  <li>Sitios que cambiarán de dominio.</li>
+                  <li>
+                    <span class="fw-bold">Portabilidad</span>: Permiten
+                    trasladar el sitio completo de manera funcional y sin
+                    complicaciones.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Flexibilidad</span>: Facilitan la
+                    adaptación y el cambio entre diferentes entornos con
+                    facilidad.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Brevedad</span>: Son más concisas
+                    y claras en su estructura.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Eficiencia</span>: Reducen la
+                    cantidad de código escrito, optimizando recursos.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Desarrollo local</span>: Operan de
+                    forma efectiva sin necesidad de un servidor web.
+                  </li>
                 </ul>
               </div>
-              <!-- Cuándo Usar Cada Tipo de URL  fin -->
+              <!-- Ventajas de URLs Relativas  fin -->
+
+              <!-- Desventajas de URLs Relativas  -->
+              <div>
+                <h4>Desventajas de URLs Relativas</h4>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Dependencia del contexto</span>:
+                    Pueden fallar al trasladar archivos.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Confusión</span>: Resultan más
+                    complejas de rastrear en proyectos extensos.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Limitaciones</span>: No son
+                    adecuadas para compartir fuera de la plataforma.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Depuración</span>: Son más
+                    complicadas de depurar cuando presentan errores.
+                  </li>
+                </ul>
+              </div>
+              <!-- Desventajas de URLs Relativas  fin -->
             </div>
-            <!-- URLs absolutas vs URLs relativas Fin -->
-            <hr class="site-divider--subtle site-divider" />
+            <!-- URL Relativa  fin -->
 
-            <!-- Enlaces HTML - Usar una Imagen como Enlace -->
-            <div id="enlaces-html---usar-una-imagen-como-enlace" class="mt-3">
-              <h2>Enlaces HTML - Usar una Imagen como Enlace</h2>
-              <p>
-                Un enlace HTML que incorpora una imagen como vínculo permite
-                redirigir al usuario a otra página o recurso al hacer clic en
-                la imagen. Esto se consigue mediante la combinación de las
-                etiquetas <code class="language-html">&lt;a></code> (para
-                crear enlaces) y
-                <code class="language-html">&lt;img></code> (para insertar
-                imágenes). En otras palabras, la etiqueta de imagen (<code class="language-html">&lt;img></code>) está
-                contenida dentro de la etiqueta de anclaje (<code class="language-html">&lt;a></code>).
-              </p>
-              <!-- Sintaxis -->
-              <p><span class="fw-bold">Sintaxis Básica</span>:</p>
-              <div class="code-example__syntax">
-                <pre data-src-status="loaded" tabindex="0">
+            <!-- Cuándo Usar Cada Tipo de URL  -->
+            <div id="cuándo-usar-cada-tipo-de-url">
+              <h3>Cuándo Usar Cada Tipo de URL</h3>
+              <p>Usar URLs absolutas cuando:</p>
+              <ul>
+                <li>Enlaces a sitios externos.</li>
+                <li>APIs y servicios web.</li>
+                <li>Recursos compartidos en redes sociales.</li>
+                <li>Configuraciones de producción críticas.</li>
+                <li>CDNs y recursos externos.</li>
+                <li>Emails y documentos PDF.</li>
+              </ul>
+
+              <p>Usar URLs relativas cuando:</p>
+              <ul>
+                <li>Navegación interna del sitio.</li>
+                <li>Recursos locales (CSS, JS, imágenes).</li>
+                <li>Enlaces entre páginas del mismo dominio.</li>
+                <li>Desarrollo y pruebas.</li>
+                <li>Sitios que cambiarán de dominio.</li>
+              </ul>
+            </div>
+            <!-- Cuándo Usar Cada Tipo de URL  fin -->
+          </div>
+          <!-- URLs absolutas vs URLs relativas Fin -->
+          <hr class="site-divider--subtle site-divider" />
+
+          <!-- Enlaces HTML - Usar una Imagen como Enlace -->
+          <div id="enlaces-html---usar-una-imagen-como-enlace" class="mt-3">
+            <h2>Enlaces HTML - Usar una Imagen como Enlace</h2>
+            <p>
+              Un enlace HTML que incorpora una imagen como vínculo permite
+              redirigir al usuario a otra página o recurso al hacer clic en
+              la imagen. Esto se consigue mediante la combinación de las
+              etiquetas <code class="language-html">&lt;a></code> (para
+              crear enlaces) y
+              <code class="language-html">&lt;img></code> (para insertar
+              imágenes). En otras palabras, la etiqueta de imagen (<code class="language-html">&lt;img></code>) está
+              contenida dentro de la etiqueta de anclaje (<code class="language-html">&lt;a></code>).
+            </p>
+            <!-- Sintaxis -->
+            <p><span class="fw-bold">Sintaxis Básica</span>:</p>
+            <div class="code-example__syntax">
+              <pre data-src-status="loaded" tabindex="0">
                     <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                       &lt;a href="URL_destino">
                         &lt;img src="ruta_imagen.jpg" alt="Descripción de la imagen">
                       &lt;/a>                                 
                     </code>
                   </pre>
-              </div>
-              <!-- Sintaxis fin -->
-              <p><span class="fw-bold">Ejemplo</span>:</p>
-              <!-- Ejemplo -->
-              <div class="code-example">
-                <div class="code-example__output mt-3">
-                  <!-- código ejecutado -->
-                  <div class="demo-content__centrar-imagen">
-                    <a href="https://www.nasa.gov/">
-                      <img src="https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg"
-                        alt="Logo de NASA" width="150" />
-                    </a>
-                  </div>
-                  <!-- código ejecutado fin -->
+            </div>
+            <!-- Sintaxis fin -->
+            <p><span class="fw-bold">Ejemplo</span>:</p>
+            <!-- Ejemplo -->
+            <div class="code-example">
+              <div class="code-example__output mt-3">
+                <!-- código ejecutado -->
+                <div class="demo-content__centrar-imagen">
+                  <a href="https://www.nasa.gov/">
+                    <img src="https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg"
+                      alt="Logo de NASA" width="150" />
+                  </a>
                 </div>
-                <div class="code-example__html mb-3">
-                  <!-- código HTML -->
-                  <pre data-src-status="loaded" tabindex="0">
+                <!-- código ejecutado fin -->
+              </div>
+              <div class="code-example__html mb-3">
+                <!-- código HTML -->
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                         &lt;a href="https://www.nasa.gov/">
                           &lt;img
@@ -763,63 +765,63 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                         &lt;/a>
                       </code>
                     </pre>
-                  <!-- código HTML -->
-                </div>
+                <!-- código HTML -->
               </div>
-              <!-- Ejemplo fin -->
             </div>
-            <!-- Enlaces HTML - Usar una Imagen como Enlace fin-->
-            <hr class="site-divider--subtle site-divider" />
+            <!-- Ejemplo fin -->
+          </div>
+          <!-- Enlaces HTML - Usar una Imagen como Enlace fin-->
+          <hr class="site-divider--subtle site-divider" />
 
-            <!-- Enlaces HTML - Enlace a una Dirección de Correo Electrónico -->
-            <div id="enlaces-html---enlace-a-una-direccion-de-correo-electronico" class="mt-3">
-              <h2>
-                Enlaces HTML - Enlace a una Dirección de Correo Electrónico
-              </h2>
-              <p>
-                Un enlace de correo electrónico en HTML se crea con la
-                etiqueta <code class="language-html">&lt;a></code> y el
-                esquema <code class="language-html">mailto:</code> en el
-                atributo <code class="language-html">href.</code> Permite a
-                los usuarios abrir su cliente de correo predeterminado con un
-                nuevo mensaje dirigido a una dirección específica, facilitando
-                el envío de correos con un solo clic.
-              </p>
-              <!-- Sintaxis -->
-              <p><span class="fw-bold">Sintaxis Básica</span>:</p>
-              <div class="code-example__syntax">
-                <pre data-src-status="loaded" tabindex="0">
+          <!-- Enlaces HTML - Enlace a una Dirección de Correo Electrónico -->
+          <div id="enlaces-html---enlace-a-una-direccion-de-correo-electronico" class="mt-3">
+            <h2>
+              Enlaces HTML - Enlace a una Dirección de Correo Electrónico
+            </h2>
+            <p>
+              Un enlace de correo electrónico en HTML se crea con la
+              etiqueta <code class="language-html">&lt;a></code> y el
+              esquema <code class="language-html">mailto:</code> en el
+              atributo <code class="language-html">href.</code> Permite a
+              los usuarios abrir su cliente de correo predeterminado con un
+              nuevo mensaje dirigido a una dirección específica, facilitando
+              el envío de correos con un solo clic.
+            </p>
+            <!-- Sintaxis -->
+            <p><span class="fw-bold">Sintaxis Básica</span>:</p>
+            <div class="code-example__syntax">
+              <pre data-src-status="loaded" tabindex="0">
                     <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                       &lt;a href="mailto:correo@ejemplo.com">Enviar correo&lt;/a>
                     </code>
                   </pre>
-              </div>
-              <!-- Sintaxis fin -->
+            </div>
+            <!-- Sintaxis fin -->
 
-              <!-- Opciones Adicionales para Enviar Correos  -->
-              <div id="opciones-adicionales-para-enviar-correos">
-                <h3>Opciones Adicionales para Enviar Correos</h3>
+            <!-- Opciones Adicionales para Enviar Correos  -->
+            <div id="opciones-adicionales-para-enviar-correos">
+              <h3>Opciones Adicionales para Enviar Correos</h3>
+              <p>
+                Es posible añadir información adicional al enlace de correo
+                electrónico para pre-configurar el mensaje, como
+                destinatarios en copia (Cc), copia oculta (Bcc), asunto y
+                cuerpo del mensaje. Estos valores deben ir codificados en la
+                URL.
+              </p>
+              <!-- Asunto Predefinido  -->
+              <div>
+                <h4>Asunto Predefinido</h4>
                 <p>
-                  Es posible añadir información adicional al enlace de correo
-                  electrónico para pre-configurar el mensaje, como
-                  destinatarios en copia (Cc), copia oculta (Bcc), asunto y
-                  cuerpo del mensaje. Estos valores deben ir codificados en la
-                  URL.
+                  El correo tiene como asunto predeterminado
+                  <code class="language-html">mi consulta</code>. Los
+                  espacios en el asunto deben reemplazarse por el código
+                  <code class="language-html">%20</code> para que sea
+                  correcto, es decir,
+                  <code class="language-html">Mi%20consulta</code>.
                 </p>
-                <!-- Asunto Predefinido  -->
-                <div>
-                  <h4>Asunto Predefinido</h4>
-                  <p>
-                    El correo tiene como asunto predeterminado
-                    <code class="language-html">mi consulta</code>. Los
-                    espacios en el asunto deben reemplazarse por el código
-                    <code class="language-html">%20</code> para que sea
-                    correcto, es decir,
-                    <code class="language-html">Mi%20consulta</code>.
-                  </p>
-                  <!-- Sintaxis -->
-                  <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+                <!-- Sintaxis -->
+                <div class="code-example__syntax">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                           &lt;p>
                             Se envía el correo a:
@@ -827,20 +829,20 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                           &lt;/p>
                         </code>
                       </pre>
-                  </div>
-                  <!-- Sintaxis fin -->
                 </div>
-                <!-- Asunto Predefinido  fin -->
-                <!-- Cuerpo del Mensaje  -->
-                <div>
-                  <h4>Cuerpo del Mensaje</h4>
-                  <p>
-                    Los espacios en el mensaje también se deben reemplazar por
-                    el código <code class="language-html">%20</code>.
-                  </p>
-                  <!-- Sintaxis -->
-                  <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+                <!-- Sintaxis fin -->
+              </div>
+              <!-- Asunto Predefinido  fin -->
+              <!-- Cuerpo del Mensaje  -->
+              <div>
+                <h4>Cuerpo del Mensaje</h4>
+                <p>
+                  Los espacios en el mensaje también se deben reemplazar por
+                  el código <code class="language-html">%20</code>.
+                </p>
+                <!-- Sintaxis -->
+                <div class="code-example__syntax">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                           &lt;p>
                             Se envía el correo a:
@@ -848,21 +850,21 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                           &lt;/p>
                         </code>
                       </pre>
-                  </div>
-                  <!-- Sintaxis fin -->
                 </div>
-                <!-- Cuerpo del Mensaje  fin -->
+                <!-- Sintaxis fin -->
+              </div>
+              <!-- Cuerpo del Mensaje  fin -->
 
-                <!-- Múltiples Destinatarios  -->
-                <div>
-                  <h4>Múltiples Destinatarios</h4>
-                  <p>
-                    Los destinatarios se escriben uno tras otro separado por
-                    una coma (,).
-                  </p>
-                  <!-- Sintaxis -->
-                  <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+              <!-- Múltiples Destinatarios  -->
+              <div>
+                <h4>Múltiples Destinatarios</h4>
+                <p>
+                  Los destinatarios se escriben uno tras otro separado por
+                  una coma (,).
+                </p>
+                <!-- Sintaxis -->
+                <div class="code-example__syntax">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                           &lt;p>
                             Se envía el correo a:
@@ -870,17 +872,17 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                           &lt;/p>
                         </code>
                       </pre>
-                  </div>
-                  <!-- Sintaxis fin -->
                 </div>
-                <!-- Múltiples Destinatarios  fin -->
+                <!-- Sintaxis fin -->
+              </div>
+              <!-- Múltiples Destinatarios  fin -->
 
-                <!-- Con copia (CC) y copia oculta (BCC)  -->
-                <div>
-                  <h4>Con copia (CC) y copia oculta (BCC)</h4>
-                  <!-- Sintaxis -->
-                  <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+              <!-- Con copia (CC) y copia oculta (BCC)  -->
+              <div>
+                <h4>Con copia (CC) y copia oculta (BCC)</h4>
+                <!-- Sintaxis -->
+                <div class="code-example__syntax">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                           &lt;p>
                             Se envía el correo a:
@@ -888,35 +890,35 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                           &lt;/p>
                         </code>
                       </pre>
-                  </div>
-                  <!-- Sintaxis fin -->
                 </div>
-                <!-- Con copia (CC) y copia oculta (BCC)  fin -->
+                <!-- Sintaxis fin -->
+              </div>
+              <!-- Con copia (CC) y copia oculta (BCC)  fin -->
 
-                <!-- Ejemplo General  envío de Correo Electrónico  -->
-                <div>
-                  <h4>Ejemplo General envío de Correo Electrónico</h4>
-                  <p>
-                    Este ejemplo ilustra cómo usar todas las opciones
-                    disponibles para enviar un correo electrónico.
-                  </p>
-                  <div class="code-example">
-                    <div class="code-example__output">
-                      <!-- código ejecutado -->
-                      <p>
-                        Se envía el correo a:
-                        <a
-                          href="mailto:correo@ejemplo.com,correo2@ejemplo.com?subject=Mi%20consulta&body=Hola,%20tengo%20una%20pregunta.&cc=copia@ejemplo.com&bcc=oculto@ejemplo.com">
-                          Arturo Cova (correo) y Pedro López (correo2) con
-                          copia a Antonio Yammara (copia) y con copia oculta a
-                          Santiago Nasar (oculto).
-                        </a>
-                      </p>
-                      <!-- código ejecutado fin -->
-                    </div>
-                    <div class="code-example__html mb-3">
-                      <!-- código HTML -->
-                      <pre data-src-status="loaded" tabindex="0">
+              <!-- Ejemplo General  envío de Correo Electrónico  -->
+              <div>
+                <h4>Ejemplo General envío de Correo Electrónico</h4>
+                <p>
+                  Este ejemplo ilustra cómo usar todas las opciones
+                  disponibles para enviar un correo electrónico.
+                </p>
+                <div class="code-example">
+                  <div class="code-example__output">
+                    <!-- código ejecutado -->
+                    <p>
+                      Se envía el correo a:
+                      <a
+                        href="mailto:correo@ejemplo.com,correo2@ejemplo.com?subject=Mi%20consulta&body=Hola,%20tengo%20una%20pregunta.&cc=copia@ejemplo.com&bcc=oculto@ejemplo.com">
+                        Arturo Cova (correo) y Pedro López (correo2) con
+                        copia a Antonio Yammara (copia) y con copia oculta a
+                        Santiago Nasar (oculto).
+                      </a>
+                    </p>
+                    <!-- código ejecutado fin -->
+                  </div>
+                  <div class="code-example__html mb-3">
+                    <!-- código HTML -->
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                             &lt;p>Se envía el correo a:
                               &lt;a
@@ -927,85 +929,85 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                             &lt;/p>
                           </code>
                         </pre>
-                      <!-- código HTML -->
-                    </div>
-                    <!-- Ejemplo con Todas las Opciones  fin -->
+                    <!-- código HTML -->
                   </div>
+                  <!-- Ejemplo con Todas las Opciones  fin -->
                 </div>
-                <!-- Ejemplo General  envío de Correo Electrónico fin -->
               </div>
-              <!-- Opciones Adicionales para Enviar Correos  fin -->
+              <!-- Ejemplo General  envío de Correo Electrónico fin -->
             </div>
-            <!-- Enlaces HTML - Enlace a una Dirección de Correo Electrónico Fin -->
-            <hr class="site-divider--subtle site-divider" />
+            <!-- Opciones Adicionales para Enviar Correos  fin -->
+          </div>
+          <!-- Enlaces HTML - Enlace a una Dirección de Correo Electrónico Fin -->
+          <hr class="site-divider--subtle site-divider" />
 
-            <!-- Enlaces HTML - Un Botón como un Enlace -->
-            <div id="enlaces-html---un-boton-como-un-enlace" class="mt-3">
-              <h2>Enlaces HTML - Un Botón como un Enlace</h2>
+          <!-- Enlaces HTML - Un Botón como un Enlace -->
+          <div id="enlaces-html---un-boton-como-un-enlace" class="mt-3">
+            <h2>Enlaces HTML - Un Botón como un Enlace</h2>
+            <p>
+              En HTML, existen diversas maneras de diseñar un botón que
+              funcione como enlace. A continuación, se presentan las
+              principales alternativas:
+            </p>
+            <!-- Botón Dentro de un Enlace  -->
+            <div id="botón-dentro-de-un-enlace">
+              <h3>Botón Dentro de un Enlace</h3>
               <p>
-                En HTML, existen diversas maneras de diseñar un botón que
-                funcione como enlace. A continuación, se presentan las
-                principales alternativas:
+                Situar un elemento
+                <code class="language-html">&lt;button></code> dentro de un
+                elemento <code class="language-html">&lt;a></code> puede
+                provocar conflictos de validación HTML, ya que no cumple con
+                las especificaciones estándares de accesibilidad y semántica
+                web.
               </p>
-              <!-- Botón Dentro de un Enlace  -->
-              <div id="botón-dentro-de-un-enlace">
-                <h3>Botón Dentro de un Enlace</h3>
-                <p>
-                  Situar un elemento
-                  <code class="language-html">&lt;button></code> dentro de un
-                  elemento <code class="language-html">&lt;a></code> puede
-                  provocar conflictos de validación HTML, ya que no cumple con
-                  las especificaciones estándares de accesibilidad y semántica
-                  web.
-                </p>
-                <!-- Ejemplo -->
-                <div class="code-example">
-                  <div class="row code-example__output mt-3">
-                    <!-- código ejecutado -->
-                    <p>
-                      Este botón lo lleva a la Página de inicio de la NASA:
-                      <a href="https://nasa.gov/" target="_blank">
-                        <button type="button">Nasa</button>
-                      </a>
-                    </p>
-                    <!-- código ejecutado fin -->
-                  </div>
-                  <div class="row">
-                    <div class="code-example__html mb-3">
-                      <!-- código HTML -->
-                      <pre data-src-status="loaded" tabindex="0">
+              <!-- Ejemplo -->
+              <div class="code-example">
+                <div class="row code-example__output mt-3">
+                  <!-- código ejecutado -->
+                  <p>
+                    Este botón lo lleva a la Página de inicio de la NASA:
+                    <a href="https://nasa.gov/" target="_blank">
+                      <button type="button">Nasa</button>
+                    </a>
+                  </p>
+                  <!-- código ejecutado fin -->
+                </div>
+                <div class="row">
+                  <div class="code-example__html mb-3">
+                    <!-- código HTML -->
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                           &lt;a href="https://nasa.gov/" target="_blank">
                             &lt;button type="button">Nasa&lt;/button>
                           &lt;/a>
                         </code>
                       </pre>
-                      <!-- código HTML -->
-                    </div>
+                    <!-- código HTML -->
                   </div>
                 </div>
-                <!-- Ejemplo fin -->
               </div>
-              <!-- Botón Dentro de un Enlace  fin -->
+              <!-- Ejemplo fin -->
+            </div>
+            <!-- Botón Dentro de un Enlace  fin -->
 
-              <!-- Enlace Estilizado como Botón  -->
-              <div id="enlace-estilizado-como-botón">
-                <h3>Enlace Estilizado como Botón</h3>
-                <p>Es la opción más semánticamente correcta y accesible.</p>
-                <!-- Ejemplo -->
-                <div class="code-example">
-                  <div class="row code-example__output mt-3">
-                    <!-- código ejecutado -->
-                    <p>
-                      Este botón lo lleva a la Página de inicio de la NASA:
-                      <a href="https://nasa.gov/" target="_blank" class="demo-content__boton">NASA</a>
-                    </p>
-                    <!-- código ejecutado fin -->
-                  </div>
-                  <div class="row">
-                    <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
-                      <!-- código HTML -->
-                      <pre data-src-status="loaded" tabindex="0">
+            <!-- Enlace Estilizado como Botón  -->
+            <div id="enlace-estilizado-como-botón">
+              <h3>Enlace Estilizado como Botón</h3>
+              <p>Es la opción más semánticamente correcta y accesible.</p>
+              <!-- Ejemplo -->
+              <div class="code-example">
+                <div class="row code-example__output mt-3">
+                  <!-- código ejecutado -->
+                  <p>
+                    Este botón lo lleva a la Página de inicio de la NASA:
+                    <a href="https://nasa.gov/" target="_blank" class="demo-content__boton">NASA</a>
+                  </p>
+                  <!-- código ejecutado fin -->
+                </div>
+                <div class="row">
+                  <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
+                    <!-- código HTML -->
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                           &lt;p> <br>
                             Este botón lo lleva a la Página de inicio
@@ -1018,11 +1020,11 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                             &lt;/p>
                           </code>
                         </pre>
-                      <!-- código HTML -->
-                    </div>
-                    <div class="code-example__css-panel col-lg-6 mb-3">
-                      <!-- código CSS -->
-                      <pre data-src-status="loaded" tabindex="0">
+                    <!-- código HTML -->
+                  </div>
+                  <div class="code-example__css-panel col-lg-6 mb-3">
+                    <!-- código CSS -->
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" class="language-css" data-prismjs-copy="Copy">
                             .code-css{
                             &nbsp;&nbsp;padding: 10px 20px;
@@ -1039,37 +1041,37 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                             }                            
                           </code>
                       </pre>
-                      <!-- código HTML -->
-                    </div>
+                    <!-- código HTML -->
                   </div>
                 </div>
-                <!-- Ejemplo fin -->
               </div>
-              <!-- Enlace Estilizado como Botón  fin -->
+              <!-- Ejemplo fin -->
+            </div>
+            <!-- Enlace Estilizado como Botón  fin -->
 
-              <!-- Formulario con Botón  -->
-              <div id="formulario-con-botón">
-                <h3>Formulario con Botón</h3>
-                <p>Es útil cuando se necesita enviar datos POST.</p>
-                <!-- Ejemplo -->
-                <div class="code-example">
-                  <div class="row code-example__output mt-3">
-                    <div class="d-flex align-items-center gap-2">
-                      <!-- código ejecutado -->
-                      <p>
-                        Este botón lo lleva a la Página de inicio de la
-                        NASA:&nbsp;
-                      </p>
-                      <form action="https://www.nasa.gov/" method="get" target="_blank" class="demo-content__form">
-                        <button type="submit">NASA</button>
-                      </form>
-                      <!-- código ejecutado fin -->
-                    </div>
+            <!-- Formulario con Botón  -->
+            <div id="formulario-con-botón">
+              <h3>Formulario con Botón</h3>
+              <p>Es útil cuando se necesita enviar datos POST.</p>
+              <!-- Ejemplo -->
+              <div class="code-example">
+                <div class="row code-example__output mt-3">
+                  <div class="d-flex align-items-center gap-2">
+                    <!-- código ejecutado -->
+                    <p>
+                      Este botón lo lleva a la Página de inicio de la
+                      NASA:&nbsp;
+                    </p>
+                    <form action="https://www.nasa.gov/" method="get" target="_blank" class="demo-content__form">
+                      <button type="submit">NASA</button>
+                    </form>
+                    <!-- código ejecutado fin -->
                   </div>
-                  <div class="row">
-                    <div class="code-example__html mb-3">
-                      <!-- código HTML -->
-                      <pre data-src-status="loaded" tabindex="0">
+                </div>
+                <div class="row">
+                  <div class="code-example__html mb-3">
+                    <!-- código HTML -->
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                             &lt;p> <br>
                               Este botón lo lleva a la Página de inicio de la NASA: <br>
@@ -1083,35 +1085,35 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                             &lt;/form>
                           </code>
                         </pre>
-                      <!-- código HTML -->
-                    </div>
+                    <!-- código HTML -->
                   </div>
                 </div>
-                <!-- Ejemplo fin -->
               </div>
-              <!-- Formulario con Botón  fin -->
+              <!-- Ejemplo fin -->
+            </div>
+            <!-- Formulario con Botón  fin -->
 
-              <!-- Botón con JavaScript  -->
-              <div id="botón-con-javascript">
-                <h3>Botón con JavaScript</h3>
-                <!-- Ejemplo -->
-                <div class="code-example">
-                  <div class="row code-example__output mt-3">
-                    <div class="d-flex align-items-center gap-2">
-                      <!-- código ejecutado -->
-                      <p>
-                        Este botón lo lleva a la Página de inicio de la NASA:
-                      </p>
-                      <button onclick="window.open('https://www.nasa.gov/', '_blank')">
-                        NASA
-                      </button>
-                      <!-- código ejecutado fin -->
-                    </div>
+            <!-- Botón con JavaScript  -->
+            <div id="botón-con-javascript">
+              <h3>Botón con JavaScript</h3>
+              <!-- Ejemplo -->
+              <div class="code-example">
+                <div class="row code-example__output mt-3">
+                  <div class="d-flex align-items-center gap-2">
+                    <!-- código ejecutado -->
+                    <p>
+                      Este botón lo lleva a la Página de inicio de la NASA:
+                    </p>
+                    <button onclick="window.open('https://www.nasa.gov/', '_blank')">
+                      NASA
+                    </button>
+                    <!-- código ejecutado fin -->
                   </div>
-                  <div class="row">
-                    <div class="code-example__html mb-3">
-                      <!-- código HTML -->
-                      <pre class="code-example__pre">
+                </div>
+                <div class="row">
+                  <div class="code-example__html mb-3">
+                    <!-- código HTML -->
+                    <pre class="code-example__pre">
                           <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                             &lt;p>
                               Este botón lo lleva a la Página de inicio de la
@@ -1124,45 +1126,45 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                             &lt;/button>
                           </code>
                         </pre>
-                      <!-- código HTML -->
-                    </div>
+                    <!-- código HTML -->
                   </div>
                 </div>
-                <!-- Ejemplo fin -->
               </div>
-              <!-- Botón con JavaScript  fin -->
+              <!-- Ejemplo fin -->
+            </div>
+            <!-- Botón con JavaScript  fin -->
 
-              <!-- Botón con data attribute y JavaScript  -->
-              <div id="botón-con-data-attribute-y-javascript">
-                <h3>Botón con data attribute y JavaScript</h3>
-                <!-- Ejemplo -->
-                <div class="code-example">
-                  <div class="row code-example__output mt-3">
-                    <div class="d-flex align-items-center gap-2">
-                      <!-- código ejecutado -->
-                      <p>
-                        Este botón lo lleva a la Página de inicio de la NASA:
-                      </p>
-                      <button data-url="https://nasa.gov" class="demo-link__button">
-                        NASA
-                      </button>
+            <!-- Botón con data attribute y JavaScript  -->
+            <div id="botón-con-data-attribute-y-javascript">
+              <h3>Botón con data attribute y JavaScript</h3>
+              <!-- Ejemplo -->
+              <div class="code-example">
+                <div class="row code-example__output mt-3">
+                  <div class="d-flex align-items-center gap-2">
+                    <!-- código ejecutado -->
+                    <p>
+                      Este botón lo lleva a la Página de inicio de la NASA:
+                    </p>
+                    <button data-url="https://nasa.gov" class="demo-link__button">
+                      NASA
+                    </button>
 
-                      <script>
-                        document
-                          .querySelectorAll(".demo-link__button")
-                          .forEach((button) => {
-                            button.addEventListener("click", function () {
-                              window.open(this.dataset.url, "_blank");
-                            });
+                    <script>
+                      document
+                        .querySelectorAll(".demo-link__button")
+                        .forEach((button) => {
+                          button.addEventListener("click", function () {
+                            window.open(this.dataset.url, "_blank");
                           });
-                      </script>
-                      <!-- código ejecutado fin -->
-                    </div>
+                        });
+                    </script>
+                    <!-- código ejecutado fin -->
                   </div>
-                  <div class="row">
-                    <div class="code-example__html mb-3">
-                      <!-- código HTML -->
-                      <pre class="code-example__pre">
+                </div>
+                <div class="row">
+                  <div class="code-example__html mb-3">
+                    <!-- código HTML -->
+                    <pre class="code-example__pre">
                           <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                             &lt;button data-url="https://nasa.gov" class="demo-link__button">
                               NASA
@@ -1179,84 +1181,84 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                             &lt;/script>      <br>                     
                           </code>
                         </pre>
-                      <!-- código HTML fin-->
-                    </div>
+                    <!-- código HTML fin-->
                   </div>
                 </div>
-                <!-- Ejemplo fin -->
               </div>
-              <!-- Botón con data attribute y JavaScript  fin -->
+              <!-- Ejemplo fin -->
             </div>
-            <!-- Enlaces HTML - Un Botón como un Enlace Fin -->
-            <hr class="site-divider--subtle site-divider" />
+            <!-- Botón con data attribute y JavaScript  fin -->
+          </div>
+          <!-- Enlaces HTML - Un Botón como un Enlace Fin -->
+          <hr class="site-divider--subtle site-divider" />
 
-            <!-- Marcadores (Anchors) -->
-            <div id="marcadores-anchors" class="mt-3">
-              <h2>Marcadores (Anchors)</h2>
-              <p>
-                Los enlaces ancla locales, o enlaces internos, facilitan la
-                navegación al permitir saltos dentro de una misma página HTML.
-                Se utilizan principalmente para:
-              </p>
-              <ul>
-                <li>Navegación interna dentro de la misma página.</li>
-                <li>
-                  Enlaces directos a secciones específicas de otras páginas.
-                </li>
-                <li>Crear menús de contenido y navegación.</li>
-                <li>Mejorar la experiencia del usuario en páginas largas.</li>
-              </ul>
+          <!-- Marcadores (Anchors) -->
+          <div id="marcadores-anchors" class="mt-3">
+            <h2>Marcadores (Anchors)</h2>
+            <p>
+              Los enlaces ancla locales, o enlaces internos, facilitan la
+              navegación al permitir saltos dentro de una misma página HTML.
+              Se utilizan principalmente para:
+            </p>
+            <ul>
+              <li>Navegación interna dentro de la misma página.</li>
+              <li>
+                Enlaces directos a secciones específicas de otras páginas.
+              </li>
+              <li>Crear menús de contenido y navegación.</li>
+              <li>Mejorar la experiencia del usuario en páginas largas.</li>
+            </ul>
 
-              <!-- Sintaxis Básica de Marcadores  -->
-              <div id="sintaxis-básica-de-marcadores">
-                <h3>Sintaxis Básica de Marcadores</h3>
-                <!-- Crear un Marcador  -->
-                <div>
-                  <h4>Crear un Marcador</h4>
-                  <p>
-                    Un destino (ancla) es la sección específica de una página
-                    web a la que un enlace dirige al usuario. Se le asigna un
-                    <code class="language-html">id</code>
-                    nombre o identificador único mediante el atributo
-                    <code class="language-html">id</code> en HTML. Por
-                    ejemplo:
-                    <code class="language-html">&lt;h2 id="seccion-importante">Esta es una sección
+            <!-- Sintaxis Básica de Marcadores  -->
+            <div id="sintaxis-básica-de-marcadores">
+              <h3>Sintaxis Básica de Marcadores</h3>
+              <!-- Crear un Marcador  -->
+              <div>
+                <h4>Crear un Marcador</h4>
+                <p>
+                  Un destino (ancla) es la sección específica de una página
+                  web a la que un enlace dirige al usuario. Se le asigna un
+                  <code class="language-html">id</code>
+                  nombre o identificador único mediante el atributo
+                  <code class="language-html">id</code> en HTML. Por
+                  ejemplo:
+                  <code class="language-html">&lt;h2 id="seccion-importante">Esta es una sección
                         relevante&lt;/h2></code>. En este caso,
-                    <code class="language-html">seccion-importante</code> es
-                    el identificador del ancla.
-                  </p>
-                </div>
-                <!-- Crear un Marcador  fin -->
-
-                <!-- Enlazar al Marcador  -->
-                <div>
-                  <h4>Enlazar al Marcador</h4>
-                  <p>
-                    Un enlace (origen) se define como el texto o la imagen en
-                    el que se hace clic para dirigirse al destino. En HTML, se
-                    crea mediante la etiqueta
-                    <code class="language-html">&lt;a></code> (<span class="fst-italic">anchor</span>) y el atributo
-                    <code class="language-html">href</code>.
-                    Lo esencial es que en el atributo
-                    <code class="language-html">href</code> se utiliza el
-                    símbolo <code class="language-html">#</code> seguido del
-                    nombre del ancla. Por ejemplo:
-                    <code class="language-html">&lt;a href="#seccion-importante">Acceder a la sección
-                        importante&lt;/a></code>.
-                  </p>
-                </div>
-                <!-- Enlazar al Marcador  fin -->
+                  <code class="language-html">seccion-importante</code> es
+                  el identificador del ancla.
+                </p>
               </div>
-              <!-- Sintaxis Básica de Marcadores  fin -->
+              <!-- Crear un Marcador  fin -->
 
-              <!-- Ejemplos Uso del Marcador  -->
-              <div id="ejemplos-uso-del-marcador">
-                <h3>Ejemplos Uso del Marcador</h3>
-                <!-- Navegación Interna  -->
-                <div>
-                  <h4>Navegación Interna</h4>
-                  <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+              <!-- Enlazar al Marcador  -->
+              <div>
+                <h4>Enlazar al Marcador</h4>
+                <p>
+                  Un enlace (origen) se define como el texto o la imagen en
+                  el que se hace clic para dirigirse al destino. En HTML, se
+                  crea mediante la etiqueta
+                  <code class="language-html">&lt;a></code> (<span class="fst-italic">anchor</span>) y el atributo
+                  <code class="language-html">href</code>.
+                  Lo esencial es que en el atributo
+                  <code class="language-html">href</code> se utiliza el
+                  símbolo <code class="language-html">#</code> seguido del
+                  nombre del ancla. Por ejemplo:
+                  <code class="language-html">&lt;a href="#seccion-importante">Acceder a la sección
+                        importante&lt;/a></code>.
+                </p>
+              </div>
+              <!-- Enlazar al Marcador  fin -->
+            </div>
+            <!-- Sintaxis Básica de Marcadores  fin -->
+
+            <!-- Ejemplos Uso del Marcador  -->
+            <div id="ejemplos-uso-del-marcador">
+              <h3>Ejemplos Uso del Marcador</h3>
+              <!-- Navegación Interna  -->
+              <div>
+                <h4>Navegación Interna</h4>
+                <div class="code-example__syntax">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                           &lt;!-- Enlaces en el menú --&gt;
                           &lt;a href="#introduccion">Introducción&lt;/a>
@@ -1280,15 +1282,15 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                           &lt;/section>             
                         </code>
                       </pre>
-                  </div>
                 </div>
-                <!-- Navegación Interna  fin -->
+              </div>
+              <!-- Navegación Interna  fin -->
 
-                <!-- Botón "Volver al Inicio"  -->
-                <div>
-                  <h4>Botón "Volver al Inicio"</h4>
-                  <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+              <!-- Botón "Volver al Inicio"  -->
+              <div>
+                <h4>Botón "Volver al Inicio"</h4>
+                <div class="code-example__syntax">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                           &lt;!-- Al inicio de la página --&gt;
                           &lt;h1 id="top"&gt;Título Principal&lt;/h1&gt;
@@ -1301,54 +1303,54 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                           &lt;a href="#top" class="site-content__back-to-top"&gt;↑ Volver arriba&lt;/a&gt;
                         </code>
                       </pre>
-                  </div>
                 </div>
-                <!-- Botón "Volver al Inicio"  fin -->
               </div>
-              <!-- Ejemplos Uso del Marcador  fin -->
-              <!-- Consejos y Mejores Prácticas  -->
-              <div id="consejos-y-mejores-prácticas">
-                <h3>Consejos y Mejores Prácticas</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Identificadores (<code class="language-html">id</code>)
-                      únicos</span>: Cada identificador (<code class="language-html">id</code>) debe ser único dentro de
-                    la página.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Nombres descriptivos</span>: Se
-                    deben emplear nombres claros y significativos, como
-                    "contacto" o "servicios".
-                  </li>
-                  <li>
-                    <span class="fw-bold">Sin espacios</span>: Los
-                    identificadores no deben incluir espacios; en su lugar, se
-                    utiliza guiones.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Sensible a mayúsculas y minúsculas</span>: Los identificadores distinguen
-                    entre mayúsculas y
-                    minúsculas.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Accesibilidad</span>: Se recomienda
-                    usar atributos
-                    <code class="language-html">aria-label</code> para mejorar
-                    la accesibilidad en enlaces de navegación.
-                  </li>
-                </ul>
-              </div>
-              <!-- Consejos y Mejores Prácticas  fin -->
-              <!-- Enlaces a Marcadores en Otras Páginas  -->
-              <div id="enlaces-a-marcadores-en-otras-páginas">
-                <h3>Enlaces a Marcadores en Otras Páginas</h3>
-                <p>
-                  También puedes enlazar a secciones específicas de otras
-                  páginas:
-                </p>
-                <!-- Sintaxis -->
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+              <!-- Botón "Volver al Inicio"  fin -->
+            </div>
+            <!-- Ejemplos Uso del Marcador  fin -->
+            <!-- Consejos y Mejores Prácticas  -->
+            <div id="consejos-y-mejores-prácticas">
+              <h3>Consejos y Mejores Prácticas</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Identificadores (<code class="language-html">id</code>)
+                    únicos</span>: Cada identificador (<code class="language-html">id</code>) debe ser único dentro de
+                  la página.
+                </li>
+                <li>
+                  <span class="fw-bold">Nombres descriptivos</span>: Se
+                  deben emplear nombres claros y significativos, como
+                  "contacto" o "servicios".
+                </li>
+                <li>
+                  <span class="fw-bold">Sin espacios</span>: Los
+                  identificadores no deben incluir espacios; en su lugar, se
+                  utiliza guiones.
+                </li>
+                <li>
+                  <span class="fw-bold">Sensible a mayúsculas y minúsculas</span>: Los identificadores distinguen
+                  entre mayúsculas y
+                  minúsculas.
+                </li>
+                <li>
+                  <span class="fw-bold">Accesibilidad</span>: Se recomienda
+                  usar atributos
+                  <code class="language-html">aria-label</code> para mejorar
+                  la accesibilidad en enlaces de navegación.
+                </li>
+              </ul>
+            </div>
+            <!-- Consejos y Mejores Prácticas  fin -->
+            <!-- Enlaces a Marcadores en Otras Páginas  -->
+            <div id="enlaces-a-marcadores-en-otras-páginas">
+              <h3>Enlaces a Marcadores en Otras Páginas</h3>
+              <p>
+                También puedes enlazar a secciones específicas de otras
+                páginas:
+              </p>
+              <!-- Sintaxis -->
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                       &lt;!-- Enlace a una sección específica de otra página --&gt;
                         &lt;a href="./productos.html#laptops">Ver Laptops&lt;/a&gt;
@@ -1356,143 +1358,143 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                         &lt;a href="https://ejemplo.com/pagina.html#seccion"&gt;Enlace Externo&lt;/a&gt;
                     </code>
                   </pre>
-                </div>
-                <!-- Sintaxis fin -->
               </div>
-              <!-- Enlaces a Marcadores en Otras Páginas  fin -->
+              <!-- Sintaxis fin -->
             </div>
-            <!-- Marcadores (Anchors) Fin -->
+            <!-- Enlaces a Marcadores en Otras Páginas  fin -->
+          </div>
+          <!-- Marcadores (Anchors) Fin -->
 
-            <!-- Otros Atributos para Enlaces -->
-            <hr class="site-divider--subtle site-divider" />
+          <!-- Otros Atributos para Enlaces -->
+          <hr class="site-divider--subtle site-divider" />
 
-            <div id="otros-atributos-para-enlaces" class="mt-3">
-              <h2>Otros Atributos para Enlaces</h2>
-              <!-- Atributos de Seguridad  -->
-              <div id="atributos-de-seguridad">
-                <h3 class="mt-3">Atributos de Seguridad</h3>
-                <p>
-                  Definen la relación entre la página actual y el destino:
-                </p>
-                <ul>
-                  <li>
-                    <code class="language-html">noopener</code>: Previene
-                    acceso al objeto window
-                  </li>
-                  <li>
-                    <code class="language-html">noreferrer</code>: No envía
-                    información del referrer
-                  </li>
-                  <li>
-                    <code class="language-html">nofollow</code>: Indica a
-                    motores de búsqueda que no sigan el enlace
-                  </li>
-                </ul>
-                <p>
-                  Se recomienda incluir siempre el atributo
-                  <code class="language-html">rel"noopener noreferrer"</code>
-                  en los enlaces con
-                  <code class="language-html">target="_blank"</code> para
-                  garantizar la seguridad y evitar posibles vulnerabilidades.
-                </p>
-                <!-- Sintaxis -->
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+          <div id="otros-atributos-para-enlaces" class="mt-3">
+            <h2>Otros Atributos para Enlaces</h2>
+            <!-- Atributos de Seguridad  -->
+            <div id="atributos-de-seguridad">
+              <h3 class="mt-3">Atributos de Seguridad</h3>
+              <p>
+                Definen la relación entre la página actual y el destino:
+              </p>
+              <ul>
+                <li>
+                  <code class="language-html">noopener</code>: Previene
+                  acceso al objeto window
+                </li>
+                <li>
+                  <code class="language-html">noreferrer</code>: No envía
+                  información del referrer
+                </li>
+                <li>
+                  <code class="language-html">nofollow</code>: Indica a
+                  motores de búsqueda que no sigan el enlace
+                </li>
+              </ul>
+              <p>
+                Se recomienda incluir siempre el atributo
+                <code class="language-html">rel"noopener noreferrer"</code>
+                en los enlaces con
+                <code class="language-html">target="_blank"</code> para
+                garantizar la seguridad y evitar posibles vulnerabilidades.
+              </p>
+              <!-- Sintaxis -->
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                         &lt;a href="https://sitioexterno.com" target="_blank" rel="noopener noreferrer">Enlace seguro&lt;/a>
                       </code>
                     </pre>
-                </div>
-                <!-- Sintaxis fin -->
               </div>
-              <!-- Atributos de Seguridad  fin -->
-              <!-- Atributos de Accesibilidad  -->
-              <div id="atributos-de-accesibilidad">
-                <h3>Atributos de Accesibilidad</h3>
-                <p>
-                  <code class="language-html">title</code>: Proporciona
-                  información adicional que aparece como tooltip:
-                </p>
-                <!-- Sintaxis -->
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+              <!-- Sintaxis fin -->
+            </div>
+            <!-- Atributos de Seguridad  fin -->
+            <!-- Atributos de Accesibilidad  -->
+            <div id="atributos-de-accesibilidad">
+              <h3>Atributos de Accesibilidad</h3>
+              <p>
+                <code class="language-html">title</code>: Proporciona
+                información adicional que aparece como tooltip:
+              </p>
+              <!-- Sintaxis -->
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                         &lt;a href="documento.pdf" title="Descargar documento PDF (2MB)">Descargar&lt;/a>
                       </code>
                     </pre>
-                </div>
-                <!-- Sintaxis fin -->
-                <p>
-                  <code class="language-html">aria-label</code>: Etiqueta
-                  alternativa para lectores de pantalla::
-                </p>
-                <!-- Sintaxis -->
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Sintaxis fin -->
+              <p>
+                <code class="language-html">aria-label</code>: Etiqueta
+                alternativa para lectores de pantalla::
+              </p>
+              <!-- Sintaxis -->
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                         &lt;a href="/inicio" aria-label="Ir a página de inicio">🏠&lt;/a>
                       </code>
                     </pre>
-                </div>
-                <!-- Sintaxis fin -->
               </div>
-              <!-- Atributos de Accesibilidad  fin -->
-              <!-- Atributos de Descarga  -->
-              <div id="atributos-de-descarga">
-                <h3>Atributos de Descarga</h3>
-                <p>
-                  <code class="language-html">download</code>: Sugiere
-                  descargar el recurso en lugar de navegarlo:
-                </p>
-                <!-- Sintaxis -->
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+              <!-- Sintaxis fin -->
+            </div>
+            <!-- Atributos de Accesibilidad  fin -->
+            <!-- Atributos de Descarga  -->
+            <div id="atributos-de-descarga">
+              <h3>Atributos de Descarga</h3>
+              <p>
+                <code class="language-html">download</code>: Sugiere
+                descargar el recurso en lugar de navegarlo:
+              </p>
+              <!-- Sintaxis -->
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                         &lt;a href="archivo.pdf" download="manual-usuario.pdf">Descargar manual&lt;/a>
                       </code>
                     </pre>
-                </div>
-                <!-- Sintaxis fin -->
               </div>
-              <!-- Atributos de Descarga  fin -->
-              <!-- Atributos de Navegación  -->
-              <div id="atributos-de-navegación">
-                <h3>Atributos de Navegación</h3>
-                <p>
-                  <code class="language-html">hreflang</code>: Indica el
-                  idioma del contenido enlazado:
-                </p>
-                <!-- Sintaxis -->
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+              <!-- Sintaxis fin -->
+            </div>
+            <!-- Atributos de Descarga  fin -->
+            <!-- Atributos de Navegación  -->
+            <div id="atributos-de-navegación">
+              <h3>Atributos de Navegación</h3>
+              <p>
+                <code class="language-html">hreflang</code>: Indica el
+                idioma del contenido enlazado:
+              </p>
+              <!-- Sintaxis -->
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                         &lt;a href="https://ejemplo.com/en/" hreflang="en">English version&lt;/a>
                       </code>
                     </pre>
-                </div>
-                <!-- Sintaxis fin -->
-                <p>
-                  <code class="language-html">type</code>: Especifica el tipo
-                  MIME del contenido enlazado:
-                </p>
-                <!-- Sintaxis -->
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Sintaxis fin -->
+              <p>
+                <code class="language-html">type</code>: Especifica el tipo
+                MIME del contenido enlazado:
+              </p>
+              <!-- Sintaxis -->
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                         &lt;a href="documento.pdf" type="application/pdf">Ver PDF&lt;/a>
                       </code>
                     </pre>
-                </div>
-                <!-- Sintaxis fin -->
               </div>
-              <!-- Atributos de Navegación  fin -->
-              <!-- Ejemplo Completo Enlaces  -->
-              <div id="ejemplo-completo-enlaces">
-                <h3>Ejemplo Completo Enlaces</h3>
-                <!-- Sintaxis -->
-                <p><span class="fw-bold">Sintaxis Básica</span>:</p>
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+              <!-- Sintaxis fin -->
+            </div>
+            <!-- Atributos de Navegación  fin -->
+            <!-- Ejemplo Completo Enlaces  -->
+            <div id="ejemplo-completo-enlaces">
+              <h3>Ejemplo Completo Enlaces</h3>
+              <!-- Sintaxis -->
+              <p><span class="fw-bold">Sintaxis Básica</span>:</p>
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" class="language-html" data-prismjs-copy="Copy">
                         &lt;a href="https://ejemplo.com/articulo" 
                           target="_blank" 
@@ -1503,18 +1505,18 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
                         &lt;/a>                      
                       </code>
                     </pre>
-                </div>
-                <!-- Sintaxis fin -->
-                <p>
-                  Estos atributos facilitan la creación de enlaces más
-                  seguros, accesibles y funcionales, lo que optimiza la
-                  experiencia del usuario y potencia el posicionamiento SEO
-                  del sitio web.
-                </p>
               </div>
-              <!-- Ejemplo Completo Enlaces  fin -->
+              <!-- Sintaxis fin -->
+              <p>
+                Estos atributos facilitan la creación de enlaces más
+                seguros, accesibles y funcionales, lo que optimiza la
+                experiencia del usuario y potencia el posicionamiento SEO
+                del sitio web.
+              </p>
             </div>
-            <!-- Otros Atributos para Enlaces Fin -->
+            <!-- Ejemplo Completo Enlaces  fin -->
+          </div>
+          <!-- Otros Atributos para Enlaces Fin -->
 
         </article>
         <!--  Enlaces y hipervínculos HTML fin -->
@@ -1568,103 +1570,58 @@ Cargar CSS: <span class="text-bg-light">/css/estilos.css</span>
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
+          <div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo">
             <div class="border border-1">
               <div class="site-menu__item">
-                <a href="#introduccion" class="site-menu__link">Introducción</a>
+                <a href="#introduccion" class=" list-group-item list-group-item-action">Introducción</a>
               </div>
 
               <div class="site-menu__item">
-                <a href="#enlaces-html-hiperenlaces" class="site-menu__link">Enlaces HTML-Hiperenlaces</a>
+                <a href="#enlaces-html-hiperenlaces" class=" list-group-item list-group-item-action">Enlaces
+                  HTML-Hiperenlaces</a>
               </div>
 
               <div class="site-menu__item">
-                <a href="#enlaces-html-sintaxis" class="site-menu__link">Enlaces HTML-Sintaxis</a>
+                <a href="#enlaces-html-sintaxis" class=" list-group-item list-group-item-action">Enlaces
+                  HTML-Sintaxis</a>
+              </div>
+              <div class="site-menu__item">
+                <a href="#enlaces-html---el-atributo-target" class=" list-group-item list-group-item-action">Enlaces
+                  HTML - El Atributo target</a>
+              </div>
+              <div class="site-menu__item">
+                <a href="#urls-absolutas-vs-urls-relativas" class=" list-group-item list-group-item-action">URLs
+                  Absolutas vs URLs Relativas</a>
               </div>
 
               <div class="site-menu__item">
-                <a href="#enlaces-html---el-atributo-target" class="site-menu__link">Enlaces HTML - El Atributo target</a>
-              </div>
-
-              <div class="site-menu__item">
-                <details>
-                  <summary>URLs Absolutas vs URLs Relativas</summary>
-                  <div class="site-menu__submenu">
-                    <a href="#urls-absolutas-vs-urls-relativas" class="site-menu__submenu-link">URLs Absolutas vs URLs
-                      Relativas</a>
-                    <a href="#url-absoluta" class="site-menu__submenu-link">URL Absoluta</a>
-                    <a href="#url-relativa" class="site-menu__submenu-link">URL Relativa</a>
-                    <a href="#cuándo-usar-cada-tipo-de-url" class="site-menu__submenu-link">Cuándo Usar Cada Tipo de URL</a>
-                  </div>
-                </details>
-              </div>
-
-              <div class="site-menu__item">
-                <a href="#enlaces-html---usar-una-imagen-como-enlace" class="site-menu__link">Enlaces HTML - Usar una Imagen
+                <a href="#enlaces-html---usar-una-imagen-como-enlace"
+                  class=" list-group-item list-group-item-action">Enlaces HTML - Usar una Imagen
                   como Enlace</a>
               </div>
 
               <div class="site-menu__item">
-                <details>
-                  <summary>
-                    Enlaces HTML - Enlace a una Dirección de Correo Electrónico
-                  </summary>
-                  <div class="site-menu__submenu">
-                    <a href="#enlaces-html---enlace-a-una-direccion-de-correo-electronico" class="site-menu__submenu-link">Enlaces
-                      HTML - Enlace a una Dirección de Correo
-                      Electrónico
-                    </a>
-                    <a href="#opciones-adicionales-para-enviar-correos" class="site-menu__submenu-link">Opciones Adicionales para
-                      Enviar Correos</a>
-                  </div>
-                </details>
+                <a href="#enlaces-html---enlace-a-una-direccion-de-correo-electronico"
+                  class=" list-group-item list-group-item-action">Enlaces HTML - Enlace a una Dirección de Correo
+                  Electrónico</a>
               </div>
 
               <div class="site-menu__item">
-                <details>
-                  <summary>Enlaces HTML - Un Botón como un Enlace</summary>
-                  <div class="site-menu__submenu">
-                    <a href="#enlaces-html---un-boton-como-un-enlace" class="site-menu__submenu-link">Enlaces HTML - Un Botón como
-                      un Enlace</a>
-                    <a href="#botón-dentro-de-un-enlace" class="site-menu__submenu-link">Botón Dentro de un Enlace</a>
-                    <a href="#enlace-estilizado-como-botón" class="site-menu__submenu-link">Enlace Estilizado como Botón</a>
-                    <a href="#formulario-con-botón" class="site-menu__submenu-link">Formulario con Botón</a>
-                    <a href="#botón-con-javascript" class="site-menu__submenu-link">Botón con JavaScript</a>
-                    <a href="#botón-con-data-attribute-y-javascript" class="site-menu__submenu-link">Botón con data attribute y
-                      JavaScript</a>
-                  </div>
-                </details>
+                <a href="#enlaces-html---un-boton-como-un-enlace"
+                  class=" list-group-item list-group-item-action">Enlaces HTML - Un Botón como un Enlace</a>
               </div>
 
               <div class="site-menu__item">
-                <details>
-                  <summary>Marcadores (Anchors)</summary>
-                  <div class="site-menu__submenu">
-                    <a href="#marcadores-anchors" class="site-menu__submenu-link">Marcadores (Anchors)</a>
-                    <a href="#sintaxis-básica-de-marcadores" class="site-menu__submenu-link">Sintaxis Básica de Marcadores</a>
-                    <a href="#ejemplos-uso-del-marcador" class="site-menu__submenu-link">Ejemplos Uso del Marcador</a>
-                    <a href="#consejos-y-mejores-prácticas" class="site-menu__submenu-link">Consejos y Mejores Prácticas</a>
-                    <a href="#enlaces-a-marcadores-en-otras-páginas" class="site-menu__submenu-link">Enlaces a Marcadores en Otras
-                      Páginas</a>
-                  </div>
-                </details>
+                <a href="#marcadores-anchors" class=" list-group-item list-group-item-action">Marcadores (Anchors)</a>
               </div>
 
               <div class="site-menu__item">
-                <details>
-                  <summary>Otros Atributos para Enlaces</summary>
-                  <div class="site-menu__submenu">
-                    <a href="#atributos-de-seguridad" class="site-menu__submenu-link">Atributos de Seguridad</a>
-                    <a href="#atributos-de-accesibilidad" class="site-menu__submenu-link">Atributos de Accesibilidad</a>
-                    <a href="#atributos-de-descarga" class="site-menu__submenu-link">Atributos de Descarga</a>
-                    <a href="#atributos-de-navegación" class="site-menu__submenu-link">Atributos de Navegación</a>
-                    <a href="#ejemplo-completo-enlaces" class="site-menu__submenu-link">Ejemplo Completo Enlaces</a>
-                  </div>
-                </details>
+                <a href="#otros-atributos-para-enlaces" class=" list-group-item list-group-item-action">Otros Atributos
+                  para Enlaces</a>
               </div>
 
               <div class="site-menu__item">
-                <a href="#comments" class="site-menu__link">Comentarios</a>
+                <a href="#comments" class=" list-group-item list-group-item-action">Comentarios</a>
               </div>
             </div>
           </div>

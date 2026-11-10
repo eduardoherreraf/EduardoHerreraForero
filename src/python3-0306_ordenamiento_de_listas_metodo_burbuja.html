@@ -65,7 +65,7 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy" data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -114,46 +114,47 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Ordenando Listas Simples: El Ordenamiento de Burbuja en Python  -->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
-          <header>
-            <h1>
-              Ordenando Listas Simples: El Ordenamiento de Burbuja en Python
-            </h1>
-          </header>
-          <!-- Introducción -->
-          <div class="mt-3">
-            <h2>Introducción</h2>
-            <div class="site-image site-intro-image mb-5">
-              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
-                <img loading="lazy" src="https://i.ibb.co/W51JTWX/burbujas.jpg" class="img-fluid"
-                  alt="Ordenando Listas Simples: El Ordenamiento de Burbuja en Python  "
-                  title="Ordenamiento de Burbuja en Python: Cómo Ordenar Listas Sencillas" />
-                <figcaption class="site-image__caption">
-                  Ordenando Listas Simples: El Ordenamiento de Burbuja en
-                  Python
-                </figcaption>
-              </figure>
-            </div>
-            <p>
-              El ordenamiento de listas es una tarea fundamental en la
-              programación y en la ciencia de la computación. Existen
-              diversos algoritmos de ordenamiento, cada uno con sus propias
-              características y eficiencia. Uno de los algoritmos más
-              conocidos y sencillos es el algoritmo Burbuja (Bubble Sort).
-              Este algoritmo funciona comparando cada par de elementos
-              adyacentes en una lista y, si están en el orden incorrecto,
-              los intercambia. Este proceso se repite hasta que la lista
-              esté completamente ordenada. Aunque no es el más eficiente
-              para listas grandes, el algoritmo Burbuja es fácil de entender
-              y de implementar, lo que lo convierte en una excelente
-              herramienta pedagógica para aprender sobre ordenamiento.
-            </p>
+        <article class="row border-1 border-bottom pb-3">
+          <div id="introduccion">
+            <header>
+              <h1>
+                Ordenando Listas Simples: El Ordenamiento de Burbuja en Python
+              </h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-3">
+              <h2>Introducción</h2>
+              <div class="site-image site-intro-image mb-5">
+                <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                  <img loading="lazy" src="https://i.ibb.co/W51JTWX/burbujas.jpg" class="img-fluid"
+                    alt="Ordenando Listas Simples: El Ordenamiento de Burbuja en Python  "
+                    title="Ordenamiento de Burbuja en Python: Cómo Ordenar Listas Sencillas" />
+                  <figcaption class="site-image__caption">
+                    Ordenando Listas Simples: El Ordenamiento de Burbuja en
+                    Python
+                  </figcaption>
+                </figure>
+              </div>
+              <p>
+                El ordenamiento de listas es una tarea fundamental en la
+                programación y en la ciencia de la computación. Existen
+                diversos algoritmos de ordenamiento, cada uno con sus propias
+                características y eficiencia. Uno de los algoritmos más
+                conocidos y sencillos es el algoritmo Burbuja (Bubble Sort).
+                Este algoritmo funciona comparando cada par de elementos
+                adyacentes en una lista y, si están en el orden incorrecto,
+                los intercambia. Este proceso se repite hasta que la lista
+                esté completamente ordenada. Aunque no es el más eficiente
+                para listas grandes, el algoritmo Burbuja es fácil de entender
+                y de implementar, lo que lo convierte en una excelente
+                herramienta pedagógica para aprender sobre ordenamiento.
+              </p>
 
+            </div>
           </div>
           <hr class="site-divider--subtle site-divider" />
 
@@ -437,15 +438,15 @@
         <!--  fin comentarios  -->
       </section>
 
-<!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h2>En Este Artículo</h2><div class="site-menu__scroll"><div class="site-menu"><div class="border border-1">
-<div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
-<div class="site-menu__item"><a href="#queEsElOrdenamientoDeBurbuja" class="site-menu__link">¿Qué es el Ordenamiento de Burbuja?</a></div>
-<div class="site-menu__item"><a href="#funcionamientodelAlgoritmo" class="site-menu__link">Funcionamiento del Algoritmo</a></div>
-<div class="site-menu__item"><a href="#implementacionEnPython" class="site-menu__link">Implementación en Python</a></div>
-<div class="site-menu__item"><a href="#ejemploDeUso" class="site-menu__link">Ejemplo de Uso</a></div>
-<div class="site-menu__item"><a href="#metodoSort" class="site-menu__link">Método sort()</a></div>
+<!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h2>En Este Artículo</h2><div class="site-menu__scroll"><div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo"><div class="border border-1">
+<div class="site-menu__item"><a href="#introduccion" class=" list-group-item list-group-item-action">Introducción</a></div>
+<div class="site-menu__item"><a href="#queEsElOrdenamientoDeBurbuja" class=" list-group-item list-group-item-action">¿Qué es el Ordenamiento de Burbuja?</a></div>
+<div class="site-menu__item"><a href="#funcionamientodelAlgoritmo" class=" list-group-item list-group-item-action">Funcionamiento del Algoritmo</a></div>
+<div class="site-menu__item"><a href="#implementacionEnPython" class=" list-group-item list-group-item-action">Implementación en Python</a></div>
+<div class="site-menu__item"><a href="#ejemploDeUso" class=" list-group-item list-group-item-action">Ejemplo de Uso</a></div>
+<div class="site-menu__item"><a href="#metodoSort" class=" list-group-item list-group-item-action">Método sort()</a></div>
 <!-- Comentarios  -->
-<div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div></div></div></div></aside>
+<div class="site-menu__item"><a href="#comments" class=" list-group-item list-group-item-action">Comentarios</a></div></div></div></div></aside>
 <!--  fin barra lateral  -->
 
     </main>

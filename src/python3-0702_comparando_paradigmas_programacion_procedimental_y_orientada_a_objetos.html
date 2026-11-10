@@ -65,7 +65,7 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy" data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -114,43 +114,44 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Comparando Paradigmas: Programación Procedimental y Orientada a Objetos en Python  -->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
-          <header>
-            <h1>
-              Comparando Paradigmas: Programación Procedimental y Orientada
-              a Objetos en Python
-            </h1>
-          </header>
-          <!-- Introducción -->
-          <div class="mt-3">
-            <h2>Introducción</h2>
-            <div class="site-image site-intro-image mb-5">
-              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
-                <img loading="lazy" src="https://i.ibb.co/xJ6xjwd/procedimentalvspoo.jpg" class="img-fluid"
-                  alt="Comparando Paradigmas: Programación Procedimental y Orientada a Objetos en Python  "
-                  title="Eligir el mejor paradigma de programación para el proyecto" />
-                <figcaption class="site-image__caption">
-                  Comparando Paradigmas: Programación Procedimental y
-                  Orientada a Objetos en Python
-                </figcaption>
-              </figure>
-            </div>
-            <p>
-              Las diferencias y similitudes entre los paradigmas de
-              programación procedimental y orientado a objetos se revelan
-              con claridad mediante un análisis comparativo utilizando
-              Python como lenguaje de referencia. El estudio profundiza en
-              sus características distintivas, explorando las ventajas y
-              desventajas de cada enfoque, mediante ejemplos prácticos que
-              ilustran cómo abordan la resolución de problemas
-              computacionales.
-            </p>
+        <article class="row border-1 border-bottom pb-3">
+          <div id="introduccion">
+            <header>
+              <h1>
+                Comparando Paradigmas: Programación Procedimental y Orientada
+                a Objetos en Python
+              </h1>
+            </header>
+            <!-- Introducción -->
+            <div class="mt-3">
+              <h2>Introducción</h2>
+              <div class="site-image site-intro-image mb-5">
+                <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                  <img loading="lazy" src="https://i.ibb.co/xJ6xjwd/procedimentalvspoo.jpg" class="img-fluid"
+                    alt="Comparando Paradigmas: Programación Procedimental y Orientada a Objetos en Python  "
+                    title="Eligir el mejor paradigma de programación para el proyecto" />
+                  <figcaption class="site-image__caption">
+                    Comparando Paradigmas: Programación Procedimental y
+                    Orientada a Objetos en Python
+                  </figcaption>
+                </figure>
+              </div>
+              <p>
+                Las diferencias y similitudes entre los paradigmas de
+                programación procedimental y orientado a objetos se revelan
+                con claridad mediante un análisis comparativo utilizando
+                Python como lenguaje de referencia. El estudio profundiza en
+                sus características distintivas, explorando las ventajas y
+                desventajas de cada enfoque, mediante ejemplos prácticos que
+                ilustran cómo abordan la resolución de problemas
+                computacionales.
+              </p>
 
+            </div>
           </div>
           <hr class="site-divider--subtle site-divider" />
 
@@ -728,14 +729,14 @@
         <!--  fin comentarios  -->
       </section>
 
-<!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h2>En Este Artículo</h2><div class="site-menu__scroll"><div class="site-menu"><div class="border border-1">
-<div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
-<div class="site-menu__item"><a href="#que-es-una-pila" class="site-menu__link">¿Qué es una Pila?</a></div>
-<div class="site-menu__item"><a href="#la-pila-el-enfoque-procedimental" class="site-menu__link">La Pila: el Enfoque Procedimental</a></div>
-<div class="site-menu__item"><a href="#la-Pila-el-enfoque-procedimental-versus-el-enfoque-oOrientado-a-objetos" class="site-menu__link">La Pila: El Enfoque Procedimental Versus El Enfoque Orientado a Objetos</a></div>
-<div class="site-menu__item"><a href="#la-pila-el-enfoque-orientado-a-objetos" class="site-menu__link">La Pila: El Enfoque Orientado a Objetos</a></div>
+<!--  barra lateral  --><aside class="col-lg-3 d-none d-lg-block"><h2>En Este Artículo</h2><div class="site-menu__scroll"><div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo"><div class="border border-1">
+<div class="site-menu__item"><a href="#introduccion" class=" list-group-item list-group-item-action">Introducción</a></div>
+<div class="site-menu__item"><a href="#que-es-una-pila" class=" list-group-item list-group-item-action">¿Qué es una Pila?</a></div>
+<div class="site-menu__item"><a href="#la-pila-el-enfoque-procedimental" class=" list-group-item list-group-item-action">La Pila: el Enfoque Procedimental</a></div>
+<div class="site-menu__item"><a href="#la-Pila-el-enfoque-procedimental-versus-el-enfoque-oOrientado-a-objetos" class=" list-group-item list-group-item-action">La Pila: El Enfoque Procedimental Versus El Enfoque Orientado a Objetos</a></div>
+<div class="site-menu__item"><a href="#la-pila-el-enfoque-orientado-a-objetos" class=" list-group-item list-group-item-action">La Pila: El Enfoque Orientado a Objetos</a></div>
 <!-- Comentarios  -->
-<div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div></div></div></div></aside>
+<div class="site-menu__item"><a href="#comments" class=" list-group-item list-group-item-action">Comentarios</a></div></div></div></div></aside>
 <!--  fin barra lateral  -->
     </main>
     <!--  fin principal  -->

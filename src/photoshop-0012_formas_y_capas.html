@@ -52,11 +52,12 @@
   <title>Formas y Capas en Photoshop - Ing. Eduardo Herrera Forero.</title>
 
   <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/article-scrollspy.js"></script>
 
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -106,12 +107,11 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Formas y Capas  -->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
+        <article id="introduccion" class="row border-1 border-bottom pb-3">
 
           <header>
             <h1>Formas y Capas</h1>
@@ -1421,26 +1421,23 @@
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
+          <div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo">
             <div class="border border-1">
-              <div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
-              <div class="site-menu__item"><a href="#estilos-de-capa" class="site-menu__link">Estilos de Capa</a></div>
-              <div class="site-menu__item"><a href="#crear-una-forma-grafica" class="site-menu__link">Crear una Forma
+              <div class="site-menu__item"><a href="#introduccion" class=" list-group-item list-group-item-action">Introducción</a></div>
+              <div class="site-menu__item"><a href="#estilos-de-capa" class=" list-group-item list-group-item-action">Estilos de Capa</a></div>
+              <div class="site-menu__item"><a href="#crear-una-forma-grafica" class=" list-group-item list-group-item-action">Crear una Forma
                   Gráfica</a></div>
-              <div class="site-menu__item"><a href="#agregar-una-forma-personalizada" class="site-menu__link">Agregar
+              <div class="site-menu__item"><a href="#agregar-una-forma-personalizada" class=" list-group-item list-group-item-action">Agregar
                   una Forma Personalizada</a></div>
-              <div class="site-menu__item"><a href="#modos-de-fusion" class="site-menu__link">Modos de Fusión</a></div>
-              <div class="site-menu__item"><a href="#mascaras-de-capa" class="site-menu__link">Máscaras de Capa</a>
+              <div class="site-menu__item"><a href="#modos-de-fusion" class=" list-group-item list-group-item-action">Modos de Fusión</a></div>
+              <div class="site-menu__item"><a href="#mascaras-de-capa" class=" list-group-item list-group-item-action">Máscaras de Capa</a>
               </div>
               <div class="site-menu__item"><a href="#reemplazar-un-fondo-con-una-mascara-de-capa"
-                  class="site-menu__link">Reemplazar un Fondo con una Máscara de Capa</a></div>
+                  class=" list-group-item list-group-item-action">Reemplazar un Fondo con una Máscara de Capa</a></div>
 
-              <li class="list-group-item site-list__item">
-                <a href="#"></a>
-              </li>
               <!-- Comentarios  -->
               <div class="site-menu__item">
-                <a href="#comments" class="site-menu__link">Comentarios</a>
+                <a href="#comments" class=" list-group-item list-group-item-action">Comentarios</a>
               </div>
             </div>
           </div>

@@ -55,7 +55,7 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy" data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -104,66 +104,67 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Etiquetas de Texto HTML -->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
+        <article class="row border-1 border-bottom pb-3">
 
-            <header>
-              <h1>Etiquetas Genéricas HTML</h1>
-            </header>
+            <div id="introduccion">
+              <header>
+                <h1>Etiquetas Genéricas HTML</h1>
+              </header>
 
-            <!-- Introducción -->
-            <div class="mt-3">
-              <h2>Introducción</h2>
-              <div class="site-image site-intro-image mb-5">
-                <figure class="site-content__img-container site-image__figure site-image__figure--intro">
-                  <img src="https://i.postimg.cc/KjG2V8kV/Etiquetas-Genericas-Transparente-Final.png" class="img-fluid"
-                    alt="Etiquetas Genéricas HTML " title="Etiquetas Genéricas HTML <div> y <span>"  loading="lazy"/>
-                  <figcaption class="site-image__caption">Ejemplo de Etiquetas de Texto HTML</figcaption>
-                </figure>
+              <!-- Introducción -->
+              <div class="mt-3">
+                <h2>Introducción</h2>
+                <div class="site-image site-intro-image mb-5">
+                  <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                    <img src="https://i.postimg.cc/KjG2V8kV/Etiquetas-Genericas-Transparente-Final.png" class="img-fluid"
+                      alt="Etiquetas Genéricas HTML " title="Etiquetas Genéricas HTML <div> y <span>"  loading="lazy"/>
+                    <figcaption class="site-image__caption">Ejemplo de Etiquetas de Texto HTML</figcaption>
+                  </figure>
+                </div>
+
+                <p>
+                  En el lenguaje HTML, las etiquetas genéricas son elementos que
+                  permiten estructurar el contenido de una página web cuando no
+                  existe una etiqueta semántica específica que se ajuste a la
+                  necesidad del desarrollador. Estas etiquetas son versátiles y
+                  ampliamente utilizadas, especialmente durante las primeras
+                  etapas del diseño o cuando se requiere una agrupación flexible
+                  de contenido.
+                </p>
+                <p>Las dos etiquetas genéricas principales en HTML son:</p>
+                <ul>
+                  <li>
+                    <code class="language-html">&lt;div></code> (division): se
+                    utiliza para agrupar bloques de contenido. Es un contenedor
+                    de nivel bloque, ideal para organizar secciones completas de
+                    la página, como encabezados, artículos, barras laterales o
+                    pies de página. Su uso es esencial en el diseño de
+                    estructuras con CSS.
+                  </li>
+                  <li>
+                    <code class="language-html">&lt;span></code> (Fragmento en
+                    Línea): es una etiqueta de nivel en línea que permite
+                    aplicar estilos o identificar partes específicas dentro de
+                    un texto, sin romper el flujo del mismo. Es comúnmente usada
+                    para resaltar palabras, aplicar estilos personalizados o
+                    manipular contenido mediante JavaScript.
+                  </li>
+                </ul>
+                <p>
+                  Aunque estas etiquetas no tienen un significado semántico
+                  propio, ofrecen una gran flexibilidad cuando se combinan con
+                  hojas de estilo (CSS) o scripts. Sin embargo, se recomienda
+                  usarlas con moderación y preferir etiquetas semánticas cuando
+                  sea posible, para mejorar la accesibilidad y el
+                  posicionamiento en buscadores.
+                </p>
+
+
               </div>
-
-              <p>
-                En el lenguaje HTML, las etiquetas genéricas son elementos que
-                permiten estructurar el contenido de una página web cuando no
-                existe una etiqueta semántica específica que se ajuste a la
-                necesidad del desarrollador. Estas etiquetas son versátiles y
-                ampliamente utilizadas, especialmente durante las primeras
-                etapas del diseño o cuando se requiere una agrupación flexible
-                de contenido.
-              </p>
-              <p>Las dos etiquetas genéricas principales en HTML son:</p>
-              <ul>
-                <li>
-                  <code class="language-html">&lt;div></code> (division): se
-                  utiliza para agrupar bloques de contenido. Es un contenedor
-                  de nivel bloque, ideal para organizar secciones completas de
-                  la página, como encabezados, artículos, barras laterales o
-                  pies de página. Su uso es esencial en el diseño de
-                  estructuras con CSS.
-                </li>
-                <li>
-                  <code class="language-html">&lt;span></code> (Fragmento en
-                  Línea): es una etiqueta de nivel en línea que permite
-                  aplicar estilos o identificar partes específicas dentro de
-                  un texto, sin romper el flujo del mismo. Es comúnmente usada
-                  para resaltar palabras, aplicar estilos personalizados o
-                  manipular contenido mediante JavaScript.
-                </li>
-              </ul>
-              <p>
-                Aunque estas etiquetas no tienen un significado semántico
-                propio, ofrecen una gran flexibilidad cuando se combinan con
-                hojas de estilo (CSS) o scripts. Sin embargo, se recomienda
-                usarlas con moderación y preferir etiquetas semánticas cuando
-                sea posible, para mejorar la accesibilidad y el
-                posicionamiento en buscadores.
-              </p>
-
-
             </div>
             <!-- Introducción Fin -->
 
@@ -1768,23 +1769,23 @@
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
+          <div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo">
             <div class="border border-1">
               <div class="site-menu__item">
-                <a href="#introduccion" class="site-menu__link">Introducción</a>
+                <a href="#introduccion" class=" list-group-item list-group-item-action">Introducción</a>
               </div>
 
               <div class="site-menu__item">
-                <a href="#división-div" class="site-menu__link">División <code class="language-html">&lt;div></code></a>
+                <a href="#división-div" class=" list-group-item list-group-item-action">División <code class="language-html">&lt;div></code></a>
               </div>
 
               <div class="site-menu__item">
-                <a href="#fragmento-en-línea-span" class="site-menu__link">Fragmento en Línea
+                <a href="#fragmento-en-línea-span" class=" list-group-item list-group-item-action">Fragmento en Línea
                   <code class="language-html">&lt;span></code></a>
               </div>
 
               <div class="site-menu__item">
-                <a href="#comments" class="site-menu__link">Comentarios</a>
+                <a href="#comments" class=" list-group-item list-group-item-action">Comentarios</a>
               </div>
             </div>
           </div>

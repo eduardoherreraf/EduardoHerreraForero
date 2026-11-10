@@ -58,7 +58,8 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy"
+  data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -89,7 +90,8 @@
             <a class="nav-link mx-1 text-decoration-none" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 site-nav__link--publications-active text-decoration-none site-nav__link" href="index.html#blog">ARTÍCULOS</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active text-decoration-none site-nav__link"
+              href="index.html#blog">ARTÍCULOS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1 text-decoration-none" href="index.html#contact">CONTACTO</a>
@@ -107,13 +109,13 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Citas y Referencias HTM-->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
+        <article class="row border-1 border-bottom pb-3">
 
+          <div id="introduccion">
             <header>
               <h1>Citas y Referencias HTML</h1>
             </header>
@@ -153,128 +155,129 @@
               </p>
 
             </div>
-            <!-- Introducción Fin -->
-            <hr class="site-divider--subtle site-divider" />
+          </div>
+          <!-- Introducción Fin -->
+          <hr class="site-divider--subtle site-divider" />
 
-            <!-- <blockquote>: Cita Larga o en Bloque -->
-            <div id="cita-larga-o-en-bloque-blockquote" class="mt-3">
-              <h2>
-                Cita Larga o en Bloque
+          <!-- <blockquote>: Cita Larga o en Bloque -->
+          <div id="cita-larga-o-en-bloque-blockquote" class="mt-3">
+            <h2>
+              Cita Larga o en Bloque
+              <code class="language-html">&lt;blockquote></code>
+            </h2>
+            <p>
+              Una cita directa es aquella que reproduce textualmente un
+              fragmento de un texto, con una extensión de cuatro líneas o
+              más (o aproximadamente 40 palabras, según el estilo de
+              citación empleado). Se caracteriza por presentarse como un
+              bloque de texto independiente, separado del párrafo del autor.
+            </p>
+            <!-- Características Principales <blockquote>  -->
+            <div id="características-principales-blockquote">
+              <h3>
+                Características Principales
                 <code class="language-html">&lt;blockquote></code>
-              </h2>
-              <p>
-                Una cita directa es aquella que reproduce textualmente un
-                fragmento de un texto, con una extensión de cuatro líneas o
-                más (o aproximadamente 40 palabras, según el estilo de
-                citación empleado). Se caracteriza por presentarse como un
-                bloque de texto independiente, separado del párrafo del autor.
-              </p>
-              <!-- Características Principales <blockquote>  -->
-              <div id="características-principales-blockquote">
-                <h3>
-                  Características Principales
-                  <code class="language-html">&lt;blockquote></code>
-                </h3>
+              </h3>
 
-                <p>
-                  <span class="fw-bold">Uso típico</span>: cuando se cita un
-                  párrafo o fragmento extenso proveniente de otra fuente.
-                </p>
-                <p>
-                  <span class="fw-bold">Semántica</span>: Su objetivo es dar
-                  significado semántico al contenido que encierra, indicando
-                  que es una cita o un fragmento de texto extraído de otra
-                  fuente.
-                </p>
-                <p>
-                  <span class="fw-bold">Estructura</span>: Puede contener
-                  múltiples párrafos, listas u otros elementos de bloque.
-                </p>
-                <p>
-                  <span class="fw-bold">Referencia</span>: Justo después de la
-                  cita en bloque, o al final de ella, siempre se debe incluir
-                  la referencia (autor, año, número de página) para que el
-                  lector sepa de dónde sacaste esa información, usando la
-                  atributo <code class="language-html">cite</code>.
-                </p>
-              </div>
-              <!-- Características Principales <blockquote>  fin -->
-              <!-- Presentación Visual <blockquote>  -->
-              <div id="presentacion-visual-blockquote">
-                <h3>
-                  Presentación Visual
-                  <code class="language-html">&lt;blockquote></code>
-                </h3>
-                <p>
-                  Cuando se usa una cita en bloque, el texto citado se
-                  presenta de la siguiente manera:
-                </p>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Sangría</span>: La cita en bloque se
-                    distingue por aplicar una sangría, es decir, un espacio
-                    adicional desde el margen izquierdo a todo el bloque de
-                    texto, lo que permite destacarlo visualmente del resto del
-                    documento.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Ausencia de comillas</span>: A
-                    diferencia de las citas cortas, la cita en bloque no
-                    requiere comillas para delimitarla, ya que la sangría
-                    cumple la función de identificarla como una cita.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Espaciado</span>: Generalmente, se
-                    emplea un espaciado distinto, como el espaciado simple, en
-                    contraste con el doble espaciado que podría usarse en el
-                    resto del documento, aunque esto depende de las normas del
-                    estilo de citación utilizado.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Referencia</span>: Inmediatamente
-                    después de la cita en bloque, o al final de la misma, se
-                    debe incluir la referencia correspondiente (autor, año y
-                    número de página), para indicar claramente la fuente de la
-                    información al lector.
-                  </li>
-                </ul>
-              </div>
-              <!-- Presentación Visual <blockquote>  fin -->
-              <!-- ¿Por Qué Usar una Cita en Bloque?  -->
-              <div id="por-que-usar-una-cita-en-bloque">
-                <h3>¿Por Qué Usar una Cita en Bloque?</h3>
-                <p>Se Usan las citas en bloque por varias razones:</p>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Claridad</span>: Se facilita al
-                    lector la identificación clara del texto original frente a
-                    las citas textuales provenientes de otras fuentes.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Énfasis</span>: Al destacarse
-                    visualmente, la cita en bloque llama más la atención sobre
-                    el contenido, lo que es útil cuando quieres que el lector
-                    se concentre en un pasaje específico.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Integridad</span>: Permite incluir
-                    pasajes extensos sin interrumpir la fluidez de tus propios
-                    párrafos con demasiadas comillas.
-                  </li>
-                </ul>
-              </div>
-              <!-- ¿Por Qué Usar una Cita en Bloque?  fin -->
-              <!-- Sintaxis <blockquote>  -->
-              <div id="sintaxis-blockquote">
-                <h3>
-                  Sintaxis <code class="language-html">&lt;blockquote></code>
-                </h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Sintaxis básica</span>:
-                    <!-- Sintaxis -->
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+              <p>
+                <span class="fw-bold">Uso típico</span>: cuando se cita un
+                párrafo o fragmento extenso proveniente de otra fuente.
+              </p>
+              <p>
+                <span class="fw-bold">Semántica</span>: Su objetivo es dar
+                significado semántico al contenido que encierra, indicando
+                que es una cita o un fragmento de texto extraído de otra
+                fuente.
+              </p>
+              <p>
+                <span class="fw-bold">Estructura</span>: Puede contener
+                múltiples párrafos, listas u otros elementos de bloque.
+              </p>
+              <p>
+                <span class="fw-bold">Referencia</span>: Justo después de la
+                cita en bloque, o al final de ella, siempre se debe incluir
+                la referencia (autor, año, número de página) para que el
+                lector sepa de dónde sacaste esa información, usando la
+                atributo <code class="language-html">cite</code>.
+              </p>
+            </div>
+            <!-- Características Principales <blockquote>  fin -->
+            <!-- Presentación Visual <blockquote>  -->
+            <div id="presentacion-visual-blockquote">
+              <h3>
+                Presentación Visual
+                <code class="language-html">&lt;blockquote></code>
+              </h3>
+              <p>
+                Cuando se usa una cita en bloque, el texto citado se
+                presenta de la siguiente manera:
+              </p>
+              <ul>
+                <li>
+                  <span class="fw-bold">Sangría</span>: La cita en bloque se
+                  distingue por aplicar una sangría, es decir, un espacio
+                  adicional desde el margen izquierdo a todo el bloque de
+                  texto, lo que permite destacarlo visualmente del resto del
+                  documento.
+                </li>
+                <li>
+                  <span class="fw-bold">Ausencia de comillas</span>: A
+                  diferencia de las citas cortas, la cita en bloque no
+                  requiere comillas para delimitarla, ya que la sangría
+                  cumple la función de identificarla como una cita.
+                </li>
+                <li>
+                  <span class="fw-bold">Espaciado</span>: Generalmente, se
+                  emplea un espaciado distinto, como el espaciado simple, en
+                  contraste con el doble espaciado que podría usarse en el
+                  resto del documento, aunque esto depende de las normas del
+                  estilo de citación utilizado.
+                </li>
+                <li>
+                  <span class="fw-bold">Referencia</span>: Inmediatamente
+                  después de la cita en bloque, o al final de la misma, se
+                  debe incluir la referencia correspondiente (autor, año y
+                  número de página), para indicar claramente la fuente de la
+                  información al lector.
+                </li>
+              </ul>
+            </div>
+            <!-- Presentación Visual <blockquote>  fin -->
+            <!-- ¿Por Qué Usar una Cita en Bloque?  -->
+            <div id="por-que-usar-una-cita-en-bloque">
+              <h3>¿Por Qué Usar una Cita en Bloque?</h3>
+              <p>Se Usan las citas en bloque por varias razones:</p>
+              <ul>
+                <li>
+                  <span class="fw-bold">Claridad</span>: Se facilita al
+                  lector la identificación clara del texto original frente a
+                  las citas textuales provenientes de otras fuentes.
+                </li>
+                <li>
+                  <span class="fw-bold">Énfasis</span>: Al destacarse
+                  visualmente, la cita en bloque llama más la atención sobre
+                  el contenido, lo que es útil cuando quieres que el lector
+                  se concentre en un pasaje específico.
+                </li>
+                <li>
+                  <span class="fw-bold">Integridad</span>: Permite incluir
+                  pasajes extensos sin interrumpir la fluidez de tus propios
+                  párrafos con demasiadas comillas.
+                </li>
+              </ul>
+            </div>
+            <!-- ¿Por Qué Usar una Cita en Bloque?  fin -->
+            <!-- Sintaxis <blockquote>  -->
+            <div id="sintaxis-blockquote">
+              <h3>
+                Sintaxis <code class="language-html">&lt;blockquote></code>
+              </h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Sintaxis básica</span>:
+                  <!-- Sintaxis -->
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;blockquote>
                               &lt;p>Esta es una cita larga que se extiende por varios párrafos y requiere ser destacada del texto principal mediante sangría.
@@ -285,14 +288,14 @@
                             &lt;/blockquote>                       
                           </code>
                         </pre>
-                    </div>
-                    <!-- Sintaxis fin -->
-                  </li>
-                  <li>
-                    <span class="fw-bold">Con atribución</span>:
-                    <!-- Sintaxis -->
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                  <!-- Sintaxis fin -->
+                </li>
+                <li>
+                  <span class="fw-bold">Con atribución</span>:
+                  <!-- Sintaxis -->
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;blockquote>  
                               &lt;p>Esta es una cita larga que se extiende por varios párrafos y requiere ser destacada del texto principal mediante sangría.
@@ -304,59 +307,59 @@
                             &lt;/blockquote>                       
                           </code>
                         </pre>
-                    </div>
-                    <!-- Sintaxis fin -->
-                  </li>
-                </ul>
-              </div>
-              <!-- Sintaxis <blockquote>  fin -->
-              <!-- Ejemplo Práctico <blockquote>  -->
-              <div id="ejemplo-practico-blockquote">
-                <h3>
-                  Ejemplo Práctico
-                  <code class="language-html">&lt;blockquote></code>
-                </h3>
-                <!-- Ejemplo -->
-                <div class="row">
-                  <div class="code-example">
-                    <div class="row code-example__output mt-3">
-                      <!-- código ejecutado -->
-                      <div>
-                        <div class="demo-blockquote__container">
-                          <blockquote class="demo-blockquote__blockquote" cite="https://ejemplo.com">
-                            <p>
-                              La imaginación es más importante que el
-                              conocimiento. El conocimiento es limitado,
-                              mientras que la imaginación abraza todo el
-                              mundo, estimulando el progreso, dando origen a
-                              la evolución.
-                            </p>
-                            <cite class="demo-blockquote__cite">Albert Einstein</cite>
-                          </blockquote>
+                  </div>
+                  <!-- Sintaxis fin -->
+                </li>
+              </ul>
+            </div>
+            <!-- Sintaxis <blockquote>  fin -->
+            <!-- Ejemplo Práctico <blockquote>  -->
+            <div id="ejemplo-practico-blockquote">
+              <h3>
+                Ejemplo Práctico
+                <code class="language-html">&lt;blockquote></code>
+              </h3>
+              <!-- Ejemplo -->
+              <div class="row">
+                <div class="code-example">
+                  <div class="row code-example__output mt-3">
+                    <!-- código ejecutado -->
+                    <div>
+                      <div class="demo-blockquote__container">
+                        <blockquote class="demo-blockquote__blockquote" cite="https://ejemplo.com">
+                          <p>
+                            La imaginación es más importante que el
+                            conocimiento. El conocimiento es limitado,
+                            mientras que la imaginación abraza todo el
+                            mundo, estimulando el progreso, dando origen a
+                            la evolución.
+                          </p>
+                          <cite class="demo-blockquote__cite">Albert Einstein</cite>
+                        </blockquote>
 
-                          <blockquote class="demo-blockquote__blockquote-simple">
-                            <p>
-                              No es la especie más fuerte la que sobrevive, ni
-                              la más inteligente, sino la que responde mejor
-                              al cambio.
-                            </p>
-                            <cite class="demo-blockquote__cite">Charles Darwin</cite>
-                          </blockquote>
+                        <blockquote class="demo-blockquote__blockquote-simple">
+                          <p>
+                            No es la especie más fuerte la que sobrevive, ni
+                            la más inteligente, sino la que responde mejor
+                            al cambio.
+                          </p>
+                          <cite class="demo-blockquote__cite">Charles Darwin</cite>
+                        </blockquote>
 
-                          <blockquote class="demo-blockquote__blockquote" cite="https://ejemplo.com">
-                            <p>
-                              En medio de la dificultad reside la oportunidad.
-                            </p>
-                            <cite class="demo-blockquote__cite">Albert Einstein</cite>
-                          </blockquote>
-                        </div>
+                        <blockquote class="demo-blockquote__blockquote" cite="https://ejemplo.com">
+                          <p>
+                            En medio de la dificultad reside la oportunidad.
+                          </p>
+                          <cite class="demo-blockquote__cite">Albert Einstein</cite>
+                        </blockquote>
                       </div>
-                      <!-- código ejecutado fin -->
                     </div>
-                    <div class="row">
-                      <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
-                        <!-- código HTML -->
-                        <pre>
+                    <!-- código ejecutado fin -->
+                  </div>
+                  <div class="row">
+                    <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
+                      <!-- código HTML -->
+                      <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
                                 &lt;div class="demo-blockquote__container">
@@ -378,11 +381,11 @@
                                </div>        
                             </code>
                           </pre>
-                        <!-- código HTML -->
-                      </div>
-                      <div class="code-example__css-panel col-lg-6 mb-3">
-                        <!-- código CSS -->
-                        <pre>
+                      <!-- código HTML -->
+                    </div>
+                    <div class="code-example__css-panel col-lg-6 mb-3">
+                      <!-- código CSS -->
+                      <pre>
                             <code class="language-css" data-prismjs-copy="Copy">
                               <div>
                                 .ej-container-blockquote {
@@ -479,238 +482,238 @@
                               </div>        
                             </code>
                           </pre>
-                        <!-- código HTML -->
-                      </div>
+                      <!-- código HTML -->
                     </div>
                   </div>
                 </div>
-                <!-- Ejemplo fin -->
               </div>
-              <!-- Ejemplo Práctico <blockquote>  fin -->
+              <!-- Ejemplo fin -->
             </div>
-            <!-- <blockquote>: Cita Larga o en Bloque Fin -->
-            <hr class="site-divider--subtle site-divider" />
+            <!-- Ejemplo Práctico <blockquote>  fin -->
+          </div>
+          <!-- <blockquote>: Cita Larga o en Bloque Fin -->
+          <hr class="site-divider--subtle site-divider" />
 
-            <!-- Cita de una fuente <cite> -->
-            <div id="cita-de-una-fuente-cite" class="mt-3">
-              <h2>
-                Cita de una Fuente
+          <!-- Cita de una fuente <cite> -->
+          <div id="cita-de-una-fuente-cite" class="mt-3">
+            <h2>
+              Cita de una Fuente
+              <code class="language-html">&lt;cite></code>
+            </h2>
+            <p>
+              En el ámbito del desarrollo web, la cita adecuada de fuentes y
+              obras consultadas resulta tan relevante como en cualquier otro
+              tipo de medio escrito. La etiqueta HTML
+              <code class="language-html">&lt;cite></code> permite a los
+              desarrolladores señalar de manera semántica los títulos de
+              libros, películas, canciones, obras de arte, sitios web u
+              otros tipos de referencias incluidas en el contenido.
+            </p>
+            <p>
+              Lejos de ser únicamente un recurso para aplicar cursiva al
+              texto, la etiqueta
+              <code class="language-html">&lt;cite></code> tiene como
+              propósito principal proporcionar significado semántico. Esta
+              indica a los navegadores, motores de búsqueda y tecnologías de
+              asistencia que el texto señalado corresponde específicamente
+              al título de una obra o fuente.
+            </p>
+            <p>
+              El uso correcto de
+              <code class="language-html">&lt;cite></code> contribuye a que
+              el código sea más accesible, estructurado y comprensible,
+              tanto para los usuarios como para las máquinas que procesan la
+              información.
+            </p>
+            <!-- ¿Qué es la etiqueta <cite>?  -->
+            <div id="que-es-la-etiqueta-cite">
+              <h3>
+                ¿Qué Es la Etiqueta
+                <code class="language-html">&lt;cite></code>?
+              </h3>
+              <p>
+                La etiqueta <code class="language-html">&lt;cite></code> en
+                HTML es un elemento semántico que proviene del término
+                <span class="fst-italic">citation</span> (citación en
+                inglés). No solo define la apariencia del texto, que suele
+                presentarse en cursiva, sino que también comunica un
+                significado específico tanto al navegador como a los motores
+                de búsqueda.
+              </p>
+              <p>
+                Su función principal es señalar el título de una obra
+                creativa o referenciada. En esencia, actúa como una
+                indicación para el navegador, destacando que el texto
+                corresponde al nombre de una obra mencionada.
+              </p>
+            </div>
+            <!-- ¿Qué es la etiqueta <cite>?  fin -->
+            <!-- ¿Para qué se usa?  -->
+            <div id="para-que-se-usa">
+              <h3>¿Para qué se Usa?</h3>
+              <p>
+                Se utiliza para marcar el título de una fuente citada.
+                Algunos ejemplos de lo que se puede citar con
+                <code class="language-html">&lt;cite></code> incluye:
+              </p>
+              <ul>
+                <li>
+                  <span class="fw-bold">Libros</span>: Cien años de soledad.
+                </li>
+                <li><span class="fw-bold">Películas</span>: El Padrino.</li>
+                <li>
+                  <span class="fw-bold">Canciones</span>: Bohemian Rhapsody.
+                </li>
+                <li>
+                  <span class="fw-bold">Obras de arte</span>: La Gioconda.
+                </li>
+                <li>
+                  <span class="fw-bold">Pinturas, esculturas, etc.</span>:
+                  La noche estrellada.
+                </li>
+                <li>
+                  <span class="fw-bold">Programas de televisión</span>: Game
+                  of Thrones.
+                </li>
+                <li>
+                  <span class="fw-bold">Obras de teatro</span>: Romeo y
+                  Julieta.
+                </li>
+                <li>
+                  <span class="fw-bold">Juegos</span>: The Legend of Zelda:
+                  Ocarina of Time.
+                </li>
+                <li>
+                  <span class="fw-bold">Artículos (el título del artículo, no la página
+                    web)</span>: La importancia del uso semántico de HTML.
+                </li>
+              </ul>
+              <p>
+                <span class="fw-bold">Importante</span>: La etiqueta
                 <code class="language-html">&lt;cite></code>
-              </h2>
+                <span class="fw-bold">NO</span> se usa para:
+              </p>
+              <ul>
+                <li>
+                  <span class="fw-bold">El nombre del autor</span>: Si se
+                  quiere mencionar al autor de una obra, no usar
+                  <code class="language-html">&lt;cite></code>. Por ejemplo,
+                  para Gabriel García Márquez.
+                </li>
+                <li>
+                  <span class="fw-bold">La fecha de publicación</span>.
+                </li>
+                <li>
+                  <span class="fw-bold">La URL o el enlace a la fuente</span>: Si se quiere enlazar a la fuente, usar
+                  la etiqueta
+                  <code class="language-html">&lt;a></code> (ancla).
+                </li>
+              </ul>
+            </div>
+            <!-- ¿Para qué se usa?  fin -->
+            <!-- ¿Cómo se ve y qué hace el navegador?  -->
+            <div id="como-se-ve-y-que-hace-el-navegador">
+              <h3>¿Cómo se Ve y qué Hace el Navegador?</h3>
               <p>
-                En el ámbito del desarrollo web, la cita adecuada de fuentes y
-                obras consultadas resulta tan relevante como en cualquier otro
-                tipo de medio escrito. La etiqueta HTML
-                <code class="language-html">&lt;cite></code> permite a los
-                desarrolladores señalar de manera semántica los títulos de
-                libros, películas, canciones, obras de arte, sitios web u
-                otros tipos de referencias incluidas en el contenido.
+                Por lo general, los navegadores presentan el contenido de la
+                etiqueta <code class="language-html">&lt;cite></code> en
+                cursiva de forma predeterminada. No obstante, es crucial
+                comprender que este formato visual es solamente una
+                recomendación del navegador. El verdadero valor de
+                <code class="language-html">&lt;cite></code> reside en su
+                significado semántico, que enriquece la estructura y el
+                contexto del contenido.
               </p>
               <p>
-                Lejos de ser únicamente un recurso para aplicar cursiva al
-                texto, la etiqueta
-                <code class="language-html">&lt;cite></code> tiene como
-                propósito principal proporcionar significado semántico. Esta
-                indica a los navegadores, motores de búsqueda y tecnologías de
-                asistencia que el texto señalado corresponde específicamente
-                al título de una obra o fuente.
+                Al emplear la etiqueta
+                <code class="language-html">&lt;cite></code>, se le facilita
+                a los navegadores, lectores de pantalla y motores de
+                búsqueda comprendan con mayor claridad la estructura y el
+                contenido de la página web. Esto contribuye a optimizar la
+                accesibilidad y la indexación del sitio, mejorando su
+                rendimiento y alcance.
               </p>
-              <p>
-                El uso correcto de
-                <code class="language-html">&lt;cite></code> contribuye a que
-                el código sea más accesible, estructurado y comprensible,
-                tanto para los usuarios como para las máquinas que procesan la
-                información.
-              </p>
-              <!-- ¿Qué es la etiqueta <cite>?  -->
-              <div id="que-es-la-etiqueta-cite">
-                <h3>
-                  ¿Qué Es la Etiqueta
-                  <code class="language-html">&lt;cite></code>?
-                </h3>
-                <p>
-                  La etiqueta <code class="language-html">&lt;cite></code> en
-                  HTML es un elemento semántico que proviene del término
-                  <span class="fst-italic">citation</span> (citación en
-                  inglés). No solo define la apariencia del texto, que suele
-                  presentarse en cursiva, sino que también comunica un
-                  significado específico tanto al navegador como a los motores
-                  de búsqueda.
-                </p>
-                <p>
-                  Su función principal es señalar el título de una obra
-                  creativa o referenciada. En esencia, actúa como una
-                  indicación para el navegador, destacando que el texto
-                  corresponde al nombre de una obra mencionada.
-                </p>
-              </div>
-              <!-- ¿Qué es la etiqueta <cite>?  fin -->
-              <!-- ¿Para qué se usa?  -->
-              <div id="para-que-se-usa">
-                <h3>¿Para qué se Usa?</h3>
-                <p>
-                  Se utiliza para marcar el título de una fuente citada.
-                  Algunos ejemplos de lo que se puede citar con
-                  <code class="language-html">&lt;cite></code> incluye:
-                </p>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Libros</span>: Cien años de soledad.
-                  </li>
-                  <li><span class="fw-bold">Películas</span>: El Padrino.</li>
-                  <li>
-                    <span class="fw-bold">Canciones</span>: Bohemian Rhapsody.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Obras de arte</span>: La Gioconda.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Pinturas, esculturas, etc.</span>:
-                    La noche estrellada.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Programas de televisión</span>: Game
-                    of Thrones.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Obras de teatro</span>: Romeo y
-                    Julieta.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Juegos</span>: The Legend of Zelda:
-                    Ocarina of Time.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Artículos (el título del artículo, no la página
-                      web)</span>: La importancia del uso semántico de HTML.
-                  </li>
-                </ul>
-                <p>
-                  <span class="fw-bold">Importante</span>: La etiqueta
-                  <code class="language-html">&lt;cite></code>
-                  <span class="fw-bold">NO</span> se usa para:
-                </p>
-                <ul>
-                  <li>
-                    <span class="fw-bold">El nombre del autor</span>: Si se
-                    quiere mencionar al autor de una obra, no usar
-                    <code class="language-html">&lt;cite></code>. Por ejemplo,
-                    para Gabriel García Márquez.
-                  </li>
-                  <li>
-                    <span class="fw-bold">La fecha de publicación</span>.
-                  </li>
-                  <li>
-                    <span class="fw-bold">La URL o el enlace a la fuente</span>: Si se quiere enlazar a la fuente, usar
-                    la etiqueta
-                    <code class="language-html">&lt;a></code> (ancla).
-                  </li>
-                </ul>
-              </div>
-              <!-- ¿Para qué se usa?  fin -->
-              <!-- ¿Cómo se ve y qué hace el navegador?  -->
-              <div id="como-se-ve-y-que-hace-el-navegador">
-                <h3>¿Cómo se Ve y qué Hace el Navegador?</h3>
-                <p>
-                  Por lo general, los navegadores presentan el contenido de la
-                  etiqueta <code class="language-html">&lt;cite></code> en
-                  cursiva de forma predeterminada. No obstante, es crucial
-                  comprender que este formato visual es solamente una
-                  recomendación del navegador. El verdadero valor de
-                  <code class="language-html">&lt;cite></code> reside en su
-                  significado semántico, que enriquece la estructura y el
-                  contexto del contenido.
-                </p>
-                <p>
-                  Al emplear la etiqueta
-                  <code class="language-html">&lt;cite></code>, se le facilita
-                  a los navegadores, lectores de pantalla y motores de
-                  búsqueda comprendan con mayor claridad la estructura y el
-                  contenido de la página web. Esto contribuye a optimizar la
-                  accesibilidad y la indexación del sitio, mejorando su
-                  rendimiento y alcance.
-                </p>
-              </div>
-              <!-- ¿Cómo se ve y qué hace el navegador?  fin -->
-              <!-- Sintaxis Básica <cite>  -->
-              <div id="sintaxis-basica-cite">
-                <h3>
-                  Sintaxis Básica <code class="language-html">&lt;cite></code>
-                </h3>
-                <!-- Sintaxis -->
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <!-- ¿Cómo se ve y qué hace el navegador?  fin -->
+            <!-- Sintaxis Básica <cite>  -->
+            <div id="sintaxis-basica-cite">
+              <h3>
+                Sintaxis Básica <code class="language-html">&lt;cite></code>
+              </h3>
+              <!-- Sintaxis -->
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                        &lt;cite>Título de la obra&lt;/cite>
                         &lt;p>Mi libro favorito es &lt;cite>Cien años de soledad&lt;/cite> de García Márquez.&lt;/p>
                       </code>
                     </pre>
-                </div>
-                <!-- Sintaxis fin -->
               </div>
-              <!-- Sintaxis Básica <cite>  fin -->
+              <!-- Sintaxis fin -->
+            </div>
+            <!-- Sintaxis Básica <cite>  fin -->
 
-              <!-- Ejemplos de uso de <cite>  -->
-              <div id="ejemplos-de-uso-de-cite">
-                <h3>
-                  Ejemplos de Uso de
-                  <code class="language-html">&lt;cite></code>
-                </h3>
-                <!-- Ejemplo -->
-                <div class="row">
-                  <div class="code-example">
-                    <div class="row code-example__output mt-3">
-                      <!-- código ejecutado -->
-                      <div>
-                        <div class="demo-cite">
-                          <div class="demo-cite__container">
-                            <p class="demo-cite__h1">🎨 Ejemplos de Citas</p>
+            <!-- Ejemplos de uso de <cite>  -->
+            <div id="ejemplos-de-uso-de-cite">
+              <h3>
+                Ejemplos de Uso de
+                <code class="language-html">&lt;cite></code>
+              </h3>
+              <!-- Ejemplo -->
+              <div class="row">
+                <div class="code-example">
+                  <div class="row code-example__output mt-3">
+                    <!-- código ejecutado -->
+                    <div>
+                      <div class="demo-cite">
+                        <div class="demo-cite__container">
+                          <p class="demo-cite__h1">🎨 Ejemplos de Citas</p>
 
-                            <div class="demo-cite__example">
-                              <p class="demo-cite__title">
-                                <span class="demo-cite__emoji">📚</span>Ejemplo
-                                1: Cita Literaria
-                              </p>
+                          <div class="demo-cite__example">
+                            <p class="demo-cite__title">
+                              <span class="demo-cite__emoji">📚</span>Ejemplo
+                              1: Cita Literaria
+                            </p>
 
-                              <div class="demo-cite__quote">
-                                "En un lugar de la Mancha, de cuyo nombre no
-                                quiero acordarme, no ha mucho tiempo que vivía
-                                un hidalgo..."
-                              </div>
-
-                              <p class="demo-cite__text">
-                                Esta famosa frase pertenece a la obra
-                                <cite class="demo-content__cite-tag">El Quijote de la Mancha</cite>
-                                de Miguel de Cervantes.
-                              </p>
+                            <div class="demo-cite__quote">
+                              "En un lugar de la Mancha, de cuyo nombre no
+                              quiero acordarme, no ha mucho tiempo que vivía
+                              un hidalgo..."
                             </div>
 
-                            <div class="demo-cite__example">
-                              <p class="demo-cite__title">
-                                <span class="demo-cite__emoji">🎬</span>Ejemplo
-                                2: Cita de Película
-                              </p>
+                            <p class="demo-cite__text">
+                              Esta famosa frase pertenece a la obra
+                              <cite class="demo-content__cite-tag">El Quijote de la Mancha</cite>
+                              de Miguel de Cervantes.
+                            </p>
+                          </div>
 
-                              <div class="demo-cite__quote">
-                                "Que la fuerza te acompañe"
-                              </div>
+                          <div class="demo-cite__example">
+                            <p class="demo-cite__title">
+                              <span class="demo-cite__emoji">🎬</span>Ejemplo
+                              2: Cita de Película
+                            </p>
 
-                              <p class="demo-cite__text">
-                                Una de las frases más icónicas del cine,
-                                proveniente de
-                                <cite class="demo-content__cite-tag">Star Wars: Una Nueva Esperanza</cite>
-                                dirigida por George Lucas.
-                              </p>
+                            <div class="demo-cite__quote">
+                              "Que la fuerza te acompañe"
                             </div>
+
+                            <p class="demo-cite__text">
+                              Una de las frases más icónicas del cine,
+                              proveniente de
+                              <cite class="demo-content__cite-tag">Star Wars: Una Nueva Esperanza</cite>
+                              dirigida por George Lucas.
+                            </p>
                           </div>
                         </div>
                       </div>
-                      <!-- código ejecutado fin -->
                     </div>
-                    <div class="row">
-                      <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
-                        <!-- código HTML -->
-                        <pre>
+                    <!-- código ejecutado fin -->
+                  </div>
+                  <div class="row">
+                    <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
+                      <!-- código HTML -->
+                      <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
                                 &lt;div class="demo-cite">
@@ -749,11 +752,11 @@
                               </div>        
                             </code>
                           </pre>
-                        <!-- código HTML -->
-                      </div>
-                      <div class="code-example__css-panel col-lg-6 mb-3">
-                        <!-- código CSS -->
-                        <pre>
+                      <!-- código HTML -->
+                    </div>
+                    <div class="code-example__css-panel col-lg-6 mb-3">
+                      <!-- código CSS -->
+                      <pre>
                             <code class="language-css" data-prismjs-copy="Copy">
                               <div>
                                 .ej-body-cite {
@@ -873,98 +876,98 @@
                               </div>        
                             </code>
                           </pre>
-                        <!-- código HTML -->
-                      </div>
+                      <!-- código HTML -->
                     </div>
                   </div>
                 </div>
-                <!-- Ejemplo fin -->
               </div>
-              <!-- Ejemplos de uso de <cite>  fin -->
+              <!-- Ejemplo fin -->
             </div>
-            <!-- Cita de una fuente <cite> Fin -->
-            <hr class="site-divider--subtle site-divider" />
+            <!-- Ejemplos de uso de <cite>  fin -->
+          </div>
+          <!-- Cita de una fuente <cite> Fin -->
+          <hr class="site-divider--subtle site-divider" />
 
-            <!-- Citas en Línea <q> -->
-            <div id="citas-en-linea-q" class="mt-3">
-              <h2>
-                Citas en Línea <code class="language-html">&lt;q></code>
-              </h2>
+          <!-- Citas en Línea <q> -->
+          <div id="citas-en-linea-q" class="mt-3">
+            <h2>
+              Citas en Línea <code class="language-html">&lt;q></code>
+            </h2>
+            <p>
+              La etiqueta <code class="language-html">&lt;q></code> en HTML
+              se emplea para representar una cita corta en línea, es decir,
+              una frase breve que forma parte del texto principal. Al
+              utilizar <code class="language-html">&lt;q></code>, el
+              navegador agrega automáticamente las comillas, lo que permite
+              señalar que se trata de una cita sin necesidad de escribirlas
+              de forma manual.
+            </p>
+            <!-- ¿Qué es la etiqueta <q>?  -->
+            <div id="que-es-la-etiqueta-q">
+              <h3>
+                ¿Qué es la etiqueta
+                <code class="language-html">&lt;q></code>?
+              </h3>
               <p>
-                La etiqueta <code class="language-html">&lt;q></code> en HTML
-                se emplea para representar una cita corta en línea, es decir,
-                una frase breve que forma parte del texto principal. Al
-                utilizar <code class="language-html">&lt;q></code>, el
-                navegador agrega automáticamente las comillas, lo que permite
-                señalar que se trata de una cita sin necesidad de escribirlas
-                de forma manual.
+                La etiqueta <code class="language-html">&lt;q></code> se
+                emplea para resaltar citas breves o en línea dentro del
+                contenido principal de un documento HTML. Su propósito es
+                distinguir con claridad fragmentos de texto provenientes de
+                una fuente externa o que el autor desea citar textualmente,
+                mejorando la legibilidad y la precisión del contenido.
               </p>
-              <!-- ¿Qué es la etiqueta <q>?  -->
-              <div id="que-es-la-etiqueta-q">
-                <h3>
-                  ¿Qué es la etiqueta
-                  <code class="language-html">&lt;q></code>?
-                </h3>
-                <p>
-                  La etiqueta <code class="language-html">&lt;q></code> se
-                  emplea para resaltar citas breves o en línea dentro del
-                  contenido principal de un documento HTML. Su propósito es
-                  distinguir con claridad fragmentos de texto provenientes de
-                  una fuente externa o que el autor desea citar textualmente,
-                  mejorando la legibilidad y la precisión del contenido.
-                </p>
-              </div>
-              <!-- ¿Qué es la etiqueta <q>?  fin -->
+            </div>
+            <!-- ¿Qué es la etiqueta <q>?  fin -->
 
-              <!--  ¿Cómo funciona la etiqueta <q>?  -->
-              <div id="-como-funciona-la-etiqueta-q">
-                <h3>
-                  ¿Cómo funciona la etiqueta
-                  <code class="language-html">&lt;q></code>
-                </h3>
-                <p>
-                  Al utilizar la etiqueta
-                  <code class="language-html">&lt;q></code>, el navegador
-                  inserta automáticamente comillas alrededor del contenido,
-                  siguiendo el estilo y formato establecidos por el navegador
-                  o la hoja de estilos CSS. Esto permite una presentación
-                  adecuada de las citas sin necesidad de que el desarrollador
-                  añada las comillas manualmente.
-                </p>
-              </div>
-              <!--  ¿Cómo funciona la etiqueta <q>?  fin -->
+            <!--  ¿Cómo funciona la etiqueta <q>?  -->
+            <div id="-como-funciona-la-etiqueta-q">
+              <h3>
+                ¿Cómo funciona la etiqueta
+                <code class="language-html">&lt;q></code>
+              </h3>
+              <p>
+                Al utilizar la etiqueta
+                <code class="language-html">&lt;q></code>, el navegador
+                inserta automáticamente comillas alrededor del contenido,
+                siguiendo el estilo y formato establecidos por el navegador
+                o la hoja de estilos CSS. Esto permite una presentación
+                adecuada de las citas sin necesidad de que el desarrollador
+                añada las comillas manualmente.
+              </p>
+            </div>
+            <!--  ¿Cómo funciona la etiqueta <q>?  fin -->
 
-              <!--  Cuándo usar <q>  -->
-              <div id="-cuando-usar-q">
-                <h3>Cuándo usar <code class="language-html">&lt;q></code></h3>
-                <ul>
-                  <li>
-                    Para citas breves que no requieren un párrafo separado.
-                  </li>
-                  <li>
-                    Cuando se desea integrar la cita dentro del flujo continuo
-                    del texto.
-                  </li>
-                  <li>
-                    No se aconseja para citas extensas o párrafos completos;
-                    en esos casos, es preferible usar
-                    <code class="language-html">&lt;blockquote></code>.
-                  </li>
-                </ul>
-              </div>
-              <!--  Cuándo usar <q>  fin -->
+            <!--  Cuándo usar <q>  -->
+            <div id="-cuando-usar-q">
+              <h3>Cuándo usar <code class="language-html">&lt;q></code></h3>
+              <ul>
+                <li>
+                  Para citas breves que no requieren un párrafo separado.
+                </li>
+                <li>
+                  Cuando se desea integrar la cita dentro del flujo continuo
+                  del texto.
+                </li>
+                <li>
+                  No se aconseja para citas extensas o párrafos completos;
+                  en esos casos, es preferible usar
+                  <code class="language-html">&lt;blockquote></code>.
+                </li>
+              </ul>
+            </div>
+            <!--  Cuándo usar <q>  fin -->
 
-              <!-- Personalización con CSS  -->
-              <div id="personalizacion-con-css">
-                <h3>Personalización con CSS</h3>
-                <p>
-                  Se puede modificar el tipo de comillas, tamaño, color y
-                  otros estilos visuales para que se ajusten al diseño del
-                  sitio web. Por ejemplo:
-                </p>
-                <!-- Sintaxis -->
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+            <!-- Personalización con CSS  -->
+            <div id="personalizacion-con-css">
+              <h3>Personalización con CSS</h3>
+              <p>
+                Se puede modificar el tipo de comillas, tamaño, color y
+                otros estilos visuales para que se ajusten al diseño del
+                sitio web. Por ejemplo:
+              </p>
+              <!-- Sintaxis -->
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-css" data-prismjs-copy="Copy">
                         q {
                           quotes: "«" "»";
@@ -972,138 +975,140 @@
                         }
                       </code>
                     </pre>
-                </div>
-                <!-- Sintaxis fin -->
               </div>
-              <!-- Personalización con CSS  fin -->
+              <!-- Sintaxis fin -->
+            </div>
+            <!-- Personalización con CSS  fin -->
 
-              <!-- Sintaxis Básica <q>  -->
-              <div id="sintaxis-basica-q">
-                <h3>
-                  Sintaxis Básica <code class="language-html">&lt;q></code>
-                </h3>
-                <!-- Sintaxis -->
-                <p><span class="fw-bold">Sintaxis básica</span>:</p>
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+            <!-- Sintaxis Básica <q>  -->
+            <div id="sintaxis-basica-q">
+              <h3>
+                Sintaxis Básica <code class="language-html">&lt;q></code>
+              </h3>
+              <!-- Sintaxis -->
+              <p><span class="fw-bold">Sintaxis básica</span>:</p>
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                        &lt;p>&lt;q>Texto de la cita&lt;/q>&lt;/p>
                         &lt;p>Como dijo Einstein: &lt;q>La imaginación es más importante que el conocimiento&lt;/q>.&lt;/p>                     
                       </code>
                     </pre>
-                </div>
-                <!-- Sintaxis fin -->
-                <p>
-                  <span class="fw-bold">Con atributo cite (opcional)</span>:
-                </p>
-                <!-- Sintaxis -->
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Sintaxis fin -->
+              <p>
+                <span class="fw-bold">Con atributo cite (opcional)</span>:
+              </p>
+              <!-- Sintaxis -->
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;q cite="https://ejemplo.com/fuente">Texto de la cita&lt;/q>
                       </code>
                     </pre>
-                </div>
-                <!-- Sintaxis fin -->
               </div>
-              <!-- Sintaxis Básica <q>  fin -->
+              <!-- Sintaxis fin -->
+            </div>
+            <!-- Sintaxis Básica <q>  fin -->
 
-              <!-- Ejemplo básico <q>  -->
-              <div id="ejemplo-basico-q">
-                <h3>
-                  Ejemplo básico <code class="language-html">&lt;q></code>
-                </h3>
-                <!-- Ejemplo -->
-                <div class="row">
-                  <div class="code-example">
-                    <div class="row code-example__output mt-3">
-                      <!-- código ejecutado -->
-                      <div>
-                        <div class="demo-q">
-                          <div class="demo-q__container">
-                            <p class="demo-q__h1">Ejemplos con &lt;q&gt;</p>
+            <!-- Ejemplo básico <q>  -->
+            <div id="ejemplo-basico-q">
+              <h3>
+                Ejemplo básico <code class="language-html">&lt;q></code>
+              </h3>
+              <!-- Ejemplo -->
+              <div class="row">
+                <div class="code-example">
+                  <div class="row code-example__output mt-3">
+                    <!-- código ejecutado -->
+                    <div>
+                      <div class="demo-q">
+                        <div class="demo-q__container">
+                          <p class="demo-q__h1">Ejemplos con &lt;q&gt;</p>
 
-                            <!-- Ejemplo 1: Blog Literario -->
-                            <div class="demo-q__ejemplo">
-                              <p class="demo-q__h2">
-                                Blog Literario Minimalista
-                              </p>
+                          <!-- Ejemplo 1: Blog Literario -->
+                          <div class="demo-q__ejemplo">
+                            <p class="demo-q__h2">
+                              Blog Literario Minimalista
+                            </p>
 
-                              <p class="demo-q__parrafo">
-                                En su última novela, la autora nos recuerda
-                                que
-                                <q class="demo-q__cita">las palabras tienen el poder de construir
-                                  mundos enteros</q>
-                                y esta reflexión resuena profundamente en cada
-                                página de su obra.
-                              </p>
+                            <p class="demo-q__parrafo">
+                              En su última novela, la autora nos recuerda
+                              que
+                              <q class="demo-q__cita">las palabras tienen el poder de construir
+                                mundos enteros</q>
+                              y esta reflexión resuena profundamente en cada
+                              página de su obra.
+                            </p>
 
-                              <p class="demo-q__parrafo">
-                                Como bien expresó en una entrevista:
-                                <q class="demo-q__cita">escribir es el arte de hacer visible lo
-                                  invisible</q>, una filosofía que define perfectamente su
-                                estilo narrativo.
-                              </p>
+                            <p class="demo-q__parrafo">
+                              Como bien expresó en una entrevista:
+                              <q class="demo-q__cita">escribir es el arte de hacer visible lo
+                                invisible</q>, una filosofía que define perfectamente su
+                              estilo narrativo.
+                            </p>
 
-                              <p class="demo-q__autor">
-                                — Extracto del blog "Letras & Café"
-                              </p>
+                            <p class="demo-q__autor">
+                              — Extracto del blog "Letras & Café"
+                            </p>
 
-                              <div class="demo-q__codigo">
-                                <span class="demo-q__tag">&lt;p&gt;</span>Como
-                                bien expresó:
-                                <span class="demo-q__tag">&lt;q&gt;</span><span class="demo-q__texto">escribir es el arte de
-                                  hacer visible lo
-                                  invisible</span><span class="demo-q__tag">&lt;/q&gt;</span>, una
-                                filosofía única.<span class="demo-q__tag">&lt;/p&gt;</span>
-                              </div>
+                            <div class="demo-q__codigo">
+                              <span class="demo-q__tag">&lt;p&gt;</span>Como
+                              bien expresó:
+                              <span class="demo-q__tag">&lt;q&gt;</span><span class="demo-q__texto">escribir es el arte
+                                de
+                                hacer visible lo
+                                invisible</span><span class="demo-q__tag">&lt;/q&gt;</span>, una
+                              filosofía única.<span class="demo-q__tag">&lt;/p&gt;</span>
                             </div>
+                          </div>
 
-                            <hr class="demo-q__separador" />
+                          <hr class="demo-q__separador" />
 
-                            <!-- Ejemplo 2: Revista Digital -->
-                            <div class="demo-q__ejemplo">
-                              <p class="demo-q__h2">
-                                Revista Digital Innovadora
-                              </p>
+                          <!-- Ejemplo 2: Revista Digital -->
+                          <div class="demo-q__ejemplo">
+                            <p class="demo-q__h2">
+                              Revista Digital Innovadora
+                            </p>
 
-                              <p class="demo-q__parrafo">
-                                El CEO de la startup tecnológica
-                                revolucionaria declaró que
-                                <q class="demo-q__cita">el futuro pertenece a quienes se atreven a
-                                  reimaginar lo imposible</q>
-                                durante la presentación de su nuevo producto.
-                              </p>
+                            <p class="demo-q__parrafo">
+                              El CEO de la startup tecnológica
+                              revolucionaria declaró que
+                              <q class="demo-q__cita">el futuro pertenece a quienes se atreven a
+                                reimaginar lo imposible</q>
+                              durante la presentación de su nuevo producto.
+                            </p>
 
-                              <p class="demo-q__parrafo">
-                                Su visión es clara:
-                                <q class="demo-q__cita">la tecnología debe servir a la humanidad,
-                                  no al revés</q>, un principio que guía cada decisión en su
-                                empresa.
-                              </p>
+                            <p class="demo-q__parrafo">
+                              Su visión es clara:
+                              <q class="demo-q__cita">la tecnología debe servir a la humanidad,
+                                no al revés</q>, un principio que guía cada decisión en su
+                              empresa.
+                            </p>
 
-                              <p class="demo-q__autor">
-                                — Reportaje especial "Innovadores del Siglo
-                                XXI"
-                              </p>
+                            <p class="demo-q__autor">
+                              — Reportaje especial "Innovadores del Siglo
+                              XXI"
+                            </p>
 
-                              <div class="demo-q__codigo">
-                                <span class="demo-q__tag">&lt;p&gt;</span>Su
-                                visión: <span class="demo-q__tag">&lt;q&gt;</span><span class="demo-q__texto">la tecnología
-                                  debe servir a la humanidad,
-                                  no al revés</span><span class="demo-q__tag">&lt;/q&gt;</span>,
-                                principio fundamental.<span class="demo-q__tag">&lt;/p&gt;</span>
-                              </div>
+                            <div class="demo-q__codigo">
+                              <span class="demo-q__tag">&lt;p&gt;</span>Su
+                              visión: <span class="demo-q__tag">&lt;q&gt;</span><span class="demo-q__texto">la
+                                tecnología
+                                debe servir a la humanidad,
+                                no al revés</span><span class="demo-q__tag">&lt;/q&gt;</span>,
+                              principio fundamental.<span class="demo-q__tag">&lt;/p&gt;</span>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <!-- código ejecutado fin -->
                     </div>
-                    <div class="row">
-                      <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
-                        <!-- código HTML -->
-                        <pre>
+                    <!-- código ejecutado fin -->
+                  </div>
+                  <div class="row">
+                    <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
+                      <!-- código HTML -->
+                      <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
                                 &lt;div class="demo-q">
@@ -1166,11 +1171,11 @@
                               </div>
                             </code>
                           </pre>
-                        <!-- código HTML -->
-                      </div>
-                      <div class="code-example__css-panel col-lg-6 mb-3">
-                        <!-- código CSS -->
-                        <pre>
+                      <!-- código HTML -->
+                    </div>
+                    <div class="code-example__css-panel col-lg-6 mb-3">
+                      <!-- código CSS -->
+                      <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
                                 <div>
                                   .ej-body-q {
@@ -1287,16 +1292,16 @@
                                 </div>        
                               </code>
                             </pre>
-                        <!-- código HTML -->
-                      </div>
+                      <!-- código HTML -->
                     </div>
                   </div>
                 </div>
-                <!-- Ejemplo fin -->
               </div>
-              <!-- Ejemplo básico <q>  fin -->
+              <!-- Ejemplo fin -->
             </div>
-            <!-- Citas en Línea <q> Fin -->
+            <!-- Ejemplo básico <q>  fin -->
+          </div>
+          <!-- Citas en Línea <q> Fin -->
 
         </article>
         <!--  Citas y Referencias HTM fin -->
@@ -1350,98 +1355,30 @@
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
+          <div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo">
             <div class="border border-1">
               <div class="site-menu__item">
-                <a href="#introduccion" class="site-menu__link">Introducción</a>
+                <a href="#introduccion" class=" list-group-item list-group-item-action">Introducción</a>
               </div>
 
               <div class="site-menu__item">
-                <details>
-                  <summary>
-                    Cita Larga o en Bloque
-                    <code class="language-html">&lt;blockquote></code>
-                  </summary>
-                  <div class="site-menu__submenu">
-                    <a href="#cita-larga-o-en-bloque-blockquote" class="site-menu__submenu-link">Cita Larga o en Bloque
-                      <code class="language-html">&lt;blockquote></code></a>
-
-                    <a href="#características-principales-blockquote" class="site-menu__submenu-link">Características Principales
-                      <code class="language-html">&lt;blockquote></code></a>
-
-                    <a href="#presentacion-visual-blockquote" class="site-menu__submenu-link">Presentación Visual
-                      <code class="language-html">&lt;blockquote></code></a>
-
-                    <a href="#por-que-usar-una-cita-en-bloque" class="site-menu__submenu-link">¿Por Qué Usar una Cita en
-                      Bloque?</a>
-
-                    <a href="#sintaxis-blockquote" class="site-menu__submenu-link">Sintaxis
-                      <code class="language-html">&lt;blockquote></code></a>
-
-                    <a href="#ejemplo-practico-blockquote" class="site-menu__submenu-link">Ejemplo Práctico
-                      <code class="language-html">&lt;blockquote></code></a>
-                  </div>
-                </details>
+                <a href="#cita-larga-o-en-bloque-blockquote" class=" list-group-item list-group-item-action">Cita Larga
+                  o en Bloque
+                  <code class="language-html">&lt;blockquote></code></a>
               </div>
 
               <div class="site-menu__item">
-                <details>
-                  <summary>
-                    Cita de una fuente
-                    <code class="language-html">&lt;cite></code>
-                  </summary>
-                  <div class="site-menu__submenu">
-                    <a href="#cita-de-una-fuente-cite" class="site-menu__submenu-link">Cita de una fuente
-                      <code class="language-html">&lt;cite></code></a>
-
-                    <a href="#que-es-la-etiqueta-cite" class="site-menu__submenu-link">¿Qué es la etiqueta
-                      <code class="language-html">&lt;cite></code>?</a>
-
-                    <a href="#para-que-se-usa" class="site-menu__submenu-link">¿Para qué se usa?</a>
-
-                    <a href="#como-se-ve-y-que-hace-el-navegador" class="site-menu__submenu-link">¿Cómo se ve y qué hace el
-                      navegador?</a>
-
-                    <a href="#sintaxis-basica-cite" class="site-menu__submenu-link">Sintaxis Básica
-                      <code class="language-html">&lt;cite></code></a>
-
-                    <a href="#ejemplos-de-uso-de-cite" class="site-menu__submenu-link">Ejemplos de uso de
-                      <code class="language-html">&lt;cite></code></a>
-                  </div>
-                </details>
+                <a href="#cita-de-una-fuente-cite" class=" list-group-item list-group-item-action">Cita de una
+                  fuente <code class="language-html">&lt;cite></code></a>
               </div>
 
               <div class="site-menu__item">
-                <details>
-                  <summary>
-                    Citas en Línea <code class="language-html">&lt;q></code>
-                  </summary>
-                  <div class="site-menu__submenu">
-                    <a href="#citas-en-linea-q" class="site-menu__submenu-link">Citas en Línea
-                      <code class="language-html">&lt;q></code></a>
-                    <a href="#que-es-la-etiqueta-q" class="site-menu__submenu-link">¿Qué es la etiqueta
-                      <code class="language-html">&lt;q></code>?</a>
-
-                    <a href="#-como-funciona-la-etiqueta-q" class="site-menu__submenu-link">
-                      ¿Cómo funciona la etiqueta
-                      <code class="language-html">&lt;q></code>?</a>
-
-                    <a href="#-cuando-usar-q" class="site-menu__submenu-link">
-                      Cuándo usar <code class="language-html">&lt;q></code></a>
-
-                    <a href="#personalizacion-con-css" class="site-menu__submenu-link">Personalización con CSS</a>
-
-                    <a href="#sintaxis-basica-q" class="site-menu__submenu-link">Sintaxis Básica
-                      <code class="language-html">&lt;q></code></a>
-
-                    <a href="#ejemplo-basico-q" class="site-menu__submenu-link">Ejemplo básico
-                      <code class="language-html">&lt;q></code></a>
-                  </div>
-                </details>
+                <a href="#citas-en-linea-q" class=" list-group-item list-group-item-action">Citas en Línea
+                  <code class="language-html">&lt;q></code></a>
               </div>
 
               <div class="site-menu__item">
-                <a href="#comments" class="site-menu__link">Comentarios</a>
+                <a href="#comments" class=" list-group-item list-group-item-action">Comentarios</a>
               </div>
             </div>
           </div>

@@ -53,7 +53,7 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy" data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -102,12 +102,11 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Comentarios en Python  -->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
+        <article id="introduccion" class="row border-1 border-bottom pb-3">
           <header>
             <h1>Comentarios en Python</h1>
           </header>
@@ -525,25 +524,25 @@
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
+          <div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo">
             <div class="border border-1">
-              <div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
-              <div class="site-menu__item"><a href="#que-son-los-comentarios-en-python" class="site-menu__link">¿Qué Son los
+              <div class="site-menu__item"><a href="#introduccion" class=" list-group-item list-group-item-action">Introducción</a></div>
+              <div class="site-menu__item"><a href="#que-son-los-comentarios-en-python" class=" list-group-item list-group-item-action">¿Qué Son los
                   Comentarios en Python?</a></div>
-              <div class="site-menu__item"><a href="#por-que-utilizar-comentarios" class="site-menu__link">¿Por qué Utilizar
+              <div class="site-menu__item"><a href="#por-que-utilizar-comentarios" class=" list-group-item list-group-item-action">¿Por qué Utilizar
                   Comentarios?</a></div>
-              <div class="site-menu__item"><a href="#cuando-utilizar-comentarios-en-python" class="site-menu__link">¿Cuándo
+              <div class="site-menu__item"><a href="#cuando-utilizar-comentarios-en-python" class=" list-group-item list-group-item-action">¿Cuándo
                   Utilizar Comentarios en Python?</a></div>
-              <div class="site-menu__item"><a href="#donde-colocar-los-comentarios-en-python" class="site-menu__link">¿Dónde
+              <div class="site-menu__item"><a href="#donde-colocar-los-comentarios-en-python" class=" list-group-item list-group-item-action">¿Dónde
                   Colocar los Comentarios en Python?</a></div>
-              <div class="site-menu__item"><a href="#como-escribir-comentarios-en-python" class="site-menu__link">Cómo Escribir
+              <div class="site-menu__item"><a href="#como-escribir-comentarios-en-python" class=" list-group-item list-group-item-action">Cómo Escribir
                   Comentarios en Python</a></div>
-              <div class="site-menu__item"><a href="#ejemplo-completo" class="site-menu__link">Ejemplo Completo</a></div>
-              <div class="site-menu__item"><a href="#variables-autodocumentadas-en-python" class="site-menu__link">Variables
+              <div class="site-menu__item"><a href="#ejemplo-completo" class=" list-group-item list-group-item-action">Ejemplo Completo</a></div>
+              <div class="site-menu__item"><a href="#variables-autodocumentadas-en-python" class=" list-group-item list-group-item-action">Variables
                   Autodocumentadas en Python</a></div>
-              <div class="site-menu__item"><a href="#recomendaciones" class="site-menu__link">Recomendaciones</a></div>
+              <div class="site-menu__item"><a href="#recomendaciones" class=" list-group-item list-group-item-action">Recomendaciones</a></div>
               <!-- Comentarios  -->
-              <div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div>
+              <div class="site-menu__item"><a href="#comments" class=" list-group-item list-group-item-action">Comentarios</a></div>
             </div>
           </div>
         </div>

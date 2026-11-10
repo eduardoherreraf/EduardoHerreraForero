@@ -65,7 +65,7 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy" data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -114,17 +114,16 @@
   <!-- Barra de Navegación -->
 
   <!--  Principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Tipos de Datos Simples en Python -->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
-          <header>
-            <h1>Tipos de Datos Simples en Python</h1>
-          </header>
+        <article class="row border-1 border-bottom pb-3">
           <!-- Introducción -->
-          <div class="mt-3">
+          <div class="mt-3" id="introduccion">
+            <header>
+              <h1>Tipos de Datos Simples en Python</h1>
+            </header>
             <h2>Introducción</h2>
             <div class="site-image site-intro-image mb-5">
               <figure class="site-content__img-container site-image__figure site-image__figure--intro">
@@ -155,7 +154,7 @@
           <hr class="site-divider--subtle site-divider" />
 
           <!-- Números (enteros, flotantes y complejos)  -->
-          <div id="números-(enteros,-flotantes-y-complejos)">
+          <div id="numeros-enteros-flotantes-y-complejos">
             <h2>Números (enteros, flotantes y complejos) </h2>
             <p>Python maneja tres tipos principales de números: enteros, flotantes y complejos.
             </p>
@@ -207,7 +206,7 @@
           <!-- Números (enteros, flotantes y complejos)  fin -->
 
           <!-- Cadenas de Texto (Strings)  -->
-          <div id="cadenas-de-texto-(strings)">
+          <div id="cadenas-de-texto-strings">
             <h2>Cadenas de Texto (Strings) </h2>
             <p>Las cadenas de texto o strings (<code class="language-py">str</code>) representan secuencias de
               caracteres, como palabras, frases o
@@ -240,7 +239,7 @@
           <!-- Cadenas de Texto (Strings)  fin -->
 
           <!-- Booleanos (True, False)  -->
-          <div id="booleanos-(true,-false)">
+          <div id="booleanos-true-false">
             <h2>Booleanos (True, False) </h2>
             <p>El tipo booleano (bool) tiene solo dos valores posibles: True y False, que representan verdadero o
               falso.</p>
@@ -260,7 +259,7 @@
           <!-- Booleanos (True, False)  fin -->
 
           <!-- Conversión de Tipos (Casting)  -->
-          <div id="conversion-de-tipos-(casting)">
+          <div id="conversion-de-tipos-casting">
             <h2>Conversión de Tipos (Casting) </h2>
             <p>Python permite convertir un valor de un tipo de dato a otro utilizando funciones integradas. Este
               proceso se conoce como casting o conversión de tipos.</p>
@@ -326,25 +325,25 @@
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
+          <div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo">
             <div class="border border-1">
 
               <div class="site-menu__item">
-                <a href="#introduccion" class="site-menu__link">Introducción a Tipos de Datos Simples en Python</a>
+                <a href="#introduccion" class="list-group-item list-group-item-action">Introducción a Tipos de Datos Simples en Python</a>
               </div>
-              <div class="site-menu__item"><a href="#números-(enteros,-flotantes-y-complejos)" class="site-menu__link">Números
+              <div class="site-menu__item"><a href="#numeros-enteros-flotantes-y-complejos" class="list-group-item list-group-item-action">Números
                   (enteros, flotantes
                   y complejos)</a></div>
-              <div class="site-menu__item"><a href="#cadenas-de-texto-(strings)" class="site-menu__link">Cadenas de Texto
+              <div class="site-menu__item"><a href="#cadenas-de-texto-strings" class="list-group-item list-group-item-action">Cadenas de Texto
                   (Strings)</a></div>
-              <div class="site-menu__item"><a href="#booleanos-(true,-false)" class="site-menu__link">Booleanos (True, False)</a>
+              <div class="site-menu__item"><a href="#booleanos-true-false" class="list-group-item list-group-item-action">Booleanos (True, False)</a>
               </div>
-              <div class="site-menu__item"><a href="#conversion-de-tipos-(casting)" class="site-menu__link">Conversión de Tipos
+              <div class="site-menu__item"><a href="#conversion-de-tipos-casting" class="list-group-item list-group-item-action">Conversión de Tipos
                   (Casting)</a></div>
 
               <!-- Comentarios  -->
               <div class="site-menu__item">
-                <a href="#comments" class="site-menu__link">Comentarios</a>
+                <a href="#comments" class="list-group-item list-group-item-action">Comentarios</a>
               </div>
             </div>
           </div>

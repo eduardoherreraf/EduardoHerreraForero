@@ -64,7 +64,8 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy"
+  data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -95,7 +96,8 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">ARTÍCULOS</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link"
+              href="index.html#blog">ARTÍCULOS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -113,17 +115,16 @@
   <!-- Barra de Navegación -->
 
   <!--  Principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Fundamentos de Python-->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
-          <header>
-            <h1>Fundamentos de Python</h1>
-          </header>
+        <article class="row border-1 border-bottom pb-3">
           <!-- Introducción -->
-          <div class="mt-3">
+          <div class="mt-3" id="introduccion">
+            <header>
+              <h1>Fundamentos de Python</h1>
+            </header>
             <h2>Introducción</h2>
             <div class="site-image site-intro-image mb-5">
               <figure class="site-content__img-container site-image__figure site-image__figure--intro">
@@ -362,15 +363,16 @@
               </div>
               <!-- Uso de líneas y sangrías (indentación obligatoria)  fin -->
 
-              <!-- Sensibilidad a Mayúsculas y Minúsculas (case sensitive)  -->
-              <div id="sensibilidad-a-mayúsculas-y-minúsculas-(case-sensitive)">
-                <h3>Sensibilidad a Mayúsculas y Minúsculas (case sensitive) </h3>
-                <P>Python distingue entre mayúsculas y minúsculas, lo que significa que las variables, funciones o
-                  clases con nombres similares pero diferentes en su capitalización se consideran entidades distintas.
-                </P>
-                <!-- Sintaxis -->
-                <div class="code-example__full-syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <!-- Sensibilidad a Mayúsculas y Minúsculas (case sensitive)  -->
+            <div id="sensibilidad-a-mayusculas-y-minusculas-case-sensitive">
+              <h3>Sensibilidad a Mayúsculas y Minúsculas (case sensitive) </h3>
+              <P>Python distingue entre mayúsculas y minúsculas, lo que significa que las variables, funciones o
+                clases con nombres similares pero diferentes en su capitalización se consideran entidades distintas.
+              </P>
+              <!-- Sintaxis -->
+              <div class="code-example__full-syntax">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-PY" data-prismjs-copy="Copy">
                      nombre = "Eduardo"
                       Nombre = "Andrés"
@@ -378,40 +380,40 @@
                       print(Nombre)  # Imprime: Andrés
                     </code>
                   </pre>
-                </div>
-                <!-- Sintaxis fin -->
-                <P>Explicación: <br>
-                  Aunque ambos identificadores son visualmente parecidos, Python los interpreta como variables
-                  diferentes. Por ello, se recomienda mantener un uso consistente de mayúsculas y minúsculas para evitar
-                  errores lógicos o confusión en el código.</P>
               </div>
-              <!-- Sensibilidad a Mayúsculas y Minúsculas (case sensitive)  fin -->
-              <!-- Comentarios en el  Código (# comentario)  -->
-              <div id="comentarios-en-el--codigo-(#-comentario)">
-                <h3>Comentarios en el Código (<code class="language-py"># comentario</code>) </h3>
-                <p>Los comentarios son líneas de texto dentro del código que el intérprete no ejecuta, pero que sirven
-                  para documentar y aclarar el funcionamiento del programa.</p>
-                <p>Se escriben utilizando el símbolo numeral <code
-                    class="language-py"># seguido del texto del comentario</code>.</p>
-                <p>Tipos de comentarios:</p>
-                <ul>
-                  <li>Comentario en una línea:
-                    <!-- Sintaxis -->
-                    <div class="code-example__full-syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+              <!-- Sintaxis fin -->
+              <P>Explicación: <br>
+                Aunque ambos identificadores son visualmente parecidos, Python los interpreta como variables
+                diferentes. Por ello, se recomienda mantener un uso consistente de mayúsculas y minúsculas para evitar
+                errores lógicos o confusión en el código.</P>
+            </div>
+            <!-- Sensibilidad a Mayúsculas y Minúsculas (case sensitive)  fin -->
+            <!-- Comentarios en el  Código (# comentario)  -->
+            <div id="comentarios-en-el-codigo-comentario">
+              <h3>Comentarios en el Código (<code class="language-py"># comentario</code>) </h3>
+              <p>Los comentarios son líneas de texto dentro del código que el intérprete no ejecuta, pero que sirven
+                para documentar y aclarar el funcionamiento del programa.</p>
+              <p>Se escriben utilizando el símbolo numeral <code
+                  class="language-py"># seguido del texto del comentario</code>.</p>
+              <p>Tipos de comentarios:</p>
+              <ul>
+                <li>Comentario en una línea:
+                  <!-- Sintaxis -->
+                  <div class="code-example__full-syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
                        # Este es un comentario explicativo
                         print("Hola mundo")  # También puede ir al final de una instrucción
                       </code>
                     </pre>
-                    </div>
-                    <!-- Sintaxis fin -->
-                  </li>
-                  <li>Comentario multilínea (docstring o cadena de documentación): <br>
-                    Se utiliza comúnmente al inicio de una función, clase o módulo para describir su propósito.
-                    <!-- Sintaxis -->
-                    <div class="code-example__full-syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                  <!-- Sintaxis fin -->
+                </li>
+                <li>Comentario multilínea (docstring o cadena de documentación): <br>
+                  Se utiliza comúnmente al inicio de una función, clase o módulo para describir su propósito.
+                  <!-- Sintaxis -->
+                  <div class="code-example__full-syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
                        """
                         Este programa imprime un saludo
@@ -420,81 +422,81 @@
                         print("Hola desde Python")
                       </code>
                     </pre>
-                    </div>
-                    <!-- Sintaxis fin -->
+                  </div>
+                  <!-- Sintaxis fin -->
+                </li>
+              </ul>
+            </div>
+            <!-- Comentarios en el  Código (# comentario)  fin -->
+            <!-- Buenas Prácticas de Escritura (estilo PEP 8)  -->
+            <div id="buenas-practicas-de-escritura-estilo-pep-8">
+              <h3>Buenas Prácticas de Escritura (estilo PEP 8) </h3>
+              <p>PEP 8 (<span class="fst-italic">Python Enhancement Proposal 8</span>) es una guía oficial de estilo
+                que establece las normas recomendadas para escribir código limpio, uniforme y fácil de leer.</p>
+              <!-- Principales Recomendaciones de PEP 8 -->
+              <div>
+                <h4>Principales Recomendaciones de PEP 8</h4>
+                <ul>
+                  <li><span class="fw-bold">Indentación</span>: usar 4 espacios por nivel de sangría.
                   </li>
-                </ul>
-              </div>
-              <!-- Comentarios en el  Código (# comentario)  fin -->
-              <!-- Buenas Prácticas de Escritura (estilo PEP 8)  -->
-              <div id="buenas-practicas-de-escritura-(estilo-pep-8)">
-                <h3>Buenas Prácticas de Escritura (estilo PEP 8) </h3>
-                <p>PEP 8 (<span class="fst-italic">Python Enhancement Proposal 8</span>) es una guía oficial de estilo
-                  que establece las normas recomendadas para escribir código limpio, uniforme y fácil de leer.</p>
-                <!-- Principales Recomendaciones de PEP 8 -->
-                <div>
-                  <h4>Principales Recomendaciones de PEP 8</h4>
-                  <ul>
-                    <li><span class="fw-bold">Indentación</span>: usar 4 espacios por nivel de sangría.
-                    </li>
-                    <li><span class="fw-bold">Longitud de línea</span>: no superar los 79 caracteres por línea.
-                    </li>
-                    <li><span class="fw-bold">Espacios</span>: dejar un espacio después de comas y operadores.
-                      <!-- Sintaxis -->
-                      <div class="code-example__full-syntax">
-                        <pre data-src-status="loaded" tabindex="0">
+                  <li><span class="fw-bold">Longitud de línea</span>: no superar los 79 caracteres por línea.
+                  </li>
+                  <li><span class="fw-bold">Espacios</span>: dejar un espacio después de comas y operadores.
+                    <!-- Sintaxis -->
+                    <div class="code-example__full-syntax">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-py" data-prismjs-copy="Copy">
                            suma = a + b
                             lista = [1, 2, 3, 4]
                           </code>
                         </pre>
-                      </div>
-                      <!-- Sintaxis fin -->
-                    </li>
-                    <li><span class="fw-bold">Nombres de variables</span>: usar minúsculas y guiones bajos.
-                      <!-- Sintaxis -->
-                      <div class="code-example__full-syntax">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </li>
+                  <li><span class="fw-bold">Nombres de variables</span>: usar minúsculas y guiones bajos.
+                    <!-- Sintaxis -->
+                    <div class="code-example__full-syntax">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-py" data-prismjs-copy="Copy">
                            nombre_usuario = "Eduardo"
                           </code>
                         </pre>
-                      </div>
-                      <!-- Sintaxis fin -->
-                    </li>
-                    <li><span class="fw-bold">Nombres de Constantes</span>: usar MAYÚSCULAS y guiones bajos.
-                      <!-- Sintaxis -->
-                      <div class="code-example__full-syntax">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </li>
+                  <li><span class="fw-bold">Nombres de Constantes</span>: usar MAYÚSCULAS y guiones bajos.
+                    <!-- Sintaxis -->
+                    <div class="code-example__full-syntax">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-py" data-prismjs-copy="Copy">
                            PI = 3.1416
                             PI_2 = 6.2832   
                           </code>
                         </pre>
-                      </div>
-                      <!-- Sintaxis fin -->
-                    </li>
-                    <li><span class="fw-bold">Nombres de clases</span>: usar la convención CamelCase.
-                      <!-- Sintaxis -->
-                      <div class="code-example__full-syntax">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </li>
+                  <li><span class="fw-bold">Nombres de clases</span>: usar la convención CamelCase.
+                    <!-- Sintaxis -->
+                    <div class="code-example__full-syntax">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-py" data-prismjs-copy="Copy">
                            class EstudianteUniversitario:
                               pass
                           </code>
                         </pre>
-                      </div>
-                      <!-- Sintaxis fin -->
-                    </li>
-                    <li><span class="fw-bold">Comentarios claros y útiles</span>: explicar el “por qué”, no solo el
-                      “qué”.</li>
-                    <li><span class="fw-bold">Importaciones ordenadas</span>: primero las bibliotecas estándar, luego
-                      las externas y finalmente las locales.</li>
-                  </ul>
-                  <p><span class="fw-bold">Ejemplo de código con buenas prácticas</span>:</p>
-                  <!-- Sintaxis -->
-                  <div class="code-example__full-syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                    <!-- Sintaxis fin -->
+                  </li>
+                  <li><span class="fw-bold">Comentarios claros y útiles</span>: explicar el “por qué”, no solo el
+                    “qué”.</li>
+                  <li><span class="fw-bold">Importaciones ordenadas</span>: primero las bibliotecas estándar, luego
+                    las externas y finalmente las locales.</li>
+                </ul>
+                <p><span class="fw-bold">Ejemplo de código con buenas prácticas</span>:</p>
+                <!-- Sintaxis -->
+                <div class="code-example__full-syntax">
+                  <pre data-src-status="loaded" tabindex="0">
                       <code class="language-py" data-prismjs-copy="Copy">
                         # Programa que calcula el área de un círculo
 
@@ -509,18 +511,16 @@
                         print(f"El área del círculo es: {area:.2f}")
                       </code>
                     </pre>
-                  </div>
-                  <!-- Sintaxis fin -->
                 </div>
-                <!-- Principales Recomendaciones de PEP 8 fin -->
+                <!-- Sintaxis fin -->
               </div>
-              <!-- Buenas Prácticas de Escritura (estilo PEP 8)  fin -->
-
+              <!-- Principales Recomendaciones de PEP 8 fin -->
             </div>
+            <!-- Buenas Prácticas de Escritura (estilo PEP 8)  fin -->
+
             <!-- Estructura General de un Programa en Python  fin -->
           </div>
           <!-- Sintaxis y Conceptos Básicos de Phyton Fin -->
-          <hr class="site-divider--subtle site-divider" />
         </article>
         <article class="row" id="comments">
           <h2>COMENTARIOS</h2>
@@ -544,7 +544,8 @@
                   <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..."
                     class="form-control rounded-3" required></textarea>
                 </div>
-                <button type="submit" class="btn site-button btn-outline-light my-3 border rounded-pill border-2">Enviar</button>
+                <button type="submit"
+                  class="btn site-button btn-outline-light my-3 border rounded-pill border-2">Enviar</button>
               </fieldset>
               <p class="small text-center">La política de privacidad, y los términos y condiciones estándisponibles en
                 el formulario de contacto.</p>
@@ -557,39 +558,26 @@
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
+          <div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo">
             <div class="border border-1">
 
               <div class="site-menu__item">
-                <a href="#introduccion" class="site-menu__link">Introducción</a>
+                <a href="#introduccion" class="list-group-item list-group-item-action">Introducción</a>
               </div>
 
               <div class="site-menu__item">
-                <a href="#porque-python-para-el-analisis-de-datos" class="site-menu__link">Porque Python para el Análisis de
+                <a href="#porque-python-para-el-analisis-de-datos" class="list-group-item list-group-item-action">Porque
+                  Python para el Análisis de
                   Datos</a>
               </div>
-
               <div class="site-menu__item">
-                <details>
-                  <summary>
-                    Sintaxis y Conceptos Básicos de Phyton
-                  </summary>
-                  <div class="site-menu__submenu">
-                    <a href="#características-de-python" class="site-menu__submenu-link">Características de Python</a>
-                    <a href="#estructura-general-de-un-programa-en-python" class="site-menu__submenu-link">Estructura General de un
-                      Programa en Python</a>
-                    <a href="#sensibilidad-a-mayúsculas-y-minúsculas-(case-sensitive)" class="site-menu__submenu-link">Sensibilidad
-                      a Mayúsculas y Minúsculas (case sensitive)</a>
-                    <a href="#comentarios-en-el--codigo-(#-comentario)" class="site-menu__submenu-link">Comentarios en el Código (#
-                      comentario)</a>
-                    <a href="#buenas-practicas-de-escritura-(estilo-pep-8)" class="site-menu__submenu-link">Buenas Prácticas de
-                      Escritura (estilo PEP 8)</a>
-                  </div>
-                </details>
+                <a href="#sintaxis-y-conceptos-Básicos-de-phyton"
+                  class="list-group-item list-group-item-action">Sintaxis y Conceptos Básicos de Phyton</a>
               </div>
+
               <!-- Comentarios  -->
               <div class="site-menu__item">
-                <a href="#comments" class="site-menu__link">Comentarios</a>
+                <a href="#comments" class="list-group-item list-group-item-action">Comentarios</a>
               </div>
             </div>
           </div>

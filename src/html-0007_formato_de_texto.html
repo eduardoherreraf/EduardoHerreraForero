@@ -52,7 +52,7 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy" data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -101,55 +101,56 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Formato de Texto HTML -->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
+        <article class="row border-1 border-bottom pb-3">
 
-            <header>
-              <h1>Formato de Texto HTML</h1>
-            </header>
+            <div id="introduccion">
+              <header>
+                <h1>Formato de Texto HTML</h1>
+              </header>
 
-            <!-- Introducción -->
-            <div class="mt-3">
-              <h2>Introducción</h2>
-              <div class="site-image site-intro-image mb-5">
-                <figure class="site-content__img-container site-image__figure site-image__figure--intro">
-                  <img src="https://i.postimg.cc/k55FGb2w/b-vs-strong-gibili3.png" class="img-fluid"
-                    alt="Formato de Texto HTML " title="Formato de Texto HTML : <b> y <strong>"  loading="lazy"/>
-                  <figcaption class="site-image__caption">
-                    Ejemplo de Etiquetas de Texto HTML
-                    <code class="language-html">&lt;b></code> y
-                    <code class="language-html">&lt;strong></code>
-                  </figcaption>
-                </figure>
+              <!-- Introducción -->
+              <div class="mt-3">
+                <h2>Introducción</h2>
+                <div class="site-image site-intro-image mb-5">
+                  <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                    <img src="https://i.postimg.cc/k55FGb2w/b-vs-strong-gibili3.png" class="img-fluid"
+                      alt="Formato de Texto HTML " title="Formato de Texto HTML : <b> y <strong>"  loading="lazy"/>
+                    <figcaption class="site-image__caption">
+                      Ejemplo de Etiquetas de Texto HTML
+                      <code class="language-html">&lt;b></code> y
+                      <code class="language-html">&lt;strong></code>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <p>
+                  En el fascinante mundo del desarrollo web, dar estilo y
+                  estructura al texto es fundamental para crear páginas
+                  atractivas y fáciles de leer. Hoy, se invita a los lectores a
+                  sumergirse en el poder de HTML, el lenguaje esencial para la
+                  web. Se descubrirán las etiquetas clave que permiten formatear
+                  el texto. Desde negritas y cursivas hasta el tamaño y la
+                  organización, el objetivo es transformar las palabras en
+                  contenido visualmente impactante.
+                </p>
+
+                <p>
+                  La imagen compara las etiquetas HTML
+                  <code class="language-html">&lt;b></code> y
+                  <code class="language-html">&lt;strong></code> con situaciones
+                  de la vida real. La izquierda, con
+                  <code class="language-html">&lt;b></code>, muestra una
+                  recomendación casual (Debes tomar "la calle principal"), como
+                  un énfasis visual ligero. La derecha, con
+                  <code class="language-html">&lt;strong></code>, refleja
+                  urgencia (En caso de emergencia, "sal inmediatamente del
+                  edificio"), destacando importancia semántica.
+                </p>
               </div>
-
-              <p>
-                En el fascinante mundo del desarrollo web, dar estilo y
-                estructura al texto es fundamental para crear páginas
-                atractivas y fáciles de leer. Hoy, se invita a los lectores a
-                sumergirse en el poder de HTML, el lenguaje esencial para la
-                web. Se descubrirán las etiquetas clave que permiten formatear
-                el texto. Desde negritas y cursivas hasta el tamaño y la
-                organización, el objetivo es transformar las palabras en
-                contenido visualmente impactante.
-              </p>
-
-              <p>
-                La imagen compara las etiquetas HTML
-                <code class="language-html">&lt;b></code> y
-                <code class="language-html">&lt;strong></code> con situaciones
-                de la vida real. La izquierda, con
-                <code class="language-html">&lt;b></code>, muestra una
-                recomendación casual (Debes tomar "la calle principal"), como
-                un énfasis visual ligero. La derecha, con
-                <code class="language-html">&lt;strong></code>, refleja
-                urgencia (En caso de emergencia, "sal inmediatamente del
-                edificio"), destacando importancia semántica.
-              </p>
             </div>
             <!-- Introducción Fin -->
             <hr class="site-divider--subtle site-divider" />
@@ -5069,62 +5070,62 @@ usuarios&lt;span class="token punctuation">.&lt;/span>&lt;span class="token func
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
+          <div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo">
             <div class="border border-1">
               <div class="site-menu__item">
-                <a href="#introduccion" class="site-menu__link">Introducción</a>
+                <a href="#introduccion" class=" list-group-item list-group-item-action">Introducción</a>
               </div>
 
               <div class="site-menu__item">
-                <a href="#etiquetas-html-b-negrita-y-strong-importante" class="site-menu__link">Etiquetas HTML
+                <a href="#etiquetas-html-b-negrita-y-strong-importante" class=" list-group-item list-group-item-action">Etiquetas HTML
                   <code class="language-html">&lt;b></code> Negrita y
                   <code class="language-html">&lt;strong></code> Importante</a>
               </div>
               <div class="site-menu__item">
-                <a href="#etiquetas-html-i-italica-y-em-enfasis" class="site-menu__link">Etiquetas HTML
+                <a href="#etiquetas-html-i-italica-y-em-enfasis" class=" list-group-item list-group-item-action">Etiquetas HTML
                   <code class="language-html">&lt;i></code> Itálica y
                   <code class="language-html">&lt;em></code> Énfasis</a>
               </div>
               <div class="site-menu__item">
-                <a href="#etiqueta-html-small-pequeno" class="site-menu__link">Etiqueta HTML
+                <a href="#etiqueta-html-small-pequeno" class=" list-group-item list-group-item-action">Etiqueta HTML
                   <code class="language-html">&lt;small></code> Pequeño</a>
               </div>
               <div class="site-menu__item">
-                <a href="#etiquetas-html-del-borrado-y-ins-insertado" class="site-menu__link">Etiquetas HTML
+                <a href="#etiquetas-html-del-borrado-y-ins-insertado" class=" list-group-item list-group-item-action">Etiquetas HTML
                   <code class="language-html">&lt;del></code> Borrado y
                   <code class="language-html">&lt;ins></code> Insertado</a>
               </div>
               <div class="site-menu__item">
-                <a href="#etiquetas-html-sup-superindice-e-sub-subindice" class="site-menu__link">Etiquetas HTML
+                <a href="#etiquetas-html-sup-superindice-e-sub-subindice" class=" list-group-item list-group-item-action">Etiquetas HTML
                   <code class="language-html">&lt;sup></code> Superíndice y
                   <code class="language-html">&lt;sub></code> Subríndice</a>
               </div>
               <div class="site-menu__item">
-                <a href="#etiquetas-html-code-codigo-de-programacion" class="site-menu__link">Etiquetas HTML
+                <a href="#etiquetas-html-code-codigo-de-programacion" class=" list-group-item list-group-item-action">Etiquetas HTML
                   <code class="language-html">&lt;code></code> Código de
                   Programación</a>
               </div>
               <div class="site-menu__item">
-                <a href="#etiquetas-html-kbd-entrada-del-teclado" class="site-menu__link">Etiquetas HTML
+                <a href="#etiquetas-html-kbd-entrada-del-teclado" class=" list-group-item list-group-item-action">Etiquetas HTML
                   <code class="language-html">&lt;kbd></code> Entrada del
                   Teclado</a>
               </div>
               <div class="site-menu__item">
-                <a href="#etiquetas-html-samp-salida-de-un-programa" class="site-menu__link">Etiquetas HTML
+                <a href="#etiquetas-html-samp-salida-de-un-programa" class=" list-group-item list-group-item-action">Etiquetas HTML
                   <code class="language-html">&lt;samp></code> Salida de un
                   programa</a>
               </div>
               <div class="site-menu__item">
-                <a href="#etiquetas-html-var-variable" class="site-menu__link">Etiquetas HTML
+                <a href="#etiquetas-html-var-variable" class=" list-group-item list-group-item-action">Etiquetas HTML
                   <code class="language-html">&lt;var></code> Variable</a>
               </div>
               <div class="site-menu__item">
-                <a href="#etiquetas-html-pre-texto-preformateado" class="site-menu__link">Etiquetas HTML
+                <a href="#etiquetas-html-pre-texto-preformateado" class=" list-group-item list-group-item-action">Etiquetas HTML
                   <code class="language-html">&lt;pre></code> Texto
                   Preformateado</a>
               </div>
               <div class="site-menu__item">
-                <a href="#comments" class="site-menu__link">Comentarios</a>
+                <a href="#comments" class=" list-group-item list-group-item-action">Comentarios</a>
               </div>
             </div>
           </div>

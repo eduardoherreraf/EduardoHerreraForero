@@ -54,11 +54,12 @@
   </title>
 
   <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/article-scrollspy.js"></script>
 
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -108,19 +109,20 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Los Fundamentos de la Programación Orientada a Objetos (OOP) en Python  -->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
-          <header>
-            <h1>
-              Los Fundamentos de la Programación Orientada a Objetos (OOP) en
-              Python
-            </h1>
-          </header>
-          <!-- Introducción -->
+        <article class="row border-1 border-bottom pb-3">
+          <div id="introduccion">
+            <header>
+              <h1>
+                Los Fundamentos de la Programación Orientada a Objetos (OOP) en
+                Python
+              </h1>
+            </header>
+            <!-- Introducción -->
+          </div>
           <div class="mt-3">
             <h2>Introducción</h2>
             <div class="site-image site-intro-image mb-5">
@@ -1063,7 +1065,6 @@
             </div>
             <!-- Polimorfismo Fin -->
           </div>
-          <hr class="site-divider--subtle site-divider" />
         </article>
         <!--  Los Fundamentos de la Programación Orientada a Objetos (OOP) en Python  -->
         <!--  comentarios  -->
@@ -1115,18 +1116,18 @@
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
+          <div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo">
             <div class="border border-1">
-              <div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
-              <div class="site-menu__item"><a href="#clases-y-objetos" class="site-menu__link">Clases y Objetos</a>
+              <div class="site-menu__item"><a href="#introduccion" class=" list-group-item list-group-item-action">Introducción</a></div>
+              <div class="site-menu__item"><a href="#clases-y-objetos" class=" list-group-item list-group-item-action">Clases y Objetos</a>
               </div>
-              <div class="site-menu__item"><a href="#herencia" class="site-menu__link">Herencia</a></div>
-              <div class="site-menu__item"><a href="#jerarquia-de-clases" class="site-menu__link">Jerarquía de
+              <div class="site-menu__item"><a href="#herencia" class=" list-group-item list-group-item-action">Herencia</a></div>
+              <div class="site-menu__item"><a href="#jerarquia-de-clases" class=" list-group-item list-group-item-action">Jerarquía de
                   Clases</a></div>
-              <div class="site-menu__item"><a href="#encapsulamiento" class="site-menu__link">Encapsulamiento</a></div>
-              <div class="site-menu__item"><a href="#polimorfismo" class="site-menu__link">Polimorfismo</a></div>
+              <div class="site-menu__item"><a href="#encapsulamiento" class=" list-group-item list-group-item-action">Encapsulamiento</a></div>
+              <div class="site-menu__item"><a href="#polimorfismo" class=" list-group-item list-group-item-action">Polimorfismo</a></div>
               <!-- Comentarios  -->
-              <div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div>
+              <div class="site-menu__item"><a href="#comments" class=" list-group-item list-group-item-action">Comentarios</a></div>
             </div>
           </div>
         </div>

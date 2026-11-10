@@ -46,7 +46,8 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy"
+  data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -77,7 +78,8 @@
             <a class="nav-link mx-1 text-decoration-none" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 site-nav__link--publications-active text-decoration-none site-nav__link" href="index.html#blog">ARTÍCULOS</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active text-decoration-none site-nav__link"
+              href="index.html#blog">ARTÍCULOS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1 text-decoration-none" href="index.html#contact">CONTACTO</a>
@@ -95,13 +97,13 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!--  Listas HTML -->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
+        <article class="row border-1 border-bottom pb-3">
 
+          <div id="introduccion">
             <header>
               <h1>Listas HTML</h1>
             </header>
@@ -111,7 +113,7 @@
               <div class="site-image site-intro-image mb-5">
                 <figure class="site-content__img-container site-image__figure site-image__figure--intro">
                   <img src="https://i.ibb.co/nsLkz5xm/listas-html-ejemplo.png" class="img-fluid" alt="Listas HTML "
-                    title="Listas HTML "  loading="lazy"/>
+                    title="Listas HTML " loading="lazy" />
                   <figcaption class="site-image__caption">Ejemplo de Listas HTML</figcaption>
                 </figure>
               </div>
@@ -127,130 +129,131 @@
               </p>
 
             </div>
-            <!-- Introducción Fin -->
-            <hr class="site-divider--subtle site-divider" />
+          </div>
+          <!-- Introducción Fin -->
+          <hr class="site-divider--subtle site-divider" />
 
-            <!-- Definición de Listas en HTML -->
-            <div id="definicion-de-listas-en-html" class="mt-3">
-              <h2 class="pt-1">Definición de Listas en HTML</h2>
-              <p>
-                Según la <abbr title="Real Academia Española">RAE</abbr>, una
-                lista es enumeración, generalmente en forma de columna, de
-                personas, cosas, cantidades, etc., que se hace con determinado
-                propósito.
-              </p>
-              <p>
-                Las listas en HTML son elementos que permiten crear conjuntos
-                de elementos organizados en forma de lista dentro de una
-                página web. Generalmente, cada elemento de la lista va
-                precedido por un símbolo, número o letra que indica su orden o
-                simplemente marca cada ítem.
-              </p>
-            </div>
-            <!-- Definición de Listas en HTML Fin -->
-            <hr class="site-divider--subtle site-divider" />
+          <!-- Definición de Listas en HTML -->
+          <div id="definicion-de-listas-en-html" class="mt-3">
+            <h2 class="pt-1">Definición de Listas en HTML</h2>
+            <p>
+              Según la <abbr title="Real Academia Española">RAE</abbr>, una
+              lista es enumeración, generalmente en forma de columna, de
+              personas, cosas, cantidades, etc., que se hace con determinado
+              propósito.
+            </p>
+            <p>
+              Las listas en HTML son elementos que permiten crear conjuntos
+              de elementos organizados en forma de lista dentro de una
+              página web. Generalmente, cada elemento de la lista va
+              precedido por un símbolo, número o letra que indica su orden o
+              simplemente marca cada ítem.
+            </p>
+          </div>
+          <!-- Definición de Listas en HTML Fin -->
+          <hr class="site-divider--subtle site-divider" />
 
-            <!-- Tipos de Listas -->
-            <div id="tipos-de-listas" class="mt-3">
-              <h2>Tipos de Listas</h2>
-              <p>
-                HTML ofrece tres formas de especificar listas: listas
-                ordenadas, listas desordenadas y listas de descripción. Las
-                listas ordenadas utilizan secuencias ordinales para indicar el
-                orden de los elementos de la lista, las listas desordenadas
-                usan un símbolo definido, como un punto, para listar elementos
-                sin un orden designado, y las listas de descripción usan
-                sangrías para listar elementos con sus elementos secundarios.
-              </p>
+          <!-- Tipos de Listas -->
+          <div id="tipos-de-listas" class="mt-3">
+            <h2>Tipos de Listas</h2>
+            <p>
+              HTML ofrece tres formas de especificar listas: listas
+              ordenadas, listas desordenadas y listas de descripción. Las
+              listas ordenadas utilizan secuencias ordinales para indicar el
+              orden de los elementos de la lista, las listas desordenadas
+              usan un símbolo definido, como un punto, para listar elementos
+              sin un orden designado, y las listas de descripción usan
+              sangrías para listar elementos con sus elementos secundarios.
+            </p>
 
-              <!-- Listas Ordenadas <ol> -->
-              <div id="listas-ordenadas-ol">
-                <h3>
-                  Listas Ordenadas <code class="language-html">&lt;ol></code>
-                </h3>
+            <!-- Listas Ordenadas <ol> -->
+            <div id="listas-ordenadas-ol">
+              <h3>
+                Listas Ordenadas <code class="language-html">&lt;ol></code>
+              </h3>
+              <p>
+                Una lista ordenada (
+                <code class="language-html">&lt;ol></code>,
+                <span class="fst-italic">ordered list</span>) en HTML
+                presenta elementos en un orden específico, crucial para
+                casos como recetas, instrucciones o procedimientos donde la
+                secuencia importa.
+              </p>
+              <!-- ¿Cómo funciona una Lista Ordenada <ol>? -->
+              <div>
+                <h4>
+                  ¿Cómo funciona una Lista Ordenada
+                  <code class="language-html">&lt;ol></code>?
+                </h4>
                 <p>
-                  Una lista ordenada (
-                  <code class="language-html">&lt;ol></code>,
-                  <span class="fst-italic">ordered list</span>) en HTML
-                  presenta elementos en un orden específico, crucial para
-                  casos como recetas, instrucciones o procedimientos donde la
-                  secuencia importa.
+                  La etiqueta
+                  <code class="language-html">&lt;ol></code> genera una
+                  lista ordenada que el navegador numera automáticamente
+                  (por defecto: 1, 2, 3...), aunque se puede personalizar el
+                  formato.
                 </p>
-                <!-- ¿Cómo funciona una Lista Ordenada <ol>? -->
-                <div>
-                  <h4>
-                    ¿Cómo funciona una Lista Ordenada
-                    <code class="language-html">&lt;ol></code>?
-                  </h4>
-                  <p>
-                    La etiqueta
-                    <code class="language-html">&lt;ol></code> genera una
-                    lista ordenada que el navegador numera automáticamente
-                    (por defecto: 1, 2, 3...), aunque se puede personalizar el
-                    formato.
-                  </p>
-                  <p>
-                    Cada elemento de una lista ordenada se define con la
-                    etiqueta <code class="language-html">&lt;li></code>, que
-                    representa un "elemento de lista" (<span class="fst-italic">list item</span>).
-                  </p>
-                </div>
-                <!-- ¿Cómo funciona una Lista Ordenada <ol>? fin -->
-                <!-- Estructura básica de una Lista Ordenada <ol> -->
-                <div>
-                  <h4>
-                    Estructura básica de una Lista Ordenada
-                    <code class="language-html">&lt;ol></code>
-                  </h4>
-                  <p>
-                    Así es como se ve el código HTML para una lista ordenada
-                    <code class="language-html">&lt;ol></code>:
-                  </p>
-                  <!-- Ejemplos de código -->
-                  <div class="site-content__code p-3">
-                    <div class="row">
-                      <!-- Ejemplo -->
-                      <div class="code-example">
-                        <div class="row code-example__output mt-3">
-                          <!-- código ejecutado -->
-                          <div class="demo-content__container">
-                            <p class="demo-content__h3-ol">
-                              🍋 Pasos para hacer una limonada
-                            </p>
+                <p>
+                  Cada elemento de una lista ordenada se define con la
+                  etiqueta <code class="language-html">&lt;li></code>, que
+                  representa un "elemento de lista" (<span class="fst-italic">list item</span>).
+                </p>
+              </div>
+              <!-- ¿Cómo funciona una Lista Ordenada <ol>? fin -->
+              <!-- Estructura básica de una Lista Ordenada <ol> -->
+              <div>
+                <h4>
+                  Estructura básica de una Lista Ordenada
+                  <code class="language-html">&lt;ol></code>
+                </h4>
+                <p>
+                  Así es como se ve el código HTML para una lista ordenada
+                  <code class="language-html">&lt;ol></code>:
+                </p>
+                <!-- Ejemplos de código -->
+                <div class="site-content__code p-3">
+                  <div class="row">
+                    <!-- Ejemplo -->
+                    <div class="code-example">
+                      <div class="row code-example__output mt-3">
+                        <!-- código ejecutado -->
+                        <div class="demo-content__container">
+                          <p class="demo-content__h3-ol">
+                            🍋 Pasos para hacer una limonada
+                          </p>
 
-                            <div class="demo-content__step">
-                              <span class="demo-content__step-number">1</span>
-                              <span class="demo-content__step-text">Corta los limones por la mitad.</span>
-                            </div>
-
-                            <div class="demo-content__step">
-                              <span class="demo-content__step-number">2</span>
-                              <span class="demo-content__step-text">Exprime el jugo de los limones en un
-                                recipiente.</span>
-                            </div>
-
-                            <div class="demo-content__step">
-                              <span class="demo-content__step-number">3</span>
-                              <span class="demo-content__step-text">Añade agua y azúcar al gusto.</span>
-                            </div>
-
-                            <div class="demo-content__step">
-                              <span class="demo-content__step-number">4</span>
-                              <span class="demo-content__step-text">Revuelve bien hasta disolver el azúcar.</span>
-                            </div>
-
-                            <div class="demo-content__step">
-                              <span class="demo-content__step-number">5</span>
-                              <span class="demo-content__step-text">Sirve con hielo y disfruta.</span>
-                            </div>
+                          <div class="demo-content__step">
+                            <span class="demo-content__step-number">1</span>
+                            <span class="demo-content__step-text">Corta los limones por la mitad.</span>
                           </div>
 
-                          <!-- código ejecutado fin -->
+                          <div class="demo-content__step">
+                            <span class="demo-content__step-number">2</span>
+                            <span class="demo-content__step-text">Exprime el jugo de los limones en un
+                              recipiente.</span>
+                          </div>
+
+                          <div class="demo-content__step">
+                            <span class="demo-content__step-number">3</span>
+                            <span class="demo-content__step-text">Añade agua y azúcar al gusto.</span>
+                          </div>
+
+                          <div class="demo-content__step">
+                            <span class="demo-content__step-number">4</span>
+                            <span class="demo-content__step-text">Revuelve bien hasta disolver el azúcar.</span>
+                          </div>
+
+                          <div class="demo-content__step">
+                            <span class="demo-content__step-number">5</span>
+                            <span class="demo-content__step-text">Sirve con hielo y disfruta.</span>
+                          </div>
                         </div>
-                        <div class="row">
-                          <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
-                            <!-- código HTML -->
-                            <pre>
+
+                        <!-- código ejecutado fin -->
+                      </div>
+                      <div class="row">
+                        <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
+                          <!-- código HTML -->
+                          <pre>
                                 <code class="language-html" data-prismjs-copy="Copy">
                                   <div>
                                     <div class="site-content__example">
@@ -300,11 +303,11 @@
                                   </div>        
                                 </code>
                               </pre>
-                            <!-- código HTML -->
-                          </div>
-                          <div class="code-example__css-panel col-lg-6 mb-3">
-                            <!-- código CSS -->
-                            <pre>
+                          <!-- código HTML -->
+                        </div>
+                        <div class="code-example__css-panel col-lg-6 mb-3">
+                          <!-- código CSS -->
+                          <pre>
                                 <code class="language-css" data-prismjs-copy="Copy">
                                   <div>
                                     .container {
@@ -352,112 +355,112 @@
                                   </div>        
                                 </code>
                               </pre>
-                            <!-- código HTML -->
-                          </div>
+                          <!-- código HTML -->
                         </div>
                       </div>
-                      <!-- Ejemplo fin -->
                     </div>
+                    <!-- Ejemplo fin -->
                   </div>
-                  <!-- Ejemplos de código fin -->
                 </div>
-                <!-- Estructura básica de una Lista Ordenada <ol> fin -->
-                <!-- Atributos más comunes de una Lista Ordenada <ol> -->
-                <div>
-                  <h4>
-                    Atributos más comunes de una Lista Ordenada
-                    <code class="language-html">&lt;ol></code>
-                  </h4>
-                  <ul>
-                    <li>
-                      <code class="language-html">type</code>: Permite cambiar
-                      el tipo de marcador que se utiliza para numerar la
-                      lista.
-                      <ul>
-                        <li>
-                          <code class="language-html">1</code>: para números
-                          decimales (por defecto), 1, 2, 3.
-                        </li>
-                        <li>
-                          <code class="language-html">a</code>: para letras
-                          minúsculas, a, b, c
-                        </li>
-                        <li>
-                          <code class="language-html">A</code>: para letras
-                          mayúsculas, A, B, C.
-                        </li>
-                        <li>
-                          <code class="language-html">i</code>: para números
-                          romanos en minúscula, i, ii, iii.
-                        </li>
-                        <li>
-                          <code class="language-html">I</code>: para números
-                          romanos en mayúscula, I, II, III.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <code class="language-html">start</code>: La etiqueta
-                      <code class="language-html">&lt;ol></code> permite
-                      establecer el valor inicial de la lista con el atributo
-                      <code class="language-html">start</code>, usando siempre
-                      un valor numérico, incluso si el atributo type define
-                      letras o números romanos.
-                    </li>
-                    <li>
-                      <code class="language-html">reversed</code>: Invierte el
-                      orden de numeración.
-                    </li>
-                  </ul>
-                  Ejemplos de uso:
-                  <!-- Ejemplos de código -->
-                  <div class="site-content__code p-3 rounded-2">
-                    <div class="row">
-                      <!-- Ejemplo -->
-                      <div class="code-example">
-                        <div class="row code-example__output mt-3">
-                          <!-- código ejecutado -->
-                          <div>
-                            <div class="demo-ol2__container">
-                              <div class="demo-ol2__example">
-                                <p class="demo-ol2__h3">
-                                  Enumeración con números romanos:
-                                </p>
-                                <ol class="demo-content__ol2" type="I">
-                                  <li class="demo-content__li2">Julio</li>
-                                  <li class="demo-content__li2">Carmen</li>
-                                  <li class="demo-content__li2">Ignacio</li>
-                                </ol>
-                              </div>
+                <!-- Ejemplos de código fin -->
+              </div>
+              <!-- Estructura básica de una Lista Ordenada <ol> fin -->
+              <!-- Atributos más comunes de una Lista Ordenada <ol> -->
+              <div>
+                <h4>
+                  Atributos más comunes de una Lista Ordenada
+                  <code class="language-html">&lt;ol></code>
+                </h4>
+                <ul>
+                  <li>
+                    <code class="language-html">type</code>: Permite cambiar
+                    el tipo de marcador que se utiliza para numerar la
+                    lista.
+                    <ul>
+                      <li>
+                        <code class="language-html">1</code>: para números
+                        decimales (por defecto), 1, 2, 3.
+                      </li>
+                      <li>
+                        <code class="language-html">a</code>: para letras
+                        minúsculas, a, b, c
+                      </li>
+                      <li>
+                        <code class="language-html">A</code>: para letras
+                        mayúsculas, A, B, C.
+                      </li>
+                      <li>
+                        <code class="language-html">i</code>: para números
+                        romanos en minúscula, i, ii, iii.
+                      </li>
+                      <li>
+                        <code class="language-html">I</code>: para números
+                        romanos en mayúscula, I, II, III.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <code class="language-html">start</code>: La etiqueta
+                    <code class="language-html">&lt;ol></code> permite
+                    establecer el valor inicial de la lista con el atributo
+                    <code class="language-html">start</code>, usando siempre
+                    un valor numérico, incluso si el atributo type define
+                    letras o números romanos.
+                  </li>
+                  <li>
+                    <code class="language-html">reversed</code>: Invierte el
+                    orden de numeración.
+                  </li>
+                </ul>
+                Ejemplos de uso:
+                <!-- Ejemplos de código -->
+                <div class="site-content__code p-3 rounded-2">
+                  <div class="row">
+                    <!-- Ejemplo -->
+                    <div class="code-example">
+                      <div class="row code-example__output mt-3">
+                        <!-- código ejecutado -->
+                        <div>
+                          <div class="demo-ol2__container">
+                            <div class="demo-ol2__example">
+                              <p class="demo-ol2__h3">
+                                Enumeración con números romanos:
+                              </p>
+                              <ol class="demo-content__ol2" type="I">
+                                <li class="demo-content__li2">Julio</li>
+                                <li class="demo-content__li2">Carmen</li>
+                                <li class="demo-content__li2">Ignacio</li>
+                              </ol>
+                            </div>
 
-                              <div class="demo-ol2__example">
-                                <p class="demo-ol2__h3">Inicia desde D o 4:</p>
-                                <ol class="demo-content__ol2" type="A" start="4">
-                                  <li class="demo-content__li2">Julio</li>
-                                  <li class="demo-content__li2">Carmen</li>
-                                  <li class="demo-content__li2">Ignacio</li>
-                                </ol>
-                              </div>
+                            <div class="demo-ol2__example">
+                              <p class="demo-ol2__h3">Inicia desde D o 4:</p>
+                              <ol class="demo-content__ol2" type="A" start="4">
+                                <li class="demo-content__li2">Julio</li>
+                                <li class="demo-content__li2">Carmen</li>
+                                <li class="demo-content__li2">Ignacio</li>
+                              </ol>
+                            </div>
 
-                              <div class="demo-ol2__example">
-                                <p class="demo-ol2__h3">
-                                  Inicia desde V o 5 romano con conteo
-                                  inverso:
-                                </p>
-                                <ol class="demo-content__ol2" type="I" start="5" reversed>
-                                  <li class="demo-content__li2">Julio</li>
-                                  <li class="demo-content__li2">Carmen</li>
-                                  <li class="demo-content__li2">Ignacio</li>
-                                </ol>
-                              </div>
+                            <div class="demo-ol2__example">
+                              <p class="demo-ol2__h3">
+                                Inicia desde V o 5 romano con conteo
+                                inverso:
+                              </p>
+                              <ol class="demo-content__ol2" type="I" start="5" reversed>
+                                <li class="demo-content__li2">Julio</li>
+                                <li class="demo-content__li2">Carmen</li>
+                                <li class="demo-content__li2">Ignacio</li>
+                              </ol>
                             </div>
                           </div>
-                          <!-- código ejecutado fin -->
                         </div>
-                        <div class="row">
-                          <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
-                            <!-- código HTML -->
-                            <pre>
+                        <!-- código ejecutado fin -->
+                      </div>
+                      <div class="row">
+                        <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
+                          <!-- código HTML -->
+                          <pre>
                                 <code class="language-html" data-prismjs-copy="Copy">
                                   <div>
                                     &lt;div>
@@ -503,11 +506,11 @@
                                   </div>        
                                 </code>
                               </pre>
-                            <!-- código HTML -->
-                          </div>
-                          <div class="code-example__css-panel col-lg-6 mb-3">
-                            <!-- código CSS -->
-                            <pre>
+                          <!-- código HTML -->
+                        </div>
+                        <div class="code-example__css-panel col-lg-6 mb-3">
+                          <!-- código CSS -->
+                          <pre>
                                 <code class="language-css" data-prismjs-copy="Copy">
                                   <div>
                                     .example-ol2 {
@@ -553,103 +556,103 @@
                                   </div>        
                                 </code>
                               </pre>
-                            <!-- código HTML -->
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Ejemplo fin -->
-                    </div>
-                  </div>
-                  <!-- Ejemplos de código fin -->
-                </div>
-                <!-- Atributos más comunes de <ol> fin -->
-                <!-- ¿Cuándo usar una Lista Ordenada <ol>? -->
-                <div>
-                  <h4>
-                    ¿Cuándo usar una Lista Ordenada
-                    <code class="language-html">&lt;ol></code>?
-                  </h4>
-                  <p>
-                    Usar una lista ordenada siempre que la secuencia o la
-                    prioridad de los elementos sea importante. Por ejemplo:
-                  </p>
-                  <ul>
-                    <li>Instrucciones paso a paso.</li>
-                    <li>Clasificaciones (Top 10...).</li>
-                    <li>Un esquema con puntos numerados.</li>
-                    <li>Un índice de contenidos.</li>
-                  </ul>
-                </div>
-                <!-- ¿Cuándo usar una Lista Ordenada <ol>? fin -->
-              </div>
-              <!-- Listas Ordenadas <ol> fin -->
-
-              <!-- Listas Desordenadas <ul> -->
-              <div id="listas-desordenadas-ul">
-                <h3>
-                  Listas Desordenadas
-                  <code class="language-html">&lt;ul></code>
-                </h3>
-                <p>
-                  Una lista desordenada (
-                  <code class="language-html">&lt;ul></code>,
-                  <span class="fst-italic">unordered list</span>) en HTML
-                  muestra sus elementos sin un orden numérico o alfabético,
-                  utilizando viñetas o símbolos para marcar cada ítem.
-                </p>
-                <!-- ¿Cómo funciona una Lista Desordenada <ul>? -->
-                <div>
-                  <h4>
-                    ¿Cómo funciona una Lista Desordenada
-                    <code class="language-html">&lt;ul></code>?
-                  </h4>
-                  <p>
-                    La etiqueta
-                    <code class="language-html">&lt;ul></code> crea una lista
-                    desordenada en la que el navegador añade automáticamente
-                    un símbolo (como una viñeta) a cada elemento, sin usar
-                    números ni letras. Cada elemento de la lista se define con
-                    la etiqueta
-                    <code class="language-html">&lt;li>,</code> que representa
-                    un "elemento de lista" (<span class="fst-italic">list item</span>).
-                  </p>
-                </div>
-                <!-- ¿Cómo funciona una Lista Desordenada <ul>? fin -->
-
-                <!-- Estructura básica de una Lista Desordenada <ul> -->
-                <div>
-                  <h4>
-                    Estructura básica de una Lista Desordenada
-                    <code class="language-html">&lt;ul></code>
-                  </h4>
-                  <p>
-                    Así es como se ve el código HTML para una lista
-                    desordenada <code class="language-html">&lt;ul></code>:
-                  </p>
-
-                  <div class="row">
-                    <!-- Ejemplo -->
-                    <div class="code-example">
-                      <div class="row code-example__output mt-3">
-                        <!-- código ejecutado -->
-                        <div>
-                          <div class="demo-content__example-ul">
-                            <p class="demo-content__h3-ul">Lista de compras</p>
-                            <ul class="demo-content__ul">
-                              <li class="demo-content__li">Manzanas</li>
-                              <li class="demo-content__li">Pan</li>
-                              <li class="demo-content__li">Leche</li>
-                              <li class="demo-content__li">Huevos</li>
-                              <li class="demo-content__li">Café</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <!-- código ejecutado fin -->
-                      </div>
-                      <div class="row">
-                        <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
                           <!-- código HTML -->
-                          <pre>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Ejemplo fin -->
+                  </div>
+                </div>
+                <!-- Ejemplos de código fin -->
+              </div>
+              <!-- Atributos más comunes de <ol> fin -->
+              <!-- ¿Cuándo usar una Lista Ordenada <ol>? -->
+              <div>
+                <h4>
+                  ¿Cuándo usar una Lista Ordenada
+                  <code class="language-html">&lt;ol></code>?
+                </h4>
+                <p>
+                  Usar una lista ordenada siempre que la secuencia o la
+                  prioridad de los elementos sea importante. Por ejemplo:
+                </p>
+                <ul>
+                  <li>Instrucciones paso a paso.</li>
+                  <li>Clasificaciones (Top 10...).</li>
+                  <li>Un esquema con puntos numerados.</li>
+                  <li>Un índice de contenidos.</li>
+                </ul>
+              </div>
+              <!-- ¿Cuándo usar una Lista Ordenada <ol>? fin -->
+            </div>
+            <!-- Listas Ordenadas <ol> fin -->
+
+            <!-- Listas Desordenadas <ul> -->
+            <div id="listas-desordenadas-ul">
+              <h3>
+                Listas Desordenadas
+                <code class="language-html">&lt;ul></code>
+              </h3>
+              <p>
+                Una lista desordenada (
+                <code class="language-html">&lt;ul></code>,
+                <span class="fst-italic">unordered list</span>) en HTML
+                muestra sus elementos sin un orden numérico o alfabético,
+                utilizando viñetas o símbolos para marcar cada ítem.
+              </p>
+              <!-- ¿Cómo funciona una Lista Desordenada <ul>? -->
+              <div>
+                <h4>
+                  ¿Cómo funciona una Lista Desordenada
+                  <code class="language-html">&lt;ul></code>?
+                </h4>
+                <p>
+                  La etiqueta
+                  <code class="language-html">&lt;ul></code> crea una lista
+                  desordenada en la que el navegador añade automáticamente
+                  un símbolo (como una viñeta) a cada elemento, sin usar
+                  números ni letras. Cada elemento de la lista se define con
+                  la etiqueta
+                  <code class="language-html">&lt;li>,</code> que representa
+                  un "elemento de lista" (<span class="fst-italic">list item</span>).
+                </p>
+              </div>
+              <!-- ¿Cómo funciona una Lista Desordenada <ul>? fin -->
+
+              <!-- Estructura básica de una Lista Desordenada <ul> -->
+              <div>
+                <h4>
+                  Estructura básica de una Lista Desordenada
+                  <code class="language-html">&lt;ul></code>
+                </h4>
+                <p>
+                  Así es como se ve el código HTML para una lista
+                  desordenada <code class="language-html">&lt;ul></code>:
+                </p>
+
+                <div class="row">
+                  <!-- Ejemplo -->
+                  <div class="code-example">
+                    <div class="row code-example__output mt-3">
+                      <!-- código ejecutado -->
+                      <div>
+                        <div class="demo-content__example-ul">
+                          <p class="demo-content__h3-ul">Lista de compras</p>
+                          <ul class="demo-content__ul">
+                            <li class="demo-content__li">Manzanas</li>
+                            <li class="demo-content__li">Pan</li>
+                            <li class="demo-content__li">Leche</li>
+                            <li class="demo-content__li">Huevos</li>
+                            <li class="demo-content__li">Café</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- código ejecutado fin -->
+                    </div>
+                    <div class="row">
+                      <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
+                        <!-- código HTML -->
+                        <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
                                 &lt;div class="site-content__example-ul">
@@ -665,11 +668,11 @@
                               </div>        
                             </code>
                           </pre>
-                          <!-- código HTML -->
-                        </div>
-                        <div class="code-example__css-panel col-lg-6 mb-3">
-                          <!-- código CSS -->
-                          <pre>
+                        <!-- código HTML -->
+                      </div>
+                      <div class="code-example__css-panel col-lg-6 mb-3">
+                        <!-- código CSS -->
+                        <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
                                 <div>
                                   .example-ul {
@@ -737,165 +740,165 @@
                                 </div>        
                               </code>
                             </pre>
-                          <!-- código CSS -->
-                        </div>
+                        <!-- código CSS -->
                       </div>
                     </div>
-                    <!-- Ejemplo fin -->
                   </div>
+                  <!-- Ejemplo fin -->
                 </div>
-                <!-- Estructura básica de una Lista Desordenada <ul> fin -->
+              </div>
+              <!-- Estructura básica de una Lista Desordenada <ul> fin -->
 
-                <!-- Atributos más comunes de una Lista Desordenada <ul> -->
-                <div>
-                  <h4>
-                    Atributos más comunes de una Lista Desordenada
-                    <code class="language-html">&lt;ul></code>
-                  </h4>
-                  <ul>
-                    <li>
-                      <code class="language-html">type</code>: Históricamente
-                      se usaba para definir el tipo de viñeta de la lista.
-                      (obsoleto).
-                      <ul>
-                        <li>
-                          <code class="language-html">circle</code>: Círculo
-                          (por defecto).
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      Personalización con CSS:
-                      <ul>
-                        <li>
-                          <code class="language-html">list-style-type</code>,
-                          Controla el tipo de viñeta con CSS:
-                          <ul>
-                            <li>
-                              <code class="language-html">disc</code>: •
-                              (predeterminado)
+              <!-- Atributos más comunes de una Lista Desordenada <ul> -->
+              <div>
+                <h4>
+                  Atributos más comunes de una Lista Desordenada
+                  <code class="language-html">&lt;ul></code>
+                </h4>
+                <ul>
+                  <li>
+                    <code class="language-html">type</code>: Históricamente
+                    se usaba para definir el tipo de viñeta de la lista.
+                    (obsoleto).
+                    <ul>
+                      <li>
+                        <code class="language-html">circle</code>: Círculo
+                        (por defecto).
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Personalización con CSS:
+                    <ul>
+                      <li>
+                        <code class="language-html">list-style-type</code>,
+                        Controla el tipo de viñeta con CSS:
+                        <ul>
+                          <li>
+                            <code class="language-html">disc</code>: •
+                            (predeterminado)
+                          </li>
+                          <li>
+                            <code class="language-html">circle</code>: ○
+                          </li>
+                          <li>
+                            <code class="language-html">square</code>: ■
+                          </li>
+                          <li>
+                            <code class="language-html">none</code>: sin
+                            viñeta.
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <code class="language-html">list-style-image</code>,
+                        Usa imagen personalizada como viñeta (CSS):<br />
+                      </li>
+                      <li>
+                        <code class="language-html">list-style-position</code>, Controla la alineación de la viñeta
+                        (CSS):<br />
+                        <ul>
+                          <li>
+                            <code class="language-html">inside</code>: la
+                            viñeta se alinea con el texto.
+                          </li>
+                          <li>
+                            <code class="language-html">outside</code>: la
+                            viñeta queda en el margen izquierdo (valor por
+                            defecto).
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <p>Ejemplo de de una lista desordenada:</p>
+                <!-- Ejemplos de código -->
+                <div class="row">
+                  <!-- Ejemplo -->
+                  <div class="code-example">
+                    <div class="row code-example__output mt-3">
+                      <!-- código ejecutado -->
+                      <div>
+                        <div class="demo-ul2__example">
+                          <p class="demo-content__example-ul2-h3">
+                            Ejemplos de estilos de viñetas:
+                          </p>
+                          <ul class="demo-ul2__lista-disco">
+                            <li class="demo-ul2__li">
+                              Ítem con círculo relleno (disc)
                             </li>
-                            <li>
-                              <code class="language-html">circle</code>: ○
-                            </li>
-                            <li>
-                              <code class="language-html">square</code>: ■
-                            </li>
-                            <li>
-                              <code class="language-html">none</code>: sin
-                              viñeta.
+                            <li class="demo-ul2__li">
+                              Otro ítem con círculo relleno
                             </li>
                           </ul>
-                        </li>
-                        <li>
-                          <code class="language-html">list-style-image</code>,
-                          Usa imagen personalizada como viñeta (CSS):<br />
-                        </li>
-                        <li>
-                          <code class="language-html">list-style-position</code>, Controla la alineación de la viñeta
-                          (CSS):<br />
-                          <ul>
-                            <li>
-                              <code class="language-html">inside</code>: la
-                              viñeta se alinea con el texto.
+                          <ul class="demo-ul2__lista-circulo">
+                            <li class="demo-ul2__li">
+                              Ítem con círculo vacío (circle)
                             </li>
-                            <li>
-                              <code class="language-html">outside</code>: la
-                              viñeta queda en el margen izquierdo (valor por
-                              defecto).
+                            <li class="demo-ul2__li">
+                              Otro ítem con círculo vacío
                             </li>
                           </ul>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <p>Ejemplo de de una lista desordenada:</p>
-                  <!-- Ejemplos de código -->
-                  <div class="row">
-                    <!-- Ejemplo -->
-                    <div class="code-example">
-                      <div class="row code-example__output mt-3">
-                        <!-- código ejecutado -->
-                        <div>
-                          <div class="demo-ul2__example">
-                            <p class="demo-content__example-ul2-h3">
-                              Ejemplos de estilos de viñetas:
-                            </p>
-                            <ul class="demo-ul2__lista-disco">
-                              <li class="demo-ul2__li">
-                                Ítem con círculo relleno (disc)
-                              </li>
-                              <li class="demo-ul2__li">
-                                Otro ítem con círculo relleno
-                              </li>
-                            </ul>
-                            <ul class="demo-ul2__lista-circulo">
-                              <li class="demo-ul2__li">
-                                Ítem con círculo vacío (circle)
-                              </li>
-                              <li class="demo-ul2__li">
-                                Otro ítem con círculo vacío
-                              </li>
-                            </ul>
-                            <ul class="demo-ul2__lista-cuadrado">
-                              <li class="demo-ul2__li">
-                                Ítem con cuadrado (square)
-                              </li>
-                              <li class="demo-ul2__li">
-                                Otro ítem con cuadrado
-                              </li>
-                            </ul>
-                            <ul class="demo-content__lista-sin-vineta">
-                              <li class="demo-ul2__li">
-                                Ítem sin viñeta (none)
-                              </li>
-                              <li class="demo-ul2__li">Otro ítem sin viñeta</li>
-                            </ul>
-                          </div>
-
-                          <div class="demo-ul2__example">
-                            <p class="demo-content__example-ul2-h3">
-                              Viñeta Personalizada
-                            </p>
-                            <ul class="demo-content__list-style-image">
-                              <li class="demo-ul2__li">
-                                Elemento uno con viñeta personalizada
-                              </li>
-                              <li class="demo-ul2__li">
-                                Elemento dos con viñeta personalizada
-                              </li>
-                            </ul>
-                          </div>
-
-                          <div class="demo-ul2__example">
-                            <p class="demo-content__example-ul2-h3">
-                              Cambio de posición de la viñeta
-                            </p>
-                            <ul class="demo-content__inside site-content__ul-ul2">
-                              <li class="demo-ul2__li">
-                                Elemento uno, viñeta adentro (inside)
-                              </li>
-                              <li class="demo-ul2__li">
-                                Elemento dos, el texto se alinea con la viñeta
-                              </li>
-                            </ul>
-                            <ul class="demo-content__outside site-content__ul-ul2">
-                              <li class="demo-ul2__li">
-                                Elemento tres, viñeta afuera (ej-outside)
-                              </li>
-                              <li class="demo-ul2__li">
-                                Elemento cuatro, el texto se alinea
-                                independiente de la viñeta
-                              </li>
-                            </ul>
-                          </div>
+                          <ul class="demo-ul2__lista-cuadrado">
+                            <li class="demo-ul2__li">
+                              Ítem con cuadrado (square)
+                            </li>
+                            <li class="demo-ul2__li">
+                              Otro ítem con cuadrado
+                            </li>
+                          </ul>
+                          <ul class="demo-content__lista-sin-vineta">
+                            <li class="demo-ul2__li">
+                              Ítem sin viñeta (none)
+                            </li>
+                            <li class="demo-ul2__li">Otro ítem sin viñeta</li>
+                          </ul>
                         </div>
-                        <!-- código ejecutado fin -->
+
+                        <div class="demo-ul2__example">
+                          <p class="demo-content__example-ul2-h3">
+                            Viñeta Personalizada
+                          </p>
+                          <ul class="demo-content__list-style-image">
+                            <li class="demo-ul2__li">
+                              Elemento uno con viñeta personalizada
+                            </li>
+                            <li class="demo-ul2__li">
+                              Elemento dos con viñeta personalizada
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="demo-ul2__example">
+                          <p class="demo-content__example-ul2-h3">
+                            Cambio de posición de la viñeta
+                          </p>
+                          <ul class="demo-content__inside site-content__ul-ul2">
+                            <li class="demo-ul2__li">
+                              Elemento uno, viñeta adentro (inside)
+                            </li>
+                            <li class="demo-ul2__li">
+                              Elemento dos, el texto se alinea con la viñeta
+                            </li>
+                          </ul>
+                          <ul class="demo-content__outside site-content__ul-ul2">
+                            <li class="demo-ul2__li">
+                              Elemento tres, viñeta afuera (ej-outside)
+                            </li>
+                            <li class="demo-ul2__li">
+                              Elemento cuatro, el texto se alinea
+                              independiente de la viñeta
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="row">
-                        <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
-                          <!-- código HTML -->
-                          <pre>
+                      <!-- código ejecutado fin -->
+                    </div>
+                    <div class="row">
+                      <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
+                        <!-- código HTML -->
+                        <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>    
                                 &lt;div class="site-content__example">
@@ -941,11 +944,11 @@
                           </div>      
                             </code>
                           </pre>
-                          <!-- código HTML -->
-                        </div>
-                        <div class="code-example__css-panel col-lg-6 mb-3">
-                          <!-- código CSS -->
-                          <pre>
+                        <!-- código HTML -->
+                      </div>
+                      <div class="code-example__css-panel col-lg-6 mb-3">
+                        <!-- código CSS -->
+                        <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
                                 <div>
                                   .example {
@@ -1017,192 +1020,192 @@
                                 </div>        
                               </code>
                             </pre>
-                          <!-- código HTML -->
-                        </div>
+                        <!-- código HTML -->
                       </div>
                     </div>
-                    <!-- Ejemplo fin -->
                   </div>
+                  <!-- Ejemplo fin -->
                 </div>
-                <!-- Atributos más comunes de una Lista Desordenada <ul> fin -->
-
-                <!-- ¿Cuándo usar una Lista Desordenada <ul>? -->
-                <div>
-                  <h4>
-                    ¿Cuándo usar una Lista Desordenada
-                    <code class="language-html">&lt;ul></code>?
-                  </h4>
-                  <p>
-                    Usa una lista desordenada siempre que la secuencia o la
-                    prioridad de los elementos NO sea importante. Algunos
-                    ejemplos comunes son:
-                  </p>
-                  <ul>
-                    <li>Una lista de características de un producto.</li>
-                    <li>
-                      Un menú de navegación en un sitio web (Inicio, Acerca
-                      de, Contacto).
-                    </li>
-                    <li>Una lista de "preguntas frecuentes".</li>
-                    <li>Una lista de hobbies o intereses.</li>
-                    <li>
-                      Cualquier enumeración donde el orden de los ítems no
-                      afecte el significado general.
-                    </li>
-                  </ul>
-                </div>
-                <!-- ¿Cuándo usar una Lista Desordenada <ul>? fin -->
               </div>
-              <!-- Listas Desordenadas <ul> fin -->
+              <!-- Atributos más comunes de una Lista Desordenada <ul> fin -->
 
-              <!-- Listas de Descripción <dl> -->
-              <div id="listas-de-descripcion-dl">
-                <h3>
-                  Listas de Descripción
+              <!-- ¿Cuándo usar una Lista Desordenada <ul>? -->
+              <div>
+                <h4>
+                  ¿Cuándo usar una Lista Desordenada
+                  <code class="language-html">&lt;ul></code>?
+                </h4>
+                <p>
+                  Usa una lista desordenada siempre que la secuencia o la
+                  prioridad de los elementos NO sea importante. Algunos
+                  ejemplos comunes son:
+                </p>
+                <ul>
+                  <li>Una lista de características de un producto.</li>
+                  <li>
+                    Un menú de navegación en un sitio web (Inicio, Acerca
+                    de, Contacto).
+                  </li>
+                  <li>Una lista de "preguntas frecuentes".</li>
+                  <li>Una lista de hobbies o intereses.</li>
+                  <li>
+                    Cualquier enumeración donde el orden de los ítems no
+                    afecte el significado general.
+                  </li>
+                </ul>
+              </div>
+              <!-- ¿Cuándo usar una Lista Desordenada <ul>? fin -->
+            </div>
+            <!-- Listas Desordenadas <ul> fin -->
+
+            <!-- Listas de Descripción <dl> -->
+            <div id="listas-de-descripcion-dl">
+              <h3>
+                Listas de Descripción
+                <code class="language-html">&lt;dl></code>
+              </h3>
+              <p>
+                Las Listas de Descripción, también conocidas como Listas de
+                Definición ( <code class="language-html">&lt;dl></code>,
+                <span-fst>description list</span-fst>), son un tipo de lista
+                en HTML diseñada para presentar elementos que consisten en
+                un término y su correspondiente definición.
+              </p>
+              <p>
+                Pensar en ella como un glosario, un diccionario o una
+                sección de preguntas y respuestas donde cada pregunta tiene
+                su(s) respuesta(s) asociada(s).
+              </p>
+              <!-- ¿Cómo funciona una Listas de Descripción <dl>? -->
+              <div>
+                <h4>
+                  ¿Cómo funciona una Listas de Descripción
+                  <code class="language-html">&lt;dl></code>?
+                </h4>
+                <p>
+                  En esta lista, cada término está etiquetado con
+                  <code class="language-html">&lt;dt></code> (término de
+                  definición) y su correspondiente descripción o definición
+                  con
+                  <code class="language-html">&lt;dd></code> (descripción de
+                  definición). Esta estructura organiza la información en
+                  pares término-definición, permitiendo incluir uno o más
+                  términos de definición, lo que facilita una presentación
+                  clara, semántica y ordenada de datos relacionados.
+                </p>
+              </div>
+              <!-- ¿Cómo funciona una Listas de Descripción <dl>? fin -->
+
+              <!-- Estructura básica de una Listas de Descripción <dl> -->
+              <div>
+                <h4>
+                  Estructura básica de una Listas de Descripción
                   <code class="language-html">&lt;dl></code>
-                </h3>
-                <p>
-                  Las Listas de Descripción, también conocidas como Listas de
-                  Definición ( <code class="language-html">&lt;dl></code>,
-                  <span-fst>description list</span-fst>), son un tipo de lista
-                  en HTML diseñada para presentar elementos que consisten en
-                  un término y su correspondiente definición.
-                </p>
-                <p>
-                  Pensar en ella como un glosario, un diccionario o una
-                  sección de preguntas y respuestas donde cada pregunta tiene
-                  su(s) respuesta(s) asociada(s).
-                </p>
-                <!-- ¿Cómo funciona una Listas de Descripción <dl>? -->
-                <div>
-                  <h4>
-                    ¿Cómo funciona una Listas de Descripción
-                    <code class="language-html">&lt;dl></code>?
-                  </h4>
-                  <p>
-                    En esta lista, cada término está etiquetado con
-                    <code class="language-html">&lt;dt></code> (término de
-                    definición) y su correspondiente descripción o definición
-                    con
-                    <code class="language-html">&lt;dd></code> (descripción de
-                    definición). Esta estructura organiza la información en
-                    pares término-definición, permitiendo incluir uno o más
-                    términos de definición, lo que facilita una presentación
-                    clara, semántica y ordenada de datos relacionados.
-                  </p>
-                </div>
-                <!-- ¿Cómo funciona una Listas de Descripción <dl>? fin -->
-
-                <!-- Estructura básica de una Listas de Descripción <dl> -->
-                <div>
-                  <h4>
-                    Estructura básica de una Listas de Descripción
-                    <code class="language-html">&lt;dl></code>
-                  </h4>
-                  <div class="row">
-                    <!-- Ejemplo -->
-                    <div class="code-example">
-                      <div class="row code-example__output mt-3">
-                        <!-- código ejecutado -->
-                        <div>
-                          <div class="demo-content__example-box">
-                            <p class="demo-content__h3-dl">Tecnologías Front-End</p>
-                            <dl>
-                              <dt>HTML</dt>
-                              <dd>
-                                Lenguaje de marcado utilizado para estructurar
-                                contenido en la web.
-                              </dd>
-                              <dd>
-                                Este lenguaje de marcación, es fundamental
-                                para el desarrollo web, ya que actúa como el
-                                esqueleto de cualquier página web.
-                              </dd>
-                            </dl>
-                            <dl>
-                              <dt>CSS</dt>
-                              <dd>
-                                Lenguaje de estilos utilizado para presentar y
-                                diseñar contenido web.
-                              </dd>
-                              <dd>
-                                Este lenguaje funciona como el maquillaje y la
-                                vestimenta, moldeando y embelleciendo la
-                                presentación visual de una página.
-                              </dd>
-                            </dl>
-                            <dl>
-                              <dt>JavaScript</dt>
-                              <dd>
-                                Lenguaje de programación que añade
-                                interactividad y dinamismo a las páginas web.
-                              </dd>
-                            </dl>
-                          </div>
-
-                          <div class="demo-content__example-box">
-                            <p class="demo-content__h3-dl">
-                              Lista con Estilo Personalizado
-                            </p>
-                            <dl class="demo-content__styled-dl">
-                              <dt>React</dt>
-                              <dd>
-                                Biblioteca de JavaScript para construir
-                                interfaces de usuario, desarrollada por
-                                Facebook. Utiliza un DOM virtual para mejorar
-                                el rendimiento.
-                              </dd>
-
-                              <dt>Vue.js</dt>
-                              <dd>
-                                Framework progresivo de JavaScript para
-                                construir interfaces de usuario. Es conocido
-                                por su curva de aprendizaje suave.
-                              </dd>
-
-                              <dt>Angular</dt>
-                              <dd>
-                                Plataforma y framework para construir
-                                aplicaciones web de una sola página usando
-                                TypeScript.
-                              </dd>
-                            </dl>
-                          </div>
-
-                          <div class="demo-content__example-box">
-                            <p class="demo-content__h3-dl">Estilo Tarjeta</p>
-                            <dl class="demo-content__card-dl">
-                              <dt>¿Qué es una API?</dt>
-                              <dd>
-                                Una API (Application Programming Interface) es
-                                un conjunto de reglas y especificaciones que
-                                permite que diferentes aplicaciones se
-                                comuniquen entre sí.
-                              </dd>
-
-                              <dt>¿Qué es REST?</dt>
-                              <dd>
-                                REST (Representational State Transfer) es un
-                                estilo arquitectónico para diseñar servicios
-                                web que utiliza métodos HTTP estándar.
-                              </dd>
-
-                              <dt>¿Qué es JSON?</dt>
-                              <dd>
-                                JSON (JavaScript Object Notation) es un
-                                formato ligero de intercambio de datos que es
-                                fácil de leer y escribir para humanos y
-                                máquinas.
-                              </dd>
-                            </dl>
-                          </div>
+                </h4>
+                <div class="row">
+                  <!-- Ejemplo -->
+                  <div class="code-example">
+                    <div class="row code-example__output mt-3">
+                      <!-- código ejecutado -->
+                      <div>
+                        <div class="demo-content__example-box">
+                          <p class="demo-content__h3-dl">Tecnologías Front-End</p>
+                          <dl>
+                            <dt>HTML</dt>
+                            <dd>
+                              Lenguaje de marcado utilizado para estructurar
+                              contenido en la web.
+                            </dd>
+                            <dd>
+                              Este lenguaje de marcación, es fundamental
+                              para el desarrollo web, ya que actúa como el
+                              esqueleto de cualquier página web.
+                            </dd>
+                          </dl>
+                          <dl>
+                            <dt>CSS</dt>
+                            <dd>
+                              Lenguaje de estilos utilizado para presentar y
+                              diseñar contenido web.
+                            </dd>
+                            <dd>
+                              Este lenguaje funciona como el maquillaje y la
+                              vestimenta, moldeando y embelleciendo la
+                              presentación visual de una página.
+                            </dd>
+                          </dl>
+                          <dl>
+                            <dt>JavaScript</dt>
+                            <dd>
+                              Lenguaje de programación que añade
+                              interactividad y dinamismo a las páginas web.
+                            </dd>
+                          </dl>
                         </div>
-                        <!-- código ejecutado fin -->
+
+                        <div class="demo-content__example-box">
+                          <p class="demo-content__h3-dl">
+                            Lista con Estilo Personalizado
+                          </p>
+                          <dl class="demo-content__styled-dl">
+                            <dt>React</dt>
+                            <dd>
+                              Biblioteca de JavaScript para construir
+                              interfaces de usuario, desarrollada por
+                              Facebook. Utiliza un DOM virtual para mejorar
+                              el rendimiento.
+                            </dd>
+
+                            <dt>Vue.js</dt>
+                            <dd>
+                              Framework progresivo de JavaScript para
+                              construir interfaces de usuario. Es conocido
+                              por su curva de aprendizaje suave.
+                            </dd>
+
+                            <dt>Angular</dt>
+                            <dd>
+                              Plataforma y framework para construir
+                              aplicaciones web de una sola página usando
+                              TypeScript.
+                            </dd>
+                          </dl>
+                        </div>
+
+                        <div class="demo-content__example-box">
+                          <p class="demo-content__h3-dl">Estilo Tarjeta</p>
+                          <dl class="demo-content__card-dl">
+                            <dt>¿Qué es una API?</dt>
+                            <dd>
+                              Una API (Application Programming Interface) es
+                              un conjunto de reglas y especificaciones que
+                              permite que diferentes aplicaciones se
+                              comuniquen entre sí.
+                            </dd>
+
+                            <dt>¿Qué es REST?</dt>
+                            <dd>
+                              REST (Representational State Transfer) es un
+                              estilo arquitectónico para diseñar servicios
+                              web que utiliza métodos HTTP estándar.
+                            </dd>
+
+                            <dt>¿Qué es JSON?</dt>
+                            <dd>
+                              JSON (JavaScript Object Notation) es un
+                              formato ligero de intercambio de datos que es
+                              fácil de leer y escribir para humanos y
+                              máquinas.
+                            </dd>
+                          </dl>
+                        </div>
                       </div>
-                      <div class="row">
-                        <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
-                          <!-- código HTML -->
-                          <pre>
+                      <!-- código ejecutado fin -->
+                    </div>
+                    <div class="row">
+                      <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
+                        <!-- código HTML -->
+                        <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
                                 &lt;div class="site-content__example-box">
@@ -1297,11 +1300,11 @@
                               </div>        
                             </code>
                           </pre>
-                          <!-- código HTML -->
-                        </div>
-                        <div class="code-example__css-panel col-lg-6 mb-3">
-                          <!-- código CSS -->
-                          <pre>
+                        <!-- código HTML -->
+                      </div>
+                      <div class="code-example__css-panel col-lg-6 mb-3">
+                        <!-- código CSS -->
+                        <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
                                 <div>
                                   /* Estilos básicos para dl */
@@ -1525,133 +1528,133 @@
                                 </div>        
                               </code>
                             </pre>
-                          <!-- código HTML -->
-                        </div>
+                        <!-- código HTML -->
                       </div>
                     </div>
-                    <!-- Ejemplo fin -->
                   </div>
-                  <!-- Ejemplos de código fin -->
+                  <!-- Ejemplo fin -->
                 </div>
-                <!-- Estructura básica de una Listas de Descripción <dl> fin -->
-
-                <!-- Atributos más comunes de una Listas de Descripción <dl> -->
-                <div>
-                  <h4>
-                    Atributos más comunes de una Listas de Descripción<code class="language-html">&lt;dl></code>
-                  </h4>
-                  <p>
-                    Es importante mencionar que
-                    <code class="language-html">&lt;dl></code> no tiene
-                    atributos específicos únicos, pero sus elementos hijos (
-                    <code class="language-html">&lt;dt></code> y
-                    <code class="language-html">&lt;dd></code>) también pueden
-                    usar todos los atributos globales de HTML.
-                  </p>
-                </div>
-                <!-- Atributos más comunes de una Listas de Descripción <dl> fin -->
-
-                <!-- ¿Cuándo usar una Listas de Descripción <dl>? -->
-                <div>
-                  <h4>
-                    ¿Cuándo usar una Listas de Descripción
-                    <code class="language-html">&lt;dl></code>?
-                  </h4>
-                  <p>
-                    Se recomienda utilizar una lista de descripción
-                    <code class="language-html">&lt;dl></code> en los
-                    siguientes casos:
-                  </p>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Glosarios y definiciones</span>:
-                      Términos técnicos y sus explicaciones.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Metadatos</span>: Información
-                      estructurada como especificaciones técnicas.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Preguntas frecuentes (FAQ)</span>:
-                      Preguntas y sus respuestas correspondientes.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Datos de contacto</span>:
-                      Etiquetas como "Teléfono", "Email" con sus valores.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Descripciones de productos</span>:
-                      Características y especificaciones.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Información biográfica</span>:
-                      Fechas, lugares, eventos y sus descripciones.
-                    </li>
-                  </ul>
-                </div>
-                <!-- ¿Cuándo usar una Listas de Descripción <dl>? fin -->
+                <!-- Ejemplos de código fin -->
               </div>
-              <!-- Listas de Descripción <dl> fin -->
+              <!-- Estructura básica de una Listas de Descripción <dl> fin -->
 
-              <!-- Listas Mezcladas <dl> -->
-              <div id="listas-mezcladas">
-                <h3>Listas Mezcladas</h3>
+              <!-- Atributos más comunes de una Listas de Descripción <dl> -->
+              <div>
+                <h4>
+                  Atributos más comunes de una Listas de Descripción<code class="language-html">&lt;dl></code>
+                </h4>
                 <p>
-                  Las listas mezcladas en HTML consisten en combinar listas
-                  ordenadas ( <code class="language-html">&lt;ol></code>) y/o
-                  listas desordenadas (
-                  <code class="language-html">&lt;ul></code>) dentro de una
-                  estructura jerárquica o anidada. Esto permite crear listas
-                  con diferentes tipos de numeración o viñetas en distintos
-                  niveles, aportando claridad y organización a la información.
+                  Es importante mencionar que
+                  <code class="language-html">&lt;dl></code> no tiene
+                  atributos específicos únicos, pero sus elementos hijos (
+                  <code class="language-html">&lt;dt></code> y
+                  <code class="language-html">&lt;dd></code>) también pueden
+                  usar todos los atributos globales de HTML.
                 </p>
+              </div>
+              <!-- Atributos más comunes de una Listas de Descripción <dl> fin -->
 
-                <!-- ¿Cómo funciona una Lista Mezclada? -->
-                <div>
-                  <h4>¿Cómo funciona una Lista Mezclada?</h4>
-                  <p>
-                    El navegador procesa la estructura anidada y la representa
-                    con distintos estilos de viñetas o numeración para cada
-                    nivel, mejorando la organización visual y semántica del
-                    contenido. Por ejemplo, una lista desordenada puede
-                    incluir una lista ordenada dentro de uno de sus elementos
-                    para detallar pasos o subcategorías, y viceversa,
-                    ofreciendo flexibilidad en la presentación.
-                  </p>
-                  <p>
-                    Este sistema permite representar relaciones jerárquicas
-                    entre elementos, facilitando la creación de menús
-                    multinivel, instrucciones detalladas o cualquier contenido
-                    que necesite orden y claridad. La estructura se forma al
-                    incorporar una lista completa dentro de un elemento
-                    <code class="language-html">&lt;li></code> de otra lista,
-                    y el navegador ajusta automáticamente la indentación y los
-                    marcadores para visualizar claramente los distintos
-                    niveles.
-                  </p>
-                </div>
-                <!-- ¿Cómo funciona una Lista Mezclada? fin -->
+              <!-- ¿Cuándo usar una Listas de Descripción <dl>? -->
+              <div>
+                <h4>
+                  ¿Cuándo usar una Listas de Descripción
+                  <code class="language-html">&lt;dl></code>?
+                </h4>
+                <p>
+                  Se recomienda utilizar una lista de descripción
+                  <code class="language-html">&lt;dl></code> en los
+                  siguientes casos:
+                </p>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Glosarios y definiciones</span>:
+                    Términos técnicos y sus explicaciones.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Metadatos</span>: Información
+                    estructurada como especificaciones técnicas.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Preguntas frecuentes (FAQ)</span>:
+                    Preguntas y sus respuestas correspondientes.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Datos de contacto</span>:
+                    Etiquetas como "Teléfono", "Email" con sus valores.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Descripciones de productos</span>:
+                    Características y especificaciones.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Información biográfica</span>:
+                    Fechas, lugares, eventos y sus descripciones.
+                  </li>
+                </ul>
+              </div>
+              <!-- ¿Cuándo usar una Listas de Descripción <dl>? fin -->
+            </div>
+            <!-- Listas de Descripción <dl> fin -->
 
-                <!-- Estructura básica de una Lista Mezclada -->
-                <div>
-                  <h4>Estructura básica de una Lista Mezclada</h4>
-                  <p>
-                    Se dbe pensar como una estructura de "contenido principal"
-                    y "sub-contenido relacionado" para una mejor comprensión
-                    de las listas mezcladas.
-                  </p>
-                  <p>
-                    <span class="site-content__span fw-bold">Mecánica del Funcionamiento</span>:
-                  </p>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Lista Principal o Contenedor</span>: Se tiene una lista principal (ya sea
-                      <code class="language-html">&lt;ul></code> o
-                      <code class="language-html">&lt;ol></code>), cada punto
-                      de esta lista principal es un
-                      <code class="language-html">&lt;li></code>.
-                      <div class="code-example__syntax">
-                        <pre data-src-status="loaded" tabindex="0">
+            <!-- Listas Mezcladas <dl> -->
+            <div id="listas-mezcladas">
+              <h3>Listas Mezcladas</h3>
+              <p>
+                Las listas mezcladas en HTML consisten en combinar listas
+                ordenadas ( <code class="language-html">&lt;ol></code>) y/o
+                listas desordenadas (
+                <code class="language-html">&lt;ul></code>) dentro de una
+                estructura jerárquica o anidada. Esto permite crear listas
+                con diferentes tipos de numeración o viñetas en distintos
+                niveles, aportando claridad y organización a la información.
+              </p>
+
+              <!-- ¿Cómo funciona una Lista Mezclada? -->
+              <div>
+                <h4>¿Cómo funciona una Lista Mezclada?</h4>
+                <p>
+                  El navegador procesa la estructura anidada y la representa
+                  con distintos estilos de viñetas o numeración para cada
+                  nivel, mejorando la organización visual y semántica del
+                  contenido. Por ejemplo, una lista desordenada puede
+                  incluir una lista ordenada dentro de uno de sus elementos
+                  para detallar pasos o subcategorías, y viceversa,
+                  ofreciendo flexibilidad en la presentación.
+                </p>
+                <p>
+                  Este sistema permite representar relaciones jerárquicas
+                  entre elementos, facilitando la creación de menús
+                  multinivel, instrucciones detalladas o cualquier contenido
+                  que necesite orden y claridad. La estructura se forma al
+                  incorporar una lista completa dentro de un elemento
+                  <code class="language-html">&lt;li></code> de otra lista,
+                  y el navegador ajusta automáticamente la indentación y los
+                  marcadores para visualizar claramente los distintos
+                  niveles.
+                </p>
+              </div>
+              <!-- ¿Cómo funciona una Lista Mezclada? fin -->
+
+              <!-- Estructura básica de una Lista Mezclada -->
+              <div>
+                <h4>Estructura básica de una Lista Mezclada</h4>
+                <p>
+                  Se dbe pensar como una estructura de "contenido principal"
+                  y "sub-contenido relacionado" para una mejor comprensión
+                  de las listas mezcladas.
+                </p>
+                <p>
+                  <span class="site-content__span fw-bold">Mecánica del Funcionamiento</span>:
+                </p>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Lista Principal o Contenedor</span>: Se tiene una lista principal (ya sea
+                    <code class="language-html">&lt;ul></code> o
+                    <code class="language-html">&lt;ol></code>), cada punto
+                    de esta lista principal es un
+                    <code class="language-html">&lt;li></code>.
+                    <div class="code-example__syntax">
+                      <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" data-prismjs-copy="Copy">
                               &lt;ul>
                                   &lt;li>Elemento Principal 1&lt;/li>
@@ -1660,21 +1663,21 @@
                               &lt;/ul>
                             </code>
                           </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Anidación</span>: Cada elemento de
-                      la lista puede contener una sublista, es decir, entre
-                      las etiquetas
-                      <code class="language-html">&lt;li></code> y
-                      <code class="language-html">&lt;/li></code> se inserta
-                      una nueva lista (
-                      <code class="language-html">&lt;ul></code> o
-                      <code class="language-html">&lt;ol>),</code> creando una
-                      estructura anidada, p. ej. sub-lista 2, en el Elemento
-                      Principal 2:
-                      <div class="code-example__syntax">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Anidación</span>: Cada elemento de
+                    la lista puede contener una sublista, es decir, entre
+                    las etiquetas
+                    <code class="language-html">&lt;li></code> y
+                    <code class="language-html">&lt;/li></code> se inserta
+                    una nueva lista (
+                    <code class="language-html">&lt;ul></code> o
+                    <code class="language-html">&lt;ol>),</code> creando una
+                    estructura anidada, p. ej. sub-lista 2, en el Elemento
+                    Principal 2:
+                    <div class="code-example__syntax">
+                      <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" data-prismjs-copy="Copy">
                               &lt;ul>
                                   &lt;li>Elemento Principal 1&lt;/li>
@@ -1687,16 +1690,16 @@
                               &lt;/ul>
                             </code>
                           </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Los Sub-elementos</span>: Dentro
-                      de esta nueva lista anidada, se coloca los propios
-                      elementos de ítem de lista (
-                      <code class="language-html">&lt;li></code>) para los
-                      sub-puntos:
-                      <div class="code-example__syntax">
-                        <pre data-src-status="loaded" tabindex="0">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Los Sub-elementos</span>: Dentro
+                    de esta nueva lista anidada, se coloca los propios
+                    elementos de ítem de lista (
+                    <code class="language-html">&lt;li></code>) para los
+                    sub-puntos:
+                    <div class="code-example__syntax">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;ul>
                                 &lt;li>Elemento Principal 1&lt;/li>
@@ -1710,231 +1713,231 @@
                             &lt;/ul>
                           </code>
                         </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Cierre Correcto</span>: Es
-                      fundamental que las etiquetas de la sub-lista (
-                      <code class="language-html">&lt;/ul></code> o
-                      <code class="language-html">&lt;/ol></code>) y la
-                      etiqueta de cierre del elemento principal (
-                      <code class="language-html">&lt;/li></code>) se coloquen
-                      en el orden correcto para garantizar una estructura HTML
-                      válida. La sub-lista debe cerrarse antes de cerrar el
-                      elemento <code class="language-html">&lt;li></code> que
-                      la contiene.
-                    </li>
-                  </ul>
-                  <div class="row">
-                    <!-- Ejemplo -->
-                    <div class="code-example">
-                      <div class="row code-example__output mt-3">
-                        <!-- código ejecutado -->
-                        <div>
-                          <div class="demo-content__example-box">
-                            <h3 class="pt-5">Lista Mezclada Básica</h3>
-                            <p>
-                              Combinación de lista ordenada con sub-listas no
-                              ordenadas:
-                            </p>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Cierre Correcto</span>: Es
+                    fundamental que las etiquetas de la sub-lista (
+                    <code class="language-html">&lt;/ul></code> o
+                    <code class="language-html">&lt;/ol></code>) y la
+                    etiqueta de cierre del elemento principal (
+                    <code class="language-html">&lt;/li></code>) se coloquen
+                    en el orden correcto para garantizar una estructura HTML
+                    válida. La sub-lista debe cerrarse antes de cerrar el
+                    elemento <code class="language-html">&lt;li></code> que
+                    la contiene.
+                  </li>
+                </ul>
+                <div class="row">
+                  <!-- Ejemplo -->
+                  <div class="code-example">
+                    <div class="row code-example__output mt-3">
+                      <!-- código ejecutado -->
+                      <div>
+                        <div class="demo-content__example-box">
+                          <h3 class="pt-5">Lista Mezclada Básica</h3>
+                          <p>
+                            Combinación de lista ordenada con sub-listas no
+                            ordenadas:
+                          </p>
 
-                            <ol class="demo-content__lista-principal">
-                              <li>
-                                Primer elemento principal
-                                <ul>
-                                  <li>Sub-elemento A</li>
-                                  <li>Sub-elemento B</li>
-                                  <li>Sub-elemento C</li>
-                                </ul>
-                              </li>
-                              <li>
-                                Segundo elemento principal
-                                <ul>
-                                  <li>Sub-elemento X</li>
-                                  <li>Sub-elemento Y</li>
-                                </ul>
-                              </li>
-                              <li>
-                                Tercer elemento principal
-                                <ul>
-                                  <li>Sub-elemento 1</li>
-                                  <li>Sub-elemento 2</li>
-                                  <li>Sub-elemento 3</li>
-                                </ul>
-                              </li>
-                            </ol>
-                          </div>
-
-                          <div class="demo-content__example-box">
-                            <h3 class="pt-5">Lista Mezclada Inversa</h3>
-                            <p>Lista no ordenada con sub-listas ordenadas:</p>
-                            <ul class="demo-content__lista-secundaria">
-                              <li>
-                                Categoría Frutas
-                                <ol>
-                                  <li>Manzanas</li>
-                                  <li>Bananas</li>
-                                  <li>Naranjas</li>
-                                </ol>
-                              </li>
-                              <li>
-                                Categoría Verduras
-                                <ol>
-                                  <li>Zanahorias</li>
-                                  <li>Brócoli</li>
-                                  <li>Espinacas</li>
-                                </ol>
-                              </li>
-                              <li>
-                                Categoría Proteínas
-                                <ol>
-                                  <li>Pollo</li>
-                                  <li>Pescado</li>
-                                  <li>Legumbres</li>
-                                </ol>
-                              </li>
-                            </ul>
-                          </div>
-
-                          <div class="demo-content__example-box">
-                            <h3 class="pt-5">
-                              Lista Mezclada con Descripciones Compleja
-                            </h3>
-                            <dl class="demo-content__lista-definiciones">
-                              <dt>
-                                <strong>🚀 Tecnologías Frontend Modernas</strong>
-                              </dt>
-                              <dd>
-                                <p>
-                                  Conjunto de herramientas y frameworks para
-                                  desarrollo de interfaces de usuario.
-                                </p>
-                                <ol>
-                                  <li>
-                                    <strong>Frameworks JavaScript</strong>
-                                    <ul>
-                                      <li>
-                                        React - Biblioteca para construir
-                                        interfaces de usuario
-                                        <ol type="a">
-                                          <li>Hooks para manejo de estado</li>
-                                          <li>
-                                            Context API para datos globales
-                                          </li>
-                                          <li>
-                                            Virtual DOM para rendimiento
-                                          </li>
-                                        </ol>
-                                      </li>
-                                      <li>
-                                        Vue.js - Framework progresivo
-                                        <ul>
-                                          <li>Directivas personalizadas</li>
-                                          <li>Componentes reutilizables</li>
-                                          <li>Vuex para gestión de estado</li>
-                                        </ul>
-                                      </li>
-                                      <li>
-                                        Angular - Framework completo
-                                        <ol type="i">
-                                          <li>TypeScript por defecto</li>
-                                          <li>Inyección de dependencias</li>
-                                          <li>
-                                            RxJS para programación reactiva
-                                          </li>
-                                        </ol>
-                                      </li>
-                                    </ul>
-                                  </li>
-                                  <li>
-                                    <strong>Herramientas de Build</strong>
-                                    <ul>
-                                      <li>Webpack - Bundler de módulos</li>
-                                      <li>Vite - Build tool rápido</li>
-                                      <li>Parcel - Zero configuration</li>
-                                    </ul>
-                                  </li>
-                                </ol>
-                              </dd>
-
-                              <dt>
-                                <strong>🔧 Arquitecturas de Backend</strong>
-                              </dt>
-                              <dd>
-                                <p>
-                                  Patrones y estructuras para el desarrollo
-                                  del lado del servidor.
-                                </p>
-                                <ul>
-                                  <li>
-                                    <strong>Arquitectura Monolítica</strong>
-                                    <ol>
-                                      <li>
-                                        Ventajas:
-                                        <ul>
-                                          <li>
-                                            Desarrollo inicial más simple
-                                          </li>
-                                          <li>Fácil testing end-to-end</li>
-                                          <li>Deployment unificado</li>
-                                        </ul>
-                                      </li>
-                                      <li>
-                                        Desventajas:
-                                        <ul>
-                                          <li>Escalabilidad limitada</li>
-                                          <li>Tecnología única</li>
-                                          <li>Riesgo de fallo completo</li>
-                                        </ul>
-                                      </li>
-                                    </ol>
-                                  </li>
-                                  <li>
-                                    <strong>Microservicios</strong>
-                                    <ol>
-                                      <li>
-                                        Beneficios:
-                                        <ol type="A">
-                                          <li>Escalabilidad independiente</li>
-                                          <li>Diversidad tecnológica</li>
-                                          <li>Equipos autónomos</li>
-                                        </ol>
-                                      </li>
-                                      <li>
-                                        Desafíos:
-                                        <ul>
-                                          <li>Complejidad de comunicación</li>
-                                          <li>
-                                            Gestión de datos distribuidos
-                                          </li>
-                                          <li>Monitoreo y logging</li>
-                                        </ul>
-                                      </li>
-                                      <li>
-                                        Herramientas:
-                                        <ol type="i">
-                                          <li>
-                                            Docker para containerización
-                                          </li>
-                                          <li>
-                                            Kubernetes para orquestación
-                                          </li>
-                                          <li>API Gateway para routing</li>
-                                        </ol>
-                                      </li>
-                                    </ol>
-                                  </li>
-                                </ul>
-                              </dd>
-                            </dl>
-                          </div>
+                          <ol class="demo-content__lista-principal">
+                            <li>
+                              Primer elemento principal
+                              <ul>
+                                <li>Sub-elemento A</li>
+                                <li>Sub-elemento B</li>
+                                <li>Sub-elemento C</li>
+                              </ul>
+                            </li>
+                            <li>
+                              Segundo elemento principal
+                              <ul>
+                                <li>Sub-elemento X</li>
+                                <li>Sub-elemento Y</li>
+                              </ul>
+                            </li>
+                            <li>
+                              Tercer elemento principal
+                              <ul>
+                                <li>Sub-elemento 1</li>
+                                <li>Sub-elemento 2</li>
+                                <li>Sub-elemento 3</li>
+                              </ul>
+                            </li>
+                          </ol>
                         </div>
-                        <!-- código ejecutado fin -->
+
+                        <div class="demo-content__example-box">
+                          <h3 class="pt-5">Lista Mezclada Inversa</h3>
+                          <p>Lista no ordenada con sub-listas ordenadas:</p>
+                          <ul class="demo-content__lista-secundaria">
+                            <li>
+                              Categoría Frutas
+                              <ol>
+                                <li>Manzanas</li>
+                                <li>Bananas</li>
+                                <li>Naranjas</li>
+                              </ol>
+                            </li>
+                            <li>
+                              Categoría Verduras
+                              <ol>
+                                <li>Zanahorias</li>
+                                <li>Brócoli</li>
+                                <li>Espinacas</li>
+                              </ol>
+                            </li>
+                            <li>
+                              Categoría Proteínas
+                              <ol>
+                                <li>Pollo</li>
+                                <li>Pescado</li>
+                                <li>Legumbres</li>
+                              </ol>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="demo-content__example-box">
+                          <h3 class="pt-5">
+                            Lista Mezclada con Descripciones Compleja
+                          </h3>
+                          <dl class="demo-content__lista-definiciones">
+                            <dt>
+                              <strong>🚀 Tecnologías Frontend Modernas</strong>
+                            </dt>
+                            <dd>
+                              <p>
+                                Conjunto de herramientas y frameworks para
+                                desarrollo de interfaces de usuario.
+                              </p>
+                              <ol>
+                                <li>
+                                  <strong>Frameworks JavaScript</strong>
+                                  <ul>
+                                    <li>
+                                      React - Biblioteca para construir
+                                      interfaces de usuario
+                                      <ol type="a">
+                                        <li>Hooks para manejo de estado</li>
+                                        <li>
+                                          Context API para datos globales
+                                        </li>
+                                        <li>
+                                          Virtual DOM para rendimiento
+                                        </li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      Vue.js - Framework progresivo
+                                      <ul>
+                                        <li>Directivas personalizadas</li>
+                                        <li>Componentes reutilizables</li>
+                                        <li>Vuex para gestión de estado</li>
+                                      </ul>
+                                    </li>
+                                    <li>
+                                      Angular - Framework completo
+                                      <ol type="i">
+                                        <li>TypeScript por defecto</li>
+                                        <li>Inyección de dependencias</li>
+                                        <li>
+                                          RxJS para programación reactiva
+                                        </li>
+                                      </ol>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <strong>Herramientas de Build</strong>
+                                  <ul>
+                                    <li>Webpack - Bundler de módulos</li>
+                                    <li>Vite - Build tool rápido</li>
+                                    <li>Parcel - Zero configuration</li>
+                                  </ul>
+                                </li>
+                              </ol>
+                            </dd>
+
+                            <dt>
+                              <strong>🔧 Arquitecturas de Backend</strong>
+                            </dt>
+                            <dd>
+                              <p>
+                                Patrones y estructuras para el desarrollo
+                                del lado del servidor.
+                              </p>
+                              <ul>
+                                <li>
+                                  <strong>Arquitectura Monolítica</strong>
+                                  <ol>
+                                    <li>
+                                      Ventajas:
+                                      <ul>
+                                        <li>
+                                          Desarrollo inicial más simple
+                                        </li>
+                                        <li>Fácil testing end-to-end</li>
+                                        <li>Deployment unificado</li>
+                                      </ul>
+                                    </li>
+                                    <li>
+                                      Desventajas:
+                                      <ul>
+                                        <li>Escalabilidad limitada</li>
+                                        <li>Tecnología única</li>
+                                        <li>Riesgo de fallo completo</li>
+                                      </ul>
+                                    </li>
+                                  </ol>
+                                </li>
+                                <li>
+                                  <strong>Microservicios</strong>
+                                  <ol>
+                                    <li>
+                                      Beneficios:
+                                      <ol type="A">
+                                        <li>Escalabilidad independiente</li>
+                                        <li>Diversidad tecnológica</li>
+                                        <li>Equipos autónomos</li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      Desafíos:
+                                      <ul>
+                                        <li>Complejidad de comunicación</li>
+                                        <li>
+                                          Gestión de datos distribuidos
+                                        </li>
+                                        <li>Monitoreo y logging</li>
+                                      </ul>
+                                    </li>
+                                    <li>
+                                      Herramientas:
+                                      <ol type="i">
+                                        <li>
+                                          Docker para containerización
+                                        </li>
+                                        <li>
+                                          Kubernetes para orquestación
+                                        </li>
+                                        <li>API Gateway para routing</li>
+                                      </ol>
+                                    </li>
+                                  </ol>
+                                </li>
+                              </ul>
+                            </dd>
+                          </dl>
+                        </div>
                       </div>
-                      <div class="row">
-                        <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
-                          <!-- código HTML -->
-                          <pre>
+                      <!-- código ejecutado fin -->
+                    </div>
+                    <div class="row">
+                      <div class="code-example__html col-lg-6 mb-lg-3 mb-0">
+                        <!-- código HTML -->
+                        <pre>
                             <code class="language-html" data-prismjs-copy="Copy">
                               <div>
                                 &lt;div class="site-content__example-box">
@@ -2135,11 +2138,11 @@
                               </div>        
                             </code>
                           </pre>
-                          <!-- código HTML -->
-                        </div>
-                        <div class="code-example__css-panel col-lg-6 mb-3">
-                          <!-- código CSS -->
-                          <pre>
+                        <!-- código HTML -->
+                      </div>
+                      <div class="code-example__css-panel col-lg-6 mb-3">
+                        <!-- código CSS -->
+                        <pre>
                               <code class="language-css" data-prismjs-copy="Copy">
                                 <div>
                                   /* Estilos especiales para diferentes niveles */
@@ -2284,126 +2287,126 @@
                                 </div>        
                               </code>
                             </pre>
-                          <!-- código HTML -->
-                        </div>
+                        <!-- código HTML -->
                       </div>
                     </div>
-                    <!-- Ejemplo fin -->
                   </div>
+                  <!-- Ejemplo fin -->
                 </div>
-                <!-- Estructura básica de una Lista Mezclada fin -->
-
-                <!-- Atributos más comunes de una  una Lista Mezclada -->
-                <div>
-                  <h4>Atributos más comunes de una una Lista Mezclada</h4>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Atributos de una Ordenada</span>:
-                      <ul>
-                        <li>
-                          <code class="language-html">type</code>: Tipo de
-                          marcador: 1, a, A, i ó I
-                        </li>
-                        <li>
-                          <code class="language-html">start</code>: valor
-                          inicial.
-                        </li>
-                        <li>
-                          <code class="language-html">reversed</code>: orden
-                          invertido.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Atributos de una Desordenada</span>: Personalización con CSS:
-                      <ul>
-                        <li>
-                          <code class="language-html">list-style-type,</code>:
-                          Tipo de viñeta:
-                          <code class="language-html">Disc</code>,
-                          <code class="language-html">circle</code>,
-                          <code class="language-html">square</code> o
-                          <code class="language-html">none</code>
-                        </li>
-                        <li>
-                          <code class="language-html">list-style-image</code>:
-                          Viñeta personalizada des un archivo de icono.
-                        </li>
-                        <li>
-                          <code class="language-html">list-style-position,</code>: posición de la viñeta:
-                          <code class="language-html">inside</code> o
-                          <code class="language-html">ouside</code>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-                <!-- Atributos más comunes de una  una Lista Mezclada fin -->
-
-                <!-- ¿Cuándo usar una Lista Mezclada? -->
-                <div>
-                  <h4>¿Cuándo usar una Lista Mezclada?</h4>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Representar jerarquías de información</span>: Mostrar una estructura de
-                      temas principales y
-                      subtemas o pasos que dependen unos de otros, las listas
-                      mezcladas ayudan a visualizar la relación entre los
-                      diferentes niveles.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Mostrar pasos con detalles adicionales</span>: Explicar un procedimiento
-                      general con instrucciones
-                      específicas para cada paso, se puede usar una lista
-                      mezclada para mostrar la secuencia principal y, dentro
-                      de cada paso, detallar las acciones
-                    </li>
-                    <li>
-                      <span class="fw-bold">Crear índices temáticos</span>:
-                      Para organizar temas y subtemas de un documento o
-                      manual, una lista mezclada ayuda a estructurar la
-                      información de forma ordenada.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Describir clasificaciones o taxonomías</span>: En áreas como biología,
-                      informática o documentación
-                      técnica, se pueden usar listas mezcladas para mostrar
-                      clasificaciones jerárquicas.
-                    </li>
-                  </ul>
-                  <p>
-                    <span class="fw-bold">Cuándo NO usar una Lista Mezclada</span>:
-                  </p>
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Cuando la información no tiene relación
-                        jerárquica</span>: Si los ítems no dependen el uno del otro ni forman
-                      una subcategoría, es mejor usar listas separadas o
-                      simplemente texto.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Para fines puramente visuales</span>: No usar listas anidadas solo para
-                      aplicar indentación
-                      o un estilo visual. Si solo se quiere un efecto visual,
-                      es mejor usar CSS para el espaciado o los estilos. El
-                      HTML debe reflejar la estructura lógica del contenido.
-                    </li>
-                    <li>
-                      <span class="fw-bold">Cuando el nivel de anidación es excesivo</span>: Aunque HTML permite anidar
-                      listas a muchos niveles,
-                      más de 3 o 4 niveles pueden hacer que el contenido sea
-                      muy difícil de leer y entender, tanto para los usuarios
-                      como para los lectores de pantalla. En esos casos,
-                      considera dividir el contenido en secciones más pequeñas
-                      o usar otros elementos HTML como encabezados y párrafos.
-                    </li>
-                  </ul>
-                </div>
-                <!-- ¿Cuándo usar una Lista Mezclada? fin -->
               </div>
-              <!-- Listas Mezcladas <dl> fin -->
-              <!-- Tipos de Listas Fin -->
+              <!-- Estructura básica de una Lista Mezclada fin -->
+
+              <!-- Atributos más comunes de una  una Lista Mezclada -->
+              <div>
+                <h4>Atributos más comunes de una una Lista Mezclada</h4>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Atributos de una Ordenada</span>:
+                    <ul>
+                      <li>
+                        <code class="language-html">type</code>: Tipo de
+                        marcador: 1, a, A, i ó I
+                      </li>
+                      <li>
+                        <code class="language-html">start</code>: valor
+                        inicial.
+                      </li>
+                      <li>
+                        <code class="language-html">reversed</code>: orden
+                        invertido.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Atributos de una Desordenada</span>: Personalización con CSS:
+                    <ul>
+                      <li>
+                        <code class="language-html">list-style-type,</code>:
+                        Tipo de viñeta:
+                        <code class="language-html">Disc</code>,
+                        <code class="language-html">circle</code>,
+                        <code class="language-html">square</code> o
+                        <code class="language-html">none</code>
+                      </li>
+                      <li>
+                        <code class="language-html">list-style-image</code>:
+                        Viñeta personalizada des un archivo de icono.
+                      </li>
+                      <li>
+                        <code class="language-html">list-style-position,</code>: posición de la viñeta:
+                        <code class="language-html">inside</code> o
+                        <code class="language-html">ouside</code>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!-- Atributos más comunes de una  una Lista Mezclada fin -->
+
+              <!-- ¿Cuándo usar una Lista Mezclada? -->
+              <div>
+                <h4>¿Cuándo usar una Lista Mezclada?</h4>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Representar jerarquías de información</span>: Mostrar una estructura de
+                    temas principales y
+                    subtemas o pasos que dependen unos de otros, las listas
+                    mezcladas ayudan a visualizar la relación entre los
+                    diferentes niveles.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Mostrar pasos con detalles adicionales</span>: Explicar un procedimiento
+                    general con instrucciones
+                    específicas para cada paso, se puede usar una lista
+                    mezclada para mostrar la secuencia principal y, dentro
+                    de cada paso, detallar las acciones
+                  </li>
+                  <li>
+                    <span class="fw-bold">Crear índices temáticos</span>:
+                    Para organizar temas y subtemas de un documento o
+                    manual, una lista mezclada ayuda a estructurar la
+                    información de forma ordenada.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Describir clasificaciones o taxonomías</span>: En áreas como biología,
+                    informática o documentación
+                    técnica, se pueden usar listas mezcladas para mostrar
+                    clasificaciones jerárquicas.
+                  </li>
+                </ul>
+                <p>
+                  <span class="fw-bold">Cuándo NO usar una Lista Mezclada</span>:
+                </p>
+                <ul>
+                  <li>
+                    <span class="fw-bold">Cuando la información no tiene relación
+                      jerárquica</span>: Si los ítems no dependen el uno del otro ni forman
+                    una subcategoría, es mejor usar listas separadas o
+                    simplemente texto.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Para fines puramente visuales</span>: No usar listas anidadas solo para
+                    aplicar indentación
+                    o un estilo visual. Si solo se quiere un efecto visual,
+                    es mejor usar CSS para el espaciado o los estilos. El
+                    HTML debe reflejar la estructura lógica del contenido.
+                  </li>
+                  <li>
+                    <span class="fw-bold">Cuando el nivel de anidación es excesivo</span>: Aunque HTML permite anidar
+                    listas a muchos niveles,
+                    más de 3 o 4 niveles pueden hacer que el contenido sea
+                    muy difícil de leer y entender, tanto para los usuarios
+                    como para los lectores de pantalla. En esos casos,
+                    considera dividir el contenido en secciones más pequeñas
+                    o usar otros elementos HTML como encabezados y párrafos.
+                  </li>
+                </ul>
+              </div>
+              <!-- ¿Cuándo usar una Lista Mezclada? fin -->
             </div>
+            <!-- Listas Mezcladas <dl> fin -->
+            <!-- Tipos de Listas Fin -->
+          </div>
 
         </article>
         <!--  Listas HTML  fin -->
@@ -2456,35 +2459,22 @@
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
+          <div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo">
             <div class="border border-1">
               <div class="site-menu">
                 <div class="site-menu__item">
-                  <a href="#introduccion" class="site-menu__link">Introducción</a>
+                  <a href="#introduccion" class=" list-group-item list-group-item-action">Introducción</a>
                 </div>
 
                 <div class="site-menu__item">
-                  <a href="#definicion-de-listas-en-html" class="site-menu__link">Definición de Listas en HTML</a>
-                </div>
-
-                <div class="site-menu__item">
-                  <details>
-                    <summary>Tipos de Listas</summary>
-                    <div class="site-menu__submenu">
-                      <a href="#tipos-de-listas" class="site-menu__submenu-link">Tipos de Listas</a>
-
-                      <a href="#listas-ordenadas-ol" class="site-menu__submenu-link">Listas Ordenadas
-                        <code class="language-html">&lt;ol></code></a>
-                      <a href="#listas-desordenadas-ul" class="site-menu__submenu-link">Listas Desordenadas
-                        <code class="language-html">&lt;ul></code></a>
-                      <a href="#listas-de-descripcion-dl" class="site-menu__submenu-link">Listas de Descripción
-                        <code class="language-html">&lt;dl></code></a>
-                      <a href="#listas-mezcladas" class="site-menu__submenu-link">Listas Mezcladas</a>
-                    </div>
-                  </details>
+                  <a href="#definicion-de-listas-en-html" class=" list-group-item list-group-item-action">Definición de
+                    Listas en HTML</a>
                 </div>
                 <div class="site-menu__item">
-                  <a href="#comments" class="site-menu__link">Comentarios</a>
+                  <a href="#tipos-de-listas" class=" list-group-item list-group-item-action">Tipos de Listas</a>
+                </div>
+                <div class="site-menu__item">
+                  <a href="#comments" class=" list-group-item list-group-item-action">Comentarios</a>
                 </div>
               </div>
             </div>

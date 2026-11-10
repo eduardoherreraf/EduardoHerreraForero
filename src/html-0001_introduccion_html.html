@@ -55,7 +55,8 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy"
+  data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -86,7 +87,8 @@
             <a class="nav-link mx-1 text-decoration-none" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 site-nav__link--publications-active text-decoration-none site-nav__link" href="index.html#blog">ARTÍCULOS</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active text-decoration-none site-nav__link"
+              href="index.html#blog">ARTÍCULOS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1 text-decoration-none" href="index.html#contact">CONTACTO</a>
@@ -104,323 +106,324 @@
   <!-- Barra de Navegación -->
 
   <!--  principal  -->
-  <div class="container-fluid site-layout__intro" id="introduccion">
+  <div class="container-fluid site-layout__intro">
     <main class="row">
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!-- Introducción HTML -->
-        <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
-          data-bs-smooth-scroll="true">
+        <article class="row border-1 border-bottom pb-3">
 
+          <div id="introduccion">
             <header>
               <h1>Introducción HTML</h1>
             </header>
 
             <div class="mt-3">
               <h2>Introducción</h2>
-            <div class="site-image site-intro-image mb-5">
-              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
-                <img src="https://img12.pixhost.to/images/857/575188671_png-transparent-html5-plain-logo-icon-wbg.png"
-                  class="img-fluid" alt="Introducción a HTML" title="Logo HTML"  loading="lazy"/>
-                <figcaption class="site-image__caption">Introducción HTML</figcaption>
-              </figure>
-            </div>
-            <p>
-              <abbr title="HyperText Markup Language">HTML</abbr> (HyperText
-              Markup Language) es el lenguaje estándar para la creación de
-              páginas web. Su función principal es estructurar el contenido
-              mediante etiquetas, permitiendo la correcta visualización de
-              textos, imágenes, enlaces y otros elementos en los navegadores.
-              Junto con <abbr title="Cascading Style Sheets">CSS</abbr> y
-              JavaScript,
-              <abbr title="HyperText Markup Language">HTML</abbr> es
-              fundamental para el desarrollo web moderno, garantizando
-              accesibilidad, compatibilidad y una experiencia de usuario
-              óptima. Su dominio es clave para diseñadores, programadores y
-              creadores de contenido que buscan optimizar sitios web para SEO
-              y mejorar su posicionamiento en buscadores.
-            </p>
-
-
-            </div>
-
-            <hr class="site-divider--subtle site-divider" />
-
-            <!-- ¿Qué es  HTML? -->
-            <div id="que-es-html" class="mt-3">
-              <h2>¿Qué es HTML?</h2>
-              <p>
-                <abbr title="HyperText Markup Language">HTML</abbr> es un
-                lenguaje de marcado utilizado para estructurar el contenido de
-                las páginas web. Su sistema de marcado se basa en elementos
-                que representan diferentes tipos de contenido, como
-                encabezados, párrafos, listas, imágenes, enlaces y
-                formularios, entre otros.
-              </p>
-              <p>
-                El término markup hace referencia al hecho de que, mediante
-                <abbr title="HyperText Markup Language">HTML</abbr>, se define
-                la estructura y el significado del contenido de una página
-                web, pero no su apariencia visual ni su interactividad. La
-                presentación y el diseño de los elementos
-                <abbr title="HyperText Markup Language">HTML</abbr> se
-                gestionan a través de las Hojas de Estilo en Cascada (<abbr title="Cascading Style Sheets">CSS</abbr>),
-                las cuales permiten controlar aspectos como colores,
-                tipografías, espaciados, alineaciones y la disposición de los
-                elementos en la interfaz. Por otro lado, la interactividad de
-                una página web se gestiona con el lenguaje de programación
-                JavaScript, que permite manipular dinámicamente el contenido,
-                responder a eventos del usuario y modificar el comportamiento
-                de los elementos en tiempo real. Los navegadores web
-                interpretan tanto el código
-                <abbr title="HyperText Markup Language">HTML</abbr> como las
-                reglas <abbr title="Cascading Style Sheets">CSS</abbr> y los
-                scripts en JavaScript para renderizar correctamente la página,
-                asegurando así una visualización coherente, adaptable a
-                distintos dispositivos y tamaños de pantalla, además de una
-                experiencia interactiva fluida.
-              </p>
-              <div class="site-image site-intro-image">
-                <picture>
-                  <img src="https://i.ibb.co/VWz5WL60/HTML-CSS-JS.png" class="img-fluid" alt="HTML, CSS y Javascript."
-                    title="Comparación entre HTML, CSS y JavaScript en el diseño de páginas web." />
-                  <figcaption>HTML, CSS y Javascript.</figcaption>
-                </picture>
+              <div class="site-image site-intro-image mb-5">
+                <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                  <img src="https://img12.pixhost.to/images/857/575188671_png-transparent-html5-plain-logo-icon-wbg.png"
+                    class="img-fluid" alt="Introducción a HTML" title="Logo HTML" loading="lazy" />
+                  <figcaption class="site-image__caption">Introducción HTML</figcaption>
+                </figure>
               </div>
               <p>
-                A menudo se comete el error de clasificar
-                <abbr title="HyperText Markup Language">HTML</abbr> como un
-                lenguaje de programación; sin embargo,
-                <abbr title="HyperText Markup Language">HTML</abbr> no posee
-                lógica de programación, estructuras de control de flujo ni
-                capacidad para ejecutar operaciones, por lo que se considera
-                un lenguaje de marcado y no un lenguaje de programación.
+                <abbr title="HyperText Markup Language">HTML</abbr> (HyperText
+                Markup Language) es el lenguaje estándar para la creación de
+                páginas web. Su función principal es estructurar el contenido
+                mediante etiquetas, permitiendo la correcta visualización de
+                textos, imágenes, enlaces y otros elementos en los navegadores.
+                Junto con <abbr title="Cascading Style Sheets">CSS</abbr> y
+                JavaScript,
+                <abbr title="HyperText Markup Language">HTML</abbr> es
+                fundamental para el desarrollo web moderno, garantizando
+                accesibilidad, compatibilidad y una experiencia de usuario
+                óptima. Su dominio es clave para diseñadores, programadores y
+                creadores de contenido que buscan optimizar sitios web para SEO
+                y mejorar su posicionamiento en buscadores.
               </p>
-              <p>
-                Si bien en versiones antiguas de
-                <abbr title="HyperText Markup Language">HTML</abbr> existían
-                elementos que permitían modificar aspectos visuales, como la
-                fuente o el color del texto, estos han quedado obsoletos y no
-                deben ser utilizados en el desarrollo web moderno, ya que la
-                separación entre estructura (<abbr title="HyperText Markup Language">HTML</abbr>) y presentación (<abbr
-                  title="Cascading Style Sheets">CSS</abbr>) es una de las mejores prácticas en diseño web.
-              </p>
-              <p>
-                Las etiquetas
-                <abbr title="HyperText Markup Language">HTML</abbr> no solo
-                organizan el contenido, sino que también aportan significado
-                semántico, lo que permite que los navegadores, motores de
-                búsqueda y tecnologías de asistencia interpreten mejor la
-                información. Esto mejora la accesibilidad, la indexación en
-                buscadores (<abbr title="Search Engine Optimization">SEO</abbr>
-                ) y la compatibilidad con distintos dispositivos.
-              </p>
+
+
             </div>
-            <!-- ¿Qué es  HTML? fin -->
+          </div>
 
-            <hr class="site-divider--subtle site-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
-            <!-- Etiquetas y Atributos HTML -->
-            <div id="etiquetas-y-atributos-html" class="mt-3">
-              <h2>Etiquetas y Atributos HTML</h2>
-              <p>
-                Una etiqueta HTML es un elemento fundamental del lenguaje HTML
-                que se utiliza para estructurar y organizar el contenido de
-                una página web. Las etiquetas indican al navegador cómo debe
-                interpretar y mostrar cada parte del contenido.
-              </p>
+          <!-- ¿Qué es  HTML? -->
+          <div id="que-es-html" class="mt-3">
+            <h2>¿Qué es HTML?</h2>
+            <p>
+              <abbr title="HyperText Markup Language">HTML</abbr> es un
+              lenguaje de marcado utilizado para estructurar el contenido de
+              las páginas web. Su sistema de marcado se basa en elementos
+              que representan diferentes tipos de contenido, como
+              encabezados, párrafos, listas, imágenes, enlaces y
+              formularios, entre otros.
+            </p>
+            <p>
+              El término markup hace referencia al hecho de que, mediante
+              <abbr title="HyperText Markup Language">HTML</abbr>, se define
+              la estructura y el significado del contenido de una página
+              web, pero no su apariencia visual ni su interactividad. La
+              presentación y el diseño de los elementos
+              <abbr title="HyperText Markup Language">HTML</abbr> se
+              gestionan a través de las Hojas de Estilo en Cascada (<abbr title="Cascading Style Sheets">CSS</abbr>),
+              las cuales permiten controlar aspectos como colores,
+              tipografías, espaciados, alineaciones y la disposición de los
+              elementos en la interfaz. Por otro lado, la interactividad de
+              una página web se gestiona con el lenguaje de programación
+              JavaScript, que permite manipular dinámicamente el contenido,
+              responder a eventos del usuario y modificar el comportamiento
+              de los elementos en tiempo real. Los navegadores web
+              interpretan tanto el código
+              <abbr title="HyperText Markup Language">HTML</abbr> como las
+              reglas <abbr title="Cascading Style Sheets">CSS</abbr> y los
+              scripts en JavaScript para renderizar correctamente la página,
+              asegurando así una visualización coherente, adaptable a
+              distintos dispositivos y tamaños de pantalla, además de una
+              experiencia interactiva fluida.
+            </p>
+            <div class="site-image site-intro-image">
+              <picture>
+                <img src="https://i.ibb.co/VWz5WL60/HTML-CSS-JS.png" class="img-fluid" alt="HTML, CSS y Javascript."
+                  title="Comparación entre HTML, CSS y JavaScript en el diseño de páginas web." />
+                <figcaption>HTML, CSS y Javascript.</figcaption>
+              </picture>
+            </div>
+            <p>
+              A menudo se comete el error de clasificar
+              <abbr title="HyperText Markup Language">HTML</abbr> como un
+              lenguaje de programación; sin embargo,
+              <abbr title="HyperText Markup Language">HTML</abbr> no posee
+              lógica de programación, estructuras de control de flujo ni
+              capacidad para ejecutar operaciones, por lo que se considera
+              un lenguaje de marcado y no un lenguaje de programación.
+            </p>
+            <p>
+              Si bien en versiones antiguas de
+              <abbr title="HyperText Markup Language">HTML</abbr> existían
+              elementos que permitían modificar aspectos visuales, como la
+              fuente o el color del texto, estos han quedado obsoletos y no
+              deben ser utilizados en el desarrollo web moderno, ya que la
+              separación entre estructura (<abbr title="HyperText Markup Language">HTML</abbr>) y presentación (<abbr
+                title="Cascading Style Sheets">CSS</abbr>) es una de las mejores prácticas en diseño web.
+            </p>
+            <p>
+              Las etiquetas
+              <abbr title="HyperText Markup Language">HTML</abbr> no solo
+              organizan el contenido, sino que también aportan significado
+              semántico, lo que permite que los navegadores, motores de
+              búsqueda y tecnologías de asistencia interpreten mejor la
+              información. Esto mejora la accesibilidad, la indexación en
+              buscadores (<abbr title="Search Engine Optimization">SEO</abbr>
+              ) y la compatibilidad con distintos dispositivos.
+            </p>
+          </div>
+          <!-- ¿Qué es  HTML? fin -->
 
-              <!-- Características de las etiquetas HTML -->
-              <div>
-                <h3 id="caracteristicas-de-las-etiquetas-html">
-                  Características de las etiquetas HTML
-                </h3>
-                <ul>
-                  <li>
-                    <strong>Sintaxis básica</strong>: Una etiqueta HTML
-                    generalmente está compuesta por una etiqueta de apertura,
-                    un contenido y una etiqueta de cierre. <br />
-                    Ejemplo:
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+          <hr class="site-divider--subtle site-divider" />
+
+          <!-- Etiquetas y Atributos HTML -->
+          <div id="etiquetas-y-atributos-html" class="mt-3">
+            <h2>Etiquetas y Atributos HTML</h2>
+            <p>
+              Una etiqueta HTML es un elemento fundamental del lenguaje HTML
+              que se utiliza para estructurar y organizar el contenido de
+              una página web. Las etiquetas indican al navegador cómo debe
+              interpretar y mostrar cada parte del contenido.
+            </p>
+
+            <!-- Características de las etiquetas HTML -->
+            <div>
+              <h3 id="caracteristicas-de-las-etiquetas-html">
+                Características de las etiquetas HTML
+              </h3>
+              <ul>
+                <li>
+                  <strong>Sintaxis básica</strong>: Una etiqueta HTML
+                  generalmente está compuesta por una etiqueta de apertura,
+                  un contenido y una etiqueta de cierre. <br />
+                  Ejemplo:
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;p>Este es un párrafo.&lt;/p>
                           </code>
                         </pre>
-                    </div>
-                    Aquí,
-                    <code class="language-html">&lt;p></code> es la etiqueta
-                    de apertura,
-                    <code class="language-html">&lt;/p></code>
-                    es la etiqueta de cierre, y el texto dentro de ellas es el
-                    contenido.
-                  </li>
-                  <li>
-                    <strong>Etiquetas sin cierre</strong>: Algunas etiquetas
-                    son autocontenidas, lo que significa que no necesitan una
-                    etiqueta de cierre. <br />
-                    Ejemplo:
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                  Aquí,
+                  <code class="language-html">&lt;p></code> es la etiqueta
+                  de apertura,
+                  <code class="language-html">&lt;/p></code>
+                  es la etiqueta de cierre, y el texto dentro de ellas es el
+                  contenido.
+                </li>
+                <li>
+                  <strong>Etiquetas sin cierre</strong>: Algunas etiquetas
+                  son autocontenidas, lo que significa que no necesitan una
+                  etiqueta de cierre. <br />
+                  Ejemplo:
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;img src="imagen.jpg" alt="Descripción de la imagen" />
                           </code>
                         </pre>
-                    </div>
-                    En este caso,
-                    <code class="language-html">&lt;img /></code> no tiene una
-                    etiqueta de cierre.
-                  </li>
-                  <li>
-                    <strong>Atributos</strong>: Las etiquetas pueden incluir
-                    atributos para modificar su comportamiento o apariencia.
-                    <br />ejemplo:
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                  En este caso,
+                  <code class="language-html">&lt;img /></code> no tiene una
+                  etiqueta de cierre.
+                </li>
+                <li>
+                  <strong>Atributos</strong>: Las etiquetas pueden incluir
+                  atributos para modificar su comportamiento o apariencia.
+                  <br />ejemplo:
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;a href="https://www.ejemplo.com">Visitar página&lt;/a>
                           </code>
                         </pre>
-                    </div>
-                    Aquí, el atributo
-                    <code class="language-html">href</code> indica la URL a la
-                    que se dirige el enlace.
-                  </li>
-                </ul>
-              </div>
-              <!-- Características de las etiquetas HTML fin -->
+                  </div>
+                  Aquí, el atributo
+                  <code class="language-html">href</code> indica la URL a la
+                  que se dirige el enlace.
+                </li>
+              </ul>
+            </div>
+            <!-- Características de las etiquetas HTML fin -->
 
-              <!-- Clasificación de las etiquetas HTML -->
-              <div>
-                <h3 id="clasificacion-de-las-etiquetas-html">
-                  Clasificación de las etiquetas HTML
-                </h3>
-                <ul>
-                  <li>
-                    <strong>Estructurales</strong>: Definen la organización
-                    del contenido.
-                    <br />
-                    Ejemplo: <code class="language-html">&lt;header></code>,
-                    <code class="language-html">&lt;nav></code>,
-                    <code class="language-html">&lt;section></code>,
-                    <code class="language-html">&lt;article></code>,
-                    <code class="language-html">&lt;footer></code>.
-                  </li>
-                  <li>
-                    <strong>De contenido</strong>: Representan texto, imágenes
-                    o enlaces. <br />Ejemplo:
-                    <code class="language-html">&lt;p></code>,
-                    <code class="language-html">&lt;h1></code> -
-                    <code class="language-html">&lt;h6></code>,
-                    <code class="language-html">&lt;img></code>,<code class="language-html">
+            <!-- Clasificación de las etiquetas HTML -->
+            <div>
+              <h3 id="clasificacion-de-las-etiquetas-html">
+                Clasificación de las etiquetas HTML
+              </h3>
+              <ul>
+                <li>
+                  <strong>Estructurales</strong>: Definen la organización
+                  del contenido.
+                  <br />
+                  Ejemplo: <code class="language-html">&lt;header></code>,
+                  <code class="language-html">&lt;nav></code>,
+                  <code class="language-html">&lt;section></code>,
+                  <code class="language-html">&lt;article></code>,
+                  <code class="language-html">&lt;footer></code>.
+                </li>
+                <li>
+                  <strong>De contenido</strong>: Representan texto, imágenes
+                  o enlaces. <br />Ejemplo:
+                  <code class="language-html">&lt;p></code>,
+                  <code class="language-html">&lt;h1></code> -
+                  <code class="language-html">&lt;h6></code>,
+                  <code class="language-html">&lt;img></code>,<code class="language-html">
                         &lt;a></code>, <code class="language-html">&lt;span></code>,
-                    <code class="language-html">&lt;strong></code>.
-                  </li>
-                  <li>
-                    <strong>De formularios</strong>: Permiten la interacción
-                    del usuario.
-                    <br />
-                    Ejemplo: <code class="language-html">&lt;form></code>,
-                    <code class="language-html">&lt;input></code>,
-                    <code class="language-html">&lt;button></code>,
-                    <code class="language-html">&lt;label></code>,
-                    <code class="language-html">&lt;select></code>.
-                  </li>
-                  <li>
-                    <strong>Multimedia</strong>: Integran contenido como audio
-                    y video. <br />Ejemplo:
-                    <code class="language-html">&lt;audio></code>,
-                    <code class="language-html">lt;video></code>,
-                    <code class="language-html">&lt;iframe></code>.
-                  </li>
-                  <li>
-                    <strong>De estilo y diseño</strong>: Agrupan o modifican
-                    elementos. <br />Ejemplo:
-                    <code class="language-html">&lt;div></code>,
-                    <code class="language-html">&lt;span></code>,
-                    <code class="language-html">&lt;style></code>
-                  </li>
-                </ul>
-              </div>
-              <!-- Clasificación de las etiquetas HTML fin -->
+                  <code class="language-html">&lt;strong></code>.
+                </li>
+                <li>
+                  <strong>De formularios</strong>: Permiten la interacción
+                  del usuario.
+                  <br />
+                  Ejemplo: <code class="language-html">&lt;form></code>,
+                  <code class="language-html">&lt;input></code>,
+                  <code class="language-html">&lt;button></code>,
+                  <code class="language-html">&lt;label></code>,
+                  <code class="language-html">&lt;select></code>.
+                </li>
+                <li>
+                  <strong>Multimedia</strong>: Integran contenido como audio
+                  y video. <br />Ejemplo:
+                  <code class="language-html">&lt;audio></code>,
+                  <code class="language-html">lt;video></code>,
+                  <code class="language-html">&lt;iframe></code>.
+                </li>
+                <li>
+                  <strong>De estilo y diseño</strong>: Agrupan o modifican
+                  elementos. <br />Ejemplo:
+                  <code class="language-html">&lt;div></code>,
+                  <code class="language-html">&lt;span></code>,
+                  <code class="language-html">&lt;style></code>
+                </li>
+              </ul>
+            </div>
+            <!-- Clasificación de las etiquetas HTML fin -->
 
-              <!-- Atributos HTML -->
-              <div>
-                <h3 id="atributos-html">Atributos HTML</h3>
-                <p>
-                  Los atributos en HTML son propiedades que se añaden a las
-                  etiquetas para proporcionar información adicional sobre su
-                  comportamiento o apariencia. Estos atributos siempre se
-                  escriben dentro de la etiqueta de apertura y siguen la
-                  estructura:
-                </p>
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+            <!-- Atributos HTML -->
+            <div>
+              <h3 id="atributos-html">Atributos HTML</h3>
+              <p>
+                Los atributos en HTML son propiedades que se añaden a las
+                etiquetas para proporcionar información adicional sobre su
+                comportamiento o apariencia. Estos atributos siempre se
+                escriben dentro de la etiqueta de apertura y siguen la
+                estructura:
+              </p>
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;etiqueta atributo="valor">Contenido&lt;/etiqueta>
                       </code>
                     </pre>
-                </div>
+              </div>
 
-                <!-- Características de los Atributos en HTML -->
+              <!-- Características de los Atributos en HTML -->
+              <div>
+                <h4>Características de los Atributos en HTML</h4>
+                <ul>
+                  <li>Siempre van en la etiqueta de apertura.</li>
+                  <li>
+                    Pueden tener diferentes valores, dependiendo del tipo de
+                    atributo.
+                  </li>
+                  <li>
+                    Algunos atributos son obligatorios, mientras que otros
+                    son opcionales.
+                  </li>
+                  <li>
+                    Deben escribirse en minúsculas para seguir las buenas
+                    prácticas.
+                  </li>
+                </ul>
+              </div>
+              <!-- Características de los Atributos en HTML fin -->
+
+              <!-- Tipos de Atributos en HTML -->
+              <div>
+                <h4>Tipos de Atributos en HTML</h4>
+                <!-- Atributos Globales -->
                 <div>
-                  <h4>Características de los Atributos en HTML</h4>
+                  <h5>Atributos Globales</h5>
+                  <p>
+                    Estos atributos pueden aplicarse a casi cualquier
+                    etiqueta en HTML:
+                  </p>
                   <ul>
-                    <li>Siempre van en la etiqueta de apertura.</li>
                     <li>
-                      Pueden tener diferentes valores, dependiendo del tipo de
-                      atributo.
+                      <code class="language-html">id</code>: Identifica un
+                      elemento de forma única en la página.
                     </li>
                     <li>
-                      Algunos atributos son obligatorios, mientras que otros
-                      son opcionales.
+                      <code class="language-html">class</code>: Permite
+                      asignar una o varias clases CSS a un elemento.
                     </li>
                     <li>
-                      Deben escribirse en minúsculas para seguir las buenas
-                      prácticas.
+                      <code class="language-html">style</code>: Aplica
+                      estilos en línea directamente sobre un elemento.
+                    </li>
+                    <li>
+                      <code class="language-html">title</code>: Muestra un
+                      texto emergente al pasar el cursor sobre el elemento.
+                    </li>
+                    <li>
+                      <code class="language-html">lang</code>: Define el
+                      idioma del contenido.
+                    </li>
+                    <li>
+                      <code class="language-html">hidden</code>: Oculta el
+                      elemento sin eliminarlo del código.
                     </li>
                   </ul>
-                </div>
-                <!-- Características de los Atributos en HTML fin -->
-
-                <!-- Tipos de Atributos en HTML -->
-                <div>
-                  <h4>Tipos de Atributos en HTML</h4>
-                  <!-- Atributos Globales -->
-                  <div>
-                    <h5>Atributos Globales</h5>
-                    <p>
-                      Estos atributos pueden aplicarse a casi cualquier
-                      etiqueta en HTML:
-                    </p>
-                    <ul>
-                      <li>
-                        <code class="language-html">id</code>: Identifica un
-                        elemento de forma única en la página.
-                      </li>
-                      <li>
-                        <code class="language-html">class</code>: Permite
-                        asignar una o varias clases CSS a un elemento.
-                      </li>
-                      <li>
-                        <code class="language-html">style</code>: Aplica
-                        estilos en línea directamente sobre un elemento.
-                      </li>
-                      <li>
-                        <code class="language-html">title</code>: Muestra un
-                        texto emergente al pasar el cursor sobre el elemento.
-                      </li>
-                      <li>
-                        <code class="language-html">lang</code>: Define el
-                        idioma del contenido.
-                      </li>
-                      <li>
-                        <code class="language-html">hidden</code>: Oculta el
-                        elemento sin eliminarlo del código.
-                      </li>
-                    </ul>
-                    <p>Ejemplo:</p>
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  <p>Ejemplo:</p>
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-html" data-prismjs-copy="Copy">
                             &lt;p id="parrafo1" 
                             &nbsp;&nbsp;&nbsp;class="site-content__texto-importante"
@@ -428,65 +431,65 @@
                             &nbsp;&nbsp;&nbsp;title="Este es un párrafo">Este es un texto con atributos.&lt;/p>
                           </code>
                         </pre>
-                    </div>
                   </div>
-                  <!-- Atributos Globales fin -->
+                </div>
+                <!-- Atributos Globales fin -->
 
-                  <!-- Atributos Específicos de cada Etiqueta -->
-                  <div>
-                    <h5>Atributos Específicos de cada Etiqueta</h5>
-                    <ul>
-                      <li>
-                        <strong>Atributos en &lt;a> (enlaces)</strong>:
-                        <ul>
-                          <li>
-                            <code class="language-html">href</code>:
-                            Especifica la URL del enlace.
-                          </li>
-                          <li>
-                            <code class="language-html">target</code>: Define
-                            cómo abrir el enlace (_self, _blank, etc.).
-                          </li>
-                          <li>
-                            <code class="language-html">rel</code>: Indica la
-                            relación con la página enlazada.
-                          </li>
-                        </ul>
-                        Ejemplo:
-                        <div class="code-example__syntax">
-                          <pre data-src-status="loaded" tabindex="0">
+                <!-- Atributos Específicos de cada Etiqueta -->
+                <div>
+                  <h5>Atributos Específicos de cada Etiqueta</h5>
+                  <ul>
+                    <li>
+                      <strong>Atributos en &lt;a> (enlaces)</strong>:
+                      <ul>
+                        <li>
+                          <code class="language-html">href</code>:
+                          Especifica la URL del enlace.
+                        </li>
+                        <li>
+                          <code class="language-html">target</code>: Define
+                          cómo abrir el enlace (_self, _blank, etc.).
+                        </li>
+                        <li>
+                          <code class="language-html">rel</code>: Indica la
+                          relación con la página enlazada.
+                        </li>
+                      </ul>
+                      Ejemplo:
+                      <div class="code-example__syntax">
+                        <pre data-src-status="loaded" tabindex="0">
                               <code class="language-html" data-prismjs-copy="Copy">
                                 &lt;a href="https://www.ejemplo.com"
                                 &nbsp;&nbsp;&nbsp;target="_blank"
                                 &nbsp;&nbsp;&nbsp;rel="noopener noreferrer">Visitar sitio&lt;/a>
                               </code>
                             </pre>
-                        </div>
-                      </li>
+                      </div>
+                    </li>
 
-                      <li>
-                        <strong>Atributos en &lt;img> (imágenes)</strong>:
-                        <ul>
-                          <li>
-                            <code class="language-html">src</code>: Define la
-                            ruta de la imagen.
-                          </li>
-                          <li>
-                            <code class="language-html">alt</code>:
-                            Proporciona una descripción para accesibilidad.
-                          </li>
-                          <li>
-                            <code class="language-html">width</code>: Define
-                            el ancho de la imagen.
-                          </li>
-                          <li>
-                            <code class="language-html">height</code>: Define
-                            la altura de la imagen.
-                          </li>
-                        </ul>
-                        Ejemplo:
-                        <div class="code-example__syntax">
-                          <pre data-src-status="loaded" tabindex="0">
+                    <li>
+                      <strong>Atributos en &lt;img> (imágenes)</strong>:
+                      <ul>
+                        <li>
+                          <code class="language-html">src</code>: Define la
+                          ruta de la imagen.
+                        </li>
+                        <li>
+                          <code class="language-html">alt</code>:
+                          Proporciona una descripción para accesibilidad.
+                        </li>
+                        <li>
+                          <code class="language-html">width</code>: Define
+                          el ancho de la imagen.
+                        </li>
+                        <li>
+                          <code class="language-html">height</code>: Define
+                          la altura de la imagen.
+                        </li>
+                      </ul>
+                      Ejemplo:
+                      <div class="code-example__syntax">
+                        <pre data-src-status="loaded" tabindex="0">
                               <code class="language-html" data-prismjs-copy="Copy">
                                 &lt;img src="imagen.jpg"
                                 &nbsp;&nbsp;&nbsp;alt="Descripción de la imagen"
@@ -494,35 +497,35 @@
                                 &nbsp;&nbsp;&nbsp;height="150">
                               </code>
                             </pre>
-                        </div>
-                      </li>
-                      <li>
-                        <strong>Atributos en &lt;input> (formularios)</strong>:
-                        <ul>
-                          <li>
-                            <code class="language-html">type</code>: Define el
-                            tipo de entrada (text, password, email, etc.).
-                          </li>
-                          <li>
-                            <code class="language-html">name</code>: Asigna un
-                            nombre al campo de entrada.
-                          </li>
-                          <li>
-                            <code class="language-html">value</code>: Define
-                            el valor predeterminado del campo.
-                          </li>
-                          <li>
-                            <code class="language-html">placeholder</code>:
-                            Muestra un texto de ayuda dentro del campo.
-                          </li>
-                          <li>
-                            <code class="language-html">required</code>:
-                            Indica que el campo es obligatorio.
-                          </li>
-                        </ul>
-                        Ejemplo:
-                        <div class="code-example__syntax">
-                          <pre data-src-status="loaded" tabindex="0">
+                      </div>
+                    </li>
+                    <li>
+                      <strong>Atributos en &lt;input> (formularios)</strong>:
+                      <ul>
+                        <li>
+                          <code class="language-html">type</code>: Define el
+                          tipo de entrada (text, password, email, etc.).
+                        </li>
+                        <li>
+                          <code class="language-html">name</code>: Asigna un
+                          nombre al campo de entrada.
+                        </li>
+                        <li>
+                          <code class="language-html">value</code>: Define
+                          el valor predeterminado del campo.
+                        </li>
+                        <li>
+                          <code class="language-html">placeholder</code>:
+                          Muestra un texto de ayuda dentro del campo.
+                        </li>
+                        <li>
+                          <code class="language-html">required</code>:
+                          Indica que el campo es obligatorio.
+                        </li>
+                      </ul>
+                      Ejemplo:
+                      <div class="code-example__syntax">
+                        <pre data-src-status="loaded" tabindex="0">
                               <code class="language-html" data-prismjs-copy="Copy">
                                 &lt;input type="email"
                                 &nbsp;&nbsp;&nbsp;name="correo"
@@ -530,274 +533,274 @@
                                 &nbsp;&nbsp;&nbsp;required>
                               </code>
                             </pre>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Atributos Específicos de cada Etiqueta fin -->
-                </div>
-                <!-- Tipos de Atributos en HTML fin -->
-
-                <!-- Atributos Booleanos en HTML -->
-                <div>
-                  <h5>Atributos Booleanos en HTML</h5>
-                  <p>
-                    Algunos atributos no requieren un valor, ya que su sola
-                    presencia indica su activación.
-                  </p>
-                  <ul>
-                    <li>
-                      <code class="language-html">disabled</code>:
-                      <code class="language-html">&lt;button disabled>Enviar&lt;/button></code>
-                    </li>
-                    <li>
-                      <code class="language-html">checked</code>:
-                      <code class="language-html">&lt;input type="checkbox" checked></code>
-                    </li>
-                    <li>
-                      <code class="language-html">readonly</code>:
-                      <code>&lt;input type="text" value="Solo lectura"
-                          readonly></code>
-                    </li>
-                    <li>
-                      <code class="language-html">required</code>:
-                      <code class="language-html">&lt;input type="text" required></code>
+                      </div>
                     </li>
                   </ul>
-                  <p>
-                    Los atributos en HTML permiten personalizar y controlar el
-                    comportamiento de los elementos de una página web. Su uso
-                    adecuado mejora la accesibilidad, la experiencia del
-                    usuario y la integración con CSS y JavaScript.
-                  </p>
                 </div>
-                <!-- Atributos Booleanos en HTML fin -->
+                <!-- Atributos Específicos de cada Etiqueta fin -->
               </div>
-              <!-- Atributos HTML fin -->
-            </div>
-            <!-- Etiquetas y Atributos HTML Fin -->
+              <!-- Tipos de Atributos en HTML fin -->
 
-            <hr class="site-divider--subtle site-divider" />
-
-            <!-- La Semántica Web -->
-            <div id="la-semantica-web" class="mt-3">
-              <h2>La Semántica Web</h2>
-              <p>
-                La semántica en HTML se refiere al uso de etiquetas que
-                describen el significado del contenido dentro de una página
-                web, en lugar de solo definir su apariencia. Esto permite que
-                navegadores, motores de búsqueda y tecnologías de asistencia
-                (como lectores de pantalla) interpreten correctamente la
-                información y su estructura.
-              </p>
-              <!-- Importancia de la Semántica en HTML -->
+              <!-- Atributos Booleanos en HTML -->
               <div>
-                <h3 id="importancia-de-la-semantica-en-html">
-                  Importancia de la Semántica en HTML
-                </h3>
+                <h5>Atributos Booleanos en HTML</h5>
+                <p>
+                  Algunos atributos no requieren un valor, ya que su sola
+                  presencia indica su activación.
+                </p>
                 <ul>
                   <li>
-                    <strong>Mejora la accesibilidad</strong>: Facilita la
-                    navegación a personas con discapacidad visual mediante
-                    lectores de pantalla.
+                    <code class="language-html">disabled</code>:
+                    <code class="language-html">&lt;button disabled>Enviar&lt;/button></code>
                   </li>
                   <li>
-                    <strong>Optimiza el SEO</strong>: Los motores de búsqueda
-                    pueden entender mejor el contenido y su jerarquía.
+                    <code class="language-html">checked</code>:
+                    <code class="language-html">&lt;input type="checkbox" checked></code>
                   </li>
                   <li>
-                    <strong>Facilita el mantenimiento del código</strong>: Un
-                    código semántico es más claro y comprensible para
-                    desarrolladores.
+                    <code class="language-html">readonly</code>:
+                    <code>&lt;input type="text" value="Solo lectura"
+                          readonly></code>
                   </li>
                   <li>
-                    <strong>Mejor compatibilidad con tecnologías modernas</strong>: Permite una mejor integración con
-                    CSS, JavaScript y
-                    frameworks web.
+                    <code class="language-html">required</code>:
+                    <code class="language-html">&lt;input type="text" required></code>
+                  </li>
+                </ul>
+                <p>
+                  Los atributos en HTML permiten personalizar y controlar el
+                  comportamiento de los elementos de una página web. Su uso
+                  adecuado mejora la accesibilidad, la experiencia del
+                  usuario y la integración con CSS y JavaScript.
+                </p>
+              </div>
+              <!-- Atributos Booleanos en HTML fin -->
+            </div>
+            <!-- Atributos HTML fin -->
+          </div>
+          <!-- Etiquetas y Atributos HTML Fin -->
+
+          <hr class="site-divider--subtle site-divider" />
+
+          <!-- La Semántica Web -->
+          <div id="la-semantica-web" class="mt-3">
+            <h2>La Semántica Web</h2>
+            <p>
+              La semántica en HTML se refiere al uso de etiquetas que
+              describen el significado del contenido dentro de una página
+              web, en lugar de solo definir su apariencia. Esto permite que
+              navegadores, motores de búsqueda y tecnologías de asistencia
+              (como lectores de pantalla) interpreten correctamente la
+              información y su estructura.
+            </p>
+            <!-- Importancia de la Semántica en HTML -->
+            <div>
+              <h3 id="importancia-de-la-semantica-en-html">
+                Importancia de la Semántica en HTML
+              </h3>
+              <ul>
+                <li>
+                  <strong>Mejora la accesibilidad</strong>: Facilita la
+                  navegación a personas con discapacidad visual mediante
+                  lectores de pantalla.
+                </li>
+                <li>
+                  <strong>Optimiza el SEO</strong>: Los motores de búsqueda
+                  pueden entender mejor el contenido y su jerarquía.
+                </li>
+                <li>
+                  <strong>Facilita el mantenimiento del código</strong>: Un
+                  código semántico es más claro y comprensible para
+                  desarrolladores.
+                </li>
+                <li>
+                  <strong>Mejor compatibilidad con tecnologías modernas</strong>: Permite una mejor integración con
+                  CSS, JavaScript y
+                  frameworks web.
+                </li>
+              </ul>
+            </div>
+            <!-- Importancia de la Semántica en HTML fin -->
+
+            <!-- Etiquetas Semánticas más Utilizadas en HTML -->
+            <div>
+              <h3 id="etiquetas-semanticas-mas-utilizadas-en-html">
+                Etiquetas Semánticas más Utilizadas en HTML
+              </h3>
+              <!-- Estructura del Documento -->
+              <div>
+                <h4>Estructura del Documento</h4>
+                <ul>
+                  <li>
+                    <code class="language-html">&lt;header></code>: Define
+                    la cabecera de una página o sección.
+                  </li>
+                  <li>
+                    <code class="language-html">&lt;nav></code>: Representa
+                    un conjunto de enlaces de navegación.
+                  </li>
+                  <li>
+                    <code class="language-html">&lt;section></code>: Agrupa
+                    contenido relacionado dentro de un documento.
+                  </li>
+                  <li>
+                    <code class="language-html">&lt;article></code>:
+                    Contiene contenido independiente como noticias o blogs.
+                  </li>
+                  <li>
+                    <code class="language-html">&lt;aside></code>: Define
+                    contenido relacionado, como barras laterales.
+                  </li>
+                  <li>
+                    <code class="language-html">&lt;footer></code>:
+                    Representa el pie de página de una sección o del sitio
+                    web.
                   </li>
                 </ul>
               </div>
-              <!-- Importancia de la Semántica en HTML fin -->
+              <!-- Estructura del Documento fin -->
 
-              <!-- Etiquetas Semánticas más Utilizadas en HTML -->
+              <!-- Contenido de Texto -->
               <div>
-                <h3 id="etiquetas-semanticas-mas-utilizadas-en-html">
-                  Etiquetas Semánticas más Utilizadas en HTML
-                </h3>
-                <!-- Estructura del Documento -->
-                <div>
-                  <h4>Estructura del Documento</h4>
-                  <ul>
-                    <li>
-                      <code class="language-html">&lt;header></code>: Define
-                      la cabecera de una página o sección.
-                    </li>
-                    <li>
-                      <code class="language-html">&lt;nav></code>: Representa
-                      un conjunto de enlaces de navegación.
-                    </li>
-                    <li>
-                      <code class="language-html">&lt;section></code>: Agrupa
-                      contenido relacionado dentro de un documento.
-                    </li>
-                    <li>
-                      <code class="language-html">&lt;article></code>:
-                      Contiene contenido independiente como noticias o blogs.
-                    </li>
-                    <li>
-                      <code class="language-html">&lt;aside></code>: Define
-                      contenido relacionado, como barras laterales.
-                    </li>
-                    <li>
-                      <code class="language-html">&lt;footer></code>:
-                      Representa el pie de página de una sección o del sitio
-                      web.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Estructura del Documento fin -->
-
-                <!-- Contenido de Texto -->
-                <div>
-                  <h4>Contenido de Texto</h4>
-                  <ul>
-                    <li>
-                      <code class="language-html">&lt;h1> - &lt;h6></code>:
-                      Representan títulos y subtítulos con diferentes niveles
-                      de importancia.
-                    </li>
-                    <li>
-                      <code class="language-html">&lt;p></code>: Define
-                      párrafos de texto.
-                    </li>
-                    <li>
-                      <code class="language-html">&lt;blockquote></code>:
-                      Indica una cita en bloque.
-                    </li>
-                    <li>
-                      <code class="language-html">&lt;strong></code>: Resalta
-                      un texto con importancia (normalmente en negrita).
-                    </li>
-                    <li>
-                      <code class="language-html">&lt;em></code>: Resalta un
-                      texto con énfasis (normalmente en cursiva).
-                    </li>
-                  </ul>
-                </div>
-                <!-- Contenido de Texto fin -->
-
-                <!-- Multimedia y Contenido Interactivo -->
-                <div>
-                  <h4>Multimedia y Contenido Interactivo</h4>
-                  <ul>
-                    <li>
-                      <code class="language-html">&lt;figure></code>: Agrupa
-                      imágenes y su descripción.
-                    </li>
-                    <li>
-                      <code class="language-html">&lt;figcaption></code>:
-                      Proporciona una leyenda para una imagen o gráfico.
-                    </li>
-                    <li>
-                      <code class="language-html">&lt;audio></code>: Permite
-                      la reproducción de audio.
-                    </li>
-                    <li>
-                      <code class="language-html">&lt;video></code>: Permite
-                      la reproducción de video.
-                    </li>
-                    <li>
-                      <code class="language-html">&lt;mark></code>: Resalta
-                      una parte del texto.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Multimedia y Contenido Interactivo fin -->
+                <h4>Contenido de Texto</h4>
+                <ul>
+                  <li>
+                    <code class="language-html">&lt;h1> - &lt;h6></code>:
+                    Representan títulos y subtítulos con diferentes niveles
+                    de importancia.
+                  </li>
+                  <li>
+                    <code class="language-html">&lt;p></code>: Define
+                    párrafos de texto.
+                  </li>
+                  <li>
+                    <code class="language-html">&lt;blockquote></code>:
+                    Indica una cita en bloque.
+                  </li>
+                  <li>
+                    <code class="language-html">&lt;strong></code>: Resalta
+                    un texto con importancia (normalmente en negrita).
+                  </li>
+                  <li>
+                    <code class="language-html">&lt;em></code>: Resalta un
+                    texto con énfasis (normalmente en cursiva).
+                  </li>
+                </ul>
               </div>
-              <!-- Etiquetas Semánticas más Utilizadas en HTML fin -->
+              <!-- Contenido de Texto fin -->
 
-              <!-- Diferencia entre HTML Semántico y no Semántico -->
+              <!-- Multimedia y Contenido Interactivo -->
               <div>
-                <h3 id="diferencia-entre-html-semantico-y-no-semantico">
-                  Diferencia entre HTML Semántico y no Semántico
-                </h3>
-                <p>Ejemplo de código no semántico:</p>
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+                <h4>Multimedia y Contenido Interactivo</h4>
+                <ul>
+                  <li>
+                    <code class="language-html">&lt;figure></code>: Agrupa
+                    imágenes y su descripción.
+                  </li>
+                  <li>
+                    <code class="language-html">&lt;figcaption></code>:
+                    Proporciona una leyenda para una imagen o gráfico.
+                  </li>
+                  <li>
+                    <code class="language-html">&lt;audio></code>: Permite
+                    la reproducción de audio.
+                  </li>
+                  <li>
+                    <code class="language-html">&lt;video></code>: Permite
+                    la reproducción de video.
+                  </li>
+                  <li>
+                    <code class="language-html">&lt;mark></code>: Resalta
+                    una parte del texto.
+                  </li>
+                </ul>
+              </div>
+              <!-- Multimedia y Contenido Interactivo fin -->
+            </div>
+            <!-- Etiquetas Semánticas más Utilizadas en HTML fin -->
+
+            <!-- Diferencia entre HTML Semántico y no Semántico -->
+            <div>
+              <h3 id="diferencia-entre-html-semantico-y-no-semantico">
+                Diferencia entre HTML Semántico y no Semántico
+              </h3>
+              <p>Ejemplo de código no semántico:</p>
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;div class="site-content__header">Mi sitio web&lt;/div>
                         &lt;div class="site-content__content">Bienvenido a mi página&lt;/div>
                         &lt;div class="site-content__footer">© 2025 Todos los derechos reservados&lt;/div>
                       </code>
                     </pre>
-                </div>
-                <p>
-                  Aquí, los <code class="language-html">&lt;div></code> no
-                  aportan información sobre el contenido.
-                </p>
-                <p>Ejemplo de código semántico:</p>
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <p>
+                Aquí, los <code class="language-html">&lt;div></code> no
+                aportan información sobre el contenido.
+              </p>
+              <p>Ejemplo de código semántico:</p>
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;header>Mi sitio web&lt;/header>
                         &lt;section>Bienvenido a mi página&lt;/section>
                         &lt;footer>© 2025 Todos los derechos reservados&lt;/footer>
                       </code>
                     </pre>
-                </div>
-                <p>
-                  En este caso, las etiquetas indican claramente la estructura
-                  del contenido.
-                </p>
-                <p>
-                  El HTML semántico es fundamental para crear páginas web bien
-                  estructuradas, accesibles y optimizadas para motores de
-                  búsqueda. Su uso adecuado facilita la comprensión del
-                  contenido tanto para los desarrolladores como para las
-                  tecnologías web.
-                </p>
               </div>
-              <!-- Diferencia entre HTML Semántico y no Semántico fin -->
-            </div>
-            <!-- La Semántica Web Fin -->
-
-            <hr class="site-divider--subtle site-divider" />
-
-            <!-- Comentarios -->
-            <div id="comentarios" class="mt-3">
-              <h2>Comentarios HTML</h2>
               <p>
-                Los comentarios en HTML son fragmentos de texto que se
-                incluyen en el código pero que no son visibles en la página
-                web. Se utilizan para agregar notas, explicaciones o
-                desactivar temporalmente partes del código sin eliminarlas.
+                En este caso, las etiquetas indican claramente la estructura
+                del contenido.
               </p>
+              <p>
+                El HTML semántico es fundamental para crear páginas web bien
+                estructuradas, accesibles y optimizadas para motores de
+                búsqueda. Su uso adecuado facilita la comprensión del
+                contenido tanto para los desarrolladores como para las
+                tecnologías web.
+              </p>
+            </div>
+            <!-- Diferencia entre HTML Semántico y no Semántico fin -->
+          </div>
+          <!-- La Semántica Web Fin -->
 
-              <!-- Sintaxis de los Comentarios en HTML -->
-              <div>
-                <h3 id="sintaxis-de-los-comentarios-en-html">
-                  Sintaxis de los Comentarios en HTML
-                </h3>
-                <p>
-                  Para escribir un comentario en HTML, se debe utilizar la
-                  siguiente sintaxis:
-                </p>
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+          <hr class="site-divider--subtle site-divider" />
+
+          <!-- Comentarios -->
+          <div id="comentarios-html" class="mt-3">
+            <h2>Comentarios HTML</h2>
+            <p>
+              Los comentarios en HTML son fragmentos de texto que se
+              incluyen en el código pero que no son visibles en la página
+              web. Se utilizan para agregar notas, explicaciones o
+              desactivar temporalmente partes del código sin eliminarlas.
+            </p>
+
+            <!-- Sintaxis de los Comentarios en HTML -->
+            <div>
+              <h3 id="sintaxis-de-los-comentarios-en-html">
+                Sintaxis de los Comentarios en HTML
+              </h3>
+              <p>
+                Para escribir un comentario en HTML, se debe utilizar la
+                siguiente sintaxis:
+              </p>
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;!-- Este es un comentario en HTML --&gt;
                       </code>
                     </pre>
-                </div>
-                <p>
-                  Todo lo que esté dentro de
-                  <code class="language-html">&lt;!--</code> y
-                  <code class="language-html">--&gt;</code> será ignorado por
-                  el navegador.
-                </p>
-                <p>Ejemplo en código HTML:</p>
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <p>
+                Todo lo que esté dentro de
+                <code class="language-html">&lt;!--</code> y
+                <code class="language-html">--&gt;</code> será ignorado por
+                el navegador.
+              </p>
+              <p>Ejemplo en código HTML:</p>
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-html" data-prismjs-copy="Copy">
                         &lt;!DOCTYPE html&gt;
                           &lt;html lang="es"&gt;
@@ -826,26 +829,26 @@
                           &lt;/html&gt;
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Sintaxis de los Comentarios en HTML fin -->
+            </div>
+            <!-- Sintaxis de los Comentarios en HTML fin -->
 
-              <!-- Usos de los Comentarios en HTML -->
+            <!-- Usos de los Comentarios en HTML -->
+            <div>
+              <h3 id="usos-de-los-comentarios-en-html">
+                Usos de los Comentarios en HTML
+              </h3>
+              <!-- Explicar el Código -->
               <div>
-                <h3 id="usos-de-los-comentarios-en-html">
-                  Usos de los Comentarios en HTML
-                </h3>
-                <!-- Explicar el Código -->
-                <div>
-                  <p>Los usos más importantes se tiene:</p>
-                  <h4>Explicar el Código</h4>
-                  <p>
-                    Los comentarios ayudan a los desarrolladores a entender la
-                    estructura del código, lo cual es útil cuando se trabaja
-                    en equipo o se revisa el código después de un tiempo.
-                  </p>
-                  <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+                <p>Los usos más importantes se tiene:</p>
+                <h4>Explicar el Código</h4>
+                <p>
+                  Los comentarios ayudan a los desarrolladores a entender la
+                  estructura del código, lo cual es útil cuando se trabaja
+                  en equipo o se revisa el código después de un tiempo.
+                </p>
+                <div class="code-example__syntax">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;!-- Navegación principal del sitio --&gt;
                           &lt;nav>
@@ -856,77 +859,77 @@
                           &lt;/nav>
                         </code>
                       </pre>
-                  </div>
                 </div>
-                <!-- Explicar el Código fin -->
+              </div>
+              <!-- Explicar el Código fin -->
 
-                <!-- Desactivar Temporalmente Partes del Código -->
-                <div>
-                  <h4>Desactivar Temporalmente Partes del Código</h4>
-                  <p>
-                    Si se necesita ocultar un elemento sin eliminarlo, se
-                    puede comentar.
-                  </p>
-                  <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+              <!-- Desactivar Temporalmente Partes del Código -->
+              <div>
+                <h4>Desactivar Temporalmente Partes del Código</h4>
+                <p>
+                  Si se necesita ocultar un elemento sin eliminarlo, se
+                  puede comentar.
+                </p>
+                <div class="code-example__syntax">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;!-- &lt;img src="imagen.jpg" alt="Imagen de ejemplo"> --&gt;
                         </code>
                       </pre>
-                  </div>
                 </div>
-                <!-- Desactivar Temporalmente Partes del Código fin -->
+              </div>
+              <!-- Desactivar Temporalmente Partes del Código fin -->
 
-                <!-- Notas de Depuración -->
-                <div>
-                  <h4>Notas de Depuración</h4>
-                  <p>
-                    Se pueden usar comentarios para indicar partes del código
-                    que requieren correcciones o mejoras.
-                  </p>
-                  <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+              <!-- Notas de Depuración -->
+              <div>
+                <h4>Notas de Depuración</h4>
+                <p>
+                  Se pueden usar comentarios para indicar partes del código
+                  que requieren correcciones o mejoras.
+                </p>
+                <div class="code-example__syntax">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-html" data-prismjs-copy="Copy">
                           &lt;!-- TODO: Agregar más enlaces a la barra de navegación --&gt;
                         </code>
                       </pre>
-                  </div>
                 </div>
-                <!-- Notas de Depuración fin -->
+              </div>
+              <!-- Notas de Depuración fin -->
 
-                <!-- Consideraciones Importantes para los Comentarios -->
-                <div>
-                  <h4>Consideraciones Importantes para los Comentarios</h4>
-                  <ul>
-                    <li>
-                      <strong>No se pueden anidar comentarios</strong>:
-                      <div class="code-example__syntax">
-                        <pre data-src-status="loaded" tabindex="0">
+              <!-- Consideraciones Importantes para los Comentarios -->
+              <div>
+                <h4>Consideraciones Importantes para los Comentarios</h4>
+                <ul>
+                  <li>
+                    <strong>No se pueden anidar comentarios</strong>:
+                    <div class="code-example__syntax">
+                      <pre data-src-status="loaded" tabindex="0">
                             <code class="language-html" data-prismjs-copy="Copy">
                               &lt;!-- Este es un &lt;!-- comentario anidado --&gt; y dará error --&gt;
                             </code>
                           </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <strong>No abusar de los comentarios</strong>:
-                      Demasiados comentarios pueden hacer que el código sea
-                      difícil de leer. Se recomienda utilizarlos solo cuando
-                      sean necesarios.
-                    </li>
-                    <li>
-                      <strong>Los comentarios no afectan el rendimiento</strong>: Aunque no son visibles en la página
-                      web, siguen
-                      estando en el código fuente, por lo que pueden ser
-                      vistos por cualquier persona que inspeccione el HTML.
-                    </li>
-                  </ul>
-                </div>
-                <!-- Consideraciones Importantes para los Comentarios fin -->
+                    </div>
+                  </li>
+                  <li>
+                    <strong>No abusar de los comentarios</strong>:
+                    Demasiados comentarios pueden hacer que el código sea
+                    difícil de leer. Se recomienda utilizarlos solo cuando
+                    sean necesarios.
+                  </li>
+                  <li>
+                    <strong>Los comentarios no afectan el rendimiento</strong>: Aunque no son visibles en la página
+                    web, siguen
+                    estando en el código fuente, por lo que pueden ser
+                    vistos por cualquier persona que inspeccione el HTML.
+                  </li>
+                </ul>
               </div>
-              <!-- Usos de los Comentarios en HTML fin -->
+              <!-- Consideraciones Importantes para los Comentarios fin -->
             </div>
-            <!-- Comentarios Fin -->
+            <!-- Usos de los Comentarios en HTML fin -->
+          </div>
+          <!-- Comentarios Fin -->
 
         </article>
         <!--  Introducción HTML Fin-->
@@ -980,67 +983,27 @@
       <aside class="col-lg-3 d-none d-lg-block">
         <h2>En Este Artículo</h2>
         <div class="site-menu__scroll">
-          <div class="site-menu">
+          <div id="article-scrollspy" class="site-menu list-group" role="navigation" aria-label="Indice del articulo">
             <div class="border border-1">
               <div class="site-menu__item">
-                <a href="#introduccion" class="site-menu__link">Introducción HTML</a>
+                <a href="#introduccion" class=" list-group-item list-group-item-action">Introducción HTML</a>
               </div>
 
               <div class="site-menu__item">
-                <a href="#que-es-html" class="site-menu__link">¿Qué es HTML?</a>
-              </div>
-
-              <div class="site-menu__item">
-                <details>
-                  <summary>Etiquetas y Atributos HTML</summary>
-                  <div class="site-menu__submenu">
-                    <a href="#etiquetas-y-atributos-html" class="site-menu__submenu-link">Etiquetas y Atributos HTML</a>
-
-                    <a href="#caracteristicas-de-las-etiquetas-html" class="site-menu__submenu-link">Características de las
-                      etiquetas
-                      HTML</a>
-
-                    <a href="#clasificacion-de-las-etiquetas-html" class="site-menu__submenu-link">Clasificación de las etiquetas
-                      HTML</a>
-
-                    <a href="#atributos-html" class="site-menu__submenu-link">Atributos HTML</a>
-                  </div>
-                </details>
-              </div>
-
-              <div class="site-menu__item">
-                <details>
-                  <summary>La Semántica Web</summary>
-                  <div class="site-menu__submenu">
-                    <a href="#la-semantica-web" class="site-menu__submenu-link">La Semántica Web</a>
-
-                    <a href="#importancia-de-la-semantica-en-html" class="site-menu__submenu-link">Importancia de la Semántica en
-                      HTML</a>
-
-                    <a href="#etiquetas-semanticas-mas-utilizadas-en-html" class="site-menu__submenu-link">Etiquetas Semánticas más
-                      Utilizadas en HTML</a>
-
-                    <a href="#diferencia-entre-html-semantico-y-no-semantico" class="site-menu__submenu-link">Diferencia entre HTML
-                      Semántico y no Semántico</a>
-                  </div>
-                </details>
-              </div>
-
-              <div class="site-menu__item">
-                <details>
-                  <summary>Comentarios HTML</summary>
-                  <div class="site-menu__submenu">
-                    <a href="#comentarios" class="site-menu__submenu-link">Comentarios</a>
-
-                    <a href="#sintaxis-de-los-comentarios-en-html" class="site-menu__submenu-link">Sintaxis de los Comentarios en
-                      HTML</a>
-
-                    <a href="#usos-de-los-comentarios-en-html" class="site-menu__submenu-link">Usos de los Comentarios en HTML</a>
-                  </div>
-                </details>
+                <a href="#que-es-html" class=" list-group-item list-group-item-action">¿Qué es HTML?</a>
               </div>
               <div class="site-menu__item">
-                <a href="#comments" class="site-menu__link">Comentarios</a>
+                <a href="#etiquetas-y-atributos-html" class=" list-group-item list-group-item-action">Etiquetas y
+                  Atributos HTML</a>
+              </div>
+              <div class="site-menu__item">
+                <a href="#la-semantica-web" class=" list-group-item list-group-item-action">La Semántica Web</a>
+              </div>
+              <div class="site-menu__item">
+                <a href="#comentarios-html" class=" list-group-item list-group-item-action">Comentarios HTML</a>
+              </div>
+              <div class="site-menu__item">
+                <a href="#comments" class=" list-group-item list-group-item-action">Comentarios</a>
               </div>
             </div>
           </div>
