@@ -111,78 +111,79 @@
         <!--  Tuplas y Diccionarios en Python  -->
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
-          <div>
-            <header>
-              <h1>Tuplas y Diccionarios en Python</h1>
-            </header>
-            <!-- Introducción -->
-            <div class="mt-5">
-              <h2>Introducción</h2>
-              <p>
-                Python es un lenguaje de programación ampliamente utilizado
-                debido a su simplicidad y versatilidad. Dos de las estructuras
-                de datos más comunes y útiles en Python son las tuplas y los
-                diccionarios. Ambas estructuras permiten almacenar y manipular
-                datos de manera eficiente, pero tienen características y usos
-                distintos.
-              </p>
-              <div class="site-image site-intro-image">
-                <figure class="site-image__figure site-image__figure--intro">
-                  <img src="https://i.ibb.co/pxNBfKh/tuplasdiccionarios.jpg" class="img-fluid"
-                    alt="Tuplas y Diccionarios en Python "
-                    title="Tuplas en Python: colecciones ordenadas e inmutables para almacenar datos." />
-                  <figcaption>Tuplas y Diccionarios en Python</figcaption>
-                </figure>
-              </div>
+          <header>
+            <h1>Tuplas y Diccionarios en Python</h1>
+          </header>
+          <!-- Introducción -->
+          <div class="mt-3">
+            <h2>Introducción</h2>
+            <div class="site-image site-intro-image mb-5">
+              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                <img loading="lazy" src="https://i.ibb.co/pxNBfKh/tuplasdiccionarios.jpg" class="img-fluid"
+                  alt="Tuplas y Diccionarios en Python "
+                  title="Tuplas en Python: colecciones ordenadas e inmutables para almacenar datos." />
+                <figcaption class="site-image__caption">Tuplas y Diccionarios en Python</figcaption>
+              </figure>
             </div>
+            <p>
+              Python es un lenguaje de programación ampliamente utilizado
+              debido a su simplicidad y versatilidad. Dos de las estructuras
+              de datos más comunes y útiles en Python son las tuplas y los
+              diccionarios. Ambas estructuras permiten almacenar y manipular
+              datos de manera eficiente, pero tienen características y usos
+              distintos.
+            </p>
 
-            <!-- Tuplas en Python -->
-            <div id="tuplas-en-python" class="mt-5">
-              <h2>Tuplas en Python</h2>
-              <!-- Características de las Tuplas -->
-              <div>
-                <h3>Características de las Tuplas</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Inmutables</span>: No se pueden
-                    modificar después de ser creadas.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Ordenadas</span>: Los elementos
-                    tienen un orden definido y se pueden acceder mediante
-                    índices.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Heterogéneas</span>: Pueden
-                    almacenar elementos de diferentes tipos (números, cadenas,
-                    listas, etc.).
-                  </li>
-                  <li>
-                    <span class="fw-bold">Rapidez</span>: Más rápidas que las
-                    listas, debido a su inmutabilidad.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Hashable</span>: Pueden usarse como
-                    claves en un diccionario si todos sus elementos también
-                    son hashables.
-                  </li>
-                </ul>
-              </div>
-              <!-- Características de las Tuplas fin -->
-              <!-- Sintaxis para crear tuplas: -->
-              <div>
-                <h3>Sintaxis para Crear Tuplas</h3>
-                <p>
-                  Las tuplas son colecciones ordenadas e inmutables de
-                  elementos. Esto significa que, una vez creadas, sus valores
-                  no pueden modificarse. Se definen principalmente usando
-                  paréntesis <code class="language-python">()</code> y pueden
-                  contener elementos de diferentes tipos, incluyendo objetos
-                  como listas o diccionarios. Aunque es posible declararlas
-                  sin paréntesis, esto no se recomienda ya que reduce la
-                  legibilidad del código.
-                </p>
-                <div class="code-example__syntax">
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+
+          <!-- Tuplas en Python -->
+          <div id="tuplas-en-python" class="mt-3">
+            <h2>Tuplas en Python</h2>
+            <!-- Características de las Tuplas -->
+            <div>
+              <h3>Características de las Tuplas</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Inmutables</span>: No se pueden
+                  modificar después de ser creadas.
+                </li>
+                <li>
+                  <span class="fw-bold">Ordenadas</span>: Los elementos
+                  tienen un orden definido y se pueden acceder mediante
+                  índices.
+                </li>
+                <li>
+                  <span class="fw-bold">Heterogéneas</span>: Pueden
+                  almacenar elementos de diferentes tipos (números, cadenas,
+                  listas, etc.).
+                </li>
+                <li>
+                  <span class="fw-bold">Rapidez</span>: Más rápidas que las
+                  listas, debido a su inmutabilidad.
+                </li>
+                <li>
+                  <span class="fw-bold">Hashable</span>: Pueden usarse como
+                  claves en un diccionario si todos sus elementos también
+                  son hashables.
+                </li>
+              </ul>
+            </div>
+            <!-- Características de las Tuplas fin -->
+            <!-- Sintaxis para crear tuplas: -->
+            <div>
+              <h3>Sintaxis para Crear Tuplas</h3>
+              <p>
+                Las tuplas son colecciones ordenadas e inmutables de
+                elementos. Esto significa que, una vez creadas, sus valores
+                no pueden modificarse. Se definen principalmente usando
+                paréntesis <code class="language-python">()</code> y pueden
+                contener elementos de diferentes tipos, incluyendo objetos
+                como listas o diccionarios. Aunque es posible declararlas
+                sin paréntesis, esto no se recomienda ya que reduce la
+                legibilidad del código.
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Tupla vacía
@@ -195,14 +196,14 @@
                         tupla_implicita = 1, "Python", True
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Sintaxis para crear tuplas: fin -->
-              <!-- Acceso a Elementos -->
-              <div>
-                <h3>Acceso a Elementos</h3>
-                <p>Se realiza mediante índices (empezando en 0).</p>
-                <div class="code-example__syntax">
+            </div>
+            <!-- Sintaxis para crear tuplas: fin -->
+            <!-- Acceso a Elementos -->
+            <div>
+              <h3>Acceso a Elementos</h3>
+              <p>Se realiza mediante índices (empezando en 0).</p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         tupla = (10, 20, 30, 40)
@@ -215,30 +216,30 @@
                         print(tupla[:-2]) # Salida: 10, 20
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Acceso a Elementos fin -->
-              <!-- Operaciones Comunes -->
-              <div>
-                <h3>Operaciones Comunes</h3>
-                <p>
-                  Aunque las tuplas son inmutables, se pueden realizar varias
-                  operaciones con ellas.
-                </p>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Longitud</span>:
-                    <div class="code-example__syntax">
+            </div>
+            <!-- Acceso a Elementos fin -->
+            <!-- Operaciones Comunes -->
+            <div>
+              <h3>Operaciones Comunes</h3>
+              <p>
+                Aunque las tuplas son inmutables, se pueden realizar varias
+                operaciones con ellas.
+              </p>
+              <ul>
+                <li>
+                  <span class="fw-bold">Longitud</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             print(len(tupla))  # Salida: 4
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Concatenación</span>:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Concatenación</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             tupla1 = (1, 2)
@@ -246,32 +247,32 @@
                             print(tupla1 + tupla2)  # Salida: (1, 2, 3, 4)
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Repetición</span>:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Repetición</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             tupla = (1, 2)
                             print(tupla * 3)  # Salida: (1, 2, 1, 2, 1, 2)
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Pertenencia</span>:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Pertenencia</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             print(3 in tupla)  # Salida: False
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Desempaquetado</span>:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Desempaquetado</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             tupla = (1, 2, 3)
@@ -279,53 +280,53 @@
                             print(a, b, c)  # Salida: 1 2 3
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- Operaciones Comunes fin -->
-              <!-- Métodos de las Tuplas -->
-              <div>
-                <h3>Métodos de las Tuplas</h3>
-                <p>
-                  Las tuplas tienen pocos métodos debido a su naturaleza
-                  inmutable.
-                </p>
-                <ul>
-                  <li>
-                    <span class="fw-bold">count()</span>: Devuelve cuántas
-                    veces aparece un elemento.
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Operaciones Comunes fin -->
+            <!-- Métodos de las Tuplas -->
+            <div>
+              <h3>Métodos de las Tuplas</h3>
+              <p>
+                Las tuplas tienen pocos métodos debido a su naturaleza
+                inmutable.
+              </p>
+              <ul>
+                <li>
+                  <span class="fw-bold">count()</span>: Devuelve cuántas
+                  veces aparece un elemento.
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             tupla = (1, 2, 2, 3)
                             print(tupla.count(2))  # Salida: 2
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">index()</span>: Devuelve el índice
-                    de la primera aparición de un elemento.
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">index()</span>: Devuelve el índice
+                  de la primera aparición de un elemento.
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             print(tupla.index(2))  # Salida: 1
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- Métodos de las Tuplas fin -->
-              <!-- Ejemplo Práctico -->
-              <div>
-                <h3>Ejemplo Práctico</h3>
-                <p>
-                  Un ejemplo típico del uso de tuplas es para representar
-                  coordenadas o datos constantes.
-                </p>
-                <div class="code-example__syntax">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Métodos de las Tuplas fin -->
+            <!-- Ejemplo Práctico -->
+            <div>
+              <h3>Ejemplo Práctico</h3>
+              <p>
+                Un ejemplo típico del uso de tuplas es para representar
+                coordenadas o datos constantes.
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Coordenadas de un punto
@@ -335,225 +336,226 @@
                         print(f"X: {x}, Y: {y}")  # Salida: X: 10.5, Y: 20.3
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Ejemplo Práctico fin -->
-              <!-- Ventajas de las Tuplas -->
-              <div>
-                <h3>Ventajas de las Tuplas</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Seguridad</span>: Al ser inmutables,
-                    garantizan que los datos no cambien accidentalmente.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Eficiencia</span>: Son más rápidas
-                    que las listas.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Usabilidad en estructuras complejas</span>: Por ejemplo, como claves en un
-                    diccionario.
-                  </li>
-                </ul>
-              </div>
-              <!-- Ventajas de las Tuplas fin -->
             </div>
-            <!-- Tuplas en Python Fin -->
-            <!-- Diccionarios en Python -->
-            <div id="diccionarios-en-python" class="mt-5">
-              <h2>Diccionarios en Python</h2>
-              <p>
-                En Python, los diccionarios son estructuras de datos que
-                permiten almacenar pares de clave-valor. Se utilizan cuando es
-                necesario relacionar datos, donde cada clave actúa como un
-                identificador único para un valor asociado. Los diccionarios
-                son mutables, lo que significa que pueden modificarse después
-                de su creación, y son muy eficientes para búsquedas y
-                manipulaciones basadas en claves.
-              </p>
-              <!-- Características Principales de los Diccionarios -->
-              <div>
-                <h3>Características Principales de los Diccionarios</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Claves únicas</span>: Cada clave en
-                    el diccionario debe ser única.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Claves inmutables</span>: Solo tipos
-                    inmutables como cadenas, números y tuplas (si no contienen
-                    elementos mutables) pueden ser claves.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Acceso rápido</span>: Acceder a un
-                    valor por su clave es muy eficiente.
-                  </li>
-                </ul>
-              </div>
-              <!-- Características Principales de los Diccionarios fin -->
-              <!-- Cómo Crear un Diccionario -->
-              <div>
-                <h3>Cómo Crear un Diccionario</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Usando llaves {}</span>:
-                    <div class="code-example__syntax">
+            <!-- Ejemplo Práctico fin -->
+            <!-- Ventajas de las Tuplas -->
+            <div>
+              <h3>Ventajas de las Tuplas</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Seguridad</span>: Al ser inmutables,
+                  garantizan que los datos no cambien accidentalmente.
+                </li>
+                <li>
+                  <span class="fw-bold">Eficiencia</span>: Son más rápidas
+                  que las listas.
+                </li>
+                <li>
+                  <span class="fw-bold">Usabilidad en estructuras complejas</span>: Por ejemplo, como claves en un
+                  diccionario.
+                </li>
+              </ul>
+            </div>
+            <!-- Ventajas de las Tuplas fin -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Tuplas en Python Fin -->
+          <!-- Diccionarios en Python -->
+          <div id="diccionarios-en-python" class="mt-3">
+            <h2>Diccionarios en Python</h2>
+            <p>
+              En Python, los diccionarios son estructuras de datos que
+              permiten almacenar pares de clave-valor. Se utilizan cuando es
+              necesario relacionar datos, donde cada clave actúa como un
+              identificador único para un valor asociado. Los diccionarios
+              son mutables, lo que significa que pueden modificarse después
+              de su creación, y son muy eficientes para búsquedas y
+              manipulaciones basadas en claves.
+            </p>
+            <!-- Características Principales de los Diccionarios -->
+            <div>
+              <h3>Características Principales de los Diccionarios</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Claves únicas</span>: Cada clave en
+                  el diccionario debe ser única.
+                </li>
+                <li>
+                  <span class="fw-bold">Claves inmutables</span>: Solo tipos
+                  inmutables como cadenas, números y tuplas (si no contienen
+                  elementos mutables) pueden ser claves.
+                </li>
+                <li>
+                  <span class="fw-bold">Acceso rápido</span>: Acceder a un
+                  valor por su clave es muy eficiente.
+                </li>
+              </ul>
+            </div>
+            <!-- Características Principales de los Diccionarios fin -->
+            <!-- Cómo Crear un Diccionario -->
+            <div>
+              <h3>Cómo Crear un Diccionario</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Usando llaves {}</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             mi_diccionario = {"nombre": "Carlos", "edad": 30, "ciudad": "Bogotá"}
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Usando la función dict()</span>:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Usando la función dict()</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             mi_diccionario = dict(nombre="Carlos", edad=30, ciudad="Bogotá")
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- Cómo Crear un Diccionario fin -->
-              <!-- Operaciones Comunes -->
-              <div>
-                <h3>Operaciones Comunes</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Acceder a elementos</span>:
-                    <ul>
-                      <li>
-                        <span class="fw-bold">Se utiliza la clave</span>:
-                        <div class="code-example__syntax">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Cómo Crear un Diccionario fin -->
+            <!-- Operaciones Comunes -->
+            <div>
+              <h3>Operaciones Comunes</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Acceder a elementos</span>:
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Se utiliza la clave</span>:
+                      <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 print(mi_diccionario["nombre"])  # Output: Carlos
                               </code>
                             </pre>
-                        </div>
-                      </li>
-                      <li>
-                        <span class="fw-bold">Usando la función dict()</span>:
-                        Si una clave no existe, el método
-                        <code class="language-python">get()</code> devuelve
-                        <code class="language-python">None</code> (o un valor
-                        por defecto especificado):
-                        <div class="code-example__syntax">
+                      </div>
+                    </li>
+                    <li>
+                      <span class="fw-bold">Usando la función dict()</span>:
+                      Si una clave no existe, el método
+                      <code class="language-python">get()</code> devuelve
+                      <code class="language-python">None</code> (o un valor
+                      por defecto especificado):
+                      <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 print(mi_diccionario.get("profesión", "No especificada"))  # Output: No especificada
                               </code>
                             </pre>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Agregar o actualizar elementos</span>:
-                    <div class="code-example__syntax">
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="fw-bold">Agregar o actualizar elementos</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             mi_diccionario["profesión"] = "Ingeniero"  # Agrega una nueva clave-valor
                             mi_diccionario["edad"] = 31  # Actualiza el valor de una clave existente
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Eliminar elementos</span>:
-                    <ul>
-                      <li>
-                        <span class="fw-bold">Con <del>del</del></span>:
-                        <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Eliminar elementos</span>:
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Con <del>del</del></span>:
+                      <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 del mi_diccionario["ciudad"]
                               </code>
                             </pre>
-                        </div>
-                      </li>
-                      <li>
-                        <span class="fw-bold">Con <del>.pop()</del> (devuelve el valor
-                          eliminado)</span>:
-                        <div class="code-example__syntax">
+                      </div>
+                    </li>
+                    <li>
+                      <span class="fw-bold">Con <del>.pop()</del> (devuelve el valor
+                        eliminado)</span>:
+                      <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 edad = mi_diccionario.pop("edad")
                               </code>
                             </pre>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Iterar sobre un diccionario</span>:
-                    <ul>
-                      <li>
-                        <span class="fw-bold">Claves</span>:
-                        <div class="code-example__syntax">
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="fw-bold">Iterar sobre un diccionario</span>:
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Claves</span>:
+                      <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 for clave in mi_diccionario:
                                     print(clave)
                               </code>
                             </pre>
-                        </div>
-                      </li>
-                      <li>
-                        <span class="fw-bold">Valores</span>:
-                        <div class="code-example__syntax">
+                      </div>
+                    </li>
+                    <li>
+                      <span class="fw-bold">Valores</span>:
+                      <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 for valor in mi_diccionario.values():
                                     print(valor)
                               </code>
                             </pre>
-                        </div>
-                      </li>
-                      <li>
-                        <span class="fw-bold">Pares clave-valor</span>:
-                        <div class="code-example__syntax">
+                      </div>
+                    </li>
+                    <li>
+                      <span class="fw-bold">Pares clave-valor</span>:
+                      <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 for valor in mi_diccionario.values():
                                     print(valor)
                               </code>
                             </pre>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Comprobar si una clave existe</span>:
-                    <div class="code-example__syntax">
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="fw-bold">Comprobar si una clave existe</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             if "nombre" in mi_diccionario:
                                 print("La clave 'nombre' está en el diccionario.")
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Copiar un diccionario</span>:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Copiar un diccionario</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             nuevo_diccionario = mi_diccionario.copy()
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- Operaciones Comunes fin -->
-              <!-- Ejemplo Completo -->
-              <div>
-                <h3>Ejemplo Completo</h3>
-                <div class="code-example__syntax">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Operaciones Comunes fin -->
+            <!-- Ejemplo Completo -->
+            <div>
+              <h3>Ejemplo Completo</h3>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         persona = {
@@ -573,16 +575,16 @@
                         persona.pop("ocupación")
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Ejemplo Completo fin -->
-              <!-- Métodos Útiles -->
-              <div>
-                <h3>Métodos Útiles</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">keys()</code></span>: Devuelve todas las claves.
-                    <div class="code-example__syntax">
+            </div>
+            <!-- Ejemplo Completo fin -->
+            <!-- Métodos Útiles -->
+            <div>
+              <h3>Métodos Útiles</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold"><code class="language-python">keys()</code></span>: Devuelve todas las claves.
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             mi_diccionario = {"gato": "chat", "perro": "chien", "caballo": "cheval"}
@@ -593,12 +595,12 @@
                             # Salida: caballo -> cheval
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">items()</code></span>: Devuelve pares
-                    clave-valor.
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">items()</code></span>: Devuelve pares
+                  clave-valor.
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             mi_diccionario = {"gato": "chat", "perro": "chien", "caballo": "cheva")
@@ -609,26 +611,26 @@
                             # Salida: caballo -> cheval
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">values()</code></span>: Devuelve todos los
-                    valores.
-                  </li>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">clear()</code></span>: Elimina todos los
-                    elementos.
-                  </li>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">update()</code></span>: Combina otro diccionario
-                    o pares clave-valor.
-                  </li>
-                </ul>
-              </div>
-              <!-- Métodos Útiles fin -->
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">values()</code></span>: Devuelve todos los
+                  valores.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">clear()</code></span>: Elimina todos los
+                  elementos.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">update()</code></span>: Combina otro diccionario
+                  o pares clave-valor.
+                </li>
+              </ul>
             </div>
-            <!-- Diccionarios en Python Fin -->
+            <!-- Métodos Útiles fin -->
           </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Diccionarios en Python Fin -->
         </article>
         <!--  Tuplas y Diccionarios en Python  -->
 

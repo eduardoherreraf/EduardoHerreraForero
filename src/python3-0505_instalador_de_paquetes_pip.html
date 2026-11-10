@@ -115,400 +115,402 @@
         <!--  Instalador de Paquetes de Python (PIP)  -->
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
-          <div>
-            <header>
-              <h1>Instalador de Paquetes de Python (PIP)</h1>
-            </header>
-            <!-- Introducción -->
-            <div class="mt-5">
-              <h2>Introducción</h2>
-              <p>
-                El Instalador de Paquetes de Python (PIP) es una herramienta
-                que permite instalar, actualizar y gestionar paquetes y
-                bibliotecas de Python de manera sencilla. PIP es esencial para
-                trabajar con Python, ya que facilita la incorporación de
-                funcionalidades adicionales desarrolladas por la comunidad,
-                disponibles en el repositorio PyPI (Python Package Index).
-              </p>
-              <div class="site-image site-intro-image">
-                <figure class="site-image__figure site-image__figure--intro">
-                  <img src="https://i.ibb.co/GC81Y2X/pip.jpg" class="img-fluid rounded-4"
-                    alt="Instalador de Paquetes de Python (PIP)  "
-                    title="Instalador de Paquetes PIP en Python: Guía Completa de Gestión de Bibliotecas" />
-                  <figcaption>
-                    Instalador de Paquetes de Python (PIP)
-                  </figcaption>
-                </figure>
-              </div>
+          <header>
+            <h1>Instalador de Paquetes de Python (PIP)</h1>
+          </header>
+          <!-- Introducción -->
+          <div class="mt-3">
+            <h2>Introducción</h2>
+            <div class="site-image site-intro-image mb-5">
+              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                <img loading="lazy" src="https://i.ibb.co/GC81Y2X/pip.jpg" class="img-fluid rounded-4"
+                  alt="Instalador de Paquetes de Python (PIP)  "
+                  title="Instalador de Paquetes PIP en Python: Guía Completa de Gestión de Bibliotecas" />
+                <figcaption class="site-image__caption">
+                  Instalador de Paquetes de Python (PIP)
+                </figcaption>
+              </figure>
             </div>
+            <p>
+              El Instalador de Paquetes de Python (PIP) es una herramienta
+              que permite instalar, actualizar y gestionar paquetes y
+              bibliotecas de Python de manera sencilla. PIP es esencial para
+              trabajar con Python, ya que facilita la incorporación de
+              funcionalidades adicionales desarrolladas por la comunidad,
+              disponibles en el repositorio PyPI (Python Package Index).
+            </p>
 
-            <!-- ¿Qué es PIP? -->
-            <div id="queEsPip" class="mt-5">
-              <h2>¿Qué es PIP?</h2>
-              <p>
-                PIP es un sistema de gestión de paquetes para Python que
-                permite a los usuarios instalar y administrar bibliotecas y
-                dependencias de software. Es una herramienta esencial para
-                cualquier desarrollador que trabaje con Python, ya que
-                facilita la incorporación de funcionalidades adicionales a sus
-                proyectos.
-              </p>
-              <!-- Características Principales de PIP -->
-              <div>
-                <h3>Características Principales de PIP</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Instalación y desinstalación de paquetes</span>:
-                    <ul>
-                      <li>
-                        Permite instalar paquetes disponibles en PyPI con un
-                        solo comando:
-                        <div class="code-example__syntax">
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+
+          <!-- ¿Qué es PIP? -->
+          <div id="queEsPip" class="mt-3">
+            <h2>¿Qué es PIP?</h2>
+            <p>
+              PIP es un sistema de gestión de paquetes para Python que
+              permite a los usuarios instalar y administrar bibliotecas y
+              dependencias de software. Es una herramienta esencial para
+              cualquier desarrollador que trabaje con Python, ya que
+              facilita la incorporación de funcionalidades adicionales a sus
+              proyectos.
+            </p>
+            <!-- Características Principales de PIP -->
+            <div>
+              <h3>Características Principales de PIP</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Instalación y desinstalación de paquetes</span>:
+                  <ul>
+                    <li>
+                      Permite instalar paquetes disponibles en PyPI con un
+                      solo comando:
+                      <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-bash" data-prismjs-copy="Copy">
                                 pip install requests # instalará la biblioteca requests.
                               </code>
                             </pre>
-                        </div>
-                      </li>
-                      <li>
-                        Facilita la desinstalación de paquetes:
-                        <div class="code-example__syntax">
+                      </div>
+                    </li>
+                    <li>
+                      Facilita la desinstalación de paquetes:
+                      <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-bash" data-prismjs-copy="Copy">
                                 pip uninstall requests # desinstalará la biblioteca requests.
                               </code>
                             </pre>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Resolución de dependencias</span>:
-                    Gestiona automáticamente las dependencias requeridas por
-                    un paquete, instalándolas en el entorno adecuado.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Compatibilidad con entornos virtuales</span>: Trabaja bien con herramientas
-                    como
-                    <code class="language-python">venv</code>,
-                    <code class="language-python">virtualenv</code> o
-                    <code class="language-python">miniconda</code>
-                    asegurando que los paquetes se instalen en entornos
-                    aislados para evitar conflictos entre proyectos.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Soporte para archivos de requisitos</span>: Puede leer un archivo
-                    <code class="language-python">requirements.txt</code> para
-                    instalar varias dependencias necesarias de un proyecto con
-                    un único comando:
-                    <div class="code-example__syntax">
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="fw-bold">Resolución de dependencias</span>:
+                  Gestiona automáticamente las dependencias requeridas por
+                  un paquete, instalándolas en el entorno adecuado.
+                </li>
+                <li>
+                  <span class="fw-bold">Compatibilidad con entornos virtuales</span>: Trabaja bien con herramientas
+                  como
+                  <code class="language-python">venv</code>,
+                  <code class="language-python">virtualenv</code> o
+                  <code class="language-python">miniconda</code>
+                  asegurando que los paquetes se instalen en entornos
+                  aislados para evitar conflictos entre proyectos.
+                </li>
+                <li>
+                  <span class="fw-bold">Soporte para archivos de requisitos</span>: Puede leer un archivo
+                  <code class="language-python">requirements.txt</code> para
+                  instalar varias dependencias necesarias de un proyecto con
+                  un único comando:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             pip install -r requirements.txt
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Versatilidad en el origen de instalación</span>: Permite instalar paquetes
-                    desde diversas fuentes:
-                    <ul>
-                      <li>PyPI (predeterminado).</li>
-                      <li>
-                        Archivos locales (<code class="language-python">.whl</code>, <code
-                          class="language-python">.tar.gz</code>).
-                      </li>
-                      <li>Repositorios Git, Mercurial, o Subversion.</li>
-                      <li>URLs específicas.</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Actualización de paquetes</span>:
-                    Facilita la actualización de paquetes a versiones más
-                    recientes:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Versatilidad en el origen de instalación</span>: Permite instalar paquetes
+                  desde diversas fuentes:
+                  <ul>
+                    <li>PyPI (predeterminado).</li>
+                    <li>
+                      Archivos locales (<code class="language-python">.whl</code>, <code
+                        class="language-python">.tar.gz</code>).
+                    </li>
+                    <li>Repositorios Git, Mercurial, o Subversion.</li>
+                    <li>URLs específicas.</li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="fw-bold">Actualización de paquetes</span>:
+                  Facilita la actualización de paquetes a versiones más
+                  recientes:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             pip install --upgrade numpy
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Inspección y listado de paquetes instalados</span>:
-                    <ul>
-                      <li>
-                        Muestra los paquetes instalados en el entorno actual:
-                        <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Inspección y listado de paquetes instalados</span>:
+                  <ul>
+                    <li>
+                      Muestra los paquetes instalados en el entorno actual:
+                      <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-bash" data-prismjs-copy="Copy">
                                 pip list
                               </code>
                             </pre>
-                        </div>
-                      </li>
-                      <li>
-                        Proporciona detalles específicos sobre un paquete:
-                        <div class="code-example__syntax">
+                      </div>
+                    </li>
+                    <li>
+                      Proporciona detalles específicos sobre un paquete:
+                      <div class="code-example__syntax">
                           <pre data-src-status="loaded" tabindex="0">
                               <code class="language-bash" data-prismjs-copy="Copy">
                                 pip show nombre_paquete
                               </code>
                             </pre>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Configuración avanzada</span>:
-                    <ul>
-                      <li>
-                        Soporta opciones avanzadas para personalizar
-                        instalaciones, como espejos de PyPI o restricciones de
-                        versiones.
-                      </li>
-                      <li>
-                        Permite el uso de banderas como
-                        <code class="language-python">--no-cache-dir</code> o
-                        <code class="language-python">--user</code>
-                        para instalaciones más controladas.
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Compatibilidad multiplataforma</span>: Funciona en sistemas operativos como
-                    Windows, macOS y
-                    Linux.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Extensibilidad</span>: Permite
-                    desarrollos personalizados para integrar comandos
-                    adicionales o modificar su comportamiento con herramientas
-                    avanzadas.
-                  </li>
-                </ul>
-              </div>
-              <!-- Características Principales de PIP fin -->
-              <!-- Comandos Básicos de PIP -->
-              <div>
-                <h3>Comandos Básicos de PIP</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Instalar un paquete</span>:
-                    <div class="code-example__syntax">
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="fw-bold">Configuración avanzada</span>:
+                  <ul>
+                    <li>
+                      Soporta opciones avanzadas para personalizar
+                      instalaciones, como espejos de PyPI o restricciones de
+                      versiones.
+                    </li>
+                    <li>
+                      Permite el uso de banderas como
+                      <code class="language-python">--no-cache-dir</code> o
+                      <code class="language-python">--user</code>
+                      para instalaciones más controladas.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="fw-bold">Compatibilidad multiplataforma</span>: Funciona en sistemas operativos como
+                  Windows, macOS y
+                  Linux.
+                </li>
+                <li>
+                  <span class="fw-bold">Extensibilidad</span>: Permite
+                  desarrollos personalizados para integrar comandos
+                  adicionales o modificar su comportamiento con herramientas
+                  avanzadas.
+                </li>
+              </ul>
+            </div>
+            <!-- Características Principales de PIP fin -->
+            <!-- Comandos Básicos de PIP -->
+            <div>
+              <h3>Comandos Básicos de PIP</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Instalar un paquete</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             pip install nombre_del_paquete
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Verificar versión de PIP</span>:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Verificar versión de PIP</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             pip --version
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Actualizar PIP</span>:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Actualizar PIP</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             python -m pip install --upgrade pip
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Mostrar detalles de un paquete instalado</span>:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Mostrar detalles de un paquete instalado</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             pip show nombre_del_paquete
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- Comandos Básicos de PIP fin -->
-              <!-- Ventajas de Usar PIP -->
-              <div>
-                <h3>Ventajas de Usar PIP</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Facilidad de instalación</span>:
-                    Permite instalar, actualizar y desinstalar bibliotecas de
-                    Python con simples comandos.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Gestión de dependencias</span>:
-                    Automáticamente instala las dependencias requeridas por
-                    los paquetes.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Acceso al PyPI</span>: Proporciona
-                    acceso al repositorio Python Package Index, con miles de
-                    paquetes disponibles.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Compatibilidad</span>: Funciona con
-                    diferentes entornos virtuales, asegurando proyectos
-                    aislados.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Rapidez y eficiencia</span>:
-                    Simplifica la configuración de entornos y reduce el tiempo
-                    de desarrollo.
-                  </li>
-                </ul>
-              </div>
-              <!-- Ventajas de Usar PIP fin -->
+                  </div>
+                </li>
+              </ul>
             </div>
-            <!-- ¿Qué es PIP? Fin -->
-            <!-- ¿Qué es el ecosistema de paquetes de Python? -->
-            <div id="queEsElEcosistemaDePaquetesDePython" class="mt-5">
-              <h2>
-                ¿Qué es el ecosistema de paquetes de Python?
-              </h2>
+            <!-- Comandos Básicos de PIP fin -->
+            <!-- Ventajas de Usar PIP -->
+            <div>
+              <h3>Ventajas de Usar PIP</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Facilidad de instalación</span>:
+                  Permite instalar, actualizar y desinstalar bibliotecas de
+                  Python con simples comandos.
+                </li>
+                <li>
+                  <span class="fw-bold">Gestión de dependencias</span>:
+                  Automáticamente instala las dependencias requeridas por
+                  los paquetes.
+                </li>
+                <li>
+                  <span class="fw-bold">Acceso al PyPI</span>: Proporciona
+                  acceso al repositorio Python Package Index, con miles de
+                  paquetes disponibles.
+                </li>
+                <li>
+                  <span class="fw-bold">Compatibilidad</span>: Funciona con
+                  diferentes entornos virtuales, asegurando proyectos
+                  aislados.
+                </li>
+                <li>
+                  <span class="fw-bold">Rapidez y eficiencia</span>:
+                  Simplifica la configuración de entornos y reduce el tiempo
+                  de desarrollo.
+                </li>
+              </ul>
+            </div>
+            <!-- Ventajas de Usar PIP fin -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- ¿Qué es PIP? Fin -->
+          <!-- ¿Qué es el ecosistema de paquetes de Python? -->
+          <div id="queEsElEcosistemaDePaquetesDePython" class="mt-3">
+            <h2>
+              ¿Qué es el ecosistema de paquetes de Python?
+            </h2>
+            <p>
+              El ecosistema de paquetes de Python es una de las
+              características clave que ha impulsado su popularidad. Este
+              ecosistema está compuesto por una extensa colección de
+              bibliotecas y frameworks que permiten a los desarrolladores
+              abordar una amplia gama de problemas, desde análisis de datos
+              hasta desarrollo web, inteligencia artificial y más. A
+              continuación, se describe qué es el ecosistema de paquetes,
+              cómo se organiza y cómo puede utilizarse.
+            </p>
+            <!-- Ecosistema de Paquetes de Python -->
+            <div>
+              <h3>Ecosistema de Paquetes de Python</h3>
               <p>
-                El ecosistema de paquetes de Python es una de las
-                características clave que ha impulsado su popularidad. Este
-                ecosistema está compuesto por una extensa colección de
-                bibliotecas y frameworks que permiten a los desarrolladores
-                abordar una amplia gama de problemas, desde análisis de datos
-                hasta desarrollo web, inteligencia artificial y más. A
-                continuación, se describe qué es el ecosistema de paquetes,
-                cómo se organiza y cómo puede utilizarse.
+                El ecosistema de paquetes de Python se refiere al conjunto
+                de bibliotecas, frameworks y herramientas desarrolladas por
+                la comunidad para extender la funcionalidad de Python. Estos
+                paquetes están diseñados para facilitar tareas específicas,
+                como:
               </p>
-              <!-- Ecosistema de Paquetes de Python -->
-              <div>
-                <h3>Ecosistema de Paquetes de Python</h3>
-                <p>
-                  El ecosistema de paquetes de Python se refiere al conjunto
-                  de bibliotecas, frameworks y herramientas desarrolladas por
-                  la comunidad para extender la funcionalidad de Python. Estos
-                  paquetes están diseñados para facilitar tareas específicas,
-                  como:
-                </p>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Análisis de datos</span>:
-                    <code class="language-python">pandas</code>,
-                    <code class="language-python">numpy</code>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Visualización</span>:
-                    <code class="language-python">matplotlib</code>,
-                    <code class="language-python">seaborn</code>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Desarrollo web</span>:
-                    <code class="language-python">Django</code>,
-                    <code class="language-python">Flask</code>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Machine Learning</span>:
-                    <code class="language-python">scikit-learn</code>,
-                    <code class="language-python">TensorFlow</code>,
-                    <code class="language-python">PyTorch</code>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Automatización</span>:
-                    <code class="language-python">selenium</code>,
-                    <code class="language-python">pytest</code>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Ciencia de datos y estadística</span>: <code
-                      class="language-python">statsmodels</code>,
-                    <code class="language-python">scipy</code>
-                  </li>
-                </ul>
-              </div>
-              <!-- Ecosistema de Paquetes de Python fin -->
-              <!-- Herramientas Clave en el Ecosistema de Paquetes -->
-              <div>
-                <h3>Herramientas Clave en el Ecosistema de Paquetes</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">PyPI (Python Package Index)</span>:
-                    Es el repositorio oficial para distribuir paquetes de
-                    Python. Cada paquete en PyPI incluye detalles como la
-                    descripción, versiones, documentación y dependencias.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Pip (Python Package Installer)</span>: Es la herramienta principal para
-                    instalar paquetes
-                    desde PyPI. Pip permite gestionar fácilmente dependencias
-                    y versiones.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Entornos virtuales (<code class="language-python">venv</code>
-                      o <code class="language-python">virtualenv</code>)</span>: Los entornos virtuales permiten
-                    mantener proyectos
-                    aislados, asegurando que las dependencias de un proyecto
-                    no interfieran con las de otros.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Herramientas para gestión avanzada</span>:
-                    <ul>
-                      <li>
-                        <span class="fw-bold">Conda</span>: Un gestor de
-                        paquetes y entornos para proyectos más grandes,
-                        especialmente popular en ciencia de datos.
-                      </li>
-                      <li>
-                        <span class="fw-bold">Poetry</span>: Herramienta
-                        moderna para gestionar dependencias y publicar
-                        paquetes.
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <!-- Herramientas Clave en el Ecosistema de Paquetes fin -->
-              <!-- Cómo Usar el Ecosistema de Paquetes -->
-              <div>
-                <h3>Cómo Usar el Ecosistema de Paquetes</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Instalación de paquetes con pip</span>:
-                    <div class="code-example__syntax">
+              <ul>
+                <li>
+                  <span class="fw-bold">Análisis de datos</span>:
+                  <code class="language-python">pandas</code>,
+                  <code class="language-python">numpy</code>
+                </li>
+                <li>
+                  <span class="fw-bold">Visualización</span>:
+                  <code class="language-python">matplotlib</code>,
+                  <code class="language-python">seaborn</code>
+                </li>
+                <li>
+                  <span class="fw-bold">Desarrollo web</span>:
+                  <code class="language-python">Django</code>,
+                  <code class="language-python">Flask</code>
+                </li>
+                <li>
+                  <span class="fw-bold">Machine Learning</span>:
+                  <code class="language-python">scikit-learn</code>,
+                  <code class="language-python">TensorFlow</code>,
+                  <code class="language-python">PyTorch</code>
+                </li>
+                <li>
+                  <span class="fw-bold">Automatización</span>:
+                  <code class="language-python">selenium</code>,
+                  <code class="language-python">pytest</code>
+                </li>
+                <li>
+                  <span class="fw-bold">Ciencia de datos y estadística</span>: <code
+                    class="language-python">statsmodels</code>,
+                  <code class="language-python">scipy</code>
+                </li>
+              </ul>
+            </div>
+            <!-- Ecosistema de Paquetes de Python fin -->
+            <!-- Herramientas Clave en el Ecosistema de Paquetes -->
+            <div>
+              <h3>Herramientas Clave en el Ecosistema de Paquetes</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">PyPI (Python Package Index)</span>:
+                  Es el repositorio oficial para distribuir paquetes de
+                  Python. Cada paquete en PyPI incluye detalles como la
+                  descripción, versiones, documentación y dependencias.
+                </li>
+                <li>
+                  <span class="fw-bold">Pip (Python Package Installer)</span>: Es la herramienta principal para
+                  instalar paquetes
+                  desde PyPI. Pip permite gestionar fácilmente dependencias
+                  y versiones.
+                </li>
+                <li>
+                  <span class="fw-bold">Entornos virtuales (<code class="language-python">venv</code>
+                    o <code class="language-python">virtualenv</code>)</span>: Los entornos virtuales permiten
+                  mantener proyectos
+                  aislados, asegurando que las dependencias de un proyecto
+                  no interfieran con las de otros.
+                </li>
+                <li>
+                  <span class="fw-bold">Herramientas para gestión avanzada</span>:
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Conda</span>: Un gestor de
+                      paquetes y entornos para proyectos más grandes,
+                      especialmente popular en ciencia de datos.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Poetry</span>: Herramienta
+                      moderna para gestionar dependencias y publicar
+                      paquetes.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- Herramientas Clave en el Ecosistema de Paquetes fin -->
+            <!-- Cómo Usar el Ecosistema de Paquetes -->
+            <div>
+              <h3>Cómo Usar el Ecosistema de Paquetes</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Instalación de paquetes con pip</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             pip install numpy
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Listar paquetes instalados</span>:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Listar paquetes instalados</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             pip list
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Actualizar un paquete</span>:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Actualizar un paquete</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             pip install --upgrade numpy
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Crear un entorno virtual</span>:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Crear un entorno virtual</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             python -m venv nombre_entorno
@@ -516,323 +518,326 @@
                             nombre_entorno\Scripts\activate    # En Windows
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Buscar paquetes en PyPI</span>:
-                    Visitar el sitio oficial
-                    <a href="https://pypi.org/" target="_blank" rel="noopener noreferrer">pypi.org</a>
-                    para explorar paquetes por categoría o funcionalidad.
-                  </li>
-                </ul>
-              </div>
-              <!-- Cómo Usar el Ecosistema de Paquetes fin -->
-              <!-- Buenas Prácticas al Usar el Ecosistema -->
-              <div>
-                <h3>Buenas Prácticas al Usar el Ecosistema</h3>
-                <ul>
-                  <li>Usar entornos virtuales para cada proyecto.</li>
-                  <li>
-                    Congelar dependencias en requirements.txt:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Buscar paquetes en PyPI</span>:
+                  Visitar el sitio oficial
+                  <a href="https://pypi.org/" target="_blank" rel="noopener noreferrer">pypi.org</a>
+                  para explorar paquetes por categoría o funcionalidad.
+                </li>
+              </ul>
+            </div>
+            <!-- Cómo Usar el Ecosistema de Paquetes fin -->
+            <!-- Buenas Prácticas al Usar el Ecosistema -->
+            <div>
+              <h3>Buenas Prácticas al Usar el Ecosistema</h3>
+              <ul>
+                <li>Usar entornos virtuales para cada proyecto.</li>
+                <li>
+                  Congelar dependencias en requirements.txt:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             pip freeze > requirements.txt
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>Leer la documentación oficial de cada paquete.</li>
-                  <li>
-                    Actualizar paquetes regularmente, verificando cambios
-                    importantes en nuevas versiones.
-                  </li>
-                </ul>
-              </div>
-              <!-- Buenas Prácticas al Usar el Ecosistema fin -->
-              <!-- Ventajas del Ecosistema de Paquetes de Python -->
-              <div>
-                <h3>Ventajas del Ecosistema de Paquetes de Python</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Amplitud y diversidad</span>: Miles
-                    de paquetes disponibles para casi cualquier necesidad.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Facilidad de uso</span>:
-                    Herramientas como pip y venv simplifican la gestión.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Comunidad activa</span>:
-                    Actualizaciones frecuentes y soluciones disponibles en
-                    foros como Stack Overflow.
-                  </li>
-                </ul>
-              </div>
-              <!-- Ventajas del Ecosistema de Paquetes de Python fin -->
+                  </div>
+                </li>
+                <li>Leer la documentación oficial de cada paquete.</li>
+                <li>
+                  Actualizar paquetes regularmente, verificando cambios
+                  importantes en nuevas versiones.
+                </li>
+              </ul>
             </div>
-            <!-- ¿Qué es el ecosistema de paquetes de Python? Fin -->
-            <!-- El Repositorio de PyPI -->
-            <div id="elRepositorioDePypi" class="mt-5">
-              <h2>El Repositorio de PyPI</h2>
-              <p>
-                El Repositorio de PyPI (Python Package Index) es un catálogo
-                centralizado y público que aloja paquetes y librerías
-                desarrollados en Python. Este repositorio permite a los
-                desarrolladores compartir y descargar módulos de Python para
-                facilitar el desarrollo de proyectos sin tener que crear todo
-                desde cero. PyPI se utiliza en combinación con la herramienta
-                de administración de paquetes pip, que facilita la instalación
-                y gestión de dichos paquetes.
-              </p>
-              <!-- Características Principales de PyPI -->
-              <div>
-                <h3>Características Principales de PyPI</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Amplia colección de paquetes</span>:
-                    Contiene decenas de miles de paquetes para cubrir una
-                    variedad de necesidades, como análisis de datos,
-                    inteligencia artificial, desarrollo web, interfaces
-                    gráficas, redes y más.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Facilidad de uso</span>: Con pip,
-                    los paquetes pueden instalarse con un simple comando.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Estandarización</span>: Los paquetes
-                    siguen un estándar para facilitar su distribución,
-                    instalación y documentación, utilizando formatos como
-                    Wheel (<code class="language-python">.whl</code>) y Source
-                    Distribution (<code class="language-python">.tar.gz</code>).
-                  </li>
-                  <li>
-                    <span class="fw-bold">Gestión de dependencias</span>: PyPI
-                    permite gestionar automáticamente las dependencias de un
-                    paquete, asegurándose de que todas las librerías
-                    necesarias estén instaladas.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Colaboración y comunidad</span>: Los
-                    desarrolladores pueden subir sus propios paquetes a PyPI,
-                    fomentando la colaboración abierta. El sistema está
-                    diseñado para aceptar proyectos de código abierto y
-                    comercial.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Versionado</span>: Cada paquete
-                    puede incluir múltiples versiones, lo que permite a los
-                    usuarios especificar qué versión instalar.
-                  </li>
-                </ul>
-              </div>
-              <!-- Características Principales de PyPI fin -->
-              <!-- ¿Cómo Funciona PyPI? -->
-              <div>
-                <h3>¿Cómo Funciona PyPI?</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Publicación de paquetes</span>: Los
-                    desarrolladores pueden publicar sus paquetes utilizando
-                    herramientas como setuptools y twine. Por ejemplo:
-                    <div class="code-example__syntax">
+            <!-- Buenas Prácticas al Usar el Ecosistema fin -->
+            <!-- Ventajas del Ecosistema de Paquetes de Python -->
+            <div>
+              <h3>Ventajas del Ecosistema de Paquetes de Python</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Amplitud y diversidad</span>: Miles
+                  de paquetes disponibles para casi cualquier necesidad.
+                </li>
+                <li>
+                  <span class="fw-bold">Facilidad de uso</span>:
+                  Herramientas como pip y venv simplifican la gestión.
+                </li>
+                <li>
+                  <span class="fw-bold">Comunidad activa</span>:
+                  Actualizaciones frecuentes y soluciones disponibles en
+                  foros como Stack Overflow.
+                </li>
+              </ul>
+            </div>
+            <!-- Ventajas del Ecosistema de Paquetes de Python fin -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- ¿Qué es el ecosistema de paquetes de Python? Fin -->
+          <!-- El Repositorio de PyPI -->
+          <div id="elRepositorioDePypi" class="mt-3">
+            <h2>El Repositorio de PyPI</h2>
+            <p>
+              El Repositorio de PyPI (Python Package Index) es un catálogo
+              centralizado y público que aloja paquetes y librerías
+              desarrollados en Python. Este repositorio permite a los
+              desarrolladores compartir y descargar módulos de Python para
+              facilitar el desarrollo de proyectos sin tener que crear todo
+              desde cero. PyPI se utiliza en combinación con la herramienta
+              de administración de paquetes pip, que facilita la instalación
+              y gestión de dichos paquetes.
+            </p>
+            <!-- Características Principales de PyPI -->
+            <div>
+              <h3>Características Principales de PyPI</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Amplia colección de paquetes</span>:
+                  Contiene decenas de miles de paquetes para cubrir una
+                  variedad de necesidades, como análisis de datos,
+                  inteligencia artificial, desarrollo web, interfaces
+                  gráficas, redes y más.
+                </li>
+                <li>
+                  <span class="fw-bold">Facilidad de uso</span>: Con pip,
+                  los paquetes pueden instalarse con un simple comando.
+                </li>
+                <li>
+                  <span class="fw-bold">Estandarización</span>: Los paquetes
+                  siguen un estándar para facilitar su distribución,
+                  instalación y documentación, utilizando formatos como
+                  Wheel (<code class="language-python">.whl</code>) y Source
+                  Distribution (<code class="language-python">.tar.gz</code>).
+                </li>
+                <li>
+                  <span class="fw-bold">Gestión de dependencias</span>: PyPI
+                  permite gestionar automáticamente las dependencias de un
+                  paquete, asegurándose de que todas las librerías
+                  necesarias estén instaladas.
+                </li>
+                <li>
+                  <span class="fw-bold">Colaboración y comunidad</span>: Los
+                  desarrolladores pueden subir sus propios paquetes a PyPI,
+                  fomentando la colaboración abierta. El sistema está
+                  diseñado para aceptar proyectos de código abierto y
+                  comercial.
+                </li>
+                <li>
+                  <span class="fw-bold">Versionado</span>: Cada paquete
+                  puede incluir múltiples versiones, lo que permite a los
+                  usuarios especificar qué versión instalar.
+                </li>
+              </ul>
+            </div>
+            <!-- Características Principales de PyPI fin -->
+            <!-- ¿Cómo Funciona PyPI? -->
+            <div>
+              <h3>¿Cómo Funciona PyPI?</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Publicación de paquetes</span>: Los
+                  desarrolladores pueden publicar sus paquetes utilizando
+                  herramientas como setuptools y twine. Por ejemplo:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             python setup.py sdist bdist_wheel
                             twine upload dist/*
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Búsqueda e instalación de paquetes</span>: Los usuarios pueden buscar paquetes
-                    directamente en el
-                    sitio web de PyPI (<a href="https://pypi.org/" target="_blank"
-                      rel="noopener noreferrer">pypi.org</a>) o desde la terminal con pip.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Seguridad</span>: PyPI implementa
-                    medidas de seguridad como firmas criptográficas para los
-                    paquetes y autenticación de dos factores para los
-                    desarrolladores.
-                  </li>
-                </ul>
-              </div>
-              <!-- ¿Cómo Funciona PyPI? fin -->
-              <!-- Relevancia de PyPI -->
-              <div>
-                <h3>Relevancia de PyPI</h3>
-                <p>
-                  Python Package Index (PyPI) constituye la columna vertebral
-                  de la comunidad de desarrollo de Python, potenciando la
-                  eficiencia y la innovación. Esta plataforma permite a los
-                  desarrolladores acceder a miles de bibliotecas y
-                  herramientas previamente desarrolladas, probadas y
-                  optimizadas, lo que reduce significativamente el tiempo de
-                  implementación de proyectos. Al promover un ecosistema de
-                  código abierto y compartido, PyPI impulsa la colaboración
-                  entre programadores, establece estándares de calidad y
-                  fomenta la reutilización inteligente de soluciones de
-                  software.
-                </p>
-              </div>
-              <!-- Relevancia de PyPI fin -->
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Búsqueda e instalación de paquetes</span>: Los usuarios pueden buscar paquetes
+                  directamente en el
+                  sitio web de PyPI (<a href="https://pypi.org/" target="_blank"
+                    rel="noopener noreferrer">pypi.org</a>) o desde la terminal con pip.
+                </li>
+                <li>
+                  <span class="fw-bold">Seguridad</span>: PyPI implementa
+                  medidas de seguridad como firmas criptográficas para los
+                  paquetes y autenticación de dos factores para los
+                  desarrolladores.
+                </li>
+              </ul>
             </div>
-            <!-- El Repositorio de PyPI Fin -->
-            <!-- Instalación de PIP -->
-            <div id="instalacionDePip" class="mt-5">
-              <h2>Instalación de PIP</h2>
-              <!-- Verificar si PIP ya Está Instalado -->
-              <div>
-                <h3>Verificar si PIP ya Está Instalado</h3>
-                <p>Ejecutar el siguiente comando en la terminal o consola:</p>
-                <div class="code-example__syntax">
+            <!-- ¿Cómo Funciona PyPI? fin -->
+            <!-- Relevancia de PyPI -->
+            <div>
+              <h3>Relevancia de PyPI</h3>
+              <p>
+                Python Package Index (PyPI) constituye la columna vertebral
+                de la comunidad de desarrollo de Python, potenciando la
+                eficiencia y la innovación. Esta plataforma permite a los
+                desarrolladores acceder a miles de bibliotecas y
+                herramientas previamente desarrolladas, probadas y
+                optimizadas, lo que reduce significativamente el tiempo de
+                implementación de proyectos. Al promover un ecosistema de
+                código abierto y compartido, PyPI impulsa la colaboración
+                entre programadores, establece estándares de calidad y
+                fomenta la reutilización inteligente de soluciones de
+                software.
+              </p>
+            </div>
+            <!-- Relevancia de PyPI fin -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- El Repositorio de PyPI Fin -->
+          <!-- Instalación de PIP -->
+          <div id="instalacionDePip" class="mt-3">
+            <h2>Instalación de PIP</h2>
+            <!-- Verificar si PIP ya Está Instalado -->
+            <div>
+              <h3>Verificar si PIP ya Está Instalado</h3>
+              <p>Ejecutar el siguiente comando en la terminal o consola:</p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         pip --version
                         # Salida: pip 22.3.1 from C:\Users\MP1KGT61\miniconda3\envs\FaceEmotion\lib\site-packages\pip (python 3.7)
                       </code>
                     </pre>
-                </div>
-                <p>
-                  Si está instalado, mostrará la versión de pip. Si no, se
-                  deben seguir los pasos para instalarlo.
-                </p>
               </div>
-              <!-- Verificar si PIP ya Está Instalado fin -->
-              <!-- Instalación -->
-              <div>
-                <h3>Instalación</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Descargar e instalar Python desde
-                      <a href="https://www.python.org/downloads/">python.org</a></span>: Durante la instalación,
-                    asegurarse de marcar la opción
-                    "Add Python to PATH".
-                  </li>
-                  <li>
-                    Ejecutar el instalador de Python y asegurarse de
-                    seleccionar la opción para instalar pip.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Verificar la instalación</span>:
-                    <div class="code-example__syntax">
+              <p>
+                Si está instalado, mostrará la versión de pip. Si no, se
+                deben seguir los pasos para instalarlo.
+              </p>
+            </div>
+            <!-- Verificar si PIP ya Está Instalado fin -->
+            <!-- Instalación -->
+            <div>
+              <h3>Instalación</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Descargar e instalar Python desde
+                    <a href="https://www.python.org/downloads/">python.org</a></span>: Durante la instalación,
+                  asegurarse de marcar la opción
+                  "Add Python to PATH".
+                </li>
+                <li>
+                  Ejecutar el instalador de Python y asegurarse de
+                  seleccionar la opción para instalar pip.
+                </li>
+                <li>
+                  <span class="fw-bold">Verificar la instalación</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-bash" data-prismjs-copy="Copy">
                             pip --version
                             # Salida: pip 22.3.1 from C:\Users\MP1KGT61\miniconda3\envs\FaceEmotion\lib\site-packages\pip (python 3.7)
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- Instalación fin -->
-              <!-- Solucionar Posibles Problemas -->
-              <div>
-                <h3>Solucionar Posibles Problemas</h3>
-                <p>
-                  Si pip no se instala correctamente o se desea reinstalar:
-                </p>
-                <ul>
-                  <li>
-                    Descargar el archivo get-pip.py desde
-                    <a href="https://bootstrap.pypa.io/get-pip.py" target="_blank"
-                      rel="noopener noreferrer">https://bootstrap.pypa.io/get-pip.py</a>.
-                  </li>
-                  <li>Ejecutar el archivo con Python:</li>
-                  <div class="code-example__syntax">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Instalación fin -->
+            <!-- Solucionar Posibles Problemas -->
+            <div>
+              <h3>Solucionar Posibles Problemas</h3>
+              <p>
+                Si pip no se instala correctamente o se desea reinstalar:
+              </p>
+              <ul>
+                <li>
+                  Descargar el archivo get-pip.py desde
+                  <a href="https://bootstrap.pypa.io/get-pip.py" target="_blank"
+                    rel="noopener noreferrer">https://bootstrap.pypa.io/get-pip.py</a>.
+                </li>
+                <li>Ejecutar el archivo con Python:</li>
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-bash" data-prismjs-copy="Copy">
                           python get-pip.py
                         </code>
                       </pre>
-                  </div>
-                </ul>
-              </div>
-              <!-- Solucionar Posibles Problemas fin -->
-              <!-- Actualizar PIP -->
-              <div>
-                <h3>Actualizar PIP</h3>
-                <p>Para asegurarse de usar la última versión:</p>
-                <div class="code-example__syntax">
+                </div>
+              </ul>
+            </div>
+            <!-- Solucionar Posibles Problemas fin -->
+            <!-- Actualizar PIP -->
+            <div>
+              <h3>Actualizar PIP</h3>
+              <p>Para asegurarse de usar la última versión:</p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         python -m pip install --upgrade pip
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Actualizar PIP fin -->
-              <!-- Configuración Adicional -->
-              <div>
-                <h3>Configuración Adicional</h3>
-                <p>
-                  Si se necesita instalar paquetes sin permisos de
-                  administrador:
-                </p>
-                <div class="code-example__syntax">
+            </div>
+            <!-- Actualizar PIP fin -->
+            <!-- Configuración Adicional -->
+            <div>
+              <h3>Configuración Adicional</h3>
+              <p>
+                Si se necesita instalar paquetes sin permisos de
+                administrador:
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         pip install nombre-del-paquete --user
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Configuración Adicional fin -->
             </div>
-            <!-- Instalación de PIP Fin -->
-            <!-- Dependencias -->
-            <div id="dependencias" class="mt-5">
-              <h2>Dependencias</h2>
+            <!-- Configuración Adicional fin -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Instalación de PIP Fin -->
+          <!-- Dependencias -->
+          <div id="dependencias" class="mt-3">
+            <h2>Dependencias</h2>
+            <p>
+              En el contexto de Python, las dependencias se refieren a los
+              módulos, bibliotecas o paquetes externos que un proyecto
+              necesita para funcionar correctamente. Estas dependencias no
+              forman parte del código base de Python, pero son esenciales
+              para proporcionar funcionalidades adicionales que no están
+              disponibles en la biblioteca estándar de Python.
+            </p>
+            <p>
+              Por ejemplo, si un desarrollador está trabajando en un
+              proyecto que requiere manipulación de datos, podría necesitar
+              dependencias como
+              <code class="language-python">pandas</code> para el análisis
+              de datos o <code class="language-python">numpy</code> para
+              operaciones numéricas avanzadas. Estas dependencias se
+              instalan generalmente utilizando herramientas de gestión de
+              paquetes como <code class="language-python">pip</code>, que es
+              el instalador de paquetes de Python.
+            </p>
+            <p>
+              Para gestionar las dependencias de un proyecto, se suele
+              utilizar un archivo llamado
+              <code class="language-python">requirements.txt</code> o
+              <code class="language-python">Pipfile</code>, donde se listan
+              todas las bibliotecas y versiones específicas necesarias. Esto
+              facilita la reproducibilidad del entorno de desarrollo,
+              asegurando que cualquier persona que clone el proyecto pueda
+              instalar las mismas dependencias y obtener los mismos
+              resultados.
+            </p>
+            <p>
+              A continuación, se proporciona una plantilla básica para crear
+              los archivos
+              <code class="language-python">requirements.txt</code> y
+              <code class="language-python">Pipfile</code> en un proyecto de
+              Python.
+            </p>
+            <!-- Plantilla para requirements.txt -->
+            <div>
+              <h4>Plantilla para requirements.txt</h4>
               <p>
-                En el contexto de Python, las dependencias se refieren a los
-                módulos, bibliotecas o paquetes externos que un proyecto
-                necesita para funcionar correctamente. Estas dependencias no
-                forman parte del código base de Python, pero son esenciales
-                para proporcionar funcionalidades adicionales que no están
-                disponibles en la biblioteca estándar de Python.
+                Este archivo contiene las dependencias del proyecto de
+                Python. En el formato más simple, se listan los paquetes y
+                sus versiones, o solo los nombres de los paquetes si no se
+                especifica la versión.
               </p>
-              <p>
-                Por ejemplo, si un desarrollador está trabajando en un
-                proyecto que requiere manipulación de datos, podría necesitar
-                dependencias como
-                <code class="language-python">pandas</code> para el análisis
-                de datos o <code class="language-python">numpy</code> para
-                operaciones numéricas avanzadas. Estas dependencias se
-                instalan generalmente utilizando herramientas de gestión de
-                paquetes como <code class="language-python">pip</code>, que es
-                el instalador de paquetes de Python.
-              </p>
-              <p>
-                Para gestionar las dependencias de un proyecto, se suele
-                utilizar un archivo llamado
-                <code class="language-python">requirements.txt</code> o
-                <code class="language-python">Pipfile</code>, donde se listan
-                todas las bibliotecas y versiones específicas necesarias. Esto
-                facilita la reproducibilidad del entorno de desarrollo,
-                asegurando que cualquier persona que clone el proyecto pueda
-                instalar las mismas dependencias y obtener los mismos
-                resultados.
-              </p>
-              <p>
-                A continuación, se proporciona una plantilla básica para crear
-                los archivos
-                <code class="language-python">requirements.txt</code> y
-                <code class="language-python">Pipfile</code> en un proyecto de
-                Python.
-              </p>
-              <!-- Plantilla para requirements.txt -->
-              <div>
-                <h4>Plantilla para requirements.txt</h4>
-                <p>
-                  Este archivo contiene las dependencias del proyecto de
-                  Python. En el formato más simple, se listan los paquetes y
-                  sus versiones, o solo los nombres de los paquetes si no se
-                  especifica la versión.
-                </p>
-                <div class="code-example__syntax">
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-txt" data-prismjs-copy="Copy">
                         # requirements.txt
@@ -845,21 +850,21 @@
                         flake8==3.9.2
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Plantilla para requirements.txt fin -->
-              <!-- Plantilla para Pipfile -->
-              <div>
-                <h4>Plantilla para Pipfile</h4>
-                <p>
-                  El archivo <code class="language-python">Pipfile</code> es
-                  utilizado por
-                  <code class="language-python">pipenv</code> para gestionar
-                  las dependencias de manera más estructurada. Este archivo
-                  también incluye la versión de Python que se debe usar para
-                  el entorno. A continuación se muestra una plantilla básica:
-                </p>
-                <div class="code-example__syntax">
+            </div>
+            <!-- Plantilla para requirements.txt fin -->
+            <!-- Plantilla para Pipfile -->
+            <div>
+              <h4>Plantilla para Pipfile</h4>
+              <p>
+                El archivo <code class="language-python">Pipfile</code> es
+                utilizado por
+                <code class="language-python">pipenv</code> para gestionar
+                las dependencias de manera más estructurada. Este archivo
+                también incluye la versión de Python que se debe usar para
+                el entorno. A continuación se muestra una plantilla básica:
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-toml" data-prismjs-copy="Copy">
                         # Pipfile
@@ -879,60 +884,61 @@
                         python_version = "3.9"
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Plantilla para Pipfile fin -->
             </div>
-            <!-- Dependencias Fin -->
-            <!-- Resumen -->
-            <div id="resumen" class="mt-5">
-              <h2>Resumen</h2>
-              <p>
-                La lista de las actividades principales de pip tiene el
-                siguiente aspecto:
-              </p>
-              <ul>
-                <li>
-                  <span class="fw-bold">pip help operación_o_comando</span>:
-                  muestra una breve descripción de pip.
-                </li>
-                <li>
-                  <span class="fw-bold">pip list</span>: muestra una lista de
-                  los paquetes instalados actualmente.
-                </li>
-                <li>
-                  <span class="fw-bold">pip show nombre_del_paquete</span>:
-                  muestra información que incluyen las dependencias del
-                  paquete.
-                </li>
-                <li>
-                  <span class="fw-bold">pip search cadena</span>: busca en los
-                  directorios de PyPI para encontrar paquetes cuyos nombres
-                  contengan cadena.
-                </li>
-                <li>
-                  <span class="fw-bold">pip install nombre</span>: instala el
-                  paquete nombre en todo el sistema (Si no se cuenta con los
-                  privilegios necesarios, podrían surgir inconvenientes
-                  durante el proceso de instalación.).
-                </li>
-                <li>
-                  <span class="fw-bold">pip install --user nombre</span>:
-                  instala nombre solo para ti; ningún otro usuario de la
-                  plataforma podrá utilizarlo.
-                </li>
-                <li>
-                  <span class="fw-bold">pip install -U nombre</span>:
-                  actualiza un paquete previamente instalado.
-                </li>
-                <li>
-                  <span class="fw-bold">pip uninstall nombre</span>:
-                  desinstala un paquete previamente instalado.
-                </li>
-              </ul>
-            </div>
-            <!-- Resumen Fin -->
+            <!-- Plantilla para Pipfile fin -->
           </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Dependencias Fin -->
+          <!-- Resumen -->
+          <div id="resumen" class="mt-3">
+            <h2>Resumen</h2>
+            <p>
+              La lista de las actividades principales de pip tiene el
+              siguiente aspecto:
+            </p>
+            <ul>
+              <li>
+                <span class="fw-bold">pip help operación_o_comando</span>:
+                muestra una breve descripción de pip.
+              </li>
+              <li>
+                <span class="fw-bold">pip list</span>: muestra una lista de
+                los paquetes instalados actualmente.
+              </li>
+              <li>
+                <span class="fw-bold">pip show nombre_del_paquete</span>:
+                muestra información que incluyen las dependencias del
+                paquete.
+              </li>
+              <li>
+                <span class="fw-bold">pip search cadena</span>: busca en los
+                directorios de PyPI para encontrar paquetes cuyos nombres
+                contengan cadena.
+              </li>
+              <li>
+                <span class="fw-bold">pip install nombre</span>: instala el
+                paquete nombre en todo el sistema (Si no se cuenta con los
+                privilegios necesarios, podrían surgir inconvenientes
+                durante el proceso de instalación.).
+              </li>
+              <li>
+                <span class="fw-bold">pip install --user nombre</span>:
+                instala nombre solo para ti; ningún otro usuario de la
+                plataforma podrá utilizarlo.
+              </li>
+              <li>
+                <span class="fw-bold">pip install -U nombre</span>:
+                actualiza un paquete previamente instalado.
+              </li>
+              <li>
+                <span class="fw-bold">pip uninstall nombre</span>:
+                desinstala un paquete previamente instalado.
+              </li>
+            </ul>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Resumen Fin -->
         </article>
         <!--  Instalador de Paquetes de Python (PIP)  -->
         <!--  comentarios  -->

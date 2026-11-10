@@ -113,49 +113,50 @@
         <!--  Operaciones con listas en Python  -->
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
-          <div>
-            <header>
-              <h1>Operaciones con listas en Python</h1>
-            </header>
-            <!-- Introducción -->
-            <div class="mt-5">
-              <h2>Introducción</h2>
-              <p>
-                El ordenamiento de listas es una tarea fundamental en la
-                programación y en la ciencia de la computación. Existen
-                diversos algoritmos de ordenamiento, cada uno con sus propias
-                características y eficiencia. Uno de los algoritmos más
-                conocidos y sencillos es el algoritmo Burbuja (Bubble Sort).
-                Este algoritmo funciona comparando cada par de elementos
-                adyacentes en una lista y, si están en el orden incorrecto,
-                los intercambia. Este proceso se repite hasta que la lista
-                esté completamente ordenada. Aunque no es el más eficiente
-                para listas grandes, el algoritmo Burbuja es fácil de entender
-                y de implementar, lo que lo convierte en una excelente
-                herramienta pedagógica para aprender sobre ordenamiento.
-              </p>
-              <div class="site-image site-intro-image">
-                <figure class="site-image__figure site-image__figure--intro">
-                  <img src="https://i.ibb.co/YTBW68B/operacioneslistas.jpg" class="img-fluid"
-                    alt="Operaciones con listas en Python  "
-                    title="Operaciones y métodos básicos con listas en Python" />
-                  <figcaption>Operaciones con listas en Python</figcaption>
-                </figure>
-              </div>
+          <header>
+            <h1>Operaciones con listas en Python</h1>
+          </header>
+          <!-- Introducción -->
+          <div class="mt-3">
+            <h2>Introducción</h2>
+            <div class="site-image site-intro-image mb-5">
+              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                <img loading="lazy" src="https://i.ibb.co/YTBW68B/operacioneslistas.jpg" class="img-fluid"
+                  alt="Operaciones con listas en Python  "
+                  title="Operaciones y métodos básicos con listas en Python" />
+                <figcaption class="site-image__caption">Operaciones con listas en Python</figcaption>
+              </figure>
             </div>
+            <p>
+              El ordenamiento de listas es una tarea fundamental en la
+              programación y en la ciencia de la computación. Existen
+              diversos algoritmos de ordenamiento, cada uno con sus propias
+              características y eficiencia. Uno de los algoritmos más
+              conocidos y sencillos es el algoritmo Burbuja (Bubble Sort).
+              Este algoritmo funciona comparando cada par de elementos
+              adyacentes en una lista y, si están en el orden incorrecto,
+              los intercambia. Este proceso se repite hasta que la lista
+              esté completamente ordenada. Aunque no es el más eficiente
+              para listas grandes, el algoritmo Burbuja es fácil de entender
+              y de implementar, lo que lo convierte en una excelente
+              herramienta pedagógica para aprender sobre ordenamiento.
+            </p>
 
-            <!-- Consideraciones Iniciales -->
-            <div id="consideraciones-iniciales" class="mt-5">
-              <h2>Consideraciones Iniciales</h2>
-              <ul>
-                <li>
-                  <span class="fw-bold">Indexación con Base en Cero</span>: La
-                  indexación basada en cero es un sistema de numeración en el
-                  que el primer elemento de una lista se encuentra en la
-                  posición 0. Cada elemento subsiguiente se encuentra en una
-                  posición que es uno más que la posición del elemento
-                  anterior.
-                  <div class="code-example__syntax">
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+
+          <!-- Consideraciones Iniciales -->
+          <div id="consideraciones-iniciales" class="mt-3">
+            <h2>Consideraciones Iniciales</h2>
+            <ul>
+              <li>
+                <span class="fw-bold">Indexación con Base en Cero</span>: La
+                indexación basada en cero es un sistema de numeración en el
+                que el primer elemento de una lista se encuentra en la
+                posición 0. Cada elemento subsiguiente se encuentra en una
+                posición que es uno más que la posición del elemento
+                anterior.
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           mi_lista = ['manzana', 'banana', 'cereza']
@@ -165,33 +166,33 @@
                           tercer_elemento = mi_lista[2]   # 'cereza'
                         </code>
                       </pre>
-                  </div>
-                </li>
-                <li>
-                  <span class="fw-bold">Mutabilidad</span>: Las listas son
-                  mutables, lo que significa que pueden modificarse después de
-                  su creación.
-                </li>
-                <li>
-                  <span class="fw-bold">Orden</span>: Los elementos de una
-                  lista mantienen un orden específico.
-                </li>
-                <li>
-                  <span class="fw-bold">Heterogeneidad</span>: Una lista puede
-                  contener elementos de diferentes tipos.
-                </li>
-                <li>
-                  <span class="fw-bold">Referencia o paso por referencia</span>: Cuando se hace una asignación de una
-                  lista a otra, como
-                  <code class="language-python">lista_2 = lista_1</code>,
-                  ambas variables (<code class="language-python">lista_1 y lista_2</code>) apuntan al mismo objeto en
-                  memoria. Esto significa que no
-                  se realiza una copia independiente de los elementos de la
-                  lista, sino que ambas variables hacen referencia al mismo
-                  espacio de memoria. Por lo tanto, modificar cualquiera de
-                  las dos listas afectará a la otra, ya que ambas apuntan a la
-                  misma ubicación en memoria.
-                  <div class="code-example__syntax">
+                </div>
+              </li>
+              <li>
+                <span class="fw-bold">Mutabilidad</span>: Las listas son
+                mutables, lo que significa que pueden modificarse después de
+                su creación.
+              </li>
+              <li>
+                <span class="fw-bold">Orden</span>: Los elementos de una
+                lista mantienen un orden específico.
+              </li>
+              <li>
+                <span class="fw-bold">Heterogeneidad</span>: Una lista puede
+                contener elementos de diferentes tipos.
+              </li>
+              <li>
+                <span class="fw-bold">Referencia o paso por referencia</span>: Cuando se hace una asignación de una
+                lista a otra, como
+                <code class="language-python">lista_2 = lista_1</code>,
+                ambas variables (<code class="language-python">lista_1 y lista_2</code>) apuntan al mismo objeto en
+                memoria. Esto significa que no
+                se realiza una copia independiente de los elementos de la
+                lista, sino que ambas variables hacen referencia al mismo
+                espacio de memoria. Por lo tanto, modificar cualquiera de
+                las dos listas afectará a la otra, ya que ambas apuntan a la
+                misma ubicación en memoria.
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           lista_1 = [1, 2, 3]
@@ -201,35 +202,36 @@
                           print(lista_2)     # Salida: [1, 2, 3, 4]
                         </code>
                       </pre>
-                  </div>
-                  En este caso, al modificar
-                  <code class="language-python">lista_2</code>, también se
-                  modifica <code class="language-python">lista_1</code>,
-                  porque ambas comparten la misma referencia al objeto en
-                  memoria.
-                </li>
-              </ul>
-            </div>
-            <!-- Consideraciones Iniciales Fin -->
-            <!-- Creación de Listas -->
-            <div id="creacion-de-listas" class="mt-5">
-              <h2>Creación de Listas</h2>
-              <p>Las listas en Python se pueden crear de varias maneras:</p>
-              <ul>
-                <li>
-                  Utilizando los corchetes
-                  <code class="language-python">[]</code>:
-                  <div class="code-example__syntax">
+                </div>
+                En este caso, al modificar
+                <code class="language-python">lista_2</code>, también se
+                modifica <code class="language-python">lista_1</code>,
+                porque ambas comparten la misma referencia al objeto en
+                memoria.
+              </li>
+            </ul>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Consideraciones Iniciales Fin -->
+          <!-- Creación de Listas -->
+          <div id="creacion-de-listas" class="mt-3">
+            <h2>Creación de Listas</h2>
+            <p>Las listas en Python se pueden crear de varias maneras:</p>
+            <ul>
+              <li>
+                Utilizando los corchetes
+                <code class="language-python">[]</code>:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           mi_lista = [1, 2, 3, 4, 5]
                         </code>
                       </pre>
-                  </div>
-                </li>
-                <li>
-                  Crear listas vacías y luego agregar elementos:
-                  <div class="code-example__syntax">
+                </div>
+              </li>
+              <li>
+                Crear listas vacías y luego agregar elementos:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           lista_vacia = []
@@ -237,22 +239,22 @@
                           lista_vacia.append(2)
                         </code>
                       </pre>
-                  </div>
-                </li>
-                <li>
-                  A partir de un rango:
-                  <div class="code-example__syntax">
+                </div>
+              </li>
+              <li>
+                A partir de un rango:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           numeros = lista(range(5))  # [0, 1, 2, 3, 4]
                         </code>
                       </pre>
-                  </div>
-                </li>
-                <li>
-                  Crear listas a partir de otras estructuras de datos, como
-                  tuplas o cadenas:
-                  <div class="code-example__syntax">
+                </div>
+              </li>
+              <li>
+                Crear listas a partir de otras estructuras de datos, como
+                tuplas o cadenas:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           tupla = (1, 2, 3)
@@ -261,23 +263,24 @@
                           lista_desde_cadena = list(cadena)  # ['H', 'o', 'l', 'a']
                         </code>
                       </pre>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <!-- Creación de Listas Fin -->
-            <!-- Adición de Listas -->
-            <div id="adicion-de-listas" class="mt-5">
-              <h2>Adición de Listas</h2>
-              <p>
-                En Python hay varias formas de adicionar/combinar listas. Se
-                explicará las formas más comunes:
-              </p>
-              <ul>
-                <li>
-                  Usando el operador
-                  <code class="language-python">+</code> (concatenación):
-                  <div class="code-example__syntax">
+                </div>
+              </li>
+            </ul>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Creación de Listas Fin -->
+          <!-- Adición de Listas -->
+          <div id="adicion-de-listas" class="mt-3">
+            <h2>Adición de Listas</h2>
+            <p>
+              En Python hay varias formas de adicionar/combinar listas. Se
+              explicará las formas más comunes:
+            </p>
+            <ul>
+              <li>
+                Usando el operador
+                <code class="language-python">+</code> (concatenación):
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           lista1 = [1, 2, 3]
@@ -286,12 +289,12 @@
                           print(lista_combinada)  # Salida: [1, 2, 3, 4, 5, 6]
                         </code>
                       </pre>
-                  </div>
-                </li>
-                <li>
-                  Usando el método
-                  <code class="language-python">extend()</code>:
-                  <div class="code-example__syntax">
+                </div>
+              </li>
+              <li>
+                Usando el método
+                <code class="language-python">extend()</code>:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           lista1 = [1, 2, 3]
@@ -300,13 +303,13 @@
                           print(lista1)  # Salida: [1, 2, 3, 4, 5, 6]
                         </code>
                       </pre>
-                  </div>
-                </li>
-                <li>
-                  Usando el método
-                  <code class="language-python">append()</code> en un ciclo
-                  (si se necesita agregar elemento por elemento):
-                  <div class="code-example__syntax">
+                </div>
+              </li>
+              <li>
+                Usando el método
+                <code class="language-python">append()</code> en un ciclo
+                (si se necesita agregar elemento por elemento):
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           lista1 = [1, 2, 3]
@@ -316,44 +319,45 @@
                           print(lista1)  # Salida: [1, 2, 3, 4, 5, 6]
                         </code>
                       </pre>
-                  </div>
-                </li>
-              </ul>
-              <p>Diferencias importantes:</p>
-              <ul>
-                <li>
-                  El operador <code class="language-python">+</code> crea una
-                  nueva lista
-                </li>
-                <li>
-                  <code class="language-python">extend()</code> modifica la
-                  lista original
-                </li>
-                <li>
-                  <code class="language-python">append()</code> agregaría la
-                  lista completa como un único elemento si no se usa en un
-                  ciclo
-                </li>
-              </ul>
-              <p>
-                La forma más eficiente y recomendada es usar
-                <code class="language-python">extend()</code> cuando se quiera
-                combinar dos listas.
-              </p>
-            </div>
-            <!-- Adición de Listas Fin -->
-            <!-- Eliminación de Listas -->
-            <div id="eliminacion-de-listas" class="mt-5">
-              <h2>Eliminación de Listas</h2>
-              <p>
-                En Python sólo hay una forma de eliminar una lista, es decir
-                borrar todos los elementos.
-              </p>
-              <p>
-                Usando <code class="language-python">clear()</code>: Elimina
-                todos los elementos de la lista:
-              </p>
-              <div class="code-example__syntax">
+                </div>
+              </li>
+            </ul>
+            <p>Diferencias importantes:</p>
+            <ul>
+              <li>
+                El operador <code class="language-python">+</code> crea una
+                nueva lista
+              </li>
+              <li>
+                <code class="language-python">extend()</code> modifica la
+                lista original
+              </li>
+              <li>
+                <code class="language-python">append()</code> agregaría la
+                lista completa como un único elemento si no se usa en un
+                ciclo
+              </li>
+            </ul>
+            <p>
+              La forma más eficiente y recomendada es usar
+              <code class="language-python">extend()</code> cuando se quiera
+              combinar dos listas.
+            </p>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Adición de Listas Fin -->
+          <!-- Eliminación de Listas -->
+          <div id="eliminacion-de-listas" class="mt-3">
+            <h2>Eliminación de Listas</h2>
+            <p>
+              En Python sólo hay una forma de eliminar una lista, es decir
+              borrar todos los elementos.
+            </p>
+            <p>
+              Usando <code class="language-python">clear()</code>: Elimina
+              todos los elementos de la lista:
+            </p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       lista = [1, 2, 3, 4]
@@ -361,25 +365,26 @@
                       print(lista)  # Salida: []
                     </code>
                   </pre>
-              </div>
             </div>
-            <!-- Eliminación de Listas Fin -->
-            <!-- Duplicar Listas -->
-            <div id="duplicar-listas" class="mt-5">
-              <h2>Duplicar Listas</h2>
-              <p>
-                Para duplicar una lista en Python y asegurarse de que la copia
-                sea independiente (es decir, que los cambios en una no afecten
-                a la otra), se pueden usar varios métodos. Aquí se presentan
-                las opciones más comunes y sus aplicaciones:
-              </p>
-              <ul>
-                <li>
-                  Usar el método <code class="language-python">copy()</code>:
-                  El método
-                  <code class="language-python">copy()</code> realiza una
-                  copia superficial de la lista.
-                  <div class="code-example__syntax">
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Eliminación de Listas Fin -->
+          <!-- Duplicar Listas -->
+          <div id="duplicar-listas" class="mt-3">
+            <h2>Duplicar Listas</h2>
+            <p>
+              Para duplicar una lista en Python y asegurarse de que la copia
+              sea independiente (es decir, que los cambios en una no afecten
+              a la otra), se pueden usar varios métodos. Aquí se presentan
+              las opciones más comunes y sus aplicaciones:
+            </p>
+            <ul>
+              <li>
+                Usar el método <code class="language-python">copy()</code>:
+                El método
+                <code class="language-python">copy()</code> realiza una
+                copia superficial de la lista.
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           mi_lista = [1, 2, 3]
@@ -389,13 +394,13 @@
                           print(lista_copia)     # Salida: [1, 2, 3, 4]
                         </code>
                       </pre>
-                  </div>
-                </li>
-                <li>
-                  Usar rebanado (slicing): El rebanado con
-                  <code class="language-python">[:]</code> crea una nueva
-                  lista con los mismos elementos.
-                  <div class="code-example__syntax">
+                </div>
+              </li>
+              <li>
+                Usar rebanado (slicing): El rebanado con
+                <code class="language-python">[:]</code> crea una nueva
+                lista con los mismos elementos.
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           mi_lista = [1, 2, 3]
@@ -405,9 +410,9 @@
                           print(lista_copia)     # Salida: [1, 2, 3, 4]
                         </code>
                       </pre>
-                  </div>
-                  Usando índices negativos:
-                  <div class="code-example__syntax">
+                </div>
+                Usando índices negativos:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           mi_lista = [1, 2, 3, 4]
@@ -415,11 +420,11 @@
                           print(lista_copia)     # Salida: [2, 3]
                         </code>
                       </pre>
-                  </div>
-                  Si el primer índice especifica un elemento que se encuentra
-                  más allá del descrito por end (desde el punto de vista
-                  inicial de la lista), la rebanada estará vacía:
-                  <div class="code-example__syntax">
+                </div>
+                Si el primer índice especifica un elemento que se encuentra
+                más allá del descrito por end (desde el punto de vista
+                inicial de la lista), la rebanada estará vacía:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           mi_lista = [1, 2, 3, 4]
@@ -427,25 +432,25 @@
                           print(lista_copia)     # Salida: []
                       </code>
                     </pre>
-                  </div>
-                  Si se omite el primer índice de la rebanada, es equivalente
-                  a un índice igual a 0. <br />
-                  <code class="language-python">
-                      my_list[:n] = my_list[0:n]
-                    </code>
-                  <br />
-                  Si se omite el último índice de la rebanada, es equivalente
-                  a un índice igual a n. <br />
-                  <code class="language-python">
-                      my_list[start:] = my_list[start:n]
-                    </code>
-                </li>
-                <li>
-                  Usar el constructor
-                  <code class="language-python">list()</code>: El constructor
-                  <code class="language-python">list()</code> crea una nueva
-                  lista con los elementos de la original.
-                  <div class="code-example__syntax">
+                </div>
+                Si se omite el primer índice de la rebanada, es equivalente
+                a un índice igual a 0. <br />
+                <code class="language-python">
+                    my_list[:n] = my_list[0:n]
+                  </code>
+                <br />
+                Si se omite el último índice de la rebanada, es equivalente
+                a un índice igual a n. <br />
+                <code class="language-python">
+                    my_list[start:] = my_list[start:n]
+                  </code>
+              </li>
+              <li>
+                Usar el constructor
+                <code class="language-python">list()</code>: El constructor
+                <code class="language-python">list()</code> crea una nueva
+                lista con los elementos de la original.
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           mi_lista = [1, 2, 3]
@@ -455,17 +460,17 @@
                           print(lista_copia)     # Salida: [1, 2, 3, 4]
                         </code>
                       </pre>
-                  </div>
-                </li>
-                <li>
-                  Usar la librería
-                  <code class="language-python">copy</code> para copias
-                  profundas: Si la lista contiene sublistas u otros objetos
-                  mutables, se debe usar una copia profunda para que las
-                  sublistas también sean independientes. Esto se logra con la
-                  función
-                  <code class="language-python">copy.deepcopy()</code>.
-                  <div class="code-example__syntax">
+                </div>
+              </li>
+              <li>
+                Usar la librería
+                <code class="language-python">copy</code> para copias
+                profundas: Si la lista contiene sublistas u otros objetos
+                mutables, se debe usar una copia profunda para que las
+                sublistas también sean independientes. Esto se logra con la
+                función
+                <code class="language-python">copy.deepcopy()</code>.
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           import copy
@@ -476,23 +481,24 @@
                           print(lista_copia)     # Salida: [[1, 2, 99], [3, 4]]
                         </code>
                       </pre>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <!-- Duplicar Listas Fin -->
-            <!-- Modificación  de Listas -->
-            <div id="modificacion-de-listas" class="mt-5">
-              <h2>Modificación de Listas</h2>
-              <!-- Acceso a Elementos -->
-              <div>
-                <h3>Acceso a Elementos</h3>
-                <ul>
-                  <li>
-                    Los elementos de una lista se pueden acceder utilizando
-                    índices. Recordar que los índices en Python comienzan en
-                    0:
-                    <div class="code-example__syntax">
+                </div>
+              </li>
+            </ul>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Duplicar Listas Fin -->
+          <!-- Modificación  de Listas -->
+          <div id="modificacion-de-listas" class="mt-3">
+            <h2>Modificación de Listas</h2>
+            <!-- Acceso a Elementos -->
+            <div>
+              <h3>Acceso a Elementos</h3>
+              <ul>
+                <li>
+                  Los elementos de una lista se pueden acceder utilizando
+                  índices. Recordar que los índices en Python comienzan en
+                  0:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             mi_lista = [10, 20, 30, 40, 50]
@@ -500,32 +506,32 @@
                             print(mi_lista[2])  # Salida: 30
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    También se tiene acceso a los elementos desde el final de
-                    la lista usando índices negativos:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  También se tiene acceso a los elementos desde el final de
+                  la lista usando índices negativos:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             print(mi_lista[-1])  # Salida: 50
                             print(mi_lista[-2])  # Salida: 40
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- Acceso a Elementos fin -->
-              <!-- Agregar Elementos -->
-              <div>
-                <h3>Agregar Elementos</h3>
-                <ul>
-                  <li>
-                    Usando el método
-                    <code class="language-python">append()</code>: Añade un
-                    elemento al final.
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Acceso a Elementos fin -->
+            <!-- Agregar Elementos -->
+            <div>
+              <h3>Agregar Elementos</h3>
+              <ul>
+                <li>
+                  Usando el método
+                  <code class="language-python">append()</code>: Añade un
+                  elemento al final.
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             mi_lista = [1, 2, 3]
@@ -533,13 +539,13 @@
                             print(mi_lista)  # Salida: [1, 2, 3, 4]
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    Usando el método
-                    <code class="language-python">insert()</code>: Inserta un
-                    elemento en una posición específica.
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  Usando el método
+                  <code class="language-python">insert()</code>: Inserta un
+                  elemento en una posición específica.
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             mi_lista = [1, 2, 4]
@@ -547,13 +553,13 @@
                             print(mi_lista)  # Salida: [1, 2, 3, 4] 
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    Usando el método
-                    <code class="language-python">extend()</code>: Agrega
-                    varios elementos al final de la lista.
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  Usando el método
+                  <code class="language-python">extend()</code>: Agrega
+                  varios elementos al final de la lista.
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             mi_lista = [1, 2]
@@ -561,20 +567,20 @@
                             print(mi_lista)  # Salida: [1, 2, 3, 4]
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- Agregar Elementos fin -->
-              <!-- Eliminar Elementos -->
-              <div>
-                <h3>Eliminar Elementos</h3>
-                <ul>
-                  <li>
-                    Usando el método
-                    <code class="language-python">remove()</code>: Elimina la
-                    primera aparición de un valor específico.
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Agregar Elementos fin -->
+            <!-- Eliminar Elementos -->
+            <div>
+              <h3>Eliminar Elementos</h3>
+              <ul>
+                <li>
+                  Usando el método
+                  <code class="language-python">remove()</code>: Elimina la
+                  primera aparición de un valor específico.
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             mi_lista = [1, 2, 3, 4]
@@ -582,14 +588,14 @@
                             print(mi_lista)  # Salida: [1, 2, 4]
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    Usando el método
-                    <code class="language-python">pop()</code>: Elimina un
-                    elemento por su índice (o el último elemento si no se
-                    especifica un índice).
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  Usando el método
+                  <code class="language-python">pop()</code>: Elimina un
+                  elemento por su índice (o el último elemento si no se
+                  especifica un índice).
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             mi_lista = [1, 2, 3, 4]
@@ -597,13 +603,13 @@
                             print(mi_lista)  # Salida: [1, 2, 4]
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    Usando el método
-                    <code class="language-python">del()</code>: Elimina un
-                    elemento o una porción de la lista.
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  Usando el método
+                  <code class="language-python">del()</code>: Elimina un
+                  elemento o una porción de la lista.
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             mi_lista = [1, 2, 3, 4]
@@ -615,19 +621,19 @@
                             print(mi_lista)  #Salida: []
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- Eliminar Elementos fin -->
-              <!-- Cambiar Elementos -->
-              <div>
-                <h3>Cambiar Elementos</h3>
-                <p>
-                  Se puede acceder a un elemento de la lista por su índice y
-                  asignarle un nuevo valor.
-                </p>
-                <div class="code-example__syntax">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Eliminar Elementos fin -->
+            <!-- Cambiar Elementos -->
+            <div>
+              <h3>Cambiar Elementos</h3>
+              <p>
+                Se puede acceder a un elemento de la lista por su índice y
+                asignarle un nuevo valor.
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         mi_lista = [1, 2, 3, 4]
@@ -635,14 +641,14 @@
                         print(mi_lista)   # Salida: [1, 20, 3, 4]
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Cambiar Elementos fin -->
-              <!-- Modificar con Rebanadas (Slices) -->
-              <div>
-                <h3>Modificar con Rebanadas (Slices)</h3>
-                <p>Se puede reemplazar un rango de elementos con otros.</p>
-                <div class="code-example__syntax">
+            </div>
+            <!-- Cambiar Elementos fin -->
+            <!-- Modificar con Rebanadas (Slices) -->
+            <div>
+              <h3>Modificar con Rebanadas (Slices)</h3>
+              <p>Se puede reemplazar un rango de elementos con otros.</p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         mi_lista = [1, 2, 3, 4]
@@ -650,18 +656,18 @@
                         print(mi_lista)           # Salida: [1, 20, 30, 4]
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Modificar con Rebanadas (Slices) fin -->
-              <!-- Ordenar elementos -->
-              <div>
-                <h3>Ordenar elementos</h3>
-                <p>Se tienen dos opciones:</p>
-                <ul>
-                  <li>
-                    Usar <code class="language-python">sort()</code>: Ordena
-                    la lista en su lugar.
-                    <div class="code-example__syntax">
+            </div>
+            <!-- Modificar con Rebanadas (Slices) fin -->
+            <!-- Ordenar elementos -->
+            <div>
+              <h3>Ordenar elementos</h3>
+              <p>Se tienen dos opciones:</p>
+              <ul>
+                <li>
+                  Usar <code class="language-python">sort()</code>: Ordena
+                  la lista en su lugar.
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             mi_lista = [4, 1, 3, 2]
@@ -669,12 +675,12 @@
                             print(mi_lista)  # Salida: [1, 2, 3, 4]
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    Usar <code class="language-python">reverse()</code>:
-                    Invierte el orden de los elementos.
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  Usar <code class="language-python">reverse()</code>:
+                  Invierte el orden de los elementos.
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             mi_lista = [1, 2, 3, 4]
@@ -682,20 +688,20 @@
                             print(mi_lista)  # Salida: [4, 3, 2, 1]
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- Ordenar elementos fin -->
-              <!-- Búsqueda de Elementos -->
-              <div>
-                <h3>Búsqueda de Elementos</h3>
-                <ul>
-                  <li>
-                    Verificar si un elemento está en la lista: Se usa el
-                    operador <code class="language-python">in</code> para
-                    determinar si un elemento está presente.
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Ordenar elementos fin -->
+            <!-- Búsqueda de Elementos -->
+            <div>
+              <h3>Búsqueda de Elementos</h3>
+              <ul>
+                <li>
+                  Verificar si un elemento está en la lista: Se usa el
+                  operador <code class="language-python">in</code> para
+                  determinar si un elemento está presente.
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             mi_lista = [1, 2, 3, 4]
@@ -703,13 +709,13 @@
                             print(5 in mi_lista)  # Salida: False
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    Encontrar el índice de un elemento: Se usa el método
-                    <code class="language-python">index()</code> para obtener
-                    la posición del primer elemento coincidente.
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  Encontrar el índice de un elemento: Se usa el método
+                  <code class="language-python">index()</code> para obtener
+                  la posición del primer elemento coincidente.
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             mi_lista = [1, 2, 3, 4, 3]
@@ -717,19 +723,19 @@
                             print(indice)  # Salida: 2
                           </code>
                         </pre>
-                    </div>
-                    <ul>
-                      <li>
-                        Si el elemento no está en la lista, se genera un error
-                        <code class="language-python">ValueError</code>.
-                      </li>
-                      <li>
-                        Para evitarlo, se puede usar una verificación previa
-                        con
-                        <code class="language-python">in</code>:
-                      </li>
-                    </ul>
-                    <div class="code-example__syntax">
+                  </div>
+                  <ul>
+                    <li>
+                      Si el elemento no está en la lista, se genera un error
+                      <code class="language-python">ValueError</code>.
+                    </li>
+                    <li>
+                      Para evitarlo, se puede usar una verificación previa
+                      con
+                      <code class="language-python">in</code>:
+                    </li>
+                  </ul>
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             if 5 in mi_lista:
@@ -738,13 +744,13 @@
                                 print("El elemento no está en la lista")
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    Usar <code class="language-python">filter()</code>:
-                    Devuelve los elementos que cumplen una condición
-                    específica.
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  Usar <code class="language-python">filter()</code>:
+                  Devuelve los elementos que cumplen una condición
+                  específica.
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             mi_lista = [1, 2, 3, 4, 5]
@@ -752,24 +758,24 @@
                             print(pares)  # Salida: [2, 4]
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    Usar <code class="language-python">any</code> y
-                    <code class="language-python">all</code>:
-                    <ul>
-                      <li>
-                        <code class="language-python">any</code>: Retorna
-                        <code class="language-python">True</code> si al menos
-                        un elemento cumple la condición.
-                      </li>
-                      <li>
-                        <code class="language-python">all</code>: Retorna
-                        <code class="language-python">True</code> si todos los
-                        elementos cumplen la condición.
-                      </li>
-                    </ul>
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  Usar <code class="language-python">any</code> y
+                  <code class="language-python">all</code>:
+                  <ul>
+                    <li>
+                      <code class="language-python">any</code>: Retorna
+                      <code class="language-python">True</code> si al menos
+                      un elemento cumple la condición.
+                    </li>
+                    <li>
+                      <code class="language-python">all</code>: Retorna
+                      <code class="language-python">True</code> si todos los
+                      elementos cumplen la condición.
+                    </li>
+                  </ul>
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             mi_lista = [1, 2, 3, 4, 5]
@@ -777,21 +783,21 @@
                             print(all(x > 0 for x in mi_lista))  # Salida: True
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- Búsqueda de Elementos fin -->
-              <!-- Repetir elementos en una lista -->
-              <div>
-                <h3>Repetir elementos en una lista</h3>
-                <p>
-                  Si se necesita repetir todos los elementos de una lista, se
-                  pueden usar el operador
-                  <code class="language-python">*</code> o métodos
-                  específicos.
-                </p>
-                <div class="code-example__syntax">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Búsqueda de Elementos fin -->
+            <!-- Repetir elementos en una lista -->
+            <div>
+              <h3>Repetir elementos en una lista</h3>
+              <p>
+                Si se necesita repetir todos los elementos de una lista, se
+                pueden usar el operador
+                <code class="language-python">*</code> o métodos
+                específicos.
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         lista_repetida = [0] * 5  # [0, 0, 0, 0, 0]
@@ -800,29 +806,30 @@
                         print(repetida)  # Salida: [1, 2, 3, 1, 2, 3, 1, 2, 3]
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Repetir elementos en una lista fin -->
             </div>
-            <!-- Modificación  de Listas Fin -->
-            <!-- Arreglos de Dos Dimensiones -->
-            <div id="arreglos-de-dos-dimensiones" class="mt-5">
-              <h2>Arreglos de Dos Dimensiones</h2>
+            <!-- Repetir elementos en una lista fin -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Modificación  de Listas Fin -->
+          <!-- Arreglos de Dos Dimensiones -->
+          <div id="arreglos-de-dos-dimensiones" class="mt-3">
+            <h2>Arreglos de Dos Dimensiones</h2>
+            <p>
+              En Python, los arreglos de dos dimensiones se pueden
+              representar utilizando listas anidadas, también conocidas como
+              listas de listas. Cada elemento de la lista principal es otra
+              lista, lo que permite almacenar datos en una estructura de
+              matriz.
+            </p>
+            <!-- Creación de un Arreglo de Dos Dimensiones -->
+            <div>
+              <h3>Creación de un Arreglo de Dos Dimensiones</h3>
               <p>
-                En Python, los arreglos de dos dimensiones se pueden
-                representar utilizando listas anidadas, también conocidas como
-                listas de listas. Cada elemento de la lista principal es otra
-                lista, lo que permite almacenar datos en una estructura de
-                matriz.
+                Se puede crear un arreglo de dos dimensiones inicializando
+                una lista de listas. Por ejemplo:
               </p>
-              <!-- Creación de un Arreglo de Dos Dimensiones -->
-              <div>
-                <h3>Creación de un Arreglo de Dos Dimensiones</h3>
-                <p>
-                  Se puede crear un arreglo de dos dimensiones inicializando
-                  una lista de listas. Por ejemplo:
-                </p>
-                <div class="code-example__syntax">
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Crear un arreglo de 2x3
@@ -832,18 +839,18 @@
                         [7, 8, 9]]
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Creación de un Arreglo de Dos Dimensiones fin -->
-              <!-- Acceso a Elementos de un Arreglo de Dos Dimensiones -->
-              <div>
-                <h3>Acceso a Elementos de un Arreglo de Dos Dimensiones</h3>
-                <p>
-                  Para acceder a un elemento específico en un arreglo de dos
-                  dimensiones, es necesario proporcionar dos índices: uno para
-                  la fila y otro para la columna.
-                </p>
-                <div class="code-example__syntax">
+            </div>
+            <!-- Creación de un Arreglo de Dos Dimensiones fin -->
+            <!-- Acceso a Elementos de un Arreglo de Dos Dimensiones -->
+            <div>
+              <h3>Acceso a Elementos de un Arreglo de Dos Dimensiones</h3>
+              <p>
+                Para acceder a un elemento específico en un arreglo de dos
+                dimensiones, es necesario proporcionar dos índices: uno para
+                la fila y otro para la columna.
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Acceder al elemento en la fila 1, columna 2 (índice 0-based)
@@ -851,17 +858,17 @@
                         print(elemento)
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Acceso a Elementos de un Arreglo de Dos Dimensiones fin -->
-              <!-- Modificación de Elementos de un Arreglo de Dos Dimensiones -->
-              <div>
-                <h3>Modificación de Elementos de un Arreglo de Dos Dimensiones</h3>
-                <p>
-                  Se modifica un elemento específico proporcionando los
-                  índices de fila y columna.
-                </p>
-                <div class="code-example__syntax">
+            </div>
+            <!-- Acceso a Elementos de un Arreglo de Dos Dimensiones fin -->
+            <!-- Modificación de Elementos de un Arreglo de Dos Dimensiones -->
+            <div>
+              <h3>Modificación de Elementos de un Arreglo de Dos Dimensiones</h3>
+              <p>
+                Se modifica un elemento específico proporcionando los
+                índices de fila y columna.
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Modificar el elemento en la fila 0, columna 1
@@ -874,17 +881,17 @@
                         #   [7, 8, 9]]
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Modificación de Elementos de un Arreglo de Dos Dimensiones fin -->
-              <!-- Recorrer un Arreglo de Dos Dimensiones -->
-              <div>
-                <h3>Recorrer un Arreglo de Dos Dimensiones</h3>
-                <p>
-                  Recorrer un arreglo de dos dimensiones se utiliza bucles
-                  anidados.
-                </p>
-                <div class="code-example__syntax">
+            </div>
+            <!-- Modificación de Elementos de un Arreglo de Dos Dimensiones fin -->
+            <!-- Recorrer un Arreglo de Dos Dimensiones -->
+            <div>
+              <h3>Recorrer un Arreglo de Dos Dimensiones</h3>
+              <p>
+                Recorrer un arreglo de dos dimensiones se utiliza bucles
+                anidados.
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Recorrer e imprimir todos los elementos
@@ -894,17 +901,17 @@
                             print()0
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Recorrer un Arreglo de Dos Dimensiones fin -->
-              <!-- Ejemplo Completo de un Arreglo de Dos Dimensiones -->
-              <div>
-                <h3>Ejemplo Completo de un Arreglo de Dos Dimensiones</h3>
-                <p>
-                  Este es un ejemplo completo que incluye la creación, acceso,
-                  modificación y recorrido de un arreglo de dos dimensiones:
-                </p>
-                <div class="code-example__syntax">
+            </div>
+            <!-- Recorrer un Arreglo de Dos Dimensiones fin -->
+            <!-- Ejemplo Completo de un Arreglo de Dos Dimensiones -->
+            <div>
+              <h3>Ejemplo Completo de un Arreglo de Dos Dimensiones</h3>
+              <p>
+                Este es un ejemplo completo que incluye la creación, acceso,
+                modificación y recorrido de un arreglo de dos dimensiones:
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Crear un arreglo de 3x3
@@ -929,20 +936,20 @@
                         print()
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Ejemplo Completo de un Arreglo de Dos Dimensiones fin -->
-              <!-- Uso de Bibliotecas -->
-              <div>
-                <h3>Uso de Bibliotecas</h3>
-                <p>
-                  Para operaciones más avanzadas con arreglos de dos
-                  dimensiones, se utiliza bibliotecas como
-                  <strong>NumPy</strong>, que proporciona una implementación
-                  eficiente y funciones adicionales para trabajar con
-                  matrices.
-                </p>
-                <div class="code-example__syntax">
+            </div>
+            <!-- Ejemplo Completo de un Arreglo de Dos Dimensiones fin -->
+            <!-- Uso de Bibliotecas -->
+            <div>
+              <h3>Uso de Bibliotecas</h3>
+              <p>
+                Para operaciones más avanzadas con arreglos de dos
+                dimensiones, se utiliza bibliotecas como
+                <strong>NumPy</strong>, que proporciona una implementación
+                eficiente y funciones adicionales para trabajar con
+                matrices.
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         import numpy as np
@@ -960,29 +967,30 @@
                         print(arreglo_2d)
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Uso de Bibliotecas fin -->
             </div>
-            <!-- Arreglos de Dos Dimensiones Fin -->
-            <!-- Listas Dentro de Listas -->
-            <div id="listas-dentro-de-listas" class="mt-5">
-              <h2>Listas Dentro de Listas</h2>
+            <!-- Uso de Bibliotecas fin -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Arreglos de Dos Dimensiones Fin -->
+          <!-- Listas Dentro de Listas -->
+          <div id="listas-dentro-de-listas" class="mt-3">
+            <h2>Listas Dentro de Listas</h2>
+            <p>
+              En Python, las listas dentro de listas, también conocidas como
+              listas anidadas, son una forma poderosa de organizar datos en
+              una estructura de dos o más dimensiones. Esto es especialmente
+              útil para representar matrices, tablas, o cualquier otra
+              estructura de datos jerárquica.
+            </p>
+            <!-- Creación de Listas Anidadas -->
+            <div>
+              <h3>Creación de Listas Anidadas</h3>
               <p>
-                En Python, las listas dentro de listas, también conocidas como
-                listas anidadas, son una forma poderosa de organizar datos en
-                una estructura de dos o más dimensiones. Esto es especialmente
-                útil para representar matrices, tablas, o cualquier otra
-                estructura de datos jerárquica.
+                Se puede crear una lista anidada inicializando una lista que
+                contiene otras listas. Por ejemplo:
               </p>
-              <!-- Creación de Listas Anidadas -->
-              <div>
-                <h3>Creación de Listas Anidadas</h3>
-                <p>
-                  Se puede crear una lista anidada inicializando una lista que
-                  contiene otras listas. Por ejemplo:
-                </p>
-                <div class="code-example__syntax">
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Crear una lista anidada de 3x3
@@ -992,17 +1000,17 @@
                         [7, 8, 9]]
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Creación de Listas Anidadas fin -->
-              <!-- Acceso a Elementos de Listas Anidadas -->
-              <div>
-                <h3>Acceso a Elementos de Listas Anidadas</h3>
-                <p>
-                  Para acceder a un elemento específico en una lista anidada,
-                  se necesita proporcionar los índices correspondientes.
-                </p>
-                <div class="code-example__syntax">
+            </div>
+            <!-- Creación de Listas Anidadas fin -->
+            <!-- Acceso a Elementos de Listas Anidadas -->
+            <div>
+              <h3>Acceso a Elementos de Listas Anidadas</h3>
+              <p>
+                Para acceder a un elemento específico en una lista anidada,
+                se necesita proporcionar los índices correspondientes.
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Acceder al elemento en la lista 1, elemento 2 (índice 0-based)
@@ -1010,17 +1018,17 @@
                         print(elemento)
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Acceso a Elementos de Listas Anidadas fin -->
-              <!-- Modificación de Elementos de Listas Anidadas -->
-              <div>
-                <h3>Modificación de Elementos de Listas Anidadas</h3>
-                <p>
-                  Para modificar un elemento específico se proporcionan los
-                  índices correspondientes.
-                </p>
-                <div class="code-example__syntax">
+            </div>
+            <!-- Acceso a Elementos de Listas Anidadas fin -->
+            <!-- Modificación de Elementos de Listas Anidadas -->
+            <div>
+              <h3>Modificación de Elementos de Listas Anidadas</h3>
+              <p>
+                Para modificar un elemento específico se proporcionan los
+                índices correspondientes.
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Modificar el elemento en la fila 0, columna 1
@@ -1033,17 +1041,17 @@
                         #   [7, 8, 9]]
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Modificación de Elementos de Listas Anidadas fin -->
-              <!-- Recorrer una Lista Anidada -->
-              <div>
-                <h3>Recorrer una Lista Anidada</h3>
-                <p>
-                  Se puede recorrer una lista anidada utilizando bucles
-                  anidados.
-                </p>
-                <div class="code-example__syntax">
+            </div>
+            <!-- Modificación de Elementos de Listas Anidadas fin -->
+            <!-- Recorrer una Lista Anidada -->
+            <div>
+              <h3>Recorrer una Lista Anidada</h3>
+              <p>
+                Se puede recorrer una lista anidada utilizando bucles
+                anidados.
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Recorrer e imprimir todos los elementos
@@ -1053,17 +1061,17 @@
                             print()
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Recorrer una Lista Anidada fin -->
-              <!-- Ejemplo Completo Manejo de Lista Anidada -->
-              <div>
-                <h3>Ejemplo Completo Manejo de Lista Anidada</h3>
-                <p>
-                  Este ejemplo completo incluye la creación, acceso,
-                  modificación y recorrido de una lista anidada:
-                </p>
-                <div class="code-example__syntax">
+            </div>
+            <!-- Recorrer una Lista Anidada fin -->
+            <!-- Ejemplo Completo Manejo de Lista Anidada -->
+            <div>
+              <h3>Ejemplo Completo Manejo de Lista Anidada</h3>
+              <p>
+                Este ejemplo completo incluye la creación, acceso,
+                modificación y recorrido de una lista anidada:
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Crear una lista anidada de 3x3
@@ -1087,17 +1095,17 @@
                             print()
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Ejemplo Completo Manejo de Lista Anidada fin -->
-              <!-- Uso de Listas Anidadas en Funciones -->
-              <div>
-                <h3>Uso de Listas Anidadas en Funciones</h3>
-                <p>
-                  Se puede pasar listas anidadas a funciones y manipularlas
-                  dentro de ellas.
-                </p>
-                <div class="code-example__syntax">
+            </div>
+            <!-- Ejemplo Completo Manejo de Lista Anidada fin -->
+            <!-- Uso de Listas Anidadas en Funciones -->
+            <div>
+              <h3>Uso de Listas Anidadas en Funciones</h3>
+              <p>
+                Se puede pasar listas anidadas a funciones y manipularlas
+                dentro de ellas.
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def imprimir_lista_anidada(lista):
@@ -1109,17 +1117,17 @@
                         imprimir_lista_anidada(lista_anidada)
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Uso de Listas Anidadas en Funciones fin -->
-              <!-- Listas Anidadas de Más de Dos Dimensiones -->
-              <div>
-                <h3>Listas Anidadas de Más de Dos Dimensiones</h3>
-                <p>
-                  También se puede crear listas anidadas de más de dos
-                  dimensiones. Por ejemplo, una lista de tres dimensiones:
-                </p>
-                <div class="code-example__syntax">
+            </div>
+            <!-- Uso de Listas Anidadas en Funciones fin -->
+            <!-- Listas Anidadas de Más de Dos Dimensiones -->
+            <div>
+              <h3>Listas Anidadas de Más de Dos Dimensiones</h3>
+              <p>
+                También se puede crear listas anidadas de más de dos
+                dimensiones. Por ejemplo, una lista de tres dimensiones:
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Crear una lista anidada de 2x2x2
@@ -1138,24 +1146,25 @@
                         print(elemento)
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Listas Anidadas de Más de Dos Dimensiones fin -->
             </div>
-            <!-- Listas Dentro de Listas Fin -->
-            <!-- Otras Funciones -->
-            <div id="otras-funciones" class="mt-5">
-              <h2>Otras Funciones</h2>
-              <!-- Longitud -->
-              <div>
-                <h3>Longitud</h3>
-                <p>
-                  La función <code class="language-python">len()</code> en
-                  Python se utiliza para obtener la longitud de una lista, es
-                  decir, la cantidad de elementos que contiene. Su uso es muy
-                  sencillo:
-                </p>
-                <div class="code-example__syntax">
+            <!-- Listas Anidadas de Más de Dos Dimensiones fin -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Listas Dentro de Listas Fin -->
+          <!-- Otras Funciones -->
+          <div id="otras-funciones" class="mt-3">
+            <h2>Otras Funciones</h2>
+            <!-- Longitud -->
+            <div>
+              <h3>Longitud</h3>
+              <p>
+                La función <code class="language-python">len()</code> en
+                Python se utiliza para obtener la longitud de una lista, es
+                decir, la cantidad de elementos que contiene. Su uso es muy
+                sencillo:
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         mi_lista = [1, 2, 3, 4, 5]
@@ -1163,32 +1172,32 @@
                         print(longitud)  # Salida: 5
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Longitud fin -->
-              <!-- Operadores de Pertenencia -->
-              <div>
-                <h3>Operadores de Pertenencia</h3>
-                <p>
-                  En Python, los operadores
-                  <code class="language-python">in</code> y
-                  <code class="language-python">not in</code> se utilizan para
-                  verificar la presencia o ausencia de un elemento en una
-                  secuencia o colección. Estos operadores son muy útiles para
-                  realizar comprobaciones rápidas y claras sobre la existencia
-                  de elementos en listas, tuplas, cadenas, conjuntos y
-                  diccionarios.
-                </p>
-                <h4>Operador <code class="language-python">in</code></h4>
-                <p>
-                  El operador <code class="language-python">in</code> se
-                  utiliza para verificar si un valor específico está presente
-                  en una secuencia o colección. Devuelve
-                  <code class="language-python">True</code> si el valor está
-                  presente y <code class="language-python">False</code> si no
-                  lo está.
-                </p>
-                <div class="code-example__syntax">
+            </div>
+            <!-- Longitud fin -->
+            <!-- Operadores de Pertenencia -->
+            <div>
+              <h3>Operadores de Pertenencia</h3>
+              <p>
+                En Python, los operadores
+                <code class="language-python">in</code> y
+                <code class="language-python">not in</code> se utilizan para
+                verificar la presencia o ausencia de un elemento en una
+                secuencia o colección. Estos operadores son muy útiles para
+                realizar comprobaciones rápidas y claras sobre la existencia
+                de elementos en listas, tuplas, cadenas, conjuntos y
+                diccionarios.
+              </p>
+              <h4>Operador <code class="language-python">in</code></h4>
+              <p>
+                El operador <code class="language-python">in</code> se
+                utiliza para verificar si un valor específico está presente
+                en una secuencia o colección. Devuelve
+                <code class="language-python">True</code> si el valor está
+                presente y <code class="language-python">False</code> si no
+                lo está.
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         mi_lista = [1, 2, 3, 4]
@@ -1196,17 +1205,17 @@
                         print(5 in mi_lista)  # Salida: False
                       </code>
                     </pre>
-                </div>
-                <h4>Operador <code class="language-python">not in</code></h4>
-                <p>
-                  El operador <code class="language-python">not in</code> se
-                  utiliza para verificar si un valor específico no está
-                  presente en una secuencia o colección. Devuelve
-                  <code class="language-python">True</code> si el valor no
-                  está presente y <code class="language-python">False</code>
-                  si lo está.
-                </p>
-                <div class="code-example__syntax">
+              </div>
+              <h4>Operador <code class="language-python">not in</code></h4>
+              <p>
+                El operador <code class="language-python">not in</code> se
+                utiliza para verificar si un valor específico no está
+                presente en una secuencia o colección. Devuelve
+                <code class="language-python">True</code> si el valor no
+                está presente y <code class="language-python">False</code>
+                si lo está.
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         mi_lista = [1, 2, 3, 4]
@@ -1214,41 +1223,41 @@
                         print(3 in mi_lista)  # Salida: False
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Operadores de Pertenencia fin -->
-              <!-- comprensión de Listas -->
-              <div>
-                <h3>comprensión de Listas</h3>
-                <p>
-                  La comprensión de listas en Python es una técnica concisa y
-                  eficiente para crear nuevas listas a partir de iterables
-                  existentes, como listas, tuplas o cadenas, aplicando
-                  condiciones o transformaciones en una sola línea de código.
-                </p>
-                <p>Sintaxis básica:</p>
-                <div class="code-example__syntax">
+            </div>
+            <!-- Operadores de Pertenencia fin -->
+            <!-- comprensión de Listas -->
+            <div>
+              <h3>comprensión de Listas</h3>
+              <p>
+                La comprensión de listas en Python es una técnica concisa y
+                eficiente para crear nuevas listas a partir de iterables
+                existentes, como listas, tuplas o cadenas, aplicando
+                condiciones o transformaciones en una sola línea de código.
+              </p>
+              <p>Sintaxis básica:</p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         nueva_lista = [expresion for elemento in iterable]
                       </code>
                     </pre>
-                </div>
-                <ul>
-                  <li>
-                    <code class="language-python">expresion</code>: Operación
-                    o valor que se agrega a la nueva lista.
-                  </li>
-                  <li>
-                    <code class="language-python">for elemento in iterable</code>: Ciclo que recorre el iterable (como
-                    una lista o rango).
-                  </li>
-                </ul>
-                <p>Ejemplos básicos:</p>
-                <ul>
-                  <li>
-                    Crear una nueva lista:
-                    <div class="code-example__syntax">
+              </div>
+              <ul>
+                <li>
+                  <code class="language-python">expresion</code>: Operación
+                  o valor que se agrega a la nueva lista.
+                </li>
+                <li>
+                  <code class="language-python">for elemento in iterable</code>: Ciclo que recorre el iterable (como
+                  una lista o rango).
+                </li>
+              </ul>
+              <p>Ejemplos básicos:</p>
+              <ul>
+                <li>
+                  Crear una nueva lista:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             numeros = [1, 2, 3, 4, 5]
@@ -1256,11 +1265,11 @@
                             print(cuadrados)  # Salida: [1, 4, 9, 16, 25]
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    Filtrar elementos:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  Filtrar elementos:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             numeros = [1, 2, 3, 4, 5, 6]
@@ -1268,11 +1277,11 @@
                             print(pares)  # Salida: [2, 4, 6]
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    Transformar cadenas:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  Transformar cadenas:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             palabras = ["hola", "mundo", "python"]
@@ -1280,14 +1289,14 @@
                             print(mayusculas)  # Salida: ['HOLA', 'MUNDO', 'PYTHON']
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- comprensión de Listas fin -->
+                  </div>
+                </li>
+              </ul>
             </div>
-            <!-- Otras Funciones Fin -->
+            <!-- comprensión de Listas fin -->
           </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Otras Funciones Fin -->
         </article>
         <!--  Operaciones con listas en Python  -->
 

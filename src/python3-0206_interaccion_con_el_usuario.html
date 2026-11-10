@@ -115,71 +115,72 @@
         <!--  Interacción con el Usuario en Python  -->
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
-          <div>
-            <header>
-              <h1>Interacción con el Usuario en Python</h1>
-            </header>
-            <!-- Introducción -->
-            <div class="mt-5">
-              <h2>Introducción</h2>
-              <p>
-                La función <code class="language-python">input()</code> en
-                Python es una herramienta fundamental para interactuar con el
-                usuario. Permite que el programa solicite y reciba información
-                directamente del teclado.
-              </p>
-              <p>
-                Cuando se llama a esta función, el programa se detiene y
-                espera a que el usuario ingrese algún dato. Una vez que el
-                usuario presiona
-                <kbd>Enter</kbd>, el valor ingresado se devuelve como una
-                cadena de texto (string).
-              </p>
-              <div class="site-image site-intro-image">
-                <figure class="site-image__figure site-image__figure--intro">
-                  <img src="https://i.ibb.co/wNwH0x3/input.jpg" class="img-fluid" alt="Función input() en Python"
-                    title="Diagrama del funcionamiento de la función input() en Python" />
-                  <figcaption>Función input() en Python</figcaption>
-                </figure>
-              </div>
+          <header>
+            <h1>Interacción con el Usuario en Python</h1>
+          </header>
+          <!-- Introducción -->
+          <div class="mt-3">
+            <h2>Introducción</h2>
+            <div class="site-image site-intro-image mb-5">
+              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                <img loading="lazy" src="https://i.ibb.co/wNwH0x3/input.jpg" class="img-fluid" alt="Función input() en Python"
+                  title="Diagrama del funcionamiento de la función input() en Python" />
+                <figcaption class="site-image__caption">Función input() en Python</figcaption>
+              </figure>
             </div>
+            <p>
+              La función <code class="language-python">input()</code> en
+              Python es una herramienta fundamental para interactuar con el
+              usuario. Permite que el programa solicite y reciba información
+              directamente del teclado.
+            </p>
+            <p>
+              Cuando se llama a esta función, el programa se detiene y
+              espera a que el usuario ingrese algún dato. Una vez que el
+              usuario presiona
+              <kbd>Enter</kbd>, el valor ingresado se devuelve como una
+              cadena de texto (string).
+            </p>
 
-            <!-- La función input() -->
-            <div id="la-funcion-input" class="mt-5">
-              <h2>La función <code class="language-python">input()</code></h2>
-              <p>
-                La función <code class="language-python">input()</code> en
-                Python es una herramienta fundamental para interactuar con el
-                usuario. Permite que el programa solicite y reciba información
-                directamente del teclado.
-              </p>
-              <p>
-                Cuando se llama a esta función, el programa se detiene y
-                espera a que el usuario ingrese algún dato. Una vez que el
-                usuario presiona <kbd>Enter</kbd>, el valor ingresado se
-                devuelve como una cadena de texto (string).
-              </p>
-              <p>Sintaxis:</p>
-              <div class="code-example__syntax">
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+
+          <!-- La función input() -->
+          <div id="la-funcion-input" class="mt-3">
+            <h2>La función <code class="language-python">input()</code></h2>
+            <p>
+              La función <code class="language-python">input()</code> en
+              Python es una herramienta fundamental para interactuar con el
+              usuario. Permite que el programa solicite y reciba información
+              directamente del teclado.
+            </p>
+            <p>
+              Cuando se llama a esta función, el programa se detiene y
+              espera a que el usuario ingrese algún dato. Una vez que el
+              usuario presiona <kbd>Enter</kbd>, el valor ingresado se
+              devuelve como una cadena de texto (string).
+            </p>
+            <p>Sintaxis:</p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       variable = input(prompt)
                     </code>
                   </pre>
-              </div>
-              <ul>
-                <li>
-                  <span class="fw-bold">prompt</span>: Es un mensaje opcional
-                  que se muestra al usuario para indicar qué tipo de
-                  información se espera.
-                </li>
-                <li>
-                  <span class="fw-bold">variable</span>: Es una variable donde
-                  se almacena la entrada del usuario.
-                </li>
-              </ul>
-              <p>Ejemplo:</p>
-              <div class="code-example__syntax">
+            </div>
+            <ul>
+              <li>
+                <span class="fw-bold">prompt</span>: Es un mensaje opcional
+                que se muestra al usuario para indicar qué tipo de
+                información se espera.
+              </li>
+              <li>
+                <span class="fw-bold">variable</span>: Es una variable donde
+                se almacena la entrada del usuario.
+              </li>
+            </ul>
+            <p>Ejemplo:</p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       nombre = input("Por favor, ingresa tu nombre: ")
@@ -188,50 +189,51 @@
                       print("Tienes", edad, "años.")
                       </code>
                   </pre>
-              </div>
-              <ul>
-                <li>
-                  La línea
-                  <code class="language-python">
-                      nombre = input("Por favor, ingresa tu nombre: ")</code>
-                  muestra el mensaje "Por favor, ingresa tu nombre:" en la
-                  consola.
-                </li>
-                <li>
-                  El programa espera a que el usuario escriba su nombre y
-                  presione Enter.
-                </li>
-                <li>
-                  El nombre ingresado se almacena en la variable
-                  <kbd>nombre</kbd>.
-                </li>
-                <li>Lo mismo ocurre con la edad en la siguiente línea.</li>
-                <li>
-                  Finalmente, se imprimen los mensajes de saludo utilizando
-                  las variables nombre y edad.
-                </li>
-              </ul>
             </div>
-            <!-- La función input() Fin -->
-            <!-- El Resultado de la Función input() -->
-            <div id="el-resultado-de-la-funcion-input" class="mt-5">
-              <h2>El Resultado de la Función <code class="language-python">input()</code></h2>
-              <p>
-                La función
-                <code class="language-python">input()</code> siempre devuelve
-                una cadena de texto, incluso si el usuario ingresa un número.
-              </p>
-              <p>
-                Una cadena que contiene todos los caracteres que el usuario ha
-                introducido desde el teclado. No es un entero ni un flotante.
-              </p>
-              <p>
-                Esto significa que no se debe utilizar como un argumento para
-                operaciones matemáticas, por ejemplo, no se pueden utilizar
-                estos datos para elevarlos al cuadrado, para dividirlos entre
-                algo o por algo.
-              </p>
-              <div class="code-example__syntax">
+            <ul>
+              <li>
+                La línea
+                <code class="language-python">
+                    nombre = input("Por favor, ingresa tu nombre: ")</code>
+                muestra el mensaje "Por favor, ingresa tu nombre:" en la
+                consola.
+              </li>
+              <li>
+                El programa espera a que el usuario escriba su nombre y
+                presione Enter.
+              </li>
+              <li>
+                El nombre ingresado se almacena en la variable
+                <kbd>nombre</kbd>.
+              </li>
+              <li>Lo mismo ocurre con la edad en la siguiente línea.</li>
+              <li>
+                Finalmente, se imprimen los mensajes de saludo utilizando
+                las variables nombre y edad.
+              </li>
+            </ul>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- La función input() Fin -->
+          <!-- El Resultado de la Función input() -->
+          <div id="el-resultado-de-la-funcion-input" class="mt-3">
+            <h2>El Resultado de la Función <code class="language-python">input()</code></h2>
+            <p>
+              La función
+              <code class="language-python">input()</code> siempre devuelve
+              una cadena de texto, incluso si el usuario ingresa un número.
+            </p>
+            <p>
+              Una cadena que contiene todos los caracteres que el usuario ha
+              introducido desde el teclado. No es un entero ni un flotante.
+            </p>
+            <p>
+              Esto significa que no se debe utilizar como un argumento para
+              operaciones matemáticas, por ejemplo, no se pueden utilizar
+              estos datos para elevarlos al cuadrado, para dividirlos entre
+              algo o por algo.
+            </p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       anything = input("Ingresa un número:")
@@ -239,55 +241,56 @@
                       print(anything, "al cuadrado es", something)
                     </code>
                   </pre>
-              </div>
-              <p>
-                Cuando python intente ejecutar
-                <code class="language-python">something = anything ** 2.0</code>
-                se devolverá el siguiente error "TypeError: unsupported
-                operand type(s) for ** or pow(): 'str' and 'float'"
-              </p>
             </div>
-            <!-- El Resultado de la Función input() Fin -->
-            <!-- Conversión de Tipos (Conversiones de Tipos) -->
-            <div id="conversion-de-tipos" class="mt-5">
-              <h2>Conversión de Tipos</h2>
-              <p>
-                Python ofrece dos simples funciones para especificar un tipo
-                de dato y resolver este problema, aquí están:
-                <code class="language-python">int()</code> y
-                <code class="language-python">float()</code>.
-              </p>
-              <p>Sus nombres indican cual es su función:</p>
-              <ul>
-                <li>
-                  La función <code class="language-python">int()</code> toma
-                  un argumento (por ejemplo, una cadena:
-                  <code class="language-python">int(string)</code>) e intenta
-                  convertirlo a un valor entero; si llegase a fallar, el
-                  programa entero fallará también.
-                </li>
-                <li>
-                  La función <code class="language-python">float()</code> toma
-                  un argumento (por ejemplo, una cadena:
-                  <code class="language-python">float(string)</code>) e
-                  intenta convertirlo a flotante.
-                </li>
-              </ul>
-              <p>Por ejemplo:</p>
-              <ul>
-                <li>
-                  Para valores enteros:
-                  <div class="code-example__syntax">
+            <p>
+              Cuando python intente ejecutar
+              <code class="language-python">something = anything ** 2.0</code>
+              se devolverá el siguiente error "TypeError: unsupported
+              operand type(s) for ** or pow(): 'str' and 'float'"
+            </p>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- El Resultado de la Función input() Fin -->
+          <!-- Conversión de Tipos (Conversiones de Tipos) -->
+          <div id="conversion-de-tipos" class="mt-3">
+            <h2>Conversión de Tipos</h2>
+            <p>
+              Python ofrece dos simples funciones para especificar un tipo
+              de dato y resolver este problema, aquí están:
+              <code class="language-python">int()</code> y
+              <code class="language-python">float()</code>.
+            </p>
+            <p>Sus nombres indican cual es su función:</p>
+            <ul>
+              <li>
+                La función <code class="language-python">int()</code> toma
+                un argumento (por ejemplo, una cadena:
+                <code class="language-python">int(string)</code>) e intenta
+                convertirlo a un valor entero; si llegase a fallar, el
+                programa entero fallará también.
+              </li>
+              <li>
+                La función <code class="language-python">float()</code> toma
+                un argumento (por ejemplo, una cadena:
+                <code class="language-python">float(string)</code>) e
+                intenta convertirlo a flotante.
+              </li>
+            </ul>
+            <p>Por ejemplo:</p>
+            <ul>
+              <li>
+                Para valores enteros:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           edad = int(input("¿Cuál es tu edad? "))
                         </code>
                       </pre>
-                  </div>
-                </li>
-                <li>
-                  Para valores flotantes:
-                  <div class="code-example__syntax">
+                </div>
+              </li>
+              <li>
+                Para valores flotantes:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           leg_a = float(input("Ingresa la longitud del primer cateto: "))
@@ -296,26 +299,27 @@
                           print("La longitud de la hipotenusa es:", hypo)
                         </code>
                       </pre>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <!-- Conversión de Tipos Fin -->
-            <!-- Operadores Cadena -->
-            <div id="operadores-cadena" class="mt-5">
-              <h2>Operadores Cadena</h2>
-              <h3>Concatenación</h3>
-              <p>
-                En Python, el signo más (<code class="language-python">+</code>) se utiliza comúnmente para concatenar
-                cadenas de texto.
-                Cuando se emplea entre dos o más valores de tipo str, el
-                operador <code class="language-python">+</code> une esas
-                cadenas en una sola. Este uso específico del
-                <code class="language-python">+</code> permite construir
-                mensajes personalizados o juntar varios fragmentos de texto en
-                un mismo resultado.
-              </p>
-              <div class="code-example__syntax">
+                </div>
+              </li>
+            </ul>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Conversión de Tipos Fin -->
+          <!-- Operadores Cadena -->
+          <div id="operadores-cadena" class="mt-3">
+            <h2>Operadores Cadena</h2>
+            <h3>Concatenación</h3>
+            <p>
+              En Python, el signo más (<code class="language-python">+</code>) se utiliza comúnmente para concatenar
+              cadenas de texto.
+              Cuando se emplea entre dos o más valores de tipo str, el
+              operador <code class="language-python">+</code> une esas
+              cadenas en una sola. Este uso específico del
+              <code class="language-python">+</code> permite construir
+              mensajes personalizados o juntar varios fragmentos de texto en
+              un mismo resultado.
+            </p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       saludo = "Hola, "
@@ -324,70 +328,71 @@
                       print(mensaje)  # Resultado: "Hola, María"
                     </code>
                   </pre>
-              </div>
-              <h3>Replicación</h3>
-              <ul>
-                <li>
-                  <span class="fw-bold">Replicación de cadenas</span>: En este
-                  caso, el operador
-                  <code class="language-python">*</code> permite repetir la
-                  cadena un número específico de veces.
-                  <div class="code-example__syntax">
+            </div>
+            <h3>Replicación</h3>
+            <ul>
+              <li>
+                <span class="fw-bold">Replicación de cadenas</span>: En este
+                caso, el operador
+                <code class="language-python">*</code> permite repetir la
+                cadena un número específico de veces.
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           texto = "Hola " * 3  # texto será "Hola Hola Hola "
                         </code>
                       </pre>
-                  </div>
-                </li>
-                <li>
-                  <span class="fw-bold">Replicación de listas</span>: En este
-                  caso el operador
-                  <code class="language-python">*</code> permite replicar el
-                  contenido de la cadena.
-                  <div class="code-example__syntax">
+                </div>
+              </li>
+              <li>
+                <span class="fw-bold">Replicación de listas</span>: En este
+                caso el operador
+                <code class="language-python">*</code> permite replicar el
+                contenido de la cadena.
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           lista = [1, 2, 3] * 2  # lista será [1, 2, 3, 1, 2, 3]
                         </code>
                       </pre>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <!-- Operadores Cadena Fin -->
-            <!-- Otros Tipos de Conversiones -->
-            <div id="otros-tipos-de-conversiones" class="mt-5">
-              <h2>Otros Tipos de Conversiones</h2>
-              <h3><code class="language-python">str()</code></h3>
-              <p>
-                La función <code class="language-python">str()</code> en
-                Python convierte un valor a su representación en cadena de
-                texto (string). Esta función se utiliza comúnmente para
-                transformar valores numéricos, booleanos, listas,
-                diccionarios, entre otros, en cadenas que pueden ser
-                visualizadas o impresas fácilmente.
-              </p>
-              <p>Sintaxis:</p>
-              <div class="code-example__syntax">
+                </div>
+              </li>
+            </ul>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Operadores Cadena Fin -->
+          <!-- Otros Tipos de Conversiones -->
+          <div id="otros-tipos-de-conversiones" class="mt-3">
+            <h2>Otros Tipos de Conversiones</h2>
+            <h3><code class="language-python">str()</code></h3>
+            <p>
+              La función <code class="language-python">str()</code> en
+              Python convierte un valor a su representación en cadena de
+              texto (string). Esta función se utiliza comúnmente para
+              transformar valores numéricos, booleanos, listas,
+              diccionarios, entre otros, en cadenas que pueden ser
+              visualizadas o impresas fácilmente.
+            </p>
+            <p>Sintaxis:</p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       str(objeto)
                     </code>
                   </pre>
-              </div>
-              <p>Parámetro:</p>
-              <ul>
-                <li>
-                  <span class="fw-bold">objeto</span>: Cualquier valor o
-                  expresión que se quiera convertir en cadena.
-                </li>
-              </ul>
-              <h3>Ejemplos de uso</h3>
-              <ul>
-                <li>
-                  <span class="fw-bold">Convertir un número a cadena</span>:
-                  <div class="code-example__syntax">
+            </div>
+            <p>Parámetro:</p>
+            <ul>
+              <li>
+                <span class="fw-bold">objeto</span>: Cualquier valor o
+                expresión que se quiera convertir en cadena.
+              </li>
+            </ul>
+            <h3>Ejemplos de uso</h3>
+            <ul>
+              <li>
+                <span class="fw-bold">Convertir un número a cadena</span>:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           numero = 42
@@ -395,11 +400,11 @@
                           print(texto)  # Output: '42'
                         </code>
                       </pre>
-                  </div>
-                </li>
-                <li>
-                  <span class="fw-bold">Convertir un booleano a cadena</span>:
-                  <div class="code-example__syntax">
+                </div>
+              </li>
+              <li>
+                <span class="fw-bold">Convertir un booleano a cadena</span>:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           verdad = True
@@ -407,11 +412,11 @@
                           print(texto)  # Output: 'True'
                         </code>
                       </pre>
-                  </div>
-                </li>
-                <li>
-                  <span class="fw-bold">Convertir una lista a cadena</span>:
-                  <div class="code-example__syntax">
+                </div>
+              </li>
+              <li>
+                <span class="fw-bold">Convertir una lista a cadena</span>:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           lista = [1, 2, 3]
@@ -419,11 +424,11 @@
                           print(texto)  # Output: '[1, 2, 3]'
                         </code>
                       </pre>
-                  </div>
-                </li>
-                <li>
-                  <span class="fw-bold">Convertir un diccionario a cadena</span>:
-                  <div class="code-example__syntax">
+                </div>
+              </li>
+              <li>
+                <span class="fw-bold">Convertir un diccionario a cadena</span>:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           diccionario = {'nombre': 'Juan', 'edad': 30}
@@ -431,16 +436,16 @@
                           print(texto)  # Output: "{'nombre': 'Juan', 'edad': 30}"
                         </code>
                       </pre>
-                  </div>
-                </li>
-              </ul>
-              <h3>Uso Práctico</h3>
-              <p>
-                <code class="language-python">str()</code> es especialmente
-                útil al combinar diferentes tipos de datos en una cadena. Por
-                ejemplo:
-              </p>
-              <div class="code-example__syntax">
+                </div>
+              </li>
+            </ul>
+            <h3>Uso Práctico</h3>
+            <p>
+              <code class="language-python">str()</code> es especialmente
+              útil al combinar diferentes tipos de datos en una cadena. Por
+              ejemplo:
+            </p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       edad = 25
@@ -450,27 +455,28 @@
                       # Output: 'Hola, Ana. Tienes 25 años.'
                     </code>
                   </pre>
-              </div>
             </div>
-            <!-- Otros Tipos de Conversiones Fin -->
-            <!-- Función de Verificación de Tipo -->
-            <div id="funcion-de-Verificacion-de-tipo" class="mt-5">
-              <h2>Función de Verificación de Tipo</h2>
-              <p>
-                En Python, la función
-                <code class="language-python">type()</code> se utiliza para
-                obtener el tipo de dato de un objeto. Cuando se pasa una
-                variable o cualquier valor a
-                <code class="language-python">type()</code>, esta función
-                devuelve el tipo de dato de dicho objeto. Esto puede incluir
-                tipos de datos básicos como
-                <code class="language-python">int</code>,
-                <code class="language-python">float</code> ,<code class="language-python">str</code>, <code
-                  class="language-python">list</code>, entre otros, así
-                como tipos de datos definidos por el usuario (por ejemplo,
-                clases).
-              </p>
-              <div class="code-example__syntax">
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Otros Tipos de Conversiones Fin -->
+          <!-- Función de Verificación de Tipo -->
+          <div id="funcion-de-Verificacion-de-tipo" class="mt-3">
+            <h2>Función de Verificación de Tipo</h2>
+            <p>
+              En Python, la función
+              <code class="language-python">type()</code> se utiliza para
+              obtener el tipo de dato de un objeto. Cuando se pasa una
+              variable o cualquier valor a
+              <code class="language-python">type()</code>, esta función
+              devuelve el tipo de dato de dicho objeto. Esto puede incluir
+              tipos de datos básicos como
+              <code class="language-python">int</code>,
+              <code class="language-python">float</code> ,<code class="language-python">str</code>, <code
+                class="language-python">list</code>, entre otros, así
+              como tipos de datos definidos por el usuario (por ejemplo,
+              clases).
+            </p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Declaración de diferentes tipos de datos
@@ -485,42 +491,42 @@
                       print(type(w))  # Salida: &lt;class 'list'>
                     </code>
                   </pre>
-              </div>
-              <p>En este ejemplo:</p>
-              <ul>
-                <li>
-                  <code class="language-python">type(x)</code> devuelve
-                  <code class="language-python">&lt;class 'int'></code>,
-                  indicando que <code class="language-python">x</code> es un
-                  entero.
-                </li>
-                <li>
-                  <code class="language-python">type(y)</code> devuelve
-                  <code class="language-python">&lt;class 'float'></code>,
-                  indicando que <code class="language-python">y</code> es un
-                  número decimal.
-                </li>
-                <li>
-                  <code class="language-python">type(z)</code> devuelve
-                  <code class="language-python">&lt;class 'str'></code>,
-                  indicando que <code class="language-python">z</code> es una
-                  cadena de texto.
-                </li>
-                <li>
-                  <code class="language-python">type(w)</code> devuelve
-                  <code class="language-python">&lt;class 'list'></code>,
-                  indicando que <code class="language-python">w</code> es una
-                  lista.
-                </li>
-              </ul>
-              <p>
-                Esta función es particularmente útil para depuración,
-                comprobaciones de tipos, o cuando se trabaja con tipos
-                dinámicos en Python.
-              </p>
             </div>
-            <!-- Función de Verificación de Tipo Fin -->
+            <p>En este ejemplo:</p>
+            <ul>
+              <li>
+                <code class="language-python">type(x)</code> devuelve
+                <code class="language-python">&lt;class 'int'></code>,
+                indicando que <code class="language-python">x</code> es un
+                entero.
+              </li>
+              <li>
+                <code class="language-python">type(y)</code> devuelve
+                <code class="language-python">&lt;class 'float'></code>,
+                indicando que <code class="language-python">y</code> es un
+                número decimal.
+              </li>
+              <li>
+                <code class="language-python">type(z)</code> devuelve
+                <code class="language-python">&lt;class 'str'></code>,
+                indicando que <code class="language-python">z</code> es una
+                cadena de texto.
+              </li>
+              <li>
+                <code class="language-python">type(w)</code> devuelve
+                <code class="language-python">&lt;class 'list'></code>,
+                indicando que <code class="language-python">w</code> es una
+                lista.
+              </li>
+            </ul>
+            <p>
+              Esta función es particularmente útil para depuración,
+              comprobaciones de tipos, o cuando se trabaja con tipos
+              dinámicos en Python.
+            </p>
           </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Función de Verificación de Tipo Fin -->
         </article>
         <!--  Interacción con el Usuario en Python  -->
 

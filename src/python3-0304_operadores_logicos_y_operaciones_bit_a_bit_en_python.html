@@ -119,68 +119,69 @@
         <!--  Operadores Lógicos y Operaciones Bit a Bit en Python  -->
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
-          <div>
-            <header>
-              <h1>Operadores Lógicos y Operaciones Bit a Bit en Python</h1>
-            </header>
-            <!-- Introducción -->
-            <div class="mt-5">
-              <h2>Introducción</h2>
-              <p>
-                En el mundo de la programación, las operaciones lógicas y de
-                bits son fundamentales para manipular datos a un nivel más
-                bajo. Python, como un lenguaje de alto nivel, ofrece una serie
-                de herramientas y operadores que permiten a los
-                desarrolladores realizar estas operaciones de manera
-                eficiente. Este artículo explora las operaciones lógicas y de
-                bits en Python, proporcionando ejemplos y explicaciones que
-                facilitan su comprensión.
-              </p>
-              <div class="site-image site-intro-image">
-                <figure class="site-image__figure site-image__figure--intro">
-                  <img src="https://i.ibb.co/nsrh1p5/operadoreslogicosybit.jpg" class="img-fluid"
-                    alt="Operadores Lógicos y Operaciones Bit a Bit en Python  "
-                    title="Esta imagen muestra la comparación entre operaciones lógicas y operaciones bit a bit." />
-                  <figcaption>
-                    Operadores Lógicos y Operaciones Bit a Bit en Python
-                  </figcaption>
-                </figure>
-              </div>
+          <header>
+            <h1>Operadores Lógicos y Operaciones Bit a Bit en Python</h1>
+          </header>
+          <!-- Introducción -->
+          <div class="mt-3">
+            <h2>Introducción</h2>
+            <div class="site-image site-intro-image mb-5">
+              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                <img loading="lazy" src="https://i.ibb.co/nsrh1p5/operadoreslogicosybit.jpg" class="img-fluid"
+                  alt="Operadores Lógicos y Operaciones Bit a Bit en Python  "
+                  title="Esta imagen muestra la comparación entre operaciones lógicas y operaciones bit a bit." />
+                <figcaption class="site-image__caption">
+                  Operadores Lógicos y Operaciones Bit a Bit en Python
+                </figcaption>
+              </figure>
             </div>
-            <!-- Operaciones Lógicas -->
-            <div id="operaciones-logicas" class="mt-5">
-              <h2>Operaciones Lógicas</h2>
-              <!-- Operadores Lógicos o Booleanos -->
-              <div>
-                <h3>Operadores Lógicos o Booleanos</h3>
-                <p>
-                  Las operaciones lógicas en Python se utilizan para combinar
-                  expresiones booleanas. Las tres operaciones lógicas
-                  principales son:
-                </p>
-                <ul>
-                  <li>
-                    <span class="fw-bold">or (o)</span>: Devuelve
-                    <code class="language-python">True</code> si al menos una
-                    de las expresiones es verdadera.
-                  </li>
-                  <li>
-                    <span class="fw-bold">and (y)</span>: Devuelve
-                    <code class="language-python">True</code> si ambas
-                    expresiones son verdaderas.
-                  </li>
-                  <li>
-                    <span class="fw-bold">not (no)</span>: Devuelve
-                    <code class="language-python">True</code> si la expresión
-                    es <code class="language-python">False</code>, y
-                    viceversa.
-                  </li>
-                </ul>
-              </div>
-              <!-- Operadores Lógicos o Booleanos fin -->
-              <!-- Ejemplos de Operaciones Lógicas -->
-              <div>
-                <div class="code-example__syntax">
+            <p>
+              En el mundo de la programación, las operaciones lógicas y de
+              bits son fundamentales para manipular datos a un nivel más
+              bajo. Python, como un lenguaje de alto nivel, ofrece una serie
+              de herramientas y operadores que permiten a los
+              desarrolladores realizar estas operaciones de manera
+              eficiente. Este artículo explora las operaciones lógicas y de
+              bits en Python, proporcionando ejemplos y explicaciones que
+              facilitan su comprensión.
+            </p>
+
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Operaciones Lógicas -->
+          <div id="operaciones-logicas" class="mt-3">
+            <h2>Operaciones Lógicas</h2>
+            <!-- Operadores Lógicos o Booleanos -->
+            <div>
+              <h3>Operadores Lógicos o Booleanos</h3>
+              <p>
+                Las operaciones lógicas en Python se utilizan para combinar
+                expresiones booleanas. Las tres operaciones lógicas
+                principales son:
+              </p>
+              <ul>
+                <li>
+                  <span class="fw-bold">or (o)</span>: Devuelve
+                  <code class="language-python">True</code> si al menos una
+                  de las expresiones es verdadera.
+                </li>
+                <li>
+                  <span class="fw-bold">and (y)</span>: Devuelve
+                  <code class="language-python">True</code> si ambas
+                  expresiones son verdaderas.
+                </li>
+                <li>
+                  <span class="fw-bold">not (no)</span>: Devuelve
+                  <code class="language-python">True</code> si la expresión
+                  es <code class="language-python">False</code>, y
+                  viceversa.
+                </li>
+              </ul>
+            </div>
+            <!-- Operadores Lógicos o Booleanos fin -->
+            <!-- Ejemplos de Operaciones Lógicas -->
+            <div>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         a = True
@@ -191,26 +192,26 @@
                         print(f"AND: {resultado_and}, OR: {resultado_or}, NOT: {resultado_not}")
                       </code>
                     </pre>
-                </div>
-                <p>
-                  Python imprime: AND:
-                  <code class="language-python">False</code>, OR:
-                  <code class="language-python">True</code>, NOT:
-                  <code class="language-python">False</code>
-                </p>
               </div>
-              <!-- Ejemplos de Operaciones Lógicas fin -->
-              <!-- Uso de Operaciones Lógicas -->
-              <div>
-                <h3>Uso de Operaciones Lógicas</h3>
-                <p>
-                  Las operaciones lógicas son útiles en condiciones y bucles.
-                  Por ejemplo, se pueden usar en estructuras de control como
-                  <code class="language-python">if</code> y
-                  <code class="language-python">while</code> para tomar
-                  decisiones basadas en múltiples condiciones.
-                </p>
-                <div class="code-example__syntax">
+              <p>
+                Python imprime: AND:
+                <code class="language-python">False</code>, OR:
+                <code class="language-python">True</code>, NOT:
+                <code class="language-python">False</code>
+              </p>
+            </div>
+            <!-- Ejemplos de Operaciones Lógicas fin -->
+            <!-- Uso de Operaciones Lógicas -->
+            <div>
+              <h3>Uso de Operaciones Lógicas</h3>
+              <p>
+                Las operaciones lógicas son útiles en condiciones y bucles.
+                Por ejemplo, se pueden usar en estructuras de control como
+                <code class="language-python">if</code> y
+                <code class="language-python">while</code> para tomar
+                decisiones basadas en múltiples condiciones.
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         edad = 20
@@ -221,53 +222,54 @@
                         print("No puede entrar.")
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Uso de Operaciones Lógicas fin -->
             </div>
-            <!-- Operaciones Lógicas Fin -->
-            <!-- Operaciones de Bits -->
-            <div id="peraciones-de-bits" class="mt-5">
-              <h2>Operaciones de Bits</h2>
-              <!-- Operaciones de Bits (Bitwise) -->
-              <div>
-                <h3>Operaciones de Bits (Bitwise)</h3>
-                <p>
-                  Las operaciones de bits permiten manipular los bits
-                  individuales de un número. Python proporciona varios
-                  operadores para realizar estas operaciones:
-                </p>
-                <ul>
-                  <li>
-                    <span class="fw-bold">AND (&)</span>: Realiza una
-                    operación AND a nivel de bits.
-                  </li>
-                  <li>
-                    <span class="fw-bold">OR (|)</span>: Realiza una operación
-                    OR a nivel de bits.
-                  </li>
-                  <li>
-                    <span class="fw-bold">XOR (^)</span>: Realiza una
-                    operación XOR a nivel de bits.
-                  </li>
-                  <li>
-                    <span class="fw-bold">NOT (~)</span>: Realiza una
-                    operación NOT a nivel de bits.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Desplazamiento a la izquierda (&lt;&lt;)</span>: Desplaza los bits hacia la
-                    izquierda.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Desplazamiento a la derecha (>>)</span>: Desplaza los bits hacia la derecha.
-                  </li>
-                </ul>
-              </div>
-              <!-- Operaciones de Bits (Bitwise) fin -->
-              <!-- Ejemplos de Operaciones de Bits -->
-              <div>
-                <h3>Ejemplos de Operaciones de Bits</h3>
-                <div class="code-example__syntax">
+            <!-- Uso de Operaciones Lógicas fin -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Operaciones Lógicas Fin -->
+          <!-- Operaciones de Bits -->
+          <div id="peraciones-de-bits" class="mt-3">
+            <h2>Operaciones de Bits</h2>
+            <!-- Operaciones de Bits (Bitwise) -->
+            <div>
+              <h3>Operaciones de Bits (Bitwise)</h3>
+              <p>
+                Las operaciones de bits permiten manipular los bits
+                individuales de un número. Python proporciona varios
+                operadores para realizar estas operaciones:
+              </p>
+              <ul>
+                <li>
+                  <span class="fw-bold">AND (&)</span>: Realiza una
+                  operación AND a nivel de bits.
+                </li>
+                <li>
+                  <span class="fw-bold">OR (|)</span>: Realiza una operación
+                  OR a nivel de bits.
+                </li>
+                <li>
+                  <span class="fw-bold">XOR (^)</span>: Realiza una
+                  operación XOR a nivel de bits.
+                </li>
+                <li>
+                  <span class="fw-bold">NOT (~)</span>: Realiza una
+                  operación NOT a nivel de bits.
+                </li>
+                <li>
+                  <span class="fw-bold">Desplazamiento a la izquierda (&lt;&lt;)</span>: Desplaza los bits hacia la
+                  izquierda.
+                </li>
+                <li>
+                  <span class="fw-bold">Desplazamiento a la derecha (>>)</span>: Desplaza los bits hacia la derecha.
+                </li>
+              </ul>
+            </div>
+            <!-- Operaciones de Bits (Bitwise) fin -->
+            <!-- Ejemplos de Operaciones de Bits -->
+            <div>
+              <h3>Ejemplos de Operaciones de Bits</h3>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         x = 10  # 1010 en binario
@@ -281,27 +283,27 @@
                         print(f"AND: {resultado_and_bits}, OR: {resultado_or_bits}, XOR: {resultado_xor_bits}, NOT: {resultado_not_bits}, Desplazamiento Izquierda: {resultado_desplazamiento_izq}, Desplazamiento Derecha: {resultado_desplazamiento_der}")
                       </code>
                     </pre>
-                </div>
-                <p>
-                  Python imprime: AND: 0, OR: 14, XOR: 14, NOT: -11,
-                  Desplazamiento Izquierda: 20, Desplazamiento Derecha: 5
-                </p>
               </div>
-              <!-- Ejemplos de Operaciones de Bits fin -->
-              <!-- Uso de Operaciones de Bits -->
-              <div>
-                <h3>Uso de Operaciones de Bits</h3>
-                <p>
-                  as operaciones de bits son especialmente útiles en
-                  programación de sistemas, criptografía y manipulación de
-                  datos a bajo nivel. Permiten optimizar el uso de memoria y
-                  mejorar la eficiencia de ciertas operaciones.
-                </p>
-              </div>
-              <!-- Uso de Operaciones de Bits fin -->
+              <p>
+                Python imprime: AND: 0, OR: 14, XOR: 14, NOT: -11,
+                Desplazamiento Izquierda: 20, Desplazamiento Derecha: 5
+              </p>
             </div>
-            <!-- Operaciones de Bits Fin -->
+            <!-- Ejemplos de Operaciones de Bits fin -->
+            <!-- Uso de Operaciones de Bits -->
+            <div>
+              <h3>Uso de Operaciones de Bits</h3>
+              <p>
+                as operaciones de bits son especialmente útiles en
+                programación de sistemas, criptografía y manipulación de
+                datos a bajo nivel. Permiten optimizar el uso de memoria y
+                mejorar la eficiencia de ciertas operaciones.
+              </p>
+            </div>
+            <!-- Uso de Operaciones de Bits fin -->
           </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Operaciones de Bits Fin -->
         </article>
 
         <!--  comentarios  -->

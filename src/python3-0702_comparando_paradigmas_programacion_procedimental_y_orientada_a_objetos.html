@@ -120,164 +120,166 @@
         <!--  Comparando Paradigmas: Programación Procedimental y Orientada a Objetos en Python  -->
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
-          <div>
-            <header>
-              <h1>
-                Comparando Paradigmas: Programación Procedimental y Orientada
-                a Objetos en Python
-              </h1>
-            </header>
-            <!-- Introducción -->
-            <div class="mt-5">
-              <h2>Introducción</h2>
-              <p>
-                Las diferencias y similitudes entre los paradigmas de
-                programación procedimental y orientado a objetos se revelan
-                con claridad mediante un análisis comparativo utilizando
-                Python como lenguaje de referencia. El estudio profundiza en
-                sus características distintivas, explorando las ventajas y
-                desventajas de cada enfoque, mediante ejemplos prácticos que
-                ilustran cómo abordan la resolución de problemas
-                computacionales.
-              </p>
-              <div class="site-image site-intro-image">
-                <figure class="site-image__figure site-image__figure--intro">
-                  <img src="https://i.ibb.co/xJ6xjwd/procedimentalvspoo.jpg" class="img-fluid"
-                    alt="Comparando Paradigmas: Programación Procedimental y Orientada a Objetos en Python  "
-                    title="Eligir el mejor paradigma de programación para el proyecto" />
-                  <figcaption>
-                    Comparando Paradigmas: Programación Procedimental y
-                    Orientada a Objetos en Python
-                  </figcaption>
-                </figure>
-              </div>
+          <header>
+            <h1>
+              Comparando Paradigmas: Programación Procedimental y Orientada
+              a Objetos en Python
+            </h1>
+          </header>
+          <!-- Introducción -->
+          <div class="mt-3">
+            <h2>Introducción</h2>
+            <div class="site-image site-intro-image mb-5">
+              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                <img loading="lazy" src="https://i.ibb.co/xJ6xjwd/procedimentalvspoo.jpg" class="img-fluid"
+                  alt="Comparando Paradigmas: Programación Procedimental y Orientada a Objetos en Python  "
+                  title="Eligir el mejor paradigma de programación para el proyecto" />
+                <figcaption class="site-image__caption">
+                  Comparando Paradigmas: Programación Procedimental y
+                  Orientada a Objetos en Python
+                </figcaption>
+              </figure>
             </div>
+            <p>
+              Las diferencias y similitudes entre los paradigmas de
+              programación procedimental y orientado a objetos se revelan
+              con claridad mediante un análisis comparativo utilizando
+              Python como lenguaje de referencia. El estudio profundiza en
+              sus características distintivas, explorando las ventajas y
+              desventajas de cada enfoque, mediante ejemplos prácticos que
+              ilustran cómo abordan la resolución de problemas
+              computacionales.
+            </p>
 
-            <!-- ¿Qué es una Pila? -->
-            <div id="que-es-una-pila" class="mt-5">
-              <h2>¿Qué es una Pila?</h2>
-              <p>
-                En programación, una pila es una estructura de datos lineal
-                que sigue el principio LIFO (Last In, First Out), que
-                significa que el último elemento en entrar es el primero en
-                salir. Se utiliza comúnmente para resolver problemas
-                relacionados con el manejo de datos de forma temporal o
-                reversible, como en operaciones de deshacer, análisis de
-                expresiones matemáticas o recorridos de árboles.
-              </p>
-              <!-- Características Principales de las Pilas -->
-              <div>
-                <h3>Características Principales de las Pilas</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">LIFO (Last In, First Out)</span>:
-                    <ul>
-                      <li>
-                        El último elemento añadido a la pila será el primero
-                        en ser retirado.
-                      </li>
-                      <li>
-                        Similar a una pila de platos: el plato colocado al
-                        final se retira primero.
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Operaciones básicas</span>:
-                    <ul>
-                      <li>
-                        <span class="fw-bold">Push</span>: Agrega un elemento
-                        a la parte superior de la pila.
-                      </li>
-                      <li>
-                        <span class="fw-bold">Pop</span>: Elimina y retorna el
-                        elemento de la parte superior de la pila.
-                      </li>
-                      <li>
-                        <span class="fw-bold">Peek (o Top)</span>: Muestra el
-                        elemento superior sin eliminarlo.
-                      </li>
-                      <li>
-                        <span class="fw-bold">isEmpty</span>: Verifica si la
-                        pila está vacía.
-                      </li>
-                      <li>
-                        <span class="fw-bold">Size</span>: Retorna el número
-                        de elementos en la pila.
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Implementación</span>: Las pilas
-                    pueden ser implementadas usando:
-                    <ul>
-                      <li>
-                        <span class="fw-bold">Arreglos</span>: Usando un
-                        índice para señalar la posición superior.
-                      </li>
-                      <li>
-                        <span class="fw-bold">Listas enlazadas</span>: Usando
-                        un nodo como el tope de la pila.
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Restricciones</span>:
-                    <ul>
-                      <li>Solo se puede acceder al elemento en la cima.</li>
-                      <li>
-                        El acceso es secuencial, no directo como en una lista.
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Ejemplos de uso</span>:
-                    <ul>
-                      <li>
-                        <span class="fw-bold">Recursión</span>: El lenguaje
-                        utiliza pilas para manejar las llamadas a funciones.
-                      </li>
-                      <li>
-                        <span class="fw-bold">Deshacer/rehacer</span>:
-                        Almacena las acciones del usuario para revertir o
-                        repetir cambios.
-                      </li>
-                      <li>
-                        <span class="fw-bold">Evaluación de expresiones matemáticas</span>: Manejo de operadores y
-                        operandos.
-                      </li>
-                      <li>
-                        <span class="fw-bold">Recorridos de grafos o árboles</span>: Por ejemplo, en recorridos en
-                        profundidad (DFS).
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <!-- Características Principales de las Pilas fin -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+
+          <!-- ¿Qué es una Pila? -->
+          <div id="que-es-una-pila" class="mt-3">
+            <h2>¿Qué es una Pila?</h2>
+            <p>
+              En programación, una pila es una estructura de datos lineal
+              que sigue el principio LIFO (Last In, First Out), que
+              significa que el último elemento en entrar es el primero en
+              salir. Se utiliza comúnmente para resolver problemas
+              relacionados con el manejo de datos de forma temporal o
+              reversible, como en operaciones de deshacer, análisis de
+              expresiones matemáticas o recorridos de árboles.
+            </p>
+            <!-- Características Principales de las Pilas -->
+            <div>
+              <h3>Características Principales de las Pilas</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">LIFO (Last In, First Out)</span>:
+                  <ul>
+                    <li>
+                      El último elemento añadido a la pila será el primero
+                      en ser retirado.
+                    </li>
+                    <li>
+                      Similar a una pila de platos: el plato colocado al
+                      final se retira primero.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="fw-bold">Operaciones básicas</span>:
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Push</span>: Agrega un elemento
+                      a la parte superior de la pila.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Pop</span>: Elimina y retorna el
+                      elemento de la parte superior de la pila.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Peek (o Top)</span>: Muestra el
+                      elemento superior sin eliminarlo.
+                    </li>
+                    <li>
+                      <span class="fw-bold">isEmpty</span>: Verifica si la
+                      pila está vacía.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Size</span>: Retorna el número
+                      de elementos en la pila.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="fw-bold">Implementación</span>: Las pilas
+                  pueden ser implementadas usando:
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Arreglos</span>: Usando un
+                      índice para señalar la posición superior.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Listas enlazadas</span>: Usando
+                      un nodo como el tope de la pila.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="fw-bold">Restricciones</span>:
+                  <ul>
+                    <li>Solo se puede acceder al elemento en la cima.</li>
+                    <li>
+                      El acceso es secuencial, no directo como en una lista.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="fw-bold">Ejemplos de uso</span>:
+                  <ul>
+                    <li>
+                      <span class="fw-bold">Recursión</span>: El lenguaje
+                      utiliza pilas para manejar las llamadas a funciones.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Deshacer/rehacer</span>:
+                      Almacena las acciones del usuario para revertir o
+                      repetir cambios.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Evaluación de expresiones matemáticas</span>: Manejo de operadores y
+                      operandos.
+                    </li>
+                    <li>
+                      <span class="fw-bold">Recorridos de grafos o árboles</span>: Por ejemplo, en recorridos en
+                      profundidad (DFS).
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
-            <!-- ¿Qué es una Pila? Fin -->
-            <!-- La Pila: el Enfoque Procedimental -->
-            <div id="la-pila-el-enfoque-procedimental" class="mt-5">
-              <h2>La Pila: el Enfoque Procedimental</h2>
-              <p>
-                La pila es una estructura de datos que sigue el principio LIFO
-                (Last In, First Out), es decir, el último elemento en ser
-                insertado será el primero en ser retirado. Este enfoque es
-                útil para resolver problemas que requieren retroceder pasos,
-                como en la navegación por páginas web o en la evaluación de
-                expresiones matemáticas.
-              </p>
-              <p>
-                En este ejemplo, se implementará una pila utilizando listas de
-                Python con un enfoque completamente procedimental.
-              </p>
-              <!-- Implementación Procedimental de Estructuras de una Pila -->
-              <div>
-                <h3>
-                  Implementación Procedimental de Estructuras de una Pila
-                </h3>
-                <div class="code-example__syntax">
+            <!-- Características Principales de las Pilas fin -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- ¿Qué es una Pila? Fin -->
+          <!-- La Pila: el Enfoque Procedimental -->
+          <div id="la-pila-el-enfoque-procedimental" class="mt-3">
+            <h2>La Pila: el Enfoque Procedimental</h2>
+            <p>
+              La pila es una estructura de datos que sigue el principio LIFO
+              (Last In, First Out), es decir, el último elemento en ser
+              insertado será el primero en ser retirado. Este enfoque es
+              útil para resolver problemas que requieren retroceder pasos,
+              como en la navegación por páginas web o en la evaluación de
+              expresiones matemáticas.
+            </p>
+            <p>
+              En este ejemplo, se implementará una pila utilizando listas de
+              Python con un enfoque completamente procedimental.
+            </p>
+            <!-- Implementación Procedimental de Estructuras de una Pila -->
+            <div>
+              <h3>
+                Implementación Procedimental de Estructuras de una Pila
+              </h3>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         # Implementación de la pila con enfoque procedimental
@@ -320,259 +322,261 @@
                                 print("Popped:", pop(stack))
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Implementación Procedimental de Estructuras de una Pila fin -->
-              <!-- Explicación de la Implementación Procedimental de una Pila -->
-              <div>
-                <h3>
-                  Explicación de la Implementación Procedimental de una Pila
-                </h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">create_stack()</code></span>: Crea y devuelve
-                    una lista vacía que representa la pila.
-                  </li>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">push(stack, element)</code></span>: Este método
-                    agrega un nuevo elemento a la pila usando
-                    el método append() de listas. Esto se traduce como
-                    "empujar" un elemento al tope de la pila.
-                  </li>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">pop(stack)</code></span>: Retira y devuelve el
-                    último elemento agregado a la
-                    pila. Verifica si la pila está vacía antes de intentar
-                    eliminar un elemento, para evitar errores. Utiliza el
-                    método pop() de listas.
-                  </li>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">peek(stack)</code></span>: Permite ver el
-                    elemento que se encuentra en la parte
-                    superior de la pila sin removerlo. Esto ayuda a
-                    inspeccionar el contenido actual.
-                  </li>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">is_empty(stack)</code></span>: Verifica si la
-                    pila está vacía retornando un valor
-                    booleano. Usa la función len() para comprobar si tiene
-                    elementos.
-                  </li>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">size(stack)</code></span>:Devuelve la cantidad
-                    de elementos presentes en la pila.
-                    Esto es útil para conocer su estado en cualquier momento.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Ejemplo de Uso La sección dentro del bloque if
-                      <code class="language-python">__name__</code> == "<code
-                        class="language-python">__main__</code>"</span>: muestra cómo usar la pila:
-                    <ul>
-                      <li>
-                        Se crean operaciones básicas como agregar elementos
-                        (<code class="language-python">push</code>), eliminar
-                        elementos (<code class="language-python">pop</code>),
-                        y verificar el elemento superior (<code class="language-python">peek</code>).
-                      </li>
-                      <li>
-                        También se ilustra cómo vaciar completamente la pila
-                        usando un ciclo
-                        <code class="language-python">while</code>.
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <!-- Explicación de la Implementación Procedimental de una Pila fin -->
             </div>
-            <!-- La Pila: el Enfoque Procedimental Fin -->
-            <!-- La Pila: El Enfoque Procedimental Versus El Enfoque Orientado a Objetos -->
-            <div id="la-Pila-el-enfoque-procedimental-versus-el-enfoque-oOrientado-a-objetos" class="mt-5">
-              <h2>
-                La Pila: El Enfoque Procedimental Versus El Enfoque Orientado
-                a Objetos
-              </h2>
-              <!-- Desventajas de Pilas Procedimentales -->
-              <div>
-                <h3>Desventajas de Pilas Procedimentales</h3>
-                <p>
-                  Las pilas procedimentales, también conocidas como pilas
-                  estáticas o simples, tienen algunas desventajas que se deben
-                  considerar dependiendo del contexto en el que se utilicen. A
-                  continuación se detallan algunas de las principales
-                  desventajas de este tipo de estructuras:
-                </p>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Tamaño fijo</span>: En las pilas
-                    procedimentales, el tamaño de la pila suele ser fijo y
-                    determinado de antemano. Esto significa que no se puede
-                    ajustar dinámicamente según la cantidad de elementos que
-                    se necesiten almacenar. Si se alcanza el límite de
-                    capacidad, se producirá un desbordamiento de pila.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Eficiencia limitada en memoria</span>: Debido a que se establece un tamaño
-                    fijo, se puede
-                    desperdiciar memoria si la pila no se llena por completo,
-                    o puede desbordarse si se excede la capacidad máxima. Esto
-                    resulta ineficiente, ya que no se aprovecha la memoria
-                    disponible de manera óptima.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Poca flexibilidad</span>: A
-                    diferencia de las pilas dinámicas, que pueden crecer y
-                    reducirse según sea necesario, las pilas procedimentales
-                    carecen de esta flexibilidad. Esto puede ser un
-                    inconveniente cuando se trabaja con datos cuyo tamaño es
-                    incierto o variable.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Riesgo de desbordamiento</span>:
-                    Dado que el tamaño es fijo, se corre el riesgo de
-                    desbordar la pila si se realizan demasiadas operaciones de
-                    apilamiento sin haber retirado elementos previamente. Este
-                    desbordamiento puede llevar a errores o fallos en el
-                    programa.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Acceso limitado</span>: Al ser una
-                    estructura de tipo LIFO (Last In, First Out), el acceso a
-                    los elementos de la pila está restringido al último
-                    elemento insertado. Esto limita la capacidad para realizar
-                    operaciones de lectura o modificación de elementos
-                    específicos dentro de la pila sin antes desapilar.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Dependencia de la implementación</span>: En muchos casos, las pilas
-                    procedimentales dependen de
-                    una implementación que podría no ser tan eficiente como
-                    las pilas dinámicas, especialmente en lenguajes de
-                    programación que no soportan manipulación dinámica de
-                    memoria.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Poca reutilización de memoria</span>: Una vez que la pila se llena hasta su
-                    capacidad máxima,
-                    no se puede reutilizar la memoria hasta que los elementos
-                    sean retirados. Esto limita el uso eficiente de la memoria
-                    en situaciones de alta carga.
-                  </li>
-                </ul>
-                <p>
-                  Por lo tanto, aunque las pilas procedimentales pueden ser
-                  útiles en situaciones donde el tamaño de los datos es
-                  conocido y fijo, presentan desventajas importantes en
-                  términos de flexibilidad, eficiencia y manejo de memoria.
-                </p>
-              </div>
-              <!-- Desventajas de Pilas Procedimentales fin -->
-              <!-- Ventajas de Pilas con Enfoque OOP -->
-              <div>
-                <h3>Ventajas de Pilas con Enfoque OOP</h3>
-                <p>
-                  El uso de pilas con un enfoque orientado a objetos (OOP, por
-                  sus siglas en inglés) ofrece varias ventajas significativas
-                  en el desarrollo de software, especialmente cuando se buscan
-                  soluciones que sean fáciles de mantener, escalables y
-                  reutilizables. A continuación, se detallan algunas de las
-                  principales ventajas:
-                </p>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Encapsulamiento</span>: El enfoque
-                    OOP permite encapsular los detalles de implementación de
-                    la pila dentro de una clase. Los usuarios solo interactúan
-                    con los métodos de la clase (como push(), pop(), peek(),
-                    etc.) sin necesidad de preocuparse por la estructura
-                    interna o los detalles de memoria, lo que promueve una
-                    interfaz clara y sencilla.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Reutilización de código</span>: Al
-                    utilizar clases, es posible reutilizar la implementación
-                    de la pila en diferentes proyectos o partes del código.
-                    Esto mejora la eficiencia en el desarrollo y reduce la
-                    redundancia.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Modularidad</span>: Al organizar la
-                    pila como una clase dentro de un sistema orientado a
-                    objetos, se facilita la separación de responsabilidades.
-                    La pila se convierte en un módulo autónomo que puede
-                    integrarse con otros módulos sin afectar el funcionamiento
-                    global del sistema.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Herencia</span>: En OOP, las pilas
-                    pueden ser extendidas mediante la herencia. Por ejemplo,
-                    se puede crear una clase derivada que agregue
-                    características adicionales a una pila, como pilas con
-                    capacidad limitada o con características de monitoreo de
-                    desempeño, sin modificar la clase base. Esto facilita la
-                    creación de pilas especializadas.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Polimorfismo</span>: El polimorfismo
-                    permite que se utilicen diferentes implementaciones de
-                    pilas de forma intercambiable. Por ejemplo, se pueden
-                    crear pilas con diferentes tipos de almacenamiento (como
-                    pilas basadas en listas o en arrays) y usar un enfoque
-                    común sin que el código que usa la pila necesite conocer
-                    las diferencias entre las implementaciones.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Manejo más sencillo de errores</span>: Con el enfoque OOP, se pueden incluir
-                    mecanismos de
-                    manejo de excepciones dentro de la clase de la pila. Por
-                    ejemplo, si se intenta hacer un pop() en una pila vacía,
-                    la clase puede generar una excepción que se puede manejar
-                    adecuadamente en el código cliente.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Mejora en la mantenibilidad</span>:
-                    El diseño orientado a objetos facilita el mantenimiento y
-                    la modificación del código. Si se necesitan cambios en la
-                    implementación de la pila (como optimizar el algoritmo o
-                    cambiar la estructura de almacenamiento), estos cambios
-                    pueden realizarse dentro de la clase sin afectar al resto
-                    del código que interactúa con la pila.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Flexibilidad en la estructura interna</span>: Al usar OOP, es posible
-                    modificar la estructura interna
-                    de la pila sin cambiar la interfaz pública que se expone
-                    al usuario. Por ejemplo, la pila podría cambiar de una
-                    implementación basada en lista a una basada en una
-                    estructura enlazada sin afectar el código que usa la pila.
-                  </li>
-                </ul>
-                <p>
-                  El uso de pilas con un enfoque OOP permite un código más
-                  organizado, modular y fácil de mantener, lo cual es
-                  especialmente útil en aplicaciones grandes o en aquellos
-                  entornos que requieren una alta flexibilidad y
-                  escalabilidad.
-                </p>
-              </div>
-              <!-- Ventajas de Pilas con Enfoque OOP fin -->
+            <!-- Implementación Procedimental de Estructuras de una Pila fin -->
+            <!-- Explicación de la Implementación Procedimental de una Pila -->
+            <div>
+              <h3>
+                Explicación de la Implementación Procedimental de una Pila
+              </h3>
+              <ul>
+                <li>
+                  <span class="fw-bold"><code class="language-python">create_stack()</code></span>: Crea y devuelve
+                  una lista vacía que representa la pila.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">push(stack, element)</code></span>: Este método
+                  agrega un nuevo elemento a la pila usando
+                  el método append() de listas. Esto se traduce como
+                  "empujar" un elemento al tope de la pila.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">pop(stack)</code></span>: Retira y devuelve el
+                  último elemento agregado a la
+                  pila. Verifica si la pila está vacía antes de intentar
+                  eliminar un elemento, para evitar errores. Utiliza el
+                  método pop() de listas.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">peek(stack)</code></span>: Permite ver el
+                  elemento que se encuentra en la parte
+                  superior de la pila sin removerlo. Esto ayuda a
+                  inspeccionar el contenido actual.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">is_empty(stack)</code></span>: Verifica si la
+                  pila está vacía retornando un valor
+                  booleano. Usa la función len() para comprobar si tiene
+                  elementos.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">size(stack)</code></span>:Devuelve la cantidad
+                  de elementos presentes en la pila.
+                  Esto es útil para conocer su estado en cualquier momento.
+                </li>
+                <li>
+                  <span class="fw-bold">Ejemplo de Uso La sección dentro del bloque if
+                    <code class="language-python">__name__</code> == "<code
+                      class="language-python">__main__</code>"</span>: muestra cómo usar la pila:
+                  <ul>
+                    <li>
+                      Se crean operaciones básicas como agregar elementos
+                      (<code class="language-python">push</code>), eliminar
+                      elementos (<code class="language-python">pop</code>),
+                      y verificar el elemento superior (<code class="language-python">peek</code>).
+                    </li>
+                    <li>
+                      También se ilustra cómo vaciar completamente la pila
+                      usando un ciclo
+                      <code class="language-python">while</code>.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
-            <!-- La Pila: El Enfoque Procedimental Versus El Enfoque Orientado a Objetos Fin -->
-            <!-- La Pila: El Enfoque Orientado a Objetos -->
-            <div id="la-pila-el-enfoque-orientado-a-objetos" class="mt-5">
-              <h2>La Pila: El Enfoque Orientado a Objetos</h2>
+            <!-- Explicación de la Implementación Procedimental de una Pila fin -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- La Pila: el Enfoque Procedimental Fin -->
+          <!-- La Pila: El Enfoque Procedimental Versus El Enfoque Orientado a Objetos -->
+          <div id="la-Pila-el-enfoque-procedimental-versus-el-enfoque-oOrientado-a-objetos" class="mt-3">
+            <h2>
+              La Pila: El Enfoque Procedimental Versus El Enfoque Orientado
+              a Objetos
+            </h2>
+            <!-- Desventajas de Pilas Procedimentales -->
+            <div>
+              <h3>Desventajas de Pilas Procedimentales</h3>
               <p>
-                Las pilas pueden implementarse mediante el enfoque orientado a
-                objetos, aprovechando las características del lenguaje para
-                encapsular el comportamiento y la estructura de la pila.
+                Las pilas procedimentales, también conocidas como pilas
+                estáticas o simples, tienen algunas desventajas que se deben
+                considerar dependiendo del contexto en el que se utilicen. A
+                continuación se detallan algunas de las principales
+                desventajas de este tipo de estructuras:
               </p>
-              <!-- Implementación Orientada a Objetos de Estructuras de una Pila -->
-              <div>
-                <h3>
-                  Implementación Orientada a Objetos de Estructuras de una
-                  Pila
-                </h3>
-                <div class="code-example__syntax">
+              <ul>
+                <li>
+                  <span class="fw-bold">Tamaño fijo</span>: En las pilas
+                  procedimentales, el tamaño de la pila suele ser fijo y
+                  determinado de antemano. Esto significa que no se puede
+                  ajustar dinámicamente según la cantidad de elementos que
+                  se necesiten almacenar. Si se alcanza el límite de
+                  capacidad, se producirá un desbordamiento de pila.
+                </li>
+                <li>
+                  <span class="fw-bold">Eficiencia limitada en memoria</span>: Debido a que se establece un tamaño
+                  fijo, se puede
+                  desperdiciar memoria si la pila no se llena por completo,
+                  o puede desbordarse si se excede la capacidad máxima. Esto
+                  resulta ineficiente, ya que no se aprovecha la memoria
+                  disponible de manera óptima.
+                </li>
+                <li>
+                  <span class="fw-bold">Poca flexibilidad</span>: A
+                  diferencia de las pilas dinámicas, que pueden crecer y
+                  reducirse según sea necesario, las pilas procedimentales
+                  carecen de esta flexibilidad. Esto puede ser un
+                  inconveniente cuando se trabaja con datos cuyo tamaño es
+                  incierto o variable.
+                </li>
+                <li>
+                  <span class="fw-bold">Riesgo de desbordamiento</span>:
+                  Dado que el tamaño es fijo, se corre el riesgo de
+                  desbordar la pila si se realizan demasiadas operaciones de
+                  apilamiento sin haber retirado elementos previamente. Este
+                  desbordamiento puede llevar a errores o fallos en el
+                  programa.
+                </li>
+                <li>
+                  <span class="fw-bold">Acceso limitado</span>: Al ser una
+                  estructura de tipo LIFO (Last In, First Out), el acceso a
+                  los elementos de la pila está restringido al último
+                  elemento insertado. Esto limita la capacidad para realizar
+                  operaciones de lectura o modificación de elementos
+                  específicos dentro de la pila sin antes desapilar.
+                </li>
+                <li>
+                  <span class="fw-bold">Dependencia de la implementación</span>: En muchos casos, las pilas
+                  procedimentales dependen de
+                  una implementación que podría no ser tan eficiente como
+                  las pilas dinámicas, especialmente en lenguajes de
+                  programación que no soportan manipulación dinámica de
+                  memoria.
+                </li>
+                <li>
+                  <span class="fw-bold">Poca reutilización de memoria</span>: Una vez que la pila se llena hasta su
+                  capacidad máxima,
+                  no se puede reutilizar la memoria hasta que los elementos
+                  sean retirados. Esto limita el uso eficiente de la memoria
+                  en situaciones de alta carga.
+                </li>
+              </ul>
+              <p>
+                Por lo tanto, aunque las pilas procedimentales pueden ser
+                útiles en situaciones donde el tamaño de los datos es
+                conocido y fijo, presentan desventajas importantes en
+                términos de flexibilidad, eficiencia y manejo de memoria.
+              </p>
+            </div>
+            <!-- Desventajas de Pilas Procedimentales fin -->
+            <!-- Ventajas de Pilas con Enfoque OOP -->
+            <div>
+              <h3>Ventajas de Pilas con Enfoque OOP</h3>
+              <p>
+                El uso de pilas con un enfoque orientado a objetos (OOP, por
+                sus siglas en inglés) ofrece varias ventajas significativas
+                en el desarrollo de software, especialmente cuando se buscan
+                soluciones que sean fáciles de mantener, escalables y
+                reutilizables. A continuación, se detallan algunas de las
+                principales ventajas:
+              </p>
+              <ul>
+                <li>
+                  <span class="fw-bold">Encapsulamiento</span>: El enfoque
+                  OOP permite encapsular los detalles de implementación de
+                  la pila dentro de una clase. Los usuarios solo interactúan
+                  con los métodos de la clase (como push(), pop(), peek(),
+                  etc.) sin necesidad de preocuparse por la estructura
+                  interna o los detalles de memoria, lo que promueve una
+                  interfaz clara y sencilla.
+                </li>
+                <li>
+                  <span class="fw-bold">Reutilización de código</span>: Al
+                  utilizar clases, es posible reutilizar la implementación
+                  de la pila en diferentes proyectos o partes del código.
+                  Esto mejora la eficiencia en el desarrollo y reduce la
+                  redundancia.
+                </li>
+                <li>
+                  <span class="fw-bold">Modularidad</span>: Al organizar la
+                  pila como una clase dentro de un sistema orientado a
+                  objetos, se facilita la separación de responsabilidades.
+                  La pila se convierte en un módulo autónomo que puede
+                  integrarse con otros módulos sin afectar el funcionamiento
+                  global del sistema.
+                </li>
+                <li>
+                  <span class="fw-bold">Herencia</span>: En OOP, las pilas
+                  pueden ser extendidas mediante la herencia. Por ejemplo,
+                  se puede crear una clase derivada que agregue
+                  características adicionales a una pila, como pilas con
+                  capacidad limitada o con características de monitoreo de
+                  desempeño, sin modificar la clase base. Esto facilita la
+                  creación de pilas especializadas.
+                </li>
+                <li>
+                  <span class="fw-bold">Polimorfismo</span>: El polimorfismo
+                  permite que se utilicen diferentes implementaciones de
+                  pilas de forma intercambiable. Por ejemplo, se pueden
+                  crear pilas con diferentes tipos de almacenamiento (como
+                  pilas basadas en listas o en arrays) y usar un enfoque
+                  común sin que el código que usa la pila necesite conocer
+                  las diferencias entre las implementaciones.
+                </li>
+                <li>
+                  <span class="fw-bold">Manejo más sencillo de errores</span>: Con el enfoque OOP, se pueden incluir
+                  mecanismos de
+                  manejo de excepciones dentro de la clase de la pila. Por
+                  ejemplo, si se intenta hacer un pop() en una pila vacía,
+                  la clase puede generar una excepción que se puede manejar
+                  adecuadamente en el código cliente.
+                </li>
+                <li>
+                  <span class="fw-bold">Mejora en la mantenibilidad</span>:
+                  El diseño orientado a objetos facilita el mantenimiento y
+                  la modificación del código. Si se necesitan cambios en la
+                  implementación de la pila (como optimizar el algoritmo o
+                  cambiar la estructura de almacenamiento), estos cambios
+                  pueden realizarse dentro de la clase sin afectar al resto
+                  del código que interactúa con la pila.
+                </li>
+                <li>
+                  <span class="fw-bold">Flexibilidad en la estructura interna</span>: Al usar OOP, es posible
+                  modificar la estructura interna
+                  de la pila sin cambiar la interfaz pública que se expone
+                  al usuario. Por ejemplo, la pila podría cambiar de una
+                  implementación basada en lista a una basada en una
+                  estructura enlazada sin afectar el código que usa la pila.
+                </li>
+              </ul>
+              <p>
+                El uso de pilas con un enfoque OOP permite un código más
+                organizado, modular y fácil de mantener, lo cual es
+                especialmente útil en aplicaciones grandes o en aquellos
+                entornos que requieren una alta flexibilidad y
+                escalabilidad.
+              </p>
+            </div>
+            <!-- Ventajas de Pilas con Enfoque OOP fin -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- La Pila: El Enfoque Procedimental Versus El Enfoque Orientado a Objetos Fin -->
+          <!-- La Pila: El Enfoque Orientado a Objetos -->
+          <div id="la-pila-el-enfoque-orientado-a-objetos" class="mt-3">
+            <h2>La Pila: El Enfoque Orientado a Objetos</h2>
+            <p>
+              Las pilas pueden implementarse mediante el enfoque orientado a
+              objetos, aprovechando las características del lenguaje para
+              encapsular el comportamiento y la estructura de la pila.
+            </p>
+            <!-- Implementación Orientada a Objetos de Estructuras de una Pila -->
+            <div>
+              <h3>
+                Implementación Orientada a Objetos de Estructuras de una
+                Pila
+              </h3>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         class Pila:
@@ -617,66 +621,66 @@
                             print("Elemento eliminado:", pila.pop())
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Implementación Orientada a Objetos de Estructuras de una Pila fin -->
-              <!-- Explicación de la Implementación Orientada a Objetos de una Pila  -->
-              <div>
-                <h3>
-                  Explicación de la Implementación Orientada a Objetos de una
-                  Pila
-                </h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Atributos y Métodos</span>:
-                    <ul>
-                      <li>
-                        La pila se implementa con una lista (<code class="language-python">self.elementos</code>) que
-                        almacena los datos.
-                      </li>
-                      <li>
-                        <code class="language-python">push</code>: Usa el
-                        método append para agregar un nuevo elemento al final
-                        de la lista.
-                      </li>
-                      <li>
-                        <code class="language-python">pop</code>: Usa el
-                        método pop para eliminar y devolver el último
-                        elemento. Si la pila está vacía, devuelve un mensaje.
-                      </li>
-                      <li>
-                        <code class="language-python">peek</code>: Devuelve el
-                        último elemento sin eliminarlo. Verifica primero si la
-                        pila no está vacía.
-                      </li>
-                      <li>
-                        <code class="language-python">is_empty</code>:
-                        Comprueba si la lista está vacía retornando
-                        <code class="language-python">True</code> o
-                        <code class="language-python">False</code>.
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Ejemplo de Uso</span>:
-                    <ul>
-                      <li>
-                        Se crea una instancia de Pila y se realizan
-                        operaciones básicas como agregar, eliminar y consultar
-                        elementos.
-                      </li>
-                      <li>
-                        También incluye una verificación para evitar errores
-                        al intentar eliminar elementos de una pila vacía.
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <!-- Explicación de la Implementación Orientada a Objetos de la Pila  fin -->
             </div>
-            <!-- La Pila: El Enfoque Orientado a Objetos Fin -->
+            <!-- Implementación Orientada a Objetos de Estructuras de una Pila fin -->
+            <!-- Explicación de la Implementación Orientada a Objetos de una Pila  -->
+            <div>
+              <h3>
+                Explicación de la Implementación Orientada a Objetos de una
+                Pila
+              </h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Atributos y Métodos</span>:
+                  <ul>
+                    <li>
+                      La pila se implementa con una lista (<code class="language-python">self.elementos</code>) que
+                      almacena los datos.
+                    </li>
+                    <li>
+                      <code class="language-python">push</code>: Usa el
+                      método append para agregar un nuevo elemento al final
+                      de la lista.
+                    </li>
+                    <li>
+                      <code class="language-python">pop</code>: Usa el
+                      método pop para eliminar y devolver el último
+                      elemento. Si la pila está vacía, devuelve un mensaje.
+                    </li>
+                    <li>
+                      <code class="language-python">peek</code>: Devuelve el
+                      último elemento sin eliminarlo. Verifica primero si la
+                      pila no está vacía.
+                    </li>
+                    <li>
+                      <code class="language-python">is_empty</code>:
+                      Comprueba si la lista está vacía retornando
+                      <code class="language-python">True</code> o
+                      <code class="language-python">False</code>.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="fw-bold">Ejemplo de Uso</span>:
+                  <ul>
+                    <li>
+                      Se crea una instancia de Pila y se realizan
+                      operaciones básicas como agregar, eliminar y consultar
+                      elementos.
+                    </li>
+                    <li>
+                      También incluye una verificación para evitar errores
+                      al intentar eliminar elementos de una pila vacía.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- Explicación de la Implementación Orientada a Objetos de la Pila  fin -->
           </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- La Pila: El Enfoque Orientado a Objetos Fin -->
         </article>
         <!--  Comparando Paradigmas: Programación Procedimental y Orientada a Objetos en Python  -->
         <!--  comentarios  -->

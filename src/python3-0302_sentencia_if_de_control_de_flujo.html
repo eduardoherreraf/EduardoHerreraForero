@@ -116,56 +116,57 @@
         <!--  Sentencia if de Control de Flujo en Python -->
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
-          <div>
-            <header>
-              <h1>Sentencia <code class="language-python">if</code> de Control de Flujo en Python</h1>
-            </header>
-            <!-- Introducción -->
-            <div class="mt-5">
-              <h2>Introducción</h2>
-              <p>
-                La sentencia if es una de las estructuras de control de flujo
-                más fundamentales en Python. Permite a los programadores tomar
-                decisiones en función de condiciones específicas, lo que hace
-                que el código sea más dinámico y adaptable. En este artículo,
-                exploraremos en profundidad cómo funciona la sentencia if, sus
-                variantes, y ejemplos prácticos que ilustran su uso.
-              </p>
-              <div class="site-image site-intro-image">
-                <figure class="site-image__figure site-image__figure--intro">
-                  <img src="https://i.ibb.co/VtYvtX5/sentenciaif.jpg" class="img-fluid"
-                    alt="¿Cómo se debe usar la declaración if?"
-                    title="En este artículo se explicará la sentencia condicional if en Python y todas sus variantes." />
-                  <figcaption>
-                    ¿Cómo se debe usar la declaración if?
-                  </figcaption>
-                </figure>
-              </div>
+          <header>
+            <h1>Sentencia <code class="language-python" style="font-size: 0.7em;"> if</code> de Control de Flujo en Python</h1>
+          </header>
+          <!-- Introducción -->
+          <div class="mt-3">
+            <h2>Introducción</h2>
+            <div class="site-image site-intro-image mb-5">
+              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                <img loading="lazy" src="https://i.ibb.co/VtYvtX5/sentenciaif.jpg" class="img-fluid"
+                  alt="¿Cómo se debe usar la declaración if?"
+                  title="En este artículo se explicará la sentencia condicional if en Python y todas sus variantes." />
+                <figcaption class="site-image__caption">
+                  ¿Cómo se debe usar la declaración if?
+                </figcaption>
+              </figure>
             </div>
-            <!-- Sentencia if-then  -->
-            <div id="sentencia-if-then" class="mt-5">
-              <h2>Sentencia <code class="language-python">if-then</code></h2>
-              <p>
-                Esta sentencia se utiliza cuando solo es necesario verificar
-                si una condición es verdadera.
-              </p>
-              <!-- Estructura Básica if-then -->
-              <div>
-                <h3>Estructura Básica <code class="language-python">if-then</code></h3>
-                <div class="code-example__syntax">
+            <p>
+              La sentencia if es una de las estructuras de control de flujo
+              más fundamentales en Python. Permite a los programadores tomar
+              decisiones en función de condiciones específicas, lo que hace
+              que el código sea más dinámico y adaptable. En este artículo,
+              exploraremos en profundidad cómo funciona la sentencia if, sus
+              variantes, y ejemplos prácticos que ilustran su uso.
+            </p>
+
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Sentencia if-then  -->
+          <div id="sentencia-if-then" class="mt-3">
+            <h2>Sentencia <code class="language-python">if-then</code></h2>
+            <p>
+              Esta sentencia se utiliza cuando solo es necesario verificar
+              si una condición es verdadera.
+            </p>
+            <!-- Estructura Básica if-then -->
+            <div>
+              <h3>Estructura Básica <code class="language-python">if-then</code></h3>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         if condición:
                             # bloque de código a ejecutar si la condición es verdadera
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Estructura Básica if-then fin -->
-              <!-- Ejemplo Simple if-then -->
-              <div>
-                <h3>Ejemplo Simple <code class="language-python">if-then</code></h3>
-                <div class="code-example__syntax">
+            </div>
+            <!-- Estructura Básica if-then fin -->
+            <!-- Ejemplo Simple if-then -->
+            <div>
+              <h3>Ejemplo Simple <code class="language-python">if-then</code></h3>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         edad = 18
@@ -174,24 +175,25 @@
                             # imprime si y sólo si la variable edad tiene valor mayor a 18 de otra forma no hace nada.
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Ejemplo Simple if-then fin -->
             </div>
-            <!-- Estructura Básica de la Sentencia if Fin -->
-            <!-- Sentencia if-then-else -->
-            <div id="aentencia-if-then-else" class="mt-5">
-              <h2>Sentencia <code class="language-python">if-then-else</code></h2>
-              <p>
-                La sentencia <code class="language-python">if</code> puede
-                complementarse con <code class="language-python">else</code>,
-                que permite ejecutar un bloque de código alternativo si la
-                condición es falsa.
-              </p>
-              <!-- Estructura Básica if-then-else -->
-              <div>
-                <h3>Estructura Básica <code class="language-python">if-then-else</code></h3>
-                <div class="code-example__syntax">
+            <!-- Ejemplo Simple if-then fin -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Estructura Básica de la Sentencia if Fin -->
+          <!-- Sentencia if-then-else -->
+          <div id="aentencia-if-then-else" class="mt-3">
+            <h2>Sentencia <code class="language-python">if-then-else</code></h2>
+            <p>
+              La sentencia <code class="language-python">if</code> puede
+              complementarse con <code class="language-python">else</code>,
+              que permite ejecutar un bloque de código alternativo si la
+              condición es falsa.
+            </p>
+            <!-- Estructura Básica if-then-else -->
+            <div>
+              <h3>Estructura Básica <code class="language-python">if-then-else</code></h3>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         if condición:
@@ -200,13 +202,13 @@
                             # bloque de código si la condición es falsa
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Estructura Básica if-then-else fin -->
-              <!-- Ejemplo Simple if-then-else -->
-              <div>
-                <h3>Ejemplo Simple <code class="language-python">if-then-else</code></h3>
-                <div class="code-example__syntax">
+            </div>
+            <!-- Estructura Básica if-then-else fin -->
+            <!-- Ejemplo Simple if-then-else -->
+            <div>
+              <h3>Ejemplo Simple <code class="language-python">if-then-else</code></h3>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         edad = 16
@@ -217,24 +219,25 @@
                             # imprime: "Eres menor de edad."
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Ejemplo Simple if-then-else fin -->
             </div>
-            <!-- Sentencia if-then-else Fin -->
-            <!-- Sentencia if-elif-else -->
-            <div id="sentencia-if-elif-else" class="mt-5">
-              <h2>Sentencia <code class="language-python">if-elif-else</code></h2>
-              <p>
-                Para manejar múltiples condiciones, se puede utilizar
-                <code class="language-python">elif</code>
-                (abreviatura de "else if"). Esto permite evaluar varias
-                condiciones en secuencia.
-              </p>
-              <!-- Estructura Básica if-elif-else  -->
-              <div>
-                <h3>Estructura Básica <code class="language-python">if-elif-else</code></h3>
-                <div class="code-example__syntax">
+            <!-- Ejemplo Simple if-then-else fin -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Sentencia if-then-else Fin -->
+          <!-- Sentencia if-elif-else -->
+          <div id="sentencia-if-elif-else" class="mt-3">
+            <h2>Sentencia <code class="language-python">if-elif-else</code></h2>
+            <p>
+              Para manejar múltiples condiciones, se puede utilizar
+              <code class="language-python">elif</code>
+              (abreviatura de "else if"). Esto permite evaluar varias
+              condiciones en secuencia.
+            </p>
+            <!-- Estructura Básica if-elif-else  -->
+            <div>
+              <h3>Estructura Básica <code class="language-python">if-elif-else</code></h3>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         if condición1:
@@ -245,13 +248,13 @@
                             # bloque de código si ninguna de las condiciones anteriores es verdadera
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Estructura Básica if-elif-else  fin -->
-              <!-- Ejemplo Simple if-elif-else  -->
-              <div>
-                <h3>Ejemplo Simple <code class="language-python">if-elif-else</code></h3>
-                <div class="code-example__syntax">
+            </div>
+            <!-- Estructura Básica if-elif-else  fin -->
+            <!-- Ejemplo Simple if-elif-else  -->
+            <div>
+              <h3>Ejemplo Simple <code class="language-python">if-elif-else</code></h3>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         edad = 20
@@ -264,47 +267,48 @@
                             # imprime: "Eres un adulto."
                         </code>
                     </pre>
-                </div>
               </div>
-              <!-- Ejemplo Simple if-elif-else  fin -->
-              <p>Se debe prestar atención adicional a estos casos:</p>
-              <ul>
-                <li>
-                  No se debe usar else sin un
-                  <code class="language-python">if</code> precedente;
-                </li>
-                <li>
-                  <code class="language-python">else</code> siempre es la
-                  última rama de la cascada, independientemente de si se ha
-                  usado <code class="language-python">elif</code> o no;
-                </li>
-                <li>
-                  <code class="language-python">else</code> es una parte
-                  opcional de la cascada, y puede omitirse;
-                </li>
-                <li>
-                  Si hay una rama <code class="language-python">else</code> en
-                  la cascada, solo se ejecuta una de todas las ramas;
-                </li>
-                <li>
-                  Si no hay una rama
-                  <code class="language-python">else</code>, es posible que no
-                  se ejecute ninguna de las opciones disponibles.
-                </li>
-              </ul>
             </div>
-            <!-- Sentencia if-elif-else Fin -->
-            <!-- Indentación -->
-            <div id="indentacion" class="mt-5">
-              <h2>Indentación</h2>
-              <p>
-                La indentación es crucial en Python. Define los bloques de
-                código que pertenecen a cada condición. Se suele utilizar
-                cuatro espacios en blanco para cada nivel de indentación.
-              </p>
-            </div>
-            <!-- Indentación Fin -->
+            <!-- Ejemplo Simple if-elif-else  fin -->
+            <p>Se debe prestar atención adicional a estos casos:</p>
+            <ul>
+              <li>
+                No se debe usar else sin un
+                <code class="language-python">if</code> precedente;
+              </li>
+              <li>
+                <code class="language-python">else</code> siempre es la
+                última rama de la cascada, independientemente de si se ha
+                usado <code class="language-python">elif</code> o no;
+              </li>
+              <li>
+                <code class="language-python">else</code> es una parte
+                opcional de la cascada, y puede omitirse;
+              </li>
+              <li>
+                Si hay una rama <code class="language-python">else</code> en
+                la cascada, solo se ejecuta una de todas las ramas;
+              </li>
+              <li>
+                Si no hay una rama
+                <code class="language-python">else</code>, es posible que no
+                se ejecute ninguna de las opciones disponibles.
+              </li>
+            </ul>
           </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Sentencia if-elif-else Fin -->
+          <!-- Indentación -->
+          <div id="indentacion" class="mt-3">
+            <h2>Indentación</h2>
+            <p>
+              La indentación es crucial en Python. Define los bloques de
+              código que pertenecen a cada condición. Se suele utilizar
+              cuatro espacios en blanco para cada nivel de indentación.
+            </p>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Indentación Fin -->
         </article>
         <!--  Sentencia if de Control de Flujo en Python -->
 

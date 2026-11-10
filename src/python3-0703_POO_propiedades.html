@@ -87,7 +87,8 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">ARTÍCULOS</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link"
+              href="index.html#blog">ARTÍCULOS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -111,55 +112,56 @@
         <!--  POO: Propiedades en Python  -->
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
-          <div>
-            <header>
-              <h1>POO: Propiedades en Python</h1>
-            </header>
-            <!-- Introducción -->
-            <div class="mt-5">
-              <h2>Introducción</h2>
-              <p>
-                Este documento explora las variables de instancia y de clase
-                en Python. Se abordarán las diferencias entre estos tipos de
-                variables, su uso adecuado y cómo afectan el comportamiento de
-                las instancias de una clase.
-              </p>
-              <div class="site-image site-intro-image">
-                <figure class="site-image__figure site-image__figure--intro">
-                  <img src="https://i.ibb.co/YdKHfNW/poopropiedades.jpg" class="img-fluid"
-                    alt="POO: Propiedades en Python  "
-                    title="Comprendiendo las Variables de Instancia vs. Variables de Clase en Python" />
-                  <figcaption>poo: Propiedades en Python</figcaption>
-                </figure>
-              </div>
+          <header>
+            <h1>POO: Propiedades en Python</h1>
+          </header>
+          <!-- Introducción -->
+          <div class="mt-3">
+            <h2>Introducción: Análisis de Datos</h2>
+            <div class="site-image site-intro-image mb-5">
+              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                <img loading="lazy" src="https://i.ibb.co/YdKHfNW/poopropiedades.jpg" class="img-fluid"
+                  alt="POO: Propiedades en Python  "
+                  title="Comprendiendo las Variables de Instancia vs. Variables de Clase en Python" />
+                <figcaption class="site-image__caption">poo: Propiedades en Python</figcaption>
+              </figure>
             </div>
+            <p>
+              Este documento explora las variables de instancia y de clase
+              en Python. Se abordarán las diferencias entre estos tipos de
+              variables, su uso adecuado y cómo afectan el comportamiento de
+              las instancias de una clase.
+            </p>
 
-            <!-- Variables de Instancia -->
-            <div id="variables-de-instancia" class="mt-5">
-              <h2>Variables de Instancia</h2>
-              <p>
-                En la Programación Orientada a Objetos (POO), una variable de
-                instancia representa un atributo propio de cada objeto,
-                definido típicamente dentro del método constructor
-                <code class="language-python">__init__</code> de la clase.
-                Dicha variable se caracteriza por pertenecer exclusivamente a
-                una instancia específica, lo que significa que cada objeto
-                creado a partir de una clase posee una copia única de esta
-                variable. Esta característica permite almacenar información
-                particular y diferenciada para cada instancia, reflejando las
-                características individuales de cada objeto en el contexto de
-                la programación.
-              </p>
-              <p>
-                Se definen generalmente dentro del constructor de la clase, y
-                su valor puede variar dependiendo del objeto en el que se
-                encuentren.
-              </p>
-              <!-- Ejemplo de Uso de Variables de Instancia-->
-              <div>
-                <h3>Ejemplo de Uso de Variables de Instancia</h3>
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+
+          <!-- Variables de Instancia -->
+          <div id="variables-de-instancia" class="mt-3">
+            <h2>Variables de Instancia</h2>
+            <p>
+              En la Programación Orientada a Objetos (POO), una variable de
+              instancia representa un atributo propio de cada objeto,
+              definido típicamente dentro del método constructor
+              <code class="language-python">__init__</code> de la clase.
+              Dicha variable se caracteriza por pertenecer exclusivamente a
+              una instancia específica, lo que significa que cada objeto
+              creado a partir de una clase posee una copia única de esta
+              variable. Esta característica permite almacenar información
+              particular y diferenciada para cada instancia, reflejando las
+              características individuales de cada objeto en el contexto de
+              la programación.
+            </p>
+            <p>
+              Se definen generalmente dentro del constructor de la clase, y
+              su valor puede variar dependiendo del objeto en el que se
+              encuentren.
+            </p>
+            <!-- Ejemplo de Uso de Variables de Instancia-->
+            <div>
+              <h3>Ejemplo de Uso de Variables de Instancia</h3>
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         class Carro:
                             def __init__(self, marca, modelo):
@@ -176,47 +178,47 @@
                         carro2.mostrar_info()  # Imprime: Marca: Honda, Modelo: Civic
                       </code>
                     </pre>
-                </div>
-                <p>En este ejemplo:</p>
-                <ul>
-                  <li>
-                    <code class="language-python">marca</code> y
-                    <code class="language-python">modelo</code> son variables
-                    de instancia, ya que se asignan a cada objeto creado de la
-                    clase Carro.
-                  </li>
-                  <li>
-                    <code class="language-python">carro1</code> y
-                    <code class="language-python">carro2</code> son instancias
-                    de la clase, y cada una tiene sus propias versiones de
-                    <code class="language-python">marca</code> y
-                    <code class="language-python">modelo</code>, con valores
-                    diferentes.
-                  </li>
-                </ul>
               </div>
-              <!--  Ejemplo de Uso de Variables de Instancia fin -->
-              <!-- Uso de Variables Privadas -->
+              <p>En este ejemplo:</p>
+              <ul>
+                <li>
+                  <code class="language-python">marca</code> y
+                  <code class="language-python">modelo</code> son variables
+                  de instancia, ya que se asignan a cada objeto creado de la
+                  clase Carro.
+                </li>
+                <li>
+                  <code class="language-python">carro1</code> y
+                  <code class="language-python">carro2</code> son instancias
+                  de la clase, y cada una tiene sus propias versiones de
+                  <code class="language-python">marca</code> y
+                  <code class="language-python">modelo</code>, con valores
+                  diferentes.
+                </li>
+              </ul>
+            </div>
+            <!--  Ejemplo de Uso de Variables de Instancia fin -->
+            <!-- Uso de Variables Privadas -->
+            <div>
+              <h3>Uso de Variables Privadas</h3>
+              <p>
+                En Python, cuando se utilizan dos guiones bajos (<code class="language-python">__</code>) al inicio de
+                una variable de instancia, se está aplicando
+                un mecanismo llamado <em>mangling</em> de nombres. Este
+                mecanismo cambia el nombre interno de la variable para
+                evitar que sea sobrescrita o modificada accidentalmente
+                desde fuera de la clase. Es una forma de hacer que la
+                variable sea "privada" para la clase, aunque sigue siendo
+                accesible internamente.
+              </p>
+              <!-- Ejemplo de Uso de Variables de Instancia con Dos Guiones Bajos -->
               <div>
-                <h3>Uso de Variables Privadas</h3>
-                <p>
-                  En Python, cuando se utilizan dos guiones bajos (<code class="language-python">__</code>) al inicio de
-                  una variable de instancia, se está aplicando
-                  un mecanismo llamado <em>mangling</em> de nombres. Este
-                  mecanismo cambia el nombre interno de la variable para
-                  evitar que sea sobrescrita o modificada accidentalmente
-                  desde fuera de la clase. Es una forma de hacer que la
-                  variable sea "privada" para la clase, aunque sigue siendo
-                  accesible internamente.
-                </p>
-                <!-- Ejemplo de Uso de Variables de Instancia con Dos Guiones Bajos -->
-                <div>
-                  <h4>
-                    Ejemplo de Uso de Variables de Instancia con Dos Guiones
-                    Bajos
-                  </h4>
-                  <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+                <h4>
+                  Ejemplo de Uso de Variables de Instancia con Dos Guiones
+                  Bajos
+                </h4>
+                <div class="code-example__syntax">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           class Carro:
                               def __init__(self, marca, modelo):
@@ -237,76 +239,77 @@
                           carro1.mostrar_info()  # Imprime: Marca: Honda, Modelo: Corolla
                         </code>
                       </pre>
-                  </div>
                 </div>
-                <!-- Ejemplo de Uso de Variables de Instancia con Dos Guiones Bajos fin -->
-                <!-- Acceso Interno -->
-                <div>
-                  <h4>Acceso Interno</h4>
-                  <p>
-                    A pesar de que las variables son "privadas", Python no
-                    impide su acceso, sino que lo hace menos accesible al
-                    cambiar su nombre internamente. A través de la técnica de
-                    "name mangling", se pueden acceder de la siguiente manera:
-                  </p>
-                  <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Ejemplo de Uso de Variables de Instancia con Dos Guiones Bajos fin -->
+              <!-- Acceso Interno -->
+              <div>
+                <h4>Acceso Interno</h4>
+                <p>
+                  A pesar de que las variables son "privadas", Python no
+                  impide su acceso, sino que lo hace menos accesible al
+                  cambiar su nombre internamente. A través de la técnica de
+                  "name mangling", se pueden acceder de la siguiente manera:
+                </p>
+                <div class="code-example__syntax">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           print(carro1._Carro__marca)  # Imprime: Honda
                         </code>
                       </pre>
-                  </div>
-                  <p>
-                    Sin embargo, no se recomienda acceder directamente a las
-                    variables privadas fuera de la clase. En lugar de eso, es
-                    preferible utilizar métodos para modificar o acceder a
-                    estos atributos.
-                  </p>
                 </div>
-                <!-- Acceso Interno fin -->
+                <p>
+                  Sin embargo, no se recomienda acceder directamente a las
+                  variables privadas fuera de la clase. En lugar de eso, es
+                  preferible utilizar métodos para modificar o acceder a
+                  estos atributos.
+                </p>
               </div>
-              <!-- Uso de Variables Privadas fin -->
+              <!-- Acceso Interno fin -->
             </div>
-            <!-- Variables de Instancia Fin -->
-            <!-- Variables de Clase -->
-            <div id="variables-de-clase" class="mt-5">
-              <h2>Variables de Clase</h2>
-              <p>
-                Las variables de clase son aquellas que se definen dentro de
-                la clase pero fuera de cualquier método. Estas variables son
-                compartidas entre todas las instancias de la clase. Si se
-                modifica una variable de clase, el cambio se reflejará en
-                todas las instancias que no tengan su propia variable de
-                instancia con el mismo nombre.
-              </p>
-              <!-- Características de las Variables de Clase -->
-              <div>
-                <h3>Características de las Variables de Clase</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Valor compartido</span>: Todas las
-                    instancias de la clase tienen acceso al mismo valor para
-                    una variable de clase.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Definición</span>: Se define dentro
-                    de la clase, fuera de los métodos, con una sintaxis
-                    similar a la de cualquier otro atributo de clase.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Acceso</span>: Se puede acceder a
-                    ella mediante la clase o mediante una instancia de la
-                    clase, pero si se modifica desde una instancia, esa
-                    modificación no afectará a otras instancias.
-                  </li>
-                </ul>
-              </div>
-              <!-- Características de las Variables de Clase fin -->
-              <!-- Ejemplo en Python de Variables de Clase -->
-              <div>
-                <h3>Ejemplo en Python de Variables de Clase</h3>
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+            <!-- Uso de Variables Privadas fin -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Variables de Instancia Fin -->
+          <!-- Variables de Clase -->
+          <div id="variables-de-clase" class="mt-3">
+            <h2>Variables de Clase</h2>
+            <p>
+              Las variables de clase son aquellas que se definen dentro de
+              la clase pero fuera de cualquier método. Estas variables son
+              compartidas entre todas las instancias de la clase. Si se
+              modifica una variable de clase, el cambio se reflejará en
+              todas las instancias que no tengan su propia variable de
+              instancia con el mismo nombre.
+            </p>
+            <!-- Características de las Variables de Clase -->
+            <div>
+              <h3>Características de las Variables de Clase</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Valor compartido</span>: Todas las
+                  instancias de la clase tienen acceso al mismo valor para
+                  una variable de clase.
+                </li>
+                <li>
+                  <span class="fw-bold">Definición</span>: Se define dentro
+                  de la clase, fuera de los métodos, con una sintaxis
+                  similar a la de cualquier otro atributo de clase.
+                </li>
+                <li>
+                  <span class="fw-bold">Acceso</span>: Se puede acceder a
+                  ella mediante la clase o mediante una instancia de la
+                  clase, pero si se modifica desde una instancia, esa
+                  modificación no afectará a otras instancias.
+                </li>
+              </ul>
+            </div>
+            <!-- Características de las Variables de Clase fin -->
+            <!-- Ejemplo en Python de Variables de Clase -->
+            <div>
+              <h3>Ejemplo en Python de Variables de Clase</h3>
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         class Carro:
                             # Variable de clase
@@ -324,36 +327,36 @@
                         carro2.mostrar_info()  # Honda Civic tiene 4 ruedas.
                       </code>
                     </pre>
-                </div>
-                <p>
-                  En este ejemplo, la variable
-                  <code class="language-python">ruedas</code> es una variable
-                  de clase, lo que significa que ambas instancias (<code class="language-python">carro1</code>
-                  y <code class="language-python">carro2</code>) comparten el
-                  valor de <code class="language-python">4</code> para el
-                  número de ruedas. Si se cambiara el valor de ruedas a través
-                  de la clase, todas las instancias reflejarían ese cambio.
-                </p>
               </div>
-              <!-- Ejemplo en Python de Variables de Clase fin -->
-              <!-- Cambio de Valor a Variable de Clase -->
+              <p>
+                En este ejemplo, la variable
+                <code class="language-python">ruedas</code> es una variable
+                de clase, lo que significa que ambas instancias (<code class="language-python">carro1</code>
+                y <code class="language-python">carro2</code>) comparten el
+                valor de <code class="language-python">4</code> para el
+                número de ruedas. Si se cambiara el valor de ruedas a través
+                de la clase, todas las instancias reflejarían ese cambio.
+              </p>
+            </div>
+            <!-- Ejemplo en Python de Variables de Clase fin -->
+            <!-- Cambio de Valor a Variable de Clase -->
+            <div>
+              <h3>Cambio de Valor a Variable de Clase</h3>
+              <p>
+                Para cambiar el valor de una variable de clase en Python, se
+                puede hacer de dos maneras:
+              </p>
+              <!-- Accediendo a través de la Clase -->
               <div>
-                <h3>Cambio de Valor a Variable de Clase</h3>
+                <h4>Accediendo a través de la Clase</h4>
                 <p>
-                  Para cambiar el valor de una variable de clase en Python, se
-                  puede hacer de dos maneras:
+                  El valor de una variable de clase se puede modificar
+                  directamente utilizando el nombre de la clase. Esta
+                  modificación afectará a todas las instancias de la clase
+                  que no hayan sobrescrito esa variable.
                 </p>
-                <!-- Accediendo a través de la Clase -->
-                <div>
-                  <h4>Accediendo a través de la Clase</h4>
-                  <p>
-                    El valor de una variable de clase se puede modificar
-                    directamente utilizando el nombre de la clase. Esta
-                    modificación afectará a todas las instancias de la clase
-                    que no hayan sobrescrito esa variable.
-                  </p>
-                  <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+                <div class="code-example__syntax">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           class Carro:
                             # Variable de clase
@@ -368,31 +371,31 @@
                         print(carro2.ruedas)  # 6
                         </code>
                       </pre>
-                  </div>
-                  <p>
-                    En este caso, la variable de clase ruedas se cambia a
-                    <code class="language-python">6</code> a través de la
-                    clase <code class="language-python">Carro</code>. Ahora,
-                    ambas instancias (<code class="language-python">carro1</code>
-                    y <code class="language-python">carro2</code>) reflejan el
-                    nuevo valor de <code class="language-python">6</code>.
-                  </p>
                 </div>
-                <!-- Accediendo a través de la Clase fin -->
-                <!-- Accediendo a través de una Instancia (No Recomendado) -->
-                <div>
-                  <h4>
-                    Accediendo a través de una Instancia (No Recomendado)
-                  </h4>
-                  <p>
-                    También es posible cambiar una variable de clase a través
-                    de una instancia de la clase. Sin embargo, este cambio no
-                    afectará a las demás instancias, ya que en realidad se
-                    creará una nueva variable de instancia para esa instancia
-                    específica.
-                  </p>
-                  <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+                <p>
+                  En este caso, la variable de clase ruedas se cambia a
+                  <code class="language-python">6</code> a través de la
+                  clase <code class="language-python">Carro</code>. Ahora,
+                  ambas instancias (<code class="language-python">carro1</code>
+                  y <code class="language-python">carro2</code>) reflejan el
+                  nuevo valor de <code class="language-python">6</code>.
+                </p>
+              </div>
+              <!-- Accediendo a través de la Clase fin -->
+              <!-- Accediendo a través de una Instancia (No Recomendado) -->
+              <div>
+                <h4>
+                  Accediendo a través de una Instancia (No Recomendado)
+                </h4>
+                <p>
+                  También es posible cambiar una variable de clase a través
+                  de una instancia de la clase. Sin embargo, este cambio no
+                  afectará a las demás instancias, ya que en realidad se
+                  creará una nueva variable de instancia para esa instancia
+                  específica.
+                </p>
+                <div class="code-example__syntax">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           class Carro:
                               # Variable de clase
@@ -408,68 +411,69 @@
                           print(carro2.ruedas)  # 4 (variable de clase sin cambios)
                         </code>
                       </pre>
-                  </div>
-                  <p>
-                    En este caso, el valor de ruedas cambia a
-                    <code class="language-python">6</code> para
-                    <code class="language-python">carro1</code>, pero la
-                    variable de clase
-                    <code class="language-python">ruedas</code> sigue siendo
-                    <code class="language-python">4</code> para carro2. Esto
-                    sucede porque al acceder a la variable de clase a través
-                    de la instancia, Python crea una nueva variable de
-                    instancia local a esa instancia.
-                  </p>
                 </div>
-                <!-- Accediendo a través de una Instancia (No Recomendado) fin -->
-              </div>
-              <!-- Cambio de Valor a Variable de Clase fin -->
-              <!-- Diferencia con las Variables de Instancia -->
-              <div>
-                <h3>Diferencia con las Variables de Instancia</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Variables de instancia</span>: Son
-                    atributos que pertenecen a un objeto específico. Cada
-                    instancia tiene su propio valor para esas variables.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Variables de clase</span>: Son
-                    compartidas por todas las instancias de una clase.
-                  </li>
-                </ul>
-              </div>
-              <!-- Diferencia con las Variables de Instancia fin -->
-            </div>
-            <!-- Variables de Clase Fin -->
-            <!-- Comprobando la Existencia de un Atributo -->
-            <div id="comprobando-la-existencia-de-un-atributo" class="mt-5">
-              <h2>Comprobando la Existencia de un Atributo</h2>
-              <p>
-                En Python, se pueden usar varias técnicas para comprobar si un
-                objeto o una clase tiene un atributo específico. Algunas de
-                las formas más comunes de hacer esto son:
-              </p>
-              <!-- Usando hasattr() -->
-              <div>
-                <h3>Usando hasattr()</h3>
                 <p>
-                  La función
-                  <code class="language-python">hasattr()</code> permite
-                  verificar si un objeto o clase tiene un atributo
-                  determinado. Devuelve True si el atributo existe y False si
-                  no.
+                  En este caso, el valor de ruedas cambia a
+                  <code class="language-python">6</code> para
+                  <code class="language-python">carro1</code>, pero la
+                  variable de clase
+                  <code class="language-python">ruedas</code> sigue siendo
+                  <code class="language-python">4</code> para carro2. Esto
+                  sucede porque al acceder a la variable de clase a través
+                  de la instancia, Python crea una nueva variable de
+                  instancia local a esa instancia.
                 </p>
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Accediendo a través de una Instancia (No Recomendado) fin -->
+            </div>
+            <!-- Cambio de Valor a Variable de Clase fin -->
+            <!-- Diferencia con las Variables de Instancia -->
+            <div>
+              <h3>Diferencia con las Variables de Instancia</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Variables de instancia</span>: Son
+                  atributos que pertenecen a un objeto específico. Cada
+                  instancia tiene su propio valor para esas variables.
+                </li>
+                <li>
+                  <span class="fw-bold">Variables de clase</span>: Son
+                  compartidas por todas las instancias de una clase.
+                </li>
+              </ul>
+            </div>
+            <!-- Diferencia con las Variables de Instancia fin -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Variables de Clase Fin -->
+          <!-- Comprobando la Existencia de un Atributo -->
+          <div id="comprobando-la-existencia-de-un-atributo" class="mt-3">
+            <h2>Comprobando la Existencia de un Atributo</h2>
+            <p>
+              En Python, se pueden usar varias técnicas para comprobar si un
+              objeto o una clase tiene un atributo específico. Algunas de
+              las formas más comunes de hacer esto son:
+            </p>
+            <!-- Usando hasattr() -->
+            <div>
+              <h3>Usando hasattr()</h3>
+              <p>
+                La función
+                <code class="language-python">hasattr()</code> permite
+                verificar si un objeto o clase tiene un atributo
+                determinado. Devuelve True si el atributo existe y False si
+                no.
+              </p>
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         hasattr(objeto, "atributo")
                       </code>
                     </pre>
-                </div>
-                <p>Ejemplo:</p>
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <p>Ejemplo:</p>
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         class Carro:
                             def __init__(self, marca):
@@ -481,40 +485,40 @@
                         print(hasattr(carro1, "modelo"))  # False
                       </code>
                     </pre>
-                </div>
-                <p>
-                  En este caso,
-                  <code class="language-python">hasattr(carro1, "marca")</code>
-                  devuelve <code class="language-python">True</code> porque el
-                  objeto <code class="language-python">carro1</code> tiene el
-                  atributo <code class="language-python">marca</code>,
-                  mientras que
-                  <code class="language-python">hasattr(carro1, "modelo")</code>
-                  devuelve <code class="language-python">False</code> porque
-                  no tiene un atributo llamado modelo.
-                </p>
               </div>
-              <!-- Usando hasattr() fin -->
-              <!-- Usando getattr() con un valor por defecto -->
-              <div>
-                <h3>Usando getattr() con un valor por defecto</h3>
-                <p>
-                  La función <code class="language-python">getattr()</code> se
-                  utiliza para obtener el valor de un atributo, y si el
-                  atributo no existe, puede devolver un valor por defecto en
-                  lugar de lanzar una excepción. Esto también permite
-                  comprobar si el atributo existe.
-                </p>
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+              <p>
+                En este caso,
+                <code class="language-python">hasattr(carro1, "marca")</code>
+                devuelve <code class="language-python">True</code> porque el
+                objeto <code class="language-python">carro1</code> tiene el
+                atributo <code class="language-python">marca</code>,
+                mientras que
+                <code class="language-python">hasattr(carro1, "modelo")</code>
+                devuelve <code class="language-python">False</code> porque
+                no tiene un atributo llamado modelo.
+              </p>
+            </div>
+            <!-- Usando hasattr() fin -->
+            <!-- Usando getattr() con un valor por defecto -->
+            <div>
+              <h3>Usando getattr() con un valor por defecto</h3>
+              <p>
+                La función <code class="language-python">getattr()</code> se
+                utiliza para obtener el valor de un atributo, y si el
+                atributo no existe, puede devolver un valor por defecto en
+                lugar de lanzar una excepción. Esto también permite
+                comprobar si el atributo existe.
+              </p>
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         getattr(objeto, "atributo", valor_por_defecto)
                       </code>
                     </pre>
-                </div>
-                <p>Ejemplo:</p>
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <p>Ejemplo:</p>
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         class Carro:
                             def __init__(self, marca):
@@ -526,29 +530,29 @@
                         print(modelo)  # None
                       </code>
                     </pre>
-                </div>
-                <p>
-                  En este caso,
-                  <code class="language-python">getattr(carro1, "modelo", None)</code>
-                  devuelve <code class="language-python">None</code> porque el
-                  atributo <code class="language-python">modelo</code> no
-                  existe en <code class="language-python">carro1</code>.
-                </p>
               </div>
-              <!-- Usando getattr() con un valor por defecto fin -->
-              <!--  Usando __dict__ -->
-              <div>
-                <h3>Usando __dict__</h3>
-                <p>
-                  El atributo especial
-                  <code class="language-python">__dict__</code> de un objeto
-                  contiene todos los atributos de instancia del objeto. Puedes
-                  verificar si un atributo específico está presente en
-                  <code class="language-python">__dict__</code>.
-                </p>
-                <p>Ejemplo:</p>
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+              <p>
+                En este caso,
+                <code class="language-python">getattr(carro1, "modelo", None)</code>
+                devuelve <code class="language-python">None</code> porque el
+                atributo <code class="language-python">modelo</code> no
+                existe en <code class="language-python">carro1</code>.
+              </p>
+            </div>
+            <!-- Usando getattr() con un valor por defecto fin -->
+            <!--  Usando __dict__ -->
+            <div>
+              <h3>Usando __dict__</h3>
+              <p>
+                El atributo especial
+                <code class="language-python">__dict__</code> de un objeto
+                contiene todos los atributos de instancia del objeto. Puedes
+                verificar si un atributo específico está presente en
+                <code class="language-python">__dict__</code>.
+              </p>
+              <p>Ejemplo:</p>
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         class Carro:
                             def __init__(self, marca):
@@ -560,42 +564,42 @@
                         print("modelo" in carro1.__dict__)  # False
                       </code>
                     </pre>
-                </div>
-                <p>
-                  En este ejemplo, se utiliza
-                  <code class="language-python">carro1.__dict__</code> para
-                  comprobar si los atributos
-                  <code class="language-python">marca</code> y
-                  <code class="language-python">modelo</code> están en el
-                  diccionario de atributos de la instancia.
-                </p>
               </div>
-              <!--  Usando __dict__ fin -->
-              <!-- Resumen -->
-              <div>
-                <h3>Resumen</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">codehasattr()</code></span>: Comprueba si un
-                    objeto tiene un atributo determinado.
-                  </li>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">getattr()</code></span>: Permite obtener un
-                    atributo y proporciona un valor por
-                    defecto si no existe.
-                  </li>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">__dict__</code></span>: Proporciona un
-                    diccionario con los atributos de la
-                    instancia, que se puede usar para verificar si un atributo
-                    existe.
-                  </li>
-                </ul>
-              </div>
-              <!-- Resumen fin -->
+              <p>
+                En este ejemplo, se utiliza
+                <code class="language-python">carro1.__dict__</code> para
+                comprobar si los atributos
+                <code class="language-python">marca</code> y
+                <code class="language-python">modelo</code> están en el
+                diccionario de atributos de la instancia.
+              </p>
             </div>
-            <!-- Comprobando la Existencia de un Atributo Fin -->
+            <!--  Usando __dict__ fin -->
+            <!-- Resumen -->
+            <div>
+              <h3>Resumen</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold"><code class="language-python">codehasattr()</code></span>: Comprueba si un
+                  objeto tiene un atributo determinado.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">getattr()</code></span>: Permite obtener un
+                  atributo y proporciona un valor por
+                  defecto si no existe.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">__dict__</code></span>: Proporciona un
+                  diccionario con los atributos de la
+                  instancia, que se puede usar para verificar si un atributo
+                  existe.
+                </li>
+              </ul>
+            </div>
+            <!-- Resumen fin -->
           </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Comprobando la Existencia de un Atributo Fin -->
         </article>
         <!--  POO: Propiedades en Python  -->
         <!--  comentarios  -->
@@ -650,10 +654,13 @@
           <div class="site-menu">
             <div class="border border-1">
               <div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
-              <div class="site-menu__item"><a href="#variables-de-instancia" class="site-menu__link">Variables de Instancia</a>
+              <div class="site-menu__item"><a href="#variables-de-instancia" class="site-menu__link">Variables de
+                  Instancia</a>
               </div>
-              <div class="site-menu__item"><a href="#variables-de-clase" class="site-menu__link">Variables de Clase</a></div>
-              <div class="site-menu__item"><a href="#comprobando-la-existencia-de-un-atributo" class="site-menu__link">Comprobando
+              <div class="site-menu__item"><a href="#variables-de-clase" class="site-menu__link">Variables de Clase</a>
+              </div>
+              <div class="site-menu__item"><a href="#comprobando-la-existencia-de-un-atributo"
+                  class="site-menu__link">Comprobando
                   la Existencia de un Atributo</a></div>
               <!-- Comentarios  -->
               <div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div>

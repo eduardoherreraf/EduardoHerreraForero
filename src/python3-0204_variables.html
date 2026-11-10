@@ -111,75 +111,77 @@
         <!--  Variables  -->
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
-          <div>
-            <header>
-              <h1>Variables en Python</h1>
-            </header>
-            <!-- Introducción -->
-            <div class="mt-5">
-              <h2>Introducción</h2>
-              <p>
-                Los operadores en Python son símbolos especiales que realizan
-                operaciones específicas en uno o más valores (operandos). Son
-                esenciales para realizar cálculos, comparaciones y
-                manipulaciones de datos en los programas.
-              </p>
+          <header>
+            <h1>Variables en Python</h1>
+          </header>
+          <!-- Introducción -->
+          <div class="mt-3">
+            <h2>Introducción</h2>
+            <p>
+              Los operadores en Python son símbolos especiales que realizan
+              operaciones específicas en uno o más valores (operandos). Son
+              esenciales para realizar cálculos, comparaciones y
+              manipulaciones de datos en los programas.
+            </p>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- ¿Qué es una variable en Python? -->
+          <div id="que-es-una-variable-en-python" class="mt-3">
+            <h2>¿Qué es una variable en Python?</h2>
+            <p>
+              En Python, una variable puede ser entendida como un contenedor
+              o un nombre que se asigna a un valor específico. Este valor
+              puede ser de diferentes tipos, como un número, una palabra
+              (texto) o incluso una estructura de datos más compleja.
+              Imaginar una caja con un rótulo: la caja es la variable y el
+              rótulo es el nombre que le damos. Dentro de la caja, se guarda
+              el valor que quieres recordar.
+            </p>
+            <div class="site-image site-intro-image">
+              <figure>
+                <img src="https://i.ibb.co/tBQ8BjN/variables.jpg" class="img-fluid" alt="Variables en Python"
+                  title="Mejores prácticas de nomenclatura de variables en Python" />
+                <figcaption>
+                  Mejores prácticas de nomenclatura de variables en Python
+                </figcaption>
+              </figure>
             </div>
-            <!-- ¿Qué es una variable en Python? -->
-            <div id="que-es-una-variable-en-python" class="mt-5">
-              <h2>¿Qué es una variable en Python?</h2>
-              <p>
-                En Python, una variable puede ser entendida como un contenedor
-                o un nombre que se asigna a un valor específico. Este valor
-                puede ser de diferentes tipos, como un número, una palabra
-                (texto) o incluso una estructura de datos más compleja.
-                Imaginar una caja con un rótulo: la caja es la variable y el
-                rótulo es el nombre que le damos. Dentro de la caja, se guarda
-                el valor que quieres recordar.
-              </p>
-              <div class="site-image site-intro-image">
-                <figure>
-                  <img src="https://i.ibb.co/tBQ8BjN/variables.jpg" class="img-fluid" alt="Variables en Python"
-                    title="Mejores prácticas de nomenclatura de variables en Python" />
-                  <figcaption>
-                    Mejores prácticas de nomenclatura de variables en Python
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-            <!-- ¿Qué es una variable en Python? Fin -->
-            <!-- ¿Para qué Sirven las Variables? -->
-            <div id="para-que-Sirven-las-Variables" class="mt-5">
-              <h2>¿Para qué Sirven las Variables?</h2>
-              <ul>
-                <li>
-                  <span class="fw-bold">Almacenar datos</span>: Las variables
-                  nos permiten guardar datos de manera temporal o permanente
-                  dentro de un programa.
-                </li>
-                <li>
-                  <span class="fw-bold">Manipular datos</span>: Podemos
-                  realizar operaciones matemáticas, comparaciones o cualquier
-                  otra acción sobre los valores almacenados en las variables.
-                </li>
-                <li>
-                  <span class="fw-bold">Hacer nuestro código más legible</span>: Al asignar nombres significativos a las
-                  variables,
-                  hacemos que nuestro código sea más fácil de entender y
-                  mantener
-                </li>
-              </ul>
-            </div>
-            <!-- ¿Para qué Sirven las Variables? fin -->
-            <!-- Cómo declarar una Variable en Python -->
-            <div id="como-declarar-una-variable-en-python" class="mt-5">
-              <h2>Cómo declarar una Variable en Python</h2>
-              <p>
-                Para crear una variable en Python, simplemente asignamos un
-                valor a un nombre. No es necesario declarar el tipo de dato de
-                antemano, ya que Python lo infiere automáticamente.
-              </p>
-              <div class="code-example__syntax">
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- ¿Qué es una variable en Python? Fin -->
+          <!-- ¿Para qué Sirven las Variables? -->
+          <div id="para-que-Sirven-las-Variables" class="mt-3">
+            <h2>¿Para qué Sirven las Variables?</h2>
+            <ul>
+              <li>
+                <span class="fw-bold">Almacenar datos</span>: Las variables
+                nos permiten guardar datos de manera temporal o permanente
+                dentro de un programa.
+              </li>
+              <li>
+                <span class="fw-bold">Manipular datos</span>: Podemos
+                realizar operaciones matemáticas, comparaciones o cualquier
+                otra acción sobre los valores almacenados en las variables.
+              </li>
+              <li>
+                <span class="fw-bold">Hacer nuestro código más legible</span>: Al asignar nombres significativos a las
+                variables,
+                hacemos que nuestro código sea más fácil de entender y
+                mantener
+              </li>
+            </ul>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- ¿Para qué Sirven las Variables? fin -->
+          <!-- Cómo declarar una Variable en Python -->
+          <div id="como-declarar-una-variable-en-python" class="mt-3">
+            <h2>Cómo declarar una Variable en Python</h2>
+            <p>
+              Para crear una variable en Python, simplemente asignamos un
+              valor a un nombre. No es necesario declarar el tipo de dato de
+              antemano, ya que Python lo infiere automáticamente.
+            </p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Ejemplo de declaración de variables
@@ -188,125 +190,128 @@
                       altura = 1.75    # Variable de tipo flotante (número con decimales)
                     </code>
                   </pre>
-              </div>
             </div>
-            <!-- Cómo declarar una Variable en Python fin -->
-            <!-- Reglas para Nombrar Variables -->
-            <div id="reglas-para-nombrar-variables" class="mt-5">
-              <h2>Reglas para Nombrar Variables</h2>
-              <ul>
-                <li>
-                  <span class="fw-bold">Iniciar con una letra</span>: El
-                  nombre de una variable debe comenzar con una letra
-                  (mayúscula o minúscula) o un guion bajo (_).
-                </li>
-                <li>
-                  <span class="fw-bold">Usar solo letras, números y guiones bajos</span>: No se permiten espacios ni
-                  caracteres especiales.
-                </li>
-                <li>
-                  <span class="fw-bold">Distinguir entre mayúsculas y minúsculas</span>: Python es case-sensitive, por
-                  lo que
-                  <code class="language-python">nombre</code> y
-                  <code class="language-python">Nombre</code> son variables
-                  diferentes.
-                </li>
-                <li>
-                  <span class="fw-bold">Evitar palabras reservadas</span>: No
-                  se pueden usar como nombres de variables palabras que tienen
-                  un significado especial en Python (como if, else, for,
-                  etc.).
-                </li>
-              </ul>
-              <p>
-                Python no impone restricciones en la longitud de los nombres
-                de las variables, pero eso no significa que un nombre de
-                variable largo sea mejor que uno corto.
-              </p>
-            </div>
-            <!-- Reglas para Nombrar Variables fin-->
-            <!-- Convenciones de Nomenclatura -->
-            <div id="convenciones-de-nomenclatura" class="mt-5">
-              <h2>Convenciones de Nomenclatura</h2>
-              <p>
-                Aunque Python no impone reglas estrictas para nombrar
-                variables, se recomienda seguir algunas convenciones para
-                mejorar la legibilidad del código:
-              </p>
-              <ul>
-                <li>
-                  <span class="fw-bold">Nombres descriptivos</span>: Los
-                  nombres de las variables deben ser lo más descriptivos
-                  posible para indicar el propósito de la variable.
-                </li>
-                <li>
-                  <span class="fw-bold">Snake case</span>: Se recomienda
-                  utilizar el estilo "snake case", en el que las palabras se
-                  separan por guiones bajos (ejemplo: mi_variable).
-                </li>
-              </ul>
-              <p>
-                El
-                <a href="https://www.python.org/dev/peps/pep-0008/" target="_blank" rel="noopener noreferrer">PEP 8 --
-                  Style Guide for Python Code</a>
-                recomienda la siguiente convención de nomenclatura para
-                variables y funciones en Python:
-              </p>
-              <ul>
-                <li>
-                  Los nombres de las variables deben estar en minúsculas, con
-                  palabras separadas por guiones bajos para mejorar la
-                  legibilidad (por ejemplo, var, my_variable)
-                </li>
-                <li>
-                  Los nombres de las funciones siguen la misma convención que
-                  los nombres de las variables (por ejemplo, fun, my_function)
-                </li>
-                <li>
-                  También es posible usar letras mixtas (por ejemplo,
-                  myVariable), pero solo en contextos donde ese ya es el
-                  estilo predominante, para mantener la compatibilidad
-                  retroactiva con la convención adoptada.
-                </li>
-              </ul>
-            </div>
-            <!-- Tipos de Datos en Python -->
-            <div id="tipos-de-datos-en-python" class="mt-5">
-              <h2>Tipos de Datos en Python</h2>
-              <p>Python soporta varios tipos de datos, incluyendo:</p>
-              <ul>
-                <li>
-                  <span class="fw-bold">int</span>: Números enteros (ej: 42,
-                  -10)
-                </li>
-                <li>
-                  <span class="fw-bold">float</span>: Números de punto
-                  flotante (ej: 3.14, -0.5)
-                </li>
-                <li>
-                  <span class="fw-bold">str</span>: Cadenas de texto (ej:
-                  "Hola", 'mundo')
-                </li>
-                <li>
-                  <span class="fw-bold">bool</span>: Valores booleanos (True o
-                  False)
-                </li>
-                <li>
-                  <span class="fw-bold">list</span>: Listas ordenadas de
-                  elementos (ej: [1, 2, 3])
-                </li>
-                <li>
-                  <span class="fw-bold">tuple</span>: Tuplas ordenadas e
-                  inmutables (ej: (1, 2, 3))
-                </li>
-                <li>
-                  <span class="fw-bold">dict</span>: Diccionarios de
-                  clave-valor (ej: {'nombre': 'Juan', 'edad': 30})
-                </li>
-                <li><span class="fw-bold">Y muchos otros...</span></li>
-              </ul>
-              <p>Ejemplo completo:</p>
-              <div class="code-example__syntax">
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Cómo declarar una Variable en Python fin -->
+          <!-- Reglas para Nombrar Variables -->
+          <div id="reglas-para-nombrar-variables" class="mt-3">
+            <h2>Reglas para Nombrar Variables</h2>
+            <ul>
+              <li>
+                <span class="fw-bold">Iniciar con una letra</span>: El
+                nombre de una variable debe comenzar con una letra
+                (mayúscula o minúscula) o un guion bajo (_).
+              </li>
+              <li>
+                <span class="fw-bold">Usar solo letras, números y guiones bajos</span>: No se permiten espacios ni
+                caracteres especiales.
+              </li>
+              <li>
+                <span class="fw-bold">Distinguir entre mayúsculas y minúsculas</span>: Python es case-sensitive, por
+                lo que
+                <code class="language-python">nombre</code> y
+                <code class="language-python">Nombre</code> son variables
+                diferentes.
+              </li>
+              <li>
+                <span class="fw-bold">Evitar palabras reservadas</span>: No
+                se pueden usar como nombres de variables palabras que tienen
+                un significado especial en Python (como if, else, for,
+                etc.).
+              </li>
+            </ul>
+            <p>
+              Python no impone restricciones en la longitud de los nombres
+              de las variables, pero eso no significa que un nombre de
+              variable largo sea mejor que uno corto.
+            </p>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Reglas para Nombrar Variables fin-->
+          <!-- Convenciones de Nomenclatura -->
+          <div id="convenciones-de-nomenclatura" class="mt-3">
+            <h2>Convenciones de Nomenclatura</h2>
+            <p>
+              Aunque Python no impone reglas estrictas para nombrar
+              variables, se recomienda seguir algunas convenciones para
+              mejorar la legibilidad del código:
+            </p>
+            <ul>
+              <li>
+                <span class="fw-bold">Nombres descriptivos</span>: Los
+                nombres de las variables deben ser lo más descriptivos
+                posible para indicar el propósito de la variable.
+              </li>
+              <li>
+                <span class="fw-bold">Snake case</span>: Se recomienda
+                utilizar el estilo "snake case", en el que las palabras se
+                separan por guiones bajos (ejemplo: mi_variable).
+              </li>
+            </ul>
+            <p>
+              El
+              <a href="https://www.python.org/dev/peps/pep-0008/" target="_blank" rel="noopener noreferrer">PEP 8 --
+                Style Guide for Python Code</a>
+              recomienda la siguiente convención de nomenclatura para
+              variables y funciones en Python:
+            </p>
+            <ul>
+              <li>
+                Los nombres de las variables deben estar en minúsculas, con
+                palabras separadas por guiones bajos para mejorar la
+                legibilidad (por ejemplo, var, my_variable)
+              </li>
+              <li>
+                Los nombres de las funciones siguen la misma convención que
+                los nombres de las variables (por ejemplo, fun, my_function)
+              </li>
+              <li>
+                También es posible usar letras mixtas (por ejemplo,
+                myVariable), pero solo en contextos donde ese ya es el
+                estilo predominante, para mantener la compatibilidad
+                retroactiva con la convención adoptada.
+              </li>
+            </ul>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Tipos de Datos en Python -->
+          <div id="tipos-de-datos-en-python" class="mt-3">
+            <h2>Tipos de Datos en Python</h2>
+            <p>Python soporta varios tipos de datos, incluyendo:</p>
+            <ul>
+              <li>
+                <span class="fw-bold">int</span>: Números enteros (ej: 42,
+                -10)
+              </li>
+              <li>
+                <span class="fw-bold">float</span>: Números de punto
+                flotante (ej: 3.14, -0.5)
+              </li>
+              <li>
+                <span class="fw-bold">str</span>: Cadenas de texto (ej:
+                "Hola", 'mundo')
+              </li>
+              <li>
+                <span class="fw-bold">bool</span>: Valores booleanos (True o
+                False)
+              </li>
+              <li>
+                <span class="fw-bold">list</span>: Listas ordenadas de
+                elementos (ej: [1, 2, 3])
+              </li>
+              <li>
+                <span class="fw-bold">tuple</span>: Tuplas ordenadas e
+                inmutables (ej: (1, 2, 3))
+              </li>
+              <li>
+                <span class="fw-bold">dict</span>: Diccionarios de
+                clave-valor (ej: {'nombre': 'Juan', 'edad': 30})
+              </li>
+              <li><span class="fw-bold">Y muchos otros...</span></li>
+            </ul>
+            <p>Ejemplo completo:</p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Calcular el área de un círculo
@@ -316,117 +321,118 @@
                       print("El área del círculo es:", area, "cm²")
                     </code>
                   </pre>
-              </div>
             </div>
-            <!-- Tipos de Datos en Python fin-->
-            <!-- Operadores Abreviados -->
-            <div id="operadores-abreviados" class="mt-5">
-              <h2>Operadores Abreviados</h2>
-              <p>
-                Es tiempo de explicar el siguiente conjunto de operadores que
-                harán la vida del programador/desarrollador más fácil. Muy
-                seguido, se desea utilizar la misma variable al lado derecho y
-                al lado izquierdo del operador = operator.
-              </p>
-              <p>
-                Por ejemplo, si se necesita calcular una serie de valores
-                sucesivos de la potencia de 2, se puede usar el siguiente
-                código:
-              </p>
-              <div class="code-example__syntax">
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Tipos de Datos en Python fin-->
+          <!-- Operadores Abreviados -->
+          <div id="operadores-abreviados" class="mt-3">
+            <h2>Operadores Abreviados</h2>
+            <p>
+              Es tiempo de explicar el siguiente conjunto de operadores que
+              harán la vida del programador/desarrollador más fácil. Muy
+              seguido, se desea utilizar la misma variable al lado derecho y
+              al lado izquierdo del operador = operator.
+            </p>
+            <p>
+              Por ejemplo, si se necesita calcular una serie de valores
+              sucesivos de la potencia de 2, se puede usar el siguiente
+              código:
+            </p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       x = x * 2
                     </code>
                   </pre>
-              </div>
-              <p>
-                Python ofrece una manera más corta de escribir operaciones
-                como estas, lo cual se puede codificar de la siguiente manera:
-              </p>
-              <div class="code-example__syntax">
+            </div>
+            <p>
+              Python ofrece una manera más corta de escribir operaciones
+              como estas, lo cual se puede codificar de la siguiente manera:
+            </p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       x *= 2
                     </code>
                   </pre>
-              </div>
-              <p>
-                A continuación se intenta presentar una descripción general
-                para este tipo de operaciones. Si op es un operador de dos
-                argumentos (esta es una condición muy importante) y el
-                operador es utilizado en el siguiente contexto...:
-              </p>
-              <div class="code-example__syntax">
+            </div>
+            <p>
+              A continuación se intenta presentar una descripción general
+              para este tipo de operaciones. Si op es un operador de dos
+              argumentos (esta es una condición muy importante) y el
+              operador es utilizado en el siguiente contexto...:
+            </p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       variable = variable op expresión
                     </code>
                   </pre>
-              </div>
-              <p>
-                ...entonces se puede simplificar y mostrar de la siguiente
-                manera:
-              </p>
-              <div class="code-example__syntax">
+            </div>
+            <p>
+              ...entonces se puede simplificar y mostrar de la siguiente
+              manera:
+            </p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       variable op= expresión
                     </code>
                   </pre>
-              </div>
-              <p>Ejemplos de operaciones:</p>
-              <div class="mx-auto site-table">
-                <table class="table table-striped table-bordered table-sm">
-                  <thead class="text-center">
-                    <tr>
-                      <th scope="col" class="site-table__column--small site-table__column">#</th>
-                      <th scope="col" class="site-table__column--medium site-table__column">Expresión</th>
-                      <th scope="col" class="site-table__column--medium site-table__column">Operador Abreviado</th>
-                    </tr>
-                  </thead>
-                  <tbody class="table-group-divider text-center">
-                    <tr>
-                      <td>1</td>
-                      <td>
-                        <code class="language-python">i = i + 2 * j</code>
-                      </td>
-                      <td><code class="language-python">i += 2 * 3</code></td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>
-                        <code class="language-python">var = var / 2</code>
-                      </td>
-                      <td><code class="language-python">var /= 2</code></td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>
-                        <code class="language-python">rem = rem % 10</code>
-                      </td>
-                      <td><code class="language-python">rem %= 10</code></td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>
-                        <code class="language-python">j = j - (i + var + rem)</code>
-                      </td>
-                      <td>
-                        <code class="language-python">j -= (i + var + rem)</code>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>5</td>
-                      <td><code class="language-python">x = x ** 2</code></td>
-                      <td><code class="language-python">x **= 2 </code></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
             </div>
-            <!-- Operadores Abreviados fin -->
+            <p>Ejemplos de operaciones:</p>
+            <div class="mx-auto site-table">
+              <table class="table table-striped table-bordered table-sm">
+                <thead class="text-center">
+                  <tr>
+                    <th scope="col" class="site-table__column--small site-table__column">#</th>
+                    <th scope="col" class="site-table__column--medium site-table__column">Expresión</th>
+                    <th scope="col" class="site-table__column--medium site-table__column">Operador Abreviado</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider text-center">
+                  <tr>
+                    <td>1</td>
+                    <td>
+                      <code class="language-python">i = i + 2 * j</code>
+                    </td>
+                    <td><code class="language-python">i += 2 * 3</code></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>
+                      <code class="language-python">var = var / 2</code>
+                    </td>
+                    <td><code class="language-python">var /= 2</code></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>
+                      <code class="language-python">rem = rem % 10</code>
+                    </td>
+                    <td><code class="language-python">rem %= 10</code></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>
+                      <code class="language-python">j = j - (i + var + rem)</code>
+                    </td>
+                    <td>
+                      <code class="language-python">j -= (i + var + rem)</code>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td><code class="language-python">x = x ** 2</code></td>
+                    <td><code class="language-python">x **= 2 </code></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Operadores Abreviados fin -->
         </article>
         <!--  Variables  -->
 

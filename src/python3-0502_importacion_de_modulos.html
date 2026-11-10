@@ -113,130 +113,135 @@
         <!--   Importación de módulos en Python  -->
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
-          <div>
-            <header>
-              <h1>Importación de módulos en Python</h1>
-            </header>
-            <!-- Introducción -->
-            <div class="mt-5">
-              <h2>Introducción</h2>
-              <p>
-                Se explorará el concepto de módulos en Python, una
-                característica fundamental que permite organizar y reutilizar
-                el código de manera eficiente. Los módulos son archivos que
-                contienen definiciones y declaraciones de Python, y pueden
-                incluir funciones, clases y variables. Al utilizar módulos,
-                los desarrolladores pueden dividir su código en partes más
-                manejables, facilitando su mantenimiento y mejorando la
-                legibilidad.
-              </p>
-              <div class="site-image site-intro-image">
-                <figure class="site-image__figure site-image__figure--intro">
-                  <img src="https://i.ibb.co/4s1PXb7/importacionmodulos.jpg" class="img-fluid"
-                    alt="Importación de módulos en Python" title="Importando y Usando un Módulo de Python" />
-                  <figcaption>Importación de módulos en Python</figcaption>
-                </figure>
-              </div>
+          <header>
+            <h1>Importación de módulos en Python</h1>
+          </header>
+          <!-- Introducción -->
+          <div class="mt-3">
+            <h2>Introducción</h2>
+            <div class="site-image site-intro-image mb-5">
+              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                <img loading="lazy" src="https://i.ibb.co/4s1PXb7/importacionmodulos.jpg" class="img-fluid"
+                  alt="Importación de módulos en Python" title="Importando y Usando un Módulo de Python" />
+                <figcaption class="site-image__caption">Importación de módulos en Python</figcaption>
+              </figure>
             </div>
+            <p>
+              Se explorará el concepto de módulos en Python, una
+              característica fundamental que permite organizar y reutilizar
+              el código de manera eficiente. Los módulos son archivos que
+              contienen definiciones y declaraciones de Python, y pueden
+              incluir funciones, clases y variables. Al utilizar módulos,
+              los desarrolladores pueden dividir su código en partes más
+              manejables, facilitando su mantenimiento y mejorando la
+              legibilidad.
+            </p>
 
-            <!-- Importación Directa -->
-            <div id="Importacion-directa" class="mt-5">
-              <h2>Importación Directa</h2>
-              <p>
-                Se usa el comando
-                <code class="language-python">import</code> seguido del nombre
-                del módulo.
-              </p>
-              <div class="code-example__syntax">
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+
+          <!-- Importación Directa -->
+          <div id="Importacion-directa" class="mt-3">
+            <h2>Importación Directa</h2>
+            <p>
+              Se usa el comando
+              <code class="language-python">import</code> seguido del nombre
+              del módulo.
+            </p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import math
                       print(math.sqrt(16))  # Imprime 4.0
                     </code>
                   </pre>
-              </div>
             </div>
-            <!-- Importación Directa Fin -->
-            <!-- Importar un Elemento Específico -->
-            <div id="importar-un-elemento-especifico" class="mt-5">
-              <h2>Importar un Elemento Específico</h2>
-              <p>
-                Si solo se necesita una función, clase o variable específica
-                del módulo, se puede usar
-                <code class="language-python">from</code>.
-              </p>
-              <div class="code-example__syntax">
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Importación Directa Fin -->
+          <!-- Importar un Elemento Específico -->
+          <div id="importar-un-elemento-especifico" class="mt-3">
+            <h2>Importar un Elemento Específico</h2>
+            <p>
+              Si solo se necesita una función, clase o variable específica
+              del módulo, se puede usar
+              <code class="language-python">from</code>.
+            </p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       from math import sqrt
                       print(sqrt(16))  # Imprime 4.0
                     </code>
                   </pre>
-              </div>
             </div>
-            <!-- Importar un Elemento Específico Fin -->
-            <!-- Importar y Renombrar -->
-            <div id="importar-y-renombrar" class="mt-5">
-              <h2>Importar y Renombrar</h2>
-              <p>
-                Para simplificar el uso de un módulo o para evitar conflictos,
-                se puede renombrar con
-                <code class="language-python">as</code>.
-              </p>
-              <div class="code-example__syntax">
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Importar un Elemento Específico Fin -->
+          <!-- Importar y Renombrar -->
+          <div id="importar-y-renombrar" class="mt-3">
+            <h2>Importar y Renombrar</h2>
+            <p>
+              Para simplificar el uso de un módulo o para evitar conflictos,
+              se puede renombrar con
+              <code class="language-python">as</code>.
+            </p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import math as m
                       print(m.sqrt(16))  # Imprime 4.0
                     </code>
                   </pre>
-              </div>
             </div>
-            <!-- Importar y Renombrar Fin -->
-            <!-- Importar Todos los Elementos de un Módulo -->
-            <div id="Importar-todos-los-elementos-de-un-modulo" class="mt-5">
-              <h2>Importar Todos los Elementos de un Módulo</h2>
-              <p>
-                Se puede usar el carácter
-                <code class="language-python">*</code> para importar todo,
-                pero no es recomendable en proyectos grandes ya que puede
-                causar conflictos de nombres
-              </p>
-              <div class="code-example__syntax">
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Importar y Renombrar Fin -->
+          <!-- Importar Todos los Elementos de un Módulo -->
+          <div id="Importar-todos-los-elementos-de-un-modulo" class="mt-3">
+            <h2>Importar Todos los Elementos de un Módulo</h2>
+            <p>
+              Se puede usar el carácter
+              <code class="language-python">*</code> para importar todo,
+              pero no es recomendable en proyectos grandes ya que puede
+              causar conflictos de nombres
+            </p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       from math import *
                       print(sqrt(16))  # Imprime 4.0
                     </code>
                   </pre>
-              </div>
             </div>
-            <!-- Importar Todos los Elementos de un Módulo Fin -->
-            <!-- Importar Módulos Personalizados -->
-            <div id="importar-modulos-personalizados" class="mt-5">
-              <h2>Importar Módulos Personalizados</h2>
-              <p>
-                Si se tiene un archivo Python, por ejemplo,
-                <code class="language-python">mi_modulo.py</code>, ubicado en
-                el mismo directorio que el archivo principal, se puede
-                importar así:
-              </p>
-              <div class="code-example__syntax">
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Importar Todos los Elementos de un Módulo Fin -->
+          <!-- Importar Módulos Personalizados -->
+          <div id="importar-modulos-personalizados" class="mt-3">
+            <h2>Importar Módulos Personalizados</h2>
+            <p>
+              Si se tiene un archivo Python, por ejemplo,
+              <code class="language-python">mi_modulo.py</code>, ubicado en
+              el mismo directorio que el archivo principal, se puede
+              importar así:
+            </p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import mi_modulo
                       mi_modulo.mi_funcion()  # Llama una función dentro del módulo
                     </code>
                   </pre>
-              </div>
-              <p>
-                <span class="fw-bold">Nota</span>: Para importar módulos
-                ubicados en diferentes directorios, puede ser necesario
-                configurar el PYTHONPATH o usar bibliotecas como
-                <code class="language-python">sys</code> para agregar el
-                directorio al sistema de búsqueda:
-              </p>
-              <div class="code-example__syntax">
+            </div>
+            <p>
+              <span class="fw-bold">Nota</span>: Para importar módulos
+              ubicados en diferentes directorios, puede ser necesario
+              configurar el PYTHONPATH o usar bibliotecas como
+              <code class="language-python">sys</code> para agregar el
+              directorio al sistema de búsqueda:
+            </p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import sys
@@ -244,51 +249,52 @@
                       import mi_modulo
                     </code>
                   </pre>
-              </div>
             </div>
-            <!-- Importar Módulos Personalizados Fin -->
-            <!-- Módulos Externos -->
-            <div id="modulos-externos" class="mt-5">
-              <h2>Módulos Externos</h2>
-              <p>
-                Si el módulo es externo (no parte de la biblioteca estándar),
-                debe instalarse primero con un gestor de paquetes como
-                <code class="language-python">pip</code>:
-              </p>
-              <!-- Verificar si pip Está Instalado -->
-              <div>
-                <h3>Verificar si pip Está Instalado</h3>
-                <p>Ejecutar en la terminal o línea de comandos:</p>
-                <div class="code-example__syntax">
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Importar Módulos Personalizados Fin -->
+          <!-- Módulos Externos -->
+          <div id="modulos-externos" class="mt-3">
+            <h2>Módulos Externos</h2>
+            <p>
+              Si el módulo es externo (no parte de la biblioteca estándar),
+              debe instalarse primero con un gestor de paquetes como
+              <code class="language-python">pip</code>:
+            </p>
+            <!-- Verificar si pip Está Instalado -->
+            <div>
+              <h3>Verificar si pip Está Instalado</h3>
+              <p>Ejecutar en la terminal o línea de comandos:</p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         pip --version
                       </code>
                     </pre>
-                </div>
-                <p>
-                  Si devuelve una versión, significa que está instalado, por
-                  ejemplo:
-                </p>
-                <div class="code-example__syntax">
+              </div>
+              <p>
+                Si devuelve una versión, significa que está instalado, por
+                ejemplo:
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         pip 23.0.1 from ... (python 3.10)
                       </code>
                     </pre>
-                </div>
-                <p>
-                  Si no está instalado, se puede instalar siguiendo las
-                  instrucciones del sitio oficial de Python (get-pip.py,
-                  https://pip.pypa.io/en/stable/installation/).
-                </p>
               </div>
-              <!-- Verificar si pip Está Instalado fin -->
-              <!-- Instalar un Módulo Externo -->
-              <div>
-                <h3>Instalar un Módulo Externo</h3>
-                <p>El comando básico para instalar un módulo es:</p>
-                <div class="code-example__syntax">
+              <p>
+                Si no está instalado, se puede instalar siguiendo las
+                instrucciones del sitio oficial de Python (get-pip.py,
+                https://pip.pypa.io/en/stable/installation/).
+              </p>
+            </div>
+            <!-- Verificar si pip Está Instalado fin -->
+            <!-- Instalar un Módulo Externo -->
+            <div>
+              <h3>Instalar un Módulo Externo</h3>
+              <p>El comando básico para instalar un módulo es:</p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         pip install nombre_del_modulo
@@ -296,14 +302,14 @@
                         pip install requests
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Instalar un Módulo Externo fin -->
-              <!-- Instalar una Versión Específica -->
-              <div>
-                <h3>Instalar una Versión Específica</h3>
-                <p>Si se necesita una versión específica del módulo:</p>
-                <div class="code-example__syntax">
+            </div>
+            <!-- Instalar un Módulo Externo fin -->
+            <!-- Instalar una Versión Específica -->
+            <div>
+              <h3>Instalar una Versión Específica</h3>
+              <p>Si se necesita una versión específica del módulo:</p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         pip install nombre_del_modulo==1.2.3
@@ -311,17 +317,17 @@
                         pip install requests==2.28.1
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Instalar una Versión Específica fin -->
-              <!-- Actualizar un Módulo -->
-              <div>
-                <h3>Actualizar un Módulo</h3>
-                <p>
-                  Para actualizar a la última versión de un módulo ya
-                  instalado:
-                </p>
-                <div class="code-example__syntax">
+            </div>
+            <!-- Instalar una Versión Específica fin -->
+            <!-- Actualizar un Módulo -->
+            <div>
+              <h3>Actualizar un Módulo</h3>
+              <p>
+                Para actualizar a la última versión de un módulo ya
+                instalado:
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         pip install --upgrade nombre_del_modulo
@@ -329,42 +335,42 @@
                         pip install --upgrade requests
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Actualizar un Módulo fin -->
-              <!-- Instalar desde un Archivo requirements.txt -->
-              <div>
-                <h3>Instalar desde un Archivo requirements.txt</h3>
-                <p>
-                  En proyectos, los módulos requeridos se suelen listar en un
-                  archivo requirements.txt. Para instalar todos los módulos
-                  listados:
-                </p>
-                <div class="code-example__syntax">
+            </div>
+            <!-- Actualizar un Módulo fin -->
+            <!-- Instalar desde un Archivo requirements.txt -->
+            <div>
+              <h3>Instalar desde un Archivo requirements.txt</h3>
+              <p>
+                En proyectos, los módulos requeridos se suelen listar en un
+                archivo requirements.txt. Para instalar todos los módulos
+                listados:
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         pip install -r requirements.txt
                       </code>
                     </pre>
-                </div>
-                <p>El archivo podría contener líneas como estas:</p>
-                <div class="code-example__syntax">
+              </div>
+              <p>El archivo podría contener líneas como estas:</p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         requests==2.28.1
                         numpy>=1.21.0
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Instalar desde un Archivo requirements.txt fin -->
-              <!-- Desinstalar un Módulo -->
-              <div>
-                <h3>Desinstalar un Módulo</h3>
-                <p>
-                  Si ya no se necesita un módulo, se puede desinstalar con:
-                </p>
-                <div class="code-example__syntax">
+            </div>
+            <!-- Instalar desde un Archivo requirements.txt fin -->
+            <!-- Desinstalar un Módulo -->
+            <div>
+              <h3>Desinstalar un Módulo</h3>
+              <p>
+                Si ya no se necesita un módulo, se puede desinstalar con:
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         pip uninstall nombre_del_modulo
@@ -372,22 +378,22 @@
                         pip uninstall requests
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Desinstalar un Módulo fin -->
-              <!-- Ver Módulos Instalados -->
-              <div>
-                <h3>Ver Módulos Instalados</h3>
-                <p>Para listar todos los módulos instalados:</p>
-                <div class="code-example__syntax">
+            </div>
+            <!-- Desinstalar un Módulo fin -->
+            <!-- Ver Módulos Instalados -->
+            <div>
+              <h3>Ver Módulos Instalados</h3>
+              <p>Para listar todos los módulos instalados:</p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         pip list
                       </code>
                     </pre>
-                </div>
-                <p>Esto mostrará algo similar a:</p>
-                <div class="code-example__syntax">
+              </div>
+              <p>Esto mostrará algo similar a:</p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         Package    Version
@@ -396,79 +402,80 @@
                         requests   2.28.1
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Ver Módulos Instalados fin -->
-              <!-- Solucionar Problemas Comunes -->
-              <div>
-                <h3>Solucionar Problemas Comunes</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Python no encuentra
-                      <code class="language-python">pip</code></span>: Asegúrese de que la instalación de Python esté en
-                    el
-                    PATH del sistema.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Permisos insuficientes</span>: Si
-                    aparece un error de permisos, use
-                    <code class="language-python">sudo</code> en Linux/macOS o
-                    abra CMD/PowerShell como administrador en Windows:
-                    <div class="code-example__syntax">
+            </div>
+            <!-- Ver Módulos Instalados fin -->
+            <!-- Solucionar Problemas Comunes -->
+            <div>
+              <h3>Solucionar Problemas Comunes</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Python no encuentra
+                    <code class="language-python">pip</code></span>: Asegúrese de que la instalación de Python esté en
+                  el
+                  PATH del sistema.
+                </li>
+                <li>
+                  <span class="fw-bold">Permisos insuficientes</span>: Si
+                  aparece un error de permisos, use
+                  <code class="language-python">sudo</code> en Linux/macOS o
+                  abra CMD/PowerShell como administrador en Windows:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             sudo pip install nombre_del_modulo
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Ambientes virtuales</span>: Es
-                    recomendable usar un entorno virtual (<code class="language-python">venv</code>) para instalar
-                    módulos específicos de un proyecto y
-                    evitar conflictos con otras instalaciones.
-                  </li>
-                </ul>
-              </div>
-              <!-- Solucionar Problemas Comunes fin -->
-            </div>
-            <!-- Módulos Externos Fin -->
-            <!-- Uso de Entornos Virtuales -->
-            <div id="uso-de-entornos-virtuales" class="mt-5">
-              <h2>Uso de Entornos Virtuales</h2>
-              <p>
-                Crear y activar un entorno virtual antes de instalar módulos:
-              </p>
-              <ul>
+                  </div>
+                </li>
                 <li>
-                  <span class="fw-bold">Crear el entorno</span>:
-                  <div class="code-example__syntax">
+                  <span class="fw-bold">Ambientes virtuales</span>: Es
+                  recomendable usar un entorno virtual (<code class="language-python">venv</code>) para instalar
+                  módulos específicos de un proyecto y
+                  evitar conflictos con otras instalaciones.
+                </li>
+              </ul>
+            </div>
+            <!-- Solucionar Problemas Comunes fin -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Módulos Externos Fin -->
+          <!-- Uso de Entornos Virtuales -->
+          <div id="uso-de-entornos-virtuales" class="mt-3">
+            <h2>Uso de Entornos Virtuales</h2>
+            <p>
+              Crear y activar un entorno virtual antes de instalar módulos:
+            </p>
+            <ul>
+              <li>
+                <span class="fw-bold">Crear el entorno</span>:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           python -m venv mi_entorno
                         </code>
                       </pre>
-                  </div>
-                </li>
-                <li>
-                  <span class="fw-bold">Activar el entorno</span>:
-                  <div class="code-example__syntax">
+                </div>
+              </li>
+              <li>
+                <span class="fw-bold">Activar el entorno</span>:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           mi_entorno\Scripts\activate
                         </code>
                       </pre>
-                  </div>
-                </li>
-              </ul>
-              <p>
-                Ahora, los módulos instalados con
-                <code class="language-python">pip</code> estarán aislados
-                dentro del entorno.
-              </p>
-            </div>
-            <!-- Uso de Entornos Virtuales Fin -->
+                </div>
+              </li>
+            </ul>
+            <p>
+              Ahora, los módulos instalados con
+              <code class="language-python">pip</code> estarán aislados
+              dentro del entorno.
+            </p>
           </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Uso de Entornos Virtuales Fin -->
         </article>
         <!--   Importación de módulos en Python  -->
 

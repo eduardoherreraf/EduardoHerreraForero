@@ -116,123 +116,125 @@
         <!--  Retorno de Valores en Funciones Python  -->
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
-          <div>
-            <header>
-              <h1>Retorno de Valores en Funciones Python</h1>
-            </header>
-            <!-- Introducción -->
-            <div class="mt-5">
-              <h2>Introducción</h2>
-              <p>
-                Se explica cómo devolver el resultado de una función en
-                Python, un concepto fundamental en la programación que permite
-                a los programadores crear funciones capaces de realizar
-                cálculos o procesar datos y proporcionar un resultado
-                utilizable en otras partes del código. A través de ejemplos
-                prácticos, se aprenderá a definir funciones, usar la
-                declaración return y manejar los resultados devueltos.
-              </p>
-              <div class="site-image site-intro-image">
-                <figure class="site-image__figure site-image__figure--intro">
-                  <img src="https://i.ibb.co/MBqwk1b/retornovalores.jpg" class="img-fluid"
-                    alt="Retorno de Valores en Funciones Python"
-                    title="Diagrama de árbol que ilustra la ejecución de una función en Python, mostrando su comportamiento con y sin valor de retorno" />
-                  <figcaption>
-                    Retorno de Valores en Funciones Python
-                  </figcaption>
-                </figure>
-              </div>
+          <header>
+            <h1>Retorno de Valores en Funciones Python</h1>
+          </header>
+          <!-- Introducción -->
+          <div class="mt-3">
+            <h2>Introducción</h2>
+            <div class="site-image site-intro-image mb-5">
+              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                <img loading="lazy" src="https://i.ibb.co/MBqwk1b/retornovalores.jpg" class="img-fluid"
+                  alt="Retorno de Valores en Funciones Python"
+                  title="Diagrama de árbol que ilustra la ejecución de una función en Python, mostrando su comportamiento con y sin valor de retorno" />
+                <figcaption class="site-image__caption">
+                  Retorno de Valores en Funciones Python
+                </figcaption>
+              </figure>
             </div>
-            <!-- Ventajas y Desventajas -->
-            <div id="ventajas-y-desventajas" class="mt-5">
-              <h2>Ventajas y Desventajas</h2>
-              <!-- Ventajas -->
-              <div>
-                <h3>Ventajas</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Código reutilizable</span>: Las
-                    funciones permiten crear bloques de código que pueden ser
-                    llamados desde diferentes partes del programa, evitando la
-                    repetición de código y facilitando el mantenimiento.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Programación modular</span>: Al
-                    dividir el código en funciones más pequeñas, se facilita
-                    la comprensión y modificación de cada parte del programa
-                    de forma independiente.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Flujo de datos claro</span>: Las
-                    funciones ayudan a organizar el flujo de datos en un
-                    programa, haciendo más fácil seguir el camino de la
-                    información.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Depuración más fácil</span>: Al
-                    aislar el código en funciones, es más sencillo identificar
-                    y corregir errores.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Mejor legibilidad</span>: Un código
-                    bien estructurado en funciones es más fácil de leer y
-                    entender para otros programadores.
-                  </li>
-                </ul>
-              </div>
-              <!-- Ventajas fin -->
-              <!-- Desventajas -->
-              <div>
-                <h3>Desventajas</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Complejidad en múltiples devoluciones</span>: Si una función necesita devolver
-                    varios valores, puede
-                    complicar la lógica del programa y dificultar su
-                    comprensión.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Potencial de errores</span>: Un uso
-                    incorrecto de las funciones puede llevar a errores
-                    difíciles de detectar, como errores de alcance de
-                    variables o llamadas a funciones incorrectas.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Sobrecarga en rendimiento</span>: En
-                    algunos casos, el uso excesivo de funciones puede tener un
-                    impacto negativo en el rendimiento del programa.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Requiere comprensión del alcance</span>: Es importante entender cómo funcionan
-                    los alcances de
-                    las variables en las funciones para evitar errores.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Puede llevar a un código fuertemente acoplado</span>: Si las funciones están
-                    demasiado interconectadas, puede
-                    dificultar la modificación del código y hacerlo más
-                    frágil.
-                  </li>
-                </ul>
-              </div>
+            <p>
+              Se explica cómo devolver el resultado de una función en
+              Python, un concepto fundamental en la programación que permite
+              a los programadores crear funciones capaces de realizar
+              cálculos o procesar datos y proporcionar un resultado
+              utilizable en otras partes del código. A través de ejemplos
+              prácticos, se aprenderá a definir funciones, usar la
+              declaración return y manejar los resultados devueltos.
+            </p>
 
-              <!-- Desventajas fin -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Ventajas y Desventajas -->
+          <div id="ventajas-y-desventajas" class="mt-3">
+            <h2>Ventajas y Desventajas</h2>
+            <!-- Ventajas -->
+            <div>
+              <h3>Ventajas</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Código reutilizable</span>: Las
+                  funciones permiten crear bloques de código que pueden ser
+                  llamados desde diferentes partes del programa, evitando la
+                  repetición de código y facilitando el mantenimiento.
+                </li>
+                <li>
+                  <span class="fw-bold">Programación modular</span>: Al
+                  dividir el código en funciones más pequeñas, se facilita
+                  la comprensión y modificación de cada parte del programa
+                  de forma independiente.
+                </li>
+                <li>
+                  <span class="fw-bold">Flujo de datos claro</span>: Las
+                  funciones ayudan a organizar el flujo de datos en un
+                  programa, haciendo más fácil seguir el camino de la
+                  información.
+                </li>
+                <li>
+                  <span class="fw-bold">Depuración más fácil</span>: Al
+                  aislar el código en funciones, es más sencillo identificar
+                  y corregir errores.
+                </li>
+                <li>
+                  <span class="fw-bold">Mejor legibilidad</span>: Un código
+                  bien estructurado en funciones es más fácil de leer y
+                  entender para otros programadores.
+                </li>
+              </ul>
             </div>
-            <!-- Ventajas y Desventajas Fin -->
-            <!-- Uso de la Declaración return -->
-            <div id="UsoDeLaDeclaraciOnReturn" class="mt-5">
-              <h2>Uso de la Declaración <code class="language-python">return</code></h2>
-              <p>
-                En Python, la instrucción return se utiliza para devolver un
-                valor desde una función al punto donde se llamó. Cuando se
-                encuentra la instrucción return, la ejecución de la función se
-                detiene y el valor especificado después de return se devuelve
-                como resultado de la función.
-              </p>
-              <!-- Sintaxis Básica de return -->
-              <div>
-                <h3>Sintaxis Básica de <code class="language-python">return</code></h3>
-                <div class="code-example__syntax">
+            <!-- Ventajas fin -->
+            <!-- Desventajas -->
+            <div>
+              <h3>Desventajas</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Complejidad en múltiples devoluciones</span>: Si una función necesita devolver
+                  varios valores, puede
+                  complicar la lógica del programa y dificultar su
+                  comprensión.
+                </li>
+                <li>
+                  <span class="fw-bold">Potencial de errores</span>: Un uso
+                  incorrecto de las funciones puede llevar a errores
+                  difíciles de detectar, como errores de alcance de
+                  variables o llamadas a funciones incorrectas.
+                </li>
+                <li>
+                  <span class="fw-bold">Sobrecarga en rendimiento</span>: En
+                  algunos casos, el uso excesivo de funciones puede tener un
+                  impacto negativo en el rendimiento del programa.
+                </li>
+                <li>
+                  <span class="fw-bold">Requiere comprensión del alcance</span>: Es importante entender cómo funcionan
+                  los alcances de
+                  las variables en las funciones para evitar errores.
+                </li>
+                <li>
+                  <span class="fw-bold">Puede llevar a un código fuertemente acoplado</span>: Si las funciones están
+                  demasiado interconectadas, puede
+                  dificultar la modificación del código y hacerlo más
+                  frágil.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Desventajas fin -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Ventajas y Desventajas Fin -->
+          <!-- Uso de la Declaración return -->
+          <div id="UsoDeLaDeclaraciOnReturn" class="mt-3">
+            <h2>Uso de la Declaración <code class="language-python">return</code></h2>
+            <p>
+              En Python, la instrucción return se utiliza para devolver un
+              valor desde una función al punto donde se llamó. Cuando se
+              encuentra la instrucción return, la ejecución de la función se
+              detiene y el valor especificado después de return se devuelve
+              como resultado de la función.
+            </p>
+            <!-- Sintaxis Básica de return -->
+            <div>
+              <h3>Sintaxis Básica de <code class="language-python">return</code></h3>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def nombre_de_la_funcion(parametros):
@@ -241,9 +243,9 @@
                             variable = nombre_de_la_funcion(parametros)
                       </code>
                     </pre>
-                </div>
-                <p>Ejemplo:</p>
-                <div class="code-example__syntax">
+              </div>
+              <p>Ejemplo:</p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def suma(a, b):
@@ -255,76 +257,77 @@
                         print(total)  # Imprime 8
                       </code>
                     </pre>
-                </div>
-                <ul>
-                  <li>
-                    Se define una función llamada
-                    <code class="language-python">suma</code> que toma dos
-                    parámetros, <code class="language-python">a</code> y
-                    <code class="language-python">b</code>.
-                  </li>
-                  <li>
-                    Dentro de la función, se calcula la suma de
-                    <code class="language-python">a</code> y
-                    <code class="language-python">b</code> y se almacena en la
-                    variable <code class="language-python">resultado</code>.
-                  </li>
-                  <li>
-                    Se usa la instrucción
-                    <code class="language-python">return</code> para devolver
-                    el valor de
-                    <code class="language-python">resultado</code> al punto
-                    donde se llamó la función.
-                  </li>
-                  <li>
-                    En la línea principal del código, se llama a la función
-                    <code class="language-python">suma</code> con los
-                    argumentos <code class="language-python">5</code> y
-                    <code class="language-python">3</code>, y se asigna el
-                    valor devuelto a la variable
-                    <code class="language-python">total</code>.
-                  </li>
-                  <li>
-                    Finalmente, se imprime el valor de
-                    <code class="language-python">total</code>, que es
-                    <code class="language-python">8</code>.
-                  </li>
-                </ul>
               </div>
-              <!-- Sintaxis Básica fin -->
-              <!-- Características Importantes de return -->
-              <div>
-                <h3>Características Importantes de <code class="language-python">return</code></h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Detener la ejecución</span>: Una vez
-                    que se encuentra la instrucción
-                    <code class="language-python">return</code>, la ejecución
-                    de la función se detiene inmediatamente, incluso si hay
-                    más código después de ella.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Devolver un valor</span>: El valor
-                    especificado después de return se devuelve al punto donde
-                    se llamó la función.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Múltiples valores</span>: Se puede
-                    devolver múltiples valores separándolos por comas.
-                  </li>
-                </ul>
-              </div>
-              <!-- Características Importantes de return fin -->
+              <ul>
+                <li>
+                  Se define una función llamada
+                  <code class="language-python">suma</code> que toma dos
+                  parámetros, <code class="language-python">a</code> y
+                  <code class="language-python">b</code>.
+                </li>
+                <li>
+                  Dentro de la función, se calcula la suma de
+                  <code class="language-python">a</code> y
+                  <code class="language-python">b</code> y se almacena en la
+                  variable <code class="language-python">resultado</code>.
+                </li>
+                <li>
+                  Se usa la instrucción
+                  <code class="language-python">return</code> para devolver
+                  el valor de
+                  <code class="language-python">resultado</code> al punto
+                  donde se llamó la función.
+                </li>
+                <li>
+                  En la línea principal del código, se llama a la función
+                  <code class="language-python">suma</code> con los
+                  argumentos <code class="language-python">5</code> y
+                  <code class="language-python">3</code>, y se asigna el
+                  valor devuelto a la variable
+                  <code class="language-python">total</code>.
+                </li>
+                <li>
+                  Finalmente, se imprime el valor de
+                  <code class="language-python">total</code>, que es
+                  <code class="language-python">8</code>.
+                </li>
+              </ul>
             </div>
-            <!-- Uso de la Declaración return Fin -->
-            <!-- Múltiples Valores de Retorno -->
-            <div id="multiples-valores-de-retorno" class="mt-5">
-              <h2>Múltiples Valores de Retorno</h2>
-              <p>
-                Python permite que una función devuelva múltiples valores
-                utilizando una tupla:
-              </p>
-              <div class="code-example__syntax">
+            <!-- Sintaxis Básica fin -->
+            <!-- Características Importantes de return -->
+            <div>
+              <h3>Características Importantes de <code class="language-python">return</code></h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Detener la ejecución</span>: Una vez
+                  que se encuentra la instrucción
+                  <code class="language-python">return</code>, la ejecución
+                  de la función se detiene inmediatamente, incluso si hay
+                  más código después de ella.
+                </li>
+                <li>
+                  <span class="fw-bold">Devolver un valor</span>: El valor
+                  especificado después de return se devuelve al punto donde
+                  se llamó la función.
+                </li>
+                <li>
+                  <span class="fw-bold">Múltiples valores</span>: Se puede
+                  devolver múltiples valores separándolos por comas.
+                </li>
+              </ul>
+            </div>
+            <!-- Características Importantes de return fin -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Uso de la Declaración return Fin -->
+          <!-- Múltiples Valores de Retorno -->
+          <div id="multiples-valores-de-retorno" class="mt-3">
+            <h2>Múltiples Valores de Retorno</h2>
+            <p>
+              Python permite que una función devuelva múltiples valores
+              utilizando una tupla:
+            </p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       def obtener_coordenadas():
@@ -337,9 +340,9 @@
                       print(coordenadas)  # Imprime (10, 20)
                     </code>
                   </pre>
-              </div>
-              <p>Otro ejemplo:</p>
-              <div class="code-example__syntax">
+            </div>
+            <p>Otro ejemplo:</p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       def operaciones(a, b):
@@ -350,19 +353,20 @@
                       print(f"Suma: {resultado_suma}, Resta: {resultado_resta}")  # Salida: Suma: 15, Resta: 5
                     </code>
                   </pre>
-              </div>
             </div>
-            <!-- Múltiples Valores de Retorno Fin -->
-            <!-- Manejo de Resultados Devueltos -->
-            <div id="manejo-de--rResultados-devueltos" class="mt-5">
-              <h2>Manejo de Resultados Devueltos</h2>
-              <p>
-                Los resultados devueltos por una función pueden ser utilizados
-                inmediatamente o almacenados en variables para su uso
-                posterior. También se pueden pasar como argumentos a otras
-                funciones. Aquí hay un ejemplo:
-              </p>
-              <div class="code-example__syntax">
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Múltiples Valores de Retorno Fin -->
+          <!-- Manejo de Resultados Devueltos -->
+          <div id="manejo-de--rResultados-devueltos" class="mt-3">
+            <h2>Manejo de Resultados Devueltos</h2>
+            <p>
+              Los resultados devueltos por una función pueden ser utilizados
+              inmediatamente o almacenados en variables para su uso
+              posterior. También se pueden pasar como argumentos a otras
+              funciones. Aquí hay un ejemplo:
+            </p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       def cuadrado(x):
@@ -372,59 +376,60 @@
                       imprimir_cuadrado(6)  # Salida: El cuadrado de 6 es 36
                     </code>
                   </pre>
-              </div>
             </div>
-            <!-- Manejo de Resultados Devueltos Fin -->
-            <!-- Palabra Reservada None -->
-            <div id="palabra-reservada-none" class="mt-5">
-              <h2>Palabra Reservada <code class="language-python">none</code></h2>
-              <p>
-                La palabra reservada
-                <code class="language-python">None</code> en Python es un
-                concepto fundamental que todo programador debe entender.
-                <code class="language-python">None</code> es un objeto
-                singular en Python que representa la ausencia de valor o un
-                valor nulo. Es similar al concepto de
-                <code class="language-python">null</code> en otros lenguajes
-                de programación como Java o C++.
-              </p>
-              <!-- Características de None -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Manejo de Resultados Devueltos Fin -->
+          <!-- Palabra Reservada None -->
+          <div id="palabra-reservada-none" class="mt-3">
+            <h2>Palabra Reservada <code class="language-python">none</code></h2>
+            <p>
+              La palabra reservada
+              <code class="language-python">None</code> en Python es un
+              concepto fundamental que todo programador debe entender.
+              <code class="language-python">None</code> es un objeto
+              singular en Python que representa la ausencia de valor o un
+              valor nulo. Es similar al concepto de
+              <code class="language-python">null</code> en otros lenguajes
+              de programación como Java o C++.
+            </p>
+            <!-- Características de None -->
+            <div>
+              <h3>Características de <code class="language-python">none</code></h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Tipo de Dato</span>:
+                  <code class="language-python">None</code> es un objeto de
+                  tipo <code class="language-python">NoneType</code>. Esto
+                  significa que es una instancia única de su propia clase.
+                </li>
+                <li>
+                  <span class="fw-bold">Singularidad</span>: En Python, None
+                  es un objeto singular. Esto significa que cualquier
+                  variable que se asigne a<code class="language-python">None</code>apuntará al mismo objeto en
+                  memoria.
+                </li>
+                <li>
+                  <span class="fw-bold">Uso Común</span>:<code class="language-python">None</code>se utiliza
+                  comúnmente para indicar que una variable no
+                  tiene un valor asignado o que una función no devuelve
+                  ningún valor.
+                </li>
+              </ul>
+            </div>
+            <!-- Características de None fin -->
+            <!-- Uso de None -->
+            <div>
+              <h3>Uso de <code class="language-python">none</code></h3>
+              <!-- Valores de Retorno de none -->
               <div>
-                <h3>Características de <code class="language-python">none</code></h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Tipo de Dato</span>:
-                    <code class="language-python">None</code> es un objeto de
-                    tipo <code class="language-python">NoneType</code>. Esto
-                    significa que es una instancia única de su propia clase.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Singularidad</span>: En Python, None
-                    es un objeto singular. Esto significa que cualquier
-                    variable que se asigne a<code class="language-python">None</code>apuntará al mismo objeto en
-                    memoria.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Uso Común</span>:<code class="language-python">None</code>se utiliza
-                    comúnmente para indicar que una variable no
-                    tiene un valor asignado o que una función no devuelve
-                    ningún valor.
-                  </li>
-                </ul>
-              </div>
-              <!-- Características de None fin -->
-              <!-- Uso de None -->
-              <div>
-                <h3>Uso de <code class="language-python">none</code></h3>
-                <!-- Valores de Retorno de none -->
-                <div>
-                  <h3>Valores de Retorno de <code class="language-python">none</code></h3>
-                  <p>
-                    Las funciones en Python que no devuelven explícitamente un
-                    valor devuelven
-                    <code class="language-python">None</code> por defecto.
-                  </p>
-                  <div class="code-example__syntax">
+                <h3>Valores de Retorno de <code class="language-python">none</code></h3>
+                <p>
+                  Las funciones en Python que no devuelven explícitamente un
+                  valor devuelven
+                  <code class="language-python">None</code> por defecto.
+                </p>
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           def funcion_sin_retorno():
@@ -433,36 +438,36 @@
                           print(resultado)  # Salida: None
                         </code>
                       </pre>
-                  </div>
                 </div>
-                <!-- Valores de Retorno fin -->
-                <!-- Asignación de Variables -->
-                <div>
-                  <h3>Asignación de Variables</h3>
-                  <p>
-                    Cuando se inicializa una variable sin un valor específico,
-                    se puede asignar<code class="language-python">None</code>para indicar que la variable no tiene un
-                    valor
-                    significativo.
-                  </p>
-                  <div class="code-example__syntax">
+              </div>
+              <!-- Valores de Retorno fin -->
+              <!-- Asignación de Variables -->
+              <div>
+                <h3>Asignación de Variables</h3>
+                <p>
+                  Cuando se inicializa una variable sin un valor específico,
+                  se puede asignar<code class="language-python">None</code>para indicar que la variable no tiene un
+                  valor
+                  significativo.
+                </p>
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           variable = None
                           print(variable)  # Salida: None
                         </code>
                       </pre>
-                  </div>
                 </div>
-                <!-- Asignación de Variables fin -->
-                <!-- Comparaciones -->
-                <div>
-                  <h3>Comparaciones</h3>
-                  <p>
-                    <code class="language-python">None</code>se puede comparar
-                    con otros valores usando operadores de comparación.
-                  </p>
-                  <div class="code-example__syntax">
+              </div>
+              <!-- Asignación de Variables fin -->
+              <!-- Comparaciones -->
+              <div>
+                <h3>Comparaciones</h3>
+                <p>
+                  <code class="language-python">None</code>se puede comparar
+                  con otros valores usando operadores de comparación.
+                </p>
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           if variable is None:
@@ -471,35 +476,36 @@
                             print("La variable no es None")
                         </code>
                       </pre>
-                  </div>
                 </div>
-                <!-- Comparaciones fin -->
               </div>
-              <!-- Uso de None fin -->
+              <!-- Comparaciones fin -->
             </div>
-            <!-- Palabra Reservada None Fin -->
-            <!-- Resultados con Listas y Funciones -->
-            <div id="resultados-con-listas-y-funciones" class="mt-5">
-              <h2>Resultados con Listas y Funciones</h2>
+            <!-- Uso de None fin -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Palabra Reservada None Fin -->
+          <!-- Resultados con Listas y Funciones -->
+          <div id="resultados-con-listas-y-funciones" class="mt-3">
+            <h2>Resultados con Listas y Funciones</h2>
+            <p>
+              El uso de listas como parámetros en funciones en Python es una
+              práctica común y poderosa que permite a los desarrolladores
+              manipular y procesar datos de manera eficiente. Las listas en
+              Python son estructuras de datos mutables y ordenadas que
+              pueden contener elementos de diferentes tipos, lo que las hace
+              extremadamente versátiles. En este artículo, exploraremos cómo
+              pasar listas como parámetros a funciones, así como algunas de
+              las ventajas y consideraciones a tener en cuenta.
+            </p>
+            <!-- Pasar Listas como Parámetros -->
+            <div>
+              <h3>Pasar Listas como Parámetros</h3>
               <p>
-                El uso de listas como parámetros en funciones en Python es una
-                práctica común y poderosa que permite a los desarrolladores
-                manipular y procesar datos de manera eficiente. Las listas en
-                Python son estructuras de datos mutables y ordenadas que
-                pueden contener elementos de diferentes tipos, lo que las hace
-                extremadamente versátiles. En este artículo, exploraremos cómo
-                pasar listas como parámetros a funciones, así como algunas de
-                las ventajas y consideraciones a tener en cuenta.
+                En Python, se puede pasar una lista a una función de la
+                misma manera que pasarías cualquier otro tipo de dato. Aquí
+                hay un ejemplo básico:
               </p>
-              <!-- Pasar Listas como Parámetros -->
-              <div>
-                <h3>Pasar Listas como Parámetros</h3>
-                <p>
-                  En Python, se puede pasar una lista a una función de la
-                  misma manera que pasarías cualquier otro tipo de dato. Aquí
-                  hay un ejemplo básico:
-                </p>
-                <div class="code-example__syntax">
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def imprimir_lista(lista):
@@ -509,23 +515,23 @@
                         imprimir_lista(mi_lista)  # Salida: 1 2 3 4 5
                       </code>
                     </pre>
-                </div>
-                <p>
-                  En este ejemplo, la función imprimir_lista toma una lista
-                  como parámetro y luego imprime cada elemento de la lista.
-                </p>
               </div>
-              <!-- Pasar Listas como Parámetros fin -->
-              <!-- Modificar Listas Dentro de Funciones -->
-              <div>
-                <h3>Modificar Listas Dentro de Funciones</h3>
-                <p>
-                  Una de las características más útiles de pasar listas como
-                  parámetros es que las listas son mutables. Esto significa
-                  que se puede modificar la lista dentro de la función y los
-                  cambios se reflejarán fuera de la función.
-                </p>
-                <div class="code-example__syntax">
+              <p>
+                En este ejemplo, la función imprimir_lista toma una lista
+                como parámetro y luego imprime cada elemento de la lista.
+              </p>
+            </div>
+            <!-- Pasar Listas como Parámetros fin -->
+            <!-- Modificar Listas Dentro de Funciones -->
+            <div>
+              <h3>Modificar Listas Dentro de Funciones</h3>
+              <p>
+                Una de las características más útiles de pasar listas como
+                parámetros es que las listas son mutables. Esto significa
+                que se puede modificar la lista dentro de la función y los
+                cambios se reflejarán fuera de la función.
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def agregar_elemento(lista, elemento):
@@ -535,50 +541,50 @@
                         print(mi_lista)  # Salida: [1, 2, 3, 4]
                       </code>
                     </pre>
-                </div>
-                <p>
-                  En este ejemplo, la función agregar_elemento toma una lista
-                  y un elemento como parámetros y agrega el elemento a la
-                  lista. La lista original mi_lista se modifica como
-                  resultado.
-                </p>
               </div>
-              <!-- Modificar Listas Dentro de Funciones fin -->
-              <!-- Ventajas de Usar Listas como Parámetros -->
-              <div>
-                <h3>Ventajas de Usar Listas como Parámetros</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Flexibilidad</span>: Las listas
-                    pueden contener elementos de diferentes tipos, lo que
-                    permite una gran flexibilidad en el diseño de funciones.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Mutabilidad</span>: La capacidad de
-                    modificar listas dentro de funciones permite realizar
-                    operaciones complejas sin necesidad de devolver una nueva
-                    lista.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Eficiencia</span>: Pasar listas como
-                    parámetros es eficiente en términos de memoria, ya que no
-                    se crean copias adicionales de la lista.
-                  </li>
-                </ul>
-              </div>
-              <!-- Ventajas de Usar Listas como Parámetros fin -->
-              <!-- Consideraciones Importantes -->
-              <div>
-                <h3>Consideraciones Importantes</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Modificaciones No Deseadas</span>:
-                    Dado que las listas son mutables, es importante tener
-                    cuidado con las modificaciones no deseadas. Si se quiere
-                    estar seguro que la lista original no se modifique, se
-                    puede pasar una copia de ella.
-                  </li>
-                  <div class="code-example__syntax">
+              <p>
+                En este ejemplo, la función agregar_elemento toma una lista
+                y un elemento como parámetros y agrega el elemento a la
+                lista. La lista original mi_lista se modifica como
+                resultado.
+              </p>
+            </div>
+            <!-- Modificar Listas Dentro de Funciones fin -->
+            <!-- Ventajas de Usar Listas como Parámetros -->
+            <div>
+              <h3>Ventajas de Usar Listas como Parámetros</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Flexibilidad</span>: Las listas
+                  pueden contener elementos de diferentes tipos, lo que
+                  permite una gran flexibilidad en el diseño de funciones.
+                </li>
+                <li>
+                  <span class="fw-bold">Mutabilidad</span>: La capacidad de
+                  modificar listas dentro de funciones permite realizar
+                  operaciones complejas sin necesidad de devolver una nueva
+                  lista.
+                </li>
+                <li>
+                  <span class="fw-bold">Eficiencia</span>: Pasar listas como
+                  parámetros es eficiente en términos de memoria, ya que no
+                  se crean copias adicionales de la lista.
+                </li>
+              </ul>
+            </div>
+            <!-- Ventajas de Usar Listas como Parámetros fin -->
+            <!-- Consideraciones Importantes -->
+            <div>
+              <h3>Consideraciones Importantes</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Modificaciones No Deseadas</span>:
+                  Dado que las listas son mutables, es importante tener
+                  cuidado con las modificaciones no deseadas. Si se quiere
+                  estar seguro que la lista original no se modifique, se
+                  puede pasar una copia de ella.
+                </li>
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           def agregar_elemento_seguro(lista, elemento):
@@ -591,46 +597,47 @@
                           print(nueva_lista) # Salida: [1, 2, 3, 4]
                         </code>
                       </pre>
-                  </div>
-                  <li>
-                    <span class="fw-bold">Rendimiento</span>: Aunque pasar
-                    listas como parámetros es eficiente, realizar copias de
-                    listas puede ser costoso en términos de rendimiento,
-                    especialmente para listas grandes.
-                  </li>
-                </ul>
-              </div>
-              <!-- Consideraciones Importantes fin -->
-            </div>
-            <!-- Resultados con Listas y Funciones Fin -->
-            <!-- Buenas Prácticas -->
-            <div id="buenas-practicas" class="mt-5">
-              <h2>Buenas Prácticas</h2>
-              <ul>
+                </div>
                 <li>
-                  <span class="fw-bold">Nombrar las funciones de manera clara</span>: El nombre de una función debe
-                  reflejar su propósito.
-                </li>
-                <li>
-                  <span class="fw-bold">Documentar las funciones</span>:
-                  Utiliza docstrings para explicar qué hace una función y qué
-                  parámetros espera.
-                </li>
-                <li>
-                  <span class="fw-bold">Evitar efectos secundarios</span>: Las
-                  funciones deben ser lo más puras posible, es decir, deben
-                  evitar modificar variables globales o tener efectos externos
-                  no deseados.
-                </li>
-                <li>
-                  <span class="fw-bold">Utilizar return de forma consistente</span>: Siempre que una función tenga un
-                  resultado, utilízalo
-                  para devolverlo.
+                  <span class="fw-bold">Rendimiento</span>: Aunque pasar
+                  listas como parámetros es eficiente, realizar copias de
+                  listas puede ser costoso en términos de rendimiento,
+                  especialmente para listas grandes.
                 </li>
               </ul>
             </div>
-            <!-- Buenas Prácticas Fin -->
+            <!-- Consideraciones Importantes fin -->
           </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Resultados con Listas y Funciones Fin -->
+          <!-- Buenas Prácticas -->
+          <div id="buenas-practicas" class="mt-3">
+            <h2>Buenas Prácticas</h2>
+            <ul>
+              <li>
+                <span class="fw-bold">Nombrar las funciones de manera clara</span>: El nombre de una función debe
+                reflejar su propósito.
+              </li>
+              <li>
+                <span class="fw-bold">Documentar las funciones</span>:
+                Utiliza docstrings para explicar qué hace una función y qué
+                parámetros espera.
+              </li>
+              <li>
+                <span class="fw-bold">Evitar efectos secundarios</span>: Las
+                funciones deben ser lo más puras posible, es decir, deben
+                evitar modificar variables globales o tener efectos externos
+                no deseados.
+              </li>
+              <li>
+                <span class="fw-bold">Utilizar return de forma consistente</span>: Siempre que una función tenga un
+                resultado, utilízalo
+                para devolverlo.
+              </li>
+            </ul>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Buenas Prácticas Fin -->
         </article>
         <!--  Retorno de Valores en Funciones Python  -->
 

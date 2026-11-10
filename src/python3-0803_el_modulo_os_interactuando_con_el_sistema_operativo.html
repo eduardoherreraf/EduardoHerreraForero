@@ -120,136 +120,139 @@
         <!--  Introducción al Curso de Python 3 para Principiantes  -->
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
-          <div>
-            <header>
-              <h1>
-                El módulo os, Interactuando con el sistema operativo en Python
-              </h1>
-            </header>
-            <!-- Introducción -->
-            <div class="mt-5">
-              <h2>Introducción</h2>
-              <p>
-                El módulo <code class="language-python">OS</code> en Python es
-                una herramienta poderosa que permite a los desarrolladores
-                interactuar con el sistema operativo de manera eficiente. Este
-                documento explora las funcionalidades más comunes del módulo
-                os, incluyendo la manipulación de archivos y directorios, la
-                obtención de información del sistema y la ejecución de
-                comandos del sistema operativo. A través de ejemplos
-                prácticos, se demostrará cómo utilizar este módulo para
-                facilitar tareas cotidianas en la programación.
-              </p>
-              <div class="site-image site-intro-image">
-                <figure class="site-image__figure site-image__figure--intro">
-                  <img src="https://i.ibb.co/GkPHLKv/moduloos.jpg" class="img-fluid" alt="El módulo os, Interactuando con el
-                    sistema operativo en Python " title="Explorando las
-                    Funcionalidades del Módulo
-                    <code class="language-python">OS</code> de Python" />
-                  <figcaption>
-                    El módulo os, Interactuando con el sistema operativo en
-                    Python
-                  </figcaption>
-                </figure>
-              </div>
+          <header>
+            <h1>
+              El módulo os, Interactuando con el sistema operativo en Python
+            </h1>
+          </header>
+          <!-- Introducción -->
+          <div class="mt-3">
+            <h2>Introducción</h2>
+            <div class="site-image site-intro-image mb-5">
+              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                <img loading="lazy" src="https://i.ibb.co/GkPHLKv/moduloos.jpg" class="img-fluid" alt="El módulo os, Interactuando con el
+                  sistema operativo en Python " title="Explorando las
+                  Funcionalidades del Módulo
+                  <code class="language-python">OS</code> de Python" />
+                <figcaption class="site-image__caption">
+                  El módulo os, Interactuando con el sistema operativo en
+                  Python
+                </figcaption>
+              </figure>
             </div>
-            <!-- Introducción al Módulo OS -->
-            <div id="introduccion-al-modulo-os" class="mt-5">
-              <h2>Introducción al Módulo OS</h2>
-              <p>
-                El módulo<code class="language-python">os</code>de Python es
-                una herramienta que permite la interacción directa con el
-                sistema operativo, ofreciendo funcionalidades similares a los
-                comandos nativos disponibles tanto en sistemas Unix como
-                Windows. Por ejemplo, incluye funciones como
-                <code class="language-python">mkdir </code>para crear
-                directorios, replicando la funcionalidad del comando del mismo
-                nombre en la línea de comandos.
-              </p>
-              <p>
-                Las operaciones principales del módulo
-                <code class="language-python">os</code> se centran en el
-                manejo de archivos y directorios, permitiendo realizar
-                diversas tareas de gestión y manipulación de estos elementos
-                del sistema de archivos, lo que facilita la automatización de
-                tareas relacionadas con la organización de datos y estructura
-                de carpetas.
-              </p>
-              <p>
-                Además de las funciones básicas de gestión de archivos, el
-                módulo<code class="language-python">os</code>proporciona
-                capacidades adicionales importantes como la obtención de
-                información del sistema operativo, la gestión de procesos en
-                ejecución y el manejo de operaciones de entrada/salida
-                mediante descriptores de archivos, lo que lo convierte en una
-                herramienta versátil para la administración del sistema.
-              </p>
-            </div>
-            <!-- Introducción al Módulo OS Fin -->
-            <!-- ¿Por Qué Usar el Módulo OS? -->
-            <div id="por-que-usar-el-modulo-os" class="mt-5">
-              <h2>¿Por Qué Usar el Módulo OS?</h2>
-              <ul>
-                <li>
-                  <span class="fw-bold">Portabilidad</span>: El código que
-                  utiliza el módulo os a menudo puede ejecutarse en diferentes
-                  sistemas operativos (como Windows, macOS y Linux) sin
-                  necesidad de modificaciones importantes. Esto se debe a que
-                  el módulo proporciona una interfaz abstracta que se encarga
-                  de las diferencias específicas del sistema.
-                </li>
-                <li>
-                  <span class="fw-bold">Acceso a funcionalidades del sistema</span>: Te permite aprovechar las
-                  capacidades del sistema
-                  operativo directamente desde tu código Python.
-                </li>
-                <li>
-                  <span class="fw-bold">Manipulación del sistema de archivos</span>: Facilita la creación, eliminación,
-                  renombrado y
-                  manipulación de archivos y directorios.
-                </li>
-              </ul>
-            </div>
-            <!-- ¿Por Qué Usar el Módulo OS? Fin -->
-            <!-- Trabajar con Rutas y Directorios -->
-            <div id="trabajarConRutasYDirectorios" class="mt-5">
-              <h2>Trabajar con Rutas y Directorios</h2>
-              <ul>
-                <li>
-                  <span class="fw-bold"><code class="language-python">os.getcwd()</code></span>: Devuelve el directorio
-                  de trabajo actual.
-                </li>
-                <li>
-                  <span class="fw-bold"><code class="language-python">os.chdir(path)</code></span>: Cambia el directorio
-                  de trabajo a la ruta especificada.
-                </li>
-                <li>
-                  <span class="fw-bold"><code class="language-python">os.listdir(path)</code></span>: Lista los archivos
-                  y directorios en una ruta.
-                </li>
-                <li>
-                  <span class="fw-bold"><code class="language-python">os.mkdir(path)</code></span>: Crea un nuevo
-                  directorio.
-                </li>
-                <li>
-                  <span class="fw-bold"><code class="language-python">os.makedirs(path)</code></span>: Crea directorios
-                  de forma recursiva.
-                </li>
-                <li>
-                  <span class="fw-bold"><code class="language-python">os.rmdir(path)</code></span>: Elimina un
-                  directorio vacío.
-                </li>
-                <li>
-                  <span class="fw-bold"><code class="language-python">os.removedirs(path)</code></span>: Elimina
-                  directorios recursivamente.
-                </li>
-                <li>
-                  <span class="fw-bold"><code class="language-python">os.path.join(path1, path2, ...)</code></span>: Une
-                  rutas de forma independiente al sistema operativo.
-                </li>
-              </ul>
-              <p><strong>Ejemplo</strong>:</p>
-              <div class="code-example__syntax">
+            <p>
+              El módulo <code class="language-python">OS</code> en Python es
+              una herramienta poderosa que permite a los desarrolladores
+              interactuar con el sistema operativo de manera eficiente. Este
+              documento explora las funcionalidades más comunes del módulo
+              os, incluyendo la manipulación de archivos y directorios, la
+              obtención de información del sistema y la ejecución de
+              comandos del sistema operativo. A través de ejemplos
+              prácticos, se demostrará cómo utilizar este módulo para
+              facilitar tareas cotidianas en la programación.
+            </p>
+
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Introducción al Módulo OS -->
+          <div id="introduccion-al-modulo-os" class="mt-3">
+            <h2>Introducción al Módulo OS</h2>
+            <p>
+              El módulo<code class="language-python">os</code>de Python es
+              una herramienta que permite la interacción directa con el
+              sistema operativo, ofreciendo funcionalidades similares a los
+              comandos nativos disponibles tanto en sistemas Unix como
+              Windows. Por ejemplo, incluye funciones como
+              <code class="language-python">mkdir </code>para crear
+              directorios, replicando la funcionalidad del comando del mismo
+              nombre en la línea de comandos.
+            </p>
+            <p>
+              Las operaciones principales del módulo
+              <code class="language-python">os</code> se centran en el
+              manejo de archivos y directorios, permitiendo realizar
+              diversas tareas de gestión y manipulación de estos elementos
+              del sistema de archivos, lo que facilita la automatización de
+              tareas relacionadas con la organización de datos y estructura
+              de carpetas.
+            </p>
+            <p>
+              Además de las funciones básicas de gestión de archivos, el
+              módulo<code class="language-python">os</code>proporciona
+              capacidades adicionales importantes como la obtención de
+              información del sistema operativo, la gestión de procesos en
+              ejecución y el manejo de operaciones de entrada/salida
+              mediante descriptores de archivos, lo que lo convierte en una
+              herramienta versátil para la administración del sistema.
+            </p>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Introducción al Módulo OS Fin -->
+          <!-- ¿Por Qué Usar el Módulo OS? -->
+          <div id="por-que-usar-el-modulo-os" class="mt-3">
+            <h2>¿Por Qué Usar el Módulo OS?</h2>
+            <ul>
+              <li>
+                <span class="fw-bold">Portabilidad</span>: El código que
+                utiliza el módulo os a menudo puede ejecutarse en diferentes
+                sistemas operativos (como Windows, macOS y Linux) sin
+                necesidad de modificaciones importantes. Esto se debe a que
+                el módulo proporciona una interfaz abstracta que se encarga
+                de las diferencias específicas del sistema.
+              </li>
+              <li>
+                <span class="fw-bold">Acceso a funcionalidades del sistema</span>: Te permite aprovechar las
+                capacidades del sistema
+                operativo directamente desde tu código Python.
+              </li>
+              <li>
+                <span class="fw-bold">Manipulación del sistema de archivos</span>: Facilita la creación, eliminación,
+                renombrado y
+                manipulación de archivos y directorios.
+              </li>
+            </ul>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- ¿Por Qué Usar el Módulo OS? Fin -->
+          <!-- Trabajar con Rutas y Directorios -->
+          <div id="trabajarConRutasYDirectorios" class="mt-3">
+            <h2>Trabajar con Rutas y Directorios</h2>
+            <ul>
+              <li>
+                <span class="fw-bold"><code class="language-python">os.getcwd()</code></span>: Devuelve el directorio
+                de trabajo actual.
+              </li>
+              <li>
+                <span class="fw-bold"><code class="language-python">os.chdir(path)</code></span>: Cambia el directorio
+                de trabajo a la ruta especificada.
+              </li>
+              <li>
+                <span class="fw-bold"><code class="language-python">os.listdir(path)</code></span>: Lista los archivos
+                y directorios en una ruta.
+              </li>
+              <li>
+                <span class="fw-bold"><code class="language-python">os.mkdir(path)</code></span>: Crea un nuevo
+                directorio.
+              </li>
+              <li>
+                <span class="fw-bold"><code class="language-python">os.makedirs(path)</code></span>: Crea directorios
+                de forma recursiva.
+              </li>
+              <li>
+                <span class="fw-bold"><code class="language-python">os.rmdir(path)</code></span>: Elimina un
+                directorio vacío.
+              </li>
+              <li>
+                <span class="fw-bold"><code class="language-python">os.removedirs(path)</code></span>: Elimina
+                directorios recursivamente.
+              </li>
+              <li>
+                <span class="fw-bold"><code class="language-python">os.path.join(path1, path2, ...)</code></span>: Une
+                rutas de forma independiente al sistema operativo.
+              </li>
+            </ul>
+            <p><strong>Ejemplo</strong>:</p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                 <code class="language-python" data-prismjs-copy="Copy">
                   import os
@@ -265,32 +268,33 @@
                   print("Contenido del directorio:", os.listdir('.'))
                 </code>
               </pre>
-              </div>
             </div>
-            <!-- Trabajar con Rutas y Directorios Fin -->
-            <!-- Información sobre Archivos y Directorios -->
-            <div id="informacion-sobre-archivos-y-directorios" class="mt-5">
-              <h2>Información sobre Archivos y Directorios</h2>
-              <ul>
-                <li>
-                  <span class="fw-bold"><code class="language-python">os.path.exists(path)</code></span>: Comprueba si
-                  un archivo o directorio existe.
-                </li>
-                <li>
-                  <span class="fw-bold"><code class="language-python">os.path.isfile(path</code>)</span>: Verifica si es
-                  un archivo.
-                </li>
-                <li>
-                  <span class="fw-bold"><code class="language-python">os.path.isdir(path)</code></span>: Verifica si es
-                  un directorio.
-                </li>
-                <li>
-                  <span class="fw-bold"><code class="language-python">os.path.getsize(path)</code></span>: Obtiene el
-                  tamaño del archivo en bytes.
-                </li>
-              </ul>
-              <p><strong>Ejemplo</strong>:</p>
-              <div class="code-example__syntax">
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Trabajar con Rutas y Directorios Fin -->
+          <!-- Información sobre Archivos y Directorios -->
+          <div id="informacion-sobre-archivos-y-directorios" class="mt-3">
+            <h2>Información sobre Archivos y Directorios</h2>
+            <ul>
+              <li>
+                <span class="fw-bold"><code class="language-python">os.path.exists(path)</code></span>: Comprueba si
+                un archivo o directorio existe.
+              </li>
+              <li>
+                <span class="fw-bold"><code class="language-python">os.path.isfile(path</code>)</span>: Verifica si es
+                un archivo.
+              </li>
+              <li>
+                <span class="fw-bold"><code class="language-python">os.path.isdir(path)</code></span>: Verifica si es
+                un directorio.
+              </li>
+              <li>
+                <span class="fw-bold"><code class="language-python">os.path.getsize(path)</code></span>: Obtiene el
+                tamaño del archivo en bytes.
+              </li>
+            </ul>
+            <p><strong>Ejemplo</strong>:</p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import os
@@ -306,27 +310,28 @@
                           print("El archivo o directorio no existe.")
                     </code>
                   </pre>
-              </div>
             </div>
-            <!-- Información sobre Archivos y Directorios Fin -->
-            <!-- Manipulación de Archivos -->
-            <div id="manipulacion-de-archivos" class="mt-5">
-              <h2>Manipulación de Archivos</h2>
-              <ul>
-                <li>
-                  <span class="fw-bold"><code class="language-python">os.rename(src, dst)</code></span>: Renombra un
-                  archivo o directorio.
-                </li>
-                <li>
-                  <span class="fw-bold"><code class="language-python">os.remove(path)</code></span>: Elimina un archivo.
-                </li>
-                <li>
-                  <span class="fw-bold"><code class="language-python">os.unlink(path)</code></span>: Similar a
-                  os.remove, elimina un archivo.
-                </li>
-              </ul>
-              <p><strong>Ejemplo</strong>:</p>
-              <div class="code-example__syntax">
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Información sobre Archivos y Directorios Fin -->
+          <!-- Manipulación de Archivos -->
+          <div id="manipulacion-de-archivos" class="mt-3">
+            <h2>Manipulación de Archivos</h2>
+            <ul>
+              <li>
+                <span class="fw-bold"><code class="language-python">os.rename(src, dst)</code></span>: Renombra un
+                archivo o directorio.
+              </li>
+              <li>
+                <span class="fw-bold"><code class="language-python">os.remove(path)</code></span>: Elimina un archivo.
+              </li>
+              <li>
+                <span class="fw-bold"><code class="language-python">os.unlink(path)</code></span>: Similar a
+                os.remove, elimina un archivo.
+              </li>
+            </ul>
+            <p><strong>Ejemplo</strong>:</p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import os
@@ -336,25 +341,26 @@
                       os.remove('archivo_a_eliminar.txt')
                     </code>
                   </pre>
-              </div>
             </div>
-            <!-- Manipulación de Archivos Fin -->
-            <!-- Interacción con Procesos -->
-            <div id="interaccion-con-procesos" class="mt-5">
-              <h2>Interacción con Procesos</h2>
-              <ul>
-                <li>
-                  <span class="fw-bold"><code class="language-python">os.system(command)</code></span>: Ejecuta un
-                  comando en la línea de comandos del sistema
-                  operativo.
-                </li>
-                <li>
-                  <span class="fw-bold"><code class="language-python">os.environ</code></span>: Accede a las variables
-                  de entorno del sistema operativo.
-                </li>
-              </ul>
-              <p><strong>Ejemplo</strong>:</p>
-              <div class="code-example__syntax">
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Manipulación de Archivos Fin -->
+          <!-- Interacción con Procesos -->
+          <div id="interaccion-con-procesos" class="mt-3">
+            <h2>Interacción con Procesos</h2>
+            <ul>
+              <li>
+                <span class="fw-bold"><code class="language-python">os.system(command)</code></span>: Ejecuta un
+                comando en la línea de comandos del sistema
+                operativo.
+              </li>
+              <li>
+                <span class="fw-bold"><code class="language-python">os.environ</code></span>: Accede a las variables
+                de entorno del sistema operativo.
+              </li>
+            </ul>
+            <p><strong>Ejemplo</strong>:</p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import os
@@ -364,25 +370,26 @@
                       print("PATH del sistema:", os.environ['PATH'])
                     </code>
                   </pre>
-              </div>
             </div>
-            <!-- Interacción con Procesos Fin -->
-            <!-- Permisos y Propietarios -->
-            <div id="permisos-y-propietarios" class="mt-5">
-              <h2>Permisos y Propietarios</h2>
-              <ul>
-                <li>
-                  <span class="fw-bold"><code class="language-python">os.chmod(path, mode)</code></span>: Cambia los
-                  permisos de un archivo o directorio.
-                </li>
-                <li>
-                  <span class="fw-bold"><code class="language-python">os.chown(path, uid, gid)</code></span>: Cambia el
-                  propietario de un archivo o directorio (en
-                  sistemas Unix).
-                </li>
-              </ul>
-              <p><strong>Ejemplo</strong>:</p>
-              <div class="code-example__syntax">
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Interacción con Procesos Fin -->
+          <!-- Permisos y Propietarios -->
+          <div id="permisos-y-propietarios" class="mt-3">
+            <h2>Permisos y Propietarios</h2>
+            <ul>
+              <li>
+                <span class="fw-bold"><code class="language-python">os.chmod(path, mode)</code></span>: Cambia los
+                permisos de un archivo o directorio.
+              </li>
+              <li>
+                <span class="fw-bold"><code class="language-python">os.chown(path, uid, gid)</code></span>: Cambia el
+                propietario de un archivo o directorio (en
+                sistemas Unix).
+              </li>
+            </ul>
+            <p><strong>Ejemplo</strong>:</p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import stat
@@ -390,29 +397,30 @@
                       os.chmod('archivo.txt', stat.S_IREAD)  # Solo lectura
                     </code>
                   </pre>
-              </div>
             </div>
-            <!-- Permisos y Propietarios Fin -->
-            <!-- Operaciones Relacionadas con el Sistema -->
-            <div id="operaciones-relacionadas-con-el-sistema" class="mt-5">
-              <h2>Operaciones Relacionadas con el Sistema</h2>
-              <ul>
-                <li>
-                  <span class="fw-bold"><code class="language-python">os.name</code></span>: Devuelve el nombre del
-                  sistema operativo (<code class="language-python">'posix'</code>, <code
-                    class="language-python">'nt'</code>, etc.).
-                </li>
-                <li>
-                  <span class="fw-bold"><code class="language-python">os.uname()</code></span>: Información sobre el
-                  sistema (solo en Unix).
-                </li>
-                <li>
-                  <span class="fw-bold"><code class="language-python">os.cpu_count()</code></span>: Número de CPUs
-                  disponibles.
-                </li>
-              </ul>
-              <p><strong>Ejemplo</strong>:</p>
-              <div class="code-example__syntax">
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Permisos y Propietarios Fin -->
+          <!-- Operaciones Relacionadas con el Sistema -->
+          <div id="operaciones-relacionadas-con-el-sistema" class="mt-3">
+            <h2>Operaciones Relacionadas con el Sistema</h2>
+            <ul>
+              <li>
+                <span class="fw-bold"><code class="language-python">os.name</code></span>: Devuelve el nombre del
+                sistema operativo (<code class="language-python">'posix'</code>, <code
+                  class="language-python">'nt'</code>, etc.).
+              </li>
+              <li>
+                <span class="fw-bold"><code class="language-python">os.uname()</code></span>: Información sobre el
+                sistema (solo en Unix).
+              </li>
+              <li>
+                <span class="fw-bold"><code class="language-python">os.cpu_count()</code></span>: Número de CPUs
+                disponibles.
+              </li>
+            </ul>
+            <p><strong>Ejemplo</strong>:</p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import os
@@ -422,46 +430,48 @@
                       print("Número de CPUs disponibles:", os.cpu_count())
                     </code>
                   </pre>
-              </div>
             </div>
-            <!-- Operaciones Relacionadas con el Sistema Fin -->
-            <!-- Compatibilidad con Sistemas Operativos -->
-            <div id="compatibilidad-con-sistemas-operativos" class="mt-5">
-              <h2>Compatibilidad con Sistemas Operativos</h2>
-              <p>
-                El módulo <code class="language-python">OS</code> es
-                multiplataforma, pero algunas funciones pueden no estar
-                disponibles en todos los sistemas. Por ejemplo:
-              </p>
-              <ul>
-                <li>
-                  <span class="fw-bold"><code class="language-python">os.uname()</code></span>: Solo está disponible en
-                  sistemas tipo Unix.
-                </li>
-                <li>
-                  <span class="fw-bold"><code class="language-python">os.startfile(path)</code></span>: Solo está
-                  disponible en Windows.
-                </li>
-              </ul>
-            </div>
-            <!-- Compatibilidad con Sistemas Operativos Fin -->
-            <!-- Buenas Prácticas para Usar OS -->
-            <div id="buenas-practicas-para-usar-os" class="mt-5">
-              <h2>Buenas Practicas para Usar OS</h2>
-              <ul>
-                <li>
-                  <span class="fw-bold">Usar <code class="language-python">os.path</code></span>: Siempre que sea
-                  posible, utilice las funciones de os.path
-                  para garantizar la compatibilidad multiplataforma.
-                </li>
-                <li>
-                  <span class="fw-bold">Capturar excepciones</span>: Algunas
-                  operaciones, como cambiar de directorio o eliminar archivos,
-                  pueden generar errores si la ruta no existe o no se tienen
-                  permisos.
-                </li>
-              </ul>
-              <div class="code-example__syntax">
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Operaciones Relacionadas con el Sistema Fin -->
+          <!-- Compatibilidad con Sistemas Operativos -->
+          <div id="compatibilidad-con-sistemas-operativos" class="mt-3">
+            <h2>Compatibilidad con Sistemas Operativos</h2>
+            <p>
+              El módulo <code class="language-python">OS</code> es
+              multiplataforma, pero algunas funciones pueden no estar
+              disponibles en todos los sistemas. Por ejemplo:
+            </p>
+            <ul>
+              <li>
+                <span class="fw-bold"><code class="language-python">os.uname()</code></span>: Solo está disponible en
+                sistemas tipo Unix.
+              </li>
+              <li>
+                <span class="fw-bold"><code class="language-python">os.startfile(path)</code></span>: Solo está
+                disponible en Windows.
+              </li>
+            </ul>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Compatibilidad con Sistemas Operativos Fin -->
+          <!-- Buenas Prácticas para Usar OS -->
+          <div id="buenas-practicas-para-usar-os" class="mt-3">
+            <h2>Buenas Practicas para Usar OS</h2>
+            <ul>
+              <li>
+                <span class="fw-bold">Usar <code class="language-python">os.path</code></span>: Siempre que sea
+                posible, utilice las funciones de os.path
+                para garantizar la compatibilidad multiplataforma.
+              </li>
+              <li>
+                <span class="fw-bold">Capturar excepciones</span>: Algunas
+                operaciones, como cambiar de directorio o eliminar archivos,
+                pueden generar errores si la ruta no existe o no se tienen
+                permisos.
+              </li>
+            </ul>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       import os
@@ -471,10 +481,10 @@
                           print("El archivo no existe.")
                     </code>
                   </pre>
-              </div>
             </div>
-            <!-- Buenas Practicas para Usar OS -->
           </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Buenas Practicas para Usar OS -->
         </article>
         <!--  El módulo os, Interactuando con el sistema operativo en Python  -->
 

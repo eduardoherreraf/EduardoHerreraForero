@@ -111,157 +111,158 @@
         <!--  Manejo de Archivos en Python  -->
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
-          <div>
-            <header>
-              <h1>Manejo de Archivos en Python</h1>
-            </header>
-            <!-- Introducción -->
-            <div class="mt-5">
-              <h2>Introducción</h2>
-              <p>
-                El manejo de archivos en Python es una habilidad fundamental
-                para cualquier programador, ya que permite la lectura y
-                escritura de datos en archivos, facilitando la persistencia de
-                información. Este documento explora las diversas técnicas y
-                métodos disponibles en Python para trabajar con archivos,
-                incluyendo la apertura, lectura, escritura y cierre de
-                archivos, así como el manejo de excepciones y la manipulación
-                de archivos en diferentes formatos.
-              </p>
-              <div class="site-image site-intro-image">
-                <figure class="site-image__figure site-image__figure--intro">
-                  <img src="https://i.ibb.co/Z86kBk1/manejoarchivos.jpg" class="img-fluid"
-                    alt="Manejo de Archivos en Python  " title="Dominando Técnicas de Archivos en Python" />
-                  <figcaption>Manejo de Archivos en Python</figcaption>
-                </figure>
-              </div>
+          <header>
+            <h1>Manejo de Archivos en Python</h1>
+          </header>
+          <!-- Introducción -->
+          <div class="mt-3">
+            <h2>Introducción</h2>
+            <div class="site-image site-intro-image mb-5">
+              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                <img loading="lazy" src="https://i.ibb.co/Z86kBk1/manejoarchivos.jpg" class="img-fluid"
+                  alt="Manejo de Archivos en Python  " title="Dominando Técnicas de Archivos en Python" />
+                <figcaption class="site-image__caption">Manejo de Archivos en Python</figcaption>
+              </figure>
             </div>
+            <p>
+              El manejo de archivos en Python es una habilidad fundamental
+              para cualquier programador, ya que permite la lectura y
+              escritura de datos en archivos, facilitando la persistencia de
+              información. Este documento explora las diversas técnicas y
+              métodos disponibles en Python para trabajar con archivos,
+              incluyendo la apertura, lectura, escritura y cierre de
+              archivos, así como el manejo de excepciones y la manipulación
+              de archivos en diferentes formatos.
+            </p>
 
-            <!-- Apertura de Archivos -->
-            <div id="abrir-archivos-open" class="mt-5">
-              <h2>Abrir archivos - <code class="language-python">open</code></h2>
-              <p>
-                La función <code class="language-python">open()</code> en
-                Python se utiliza para abrir archivos y trabajar con ellos.
-                Esta función es fundamental para la manipulación de archivos,
-                permitiendo tanto la lectura como la escritura de datos. A
-                continuación, se describe en detalle cómo se utiliza
-                <code class="language-python">open()</code> en Python.
-              </p>
-              <!-- Sintaxis Básica  Open -->
-              <div>
-                <h3>Sintaxis Básica - <code class="language-python">open</code></h3>
-                <div class="code-example__syntax">
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+
+          <!-- Apertura de Archivos -->
+          <div id="abrir-archivos-open" class="mt-3">
+            <h2>Abrir archivos - <code class="language-python">open</code></h2>
+            <p>
+              La función <code class="language-python">open()</code> en
+              Python se utiliza para abrir archivos y trabajar con ellos.
+              Esta función es fundamental para la manipulación de archivos,
+              permitiendo tanto la lectura como la escritura de datos. A
+              continuación, se describe en detalle cómo se utiliza
+              <code class="language-python">open()</code> en Python.
+            </p>
+            <!-- Sintaxis Básica  Open -->
+            <div>
+              <h3>Sintaxis Básica - <code class="language-python">open</code></h3>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)
                       </code>
                     </pre>
-                </div>
-                <p><strong>Parámetros</strong>:</p>
-                <ul>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">file</code></span>: Una cadena que representa el
-                    nombre del archivo que se
-                    desea abrir. Puede ser una ruta relativa o absoluta.
-                  </li>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">mode</code></span>: Una cadena que indica el
-                    modo en que se abre el
-                    archivo. Los modos más comunes son:
-                    <ul>
-                      <li>
-                        <span class="fw-bold"><code class="language-python">'r'</code></span>: Modo lectura (por
-                        defecto). Abre el archivo para
-                        leer, y genera un error si el archivo no existe.
-                      </li>
-                      <li>
-                        <span class="fw-bold"><code class="language-python">'w'</code></span>: Modo escritura. Abre el
-                        archivo para escribir. Si
-                        el archivo existe, su contenido será sobrescrito. Si
-                        no existe, se creará.
-                      </li>
-                      <li>
-                        <span class="fw-bold"><code class="language-python">'a'</code></span>: Modo añadir. Abre el
-                        archivo para agregar contenido
-                        al final. Si el archivo no existe, se creará.
-                      </li>
-                      <li>
-                        <span class="fw-bold"><code class="language-python">'b'</code></span>: Modo binario. Se debe
-                        usar junto con otros modos,
-                        como 'rb' o 'wb', para trabajar con archivos binarios.
-                      </li>
-                      <li>
-                        <span class="fw-bold"><code class="language-python">'x'</code></span>: Modo exclusivo. Crea un
-                        nuevo archivo, pero genera
-                        un error si el archivo ya existe.
-                      </li>
-                      <li>
-                        <span class="fw-bold"><code class="language-python">'t'</code></span>: Modo texto (por defecto).
-                        Se puede usar junto con
-                        otros modos como 'rt' o 'wt'. Este es el modo
-                        predeterminado para trabajar con archivos de texto.
-                      </li>
-                      <li>
-                        <span class="fw-bold"><code class="language-python">'r+</code>'</span>: Modo lectura y
-                        escritura. Abre el archivo para leer
-                        y escribir, pero no lo crea si no existe.
-                      </li>
-                      <li>
-                        <span class="fw-bold"><code class="language-python">'w+</code>'</span>: Modo escritura y
-                        lectura. Si el archivo no existe,
-                        se creará. Si existe, se sobrescribirá.
-                      </li>
-                      <li>
-                        <span class="fw-bold"><code class="language-python">'a+</code>'</span>: Modo lectura y
-                        escritura. Permite añadir contenido
-                        al final del archivo, sin borrar lo existente.
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">buffering</code></span>: Un entero que
-                    especifica el tamaño del búfer. Un valor
-                    de 0 indica que no se utiliza buffering, 1 indica
-                    buffering de línea, y cualquier otro valor positivo indica
-                    el tamaño del búfer en bytes.
-                  </li>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">encoding</code></span>: Una cadena que
-                    especifica la codificación del archivo.
-                    Solo se utiliza en modo texto.
-                  </li>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">errors</code></span>: Una cadena que especifica
-                    cómo manejar los errores de
-                    codificación. Solo se utiliza en modo texto.
-                  </li>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">newline</code></span>: Una cadena que especifica
-                    cómo se manejan los
-                    caracteres de nueva línea. Solo se utiliza en modo texto.
-                  </li>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">closefd</code></span>: Un booleano que indica si
-                    se debe cerrar el descriptor
-                    de archivo cuando se cierre el archivo.
-                  </li>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">opener</code></span>: Un llamable que devuelve
-                    un descriptor de archivo
-                    abierto.
-                  </li>
-                </ul>
               </div>
-              <!-- Sintaxis Básica  Open fin -->
-              <!-- Ejemplos de uso de open -->
-              <div>
-                <h3>Ejemplos de uso de - <code class="language-python">open</code></h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Abrir un archivo para lectura (<code
-                        class="language-python">'r'</code>)</span>:
-                    <div class="code-example__syntax">
+              <p><strong>Parámetros</strong>:</p>
+              <ul>
+                <li>
+                  <span class="fw-bold"><code class="language-python">file</code></span>: Una cadena que representa el
+                  nombre del archivo que se
+                  desea abrir. Puede ser una ruta relativa o absoluta.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">mode</code></span>: Una cadena que indica el
+                  modo en que se abre el
+                  archivo. Los modos más comunes son:
+                  <ul>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">'r'</code></span>: Modo lectura (por
+                      defecto). Abre el archivo para
+                      leer, y genera un error si el archivo no existe.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">'w'</code></span>: Modo escritura. Abre el
+                      archivo para escribir. Si
+                      el archivo existe, su contenido será sobrescrito. Si
+                      no existe, se creará.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">'a'</code></span>: Modo añadir. Abre el
+                      archivo para agregar contenido
+                      al final. Si el archivo no existe, se creará.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">'b'</code></span>: Modo binario. Se debe
+                      usar junto con otros modos,
+                      como 'rb' o 'wb', para trabajar con archivos binarios.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">'x'</code></span>: Modo exclusivo. Crea un
+                      nuevo archivo, pero genera
+                      un error si el archivo ya existe.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">'t'</code></span>: Modo texto (por defecto).
+                      Se puede usar junto con
+                      otros modos como 'rt' o 'wt'. Este es el modo
+                      predeterminado para trabajar con archivos de texto.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">'r+</code>'</span>: Modo lectura y
+                      escritura. Abre el archivo para leer
+                      y escribir, pero no lo crea si no existe.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">'w+</code>'</span>: Modo escritura y
+                      lectura. Si el archivo no existe,
+                      se creará. Si existe, se sobrescribirá.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">'a+</code>'</span>: Modo lectura y
+                      escritura. Permite añadir contenido
+                      al final del archivo, sin borrar lo existente.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">buffering</code></span>: Un entero que
+                  especifica el tamaño del búfer. Un valor
+                  de 0 indica que no se utiliza buffering, 1 indica
+                  buffering de línea, y cualquier otro valor positivo indica
+                  el tamaño del búfer en bytes.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">encoding</code></span>: Una cadena que
+                  especifica la codificación del archivo.
+                  Solo se utiliza en modo texto.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">errors</code></span>: Una cadena que especifica
+                  cómo manejar los errores de
+                  codificación. Solo se utiliza en modo texto.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">newline</code></span>: Una cadena que especifica
+                  cómo se manejan los
+                  caracteres de nueva línea. Solo se utiliza en modo texto.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">closefd</code></span>: Un booleano que indica si
+                  se debe cerrar el descriptor
+                  de archivo cuando se cierre el archivo.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">opener</code></span>: Un llamable que devuelve
+                  un descriptor de archivo
+                  abierto.
+                </li>
+              </ul>
+            </div>
+            <!-- Sintaxis Básica  Open fin -->
+            <!-- Ejemplos de uso de open -->
+            <div>
+              <h3>Ejemplos de uso de - <code class="language-python">open</code></h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Abrir un archivo para lectura (<code
+                      class="language-python">'r'</code>)</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             # Abrir un archivo en modo lectura
@@ -273,12 +274,12 @@
                             archivo.close()
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Abrir un archivo para escritura (<code
-                        class="language-python">'w'</code>)</span>:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Abrir un archivo para escritura (<code
+                      class="language-python">'w'</code>)</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             # Abrir un archivo en modo escritura (sobrescribe si existe)
@@ -289,12 +290,12 @@
                             archivo.close()
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Abrir un archivo para añadir contenido (<code
-                        class="language-python">'a'</code>)</span>:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Abrir un archivo para añadir contenido (<code
+                      class="language-python">'a'</code>)</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             # Abrir un archivo en modo añadir (agrega al final)
@@ -305,11 +306,11 @@
                             archivo.close()
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Leer un archivo línea por línea</span>:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Leer un archivo línea por línea</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             # Abrir un archivo en modo añadir (agrega al final)
@@ -320,12 +321,12 @@
                             archivo.close()
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Abrir un archivo en modo binario (<code
-                        class="language-python">'rb</code>')</span>:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Abrir un archivo en modo binario (<code
+                      class="language-python">'rb</code>')</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             # Abrir un archivo binario en modo lectura
@@ -336,46 +337,47 @@
                             archivo.close()
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- Ejemplos de uso de open fin -->
-            </div>
-            <!-- Apertura de Archivos Fin -->
-            <!-- Lectura de Archivos -->
-            <div id="lectura-de-archivos" class="mt-5">
-              <h2>Lectura de Archivos</h2>
-              <p>
-                Leer archivos en Python es una tarea común y se puede hacer de
-                varias maneras dependiendo del tipo de archivo y del formato
-                en el que esté almacenada la información. Más adelante se
-                mostrará algunos métodos básicos para leer archivos de texto,
-                CSV y JSON, por el momento se iniciará con archivos de texto.
-              </p>
-              <p>
-                Existen diferentes formas de leer los datos de un archivo:
-              </p>
-              <ul>
-                <li>
-                  <span class="fw-bold"><code class="language-python">read()</code></span>: Lee todo el contenido del
-                  archivo.
-                </li>
-                <li>
-                  <span class="fw-bold"><code class="language-python">readline()</code></span>: Lee una línea del
-                  archivo.
-                </li>
-                <li>
-                  <span class="fw-bold"><code class="language-python">readlines()</code></span>: Lee todas las líneas
-                  del archivo y las devuelve como una
-                  lista.
+                  </div>
                 </li>
               </ul>
-              <p><strong>Ejemplos</strong>:</p>
-              <ul>
-                <li>
-                  <span class="fw-bold">Leer todo el archivo</span>:
-                  <div class="code-example__syntax">
+            </div>
+            <!-- Ejemplos de uso de open fin -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Apertura de Archivos Fin -->
+          <!-- Lectura de Archivos -->
+          <div id="lectura-de-archivos" class="mt-3">
+            <h2>Lectura de Archivos</h2>
+            <p>
+              Leer archivos en Python es una tarea común y se puede hacer de
+              varias maneras dependiendo del tipo de archivo y del formato
+              en el que esté almacenada la información. Más adelante se
+              mostrará algunos métodos básicos para leer archivos de texto,
+              CSV y JSON, por el momento se iniciará con archivos de texto.
+            </p>
+            <p>
+              Existen diferentes formas de leer los datos de un archivo:
+            </p>
+            <ul>
+              <li>
+                <span class="fw-bold"><code class="language-python">read()</code></span>: Lee todo el contenido del
+                archivo.
+              </li>
+              <li>
+                <span class="fw-bold"><code class="language-python">readline()</code></span>: Lee una línea del
+                archivo.
+              </li>
+              <li>
+                <span class="fw-bold"><code class="language-python">readlines()</code></span>: Lee todas las líneas
+                del archivo y las devuelve como una
+                lista.
+              </li>
+            </ul>
+            <p><strong>Ejemplos</strong>:</p>
+            <ul>
+              <li>
+                <span class="fw-bold">Leer todo el archivo</span>:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Leer todo el archivo
@@ -385,11 +387,11 @@
                           archivo.close()
                         </code>
                       </pre>
-                  </div>
-                </li>
-                <li>
-                  <span class="fw-bold">Leer una línea</span>:
-                  <div class="code-example__syntax">
+                </div>
+              </li>
+              <li>
+                <span class="fw-bold">Leer una línea</span>:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Leer una línea
@@ -401,11 +403,11 @@
                           archivo.close()
                         </code>
                       </pre>
-                  </div>
-                </li>
-                <li>
-                  <span class="fw-bold">Leer todas las líneas</span>:
-                  <div class="code-example__syntax">
+                </div>
+              </li>
+              <li>
+                <span class="fw-bold">Leer todas las líneas</span>:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Leer todas las líneas
@@ -414,11 +416,11 @@
                           archivo.close()
                         </code>
                       </pre>
-                  </div>
-                </li>
-                <li>
-                  <span class="fw-bold">Leer línea por línea</span>:
-                  <div class="code-example__syntax">
+                </div>
+              </li>
+              <li>
+                <span class="fw-bold">Leer línea por línea</span>:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Leer línea por línea
@@ -428,65 +430,66 @@
                           archivo.close()
                         </code>
                       </pre>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <!-- Lectura de Archivos Fin -->
-            <!-- Escritura en Archivos -->
-            <div id="escritura-en-archivos" class="mt-5">
-              <h2>Escritura en Archivos</h2>
-              <p>
-                Escribir en archivos en Python es una tarea común que se puede
-                realizar utilizando diferentes modos de apertura, como el modo
-                de escritura (<code class="language-python">'w'</code>), el
-                modo de anexar (<code class="language-python">'a'</code>), ,
-                el modo de creación exclusiva (<code class="language-python">'x'</code>), o el modo de lectura y
-                escritura (<code class="language-python">'r+'</code>). Para esto, se utiliza la función
-                <code class="language-python">open()</code> con dos parámetros
-                principales.:
-              </p>
-              <ul>
-                <li>
-                  <span class="fw-bold">Nombre del archivo</span>: El nombre o
-                  la ruta del archivo que se desea abrir.
-                </li>
-                <li>
-                  <span class="fw-bold">Modo</span>: Define cómo se abrirá el
-                  archivo.
-                </li>
-              </ul>
-              <p>Los modos comunes para escritura son:</p>
-              <ul>
-                <li>
-                  <span class="fw-bold"><code class="language-python">'w'</code></span>: Escritura. Crea un archivo
-                  nuevo o sobrescribe el
-                  contenido existente.
-                </li>
-                <li>
-                  <span class="fw-bold"><code class="language-python">'a'</code></span>: Escritura en modo adjunto.
-                  Agrega contenido al final del
-                  archivo sin borrar lo que ya existe.
-                </li>
-                <li>
-                  <span class="fw-bold"><code class="language-python">'x'</code></span>: Creación exclusiva. Genera un
-                  archivo nuevo; lanza un
-                  error si ya existe.
-                </li>
-                <li>
-                  <span class="fw-bold"><code class="language-python">'r+'</code></span>: Lectura y escritura. Abre el
-                  archivo para leer y
-                  escribir, pero no lo crea si no existe.
-                </li>
-              </ul>
-              <p><strong>Sintaxis Básica</strong>:</p>
-              <ul>
-                <li>
-                  <span class="fw-bold">Modo de Escritura ('w')</span>: Este
-                  modo abre el archivo para escribir. Si el archivo no existe,
-                  se crea uno nuevo. Si el archivo ya existe, su contenido se
-                  sobrescribe.
-                  <div class="code-example__syntax">
+                </div>
+              </li>
+            </ul>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Lectura de Archivos Fin -->
+          <!-- Escritura en Archivos -->
+          <div id="escritura-en-archivos" class="mt-3">
+            <h2>Escritura en Archivos</h2>
+            <p>
+              Escribir en archivos en Python es una tarea común que se puede
+              realizar utilizando diferentes modos de apertura, como el modo
+              de escritura (<code class="language-python">'w'</code>), el
+              modo de anexar (<code class="language-python">'a'</code>), ,
+              el modo de creación exclusiva (<code class="language-python">'x'</code>), o el modo de lectura y
+              escritura (<code class="language-python">'r+'</code>). Para esto, se utiliza la función
+              <code class="language-python">open()</code> con dos parámetros
+              principales.:
+            </p>
+            <ul>
+              <li>
+                <span class="fw-bold">Nombre del archivo</span>: El nombre o
+                la ruta del archivo que se desea abrir.
+              </li>
+              <li>
+                <span class="fw-bold">Modo</span>: Define cómo se abrirá el
+                archivo.
+              </li>
+            </ul>
+            <p>Los modos comunes para escritura son:</p>
+            <ul>
+              <li>
+                <span class="fw-bold"><code class="language-python">'w'</code></span>: Escritura. Crea un archivo
+                nuevo o sobrescribe el
+                contenido existente.
+              </li>
+              <li>
+                <span class="fw-bold"><code class="language-python">'a'</code></span>: Escritura en modo adjunto.
+                Agrega contenido al final del
+                archivo sin borrar lo que ya existe.
+              </li>
+              <li>
+                <span class="fw-bold"><code class="language-python">'x'</code></span>: Creación exclusiva. Genera un
+                archivo nuevo; lanza un
+                error si ya existe.
+              </li>
+              <li>
+                <span class="fw-bold"><code class="language-python">'r+'</code></span>: Lectura y escritura. Abre el
+                archivo para leer y
+                escribir, pero no lo crea si no existe.
+              </li>
+            </ul>
+            <p><strong>Sintaxis Básica</strong>:</p>
+            <ul>
+              <li>
+                <span class="fw-bold">Modo de Escritura ('w')</span>: Este
+                modo abre el archivo para escribir. Si el archivo no existe,
+                se crea uno nuevo. Si el archivo ya existe, su contenido se
+                sobrescribe.
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Abrir el archivo en modo de escritura
@@ -495,14 +498,14 @@
                               archivo.write('Esta es una línea adicional.\n')
                         </code>
                       </pre>
-                  </div>
-                </li>
-                <li>
-                  <span class="fw-bold">Modo de Anexar ('a')</span>: Este modo
-                  abre el archivo para escribir. Si el archivo no existe, se
-                  crea uno nuevo. Si el archivo ya existe, el nuevo contenido
-                  se añade al final del archivo.
-                  <div class="code-example__syntax">
+                </div>
+              </li>
+              <li>
+                <span class="fw-bold">Modo de Anexar ('a')</span>: Este modo
+                abre el archivo para escribir. Si el archivo no existe, se
+                crea uno nuevo. Si el archivo ya existe, el nuevo contenido
+                se añade al final del archivo.
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Abrir el archivo en modo de anexar
@@ -510,13 +513,13 @@
                               archivo.write('Esta línea se añade al final del archivo.\n')
                         </code>
                       </pre>
-                  </div>
-                </li>
-                <li>
-                  <span class="fw-bold">Modo de Lectura y Escritura ('r+')</span>: Este modo abre el archivo para leer y
-                  escribir. El
-                  puntero del archivo se coloca al principio del archivo.
-                  <div class="code-example__syntax">
+                </div>
+              </li>
+              <li>
+                <span class="fw-bold">Modo de Lectura y Escritura ('r+')</span>: Este modo abre el archivo para leer y
+                escribir. El
+                puntero del archivo se coloca al principio del archivo.
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Abrir el archivo en modo de lectura y escritura
@@ -525,12 +528,12 @@
                               archivo.write('Esta línea se añade al principio del archivo.\n')  # Escribir al principio
                         </code>
                       </pre>
-                  </div>
-                </li>
-                <li>
-                  <strong>Escritura de Múltiples Líneas</strong>: Para
-                  escribir múltiples líneas de manera eficiente:
-                  <div class="code-example__syntax">
+                </div>
+              </li>
+              <li>
+                <strong>Escritura de Múltiples Líneas</strong>: Para
+                escribir múltiples líneas de manera eficiente:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Abrir el archivo en modo de escritura
@@ -539,13 +542,13 @@
                               archivo.writelines(lineas)
                         </code>
                       </pre>
-                  </div>
-                </li>
-                <li>
-                  <strong>Escribir Objetos Convertidos a Texto</strong>: Si se
-                  desea guardar datos como listas o diccionarios, estos deben
-                  convertirse en cadenas:
-                  <div class="code-example__syntax">
+                </div>
+              </li>
+              <li>
+                <strong>Escribir Objetos Convertidos a Texto</strong>: Si se
+                desea guardar datos como listas o diccionarios, estos deben
+                convertirse en cadenas:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           datos = {"nombre": "Juan", "edad": 30}
@@ -553,50 +556,50 @@
                               archivo.write(str(datos))
                         </code>
                       </pre>
-                  </div>
-                </li>
-                <li>
-                  <strong>Consideraciones Importantes</strong>:
-                  <ul>
-                    <li>
-                      <span class="fw-bold">Cierre Automático</span>: Aunque
-                      <code class="language-python">close()</code> puede
-                      cerrar el archivo manualmente, se recomienda usar el
-                      bloque <code class="language-python">with</code> para
-                      evitar errores:
-                    </li>
-                    <li>
-                      <span class="fw-bold">Codificación</span>: Si el archivo
-                      contiene caracteres especiales, especifique la
-                      codificación:
-                      <div class="code-example__syntax">
+                </div>
+              </li>
+              <li>
+                <strong>Consideraciones Importantes</strong>:
+                <ul>
+                  <li>
+                    <span class="fw-bold">Cierre Automático</span>: Aunque
+                    <code class="language-python">close()</code> puede
+                    cerrar el archivo manualmente, se recomienda usar el
+                    bloque <code class="language-python">with</code> para
+                    evitar errores:
+                  </li>
+                  <li>
+                    <span class="fw-bold">Codificación</span>: Si el archivo
+                    contiene caracteres especiales, especifique la
+                    codificación:
+                    <div class="code-example__syntax">
                         <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               with open("archivo.txt", "w", encoding="utf-8") as archivo:
                               archivo.write("Texto con caracteres especiales: ñ, á, é.\n")
                             </code>
                           </pre>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="fw-bold">Mover puntero</span>: El método
-                      <code class="language-python">seek</code> se utiliza
-                      para mover el puntero del archivo a una posición
-                      específica.
-                      <code class="language-python">archivo.seek(0)</code>
-                      mueve el puntero al principio del archivo, y
-                      <code class="language-python">archivo.seek(0, 2)</code>
-                      mueve el puntero al final del archivo.
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <p><strong>Ejemplo Completo</strong>:</p>
-              <p>
-                Aquí se tiene un ejemplo completo que muestra cómo usar estos
-                modos:
-              </p>
-              <div class="code-example__syntax">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Mover puntero</span>: El método
+                    <code class="language-python">seek</code> se utiliza
+                    para mover el puntero del archivo a una posición
+                    específica.
+                    <code class="language-python">archivo.seek(0)</code>
+                    mueve el puntero al principio del archivo, y
+                    <code class="language-python">archivo.seek(0, 2)</code>
+                    mueve el puntero al final del archivo.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <p><strong>Ejemplo Completo</strong>:</p>
+            <p>
+              Aquí se tiene un ejemplo completo que muestra cómo usar estos
+              modos:
+            </p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       # Escribir en el archivo (sobrescribir si existe)
@@ -619,80 +622,82 @@
                           archivo.write('Nueva Línea 2\n')
                     </code>
                   </pre>
-              </div>
             </div>
-            <!-- Escritura en Archivos Fin -->
-            <!-- Cerrar archivos -->
-            <div id="cerrar-archivos" class="mt-5">
-              <h2>Cerrar archivos - <code class="language-python">close</code></h2>
-              <p>
-                Después de haber terminado de trabajar con un archivo, es
-                recomendable cerrarlo utilizando el método
-                <code class="language-python">close()</code>. Esto libera los
-                recursos asociados al archivo, pero si se usa la sentencia
-                <code class="language-python">with</code> es innecesario.
-              </p>
-              <div class="code-example__syntax">
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Escritura en Archivos Fin -->
+          <!-- Cerrar archivos -->
+          <div id="cerrar-archivos" class="mt-3">
+            <h2>Cerrar archivos - <code class="language-python">close</code></h2>
+            <p>
+              Después de haber terminado de trabajar con un archivo, es
+              recomendable cerrarlo utilizando el método
+              <code class="language-python">close()</code>. Esto libera los
+              recursos asociados al archivo, pero si se usa la sentencia
+              <code class="language-python">with</code> es innecesario.
+            </p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       file.close()
                     </code>
                   </pre>
-              </div>
             </div>
-            <!-- Cerrar archivos Fin -->
-            <!-- Manejo de Excepciones -->
-            <div id="manejo-de-excepciones" class="mt-5">
-              <h2>Manejo de Excepciones</h2>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Cerrar archivos Fin -->
+          <!-- Manejo de Excepciones -->
+          <div id="manejo-de-excepciones" class="mt-3">
+            <h2>Manejo de Excepciones</h2>
+            <p>
+              El manejo de excepciones en Python es fundamental para
+              trabajar con archivos, ya que permite gestionar errores
+              comunes que pueden surgir, como archivos inexistentes,
+              permisos insuficientes o problemas de lectura/escritura. A
+              continuación, se describe cómo se implementa el manejo de
+              excepciones en este contexto, incluyendo ejemplos prácticos.
+            </p>
+            <!-- Principales Excepciones Relacionadas con Archivos -->
+            <div>
+              <h3>Principales Excepciones Relacionadas con Archivos</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold"><code class="language-python">FileNotFoundError</code></span>: Ocurre cuando
+                  el archivo no existe.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">PermissionError</code></span>: Surge si no se
+                  tienen permisos para acceder al archivo.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">IsADirectoryError</code></span>: Se lanza cuando
+                  se intenta abrir un directorio como si
+                  fuera un archivo.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">IOError</code></span>: Generalmente ocurre con
+                  problemas generales de
+                  entrada/salida.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">EOFError</code></span>: Se lanza cuando se
+                  intenta leer más allá del final del
+                  archivo.
+                </li>
+              </ul>
+            </div>
+            <!-- Principales Excepciones Relacionadas con Archivos fin -->
+            <!-- Estructura Básica con Manejo de Excepciones -->
+            <div>
+              <h3>Estructura Básica con Manejo de Excepciones</h3>
               <p>
-                El manejo de excepciones en Python es fundamental para
-                trabajar con archivos, ya que permite gestionar errores
-                comunes que pueden surgir, como archivos inexistentes,
-                permisos insuficientes o problemas de lectura/escritura. A
-                continuación, se describe cómo se implementa el manejo de
-                excepciones en este contexto, incluyendo ejemplos prácticos.
+                El manejo de excepciones se realiza mediante bloques
+                <code class="language-python">try</code>,
+                <code class="language-python">except</code>,
+                <code class="language-python">else</code>, y
+                <code class="language-python">finally</code>:
               </p>
-              <!-- Principales Excepciones Relacionadas con Archivos -->
-              <div>
-                <h3>Principales Excepciones Relacionadas con Archivos</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">FileNotFoundError</code></span>: Ocurre cuando
-                    el archivo no existe.
-                  </li>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">PermissionError</code></span>: Surge si no se
-                    tienen permisos para acceder al archivo.
-                  </li>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">IsADirectoryError</code></span>: Se lanza cuando
-                    se intenta abrir un directorio como si
-                    fuera un archivo.
-                  </li>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">IOError</code></span>: Generalmente ocurre con
-                    problemas generales de
-                    entrada/salida.
-                  </li>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">EOFError</code></span>: Se lanza cuando se
-                    intenta leer más allá del final del
-                    archivo.
-                  </li>
-                </ul>
-              </div>
-              <!-- Principales Excepciones Relacionadas con Archivos fin -->
-              <!-- Estructura Básica con Manejo de Excepciones -->
-              <div>
-                <h3>Estructura Básica con Manejo de Excepciones</h3>
-                <p>
-                  El manejo de excepciones se realiza mediante bloques
-                  <code class="language-python">try</code>,
-                  <code class="language-python">except</code>,
-                  <code class="language-python">else</code>, y
-                  <code class="language-python">finally</code>:
-                </p>
-                <div class="code-example__syntax">
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         try:
@@ -714,16 +719,16 @@
                             print("Operación de archivo finalizada.")
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Estructura Básica con Manejo de Excepciones fin -->
-              <!-- Ejemplos Prácticos -->
-              <div>
-                <h3>Ejemplos Prácticos</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Leer un archivo con manejo de errores</span>:
-                    <div class="code-example__syntax">
+            </div>
+            <!-- Estructura Básica con Manejo de Excepciones fin -->
+            <!-- Ejemplos Prácticos -->
+            <div>
+              <h3>Ejemplos Prácticos</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Leer un archivo con manejo de errores</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             try:
@@ -736,11 +741,11 @@
                                 print("Ocurrió un error al intentar leer el archivo.")
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Escribir en un archivo con validación de permisos</span>:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Escribir en un archivo con validación de permisos</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             try:
@@ -754,12 +759,12 @@
                                 print("El archivo se escribió correctamente.")
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Gestionar múltiples errores en lectura y
-                      escritura</span>:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Gestionar múltiples errores en lectura y
+                    escritura</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             try:
@@ -776,43 +781,43 @@
                                 print("Proceso completado, con o sin errores.")
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- Ejemplos Prácticos fin -->
-              <!-- Buenas Prácticas -->
-              <div>
-                <h3>Buenas Prácticas</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Uso de <code class="language-python">with</code></span>: Este manejador
-                    asegura que los archivos se cierren
-                    automáticamente, incluso si ocurre una excepción.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Captura específica antes de
-                      <code class="language-python">Exception</code></span>: Siempre es mejor capturar excepciones
-                    específicas
-                    primero y usar
-                    <code class="language-python">Exception</code> al final
-                    como un caso general.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Evitar manejo de excepciones genéricas si no es
-                      necesario</span>: Esto ayuda a identificar problemas de manera más clara.
-                  </li>
-                </ul>
-              </div>
-              <!-- Buenas Prácticas fin -->
-              <!-- Errores Personalizados -->
-              <div>
-                <h3>Errores Personalizados</h3>
-                <p>
-                  Se pueden lanzar errores personalizados si se desea realizar
-                  validaciones adicionales:
-                </p>
-                <div class="code-example__syntax">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Ejemplos Prácticos fin -->
+            <!-- Buenas Prácticas -->
+            <div>
+              <h3>Buenas Prácticas</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Uso de <code class="language-python">with</code></span>: Este manejador
+                  asegura que los archivos se cierren
+                  automáticamente, incluso si ocurre una excepción.
+                </li>
+                <li>
+                  <span class="fw-bold">Captura específica antes de
+                    <code class="language-python">Exception</code></span>: Siempre es mejor capturar excepciones
+                  específicas
+                  primero y usar
+                  <code class="language-python">Exception</code> al final
+                  como un caso general.
+                </li>
+                <li>
+                  <span class="fw-bold">Evitar manejo de excepciones genéricas si no es
+                    necesario</span>: Esto ayuda a identificar problemas de manera más clara.
+                </li>
+              </ul>
+            </div>
+            <!-- Buenas Prácticas fin -->
+            <!-- Errores Personalizados -->
+            <div>
+              <h3>Errores Personalizados</h3>
+              <p>
+                Se pueden lanzar errores personalizados si se desea realizar
+                validaciones adicionales:
+              </p>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         try:
@@ -827,26 +832,27 @@
                             print(f"Error inesperado: {e}")
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Errores Personalizados fin -->
             </div>
-            <!-- Manejo de Excepciones Fin -->
-            <!-- Uso de la Declaración with -->
-            <div id="uso-de-la-declaracion-with" class="mt-5">
-              <h2>Uso de la Declaración <code class="language-python">with</code></h2>
-              <p>
-                La declaración <code class="language-python">with</code> en
-                Python es una forma elegante y segura de trabajar con
-                archivos. Se utiliza para manejar automáticamente la apertura
-                y el cierre de un archivo, asegurando que el archivo se cierre
-                correctamente incluso si ocurre un error durante su uso. Esto
-                es especialmente útil para evitar fugas de recursos.
-              </p>
-              <!-- Sintaxis Básica de with -->
-              <div>
-                <h3>Sintaxis Básica de <code class="language-python">with</code></h3>
-                <div class="code-example__syntax">
+            <!-- Errores Personalizados fin -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Manejo de Excepciones Fin -->
+          <!-- Uso de la Declaración with -->
+          <div id="uso-de-la-declaracion-with" class="mt-3">
+            <h2>Uso de la Declaración <code class="language-python">with</code></h2>
+            <p>
+              La declaración <code class="language-python">with</code> en
+              Python es una forma elegante y segura de trabajar con
+              archivos. Se utiliza para manejar automáticamente la apertura
+              y el cierre de un archivo, asegurando que el archivo se cierre
+              correctamente incluso si ocurre un error durante su uso. Esto
+              es especialmente útil para evitar fugas de recursos.
+            </p>
+            <!-- Sintaxis Básica de with -->
+            <div>
+              <h3>Sintaxis Básica de <code class="language-python">with</code></h3>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         with open('archivo.txt', 'modo') as variable:
@@ -854,48 +860,48 @@
                             contenido = variable.read()
                       </code>
                     </pre>
-                </div>
-                <p><strong>Cómo funciona</strong>:</p>
-                <ul>
-                  <li>
-                    <code class="language-python">open</code> abre el archivo
-                    en el modo especificado.
-                  </li>
-                  <li>
-                    La declaración
-                    <code class="language-python">with</code> crea un contexto
-                    donde el archivo está abierto y lo asigna a una variable.
-                  </li>
-                  <li>
-                    Una vez que se completa el bloque de código indentado, el
-                    archivo se cierra automáticamente, incluso si ocurre una
-                    excepción.
-                  </li>
-                </ul>
               </div>
-              <!-- Sintaxis Básica de with fin -->
-              <!-- Ventajas del Uso de with -->
-              <div>
-                <h3>Ventajas del Uso de <code class="language-python">with</code></h3>
-                <ul>
-                  <li>
-                    El archivo se cierra automáticamente al salir del bloque
-                    <code class="language-python">with</code>.
-                  </li>
-                  <li>Hace que el código sea más legible y limpio.</li>
-                  <li>
-                    Evita errores relacionados con olvidar cerrar archivos.
-                  </li>
-                </ul>
-              </div>
-              <!-- Ventajas del Uso de with fin -->
-              <!-- Ejemplos Prácticos de with -->
-              <div>
-                <h3>Ejemplos Prácticos de <code class="language-python">with</code></h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Leer un archivo</span>:
-                    <div class="code-example__syntax">
+              <p><strong>Cómo funciona</strong>:</p>
+              <ul>
+                <li>
+                  <code class="language-python">open</code> abre el archivo
+                  en el modo especificado.
+                </li>
+                <li>
+                  La declaración
+                  <code class="language-python">with</code> crea un contexto
+                  donde el archivo está abierto y lo asigna a una variable.
+                </li>
+                <li>
+                  Una vez que se completa el bloque de código indentado, el
+                  archivo se cierra automáticamente, incluso si ocurre una
+                  excepción.
+                </li>
+              </ul>
+            </div>
+            <!-- Sintaxis Básica de with fin -->
+            <!-- Ventajas del Uso de with -->
+            <div>
+              <h3>Ventajas del Uso de <code class="language-python">with</code></h3>
+              <ul>
+                <li>
+                  El archivo se cierra automáticamente al salir del bloque
+                  <code class="language-python">with</code>.
+                </li>
+                <li>Hace que el código sea más legible y limpio.</li>
+                <li>
+                  Evita errores relacionados con olvidar cerrar archivos.
+                </li>
+              </ul>
+            </div>
+            <!-- Ventajas del Uso de with fin -->
+            <!-- Ejemplos Prácticos de with -->
+            <div>
+              <h3>Ejemplos Prácticos de <code class="language-python">with</code></h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Leer un archivo</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             with open('archivo.txt', 'r') as archivo:
@@ -904,11 +910,11 @@
                             # El archivo se cierra automáticamente aquí
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Escribir en un archivo</span>:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Escribir en un archivo</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             with open('archivo.txt', 'w') as archivo:
@@ -916,11 +922,11 @@
                             # El archivo se cierra automáticamente aquí
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Añadir contenido a un archivo</span>:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Añadir contenido a un archivo</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             with open('archivo.txt', 'a') as archivo:
@@ -928,11 +934,11 @@
                             # El archivo se cierra automáticamente aquí
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Leer un archivo línea por línea</span>:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Leer un archivo línea por línea</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             with open('archivo.txt', 'r') as archivo:
@@ -941,14 +947,14 @@
                             # El archivo se cierra automáticamente aquí
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- Ejemplos Prácticos de with fin -->
+                  </div>
+                </li>
+              </ul>
             </div>
-            <!-- Uso de la Declaración with Fin -->
+            <!-- Ejemplos Prácticos de with fin -->
           </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Uso de la Declaración with Fin -->
         </article>
         <!--  Manejo de Archivos en Python  -->
         <!--  comentarios  -->

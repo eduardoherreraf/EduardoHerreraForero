@@ -89,7 +89,8 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">ARTÍCULOS</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link"
+              href="index.html#blog">ARTÍCULOS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -113,10 +114,12 @@
         <!--  Introducción a las Funciones en Python  -->
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
-          <div>
-            <header>
-              <h1>Introducción a las Funciones en Python</h1>
-            </header>
+          <header>
+            <h1>Introducción a las Funciones en Python</h1>
+          </header>
+          <!-- Introducción a las Funciones -->
+          <div id="introduccionALasFunciones" class="mt-3">
+            <h2>Introducción a las Funciones</h2>
             <div class="site-image site-intro-image">
               <figure>
                 <img src="https://i.ibb.co/k3h1xsy/funciones.jpg" class="img-fluid"
@@ -126,33 +129,31 @@
                 </figcaption>
               </figure>
             </div>
-            <!-- Introducción a las Funciones -->
-            <div id="introduccionALasFunciones" class="mt-5">
-              <h2>Introducción a las Funciones</h2>
-              <p>
-                Las funciones son uno de los pilares fundamentales de la
-                programación en Python. Permiten organizar el código, hacerlo
-                más legible y reutilizable, lo que facilita el desarrollo y
-                mantenimiento de aplicaciones. En este artículo, exploraremos
-                qué son las funciones, cómo se definen y utilizan en Python,
-                así como algunos conceptos clave relacionados con su uso.
-              </p>
-            </div>
-            <!-- Introducción a las Funciones Fin -->
-            <!-- ¿Qué es una función? -->
-            <div id="que-es-una-funcion" class="mt-5">
-              <h2>¿Qué es una Función?</h2>
-              <p>
-                Una función en Python es un bloque de código reutilizable que
-                encapsula una secuencia de instrucciones para realizar una
-                tarea específica. Actúa como una subrutina que puede ser
-                invocada desde cualquier parte del programa, proporcionando
-                modularidad, abstracción y promoviendo la organización del
-                código.
-              </p>
-              <p>A continuación, se presenta un ejemplo básico:</p>
-              <div class="code-example__syntax">
-                <pre data-src-status="loaded" tabindex="0">
+            <p>
+              Las funciones son uno de los pilares fundamentales de la
+              programación en Python. Permiten organizar el código, hacerlo
+              más legible y reutilizable, lo que facilita el desarrollo y
+              mantenimiento de aplicaciones. En este artículo, exploraremos
+              qué son las funciones, cómo se definen y utilizan en Python,
+              así como algunos conceptos clave relacionados con su uso.
+            </p>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Introducción a las Funciones Fin -->
+          <!-- ¿Qué es una función? -->
+          <div id="que-es-una-funcion" class="mt-3">
+            <h2>¿Qué es una Función?</h2>
+            <p>
+              Una función en Python es un bloque de código reutilizable que
+              encapsula una secuencia de instrucciones para realizar una
+              tarea específica. Actúa como una subrutina que puede ser
+              invocada desde cualquier parte del programa, proporcionando
+              modularidad, abstracción y promoviendo la organización del
+              código.
+            </p>
+            <p>A continuación, se presenta un ejemplo básico:</p>
+            <div class="code-example__syntax">
+              <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       def sumar(a, b):
                       return a + b
@@ -160,60 +161,61 @@
                   print(resultado)  # Salida: 8
                     </code>
                   </pre>
-              </div>
             </div>
-            <!-- ¿Qué es una función? Fin -->
-            <!-- Características de las Funciones -->
-            <div id="caracteristicas-de-las-Funciones" class="mt-5">
-              <h2>Características de las Funciones</h2>
-              <p>Algunas funciones clave de las funciones en Python:</p>
-              <ul>
-                <li>
-                  <span class="fw-bold">Modularización</span>: Las funciones
-                  permiten dividir un programa en partes más pequeñas y
-                  manejables. Cada función puede encargarse de una tarea
-                  específica, lo que hace que el código sea más fácil de
-                  entender y mantener.
-                </li>
-                <li>
-                  <span class="fw-bold">Reutilización</span>: Una vez que una
-                  función está definida, puede ser llamada múltiples veces
-                  desde diferentes partes del programa. Esto evita la
-                  duplicación de código y facilita la reutilización de lógica
-                  común.
-                </li>
-                <li>
-                  <span class="fw-bold">Abstracción</span>: Las funciones
-                  permiten ocultar los detalles de implementación y exponer
-                  solo la interfaz necesaria. Esto ayuda a los desarrolladores
-                  a trabajar con un nivel más alto de abstracción, centrándose
-                  en lo que hace una función en lugar de cómo lo hace.
-                </li>
-                <li>
-                  <span class="fw-bold">Encapsulamiento</span>: Las funciones
-                  pueden encapsular lógica compleja dentro de un bloque de
-                  código, lo que reduce la complejidad del código principal y
-                  mejora la legibilidad.
-                </li>
-                <li>
-                  <span class="fw-bold">Mantenimiento</span>: Al tener el
-                  código organizado en funciones, es más fácil realizar
-                  cambios y actualizaciones. Si una función necesita ser
-                  modificada, solo se debe cambiar en un lugar, y todos los
-                  lugares donde se llama a esa función se beneficiarán
-                  automáticamente de la actualización.
-                </li>
-                <li>
-                  <span class="fw-bold">Pruebas</span>: Las funciones pueden
-                  ser probadas de manera aislada, lo que facilita la
-                  identificación y corrección de errores. Las pruebas
-                  unitarias pueden ser escritas para verificar que cada
-                  función funciona correctamente.
-                </li>
-              </ul>
-            </div>
-            <!-- Características de las Funciones Fin -->
           </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- ¿Qué es una función? Fin -->
+          <!-- Características de las Funciones -->
+          <div id="caracteristicas-de-las-Funciones" class="mt-3">
+            <h2>Características de las Funciones</h2>
+            <p>Algunas funciones clave de las funciones en Python:</p>
+            <ul>
+              <li>
+                <span class="fw-bold">Modularización</span>: Las funciones
+                permiten dividir un programa en partes más pequeñas y
+                manejables. Cada función puede encargarse de una tarea
+                específica, lo que hace que el código sea más fácil de
+                entender y mantener.
+              </li>
+              <li>
+                <span class="fw-bold">Reutilización</span>: Una vez que una
+                función está definida, puede ser llamada múltiples veces
+                desde diferentes partes del programa. Esto evita la
+                duplicación de código y facilita la reutilización de lógica
+                común.
+              </li>
+              <li>
+                <span class="fw-bold">Abstracción</span>: Las funciones
+                permiten ocultar los detalles de implementación y exponer
+                solo la interfaz necesaria. Esto ayuda a los desarrolladores
+                a trabajar con un nivel más alto de abstracción, centrándose
+                en lo que hace una función en lugar de cómo lo hace.
+              </li>
+              <li>
+                <span class="fw-bold">Encapsulamiento</span>: Las funciones
+                pueden encapsular lógica compleja dentro de un bloque de
+                código, lo que reduce la complejidad del código principal y
+                mejora la legibilidad.
+              </li>
+              <li>
+                <span class="fw-bold">Mantenimiento</span>: Al tener el
+                código organizado en funciones, es más fácil realizar
+                cambios y actualizaciones. Si una función necesita ser
+                modificada, solo se debe cambiar en un lugar, y todos los
+                lugares donde se llama a esa función se beneficiarán
+                automáticamente de la actualización.
+              </li>
+              <li>
+                <span class="fw-bold">Pruebas</span>: Las funciones pueden
+                ser probadas de manera aislada, lo que facilita la
+                identificación y corrección de errores. Las pruebas
+                unitarias pueden ser escritas para verificar que cada
+                función funciona correctamente.
+              </li>
+            </ul>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Características de las Funciones Fin -->
         </article>
         <!--  Introducción a las Funciones en Python  -->
 
@@ -269,8 +271,10 @@
           <div class="site-menu">
             <div class="border border-1">
               <div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
-              <div class="site-menu__item"><a href="#que-es-una-funcion" class="site-menu__link">¿Qué es una función?</a></div>
-              <div class="site-menu__item"><a href="#caracteristicas-de-las-Funciones" class="site-menu__link">Características de
+              <div class="site-menu__item"><a href="#que-es-una-funcion" class="site-menu__link">¿Qué es una
+                  función?</a></div>
+              <div class="site-menu__item"><a href="#caracteristicas-de-las-Funciones"
+                  class="site-menu__link">Características de
                   las Funciones</a></div>
               <!-- Comentarios  -->
               <div class="site-menu__item"><a href="#comments" class="site-menu__link">Comentarios</a></div>

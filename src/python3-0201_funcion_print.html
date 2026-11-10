@@ -111,190 +111,193 @@
         <!--  Instrucción print()  -->
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
-          <div>
-            <header>
-              <h1>Introducción al Curso de Python 3 para Principiantes</h1>
-            </header>
-            <!-- Introducción -->
-            <div class="mt-5">
-              <h2>Introducción</h2>
-              <p>
-                El comando <code class="language-python">print()</code> en
-                Python se utiliza para mostrar información en la consola o
-                terminal. Es una de las funciones más básicas y útiles para
-                que los desarrolladores verifiquen el valor de variables,
-                mensajes o resultados de alguna operación.
-              </p>
-              <div class="site-image site-intro-image">
-                <figure class="site-image__figure site-image__figure--intro">
-                  <img src="https://i.ibb.co/PrtL4ks/print.jpg" class="img-fluid" alt="Instrucción print() - Python"
-                    title="Comprendiendo la función print() de Python" />
-                  <figcaption>
-                    Fundamentos de la POO: Excepciones en Python
-                  </figcaption>
-                </figure>
-              </div>
+          <header>
+            <h1>Introducción al Curso de Python 3 para Principiantes</h1>
+          </header>
+          <!-- Introducción -->
+          <div class="mt-3">
+            <h2>Introducción</h2>
+            <div class="site-image site-intro-image mb-5">
+              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                <img loading="lazy" src="https://i.ibb.co/PrtL4ks/print.jpg" class="img-fluid" alt="Instrucción print() - Python"
+                  title="Comprendiendo la función print() de Python" />
+                <figcaption class="site-image__caption">
+                  Fundamentos de la POO: Excepciones en Python
+                </figcaption>
+              </figure>
             </div>
-            <!-- Función Básica -->
-            <div id="funcion-basica" class="mt-5">
-              <h2>Función Básica</h2>
-              <p>
-                La función <code class="language-python">print()</code> toma
-                uno o más argumentos y los muestra en la salida estándar, que
-                por lo general es la consola donde se ejecuta el código. Estos
-                argumentos pueden ser de diferentes tipos de datos, como:
-              </p>
-              <ul>
-                <li>
-                  <span class="fw-bold">Cadenas de texto</span>: Se encierran
-                  entre comillas simples o dobles.
-                </li>
-                <li>
-                  <span class="fw-bold">Números</span>: Enteros, flotantes,
-                  etc.
-                </li>
-                <li>
-                  <span class="fw-bold">Variables</span>: Contienen valores
-                  almacenados previamente.
-                </li>
-                <li>
-                  <span class="fw-bold">Expresiones</span>: Operaciones
-                  matemáticas o lógicas que se evalúan.
-                </li>
-              </ul>
-            </div>
-            <!-- Sintaxis básica -->
-            <div id="sintaxis-basica" class="mt-5">
-              <h2>Sintaxis básica</h2>
-              <div class="code-example__syntax">
+            <p>
+              El comando <code class="language-python">print()</code> en
+              Python se utiliza para mostrar información en la consola o
+              terminal. Es una de las funciones más básicas y útiles para
+              que los desarrolladores verifiquen el valor de variables,
+              mensajes o resultados de alguna operación.
+            </p>
+
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Función Básica -->
+          <div id="funcion-basica" class="mt-3">
+            <h2>Función Básica</h2>
+            <p>
+              La función <code class="language-python">print()</code> toma
+              uno o más argumentos y los muestra en la salida estándar, que
+              por lo general es la consola donde se ejecuta el código. Estos
+              argumentos pueden ser de diferentes tipos de datos, como:
+            </p>
+            <ul>
+              <li>
+                <span class="fw-bold">Cadenas de texto</span>: Se encierran
+                entre comillas simples o dobles.
+              </li>
+              <li>
+                <span class="fw-bold">Números</span>: Enteros, flotantes,
+                etc.
+              </li>
+              <li>
+                <span class="fw-bold">Variables</span>: Contienen valores
+                almacenados previamente.
+              </li>
+              <li>
+                <span class="fw-bold">Expresiones</span>: Operaciones
+                matemáticas o lógicas que se evalúan.
+              </li>
+            </ul>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Sintaxis básica -->
+          <div id="sintaxis-basica" class="mt-3">
+            <h2>Sintaxis básica</h2>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       print(objeto, ..., sep=' ', end='<code>\n</code>', file=sys.stdout, flush=False)
                     </code>
                   </pre>
-              </div>
-              <ul>
-                <li>
-                  <span class="fw-bold">objeto</span>: Es el elemento o los
-                  elementos que se quieren imprimir. Se pueden imprimir
-                  múltiples objetos separándolos por comas.
-                </li>
-                <li>
-                  <span class="fw-bold">sep (opcional)</span>: Especifica el
-                  separador entre los diferentes objetos cuando se imprimen
-                  más de uno. Por defecto, es un espacio&nbsp;'&nbsp; '.
-                </li>
-                <li>
-                  <span class="fw-bold">end (opcional)</span>: Especifica lo
-                  que se imprime al final del print(). Por defecto, es un
-                  salto de línea ('<code>\n</code>'), pero se puede cambiar.
-                </li>
-                <li>
-                  <span class="fw-bold">file (opcional)</span>: Especifica
-                  dónde se envía la salida. El valor por defecto es la consola
-                  (sys.stdout), pero se puede redirigir a un archivo, por
-                  ejemplo.
-                </li>
-                <li>
-                  <span class="fw-bold">flush (opcional)</span>: Indica si se
-                  debe limpiar el búfer de salida inmediatamente. El valor
-                  predeterminado es False.
-                </li>
-                <li>
-                  <span class="fw-bold">Caracteres de escape (opcional)</span>: La barra invertida (\) tiene un
-                  significado muy especial
-                  cuando se usa dentro de cadenas - se llama carácter de
-                  escape.
-                  <br />
-                  La la letra n colocada después de la barra invertida
-                  proviene de la palabra
-                  <span class="fst-italic">newline</span>. Tanto la barra
-                  invertida como n forman un símbolo especial llamado un
-                  carácter de <span class="fst-italic">nuevalínea</span>, que
-                  insta a la consola a iniciar una
-                  <span class="fst-italic">nuevalínea</span> de salida.
-                </li>
-              </ul>
             </div>
-            <!-- Ejemplos -->
-            <div id="ejemplos" class="mt-5">
-              <h2>Ejemplos</h2>
-              <ol>
-                <li>
-                  <span class="fw-bold">Imprimir texto simple</span>:
-                  <div class="code-example__syntax">
+            <ul>
+              <li>
+                <span class="fw-bold">objeto</span>: Es el elemento o los
+                elementos que se quieren imprimir. Se pueden imprimir
+                múltiples objetos separándolos por comas.
+              </li>
+              <li>
+                <span class="fw-bold">sep (opcional)</span>: Especifica el
+                separador entre los diferentes objetos cuando se imprimen
+                más de uno. Por defecto, es un espacio&nbsp;'&nbsp; '.
+              </li>
+              <li>
+                <span class="fw-bold">end (opcional)</span>: Especifica lo
+                que se imprime al final del print(). Por defecto, es un
+                salto de línea ('<code>\n</code>'), pero se puede cambiar.
+              </li>
+              <li>
+                <span class="fw-bold">file (opcional)</span>: Especifica
+                dónde se envía la salida. El valor por defecto es la consola
+                (sys.stdout), pero se puede redirigir a un archivo, por
+                ejemplo.
+              </li>
+              <li>
+                <span class="fw-bold">flush (opcional)</span>: Indica si se
+                debe limpiar el búfer de salida inmediatamente. El valor
+                predeterminado es False.
+              </li>
+              <li>
+                <span class="fw-bold">Caracteres de escape (opcional)</span>: La barra invertida (\) tiene un
+                significado muy especial
+                cuando se usa dentro de cadenas - se llama carácter de
+                escape.
+                <br />
+                La la letra n colocada después de la barra invertida
+                proviene de la palabra
+                <span class="fst-italic">newline</span>. Tanto la barra
+                invertida como n forman un símbolo especial llamado un
+                carácter de <span class="fst-italic">nuevalínea</span>, que
+                insta a la consola a iniciar una
+                <span class="fst-italic">nuevalínea</span> de salida.
+              </li>
+            </ul>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Ejemplos -->
+          <div id="ejemplos" class="mt-3">
+            <h2>Ejemplos</h2>
+            <ol>
+              <li>
+                <span class="fw-bold">Imprimir texto simple</span>:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           print("Hola, mundo!")
                         </code>
                       </pre>
-                  </div>
-                  <p>
-                    Salida:
-                    <span class="text-success fw-bold">Hola, mundo!</span>.
-                  </p>
-                </li>
-                <li>
-                  <span class="fw-bold"></span><span class="fw-bold">Imprimir múltiples objetos</span>:
-                  <div class="code-example__syntax">
+                </div>
+                <p>
+                  Salida:
+                  <span class="text-success fw-bold">Hola, mundo!</span>.
+                </p>
+              </li>
+              <li>
+                <span class="fw-bold"></span><span class="fw-bold">Imprimir múltiples objetos</span>:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           print("Nombre:", "Juan", "Edad:", 25)
                         </code>
                       </pre>
-                  </div>
-                  <p>
-                    Salida:
-                    <span class="text-success fw-bold">Nombre: Juan Edad: 25</span>.
-                  </p>
-                </li>
-                <li>
-                  <span class="fw-bold"></span><span class="fw-bold">Usando separadores personalizados</span>:
-                  <div class="code-example__syntax">
+                </div>
+                <p>
+                  Salida:
+                  <span class="text-success fw-bold">Nombre: Juan Edad: 25</span>.
+                </p>
+              </li>
+              <li>
+                <span class="fw-bold"></span><span class="fw-bold">Usando separadores personalizados</span>:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           print("A", "B", "C", sep="-")
                         </code>
                       </pre>
-                  </div>
-                  <p>
-                    Salida:
-                    <span class="text-success fw-bold">A-B-C</span>.
-                  </p>
-                </li>
-                <li>
-                  <span class="fw-bold">Modificando el valor de end</span>:
-                  <div class="code-example__syntax">
+                </div>
+                <p>
+                  Salida:
+                  <span class="text-success fw-bold">A-B-C</span>.
+                </p>
+              </li>
+              <li>
+                <span class="fw-bold">Modificando el valor de end</span>:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           print("Primera línea", end=" ")
                           print("Segunda línea")
                         </code>
                       </pre>
-                  </div>
-                  <p>
-                    Salida:
-                    <span class="text-success fw-bold">Primera línea Segunda línea</span>.
-                  </p>
-                </li>
-                <li>
-                  <span class="fw-bold"></span><span class="fw-bold">Formateo de cadenas</span>:
-                  <div class="code-example__syntax">
+                </div>
+                <p>
+                  Salida:
+                  <span class="text-success fw-bold">Primera línea Segunda línea</span>.
+                </p>
+              </li>
+              <li>
+                <span class="fw-bold"></span><span class="fw-bold">Formateo de cadenas</span>:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           nombre = "Alice"
                           edad = 30
                           print(f"{nombre} tiene {edad} años")</code>
                         </pre>
-                  </div>
-                  <p>
-                    Salida:
-                    <span class="text-success fw-bold">Alice tiene 30 años</span>.
-                  </p>
-                </li>
-                <li>
-                  <span class="fw-bold"></span><span class="fw-bold">Imprimir variables de diferentes tipos</span>:
-                  <div class="code-example__syntax">
+                </div>
+                <p>
+                  Salida:
+                  <span class="text-success fw-bold">Alice tiene 30 años</span>.
+                </p>
+              </li>
+              <li>
+                <span class="fw-bold"></span><span class="fw-bold">Imprimir variables de diferentes tipos</span>:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           x = 10
@@ -302,32 +305,32 @@
                           z = True
                           print(x, y, z)</code>
                         </pre>
-                  </div>
-                  <p>
-                    Salida:
-                    <span class="text-success fw-bold">10 3.14 True</span>.
-                  </p>
-                </li>
-                <li>
-                  <span class="fw-bold"></span><span class="fw-bold">Redirección a un archivo</span>:
-                  <div class="code-example__syntax">
+                </div>
+                <p>
+                  Salida:
+                  <span class="text-success fw-bold">10 3.14 True</span>.
+                </p>
+              </li>
+              <li>
+                <span class="fw-bold"></span><span class="fw-bold">Redirección a un archivo</span>:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           with open("salida.txt", "w") as f:
                           print("Esto se escribe en un archivo", file=f)</code>
                         </pre>
-                  </div>
-                  <p>
-                    Salida:
-                    <span class="text-success fw-bold">Escribe el texto "Esto se escribe en un archivo" en el
-                      archivo "salida.txt" en lugar de mostrarlo en la
-                      consola</span>.
-                  </p>
-                </li>
-                <li>
-                  <span class="fw-bold"></span><span class="fw-bold">Caracteres de escape y nueva línea en
-                    Python</span>:
-                  <div class="code-example__syntax">
+                </div>
+                <p>
+                  Salida:
+                  <span class="text-success fw-bold">Escribe el texto "Esto se escribe en un archivo" en el
+                    archivo "salida.txt" en lugar de mostrarlo en la
+                    consola</span>.
+                </p>
+              </li>
+              <li>
+                <span class="fw-bold"></span><span class="fw-bold">Caracteres de escape y nueva línea en
+                  Python</span>:
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           print("La Witsi Witsi Araña \n subió a su telaraña.")
@@ -335,57 +338,59 @@
                           print("Vino la lluvia \n y se la llevó.")
                         </code>
                       </pre>
-                  </div>
-                  <p>
-                    Salida: <br />
-                    <span class="text-success fw-bold">La Witsi Witsi Araña <br />
-                      subió a su telaraña.<br />
-                      <br />
-                      Vino la lluvia<br />
-                      y se la llevó.
-                    </span>
-                  </p>
-                </li>
-              </ol>
-            </div>
-            <!-- Usos comunes de print(): -->
-            <div id="usosComunesPrint" class="mt-5">
-              <h2>Usos comunes de print()</h2>
-              <ul>
-                <li>
-                  <span class="fw-bold">Depuración</span>: Verificar el valor
-                  de las variables en diferentes puntos del código.
-                </li>
-                <li>
-                  <span class="fw-bold">Mostrar resultados</span>: Presentar
-                  los resultados de cálculos o procesos.
-                </li>
-                <li>
-                  <span class="fw-bold">Interactuar con el usuario</span>:
-                  Solicitar información o proporcionar mensajes.
-                </li>
-                <li>
-                  <span class="fw-bold">Crear salidas formateadas</span>:
-                  Generar informes o tablas.
-                </li>
-              </ul>
-            </div>
-            <!-- Consideraciones -->
-            <div id="consideraciones" class="mt-5">
-              <h2>Consideraciones</h2>
-              <ul>
-                <li>
-                  Es posible imprimir objetos de diferentes tipos (números,
-                  strings, listas, etc.).
-                </li>
-                <li>
-                  <code class="language-python">print()</code> convierte todos
-                  los argumentos en cadenas de texto (usando
-                  <code>str()</code>) antes de mostrarlos.
-                </li>
-              </ul>
-            </div>
+                </div>
+                <p>
+                  Salida: <br />
+                  <span class="text-success fw-bold">La Witsi Witsi Araña <br />
+                    subió a su telaraña.<br />
+                    <br />
+                    Vino la lluvia<br />
+                    y se la llevó.
+                  </span>
+                </p>
+              </li>
+            </ol>
           </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Usos comunes de print(): -->
+          <div id="usosComunesPrint" class="mt-3">
+            <h2>Usos comunes de print()</h2>
+            <ul>
+              <li>
+                <span class="fw-bold">Depuración</span>: Verificar el valor
+                de las variables en diferentes puntos del código.
+              </li>
+              <li>
+                <span class="fw-bold">Mostrar resultados</span>: Presentar
+                los resultados de cálculos o procesos.
+              </li>
+              <li>
+                <span class="fw-bold">Interactuar con el usuario</span>:
+                Solicitar información o proporcionar mensajes.
+              </li>
+              <li>
+                <span class="fw-bold">Crear salidas formateadas</span>:
+                Generar informes o tablas.
+              </li>
+            </ul>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Consideraciones -->
+          <div id="consideraciones" class="mt-3">
+            <h2>Consideraciones</h2>
+            <ul>
+              <li>
+                Es posible imprimir objetos de diferentes tipos (números,
+                strings, listas, etc.).
+              </li>
+              <li>
+                <code class="language-python">print()</code> convierte todos
+                los argumentos en cadenas de texto (usando
+                <code>str()</code>) antes de mostrarlos.
+              </li>
+            </ul>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
         </article>
         <!--  Instrucción print()  -->
 

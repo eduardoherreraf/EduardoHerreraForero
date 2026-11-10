@@ -120,92 +120,95 @@
         <!--  Ordenando Listas Simples: El Ordenamiento de Burbuja en Python  -->
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
-          <div>
-            <header>
-              <h1>
-                Ordenando Listas Simples: El Ordenamiento de Burbuja en Python
-              </h1>
-            </header>
-            <!-- Introducción -->
-            <div class="mt-5">
-              <h2>Introducción</h2>
-              <p>
-                El ordenamiento de listas es una tarea fundamental en la
-                programación y en la ciencia de la computación. Existen
-                diversos algoritmos de ordenamiento, cada uno con sus propias
-                características y eficiencia. Uno de los algoritmos más
-                conocidos y sencillos es el algoritmo Burbuja (Bubble Sort).
-                Este algoritmo funciona comparando cada par de elementos
-                adyacentes en una lista y, si están en el orden incorrecto,
-                los intercambia. Este proceso se repite hasta que la lista
-                esté completamente ordenada. Aunque no es el más eficiente
-                para listas grandes, el algoritmo Burbuja es fácil de entender
-                y de implementar, lo que lo convierte en una excelente
-                herramienta pedagógica para aprender sobre ordenamiento.
-              </p>
-              <div class="site-image site-intro-image">
-                <figure class="site-image__figure site-image__figure--intro">
-                  <img src="https://i.ibb.co/W51JTWX/burbujas.jpg" class="img-fluid"
-                    alt="Ordenando Listas Simples: El Ordenamiento de Burbuja en Python  "
-                    title="Ordenamiento de Burbuja en Python: Cómo Ordenar Listas Sencillas" />
-                  <figcaption>
-                    Ordenando Listas Simples: El Ordenamiento de Burbuja en
-                    Python
-                  </figcaption>
-                </figure>
-              </div>
+          <header>
+            <h1>
+              Ordenando Listas Simples: El Ordenamiento de Burbuja en Python
+            </h1>
+          </header>
+          <!-- Introducción -->
+          <div class="mt-3">
+            <h2>Introducción</h2>
+            <div class="site-image site-intro-image mb-5">
+              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                <img loading="lazy" src="https://i.ibb.co/W51JTWX/burbujas.jpg" class="img-fluid"
+                  alt="Ordenando Listas Simples: El Ordenamiento de Burbuja en Python  "
+                  title="Ordenamiento de Burbuja en Python: Cómo Ordenar Listas Sencillas" />
+                <figcaption class="site-image__caption">
+                  Ordenando Listas Simples: El Ordenamiento de Burbuja en
+                  Python
+                </figcaption>
+              </figure>
             </div>
+            <p>
+              El ordenamiento de listas es una tarea fundamental en la
+              programación y en la ciencia de la computación. Existen
+              diversos algoritmos de ordenamiento, cada uno con sus propias
+              características y eficiencia. Uno de los algoritmos más
+              conocidos y sencillos es el algoritmo Burbuja (Bubble Sort).
+              Este algoritmo funciona comparando cada par de elementos
+              adyacentes en una lista y, si están en el orden incorrecto,
+              los intercambia. Este proceso se repite hasta que la lista
+              esté completamente ordenada. Aunque no es el más eficiente
+              para listas grandes, el algoritmo Burbuja es fácil de entender
+              y de implementar, lo que lo convierte en una excelente
+              herramienta pedagógica para aprender sobre ordenamiento.
+            </p>
 
-            <!-- ¿Qué es el Ordenamiento de Burbuja? -->
-            <div id="queEsElOrdenamientoDeBurbuja" class="mt-5">
-              <h2>¿Qué es el Ordenamiento de Burbuja?</h2>
-              <p>
-                En Python, el algoritmo Burbuja puede ser implementado de
-                manera sencilla utilizando bucles anidados. El proceso
-                comienza con un bucle externo que recorre todos los elementos
-                de la lista. Dentro de este bucle, un bucle interno compara
-                cada par de elementos adyacentes y los intercambia si están en
-                el orden incorrecto. Este intercambio asegura que, con cada
-                iteración del bucle externo, el elemento más grande de la
-                lista se mueva hacia su posición correcta. A medida que el
-                algoritmo avanza, los elementos más grandes "burbujean" hacia
-                el final de la lista, de ahí su nombre. Aunque su complejidad
-                temporal es O(n2)O(n2), lo que lo hace ineficiente para listas
-                grandes, el algoritmo Burbuja sigue siendo una herramienta
-                valiosa para entender los conceptos básicos de ordenamiento y
-                para resolver problemas de ordenamiento en listas pequeñas
-              </p>
-            </div>
-            <!-- ¿Qué es el Ordenamiento de Burbuja? Fin -->
-            <!-- Funcionamiento del Algoritmo -->
-            <div id="funcionamientodelAlgoritmo" class="mt-5">
-              <h2>Funcionamiento del Algoritmo</h2>
-              <ul>
-                <li>Comienza desde el primer elemento de la lista.</li>
-                <li>Compara el elemento actual con el siguiente.</li>
-                <li>
-                  Si el elemento actual es mayor que el siguiente, se
-                  intercambian.
-                </li>
-                <li>
-                  Se avanza al siguiente par de elementos y se repite el
-                  proceso.
-                </li>
-                <li>
-                  Este proceso se repite para toda la lista, y se hace una
-                  nueva pasada hasta que no se realicen más intercambios.
-                </li>
-              </ul>
-            </div>
-            <!-- Funcionamiento del Algoritmo Fin -->
-            <!-- Implementación en Python -->
-            <div id="implementacionEnPython" class="mt-5">
-              <h2>Implementación en Python</h2>
-              <p>
-                A continuación, se presenta una implementación simple del
-                algoritmo de ordenamiento de burbuja en Python:
-              </p>
-              <div class="code-example__syntax">
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+
+          <!-- ¿Qué es el Ordenamiento de Burbuja? -->
+          <div id="queEsElOrdenamientoDeBurbuja" class="mt-3">
+            <h2>¿Qué es el Ordenamiento de Burbuja?</h2>
+            <p>
+              En Python, el algoritmo Burbuja puede ser implementado de
+              manera sencilla utilizando bucles anidados. El proceso
+              comienza con un bucle externo que recorre todos los elementos
+              de la lista. Dentro de este bucle, un bucle interno compara
+              cada par de elementos adyacentes y los intercambia si están en
+              el orden incorrecto. Este intercambio asegura que, con cada
+              iteración del bucle externo, el elemento más grande de la
+              lista se mueva hacia su posición correcta. A medida que el
+              algoritmo avanza, los elementos más grandes "burbujean" hacia
+              el final de la lista, de ahí su nombre. Aunque su complejidad
+              temporal es O(n2)O(n2), lo que lo hace ineficiente para listas
+              grandes, el algoritmo Burbuja sigue siendo una herramienta
+              valiosa para entender los conceptos básicos de ordenamiento y
+              para resolver problemas de ordenamiento en listas pequeñas
+            </p>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- ¿Qué es el Ordenamiento de Burbuja? Fin -->
+          <!-- Funcionamiento del Algoritmo -->
+          <div id="funcionamientodelAlgoritmo" class="mt-3">
+            <h2>Funcionamiento del Algoritmo</h2>
+            <ul>
+              <li>Comienza desde el primer elemento de la lista.</li>
+              <li>Compara el elemento actual con el siguiente.</li>
+              <li>
+                Si el elemento actual es mayor que el siguiente, se
+                intercambian.
+              </li>
+              <li>
+                Se avanza al siguiente par de elementos y se repite el
+                proceso.
+              </li>
+              <li>
+                Este proceso se repite para toda la lista, y se hace una
+                nueva pasada hasta que no se realicen más intercambios.
+              </li>
+            </ul>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Funcionamiento del Algoritmo Fin -->
+          <!-- Implementación en Python -->
+          <div id="implementacionEnPython" class="mt-3">
+            <h2>Implementación en Python</h2>
+            <p>
+              A continuación, se presenta una implementación simple del
+              algoritmo de ordenamiento de burbuja en Python:
+            </p>
+            <div class="code-example__syntax">
                 <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         def bubble_sort(arr):
@@ -219,131 +222,133 @@
                                         arr[j], arr[j+1] = arr[j+1], arr[j]
                       </code>
                     </pre>
-              </div>
-              <!-- Explicación del código -->
-              <div>
-                <h3>Explicación del código</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Definición de la función
-                      <code class="language-python">bubble_sort</code></span>: La función toma una lista
-                    <code class="language-python">arr</code> como argumento.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Longitud de la lista
-                      <code class="language-python">n = len(arr)</code></span>: obtiene la longitud de la lista
-                  </li>
-                  <li>
-                    <span class="fw-bold">Bucle externo
-                      <code class="language-python">n = len(arr)</code></span>: obtiene la longitud de la lista
-                  </li>
-                  <li>
-                    <span class="fw-bold">Bucle
-                      <i class="fa fa-internet-explorer" aria-hidden="true"></i>
-                      <code class="language-python">for j in range(0, n-i-1)</code></span>: Este bucle se ejecuta desde
-                    el inicio de la lista hasta
-                    <code class="language-python">n-i-1</code>, ya que los
-                    últimos i elementos ya están en su lugar correcto.
-                  </li>
-                  <li>
-                    <span class="fw-bold">Comparación e intercambio</span>:
-                    <ul>
-                      <li>
-                        <span class="fw-bold"><code class="language-python">if arr[j] > arr[j+1]</code></span>: Si el
-                        elemento actual es mayor que el siguiente, se
-                        intercambian.
-                      </li>
-                      <li>
-                        <span class="fw-bold"><code class="language-python">
-                              arr[j], arr[j+1] = arr[j+1], arr[j]</code></span>: Intercambio de elementos.
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <!-- Explicación del código fin -->
             </div>
-            <!-- Implementación en Python Fin -->
-            <!-- Ejemplo de Uso -->
-            <div id="ejemploDeUso" class="mt-5">
-              <h2>Ejemplo de Uso</h2>
+            <!-- Explicación del código -->
+            <div>
+              <h3>Explicación del código</h3>
               <ul>
                 <li>
-                  Se define una lista
-                  <code class="language-python">arr</code> con algunos
-                  elementos:
-                  <code class="language-python">arr = [64, 34, 25, 12, 22, 11, 90]</code>.
+                  <span class="fw-bold">Definición de la función
+                    <code class="language-python">bubble_sort</code></span>: La función toma una lista
+                  <code class="language-python">arr</code> como argumento.
                 </li>
                 <li>
-                  Se imprime la lista original:
-                  <code class="language-python">print("Lista original:", arr)</code>.
+                  <span class="fw-bold">Longitud de la lista
+                    <code class="language-python">n = len(arr)</code></span>: obtiene la longitud de la lista
                 </li>
                 <li>
-                  Se llama a la función
-                  <code class="language-python">bubble_sort</code> para
-                  ordenar la lista:
-                  <code class="language-python">bubble_sort(arr)</code>
+                  <span class="fw-bold">Bucle externo
+                    <code class="language-python">n = len(arr)</code></span>: obtiene la longitud de la lista
                 </li>
                 <li>
-                  Se imprime la lista ordenada:
-                  <code class="language-python">print("Lista ordenada:", arr)</code>
+                  <span class="fw-bold">Bucle
+                    <i class="fa fa-internet-explorer" aria-hidden="true"></i>
+                    <code class="language-python">for j in range(0, n-i-1)</code></span>: Este bucle se ejecuta desde
+                  el inicio de la lista hasta
+                  <code class="language-python">n-i-1</code>, ya que los
+                  últimos i elementos ya están en su lugar correcto.
+                </li>
+                <li>
+                  <span class="fw-bold">Comparación e intercambio</span>:
+                  <ul>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">if arr[j] > arr[j+1]</code></span>: Si el
+                      elemento actual es mayor que el siguiente, se
+                      intercambian.
+                    </li>
+                    <li>
+                      <span class="fw-bold"><code class="language-python">
+                            arr[j], arr[j+1] = arr[j+1], arr[j]</code></span>: Intercambio de elementos.
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </div>
-            <!-- Ejemplo de Uso Fin -->
-            <!-- Método sort() -->
-            <div id="metodoSort" class="mt-5">
-              <h2>Método <code class="language-python">sort()</code></h2>
-              <p>
-                El método <code class="language-python">sort()</code> en
-                Python se utiliza para ordenar los elementos de una lista en
-                su lugar, es decir, modifica la lista original en vez de crear
-                una nueva lista ordenada. Este método es muy útil cuando se
-                necesita mantener la lista original ordenada sin crear copias
-                adicionales.
-              </p>
-              <!-- Sintaxis -->
-              <div>
-                <h3>Sintaxis</h3>
-                <div class="code-example__syntax">
+            <!-- Explicación del código fin -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Implementación en Python Fin -->
+          <!-- Ejemplo de Uso -->
+          <div id="ejemploDeUso" class="mt-3">
+            <h2>Ejemplo de Uso</h2>
+            <ul>
+              <li>
+                Se define una lista
+                <code class="language-python">arr</code> con algunos
+                elementos:
+                <code class="language-python">arr = [64, 34, 25, 12, 22, 11, 90]</code>.
+              </li>
+              <li>
+                Se imprime la lista original:
+                <code class="language-python">print("Lista original:", arr)</code>.
+              </li>
+              <li>
+                Se llama a la función
+                <code class="language-python">bubble_sort</code> para
+                ordenar la lista:
+                <code class="language-python">bubble_sort(arr)</code>
+              </li>
+              <li>
+                Se imprime la lista ordenada:
+                <code class="language-python">print("Lista ordenada:", arr)</code>
+              </li>
+            </ul>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Ejemplo de Uso Fin -->
+          <!-- Método sort() -->
+          <div id="metodoSort" class="mt-3">
+            <h2>Método <code class="language-python">sort()</code></h2>
+            <p>
+              El método <code class="language-python">sort()</code> en
+              Python se utiliza para ordenar los elementos de una lista en
+              su lugar, es decir, modifica la lista original en vez de crear
+              una nueva lista ordenada. Este método es muy útil cuando se
+              necesita mantener la lista original ordenada sin crear copias
+              adicionales.
+            </p>
+            <!-- Sintaxis -->
+            <div>
+              <h3>Sintaxis</h3>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         my_list.sort(key=None, reverse=False)
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Sintaxis fin -->
-              <!-- Parámetros -->
-              <div>
-                <h3>Parámetros</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">key</code></span>: (opcional) Una función que
-                    sirve como clave para el
-                    proceso de ordenación. Por defecto, es
-                    <code class="language-python">None</code>, lo que
-                    significa que los elementos se ordenan en su forma
-                    natural.
-                  </li>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">reverse</code></span>: (opcional) Un valor
-                    booleano que, si es
-                    <code class="language-python">True</code>, ordena la lista
-                    en orden descendente. Por defecto, es
-                    <code class="language-python">False</code>, lo que
-                    significa que la lista se ordena en orden ascendente.
-                  </li>
-                </ul>
-              </div>
-              <!-- Parámetros fin -->
-              <!-- Ejemplos -->
-              <div>
-                <h3>Ejemplos</h3>
-                <ul>
-                  <li>
-                    <span class="fw-bold">Ordenar una lista de números en orden ascendente</span>:
-                    <div class="code-example__syntax">
+            </div>
+            <!-- Sintaxis fin -->
+            <!-- Parámetros -->
+            <div>
+              <h3>Parámetros</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold"><code class="language-python">key</code></span>: (opcional) Una función que
+                  sirve como clave para el
+                  proceso de ordenación. Por defecto, es
+                  <code class="language-python">None</code>, lo que
+                  significa que los elementos se ordenan en su forma
+                  natural.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">reverse</code></span>: (opcional) Un valor
+                  booleano que, si es
+                  <code class="language-python">True</code>, ordena la lista
+                  en orden descendente. Por defecto, es
+                  <code class="language-python">False</code>, lo que
+                  significa que la lista se ordena en orden ascendente.
+                </li>
+              </ul>
+            </div>
+            <!-- Parámetros fin -->
+            <!-- Ejemplos -->
+            <div>
+              <h3>Ejemplos</h3>
+              <ul>
+                <li>
+                  <span class="fw-bold">Ordenar una lista de números en orden ascendente</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
@@ -351,11 +356,11 @@
                             print(my_list)  # Salida: [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Ordenar una lista de números en orden descendente</span>:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Ordenar una lista de números en orden descendente</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
@@ -363,11 +368,11 @@
                             print(my_list)  # Salida: [9, 6, 5, 5, 5, 4, 3, 3, 2, 1, 1]
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="fw-bold">Ordenar una lista de cadenas en orden alfabético</span>:
-                    <div class="code-example__syntax">
+                  </div>
+                </li>
+                <li>
+                  <span class="fw-bold">Ordenar una lista de cadenas en orden alfabético</span>:
+                  <div class="code-example__syntax">
                       <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             my_list = ["banana", "apple", "cherry", "date"]
@@ -375,15 +380,15 @@
                             print(my_list)  # Salida: ['apple', 'banana', 'cherry', 'date']
                           </code>
                         </pre>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- Ejemplos fin -->
+                  </div>
+                </li>
+              </ul>
             </div>
-
-            <!-- Método sort() Fin -->
+            <!-- Ejemplos fin -->
           </div>
+          <hr class="site-divider--subtle site-divider" />
+
+          <!-- Método sort() Fin -->
         </article>
         <!--  Ordenando Listas Simples: El Ordenamiento de Burbuja en Python  -->
 

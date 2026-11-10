@@ -117,69 +117,70 @@
         <!--  Operadores de Comparación y Lógicos en Python -->
         <article class="row border-1 border-bottom pb-3" data-bs-spy="scroll" data-bs-target="#list-example"
           data-bs-smooth-scroll="true">
-          <div>
-            <header>
-              <h1>Operadores de Comparación y Lógicos en Python</h1>
-            </header>
-            <!-- Introducción -->
-            <div class="mt-5">
-              <h2>Introducción</h2>
-              <p>
-                En este artículo se explorarán los operadores de comparación y
-                lógicos en Python, elementos fundamentales para realizar
-                evaluaciones y tomar decisiones en los programas. Los
-                operadores de comparación permiten comparar valores y devolver
-                un resultado booleano (<code class="language-python">True</code>
-                o <code class="language-python">False</code>), mientras que
-                los operadores lógicos (and, or, not) permiten combinar o
-                modificar estas condiciones booleanas. Ambos tipos de
-                operadores son esenciales en estructuras de control como las
-                condicionales y los bucles. A lo largo del documento, se
-                analizará cada operador en detalle, incluyendo su sintaxis y
-                ejemplos prácticos de uso, demostrando cómo se pueden utilizar
-                tanto de manera individual como combinada para crear
-                condiciones más complejas y precisas.
-              </p>
-              <div class="site-image site-intro-image">
-                <figure class="site-image__figure site-image__figure--intro">
-                  <img src="https://i.ibb.co/smDQ3Dw/comparadorescomparacionylogicos.jpg" class="img-fluid"
-                    alt="Operadores de Comparación y de Lógica en Python"
-                    title="En este artículo explicará los seis operadores de comparación y los tres operadores de Lógica que tiene Python" />
-                  <figcaption>
-                    Operadores de Comparación y de Lógica en Python
-                  </figcaption>
-                </figure>
-              </div>
+          <header>
+            <h1>Operadores de Comparación y Lógicos en Python</h1>
+          </header>
+          <!-- Introducción -->
+          <div class="mt-3">
+            <h2>Introducción</h2>
+            <div class="site-image site-intro-image mb-5">
+              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                <img loading="lazy" src="https://i.ibb.co/smDQ3Dw/comparadorescomparacionylogicos.jpg" class="img-fluid"
+                  alt="Operadores de Comparación y de Lógica en Python"
+                  title="En este artículo explicará los seis operadores de comparación y los tres operadores de Lógica que tiene Python" />
+                <figcaption class="site-image__caption">
+                  Operadores de Comparación y de Lógica en Python
+                </figcaption>
+              </figure>
             </div>
-            <!-- Operadores de Comparación en Python -->
-            <div id="operadores-de-comparacion" class="mt-5">
-              <h2>Operadores de Comparación en Python</h2>
-              Los operadores de comparación son símbolos o palabras reservadas
-              en Python que permiten evaluar la relación entre dos valores.
-              Son particularmente útiles en expresiones condicionales, donde
-              se toma una decisión basada en la veracidad o falsedad de una
-              condición.
-              <!-- Tipos de Operadores de Comparación en Python -->
-              <div id="tiposdeOperadoresdeComparacion" class="mt-5">
-                <h3 class="mt-1">
-                  Tipos de Operadores de Comparación en Python
-                </h3>
+            <p>
+              En este artículo se explorarán los operadores de comparación y
+              lógicos en Python, elementos fundamentales para realizar
+              evaluaciones y tomar decisiones en los programas. Los
+              operadores de comparación permiten comparar valores y devolver
+              un resultado booleano (<code class="language-python">True</code>
+              o <code class="language-python">False</code>), mientras que
+              los operadores lógicos (and, or, not) permiten combinar o
+              modificar estas condiciones booleanas. Ambos tipos de
+              operadores son esenciales en estructuras de control como las
+              condicionales y los bucles. A lo largo del documento, se
+              analizará cada operador en detalle, incluyendo su sintaxis y
+              ejemplos prácticos de uso, demostrando cómo se pueden utilizar
+              tanto de manera individual como combinada para crear
+              condiciones más complejas y precisas.
+            </p>
+
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Operadores de Comparación en Python -->
+          <div id="operadores-de-comparacion" class="mt-3">
+            <h2>Operadores de Comparación en Python</h2>
+            Los operadores de comparación son símbolos o palabras reservadas
+            en Python que permiten evaluar la relación entre dos valores.
+            Son particularmente útiles en expresiones condicionales, donde
+            se toma una decisión basada en la veracidad o falsedad de una
+            condición.
+            <!-- Tipos de Operadores de Comparación en Python -->
+            <div id="tiposdeOperadoresdeComparacion" class="mt-3">
+              <h3 class="mt-1">
+                Tipos de Operadores de Comparación en Python
+              </h3>
+              <p>
+                Python ofrece varios operadores de comparación que cubren
+                las relaciones más comunes entre valores. A continuación, se
+                detallan estos operadores y su uso:
+              </p>
+              <!-- Igualdad ==) -->
+              <div id="igualdadd">
+                <h4>Igualdad (==)</h4>
                 <p>
-                  Python ofrece varios operadores de comparación que cubren
-                  las relaciones más comunes entre valores. A continuación, se
-                  detallan estos operadores y su uso:
+                  Este operador compara si dos valores son iguales. Devuelve
+                  <code class="language-python">True</code> si ambos valores
+                  son idénticos y
+                  <code class="language-python">False</code> en caso
+                  contrario.
                 </p>
-                <!-- Igualdad ==) -->
-                <div id="igualdadd">
-                  <h4>Igualdad (==)</h4>
-                  <p>
-                    Este operador compara si dos valores son iguales. Devuelve
-                    <code class="language-python">True</code> si ambos valores
-                    son idénticos y
-                    <code class="language-python">False</code> en caso
-                    contrario.
-                  </p>
-                  <div class="code-example__syntax">
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           a = 5
@@ -187,19 +188,19 @@
                           resultado = (a == b)  # True
                         </code>
                       </pre>
-                  </div>
                 </div>
-                <!-- Igualdad ==) fin -->
-                <!-- Desigualdad>!=) -->
-                <div id="desigualdads">
-                  <h4>Desigualdad (!=)</h4>
-                  <p>
-                    Se utiliza para verificar si dos valores son diferentes.
-                    Retorna <code class="language-python">True</code> si los
-                    valores no son iguales y
-                    <code class="language-python">False</code> si lo son.
-                  </p>
-                  <div class="code-example__syntax">
+              </div>
+              <!-- Igualdad ==) fin -->
+              <!-- Desigualdad>!=) -->
+              <div id="desigualdads">
+                <h4>Desigualdad (!=)</h4>
+                <p>
+                  Se utiliza para verificar si dos valores son diferentes.
+                  Retorna <code class="language-python">True</code> si los
+                  valores no son iguales y
+                  <code class="language-python">False</code> si lo son.
+                </p>
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           a = 5
@@ -207,17 +208,17 @@
                           resultado = (a != b)  # True
                         </code>
                       </pre>
-                  </div>
                 </div>
-                <!-- Desigualdad (>!=) fin -->
-                <!-- Mayor que (>) -->
-                <div id="mayorQues">
-                  <h4>Mayor que (>)</h4>
-                  <p>
-                    Comprueba si el valor a la izquierda es mayor que el valor
-                    a la derecha.
-                  </p>
-                  <div class="code-example__syntax">
+              </div>
+              <!-- Desigualdad (>!=) fin -->
+              <!-- Mayor que (>) -->
+              <div id="mayorQues">
+                <h4>Mayor que (>)</h4>
+                <p>
+                  Comprueba si el valor a la izquierda es mayor que el valor
+                  a la derecha.
+                </p>
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           a = 5
@@ -225,17 +226,17 @@
                           resultado = (a > b)  # True
                         </code>
                       </pre>
-                  </div>
                 </div>
-                <!-- Mayor que (>) fin -->
-                <!-- Menor que (<) -->
-                <div id="menorQues">
-                  <h4>Menor que (&lt;)</h4>
-                  <p>
-                    Evalúa si el valor a la izquierda es menor que el valor a
-                    la derecha.
-                  </p>
-                  <div class="code-example__syntax">
+              </div>
+              <!-- Mayor que (>) fin -->
+              <!-- Menor que (<) -->
+              <div id="menorQues">
+                <h4>Menor que (&lt;)</h4>
+                <p>
+                  Evalúa si el valor a la izquierda es menor que el valor a
+                  la derecha.
+                </p>
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           a = 5
@@ -243,18 +244,18 @@
                           resultado = (a &lt; b)  # True
                         </code>
                       </pre>
-                  </div>
                 </div>
-                <!-- Menor que (<) fin -->
-                <!-- Mayor o igual que (>=) -->
-                <div id="MayorOIgualQues">
-                  <h4>Mayor o igual que (>=)</h4>
-                  <p>
-                    Este operador devuelve
-                    <code class="language-python">True</code> si el valor a la
-                    izquierda es mayor o igual al valor a la derecha.
-                  </p>
-                  <div class="code-example__syntax">
+              </div>
+              <!-- Menor que (<) fin -->
+              <!-- Mayor o igual que (>=) -->
+              <div id="MayorOIgualQues">
+                <h4>Mayor o igual que (>=)</h4>
+                <p>
+                  Este operador devuelve
+                  <code class="language-python">True</code> si el valor a la
+                  izquierda es mayor o igual al valor a la derecha.
+                </p>
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           a = 5
@@ -262,17 +263,17 @@
                           resultado = (a >= b)  # True
                         </code>
                       </pre>
-                  </div>
                 </div>
-                <!-- Mayor o igual que (>=) fin -->
-                <!-- Menor o igual que (<=) -->
-                <div id="MenoroIgualQues">
-                  <h4>Menor o igual que (&lt;=)</h4>
-                  <p>
-                    Verifica si el valor a la izquierda es menor o igual al
-                    valor a la derecha.
-                  </p>
-                  <div class="code-example__syntax">
+              </div>
+              <!-- Mayor o igual que (>=) fin -->
+              <!-- Menor o igual que (<=) -->
+              <div id="MenoroIgualQues">
+                <h4>Menor o igual que (&lt;=)</h4>
+                <p>
+                  Verifica si el valor a la izquierda es menor o igual al
+                  valor a la derecha.
+                </p>
+                <div class="code-example__syntax">
                     <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           a = 4
@@ -280,50 +281,51 @@
                           resultado = (a &lt;= b)  # True
                         </code>
                       </pre>
-                  </div>
                 </div>
-                <!-- Menor o igual que (<=) fin -->
               </div>
-              <!-- Tipos de Operadores de Comparación en Python Fin -->
+              <!-- Menor o igual que (<=) fin -->
             </div>
-            <!-- Operadores de Comparación en Python Fin -->
-            <!-- Operadores Lógicos -->
-            <div id="operadores-logicos" class="mt-5">
-              <h2>Operadores Lógicos en Python</h2>
+            <!-- Tipos de Operadores de Comparación en Python Fin -->
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Operadores de Comparación en Python Fin -->
+          <!-- Operadores Lógicos -->
+          <div id="operadores-logicos" class="mt-3">
+            <h2>Operadores Lógicos en Python</h2>
+            <p>
+              Los operadores lógicos en Python son herramientas esenciales
+              que el programador puede utilizar para combinar y manipular
+              valores booleanos. Estos operadores permiten al desarrollador
+              crear expresiones lógicas complejas mediante la combinación de
+              múltiples condiciones.
+            </p>
+            <!-- Tipos de Operadores Lógicos en Python -->
+            <div id="TiposdeOperadoresLogicosEnPythons">
+              <h3>Tipos de Operadores Lógicos en Python</h3>
               <p>
-                Los operadores lógicos en Python son herramientas esenciales
-                que el programador puede utilizar para combinar y manipular
-                valores booleanos. Estos operadores permiten al desarrollador
-                crear expresiones lógicas complejas mediante la combinación de
-                múltiples condiciones.
+                Python incorpora un conjunto de operadores lógicos que
+                permiten manipular y evaluar expresiones booleanas. A
+                continuación, se exploran estos operadores y su
+                implementación:
               </p>
-              <!-- Tipos de Operadores Lógicos en Python -->
-              <div id="TiposdeOperadoresLogicosEnPythons">
-                <h3>Tipos de Operadores Lógicos en Python</h3>
-                <p>
-                  Python incorpora un conjunto de operadores lógicos que
-                  permiten manipular y evaluar expresiones booleanas. A
-                  continuación, se exploran estos operadores y su
-                  implementación:
-                </p>
-                <ul>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">and</code></span>: Devuelve <code
-                      class="language-python">True</code> si
-                    ambas condiciones son verdaderas.
-                  </li>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">or</code></span>: Devuelve <code
-                      class="language-python">True</code> si
-                    al menos una de las condiciones es verdadera.
-                  </li>
-                  <li>
-                    <span class="fw-bold"><code class="language-python">not</code></span>: Invierte el valor de verdad
-                    de una condición.
-                  </li>
-                </ul>
-                <h4>Ejemplo de Uso</h4>
-                <div class="code-example__syntax">
+              <ul>
+                <li>
+                  <span class="fw-bold"><code class="language-python">and</code></span>: Devuelve <code
+                    class="language-python">True</code> si
+                  ambas condiciones son verdaderas.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">or</code></span>: Devuelve <code
+                    class="language-python">True</code> si
+                  al menos una de las condiciones es verdadera.
+                </li>
+                <li>
+                  <span class="fw-bold"><code class="language-python">not</code></span>: Invierte el valor de verdad
+                  de una condición.
+                </li>
+              </ul>
+              <h4>Ejemplo de Uso</h4>
+              <div class="code-example__syntax">
                   <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         x = 5
@@ -333,36 +335,37 @@
                         print(not (x &lt; 10))      # False
                       </code>
                     </pre>
-                </div>
               </div>
-              <!-- Tipos de Operadores Lógicos en Python fin -->
             </div>
-            <!-- Operadores Lógicos Fin -->
-            <!-- Prioridad de los Operadores de Comparación y Lógicos -->
-            <div id="prioridad-de-los-operadores-de-comparacion-y-logicos" class="mt-5">
-              <h2>
-                Prioridad de los Operadores de Comparación y Lógicos
-              </h2>
-              <p>
-                En Python, la prioridad de los operadores de comparación
-                determina el orden en el que se evalúan dentro de una
-                expresión, especialmente cuando están combinados con otros
-                operadores. La prioridad es importante para evitar resultados
-                inesperados en expresiones complejas. En general, los
-                operadores de comparación tienen una prioridad menor que los
-                operadores aritméticos y los operadores lógicos (<code class="language-python">and</code>, <code
-                  class="language-python">or</code>,
-                <code class="language-python">not</code>), pero mayor que los
-                operadores de asignación.
-              </p>
-              <p>
-                Los operadores de comparación en Python tienen la misma
-                prioridad entre sí y se evalúan de izquierda a derecha, sucede
-                lo mismo con los operadores lógicos.
-              </p>
-            </div>
-            <!-- Prioridad de los Operadores de Comparación y Lógicos Fin -->
+            <!-- Tipos de Operadores Lógicos en Python fin -->
           </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Operadores Lógicos Fin -->
+          <!-- Prioridad de los Operadores de Comparación y Lógicos -->
+          <div id="prioridad-de-los-operadores-de-comparacion-y-logicos" class="mt-3">
+            <h2>
+              Prioridad de los Operadores de Comparación y Lógicos
+            </h2>
+            <p>
+              En Python, la prioridad de los operadores de comparación
+              determina el orden en el que se evalúan dentro de una
+              expresión, especialmente cuando están combinados con otros
+              operadores. La prioridad es importante para evitar resultados
+              inesperados en expresiones complejas. En general, los
+              operadores de comparación tienen una prioridad menor que los
+              operadores aritméticos y los operadores lógicos (<code class="language-python">and</code>, <code
+                class="language-python">or</code>,
+              <code class="language-python">not</code>), pero mayor que los
+              operadores de asignación.
+            </p>
+            <p>
+              Los operadores de comparación en Python tienen la misma
+              prioridad entre sí y se evalúan de izquierda a derecha, sucede
+              lo mismo con los operadores lógicos.
+            </p>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+          <!-- Prioridad de los Operadores de Comparación y Lógicos Fin -->
         </article>
         <!--  Operadores de Comparación y Lógicos en Python - fIn -->
 
