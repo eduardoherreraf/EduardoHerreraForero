@@ -1,102 +1,102 @@
  El volumen de la unidad C no tiene etiqueta.
- El n£mero de serie del volumen es: 3857-399C
+ El nï¿½mero de serie del volumen es: 3857-399C
 
  Directorio de C:\Users\PC\Downloads\Repos\PlantillaMiPagina\src
 
-12/09/2025  05:15 p.ÿm.            30.179 bootstrap-0001-instalacion_de_bootstrap_v5_con_npm_y_vite.html
-12/09/2025  05:14 p.ÿm.            29.432 bootstrap-0002-instalacion_de_bootstrap_v5_con_npm_y_parcel.html
-12/09/2025  04:45 p.ÿm.            10.813 bootstrap.html
-12/09/2025  03:38 p.ÿm.            48.120 chatgpt-0001_como_aprender_cualquier_habilidad_facilmente_con_chatgpt.html
-11/09/2025  08:58 p.ÿm.            10.647 chatgpt.html
-12/09/2025  03:38 p.ÿm.            20.052 cursoPython3-0101_introduccion.html
-12/09/2025  03:38 p.ÿm.            23.746 cursoPython3-0102_instalacion_de_python_localmente.html
-12/09/2025  07:53 p.ÿm.            27.710 cursoPython3-0201_funcion_print.html
-14/09/2025  12:56 p.ÿm.            37.117 cursoPython3-0202_literales.html
-14/09/2025  02:18 p.ÿm.            40.778 cursoPython3-0203_operadores.html
-12/09/2025  08:25 p.ÿm.            30.134 cursoPython3-0204_variables.html
-14/09/2025  02:26 p.ÿm.            33.141 cursoPython3-0205_comentarios.html
-12/09/2025  08:46 p.ÿm.            34.949 cursoPython3-0206_interaccion_con_el_usuario.html
-12/09/2025  08:53 p.ÿm.            27.491 cursoPython3-0301_operadores_de_comparacion_y_logicos_en_python.html
-13/09/2025  10:07 p.ÿm.            24.110 cursoPython3-0302_sentencia_if_de_control_de_flujo.html
-14/09/2025  02:33 p.ÿm.            35.730 cursoPython3-0303_bucles_en_python_una_guia_completa.html
-12/09/2025  09:31 p.ÿm.            23.746 cursoPython3-0304_operadores_logicos_y_operaciones_bit_a_bit_en_python.html
-14/09/2025  02:46 p.ÿm.            61.464 cursoPython3-0305_listas.html
-14/09/2025  02:49 p.ÿm.            29.259 cursoPython3-0306_ordenamiento_de_listas_metodo_burbuja.html
-14/09/2025  02:51 p.ÿm.            79.833 cursoPython3-0307_operaciones_con_listas.html
-13/09/2025  08:35 p.ÿm.            19.375 cursoPython3-0401_introduccion_funciones.html
-13/09/2025  09:06 p.ÿm.            42.133 cursoPython3-0402_como_las_funciones_se_comunican_con_su_entorno.html
-13/09/2025  08:32 p.ÿm.            41.417 cursoPython3-0403_retorno_de_valores_en_funciones.html
-13/09/2025  09:14 p.ÿm.            51.752 cursoPython3-0404_el_alcance_de_las_variables.html
-13/09/2025  09:33 p.ÿm.            39.755 cursoPython3-0405_tuplas_y_diccionarios.html
-13/09/2025  03:57 p.ÿm.            34.069 cursoPython3-0501_introduccion_a_los_modulos.html
-13/09/2025  04:03 p.ÿm.            31.814 cursoPython3-0502_importacion_de_modulos.html
-13/09/2025  04:13 p.ÿm.            63.292 cursoPython3-0503_modulos_especializados_de_python-matematico_aleatorio_y_de_sistema.html
-13/09/2025  04:18 p.ÿm.            59.060 cursoPython3-0504_modulos_y_paquetes.html
-13/09/2025  04:53 p.ÿm.            56.756 cursoPython3-0505_instalador_de_paquetes_pip.html
-13/09/2025  05:04 p.ÿm.            62.758 cursoPython3-0601_la_naturaleza_de_las_cadenas.html
-13/09/2025  05:21 p.ÿm.           103.960 cursoPython3-0602_errores-el_pan_diario_del_programador.html
-13/09/2025  05:53 p.ÿm.            65.620 cursoPython3-0701_los_fundamentos_de_la_POO.html
-13/09/2025  05:58 p.ÿm.            46.449 cursoPython3-0702_comparando_paradigmas_programacion_procedimental_y_orientada_a_objetos.html
-13/09/2025  06:04 p.ÿm.            40.659 cursoPython3-0703_POO_propiedades.html
-13/09/2025  06:54 p.ÿm.            89.719 cursoPython3-0704_POO_metodos.html
-13/09/2025  07:17 p.ÿm.            68.310 cursoPython3-0705_POO_herencia.html
-13/09/2025  07:28 p.ÿm.            35.798 cursoPython3-0706_POO_excepciones.html
-13/09/2025  07:41 p.ÿm.            79.388 cursoPython3-0801_iteradores,_generadores_y_cierres.html
-13/09/2025  07:58 p.ÿm.            57.869 cursoPython3-0802_manejo_de_archivos.html
-13/09/2025  08:03 p.ÿm.            35.533 cursoPython3-0803_el_modulo_os_interactuando_con_el_sistema_operativo.html
-13/09/2025  08:16 p.ÿm.            46.345 cursoPython3-0804_modulo_datetime_funciones_para_manejo_de_la_hora_y_la_fecha.html
-13/09/2025  08:22 p.ÿm.            33.891 cursoPython3-0805_modulo_calendar_trabajando_con_funciones_relacionadas_con_el_calendario.html
-11/09/2025  08:58 p.ÿm.            26.588 cursoPython3.html
-12/09/2025  06:10 p.ÿm.            18.589 git-0001_como_eliminar_el_ultimo_commit_de_git.html
-12/09/2025  07:16 p.ÿm.            68.205 git-0002_comandos_basicos_de_consola-terminal_cli_para_windows.html
-12/09/2025  05:30 p.ÿm.            23.814 git-0003_introduccion_de_git_para_windows.html
-12/09/2025  07:24 p.ÿm.            34.436 git-0004_configuracion_inicial_git.html
-12/09/2025  07:21 p.ÿm.            26.920 git-0005_reiniciar_repositorio_en_git-github.html
-11/09/2025  08:58 p.ÿm.            12.180 git.html
-12/09/2025  03:38 p.ÿm.            55.388 html-0001_introduccion_html.html
-12/09/2025  03:38 p.ÿm.            31.377 html-0002_estructura_del_documento_html.html
-12/09/2025  03:38 p.ÿm.            76.396 html-0003_encabezado_html.html
-11/09/2025  08:58 p.ÿm.            14.923 html-0004_cuerpo_aria.html
-11/09/2025  08:58 p.ÿm.             8.297 html-0004_cuerpo_article_html.html
-11/09/2025  08:58 p.ÿm.            12.165 html-0004_cuerpo_aside_html.html
-11/09/2025  08:58 p.ÿm.            10.077 html-0004_cuerpo_footer_html.html
-12/09/2025  03:38 p.ÿm.           547.320 html-0004_cuerpo_html.html
-11/09/2025  08:58 p.ÿm.            13.923 html-0004_cuerpo_semantico.html
-12/09/2025  03:38 p.ÿm.            96.462 html-0005_etiquetas_genericas.html
-12/09/2025  03:38 p.ÿm.            90.979 html-0006_Etiquetas_de_texto.html
-12/09/2025  08:40 p.ÿm.           269.989 html-0007_formato_de_texto.html
-12/09/2025  03:38 p.ÿm.           135.909 html-0008_listas.html
-12/09/2025  03:38 p.ÿm.            43.166 html-0009_tablas.html
-12/09/2025  08:40 p.ÿm.           118.570 html-0010_imagenes_y_multimedia.html
-12/09/2025  03:38 p.ÿm.            88.737 html-0011_enlaces_y_hipervinculos.html
-12/09/2025  03:38 p.ÿm.           470.927 html-0012_formularios.html
-12/09/2025  03:38 p.ÿm.            80.363 html-0013_citas_y_referencias.html
-12/09/2025  03:38 p.ÿm.            57.169 html-0014_elementos_incrustados.html
-12/09/2025  03:38 p.ÿm.            55.067 html-0015_etiquetas_de_programacion_y_script.html
-11/09/2025  08:58 p.ÿm.             4.615 html-0015_etiquetas_de_programacion_y_script_template.html
-11/09/2025  08:58 p.ÿm.            16.267 html.html
-12/09/2025  08:40 p.ÿm.            47.919 index.html
-12/09/2025  03:38 p.ÿm.            40.537 javascript-0001_configurar_el_entorno_de_trabajo_javascript.html
-12/09/2025  03:38 p.ÿm.            48.667 javascript-0002_como_ejecutar_un_codigo_javascript.html
-11/09/2025  08:58 p.ÿm.            10.985 javascript.html
-12/09/2025  03:38 p.ÿm.            29.641 otrosTemas-0001_como_borrar_la_cache_y_archivos_basura_en_windows.html
-11/09/2025  08:58 p.ÿm.            10.615 otrosTemas.html
-12/09/2025  03:38 p.ÿm.            24.208 photoshop-0001_comenzando_un_proyecto.html
-12/09/2025  03:38 p.ÿm.            41.132 photoshop-0002_interfaz_y_area_de_trabajo.html
-12/09/2025  03:38 p.ÿm.            21.037 photoshop-0003_compartir_y_editar_archivos.html
-15/09/2025  10:12 a.ÿm.            24.829 photoshop-0004_ajuste_lienzo_resolucion.html
-12/09/2025  03:38 p.ÿm.            44.628 photoshop-0005_trabajo_con_capas.html
-12/09/2025  03:38 p.ÿm.            49.385 photoshop-0006_ajuste_tono_brillo_y_saturacion.html
-12/09/2025  03:38 p.ÿm.            43.305 photoshop-0007_herramientas_de_seleccion.html
-12/09/2025  03:38 p.ÿm.            53.764 photoshop-0008_agregar_y_quitar_objetos.html
-12/09/2025  03:38 p.ÿm.            29.937 photoshop-0009_uso_de_pinceles.html
-12/09/2025  03:38 p.ÿm.            50.523 photoshop-0010_color_y_degradados.html
-12/09/2025  03:38 p.ÿm.            35.705 photoshop-0011_textos.html
-12/09/2025  03:38 p.ÿm.            84.450 photoshop-0012_formas_y_capas.html
-12/09/2025  03:38 p.ÿm.            31.015 photoshop-0013_filtros.html
-15/09/2025  10:06 a.ÿm.            24.585 photoshop-0014_filtros_neurales.html
-12/09/2025  03:38 p.ÿm.            34.632 photoshop-0015_filtros_licuar.html
-12/09/2025  03:38 p.ÿm.            25.477 photoshop-0016_metadatos_y_exportacion.html
-11/09/2025  08:58 p.ÿm.            15.867 photoshop.html
+12/09/2025  05:15 p.ï¿½m.            30.179 bootstrap-0001-instalacion_de_bootstrap_v5_con_npm_y_vite.html
+12/09/2025  05:14 p.ï¿½m.            29.432 bootstrap-0002-instalacion_de_bootstrap_v5_con_npm_y_parcel.html
+12/09/2025  04:45 p.ï¿½m.            10.813 bootstrap.html
+12/09/2025  03:38 p.ï¿½m.            48.120 chatgpt-0001_como_aprender_cualquier_habilidad_facilmente_con_chatgpt.html
+11/09/2025  08:58 p.ï¿½m.            10.647 chatgpt.html
+12/09/2025  03:38 p.ï¿½m.            20.05python3n3-0101_introduccion.html
+12/09/2025  03:38 p.ï¿½m.            23.74python3n3-0102_instalacion_de_python_localmente.html
+12/09/2025  07:53 p.ï¿½m.            27.71python3n3-0201_funcion_print.html
+14/09/2025  12:56 p.ï¿½m.            37.11python3n3-0202_literales.html
+14/09/2025  02:18 p.ï¿½m.            40.77python3n3-0203_operadores.html
+12/09/2025  08:25 p.ï¿½m.            30.13python3n3-0204_variables.html
+14/09/2025  02:26 p.ï¿½m.            33.14python3n3-0205_comentarios.html
+12/09/2025  08:46 p.ï¿½m.            34.94python3n3-0206_interaccion_con_el_usuario.html
+12/09/2025  08:53 p.ï¿½m.            27.49python3n3-0301_operadores_de_comparacion_y_logicos_en_python.html
+13/09/2025  10:07 p.ï¿½m.            24.11python3n3-0302_sentencia_if_de_control_de_flujo.html
+14/09/2025  02:33 p.ï¿½m.            35.73python3n3-0303_bucles_en_python_una_guia_completa.html
+12/09/2025  09:31 p.ï¿½m.            23.74python3n3-0304_operadores_logicos_y_operaciones_bit_a_bit_en_python.html
+14/09/2025  02:46 p.ï¿½m.            61.46python3n3-0305_listas.html
+14/09/2025  02:49 p.ï¿½m.            29.25python3n3-0306_ordenamiento_de_listas_metodo_burbuja.html
+14/09/2025  02:51 p.ï¿½m.            79.83python3n3-0307_operaciones_con_listas.html
+13/09/2025  08:35 p.ï¿½m.            19.37python3n3-0401_introduccion_funciones.html
+13/09/2025  09:06 p.ï¿½m.            42.13python3n3-0402_como_las_funciones_se_comunican_con_su_entorno.html
+13/09/2025  08:32 p.ï¿½m.            41.41python3n3-0403_retorno_de_valores_en_funciones.html
+13/09/2025  09:14 p.ï¿½m.            51.75python3n3-0404_el_alcance_de_las_variables.html
+13/09/2025  09:33 p.ï¿½m.            39.75python3n3-0405_tuplas_y_diccionarios.html
+13/09/2025  03:57 p.ï¿½m.            34.06python3n3-0501_introduccion_a_los_modulos.html
+13/09/2025  04:03 p.ï¿½m.            31.81python3n3-0502_importacion_de_modulos.html
+13/09/2025  04:13 p.ï¿½m.            63.29python3n3-0503_modulos_especializados_de_python-matematico_aleatorio_y_de_sistema.html
+13/09/2025  04:18 p.ï¿½m.            59.06python3n3-0504_modulos_y_paquetes.html
+13/09/2025  04:53 p.ï¿½m.            56.75python3n3-0505_instalador_de_paquetes_pip.html
+13/09/2025  05:04 p.ï¿½m.            62.75python3n3-0601_la_naturaleza_de_las_cadenas.html
+13/09/2025  05:21 p.ï¿½m.           103.96python3n3-0602_errores-el_pan_diario_del_programador.html
+13/09/2025  05:53 p.ï¿½m.            65.62python3n3-0701_los_fundamentos_de_la_POO.html
+13/09/2025  05:58 p.ï¿½m.            46.44python3n3-0702_comparando_paradigmas_programacion_procedimental_y_orientada_a_objetos.html
+13/09/2025  06:04 p.ï¿½m.            40.65python3n3-0703_POO_propiedades.html
+13/09/2025  06:54 p.ï¿½m.            89.71python3n3-0704_POO_metodos.html
+13/09/2025  07:17 p.ï¿½m.            68.31python3n3-0705_POO_herencia.html
+13/09/2025  07:28 p.ï¿½m.            35.79python3n3-0706_POO_excepciones.html
+13/09/2025  07:41 p.ï¿½m.            79.38python3n3-0801_iteradores,_generadores_y_cierres.html
+13/09/2025  07:58 p.ï¿½m.            57.86python3n3-0802_manejo_de_archivos.html
+13/09/2025  08:03 p.ï¿½m.            35.53python3n3-0803_el_modulo_os_interactuando_con_el_sistema_operativo.html
+13/09/2025  08:16 p.ï¿½m.            46.34python3n3-0804_modulo_datetime_funciones_para_manejo_de_la_hora_y_la_fecha.html
+13/09/2025  08:22 p.ï¿½m.            33.89python3n3-0805_modulo_calendar_trabajando_con_funciones_relacionadas_con_el_calendario.html
+11/09/2025  08:58 p.ï¿½m.            26.58python3n3.html
+12/09/2025  06:10 p.ï¿½m.            18.589 git-0001_como_eliminar_el_ultimo_commit_de_git.html
+12/09/2025  07:16 p.ï¿½m.            68.205 git-0002_comandos_basicos_de_consola-terminal_cli_para_windows.html
+12/09/2025  05:30 p.ï¿½m.            23.814 git-0003_introduccion_de_git_para_windows.html
+12/09/2025  07:24 p.ï¿½m.            34.436 git-0004_configuracion_inicial_git.html
+12/09/2025  07:21 p.ï¿½m.            26.920 git-0005_reiniciar_repositorio_en_git-github.html
+11/09/2025  08:58 p.ï¿½m.            12.180 git.html
+12/09/2025  03:38 p.ï¿½m.            55.388 html-0001_introduccion_html.html
+12/09/2025  03:38 p.ï¿½m.            31.377 html-0002_estructura_del_documento_html.html
+12/09/2025  03:38 p.ï¿½m.            76.396 html-0003_encabezado_html.html
+11/09/2025  08:58 p.ï¿½m.            14.923 html-0004_cuerpo_aria.html
+11/09/2025  08:58 p.ï¿½m.             8.297 html-0004_cuerpo_article_html.html
+11/09/2025  08:58 p.ï¿½m.            12.165 html-0004_cuerpo_aside_html.html
+11/09/2025  08:58 p.ï¿½m.            10.077 html-0004_cuerpo_footer_html.html
+12/09/2025  03:38 p.ï¿½m.           547.320 html-0004_cuerpo_html.html
+11/09/2025  08:58 p.ï¿½m.            13.923 html-0004_cuerpo_semantico.html
+12/09/2025  03:38 p.ï¿½m.            96.462 html-0005_etiquetas_genericas.html
+12/09/2025  03:38 p.ï¿½m.            90.979 html-0006_Etiquetas_de_texto.html
+12/09/2025  08:40 p.ï¿½m.           269.989 html-0007_formato_de_texto.html
+12/09/2025  03:38 p.ï¿½m.           135.909 html-0008_listas.html
+12/09/2025  03:38 p.ï¿½m.            43.166 html-0009_tablas.html
+12/09/2025  08:40 p.ï¿½m.           118.570 html-0010_imagenes_y_multimedia.html
+12/09/2025  03:38 p.ï¿½m.            88.737 html-0011_enlaces_y_hipervinculos.html
+12/09/2025  03:38 p.ï¿½m.           470.927 html-0012_formularios.html
+12/09/2025  03:38 p.ï¿½m.            80.363 html-0013_citas_y_referencias.html
+12/09/2025  03:38 p.ï¿½m.            57.169 html-0014_elementos_incrustados.html
+12/09/2025  03:38 p.ï¿½m.            55.067 html-0015_etiquetas_de_programacion_y_script.html
+11/09/2025  08:58 p.ï¿½m.             4.615 html-0015_etiquetas_de_programacion_y_script_template.html
+11/09/2025  08:58 p.ï¿½m.            16.267 html.html
+12/09/2025  08:40 p.ï¿½m.            47.919 index.html
+12/09/2025  03:38 p.ï¿½m.            40.537 javascript-0001_configurar_el_entorno_de_trabajo_javascript.html
+12/09/2025  03:38 p.ï¿½m.            48.667 javascript-0002_como_ejecutar_un_codigo_javascript.html
+11/09/2025  08:58 p.ï¿½m.            10.985 javascript.html
+12/09/2025  03:38 p.ï¿½m.            29.641 otrosTemas-0001_como_borrar_la_cache_y_archivos_basura_en_windows.html
+11/09/2025  08:58 p.ï¿½m.            10.615 otrosTemas.html
+12/09/2025  03:38 p.ï¿½m.            24.208 photoshop-0001_comenzando_un_proyecto.html
+12/09/2025  03:38 p.ï¿½m.            41.132 photoshop-0002_interfaz_y_area_de_trabajo.html
+12/09/2025  03:38 p.ï¿½m.            21.037 photoshop-0003_compartir_y_editar_archivos.html
+15/09/2025  10:12 a.ï¿½m.            24.829 photoshop-0004_ajuste_lienzo_resolucion.html
+12/09/2025  03:38 p.ï¿½m.            44.628 photoshop-0005_trabajo_con_capas.html
+12/09/2025  03:38 p.ï¿½m.            49.385 photoshop-0006_ajuste_tono_brillo_y_saturacion.html
+12/09/2025  03:38 p.ï¿½m.            43.305 photoshop-0007_herramientas_de_seleccion.html
+12/09/2025  03:38 p.ï¿½m.            53.764 photoshop-0008_agregar_y_quitar_objetos.html
+12/09/2025  03:38 p.ï¿½m.            29.937 photoshop-0009_uso_de_pinceles.html
+12/09/2025  03:38 p.ï¿½m.            50.523 photoshop-0010_color_y_degradados.html
+12/09/2025  03:38 p.ï¿½m.            35.705 photoshop-0011_textos.html
+12/09/2025  03:38 p.ï¿½m.            84.450 photoshop-0012_formas_y_capas.html
+12/09/2025  03:38 p.ï¿½m.            31.015 photoshop-0013_filtros.html
+15/09/2025  10:06 a.ï¿½m.            24.585 photoshop-0014_filtros_neurales.html
+12/09/2025  03:38 p.ï¿½m.            34.632 photoshop-0015_filtros_licuar.html
+12/09/2025  03:38 p.ï¿½m.            25.477 photoshop-0016_metadatos_y_exportacion.html
+11/09/2025  08:58 p.ï¿½m.            15.867 photoshop.html
               95 archivos      5.195.834 bytes
                0 dirs  115.899.609.088 bytes libres
