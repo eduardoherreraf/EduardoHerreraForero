@@ -87,7 +87,8 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">ARTÍCULOS</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link"
+              href="index.html#blog">ARTÍCULOS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -119,22 +120,21 @@
             <h2>Introducción</h2>
             <div class="site-image site-intro-image mb-5">
               <figure class="site-content__img-container site-image__figure site-image__figure--intro">
-                <img loading="lazy" src="https://i.ibb.co/bLSTRV0/poometodos.jpg" class="img-fluid" alt="POO: Métodos en Python  "
-                  title="Comprendiendo los Métodos en Python" />
+                <img loading="lazy" src="https://i.ibb.co/bLSTRV0/poometodos.jpg" class="img-fluid"
+                  alt="Instalación de Python" title="Comprendiendo los Métodos en Python" />
                 <figcaption class="site-image__caption">POO: Métodos en Python</figcaption>
               </figure>
             </div>
             <p>
-              Este documento se analiza en detalle los mecanismos de
-              interacción entre clases, los principios de encapsulamiento y
-              los diferentes tipos de herencia. El objetivo es comprender
-              cómo los objetos se comunican, se transforman y gestionan su
-              estado interno, revelando la complejidad y elegancia de la
+              Este documento se analiza en detalle los mecanismos de interacción entre clases, los principios de
+              encapsulamiento y los diferentes tipos de herencia. El objetivo es comprender cómo los objetos se
+              comunican, se transforman y gestionan su estado interno, revelando la complejidad y elegancia de la
               programación orientada a objetos.
             </p>
 
           </div>
           <hr class="site-divider--subtle site-divider" />
+
           <!-- Métodos al Detalle -->
           <div id="metodos-al-detalle" class="mt-3">
             <h2>Métodos al Detalle</h2>
@@ -170,7 +170,7 @@
                     <code class="language-python">self</code> para leer o
                     modificar los atributos que pertenecen a la instancia.
                     <div class="code-example__syntax">
-                        <pre data-src-status="loaded" tabindex="0">
+                      <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             class Persona:
                                 def __init__(self, nombre, edad):
@@ -188,7 +188,7 @@
                     permite invocar otros métodos de la clase dentro de un
                     método.
                     <div class="code-example__syntax">
-                        <pre data-src-status="loaded" tabindex="0">
+                      <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               class Calculadora:
                                   def suma(self, a, b):
@@ -205,7 +205,7 @@
                     permite distinguir entre las variables locales dentro de
                     un método y los atributos de la instancia.
                     <div class="code-example__syntax">
-                        <pre data-src-status="loaded" tabindex="0">
+                      <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               class Producto:
                                   def __init__(self, precio):
@@ -221,7 +221,7 @@
                     únicos a cada
                     instancia de la clase.
                     <div class="code-example__syntax">
-                        <pre data-src-status="loaded" tabindex="0">
+                      <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               class Vehiculo:
                                   def __init__(self, marca, modelo):
@@ -294,7 +294,7 @@
               <div>
                 <h4>Sintaxis de un Constructor</h4>
                 <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+                  <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class ClaseEjemplo:
                           def __init__(self, parametro1, parametro2):
@@ -322,7 +322,7 @@
               <div>
                 <h4>Ejemplo Práctico</h4>
                 <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+                  <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class Persona:
                       def __init__(self, nombre, edad):
@@ -350,7 +350,7 @@
                   <code class="language-python">self</code>:
                 </p>
                 <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+                  <pre data-src-status="loaded" tabindex="0">
                     <code class="language-python" data-prismjs-copy="Copy">
                       class Ejemplo:
                       def __init__(self):
@@ -371,7 +371,7 @@
                     tener valores por defecto, lo
                     que permite crear objetos con parámetros opcionales.
                     <div class="code-example__syntax">
-                        <pre data-src-status="loaded" tabindex="0">
+                      <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               class Persona:
                               def __init__(self, nombre="Anónimo", edad=0):
@@ -392,7 +392,7 @@
                     del método
                     <code class="language-python">__init__</code>.
                     <div class="code-example__syntax">
-                        <pre data-src-status="loaded" tabindex="0">
+                      <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               class Persona:
                                   def __init__(self, nombre=None):
@@ -430,7 +430,7 @@
                 asigna automáticamente.
               </p>
               <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         class Classy:
                         def method(self):
@@ -509,7 +509,7 @@
                 correspondientes para esos parámetros. Ejemplo:
               </p>
               <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         class Ejemplo:
                         def saludo(self, nombre):
@@ -533,7 +533,7 @@
                     <li>Agregar otros parámetros según sea necesario.</li>
                   </ul>
                   <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             def metodo(self, param1, param2):
                                 # Código del método
@@ -546,7 +546,7 @@
                   Proporcionar los valores correspondientes a los parámetros
                   adicionales al llamar al método.
                   <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             obj.metodo(valor1, valor2)
                           </code>
@@ -558,7 +558,7 @@
                   en los
                   parámetros para hacerlos opcionales.
                   <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-python" data-prismjs-copy="Copy">
                             def metodo(self, param1="valor_por_defecto"):
                                 print(param1)
@@ -651,7 +651,7 @@
                     <code class="language-python">__dict__</code> por
                     defecto, a menos que se declare explícitamente.
                     <div class="code-example__syntax">
-                        <pre data-src-status="loaded" tabindex="0">
+                      <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               class Persona:
                                   __slots__ = ['nombre', 'edad']
@@ -684,7 +684,7 @@
                   de las instancias.
                 </p>
                 <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           class Animal:
                               especie = "Mamífero"
@@ -745,7 +745,7 @@
                   estructura:
                 </p>
                 <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                               if __name__ == "__main__":
                               # Código que solo se ejecutará si este archivo se ejecuta directamente
@@ -788,7 +788,7 @@
                   siguiente contenido:
                 </p>
                 <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           def saludar():
                               print("Hola desde utilidades!")
@@ -804,7 +804,7 @@
                   directamente, se verá:
                 </p>
                 <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           Ejecutando utilidades.py directamente
                           Hola desde utilidades!
@@ -816,7 +816,7 @@
                   ejemplo, con:
                 </p>
                 <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           import utilidades
                           utilidades.saludar()
@@ -825,7 +825,7 @@
                 </div>
                 <p>El resultado será únicamente:</p>
                 <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           Hola desde utilidades!
                         </code>
@@ -873,7 +873,7 @@
                 </ul>
                 <p>Ejemplo:</p>
                 <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           x = 10
                           y = "Hola"
@@ -912,7 +912,7 @@
                   </li>
                 </ul>
                 <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Crear una clase llamada MiClase con un método saludar
                           MiClase = type('MiClase', (object,), {'saludar': lambda self: "Hola, soy una clase dinámica"})
@@ -953,7 +953,7 @@
                   específico o de una subclase de dicho tipo:
                 </p>
                 <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           print(isinstance(10, int))  # Salida: True
                         </code>
@@ -990,7 +990,7 @@
                   </li>
                 </ul>
                 <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           class MiClase:
                               pass
@@ -1017,7 +1017,7 @@
                     clase, especialmente en proyectos grandes o cuando se
                     importan clases desde otros módulos.
                     <div class="code-example__syntax">
-                        <pre data-src-status="loaded" tabindex="0">
+                      <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               # archivo_modulo.py
                               class ClaseExterna:
@@ -1046,7 +1046,7 @@
                     objeto pertenece a
                     un módulo específico.
                     <div class="code-example__syntax">
-                        <pre data-src-status="loaded" tabindex="0">
+                      <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               def pertenece_a_modulo(objeto, modulo):
                               return objeto.__class__.__module__ == modulo
@@ -1142,7 +1142,7 @@
               <div>
                 <h4>Ejemplo Práctico de Uso de __main__</h4>
                 <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Archivo modulo.py
                           def funcion_util():
@@ -1160,7 +1160,7 @@
                     <li>
                       <span class="fw-bold">Si se ejecuta directamente</span>:
                       <div class="code-example__syntax">
-                          <pre data-src-status="loaded" tabindex="0">
+                        <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 python modulo.py
                                 """
@@ -1174,7 +1174,7 @@
                     <li>
                       <span class="fw-bold">Si se importa en otro script</span>:
                       <div class="code-example__syntax">
-                          <pre data-src-status="loaded" tabindex="0">
+                        <pre data-src-status="loaded" tabindex="0">
                               <code class="language-python" data-prismjs-copy="Copy">
                                 import modulo
                                 modulo.funcion_util()
@@ -1275,7 +1275,7 @@
               <div>
                 <h4>Ejemplo de Uso</h4>
                 <div class="code-example__syntax">
-                    <pre data-src-status="loaded" tabindex="0">
+                  <pre data-src-status="loaded" tabindex="0">
                         <code class="language-python" data-prismjs-copy="Copy">
                           # Definición de algunas clases
                           class A:
@@ -1322,7 +1322,7 @@
                   <li>
                     <span class="fw-bold">Verificar la herencia en un programa</span>:
                     <div class="code-example__syntax">
-                        <pre data-src-status="loaded" tabindex="0">
+                      <pre data-src-status="loaded" tabindex="0">
                             <code class="language-python" data-prismjs-copy="Copy">
                               # Crear un código que verifique si una clase tiene una clase base específica
                               class Animal:
@@ -1400,7 +1400,7 @@
               </ul>
               <p>Ejemplo:</p>
               <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         class Persona:
                             nombre = "Juan"
@@ -1479,7 +1479,7 @@
               </ul>
               <p>Ejemplo:</p>
               <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-python" data-prismjs-copy="Copy">
                         import inspect
                         def ejemplo_funcion(param):
@@ -1606,8 +1606,10 @@
           <div class="site-menu">
             <div class="border border-1">
               <div class="site-menu__item"><a href="#introduccion" class="site-menu__link">Introducción</a></div>
-              <div class="site-menu__item"><a href="#metodos-al-detalle" class="site-menu__link">Métodos al Detalle</a></div>
-              <div class="site-menu__item"><a href="#la-vida-al-interior-de-las-clases-y-objetos" class="site-menu__link">La Vida
+              <div class="site-menu__item"><a href="#metodos-al-detalle" class="site-menu__link">Métodos al Detalle</a>
+              </div>
+              <div class="site-menu__item"><a href="#la-vida-al-interior-de-las-clases-y-objetos"
+                  class="site-menu__link">La Vida
                   al Interior de las Clases y Objetos</a></div>
               <div class="site-menu__item"><a href="#reflexion-e-introspeccion" class="site-menu__link">Reflexión e
                   introspección</a></div>
