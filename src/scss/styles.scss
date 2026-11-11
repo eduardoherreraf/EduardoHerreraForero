@@ -510,7 +510,55 @@ footer {
 /* Altura de la caja results */
 // }
 
+// El flujo por filas conserva el orden del HTML, también con teclado.
+.site-articles-masonry {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+
+  &.site-articles-masonry--ready {
+    grid-auto-rows: 8px;
+  }
+
+  > .card {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+  }
+
+  .site-card__title {
+    height: auto;
+    padding-block: 1rem;
+  }
+
+   @media (min-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+#blog .card:hover,
+#blog .card:focus-within {
+  border-color: var(--bs-primary);
+}
+
 /* iconos */
+.site-card__logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 127px;
+  height: 127px;
+  object-fit: contain;
+  font-size: 127px;
+  line-height: 1;
+}
+
 .site-icon {
   width: 127px;
   height: 127px;

@@ -48,6 +48,7 @@
   <!-- fin iconos -->
   <title>Ing. Eduardo Herrera Forero.</title>
   <script type="module" defer="defer" src="./js/main.js"></script>
+  <script type="module" src="./js/article-masonry.js"></script>
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
@@ -488,11 +489,11 @@
         <!-- Blog ------ -->
         <article class="row border-1 border-bottom pb-3" id="blog">
           <h2>Artículos</h2>
-          <div class="row mx-auto mt-3 d-flex justify-content-center">
+          <div class="site-articles-masonry mt-3">
 
-           <!-- Machine Learning -->
-           <!--  
-           <div class="col-lg-4 card p-0 mb-3">
+            <!-- Machine Learning -->
+            <!--
+           <div class="card p-0">
               <a class="text-decoration-none" href="./ml-0000_machine_learning.html" class="site-link--anchor stretched-link site-link">
                 <div class="card-header site-card__title d-flex align-items-center">
                   <div class="col">
@@ -515,7 +516,7 @@
             </div> -->
 
             <!-- Claude -->
-<!--             <div class="col-lg-4 card p-0 mb-3">
+            <!--             <div class="card p-0">
               <a class="text-decoration-none" href="./claude.html" class="site-link--anchor stretched-link site-link">
                 <div class="card-header site-card__title d-flex align-items-center">
                   <div class="col">
@@ -537,8 +538,9 @@
             </div> -->
 
             <!-- Bootstrap -->
-            <div class="col-lg-4 card p-0 mb-3">
-              <a class="text-decoration-none" href="./bootstrap.html" class="site-link--anchor stretched-link site-link">
+            <div class="card p-0">
+              <a class="text-decoration-none" href="./bootstrap.html"
+                class="site-link--anchor stretched-link site-link">
                 <div class="card-header site-card__title d-flex align-items-center">
                   <div class="col">
                     <h3 class="text-center">BOOTSTRAP Versión 5.3</h3>
@@ -546,8 +548,8 @@
                 </div>
                 <div class="card-body">
                   <div class="d-flex justify-content-center my-3">
-                    <img src="https://images2.imgbox.com/a0/23/Ljhq5xJX_o.png" alt="logo Bootstrap" height="127"
-                      width="127" class="img-fluid" />
+                    <i class="bi bi-bootstrap-fill d-inline-flex align-items-center justify-content-center site-card__logo"
+                      role="img" aria-label="Bootstrap"></i>
                   </div>
                   <p>
                     Bootstrap es una herramienta poderosa y versátil para
@@ -560,8 +562,9 @@
             </div>
 
             <!-- Análisis de Datos -->
-            <div class="col-lg-4 card p-0 mb-3">
-              <a class="text-decoration-none" href="./analisis_de_datos.html" class="site-link--anchor stretched-link site-link">
+            <div class="card p-0">
+              <a class="text-decoration-none" href="./analisis_de_datos.html"
+                class="site-link--anchor stretched-link site-link">
 
                 <div class="card-header site-card__title d-flex align-items-center">
                   <div class="col">
@@ -570,8 +573,8 @@
                 </div>
                 <div class="card-body">
                   <div class="d-flex justify-content-center my-3">
-                    <img src="https://i.postimg.cc/LsZyh9ht/Analisis-de-Datos.png" alt="logo CSS" height="127"
-                      width="127" class="img-fluid" />
+                    <img src="https://i.postimg.cc/LsZyh9ht/Analisis-de-Datos.png" alt="logo Análisis de Datos" height="127" width="127"
+                      class="img-fluid site-card__logo" role="img" aria-label="logo Análisis de Datos" />
                   </div>
                   <p>
                     El análisis de datos es un proceso sistemático por el cual se recopilan, organizan, inspeccionan,
@@ -584,7 +587,7 @@
             <!-- Análisis de Datos fin -->
 
             <!-- css -->
-            <div class="col-lg-4 card p-0 mb-3">
+            <div class="card p-0">
               <a class="text-decoration-none" href="./css.html" class="site-link--anchor stretched-link site-link">
                 <div class="card-header site-card__title d-flex align-items-center">
                   <div class="col">
@@ -595,7 +598,7 @@
                 <div class="card-body">
                   <div class="d-flex justify-content-center my-3">
                     <img src="https://i.ibb.co/zhdr148R/css3-seeklog-comp.png" alt="logo CSS" height="127" width="127"
-                      class="img-fluid" />
+                      class="img-fluid site-card__logo" role="img" aria-label="logo CSS" />
                   </div>
                   <p>
                     CSS es un lenguaje para definir la apariencia visual de documentos HTML o XML: controla colores,
@@ -610,7 +613,7 @@
             <!-- css fin -->
 
             <!-- Git -->
-            <div class="col-lg-4 card p-0 mb-3">
+            <div class="card p-0">
               <a class="text-decoration-none" href="./git.html" class="site-link--anchor stretched-link site-link">
                 <div class="card-header site-card__title d-flex align-items-center">
                   <div class="col">
@@ -619,8 +622,8 @@
                 </div>
                 <div class="card-body">
                   <div class="d-flex justify-content-center my-3">
-                    <img src="https://images2.imgbox.com/74/e7/9w04V9br_o.png" alt="logo Git" height="127" width="127"
-                      class="img-fluid" />
+                    <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.svg" alt="logo Git" height="127" width="127"
+                      class="img-fluid site-card__logo" role="img" aria-label="logo Git" />
                   </div>
                   <p>
                     Git y GitHub son herramientas fundamentales en el
@@ -635,7 +638,7 @@
             </div>
 
             <!-- HTML -->
-            <div class="col-lg-4 card p-0 mb-3">
+            <div class="card p-0">
               <div class="card-header site-card__title d-flex align-items-center">
                 <div class="col">
                   <h3 class="text-center">HTML</h3>
@@ -644,8 +647,8 @@
               <div class="card-body">
                 <a class="text-decoration-none" href="./html.html" class="site-link--anchor stretched-link site-link">
                   <div class="d-flex justify-content-center my-3">
-                    <svg class="site-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520" width="113"
-                      height="130">
+                    <svg class="site-icon site-card__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520" width="127"
+                      height="127" role="img" aria-label="Logo HTML">
                       <path fill="#e34f26" d="M41 460L0 0h451l-41 460-185 52" />
                       <path fill="#ef652a" d="M226 472l149-41 35-394H226" />
                       <path fill="#ecedee"
@@ -667,7 +670,7 @@
             </div>
 
             <!-- ChatGPT -->
-            <div class="col-lg-4 card p-0 mb-3">
+            <div class="card p-0">
               <a class="text-decoration-none" href="./chatgpt.html" class="site-link--anchor stretched-link site-link">
                 <div class="card-header site-card__title d-flex align-items-center">
                   <div class="col">
@@ -676,8 +679,8 @@
                 </div>
                 <div class="card-body">
                   <div class="d-flex justify-content-center my-3">
-                    <img src="https://i.postimg.cc/Y9NkwGQB/chatgpt-openai.png" alt="logo ChatGPT" height="127"
-                      width="127" class="img-fluid" />
+                    <img src="https://i.postimg.cc/Y9NkwGQB/chatgpt-openai.png" alt="logo ChatGPT" height="127" width="127"
+                      class="img-fluid site-card__logo" role="img" aria-label="logo ChatGPT" />
                   </div>
                   <p>
                     ChatGPT es una inteligencia artificial creada por OpenAI
@@ -692,21 +695,21 @@
               </a>
             </div>
 
-            <!-- Curso de Python 3 -->
-            <div class="col-lg-4 card p-0 mb-3">
+            <!-- Python 3 -->
+            <div class="card p-0">
               <a class="text-decoration-none" href="./python3.html" class="site-link--anchor stretched-link site-link">
                 <div class="card-header site-card__title d-flex align-items-center">
                   <div class="col">
-                    <h3 class="text-center">Curso de Python 3</h3>
+                    <h3 class="text-center">Python 3</h3>
                   </div>
                 </div>
                 <div class="card-body">
                   <div class="d-flex justify-content-center my-3">
-                    <img src="https://images2.imgbox.com/18/e8/fRcPf7VM_o.png" alt="logo Python 3" height="127"
-                      width="127" class="img-fluid" />
+                    <img src="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg" alt="logo Python 3" height="127" width="127"
+                      class="img-fluid site-card__logo" role="img" aria-label="logo Python 3" />
                   </div>
                   <p>
-                    Este curso de Python 3 para principiantes ofrece la
+                    Este Python 3 para principiantes ofrece la
                     oportunidad perfecta para adentrarse en el mundo de la
                     programación de forma sencilla y accesible. A través de
                     conceptos básicos y ejemplos prácticos, los estudiantes
@@ -718,8 +721,9 @@
             </div>
 
             <!-- Otros Temas -->
-            <div class="col-lg-4 card p-0 mb-3">
-              <a class="text-decoration-none" href="./otrosTemas.html" class="site-link--anchor stretched-link site-link">
+            <div class="card p-0">
+              <a class="text-decoration-none" href="./otrosTemas.html"
+                class="site-link--anchor stretched-link site-link">
                 <div class="card-header site-card__title d-flex align-items-center">
                   <div class="col">
                     <h3 class="text-center">Otros Temas</h3>
@@ -727,8 +731,8 @@
                 </div>
                 <div class="card-body">
                   <div class="d-flex justify-content-center my-3">
-                    <img src="https://images2.imgbox.com/fa/70/gTm1Tz2O_o.jpg" alt="logo Otros Temas" height="127"
-                      width="127" class="img-fluid" />
+                    <i class="bi bi-journal-richtext d-inline-flex align-items-center justify-content-center site-card__logo"
+                      role="img" aria-label="Otros Temas"></i>
                   </div>
                   <p>
                     En esta sección se incluirán artículos de temas varios que
@@ -743,8 +747,9 @@
             </div>
 
             <!-- Photoshop -->
-            <div class="col-lg-4 card p-0 mb-3">
-              <a class="text-decoration-none" href="./photoshop.html" class="site-link--anchor stretched-link site-link">
+            <div class="card p-0">
+              <a class="text-decoration-none" href="./photoshop.html"
+                class="site-link--anchor stretched-link site-link">
                 <div class="card-header site-card__title d-flex align-items-center">
                   <div class="col">
                     <h3 class="text-center">Photoshop</h3>
@@ -752,8 +757,8 @@
                 </div>
                 <div class="card-body">
                   <div class="d-flex justify-content-center my-3">
-                    <img src="https://images2.imgbox.com/e0/9e/S2cO8fbt_o.png" alt="logo Photoshop" height="127"
-                      width="127" class="img-fluid" />
+                    <img src="./images/photoshop.svg" alt="logo Photoshop" height="127" width="127"
+                      class="img-fluid site-card__logo" role="img" aria-label="logo Photoshop" />
                   </div>
                   <p>
                     Photoshop es un software de Adobe utilizado para la
@@ -768,8 +773,9 @@
             </div>
 
             <!-- Javascript -->
-            <div class="col-lg-4 card p-0 mb-3">
-              <a class="text-decoration-none" href="./javascript.html" class="site-link--anchor stretched-link site-link">
+            <div class="card p-0">
+              <a class="text-decoration-none" href="./javascript.html"
+                class="site-link--anchor stretched-link site-link">
                 <div class="card-header site-card__title d-flex align-items-center">
                   <div class="col">
                     <h3 class="text-center">Javascript</h3>
@@ -777,8 +783,12 @@
                 </div>
                 <div class="card-body">
                   <div class="d-flex justify-content-center my-3">
-                    <img src="https://images2.imgbox.com/a2/4f/bviyPQ9K_o.png" alt="logo Javascript" height="127"
-                      width="127" class="img-fluid" />
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 630" width="127" height="127"
+                      class="site-card__logo" role="img" aria-label="Logo JavaScript">
+                      <rect width="630" height="630" fill="#F7DF1E" />
+                      <text x="590" y="590" font-family="Arial, sans-serif" font-weight="bold"
+                        font-size="300" text-anchor="end" fill="#000">JS</text>
+                    </svg>
                   </div>
                   <p>
                     JavaScript es fundamental para la creación de páginas web
@@ -842,11 +852,11 @@
       <aside class="col-lg-3 d-none d-lg-block" style="align-self: flex-start; position: sticky;">
         <h2>Artículos</h2>
         <div class="site-menu border-1 border">
-<!--           <div class="site-menu__item">
+          <!--           <div class="site-menu__item">
             <a href="./ml-0101_conceptos_basicos_machine_learning.html" class="site-menu__link">
               Conceptos Básicos de Machine Learning</a>
           </div> -->
-<!--           <div class="site-menu__item">
+          <!--           <div class="site-menu__item">
             <a href="./claude-0101_claude_una_nueva_etapa_en_la_inteligencia_artificial.html" class="site-menu__link">
               Claude: una Nueva Etapa en la Inteligencia Artificial</a>
           </div> -->
@@ -859,7 +869,8 @@
               Dataframes con Pandas</a>
           </div>
           <div class="site-menu__item">
-            <a href="./analisis-de-datos-0011_manejo-de-series-con-panda.html" class="site-menu__link">Manejo de Series con
+            <a href="./analisis-de-datos-0011_manejo-de-series-con-panda.html" class="site-menu__link">Manejo de Series
+              con
               Pandas</a>
           </div>
           <div class="site-menu__item">
@@ -883,11 +894,13 @@
               y Salida en Python</a>
           </div>
           <div class="site-menu__item">
-            <a href="./analisis-de-datos-0005_operadores_basicos_en_python.html" class="site-menu__link">Operadores Básicos
+            <a href="./analisis-de-datos-0005_operadores_basicos_en_python.html" class="site-menu__link">Operadores
+              Básicos
               en Python</a>
           </div>
           <div class="site-menu__item">
-            <a href="./analisis-de-datos-0004_estructuras_de_datos_en_Python.html" class="site-menu__link">Estructuras de
+            <a href="./analisis-de-datos-0004_estructuras_de_datos_en_Python.html" class="site-menu__link">Estructuras
+              de
               Datos en Python</a>
           </div>
           <div class="site-menu__item">
@@ -896,20 +909,23 @@
 
           </div>
           <div class="site-menu__item">
-            <a href="./analisis-de-datos-0002_fundamento_de_python.html" class="site-menu__link">Fundamentos de Python</a>
+            <a href="./analisis-de-datos-0002_fundamento_de_python.html" class="site-menu__link">Fundamentos de
+              Python</a>
           </div>
           <div class="site-menu__item">
             <a href="./analisis-de-datos-0001_introduccion_analisis_de_datos.html" class="site-menu__link">Introducción
               Análisis de Datos</a>
           </div>
           <div class="site-menu__item">
-            <a href="./css-0301_diseño-flexible-con-flexbox.html" class="site-menu__link">Diseño flexible con Flexbox</a>
+            <a href="./css-0301_diseño-flexible-con-flexbox.html" class="site-menu__link">Diseño flexible con
+              Flexbox</a>
           </div>
           <div class="site-menu__item">
             <a href="./css-0001_introduccion_css.html" class="site-menu__link">Introducción CSS</a>
           </div>
           <div class="site-menu__item">
-            <a href="./git-0006_Etiquetado_en_git.html" class="site-menu__link">Git Tags: Marcando Puntos Importantes en la
+            <a href="./git-0006_Etiquetado_en_git.html" class="site-menu__link">Git Tags: Marcando Puntos Importantes en
+              la
               Historia de tu Proyecto</a>
           </div>
           <div class="site-menu__item">
