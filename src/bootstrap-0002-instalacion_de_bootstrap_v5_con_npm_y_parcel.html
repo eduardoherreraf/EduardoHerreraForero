@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" data-bs-theme="dark">
+<html lang="es-CO" data-bs-theme="dark">
 
 <head>
   <!-- Metaetiquetas -->
@@ -54,7 +54,8 @@
   <meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc" />
 </head>
 
-<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy" data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#article-scrollspy"
+  data-bs-root-margin="-48px 0px -40%" data-bs-threshold="[0.01, 0.1, 0.5, 1]">
   <!-- Barra de Navegación -->
   <nav class="navbar navbar-expand-lg border-1 border fixed-top nav-underline">
     <div class="container-fluid">
@@ -85,7 +86,8 @@
             <a class="nav-link mx-1" href="index.html#studies">ESTUDIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link" href="index.html#blog">ARTÍCULOS</a>
+            <a class="nav-link mx-1 site-nav__link--publications-active site-nav__link"
+              href="index.html#blog">ARTÍCULOS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1" href="index.html#contact">CONTACTO</a>
@@ -108,63 +110,63 @@
       <section class="pb-3 pt-5 col-lg-9 px-lg-4">
         <!-- Parcel NPM -->
         <article class="row border-1 border-bottom pb-3">
-            <div id="introduccion">
-              <header>
-                <h1>Instalación de Bootstrap V5, NPM y PARCEL</h1>
-              </header>
-              <h2>Introducción</h2>
-              <div class="site-image site-intro-image mb-5">
-                <figure class="site-content__img-container site-image__figure site-image__figure--intro">
-                  <img src="https://i.ibb.co/1GNFG8ST/Bootstrap-and-parcel.png" class="img-fluid"
-                    alt="Instalación de Bootstrap V5, NPM y Parcel" />
-                  <figcaption class="site-image__caption">
-                    Instalación de Bootstrap V5, NPM y Parcel
-                  </figcaption>
-                </figure>
-              </div>
-              <p>
-                La guía oficial sobre cómo incluir y empaquetar el CSS y
-                JavaScript de Bootstrap en un proyecto utilizando Parcel.
-              </p>
-
-              <p>
-                A diferencia de empaquetador Vite, PARCEL permite empacar
-                archivos HTML, CSS Y JS sin pertenecer a una librería o
-                framework de javascript (ReactJS, AngularJS,...) como lo es
-                Bootstrap una librería de CSS, además también permite realizar
-                sitios web MPA (Multi Page Application).
-              </p>
-              <p>
-                Esta documentación se realizó con base a la oficial entregada
-                por Bootstrap en su página web
-                <a href="https://getbootstrap.com/docs/5.3/getting-started/parcel/" target="_blank"
-                  rel="noopener noreferrer">Bootstrap and Parcel</a>, todos los comando que se usaran en este tutorial
-                son
-                ejecutados en la terminal BASH de GIT.
-              </p>
-
+          <div id="introduccion">
+            <header>
+              <h1>Instalación de Bootstrap V5, NPM y PARCEL</h1>
+            </header>
+            <h2>Introducción</h2>
+            <div class="site-image site-intro-image mb-5">
+              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                <img src="https://getbootstrap.com/docs/6.0/assets/img/guides/bootstrap-parcel@2x.png" class="img-fluid"
+                  alt="Instalación de Bootstrap V5, NPM y Parcel" />
+                <figcaption class="site-image__caption">
+                  Instalación de Bootstrap V5, NPM y Parcel
+                </figcaption>
+              </figure>
             </div>
-            <hr class="site-divider--subtle site-divider" />
+            <p>
+              La guía oficial sobre cómo incluir y empaquetar el CSS y
+              JavaScript de Bootstrap en un proyecto utilizando Parcel.
+            </p>
 
-            <div id="configuracion-inicial" class="mt-3">
-              <h2>Configuración Inicial</h2>
-              <p>
-                Se esta construyendo un proyecto Parcel con Bootstrap desde
-                cero, por lo que hay algunos requisitos previos y pasos por
-                adelantado antes de que se pueda empezar. Esta guía requiere
-                que se tenga instalado Node.js y cierta familiaridad con el
-                terminal.
-              </p>
-              <h3>Crear una Carpeta de Proyecto y Configurar npm </h3>
-              <p>
-                Se creará la carpeta
-                <code class="language-bash">my-page</code> e
-                inicializaremos npm con el argumento
-                <code class="language-bash">-y</code> para evitar que haga
-                todas las preguntas interactivas.
-              </p>
-              <div class="code-example__syntax">
-                <pre data-src-status="loaded" tabindex="0">
+            <p>
+              A diferencia de empaquetador Vite, PARCEL permite empacar
+              archivos HTML, CSS Y JS sin pertenecer a una librería o
+              framework de javascript (ReactJS, AngularJS,...) como lo es
+              Bootstrap una librería de CSS, además también permite realizar
+              sitios web MPA (Multi Page Application).
+            </p>
+            <p>
+              Esta documentación se realizó con base a la oficial entregada
+              por Bootstrap en su página web
+              <a href="https://getbootstrap.com/docs/5.3/getting-started/parcel/" target="_blank"
+                rel="noopener noreferrer">Bootstrap and Parcel</a>, todos los comando que se usaran en este tutorial
+              son
+              ejecutados en la terminal BASH de GIT.
+            </p>
+
+          </div>
+          <hr class="site-divider--subtle site-divider" />
+
+          <div id="configuracion-inicial" class="mt-3">
+            <h2>Configuración Inicial</h2>
+            <p>
+              Se esta construyendo un proyecto Parcel con Bootstrap desde
+              cero, por lo que hay algunos requisitos previos y pasos por
+              adelantado antes de que se pueda empezar. Esta guía requiere
+              que se tenga instalado Node.js y cierta familiaridad con el
+              terminal.
+            </p>
+            <h3>Crear una Carpeta de Proyecto y Configurar npm </h3>
+            <p>
+              Se creará la carpeta
+              <code class="language-bash">my-page</code> e
+              inicializaremos npm con el argumento
+              <code class="language-bash">-y</code> para evitar que haga
+              todas las preguntas interactivas.
+            </p>
+            <div class="code-example__syntax">
+              <pre data-src-status="loaded" tabindex="0">
                   <code class="language-bash" data-prismjs-copy="Copy">
                      FOLDER_NAME="my-page"
                       mkdir "$FOLDER_NAME" && cd "$FOLDER_NAME"
@@ -172,88 +174,88 @@
                       npm init -y
                   </code>
                 </pre>
-              </div>
-              <h3 id="configuracionEspacioTrabajo">
-                Configuración del Espacio de Trabajo
-              </h3>
-              <p>
-                Ya se ha creado la carpeta
-                <code class="language-bash">my-page</code> e inicializado
-                npm. Ahora también se creará la carpeta
-                <code class="language-bash">src</code>, la hoja de estilos y
-                el archivo JavaScript para completar la estructura del
-                proyecto. Ejecutar los siguiente comandos desde
-                <code class="language-bash">my-page</code>, o crear
-                manualmente la estructura de carpetas y archivos que se
-                muestra a continuación.
-              </p>
-              <div class="code-example__syntax">
-                <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <h3 id="configuracionEspacioTrabajo">
+              Configuración del Espacio de Trabajo
+            </h3>
+            <p>
+              Ya se ha creado la carpeta
+              <code class="language-bash">my-page</code> e inicializado
+              npm. Ahora también se creará la carpeta
+              <code class="language-bash">src</code>, la hoja de estilos y
+              el archivo JavaScript para completar la estructura del
+              proyecto. Ejecutar los siguiente comandos desde
+              <code class="language-bash">my-page</code>, o crear
+              manualmente la estructura de carpetas y archivos que se
+              muestra a continuación.
+            </p>
+            <div class="code-example__syntax">
+              <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                      mkdir {src,src/js,src/scss}
                       touch src/index.html src/js/main.js src/scss/styles.scss
                     </code>
                   </pre>
-              </div>
             </div>
-            <hr class="site-divider--subtle site-divider" />
+          </div>
+          <hr class="site-divider--subtle site-divider" />
 
-            <div id="instalacion-parcel" class="mt-3">
-              <h2>Instalación de Parcel</h2>
-              <p>
-                Sólo hay una dependencia de una única herramienta de
-                compilación. Parcel instalará automáticamente los
-                transformadores de lenguaje (como Sass) cuando los detecte. Se
-                Usa la bandera
-                <code class="language-bash">--save-dev</code> para indicar que
-                esta dependencia es sólo para uso de desarrollo y no para
-                producción.
-              </p>
-              <div class="code-example__syntax">
-                <pre data-src-status="loaded" tabindex="0">
+          <div id="instalacion-parcel" class="mt-3">
+            <h2>Instalación de Parcel</h2>
+            <p>
+              Sólo hay una dependencia de una única herramienta de
+              compilación. Parcel instalará automáticamente los
+              transformadores de lenguaje (como Sass) cuando los detecte. Se
+              Usa la bandera
+              <code class="language-bash">--save-dev</code> para indicar que
+              esta dependencia es sólo para uso de desarrollo y no para
+              producción.
+            </p>
+            <div class="code-example__syntax">
+              <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       npm install --save-dev parcel@latest
                     </code>
                   </pre>
-              </div>
-              <p>Se debe verificar la versión instalada de Parcel, debe ser <code class="language-bash">2.16</code>
-                con el comando en consola <code class="language-bash">npx parcel --version</code>.</p>
             </div>
-            <hr class="site-divider--subtle site-divider" />
+            <p>Se debe verificar la versión instalada de Parcel, debe ser <code class="language-bash">2.16</code>
+              con el comando en consola <code class="language-bash">npx parcel --version</code>.</p>
+          </div>
+          <hr class="site-divider--subtle site-divider" />
 
-            <div id="instalacion-bootstrap-v5" class="mt-3">
-              <h2>Instalación de Bootstrap </h2>
-              <p>
-                Ahora se puede instalar Bootstrap.También se instalará Popper
-                ya que los desplegables, popovers y tooltips dependen de él
-                para su posicionamiento. Si no se planea usar esos
-                componentes, se puede omitir Popper aquí.
-              </p>
-              <div class="code-example__syntax">
-                <pre data-src-status="loaded" tabindex="0">
+          <div id="instalacion-bootstrap-v5" class="mt-3">
+            <h2>Instalación de Bootstrap </h2>
+            <p>
+              Ahora se puede instalar Bootstrap.También se instalará Popper
+              ya que los desplegables, popovers y tooltips dependen de él
+              para su posicionamiento. Si no se planea usar esos
+              componentes, se puede omitir Popper aquí.
+            </p>
+            <div class="code-example__syntax">
+              <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       npm install --save bootstrap@latest @popperjs/core@latest
                     </code>
                   </pre>
-              </div>
-              <p>
-                Ahora ya se tiene todas las dependencias necesarias instaladas
-                y se puede poner manos a la obra para configurar Parcel e
-                importar Bootstrap.
-              </p>
             </div>
+            <p>
+              Ahora ya se tiene todas las dependencias necesarias instaladas
+              y se puede poner manos a la obra para configurar Parcel e
+              importar Bootstrap.
+            </p>
+          </div>
 
-            <hr class="site-divider--subtle site-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
-            <div id="configuracion-parcel" class="mt-3">
-              <h2>Configuración de Parcel </h2>
-              <p>
-                El archivo
-                <span class="fw-bold text-warning">src/index.html</span> se
-                debe configurar así:
-              </p>
-              <div class="code-example__syntax">
-                <pre data-src-status="loaded" tabindex="0">
+          <div id="configuracion-parcel" class="mt-3">
+            <h2>Configuración de Parcel </h2>
+            <p>
+              El archivo
+              <span class="fw-bold text-warning">src/index.html</span> se
+              debe configurar así:
+            </p>
+            <div class="code-example__syntax">
+              <pre data-src-status="loaded" tabindex="0">
                     <code class="language-html" data-prismjs-copy="Copy">
                       &lt;!doctype html&gt;
                       &lt;html lang="en"&gt;
@@ -272,20 +274,20 @@
                       &lt;/html&gt;
                     </code>
                   </pre>
-              </div>
-              <p>
-                Parcel detectará automáticamente que se está usando Sass e
-                instalará el plugin Sass Parcel para soportarlo, se puede
-                instalar manualmente ejecutando manualmente el comando
-                <span class="fw-bold text-warning">npm i --save-dev @parcel/transformer-sass</span>.
-              </p>
-              <p>
-                en el archivo
-                <code class="language-json">package.json</code> añadir
-                como funcionaran los scripts de PARCEL:
-              </p>
-              <div class="code-example__syntax">
-                <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <p>
+              Parcel detectará automáticamente que se está usando Sass e
+              instalará el plugin Sass Parcel para soportarlo, se puede
+              instalar manualmente ejecutando manualmente el comando
+              <span class="fw-bold text-warning">npm i --save-dev @parcel/transformer-sass</span>.
+            </p>
+            <p>
+              en el archivo
+              <code class="language-json">package.json</code> añadir
+              como funcionaran los scripts de PARCEL:
+            </p>
+            <div class="code-example__syntax">
+              <pre data-src-status="loaded" tabindex="0">
                     <code class="language-javascript" data-prismjs-copy="Copy">
                       "scripts": {
                         "dev": "cd dist && rm -Rf * && cd .. && parcel --lazy --open http://localhost:1234/ --no-source-maps",
@@ -295,83 +297,83 @@
                       },
                     </code>
                   </pre>
-              </div>
-              <p>
-                Script
-                <span class="fw-bold text-warning">"dev": "cd dist && rm -Rf * && cd .. && parcel --lazy
-                  --open http://localhost:1234/ --no-source-maps"</span>: inicia el servidor de desarrollo, para ver en
-                tiempo real
-                como se va construyendo la página
-              </p>
-              <ul>
-                <li>
-                  cd dist && rm -Rf * && cd ..: desocupa el contenido de la
-                  carpeta dist/
-                </li>
-                <li>parcel: Ejecuta el modo de desarrollo.</li>
-                <li>
-                  --lazy: Esta bandera le indica a PARCEL que sólo vaya
-                  construyendo las hojas web a medida que se necesiten, es
-                  útil para cuando el sitio tiene muchas hojas y no hace falta
-                  que todas estén presentes.
-                </li>
-                <li>
-                  --open http://localhost:1234/ : Abre una pestaña del
-                  navegador en la dirección http://localhost:1234/.
-                </li>
-                <li>
-                  --no-source-maps: Con esta bandera PARCEL no genera los
-                  archivos map
-                </li>
-              </ul>
-              <p>
-                Script
-                <span class="fw-bold text-warning">"start": "parcel serve"</span>: funciona parecido al script dev.
-              </p>
-              <p>
-                Script
-                <span class="fw-bold text-warning">"build": "cd dist && rm -Rf * && cd .. && parcel build
-                  --public-url --no-source-maps"</span>: genera los archivos de despliegue o de producción./
-              </p>
-              <ul>
-                <li>
-                  parcel build: ejecuta la generación de los archivos para
-                  producción.
-                </li>
-                <li>
-                  --public-url ./: Añade el prefijo "./" en las rutas
-                  absolutas a assets. Útil para despliegues en GitHub Pages.
-                </li>
-              </ul>
-              <p>
-                También en este mismo archivo
-                <code class="language-json">package.json</code> se debe intercambiar:
-              </p>
-              <div class="code-example__syntax">
-                <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <p>
+              Script
+              <span class="fw-bold text-warning">"dev": "cd dist && rm -Rf * && cd .. && parcel --lazy
+                --open http://localhost:1234/ --no-source-maps"</span>: inicia el servidor de desarrollo, para ver en
+              tiempo real
+              como se va construyendo la página
+            </p>
+            <ul>
+              <li>
+                cd dist && rm -Rf * && cd ..: desocupa el contenido de la
+                carpeta dist/
+              </li>
+              <li>parcel: Ejecuta el modo de desarrollo.</li>
+              <li>
+                --lazy: Esta bandera le indica a PARCEL que sólo vaya
+                construyendo las hojas web a medida que se necesiten, es
+                útil para cuando el sitio tiene muchas hojas y no hace falta
+                que todas estén presentes.
+              </li>
+              <li>
+                --open http://localhost:1234/ : Abre una pestaña del
+                navegador en la dirección http://localhost:1234/.
+              </li>
+              <li>
+                --no-source-maps: Con esta bandera PARCEL no genera los
+                archivos map
+              </li>
+            </ul>
+            <p>
+              Script
+              <span class="fw-bold text-warning">"start": "parcel serve"</span>: funciona parecido al script dev.
+            </p>
+            <p>
+              Script
+              <span class="fw-bold text-warning">"build": "cd dist && rm -Rf * && cd .. && parcel build
+                --public-url --no-source-maps"</span>: genera los archivos de despliegue o de producción./
+            </p>
+            <ul>
+              <li>
+                parcel build: ejecuta la generación de los archivos para
+                producción.
+              </li>
+              <li>
+                --public-url ./: Añade el prefijo "./" en las rutas
+                absolutas a assets. Útil para despliegues en GitHub Pages.
+              </li>
+            </ul>
+            <p>
+              También en este mismo archivo
+              <code class="language-json">package.json</code> se debe intercambiar:
+            </p>
+            <div class="code-example__syntax">
+              <pre data-src-status="loaded" tabindex="0">
                     <code class="language-javascript" data-prismjs-copy="Copy">
                       "main": "index.js",
                     </code>
                   </pre>
-                <p>por</p>
-                <pre data-src-status="loaded" tabindex="0">
+              <p>por</p>
+              <pre data-src-status="loaded" tabindex="0">
                     <code class="language-javascript" data-prismjs-copy="Copy">
                       "source": "src/index.html",
                     </code>
                   </pre>
-              </div>
-              <p>Ahora el punto de entrada es el archivo index.html.</p>
-              <p>
-                Para asegurarse
-                que Parcel siempre genere archivos con el mismo nombre (como
-                <code class="language-bash">index.js</code>
-                en lugar de nombres hash), se debe utilizar la configuración
-                avanzada del archivo
-                <code class="language-bash">.parcelrc</code>:, así:
-              </p>
+            </div>
+            <p>Ahora el punto de entrada es el archivo index.html.</p>
+            <p>
+              Para asegurarse
+              que Parcel siempre genere archivos con el mismo nombre (como
+              <code class="language-bash">index.js</code>
+              en lugar de nombres hash), se debe utilizar la configuración
+              avanzada del archivo
+              <code class="language-bash">.parcelrc</code>:, así:
+            </p>
 
-              <div class="code-example__syntax">
-                <pre data-src-status="loaded" tabindex="0">
+            <div class="code-example__syntax">
+              <pre data-src-status="loaded" tabindex="0">
                     <code class="language-json" data-prismjs-copy="Copy">
                      {
                         "extends": "@parcel/config-default",
@@ -381,75 +383,75 @@
                       }
                    </code>
                   </pre>
-              </div>
-              <p>
-                Este archivo debe estar en el directorio del proyecto junto al
-                archivo <code class="language-json">package.json</code>
-              </p>
-              <p>
-                Esta plantilla está configurada de forma tal que es
-                innecesario realizar correcciones en las rutas absolutas de
-                la(s) páginas web.
-              </p>
-              <p>
-                Desde ahora se puede iniciar Parcel, en la carpeta
-                <span class="fw-bold text-warning">my-page</span>
-                en el terminal, ejecuta cualquiera de los dos scripts npm
-                recién añadidos:
-              </p>
-              <div class="code-example__syntax">
-                <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <p>
+              Este archivo debe estar en el directorio del proyecto junto al
+              archivo <code class="language-json">package.json</code>
+            </p>
+            <p>
+              Esta plantilla está configurada de forma tal que es
+              innecesario realizar correcciones en las rutas absolutas de
+              la(s) páginas web.
+            </p>
+            <p>
+              Desde ahora se puede iniciar Parcel, en la carpeta
+              <span class="fw-bold text-warning">my-page</span>
+              en el terminal, ejecuta cualquiera de los dos scripts npm
+              recién añadidos:
+            </p>
+            <div class="code-example__syntax">
+              <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       npm start
                     </code>
                   </pre>
-              </div>
-              <p>ó</p>
-              <div class="code-example__syntax">
-                <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <p>ó</p>
+            <div class="code-example__syntax">
+              <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       npm run dev
                     </code>
                   </pre>
-              </div>
             </div>
+          </div>
 
-            <hr class="site-divider--subtle site-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
-            <div id="importacion-bootstrap-v5" class="mt-3">
-              <h2>Importación de BOOTSTRAP</h2>
-              <p>
-                Para la importación de Bootstrap en Parcel se requiere dos
-                importaciones, una en el archivo
-                <span class="fw-bold text-warning">styles.scss</span> y otra
-                en el <span class="fw-bold text-warning">main.js</span>.
-              </p>
-              <p>
-                La importación del CSS de Bootstrap. Añade en el archivo
-                <span class="fw-bold text-warning">src/scss/styles.scss</span>
-                el siguiente código para importar todo el Sass fuente de
-                Bootstrap.
-              </p>
-              <div class="code-example__syntax">
-                <pre data-src-status="loaded" tabindex="0">
+          <div id="importacion-bootstrap-v5" class="mt-3">
+            <h2>Importación de BOOTSTRAP</h2>
+            <p>
+              Para la importación de Bootstrap en Parcel se requiere dos
+              importaciones, una en el archivo
+              <span class="fw-bold text-warning">styles.scss</span> y otra
+              en el <span class="fw-bold text-warning">main.js</span>.
+            </p>
+            <p>
+              La importación del CSS de Bootstrap. Añade en el archivo
+              <span class="fw-bold text-warning">src/scss/styles.scss</span>
+              el siguiente código para importar todo el Sass fuente de
+              Bootstrap.
+            </p>
+            <div class="code-example__syntax">
+              <pre data-src-status="loaded" tabindex="0">
                     <code class="language-css" data-prismjs-copy="Copy">
                       // Import all of Bootstrap's CSS
                       @import "bootstrap/scss/bootstrap";
                     </code>
                   </pre>
-              </div>
-              <p>
-                La importación del JS de Bootstrap. Añade en el archivo
-                <span class="fw-bold text-warning">src/js/main.js</span> el
-                siguiente código para importar todo el código fuente de
-                Javascript de Bootstrap:
-              </p>
-              <p>
-                La importación de código CSS de usuario también se importa en
-                este mismo archivo.
-              </p>
-              <div class="code-example__syntax">
-                <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <p>
+              La importación del JS de Bootstrap. Añade en el archivo
+              <span class="fw-bold text-warning">src/js/main.js</span> el
+              siguiente código para importar todo el código fuente de
+              Javascript de Bootstrap:
+            </p>
+            <p>
+              La importación de código CSS de usuario también se importa en
+              este mismo archivo.
+            </p>
+            <div class="code-example__syntax">
+              <pre data-src-status="loaded" tabindex="0">
                     <code class="language-javascript" data-prismjs-copy="Copy">
                       // Import all of Bootstrap's JS
                       import * as bootstrap from 'bootstrap'
@@ -457,141 +459,141 @@
                       import '../scss/styles.scss';
                     </code>
                   </pre>
-              </div>
-              <p>
-                Ahora ya se puede generar una página web utilizando Bootstrap
-                y Parcel.
-              </p>
             </div>
+            <p>
+              Ahora ya se puede generar una página web utilizando Bootstrap
+              y Parcel.
+            </p>
+          </div>
 
-            <hr class="site-divider--subtle site-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
-            <div id="compilacion-proyecto-produccion" class="mt-3">
-              <h2>Compilación del proyecto para Producción</h2>
-              <p>
-                Cuando se haya terminado y se quiera obtener la versión para
-                producción se ejecuta el siguiente comando y los archivos se
-                quedan disponibles en la carpeta
-                <span class="fw-bold text-warning">dist</span>.
-              </p>
-              <div class="code-example__syntax">
-                <pre data-src-status="loaded" tabindex="0">
+          <div id="compilacion-proyecto-produccion" class="mt-3">
+            <h2>Compilación del proyecto para Producción</h2>
+            <p>
+              Cuando se haya terminado y se quiera obtener la versión para
+              producción se ejecuta el siguiente comando y los archivos se
+              quedan disponibles en la carpeta
+              <span class="fw-bold text-warning">dist</span>.
+            </p>
+            <div class="code-example__syntax">
+              <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       npm run build
                     </code>
                   </pre>
-              </div>
-              <p>
-                Es fundamental tener precaución con el código JavaScript
-                dentro de la etiqueta
-                <code>&lt;script></code>, ya que debe tratarse como un módulo.
-                Si no se hace así, las variables que se actualizan con la
-                compilación del código HTML pueden no reflejar esos cambios en
-                las instancias correspondientes en el código JavaScript.
-              </p>
             </div>
+            <p>
+              Es fundamental tener precaución con el código JavaScript
+              dentro de la etiqueta
+              <code>&lt;script></code>, ya que debe tratarse como un módulo.
+              Si no se hace así, las variables que se actualizan con la
+              compilación del código HTML pueden no reflejar esos cambios en
+              las instancias correspondientes en el código JavaScript.
+            </p>
+          </div>
 
-            <hr class="site-divider--subtle site-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
-            <div id="instalacion-de-un-servidor-local" class="mt-3">
-              <h2>Instalación de un Servidor Local </h2>
-              <!-- Qué Es un Servidor Local  -->
-              <div id="que-es-un-servidor-local">
-                <h3>Qué Es un Servidor Local </h3>
-                <p>Un servidor local es un entorno o programa que permite ejecutar y probar aplicaciones web
-                  directamente en el computador del usuario, sin necesidad de estar conectado a Internet ni depender de
-                  un servidor remoto.</p>
-                <p>En otras palabras, simula el funcionamiento de un servidor web real, pero dentro del equipo personal,
-                  lo que facilita el desarrollo, prueba y depuración de sitios o aplicaciones antes de publicarlos en
-                  línea.</p>
-              </div>
-              <!-- Qué Es un Servidor Local  fin -->
-              <!-- Ejemplo Práctico  -->
-              <div id="ejemplo-practico">
-                <h3>Ejemplo Práctico </h3>
-                <p>Cuando se desarrolla una página web con HTML, CSS, JavaScript, PHP o bases de datos, se puede usar un
-                  servidor local para que el navegador interprete correctamente el código y muestre el resultado como lo
-                  haría en Internet.</p>
-              </div>
-              <!-- Ejemplo Práctico  fin -->
-              <!-- Necesidad de un Servidor Local para PrismJS  -->
-              <div id="necesidad-de-un-servidor-local-para-prismjs">
-                <h3>Necesidad de un Servidor Local para <code class="language-none">PrismJS</code></h3>
-                <p>Un servidor local se utiliza porque, al intentar ejecutar una página web directamente desde el
-                  archivo <code class="language-html">index.html</code> almacenado en el computador del usuario (en modo
-                  desarrollo), algunas bibliotecas de JavaScript pueden no funcionar correctamente. En particular,
-                  <code class="language-none">PrismJS</code> no aplica el formato esperado al código. Por esta razón, se
-                  recurre a un servidor local, que permite simular el entorno de un servidor real y garantizar el
-                  funcionamiento adecuado de todos los scripts y recursos del proyecto. En este caso, se utilizará el
-                  paquete <code class="language-none">http-server</code> de <code
-                    class="language-javascript">Node.js</code>.
-                </p>
-                <p></p>
-              </div>
-              <!-- Necesidad de un Servidor Local para PrismJS  fin -->
+          <div id="instalacion-de-un-servidor-local" class="mt-3">
+            <h2>Instalación de un Servidor Local </h2>
+            <!-- Qué Es un Servidor Local  -->
+            <div id="que-es-un-servidor-local">
+              <h3>Qué Es un Servidor Local </h3>
+              <p>Un servidor local es un entorno o programa que permite ejecutar y probar aplicaciones web
+                directamente en el computador del usuario, sin necesidad de estar conectado a Internet ni depender de
+                un servidor remoto.</p>
+              <p>En otras palabras, simula el funcionamiento de un servidor web real, pero dentro del equipo personal,
+                lo que facilita el desarrollo, prueba y depuración de sitios o aplicaciones antes de publicarlos en
+                línea.</p>
+            </div>
+            <!-- Qué Es un Servidor Local  fin -->
+            <!-- Ejemplo Práctico  -->
+            <div id="ejemplo-practico">
+              <h3>Ejemplo Práctico </h3>
+              <p>Cuando se desarrolla una página web con HTML, CSS, JavaScript, PHP o bases de datos, se puede usar un
+                servidor local para que el navegador interprete correctamente el código y muestre el resultado como lo
+                haría en Internet.</p>
+            </div>
+            <!-- Ejemplo Práctico  fin -->
+            <!-- Necesidad de un Servidor Local para PrismJS  -->
+            <div id="necesidad-de-un-servidor-local-para-prismjs">
+              <h3>Necesidad de un Servidor Local para <code class="language-none">PrismJS</code></h3>
+              <p>Un servidor local se utiliza porque, al intentar ejecutar una página web directamente desde el
+                archivo <code class="language-html">index.html</code> almacenado en el computador del usuario (en modo
+                desarrollo), algunas bibliotecas de JavaScript pueden no funcionar correctamente. En particular,
+                <code class="language-none">PrismJS</code> no aplica el formato esperado al código. Por esta razón, se
+                recurre a un servidor local, que permite simular el entorno de un servidor real y garantizar el
+                funcionamiento adecuado de todos los scripts y recursos del proyecto. En este caso, se utilizará el
+                paquete <code class="language-none">http-server</code> de <code
+                  class="language-javascript">Node.js</code>.
+              </p>
+              <p></p>
+            </div>
+            <!-- Necesidad de un Servidor Local para PrismJS  fin -->
 
-              <!-- http-server (Node.js-npm)  -->
-              <div id="http-server-(node-js-npm)">
-                <h3>http-server (<code class="language-javascript">Node.js</code> / <code
-                    class="language-javascript">npm</code>)
-                </h3>
-                <p><code class="language-none">http-server</code> en el ecosistema <code
-                    class="language-javascript">Node.js</code> es una herramienta sencilla
-                  para servir archivos estáticos desde cualquier carpeta del sistema, ideal para pruebas locales o
-                  despliegues ligeros.</p>
-                <p>A continuación se muestra su uso completo y detallado:</p>
-              </div>
-              <!-- http-server (Node-js-npm)  fin -->
+            <!-- http-server (Node.js-npm)  -->
+            <div id="http-server-(node-js-npm)">
+              <h3>http-server (<code class="language-javascript">Node.js</code> / <code
+                  class="language-javascript">npm</code>)
+              </h3>
+              <p><code class="language-none">http-server</code> en el ecosistema <code
+                  class="language-javascript">Node.js</code> es una herramienta sencilla
+                para servir archivos estáticos desde cualquier carpeta del sistema, ideal para pruebas locales o
+                despliegues ligeros.</p>
+              <p>A continuación se muestra su uso completo y detallado:</p>
+            </div>
+            <!-- http-server (Node-js-npm)  fin -->
 
-              <!-- Instalación http-server  -->
-              <div id="instalacion-http-server">
-                <h3>Instalación <code class="language-none">http-server</code></h3>
-                <p>Puede instalarse globalmente o como dependencia de desarrollo:</p>
+            <!-- Instalación http-server  -->
+            <div id="instalacion-http-server">
+              <h3>Instalación <code class="language-none">http-server</code></h3>
+              <p>Puede instalarse globalmente o como dependencia de desarrollo:</p>
 
-                <p><span class="fw-bold">Global</span>:</p>
-                <!-- Sintaxis -->
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+              <p><span class="fw-bold">Global</span>:</p>
+              <!-- Sintaxis -->
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         npm install -g http-server
                       </code>
                     </pre>
-                </div>
-                <!-- Sintaxis fin -->
-                <p><span class="fw-bold">Local (para un proyecto)</span>:</p>
-                <!-- Sintaxis -->
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Sintaxis fin -->
+              <p><span class="fw-bold">Local (para un proyecto)</span>:</p>
+              <!-- Sintaxis -->
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         npm install --save-dev http-server
                       </code>
                     </pre>
-                </div>
-                <!-- Sintaxis fin -->
               </div>
-              <!-- Ejemplo completo de uso de http-server  fin -->
-              <!-- Uso Básico  -->
-              <div id="uso-basico">
-                <h3>Uso Básico </h3>
-                <p>Dentro del directorio del proyecto (por ejemplo, donde está el archivo <code
-                    class="language-html">index.html</code>):</p>
+              <!-- Sintaxis fin -->
+            </div>
+            <!-- Ejemplo completo de uso de http-server  fin -->
+            <!-- Uso Básico  -->
+            <div id="uso-basico">
+              <h3>Uso Básico </h3>
+              <p>Dentro del directorio del proyecto (por ejemplo, donde está el archivo <code
+                  class="language-html">index.html</code>):</p>
 
-                <!-- Sintaxis -->
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+              <!-- Sintaxis -->
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         http-server
                       </code>
                     </pre>
-                </div>
-                <!-- Sintaxis fin -->
-                <p>Por defecto:</p>
-                <ul>
-                  <li>Servirá los archivos del directorio actual.</li>
-                  <li>Usará el puerto 8080.</li>
-                  <li>Mostrará la URL de acceso, algo como:
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Sintaxis fin -->
+              <p>Por defecto:</p>
+              <ul>
+                <li>Servirá los archivos del directorio actual.</li>
+                <li>Usará el puerto 8080.</li>
+                <li>Mostrará la URL de acceso, algo como:
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                           <code class="language-nginx" data-prismjs-copy="Copy">
                             Starting up http-server, serving ./
                              Available on:
@@ -599,96 +601,96 @@
                   
                           </code>
                         </pre>
-                    </div>
-                    <!-- Sintaxis fin -->
-                    <p>Luego se puede abrir esa dirección en el navegador.</p>
-                  </li>
-                </ul>
+                  </div>
+                  <!-- Sintaxis fin -->
+                  <p>Luego se puede abrir esa dirección en el navegador.</p>
+                </li>
+              </ul>
+            </div>
+            <!-- Uso Básico  fin -->
+            <!-- Opciones más Comunes  -->
+            <div id="opciones-mas-comunes">
+              <h3>Opciones más Comunes </h3>
+              <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover align-middle">
+                  <thead class="table-dark">
+                    <tr>
+                      <th scope="col">Opción</th>
+                      <th scope="col">Descripción</th>
+                      <th scope="col">Ejemplo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><code class="language-bash">-p &lt;n&gt;</code></td>
+                      <td>Define el puerto.</td>
+                      <td><code class="language-bash">http-server -p 3000</code></td>
+                    </tr>
+                    <tr>
+                      <td><code class="language-bash">-a &lt;ip&gt;</code></td>
+                      <td>Define la IP o interfaz de red.</td>
+                      <td><code class="language-bash">http-server -a 0.0.0.0</code></td>
+                    </tr>
+                    <tr>
+                      <td><code class="language-bash">-c &lt;segundos&gt;</code></td>
+                      <td>Tiempo de caché (por defecto 3600). <code class="language-bash">-c-1</code> desactiva
+                        cache.</td>
+                      <td><code class="language-bash">http-server -c-1</code></td>
+                    </tr>
+                    <tr>
+                      <td><code class="language-bash">-o</code></td>
+                      <td>Abre el navegador automáticamente.</td>
+                      <td><code class="language-bash">http-server -o</code></td>
+                    </tr>
+                    <tr>
+                      <td><code class="language-bash">-s</code></td>
+                      <td>Modo “single page app”: redirige todo a <code class="language-html">index.html</code>.
+                      </td>
+                      <td><code class="language-bash">http-server -s</code></td>
+                    </tr>
+                    <tr>
+                      <td><code class="language-bash">--cors</code></td>
+                      <td>Habilita CORS (útil para pruebas con APIs).</td>
+                      <td><code class="language-bash">http-server --cors</code></td>
+                    </tr>
+                    <tr>
+                      <td><code class="language-bash">--ssl, --cert, --key</code></td>
+                      <td>Sirve contenido con HTTPS (requiere certificados).</td>
+                      <td><code class="language-bash">http-server --ssl --cert cert.pem --key key.pem</code></td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <!-- Uso Básico  fin -->
-              <!-- Opciones más Comunes  -->
-              <div id="opciones-mas-comunes">
-                <h3>Opciones más Comunes </h3>
-                <div class="table-responsive">
-                  <table class="table table-bordered table-striped table-hover align-middle">
-                    <thead class="table-dark">
-                      <tr>
-                        <th scope="col">Opción</th>
-                        <th scope="col">Descripción</th>
-                        <th scope="col">Ejemplo</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><code class="language-bash">-p &lt;n&gt;</code></td>
-                        <td>Define el puerto.</td>
-                        <td><code class="language-bash">http-server -p 3000</code></td>
-                      </tr>
-                      <tr>
-                        <td><code class="language-bash">-a &lt;ip&gt;</code></td>
-                        <td>Define la IP o interfaz de red.</td>
-                        <td><code class="language-bash">http-server -a 0.0.0.0</code></td>
-                      </tr>
-                      <tr>
-                        <td><code class="language-bash">-c &lt;segundos&gt;</code></td>
-                        <td>Tiempo de caché (por defecto 3600). <code class="language-bash">-c-1</code> desactiva
-                          cache.</td>
-                        <td><code class="language-bash">http-server -c-1</code></td>
-                      </tr>
-                      <tr>
-                        <td><code class="language-bash">-o</code></td>
-                        <td>Abre el navegador automáticamente.</td>
-                        <td><code class="language-bash">http-server -o</code></td>
-                      </tr>
-                      <tr>
-                        <td><code class="language-bash">-s</code></td>
-                        <td>Modo “single page app”: redirige todo a <code class="language-html">index.html</code>.
-                        </td>
-                        <td><code class="language-bash">http-server -s</code></td>
-                      </tr>
-                      <tr>
-                        <td><code class="language-bash">--cors</code></td>
-                        <td>Habilita CORS (útil para pruebas con APIs).</td>
-                        <td><code class="language-bash">http-server --cors</code></td>
-                      </tr>
-                      <tr>
-                        <td><code class="language-bash">--ssl, --cert, --key</code></td>
-                        <td>Sirve contenido con HTTPS (requiere certificados).</td>
-                        <td><code class="language-bash">http-server --ssl --cert cert.pem --key key.pem</code></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              <!-- Opciones más Comunes  fin -->
-              <!-- Ejemplo completo de uso de http-server  -->
-              <div id="ejemplo-completo-de-uso-de-http-server">
-                <h3>Ejemplo Completo de Uso de <code class="language-none">http-server</code></h3>
-                <!-- Sintaxis -->
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+            </div>
+            <!-- Opciones más Comunes  fin -->
+            <!-- Ejemplo completo de uso de http-server  -->
+            <div id="ejemplo-completo-de-uso-de-http-server">
+              <h3>Ejemplo Completo de Uso de <code class="language-none">http-server</code></h3>
+              <!-- Sintaxis -->
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       http-server ./dist -p 8081 -c-1 -o ó http-server ./dist
                     </code>
                   </pre>
-                </div>
-                <!-- Sintaxis fin -->
-                <ul>
-                  <li>Sirve la carpeta <code class="language-bash">dist</code></li>
-                  <li>Usa el puerto <code class="language-bash">8081</code></li>
-                  <li>Desactiva el caché</li>
-                  <li>Abre el navegador automáticamente</li>
-                </ul>
               </div>
-              <!-- Ejemplo completo de uso de http-server fin -->
+              <!-- Sintaxis fin -->
+              <ul>
+                <li>Sirve la carpeta <code class="language-bash">dist</code></li>
+                <li>Usa el puerto <code class="language-bash">8081</code></li>
+                <li>Desactiva el caché</li>
+                <li>Abre el navegador automáticamente</li>
+              </ul>
+            </div>
+            <!-- Ejemplo completo de uso de http-server fin -->
 
-              <!-- Uso desde package.json  -->
-              <div id="uso-desde-package.json">
-                <h3>Uso desde <code class="language-json">package.json</code></h3>
-                <p>En un proyecto Node, se puede agregar un script:</p>
-                <p><span class="fw-bold">Sintaxis básica</span>:</p>
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+            <!-- Uso desde package.json  -->
+            <div id="uso-desde-package.json">
+              <h3>Uso desde <code class="language-json">package.json</code></h3>
+              <p>En un proyecto Node, se puede agregar un script:</p>
+              <p><span class="fw-bold">Sintaxis básica</span>:</p>
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-json" data-prismjs-copy="Copy">
                       {
                         "scripts": {
@@ -698,12 +700,12 @@
                       }
                     </code>
                   </pre>
-                </div>
-                <!-- Sintaxis fin -->
-                <p>A continuación, se ejecuta el comando correspondiente, según la opción seleccionada antes:</p>
-                <!-- Sintaxis -->
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+              </div>
+              <!-- Sintaxis fin -->
+              <p>A continuación, se ejecuta el comando correspondiente, según la opción seleccionada antes:</p>
+              <!-- Sintaxis -->
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-bash" data-prismjs-copy="Copy">
                       npm start ó node --run start
                       
@@ -712,67 +714,67 @@
                       npm run dev ó node --run dev
                     </code>
                   </pre>
-                </div>
-                <!-- Sintaxis fin -->
               </div>
-              <!-- Uso desde package.json  fin -->
-              <!-- ⚠️ Nota Importante  -->
-              <div id="⚠️-nota-importante">
-                <h3>⚠️ Nota Importante </h3>
-                <p><code class="language-none">http-server</code> no debe usarse en producción.</p>
-                <p>No ofrece seguridad avanzada, compresión, ni manejo eficiente de conexiones concurrentes.</p>
-                <p>Para entornos productivos, se recomienda Nginx, Caddy, o Express con configuración personalizada.</p>
-              </div>
-              <!-- ⚠️ Nota Importante  fin -->
+              <!-- Sintaxis fin -->
             </div>
+            <!-- Uso desde package.json  fin -->
+            <!-- ⚠️ Nota Importante  -->
+            <div id="⚠️-nota-importante">
+              <h3>⚠️ Nota Importante </h3>
+              <p><code class="language-none">http-server</code> no debe usarse en producción.</p>
+              <p>No ofrece seguridad avanzada, compresión, ni manejo eficiente de conexiones concurrentes.</p>
+              <p>Para entornos productivos, se recomienda Nginx, Caddy, o Express con configuración personalizada.</p>
+            </div>
+            <!-- ⚠️ Nota Importante  fin -->
+          </div>
 
-            <hr class="site-divider--subtle site-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
-            <div id="rimraf-herramienta-para-eliminar-carpetas-y-archivos" class="mt-3">
-              <h2><code class="language-bash">rimraf</code>: Herramienta para Eliminar Carpetas y Archivos</h2>
-              <p><code class="language-bash">rimraf</code> es una herramienta de <code
-                  class="language-javascript">Node.js</code> que elimina archivos y carpetas
-                de forma recursiva (borra todo el contenido interno). Es equivalente al comando <code
-                  class="language-bash">rm -rf</code> de Unix y se usa comúnmente para limpiar directorios de proyectos
-                como <code class="language-bash">node_modules</code>, <code class="language-bash">dist</code> o <code
-                  class="language-bash">build</code>.</p>
-              <!-- Instalación de rimraf  -->
-              <div id="instalacion-de-rimraf">
-                <h3>Instalación de <code class="language-bash">rimraf</code></h3>
-                <!-- Sintaxis -->
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+          <div id="rimraf-herramienta-para-eliminar-carpetas-y-archivos" class="mt-3">
+            <h2><code class="language-bash">rimraf</code>: Herramienta para Eliminar Carpetas y Archivos</h2>
+            <p><code class="language-bash">rimraf</code> es una herramienta de <code
+                class="language-javascript">Node.js</code> que elimina archivos y carpetas
+              de forma recursiva (borra todo el contenido interno). Es equivalente al comando <code
+                class="language-bash">rm -rf</code> de Unix y se usa comúnmente para limpiar directorios de proyectos
+              como <code class="language-bash">node_modules</code>, <code class="language-bash">dist</code> o <code
+                class="language-bash">build</code>.</p>
+            <!-- Instalación de rimraf  -->
+            <div id="instalacion-de-rimraf">
+              <h3>Instalación de <code class="language-bash">rimraf</code></h3>
+              <!-- Sintaxis -->
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         npm install rimraf --save-dev
                       </code>
                     </pre>
-                </div>
-                <!-- Sintaxis fin -->
               </div>
-              <!-- Instalación de rimraf  fin -->
-              <!-- Uso básico en la terminal  -->
-              <div id="uso-basico-en-la-terminal">
-                <h3>Uso básico en la terminal </h3>
-                <!-- Sintaxis -->
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+              <!-- Sintaxis fin -->
+            </div>
+            <!-- Instalación de rimraf  fin -->
+            <!-- Uso básico en la terminal  -->
+            <div id="uso-basico-en-la-terminal">
+              <h3>Uso básico en la terminal </h3>
+              <!-- Sintaxis -->
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-bash" data-prismjs-copy="Copy">
                         npx rimraf dist
                       </code>
                     </pre>
-                </div>
-                <!-- Sintaxis fin -->
-                <p>El ejemplo anterior elimina la carpeta <code class="language-bash">dist</code> y todo su
-                  contenido. Si la carpeta no existe, no genera ningún error.</p>
               </div>
-              <!-- Uso básico en la terminal  fin -->
-              <!-- Uso en package.json  -->
-              <div id="uso-en-package-json">
-                <h3>Uso en <code class="language-json">package.json</code> </h3>
-                <p>Puede agregarse dentro de los scripts para automatizar limpiezas antes de construir el proyecto:</p>
-                <!-- Sintaxis -->
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+              <!-- Sintaxis fin -->
+              <p>El ejemplo anterior elimina la carpeta <code class="language-bash">dist</code> y todo su
+                contenido. Si la carpeta no existe, no genera ningún error.</p>
+            </div>
+            <!-- Uso básico en la terminal  fin -->
+            <!-- Uso en package.json  -->
+            <div id="uso-en-package-json">
+              <h3>Uso en <code class="language-json">package.json</code> </h3>
+              <p>Puede agregarse dentro de los scripts para automatizar limpiezas antes de construir el proyecto:</p>
+              <!-- Sintaxis -->
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-json" data-prismjs-copy="Copy">
   "scripts": {
     "dev": "http-server ./dist -p 8080 -c-1",
@@ -782,19 +784,19 @@
   },                    
                     </code>
                   </pre>
-                </div>
-                <!-- Sintaxis fin -->
               </div>
-              <!-- Uso en package.json  fin -->
-              <!-- Archivo package.json Final  -->
-              <div id="archivo-package.json-final">
-                <h3>Archivo <code class="language-json">package.json</code> Final</h3>
-                <p>Este es el archivo <code class="language-json">package.json</code> que finalmente se debe usar con el
-                  proyecto incluyendo el uso de del servidor local <code class="language-none">http-server</code> y el
-                  eliminador de carpetas y de archivos <code class="language-bash">rimraf</code>.</p>
-                <!-- Sintaxis -->
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+              <!-- Sintaxis fin -->
+            </div>
+            <!-- Uso en package.json  fin -->
+            <!-- Archivo package.json Final  -->
+            <div id="archivo-package.json-final">
+              <h3>Archivo <code class="language-json">package.json</code> Final</h3>
+              <p>Este es el archivo <code class="language-json">package.json</code> que finalmente se debe usar con el
+                proyecto incluyendo el uso de del servidor local <code class="language-none">http-server</code> y el
+                eliminador de carpetas y de archivos <code class="language-bash">rimraf</code>.</p>
+              <!-- Sintaxis -->
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                     <code class="language-json" data-prismjs-copy="Copy">
                       {
                         "name": "my-page",
@@ -827,46 +829,46 @@
                       }
                     </code>
                   </pre>
-                </div>
-                <!-- Sintaxis fin -->
-
               </div>
-              <!-- Archivo package.json Final  fin -->
+              <!-- Sintaxis fin -->
+
             </div>
+            <!-- Archivo package.json Final  fin -->
+          </div>
 
-            <hr class="site-divider--subtle site-divider" />
+          <hr class="site-divider--subtle site-divider" />
 
-            <div id="ultimas-configuraciones-del-proyecto" class="mt-3">
-              <h2>Últimas Configuraciones del Proyecto</h2>
-              <p>En el final de la configuración de la plantilla se instalan dos archivos muy importantes:
+          <div id="ultimas-configuraciones-del-proyecto" class="mt-3">
+            <h2>Últimas Configuraciones del Proyecto</h2>
+            <p>En el final de la configuración de la plantilla se instalan dos archivos muy importantes:
+            <ul>
+              <li><code class="language-plaintext">.gitignore</code>: Archivo que le dice a Git qué NO subir al
+                repositorio.</li>
+              <li><code class="language-plaintext">.gitattributes</code>: Archivo que le indica a Git cómo manejar
+                ciertos archivos.</li>
+            </ul>
+            </p>
+
+            <!-- Archivo .gitignore -->
+            <div id="archivo-gitignore">
+              <h3>Archivo <code class="language-plaintext">.gitignore</code></h3>
+              <p>El archivo <code class="language-plaintext">.gitignore</code> es un archivo de configuración de
+                Git que le indica qué archivos o carpetas NO deben ser incluidos en el control de versiones.</p>
+
+              <p>Con este archivo se evita subir al repositorio archivos que:</p>
               <ul>
-                <li><code class="language-plaintext">.gitignore</code>: Archivo que le dice a Git qué NO subir al
-                  repositorio.</li>
-                <li><code class="language-plaintext">.gitattributes</code>: Archivo que le indica a Git cómo manejar
-                  ciertos archivos.</li>
+                <li>No son necesarios para el proyecto.</li>
+                <li>Son generados automáticamente.</li>
+                <li>Contienen información sensible.</li>
+                <li>Son específicos de la máquina local.</li>
               </ul>
+
+              <p>Ejemplo típico de un archivo <code class="language-plaintext">.gitignore</code> en un proyecto
+                <code class="language-plaintext">node.js</code>:
               </p>
-
-              <!-- Archivo .gitignore -->
-              <div id="archivo-gitignore">
-                <h3>Archivo <code class="language-plaintext">.gitignore</code></h3>
-                <p>El archivo <code class="language-plaintext">.gitignore</code> es un archivo de configuración de
-                  Git que le indica qué archivos o carpetas NO deben ser incluidos en el control de versiones.</p>
-
-                <p>Con este archivo se evita subir al repositorio archivos que:</p>
-                <ul>
-                  <li>No son necesarios para el proyecto.</li>
-                  <li>Son generados automáticamente.</li>
-                  <li>Contienen información sensible.</li>
-                  <li>Son específicos de la máquina local.</li>
-                </ul>
-
-                <p>Ejemplo típico de un archivo <code class="language-plaintext">.gitignore</code> en un proyecto
-                  <code class="language-plaintext">node.js</code>:
-                </p>
-                <!-- Sintaxis -->
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+              <!-- Sintaxis -->
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-gitignore" data-prismjs-copy="Copy">
                         # Dependencias
                         node_modules/
@@ -894,46 +896,46 @@
                         *.swp
                       </code>
                     </pre>
-                </div>
-                <!-- Sintaxis fin -->
-
-                <p>Este archivo es importante debido a:</p>
-                <ul>
-                  <li>
-                    Evita contaminar el repositorio: <code class="language-plaintext">node_modules/</code> puede tener
-                    miles de archivos que se instalan con <code class="language-plaintext">npm install</code>.
-                  </li>
-                  <li>
-                    Protege información sensible: API keys, contraseñas en archivos <code
-                      class="language-plaintext">.env</code>.
-                  </li>
-                  <li>
-                    Reduce el tamaño del repo: No subes archivos generados que otros pueden crear localmente.</li>
-                  <li>
-                    Evita conflictos: Archivos de configuración personal del IDE no afectan a otros.</li>
-                </ul>
-
-                <p>Cómo se usa:</p>
-                <ul>
-                  <li>Crea el archivo <code class="language-plaintext">.gitignore</code> en la raíz de tu proyecto.</li>
-                  <li>Lista los archivos/carpetas a ignorar.</li>
-                  <li>Git automáticamente los excluirá.</li>
-                </ul>
               </div>
-              <!-- Archivo .gitignore fin -->
+              <!-- Sintaxis fin -->
 
-              <!-- Archivo .gitattributes -->
-              <div id="Archivo-gitattributes">
-                <h3>Archivo <code class="language-plaintext">.gitattributes</code></h3>
-                <p>El archivo <code class="language-plaintext">.gitattributes</code> es un archivo de configuración de
-                  Git que define atributos específicos para archivos y carpetas en el repositorio.</p>
+              <p>Este archivo es importante debido a:</p>
+              <ul>
+                <li>
+                  Evita contaminar el repositorio: <code class="language-plaintext">node_modules/</code> puede tener
+                  miles de archivos que se instalan con <code class="language-plaintext">npm install</code>.
+                </li>
+                <li>
+                  Protege información sensible: API keys, contraseñas en archivos <code
+                    class="language-plaintext">.env</code>.
+                </li>
+                <li>
+                  Reduce el tamaño del repo: No subes archivos generados que otros pueden crear localmente.</li>
+                <li>
+                  Evita conflictos: Archivos de configuración personal del IDE no afectan a otros.</li>
+              </ul>
 
-                <p>Este archivo se usa para:</p>
-                <ul>
-                  <li>Normalizar finales de línea (lo más común):
-                    <!-- Sintaxis -->
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+              <p>Cómo se usa:</p>
+              <ul>
+                <li>Crea el archivo <code class="language-plaintext">.gitignore</code> en la raíz de tu proyecto.</li>
+                <li>Lista los archivos/carpetas a ignorar.</li>
+                <li>Git automáticamente los excluirá.</li>
+              </ul>
+            </div>
+            <!-- Archivo .gitignore fin -->
+
+            <!-- Archivo .gitattributes -->
+            <div id="Archivo-gitattributes">
+              <h3>Archivo <code class="language-plaintext">.gitattributes</code></h3>
+              <p>El archivo <code class="language-plaintext">.gitattributes</code> es un archivo de configuración de
+                Git que define atributos específicos para archivos y carpetas en el repositorio.</p>
+
+              <p>Este archivo se usa para:</p>
+              <ul>
+                <li>Normalizar finales de línea (lo más común):
+                  <!-- Sintaxis -->
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                     <code class="language-gitattributes" data-prismjs-copy="Copy">
                       # Asegurar que todos usen LF en el repo
                       * text=auto
@@ -941,12 +943,12 @@
                       *.bat text eol=crlf           
                     </code>
                   </pre>
-                    </div>
-                    <!-- Sintaxis fin -->
-                  </li>
-                  <li>Marcar archivos como binarios: <!-- Sintaxis -->
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                  <!-- Sintaxis fin -->
+                </li>
+                <li>Marcar archivos como binarios: <!-- Sintaxis -->
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-gitattributes" data-prismjs-copy="Copy">
                           # Archivos binarios
                           *.png binary
@@ -954,13 +956,13 @@
                           *.pdf binary
                         </code>
                       </pre>
-                    </div>
-                    <!-- Sintaxis fin -->
-                  </li>
-                  <li>Excluir archivos de exportaciones/archivos:
-                    <!-- Sintaxis -->
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                  <!-- Sintaxis fin -->
+                </li>
+                <li>Excluir archivos de exportaciones/archivos:
+                  <!-- Sintaxis -->
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-gitattributes" data-prismjs-copy="Copy">
                           # Excluir de exportaciones (opcional)
                           .gitattributes export-ignore
@@ -968,55 +970,55 @@
                           tests/ export-ignore
                         </code>
                       </pre>
-                    </div>
-                    <!-- Sintaxis fin -->
-                  </li>
-                  <li>Definir cómo se muestran los diffs:
-                    <!-- Sintaxis -->
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                  <!-- Sintaxis fin -->
+                </li>
+                <li>Definir cómo se muestran los diffs:
+                  <!-- Sintaxis -->
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-gitattributes" data-prismjs-copy="Copy">
                           *.json diff=json
                           *.md diff=markdown
                           *.min.js -diff
                         </code>
                       </pre>
-                    </div>
-                    <!-- Sintaxis fin -->
-                  </li>
-                  <li>Configurar estrategias de fusión (<span class="fst-italic">merge strategies</span>):
-                    <!-- Sintaxis -->
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                  <!-- Sintaxis fin -->
+                </li>
+                <li>Configurar estrategias de fusión (<span class="fst-italic">merge strategies</span>):
+                  <!-- Sintaxis -->
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-gitattributes" data-prismjs-copy="Copy">
                           package-lock.json merge=ours
                           yarn.lock merge=ours
                         </code>
                       </pre>
-                    </div>
-                    <!-- Sintaxis fin -->
-                  </li>
-                  <li>Lenguaje para estadísticas de GitHub (Linguist):
-                    <!-- Sintaxis -->
-                    <div class="code-example__syntax">
-                      <pre data-src-status="loaded" tabindex="0">
+                  </div>
+                  <!-- Sintaxis fin -->
+                </li>
+                <li>Lenguaje para estadísticas de GitHub (Linguist):
+                  <!-- Sintaxis -->
+                  <div class="code-example__syntax">
+                    <pre data-src-status="loaded" tabindex="0">
                         <code class="language-gitattributes" data-prismjs-copy="Copy">
                           *.js linguist-language=JavaScript
                           docs/* linguist-documentation
                           vendor/* linguist-vendored        
                         </code>
                       </pre>
-                    </div>
-                    <!-- Sintaxis fin -->
-                  </li>
-                </ul>
+                  </div>
+                  <!-- Sintaxis fin -->
+                </li>
+              </ul>
 
-                <p>Ejemplo típico de un archivo <code class="language-plaintext">.gitattributes</code> en un proyecto
-                  <code class="language-plaintext">node.js</code>:
-                </p>
-                <!-- Sintaxis -->
-                <div class="code-example__syntax">
-                  <pre data-src-status="loaded" tabindex="0">
+              <p>Ejemplo típico de un archivo <code class="language-plaintext">.gitattributes</code> en un proyecto
+                <code class="language-plaintext">node.js</code>:
+              </p>
+              <!-- Sintaxis -->
+              <div class="code-example__syntax">
+                <pre data-src-status="loaded" tabindex="0">
                       <code class="language-gitattributes" data-prismjs-copy="Copy">
                         # Normalizar todos los archivos de texto a LF en el repositorio
                         * text=auto eol=lf
@@ -1066,11 +1068,11 @@
                         .editorconfig export-ignore                       
                       </code>
                     </pre>
-                </div>
-                <!-- Sintaxis fin -->
               </div>
-              <!-- Archivo gitattributes fin -->
+              <!-- Sintaxis fin -->
             </div>
+            <!-- Archivo gitattributes fin -->
+          </div>
 
         </article>
         <!-- fin Parcel NPM -->
@@ -1129,39 +1131,47 @@
                 <a href="#introduccion" class=" list-group-item list-group-item-action">Introducción</a>
               </div>
               <div class="site-menu__item">
-                <a href="#configuracion-inicial" class=" list-group-item list-group-item-action">Configuración Inicial</a>
+                <a href="#configuracion-inicial" class=" list-group-item list-group-item-action">Configuración
+                  Inicial</a>
               </div>
               <div class="site-menu__item">
                 <a href="#instalacion-parcel" class=" list-group-item list-group-item-action">Instalación de Parcel</a>
               </div>
               <div class="site-menu__item">
-                <a href="#instalacion-bootstrap-v5" class=" list-group-item list-group-item-action">Instalación de Bootstrap</a>
+                <a href="#instalacion-bootstrap-v5" class=" list-group-item list-group-item-action">Instalación de
+                  Bootstrap</a>
               </div>
               <div class="site-menu__item">
-                <a href="#configuracion-parcel" class=" list-group-item list-group-item-action">Configuración de Parcel</a>
-              </div>
-
-              <div class="site-menu__item">
-                <a href="#importacion-bootstrap-v5" class=" list-group-item list-group-item-action">Importación Bootstrap v5</a>
+                <a href="#configuracion-parcel" class=" list-group-item list-group-item-action">Configuración de
+                  Parcel</a>
               </div>
 
               <div class="site-menu__item">
-                <a href="#compilacion-proyecto-produccion" class=" list-group-item list-group-item-action">Compilación del proyecto para
+                <a href="#importacion-bootstrap-v5" class=" list-group-item list-group-item-action">Importación
+                  Bootstrap v5</a>
+              </div>
+
+              <div class="site-menu__item">
+                <a href="#compilacion-proyecto-produccion" class=" list-group-item list-group-item-action">Compilación
+                  del proyecto para
                   Producción</a>
               </div>
 
               <div class="site-menu__item">
-                <a href="#instalacion-de-un-servidor-local" class=" list-group-item list-group-item-action">Instalación de un Servidor Local</a>
+                <a href="#instalacion-de-un-servidor-local" class=" list-group-item list-group-item-action">Instalación
+                  de un Servidor Local</a>
               </div>
 
               <div class="site-menu__item">
-                <a href="#rimraf-herramienta-para-eliminar-carpetas-y-archivos" class=" list-group-item list-group-item-action"><code
-                    class="language-bash">rimraf</code>:&nbsp; Herramienta
+                <a href="#rimraf-herramienta-para-eliminar-carpetas-y-archivos"
+                  class=" list-group-item list-group-item-action"><code class="language-bash">rimraf</code>:&nbsp;
+                  Herramienta
                   para Eliminar Carpetas y Archivos</a>
               </div>
 
               <div class="site-menu__item">
-                <a href="#ultimas-configuraciones-del-proyecto" class=" list-group-item list-group-item-action">Últimas Configuraciones del
+                <a href="#ultimas-configuraciones-del-proyecto" class=" list-group-item list-group-item-action">Últimas
+                  Configuraciones del
                   Proyecto</a>
               </div>
 
