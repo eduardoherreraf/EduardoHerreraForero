@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "http-server ./dist -p 8080 -c-1",
     "start": "rimraf .parcel-cache dist && parcel serve",
-    "build": "rimraf .parcel-cache dist && parcel build --public-url ./ --no-source-maps",
+    "build": "rimraf .parcel-cache dist && parcel build --public-url ./ --no-source-maps && node scripts/quote-og-image.cjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
